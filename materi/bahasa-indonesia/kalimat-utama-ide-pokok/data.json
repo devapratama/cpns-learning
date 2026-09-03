@@ -1,0 +1,81 @@
+{
+  "category": "Bahasa Indonesia",
+  "categoryFolder": "bahasa-indonesia",
+  "title": "Kalimat Utama & Ide Pokok",
+  "subtitle": "Mengenali kalimat utama dan ide pokok dalam sebuah paragraf.",
+  "quizIntro": "Pilih jawaban yang menurut Anda benar, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Kalimat yang berisi gagasan utama dalam sebuah paragraf disebut …",
+      "options": ["A. Kalimat penjelas", "B. Kalimat utama", "C. Kalimat berita", "D. Kalimat pendukung"],
+      "answer": 1,
+      "explanation": "Kalimat utama berisi gagasan utama, sedangkan kalimat penjelas mendukung gagasan tersebut."
+    },
+    {
+      "question": "Pada paragraf deduktif, kalimat utama terletak di …",
+      "options": ["A. awal paragraf", "B. tengah paragraf", "C. akhir paragraf", "D. mana saja"],
+      "answer": 0,
+      "explanation": "Paragraf deduktif menempatkan kalimat utama di awal, lalu diikuti penjelasan."
+    },
+    {
+      "question": "Perhatikan paragraf berikut. Membaca secara rutin membuat wawasan seseorang semakin luas. Dengan membaca, kita mengenal berbagai hal baru dari seluruh dunia. Selain itu, membaca melatih kemampuan berpikir kritis dan memperkaya kosakata. Oleh karena itu, biasakanlah membaca setiap hari. Ide pokok paragraf tersebut adalah …",
+      "options": ["A. Membaca melatih berpikir kritis", "B. Membaca memperkaya kosakata", "C. Membaca memperluas wawasan", "D. Membaca dilakukan setiap hari"],
+      "answer": 2,
+      "explanation": "Kalimat pertama 'membaca membuat wawasan semakin luas' menjadi gagasan utama yang didukung kalimat penjelas lainnya."
+    },
+    {
+      "question": "Ciri-ciri berikut menunjukkan sebuah kalimat merupakan kalimat utama, kecuali …",
+      "options": ["A. Bersifat umum dan menjadi inti paragraf", "B. Dijelaskan lebih lanjut oleh kalimat lain", "C. Hanya berisi contoh-contoh rinci", "D. Memuat kata kunci yang diulang pada kalimat penjelas"],
+      "answer": 2,
+      "explanation": "Kalimat penjelaslah yang berisi rincian dan contoh, bukan kalimat utama."
+    },
+    {
+      "question": "Paragraf yang kalimat utamanya berada di akhir sebagai simpulan disebut paragraf …",
+      "options": ["A. deduktif", "B. induktif", "C. campuran", "D. naratif"],
+      "answer": 1,
+      "explanation": "Paragraf induktif menyimpan kalimat utama (simpulan) di akhir."
+    },
+    {
+      "question": "Paragraf campuran memiliki kalimat utama di …",
+      "options": ["A. tengah paragraf", "B. awal dan akhir paragraf", "C. hanya akhir paragraf", "D. awal, tengah, dan akhir"],
+      "answer": 1,
+      "explanation": "Pada paragraf campuran, gagasan utama dinyatakan di awal dan ditegaskan kembali di akhir."
+    },
+    {
+      "question": "Gagasan utama dalam paragraf naratif umumnya …",
+      "options": ["A. terdapat di kalimat kedua", "B. tersirat dalam keseluruhan cerita", "C. selalu di akhir", "D. tidak pernah ada"],
+      "answer": 1,
+      "explanation": "Paragraf naratif menyampaikan ide pokok secara implisit melalui rangkaian peristiwa."
+    },
+    {
+      "question": "Ide pokok paragraf yang letaknya di akhir disebut pula …",
+      "options": ["A. kalimat penjelas", "B. kalimat simpulan", "C. kalimat transisi", "D. kalimat pengantar"],
+      "answer": 1,
+      "explanation": "Pada paragraf induktif, ide pokok di akhir merangkum seluruh isi sebagai simpulan."
+    },
+    {
+      "question": "Perhatikan paragraf berikut. Hutan mangrove menjaga pantai dari abrasi. Akarnya menahan terpaan gelombang, dan daunnya menjadi habitat beragam biota. Kalimat utama paragraf tersebut terletak di …",
+      "options": ["A. awal", "B. tengah", "C. akhir", "D. kedua"],
+      "answer": 0,
+      "explanation": "Kalimat pertama 'hutan mangrove menjaga pantai dari abrasi' menjadi kalimat utama yang didukung kalimat penjelas."
+    },
+    {
+      "question": "Kalimat penjelas dalam sebuah paragraf berfungsi untuk …",
+      "options": ["A. menyimpulkan paragraf lain", "B. menguraikan dan mendukung gagasan utama", "C. mengganti kalimat utama", "D. menjadi judul paragraf"],
+      "answer": 1,
+      "explanation": "Kalimat penjelas menguraikan gagasan utama dengan rincian, contoh, atau data."
+    },
+    {
+      "question": "Kata atau frasa yang sering menandai kalimat penjelas adalah …",
+      "options": ["A. oleh karena itu, jadi", "B. yaitu, misalnya, seperti", "C. dengan demikian, simpulannya", "D. intinya, pokoknya"],
+      "answer": 1,
+      "explanation": "Kata 'yaitu', 'misalnya', dan 'seperti' umum menandai rincian dalam kalimat penjelas."
+    },
+    {
+      "question": "Perhatikan paragraf berikut. Minuman manis yang dikonsumsi berlebihan dapat menimbulkan berbagai penyakit. Diabetes, obesitas, dan gangguan ginjal sering dikaitkan dengan kebiasaan ini. Oleh karena itu, batasi konsumsi gula dalam minuman sehari-hari. Ide pokok paragraf tersebut adalah …",
+      "options": ["A. cara membuat minuman manis", "B. bahaya minuman manis berlebihan", "C. batas konsumsi gula harian", "D. jenis penyakit menular"],
+      "answer": 1,
+      "explanation": "Kalimat pertama menjadi gagasan utama, sedangkan kalimat lain menjelaskan bahaya dan anjurannya."
+    }
+  ]
+}

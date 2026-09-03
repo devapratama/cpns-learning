@@ -1,0 +1,81 @@
+{
+  "category": "Bahasa Indonesia",
+  "categoryFolder": "bahasa-indonesia",
+  "title": "Kata Baku & Tidak Baku",
+  "subtitle": "Membedakan kata baku dan tidak baku sesuai KBBI.",
+  "quizIntro": "Pilih kata atau kalimat yang bakunya benar, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Penulisan kata baku yang benar adalah …",
+      "options": ["A. apotik", "B. apotek", "C. apothek", "D. apoteg"],
+      "answer": 1,
+      "explanation": "Bentuk baku sesuai KBBI adalah 'apotek', bukan 'apotik'."
+    },
+    {
+      "question": "Pasangan kata tidak baku → baku yang benar adalah …",
+      "options": ["A. aktifitas → aktivitas", "B. resiko → risykho", "C. zaman → jaman", "D. izin → ijin"],
+      "answer": 0,
+      "explanation": "'Aktifitas' tidak baku, bentuk bakunya 'aktivitas'. 'zaman' sudah baku; yang baku adalah 'izin', bukan 'ijin'."
+    },
+    {
+      "question": "Kata baku dari 'sekertaris' adalah …",
+      "options": ["A. sekretaris", "B. sekertaris", "C. setertaris", "D. sekertariz"],
+      "answer": 0,
+      "explanation": "Bentuk baku adalah 'sekretaris' (huruf 'r' setelah kata 'sek'), bukan 'sekertaris'."
+    },
+    {
+      "question": "Kalimat yang menggunakan kata baku adalah …",
+      "options": ["A. Dokter itu memberi nasehat kepada pasien.", "B. Dokter itu memberi nasihat kepada pasien.", "C. Dokter itu memberikan nasehat kepada pasien.", "D. Dokter itu selalu memberi nasehat-nasehat."],
+      "answer": 1,
+      "explanation": "Bentuk baku adalah 'nasihat', bukan 'nasehat'."
+    },
+    {
+      "question": "Kata baku dari 'praktek' adalah …",
+      "options": ["A. praktik", "B. praktek", "C. prakteq", "D. fraktik"],
+      "answer": 0,
+      "explanation": "Bentuk baku sesuai KBBI adalah 'praktik', sedangkan 'praktek' tidak baku."
+    },
+    {
+      "question": "Penulisan yang benar adalah …",
+      "options": ["A. jadual ujian", "B. jadwal ujian", "C. jadual ujian;", "D. jaddwal ujian"],
+      "answer": 1,
+      "explanation": "Bentuk baku adalah 'jadwal', bukan 'jadual'."
+    },
+    {
+      "question": "Kata baku dari 'ijazah' adalah …",
+      "options": ["A. ijazah", "B. ijasah", "C. ijazahh", "D. hijazah"],
+      "answer": 0,
+      "explanation": "Kata 'ijazah' sudah baku dan tidak berubah; 'ijasah' tidak baku."
+    },
+    {
+      "question": "Kalimat berikut yang semua katanya baku adalah …",
+      "options": ["A. Sistem ini memakai teknologi terbaru.", "B. Sistim ini memakai teknologi terbaru.", "C. Sistem ini memakai tehnologi terbaru.", "D. Sistim ini memakai tehnologi terbaru."],
+      "answer": 0,
+      "explanation": "Bentuk baku adalah 'sistem' dan 'teknologi', bukan 'sistim' atau 'tehnologi'."
+    },
+    {
+      "question": "Penulisan kata baku yang benar adalah …",
+      "options": ["A. risiko kerja", "B. resiko kerja", "C. risykho kerja", "D. risco kerja"],
+      "answer": 0,
+      "explanation": "Bentuk baku sesuai KBBI adalah 'risiko', bukan 'resiko'."
+    },
+    {
+      "question": "Kata baku dari 'izin' yang benar adalah …",
+      "options": ["A. izin", "B. ijin", "C. ijijn", "D. izhin"],
+      "answer": 0,
+      "explanation": "Bentuk baku adalah 'izin' (huruf 'z'), bukan 'ijin'."
+    },
+    {
+      "question": "Kalimat yang menggunakan kata baku adalah …",
+      "options": ["A. Ia menerbitkan surat izin.", "B. Ia menerbitkan surat ijin.", "C. Ia menerbitkan surat izinn.", "D. Ia menerbitkan surat izi'."],
+      "answer": 0,
+      "explanation": "Kata baku yang tepat adalah 'izin'."
+    },
+    {
+      "question": "Sumber utama untuk menentukan kata baku bahasa Indonesia adalah …",
+      "options": ["A. Kamus Besar Bahasa Indonesia", "B. Media sosial", "C. Bahasa gaul", "D. Kamus bahasa Inggris"],
+      "answer": 0,
+      "explanation": "KBBI menjadi acuan baku penulisan dan pemaknaan kata bahasa Indonesia."
+    }
+  ]
+}

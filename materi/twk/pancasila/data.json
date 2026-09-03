@@ -1,0 +1,81 @@
+{
+  "category": "TWK",
+  "categoryFolder": "twk",
+  "title": "Pancasila",
+  "subtitle": "Nilai, sila, dan implementasinya dalam kehidupan bernegara.",
+  "quizIntro": "Pilih jawaban yang menurut Anda benar, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Arti kata 'panca' dalam Pancasila adalah …",
+      "options": ["A. Empat", "B. Lima", "C. Enam", "D. Tujuh"],
+      "answer": 1,
+      "explanation": "Panca berarti lima dan sila berarti prinsip atau asas."
+    },
+    {
+      "question": "Sila yang menjiwai sila-sila lainnya adalah …",
+      "options": ["A. Sila pertama", "B. Sila kedua", "C. Sila ketiga", "D. Sila kelima"],
+      "answer": 0,
+      "explanation": "Sila pertama 'Ketuhanan Yang Maha Esa' menjiwai seluruh sila lainnya."
+    },
+    {
+      "question": "Pancasila ditetapkan sebagai dasar negara yang sah pada tanggal …",
+      "options": ["A. 1 Juni 1945", "B. 17 Agustus 1945", "C. 18 Agustus 1945", "D. 28 Oktober 1928"],
+      "answer": 2,
+      "explanation": "Pancasila disahkan PPKI pada 18 Agustus 1945, sehari setelah proklamasi."
+    },
+    {
+      "question": "Tokoh yang pertama kali mengemukakan rumusan dasar negara pada 1 Juni 1945 adalah …",
+      "options": ["A. Moh. Yamin", "B. Soekarno", "C. M. Hatta", "D. Soepomo"],
+      "answer": 1,
+      "explanation": "Ir. Soekarno menyampaikan gagasan Pancasila dalam pidato pada 1 Juni 1945."
+    },
+    {
+      "question": "Lambang sila kedua Pancasila adalah …",
+      "options": ["A. Bintang", "B. Rantai", "C. Pohon Beringin", "D. Kepala Banteng"],
+      "answer": 1,
+      "explanation": "Rantai melambangkan sila kedua yaitu Kemanusiaan yang adil dan beradab."
+    },
+    {
+      "question": "Perilaku gotong royong paling mencerminkan sila …",
+      "options": ["A. Pertama", "B. Kedua", "C. Ketiga", "D. Keempat"],
+      "answer": 2,
+      "explanation": "Gotong royong memperkuat persatuan sehingga paling sesuai dengan sila ketiga."
+    },
+    {
+      "question": "Pengambilan keputusan secara musyawarah untuk mufakat sesuai sila …",
+      "options": ["A. Kedua", "B. Ketiga", "C. Keempat", "D. Kelima"],
+      "answer": 2,
+      "explanation": "Musyawarah untuk mufakat merupakan inti sila keempat."
+    },
+    {
+      "question": "Sila 'Keadilan sosial bagi seluruh rakyat Indonesia' dilambangkan dengan …",
+      "options": ["A. Padi dan kapas", "B. Pohon beringin", "C. Kepala banteng", "D. Bintang"],
+      "answer": 0,
+      "explanation": "Padi dan kapas melambangkan sandang dan pangan, simbol keadilan sosial."
+    },
+    {
+      "question": "Perubahan sila pertama dalam Piagam Jakarta menjadi 'Ketuhanan Yang Maha Esa' bertujuan untuk …",
+      "options": ["A. memperkuat kerajaan", "B. menjaga persatuan dan kesatuan bangsa", "C. menghapuskan agama", "D. mengikuti keinginan Belanda"],
+      "answer": 1,
+      "explanation": "Sila pertama diubah demi menjaga keutuhan bangsa yang beragam agama dan keyakinan."
+    },
+    {
+      "question": "Pancasila tercantum secara resmi dalam …",
+      "options": ["A. Pasal 1 UUD 1945", "B. Batang Tubuh UUD 1945", "C. Alinea keempat Pembukaan UUD 1945", "D. Peraturan Pemerintah"],
+      "answer": 2,
+      "explanation": "Rumusan lima sila terdapat pada alinea keempat Pembukaan UUD 1945."
+    },
+    {
+      "question": "Pancasila sebagai sumber dari segala sumber hukum berarti …",
+      "options": ["A. setiap peraturan tidak boleh bertentangan dengan Pancasila", "B. hukum tertinggi dapat diubah kapan saja", "C. Pancasila hanya untuk pejabat", "D. hukum tidak perlu mengikuti Pancasila"],
+      "answer": 0,
+      "explanation": "Semua peraturan perundang-undangan harus bersumber dan tidak boleh bertentangan dengan nilai Pancasila."
+    },
+    {
+      "question": "Sikap yang sesuai dengan sila kedua adalah …",
+      "options": ["A. membeda-bedakan teman", "B. menghormati hak asasi sesama manusia", "C. mengutamakan kepentingan pribadi", "D. memaksakan kehendak"],
+      "answer": 1,
+      "explanation": "Menghormati martabat dan hak orang lain mencerminkan sila kedua."
+    }
+  ]
+}

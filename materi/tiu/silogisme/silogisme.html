@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silogisme TIU CPNS — Materi & Bank Soal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
+    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 80px;}
+  
+  header.top{padding:8px 0 20px;}
+  header.top h1{font-family:'Fraunces', serif;font-weight:600;font-size:clamp(24px,5vw,36px);letter-spacing:-0.01em;margin:0 0 10px;}
+  header.top p{color:var(--ink-soft); margin:0; font-size:15.5px; max-width:60ch;}
+
+  .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-bottom:14px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
+  .breadcrumb a{color:var(--accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-current{color:var(--ink-soft);}
+  
+  .tab-nav{display:flex; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px;}
+  .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
+  .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .tab-content{display:none;} .tab-content.active{display:block;}
+
+  .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 -20px 26px; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+  .scoreboard .label{color:var(--ink-soft);}
+  .scoreboard .num{color:var(--accent); font-weight:500;}
+
+  .progress-map{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:26px;}
+  .progress-map span{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); background:var(--accent-soft); border:1px dashed var(--accent); border-radius:6px; padding:3px 7px;}
+
+  section.topic{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); margin-bottom:18px; overflow:hidden;}
+  .topic-head{width:100%; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; background:none; border:none; cursor:pointer; text-align:left; font-family:inherit; color:inherit;}
+  .topic-head .th-left{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .topic-head h2{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0;}
+  .chip{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); border:1px dashed var(--accent); border-radius:6px; padding:3px 8px; transform:rotate(-1deg); white-space:nowrap;}
+  .topic-dots{display:flex; gap:5px; align-items:center;}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--line); flex-shrink:0;}
+  .dot.correct{background:var(--good);} .dot.wrong{background:var(--bad);}
+  .chevron{transition:transform .2s ease; color:var(--ink-soft); flex-shrink:0;}
+  .topic.open .chevron{transform:rotate(180deg);}
+  .topic-body{display:none;} .topic.open .topic-body{display:block; border-top:1px solid var(--line);}
+  .topic-inner{padding:20px;}
+
+  .section-label{font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 14px; display:flex; align-items:center; gap:8px;}
+  .section-label::after{content:'';flex:1;height:1px;background:var(--line);}
+  .section-label.second{margin:28px 0 14px;}
+  .penjelasan{font-size:14.5px; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--line);}
+  .penjelasan p{margin:0 0 12px;} .penjelasan p:last-child{margin-bottom:0;}
+  .penjelasan b, .penjelasan i{color:var(--accent);}
+  .penjelasan ol, .penjelasan ul{margin:0 0 12px; padding-left:20px;}
+  .penjelasan li{margin-bottom:6px;}
+  .materi-block{padding-bottom:6px; margin-bottom:6px;}
+  .scenario{margin-bottom:16px; padding-bottom:16px; border-bottom:1px dotted var(--line);}
+  .scenario:last-child{border-bottom:none; margin-bottom:0; padding-bottom:0;}
+  .situasi{font-size:14.5px; margin:0 0 8px;} .situasi b{color:var(--accent);}
+  .prompt{font-size:14px; color:var(--ink-soft); font-style:italic; margin:0 0 10px;}
+  .reveal-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:var(--accent); color:#fff; border:none; border-radius:6px; padding:6px 12px; cursor:pointer;}
+  .reveal-btn:hover{opacity:.9;}
+  .answer{display:none; margin-top:10px; padding:10px 12px; background:var(--accent-soft); border-radius:8px; font-size:14.5px;}
+  .answer.show{display:block;} .answer b{color:var(--accent);}
+  .intro-text{font-size:14.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .notes-table{width:100%; border-collapse:collapse; font-size:13.5px; margin-top:16px; display:block; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  .notes-table th, .notes-table td{border:1px solid var(--line); padding:6px 8px; text-align:left;}
+  .notes-table th{background:var(--paper);}
+
+  .question{margin-bottom:26px;} .question:last-child{margin-bottom:0;}
+  .q-text{font-size:15.5px; margin:0 0 12px; font-weight:500;}
+  .options{display:flex; flex-direction:column; gap:8px;}
+  .option{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1px solid var(--line); border-radius:10px; cursor:pointer; font-size:14.5px; transition:border-color .15s ease, background .15s ease; word-break:break-word;}
+  .option:hover{border-color:var(--accent);}
+  .option .bubble{flex-shrink:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); margin-top:1px;}
+  .option.locked{cursor:default;}
+  .option.chosen-correct{border-color:var(--good); background:var(--good-soft);}
+  .option.chosen-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .option.chosen-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .option.chosen-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .option.reveal-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .option.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .explain{margin-top:10px; font-size:14px; padding:10px 12px; border-radius:8px; display:none;}
+  .explain.show{display:block;}
+  .explain.good{background:var(--good-soft); color:var(--good);}
+  .explain.bad{background:var(--bad-soft); color:var(--bad);}
+  .explain b{font-weight:600;}
+
+  /* Packet Header */
+  .packet-header{margin-bottom:24px;}
+  .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
+  .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
+
+  /* Packet Grid */
+  .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:16px;}
+  .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
+  .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
+  .packet-card.disabled{opacity:0.6; pointer-events:none; filter:grayscale(0.5);}
+  .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0 0 6px;}
+  .packet-desc{font-size:13.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent);}
+  .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
+  .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
+
+  /* ========== QUIZ MODE - ALL QUESTIONS LIST ========== */
+  .quiz-view{display:none;}
+  .quiz-view.active{display:block;}
+  .packet-list.hidden{display:none;}
+
+  .quiz-header{position:sticky; top:0; z-index:6; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); margin:0 -20px 20px; padding:14px 20px;}
+  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px;}
+  .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
+  .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-progress-text{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
+  .quiz-progress-text b{color:var(--accent); font-weight:600;}
+  .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:16px; margin:0 0 8px;}
+  .progress-bar{height:6px; background:var(--line); border-radius:3px; overflow:hidden;}
+  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
+
+  .quiz-body{padding-bottom:80px;}
+
+  /* Question Card in List Mode */
+  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px; transition:border-color .2s;}
+  .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
+  .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
+  .quiz-q-text{font-size:15px; margin:0 0 14px; font-weight:500; line-height:1.6;}
+  .quiz-opts{display:flex; flex-direction:column; gap:8px;}
+  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+  .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.locked{cursor:default; pointer-events:none;}
+  .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
+  .quiz-opt .bubble{flex-shrink:0; width:26px; height:26px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
+  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .quiz-opt > span:last-child{flex:1; min-width:0;}
+
+  /* Review states for options */
+  .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+
+  /* Sticky Footer */
+  .quiz-footer{position:fixed; bottom:0; left:0; right:0; z-index:10; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+  .quiz-footer-inner{max-width:760px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto;}
+  .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 18px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px;}
+  .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
+  .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
+  .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
+  .quiz-btn-primary{background:var(--accent); color:#fff;}
+  .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-finish{background:var(--good); color:#fff;}
+  .quiz-btn-finish:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
+  .quiz-btn-skip:hover{background:var(--skip-soft);}
+
+  /* Review Mode */
+  .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
+  .review-stat{text-align:center;}
+  .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
+  .review-stat-num.good{color:var(--good);}
+  .review-stat-num.bad{color:var(--bad);}
+  .review-stat-num.skip{color:var(--skip);}
+  .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
+
+  .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
+  .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+  .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
+  .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
+  .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
+  .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
+  .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
+
+  /* Premis box in review */
+  .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
+  .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+  .review-premis-list{margin:0; padding-left:18px;}
+  .review-premis-list li{margin-bottom:4px;}
+
+  .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
+  .review-explain.good{border-left:4px solid var(--good);}
+  .review-explain.bad{border-left:4px solid var(--bad);}
+  .review-explain.skip{border-left:4px solid var(--skip);}
+  .review-explain .status{font-weight:600;}
+  .review-explain.good .status{color:var(--good);}
+  .review-explain.bad .status{color:var(--bad);}
+  .review-explain.skip .status{color:var(--skip);}
+  .review-explain b{font-weight:600; color:var(--accent);}
+  .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
+
+  /* Loading state */
+  .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
+  .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  /* Question Navigator (mini map) */
+  .quiz-nav{display:flex; flex-wrap:wrap; gap:4px; margin-bottom:16px; padding:12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
+  .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:8px; width:100%;}
+  .quiz-nav-dot{width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
+  .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  footer{text-align:center; color:var(--ink-soft); font-size:13px; margin-top:36px;}
+
+  @media (max-width:520px){
+    .wrap{padding:20px 16px 100px;}
+    .scoreboard{margin:0 -16px 22px; padding:10px 16px;}
+    .topic-inner{padding:16px;}
+    .topic-head{padding:16px; flex-wrap:wrap; row-gap:8px;}
+    .topic-head h2{font-size:16.5px;}
+    .chip{font-size:11px; padding:2px 7px;}
+    .progress-map span{font-size:10.5px;}
+    .q-text{font-size:15px;}
+    .option{font-size:14px; padding:9px 10px;}
+    .situasi, .prompt, .answer, .penjelasan, .notes-table{font-size:13.8px;}
+    .topic-dots{flex-wrap:wrap; justify-content:flex-end; max-width:160px;}
+    
+    /* Mobile quiz */
+    .quiz-header{margin:0 -16px 16px; padding:12px 16px;}
+    .quiz-q-card{padding:16px;}
+    .quiz-q-text{font-size:14.5px;}
+    .quiz-opt{font-size:13.5px; padding:10px 11px;}
+    .quiz-opt .bubble{width:24px; height:24px; font-size:11px;}
+    .quiz-packet-name{font-size:14.5px;}
+    .review-q-card{padding:16px;}
+    .quiz-footer{padding:10px 16px;}
+    .quiz-btn{font-size:12.5px; padding:9px 14px;}
+    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../../index.html">← Beranda</a>
+    <span class="crumb-sep">/</span>
+    <a href="../index.html">TIU</a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb-current">Silogisme</span>
+  </nav>
+
+  <header class="top">
+    <h1>Silogisme TIU CPNS</h1>
+    <p>Materi lengkap end-to-end dan bank soal tryout berbasis manifest JSON.</p>
+  </header>
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('materi', event)">📖 Materi Lengkap</button>
+    <button class="tab-btn" onclick="switchTab('paket', event)">🎯 Paket Soal Tryout</button>
+  </div>
+
+  <!-- TAB 1: MATERI LENGKAP -->
+  <div id="tab-materi" class="tab-content active">
+    <div class="progress-map">
+      <span>1. Dasar</span><span>2. Mayor & Minor</span><span>3. Variasi kata</span><span>4. Tanpa kuantor</span><span>5. Kategorial</span><span>6. Ponens & Tollens</span><span>7. Tollendo Ponens</span><span>8. Berantai</span><span>9. Ingkaran</span><span>10. 2 premis</span><span>11. 3 premis</span><span>12. Premis acak</span><span>13. Paragraf naratif</span><span>14. Tryout</span>
+    </div>
+
+    <div class="scoreboard">
+      <span class="label">Skor Materi</span>
+      <span class="num" id="materi-score">0 / 0</span>
+    </div>
+
+    <div id="topics"></div>
+  </div>
+
+  <!-- TAB 2: PAKET SOAL -->
+  <div id="tab-paket" class="tab-content">
+    
+    <!-- Packet List View -->
+    <div id="packet-list-view" class="packet-list">
+      <div class="packet-header">
+        <h2 id="packet-title">Memuat...</h2>
+        <p id="packet-desc">Mohon tunggu...</p>
+      </div>
+
+      <div class="scoreboard">
+        <span class="label">Total Tryout</span>
+        <span class="num" id="tryout-score">0 / 0</span>
+      </div>
+      
+      <div id="packet-container" class="packet-grid">
+        <div class="empty-state">Memuat daftar paket soal...</div>
+      </div>
+    </div>
+
+    <!-- Quiz View (All questions at once) -->
+    <div id="quiz-view" class="quiz-view">
+      <div class="quiz-header">
+        <div class="quiz-top-row">
+          <button class="quiz-back-btn" onclick="exitQuiz()">← Keluar</button>
+          <div class="quiz-progress-text">
+            Dijawab: <b id="quiz-answered-count">0</b> / <b id="quiz-total-num">0</b>
+          </div>
+        </div>
+        <div class="quiz-packet-name" id="quiz-packet-name">Paket 1</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="quiz-progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="quiz-body" id="quiz-body"></div>
+
+      <div class="quiz-footer" id="quiz-footer" style="display:none;">
+        <div class="quiz-footer-inner">
+          <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+          <button class="quiz-btn quiz-btn-finish" id="quiz-submit-btn" onclick="submitQuiz()" disabled>✓ Selesai & Lihat Pembahasan</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Sistem pembelajaran adaptif · Materi & Soal Silogisme TIU</footer>
+</div>
+
+<script>
+/**
+ * DATA MATERI ORIGINAL (TIDAK DIUBAH)
+ */
+const MATERI_DATA = [
+  {
+    id: 'dasar', title: 'Dasar sebelum masuk silogisme', chip: 'satu cerita, tiga istilah',
+    penjelasan: `<p>Coba lupain dulu soal ujian sebentar. Kita mulai dari permen dulu, baru nanti baliknya ke soal CPNS.</p>`,
+    materi: [
+      { situasi: 'Bayangkan kamu punya <b>toples permen</b>. SEMUA permen di dalam toples itu rasanya coklat — nggak ada rasa lain sama sekali. Kamu ambil satu permen dari toples itu, tanpa lihat dulu.', prompt: 'Coba jawab dulu: permen yang kamu ambil itu rasanya pasti apa?', jawaban: 'Pasti rasa <b>coklat</b>! Karena SEMUA permen di toples itu memang coklat, jadi permen manapun yang kamu ambil, nggak mungkin rasa lain. Nggak perlu lihat dulu pun kamu udah bisa mastiin.' },
+      { situasi: 'Sekarang toples yang lain. Di toples ini, cuma <b>SEBAGIAN</b> permennya rasa coklat — sisanya rasa lain (jeruk, mangga, kita nggak tahu persis apa). Kamu ambil satu permen tanpa lihat.', prompt: 'Coba jawab dulu: bisa nggak kamu mastiin permen yang kamu ambil itu rasa coklat?', jawaban: '<b>Nggak bisa dipastikan.</b> Karena cuma SEBAGIAN yang coklat, permen yang kamu ambil bisa aja coklat, bisa juga bukan — kita nggak tahu sampai beneran dicoba. Beda banget sama toples pertama tadi yang langsung pasti.' },
+      { situasi: 'Toples ketiga: <b>TIDAK ADA</b> permen rasa coklat sama sekali di situ — semuanya rasa lain. Kamu ambil satu permen.', prompt: 'Coba jawab dulu: mungkin nggak kamu dapat permen rasa coklat?', jawaban: '<b>Nggak mungkin!</b> Karena TIDAK ADA yang rasa coklat di toples itu, apapun yang kamu ambil, pasti BUKAN coklat. Ini sama pastinya kayak toples pertama, cuma kebalik arahnya.' },
+      { situasi: 'Nah, ternyata apa yang barusan kamu lakuin di ketiga toples itu ada namanya. Kalimat "semua/sebagian/tidak ada permen rasa coklat" itu namanya <b>premis</b> — semacam "info awal" yang kita anggap benar. Kesimpulan yang kamu tarik ("permen yang saya ambil pasti coklat", dst) itu namanya <b>konklusi</b> — jawaban akhirnya. Dan kata "semua", "sebagian", "tidak ada" itu namanya <b>kuantor</b>.', prompt: 'Ini bukan soal untuk dijawab — coba baca ulang tiga toples di atas sambil mikirin: "oh ini yang namanya premis" dan "oh ini yang namanya konklusi". Kalau udah kebayang, lanjut ke kotak berikutnya.', jawaban: 'Bagus. Sekarang tiga kata ini — premis, konklusi, kuantor — bakal terus dipakai. Yang penting diingat cuma satu: kalau premisnya "semua" atau "tidak ada", konklusinya PASTI. Kalau premisnya "sebagian", konklusinya NGGAK PASTI.' },
+      { situasi: 'Sekarang kita pindah dari toples permen ke soal ujian beneran. Di kantor tempat Dika bekerja ada aturan (premis): <i>semua orang yang datang terlambat harus lapor ke atasan langsung.</i> Hari ini, Dika datang terlambat.', prompt: 'Coba jawab dulu: pakai cara yang sama kayak toples permen tadi — apa yang pasti terjadi pada Dika?', jawaban: 'Dika <b>pasti lapor</b> ke atasan — persis kayak toples pertama tadi (kuantor "semua" = pasti). Di soal silogisme, premisnya biasanya ada dua: yang berisi aturan umum (di sini: "semua orang terlambat wajib lapor") disebut <b>premis mayor</b>, dan yang berisi fakta soal satu orang (di sini: "Dika terlambat") disebut <b>premis minor</b>. Kesimpulannya ("Dika lapor ke atasan") ya <b>konklusi</b>, sama seperti tadi. Susunan premis mayor + premis minor + konklusi ini namanya <b>silogisme</b>.' }
+    ],
+    notes: `<p class="intro-text">Ingat-ingat aja urutan belajarnya: permen dulu (biar kebayang), baru nama-namanya (premis, konklusi, kuantor), baru dipakai ke soal beneran (Dika). Kalau nanti ketemu soal yang bikin bingung, coba bayangin lagi toples permennya — apakah ini kayak toples "semua", "sebagian", atau "tidak ada"?</p>`,
+    questions: [
+      { q: 'Ada toples permen yang cuma SEBAGIAN isinya rasa strawberry. Kamu ambil satu permen. Bisa nggak dipastikan rasanya strawberry?', options: ['Bisa, pasti strawberry', 'Nggak bisa dipastikan', 'Pasti bukan strawberry', 'Pasti setengah strawberry setengah bukan'], correct: 1, explain: 'Sama seperti toples kedua — "sebagian" artinya nggak semua, jadi nggak bisa dipastikan.' },
+      { q: 'Kembali ke aturan Dika ("semua orang terlambat wajib lapor ke atasan"): bagian mana yang disebut premis minor?', options: ['"Semua orang terlambat wajib lapor ke atasan"', '"Dika terlambat"', '"Dika lapor ke atasan"', 'Tidak ada premis minor di sini'], correct: 1, explain: 'Premis minor itu fakta soal satu orang doang (Dika) — bukan aturan umum.' },
+      { q: 'Dari tiga toples permen (semua/sebagian/tidak ada), yang mana yang bikin kamu bisa langsung mastiin rasa permennya tanpa ragu?', options: ['Cuma toples "semua"', 'Cuma toples "sebagian"', 'Toples "semua" dan "tidak ada"', 'Ketiga toples sama-sama pasti'], correct: 2, explain: '"Semua" mastiin rasanya PASTI itu. "Tidak ada" mastiin rasanya PASTI bukan itu. Dua-duanya sama pastinya, cuma arahnya kebalik. "Sebagian" doang yang bikin ragu.' },
+      { q: 'Silogisme itu maksudnya...', options: ['Nebak-nebak asal, kayak main tebak-tebakan', 'Susunan premis + konklusi, yang kalau premisnya bener, kesimpulannya pasti bener juga', 'Cuma berlaku buat soal matematika', 'Kesimpulan yang kadang bener kadang nggak, kayak ramalan'], correct: 1, explain: 'Persis kayak toples permen — kalau premisnya (info awal soal toplesnya) bener, kesimpulan soal permen yang kamu ambil juga pasti bener.' }
+    ]
+  },
+  {
+    id: 'mayor-minor', title: 'Premis mayor dan premis minor', chip: 'aturan besar vs cerita kecil',
+    penjelasan: `<p>Ini kelanjutan langsung dari toples permen tadi, khusus buat dua istilah yang paling sering ketuker: <b>premis mayor</b> dan <b>premis minor</b>.</p><p>Cara paling gampang bedainnya: <b>premis mayor itu ATURAN BESAR</b> — berlaku buat sekelompok orang/benda sekaligus, biasanya ada kata "semua", "sebagian", atau "tidak ada". <b>Premis minor itu CERITA KECIL</b> — cuma ngomongin satu orang, satu benda, atau satu kelompok yang lebih sempit/spesifik dibanding premis mayor.</p><p>Yang sering bikin bingung: <b>bukan soal kalimat mana yang ditulis duluan</b> di soal — soal bisa nulis premis minor duluan, baru premis mayor belakangan. Cara ngenalinnya selalu dari ISINYA, bukan dari urutannya.</p>`,
+    materi: [
+      { situasi: 'Di sekolah ada peraturan: <i>"Semua murid kelas 6 wajib ikut acara perpisahan."</i> Budi adalah murid kelas 6.', prompt: 'Coba jawab dulu: mana yang ngomongin ATURAN BESAR (berlaku buat banyak murid), dan mana yang cuma ngomongin SATU orang (Budi)?', jawaban: '"Semua murid kelas 6 wajib ikut acara perpisahan" — ini ATURAN BESAR, berlaku buat banyak murid sekaligus, jadi ini <b>premis mayor</b>. "Budi murid kelas 6" — ini cuma ngomongin SATU orang doang (Budi), jadi ini <b>premis minor</b>. Gampangnya: mayor itu "besar" cakupannya, minor itu "kecil/spesifik" cakupannya.' },
+      { situasi: '<i>"Kevin adalah anggota klub sepak bola."</i> <i>"Semua anggota klub sepak bola latihan tiap Sabtu pagi."</i> (Perhatikan: urutannya dibalik dari contoh tadi.)', prompt: 'Coba jawab dulu: mana mayor, mana minor kali ini?', jawaban: 'Sama kayak tadi, cuma urutan penulisannya kebalik: <b>"Semua anggota klub sepak bola latihan tiap Sabtu pagi"</b> tetap jadi premis mayor (aturan besar, ada kata "semua"). <b>"Kevin adalah anggota klub sepak bola"</b> tetap jadi premis minor (cerita soal satu orang, Kevin). Ini buktinya: ngenalin mayor/minor itu dari ISI kalimatnya, bukan dari kalimat mana yang ditulis pertama di soal.' },
+      { situasi: '<i>"Semua kucing punya kumis."</i> <i>"Semua kucing anggora adalah kucing."</i> (Kali ini nggak ada nama orang sama sekali.)', prompt: 'Coba jawab dulu: mana mayor, mana minor? Petunjuk: dua-duanya sama-sama pakai kata "semua".', jawaban: '"Semua kucing punya kumis" = <b>premis mayor</b> (aturan paling umum, tentang kucing secara keseluruhan). "Semua kucing anggora adalah kucing" = <b>premis minor</b> (lebih sempit, cuma ngomongin SATU JENIS kucing doang — anggora — bukan kucing secara umum). Jadi premis minor nggak harus selalu ada nama orang seperti Budi atau Kevin — bisa juga kelompok yang lebih kecil/spesifik dibanding premis mayor. Intinya tetap sama: <b>mayor = cakupan lebih luas, minor = cakupan lebih sempit</b>.' }
+    ],
+    notes: `<table class="notes-table"><tr><th></th><th>Ciri-cirinya</th></tr><tr><td><b>Premis mayor</b></td><td>Aturan/pernyataan dengan cakupan lebih luas — biasanya ada kata semua/sebagian/tidak ada</td></tr><tr><td><b>Premis minor</b></td><td>Fakta dengan cakupan lebih sempit/spesifik — bisa nama orang, bisa juga sub-kelompok yang lebih kecil</td></tr></table><p class="intro-text" style="margin-top:14px;">Cara cepat pas ngerjain soal: jangan lihat kalimat mana yang ditulis duluan — bandingkan dua kalimatnya, mana yang cakupannya lebih luas (itu mayor), mana yang lebih sempit/spesifik (itu minor).</p>`,
+    questions: [
+      { q: '"Semua pegawai baru wajib ikut orientasi. Sinta pegawai baru." Mana yang premis mayor?', options: ['"Semua pegawai baru wajib ikut orientasi"', '"Sinta pegawai baru"', 'Dua-duanya sama-sama mayor', 'Tidak ada yang mayor'], correct: 0, explain: 'Ini aturan besar buat semua pegawai baru — cakupannya luas, jadi ini premis mayor.' },
+      { q: '"Rudi adalah anggota paduan suara. Semua anggota paduan suara berlatih tiap Kamis." Mana yang premis minor?', options: ['"Semua anggota paduan suara berlatih tiap Kamis"', '"Rudi adalah anggota paduan suara"', 'Keduanya minor', 'Tidak ada yang minor'], correct: 1, explain: 'Meski ditulis duluan, ini tetap premis minor karena cuma ngomongin satu orang (Rudi) — ngenalinnya dari isi, bukan urutan.' },
+      { q: '"Semua burung bisa terbang. Semua burung unta adalah burung." Mana yang premis minor?', options: ['"Semua burung bisa terbang"', '"Semua burung unta adalah burung"', 'Keduanya sama-sama mayor', 'Tidak dapat ditentukan'], correct: 1, explain: 'Meski sama-sama pakai kata "semua", kalimat ini lebih sempit (cuma soal burung unta, bukan burung secara umum) — jadi ini premis minor.' },
+      { q: 'Ciri utama premis mayor adalah...', options: ['Selalu ditulis paling akhir di soal', 'Berisi aturan/pernyataan yang cakupannya lebih luas/umum', 'Selalu menyebut nama orang', 'Selalu memakai kata "tidak ada"'], correct: 1, explain: 'Mayor dikenali dari cakupannya yang lebih luas, bukan dari posisi kalimat atau kata tertentu.' },
+      { q: 'Ciri utama premis minor adalah...', options: ['Berisi fakta yang cakupannya lebih sempit/spesifik dibanding premis mayor', 'Selalu ditulis pertama di soal', 'Selalu berupa pertanyaan', 'Tidak pernah muncul di soal silogisme'], correct: 0, explain: 'Minor dikenali dari cakupannya yang lebih sempit — bisa nama orang, bisa juga sub-kelompok kecil.' }
+    ]
+  },
+  {
+    id: 'variasi-kata', title: 'Variasi kata kuantor', chip: 'kata pertama bukan cuma "semua"',
+    penjelasan: `<p>Soal TIU jarang selalu memakai kata "semua" secara harfiah. Kata pertamanya bisa macam-macam, tapi maknanya tetap kembali ke salah satu dari tiga kuantor dasar — dan mengenali sinonim ini penting supaya tidak salah baca kekuatan sebuah premis.</p><p><b>Sinonim "semua"</b> (universal afirmatif): <i>setiap, seluruh, tiap-tiap, tidak satupun terkecuali</i>. Semua kata ini logikanya identik dengan "semua" — berlaku ke seluruh anggota tanpa kecuali.</p><p><b>Sinonim "sebagian"</b> (partikular): <i>beberapa, ada, sejumlah, tidak sedikit, sebagian besar</i>. Semua kata ini logikanya identik dengan "sebagian" — minimal satu anggota, sisanya tidak diketahui.</p><p><b>Sinonim "tidak ada"</b> (universal negatif): <i>tak satupun, tiada, tidak pernah ada</i>.</p><p>Yang paling sering menjebak: <b>"tidak semua" BUKAN sinonim dari "tidak ada"</b>. "Tidak semua X adalah Y" adalah ingkaran dari "semua X adalah Y" — dan seperti sudah dipelajari di blok Ingkaran, ingkaran dari "semua" adalah "sebagian tidak", bukan "tidak ada sama sekali". Jadi "tidak semua pegawai hadir" berarti minimal satu pegawai tidak hadir, tapi bisa saja sebagian lainnya tetap hadir — beda jauh dengan "tidak ada pegawai yang hadir" yang berarti benar-benar nol.</p><p>Satu pola kalimat lain yang butuh perhatian khusus: <b>"hanya X yang boleh Y"</b>. Kalimat ini secara logika berarti <b>"kalau boleh Y, maka pasti X"</b> (arahnya: boleh Y → X) — KEBALIKAN dari kalimat "semua X boleh Y" (yang berarti X → boleh Y). Gampang tertukar karena sama-sama menyebut X dan Y, tapi arah panahnya persis terbalik. Kata "hanya" menandakan X adalah syarat MUTLAK (necessary condition), bukan otomatis berarti setiap X pasti melakukan Y.</p>`,
+    materi: [
+      { situasi: '<i>"Setiap pelamar yang mendaftar formasi analis wajib mengunggah ijazah."</i>', prompt: 'Coba jawab dulu: apakah "setiap" di sini beda maknanya secara logika dari "semua"?', jawaban: 'Tidak beda — "setiap" adalah sinonim dari "semua", sama-sama kuantor universal afirmatif. Soal sengaja memvariasikan kata supaya peserta yang cuma menghafal kata "semua" jadi ragu, padahal maknanya persis sama.' },
+      { situasi: '<i>"Tidak semua pegawai negeri bekerja di kantor pusat."</i>', prompt: 'Coba jawab dulu: apakah ini sama artinya dengan "tidak ada pegawai negeri yang bekerja di kantor pusat"?', jawaban: 'Beda jauh! "Tidak semua X adalah Y" berarti "sebagian X bukan Y" — masih ada kemungkinan sebagian pegawai negeri TETAP bekerja di kantor pusat, cuma tidak semuanya. Sedangkan "tidak ada X yang Y" berarti benar-benar nol. Ini salah satu jebakan paling sering bikin salah paham.' },
+      { situasi: '<i>"Hanya pegawai tetap yang boleh mengajukan cuti besar."</i>', prompt: 'Coba jawab dulu: kalau ada seseorang yang boleh mengajukan cuti besar, apa yang pasti benar tentang orang itu?', jawaban: 'Orang itu pasti pegawai tetap. "Hanya X yang boleh Y" berarti "boleh Y → X" — arahnya kebalikan dari "semua X boleh Y" (yang berarti X → boleh Y). Jangan sampai tertukar arah panahnya.' },
+      { situasi: '<i>"Sebagian pegawai divisi A mengikuti sertifikasi internasional."</i> <i>"Deni pegawai divisi A."</i> Salah satu pilihan jawabannya berbunyi: <i>"Deni mungkin ikut sertifikasi, mungkin tidak."</i>', prompt: 'Coba jawab dulu: apakah pilihan berbunyi "mungkin" itu jawaban yang sah, atau harus dihindari karena kedengarannya tidak tegas?', jawaban: 'Itu jawaban yang sah — dan sering kali justru jawaban yang <b>benar</b>. Kata <b>"mungkin"</b> bukan kuantor premis (bukan pengganti "semua/sebagian/tidak ada") — ia biasanya muncul di <b>pilihan jawaban</b> sebagai cara mengungkapkan status <i>"tidak dapat dipastikan secara pasti"</i>. Karena premisnya cuma "sebagian", Deni bisa saja termasuk yang ikut sertifikasi atau tidak — dan itu persis makna "Deni mungkin ikut, mungkin tidak". Justru waspadai pilihan jawaban lain yang kedengarannya lebih tegas ("Deni pasti ikut sertifikasi") — itu overclaim yang tidak didukung premis "sebagian".' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Bentuk kalimat</th><th>Setara dengan</th></tr><tr><td>setiap, seluruh, tiap-tiap</td><td>semua</td></tr><tr><td>beberapa, ada, sejumlah</td><td>sebagian</td></tr><tr><td>tak satupun, tiada</td><td>tidak ada</td></tr><tr><td>tidak semua X adalah Y</td><td>sebagian X bukan Y (BUKAN "tidak ada")</td></tr><tr><td>hanya X yang boleh Y</td><td>boleh Y → X (arah terbalik dari "semua X boleh Y")</td></tr><tr><td>"X mungkin Y, mungkin tidak" (di pilihan jawaban)</td><td>Setara "tidak dapat dipastikan" — bukan kuantor premis, penanda ketidakpastian di jawaban</td></tr></table>`,
+    questions: [
+      { q: '"Tiap-tiap peserta lomba wajib membawa kartu identitas." Kuantor pada kalimat ini setara dengan...', options: ['Sebagian', 'Tidak ada', 'Semua', 'Tidak semua'], correct: 2, explain: '"Tiap-tiap" adalah sinonim dari "semua".' },
+      { q: '"Tidak semua anggota dewan hadir dalam rapat." Kesimpulan yang tepat adalah...', options: ['Tidak ada anggota dewan yang hadir', 'Sebagian anggota dewan tidak hadir (sebagian lain mungkin tetap hadir)', 'Semua anggota dewan tidak hadir', 'Semua anggota dewan hadir'], correct: 1, explain: '"Tidak semua" adalah ingkaran dari "semua" — hasilnya "sebagian tidak", bukan "tidak ada sama sekali".' },
+      { q: '"Hanya mahasiswa semester akhir yang boleh mengikuti program magang bersertifikat. Wati mengikuti program magang bersertifikat." Kesimpulannya...', options: ['Wati pasti mahasiswa semester akhir', 'Wati belum tentu mahasiswa semester akhir', 'Semua mahasiswa semester akhir mengikuti magang', 'Tidak dapat dipastikan'], correct: 0, explain: '"Hanya X yang boleh Y" berarti "boleh Y → X" — Wati mengikuti magang (boleh Y), maka Wati pasti X (mahasiswa semester akhir).' },
+      { q: '"Hanya kendaraan dengan stiker resmi yang boleh masuk area pabrik. Mobil ini tidak punya stiker resmi." Kesimpulannya...', options: ['Mobil ini boleh masuk area pabrik', 'Mobil ini tidak boleh masuk area pabrik', 'Tidak dapat dipastikan', 'Mobil ini akan diberi stiker resmi'], correct: 1, explain: 'Kontraposisi dari "boleh masuk → punya stiker": tidak punya stiker → tidak boleh masuk.' },
+      { q: '"Beberapa pegawai baru sudah menyelesaikan masa orientasi." Kuantor "beberapa" di sini setara dengan...', options: ['Semua', 'Sebagian', 'Tidak ada', 'Tidak semua'], correct: 1, explain: '"Beberapa" adalah sinonim dari "sebagian".' },
+      { q: '"Sebagian anggota organisasi menjabat sebagai pengurus inti. Farah adalah anggota organisasi ini." Pilihan jawaban manakah yang paling tepat?', options: ['Farah pasti pengurus inti', 'Farah mungkin pengurus inti, mungkin bukan', 'Farah pasti bukan pengurus inti', 'Semua anggota organisasi adalah pengurus inti'], correct: 1, explain: 'Premis "sebagian" tidak memberi info soal individu tertentu — "mungkin ya, mungkin tidak" adalah cara mengungkapkan status tidak dapat dipastikan, dan di sini itu jawaban yang tepat, bukan jawaban yang harus dihindari.' }
+    ]
+  },
+  {
+    id: 'tanpa-kuantor', title: 'Kalimat tanpa kata kuantor eksplisit', chip: 'default dibaca "semua"',
+    penjelasan: `<p>Banyak soal TIU tidak repot-repot menulis kata "semua" sama sekali. Premis mayor sering ditulis sebagai kalimat generik atau definisional, misalnya <i>"Mahasiswa berprestasi mendapat beasiswa"</i> — tanpa kuantor apapun di depannya. Aturan bacanya: kalimat generik semacam ini <b>dibaca sebagai pernyataan universal, setara "semua"</b> — yaitu "semua mahasiswa berprestasi mendapat beasiswa" — KECUALI soal secara eksplisit menyebut kuantor lain seperti "sebagian", "beberapa", atau "ada". Ini berlaku sama untuk kalimat definisi, ciri-ciri, atau aturan umum yang ditulis tanpa kuantor.</p><p>Sebaliknya, kalimat yang menyebut <b>subjek bernama atau spesifik</b> (nama orang, satu entitas tunggal seperti "Toko Pak Broto", "mobil ini") tidak butuh kuantor sama sekali — kalimat semacam ini otomatis berperan sebagai <b>premis minor</b>, fakta spesifik tentang satu anggota, langsung bisa digabung dengan premis mayor seperti biasa.</p><p>Yang paling penting untuk diwaspadai: begitu premis mayornya dibaca universal (P→Q), aturan modus ponens dan modus tollens yang sudah dipelajari tetap berlaku persis sama — menegaskan syarat (P) memberi kesimpulan pasti, menyangkal akibat (Q) juga memberi kesimpulan pasti (modus tollens), tapi menegaskan akibat atau menyangkal syarat tetap jatuh ke jebakan yang sama seperti sebelumnya, walau kuantornya tidak pernah dieja secara eksplisit.</p><p>Jebakan tambahan yang khas di tipe soal ini: soal sering menyisipkan <b>informasi tambahan yang terdengar berhubungan tapi sebenarnya tidak pernah dihubungkan oleh premis manapun</b> — misalnya info soal nilai akademik, harga, atau kerajinan bekerja yang kedengarannya related secara commonsense, padahal tidak ada satupun premis yang secara eksplisit menyatakan istilah itu setara atau berhubungan dengan istilah di premis utama. Info semacam ini harus diabaikan sepenuhnya saat menyimpulkan — jangan menambahkan hubungan yang tidak dinyatakan, sekalipun terasa masuk akal.</p>`,
+    materi: [
+      { situasi: '<i>"Mahasiswa berprestasi mendapat beasiswa."</i> <i>"Rina mahasiswa berprestasi."</i>', prompt: 'Coba jawab dulu: kalimat pertama tidak memakai kata "semua" — apakah itu berarti kuantornya otomatis "sebagian", atau tetap dibaca "semua"? Lalu apa kesimpulan untuk Rina?', jawaban: 'Tetap dibaca sebagai <b>"semua"</b> — kalimat generik tanpa kuantor eksplisit dianggap berlaku untuk seluruh anggota kelompok, setara "semua mahasiswa berprestasi mendapat beasiswa". Karena Rina mahasiswa berprestasi (menegaskan syarat), kesimpulannya: <b>Rina mendapat beasiswa</b> — modus ponens biasa, cuma kuantornya tersirat, bukan tersurat.' },
+      { situasi: 'Melanjutkan kasus di atas: <i>"Sinta tidak mendapat beasiswa, tapi nilai akademik Sinta tinggi."</i>', prompt: 'Coba jawab dulu: apa yang PASTI bisa disimpulkan tentang status Sinta sebagai mahasiswa berprestasi? Apakah nilai akademik tinggi otomatis berarti berprestasi?', jawaban: '<b>Sinta pasti bukan mahasiswa berprestasi</b> — modus tollens: karena "berprestasi → dapat beasiswa" dan Sinta tidak dapat beasiswa (akibat tidak terjadi), maka syaratnya (berprestasi) pasti tidak terpenuhi. Info "nilai akademik tinggi" adalah <b>jebakan murni</b> — tidak ada premis manapun yang menyatakan "nilai akademik tinggi" setara dengan "berprestasi", jadi info itu tidak boleh dipakai untuk membantah atau mengubah kesimpulan modus tollens di atas, sekalipun kedengarannya berhubungan.' },
+      { situasi: '<i>"Karyawan yang disiplin tidak pernah absen tanpa keterangan."</i> <i>"Joko dua kali absen tanpa keterangan bulan ini, walau dia dikenal rajin bekerja."</i>', prompt: 'Coba jawab dulu: apa yang bisa disimpulkan tentang status kedisiplinan Joko menurut definisi ini? Apakah "rajin bekerja" mengubah kesimpulannya?', jawaban: 'Joko <b>pasti bukan termasuk kategori "karyawan disiplin"</b> menurut definisi ini — modus tollens lagi: syarat "tidak pernah absen tanpa keterangan" gagal terpenuhi, jadi Joko tidak masuk kelompok tersebut. "Rajin bekerja" adalah info tambahan yang tidak pernah didefinisikan setara "disiplin" di premis manapun — tidak mengubah kesimpulan sama sekali.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Bentuk kalimat</th><th>Cara membacanya</th></tr><tr><td>Kalimat generik/definisional tanpa kuantor ("X melakukan Y")</td><td>Dibaca universal, setara "semua X melakukan Y"</td></tr><tr><td>Kalimat dengan subjek bernama/spesifik ("Rina adalah X")</td><td>Otomatis premis minor, tidak butuh kuantor</td></tr><tr><td>Info tambahan yang tidak pernah dihubungkan premis manapun</td><td>Abaikan — jangan menambah hubungan yang tidak dinyatakan</td></tr></table>`,
+    questions: [
+      { q: '"Pegawai berdedikasi menyelesaikan tugas tepat waktu. Budi menyelesaikan tugas tepat waktu." Bisakah disimpulkan Budi pegawai berdedikasi?', options: ['Bisa, karena Budi memenuhi ciri pegawai berdedikasi', 'Tidak bisa — menegaskan akibat tidak membuktikan syaratnya, sama seperti affirming the consequent', 'Bisa, karena kalimat tanpa kuantor otomatis berarti "hanya"', 'Tidak dapat dipastikan karena kalimat pertama tidak berkuantor'], correct: 1, explain: 'Kalimat generik tetap dibaca "semua pegawai berdedikasi menyelesaikan tugas tepat waktu" (P→Q universal); Budi cuma menegaskan Q, bukan P — jebakan yang sama seperti di modus ponens/tollens biasa.' },
+      { q: '"Produk berkualitas lolos uji kelayakan. Produk ini tidak lolos uji kelayakan, meski harganya mahal." Kesimpulan yang tepat tentang kualitas produk ini?', options: ['Produk ini pasti berkualitas karena mahal', 'Produk ini pasti bukan produk berkualitas', 'Tidak dapat dipastikan karena harga tidak disebut di premis manapun', 'Produk ini berkualitas sebagian'], correct: 1, explain: 'Modus tollens dari kalimat generik. Info "harganya mahal" adalah jebakan — tidak ada premis yang menghubungkan harga dengan kualitas.' },
+      { q: '"Guru profesional mengikuti pelatihan sertifikasi. Wati mengikuti pelatihan sertifikasi." Kesimpulan yang tepat?', options: ['Wati pasti guru profesional', 'Tidak dapat dipastikan Wati guru profesional atau bukan', 'Wati bukan guru profesional', 'Semua yang ikut pelatihan sertifikasi pasti guru profesional'], correct: 1, explain: 'Menegaskan akibat (ikut pelatihan) tidak membuktikan syaratnya (guru profesional) — affirming the consequent, meski kuantornya tersirat.' },
+      { q: '"Anggota tim yang solid saling mendukung saat kesulitan. Dito adalah anggota tim ini." Kalimat kedua berperan sebagai...', options: ['Premis mayor, karena menyebut kelompok', 'Premis minor, fakta spesifik tentang satu subjek', 'Konklusi', 'Ingkaran dari premis pertama'], correct: 1, explain: 'Kalimat dengan subjek bernama/spesifik (Dito) otomatis berperan sebagai premis minor, tidak butuh kuantor.' },
+      { q: '"Rumah tahan gempa dibangun dengan struktur beton bertulang. Rumah Pak Hasan dibangun dengan struktur beton bertulang, dan lokasinya di dekat pantai." Bisakah disimpulkan rumah Pak Hasan tahan gempa?', options: ['Bisa, karena strukturnya sesuai', 'Tidak bisa — menegaskan struktur (akibat dari definisi) tidak otomatis membuktikan status "tahan gempa" (syaratnya)', 'Bisa, karena lokasinya di dekat pantai', 'Tidak dapat dipastikan karena rumah bukan subjek bernama'], correct: 1, explain: 'Sama seperti kasus lain: definisi dibaca "semua rumah tahan gempa dibangun dengan struktur beton bertulang" (tahan gempa → struktur beton). Rumah Pak Hasan punya struktur itu (menegaskan akibat, bukan syarat) — affirming the consequent. Info lokasi dekat pantai adalah jebakan, tidak berhubungan dengan premis manapun.' }
+    ]
+  },
+  {
+    id: 'kategorial', title: 'Silogisme kategorial', chip: 'semua / sebagian / tidak ada',
+    penjelasan: `<p>Silogisme kategorial menggabungkan dua premis berkuantor untuk menghasilkan satu konklusi. Strukturnya selalu punya tiga istilah: <i>predikat</i> (cuma muncul di premis mayor dan konklusi), <i>subjek</i> (cuma muncul di premis minor dan konklusi), dan <b>middle term</b> (muncul di kedua premis, tapi tidak muncul di konklusi — istilah penengah yang menjembatani subjek dan predikat).</p><p>Validitasnya ditentukan oleh dua hal. Pertama, <b>kekuatan kuantor</b>: konklusi tidak boleh lebih kuat dari premis paling lemah. Kalau salah satu premis "sebagian", konklusi maksimal juga "sebagian". Kalau kedua premis "sebagian", atau kedua premis "tidak ada", tidak ada konklusi pasti yang bisa ditarik sama sekali.</p><p>Kedua, <b>penyebaran middle term</b>. Middle term harus mencakup <i>seluruh</i> anggota kelompoknya di minimal satu premis supaya sah menjembatani subjek dan predikat. Kalau middle term cuma disebut sebagai predikat dari sebuah pernyataan "semua", middle term itu tidak "tersebar" — disebut kesalahan <i>undistributed middle</i>.</p><p>Jebakan lain yang berdiri sendiri: <b>pembalikan pernyataan</b>, mengira "semua A adalah B" otomatis berarti "semua B adalah A". Ini keliru karena "semua A adalah B" cuma menyatakan A adalah himpunan bagian dari B, bukan menyatakan keduanya sama besar.</p>`,
+    materi: [
+      { situasi: '<i>Semua peserta lomba menulis wajib mengumpulkan naskah sebelum tanggal 1.</i> <i>Sebagian peserta lomba menulis juga ikut lomba fotografi.</i>', prompt: 'Coba jawab dulu: apa yang bisa kamu simpulkan tentang peserta lomba fotografi dan pengumpulan naskah?', jawaban: 'Karena premis kedua "sebagian", hasil gabungannya ikut melemah: <b>sebagian peserta lomba fotografi wajib mengumpulkan naskah sebelum tanggal 1</b>.' },
+      { situasi: 'Perhatikan: <i>"Semua guru bersertifikasi mengikuti pelatihan tahunan"</i> dan <i>"Rudi mengikuti pelatihan tahunan."</i>', prompt: 'Coba jawab dulu: bisakah disimpulkan Rudi adalah guru bersertifikasi?', jawaban: 'Tidak bisa. Middle term-nya ("mengikuti pelatihan tahunan") cuma predikat dari kelompok guru bersertifikasi, tidak tersebar — kesalahan <i>undistributed middle</i>.' },
+      { situasi: '<i>Tidak ada pegawai kontrak yang mendapat tunjangan pensiun.</i> <i>Tidak ada pegawai magang yang mendapat tunjangan pensiun.</i>', prompt: 'Coba jawab dulu: apa hubungan antara pegawai kontrak dan pegawai magang yang bisa disimpulkan?', jawaban: 'Tidak ada kesimpulan pasti — dua premis "tidak ada" tidak memberi info soal hubungan kontrak dan magang itu sendiri.' },
+      { situasi: '<i>Semua kepala sekolah adalah PNS.</i>', prompt: 'Coba jawab dulu: apakah otomatis berarti "semua PNS adalah kepala sekolah"?', jawaban: 'Tidak — jebakan pembalikan pernyataan. "Semua A adalah B" tidak bisa otomatis dibalik jadi "semua B adalah A".' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Kombinasi premis</th><th>Bisa ditarik konklusi pasti?</th></tr><tr><td>Semua + Semua</td><td>Ya, bisa "semua"</td></tr><tr><td>Semua + Sebagian</td><td>Ya, tapi ikut melemah jadi "sebagian"</td></tr><tr><td>Sebagian + Sebagian</td><td>Tidak bisa</td></tr><tr><td>Tidak ada + Tidak ada</td><td>Tidak bisa</td></tr></table>`,
+    questions: [
+      { q: '"Semua anggota koperasi wajib membayar iuran bulanan. Pak Joko bukan anggota koperasi." Kesimpulan yang tepat adalah...', options: ['Pak Joko wajib membayar iuran', 'Pak Joko tidak wajib membayar iuran', 'Tidak dapat ditarik kesimpulan pasti', 'Pak Joko sebagian membayar iuran'], correct: 2, explain: 'Premis hanya mengatur syarat untuk anggota koperasi, tidak bicara soal yang bukan anggota.' },
+      { q: '"Sebagian pegawai dinas mengikuti diklat kepemimpinan. Semua yang mengikuti diklat kepemimpinan berhak naik pangkat." Kesimpulannya...', options: ['Semua pegawai dinas berhak naik pangkat', 'Sebagian pegawai dinas berhak naik pangkat', 'Tidak ada pegawai dinas yang berhak naik pangkat', 'Tidak dapat ditarik kesimpulan'], correct: 1, explain: 'Premis pertama "sebagian" → hasil gabungannya ikut melemah.' },
+      { q: '"Tidak ada pejabat yang menerima gratifikasi. Semua kepala dinas adalah pejabat." Kesimpulannya...', options: ['Tidak ada kepala dinas yang menerima gratifikasi', 'Sebagian kepala dinas menerima gratifikasi', 'Semua kepala dinas menerima gratifikasi', 'Tidak dapat ditarik kesimpulan'], correct: 0, explain: 'Kepala dinas seluruhnya masuk kelompok pejabat, dan pejabat tidak beririsan dengan penerima gratifikasi.' },
+      { q: '"Sebagian dokumen sudah diverifikasi. Sebagian dokumen sudah ditandatangani." Kesimpulannya...', options: ['Semua dokumen sudah diverifikasi dan ditandatangani', 'Sebagian dokumen sudah diverifikasi dan ditandatangani', 'Tidak dapat ditarik kesimpulan pasti', 'Tidak ada dokumen yang diverifikasi'], correct: 2, explain: 'Dua premis sama-sama "sebagian" tanpa info irisan.' },
+      { q: '"Semua pejabat eselon I adalah PNS senior." Apakah bisa disimpulkan "semua PNS senior adalah pejabat eselon I"?', options: ['Bisa, karena keduanya sama saja', 'Tidak bisa — jebakan pembalikan pernyataan', 'Bisa, asal PNS itu sudah senior', 'Bisa, tapi hanya berlaku sebagian'], correct: 1, explain: '"Semua A adalah B" tidak bisa otomatis dibalik jadi "semua B adalah A".' },
+      { q: '"Semua peserta yang direkomendasikan ketua tim ikut wawancara akhir. Dedi ikut wawancara akhir." Kesimpulan yang tepat adalah...', options: ['Dedi direkomendasikan ketua tim', 'Tidak dapat dipastikan apakah Dedi direkomendasikan atau tidak', 'Dedi bukan peserta yang direkomendasikan', 'Dedi pasti bukan bagian dari proses ini'], correct: 1, explain: 'Ikut wawancara akhir bisa saja lewat jalur lain — middle term tidak tersebar.' }
+    ]
+  },
+  {
+    id: 'ponens-tollens', title: 'Modus ponens & modus tollens', chip: 'P → Q',
+    penjelasan: `<p>Silogisme hipotetik memakai pernyataan bersyarat "Jika P, maka Q" (P → Q). P disebut <b>anteseden</b> (syarat), Q disebut <b>konsekuen</b> (akibat).</p><p><b>Modus ponens</b>: P dipastikan benar → Q otomatis ikut benar. <b>Modus tollens</b>: Q dipastikan salah → P otomatis ikut salah (lewat kontraposisi).</p><p>Dua kombinasi lain tidak sah: <b>affirming the consequent</b> (Q benar tidak membuktikan P benar — bisa ada sebab lain) dan <b>denying the antecedent</b> (P salah tidak membuktikan Q salah — Q bisa tetap terjadi lewat jalur lain).</p>`,
+    materi: [
+      { situasi: '<i>Kalau hujan turun, jalan pasti basah</i> (P → Q). Sekarang hujan turun (P benar).', prompt: 'Coba jawab dulu: apa yang pasti terjadi pada jalan?', jawaban: 'Jalan pasti basah — <b>modus ponens</b>.' },
+      { situasi: '<i>Kalau hujan turun, jalan pasti basah</i> (P → Q). Jalan ternyata <b>kering</b> (Q salah).', prompt: 'Coba jawab dulu: apa yang bisa kamu simpulkan soal hujan hari ini?', jawaban: 'Hujan pasti tidak turun — <b>modus tollens</b>.' },
+      { situasi: '<i>Kalau hujan turun, jalan pasti basah</i> (P → Q). Jalan <b>basah</b> (Q benar).', prompt: 'Coba jawab dulu: apakah kamu bisa memastikan tadi hujan?', jawaban: 'Tidak bisa — jebakan <i>affirming the consequent</i>.' },
+      { situasi: '<i>Kalau hujan turun, jalan pasti basah</i> (P → Q). Ternyata <b>tidak hujan</b> (P salah).', prompt: 'Coba jawab dulu: apakah kamu bisa memastikan jalan tidak basah?', jawaban: 'Tidak bisa — jebakan <i>denying the antecedent</i>.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Yang diketahui</th><th>Kesimpulan pasti?</th></tr><tr><td>P terbukti benar</td><td>Ya → Q benar (modus ponens)</td></tr><tr><td>Q terbukti salah</td><td>Ya → P salah (modus tollens)</td></tr><tr><td>Q terbukti benar</td><td>Tidak bisa dipastikan</td></tr><tr><td>P terbukti salah</td><td>Tidak bisa dipastikan</td></tr></table>`,
+    questions: [
+      { q: '"Jika surat izin disetujui, kegiatan boleh dilaksanakan. Surat izin disetujui." Kesimpulannya...', options: ['Kegiatan boleh dilaksanakan', 'Kegiatan tidak boleh dilaksanakan', 'Tidak dapat dipastikan', 'Surat izin tidak disetujui'], correct: 0, explain: 'Modus ponens.' },
+      { q: '"Jika anggaran cair, proyek berjalan. Proyek tidak berjalan." Kesimpulannya...', options: ['Anggaran cair', 'Anggaran tidak cair', 'Tidak dapat dipastikan', 'Proyek pasti tertunda karena sebab lain'], correct: 1, explain: 'Modus tollens.' },
+      { q: '"Jika hujan turun, jalan basah. Jalan basah." Kesimpulannya...', options: ['Hujan turun', 'Hujan tidak turun', 'Tidak dapat dipastikan hujan atau tidak', 'Jalan pasti basah karena hujan'], correct: 2, explain: 'Affirming the consequent.' },
+      { q: '"Jika target tercapai, tim mendapat bonus. Target tidak tercapai." Kesimpulannya...', options: ['Tim tidak mendapat bonus', 'Tim mendapat bonus', 'Tidak dapat dipastikan tim mendapat bonus atau tidak', 'Target pasti tercapai bulan depan'], correct: 2, explain: 'Denying the antecedent.' }
+    ]
+  },
+  {
+    id: 'tollendo-ponens', title: 'Modus tollendo ponens', chip: 'P atau Q',
+    penjelasan: `<p>Memakai premis disjungsi "P atau Q" — minimal salah satu benar. Begitu satu pilihan disangkal, sisanya otomatis benar.</p><p><b>Disjungsi inklusif</b> mengizinkan kedua pilihan sama-sama benar. <b>Disjungsi eksklusif</b> menegaskan cuma salah satu yang mungkin benar. Arah "menegaskan satu pilihan otomatis menyingkirkan yang lain" HANYA sah untuk disjungsi eksklusif — arah "menyangkal satu pilihan" selalu sah di kedua jenis.</p>`,
+    materi: [
+      { situasi: 'Panitia bilang, <i>ketua kelas terpilih adalah Rara atau Fajar — cuma salah satu dari mereka.</i> Hasil pengumuman: <b>bukan Rara</b> yang terpilih.', prompt: 'Coba jawab dulu: siapa yang pasti terpilih?', jawaban: 'Fajar — satu pilihan gugur, sisanya otomatis benar.' },
+      { situasi: 'Panitia study tour bilang: <i>"Peserta boleh naik bus atau kereta."</i> Ternyata Dina naik bus.', prompt: 'Coba jawab dulu: apakah otomatis berarti Dina PASTI TIDAK naik kereta?', jawaban: 'Tidak otomatis — disjungsi inklusif, cuma menyebutkan pilihan tersedia.' }
+    ],
+    questions: [
+      { q: '"Juara pertama adalah tim Alpha atau tim Beta. Bukan tim Alpha." Kesimpulannya...', options: ['Tim Beta', 'Tim Alpha', 'Tidak dapat dipastikan', 'Kedua tim menang'], correct: 0, explain: 'Satu pilihan sudah gugur, sisanya otomatis yang benar.' },
+      { q: '"Rapat akan dipimpin Direktur atau Wakil Direktur. Direktur hadir memimpin rapat." Kesimpulannya...', options: ['Wakil Direktur juga ikut memimpin', 'Wakil Direktur pasti tidak memimpin rapat', 'Tidak dapat dipastikan soal Wakil Direktur', 'Direktur dan Wakil Direktur bergantian'], correct: 2, explain: 'Menegaskan satu pilihan benar tidak otomatis menyingkirkan pilihan lain pada disjungsi inklusif.' },
+      { q: '"Ruang rapat pakai proyektor A atau B, hanya satu yang bisa dipakai. Proyektor A sedang rusak." Kesimpulannya...', options: ['Proyektor B yang dipakai', 'Proyektor A yang dipakai', 'Tidak dapat dipastikan', 'Kedua proyektor rusak'], correct: 0, explain: 'Satu opsi gugur, dan soal menegaskan eksklusif.' },
+      { q: '"Pengumuman: piket hari ini Sinta atau Rangga, keduanya tidak mungkin piket bersamaan. Sinta piket hari ini." Kesimpulannya...', options: ['Rangga juga piket', 'Rangga pasti tidak piket hari ini', 'Tidak dapat dipastikan', 'Piket akan diundur'], correct: 1, explain: 'Soal tegas menyatakan eksklusif.' }
+    ]
+  },
+  {
+    id: 'berantai', title: 'Silogisme hipotetik berantai', chip: 'P→Q, Q→R',
+    penjelasan: `<p>Menggabungkan lebih dari satu pernyataan bersyarat: P→Q dan Q→R dirangkai jadi <b>P→R</b> — sifat <i>transitif</i>.</p><p>Kalau P (pangkal) benar, seluruh rantai sampai ujung ikut pasti benar (ponens berantai). Kalau R (ujung) salah, seluruh rantai ikut pasti salah mundur ke belakang (tollens berantai). Menegaskan R saja atau menyangkal P saja tetap jatuh ke jebakan yang sama seperti versi biasa.</p>`,
+    materi: [
+      { situasi: '<i>Jika si A rajin bekerja, maka ia dipromosikan</i> (P→Q). <i>Jika ia dipromosikan, maka gajinya naik</i> (Q→R). Si A rajin bekerja (P benar).', prompt: 'Coba jawab dulu: apa yang pasti terjadi pada gaji A?', jawaban: 'Gajinya pasti naik — P benar merambat sampai R.' },
+      { situasi: '<i>Jika mesin dirawat rutin, maka jarang rusak</i> (P→Q). <i>Jika jarang rusak, maka biaya perbaikan rendah</i> (Q→R). Biaya perbaikan mesin ini <b>rendah</b> (R benar).', prompt: 'Coba jawab dulu: apa yang bisa dipastikan soal perawatan mesin ini?', jawaban: 'Tidak dapat dipastikan — menegaskan ujung rantai (R) tidak membuktikan pangkalnya (P).' },
+      { situasi: '<i>Jika laporan diverifikasi, maka disetujui direktur</i> (P→Q). <i>Jika disetujui direktur, maka dana dapat dicairkan</i> (Q→R). Dana ini <b>tidak dapat dicairkan</b> (R salah).', prompt: 'Coba jawab dulu: apa yang pasti benar soal laporan ini?', jawaban: 'Laporan pasti <b>tidak diverifikasi, dan tidak disetujui direktur</b> — R salah menjalar mundur ke Q lalu ke P.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Rantai P→Q→R</th><th>Kesimpulan</th></tr><tr><td>P terbukti benar</td><td>Q dan R pasti benar</td></tr><tr><td>R terbukti salah</td><td>Q dan P pasti salah</td></tr><tr><td>R terbukti benar</td><td>Tidak dapat dipastikan P maupun Q</td></tr><tr><td>P terbukti salah</td><td>Tidak dapat dipastikan Q maupun R</td></tr></table>`,
+    questions: [
+      { q: '"Jika A rajin belajar, ia lulus ujian (P→Q). Jika ia lulus ujian, ia dapat beasiswa (Q→R). A rajin belajar." Kesimpulannya...', options: ['Ia lulus ujian, tapi belum tentu dapat beasiswa', 'Ia lulus ujian dan mendapat beasiswa', 'Tidak dapat dipastikan', 'Ia rajin belajar tapi tidak lulus'], correct: 1, explain: 'Modus ponens berantai.' },
+      { q: 'Dengan premis yang sama, kali ini diketahui "A mendapat beasiswa" (R benar). Kesimpulan yang tepat...', options: ['A pasti rajin belajar', 'A pasti lulus ujian', 'Tidak dapat dipastikan soal rajin belajar maupun lulus ujian', 'A pasti rajin belajar dan lulus ujian'], correct: 2, explain: 'Menegaskan ujung rantai tidak membuktikan pangkalnya.' },
+      { q: '"Jika laporan diverifikasi, disetujui direktur (P→Q). Jika disetujui direktur, dana dicairkan (Q→R). Dana ini tidak dicairkan." Kesimpulannya...', options: ['Laporan diverifikasi tapi tidak disetujui', 'Laporan tidak diverifikasi dan tidak disetujui direktur', 'Tidak dapat dipastikan', 'Direktur menyetujui tapi dana belum cair'], correct: 1, explain: 'Modus tollens berantai.' },
+      { q: '"Jika hujan, jalan basah (P→Q). Jika jalan basah, orang bawa payung (Q→R). Hari ini tidak hujan." Kesimpulannya...', options: ['Orang pasti tidak bawa payung', 'Orang pasti bawa payung', 'Tidak dapat dipastikan soal payung', 'Jalan pasti basah'], correct: 2, explain: 'Menyangkal pangkal rantai tidak memberi kesimpulan pasti soal Q maupun R.' }
+    ]
+  },
+  {
+    id: 'ingkaran', title: 'Ingkaran / negasi', chip: '¬(semua) = sebagian tidak',
+    penjelasan: `<p>Ingkaran adalah pernyataan yang membuktikan pernyataan aslinya salah. Prinsipnya: cukup satu kondisi yang membuat klaim tidak mungkin benar, bukan membuktikan kebalikan totalnya.</p><p>Ingkaran "semua A adalah B" = "sebagian A bukan B". Ingkaran "sebagian A adalah B" = "tidak ada A yang B". Ingkaran "tidak ada A yang B" = "sebagian A adalah B". Ingkaran "jika P maka Q" = "P terjadi, Q tidak terjadi". Ingkaran "P dan Q" = "bukan P, atau bukan Q". Ingkaran "P atau Q" = "bukan P, dan bukan Q".</p>`,
+    materi: [
+      { situasi: 'Ada yang bilang, "semua pegawai di kantor ini datang sebelum jam 8." Kamu mau membuktikan pernyataan itu salah.', prompt: 'Coba jawab dulu: cukup satu orang saja, atau harus semua orang datang telat?', jawaban: 'Cukup <b>satu orang saja</b>. Ingkaran "semua" adalah "sebagian tidak", bukan "tidak ada".' },
+      { situasi: 'Pengumuman: <i>"Peserta lolos jika mengumpulkan berkas lengkap DAN hadir tepat waktu."</i> Ternyata ada peserta yang dinyatakan tidak lolos.', prompt: 'Coba jawab dulu: harus dua-duanya gagal, atau cukup salah satu?', jawaban: 'Cukup salah satu saja. Ingkaran "P dan Q" adalah "bukan P, ATAU bukan Q".' },
+      { situasi: 'Aturan parkir: <i>"Kendaraan boleh parkir kalau menunjukkan STNK ATAU kartu member."</i> Satpam menolak sebuah mobil parkir.', prompt: 'Coba jawab dulu: apa yang pasti benar tentang mobil itu?', jawaban: 'Dua-duanya gagal sekaligus. Ingkaran "P atau Q" adalah "bukan P, DAN bukan Q".' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Pernyataan asli</th><th>Ingkaran yang benar</th></tr><tr><td>Semua A adalah B</td><td>Sebagian A bukan B</td></tr><tr><td>Sebagian A adalah B</td><td>Tidak ada A yang B</td></tr><tr><td>Tidak ada A yang B</td><td>Sebagian A adalah B</td></tr><tr><td>Jika P maka Q</td><td>P terjadi, tapi Q tidak terjadi</td></tr><tr><td>P dan Q</td><td>Bukan P, atau bukan Q</td></tr><tr><td>P atau Q</td><td>Bukan P, dan bukan Q</td></tr></table>`,
+    questions: [
+      { q: 'Ingkaran dari "Semua pegawai hadir tepat waktu" adalah...', options: ['Tidak ada pegawai yang hadir tepat waktu', 'Sebagian pegawai tidak hadir tepat waktu', 'Semua pegawai tidak hadir tepat waktu', 'Sebagian pegawai hadir tepat waktu'], correct: 1, explain: 'Ingkaran "semua" adalah "sebagian tidak".' },
+      { q: 'Ingkaran dari "Jika laporan salah, harus direvisi" adalah...', options: ['Jika laporan benar, tidak perlu direvisi', 'Laporan salah, tetapi tidak direvisi', 'Laporan benar dan direvisi', 'Jika laporan tidak salah, tidak direvisi'], correct: 1, explain: 'Ingkaran "jika P maka Q" adalah "P terjadi, Q tidak terjadi".' },
+      { q: 'Ingkaran dari "Anton lulus ujian dan mendapat sertifikat" adalah...', options: ['Anton tidak lulus ujian dan tidak mendapat sertifikat', 'Anton tidak lulus ujian, atau tidak mendapat sertifikat', 'Anton lulus ujian, atau tidak mendapat sertifikat', 'Anton tidak lulus ujian dan mendapat sertifikat'], correct: 1, explain: 'Ingkaran "P dan Q" adalah "bukan P, atau bukan Q".' },
+      { q: 'Ingkaran dari "Sebagian ruangan sudah dibersihkan" adalah...', options: ['Semua ruangan sudah dibersihkan', 'Semua ruangan belum dibersihkan', 'Tidak ada ruangan yang sudah dibersihkan', 'Sebagian ruangan belum dibersihkan'], correct: 2, explain: 'Ingkaran dari "sebagian" adalah "tidak ada".' },
+      { q: '"Aturan: pengajuan disetujui jika ada tanda tangan atasan atau stempel resmi. Pengajuan ini ditolak." Apa yang pasti benar?', options: ['Tidak ada tanda tangan atasan, atau tidak ada stempel (salah satu saja)', 'Tidak ada tanda tangan atasan DAN tidak ada stempel resmi (dua-duanya)', 'Ada tanda tangan tapi tidak ada stempel', 'Tidak dapat dipastikan'], correct: 1, explain: 'Ingkaran "P atau Q" adalah "bukan P dan bukan Q".' },
+      { q: '"Syarat lolos: nilai tulis di atas 60 DAN nilai wawancara di atas 60. Salah satu peserta dinyatakan tidak lolos." Apa yang pasti benar?', options: ['Kedua nilainya pasti di bawah 60', 'Minimal salah satu nilainya di bawah 60 (atau dua-duanya)', 'Nilai tulisnya pasti di bawah 60', 'Tidak dapat dipastikan sama sekali'], correct: 1, explain: 'Ingkaran "P dan Q" adalah "bukan P atau bukan Q".' }
+    ]
+  },
+  {
+    id: 'dua-premis', title: 'Silogisme 2 premis (pemanasan)', chip: 'bentuk standar',
+    penjelasan: `<p>Ini bentuk yang sudah kamu kuasai dari blok-blok sebelumnya: dua premis digabung langsung jadi satu konklusi, entah kategorial atau hipotetik, dengan satu middle term sebagai jembatan.</p>`,
+    materi: [
+      { situasi: '<i>Semua peserta ujian dinas membawa kartu ujian.</i> <i>Herman peserta ujian dinas.</i>', prompt: 'Coba jawab dulu (pemanasan): apa konklusinya, dan apa middle term-nya?', jawaban: 'Konklusi: Herman membawa kartu ujian. Middle term: "peserta ujian dinas".' },
+      { situasi: '<i>Jika anggaran disetujui, pelatihan dilaksanakan</i> (P→Q). <i>Pelatihan ini tidak dilaksanakan</i> (Q salah).', prompt: 'Coba jawab dulu (pemanasan): apa konklusinya, dan pola apa ini?', jawaban: 'Konklusi: anggaran tidak disetujui — modus tollens.' }
+    ],
+    questions: [
+      { q: '"Semua peserta lolos tes kesehatan berhak lanjut ke tahap wawancara. Sinta lolos tes kesehatan." Kesimpulannya...', options: ['Sinta berhak lanjut ke tahap wawancara', 'Sinta tidak berhak lanjut wawancara', 'Tidak dapat dipastikan', 'Sinta pasti lolos wawancara'], correct: 0, explain: 'Silogisme kategorial 2 premis standar.' },
+      { q: '"Jika kuota terpenuhi, pendaftaran ditutup. Pendaftaran belum ditutup." Kesimpulannya...', options: ['Kuota terpenuhi', 'Kuota belum terpenuhi', 'Tidak dapat dipastikan', 'Pendaftaran akan ditutup besok'], correct: 1, explain: 'Modus tollens 2 premis standar.' }
+    ]
+  },
+  {
+    id: 'tiga-premis', title: 'Silogisme 3 premis (polisilogisme)', chip: 'dua langkah berurutan',
+    penjelasan: `<p>Silogisme 3 premis (<b>polisilogisme</b>) sebenarnya cuma dua silogisme 2-premis yang ditumpuk. Caranya: <b>gabungkan dulu premis 1 dan 2</b> untuk mendapat <b>konklusi antara</b>, baru <b>gabungkan konklusi antara dengan premis 3</b> untuk konklusi akhir.</p><p>Konsekuensi pentingnya dua. Pertama, <b>kelemahan menjalar</b>: kalau langkah pertama melemah jadi "sebagian", konklusi akhir paling kuat juga cuma "sebagian" — walau premis ketiga "semua". Kedua, <b>rantai bisa putus total</b>: kalau premis 1 dan 2 sama-sama "sebagian" (atau sama-sama "tidak ada"), langkah pertama gagal total, dan langkah kedua otomatis ikut gagal — TIDAK PEDULI seberapa kuat premis ketiganya.</p><p>Strategi di kertas coretan: beri label huruf ke tiap kelompok sesuai urutan kemunculan, tulis tiap premis sebagai pasangan huruf, cek middle term-nya nyambung, selesaikan sepasang demi sepasang.</p>`,
+    materi: [
+      { situasi: '<i>Semua wartawan adalah anggota jurnalis profesional</i> (A–B). <i>Semua jurnalis profesional memiliki kartu pers resmi</i> (B–C). <i>Semua pemilik kartu pers resmi bebas masuk area terbatas</i> (C–D).', prompt: 'Coba jawab dulu: apa kesimpulan akhir untuk wartawan dan akses area terbatas? Kerjakan bertahap.', jawaban: '<b>Langkah 1</b>: semua wartawan = jurnalis profesional, semua jurnalis profesional = kartu pers → konklusi antara: semua wartawan memiliki kartu pers. <b>Langkah 2</b>: semua wartawan = kartu pers, semua pemilik kartu pers = bebas masuk area terbatas → <b>konklusi akhir: semua wartawan bebas masuk area terbatas.</b>' },
+      { situasi: '<i>Semua peserta pelatihan mengikuti evaluasi akhir</i> (A–B). <i>Sebagian yang mengikuti evaluasi akhir mendapat sertifikat kompetensi</i> (B–C). <i>Semua yang mendapat sertifikat kompetensi berhak ikut uji kompetensi lanjutan</i> (C–D).', prompt: 'Coba jawab dulu: apa kesimpulan akhir untuk peserta pelatihan dan uji kompetensi lanjutan?', jawaban: '<b>Langkah 1</b>: "semua"+"sebagian" → melemah jadi "sebagian". <b>Langkah 2</b>: tetap ikut "sebagian" meski premis 3 "semua". <b>Konklusi akhir: sebagian peserta pelatihan berhak ikut uji kompetensi lanjutan.</b>' },
+      { situasi: '<i>Sebagian pegawai mengikuti program mentoring</i> (A–B). <i>Sebagian yang mengikuti mentoring dipromosikan tahun ini</i> (B–C). <i>Semua yang dipromosikan tahun ini mendapat kenaikan gaji</i> (C–D).', prompt: 'Coba jawab dulu: apa kesimpulan akhir untuk pegawai dan kenaikan gaji? Hati-hati di langkah pertama.', jawaban: '<b>Langkah 1</b>: "sebagian"+"sebagian" — tidak menghasilkan konklusi pasti. Rantai putus di sini. <b>Konklusi akhir: tidak dapat dipastikan sama sekali</b>, meski premis ketiga "semua".' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Kondisi</th><th>Hasil rantai 3 premis</th></tr><tr><td>Semua tahap "semua"</td><td>Konklusi akhir "semua"</td></tr><tr><td>Salah satu tahap melemah jadi "sebagian"</td><td>Konklusi akhir ikut "sebagian"</td></tr><tr><td>Ada dua premis berurutan sama-sama "sebagian"/"tidak ada"</td><td>Rantai putus — tidak dapat dipastikan, apapun premis berikutnya</td></tr></table>`,
+    questions: [
+      { q: '"Semua dokter spesialis lulusan pendidikan spesialis. Semua lulusan pendidikan spesialis menempuh program residensi. Semua yang menempuh residensi mendapat sertifikat kompetensi." Kesimpulan tentang dokter spesialis dan sertifikat kompetensi?', options: ['Semua dokter spesialis mendapat sertifikat kompetensi', 'Sebagian dokter spesialis mendapat sertifikat kompetensi', 'Tidak dapat dipastikan', 'Tidak ada dokter spesialis yang mendapat sertifikat'], correct: 0, explain: 'Rantai penuh "semua-semua-semua".' },
+      { q: '"Semua anggota tim riset memiliki gelar magister. Sebagian pemilik gelar magister menerima beasiswa lanjutan. Semua penerima beasiswa lanjutan wajib publikasi jurnal." Kesimpulan tentang anggota tim riset dan kewajiban publikasi jurnal?', options: ['Semua anggota tim riset wajib publikasi jurnal', 'Sebagian anggota tim riset wajib publikasi jurnal', 'Tidak ada anggota tim riset yang wajib publikasi jurnal', 'Tidak dapat dipastikan'], correct: 1, explain: 'Langkah 1 melemah jadi "sebagian", terbawa ke langkah 2.' },
+      { q: '"Sebagian pegawai mengikuti program mentoring. Sebagian yang mengikuti mentoring dipromosikan tahun ini. Semua yang dipromosikan tahun ini mendapat kenaikan gaji." Kesimpulan tentang pegawai dan kenaikan gaji?', options: ['Sebagian pegawai mendapat kenaikan gaji', 'Semua pegawai mendapat kenaikan gaji', 'Tidak dapat dipastikan sama sekali', 'Tidak ada pegawai yang mendapat kenaikan gaji'], correct: 2, explain: 'Langkah 1 gagal total — rantai putus.' },
+      { q: '"Semua penerima beasiswa unggulan lulus TOEFL minimal 550. Semua yang lulus TOEFL minimal 550 mengikuti kelas persiapan studi luar negeri. Semua yang mengikuti kelas persiapan mendapat pendampingan mentor." Kesimpulan tentang penerima beasiswa unggulan dan pendampingan mentor?', options: ['Semua penerima beasiswa unggulan mendapat pendampingan mentor', 'Sebagian penerima beasiswa unggulan mendapat pendampingan mentor', 'Tidak dapat dipastikan', 'Tidak ada penerima beasiswa unggulan yang mendapat pendampingan mentor'], correct: 0, explain: 'Rantai penuh "semua-semua-semua" lagi.' },
+      { q: '"Sebagian anggota komunitas mengikuti webinar internasional. Sebagian yang mengikuti webinar internasional mendapat sertifikat digital. Semua yang mendapat sertifikat digital bisa mendaftar program lanjutan." Kesimpulan tentang anggota komunitas dan pendaftaran program lanjutan?', options: ['Sebagian anggota komunitas bisa mendaftar program lanjutan', 'Semua anggota komunitas bisa mendaftar program lanjutan', 'Tidak dapat dipastikan sama sekali', 'Tidak ada anggota komunitas yang bisa mendaftar'], correct: 2, explain: '"Sebagian"+"sebagian" di langkah 1 — rantai putus.' }
+    ]
+  },
+  {
+    id: 'susun-ulang', title: 'Premis yang tidak berurutan', chip: 'petakan dulu, baru simpulkan',
+    penjelasan: `<p>Soal asli jarang menuliskan premis dalam urutan rantai rapi. Caranya membongkar:</p><ol><li><b>Catat semua istilah unik</b> tanpa peduli urutan penulisan soal.</li><li><b>Tulis ulang tiap premis sebagai pasangan istilah</b>.</li><li><b>Cari istilah yang muncul di dua premis berbeda</b> — itu calon penghubung. Istilah yang cuma muncul sekali jadi ujung rantai (subjek dan predikat konklusi akhir).</li><li><b>Susun ulang</b> dari satu ujung ke ujung lain lewat istilah penghubung.</li></ol><p>Jebakan penting: <b>berbagi istilah saja tidak cukup — cek juga PERANNYA</b> (subjek atau predikat). Rantai sah butuh istilah penghubung berperan predikat di satu premis, subjek di premis lain. Kalau istilah yang sama muncul sebagai predikat di KEDUA premis, itu bukan rantai sah — cuma menunjukkan dua kelompok berbeda sama-sama bagian dari kelompok ketiga.</p><p>Jebakan lain: <b>premis pengecoh</b> — pernyataan tambahan yang istilahnya tidak nyambung ke rantai manapun. Begitu petamu jelas, premis pengecoh ini langsung kelihatan dan tinggal diabaikan.</p>`,
+    materi: [
+      { situasi: 'Tiga premis ini diberikan TIDAK berurutan: <i>"Semua yang mengikuti tes kompetensi mendapatkan sertifikat."</i> <i>"Semua pelamar yang lulus wawancara mengikuti tes kompetensi."</i> <i>"Rian lulus wawancara."</i>', prompt: 'Coba jawab dulu: petakan dulu istilahnya, lalu susun ulang rantainya — apa kesimpulan akhir untuk Rian?', jawaban: 'Istilah yang cuma muncul sekali: "Rian" dan "mendapatkan sertifikat". Rantai yang benar: <b>Rian → lulus wawancara → mengikuti tes kompetensi → mendapatkan sertifikat</b>. Konklusi akhir: <b>Rian mendapatkan sertifikat</b>.' },
+      { situasi: '<i>"Semua kucing adalah hewan berbulu."</i> <i>"Semua kelinci adalah hewan berbulu."</i>', prompt: 'Coba jawab dulu: apakah dua premis ini bisa disambung jadi kesimpulan tentang hubungan kucing dan kelinci?', jawaban: 'Tidak bisa — "hewan berbulu" jadi predikat di kedua premis, bukan penghubung sah. Cuma menunjukkan keduanya sama-sama bagian dari hewan berbulu.' },
+      { situasi: 'Empat pernyataan diberikan sekaligus: <i>"Semua peserta magang mengikuti orientasi."</i> <i>"Semua yang mengikuti orientasi mendapat modul panduan."</i> <i>"Semua pegawai tetap mendapat tunjangan transportasi."</i> <i>"Dani adalah peserta magang."</i>', prompt: 'Coba jawab dulu: premis mana yang sebenarnya tidak dipakai, dan apa kesimpulan akhir untuk Dani?', jawaban: 'Premis "pegawai tetap mendapat tunjangan transportasi" adalah <b>premis pengecoh</b>. Rantai yang dipakai: <b>Dani → peserta magang → mengikuti orientasi → mendapat modul panduan</b>.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Langkah</th><th>Yang dicek</th></tr><tr><td>1</td><td>Catat semua istilah unik, apapun urutan soal</td></tr><tr><td>2</td><td>Tulis tiap premis sebagai pasangan istilah</td></tr><tr><td>3</td><td>Cari istilah penghubung (muncul 2x) dan ujung rantai (muncul 1x)</td></tr><tr><td>4</td><td>Cek peran istilah penghubung — predikat di satu premis, subjek di premis lain</td></tr><tr><td>5</td><td>Susun ulang jadi rantai; abaikan premis yang tidak nyambung</td></tr></table>`,
+    questions: [
+      { q: 'Urutan acak: "Semua yang lulus tes kompetensi mendapatkan sertifikat. Semua pelamar yang lulus wawancara mengikuti tes kompetensi. Rian lulus wawancara." Kesimpulan akhir yang tepat?', options: ['Rian mendapatkan sertifikat', 'Rian belum tentu mendapatkan sertifikat', 'Tidak dapat dipastikan karena urutan premisnya terbalik', 'Sertifikat Rian tergantung tes lain yang tidak disebutkan'], correct: 0, explain: 'Setelah dipetakan ulang, rantainya tetap tersambung penuh.' },
+      { q: '"Semua kucing adalah hewan berbulu. Semua kelinci adalah hewan berbulu." Kesimpulan yang bisa ditarik tentang hubungan kucing dan kelinci?', options: ['Semua kucing adalah kelinci', 'Sebagian kucing adalah kelinci', 'Tidak dapat ditarik kesimpulan — "hewan berbulu" jadi predikat di dua premis', 'Tidak ada kucing yang kelinci'], correct: 2, explain: 'Istilah yang sama sebagai predikat di kedua premis tidak membentuk rantai sah.' },
+      { q: 'Empat pernyataan: "Semua peserta magang mengikuti orientasi. Semua yang mengikuti orientasi mendapat modul panduan. Semua pegawai tetap mendapat tunjangan transportasi. Dani adalah peserta magang." Kesimpulan yang tepat tentang Dani?', options: ['Dani mendapat modul panduan', 'Dani mendapat tunjangan transportasi', 'Tidak dapat dipastikan karena ada 4 premis', 'Dani adalah pegawai tetap'], correct: 0, explain: 'Premis tunjangan transportasi adalah premis pengecoh.' },
+      { q: 'Urutan acak: "Semua yang memiliki izin usaha membayar retribusi bulanan. Semua pedagang terdaftar memiliki izin usaha. Toko Pak Broto adalah pedagang terdaftar." Kesimpulan akhir tentang Toko Pak Broto?', options: ['Toko Pak Broto membayar retribusi bulanan', 'Toko Pak Broto belum tentu membayar retribusi', 'Tidak dapat dipastikan karena urutan premis terbalik', 'Toko Pak Broto tidak memiliki izin usaha'], correct: 0, explain: 'Rantai tetap sah meski ditulis terbalik.' },
+      { q: '"Semua guru honorer mengajar lebih dari 24 jam per minggu. Semua guru PNS mengajar lebih dari 24 jam per minggu." Kesimpulan yang tepat tentang hubungan guru honorer dan guru PNS?', options: ['Semua guru honorer adalah guru PNS', 'Sebagian guru honorer adalah guru PNS', 'Tidak dapat ditarik kesimpulan pasti tentang hubungan keduanya', 'Tidak ada guru honorer yang PNS'], correct: 2, explain: 'Predikat sama di kedua premis, bukan penghubung sah — sama seperti kasus kucing-kelinci.' }
+    ]
+  },
+  {
+    id: 'paragraf-naratif', title: 'Premis di dalam paragraf naratif', chip: 'pisahkan bumbu dari premis',
+    penjelasan: `<p>Sejauh ini semua premis di materi ini ditulis rapi, dipisah per kalimat. Di soal asli, tiga premis (bahkan kadang premis minor sekalipun) sering dibenamkan di dalam satu paragraf cerita — dikelilingi kalimat pembuka suasana, latar waktu, atau detail personal yang tidak ada hubungannya sama sekali dengan logika soal. Tugas pertama sebelum bisa menyimpulkan apapun adalah <b>memisahkan mana kalimat yang benar-benar premis, dan mana yang cuma bumbu narasi</b>.</p><p>Ciri kalimat yang kemungkinan besar premis: mengandung kata penghubung logis seperti <i>"wajib", "harus", "selalu", "otomatis", "jika...maka", "hanya...yang", "setiap", "siapa pun yang..."</i> — kata-kata ini menandakan kalimat itu menyatakan hubungan antara dua kelompok atau dua kondisi. Ciri kalimat yang biasanya cuma bumbu: deskripsi suasana ("suasana tegang", "cuaca mendukung"), latar waktu/tempat, alasan personal, atau detail biografis yang tidak disebut lagi di bagian manapun dari paragraf.</p><p>Cara kerja praktis: baca paragraf sekali penuh untuk menangkap konteks umum, lalu baca ulang kalimat per kalimat sambil bertanya "kalimat ini menghubungkan dua hal, atau cuma menceritakan sesuatu?" — coret/garis bawahi yang lolos uji itu, lalu perlakukan hasil garis bawahnya persis seperti premis-premis yang sudah dipelajari di blok-blok sebelumnya (kategorial, hipotetik, 3 premis, dst).</p><p>Satu jebakan tambahan yang sering muncul di gaya soal ini: kadang informasi yang diberikan tentang tokoh dalam cerita <b>hanya membawa rantai sampai separuh jalan</b>, bukan sampai kesimpulan akhir yang diminta. Paragraf sengaja ditulis panjang supaya pembaca lupa mengecek apakah rantainya benar-benar sampai ke ujung, atau berhenti di tengah.</p>`,
+    materi: [
+      { situasi: '<i>"Di sebuah kantor kecamatan, seluruh staf sedang bersiap menghadapi audit tahunan. Kepala kecamatan mengingatkan bahwa setiap pegawai yang menangani berkas kependudukan wajib mengikuti pelatihan e-KTP sebelum bertugas. Rudi, yang baru dipindahkan dari bagian umum minggu lalu, kini ditugaskan menangani berkas kependudukan di loket 3."</i>', prompt: 'Coba jawab dulu: kalimat mana saja yang benar-benar berfungsi sebagai premis, dan apa kesimpulannya untuk Rudi?', jawaban: 'Cuma dua kalimat yang berfungsi sebagai premis: <b>"setiap pegawai yang menangani berkas kependudukan wajib mengikuti pelatihan e-KTP"</b> (premis mayor) dan <b>"Rudi ditugaskan menangani berkas kependudukan"</b> (premis minor, tersembunyi di tengah kalimat naratif). Info soal audit tahunan dan Rudi baru pindah dari bagian umum minggu lalu itu cuma bumbu cerita. <b>Kesimpulan: Rudi wajib mengikuti pelatihan e-KTP.</b>' },
+      { situasi: '<i>"Suasana rapat evaluasi proyek pembangunan jalan berlangsung tegang karena keterlambatan yang sudah dua bulan. Salah satu anggota tim menjelaskan bahwa jika kontraktor tidak menyelesaikan tahap pertama sebelum akhir bulan, maka denda keterlambatan otomatis dikenakan sesuai kontrak. Laporan terbaru yang dibacakan pagi itu menunjukkan tahap pertama proyek ini belum juga rampung hingga hari terakhir bulan tersebut, meskipun cuaca belakangan cukup mendukung untuk kerja lapangan."</i>', prompt: 'Coba jawab dulu: apa premis-premisnya, dan apa kesimpulan akhirnya?', jawaban: 'Premis: <b>"jika kontraktor tidak menyelesaikan tahap pertama sebelum akhir bulan, maka denda otomatis dikenakan"</b> (P→Q) dan <b>"tahap pertama belum rampung hingga hari terakhir bulan"</b> (P benar). <b>Kesimpulan: denda keterlambatan otomatis dikenakan</b> (modus ponens). Suasana rapat yang tegang dan info cuaca mendukung itu bumbu narasi, tidak logis dipakai untuk menyimpulkan apapun.' },
+      { situasi: '<i>"Sebuah yayasan pendidikan tengah menyeleksi penerima beasiswa tahun ini. Ketua yayasan menjelaskan dalam sambutannya bahwa setiap pelamar yang lolos tahap wawancara akan mengikuti tes psikologi lanjutan, dan siapa pun yang dinyatakan lulus dari tes psikologi lanjutan otomatis masuk daftar penerima beasiswa. Salah satu pelamar, Made, disebutkan telah lolos tahap wawancara pekan lalu setelah melalui proses yang cukup panjang dan melelahkan."</i>', prompt: 'Coba jawab dulu: susun rantainya — apa kesimpulan akhir yang PALING tepat untuk Made? Hati-hati, cek apakah rantainya benar-benar sampai ujung.', jawaban: 'Premis 1: lolos wawancara → ikut tes psikologi lanjutan. Premis 2: lulus tes psikologi lanjutan → masuk daftar penerima beasiswa. Fakta tentang Made: <b>Made lolos wawancara</b> — ini baru membawa Made sampai "akan mengikuti tes psikologi lanjutan". <b>Tidak ada info bahwa Made LULUS tes psikologinya</b> — cuma "mengikuti" saja, bukan "lulus". Jadi kesimpulan yang valid <b>berhenti di tengah rantai</b>: Made pasti mengikuti tes psikologi lanjutan, TAPI belum bisa dipastikan Made masuk daftar penerima beasiswa. Paragraf yang panjang dan detail "proses melelahkan" sengaja membuat pembaca lupa mengecek bahwa rantainya belum benar-benar sampai ke ujung.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Ciri kalimat premis</th><th>Ciri kalimat bumbu</th></tr><tr><td>wajib, harus, selalu, otomatis, setiap, hanya...yang, jika...maka</td><td>deskripsi suasana, cuaca, perasaan tokoh</td></tr><tr><td>menghubungkan dua kelompok/kondisi</td><td>latar waktu atau tempat semata</td></tr><tr><td>disebut lagi (langsung/tersirat) di bagian lain paragraf</td><td>detail biografis yang berdiri sendiri, tidak disambung ke mana pun</td></tr></table>`,
+    questions: [
+      { q: '"Musim pendaftaran sekolah kedinasan tahun ini berlangsung ramai. Panitia menegaskan bahwa setiap pendaftar yang berkas administrasinya dinyatakan lengkap akan otomatis mendapat nomor ujian. Galih baru saja menerima notifikasi bahwa berkasnya dinyatakan lengkap oleh sistem, meski ia sempat khawatir karena mendaftar di hari terakhir." Kesimpulan yang tepat untuk Galih?', options: ['Galih pasti mendapat nomor ujian', 'Galih belum tentu mendapat nomor ujian karena mendaftar di hari terakhir', 'Tidak dapat dipastikan', 'Galih harus melengkapi berkas tambahan'], correct: 0, explain: '"Mendaftar di hari terakhir" dan "sempat khawatir" adalah bumbu narasi — premisnya cuma soal kelengkapan berkas, dan itu sudah terpenuhi.' },
+      { q: '"Manajer operasional mengingatkan bahwa jika target produksi tidak tercapai, maka bonus kuartalan seluruh tim otomatis ditangguhkan. Data yang dipaparkan sore itu, setelah proses perhitungan yang cukup rumit, menunjukkan bonus kuartalan tim produksi memang ditangguhkan bulan ini." Apa yang bisa dipastikan tentang target produksi?', options: ['Target produksi pasti tidak tercapai', 'Target produksi pasti tercapai', 'Tidak dapat dipastikan — bonus bisa ditangguhkan karena alasan lain', 'Target produksi akan dievaluasi ulang'], correct: 2, explain: 'Ini menegaskan akibat (bonus ditangguhkan), bukan syarat — affirming the consequent, meski dibungkus paragraf yang terkesan meyakinkan.' },
+      { q: '"Pembina tim menjelaskan bahwa setiap peserta yang lolos babak penyisihan akan mengikuti karantina pembinaan intensif, dan siapa pun yang dinyatakan lulus dari karantina tersebut otomatis mewakili provinsi di tingkat nasional. Naila dipastikan telah lolos babak penyisihan setelah pengumuman resmi pekan lalu." Kesimpulan yang PALING tepat untuk Naila?', options: ['Naila pasti mewakili provinsi di tingkat nasional', 'Naila pasti mengikuti karantina pembinaan intensif, tapi belum tentu mewakili provinsi', 'Naila pasti tidak mewakili provinsi', 'Tidak dapat dipastikan sama sekali, bahkan soal karantina'], correct: 1, explain: 'Rantainya baru sampai "lolos penyisihan → ikut karantina". Belum ada info Naila lulus dari karantina, jadi meloncat ke "mewakili provinsi" itu overclaim.' },
+      { q: '"Setelah proses lelang yang berlangsung ketat selama tiga minggu, dewan pengadaan mengumumkan pemenang proyek renovasi gedung. Salah satu syarat yang ditegaskan sejak awal: hanya vendor yang memiliki sertifikat ISO 9001 yang boleh mengikuti tahap penawaran akhir. PT Bangun Jaya, yang dikenal sebagai perusahaan keluarga sejak tiga generasi, dinyatakan lolos ke tahap penawaran akhir." Kesimpulan yang tepat tentang PT Bangun Jaya?', options: ['PT Bangun Jaya pasti memiliki sertifikat ISO 9001', 'PT Bangun Jaya belum tentu memiliki sertifikat ISO 9001', 'Tidak dapat dipastikan karena statusnya perusahaan keluarga', 'PT Bangun Jaya akan mendapat sertifikat ISO 9001 setelah menang'], correct: 0, explain: '"Hanya X yang boleh Y" berarti boleh Y → X. PT Bangun Jaya lolos ke tahap akhir (boleh Y), maka pasti X (punya ISO 9001). "Perusahaan keluarga tiga generasi" cuma bumbu.' },
+      { q: 'Manakah dari kalimat berikut, jika muncul dalam sebuah paragraf soal, yang BUKAN berfungsi sebagai premis logis (cuma bumbu narasi)?', options: ['"Setiap peserta yang terlambat lebih dari 15 menit tidak diperkenankan mengikuti ujian"', '"Suasana ruang ujian pagi itu terasa tegang karena hujan deras di luar"', '"Jika dokumen tidak lengkap, pendaftaran otomatis ditolak sistem"', '"Hanya peserta yang membawa kartu identitas asli yang boleh masuk ruangan"'], correct: 1, explain: 'Kalimat itu cuma deskripsi suasana — tidak menghubungkan dua kelompok atau kondisi apapun.' }
+    ]
+  },
+  {
+    id: 'tryout', title: 'Latihan campuran (tryout akhir)', chip: '14 soal',
+    introText: 'Empat belas soal ini mencampur semua yang sudah dipelajari — kategorial, hipotetik, tollendo ponens, berantai, ingkaran, 3 premis, premis acak, variasi kata kuantor, sampai kalimat tanpa kuantor eksplisit — dibungkus kalimat birokrasi mirip soal TIU asli.',
+    questions: [
+      { q: '"Semua PNS wajib mengikuti apel pagi. Sebagian pegawai honorer mengikuti apel pagi." Kesimpulannya...', options: ['Semua pegawai honorer adalah PNS', 'Sebagian pegawai honorer adalah PNS', 'Tidak dapat ditarik kesimpulan pasti tentang status mereka', 'Semua pegawai honorer wajib apel pagi'], correct: 2, explain: 'Ikut apel tidak otomatis berarti PNS — middle term tidak tersebar.' },
+      { q: '"Jika cuti disetujui atasan, pegawai boleh tidak masuk kerja. Budi tidak masuk kerja." Kesimpulannya...', options: ['Cuti Budi disetujui atasan', 'Cuti Budi tidak disetujui atasan', 'Tidak dapat dipastikan alasan Budi tidak masuk', 'Budi pasti melanggar aturan'], correct: 2, explain: 'Affirming the consequent.' },
+      { q: '"Tidak ada dokumen rahasia yang boleh difoto. File ini boleh difoto." Kesimpulannya...', options: ['File ini adalah dokumen rahasia', 'File ini bukan dokumen rahasia', 'Tidak dapat dipastikan', 'File ini akan menjadi rahasia'], correct: 1, explain: 'Pola modus tollens kategorial.' },
+      { q: '"Ketua RT dipilih dari Pak Amir atau Pak Budi. Pak Amir mengundurkan diri sebagai calon." Kesimpulannya...', options: ['Pak Budi terpilih sebagai ketua RT', 'Pak Amir tetap bisa terpilih', 'Tidak dapat dipastikan', 'Pemilihan diulang dari awal'], correct: 0, explain: 'Modus tollendo ponens.' },
+      { q: 'Ingkaran dari "Semua berkas lengkap sebelum diproses" adalah...', options: ['Sebagian berkas tidak lengkap sebelum diproses', 'Tidak ada berkas yang lengkap', 'Semua berkas tidak lengkap', 'Berkas diproses meski tidak lengkap semua'], correct: 0, explain: 'Ingkaran "semua" tetap "sebagian tidak".' },
+      { q: '"Semua kepala bidang adalah pejabat struktural." Apakah bisa disimpulkan "semua pejabat struktural adalah kepala bidang"?', options: ['Bisa, karena artinya sama', 'Tidak bisa — jebakan pembalikan pernyataan', 'Bisa, kalau jumlah pejabatnya sedikit', 'Tidak dapat dipastikan'], correct: 1, explain: 'Pembalikan "semua A=B" jadi "semua B=A" tidak sah.' },
+      { q: '"Jika laporan diverifikasi, disetujui direktur. Jika disetujui direktur, dana dicairkan. Laporan ini diverifikasi." Kesimpulannya...', options: ['Dana pasti dicairkan', 'Dana belum tentu dicairkan', 'Direktur belum tentu menyetujui', 'Tidak dapat dipastikan sama sekali'], correct: 0, explain: 'Modus ponens berantai.' },
+      { q: '"Semua peserta pelatihan wajib evaluasi. Sebagian yang evaluasi dapat sertifikat. Semua yang dapat sertifikat berhak uji lanjutan." Kesimpulan tentang peserta pelatihan dan uji lanjutan?', options: ['Semua peserta pelatihan berhak uji lanjutan', 'Sebagian peserta pelatihan berhak uji lanjutan', 'Tidak ada yang berhak uji lanjutan', 'Tidak dapat dipastikan'], correct: 1, explain: 'Kelemahan "sebagian" di langkah 1 menjalar ke konklusi akhir — silogisme 3 premis.' },
+      { q: 'Urutan acak: "Semua yang memiliki NPWP wajib lapor SPT. Semua pegawai tetap memiliki NPWP. Dedi adalah pegawai tetap." Kesimpulan akhir tentang Dedi?', options: ['Dedi wajib lapor SPT', 'Dedi belum tentu wajib lapor SPT', 'Tidak dapat dipastikan karena urutan premis acak', 'Dedi tidak memiliki NPWP'], correct: 0, explain: 'Setelah dipetakan ulang, rantainya tetap tersambung: Dedi → pegawai tetap → NPWP → wajib lapor SPT.' },
+      { q: '"Tiap-tiap kendaraan dinas wajib menjalani uji emisi tahunan. Mobil B 1234 XY adalah kendaraan dinas." Kesimpulannya?', options: ['Mobil itu wajib menjalani uji emisi tahunan', 'Mobil itu belum tentu wajib uji emisi', 'Tidak dapat dipastikan', 'Mobil itu dikecualikan dari uji emisi'], correct: 0, explain: '"Tiap-tiap" setara "semua" — silogisme kategorial standar.' },
+      { q: '"Hanya peserta yang lolos seleksi berkas yang diundang tes wawancara. Broto tidak diundang tes wawancara." Kesimpulannya?', options: ['Broto lolos seleksi berkas', 'Broto tidak lolos seleksi berkas', 'Tidak dapat dipastikan', 'Broto akan diundang minggu depan'], correct: 1, explain: 'Kontraposisi dari "diundang → lolos berkas": tidak diundang → tidak lolos berkas.' },
+      { q: '"Jika rapat dihadiri kuorum, keputusan sah. Keputusan rapat ini tidak sah." Kesimpulannya...', options: ['Rapat dihadiri kuorum', 'Rapat tidak dihadiri kuorum', 'Tidak dapat dipastikan kehadiran kuorum', 'Keputusan akan diulang minggu depan'], correct: 1, explain: 'Modus tollens langsung.' },
+      { q: '"Pemimpin yang visioner merancang rencana jangka panjang. Bu Nita tidak merancang rencana jangka panjang, meski pengalaman kerjanya sudah 15 tahun." Kesimpulan tentang Bu Nita?', options: ['Bu Nita pasti pemimpin visioner karena pengalamannya lama', 'Bu Nita pasti bukan termasuk kategori "pemimpin visioner" menurut definisi ini', 'Tidak dapat dipastikan', 'Pengalaman 15 tahun otomatis berarti visioner'], correct: 1, explain: 'Kalimat generik dibaca "semua pemimpin visioner merancang rencana jangka panjang" — Bu Nita gagal syarat ini (modus tollens). Info pengalaman kerja adalah jebakan, tidak dihubungkan premis manapun.' },
+      { q: '"Vendor terpercaya mengirim barang sesuai jadwal. Vendor ini mengirim barang sesuai jadwal." Kesimpulan yang tepat?', options: ['Vendor ini pasti vendor terpercaya', 'Tidak dapat dipastikan vendor ini terpercaya atau bukan', 'Vendor ini pasti bukan vendor terpercaya', 'Semua vendor yang tepat jadwal pasti terpercaya'], correct: 1, explain: 'Menegaskan akibat (tepat jadwal) tidak membuktikan syaratnya (terpercaya) — affirming the consequent, meski premisnya tidak memakai kata "semua".' }
+    ]
+  }
+];
+
+/**
+ * SYSTEM VARIABLES
+ */
+const letters = ['A','B','C','D','E'];
+let materiAnswered = 0, materiCorrect = 0;
+let tryoutAnswered = 0, tryoutCorrect = 0;
+
+// Quiz state
+let currentPacket = null;
+let userAnswers = [];      // array of selected index (null = unanswered)
+let quizSubmitted = false;
+
+/**
+ * TAB SWITCHER
+ */
+function switchTab(tabName, event) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + tabName).classList.add('active');
+  event.target.classList.add('active');
+}
+
+/**
+ * SCOREBOARD UPDATERS
+ */
+function updateMateriScore(){ 
+  document.getElementById('materi-score').textContent = materiCorrect + ' / ' + materiAnswered; 
+}
+function updateTryoutScore(){ 
+  document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered; 
+}
+
+/**
+ * RENDER FUNCTIONS (MATERI) - UNCHANGED
+ */
+function buildMateri(section){
+  const wrap = document.createElement('div'); wrap.className = 'materi-block';
+  if (section.penjelasan){
+    const pj = document.createElement('div'); pj.className = 'penjelasan'; pj.innerHTML = section.penjelasan;
+    wrap.appendChild(pj);
+  }
+  if (section.materi && section.materi.length){
+    section.materi.forEach(sc => {
+      const block = document.createElement('div'); block.className = 'scenario';
+      const sit = document.createElement('p'); sit.className = 'situasi'; sit.innerHTML = '<b>Situasi:</b> ' + sc.situasi;
+      const prm = document.createElement('p'); prm.className = 'prompt'; prm.textContent = sc.prompt;
+      const btn = document.createElement('button'); btn.className = 'reveal-btn'; btn.textContent = 'Lihat jawaban';
+      const ans = document.createElement('div'); ans.className = 'answer'; ans.innerHTML = '<b>Jawaban:</b> ' + sc.jawaban;
+      btn.addEventListener('click', () => {
+        ans.classList.toggle('show');
+        btn.textContent = ans.classList.contains('show') ? 'Sembunyikan jawaban' : 'Lihat jawaban';
+      });
+      block.appendChild(sit); block.appendChild(prm); block.appendChild(btn); block.appendChild(ans);
+      wrap.appendChild(block);
+    });
+  } else if (section.introText){
+    const p = document.createElement('p'); p.className = 'intro-text'; p.textContent = section.introText;
+    wrap.appendChild(p);
+  }
+  if (section.notes){ const notes = document.createElement('div'); notes.innerHTML = section.notes; wrap.appendChild(notes); }
+  return wrap;
+}
+
+function renderQuestions(container, questions, dotsContainer) {
+  questions.forEach((item, qi) => {
+    const qBlock = document.createElement('div'); qBlock.className = 'question';
+    const qText = document.createElement('p'); qText.className = 'q-text'; qText.textContent = (qi + 1) + '. ' + item.q;
+    qBlock.appendChild(qText);
+    const opts = document.createElement('div'); opts.className = 'options';
+    const explainBox = document.createElement('div'); explainBox.className = 'explain';
+    
+    item.options.forEach((optText, oi) => {
+      const opt = document.createElement('div'); opt.className = 'option';
+      opt.innerHTML = `<span class="bubble">${letters[oi]}</span><span>${optText}</span>`;
+      opt.addEventListener('click', () => {
+        if (opts.dataset.locked) return;
+        opts.dataset.locked = '1'; 
+        materiAnswered++;
+        const isCorrect = oi === item.correct;
+        if (isCorrect) materiCorrect++;
+        
+        [...opts.children].forEach((el, i) => {
+          el.classList.add('locked');
+          if (i === item.correct) el.classList.add('reveal-correct');
+          if (i === oi && !isCorrect) el.classList.add('chosen-wrong');
+          if (i === oi && isCorrect) el.classList.add('chosen-correct');
+        });
+        
+        explainBox.className = 'explain show ' + (isCorrect ? 'good' : 'bad');
+        explainBox.innerHTML = '<b>' + (isCorrect ? 'Benar. ' : 'Kurang tepat. ') + '</b>' + item.explain;
+        
+        if(dotsContainer && dotsContainer.children[qi]) {
+          dotsContainer.children[qi].classList.add(isCorrect ? 'correct' : 'wrong');
+        }
+        updateMateriScore();
+      });
+      opts.appendChild(opt);
+    });
+    qBlock.appendChild(opts); qBlock.appendChild(explainBox);
+    container.appendChild(qBlock);
+  });
+}
+
+function buildTopic(section, idx){
+  const topic = document.createElement('section');
+  topic.className = 'topic' + (idx === 0 ? ' open' : '');
+  topic.id = section.id;
+  const head = document.createElement('button'); head.className = 'topic-head';
+  head.innerHTML = `<span class="th-left"><h2>${section.title}</h2><span class="chip">${section.chip}</span></span>`;
+  const dots = document.createElement('span'); dots.className = 'topic-dots';
+  section.questions.forEach(() => { const d = document.createElement('span'); d.className = 'dot'; dots.appendChild(d); });
+  const chevron = document.createElement('span'); chevron.className = 'chevron'; chevron.innerHTML = '&#9662;';
+  const rightWrap = document.createElement('span');
+  rightWrap.style.display = 'flex'; rightWrap.style.alignItems = 'center'; rightWrap.style.gap = '10px';
+  rightWrap.appendChild(dots); rightWrap.appendChild(chevron);
+  head.appendChild(rightWrap);
+  head.addEventListener('click', () => { topic.classList.toggle('open'); });
+
+  const body = document.createElement('div'); body.className = 'topic-body';
+  const inner = document.createElement('div'); inner.className = 'topic-inner';
+
+  const materiLabel = document.createElement('div'); materiLabel.className = 'section-label'; materiLabel.textContent = 'Materi';
+  inner.appendChild(materiLabel);
+  inner.appendChild(buildMateri(section));
+
+  const latihanLabel = document.createElement('div'); latihanLabel.className = 'section-label second';
+  latihanLabel.textContent = 'Latihan · ' + section.questions.length + ' soal';
+  inner.appendChild(latihanLabel);
+
+  renderQuestions(inner, section.questions, dots);
+
+  body.appendChild(inner); topic.appendChild(head); topic.appendChild(body);
+  return topic;
+}
+
+// Initialize Materi
+const materiContainer = document.getElementById('topics');
+MATERI_DATA.forEach((section, idx) => { materiContainer.appendChild(buildTopic(section, idx)); });
+
+/**
+ * PACKET LOADER
+ */
+async function loadPackets() {
+  const container = document.getElementById('packet-container');
+  const titleEl = document.getElementById('packet-title');
+  const descEl = document.getElementById('packet-desc');
+  
+  try {
+    const response = await fetch('manifest.json');
+    if (!response.ok) throw new Error('Manifest not found');
+    const manifest = await response.json();
+    
+    titleEl.textContent = manifest.judul || 'Bank Soal';
+    descEl.textContent = manifest.deskripsi || '';
+    
+    container.innerHTML = '';
+    if (!manifest.paket || manifest.paket.length === 0) {
+      container.innerHTML = '<div class="empty-state">Belum ada paket soal yang tersedia.</div>';
+      return;
+    }
+
+    manifest.paket.forEach((pkt, idx) => {
+      const card = document.createElement('div');
+      card.className = 'packet-card';
+      card.innerHTML = `
+        <div class="packet-title">${pkt.nama}</div>
+        <div class="packet-desc">${pkt.deskripsi || 'Paket latihan silogisme TIU'}</div>
+        <div class="packet-meta">
+          <span class="packet-badge">${pkt.file}</span>
+          <span>Paket ${idx + 1}</span>
+        </div>
+      `;
+      card.addEventListener('click', () => startPacket(pkt));
+      container.appendChild(card);
+    });
+
+  } catch (err) {
+    titleEl.textContent = 'Bank Soal Silogisme TIU CPNS';
+    descEl.textContent = 'Pastikan file manifest.json tersedia di folder yang sama.';
+    container.innerHTML = `
+      <div class="empty-state">
+        <strong>manifest.json belum ditemukan</strong><br>
+        Buat file manifest.json di folder yang sama agar paket soal bisa dimuat.<br>
+        <small style="opacity:0.7">Error: ${err.message}</small>
+      </div>
+    `;
+  }
+}
+
+loadPackets();
+
+/**
+ * ========== QUIZ ENGINE - ALL QUESTIONS AT ONCE ==========
+ */
+async function startPacket(pkt) {
+  document.getElementById('packet-list-view').classList.add('hidden');
+  document.getElementById('quiz-view').classList.add('active');
+  document.getElementById('quiz-packet-name').textContent = pkt.nama;
+  
+  // Show loading
+  document.getElementById('quiz-body').innerHTML = `
+    <div class="loading-state">
+      <div class="loading-spinner"></div>
+      <div>Memuat soal dari <b>${pkt.file}</b>...</div>
+    </div>
+  `;
+  document.getElementById('quiz-footer').style.display = 'none';
+  
+  try {
+    const response = await fetch(pkt.file);
+    if (!response.ok) throw new Error('File tidak ditemukan');
+    const data = await response.json();
+    
+    currentPacket = data;
+    userAnswers = new Array(data.soal.length).fill(null);
+    quizSubmitted = false;
+    
+    document.getElementById('quiz-total-num').textContent = data.soal.length;
+    document.getElementById('quiz-footer').style.display = 'block';
+    
+    renderAllQuestions();
+    updateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } catch (err) {
+    document.getElementById('quiz-body').innerHTML = `
+      <div class="empty-state">
+        <strong>Gagal memuat ${pkt.file}</strong><br>
+        Pastikan file JSON paket soal tersedia.<br>
+        <small style="opacity:0.7">Error: ${err.message}</small>
+      </div>
+    `;
+    setTimeout(() => exitQuiz(), 2000);
+  }
+}
+
+function exitQuiz() {
+  document.getElementById('packet-list-view').classList.remove('hidden');
+  document.getElementById('quiz-view').classList.remove('active');
+  currentPacket = null;
+  userAnswers = [];
+  quizSubmitted = false;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderAllQuestions() {
+  const body = document.getElementById('quiz-body');
+  body.innerHTML = '';
+  
+  // Question Navigator (mini map for quick jump)
+  const nav = document.createElement('div');
+  nav.className = 'quiz-nav';
+  nav.id = 'quiz-nav';
+  const navTitle = document.createElement('div');
+  navTitle.className = 'quiz-nav-title';
+  navTitle.textContent = 'Navigasi Soal';
+  nav.appendChild(navTitle);
+  
+  currentPacket.soal.forEach((soal, qi) => {
+    const dot = document.createElement('a');
+    dot.className = 'quiz-nav-dot';
+    dot.textContent = qi + 1;
+    dot.href = '#q-' + qi;
+    dot.id = 'nav-dot-' + qi;
+    dot.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById('q-' + qi);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+    nav.appendChild(dot);
+  });
+  body.appendChild(nav);
+  
+  // Render each question card
+  currentPacket.soal.forEach((soal, qi) => {
+    const card = document.createElement('div');
+    card.className = 'quiz-q-card';
+    card.id = 'q-' + qi;
+    
+    // Question number badge
+    const numBadge = document.createElement('div');
+    numBadge.className = 'quiz-q-num';
+    numBadge.textContent = `SOAL ${qi + 1}`;
+    card.appendChild(numBadge);
+    
+    // Question text ONLY (no premis, no tipe during answering)
+    const qText = document.createElement('p');
+    qText.className = 'quiz-q-text';
+    qText.textContent = soal.pertanyaan;
+    card.appendChild(qText);
+    
+    // Options
+    const optsWrap = document.createElement('div');
+    optsWrap.className = 'quiz-opts';
+    optsWrap.id = 'opts-' + qi;
+    
+    soal.opsi.forEach((optText, oi) => {
+      const opt = document.createElement('div');
+      opt.className = 'quiz-opt';
+      opt.id = `opt-${qi}-${oi}`;
+      
+      const match = optText.match(/^([A-E])\.\s*(.+)$/s);
+      const letter = match ? match[1] : letters[oi];
+      const text = match ? match[2] : optText;
+      
+      opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
+      
+      // Restore previous selection if any
+      if (userAnswers[qi] === oi) {
+        opt.classList.add('selected');
+      }
+      
+      opt.addEventListener('click', () => handleOptionSelect(qi, oi));
+      optsWrap.appendChild(opt);
+    });
+    
+    card.appendChild(optsWrap);
+    body.appendChild(card);
+  });
+}
+
+function handleOptionSelect(qi, oi) {
+  if (quizSubmitted) return;
+  
+  // Toggle: if clicking same option, deselect
+  if (userAnswers[qi] === oi) {
+    userAnswers[qi] = null;
+  } else {
+    userAnswers[qi] = oi;
+  }
+  
+  // Update visual state for this question's options
+  const optsContainer = document.getElementById('opts-' + qi);
+  [...optsContainer.children].forEach((opt, i) => {
+    opt.classList.toggle('selected', i === userAnswers[qi]);
+  });
+  
+  // Update card border
+  const card = document.getElementById('q-' + qi);
+  card.classList.toggle('answered', userAnswers[qi] !== null);
+  
+  // Update nav dot
+  const navDot = document.getElementById('nav-dot-' + qi);
+  if (navDot) {
+    navDot.classList.toggle('answered', userAnswers[qi] !== null);
+  }
+  
+  updateProgress();
+}
+
+function updateProgress() {
+  const answered = userAnswers.filter(a => a !== null).length;
+  const total = currentPacket.soal.length;
+  
+  document.getElementById('quiz-answered-count').textContent = answered;
+  document.getElementById('quiz-progress-fill').style.width = (answered / total * 100) + '%';
+  
+  const submitBtn = document.getElementById('quiz-submit-btn');
+  submitBtn.disabled = answered === 0;
+  
+  if (answered === total) {
+    submitBtn.textContent = '✓ Selesai & Lihat Pembahasan';
+  } else {
+    submitBtn.textContent = `✓ Selesai (${answered}/${total}) & Lihat Pembahasan`;
+  }
+}
+
+function submitQuiz() {
+  if (!currentPacket) return;
+  
+  const answered = userAnswers.filter(a => a !== null).length;
+  const total = currentPacket.soal.length;
+  
+  if (answered < total) {
+    const skipped = total - answered;
+    if (!confirm(`Masih ada ${skipped} soal yang belum dijawab.\nSoal yang tidak dijawab akan dianggap salah.\n\nLanjutkan ke pembahasan?`)) {
+      return;
+    }
+  }
+  
+  // Calculate and update global tryout score
+  let correct = 0;
+  currentPacket.soal.forEach((soal, qi) => {
+    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+    if (userAnswers[qi] === correctIdx) {
+      correct++;
+    }
+  });
+  
+  tryoutAnswered += total;
+  tryoutCorrect += correct;
+  updateTryoutScore();
+  
+  quizSubmitted = true;
+  renderReviewMode();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function skipToReview() {
+  if (!currentPacket) return;
+  if (!confirm('Lewati semua soal dan langsung lihat pembahasan?\nSemua soal yang belum dijawab akan dianggap salah.')) {
+    return;
+  }
+  submitQuiz();
+}
+
+function renderReviewMode() {
+  const body = document.getElementById('quiz-body');
+  body.innerHTML = '';
+  
+  // Hide the answer-mode footer, show review footer
+  document.getElementById('quiz-footer').style.display = 'none';
+  
+  // Calculate stats
+  let correct = 0, wrong = 0, skipped = 0;
+  currentPacket.soal.forEach((soal, qi) => {
+    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+    if (userAnswers[qi] === null) {
+      skipped++;
+    } else if (userAnswers[qi] === correctIdx) {
+      correct++;
+    } else {
+      wrong++;
+    }
+  });
+  
+  const total = currentPacket.soal.length;
+  const percent = Math.round((correct / total) * 100);
+  
+  // Summary card
+  const summary = document.createElement('div');
+  summary.className = 'review-summary';
+  summary.innerHTML = `
+    <div class="review-stat">
+      <div class="review-stat-num">${percent}%</div>
+      <div class="review-stat-label">Skor</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num good">${correct}</div>
+      <div class="review-stat-label">Benar</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num bad">${wrong}</div>
+      <div class="review-stat-label">Salah</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num skip">${skipped}</div>
+      <div class="review-stat-label">Dilewati</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num">${total}</div>
+      <div class="review-stat-label">Total</div>
+    </div>
+  `;
+  body.appendChild(summary);
+  
+  // Render each question in review mode
+  currentPacket.soal.forEach((soal, qi) => {
+    const userAns = userAnswers[qi];
+    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+    const isSkipped = userAns === null;
+    const isCorrect = !isSkipped && userAns === correctIdx;
+    
+    const card = document.createElement('div');
+    card.className = 'review-q-card';
+    card.id = 'review-q-' + qi;
+    
+    // Header with status badge
+    const headRow = document.createElement('div');
+    headRow.className = 'review-q-head';
+    
+    const numBadge = document.createElement('span');
+    if (isSkipped) {
+      numBadge.className = 'review-q-badge skipped';
+      numBadge.textContent = `#${qi + 1} · ⊘ Dilewati`;
+    } else if (isCorrect) {
+      numBadge.className = 'review-q-badge correct';
+      numBadge.textContent = `#${qi + 1} · ✓ Benar`;
+    } else {
+      numBadge.className = 'review-q-badge wrong';
+      numBadge.textContent = `#${qi + 1} · ✗ Salah`;
+    }
+    headRow.appendChild(numBadge);
+    
+    // Show tipe in review (helpful for learning)
+    if (soal.tipe) {
+      const typeBadge = document.createElement('span');
+      typeBadge.className = 'review-q-type';
+      typeBadge.textContent = soal.tipe;
+      headRow.appendChild(typeBadge);
+    }
+    
+    card.appendChild(headRow);
+    
+    // Question text
+    const qText = document.createElement('p');
+    qText.className = 'quiz-q-text';
+    qText.textContent = soal.pertanyaan;
+    card.appendChild(qText);
+    
+    // PREMIS shown in review (hidden during answering)
+    if (soal.premis && soal.premis.length > 0) {
+      const premisBox = document.createElement('div');
+      premisBox.className = 'review-premis';
+      const premisLabel = document.createElement('div');
+      premisLabel.className = 'review-premis-label';
+      premisLabel.textContent = 'Premis';
+      premisBox.appendChild(premisLabel);
+      const premisList = document.createElement('ol');
+      premisList.className = 'review-premis-list';
+      soal.premis.forEach(p => {
+        const li = document.createElement('li');
+        li.textContent = p;
+        premisList.appendChild(li);
+      });
+      premisBox.appendChild(premisList);
+      card.appendChild(premisBox);
+    }
+    
+    // Options with review highlighting
+    const optsWrap = document.createElement('div');
+    optsWrap.className = 'quiz-opts';
+    
+    soal.opsi.forEach((optText, oi) => {
+      const opt = document.createElement('div');
+      opt.className = 'quiz-opt locked';
+      
+      const match = optText.match(/^([A-E])\.\s*(.+)$/s);
+      const letter = match ? match[1] : letters[oi];
+      const text = match ? match[2] : optText;
+      
+      opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
+      
+      // Apply review classes
+      if (oi === correctIdx) {
+        if (isCorrect || isSkipped) {
+          opt.classList.add('review-correct');
+        } else {
+          opt.classList.add('review-reveal');
+        }
+      }
+      if (!isSkipped && oi === userAns && !isCorrect) {
+        opt.classList.add('review-wrong');
+      }
+      
+      optsWrap.appendChild(opt);
+    });
+    
+    card.appendChild(optsWrap);
+    
+    // Pembahasan is Markdown (biasanya berisi **tebal** dan baris baru).
+    // Konversi ringan ke HTML supaya ** ** tidak tampil mentah.
+    const renderMarkdown = (src) => {
+      return String(src)
+        .replace(/^\s*>\s?/gm, '')
+        .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+        .replace(/\n{2,}/g, '</p><p>')
+        .replace(/\n/g, '<br>');
+    };
+
+    // PEMBAHASAN shown in review
+    if (soal.pembahasan) {
+      const explain = document.createElement('div');
+      let explainClass = 'review-explain ';
+      let prefix = '';
+      if (isSkipped) {
+        explainClass += 'skip';
+        prefix = '<span class="status">⊘ Dilewati.</span> ';
+      } else if (isCorrect) {
+        explainClass += 'good';
+        prefix = '<span class="status">✓ Benar.</span> ';
+      } else {
+        explainClass += 'bad';
+        prefix = '<span class="status">✗ Kurang tepat.</span> ';
+      }
+      explain.className = explainClass;
+      explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
+      card.appendChild(explain);
+    }
+    
+    body.appendChild(card);
+  });
+  
+  // Create review footer
+  const footer = document.getElementById('quiz-footer');
+  footer.innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>
+      <button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>
+    </div>
+  `;
+  footer.style.display = 'block';
+}
+
+function retryPacket() {
+  if (!currentPacket) return;
+  userAnswers = new Array(currentPacket.soal.length).fill(null);
+  quizSubmitted = false;
+  
+  // Restore normal footer
+  const footer = document.getElementById('quiz-footer');
+  footer.innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+      <button class="quiz-btn quiz-btn-finish" id="quiz-submit-btn" onclick="submitQuiz()" disabled>✓ Selesai & Lihat Pembahasan</button>
+    </div>
+  `;
+  
+  renderAllQuestions();
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+</script>
+</body>
+</html>

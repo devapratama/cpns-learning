@@ -1,0 +1,38 @@
+{
+  "name": "Bahasa Indonesia",
+  "fullName": "Pemahaman Kebahasaan",
+  "folder": "bahasa-indonesia",
+  "description": "Materi pemahaman dan penggunaan bahasa Indonesia yang baik dan benar, yang diujikan dalam tes kemampuan verbal. Pilih topik untuk mulai belajar.",
+  "topics": [
+    {
+      "folder": "kalimat-utama-ide-pokok",
+      "title": "Kalimat Utama & Ide Pokok",
+      "subtitle": "Mengenali kalimat utama dan ide pokok dalam sebuah paragraf."
+    },
+    {
+      "folder": "paragraf",
+      "title": "Paragraf",
+      "subtitle": "Struktur, jenis, dan pola pengembangan paragraf."
+    },
+    {
+      "folder": "kalimat-efektif",
+      "title": "Kalimat Efektif",
+      "subtitle": "Syarat, ciri, dan contoh kalimat efektif dalam penulisan."
+    },
+    {
+      "folder": "tanda-baca",
+      "title": "Tanda Baca",
+      "subtitle": "Penggunaan tanda baca titik, koma, titik dua, dan lainnya."
+    },
+    {
+      "folder": "ejaan",
+      "title": "Ejaan dan EYD",
+      "subtitle": "Penulisan huruf kapital, kata, dan angka sesuai kaidah."
+    },
+    {
+      "folder": "kata-baku",
+      "title": "Kata Baku & Tidak Baku",
+      "subtitle": "Membedakan kata baku dan tidak baku sesuai KBBI."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "category": "Bahasa Indonesia",
+  "categoryFolder": "bahasa-indonesia",
+  "title": "Tanda Baca",
+  "subtitle": "Penggunaan tanda baca titik, koma, titik dua, dan lainnya.",
+  "quizIntro": "Perhatikan penggunaan tanda baca pada setiap kalimat, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Penulisan tanda baca yang benar terdapat pada kalimat …",
+      "options": ["A. Apakah kamu sudah makan;", "B. Apakah kamu sudah makan?", "C. Apakah kamu sudah makan.", "D. Apakah kamu sudah makan!"],
+      "answer": 1,
+      "explanation": "Kalimat tanya diakhiri tanda tanya (?), bukan titik, koma, ataupun seru."
+    },
+    {
+      "question": "Penulisan angka yang benar adalah …",
+      "options": ["A. 2.500 rupiah", "B. 2,500 rupiah", "C. 2 500 rupiah", "D. 2500 rupiah"],
+      "answer": 0,
+      "explanation": "Dalam penulisan Indonesia, pemisah ribuan memakai tanda titik, yaitu 2.500."
+    },
+    {
+      "question": "Penulisan petikan langsung yang benar adalah …",
+      "options": ["A. \"Sudahkah kamu sarapan?\" tanya ibu.", "B. \"Sudahkah kamu sarapan.\" tanya ibu.", "C. \"Sudahkah kamu sarapan?:\" tanya ibu.", "D. \"Sudahkah kamu sarapan;\" tanya ibu."],
+      "answer": 0,
+      "explanation": "Petikan langsung diapit tanda petik dan kalimat tanya diakhiri tanda tanya sebelum tanda petik penutup."
+    },
+    {
+      "question": "Tanda titik dua (:) dipakai dengan benar pada kalimat …",
+      "options": ["A. Ayah membeli: buku dan pensil.", "B. Berikut alat tulis yang dibeli ayah: buku dan pensil.", "C. Ayah membeli buku: karena perlu menulis.", "D. Berikut alat tulis ayah beli: yaitu buku."],
+      "answer": 1,
+      "explanation": "Titik dua dipakai sebelum rincian setelah pernyataan umum, seperti 'Berikut alat tulis yang dibeli ayah: buku dan pensil.'"
+    },
+    {
+      "question": "Penggunaan koma yang salah terdapat pada kalimat …",
+      "options": ["A. Saya senang, gembira, dan bersemangat.", "B. Saya membeli, buku, pensil, dan penghapus.", "C. Andi, Budi, dan Citra hadir.", "D. Ia bekerja keras, tetapi belum berhasil."],
+      "answer": 1,
+      "explanation": "Koma tidak boleh memisahkan predikat 'membeli' dari objeknya. Yang benar: 'Saya membeli buku, pensil, dan penghapus.'"
+    },
+    {
+      "question": "Penggunaan tanda baca yang tepat pada kalimat perintah adalah …",
+      "options": ["A. Belajarlah dengan giat;", "B. Belajarlah dengan giat!", "C. Belajarlah dengan giat?", "D. Belajarlah dengan giat."],
+      "answer": 1,
+      "explanation": "Kalimat perintah diakhiri tanda seru (!)."
+    },
+    {
+      "question": "Tanda titik koma (;) paling tepat dipakai untuk …",
+      "options": ["A. mengakhiri kalimat berita", "B. menggantikan kata hubung dalam kalimat setara", "C. mengapit petikan langsung", "D. menandai kalimat tanya"],
+      "answer": 1,
+      "explanation": "Titik koma menghubungkan dua kalimat setara tanpa kata hubung, mis. 'Dia pandai; ia pun rajin.'"
+    },
+    {
+      "question": "Penggunaan tanda baca yang benar pada petikan langsung adalah …",
+      "options": ["A. \"Jangan lupa berolahraga.\" kata ibu.", "B. \"Jangan lupa berolahraga,\" kata ibu.", "C. \"Jangan lupa berolahraga\" kata ibu.", "D. Jangan lupa \"berolahraga\" kata ibu."],
+      "answer": 1,
+      "explanation": "Pada petikan langsung, koma digunakan sebelum tanda petik penutup ketika diikuti kata pengiring seperti 'kata ibu'."
+    },
+    {
+      "question": "Tanda hubung (-) yang pemakaiannya benar terdapat pada …",
+      "options": ["A. anak-anak bermain", "B. anak anak bermain", "C. anak;anak bermain", "D. anakanak bermain"],
+      "answer": 0,
+      "explanation": "Kata ulang seperti 'anak-anak' ditulis memakai tanda hubung antara unsur-unsurnya."
+    },
+    {
+      "question": "Penulisan kalimat yang benar adalah …",
+      "options": ["A. Pada tanggal 17;agustus 1945 Indonesia merdeka.", "B. Pada tanggal 17 Agustus 1945 Indonesia merdeka.", "C. Pada tanggal 17,agustus, 1945 Indonesia merdeka.", "D. Pada tanggal 17 agustus 1945, indonesia merdeka."],
+      "answer": 1,
+      "explanation": "Penulisan tanggal tidak memerlukan koma atau titik koma; nama bulan diawali huruf kapital."
+    },
+    {
+      "question": "Pemisahan rincian yang benar menggunakan koma adalah …",
+      "options": ["A. Oksigen, nitrogen, dan karbon dioksida.", "B. Oksigen; nitrogen; dan karbon dioksida.", "C. Oksigen: nitrogen: dan karbon dioksida.", "D. Oksigen nitrogen dan karbon dioksida."],
+      "answer": 0,
+      "explanation": "Unsur rincian sederhana dipisah dengan koma dan 'dan' di depan unsur terakhir."
+    },
+    {
+      "question": "Tanda baca yang paling tepat melengkapi kalimat 'Alat tulisnya sudah lengkap ___ pulpen, penggaris, dan buku' adalah …",
+      "options": ["A. titik koma (;)", "B. titik dua (:)", "C. koma (,)", "D. tanda tanya (?)"],
+      "answer": 1,
+      "explanation": "Titik dua dipakai sebelum rincian yang berada setelah pernyataan umum."
+    }
+  ]
+}

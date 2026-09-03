@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materi TWK CPNS — Sejarah Indonesia Kronologis Lengkap</title>
+<style>
+  :root{
+    --merah:#b3132b;
+    --merah-tua:#7a0d1e;
+    --emas:#c99a3c;
+    --krem:#faf6ee;
+    --teks:#2a2420;
+    --teks-lembut:#5a5048;
+    --garis:#e5dcc9;
+  }
+  *{box-sizing:border-box;}
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  body{
+    margin:0;
+    font-family:'Georgia','Segoe UI',serif;
+    background:var(--krem);
+    color:var(--teks);
+    line-height:1.75;
+    font-size:clamp(16px, 1.06rem + 0.2vw, 18px);
+  }
+  header.hero{
+    background:linear-gradient(135deg,var(--merah-tua),var(--merah));
+    color:#fff;
+    padding:clamp(32px, 6vw, 56px) clamp(16px, 4vw, 24px) clamp(28px, 5vw, 40px);
+    text-align:center;
+  }
+  header.hero h1{
+    margin:0 0 8px;
+    font-size:clamp(1.4rem, 2.1rem - 1vw, 2.1rem);
+    letter-spacing:0.5px;
+  }
+  header.hero p{
+    margin:0 auto;
+    font-size:clamp(0.95rem, 1.05rem - 0.5vw, 1.05rem);
+    color:#f4dcc0;
+    font-family:'Segoe UI',sans-serif;
+    max-width:60ch;
+  }
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:0 clamp(14px, 3vw, 24px) 80px;
+  }
+  nav.toc{
+    background:#fff;
+    border:1px solid var(--garis);
+    border-left:6px solid var(--emas);
+    border-radius:6px;
+    padding:20px 26px;
+    margin:-24px 0 40px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.06);
+    font-family:'Segoe UI',sans-serif;
+  }
+  nav.toc h2{
+    margin-top:0;
+    font-size:1.1rem;
+    color:var(--merah-tua);
+  }
+  nav.toc ol{
+    columns:2;
+    -webkit-columns:2;
+    padding-left:20px;
+    margin:0;
+    font-size:0.95rem;
+  }
+  nav.toc a{
+    color:var(--teks);
+    text-decoration:none;
+    display:inline-block;
+    padding:3px 0;
+    break-inside:avoid;
+  }
+  nav.toc a:hover{ color:var(--merah); text-decoration:underline; }
+
+  .flow{
+    background:#fff;
+    border:1px solid var(--garis);
+    border-radius:8px;
+    padding:clamp(18px, 3.5vw, 26px);
+    margin-bottom:44px;
+    font-family:'Segoe UI',sans-serif;
+  }
+  .flow h2{ color:var(--merah-tua); margin-top:0;}
+  .flow-chain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:center;
+    font-size:0.88rem;
+  }
+  .flow-chain span.node{
+    background:var(--krem);
+    border:1px solid var(--emas);
+    border-radius:20px;
+    padding:6px 14px;
+    white-space:nowrap;
+  }
+  .flow-chain span.arrow{
+    color:var(--merah);
+    font-weight:bold;
+  }
+
+  section.bagian{
+    margin-bottom:56px;
+  }
+  section.bagian > h2{
+    font-size:clamp(1.25rem, 1.5rem - 0.5vw, 1.5rem);
+    color:#fff;
+    background:var(--merah);
+    padding:12px clamp(16px, 3vw, 20px);
+    border-radius:6px 6px 0 0;
+    margin:0;
+  }
+  .bagian-isi{
+    background:#fff;
+    border:1px solid var(--garis);
+    border-top:none;
+    border-radius:0 0 6px 6px;
+    padding:8px clamp(16px, 3.5vw, 26px) 20px;
+  }
+  article.topik{
+    border-bottom:1px dashed var(--garis);
+    padding:26px 0;
+  }
+  article.topik:last-child{ border-bottom:none; }
+  article.topik h3{
+    color:var(--merah-tua);
+    font-size:clamp(1.15rem, 1.3rem - 0.4vw, 1.3rem);
+    margin-bottom:4px;
+  }
+  .tahun{
+    display:inline-block;
+    font-family:'Segoe UI',sans-serif;
+    font-size:0.78rem;
+    background:var(--emas);
+    color:#3a2a08;
+    padding:2px 10px;
+    border-radius:12px;
+    margin-bottom:12px;
+    font-weight:600;
+  }
+  article.topik h4{
+    color:var(--merah);
+    font-size:1.05rem;
+    margin:20px 0 6px;
+    font-family:'Segoe UI',sans-serif;
+  }
+  article.topik p{ margin:12px 0; }
+  article.topik ul, article.topik ol{ margin:10px 0; padding-left:22px; }
+  article.topik li{ margin-bottom:8px; }
+  .tokoh-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px 20px;
+    font-size:0.98rem;
+    margin:12px 0;
+  }
+  .tokoh-grid div{
+    background:var(--krem);
+    border-left:3px solid var(--merah);
+    padding:12px 16px;
+    border-radius:4px;
+  }
+  .tokoh-grid b{ color:var(--merah-tua); }
+  table.perjanjian{
+    width:100%;
+    border-collapse:collapse;
+    margin:16px 0;
+    font-size:0.95rem;
+  }
+  .table-scroll{
+    display:block;
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:16px 0;
+  }
+  .table-scroll table{ margin:0; }
+  table.perjanjian th, table.perjanjian td{
+    border:1px solid var(--garis);
+    padding:10px 12px;
+    text-align:left;
+    vertical-align:top;
+  }
+  table.perjanjian th{
+    background:var(--merah-tua);
+    color:#fff;
+    font-family:'Segoe UI',sans-serif;
+    font-weight:600;
+  }
+  table.perjanjian tr:nth-child(even) td{ background:var(--krem); }
+
+  footer{
+    text-align:center;
+    font-family:'Segoe UI',sans-serif;
+    font-size:0.85rem;
+    color:var(--teks-lembut);
+    padding:30px 20px;
+  }
+  a.top{
+    font-family:'Segoe UI',sans-serif;
+    font-size:0.8rem;
+    color:var(--merah);
+    text-decoration:none;
+    float:right;
+  }
+  .breadcrumb{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:6px;
+    background:var(--merah-tua);
+    color:#f4dcc0;
+    padding:10px 24px;
+    font-family:'Segoe UI',sans-serif;
+    font-size:0.85rem;
+  }
+  .breadcrumb a{
+    color:#f4dcc0;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+  }
+  .breadcrumb a:hover{ color:#fff; text-decoration:underline; }
+  .breadcrumb .crumb-sep{ color:rgba(244,220,192,0.5); }
+  .breadcrumb .crumb-current{ color:#fff; font-weight:600; }
+  @media (max-width:820px){
+    nav.toc ol{ columns:2; font-size:0.9rem; }
+    .breadcrumb{ padding:10px 16px; font-size:0.8rem; }
+    .breadcrumb a{ gap:3px; }
+  }
+  @media (max-width:600px){
+    nav.toc ol{ columns:1; }
+    .tokoh-grid{ grid-template-columns:1fr; }
+    .flow-chain{ gap:6px; }
+    article.topik{ padding:20px 0; }
+    article.topik p{ font-size:1em; }
+    article.topik li{ font-size:1em; }
+    a.top{ display:block; float:none; margin-top:14px; }
+    .tahun{ margin-bottom:10px; }
+    section.bagian > h2{ font-size:1.25rem; }
+  }
+  @media (max-width:400px){
+    body{ font-size:16px; }
+    nav.toc{ padding:16px 14px; }
+    .flow{padding:16px 14px;}
+    .flow-chain span.node{ padding:5px 11px; font-size:0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../../../index.html">← Beranda</a>
+  <span class="crumb-sep">/</span>
+  <a href="../index.html">TWK</a>
+  <span class="crumb-sep">/</span>
+  <span class="crumb-current">Sejarah Indonesia</span>
+</nav>
+
+<header class="hero">
+  <h1>🇮🇩 Sejarah Indonesia untuk TWK CPNS</h1>
+  <p>Materi belajar lengkap dan kronologis — dari perlawanan daerah hingga Reformasi</p>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc" id="daftar-isi">
+    <h2>📑 Daftar Isi</h2>
+    <ol>
+      <li><a href="#t1">Perlawanan terhadap Penjajahan</a></li>
+      <li><a href="#t2">Politik Etis & Kaum Terpelajar</a></li>
+      <li><a href="#t3">Kebangkitan Nasional</a></li>
+      <li><a href="#t4">Sumpah Pemuda 1928</a></li>
+      <li><a href="#t5">Tokoh Pergerakan Nasional</a></li>
+      <li><a href="#t6">Pendudukan Jepang</a></li>
+      <li><a href="#t7">BPUPKI</a></li>
+      <li><a href="#t8">Piagam Jakarta</a></li>
+      <li><a href="#t9">PPKI</a></li>
+      <li><a href="#t10">Peristiwa Menjelang Proklamasi</a></li>
+      <li><a href="#t11">Proklamasi Kemerdekaan</a></li>
+      <li><a href="#t12">Sidang PPKI & Pembentukan Pemerintahan</a></li>
+      <li><a href="#t13">Perumusan & Kedudukan Pancasila</a></li>
+      <li><a href="#t14">Perjuangan Fisik</a></li>
+      <li><a href="#t14b">Ancaman Disintegrasi Bangsa (1948–1965)</a></li>
+      <li><a href="#t15">Perjuangan Diplomasi</a></li>
+      <li><a href="#t16">Perubahan Bentuk Negara</a></li>
+      <li><a href="#t16b">Trikora & Pembebasan Irian Barat</a></li>
+      <li><a href="#t17">Demokrasi Parlementer</a></li>
+      <li><a href="#t17b">KAA & Politik Luar Negeri Bebas Aktif</a></li>
+      <li><a href="#t18">Demokrasi Terpimpin & G30S</a></li>
+      <li><a href="#t19">Orde Baru</a></li>
+      <li><a href="#t20">Reformasi</a></li>
+    </ol>
+  </nav>
+
+  <div class="flow">
+    <h2>🧭 Alur Besar Sejarah Indonesia</h2>
+    <div class="flow-chain">
+      <span class="node">Perlawanan Daerah</span><span class="arrow">→</span>
+      <span class="node">Politik Etis</span><span class="arrow">→</span>
+      <span class="node">Kebangkitan Nasional 1908</span><span class="arrow">→</span>
+      <span class="node">Sumpah Pemuda 1928</span><span class="arrow">→</span>
+      <span class="node">Pendudukan Jepang 1942</span><span class="arrow">→</span>
+      <span class="node">BPUPKI</span><span class="arrow">→</span>
+      <span class="node">Piagam Jakarta 22 Jun 1945</span><span class="arrow">→</span>
+      <span class="node">PPKI</span><span class="arrow">→</span>
+      <span class="node">Rengasdengklok</span><span class="arrow">→</span>
+      <span class="node">Proklamasi 17 Agu 1945</span><span class="arrow">→</span>
+      <span class="node">Pembentukan Pemerintahan</span><span class="arrow">→</span>
+      <span class="node">Perjuangan Fisik & Diplomasi</span><span class="arrow">→</span>
+      <span class="node">Linggarjati</span><span class="arrow">→</span>
+      <span class="node">Renville</span><span class="arrow">→</span>
+      <span class="node">Roem-Royen</span><span class="arrow">→</span>
+      <span class="node">KMB</span><span class="arrow">→</span>
+      <span class="node">RIS 1949</span><span class="arrow">→</span>
+      <span class="node">NKRI 1950</span><span class="arrow">→</span>
+      <span class="node">Demokrasi Parlementer</span><span class="arrow">→</span>
+      <span class="node">Demokrasi Terpimpin</span><span class="arrow">→</span>
+      <span class="node">Orde Baru</span><span class="arrow">→</span>
+      <span class="node">Reformasi → Sekarang</span>
+    </div>
+  </div>
+
+  <!-- ============ BAGIAN A ============ -->
+  <section class="bagian" id="bagian-a">
+    <h2>A. Sebelum Kemerdekaan</h2>
+    <div class="bagian-isi">
+
+      <article class="topik" id="t1">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>1. Perlawanan terhadap Penjajahan</h3>
+        <span class="tahun">Abad 17–19</span>
+        <p>Kedatangan bangsa Eropa ke Nusantara bermula dari perburuan rempah-rempah. Portugis tiba lebih dahulu di awal abad ke-16 dan menguasai Malaka (1511), disusul Spanyol, lalu Belanda melalui VOC (Vereenigde Oostindische Compagnie) yang didirikan tahun 1602 sebagai kongsi dagang dengan hak istimewa dari pemerintah Belanda: hak memonopoli perdagangan, hak mencetak uang, hak mengangkat pegawai, bahkan hak menyatakan perang dan membuat perjanjian dengan penguasa lokal (hak oktroi). VOC inilah yang secara bertahap mengubah dirinya dari kongsi dagang menjadi kekuatan kolonial yang menguasai wilayah demi wilayah di Nusantara, sering dengan politik <i>devide et impera</i> (memecah belah dan menguasai) — mengadu domba kerajaan-kerajaan lokal, memanfaatkan konflik suksesi, dan mengikat penguasa setempat lewat perjanjian yang timpang.</p>
+        <p>Perlawanan terhadap kekuasaan asing ini muncul di hampir seluruh penjuru Nusantara, namun sifatnya masih <b>lokal dan kedaerahan</b>: masing-masing dipimpin oleh raja, sultan, atau bangsawan setempat, mengandalkan pasukan dan senjata tradisional, dan umumnya dipicu oleh sebab-sebab yang bersifat langsung — monopoli dagang yang merugikan, campur tangan dalam suksesi kerajaan, pemungutan pajak yang memberatkan, atau pelanggaran terhadap adat dan agama setempat. Karena tidak terkoordinasi antarwilayah dan tidak memiliki visi persatuan sebagai satu bangsa, perlawanan-perlawanan ini pada akhirnya dapat dipatahkan Belanda satu per satu, meski sering setelah pertempuran yang berlangsung sangat lama dan menelan biaya besar bagi pihak kolonial.</p>
+        <p>Berikut tokoh-tokoh perlawanan kedaerahan yang paling sering muncul dalam materi sejarah nasional, lengkap dengan konteks perjuangannya masing-masing:</p>
+        <div class="tokoh-grid">
+          <div><b>Pattimura (Thomas Matulessy)</b><br>Memimpin perlawanan rakyat Maluku pada tahun 1817, dipicu oleh kembalinya kekuasaan Belanda atas Maluku setelah sebelumnya dikuasai Inggris (1811–1816) dengan sistem yang lebih longgar. Rakyat Maluku yang sudah merasakan kebijakan Inggris yang lebih ringan, menolak kembalinya monopoli dan kerja paksa Belanda. Pattimura berhasil merebut benteng Duurstede di Saparua, namun akhirnya ditangkap dan dihukum gantung di Ambon.</div>
+          <div><b>Sultan Hasanuddin</b><br>Penguasa Kesultanan Gowa (Makassar) yang menentang keras upaya VOC memonopoli perdagangan rempah di kawasan timur Nusantara. Perlawanannya berakhir dengan Perjanjian Bongaya (1667) yang sangat merugikan Gowa, memaksa Hasanuddin menyerahkan wilayah dan hak dagangnya. Karena keberaniannya, Belanda menjulukinya "De Haantjes van het Oosten" (Ayam Jantan dari Timur).</div>
+          <div><b>Sultan Agung</b><br>Raja terbesar Kesultanan Mataram Islam (memerintah 1613–1645), berambisi menyatukan seluruh Jawa dan mengusir VOC dari Batavia. Dua kali mengirim ekspedisi besar menyerang Batavia (1628 dan 1629), namun keduanya gagal, salah satunya karena lumbung-lumbung padi pasukan Mataram di Cirebon dan Tegal dibakar habis oleh VOC sehingga pasukan kehabisan logistik.</div>
+          <div><b>Tuanku Imam Bonjol</b><br>Tokoh utama dalam Perang Padri (1803–1837) di Sumatra Barat. Perang ini bermula sebagai konflik internal antara kaum Padri (ulama pembaru yang ingin menegakkan syariat Islam secara ketat) melawan kaum Adat, namun sejak Belanda ikut campur membantu kaum Adat, perang ini berubah arah menjadi perlawanan bersama rakyat Minangkabau melawan kolonial Belanda.</div>
+          <div><b>Pangeran Diponegoro</b><br>Memimpin Perang Jawa atau Perang Diponegoro (1825–1830), perang terbesar dan paling menguras kas pemerintah kolonial di seluruh sejarah Hindia Belanda. Perang ini dipicu oleh pemasangan patok jalan yang melintasi tanah makam leluhur Diponegoro di Tegalrejo tanpa izin, yang menjadi puncak kekecewaan atas berbagai kebijakan Belanda yang menyengsarakan rakyat dan bangsawan Jawa. Diponegoro akhirnya ditangkap secara licik saat perundingan di Magelang dan diasingkan ke Makassar.</div>
+          <div><b>Cut Nyak Dien & Teuku Umar</b><br>Dua tokoh utama Perang Aceh (1873–1904), perang kolonial terpanjang dan termahal yang pernah dihadapi Belanda. Teuku Umar sempat menggunakan taktik pura-pura menyerah untuk mendapatkan senjata dari Belanda sebelum kembali menyerang. Setelah Teuku Umar gugur, istrinya Cut Nyak Dien melanjutkan perlawanan gerilya hingga ditangkap dan diasingkan ke Sumedang, Jawa Barat.</div>
+          <div><b>Sisingamangaraja XII</b><br>Raja sekaligus pemimpin spiritual masyarakat Batak yang memimpin perlawanan terhadap perluasan kekuasaan Belanda ke wilayah Tapanuli. Perlawanannya berlangsung bertahun-tahun dalam bentuk gerilya di pegunungan, hingga akhirnya gugur dalam pertempuran tahun 1907.</div>
+          <div><b>Pangeran Antasari</b><br>Memimpin Perang Banjar (1859–1905) di Kalimantan Selatan, yang dipicu campur tangan Belanda dalam urusan suksesi Kesultanan Banjar serta eksploitasi tambang batu bara dan intan di wilayah tersebut. Perang ini termasuk salah satu perlawanan rakyat terlama melawan kolonial.</div>
+          <div><b>I Gusti Ketut Jelantik</b><br>Patih Kerajaan Buleleng, Bali, yang menolak menghapuskan hukum tawan karang (hukum adat yang memberi hak kepada kerajaan Bali untuk menyita kapal asing yang kandas di perairannya). Penolakan ini memicu Perang Bali (Puputan Buleleng) melawan ekspedisi militer Belanda pada pertengahan abad ke-19.</div>
+        </div>
+        <p>Pola umum yang penting dipahami: hampir semua perlawanan pada periode ini berakhir dengan kekalahan pihak pribumi, baik melalui penaklukan militer langsung, penangkapan tokoh melalui tipu daya perundingan, maupun perjanjian yang secara bertahap melucuti kedaulatan kerajaan lokal. Pengalaman kekalahan yang berulang inilah yang kemudian, pada awal abad ke-20, mendorong generasi baru pemikir pribumi untuk mencari strategi perjuangan yang sama sekali berbeda: bukan lagi mengandalkan kekuatan senjata satu daerah, melainkan organisasi modern yang mempersatukan seluruh Nusantara.</p>
+      </article>
+
+      <article class="topik" id="t2">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>2. Kebijakan Kolonial & Munculnya Kaum Terpelajar</h3>
+        <span class="tahun">Awal abad ke-20</span>
+        <p>Sepanjang abad ke-19, Belanda menerapkan sistem eksploitasi ekonomi yang sangat menekan rakyat pribumi, terutama melalui <b>Sistem Tanam Paksa (Cultuurstelsel)</b> yang diberlakukan Gubernur Jenderal Johannes van den Bosch sejak 1830. Sistem ini mewajibkan petani menanami sebagian lahan mereka dengan tanaman ekspor (kopi, tebu, nila/indigo) untuk diserahkan kepada pemerintah kolonial, yang menghasilkan keuntungan sangat besar bagi kas Belanda namun menyengsarakan rakyat karena mengurangi lahan untuk tanaman pangan dan sering disertai kerja paksa yang berlebihan.</p>
+        <p>Eksploitasi ini lambat laun menuai kritik, termasuk dari kalangan Belanda sendiri yang berpandangan liberal dan humanis. Kritik paling terkenal datang dari <b>Eduard Douwes Dekker</b> (menulis dengan nama pena Multatuli) lewat novel <i>Max Havelaar</i> (1860) yang mengungkap penderitaan rakyat akibat Tanam Paksa, serta dari <b>Conrad Theodore van Deventer</b> yang menulis esai berjudul <i>"Een Eereschuld"</i> (Utang Kehormatan) pada tahun 1899, yang berargumen bahwa Belanda telah meraup kekayaan luar biasa dari Hindia Belanda dan karenanya berutang budi untuk mengembalikannya dalam bentuk kesejahteraan bagi rakyat pribumi.</p>
+        <p>Dari desakan inilah lahir <b>Politik Etis</b> (Politik Balas Budi) yang mulai dijalankan pemerintah kolonial pada tahun 1901, dengan tiga program utama yang dikenal sebagai <b>Trias Politika Etis</b>:</p>
+        <ul>
+          <li><b>Irigasi</b> — pembangunan dan perbaikan sistem pengairan pertanian, dimaksudkan meningkatkan produktivitas lahan rakyat.</li>
+          <li><b>Edukasi</b> — pendirian sekolah-sekolah bagi penduduk pribumi, mulai dari sekolah dasar (Sekolah Rakyat) hingga sekolah tinggi kejuruan seperti STOVIA (sekolah kedokteran), meski pada praktiknya akses pendidikan ini masih sangat terbatas dan diprioritaskan bagi kalangan bangsawan/priyayi serta anak pegawai kolonial.</li>
+          <li><b>Emigrasi (Transmigrasi)</b> — pemindahan penduduk dari Jawa yang padat ke wilayah luar Jawa yang masih jarang penduduknya, seperti Sumatra.</li>
+        </ul>
+        <p>Ironisnya, program yang dimaksudkan Belanda untuk memperkuat legitimasi kolonial justru menjadi bumerang. Pendidikan Barat yang diterima kaum muda pribumi — di sekolah kedokteran, hukum, maupun sekolah guru — memperkenalkan mereka pada gagasan-gagasan modern seperti nasionalisme, demokrasi, hak asasi, dan kemerdekaan bangsa-bangsa yang sedang berkembang di Eropa dan Asia (termasuk kemenangan Jepang atas Rusia tahun 1905 yang membuktikan bangsa Asia dapat mengalahkan kekuatan Barat). Lahirlah generasi baru: <b>kaum terpelajar (priyayi/intelektual pribumi modern)</b> yang mulai membaca situasi penjajahan bukan lagi dari sudut pandang kedaerahan, melainkan sebagai persoalan bangsa yang lebih luas.</p>
+        <p>Dari kaum terpelajar inilah tumbuh <b>kesadaran nasional</b> — kesadaran bahwa perjuangan melawan penjajahan harus dilakukan secara terorganisasi, sistematis, dan mencakup seluruh Nusantara sebagai satu kesatuan bangsa, bukan lagi perlawanan senjata yang terpisah-pisah di masing-masing daerah seperti abad-abad sebelumnya. Pergeseran cara berpikir inilah yang menjadi fondasi lahirnya organisasi-organisasi pergerakan nasional pada dekade berikutnya.</p>
+        <h4>Faktor Internal dan Eksternal Lahirnya Nasionalisme Indonesia</h4>
+        <p>Munculnya semangat nasionalisme pada awal abad ke-20 umumnya dijelaskan melalui dua kelompok faktor yang saling memperkuat. <b>Faktor internal</b> (berasal dari dalam negeri) meliputi: penderitaan panjang akibat penjajahan dan eksploitasi ekonomi kolonial yang menimbulkan rasa senasib sepenanggungan di antara rakyat pribumi, lahirnya kaum terpelajar hasil Politik Etis sebagaimana dijelaskan di atas, serta kejayaan sejarah masa lampau (kenangan akan kebesaran kerajaan-kerajaan Nusantara) yang membangkitkan rasa harga diri dan cita-cita untuk kembali berdaulat. <b>Faktor eksternal</b> (berasal dari luar negeri) meliputi: masuknya paham-paham modern dari Barat seperti <b>liberalisme, demokrasi, sosialisme,</b> dan nasionalisme itu sendiri yang dipelajari kaum terpelajar dari pendidikan Barat; <b>kemenangan Jepang atas Rusia dalam Perang Rusia-Jepang tahun 1905</b>, yang untuk pertama kalinya membuktikan bahwa sebuah bangsa Asia mampu mengalahkan kekuatan besar Eropa, sehingga meruntuhkan mitos superioritas bangsa kulit putih; serta gelombang <b>kebangkitan nasional di negara-negara Asia lain</b> yang terjadi kurang lebih sezaman, seperti gerakan nasionalis di India (dipelopori Kongres Nasional India/Mahatma Gandhi) dan di Filipina (dipelopori Jose Rizal), yang turut menginspirasi kaum pergerakan Indonesia bahwa kemerdekaan dari penjajahan Barat adalah sesuatu yang mungkin diraih.</p>
+      </article>
+
+      <article class="topik" id="t3">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>3. Kebangkitan Nasional</h3>
+        <span class="tahun">1908–1927</span>
+        <p>Periode ini dikenal sebagai era <b>Kebangkitan Nasional</b> karena perlawanan terhadap kolonialisme mulai mengambil bentuk organisasi modern — memiliki anggaran dasar/anggaran rumah tangga, struktur kepengurusan, keanggotaan formal, dan tujuan yang dirumuskan secara tertulis, alih-alih mengandalkan kharisma satu tokoh dan kekuatan senjata seperti pada masa sebelumnya.</p>
+        <h4>Budi Utomo (1908)</h4>
+        <p>Digagas oleh <b>dr. Wahidin Sudirohusodo</b>, seorang dokter yang berkeliling Jawa untuk menggalang dana pendidikan (Studiefonds) bagi anak-anak pribumi berbakat namun tidak mampu secara ekonomi. Gagasannya kemudian diwujudkan oleh para pelajar STOVIA (sekolah dokter di Batavia), dipelopori <b>dr. Sutomo</b>, yang mendirikan organisasi Budi Utomo pada 20 Mei 1908. Pada masa awal, organisasi ini lebih berorientasi pada kemajuan pendidikan dan kebudayaan Jawa-Madura, belum secara eksplisit bersifat politik atau menuntut kemerdekaan. Meski demikian, Budi Utomo dianggap sebagai organisasi modern pertama yang lahir dari kalangan pribumi, sehingga tanggal berdirinya diperingati sebagai <b>Hari Kebangkitan Nasional</b> hingga sekarang.</p>
+        <h4>Sarekat Islam (1912)</h4>
+        <p>Berakar dari <b>Sarekat Dagang Islam</b> yang didirikan H. Samanhudi pada 1911 di Surakarta, awalnya bertujuan melindungi kepentingan ekonomi pedagang batik pribumi Muslim dari persaingan pedagang Tionghoa. Di bawah kepemimpinan <b>HOS Tjokroaminoto</b>, organisasi ini diperluas ruang lingkupnya menjadi Sarekat Islam yang tidak lagi hanya soal dagang, melainkan juga isu-isu sosial-politik yang lebih luas, dan berkembang pesat menjadi organisasi massa terbesar pada masanya dengan basis anggota hingga jutaan orang di seluruh Nusantara.</p>
+        <h4>Indische Partij (1912)</h4>
+        <p>Didirikan oleh tiga tokoh yang dikenal sebagai <b>Tiga Serangkai</b>: <b>Douwes Dekker (Ernest Francois Eugene Douwes Dekker, bergelar Danudirja Setiabudi)</b>, <b>dr. Cipto Mangunkusumo</b>, dan <b>Ki Hajar Dewantara (Raden Mas Soewardi Soerjaningrat)</b>. Indische Partij menjadi organisasi politik pertama di Hindia Belanda yang secara terang-terangan dan tegas menuntut <b>kemerdekaan Indonesia</b> sebagai tujuan perjuangannya, sesuatu yang belum berani dilakukan organisasi-organisasi sebelumnya. Akibat sikap radikalnya — termasuk tulisan kritis Ki Hajar Dewantara berjudul <i>"Als ik eens Nederlander was"</i> (Andaikan Aku Seorang Belanda) yang menyindir perayaan 100 tahun kemerdekaan Belanda dari Prancis di tengah penjajahan atas Indonesia — organisasi ini dibubarkan pemerintah kolonial dan ketiga pendirinya diasingkan ke Belanda.</p>
+        <h4>Perhimpunan Indonesia</h4>
+        <p>Semula bernama <b>Indische Vereeniging</b>, didirikan oleh para pelajar dan mahasiswa Indonesia yang menempuh pendidikan di Belanda. Seiring waktu, organisasi ini berkembang menjadi wadah pemikiran nasionalis yang semakin radikal, berganti nama menjadi Perhimpunan Indonesia, dan menerbitkan majalah <i>Indonesia Merdeka</i> sebagai media penyebaran gagasan kemerdekaan. Banyak tokoh pergerakan nasional kemudian hari, termasuk Mohammad Hatta, aktif dan menjadi pemimpin dalam organisasi ini selama masa studi mereka di Belanda.</p>
+        <h4>PNI — Partai Nasional Indonesia (1927)</h4>
+        <p>Didirikan oleh <b>Soekarno</b> bersama tokoh-tokoh lain di Bandung, PNI secara tegas menjadikan <b>kemerdekaan penuh dan mutlak (Indonesia merdeka 100%)</b> sebagai tujuan perjuangan, serta menganut prinsip <b>non-kooperasi</b> — menolak segala bentuk kerja sama dengan pemerintah kolonial, termasuk menolak duduk dalam badan-badan bentukan Belanda seperti Volksraad (Dewan Rakyat). Sikap tegas ini membuat pemerintah kolonial memandang PNI sebagai ancaman serius, dan pada akhirnya Soekarno ditangkap serta diadili tahun 1930 (dikenal dengan pidato pembelaannya yang terkenal, <i>Indonesia Menggugat</i>).</p>
+        <p>Secara berurutan, organisasi-organisasi ini menunjukkan evolusi perjuangan pergerakan nasional: dari fokus pendidikan dan kebudayaan (Budi Utomo), meluas ke isu ekonomi dan sosial berbasis massa besar (Sarekat Islam), lalu ke tuntutan politik terbuka untuk kemerdekaan (Indische Partij), diperkuat pemikiran dari kalangan pelajar di luar negeri (Perhimpunan Indonesia), hingga akhirnya mengkristal menjadi gerakan politik nonkooperatif yang tegas menuntut kemerdekaan penuh (PNI).</p>
+        <h4>Pergerakan Era 1930-an: Petisi Sutardjo & GAPI</h4>
+        <p>Setelah PNI dibubarkan akibat penangkapan para pemimpinnya, muncul partai-partai penerus dengan corak perjuangan yang beragam, seperti <b>Partindo (Partai Indonesia)</b> yang tetap nonkooperatif, serta <b>PNI Baru (Pendidikan Nasional Indonesia)</b> yang didirikan Mohammad Hatta dan Sutan Sjahrir dengan strategi kaderisasi kader yang lebih hati-hati. Pada tahun 1936, seorang anggota Volksraad (Dewan Rakyat, badan perwakilan bentukan Belanda) bernama <b>Soetardjo Kartohadikoesoemo</b> mengajukan sebuah petisi yang dikenal sebagai <b>Petisi Sutardjo</b>, berisi permohonan agar diadakan musyawarah antara wakil Indonesia dan Belanda untuk membahas pemberian otonomi (swapraja) bagi Hindia Belanda dalam ikatan Kerajaan Belanda secara bertahap dalam kurun waktu 10 tahun. Petisi ini ditolak oleh pemerintah kolonial pada tahun 1938, sebuah penolakan yang semakin meyakinkan kaum pergerakan bahwa jalur kooperatif lunak tidak akan membuahkan hasil berarti.</p>
+        <p>Sebagai respons atas kegagalan tersebut sekaligus untuk menyatukan kekuatan berbagai partai politik pergerakan yang saat itu masih terpecah dalam sikap kooperatif dan nonkooperatif, dibentuklah <b>GAPI (Gabungan Politik Indonesia)</b> pada tahun 1939, sebuah federasi partai-partai politik pergerakan nasional. GAPI mengusung semboyan <b>"Indonesia Berparlemen"</b>, menuntut agar Hindia Belanda diberi sebuah parlemen sejati yang dipilih rakyat sendiri dan bertanggung jawab kepada rakyat, bukan sekadar Volksraad yang sebagian besar anggotanya masih diangkat oleh pemerintah kolonial. Tuntutan ini juga tidak dipenuhi Belanda, dan tak lama setelahnya pecah Perang Dunia II di Eropa, yang pada akhirnya membawa Jepang masuk menduduki Indonesia pada 1942.</p>
+      </article>
+
+      <article class="topik" id="t4">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>4. Sumpah Pemuda</h3>
+        <span class="tahun">28 Oktober 1928</span>
+        <p>Sebelum bersatu dalam satu wadah nasional, gerakan pemuda pada dekade 1920-an masih terpecah-pecah berdasarkan kedaerahan dan golongan masing-masing. Organisasi pemuda kedaerahan pertama yang cukup berpengaruh adalah <b>Tri Koro Dharmo</b> (berarti "tiga tujuan mulia"), didirikan tahun 1915 oleh pelajar-pelajar Jawa, yang kemudian pada tahun 1918 berganti nama menjadi <b>Jong Java</b> agar cakupan keanggotaannya lebih luas. Menyusul kemudian organisasi-organisasi pemuda kedaerahan lain seperti <b>Jong Sumatranen Bond</b> (pemuda Sumatra, tempat Mohammad Hatta dan Mohammad Yamin pernah aktif), <b>Jong Celebes</b> (pemuda Sulawesi), <b>Jong Ambon</b> (pemuda Maluku), dan <b>Jong Islamieten Bond</b> (perhimpunan pelajar Islam). Menjelang akhir dekade 1920-an, semakin disadari bahwa kekuatan pemuda yang masih tercerai-berai berdasarkan identitas kedaerahan ini perlu dipersatukan dalam satu wadah dan satu tekad bersama sebagai satu bangsa Indonesia. Beberapa organisasi pemuda kedaerahan bahkan melebur menjadi satu wadah baru bernama <b>Indonesia Muda</b> menjelang akhir 1920-an, sebagai simbol semakin menguatnya semangat persatuan nasional.</p>
+        <p>Untuk mewujudkan cita-cita persatuan tersebut, diselenggarakanlah <b>Kongres Pemuda</b>. Kongres Pemuda I pada 1926 belum menghasilkan kesepakatan final karena masing-masing organisasi kedaerahan masih mempertahankan egonya masing-masing. Barulah pada <b>Kongres Pemuda II</b>, digelar di Batavia pada 27–28 Oktober 1928 dan diprakarsai oleh <b>PPPI (Perhimpunan Pelajar-Pelajar Indonesia)</b>, dengan <b>Soegondo Djojopoespito</b> sebagai ketua kongres, kesepakatan bersama akhirnya berhasil dirumuskan.</p>
+        <p>Pada penutupan kongres tanggal 28 Oktober 1928, dibacakanlah ikrar yang kemudian dikenal sebagai <b>Sumpah Pemuda</b>, sekaligus diperdengarkan untuk pertama kalinya lagu <i>Indonesia Raya</i> ciptaan <b>W.R. Supratman</b> secara instrumental (tanpa syair, karena syairnya dianggap terlalu provokatif bagi pemerintah kolonial saat itu). Isi ikrar Sumpah Pemuda adalah:</p>
+        <ol>
+          <li><b>Pertama:</b> Kami putra dan putri Indonesia mengaku bertumpah darah yang satu, tanah air Indonesia.</li>
+          <li><b>Kedua:</b> Kami putra dan putri Indonesia mengaku berbangsa yang satu, bangsa Indonesia.</li>
+          <li><b>Ketiga:</b> Kami putra dan putri Indonesia menjunjung bahasa persatuan, bahasa Indonesia.</li>
+        </ol>
+        <p>Makna historis Sumpah Pemuda sangat mendasar: inilah titik ketika kesadaran kedaerahan (Jawa, Sumatra, Ambon, Sulawesi, dan seterusnya) secara resmi melebur menjadi satu <b>identitas kebangsaan tunggal</b> — satu tanah air, satu bangsa, dan satu bahasa persatuan, yaitu Indonesia. Perlu dipahami bahwa Sumpah Pemuda bukanlah proklamasi atau pernyataan kemerdekaan; ia adalah <b>ikrar persatuan</b> yang menegaskan cita-cita bersama sebagai satu bangsa, yang kelak menjadi fondasi mental dan ideologis bagi perjuangan kemerdekaan pada dekade-dekade berikutnya. Sejak peristiwa ini pula istilah "Indonesia" semakin mengakar sebagai nama identitas politik bangsa, menggantikan sebutan-sebutan lama seperti Hindia atau Nusantara dalam wacana pergerakan.</p>
+      </article>
+
+      <article class="topik" id="t5">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>5. Tokoh Pergerakan Nasional</h3>
+        <span class="tahun">1900-an–1945</span>
+        <p>Selain tokoh-tokoh yang sudah dibahas dalam konteks organisasi masing-masing, berikut ringkasan peran lintas periode dari tokoh-tokoh kunci pergerakan nasional yang penting dipahami secara utuh — karena banyak dari mereka berperan di lebih dari satu fase sejarah, dari masa pergerakan hingga menjadi pendiri negara.</p>
+        <div class="tokoh-grid">
+          <div><b>Soekarno</b><br>Pendiri PNI (1927) yang menganut prinsip nonkooperasi tegas. Diasingkan Belanda ke Ende dan Bengkulu. Pada masa pendudukan Jepang menjadi salah satu pemimpin Empat Serangkai di Putera, kemudian menjadi tokoh sentral BPUPKI dan PPKI, penggagas Pancasila dalam pidato 1 Juni 1945, salah satu penyusun teks Proklamasi, dan akhirnya menjadi Presiden RI pertama.</div>
+          <div><b>Mohammad Hatta</b><br>Ketua Perhimpunan Indonesia semasa studi di Belanda, dikenal karena pidato pembelaannya di pengadilan Belanda yang berjudul "Indonesia Vrij" (Indonesia Merdeka). Kembali ke Indonesia dan aktif dalam pergerakan, mendampingi Soekarno dalam perumusan Proklamasi, menjadi Wakil Presiden RI pertama, serta dijuluki "Bapak Koperasi Indonesia" karena perhatiannya pada ekonomi kerakyatan.</div>
+          <div><b>Ki Hajar Dewantara</b><br>Salah satu Tiga Serangkai pendiri Indische Partij, penulis "Als ik eens Nederlander was" yang menyebabkannya diasingkan ke Belanda. Sepulang dari pengasingan, mendirikan Perguruan Taman Siswa (1922) sebagai lembaga pendidikan nasional bagi pribumi. Dikenal sebagai Bapak Pendidikan Nasional dengan semboyan "Ing ngarso sung tulodo, ing madyo mangun karso, tut wuri handayani".</div>
+          <div><b>Mohammad Yamin</b><br>Tokoh muda dalam Kongres Pemuda yang berperan merumuskan ikrar Sumpah Pemuda, juga dikenal sebagai ahli hukum dan sejarah. Pada sidang pertama BPUPKI, ia adalah tokoh pertama yang mengusulkan rumusan dasar negara, baik secara lisan maupun tertulis.</div>
+          <div><b>Soepomo</b><br>Ahli hukum tata negara yang mengusulkan konsep "negara integralistik" dalam sidang BPUPKI — gagasan bahwa negara adalah satu kesatuan organik yang mengatasi kepentingan golongan maupun individu. Berperan besar sebagai arsitek utama penyusunan rancangan UUD 1945.</div>
+          <div><b>HOS Tjokroaminoto</b><br>Pemimpin Sarekat Islam yang membesarkan organisasi tersebut menjadi gerakan massa terbesar pada masanya. Dikenal sebagai "guru bangsa" karena banyak tokoh nasional besar pernah menjadi murid atau anak kosnya, termasuk Soekarno, Semaun, dan Kartosoewirjo.</div>
+          <div><b>Douwes Dekker (Setiabudi)</b><br>Anggota Tiga Serangkai keturunan Indo-Eropa yang justru tampil paling radikal menuntut kemerdekaan penuh Indonesia, berbeda dari banyak orang Indo lain yang cenderung berpihak pada kepentingan kolonial.</div>
+          <div><b>Dr. Sutomo</b><br>Pelajar STOVIA yang mewujudkan gagasan dr. Wahidin Sudirohusodo menjadi organisasi Budi Utomo, organisasi modern pertama kaum pribumi.</div>
+          <div><b>Agus Salim (H. Agus Salim)</b><br>Tokoh penting Sarekat Islam yang juga dikenal sebagai diplomat ulung karena penguasaannya atas banyak bahasa asing. Kelak berperan dalam Panitia Sembilan perumus Piagam Jakarta dan dalam diplomasi awal kemerdekaan.</div>
+          <div><b>Sutan Sjahrir</b><br>Tokoh golongan muda yang berpandangan sosialis-demokratis, mendesak proklamasi segera dilaksanakan tanpa menunggu restu Jepang. Setelah kemerdekaan menjadi Perdana Menteri RI pertama dan berperan besar dalam upaya diplomasi internasional awal Republik.</div>
+        </div>
+      </article>
+
+      <article class="topik" id="t6">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>6. Pendudukan Jepang</h3>
+        <span class="tahun">1942–1945</span>
+        <p>Dalam konteks Perang Dunia II di kawasan Asia-Pasifik, Jepang melancarkan ekspansi militer besar-besaran untuk menguasai sumber daya alam strategis, termasuk minyak bumi di Hindia Belanda. Pasukan Jepang mendarat di beberapa titik pada awal Maret 1942, dan pemerintah kolonial Belanda menyerah tanpa syarat dalam <b>Perjanjian Kalijati</b> (8 Maret 1942), yang secara resmi mengakhiri hampir 350 tahun kekuasaan kolonial Belanda atas Nusantara dan menggantinya dengan pemerintahan militer Jepang.</p>
+        <p>Pada masa-masa awal, kedatangan Jepang disambut sebagian rakyat dengan harapan, didukung propaganda masif yang menyebut Jepang sebagai <b>"Saudara Tua Asia"</b> yang akan membebaskan bangsa-bangsa Asia dari penjajahan Barat, tercermin dalam gerakan propaganda <b>Gerakan 3A</b>: "Nippon Cahaya Asia, Nippon Pelindung Asia, Nippon Pemimpin Asia". Namun dalam praktiknya, penjajahan Jepang justru jauh lebih keras, eksploitatif, dan represif dibanding masa akhir kolonial Belanda, meski berlangsung jauh lebih singkat (kurang lebih 3,5 tahun).</p>
+        <h4>Struktur Pemerintahan Militer</h4>
+        <p>Berbeda dari sistem sentralistik Belanda, Jepang membagi wilayah Indonesia ke dalam tiga wilayah kekuasaan militer yang terpisah: Sumatra di bawah Tentara ke-25 (Angkatan Darat), Jawa-Madura di bawah Tentara ke-16 (Angkatan Darat), dan Indonesia bagian timur (Kalimantan, Sulawesi, Maluku, dan sekitarnya) di bawah Armada Selatan ke-2 (Angkatan Laut). Pembagian ini menyebabkan kebijakan dan intensitas eksploitasi yang berbeda-beda di tiap wilayah.</p>
+        <h4>Eksploitasi & Organisasi Bentukan Jepang</h4>
+        <ul>
+          <li><b>Romusha</b> — kerja paksa yang dikenakan kepada rakyat, terutama di Jawa, untuk membangun berbagai infrastruktur kepentingan militer Jepang seperti jalan, rel kereta, lapangan terbang, dan benteng pertahanan. Kondisi kerja yang sangat buruk, minim makanan dan sanitasi, menyebabkan ratusan ribu hingga jutaan korban jiwa akibat kelaparan, penyakit, dan kelelahan. Romusha bahkan dikirim ke luar Jawa dan luar negeri (Myanmar, Vietnam) untuk proyek-proyek militer Jepang.</li>
+          <li><b>PETA (Pembela Tanah Air)</b> — dibentuk Oktober 1943 sebagai pasukan sukarela pribumi dengan struktur komando sendiri (perwira-perwiranya orang Indonesia, bukan Jepang), dilatih kemiliteran secara serius. PETA menjadi sangat penting karena kelak menjadi <b>cikal bakal utama TNI</b> setelah kemerdekaan — banyak perwira tinggi TNI awal, termasuk Jenderal Soedirman, berasal dari PETA.</li>
+          <li><b>Heiho</b> — berbeda dari PETA, Heiho adalah pasukan pembantu militer Jepang yang anggotanya pribumi namun berada langsung di bawah komando perwira Jepang, tanpa struktur komando pribumi tersendiri, dan bertugas membantu kebutuhan tempur maupun logistik militer Jepang.</li>
+          <li><b>Putera (Pusat Tenaga Rakyat)</b> — organisasi propaganda yang dibentuk Jepang pada Maret 1943, dipimpin <b>Empat Serangkai</b>: Soekarno, Mohammad Hatta, Ki Hajar Dewantara, dan K.H. Mas Mansyur. Tujuan resmi Jepang adalah menggalang dukungan rakyat bagi kepentingan perang Jepang, namun para pemimpin nasionalis memanfaatkan wadah ini secara diam-diam untuk berkomunikasi dengan rakyat, membangun jaringan, dan mengonsolidasikan kekuatan pergerakan nasional.</li>
+          <li><b>Jawa Hokokai</b> — organisasi yang menggantikan Putera setelah Jepang menyadari bahwa Putera ternyata lebih menguntungkan kepentingan kaum nasionalis Indonesia ketimbang kepentingan perang Jepang sendiri; kontrol Jepang atas organisasi baru ini dibuat lebih ketat.</li>
+          <li><b>Seinendan</b> — barisan pemuda (usia sekitar 14–22 tahun) yang dilatih semi-militer untuk mempertahankan tanah air dari serangan Sekutu.</li>
+          <li><b>Keibodan</b> — barisan pembantu polisi di tingkat lokal, bertugas menjaga keamanan dan ketertiban di desa-desa dan kota-kota kecil.</li>
+        </ul>
+        <h4>Dampak Pendudukan Jepang</h4>
+        <p>Dampak pendudukan Jepang bersifat ganda (ambivalen). Di satu sisi, rakyat mengalami penderitaan luar biasa: kelaparan meluas akibat penyerahan wajib hasil panen kepada Jepang, romusha yang merenggut ratusan ribu nyawa, serta pembatasan kebebasan yang ketat dan represi terhadap perlawanan. Namun di sisi lain, secara tidak langsung pendudukan Jepang justru <b>mempercepat proses menuju kemerdekaan Indonesia</b> melalui beberapa jalur: pertama, rakyat pribumi—untuk pertama kalinya dalam sejarah kolonial—mendapatkan <b>pelatihan dan pengalaman militer yang nyata</b> lewat PETA, Heiho, dan Seinendan, yang kelak menjadi modal perjuangan bersenjata mempertahankan kemerdekaan; kedua, Jepang memberi ruang lebih besar bagi penggunaan <b>bahasa Indonesia</b> dan organisasi-organisasi pribumi (untuk kepentingan propaganda perang mereka sendiri), yang tanpa disadari memperkuat rasa persatuan dan kesiapan berorganisasi bangsa Indonesia; dan ketiga, kekalahan Jepang dalam Perang Pasifik pada pertengahan 1945 menciptakan situasi kekosongan kekuasaan yang dimanfaatkan para pemimpin nasional untuk segera memproklamasikan kemerdekaan.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ BAGIAN B ============ -->
+  <section class="bagian" id="bagian-b">
+    <h2>B. Menjelang Kemerdekaan</h2>
+    <div class="bagian-isi">
+
+      <article class="topik" id="t7">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>7. BPUPKI</h3>
+        <span class="tahun">Dibentuk 1 Maret 1945</span>
+        <p>Memasuki tahun 1945, posisi Jepang dalam Perang Pasifik semakin terdesak oleh kekuatan Sekutu. Untuk mempertahankan dukungan rakyat Indonesia sekaligus memenuhi janji politiknya, Perdana Menteri Jepang Kuniaki Koiso pada September 1944 mengumumkan janji kemerdekaan di kemudian hari bagi Indonesia. Sebagai realisasi awal janji tersebut, pada 1 Maret 1945 dibentuklah <b>BPUPKI</b> (Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan Indonesia, dalam bahasa Jepang disebut <i>Dokuritsu Junbi Cosakai</i>), diketuai oleh <b>Dr. Radjiman Wedyodiningrat</b>, dengan wakil ketua orang Jepang, Ichibangase Yosio, serta R.P. Soeroso. Keanggotaan BPUPKI terdiri dari <b>62 orang anggota aktif</b> — tokoh-tokoh utama pergerakan nasional dari berbagai daerah dan aliran — ditambah <b>7 orang anggota istimewa berkebangsaan Jepang</b> yang bertugas mengamati jalannya sidang tanpa hak suara, sehingga totalnya berjumlah <b>69 orang</b>. Badan ini bertugas menyelidiki serta merumuskan hal-hal penting berkaitan dengan persiapan kemerdekaan Indonesia, khususnya dasar negara dan rancangan undang-undang dasar.</p>
+        <h4>Sidang Pertama BPUPKI (29 Mei – 1 Juni 1945)</h4>
+        <p>Sidang pertama membahas rumusan dasar negara (<i>philosophische grondslag</i>) bagi Indonesia merdeka. Tiga tokoh utama menyampaikan gagasannya secara berurutan:</p>
+        <ul>
+          <li><b>Mohammad Yamin (29 Mei 1945)</b> — menyampaikan usulan lima asas dasar negara, baik secara lisan maupun dalam bentuk rancangan tertulis, yang meliputi asas peri kebangsaan, peri kemanusiaan, peri ke-Tuhanan, peri kerakyatan, dan kesejahteraan rakyat (rumusan lisan dan tertulisnya memiliki sedikit perbedaan redaksional).</li>
+          <li><b>Soepomo (31 Mei 1945)</b> — mengusulkan konsep <b>negara integralistik</b>, yaitu paham bahwa negara merupakan satu kesatuan organik yang menyatukan seluruh golongan dan individu di dalamnya, berbeda dengan paham negara liberal-individualistik maupun negara kelas (class theory) ala komunisme.</li>
+          <li><b>Soekarno (1 Juni 1945)</b> — dalam pidatonya yang terkenal, mengusulkan lima sila dasar negara yang ia beri nama <b>Pancasila</b>, meliputi: Kebangsaan Indonesia, Internasionalisme/Perikemanusiaan, Mufakat/Demokrasi, Kesejahteraan Sosial, dan Ketuhanan Yang Berkebudayaan. Soekarno juga menyampaikan bahwa kelima sila tersebut dapat diperas menjadi Trisila (tiga sila) bahkan Ekasila (satu sila, yaitu Gotong Royong). Tanggal penyampaian pidato ini, 1 Juni, kemudian diperingati secara nasional sebagai <b>Hari Lahir Pancasila</b>.</li>
+        </ul>
+        <h4>Masa Reses & Pembentukan Panitia Sembilan</h4>
+        <p>Setelah sidang pertama berakhir tanpa kesepakatan final mengenai rumusan resmi dasar negara, dibentuklah sebuah panitia kecil beranggotakan sembilan orang (dikenal sebagai <b>Panitia Sembilan</b>) untuk merumuskan kompromi antara golongan nasionalis-sekuler dan golongan Islam, yang hasilnya kelak dikenal sebagai Piagam Jakarta (dibahas pada bagian berikutnya).</p>
+        <h4>Sidang Kedua BPUPKI (10–17 Juli 1945)</h4>
+        <p>Sidang kedua ini berfokus pada penyusunan rancangan Undang-Undang Dasar, termasuk pembahasan mengenai bentuk negara (akhirnya disepakati bentuk republik, bukan kerajaan/monarki), wilayah negara Indonesia merdeka (disepakati mencakup seluruh bekas wilayah Hindia Belanda), kewarganegaraan, serta pembentukan Panitia Perancang UUD yang diketuai langsung oleh Soekarno. Hasil kerja panitia inilah yang menjadi cikal bakal naskah UUD 1945 yang kelak disahkan PPKI. Setelah tugasnya menyelesaikan rancangan dasar negara dan UUD dianggap selesai, BPUPKI dibubarkan pada awal Agustus 1945 dan digantikan oleh PPKI yang memiliki tugas lebih konkret: mempersiapkan pelaksanaan kemerdekaan itu sendiri.</p>
+      </article>
+
+      <article class="topik" id="t8">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>8. Piagam Jakarta</h3>
+        <span class="tahun">22 Juni 1945</span>
+        <p>Perbedaan pandangan yang muncul dalam sidang pertama BPUPKI, terutama antara golongan nasionalis-sekuler yang menginginkan dasar negara netral (tidak berlandaskan agama tertentu) dan golongan Islam yang menginginkan syariat Islam menjadi bagian dari dasar negara, memerlukan penyelesaian melalui kompromi politik. Untuk itu dibentuklah <b>Panitia Sembilan</b>, diketuai oleh <b>Soekarno</b>, dengan anggota antara lain Mohammad Hatta, Mohammad Yamin, A.A. Maramis, Ahmad Soebardjo, Abikoesno Tjokrosoejoso, Abdul Kahar Muzakir, Haji Agus Salim, dan K.H. Wahid Hasjim.</p>
+        <p>Setelah melalui perundingan, panitia ini berhasil merumuskan sebuah dokumen kompromi yang disepakati pada tanggal <b>22 Juni 1945</b>, kemudian dikenal dengan nama <b>Piagam Jakarta (Jakarta Charter)</b>. Dokumen ini memuat rancangan pembukaan (preambule) bagi UUD yang akan disusun, termasuk rumusan dasar negara yang pada sila pertamanya berbunyi: <i>"Ketuhanan, dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya"</i> — sebuah rumusan yang mengakomodasi aspirasi golongan Islam tanpa menjadikan Indonesia sebagai negara Islam secara formal bagi seluruh warganya.</p>
+        <p>Piagam Jakarta inilah yang menjadi <b>cikal bakal atau naskah dasar Pembukaan UUD 1945</b>. Namun, sehari setelah Proklamasi Kemerdekaan, tepatnya dalam <b>sidang PPKI tanggal 18 Agustus 1945</b>, terjadi perubahan penting: atas masukan dari tokoh-tokoh Indonesia bagian timur yang mayoritas beragama non-Muslim (disampaikan kepada Hatta melalui seorang perwira Angkatan Laut Jepang), yang mengkhawatirkan rumusan tersebut dapat memicu perpecahan bangsa yang majemuk, tujuh kata dalam sila pertama tersebut dihapus dan diganti menjadi <b>"Ketuhanan Yang Maha Esa"</b>. Perubahan ini dilakukan demi menjaga persatuan dan keutuhan bangsa Indonesia yang terdiri dari berbagai agama dan kepercayaan, dan disepakati secara mufakat tanpa perdebatan berkepanjangan pada sidang tersebut — sebuah keputusan yang sering disebut sebagai salah satu bentuk kebesaran jiwa para pendiri bangsa demi persatuan nasional.</p>
+        <h4>Perbandingan Rumusan Sila Pertama: Piagam Jakarta vs Pancasila Final</h4>
+        <div class="table-scroll">
+        <table class="perjanjian">
+          <tr><th>Sila</th><th>Piagam Jakarta (22 Juni 1945)</th><th>Pancasila Final — UUD 1945 (18 Agustus 1945)</th></tr>
+          <tr><td>Ke-1</td><td>Ketuhanan, dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya</td><td><b>Ketuhanan Yang Maha Esa</b> (tujuh kata dihapus)</td></tr>
+          <tr><td>Ke-2 s.d. Ke-5</td><td colspan="2">Tidak mengalami perubahan redaksional — kemanusiaan yang adil dan beradab; persatuan Indonesia; kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan; keadilan sosial bagi seluruh rakyat Indonesia.</td></tr>
+        </table>
+        </div>
+        <p>Perlu diingat bahwa yang berubah <b>hanya redaksi sila pertama</b>, sementara keempat sila lainnya tetap sama persis sejak Piagam Jakarta hingga rumusan final yang berlaku sekarang — sebuah detail yang sering dijadikan jebakan dalam soal, seolah-olah seluruh rumusan Pancasila berubah total.</p>
+      </article>
+
+      <article class="topik" id="t9">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>9. PPKI</h3>
+        <span class="tahun">Dibentuk 7 Agustus 1945</span>
+        <p>Setelah BPUPKI menuntaskan tugasnya merumuskan dasar negara dan rancangan UUD melalui dua kali persidangan, badan tersebut dibubarkan, dan pada <b>7 Agustus 1945</b> Jepang membentuk badan baru bernama <b>PPKI</b> (Panitia Persiapan Kemerdekaan Indonesia, dalam bahasa Jepang <i>Dokuritsu Junbi Iinkai</i>), diketuai oleh <b>Soekarno</b> dengan wakil ketua <b>Mohammad Hatta</b>, dan penasihat Ahmad Soebardjo. Keanggotaan PPKI pada awal pembentukannya berjumlah <b>21 orang</b>, yang dipilih dengan mempertimbangkan keterwakilan berbagai daerah bekas Hindia Belanda (12 orang dari Jawa, 3 dari Sumatra, 2 dari Sulawesi, 1 dari Kalimantan, 1 dari Sunda Kecil/Nusa Tenggara, 1 dari Maluku, dan 1 dari golongan Tionghoa). Sehari setelah Proklamasi, keanggotaan PPKI <b>ditambah 6 orang lagi tanpa sepengetahuan Jepang</b> — sebagai simbol bahwa PPKI sejak saat itu murni menjadi badan milik bangsa Indonesia, bukan lagi lembaga bentukan Jepang — sehingga totalnya menjadi <b>27 orang</b>. Berbeda dari BPUPKI yang anggotanya masih mencakup unsur Jepang, seluruh anggota PPKI adalah tokoh-tokoh Indonesia, mencerminkan tahapan yang lebih maju menuju kemerdekaan yang nyata.</p>
+        <p>Secara resmi, tugas PPKI adalah melanjutkan pekerjaan BPUPKI dengan fokus yang lebih konkret: mempersiapkan segala hal yang diperlukan bagi pelaksanaan kemerdekaan Indonesia, termasuk pengesahan UUD, pembentukan struktur pemerintahan, dan pemilihan pemimpin negara. Namun, jalannya sejarah berkembang lebih cepat dari rencana Jepang: sebelum PPKI sempat menjalankan tugasnya secara formal sesuai skenario Jepang, Jepang sudah menyerah kepada Sekutu (14–15 Agustus 1945), dan para pemimpin nasional segera memproklamasikan kemerdekaan secara mandiri pada 17 Agustus 1945, tanpa menunggu "pemberian" dari Jepang.</p>
+        <p>Justru karena itulah, peran PPKI yang sesungguhnya paling menonjol adalah <b>setelah Proklamasi</b> — dalam kurun waktu sangat singkat (18–22 Agustus 1945), PPKI mengadakan serangkaian sidang penting yang meletakkan fondasi struktur negara Republik Indonesia yang baru merdeka: mengesahkan UUD, memilih presiden dan wakil presiden, membentuk kementerian, membagi wilayah menjadi provinsi, dan membentuk komite nasional.</p>
+        <h4>Perbandingan BPUPKI dan PPKI</h4>
+        <div class="table-scroll">
+        <table class="perjanjian">
+          <tr><th>Aspek</th><th>BPUPKI</th><th>PPKI</th></tr>
+          <tr><td>Nama Jepang</td><td>Dokuritsu Junbi Cosakai</td><td>Dokuritsu Junbi Iinkai</td></tr>
+          <tr><td>Dibentuk</td><td>1 Maret 1945</td><td>7 Agustus 1945</td></tr>
+          <tr><td>Ketua</td><td>Dr. Radjiman Wedyodiningrat</td><td>Soekarno</td></tr>
+          <tr><td>Keanggotaan</td><td>69 orang (62 Indonesia + 7 istimewa Jepang)</td><td>21 orang awal, menjadi 27 orang (murni Indonesia)</td></tr>
+          <tr><td>Jumlah sidang</td><td>2 kali sidang resmi (29 Mei–1 Juni; 10–17 Juli 1945)</td><td>3 kali sidang (18, 19, 22 Agustus 1945)</td></tr>
+          <tr><td>Fokus tugas</td><td>Merumuskan dasar negara & rancangan UUD (sebelum merdeka)</td><td>Mengesahkan & menjalankan persiapan konkret negara (seputar & setelah Proklamasi)</td></tr>
+          <tr><td>Hasil utama</td><td>Rumusan Pancasila (1 Juni), rancangan UUD</td><td>UUD 1945 disahkan, Presiden/Wapres terpilih, provinsi & kementerian dibentuk</td></tr>
+        </table>
+        </div>
+      </article>
+
+      <article class="topik" id="t10">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>10. Peristiwa Menjelang Proklamasi</h3>
+        <span class="tahun">14–17 Agustus 1945</span>
+        <p>Rangkaian peristiwa dalam beberapa hari terakhir sebelum Proklamasi berlangsung sangat cepat, tegang, dan penuh dinamika politik di antara para pemimpin bangsa.</p>
+        <h4>Jepang Menyerah kepada Sekutu</h4>
+        <p>Setelah Amerika Serikat menjatuhkan bom atom di Hiroshima (6 Agustus 1945) dan Nagasaki (9 Agustus 1945), serta Uni Soviet menyatakan perang terhadap Jepang, pemerintah Jepang akhirnya menyatakan menyerah tanpa syarat kepada Sekutu pada tanggal 14 Agustus 1945 (diumumkan Kaisar Hirohito secara resmi pada 15 Agustus). Berita kekalahan ini sampai ke telinga para pemimpin dan pemuda Indonesia melalui radio siaran luar negeri yang mereka dengarkan secara sembunyi-sembunyi, meski pemerintah militer Jepang di Indonesia berusaha merahasiakannya. Menyerahnya Jepang menciptakan situasi <b>kekosongan kekuasaan (vacuum of power)</b> — Jepang sudah kalah dan kehilangan legitimasi untuk memerintah, sementara pasukan Sekutu belum tiba di Indonesia untuk mengambil alih kekuasaan secara resmi.</p>
+        <h4>Perbedaan Pendapat Golongan Muda dan Golongan Tua</h4>
+        <p>Situasi kekosongan kekuasaan ini memicu perdebatan strategi di kalangan pemimpin pergerakan. <b>Golongan muda</b> — antara lain Sutan Sjahrir, Chaerul Saleh, Wikana, Darwis, dan Soekarni — berpandangan bahwa momentum ini harus segera dimanfaatkan untuk memproklamasikan kemerdekaan <b>secepatnya, tanpa keterlibatan atau restu Jepang</b>, agar kemerdekaan benar-benar murni sebagai hasil perjuangan bangsa Indonesia sendiri, bukan "hadiah" dari Jepang. Sementara itu, <b>golongan tua</b> — terutama Soekarno dan Hatta — cenderung lebih berhati-hati, ingin membicarakan pelaksanaan proklamasi terlebih dahulu melalui jalur resmi PPKI agar prosesnya tertata dan tidak memicu pertumpahan darah akibat konfrontasi bersenjata dengan sisa pasukan Jepang yang masih memiliki senjata lengkap di Indonesia.</p>
+        <h4>Peristiwa Rengasdengklok</h4>
+        <p>Karena perbedaan pandangan tersebut tidak kunjung menemui titik temu, pada dini hari <b>16 Agustus 1945</b>, sekelompok pemuda membawa Soekarno dan Hatta beserta istri dan putra Soekarno ke <b>Rengasdengklok</b>, sebuah kota kecil di Karawang, Jawa Barat, yang dipilih karena jauh dari pengaruh dan pengawasan militer Jepang di Jakarta. Tujuannya adalah mendesak keduanya agar segera memproklamasikan kemerdekaan tanpa keterlibatan Jepang. Di Jakarta, terjadi negosiasi antara golongan muda dan golongan tua yang dijembatani oleh <b>Ahmad Soebardjo</b>, yang memberikan jaminan pribadi bahwa proklamasi kemerdekaan akan tetap dilaksanakan keesokan harinya. Berbekal jaminan tersebut, Soekarno dan Hatta akhirnya dibawa kembali ke Jakarta pada malam harinya.</p>
+        <h4>Penyusunan Teks Proklamasi</h4>
+        <p>Sekembalinya di Jakarta pada malam 16 menuju dini hari 17 Agustus 1945, perumusan naskah proklamasi dilakukan di rumah <b>Laksamana Tadashi Maeda</b>, seorang perwira Angkatan Laut Jepang yang bersimpati terhadap perjuangan Indonesia dan bersedia menjamin keamanan pertemuan tersebut dari campur tangan militer Jepang lainnya. Tiga tokoh utama yang merumuskan naskah adalah <b>Soekarno, Mohammad Hatta, dan Ahmad Soebardjo</b>. Soekarno menuliskan konsep naskah proklamasi dengan tangannya sendiri berdasarkan gagasan yang didiskusikan bersama. Setelah disepakati, naskah tersebut diketik oleh <b>Sayuti Melik</b>, dengan beberapa perubahan kecil dari naskah tulisan tangan aslinya — misalnya kata "tempoh" diubah menjadi "tempo", kata "Wakil-wakil bangsa Indonesia" diubah, dan naskah akhirnya ditandatangani atas nama <b>"Soekarno-Hatta"</b> sebagai representasi seluruh bangsa Indonesia, bukan ditandatangani oleh seluruh peserta rapat.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ BAGIAN C ============ -->
+  <section class="bagian" id="bagian-c">
+    <h2>C. Kemerdekaan & Pembentukan Negara</h2>
+    <div class="bagian-isi">
+
+      <article class="topik" id="t11">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>11. Proklamasi Kemerdekaan</h3>
+        <span class="tahun">17 Agustus 1945</span>
+        <p>Pada pagi hari <b>17 Agustus 1945</b>, tepatnya pukul 10.00 WIB, teks Proklamasi Kemerdekaan Indonesia dibacakan oleh <b>Soekarno</b> didampingi <b>Mohammad Hatta</b> di kediaman Soekarno, <b>Jalan Pegangsaan Timur Nomor 56, Jakarta</b>. Peristiwa ini berlangsung sederhana dan relatif singkat dari segi seremoni — bukan di lapangan besar dengan massa dalam jumlah sangat banyak — mengingat situasi keamanan yang masih rawan dengan keberadaan pasukan Jepang bersenjata lengkap di sekitar kota. Setelah pembacaan teks proklamasi, dilanjutkan dengan pengibaran <b>bendera Merah Putih</b> yang telah dijahit oleh Fatmawati (istri Soekarno), diiringi lagu kebangsaan <i>Indonesia Raya</i> yang dinyanyikan hadirin yang ada di lokasi.</p>
+        <p>Berita proklamasi kemudian disebarluaskan ke seluruh penjuru Nusantara melalui berbagai saluran — radio, surat kabar, dan penyampaian dari mulut ke mulut oleh para pemuda dan kurir pergerakan — meski pemerintah militer Jepang berupaya membatasi penyebarannya karena secara teknis Jepang masih memiliki kewajiban menjaga status quo wilayah pendudukan sesuai kesepakatan penyerahan kepada Sekutu.</p>
+        <p><b>Makna Proklamasi Kemerdekaan</b> memiliki dua dimensi penting yang sering ditekankan dalam materi kewarganegaraan: pertama, secara politis dan hukum, Proklamasi menandai lahirnya negara Indonesia yang merdeka dan berdaulat penuh, lepas dari segala bentuk penjajahan asing; kedua, secara ketatanegaraan, Proklamasi menjadi <b>titik tolak (awal mula)</b> berlakunya seluruh tatanan hukum nasional Indonesia — sejak momen itulah Pancasila, UUD 1945, dan seluruh sistem pemerintahan Republik Indonesia mulai berlaku dan mengikat, menggantikan seluruh sistem hukum kolonial yang berlaku sebelumnya.</p>
+      </article>
+
+      <article class="topik" id="t12">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>12. Sidang PPKI & Pembentukan Pemerintahan</h3>
+        <span class="tahun">18–22 Agustus 1945</span>
+        <p>Begitu Proklamasi dikumandangkan, para pendiri bangsa tidak berhenti sampai di situ — mereka menyadari bahwa sebuah negara memerlukan struktur pemerintahan yang jelas dan sah secara hukum. Untuk itu, PPKI segera mengadakan serangkaian sidang dalam beberapa hari berturut-turut untuk meletakkan fondasi kenegaraan Republik Indonesia yang baru lahir.</p>
+        <h4>Sidang 18 Agustus 1945</h4>
+        <p>Sidang ini menghasilkan tiga keputusan fundamental: pertama, <b>mengesahkan Undang-Undang Dasar 1945</b> sebagai konstitusi negara, yang naskah Pembukaannya berdasarkan Piagam Jakarta dengan perubahan pada sila pertama sebagaimana telah dijelaskan sebelumnya; kedua, <b>memilih Soekarno sebagai Presiden</b> dan <b>Mohammad Hatta sebagai Wakil Presiden</b> pertama Republik Indonesia — pemilihan ini dilakukan secara aklamasi oleh anggota PPKI, bukan melalui pemilihan umum, mengingat situasi darurat pasca-proklamasi yang belum memungkinkan penyelenggaraan pemilu; ketiga, disepakati bahwa untuk sementara waktu, sebelum MPR dan DPR terbentuk sesuai UUD, tugas presiden akan dibantu oleh sebuah <b>Komite Nasional</b>.</p>
+        <h4>Sidang 19 Agustus 1945</h4>
+        <p>Sidang kedua ini menetapkan pembagian wilayah Republik Indonesia menjadi <b>delapan provinsi</b> beserta gubernurnya masing-masing (Sumatra, Jawa Barat, Jawa Tengah, Jawa Timur, Sunda Kecil/Nusa Tenggara, Maluku, Sulawesi, dan Kalimantan), serta membentuk <b>kementerian-kementerian</b> (sebanyak 12 kementerian pada awalnya) sebagai perangkat pelaksana pemerintahan sehari-hari di bawah presiden.</p>
+        <h4>Sidang 22 Agustus 1945</h4>
+        <p>Sidang ketiga membentuk <b>KNIP (Komite Nasional Indonesia Pusat)</b>, yaitu badan yang berfungsi membantu tugas-tugas presiden sekaligus menjalankan fungsi legislatif sementara sebelum lembaga MPR dan DPR terbentuk sesuai amanat UUD 1945. Selain itu, sidang ini juga membahas persiapan pembentukan badan keamanan rakyat (yang kemudian dikenal sebagai BKR, cikal bakal kekuatan bersenjata Republik yang pada akhirnya berkembang menjadi TNI), serta sempat membahas gagasan pembentukan partai tunggal negara (PNI sebagai partai negara), meski gagasan ini akhirnya tidak jadi diterapkan demi menjaga semangat demokrasi yang lebih terbuka.</p>
+        <p>Dengan rangkaian tiga sidang PPKI ini, dalam rentang waktu kurang dari satu minggu setelah Proklamasi, Republik Indonesia yang baru merdeka telah memiliki seluruh unsur dasar sebuah negara modern: dasar hukum tertinggi (UUD 1945), kepala negara dan kepala pemerintahan (Presiden dan Wakil Presiden), pembagian administratif wilayah (provinsi), perangkat eksekutif (kementerian), dan badan legislatif sementara (KNIP) — sebuah pencapaian luar biasa mengingat situasi keamanan dan politik yang masih sangat tidak stabil pada masa itu.</p>
+      </article>
+
+      <article class="topik" id="t13">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>13. Perumusan & Kedudukan Pancasila</h3>
+        <span class="tahun">1 Juni – 18 Agustus 1945</span>
+        <p>Untuk memahami proses perumusan Pancasila secara utuh sebagai satu rangkaian yang berkesinambungan, berikut disusun kembali tahapan-tahapan perumusannya secara kronologis, merangkum penjelasan yang telah dibahas pada bagian-bagian sebelumnya:</p>
+        <ol>
+          <li><b>1 Juni 1945</b> — Soekarno menyampaikan pidato pada sidang pertama BPUPKI yang untuk pertama kalinya menggunakan istilah "Pancasila" bagi lima sila dasar negara yang diusulkannya, yaitu Kebangsaan Indonesia, Internasionalisme/Perikemanusiaan, Mufakat/Demokrasi, Kesejahteraan Sosial, dan Ketuhanan Yang Berkebudayaan. Tanggal ini kemudian ditetapkan secara resmi sebagai <b>Hari Lahir Pancasila</b>.</li>
+          <li><b>22 Juni 1945</b> — Panitia Sembilan, hasil bentukan BPUPKI, merumuskan Piagam Jakarta yang memuat versi awal rumusan Pancasila, termasuk sila pertama dengan tambahan kalimat kewajiban menjalankan syariat Islam bagi pemeluknya (tujuh kata).</li>
+          <li><b>10–17 Juli 1945</b> — Sidang kedua BPUPKI menyelesaikan rancangan UUD yang di dalamnya termuat rumusan Pancasila sebagaimana Piagam Jakarta, sebagai bagian dari Pembukaan (preambule) rancangan UUD tersebut.</li>
+          <li><b>18 Agustus 1945</b> — Sehari setelah Proklamasi, sidang pertama PPKI mengesahkan UUD 1945 secara resmi, dengan perubahan penting pada sila pertama Pancasila menjadi "Ketuhanan Yang Maha Esa" demi menjaga persatuan bangsa yang majemuk. Inilah rumusan final Pancasila yang berlaku hingga saat ini, tercantum dalam alinea keempat Pembukaan UUD 1945.</li>
+        </ol>
+        <p>Sejak pengesahan tersebut, <b>Pancasila memiliki kedudukan sebagai dasar negara (<i>staatsfundamentalnorm</i> atau norma dasar/fundamental negara)</b> — artinya Pancasila menjadi sumber dari segala sumber hukum yang berlaku di Indonesia, seluruh peraturan perundang-undangan di bawahnya (mulai dari UUD, undang-undang, hingga peraturan daerah) tidak boleh bertentangan dengan nilai-nilai Pancasila. Selain sebagai dasar negara, Pancasila juga berkedudukan sebagai <b>pandangan hidup bangsa (<i>way of life</i>)</b> yang menjadi pedoman perilaku dan cita-cita bersama seluruh rakyat Indonesia, serta sebagai <b>ideologi nasional</b> yang membedakan Indonesia dari ideologi-ideologi besar dunia lainnya seperti liberalisme maupun komunisme, karena Pancasila lahir dari nilai-nilai luhur budaya dan kearifan bangsa Indonesia sendiri.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ BAGIAN D ============ -->
+  <section class="bagian" id="bagian-d">
+    <h2>D. Mempertahankan Kemerdekaan</h2>
+    <div class="bagian-isi">
+
+      <article class="topik" id="t14">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>14. Perjuangan Fisik</h3>
+        <span class="tahun">1945–1949</span>
+        <p>Kemerdekaan yang telah diproklamasikan ternyata tidak serta-merta diakui oleh pihak Belanda, yang berupaya kembali menguasai Indonesia dengan membonceng kedatangan pasukan Sekutu (AFNEI — Allied Forces Netherlands East Indies) yang bertugas melucuti senjata tentara Jepang dan membebaskan tawanan perang. Belanda memanfaatkan situasi ini melalui NICA (Netherlands Indies Civil Administration) untuk secara bertahap merebut kembali kekuasaan administratif dan militer di berbagai wilayah, yang kemudian memicu serangkaian pertempuran besar antara rakyat/TNI melawan pasukan Sekutu dan Belanda.</p>
+        <h4>Pertempuran Surabaya (10 November 1945)</h4>
+        <p>Merupakan pertempuran terbesar dan paling berdarah dalam masa revolusi kemerdekaan. Dipicu oleh insiden perobekan bendera Belanda di Hotel Yamato oleh arek-arek Surabaya, yang kemudian memuncak setelah tewasnya pemimpin pasukan Sekutu, Brigadir Jenderal A.W.S. Mallaby, dalam sebuah insiden yang belum jelas kronologinya. Sekutu kemudian mengeluarkan ultimatum kepada rakyat Surabaya untuk menyerahkan senjata, yang ditolak mentah-mentah. Pertempuran besar pun pecah pada 10 November 1945, dengan tokoh <b>Bung Tomo</b> yang membakar semangat juang rakyat melalui siaran-siaran radio yang menggelegar. Meski akhirnya kota Surabaya jatuh ke tangan Sekutu, semangat perlawanan luar biasa rakyat Surabaya ini membuat tanggal 10 November diperingati secara nasional sebagai <b>Hari Pahlawan</b>.</p>
+        <h4>Pertempuran Ambarawa (20 November – 15 Desember 1945)</h4>
+        <p>Terjadi di Ambarawa, Jawa Tengah, antara pasukan TKR (Tentara Keamanan Rakyat, cikal bakal TNI) di bawah komando <b>Kolonel Soedirman</b> melawan pasukan Sekutu. Dalam pertempuran ini, Soedirman menerapkan taktik pengepungan yang dikenal sebagai <b>"supit urang"</b> (mengepung dari dua sisi menyerupai capit udang), yang berhasil memukul mundur pasukan Sekutu dari Ambarawa. Kemenangan yang diraih pada 15 Desember 1945 ini kemudian diperingati sebagai <b>Hari Infanteri TNI</b>.</p>
+        <h4>Bandung Lautan Api (23–24 Maret 1946)</h4>
+        <p>Menghadapi ultimatum Sekutu agar rakyat dan pasukan TRI mengosongkan Kota Bandung, para pejuang mengambil keputusan drastis: membumihanguskan bagian selatan kota Bandung sebelum mundur ke luar kota, dengan tujuan agar bangunan-bangunan strategis tidak dapat dimanfaatkan sebagai markas atau basis militer oleh Sekutu maupun Belanda. Peristiwa pembakaran kota oleh rakyatnya sendiri ini dikenal dengan sebutan Bandung Lautan Api.</p>
+        <h4>Medan Area (sejak Oktober 1945)</h4>
+        <p>Perlawanan rakyat di Medan dan sekitarnya terhadap pasukan Sekutu/NICA yang mendarat di Sumatra Utara, yang berusaha menegakkan kembali kekuasaan kolonial di wilayah tersebut. Pertempuran berlangsung dalam bentuk perlawanan gerilya kota yang meluas ke berbagai penjuru wilayah Sumatra Timur.</p>
+        <h4>Puputan Margarana (20 November 1946)</h4>
+        <p>Di Bali, pasukan pejuang di bawah pimpinan <b>I Gusti Ngurah Rai</b> melakukan perlawanan habis-habisan atau "puputan" (perang sampai titik darah penghabisan, sesuai tradisi Bali) melawan pasukan Belanda di Desa Marga. Seluruh anggota pasukan Ngurah Rai gugur dalam pertempuran ini, menjadikannya simbol pengorbanan total demi mempertahankan kemerdekaan.</p>
+        <h4>Agresi Militer Belanda I (21 Juli 1947)</h4>
+        <p>Belanda melancarkan serangan militer besar-besaran yang secara terang-terangan melanggar isi Perjanjian Linggarjati yang baru saja ditandatangani. Serangan ini bertujuan menguasai kembali wilayah-wilayah strategis penghasil devisa seperti perkebunan dan area industri di Jawa dan Sumatra. Aksi ini menuai kecaman keras dari dunia internasional, dan Perserikatan Bangsa-Bangsa (PBB) mulai turun tangan membentuk Komisi Tiga Negara (KTN) untuk menengahi konflik.</p>
+        <h4>Agresi Militer Belanda II (19 Desember 1948)</h4>
+        <p>Belanda kembali melancarkan serangan besar, kali ini langsung menyerbu dan menduduki Ibu Kota Republik Indonesia saat itu, Yogyakarta, serta menangkap dan mengasingkan Presiden Soekarno, Wakil Presiden Hatta, dan sejumlah pemimpin negara lainnya. Meski demikian, perjuangan tidak berhenti: untuk membuktikan kepada dunia internasional bahwa Republik Indonesia dan TNI masih eksis dan mampu melawan, dilancarkanlah <b>Serangan Umum 1 Maret 1949</b>, dipimpin oleh <b>Letnan Kolonel Soeharto</b> atas restu dan koordinasi dengan Sri Sultan Hamengkubuwono IX, berhasil merebut dan menguasai Kota Yogyakarta selama kurang lebih enam jam sebelum akhirnya mundur kembali. Keberhasilan taktis dan simbolis ini memberikan tekanan diplomatik besar kepada Belanda di forum internasional, mempercepat proses menuju pengakuan kedaulatan.</p>
+        <h4>PDRI — Pemerintahan Darurat Republik Indonesia</h4>
+        <p>Mengantisipasi kemungkinan ditangkapnya para pemimpin negara di Yogyakarta, sebelum penangkapan terjadi Presiden Soekarno telah mengirimkan mandat kepada <b>Mr. Sjafruddin Prawiranegara</b> (Menteri Kemakmuran yang saat itu sedang berada di Sumatra) untuk membentuk pemerintahan darurat apabila Presiden dan Wakil Presiden tidak lagi dapat menjalankan tugas pemerintahan. Menindaklanjuti mandat tersebut, pada 22 Desember 1948 dibentuklah <b>PDRI (Pemerintahan Darurat Republik Indonesia)</b> di Bukittinggi, Sumatra Barat, dengan Sjafruddin Prawiranegara sebagai Ketua/Presiden PDRI. Keberadaan PDRI ini sangat penting secara ketatanegaraan: ia membuktikan kepada dunia bahwa <b>Republik Indonesia tetap eksis dan pemerintahannya tidak pernah benar-benar padam</b> meski ibu kota jatuh dan pemimpin tertingginya ditawan, sehingga mematahkan klaim Belanda yang menyatakan Republik Indonesia sudah tidak ada lagi. Setelah situasi kembali normal pascaPerjanjian Roem-Royen dan Soekarno-Hatta dibebaskan, Sjafruddin Prawiranegara secara resmi menyerahkan kembali mandat pemerintahan kepada Presiden Soekarno pada Juli 1949.</p>
+      </article>
+
+      <article class="topik" id="t14b">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>14b. Ancaman Disintegrasi Bangsa: Pemberontakan-Pemberontakan Pasca Kemerdekaan</h3>
+        <span class="tahun">1948–1965</span>
+        <p>Selain menghadapi ancaman dari luar (Belanda), Republik Indonesia yang masih sangat muda juga harus menghadapi berbagai gejolak dari dalam negeri berupa pemberontakan bersenjata yang mengancam keutuhan wilayah maupun ideologi negara. Pemberontakan-pemberontakan ini secara umum dapat dikelompokkan berdasarkan motif yang melatarbelakanginya: motif <b>ideologi</b> (ingin mengganti dasar negara Pancasila dengan ideologi lain, seperti komunisme atau negara Islam), motif <b>kepentingan/kekuasaan kelompok tertentu</b> (mempertahankan kepentingan federal atau kelompok militer tertentu), dan motif <b>sistem pemerintahan</b> (ketidakpuasan daerah terhadap kebijakan pemerintah pusat). Memahami ketujuh peristiwa berikut secara berurutan sangat penting karena sering muncul sebagai soal perbandingan (mencocokkan tokoh, tahun, lokasi, dan motif) dalam TWK.</p>
+        <h4>Pemberontakan PKI Madiun (18 September 1948)</h4>
+        <p>Terjadi di tengah situasi revolusi kemerdekaan yang belum usai, dipimpin oleh <b>Musso</b> (tokoh PKI yang baru kembali dari Uni Soviet) bersama <b>Amir Sjarifuddin</b> (mantan Perdana Menteri yang kabinetnya jatuh setelah menandatangani Perjanjian Renville yang dianggap merugikan). Pemberontakan ini juga terkait erat dengan kekecewaan sejumlah kalangan kiri atas kebijakan <b>Rekonstruksi dan Rasionalisasi Angkatan Perang (ReRa)</b> pemerintah, yang dianggap mengurangi kekuatan laskar-laskar bersenjata yang berhaluan kiri. PKI dan kelompok pendukungnya (tergabung dalam Front Demokrasi Rakyat/FDR) berhasil menguasai Kota Madiun dan sekitarnya, lalu memproklamasikan berdirinya "Republik Sovyet Indonesia" sebagai tandingan pemerintah RI yang sah. Presiden Soekarno segera menyerukan kepada rakyat untuk memilih antara mengikuti Soekarno-Hatta atau mengikuti Musso. Panglima Besar Jenderal Soedirman memerintahkan Kolonel Gatot Soebroto (Jawa Tengah) dan Kolonel Soengkono (Jawa Timur) memimpin operasi penumpasan, dan dalam waktu sekitar dua minggu Kota Madiun berhasil direbut kembali oleh TNI; Musso tewas dalam pengejaran, sementara Amir Sjarifuddin tertangkap dan dieksekusi.</p>
+        <h4>Pemberontakan DI/TII (Darul Islam/Tentara Islam Indonesia)</h4>
+        <p>Berbeda dari pemberontakan lain yang terjadi di satu titik, DI/TII merupakan rangkaian gerakan di beberapa daerah dengan tujuan yang sama: mendirikan negara berdasarkan hukum Islam (Negara Islam Indonesia), bukan negara berdasarkan Pancasila.</p>
+        <ul>
+          <li><b>Jawa Barat (1949)</b> — dipimpin <b>Sekarmadji Maridjan Kartosoewirjo</b>, yang memanfaatkan kekosongan kekuatan TNI di Jawa Barat akibat perjanjian Renville (yang mengharuskan pasukan RI hijrah keluar dari kantong-kantong wilayah tersebut) untuk memproklamasikan berdirinya Negara Islam Indonesia (NII) pada 7 Agustus 1949. Ini merupakan gerakan DI/TII paling besar dan paling lama bertahan, baru berhasil ditumpas TNI (Operasi Pagar Betis) dengan tertangkapnya Kartosoewirjo pada tahun 1962.</li>
+          <li><b>Aceh (1953)</b> — dipimpin <b>Daud Beureueh</b>, dipicu kekecewaan karena status keistimewaan Aceh sebagai daerah otonom diturunkan menjadi bagian dari Provinsi Sumatra Utara, serta ketidakpuasan terhadap kebijakan pemerintah pusat yang dianggap kurang memperhatikan aspirasi keislaman masyarakat Aceh. Gerakan ini berhasil diselesaikan lebih lewat pendekatan musyawarah (Musyawarah Kerukunan Rakyat Aceh) dibanding operasi militer penuh.</li>
+          <li><b>Sulawesi Selatan (1951)</b> — dipimpin <b>Kahar Muzakar</b>, awalnya dipicu ketidakpuasan atas penolakan permintaannya agar seluruh laskar gerilya Sulawesi Selatan yang dipimpinnya dimasukkan menjadi kesatuan resmi TNI (Brigade Hasanuddin), yang kemudian berkembang menjadi gerakan bergabung dengan DI/TII Kartosoewirjo.</li>
+          <li><b>Kalimantan Selatan (1950)</b> — dipimpin <b>Ibnu Hajar</b>, dengan pola serupa: mantan pejuang gerilya yang kecewa terhadap kebijakan penataan ulang kesatuan militer di daerahnya, kemudian menyatakan bergabung dengan gerakan DI/TII.</li>
+        </ul>
+        <h4>Pemberontakan APRA — Angkatan Perang Ratu Adil (23 Januari 1950)</h4>
+        <p>Dipimpin oleh <b>Kapten Raymond Westerling</b>, mantan perwira KNIL (tentara kolonial Belanda), yang menghimpun pasukan bekas KNIL di Bandung. Pemberontakan ini bermotif kepentingan kelompok: mempertahankan bentuk negara federal (sesuai hasil KMB) dan menentang rencana pembubaran negara-negara bagian federal untuk kembali ke NKRI, sekaligus mempertahankan eksistensi pasukan KNIL yang terancam dibubarkan dalam proses penyatuan menjadi APRIS (Angkatan Perang Republik Indonesia Serikat). APRA sempat menyerang dan menguasai Kota Bandung untuk sementara sebelum berhasil dipukul mundur oleh TNI.</p>
+        <h4>Pemberontakan Andi Aziz (5 April 1950)</h4>
+        <p>Terjadi di Makassar, Sulawesi Selatan, dipimpin oleh <b>Kapten Andi Aziz</b>, seorang mantan perwira KNIL yang juga menolak masuknya pasukan TNI dari Jawa ke wilayah Negara Indonesia Timur (NIT) dan menginginkan agar keamanan NIT tetap dipegang oleh pasukan bekas KNIL setempat. Pemberontakan ini terkait erat dengan upaya mempertahankan eksistensi negara-negara bagian federal dan berhasil ditumpas TNI, yang kemudian mempercepat proses pembubaran NIT dan bergabungnya wilayah tersebut ke NKRI.</p>
+        <h4>Pemberontakan RMS — Republik Maluku Selatan (25 April 1950)</h4>
+        <p>Dipimpin oleh <b>Dr. Christiaan Robert Steven Soumokil</b>, bekas Jaksa Agung Negara Indonesia Timur, yang memproklamasikan berdirinya Republik Maluku Selatan yang terpisah dari NKRI, berpusat di Ambon. Gerakan ini juga berkaitan dengan penolakan terhadap pembubaran negara federal dan kekhawatiran sebagian masyarakat Maluku (khususnya bekas anggota KNIL) atas dominasi pemerintah pusat yang berbasis di Jawa. Pemerintah RI mengirim pasukan ekspedisi militer di bawah Kolonel Alexander Evert Kawilarang untuk menumpas RMS; Ambon berhasil direbut, meski perlawanan sisa-sisa RMS di pulau-pulau kecil sekitarnya berlangsung hingga beberapa tahun setelahnya.</p>
+        <h4>Pemberontakan PRRI/Permesta (1957–1958)</h4>
+        <p><b>PRRI (Pemerintahan Revolusioner Republik Indonesia)</b> dideklarasikan di Sumatra Barat (Februari 1958) dan <b>Permesta (Perjuangan Rakyat Semesta)</b> dideklarasikan di Sulawesi Utara (Maret 1957), keduanya oleh sejumlah perwira militer daerah yang dilatarbelakangi ketidakpuasan yang sama: kesenjangan pembangunan dan alokasi anggaran yang dianggap timpang antara pusat (Jawa) dan daerah (luar Jawa), ketidakpuasan terhadap dominasi politik PKI yang semakin besar dalam pemerintahan pusat pada masa Demokrasi Terpimpin, serta ketegangan hubungan pusat-daerah dalam pembagian hasil sumber daya alam. Karena kesamaan motif dan waktu, kedua gerakan ini sering dianggap sebagai satu rangkaian pemberontakan dan saling mendukung satu sama lain. Pemerintah pusat mengirim operasi militer gabungan (di antaranya Operasi 17 Agustus untuk PRRI dan Operasi Merdeka untuk Permesta) yang berhasil menumpas kedua pemberontakan ini dalam kurun waktu sekitar satu tahun.</p>
+        <p>Pola yang penting dicermati dari seluruh rangkaian pemberontakan pasca kemerdekaan ini adalah bahwa mayoritas berhasil ditumpas melalui kombinasi operasi militer TNI dan/atau pendekatan politik-diplomasi, dan keberhasilan mengatasinya justru memperkuat legitimasi serta soliditas pemerintah pusat dan TNI sebagai penjaga keutuhan NKRI di tengah keberagaman ideologi dan kepentingan daerah yang sangat luas.</p>
+        <h4>Ringkasan Pemberontakan Pasca Kemerdekaan</h4>
+        <div class="table-scroll">
+        <table class="perjanjian">
+          <tr><th>Pemberontakan</th><th>Tahun</th><th>Tokoh</th><th>Wilayah</th><th>Motif Utama</th></tr>
+          <tr><td>PKI Madiun</td><td>1948</td><td>Musso, Amir Sjarifuddin</td><td>Madiun, Jawa Timur</td><td>Ideologi — mendirikan negara komunis</td></tr>
+          <tr><td>DI/TII Jawa Barat</td><td>1949</td><td>Kartosoewirjo</td><td>Jawa Barat</td><td>Ideologi — negara berdasarkan syariat Islam</td></tr>
+          <tr><td>APRA</td><td>1950</td><td>Raymond Westerling</td><td>Bandung</td><td>Kepentingan kelompok — pertahankan negara federal & KNIL</td></tr>
+          <tr><td>Andi Aziz</td><td>1950</td><td>Andi Aziz</td><td>Makassar</td><td>Kepentingan kelompok — tolak TNI masuk NIT</td></tr>
+          <tr><td>RMS</td><td>1950</td><td>Soumokil</td><td>Ambon, Maluku</td><td>Ingin memisahkan diri dari NKRI</td></tr>
+          <tr><td>DI/TII Kalimantan Selatan</td><td>1950</td><td>Ibnu Hajar</td><td>Kalimantan Selatan</td><td>Ideologi — bergabung Negara Islam Indonesia</td></tr>
+          <tr><td>DI/TII Sulawesi Selatan</td><td>1951</td><td>Kahar Muzakar</td><td>Sulawesi Selatan</td><td>Kekecewaan status laskar & ideologi</td></tr>
+          <tr><td>DI/TII Aceh</td><td>1953</td><td>Daud Beureueh</td><td>Aceh</td><td>Status otonomi & aspirasi keislaman</td></tr>
+          <tr><td>Permesta</td><td>1957</td><td>Ventje Sumual (Sulut)</td><td>Sulawesi Utara</td><td>Ketimpangan pusat-daerah</td></tr>
+          <tr><td>PRRI</td><td>1958</td><td>Sjafruddin Prawiranegara</td><td>Sumatra Barat</td><td>Ketimpangan pusat-daerah</td></tr>
+        </table>
+        </div>
+      </article>
+
+      <article class="topik" id="t15">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>15. Perjuangan Diplomasi</h3>
+        <span class="tahun">1946–1949</span>
+        <p>Selain melalui jalur perjuangan bersenjata, para pemimpin Republik Indonesia menyadari pentingnya jalur diplomasi internasional untuk memperoleh pengakuan kedaulatan secara sah dari dunia, khususnya dari Belanda. Serangkaian perundingan besar dilakukan sepanjang periode revolusi kemerdekaan:</p>
+        <h4>Perbandingan Perjanjian & Perundingan (sebagian besar di atas)</h4>
+        <div class="table-scroll">
+        <table class="perjanjian">
+          <tr><th>Perjanjian/Perundingan</th><th>Waktu</th><th>Isi Pokok & Konteks</th></tr>
+          <tr><td><b>Linggarjati</b></td><td>Dirundingkan November 1946, ditandatangani Maret 1947, di Linggarjati (dekat Cirebon)</td><td>Belanda secara <i>de facto</i> (bukan <i>de jure</i>) mengakui kedaulatan Republik Indonesia atas wilayah Jawa, Madura, dan Sumatra. Kedua pihak juga sepakat untuk membentuk negara federal bernama <b>Republik Indonesia Serikat (RIS)</b> yang akan bekerja sama dengan Belanda dalam sebuah persemakmuran (Uni Indonesia-Belanda). Perjanjian ini kemudian dilanggar Belanda sendiri lewat Agresi Militer I.</td></tr>
+          <tr><td><b>Renville</b></td><td>Ditandatangani Januari 1948, di atas kapal perang Amerika Serikat USS Renville</td><td>Sebagai akibat dari Agresi Militer Belanda I, perundingan ini menghasilkan pengakuan wilayah RI yang jauh lebih sempit dibanding Linggarjati, dibatasi oleh garis demarkasi yang dikenal sebagai <b>Garis Van Mook</b>, yang secara sepihak menguntungkan penguasaan wilayah oleh Belanda. Perundingan ini difasilitasi oleh Komisi Tiga Negara (KTN) bentukan PBB.</td></tr>
+          <tr><td><b>Roem-Royen</b></td><td>Ditandatangani April–Mei 1949, di Jakarta</td><td>Dinamakan sesuai ketua delegasi masing-masing pihak, Mohammad Roem (Indonesia) dan Herman van Roijen (Belanda). Belanda menyetujui untuk menghentikan seluruh operasi militer, mengembalikan pemerintahan Republik Indonesia ke Yogyakarta, serta membebaskan Presiden Soekarno, Wakil Presiden Hatta, dan pemimpin lain yang diasingkan pasca-Agresi Militer II. Perundingan ini membuka jalan menuju perundingan puncak, yaitu Konferensi Meja Bundar.</td></tr>
+          <tr><td><b>Konferensi Meja Bundar (KMB)</b></td><td>23 Agustus – 2 November 1949, di Den Haag, Belanda</td><td>Perundingan puncak yang dihadiri delegasi Republik Indonesia (dipimpin Mohammad Hatta), delegasi Belanda, serta perwakilan negara-negara bagian bentukan Belanda (BFO). Hasilnya, Belanda akhirnya <b>mengakui kedaulatan penuh Indonesia</b> dalam bentuk negara federal Republik Indonesia Serikat (RIS), kecuali wilayah <b>Irian Barat (Papua)</b> yang penyelesaian statusnya ditunda untuk dibahas kemudian (dan baru benar-benar kembali ke pangkuan Indonesia pada 1963 melalui Trikora dan Pepera 1969).</td></tr>
+        </table>
+        </div>
+        <p>Secara keseluruhan, jalur diplomasi dan jalur perjuangan fisik berjalan beriringan dan saling menguatkan sepanjang periode 1945–1949: setiap kali Belanda melanggar hasil perundingan lewat serangan militer, Indonesia membalasnya baik dengan perlawanan bersenjata maupun dengan memperkuat posisi tawar di meja perundingan berikutnya, hingga akhirnya kedaulatan penuh berhasil diperoleh lewat KMB.</p>
+      </article>
+
+      <article class="topik" id="t16">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>16. Perubahan Bentuk Negara</h3>
+        <span class="tahun">1945–1950</span>
+        <p>Dalam kurun waktu lima tahun pertama sejak Proklamasi, Indonesia mengalami tiga kali perubahan bentuk negara dan konstitusi, sebuah dinamika ketatanegaraan yang penting dipahami secara berurutan:</p>
+        <ul>
+          <li><b>Republik Indonesia (1945–1949)</b> — sejak Proklamasi, Indonesia berbentuk negara kesatuan dengan sistem pemerintahan presidensial, berlandaskan <b>UUD 1945</b> sebagai konstitusi. Bentuk ini mencerminkan cita-cita asli para pendiri bangsa: satu negara, satu bangsa, tanpa pembagian federal.</li>
+          <li><b>Republik Indonesia Serikat / RIS (1949–1950)</b> — sebagai hasil kesepakatan Konferensi Meja Bundar, Indonesia untuk sementara berubah bentuk menjadi <b>negara federal (serikat)</b>, terdiri dari beberapa negara bagian, di mana Republik Indonesia (yang berpusat di Yogyakarta) hanyalah salah satu dari negara-negara bagian tersebut, di samping negara-negara bagian lain bentukan Belanda seperti Negara Indonesia Timur dan Negara Pasundan. Bentuk federal ini menggunakan konstitusi baru yang disebut <b>Konstitusi RIS</b>.</li>
+          <li><b>Kembali menjadi NKRI (17 Agustus 1950)</b> — bentuk negara federal RIS dipandang oleh mayoritas rakyat dan pemimpin bangsa sebagai warisan strategi <i>devide et impera</i> Belanda yang bertentangan dengan semangat persatuan Proklamasi 1945. Secara bertahap, negara-negara bagian bentukan Belanda satu per satu memilih membubarkan diri dan bergabung kembali ke pangkuan Republik Indonesia, hingga akhirnya RIS secara resmi dibubarkan dan Indonesia kembali menjadi <b>negara kesatuan (NKRI)</b> pada 17 Agustus 1950, tepat lima tahun setelah Proklamasi. Sejak saat itu, Indonesia menerapkan konstitusi baru yang disebut <b>UUDS 1950 (Undang-Undang Dasar Sementara)</b>, yang bersifat sementara sembari menunggu penyusunan UUD definitif oleh badan Konstituante yang akan dipilih lewat pemilu.</li>
+        </ul>
+        <p>Dengan demikian, terdapat tiga konstitusi berbeda yang pernah berlaku dalam lima tahun pertama kemerdekaan Indonesia: UUD 1945 (periode 1945–1949), Konstitusi RIS (periode 1949–1950), dan UUDS 1950 (periode 1950–1959), sebelum akhirnya Indonesia kembali menggunakan UUD 1945 melalui Dekrit Presiden 1959 yang akan dibahas pada bagian berikutnya.</p>
+        <p>Perlu dicatat pula momen resmi penyerahan kedaulatan: pada <b>27 Desember 1949</b>, upacara pengakuan dan penyerahan kedaulatan dari Kerajaan Belanda kepada Republik Indonesia Serikat dilangsungkan secara serentak di dua tempat, yaitu di Amsterdam (Belanda), ditandatangani oleh Ratu Juliana dan Perdana Menteri Mohammad Hatta, serta di Jakarta, antara Wakil Tinggi Mahkota Belanda A.H.J. Lovink dan Sultan Hamengkubuwono IX. Tanggal inilah yang secara formal mengakhiri seluruh proses perjuangan kemerdekaan fisik dan diplomasi Indonesia melawan Belanda.</p>
+      </article>
+
+      <article class="topik" id="t16b">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>16b. Trikora & Pembebasan Irian Barat</h3>
+        <span class="tahun">1961–1969</span>
+        <p>Sebagaimana disinggung dalam pembahasan Konferensi Meja Bundar, satu-satunya wilayah bekas Hindia Belanda yang statusnya <b>tidak</b> ikut diserahkan kepada Indonesia dalam KMB 1949 adalah <b>Irian Barat (Papua)</b> — Belanda berdalih penduduk Papua secara etnis dan budaya berbeda dari penduduk Indonesia lainnya, sehingga penyelesaian statusnya akan dibahas kembali dalam waktu satu tahun setelah pengakuan kedaulatan. Namun, perundingan-perundingan bilateral yang dilakukan Indonesia sepanjang dekade 1950-an untuk merebut kembali Irian Barat secara diplomatis selalu menemui jalan buntu, bahkan Belanda terkesan mempersiapkan Papua menjadi negara boneka tersendiri yang terpisah dari Indonesia.</p>
+        <h4>Trikora (19 Desember 1961)</h4>
+        <p>Karena upaya diplomasi tidak membuahkan hasil, Presiden Soekarno mengambil langkah konfrontatif dengan mengumumkan <b>Trikora (Tri Komando Rakyat)</b> di Yogyakarta, yang isinya: (1) gagalkan pembentukan negara boneka Papua buatan Belanda kolonial, (2) kibarkan Sang Merah Putih di Irian Barat, tanah air Indonesia, dan (3) bersiaplah untuk mobilisasi umum guna mempertahankan kemerdekaan dan kesatuan tanah air serta bangsa. Untuk melaksanakan komando ini, dibentuklah <b>Komando Mandala Pembebasan Irian Barat</b>, dipimpin oleh Mayor Jenderal <b>Soeharto</b>, yang melancarkan operasi militer gabungan (infiltrasi pasukan lewat laut dan udara ke wilayah Irian Barat) sepanjang tahun 1962.</p>
+        <h4>Perjanjian New York (15 Agustus 1962) & UNTEA</h4>
+        <p>Tekanan militer dan diplomasi Indonesia, ditambah campur tangan Amerika Serikat yang mengkhawatirkan konflik ini akan mendorong Indonesia semakin dekat ke blok komunis, akhirnya memaksa Belanda kembali ke meja perundingan. Dihasilkanlah <b>Perjanjian New York</b>, yang menyepakati bahwa Belanda akan menyerahkan pemerintahan Irian Barat kepada <b>UNTEA (United Nations Temporary Executive Authority)</b>, sebuah badan pemerintahan sementara PBB, sebagai masa transisi sebelum diserahkan sepenuhnya kepada Indonesia paling lambat 1 Mei 1963.</p>
+        <h4>Pepera 1969 (Penentuan Pendapat Rakyat)</h4>
+        <p>Sebagai syarat akhir dari Perjanjian New York, disepakati bahwa rakyat Irian Barat sendiri yang akan menentukan pilihan akhir mereka melalui sebuah jajak pendapat, yang dilaksanakan pada tahun 1969 dan dikenal sebagai <b>Pepera (Penentuan Pendapat Rakyat)</b> atau dalam istilah internasional <i>Act of Free Choice</i>. Hasil Pepera menyatakan rakyat Irian Barat memilih untuk tetap bergabung dan menjadi bagian resmi dari Negara Kesatuan Republik Indonesia, hasil yang kemudian diakui oleh Sidang Umum PBB pada tahun yang sama, sehingga menuntaskan secara penuh proses integrasi seluruh bekas wilayah Hindia Belanda ke dalam wilayah NKRI.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ BAGIAN E ============ -->
+  <section class="bagian" id="bagian-e">
+    <h2>E. Perkembangan Sistem Pemerintahan</h2>
+    <div class="bagian-isi">
+
+      <article class="topik" id="t17">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>17. Demokrasi Parlementer</h3>
+        <span class="tahun">1950–1959</span>
+        <p>Sejak kembali menjadi negara kesatuan dengan UUDS 1950 sebagai konstitusi, Indonesia menerapkan <b>sistem pemerintahan parlementer</b>, di mana Presiden hanya berperan sebagai kepala negara yang bersifat simbolis dan seremonial, sementara kekuasaan pemerintahan sehari-hari (kepala pemerintahan) dijalankan oleh <b>Perdana Menteri</b> beserta kabinetnya, yang bertanggung jawab kepada parlemen (DPR). Dalam sistem ini, kabinet dapat dijatuhkan oleh parlemen melalui mosi tidak percaya, dan sebaliknya parlemen juga dapat dibubarkan oleh kepala negara dalam kondisi tertentu.</p>
+        <p>Ciri paling menonjol dari periode ini adalah <b>ketidakstabilan pemerintahan</b> yang tercermin dari seringnya pergantian kabinet — tercatat sekitar tujuh kabinet silih berganti dalam kurun waktu sembilan tahun (di antaranya Kabinet Natsir, Sukiman, Wilopo, Ali Sastroamidjojo I, Burhanuddin Harahap, Ali Sastroamidjojo II, dan Djuanda). Instabilitas ini terjadi karena banyaknya partai politik yang bersaing di parlemen (multipartai ekstrem) tanpa ada satu partai pun yang cukup dominan untuk membentuk koalisi pemerintahan yang solid dan bertahan lama, sehingga program-program pembangunan jangka panjang sulit dijalankan secara konsisten.</p>
+        <h4>Pemilihan Umum 1955</h4>
+        <p>Di tengah instabilitas politik tersebut, Indonesia berhasil menyelenggarakan <b>pemilu pertama</b> dalam sejarahnya pada tahun 1955, yang secara luas dianggap sebagai salah satu pemilu paling demokratis, jujur, dan adil yang pernah diselenggarakan Indonesia hingga masa-masa berikutnya, meski dilaksanakan di tengah keterbatasan infrastruktur dan situasi keamanan yang belum sepenuhnya stabil. Pemilu ini dilaksanakan dalam <b>dua tahap terpisah</b>: tahap pertama untuk memilih anggota <b>DPR (Dewan Perwakilan Rakyat)</b>, dan tahap kedua untuk memilih anggota <b>Konstituante</b>, yaitu badan khusus yang diberi mandat untuk menyusun UUD definitif pengganti UUDS 1950. Empat partai besar yang meraih suara terbanyak dalam pemilu ini adalah PNI (Partai Nasional Indonesia), Masyumi, NU (Nahdlatul Ulama), dan PKI (Partai Komunis Indonesia).</p>
+        <h4>Kegagalan Konstituante</h4>
+        <p>Meski telah terpilih secara demokratis, Konstituante gagal menjalankan tugas utamanya menyusun UUD baru. Perdebatan di dalam sidang-sidang Konstituante berlarut-larut tanpa titik temu, terutama menyangkut perdebatan mendasar mengenai dasar negara — apakah tetap Pancasila atau berubah menjadi dasar negara Islam — sehingga setelah bertahun-tahun bersidang, Konstituante tidak kunjung menghasilkan rumusan UUD yang disepakati bersama. Kebuntuan inilah yang pada akhirnya menjadi salah satu pemicu utama keluarnya Dekrit Presiden pada 5 Juli 1959, yang akan mengakhiri seluruh periode Demokrasi Parlementer ini.</p>
+      </article>
+
+      <article class="topik" id="t17b">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>17b. Konferensi Asia-Afrika & Politik Luar Negeri Bebas Aktif</h3>
+        <span class="tahun">1955 & 1961</span>
+        <p>Berlangsung di tengah masa Demokrasi Parlementer, Indonesia sekaligus menunjukkan peran aktifnya di kancah politik internasional. Dunia pada dekade 1950-an sedang terbelah dalam suasana <b>Perang Dingin</b> antara dua blok besar: blok Barat (dipimpin Amerika Serikat, berhaluan kapitalis-liberal) dan blok Timur (dipimpin Uni Soviet, berhaluan komunis). Negara-negara di kawasan Asia dan Afrika yang baru saja merdeka dari penjajahan mencari jalan untuk tidak terseret dan diadu domba oleh persaingan kedua blok tersebut.</p>
+        <h4>Konferensi Asia-Afrika (18–24 April 1955, Bandung)</h4>
+        <p>Digagas bersama oleh Indonesia, India, Pakistan, Sri Lanka (Ceylon), dan Myanmar (Burma) — dikenal sebagai <b>Panca Negara Sponsor</b> — konferensi ini diselenggarakan di Gedung Merdeka, Bandung, dan menjadi pertemuan bersejarah karena untuk pertama kalinya negara-negara Asia dan Afrika, yang sebagian besar baru merdeka dan pernah dijajah, berkumpul secara setara untuk membahas kepentingan bersama tanpa campur tangan negara-negara Barat maupun Timur. Konferensi ini dibuka oleh Presiden Soekarno dan diketuai oleh Perdana Menteri <b>Ali Sastroamidjojo</b>. Hasil terpenting dari konferensi ini adalah dirumuskannya <b>Dasasila Bandung</b>, yaitu sepuluh prinsip yang menjadi pedoman hubungan antarbangsa, mencakup penghormatan terhadap kedaulatan dan integritas wilayah, penyelesaian sengketa secara damai, penghormatan terhadap hukum internasional, serta penolakan terhadap segala bentuk kolonialisme dan penggunaan kekerasan. KAA Bandung dianggap sebagai cikal bakal semangat solidaritas negara-negara berkembang yang kelak melahirkan Gerakan Non-Blok.</p>
+        <h4>Politik Luar Negeri Bebas Aktif</h4>
+        <p>Sikap Indonesia dalam KAA mencerminkan prinsip <b>politik luar negeri bebas aktif</b> yang dianut Indonesia sejak awal kemerdekaan (dirumuskan Mohammad Hatta dalam pidato "Mendayung Antara Dua Karang" tahun 1948): <i>bebas</i> berarti Indonesia tidak memihak atau terikat pada salah satu blok kekuatan dunia mana pun, dan <i>aktif</i> berarti Indonesia tetap berperan aktif dalam mengupayakan perdamaian dunia dan menyelesaikan berbagai persoalan internasional, bukan bersikap pasif atau netral secara pasif.</p>
+        <h4>Gerakan Non-Blok / GNB (Konferensi Beograd, 1961)</h4>
+        <p>Sebagai kelanjutan semangat KAA Bandung, pada tahun 1961 dibentuklah <b>Gerakan Non-Blok</b> di Beograd, Yugoslavia, sebagai wadah resmi bagi negara-negara yang menyatakan diri tidak berpihak pada blok Barat maupun blok Timur dalam Perang Dingin. Presiden <b>Soekarno</b> tercatat sebagai salah satu <b>tokoh pendiri (founding fathers) Gerakan Non-Blok</b>, bersama empat pemimpin dunia lainnya: <b>Josip Broz Tito</b> (Presiden Yugoslavia), <b>Jawaharlal Nehru</b> (Perdana Menteri India), <b>Gamal Abdel Nasser</b> (Presiden Mesir), dan <b>Kwame Nkrumah</b> (Presiden Ghana). Melalui GNB, Indonesia terus mempertahankan konsistensi politik luar negeri bebas aktifnya hingga masa-masa berikutnya.</p>
+      </article>
+
+      <article class="topik" id="t18">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>18. Demokrasi Terpimpin & G30S</h3>
+        <span class="tahun">1959–1965</span>
+        <p>Menghadapi kebuntuan Konstituante yang berlarut-larut dan dikhawatirkan dapat mengancam persatuan serta stabilitas negara secara keseluruhan, Presiden Soekarno akhirnya mengambil langkah besar dengan mengeluarkan <b>Dekrit Presiden pada tanggal 5 Juli 1959</b>. Dekrit ini memuat tiga keputusan penting:</p>
+        <ul>
+          <li>Membubarkan Konstituante yang dinilai gagal menjalankan tugasnya.</li>
+          <li>Menyatakan <b>Indonesia kembali berlaku pada UUD 1945</b>, mengakhiri masa berlakunya UUDS 1950.</li>
+          <li>Membentuk <b>MPRS (Majelis Permusyawaratan Rakyat Sementara)</b> dan <b>DPAS (Dewan Pertimbangan Agung Sementara)</b> dalam waktu sesingkat-singkatnya, sebagai lembaga sementara sembari menunggu terbentuknya lembaga-lembaga negara definitif sesuai amanat UUD 1945.</li>
+        </ul>
+        <p>Dengan berlakunya kembali UUD 1945, sistem pemerintahan Indonesia secara formal kembali ke sistem <b>presidensial</b>, di mana Presiden kembali memegang kekuasaan penuh sebagai kepala negara sekaligus kepala pemerintahan. Namun dalam praktiknya, sistem yang berkembang justru dikenal sebagai <b>Demokrasi Terpimpin</b> — sebuah corak pemerintahan di mana kekuasaan menjadi sangat terpusat pada sosok Presiden Soekarno, dengan kecenderungan mengurangi peran checks and balances dari lembaga-lembaga lain, termasuk pembatasan terhadap kebebasan pers dan partai politik oposisi.</p>
+        <p>Salah satu konsep politik khas periode ini adalah <b>Nasakom</b> — singkatan dari Nasionalisme, Agama (khususnya diwakili unsur Islam), dan Komunisme — sebuah upaya Soekarno untuk menyatukan tiga kekuatan politik ideologis utama yang ada di Indonesia saat itu ke dalam satu barisan pendukung pemerintahan, dengan harapan dapat meredam konflik ideologis sekaligus memperkuat basis dukungan politiknya. Namun, kebijakan ini pada praktiknya justru semakin memperbesar pengaruh dan kekuatan Partai Komunis Indonesia (PKI) dalam pemerintahan, yang kelak menjadi salah satu sumber ketegangan politik besar.</p>
+        <p>Dari sisi ekonomi, kondisi Indonesia pada periode Demokrasi Terpimpin cenderung memburuk, ditandai inflasi yang sangat tinggi dan defisit anggaran negara yang besar, sebagian akibat kebijakan yang lebih mengutamakan agenda politik dan konfrontasi luar negeri (seperti konfrontasi dengan Malaysia dan perebutan Irian Barat) dibanding pembangunan ekonomi domestik. Dari sisi politik luar negeri, Indonesia pada periode ini condong semakin dekat dengan blok kiri (Uni Soviet dan Republik Rakyat Tiongkok), berbeda dari sikap politik luar negeri bebas-aktif yang lebih seimbang pada masa sebelumnya.</p>
+        <h4>Dwikora & Konfrontasi Indonesia-Malaysia (1963–1966)</h4>
+        <p>Perlu dibedakan dengan cermat dari Trikora (yang ditujukan untuk membebaskan Irian Barat dari Belanda): <b>Dwikora (Dwi Komando Rakyat)</b> dicanangkan Presiden Soekarno pada 3 Mei 1964, sebagai respons atas pembentukan negara Federasi Malaysia (September 1963) yang digagas Inggris dengan menggabungkan Malaya, Singapura, Sabah, dan Sarawak. Soekarno memandang pembentukan Malaysia sebagai bentuk <i>neokolonialisme</i> Inggris yang mengancam keamanan dan kedaulatan Indonesia di kawasan Kalimantan, karena berbatasan langsung dengan wilayah Indonesia. Isi Dwikora adalah: (1) perhebat ketahanan revolusi Indonesia, dan (2) bantu perjuangan revolusioner rakyat Malaya, Singapura, Sabah, Sarawak, dan Brunei untuk membubarkan negara boneka Malaysia. Semboyan populer yang menyertai gerakan ini adalah <b>"Ganyang Malaysia"</b>. Konfrontasi ini berlangsung dalam bentuk operasi militer terbatas di perbatasan Kalimantan hingga akhirnya mereda dan resmi diakhiri lewat perjanjian damai pada Agustus 1966, setelah kekuasaan politik nasional beralih dari Soekarno ke Soeharto pascaperistiwa G30S.</p>
+        <h4>Peristiwa G30S (Gerakan 30 September 1965)</h4>
+        <p>Puncak sekaligus akhir dari periode Demokrasi Terpimpin ditandai oleh <b>peristiwa G30S</b>, yang terjadi pada malam 30 September menuju dini hari 1 Oktober 1965. Pada malam itu, sekelompok pasukan yang menamakan dirinya "Pasukan Cakrabirawa" (pasukan pengawal presiden) di bawah komando Letnan Kolonel Untung menculik dan membunuh sejumlah perwira tinggi TNI Angkatan Darat yang dituduh tergabung dalam "Dewan Jenderal" — sebuah dewan yang diisukan berencana melakukan kudeta terhadap Presiden Soekarno. Jenazah para korban kemudian ditemukan di sebuah sumur tua di kawasan Lubang Buaya, Jakarta Timur.</p>
+        <p>Ketujuh perwira TNI yang gugur dalam peristiwa ini dianugerahi gelar <b>Pahlawan Revolusi</b>, yaitu: Letjen Ahmad Yani, Mayjen R. Soeprapto, Mayjen M.T. Haryono, Mayjen S. Parman, Brigjen D.I. Panjaitan, Brigjen Sutoyo Siswomiharjo, dan Kapten Pierre Tendean (ajudan Jenderal A.H. Nasution, yang menjadi sasaran utama namun berhasil meloloskan diri dari penculikan, sementara putrinya, Ade Irma Suryani Nasution, gugur tertembak). Tanggal 1 Oktober kemudian diperingati setiap tahun sebagai <b>Hari Kesaktian Pancasila</b>, sedangkan tanggal 30 September diperingati sebagai Hari Peringatan G30S/PKI.</p>
+        <p>Peristiwa ini secara resmi dituduhkan sebagai upaya kudeta yang didalangi oleh unsur-unsur Partai Komunis Indonesia (PKI), dan memicu gejolak politik serta gelombang kekerasan besar-besaran di berbagai daerah terhadap pihak-pihak yang dituduh terlibat atau bersimpati kepada PKI. Situasi ini memunculkan tuntutan rakyat yang dikenal sebagai <b>Tritura (Tri Tuntutan Rakyat)</b> pada awal 1966, yaitu: (1) pembubaran PKI beserta seluruh organisasi massanya, (2) pembersihan kabinet dari unsur-unsur yang terlibat G30S, dan (3) penurunan harga-harga kebutuhan pokok. Tekanan politik inilah yang pada akhirnya mendorong keluarnya Supersemar dan pergeseran kekuasaan besar dari Soekarno kepada Soeharto, yang akan dibahas pada bagian berikutnya.</p>
+      </article>
+
+      <article class="topik" id="t19">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>19. Orde Baru</h3>
+        <span class="tahun">1966–1998</span>
+        <p>Pasca-gejolak politik akibat peristiwa G30S 1965, situasi keamanan dan stabilitas nasional sangat terganggu. Untuk memulihkan keadaan, Presiden Soekarno mengeluarkan sebuah surat perintah kepada Letnan Jenderal <b>Soeharto</b>, yang dikenal dengan sebutan <b>Supersemar (Surat Perintah Sebelas Maret)</b>, tertanggal 11 Maret 1966. Secara formal, surat ini memberi wewenang kepada Soeharto untuk mengambil segala tindakan yang dianggap perlu guna memulihkan keamanan dan ketertiban negara. Dalam perkembangannya, Supersemar dimanfaatkan sebagai landasan legal-politik bagi proses transisi kekuasaan secara bertahap dari Soekarno kepada Soeharto, hingga akhirnya Soeharto resmi dilantik sebagai <b>Presiden Republik Indonesia kedua</b> pada tahun 1967 (sebagai pejabat presiden) dan dikukuhkan penuh pada 1968, menandai dimulainya era yang dikenal sebagai <b>Orde Baru</b>.</p>
+        <h4>Ciri-Ciri Utama Orde Baru</h4>
+        <ul>
+          <li><b>Stabilitas politik sebagai prioritas utama</b> — pemerintahan Orde Baru sangat menekankan pentingnya stabilitas keamanan dan politik sebagai prasyarat mutlak bagi pembangunan ekonomi, dengan gaya kepemimpinan yang cenderung sentralistik, kuat, dan dalam banyak hal bersifat otoriter, membatasi ruang kritik dan oposisi politik secara signifikan.</li>
+          <li><b>Pembangunan ekonomi (Repelita)</b> — pemerintah menjalankan program pembangunan terencana secara bertahap melalui <b>Repelita (Rencana Pembangunan Lima Tahun)</b> yang dimulai sejak 1969, dengan fokus awal pada sektor pertanian dan infrastruktur dasar. Salah satu pencapaian besar periode ini adalah tercapainya <b>swasembada beras</b> pada pertengahan 1980-an, serta pertumbuhan ekonomi yang relatif tinggi dan konsisten selama beberapa dekade.</li>
+          <li><b>Sistem kepartaian yang dibatasi</b> — pemilu tetap diselenggarakan secara rutin setiap lima tahun, namun jumlah partai politik peserta pemilu dibatasi hanya menjadi tiga: <b>Golkar</b> (Golongan Karya, kendaraan politik utama pemerintah yang selalu memenangkan pemilu dengan suara mayoritas mutlak), <b>PPP</b> (Partai Persatuan Pembangunan, fusi partai-partai berbasis Islam), dan <b>PDI</b> (Partai Demokrasi Indonesia, fusi partai-partai nasionalis dan Kristen).</li>
+          <li><b>Dwifungsi ABRI</b> — sebuah doktrin yang memberikan peran ganda kepada militer (ABRI/Angkatan Bersenjata Republik Indonesia): selain fungsi pertahanan-keamanan, ABRI juga diberi peran dalam bidang sosial-politik, tercermin dari banyaknya perwira militer aktif yang menduduki jabatan-jabatan sipil strategis, termasuk kursi di parlemen (DPR/MPR) melalui jalur pengangkatan (Fraksi ABRI) tanpa melalui pemilu.</li>
+          <li><b>KKN (Korupsi, Kolusi, dan Nepotisme)</b> — praktik penyalahgunaan kekuasaan untuk kepentingan pribadi, keluarga, dan kroni semakin meluas dan mengakar sepanjang masa Orde Baru, menjadi salah satu sumber ketidakpuasan rakyat yang terus terpendam.</li>
+          <li><b>Krisis Ekonomi 1997–1998</b> — dipicu oleh krisis moneter yang melanda kawasan Asia Tenggara, nilai tukar rupiah terhadap dolar Amerika Serikat anjlok drastis dalam waktu singkat, memicu kenaikan harga kebutuhan pokok secara tajam, pemutusan hubungan kerja massal, dan keresahan sosial yang meluas di seluruh negeri.</li>
+          <li><b>Reformasi 1998</b> — krisis ekonomi yang berlarut-larut, ditambah akumulasi kekecewaan atas praktik KKN dan pembatasan demokrasi selama lebih dari tiga dekade, memicu gelombang demonstrasi mahasiswa besar-besaran di berbagai kota, yang mencapai puncaknya setelah tragedi penembakan mahasiswa Universitas Trisakti pada Mei 1998. Tekanan publik yang sangat besar akhirnya memaksa <b>Presiden Soeharto menyatakan mengundurkan diri pada 21 Mei 1998</b>, setelah berkuasa selama lebih kurang 32 tahun, menandai berakhirnya era Orde Baru dan dimulainya era Reformasi.</li>
+        </ul>
+        <h4>Pembentukan ASEAN (8 Agustus 1967)</h4>
+        <p>Salah satu pencapaian penting politik luar negeri Indonesia di awal masa Orde Baru adalah normalisasi hubungan dengan Malaysia setelah berakhirnya konfrontasi Dwikora, yang membuka jalan bagi kerja sama regional. Pada <b>8 Agustus 1967</b> di Bangkok, Thailand, ditandatangani <b>Deklarasi Bangkok</b> yang menandai berdirinya <b>ASEAN (Association of Southeast Asian Nations / Perhimpunan Bangsa-Bangsa Asia Tenggara)</b>, sebuah organisasi kerja sama regional negara-negara Asia Tenggara di bidang ekonomi, sosial-budaya, dan perdamaian kawasan. Indonesia menjadi salah satu dari <b>lima negara pendiri (founding fathers) ASEAN</b>, diwakili oleh Menteri Luar Negeri <b>Adam Malik</b>, bersama empat negara lain: Malaysia (diwakili Tun Abdul Razak), Thailand (Thanat Khoman), Filipina (Narciso Ramos), dan Singapura (S. Rajaratnam). Berdirinya ASEAN mencerminkan konsistensi Indonesia dalam menjalankan politik luar negeri bebas aktif, kali ini dengan menitikberatkan pada stabilitas dan kerja sama di lingkup kawasan Asia Tenggara.</p>
+      </article>
+
+      <article class="topik" id="t20">
+        <a class="top" href="#daftar-isi">↑ daftar isi</a>
+        <h3>20. Reformasi</h3>
+        <span class="tahun">1998–sekarang</span>
+        <p>Setelah pengunduran diri Presiden Soeharto pada 21 Mei 1998, jabatan Presiden secara konstitusional beralih kepada Wakil Presiden saat itu, <b>B.J. Habibie</b>, sesuai mekanisme yang diatur UUD 1945. Meski masa pemerintahannya relatif singkat, era Habibie ditandai oleh perubahan-perubahan cepat dan mendasar yang meletakkan fondasi awal reformasi: kebebasan pers dibuka secara luas setelah puluhan tahun dikontrol ketat, sejumlah tahanan politik era Orde Baru dibebaskan, kebebasan berorganisasi dan mendirikan partai politik baru dijamin, serta digelarnya <b>referendum bagi Timor Timur</b> pada 1999 yang hasilnya membuat wilayah tersebut memilih memisahkan diri dari Indonesia.</p>
+        <h4>Pemilu 1999</h4>
+        <p>Diselenggarakan sebagai pemilu multipartai pertama pasca-Orde Baru, diikuti oleh puluhan partai politik yang bersaing secara bebas — jauh berbeda dari sistem tiga partai era sebelumnya — dan dianggap sebagai tonggak penting proses demokratisasi Indonesia menuju sistem politik yang lebih terbuka dan kompetitif.</p>
+        <h4>Amandemen UUD 1945</h4>
+        <p>Salah satu perubahan ketatanegaraan paling mendasar pada era Reformasi adalah dilakukannya <b>amandemen (perubahan) UUD 1945 sebanyak empat kali</b> secara berturut-turut oleh MPR, yaitu pada tahun 1999, 2000, 2001, dan 2002. Amandemen ini mengubah struktur ketatanegaraan Indonesia secara signifikan, antara lain: memperkuat prinsip pemisahan dan keseimbangan kekuasaan (<i>checks and balances</i>) antarlembaga negara, membentuk lembaga-lembaga baru seperti <b>Mahkamah Konstitusi (MK)</b>, <b>Dewan Perwakilan Daerah (DPD)</b>, dan <b>Komisi Yudisial (KY)</b>, serta mempertegas jaminan terhadap prinsip-prinsip demokrasi dan hak asasi manusia dalam batang tubuh konstitusi.</p>
+        <h4>Pembatasan Masa Jabatan Presiden</h4>
+        <p>Salah satu hasil amandemen yang sangat penting adalah dibatasinya masa jabatan Presiden dan Wakil Presiden, yaitu maksimal <b>dua periode berturut-turut atau sepuluh tahun</b>. Ketentuan ini secara khusus dimaksudkan untuk mencegah terulangnya kekuasaan yang berlangsung sangat lama seperti pada era Orde Baru, sekaligus menjamin regenerasi kepemimpinan nasional secara berkala.</p>
+        <h4>Pemilihan Presiden Secara Langsung</h4>
+        <p>Sejak Pemilu 2004, Presiden dan Wakil Presiden untuk pertama kalinya <b>dipilih langsung oleh rakyat</b> melalui pemilihan umum, berbeda dari mekanisme sebelumnya di mana Presiden dipilih secara tidak langsung oleh MPR. Perubahan ini dianggap sebagai wujud nyata penguatan kedaulatan rakyat dalam sistem demokrasi Indonesia.</p>
+        <h4>Otonomi Daerah</h4>
+        <p>Sejalan dengan semangat desentralisasi kekuasaan, pemerintah mulai memberlakukan kebijakan <b>otonomi daerah</b> secara luas sejak tahun 2001, yang memberikan kewenangan lebih besar kepada pemerintah provinsi, kabupaten, dan kota untuk mengelola urusan pemerintahan dan sumber daya di wilayahnya masing-masing secara lebih mandiri, sebagai koreksi atas sistem yang sangat sentralistik pada masa Orde Baru.</p>
+        <h4>Penguatan Lembaga-Lembaga Negara</h4>
+        <p>Era Reformasi juga ditandai dengan pembentukan dan penguatan berbagai lembaga negara independen guna mendukung tata kelola pemerintahan yang lebih bersih, demokratis, dan akuntabel, di antaranya <b>Mahkamah Konstitusi (MK)</b> yang berwenang menguji undang-undang terhadap UUD dan memutus sengketa hasil pemilu, <b>Komisi Pemberantasan Korupsi (KPK)</b> yang dibentuk khusus untuk memberantas praktik korupsi yang mengakar sejak era sebelumnya, serta <b>Komisi Pemilihan Umum (KPU)</b> yang independen dan bebas dari intervensi pemerintah dalam penyelenggaraan pemilu.</p>
+        <h4>Sistem Pemerintahan Indonesia Saat Ini</h4>
+        <p>Sebagai hasil akumulasi seluruh perubahan sejak Reformasi 1998, sistem pemerintahan Indonesia saat ini menganut sistem <b>presidensial</b> dengan format <b>multipartai</b>, menyelenggarakan <b>pemilihan umum langsung</b> baik untuk memilih presiden/wakil presiden maupun anggota legislatif, menerapkan <b>otonomi daerah</b> yang luas, serta memiliki pemisahan dan keseimbangan kekuasaan yang jauh lebih jelas antara lembaga eksekutif, legislatif, dan yudikatif dibandingkan corak pemerintahan yang sangat terpusat pada masa Orde Baru maupun Demokrasi Terpimpin sebelumnya.</p>
+      </article>
+
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  📚 Materi belajar mandiri untuk persiapan TWK CPNS — pelajari secara berulang dan kaitkan setiap tokoh serta peristiwa dengan urutan kronologisnya agar lebih mudah diingat.
+</footer>
+
+</body>
+</html>

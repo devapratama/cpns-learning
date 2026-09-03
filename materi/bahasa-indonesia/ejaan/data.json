@@ -1,0 +1,81 @@
+{
+  "category": "Bahasa Indonesia",
+  "categoryFolder": "bahasa-indonesia",
+  "title": "Ejaan dan EYD",
+  "subtitle": "Penulisan huruf kapital, kata, dan angka sesuai kaidah.",
+  "quizIntro": "Perhatikan ejaan setiap kalimat, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Penulisan kata depan yang benar adalah …",
+      "options": ["A. dirumah", "B. di rumah", "C. di-rumah", "D. diruma"],
+      "answer": 1,
+      "explanation": "Kata depan 'di' ditulis terpisah dari kata yang mengikutinya, yaitu 'di rumah'."
+    },
+    {
+      "question": "Kata yang merupakan awalan 'di-' (ditulis serangkai) adalah …",
+      "options": ["A. di sekolah", "B. di Bandung", "C. dimakan", "D. di antara"],
+      "answer": 2,
+      "explanation": "'dimakan' adalah kata kerja pasif berawalan di-, ditulis serangkai. Opsi lain memakai kata depan 'di'."
+    },
+    {
+      "question": "Penulisan judul yang benar adalah …",
+      "options": ["A. menuju masyarakat sehat", "B. Menuju Masyarakat Sehat", "C. menuju Masyarakat sehat", "D. Menuju masyarakat Sehat"],
+      "answer": 1,
+      "explanation": "Setiap kata pada judul diawali huruf kapital, kecuali kata tugas yang tidak terletak di awal."
+    },
+    {
+      "question": "Penulisan partikel yang salah adalah …",
+      "options": ["A. buku pun", "B. apa pun", "C. bukupun", "D. meskipun"],
+      "answer": 2,
+      "explanation": "Partikel 'pun' ditulis terpisah ('buku pun'), kecuali bentuk gabung yang telah lebur seperti 'meskipun'."
+    },
+    {
+      "question": "Penulisan yang benar adalah …",
+      "options": ["A. ibu pergi ke pasar", "B. Ibu pergi ke pasar", "C. ibu Pergi ke Pasar", "D. Ibu Pergi Ke Pasar"],
+      "answer": 1,
+      "explanation": "Huruf kapital dipakai di awal kalimat ('Ibu'), sedangkan kata 'ke' ditulis terpisah sebagai kata depan."
+    },
+    {
+      "question": "Penulisan gelar yang benar adalah …",
+      "options": ["A. Prof Sukamto, M.Si", "B. Prof. Sukamto, M.Si.", "C. prof. Sukamto, M.Si", "D. Prof. Sukamto m.si"],
+      "answer": 1,
+      "explanation": "Gelar diikuti titik singkatan dan nama disertai huruf kapital untuk singkatan nama orang."
+    },
+    {
+      "question": "Bilangan yang benar pada awal kalimat adalah …",
+      "options": ["A. 2 orang petugas hadir.", "B. Dua orang petugas hadir.", "C. 2 orang petugas hadir;", "D. Dua Orang petugas hadir."],
+      "answer": 1,
+      "explanation": "Bilangan pada awal kalimat ditulis dengan kata, yaitu 'Dua orang petugas hadir'."
+    },
+    {
+      "question": "Penulisan akronim yang benar adalah …",
+      "options": ["A. KPK, BUMN, dan KTP", "B. Kpk, Bumn, dan Ktp", "C. K.P.K., B.U.M.N., dan K.T.P.", "D. kpk, bumn, ktp"],
+      "answer": 0,
+      "explanation": "Akronim nama diri dan singkatan umum ditulis dengan huruf kapital tanpa titik, mis. KPK, BUMN, KTP."
+    },
+    {
+      "question": "Penulisan urutan yang benar adalah …",
+      "options": ["A. Ia menempati urutan ke 3.", "B. Ia menempati urutan ke-3.", "C. Ia menempati urutan ke3.", "D. Ia menempati urutan ke:3."],
+      "answer": 1,
+      "explanation": "'Ke-' sebagai awalan bilangan ditulis serangkai, dan saat memakai angka dihubungkan dengan tanda hubung: 'ke-3'."
+    },
+    {
+      "question": "Penulisan yang benar adalah …",
+      "options": ["A. Dia datang dari Jakarta ke Surabaya.", "B. Dia datang darijakarta kesurabaya.", "C. Dia datang dari Jakarta kesurabaya.", "D. Dia datang darijakarta ke Surabaya."],
+      "answer": 0,
+      "explanation": "Kata depan 'dari' dan 'ke' ditulis terpisah dari nama tempat yang mengikutinya."
+    },
+    {
+      "question": "Penulisan angka dan mata uang yang benar adalah …",
+      "options": ["A. Rp. 5000,00", "B. Rp5.000,00", "C. Rp. 5.000,00", "D. Rp 5000.-"],
+      "answer": 1,
+      "explanation": "Tanda 'Rp' tidak diikuti titik dan ribuan dipisah dengan titik, yaitu Rp5.000,00."
+    },
+    {
+      "question": "Kalimat yang penulisannya sesuai ejaan adalah …",
+      "options": ["A. Pemerintah menyalurkan bantuan bagi masyarakat terdampak banjir.", "B. pmerintah menyalurkan bantuan bagi masyarakat terdampak banjir.", "C. Pemerintah menyalurkan Bantuan bagi Masyarakat terdampak banjir.", "D. Pemerintah menyalurkan bantuan bagi Masyarakat terdampak banjir."],
+      "answer": 0,
+      "explanation": "Huruf kapital hanya pada awal kalimat dan nama/kata tertentu yang wajib diberi kapital, bukan setiap kata benda."
+    }
+  ]
+}

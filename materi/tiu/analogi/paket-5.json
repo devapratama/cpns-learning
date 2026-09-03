@@ -1,0 +1,512 @@
+[
+  {
+    "id": 121,
+    "level": "Pemula",
+    "soal": "SUSU : YOGHURT = KETAN : ...",
+    "pilihan": ["Gula", "Tape", "Arak", "Cuka", "Alkohol"],
+    "kunci": "B",
+    "pola": "Bahan baku dan produk fermentasi",
+    "pembahasan": "Susu difermentasi menjadi yoghurt. Dengan pola yang sama, ketan difermentasi menjadi tape. Hubungan yang diuji adalah bahan baku dan hasil fermentasinya.",
+    "analisis_opsi": {
+      "A": "Salah. Gula adalah pemanis, bukan hasil fermentasi ketan.",
+      "B": "Benar. Ketan difermentasi menjadi tape.",
+      "C": "Salah. Arak adalah minuman beralkohol, bukan hasil fermentasi ketan yang umum.",
+      "D": "Salah. Cuka adalah hasil fermentasi asam, bukan dari ketan.",
+      "E": "Salah. Alkohol adalah produk fermentasi umum, tetapi bukan tape."
+    }
+  },
+  {
+    "id": 122,
+    "level": "Mahir",
+    "soal": "KONSERVATIF : TRADISI = PROGRESIF : ...",
+    "pilihan": ["Perubahan", "Kemajuan", "Pembaruan", "Modernisasi", "Revolusi"],
+    "kunci": "C",
+    "pola": "Sikap dan orientasi utama",
+    "pembahasan": "Konservatif adalah sikap yang berorientasi pada tradisi dan mempertahankan nilai lama. Dengan pola yang sama, progresif adalah sikap yang berorientasi pada pembaruan dan kemajuan.",
+    "analisis_opsi": {
+      "A": "Salah. Perubahan terlalu umum, bisa positif atau negatif.",
+      "B": "Salah. Kemajuan adalah hasil, bukan orientasi sikap.",
+      "C": "Benar. Progresif berorientasi pada pembaruan.",
+      "D": "Salah. Modernisasi adalah proses, bukan orientasi sikap.",
+      "E": "Salah. Revolusi adalah perubahan drastis, bukan orientasi progresif."
+    }
+  },
+  {
+    "id": 123,
+    "level": "Menengah",
+    "soal": "KOMPOR : API = LAMPU : ...",
+    "pilihan": ["Cahaya", "Bohlam", "Kabel", "Listrik", "Panas"],
+    "kunci": "D",
+    "pola": "Alat dan sumber energi",
+    "pembahasan": "Kompor menggunakan api sebagai sumber energi untuk berfungsi. Dengan pola yang sama, lampu menggunakan listrik sebagai sumber energi untuk berfungsi.",
+    "analisis_opsi": {
+      "A": "Salah. Cahaya adalah hasil dari lampu, bukan sumber energinya.",
+      "B": "Salah. Bohlam adalah bagian dari lampu.",
+      "C": "Salah. Kabel adalah penghantar listrik, bukan sumber energi.",
+      "D": "Benar. Listrik adalah sumber energi lampu.",
+      "E": "Salah. Panas adalah efek samping lampu."
+    }
+  },
+  {
+    "id": 124,
+    "level": "Pemula",
+    "soal": "TELINGA : MENDENGAR = HIDUNG : ...",
+    "pilihan": ["Bernapas", "Merasa", "Melihat", "Meraba", "Mencium"],
+    "kunci": "E",
+    "pola": "Organ indera dan fungsi spesifiknya",
+    "pembahasan": "Telinga adalah organ indera yang berfungsi untuk mendengar. Dengan pola yang sama, hidung adalah organ indera yang berfungsi untuk mencium bau.",
+    "analisis_opsi": {
+      "A": "Salah. Bernapas adalah fungsi umum hidung, bukan fungsi indera spesifik.",
+      "B": "Salah. Merasa adalah fungsi lidah.",
+      "C": "Salah. Melihat adalah fungsi mata.",
+      "D": "Salah. Meraba adalah fungsi kulit.",
+      "E": "Benar. Mencium adalah fungsi indera hidung."
+    }
+  },
+  {
+    "id": 125,
+    "level": "Mahir",
+    "soal": "Hutan dan laut adalah ekosistem alami. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Kota dan desa adalah wilayah administratif",
+      "Gunung dan sungai adalah bentang alam",
+      "Sawah dan tambak adalah area budidaya",
+      "Rumah dan kantor adalah tempat aktivitas",
+      "Mobil dan motor adalah kendaraan bermotor"
+    ],
+    "kunci": "C",
+    "pola": "Analogi kalimat dua contoh dalam satu kategori fungsional",
+    "pembahasan": "Hutan dan laut adalah dua contoh ekosistem alami. Dengan pola yang sama, sawah dan tambak adalah dua contoh area budidaya.",
+    "analisis_opsi": {
+      "A": "Salah. Wilayah administratif bukan kategori ekosistem atau area fungsional produksi.",
+      "B": "Salah. Bentang alam terlalu umum dan tidak menunjukkan fungsi budidaya.",
+      "C": "Benar. Sawah dan tambak adalah dua contoh area budidaya.",
+      "D": "Salah. Tempat aktivitas terlalu umum.",
+      "E": "Salah. Kendaraan bermotor bukan kategori area."
+    }
+  },
+  {
+    "id": 126,
+    "level": "Menengah",
+    "soal": "REM : BERHENTI = GAS : ...",
+    "pilihan": ["Cepat", "Maju", "Jalan", "Ngebut", "Melaju"],
+    "kunci": "E",
+    "pola": "Mekanisme kendaraan dan efek yang dihasilkan",
+    "pembahasan": "Rem digunakan untuk membuat kendaraan berhenti. Dengan pola yang sama, gas digunakan untuk membuat kendaraan melaju.",
+    "analisis_opsi": {
+      "A": "Salah. Cepat adalah kecepatan, bukan efek langsung gas.",
+      "B": "Salah. Maju adalah arah, bukan efek gas.",
+      "C": "Salah. Jalan bisa bermakna tempat atau tindakan, kurang spesifik.",
+      "D": "Salah. Ngebut terlalu ekstrem dan negatif.",
+      "E": "Benar. Gas membuat kendaraan melaju."
+    }
+  },
+  {
+    "id": 127,
+    "level": "Pemula",
+    "soal": "PENSIL : MENULIS = GUNTING : ...",
+    "pilihan": ["Memotong", "Menjahit", "Menggambar", "Mengukur", "Menempel"],
+    "kunci": "A",
+    "pola": "Alat dan fungsi utamanya",
+    "pembahasan": "Pensil berfungsi untuk menulis. Dengan pola yang sama, gunting berfungsi untuk memotong.",
+    "analisis_opsi": {
+      "A": "Benar. Gunting berfungsi untuk memotong.",
+      "B": "Salah. Menjahit adalah fungsi jarum.",
+      "C": "Salah. Menggambar adalah fungsi pensil, bukan gunting.",
+      "D": "Salah. Mengukur adalah fungsi penggaris.",
+      "E": "Salah. Menempel adalah fungsi lem."
+    }
+  },
+  {
+    "id": 128,
+    "level": "Mahir",
+    "soal": "RESESI : EKONOMI = PANDEMI : ...",
+    "pilihan": ["Wabah", "Sosial", "Kesehatan", "Penyakit", "Global"],
+    "kunci": "C",
+    "pola": "Kondisi krisis dan domain utama yang terdampak",
+    "pembahasan": "Resesi adalah kondisi krisis dalam domain ekonomi. Dengan pola yang sama, pandemi adalah kondisi krisis dalam domain kesehatan.",
+    "analisis_opsi": {
+      "A": "Salah. Wabah adalah sinonim pandemi, bukan domain.",
+      "B": "Salah. Sosial adalah domain lain yang terdampak, tetapi bukan domain utama.",
+      "C": "Benar. Pandemi adalah krisis kesehatan.",
+      "D": "Salah. Penyakit adalah objek, bukan domain.",
+      "E": "Salah. Global adalah cakupan, bukan domain."
+    }
+  },
+  {
+    "id": 129,
+    "level": "Menengah",
+    "soal": "BINTANG : LANGIT = IKAN : ...",
+    "pilihan": ["Laut", "Air", "Sungai", "Kolam", "Akuarium"],
+    "kunci": "B",
+    "pola": "Objek dan medium alami",
+    "pembahasan": "Bintang berada di langit sebagai medium alaminya. Dengan pola yang sama, ikan berada di air sebagai medium alaminya.",
+    "analisis_opsi": {
+      "A": "Salah. Laut adalah salah satu habitat ikan, tetapi terlalu spesifik.",
+      "B": "Benar. Air adalah medium alami ikan.",
+      "C": "Salah. Sungai adalah habitat spesifik.",
+      "D": "Salah. Kolam adalah habitat buatan.",
+      "E": "Salah. Akuarium adalah habitat buatan."
+    }
+  },
+  {
+    "id": 130,
+    "level": "Pemula",
+    "soal": "BAJU : TUBUH = TOPI : ...",
+    "pilihan": ["Wajah", "Tangan", "Kaki", "Kepala", "Leher"],
+    "kunci": "D",
+    "pola": "Pakaian dan bagian tubuh yang dilindungi",
+    "pembahasan": "Baju melindungi tubuh. Dengan pola yang sama, topi melindungi kepala.",
+    "analisis_opsi": {
+      "A": "Salah. Wajah tidak dilindungi topi.",
+      "B": "Salah. Tangan dilindungi sarung tangan.",
+      "C": "Salah. Kaki dilindungi sepatu.",
+      "D": "Benar. Topi melindungi kepala.",
+      "E": "Salah. Leher dilindungi syal."
+    }
+  },
+  {
+    "id": 131,
+    "level": "Mahir",
+    "soal": "Matahari dan bulan adalah benda langit. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Emas dan perak adalah logam mulia",
+      "Mawar dan melati adalah tanaman hias",
+      "Dokter dan guru adalah profesi mulia",
+      "Pagi dan malam adalah waktu",
+      "Hujan dan angin adalah cuaca"
+    ],
+    "kunci": "A",
+    "pola": "Analogi kalimat dua contoh dalam satu kategori material",
+    "pembahasan": "Matahari dan bulan adalah dua contoh benda langit. Dengan pola yang sama, emas dan perak adalah dua contoh logam mulia.",
+    "analisis_opsi": {
+      "A": "Benar. Emas dan perak adalah dua contoh logam mulia.",
+      "B": "Salah. Tanaman hias adalah organisme, bukan kategori material.",
+      "C": "Salah. Profesi mulia adalah orang, bukan benda.",
+      "D": "Salah. Waktu adalah konsep abstrak.",
+      "E": "Salah. Cuaca adalah fenomena, bukan benda."
+    }
+  },
+  {
+    "id": 132,
+    "level": "Menengah",
+    "soal": "API : PANAS = ANGIN : ...",
+    "pilihan": ["Dingin", "Sejuk", "Kencang", "Ribut", "Hembus"],
+    "kunci": "B",
+    "pola": "Elemen dan sensasi yang dihasilkan",
+    "pembahasan": "Api menghasilkan sensasi panas. Dengan pola yang sama, angin menghasilkan sensasi sejuk.",
+    "analisis_opsi": {
+      "A": "Salah. Dingin terlalu ekstrem, angin tidak selalu dingin.",
+      "B": "Benar. Angin menghasilkan sensasi sejuk.",
+      "C": "Salah. Kencang adalah kecepatan angin.",
+      "D": "Salah. Ribut adalah suara angin.",
+      "E": "Salah. Hembus adalah tindakan angin."
+    }
+  },
+  {
+    "id": 133,
+    "level": "Pemula",
+    "soal": "ROTI : GANDUM = KEJU : ...",
+    "pilihan": ["Kedelai", "Telur", "Susu", "Mentega", "Krim"],
+    "kunci": "C",
+    "pola": "Produk dan bahan baku utama",
+    "pembahasan": "Roti terbuat dari gandum. Dengan pola yang sama, keju terbuat dari susu.",
+    "analisis_opsi": {
+      "A": "Salah. Kedelai adalah bahan tahu atau tempe.",
+      "B": "Salah. Telur bukan bahan baku keju.",
+      "C": "Benar. Keju terbuat dari susu.",
+      "D": "Salah. Mentega adalah produk susu lain.",
+      "E": "Salah. Krim adalah produk susu lain."
+    }
+  },
+  {
+    "id": 134,
+    "level": "Mahir",
+    "soal": "RENCANA : PELAKSANAAN = ANGGARAN : ...",
+    "pilihan": ["Realisasi", "Laporan", "Evaluasi", "Target", "Program"],
+    "kunci": "A",
+    "pola": "Tahap perencanaan dan tahap pelaksanaan",
+    "pembahasan": "Rencana adalah tahap sebelum pelaksanaan. Dengan pola yang sama, anggaran adalah tahap sebelum realisasi.",
+    "analisis_opsi": {
+      "A": "Benar. Anggaran diikuti oleh realisasi.",
+      "B": "Salah. Laporan adalah hasil akhir.",
+      "C": "Salah. Evaluasi adalah tahap penilaian.",
+      "D": "Salah. Target adalah sasaran.",
+      "E": "Salah. Program adalah rencana."
+    }
+  },
+  {
+    "id": 135,
+    "level": "Menengah",
+    "soal": "HUJAN : AIR = KEMARAU : ...",
+    "pilihan": ["Panas", "Kering", "Gersang", "Debu", "Terik"],
+    "kunci": "B",
+    "pola": "Fenomena dan kondisi yang dihasilkan",
+    "pembahasan": "Hujan menghasilkan air. Dengan pola yang sama, kemarau menghasilkan kondisi kering.",
+    "analisis_opsi": {
+      "A": "Salah. Panas adalah suhu, bukan kondisi utama kemarau.",
+      "B": "Benar. Kemarau menghasilkan kondisi kering.",
+      "C": "Salah. Gersang terlalu ekstrem.",
+      "D": "Salah. Debu adalah partikel.",
+      "E": "Salah. Terik adalah panas terik."
+    }
+  },
+  {
+    "id": 136,
+    "level": "Pemula",
+    "soal": "DAGING : AYAM = TELUR : ...",
+    "pilihan": ["Sapi", "Burung", "Ikan", "Bebek", "Kambing"],
+    "kunci": "D",
+    "pola": "Produk hewani dan hewan penghasil",
+    "pembahasan": "Daging dihasilkan oleh ayam. Dengan pola yang sama, telur dihasilkan oleh bebek.",
+    "analisis_opsi": {
+      "A": "Salah. Sapi menghasilkan daging atau susu.",
+      "B": "Salah. Burung menghasilkan telur, tetapi bebek lebih umum sebagai penghasil telur konsumsi.",
+      "C": "Salah. Ikan bukan penghasil telur konsumsi umum.",
+      "D": "Benar. Bebek adalah penghasil telur.",
+      "E": "Salah. Kambing menghasilkan daging atau susu."
+    }
+  },
+  {
+    "id": 137,
+    "level": "Mahir",
+    "soal": "Guru dan dosen adalah tenaga pendidik. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Dokter dan apoteker adalah tenaga medis",
+      "Perawat dan bidan adalah tenaga kesehatan",
+      "Polisi dan tentara adalah aparat keamanan",
+      "Hakim dan jaksa adalah penegak hukum",
+      "Pilot dan masinis adalah pengemudi transportasi"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat dua profesi dalam satu kategori tenaga",
+    "pembahasan": "Guru dan dosen adalah dua jenis tenaga pendidik. Dengan pola yang sama, perawat dan bidan adalah dua jenis tenaga kesehatan.",
+    "analisis_opsi": {
+      "A": "Salah. Dokter dan apoteker adalah tenaga medis, tetapi peran mereka berbeda secara signifikan.",
+      "B": "Benar. Perawat dan bidan adalah dua jenis tenaga kesehatan.",
+      "C": "Salah. Polisi dan tentara adalah aparat keamanan.",
+      "D": "Salah. Hakim dan jaksa adalah penegak hukum.",
+      "E": "Salah. Pilot dan masinis adalah pengemudi transportasi."
+    }
+  },
+  {
+    "id": 138,
+    "level": "Menengah",
+    "soal": "KANGGURU : MELOMPAT = ULAR : ...",
+    "pilihan": ["Melata", "Menjalar", "Merambat", "Meluncur", "Merayap"],
+    "kunci": "E",
+    "pola": "Hewan dan cara bergerak khas",
+    "pembahasan": "Kangguru bergerak dengan cara melompat. Dengan pola yang sama, ular bergerak dengan cara merayap.",
+    "analisis_opsi": {
+      "A": "Salah. Melata adalah kategori hewan, bukan cara bergerak spesifik.",
+      "B": "Salah. Menjalar mirip, tetapi merayap lebih tepat untuk ular.",
+      "C": "Salah. Merambat biasanya untuk tanaman.",
+      "D": "Salah. Meluncur untuk benda.",
+      "E": "Benar. Ular bergerak dengan merayap."
+    }
+  },
+  {
+    "id": 139,
+    "level": "Pemula",
+    "soal": "PINTU : MASUK = JENDELA : ...",
+    "pilihan": ["Keluar", "Cahaya", "Lihat", "Udara", "Kaca"],
+    "kunci": "D",
+    "pola": "Bukaan dan fungsi utama",
+    "pembahasan": "Pintu berfungsi untuk masuk dan keluar orang. Dengan pola yang sama, jendela berfungsi untuk masuknya udara.",
+    "analisis_opsi": {
+      "A": "Salah. Keluar adalah lawan masuk, bukan fungsi jendela.",
+      "B": "Salah. Cahaya juga fungsi jendela, tetapi udara lebih utama sebagai ventilasi.",
+      "C": "Salah. Lihat adalah tindakan.",
+      "D": "Benar. Jendela berfungsi untuk masuknya udara.",
+      "E": "Salah. Kaca adalah material jendela."
+    }
+  },
+  {
+    "id": 140,
+    "level": "Mahir",
+    "soal": "MITIGASI : BENCANA = PREVENSI : ...",
+    "pilihan": ["Risiko", "Bahaya", "Ancaman", "Kerugian", "Penyakit"],
+    "kunci": "E",
+    "pola": "Upaya penanganan dan objek yang ditangani",
+    "pembahasan": "Mitigasi adalah upaya untuk mengurangi dampak bencana. Dengan pola yang sama, prevensi adalah upaya untuk mencegah penyakit.",
+    "analisis_opsi": {
+      "A": "Salah. Risiko terlalu umum.",
+      "B": "Salah. Bahaya mirip dengan bencana.",
+      "C": "Salah. Ancaman mirip dengan bencana.",
+      "D": "Salah. Kerugian adalah hasil.",
+      "E": "Benar. Prevensi adalah upaya mencegah penyakit."
+    }
+  },
+  {
+    "id": 141,
+    "level": "Menengah",
+    "soal": "MENIT : JAM = HARI : ...",
+    "pilihan": ["Detik", "Bulan", "Minggu", "Tahun", "Abad"],
+    "kunci": "C",
+    "pola": "Satuan waktu kecil ke satuan waktu lebih besar",
+    "pembahasan": "Menit adalah satuan waktu yang lebih kecil dari jam. Dengan pola yang sama, hari adalah satuan waktu yang lebih kecil dari minggu.",
+    "analisis_opsi": {
+      "A": "Salah. Detik lebih kecil dari menit.",
+      "B": "Salah. Bulan terlalu besar.",
+      "C": "Benar. Hari lebih kecil dari minggu.",
+      "D": "Salah. Tahun terlalu besar.",
+      "E": "Salah. Abad terlalu besar."
+    }
+  },
+  {
+    "id": 142,
+    "level": "Pemula",
+    "soal": "LEHER : KALUNG = PERGELANGAN TANGAN : ...",
+    "pilihan": ["Jam", "Cincin", "Anting", "Gelang", "Bros"],
+    "kunci": "D",
+    "pola": "Bagian tubuh dan aksesoris yang dikenakan",
+    "pembahasan": "Kalung dikenakan di leher. Dengan pola yang sama, gelang dikenakan di pergelangan tangan.",
+    "analisis_opsi": {
+      "A": "Salah. Jam bisa dikenakan di pergelangan tangan, tetapi gelang lebih umum sebagai aksesoris.",
+      "B": "Salah. Cincin dikenakan di jari.",
+      "C": "Salah. Anting dikenakan di telinga.",
+      "D": "Benar. Gelang dikenakan di pergelangan tangan.",
+      "E": "Salah. Bros dikenakan di pakaian."
+    }
+  },
+  {
+    "id": 143,
+    "level": "Mahir",
+    "soal": "KOLABORASI : SINERGI = KOMPETISI : ...",
+    "pilihan": ["Prestasi", "Juara", "Kalah", "Menang", "Rivalitas"],
+    "kunci": "E",
+    "pola": "Proses dan dinamika yang dihasilkan",
+    "pembahasan": "Kolaborasi menghasilkan sinergi. Dengan pola yang sama, kompetisi menghasilkan rivalitas.",
+    "analisis_opsi": {
+      "A": "Salah. Prestasi adalah hasil positif.",
+      "B": "Salah. Juara adalah pemenang.",
+      "C": "Salah. Kalah adalah hasil negatif.",
+      "D": "Salah. Menang adalah hasil.",
+      "E": "Benar. Kompetisi menghasilkan rivalitas."
+    }
+  },
+  {
+    "id": 144,
+    "level": "Menengah",
+    "soal": "KULIT : MERABA = HIDUNG : ...",
+    "pilihan": ["Bernapas", "Merasa", "Mencium", "Mendengar", "Melihat"],
+    "kunci": "C",
+    "pola": "Organ indera dan kemampuan spesifiknya",
+    "pembahasan": "Kulit berfungsi untuk meraba. Dengan pola yang sama, hidung berfungsi untuk mencium.",
+    "analisis_opsi": {
+      "A": "Salah. Bernapas adalah fungsi umum hidung.",
+      "B": "Salah. Merasa adalah fungsi lidah.",
+      "C": "Benar. Mencium adalah fungsi hidung.",
+      "D": "Salah. Mendengar adalah fungsi telinga.",
+      "E": "Salah. Melihat adalah fungsi mata."
+    }
+  },
+  {
+    "id": 145,
+    "level": "Pemula",
+    "soal": "KAPAL : AIR = PESAWAT : ...",
+    "pilihan": ["Langit", "Bandara", "Udara", "Awan", "Angkasa"],
+    "kunci": "C",
+    "pola": "Kendaraan dan medium bergerak",
+    "pembahasan": "Kapal bergerak di air. Dengan pola yang sama, pesawat bergerak di udara.",
+    "analisis_opsi": {
+      "A": "Salah. Langit mirip, tetapi udara lebih tepat sebagai medium.",
+      "B": "Salah. Bandara adalah tempat pesawat.",
+      "C": "Benar. Pesawat bergerak di udara.",
+      "D": "Salah. Awan adalah bagian langit.",
+      "E": "Salah. Angkasa adalah luar ruang."
+    }
+  },
+  {
+    "id": 146,
+    "level": "Mahir",
+    "soal": "Dokter dan perawat bekerja di rumah sakit. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Guru dan siswa belajar di sekolah",
+      "Pilot dan pramugari bertugas di pesawat",
+      "Hakim dan pengacara bersidang di pengadilan",
+      "Pedagang dan pembeli bertransaksi di pasar",
+      "Koki dan pelayan bekerja di restoran"
+    ],
+    "kunci": "E",
+    "pola": "Analogi kalimat dua profesi dan tempat kerja",
+    "pembahasan": "Dokter dan perawat adalah dua profesi yang bekerja bersama di rumah sakit. Dengan pola yang sama, koki dan pelayan adalah dua profesi yang bekerja bersama di restoran.",
+    "analisis_opsi": {
+      "A": "Salah. Siswa bukan pekerja.",
+      "B": "Salah. Pesawat adalah kendaraan, bukan tempat kerja tetap.",
+      "C": "Salah. Pengadilan adalah tempat hukum.",
+      "D": "Salah. Pasar adalah tempat transaksi.",
+      "E": "Benar. Koki dan pelayan bekerja di restoran."
+    }
+  },
+  {
+    "id": 147,
+    "level": "Menengah",
+    "soal": "SALJU : PUTIH = ARANG : ...",
+    "pilihan": ["Gelap", "Abu", "Keras", "Hitam", "Dingin"],
+    "kunci": "D",
+    "pola": "Benda dan warna khasnya",
+    "pembahasan": "Salju berwarna putih. Dengan pola yang sama, arang berwarna hitam.",
+    "analisis_opsi": {
+      "A": "Salah. Gelap terlalu umum.",
+      "B": "Salah. Abu adalah warna lain.",
+      "C": "Salah. Keras adalah sifat fisik.",
+      "D": "Benar. Arang berwarna hitam.",
+      "E": "Salah. Dingin adalah suhu."
+    }
+  },
+  {
+    "id": 148,
+    "level": "Pemula",
+    "soal": "MADU : MANIS = GARAM : ...",
+    "pilihan": ["Pahit", "Asam", "Pedas", "Hambar", "Asin"],
+    "kunci": "E",
+    "pola": "Bahan dan rasa khasnya",
+    "pembahasan": "Madu rasanya manis. Dengan pola yang sama, garam rasanya asin.",
+    "analisis_opsi": {
+      "A": "Salah. Pahit adalah rasa lain.",
+      "B": "Salah. Asam adalah rasa lain.",
+      "C": "Salah. Pedas adalah rasa lain.",
+      "D": "Salah. Hambar adalah tidak berasa.",
+      "E": "Benar. Garam rasanya asin."
+    }
+  },
+  {
+    "id": 149,
+    "level": "Mahir",
+    "soal": "ADAPTASI : BERTAHAN = INOVASI : ...",
+    "pilihan": ["Bersaing", "Berubah", "Berhasil", "Berkembang", "Bertumbuh"],
+    "kunci": "D",
+    "pola": "Strategi dan tujuan",
+    "pembahasan": "Adaptasi adalah strategi untuk bertahan. Dengan pola yang sama, inovasi adalah strategi untuk berkembang.",
+    "analisis_opsi": {
+      "A": "Salah. Bersaing adalah konteks.",
+      "B": "Salah. Berubah adalah cara.",
+      "C": "Salah. Berhasil adalah hasil.",
+      "D": "Benar. Inovasi adalah strategi untuk berkembang.",
+      "E": "Salah. Bertumbuh mirip, tetapi berkembang lebih tepat."
+    }
+  },
+  {
+    "id": 150,
+    "level": "Menengah",
+    "soal": "Padi dan jagung adalah tanaman pangan. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Mawar dan melati adalah bunga hias",
+      "Sapi dan ayam adalah hewan ternak",
+      "Emas dan perak adalah logam mulia",
+      "Meja dan kursi adalah perabot rumah",
+      "Buku dan pensil adalah alat tulis"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat dua contoh dalam satu kategori produksi",
+    "pembahasan": "Padi dan jagung adalah dua contoh tanaman pangan. Dengan pola yang sama, sapi dan ayam adalah dua contoh hewan ternak.",
+    "analisis_opsi": {
+      "A": "Salah. Bunga hias bukan kategori produksi pangan.",
+      "B": "Benar. Sapi dan ayam adalah dua contoh hewan ternak.",
+      "C": "Salah. Logam mulia bukan kategori produksi pangan.",
+      "D": "Salah. Perabot rumah bukan kategori produksi.",
+      "E": "Salah. Alat tulis bukan kategori produksi."
+    }
+  }
+]

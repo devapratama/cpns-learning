@@ -1,0 +1,512 @@
+[
+  {
+    "id": 61,
+    "level": "Pemula",
+    "soal": "MATA : MELIHAT = TELINGA : ...",
+    "pilihan": ["Suara", "Hidung", "Mendengar", "Mulut", "Bunyi"],
+    "kunci": "C",
+    "pola": "Organ indera dan fungsinya",
+    "pembahasan": "Mata adalah organ indera yang berfungsi untuk melihat. Dengan pola yang sama, telinga adalah organ indera yang berfungsi untuk mendengar.",
+    "analisis_opsi": {
+      "A": "Salah. Suara adalah objek yang didengar, bukan fungsi telinga.",
+      "B": "Salah. Hidung adalah organ indera lain.",
+      "C": "Benar. Telinga berfungsi untuk mendengar.",
+      "D": "Salah. Mulut adalah organ berbicara dan makan.",
+      "E": "Salah. Bunyi adalah objek yang didengar."
+    }
+  },
+  {
+    "id": 62,
+    "level": "Mahir",
+    "soal": "AMNESIA : INGATAN = BUTA : ...",
+    "pilihan": ["Warna", "Penglihatan", "Kacamata", "Gelap", "Mata"],
+    "kunci": "B",
+    "pola": "Gangguan atau kondisi dan kemampuan yang hilang",
+    "pembahasan": "Amnesia adalah kondisi hilangnya ingatan. Dengan pola yang sama, buta adalah kondisi hilangnya penglihatan.",
+    "analisis_opsi": {
+      "A": "Salah. Warna adalah aspek dalam penglihatan, bukan kemampuan yang hilang.",
+      "B": "Benar. Buta menyebabkan hilangnya penglihatan.",
+      "C": "Salah. Kacamata adalah alat bantu penglihatan.",
+      "D": "Salah. Gelap adalah kondisi lingkungan.",
+      "E": "Salah. Mata adalah organ penglihatan."
+    }
+  },
+  {
+    "id": 63,
+    "level": "Menengah",
+    "soal": "KERTAS : PULPEN = KANVAS : ...",
+    "pilihan": ["Cat", "Pelukis", "Pameran", "Kuas", "Bingkai"],
+    "kunci": "D",
+    "pola": "Media dan alat gores",
+    "pembahasan": "Pulpen digunakan untuk menulis atau menggambar pada kertas. Dengan pola yang sama, kuas digunakan untuk melukis pada kanvas.",
+    "analisis_opsi": {
+      "A": "Salah. Cat adalah bahan, bukan alat gores utama.",
+      "B": "Salah. Pelukis adalah pelaku.",
+      "C": "Salah. Pameran adalah tempat memajang hasil karya.",
+      "D": "Benar. Kuas adalah alat yang digunakan pada kanvas.",
+      "E": "Salah. Bingkai adalah perlengkapan pelengkap."
+    }
+  },
+  {
+    "id": 64,
+    "level": "Pemula",
+    "soal": "BURUNG : TERBANG = IKAN : ...",
+    "pilihan": ["Berenang", "Air", "Sirip", "Laut", "Insang"],
+    "kunci": "A",
+    "pola": "Hewan dan cara bergerak utama",
+    "pembahasan": "Burung bergerak dengan cara terbang. Dengan pola yang sama, ikan bergerak dengan cara berenang.",
+    "analisis_opsi": {
+      "A": "Benar. Ikan bergerak utama dengan berenang.",
+      "B": "Salah. Air adalah tempat hidup ikan.",
+      "C": "Salah. Sirip adalah alat bantu gerak ikan.",
+      "D": "Salah. Laut adalah habitat ikan.",
+      "E": "Salah. Insang adalah organ pernapasan ikan."
+    }
+  },
+  {
+    "id": 65,
+    "level": "Mahir",
+    "soal": "Pagi dan malam adalah bagian dari satu hari. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Januari dan Februari adalah nama bulan",
+      "Musim hujan dan musim kemarau adalah bagian dari satu tahun",
+      "Senin dan Jumat adalah hari kerja",
+      "Barat dan timur adalah arah mata angin",
+      "Bulan dan bintang adalah benda langit"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat dua fase dalam satu siklus waktu",
+    "pembahasan": "Pagi dan malam adalah dua bagian dalam satu hari. Dengan pola yang sama, musim hujan dan musim kemarau adalah dua bagian dalam satu tahun.",
+    "analisis_opsi": {
+      "A": "Salah. Januari dan Februari hanya dua contoh bulan, bukan pembagian utama satu siklus.",
+      "B": "Benar. Musim hujan dan musim kemarau adalah bagian dari satu tahun.",
+      "C": "Salah. Senin dan Jumat hanya dua hari tertentu.",
+      "D": "Salah. Barat dan timur adalah arah mata angin.",
+      "E": "Salah. Bulan dan bintang adalah benda langit."
+    }
+  },
+  {
+    "id": 66,
+    "level": "Menengah",
+    "soal": "VAKSIN : PENYAKIT = HELM : ...",
+    "pilihan": ["Kepala", "Motor", "Cedera", "Jalan", "Kacamata"],
+    "kunci": "C",
+    "pola": "Alat pencegahan terhadap risiko",
+    "pembahasan": "Vaksin digunakan untuk mencegah penyakit. Dengan pola yang sama, helm digunakan untuk mencegah atau mengurangi cedera.",
+    "analisis_opsi": {
+      "A": "Salah. Kepala adalah bagian tubuh yang dilindungi helm.",
+      "B": "Salah. Motor adalah kendaraan.",
+      "C": "Benar. Helm berfungsi mencegah atau mengurangi cedera.",
+      "D": "Salah. Jalan adalah tempat berkendara.",
+      "E": "Salah. Kacamata adalah alat bantu penglihatan."
+    }
+  },
+  {
+    "id": 67,
+    "level": "Pemula",
+    "soal": "DAUN : HIJAU = DARAH : ...",
+    "pilihan": ["Cair", "Asin", "Oksigen", "Merah", "Pembuluh"],
+    "kunci": "D",
+    "pola": "Benda dan warna khasnya",
+    "pembahasan": "Daun identik dengan warna hijau. Dengan pola yang sama, darah identik dengan warna merah.",
+    "analisis_opsi": {
+      "A": "Salah. Cair adalah sifat fisik darah.",
+      "B": "Salah. Asin adalah rasa, bukan warna khas.",
+      "C": "Salah. Oksigen adalah kandungan yang dibawa darah.",
+      "D": "Benar. Darah identik dengan warna merah.",
+      "E": "Salah. Pembuluh adalah tempat mengalirnya darah."
+    }
+  },
+  {
+    "id": 68,
+    "level": "Mahir",
+    "soal": "KONSTITUSI : NEGARA = ANGGARAN DASAR : ...",
+    "pilihan": ["Perusahaan", "Sekolah", "Undang-Undang", "Pemerintah", "Organisasi"],
+    "kunci": "E",
+    "pola": "Dokumen dasar dan entitas yang diatur",
+    "pembahasan": "Konstitusi adalah dokumen dasar yang menjadi landasan tertinggi bagi negara. Dengan pola yang sama, anggaran dasar adalah dokumen dasar yang menjadi landasan bagi organisasi.",
+    "analisis_opsi": {
+      "A": "Salah. Perusahaan dapat memiliki anggaran dasar, tetapi organisasi adalah istilah yang lebih umum dan setara.",
+      "B": "Salah. Sekolah adalah institusi, bukan entitas organisasi secara umum.",
+      "C": "Salah. Undang-undang adalah produk hukum, bukan entitas yang diatur.",
+      "D": "Salah. Pemerintah adalah lembaga negara.",
+      "E": "Benar. Anggaran dasar adalah dasar organisasi."
+    }
+  },
+  {
+    "id": 69,
+    "level": "Menengah",
+    "soal": "SUHU : TERMOMETER = TEKANAN : ...",
+    "pilihan": ["Speedometer", "Barometer", "Timbangan", "Meteran", "Jam"],
+    "kunci": "B",
+    "pola": "Besaran dan alat ukurnya",
+    "pembahasan": "Suhu diukur menggunakan termometer. Dengan pola yang sama, tekanan diukur menggunakan barometer.",
+    "analisis_opsi": {
+      "A": "Salah. Speedometer mengukur kecepatan.",
+      "B": "Benar. Barometer mengukur tekanan udara.",
+      "C": "Salah. Timbangan mengukur massa.",
+      "D": "Salah. Meteran mengukur panjang.",
+      "E": "Salah. Jam mengukur waktu."
+    }
+  },
+  {
+    "id": 70,
+    "level": "Pemula",
+    "soal": "DINGIN : JAKET = HUJAN : ...",
+    "pilihan": ["Air", "Basah", "Payung", "Sungai", "Petir"],
+    "kunci": "C",
+    "pola": "Kondisi dan alat perlindungan",
+    "pembahasan": "Jaket digunakan untuk melindungi tubuh dari dingin. Dengan pola yang sama, payung digunakan untuk melindungi tubuh dari hujan.",
+    "analisis_opsi": {
+      "A": "Salah. Air adalah unsur hujan.",
+      "B": "Salah. Basah adalah akibat hujan.",
+      "C": "Benar. Payung melindungi tubuh dari hujan.",
+      "D": "Salah. Sungai adalah tempat air mengalir.",
+      "E": "Salah. Petir adalah fenomena cuaca."
+    }
+  },
+  {
+    "id": 71,
+    "level": "Menengah",
+    "soal": "VITAMIN : KESEHATAN = PUPUK : ...",
+    "pilihan": ["Tanaman", "Kesuburan", "Air", "Panen", "Tanah"],
+    "kunci": "B",
+    "pola": "Zat dan kondisi yang ditingkatkan",
+    "pembahasan": "Vitamin membantu meningkatkan kesehatan. Dengan pola yang sama, pupuk membantu meningkatkan kesuburan tanah atau tanaman.",
+    "analisis_opsi": {
+      "A": "Salah. Tanaman adalah objek yang diberi pupuk.",
+      "B": "Benar. Pupuk meningkatkan kesuburan.",
+      "C": "Salah. Air adalah kebutuhan tanaman.",
+      "D": "Salah. Panen adalah hasil akhir.",
+      "E": "Salah. Tanah adalah media tanam."
+    }
+  },
+  {
+    "id": 72,
+    "level": "Menengah",
+    "soal": "Dapur memiliki kompor dan kulkas. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Garasi memiliki mobil dan motor",
+      "Sekolah memiliki guru dan murid",
+      "Hutan memiliki pohon dan hewan",
+      "Kota memiliki gedung dan jalan",
+      "Kamar mandi memiliki shower dan wastafel"
+    ],
+    "kunci": "E",
+    "pola": "Analogi kalimat ruangan dan peralatan khas",
+    "pembahasan": "Dapur adalah ruangan yang memiliki peralatan khas berupa kompor dan kulkas. Dengan pola yang sama, kamar mandi adalah ruangan yang memiliki peralatan khas berupa shower dan wastafel.",
+    "analisis_opsi": {
+      "A": "Salah. Mobil dan motor adalah kendaraan yang disimpan, bukan peralatan tetap ruangan.",
+      "B": "Salah. Guru dan murid adalah penghuni sekolah.",
+      "C": "Salah. Pohon dan hewan adalah makhluk hidup di hutan.",
+      "D": "Salah. Gedung dan jalan adalah bagian kota.",
+      "E": "Benar. Kamar mandi memiliki shower dan wastafel sebagai peralatan khas."
+    }
+  },
+  {
+    "id": 73,
+    "level": "Pemula",
+    "soal": "KAKI : SEPATU = TANGAN : ...",
+    "pilihan": ["Cincin", "Gelang", "Sarung tangan", "Jam", "Kuku"],
+    "kunci": "C",
+    "pola": "Bagian tubuh dan pelindungnya",
+    "pembahasan": "Sepatu digunakan untuk melindungi kaki. Dengan pola yang sama, sarung tangan digunakan untuk melindungi tangan.",
+    "analisis_opsi": {
+      "A": "Salah. Cincin adalah aksesoris.",
+      "B": "Salah. Gelang adalah aksesoris.",
+      "C": "Benar. Sarung tangan melindungi tangan.",
+      "D": "Salah. Jam adalah aksesoris atau alat penunjuk waktu.",
+      "E": "Salah. Kuku adalah bagian tubuh."
+    }
+  },
+  {
+    "id": 74,
+    "level": "Mahir",
+    "soal": "HIPOTESIS : PENELITIAN = DAKWAAN : ...",
+    "pilihan": ["Hakim", "Pengacara", "Vonis", "Sidang", "Saksi"],
+    "kunci": "D",
+    "pola": "Tahap awal dan proses lanjutan",
+    "pembahasan": "Hipotesis adalah tahap awal dalam penelitian. Dengan pola yang sama, dakwaan adalah tahap awal dalam sidang.",
+    "analisis_opsi": {
+      "A": "Salah. Hakim adalah pihak dalam sidang.",
+      "B": "Salah. Pengacara adalah pihak dalam sidang.",
+      "C": "Salah. Vonis adalah hasil akhir sidang.",
+      "D": "Benar. Dakwaan adalah tahap awal sidang.",
+      "E": "Salah. Saksi adalah pihak dalam sidang."
+    }
+  },
+  {
+    "id": 75,
+    "level": "Menengah",
+    "soal": "NGANTUK : TIDUR = LELAH : ...",
+    "pilihan": ["Istirahat", "Bantal", "Kasur", "Mandi", "Makan"],
+    "kunci": "A",
+    "pola": "Kondisi dan tindakan pemulihan",
+    "pembahasan": "Ngantuk adalah kondisi yang membutuhkan tidur. Dengan pola yang sama, lelah adalah kondisi yang membutuhkan istirahat.",
+    "analisis_opsi": {
+      "A": "Benar. Lelah membutuhkan istirahat.",
+      "B": "Salah. Bantal adalah alat bantu tidur.",
+      "C": "Salah. Kasur adalah tempat tidur.",
+      "D": "Salah. Mandi dapat menyegarkan, tetapi bukan tindakan utama untuk lelah.",
+      "E": "Salah. Makan berkaitan dengan lapar."
+    }
+  },
+  {
+    "id": 76,
+    "level": "Pemula",
+    "soal": "PADI : BERAS = KELAPA : ...",
+    "pilihan": ["Daun", "Santan", "Akar", "Kulit", "Pohon"],
+    "kunci": "B",
+    "pola": "Bahan baku dan hasil olahan",
+    "pembahasan": "Padi diolah menjadi beras. Dengan pola yang sama, kelapa diolah menjadi santan.",
+    "analisis_opsi": {
+      "A": "Salah. Daun adalah bagian tanaman kelapa.",
+      "B": "Benar. Kelapa dapat diolah menjadi santan.",
+      "C": "Salah. Akar adalah bagian tanaman.",
+      "D": "Salah. Kulit adalah bagian kelapa.",
+      "E": "Salah. Pohon adalah tanaman kelapa."
+    }
+  },
+  {
+    "id": 77,
+    "level": "Mahir",
+    "soal": "UTOPIA : NYATA = ILUSI : ...",
+    "pilihan": ["Mimpi", "Khayalan", "Fakta", "Angan", "Harapan"],
+    "kunci": "C",
+    "pola": "Lawan realitas",
+    "pembahasan": "Utopia adalah sesuatu yang tidak nyata, berlawanan dengan nyata. Dengan pola yang sama, ilusi adalah sesuatu yang tidak nyata, berlawanan dengan fakta.",
+    "analisis_opsi": {
+      "A": "Salah. Mimpi mirip dengan ilusi, bukan lawannya.",
+      "B": "Salah. Khayalan mirip dengan ilusi.",
+      "C": "Benar. Fakta adalah lawan dari ilusi.",
+      "D": "Salah. Angan mirip dengan ilusi.",
+      "E": "Salah. Harapan tidak secara langsung menjadi lawan ilusi."
+    }
+  },
+  {
+    "id": 78,
+    "level": "Menengah",
+    "soal": "KULIT : SENTUHAN = MATA : ...",
+    "pilihan": ["Kacamata", "Warna", "Cahaya", "Alis", "Penglihatan"],
+    "kunci": "E",
+    "pola": "Organ indera dan kemampuan yang dihasilkan",
+    "pembahasan": "Kulit menghasilkan kemampuan merasakan sentuhan. Dengan pola yang sama, mata menghasilkan kemampuan penglihatan.",
+    "analisis_opsi": {
+      "A": "Salah. Kacamata adalah alat bantu penglihatan.",
+      "B": "Salah. Warna adalah objek penglihatan.",
+      "C": "Salah. Cahaya adalah stimulus penglihatan.",
+      "D": "Salah. Alis adalah bagian pelindung mata.",
+      "E": "Benar. Mata menghasilkan penglihatan."
+    }
+  },
+  {
+    "id": 79,
+    "level": "Pemula",
+    "soal": "MALAM : BULAN = SIANG : ...",
+    "pilihan": ["Matahari", "Bintang", "Awan", "Hujan", "Pelangi"],
+    "kunci": "A",
+    "pola": "Waktu dan benda langit khas",
+    "pembahasan": "Malam sering dikaitkan dengan bulan. Dengan pola yang sama, siang sering dikaitkan dengan matahari.",
+    "analisis_opsi": {
+      "A": "Benar. Siang identik dengan matahari.",
+      "B": "Salah. Bintang lebih identik dengan malam.",
+      "C": "Salah. Awan dapat muncul kapan saja.",
+      "D": "Salah. Hujan adalah fenomena cuaca.",
+      "E": "Salah. Pelangi adalah fenomena optik."
+    }
+  },
+  {
+    "id": 80,
+    "level": "Mahir",
+    "soal": "Helm dan jaket adalah perlengkapan keselamatan pengendara motor. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Sepatu dan kaos kaki adalah perlengkapan siswa",
+      "Jas dan dasi adalah pakaian resmi",
+      "Payung dan jas hujan adalah perlengkapan pejalan kaki saat hujan",
+      "Kacamata dan buku adalah alat pelajar",
+      "Sendok dan garpu adalah alat makan"
+    ],
+    "kunci": "C",
+    "pola": "Analogi kalimat perlengkapan pelindung untuk kondisi tertentu",
+    "pembahasan": "Helm dan jaket adalah perlengkapan pelindung bagi pengendara motor. Dengan pola yang sama, payung dan jas hujan adalah perlengkapan pelindung bagi pejalan kaki saat hujan.",
+    "analisis_opsi": {
+      "A": "Salah. Sepatu dan kaos kaki adalah perlengkapan umum, bukan perlengkapan keselamatan khusus.",
+      "B": "Salah. Jas dan dasi adalah pakaian resmi.",
+      "C": "Benar. Payung dan jas hujan adalah perlengkapan pelindung saat hujan.",
+      "D": "Salah. Kacamata dan buku adalah alat belajar.",
+      "E": "Salah. Sendok dan garpu adalah alat makan."
+    }
+  },
+  {
+    "id": 81,
+    "level": "Menengah",
+    "soal": "GIGI : MENGUNYAH = KAKI : ...",
+    "pilihan": ["Tangan", "Sepatu", "Lutut", "Berjalan", "Lari"],
+    "kunci": "D",
+    "pola": "Bagian tubuh dan fungsi utama",
+    "pembahasan": "Gigi berfungsi utama untuk mengunyah. Dengan pola yang sama, kaki berfungsi utama untuk berjalan.",
+    "analisis_opsi": {
+      "A": "Salah. Tangan adalah bagian tubuh lain.",
+      "B": "Salah. Sepatu adalah pelengkap kaki.",
+      "C": "Salah. Lutut adalah bagian kaki.",
+      "D": "Benar. Kaki berfungsi utama untuk berjalan.",
+      "E": "Salah. Lari juga fungsi kaki, tetapi berjalan lebih umum dan setara dengan mengunyah sebagai fungsi dasar."
+    }
+  },
+  {
+    "id": 82,
+    "level": "Pemula",
+    "soal": "PENA : TINTA = PENSIL : ...",
+    "pilihan": ["Kertas", "Penghapus", "Grafit", "Kayu", "Tinta"],
+    "kunci": "C",
+    "pola": "Alat tulis dan bahan inti",
+    "pembahasan": "Pena menggunakan tinta sebagai bahan inti untuk menulis. Dengan pola yang sama, pensil menggunakan grafit sebagai bahan inti untuk menulis.",
+    "analisis_opsi": {
+      "A": "Salah. Kertas adalah media menulis.",
+      "B": "Salah. Penghapus adalah pelengkap.",
+      "C": "Benar. Pensil menggunakan grafit sebagai bahan inti.",
+      "D": "Salah. Kayu adalah badan pensil.",
+      "E": "Salah. Tinta digunakan pada pena."
+    }
+  },
+  {
+    "id": 83,
+    "level": "Mahir",
+    "soal": "MUSYAWARAH : MUFAKAT = NEGOSIASI : ...",
+    "pilihan": ["Kesepakatan", "Konflik", "Debat", "Perjanjian", "Diskusi"],
+    "kunci": "A",
+    "pola": "Proses dan hasil yang dicapai",
+    "pembahasan": "Musyawarah bertujuan mencapai mufakat. Dengan pola yang sama, negosiasi bertujuan mencapai kesepakatan.",
+    "analisis_opsi": {
+      "A": "Benar. Negosiasi menghasilkan kesepakatan.",
+      "B": "Salah. Konflik adalah lawan dari hasil negosiasi.",
+      "C": "Salah. Debat adalah bentuk komunikasi, bukan hasil negosiasi.",
+      "D": "Salah. Perjanjian dapat menjadi hasil formal, tetapi kesepakatan lebih umum dan langsung.",
+      "E": "Salah. Diskusi adalah proses, bukan hasil."
+    }
+  },
+  {
+    "id": 84,
+    "level": "Menengah",
+    "soal": "BANJIR : HUJAN = KEBAKARAN : ...",
+    "pilihan": ["Air", "Asap", "Api", "Hutan", "Panas"],
+    "kunci": "C",
+    "pola": "Akibat dan penyebab",
+    "pembahasan": "Banjir dapat disebabkan oleh hujan. Dengan pola yang sama, kebakaran dapat disebabkan oleh api.",
+    "analisis_opsi": {
+      "A": "Salah. Air digunakan untuk memadamkan kebakaran.",
+      "B": "Salah. Asap adalah hasil kebakaran.",
+      "C": "Benar. Api adalah penyebab kebakaran.",
+      "D": "Salah. Hutan adalah tempat kebakaran dapat terjadi.",
+      "E": "Salah. Panas adalah kondisi yang berkaitan, tetapi api lebih langsung."
+    }
+  },
+  {
+    "id": 85,
+    "level": "Pemula",
+    "soal": "Pohon memiliki akar dan daun. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Rumah memiliki atap dan dinding",
+      "Mobil memiliki roda dan mesin",
+      "Buku memiliki sampul dan halaman",
+      "Komputer memiliki monitor dan keyboard",
+      "Kucing memiliki bulu dan ekor"
+    ],
+    "kunci": "E",
+    "pola": "Analogi kalimat bagian alami makhluk hidup",
+    "pembahasan": "Akar dan daun adalah bagian alami pohon. Dengan pola yang sama, bulu dan ekor adalah bagian alami kucing.",
+    "analisis_opsi": {
+      "A": "Salah. Rumah adalah benda mati.",
+      "B": "Salah. Mobil adalah benda mati.",
+      "C": "Salah. Buku adalah benda mati.",
+      "D": "Salah. Komputer adalah benda mati.",
+      "E": "Benar. Kucing memiliki bulu dan ekor sebagai bagian alami tubuh."
+    }
+  },
+  {
+    "id": 86,
+    "level": "Mahir",
+    "soal": "ARKEOLOG : ARTEFAK = SEJARAWAN : ...",
+    "pilihan": ["Fosil", "Bintang", "Batuan", "Dokumen", "Cuaca"],
+    "kunci": "D",
+    "pola": "Ahli dan objek kajian",
+    "pembahasan": "Arkeolog meneliti artefak. Dengan pola yang sama, sejarawan meneliti dokumen atau sumber tertulis.",
+    "analisis_opsi": {
+      "A": "Salah. Fosil lebih berkaitan dengan paleontologi atau arkeologi tertentu.",
+      "B": "Salah. Bintang adalah objek kajian astronom.",
+      "C": "Salah. Batuan adalah objek kajian geologi.",
+      "D": "Benar. Sejarawan meneliti dokumen dan sumber tertulis.",
+      "E": "Salah. Cuaca adalah objek kajian meteorologi."
+    }
+  },
+  {
+    "id": 87,
+    "level": "Menengah",
+    "soal": "GANDUM : ROTI = KENTANG : ...",
+    "pilihan": ["Sawah", "Keripik", "Ladang", "Nasi", "Jagung"],
+    "kunci": "B",
+    "pola": "Bahan pangan dan produk olahan",
+    "pembahasan": "Gandum diolah menjadi roti. Dengan pola yang sama, kentang diolah menjadi keripik.",
+    "analisis_opsi": {
+      "A": "Salah. Sawah adalah tempat menanam padi.",
+      "B": "Benar. Kentang dapat diolah menjadi keripik.",
+      "C": "Salah. Ladang adalah tempat menanam kentang.",
+      "D": "Salah. Nasi berasal dari beras.",
+      "E": "Salah. Jagung adalah bahan pangan lain."
+    }
+  },
+  {
+    "id": 88,
+    "level": "Pemula",
+    "soal": "BULU : BURUNG = RAMBUT : ...",
+    "pilihan": ["Kucing", "Ikan", "Manusia", "Pohon", "Batu"],
+    "kunci": "C",
+    "pola": "Penutup tubuh pada makhluk hidup",
+    "pembahasan": "Bulu adalah penutup tubuh burung. Dengan pola yang sama, rambut adalah penutup tubuh manusia.",
+    "analisis_opsi": {
+      "A": "Salah. Kucing memiliki bulu.",
+      "B": "Salah. Ikan memiliki sisik.",
+      "C": "Benar. Manusia memiliki rambut.",
+      "D": "Salah. Pohon bukan makhluk hidup yang memiliki rambut.",
+      "E": "Salah. Batu bukan makhluk hidup."
+    }
+  },
+  {
+    "id": 89,
+    "level": "Mahir",
+    "soal": "EDUKASI : LITERASI = PELATIHAN : ...",
+    "pilihan": ["Uang", "Kompetensi", "Sertifikat", "Ujian", "Materi"],
+    "kunci": "B",
+    "pola": "Proses dan kemampuan yang dihasilkan",
+    "pembahasan": "Edukasi meningkatkan literasi. Dengan pola yang sama, pelatihan meningkatkan kompetensi.",
+    "analisis_opsi": {
+      "A": "Salah. Uang bukan hasil langsung pelatihan.",
+      "B": "Benar. Pelatihan meningkatkan kompetensi.",
+      "C": "Salah. Sertifikat adalah dokumen bukti pelatihan.",
+      "D": "Salah. Ujian adalah tahap evaluasi.",
+      "E": "Salah. Materi adalah bahan pelatihan."
+    }
+  },
+  {
+    "id": 90,
+    "level": "Mahir",
+    "soal": "Buku disimpan di rak perpustakaan. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Pakaian disimpan di lemari",
+      "Uang disimpan di dompet",
+      "Mobil disimpan di garasi",
+      "Dokumen disimpan di arsip",
+      "Makanan disimpan di dapur"
+    ],
+    "kunci": "D",
+    "pola": "Analogi kalimat tempat penyimpanan khusus",
+    "pembahasan": "Buku disimpan secara khusus di rak perpustakaan. Dengan pola yang sama, dokumen disimpan secara khusus di arsip.",
+    "analisis_opsi": {
+      "A": "Salah. Pakaian disimpan di lemari, tetapi hubungan ini lebih umum dan tidak seformal perpustakaan.",
+      "B": "Salah. Dompet adalah tempat kecil untuk uang.",
+      "C": "Salah. Garasi adalah tempat kendaraan.",
+      "D": "Benar. Arsip adalah tempat penyimpanan khusus dokumen.",
+      "E": "Salah. Dapur adalah tempat umum untuk makanan."
+    }
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "category": "Bahasa Indonesia",
+  "categoryFolder": "bahasa-indonesia",
+  "title": "Paragraf",
+  "subtitle": "Struktur, jenis, dan pola pengembangan paragraf.",
+  "quizIntro": "Pilih jawaban yang menurut Anda benar, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Paragraf yang kalimat utamanya terletak di akhir paragraf disebut paragraf …",
+      "options": ["A. deduktif", "B. induktif", "C. campuran", "D. naratif"],
+      "answer": 1,
+      "explanation": "Paragraf induktif meletakkan kalimat utama (simpulan) di akhir paragraf."
+    },
+    {
+      "question": "Syarat paragraf yang baik adalah …",
+      "options": ["A. panjang dan banyak halaman", "B. memiliki kesatuan dan kepaduan", "C. hanya berisi contoh", "D. tidak memiliki kalimat penjelas"],
+      "answer": 1,
+      "explanation": "Paragraf yang baik memiliki kesatuan gagasan (kohesi) dan kepaduan antarkalimat (koherensi)."
+    },
+    {
+      "question": "Perhatikan paragraf berikut. Pemerintah terus memperbaiki kualitas jalan di daerah terpencil. Jalan yang rusak membuat distribusi barang dan jasa terhambat. Akibatnya, harga kebutuhan pokok menjadi mahal dan pendapatan petani menurun. Pola pengembangan paragraf tersebut adalah …",
+      "options": ["A. generalisasi", "B. sebab-akibat", "C. perbandingan", "D. contoh"],
+      "answer": 1,
+      "explanation": "Paragraf menguraikan sebab (jalan rusak) lalu akibat yang ditimbulkannya, sehingga berpola sebab-akibat."
+    },
+    {
+      "question": "Berikut yang merupakan ciri paragraf naratif adalah …",
+      "options": ["A. kalimat utama di awal", "B. kalimat utama di akhir", "C. tidak memiliki kalimat utama eksplisit", "D. kalimat utama di awal dan akhir"],
+      "answer": 2,
+      "explanation": "Paragraf naratif menyampaikan ide pokok secara tersirat melalui rangkaian peristiwa."
+    },
+    {
+      "question": "Kepaduan (koherensi) dalam paragraf berarti …",
+      "options": ["A. seluruh kalimat membahas satu gagasan", "B. antarkalimat tersusun runtut dan logis", "C. paragraf tidak memiliki kalimat utama", "D. hanya ada satu kalimat"],
+      "answer": 1,
+      "explanation": "Koherensi adalah keteraturan hubungan antar kalimat sehingga paragraf mengalir jelas. Kesatuan gagasan disebut kohesi."
+    },
+    {
+      "question": "Paragraf yang menguraikan gagasan umum terlebih dahulu lalu memberi contoh-contoh menggunakan pola …",
+      "options": ["A. contoh", "B. analogi", "C. sebab-akibat", "D. perbandingan"],
+      "answer": 0,
+      "explanation": "Pola contoh mengembangkan gagasan umum dengan memberikan ilustrasi konkret."
+    },
+    {
+      "question": "Paragraf yang mengumpulkan beberapa fakta lalu menarik kesimpulan umum menggunakan pola …",
+      "options": ["A. contoh", "B. generalisasi", "C. perbandingan", "D. sebab-akibat"],
+      "answer": 1,
+      "explanation": "Generalisasi menarik simpulan umum dari serangkaian fakta khusus."
+    },
+    {
+      "question": "Kalimat utama paragraf induktif biasanya ditandai dengan kata …",
+      "options": ["A. misalnya", "B. oleh karena itu / jadi", "C. seperti", "D. yaitu"],
+      "answer": 1,
+      "explanation": "Pernyataan penegas seperti 'oleh karena itu' dan 'jadi' menandai simpulan di akhir paragraf induktif."
+    },
+    {
+      "question": "Paragraf yang cocok untuk laporan ilmiah yang langsung menyampaikan kesimpulan adalah …",
+      "options": ["A. deduktif", "B. induktif", "C. naratif", "D. deskriptif"],
+      "answer": 0,
+      "explanation": "Paragraf deduktif menempatkan gagasan utama di awal sehingga pembaca langsung tahu inti tulisan."
+    },
+    {
+      "question": "Perhatikan paragraf berikut. Belajar kelompok seperti memasak bersama: masing-masing anggota memberi peran, lalu pekerjaan terasa ringan. Pola pengembangan paragraf tersebut adalah …",
+      "options": ["A. analogi", "B. contoh", "C. perbandingan", "D. sebab-akibat"],
+      "answer": 0,
+      "explanation": "Paragraf membandingkan belajar kelompok dengan memasak karena memiliki kesamaan sifat, yaitu pola analogi."
+    },
+    {
+      "question": "Berikut yang termasuk jenis paragraf berdasarkan letak kalimat utama adalah …",
+      "options": ["A. deklaratif, interogatif, imperatif", "B. deduktif, induktif, campuran", "C. naratif, ekspositoris, deskriptif", "D. lamembar, singkat, menengah"],
+      "answer": 1,
+      "explanation": "Berdasarkan letak kalimat utama, paragraf dibedakan menjadi deduktif, induktif, dan campuran."
+    },
+    {
+      "question": "Kesatuan (kohesi) paragraf ditunjukkan dengan …",
+      "options": ["A. kelengkapan unsur kalimat", "B. seluruh kalimat mendukung satu gagasan utama", "C. keindahan diksi", "D. panjang kalimat yang seragam"],
+      "answer": 1,
+      "explanation": "Kohesi berarti semua kalimat dalam paragraf membahas satu gagasan yang sama."
+    }
+  ]
+}

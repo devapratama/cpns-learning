@@ -1,0 +1,31 @@
+{
+  "judul": "Bank Soal Silogisme TIU CPNS",
+  "deskripsi": "Kumpulan soal silogisme (kategorial, hipotetik, berantai, negasi, dan paragraf naratif) dengan tingkat kesulitan acak. Setiap paket berisi campuran soal Pemula, Menengah, dan Mahir.",
+  "paket": [
+    {
+      "nama": "Paket 1",
+      "file": "paket-1.json",
+      "deskripsi": "30 soal silogisme"
+    },
+    {
+      "nama": "Paket 2",
+      "file": "paket-2.json",
+      "deskripsi": "30 soal silogisme"
+    },
+    {
+      "nama": "Paket 3",
+      "file": "paket-3.json",
+      "deskripsi": "30 soal silogisme"
+    },
+    {
+      "nama": "Paket 4",
+      "file": "paket-4.json",
+      "deskripsi": "30 soal silogisme"
+    },
+    {
+      "nama": "Paket 5",
+      "file": "paket-5.json",
+      "deskripsi": "30 soal silogisme"
+    }
+  ]
+}

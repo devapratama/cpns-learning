@@ -1,0 +1,81 @@
+{
+  "category": "Bahasa Indonesia",
+  "categoryFolder": "bahasa-indonesia",
+  "title": "Kalimat Efektif",
+  "subtitle": "Syarat, ciri, dan contoh kalimat efektif dalam penulisan.",
+  "quizIntro": "Pilih kalimat yang paling efektif pada setiap soal, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "Tujuan penggunaan kalimat efektif adalah …",
+      "options": ["A. membuat tulisan lebih panjang", "B. menyampaikan pesan secara tepat dan hemat", "C. memperindah kata-kata", "D. mengganti kalimat bertele-tele"],
+      "answer": 1,
+      "explanation": "Kalimat efektif menyampaikan pesan secara tepat, jelas, dan hemat tanpa mengurangi makna."
+    },
+    {
+      "question": "Kalimat berikut yang tidak efektif adalah …",
+      "options": ["A. Para hadirin mendengarkan dengan saksama.", "B. Para siswa mengerjakan tugas itu dengan baik.", "C. Para hadirin semua dimohon berdiri.", "D. Para pekerja menyelesaikan proyek tepat waktu."],
+      "answer": 2,
+      "explanation": "'Para hadirin semua' boros kata karena 'para' dan 'semua' mubazir; 'hadirin' sudah menyatakan jamak."
+    },
+    {
+      "question": "Perbaikan yang tepat untuk kalimat 'Pembangunan gedung itu telah selesai dibangun' adalah …",
+      "options": ["A. Pembangunan gedung itu telah selesai.", "B. Gedung yang dibangun telah selesai dibangun.", "C. Pembangunannya gedung telah selesai dibangun.", "D. Gedung pembangunan itu sudah dibangun selesai."],
+      "answer": 0,
+      "explanation": "Kata 'dibangun' mubazir karena 'pembangunan' sudah mengandung makna dibangun."
+    },
+    {
+      "question": "Syarat kalimat efektif yang menuntut penggunaan kata yang mubazir dihindari disebut …",
+      "options": ["A. kesepadanan", "B. kepaduan", "C. kehematan", "D. kelogisan"],
+      "answer": 2,
+      "explanation": "Kehematan berarti menghilangkan kata berlebih tanpa mengurangi makna, mis. 'sangat amat bagus' → 'sangat bagus'."
+    },
+    {
+      "question": "Kalimat berikut yang paling efektif adalah …",
+      "options": ["A. Karena hujan, maka jalanan menjadi becek.", "B. Karena hujan, jalanan menjadi becek.", "C. Karena hujan, karena itu jalanan menjadi becek.", "D. Hujan karena maka jalanan becek."],
+      "answer": 1,
+      "explanation": "Konjungsi 'karena' dan 'maka' tidak perlu dipakai bersamaan pada kalimat tunggal sebab-akibat (kehematan)."
+    },
+    {
+      "question": "Kalimat efektif harus memiliki kesejajaran bentuk. Yang paling sejajar adalah …",
+      "options": ["A. Kegiatan itu meliputi berlatih, belajar, dan berdiskusi.", "B. Kegiatan itu meliputi berlatih, belajar, dan diskusi.", "C. Kegiatan itu meliputi latihan, belajar, dan berdiskusi.", "D. Kegiatan itu meliputi latihan, belajar, dan berdiskusi."],
+      "answer": 0,
+      "explanation": "Ketiga unsur memakai bentuk yang sama (memakai awalan 'ber-'), sehingga sejajar."
+    },
+    {
+      "question": "Kalimat 'Waktu yang tepat untuk mengisi waktu luang adalah waktu luang untuk mengisi hal yang bermanfaat' tidak efektif karena …",
+      "options": ["A. kalimatnya ambigu", "B. premis berulang sehingga bertele-tele", "C. tidak logis", "D. terlalu singkat"],
+      "answer": 1,
+      "explanation": "Pengulangan makna 'waktu luang' membuat kalimat boros dan tidak padu."
+    },
+    {
+      "question": "Contoh kalimat yang hemat adalah …",
+      "options": ["A. Banyak sekali para siswa-siswa itu hadir di aula.", "B. Banyak siswa hadir di aula.", "C. Banyak para siswa itu hadir di aula.", "D. Para banyak siswa-siswa hadir."],
+      "answer": 1,
+      "explanation": "Kata 'para' dan pengulangan 'siswa-siswa' tidak diperlukan; 'Banyak siswa hadir di aula' efisien."
+    },
+    {
+      "question": "Kalimat yang memiliki kepaduan (koherensi) terdapat pada …",
+      "options": ["A. Para hadirin, yang tamu itu, dimohon duduk.", "B. Peserta yang telah hadir dipersilakan menempati tempat duduk.", "C. Hai, yang datang, tepatnya peserta, silakan duduk.", "D. Yang hadir peserta sinilah duduk."],
+      "answer": 1,
+      "explanation": "Hubungan antarkata dalam pilihan B tersusun padu dan mudah dipahami."
+    },
+    {
+      "question": "Kalimat berikut yang tidak logis adalah …",
+      "options": ["A. Ayah meminum segelas kopi hangat.", "B. Waktu dan tempat kami persilakan.", "C. Suara itu menembus tembok yang tebal.", "D. Kalender itu merayakan kemerdekaan."],
+      "answer": 3,
+      "explanation": "'Kalender itu merayakan kemerdekaan' tidak masuk akal karena subjek tidak berpotensi melakukannya."
+    },
+    {
+      "question": "Kalimat efektif dengan subjek yang jelas terdapat pada …",
+      "options": ["A. Kepada seluruh mahasiswa dimohon mengisi KRS.", "B. Seluruh mahasiswa dimohon mengisi KRS.", "C. Untuk seluruh mahasiswa, mengisi KRS.", "D. Yang seluruh mahasiswa, mengisilah KRS."],
+      "answer": 1,
+      "explanation": "Pilihan B memiliki subjek jelas ('seluruh mahasiswa') tanpa kata depan berlebih di awal."
+    },
+    {
+      "question": "Pernyataan yang benar tentang kalimat efektif adalah …",
+      "options": ["A. semakin panjang kalimat semakin baik", "B. kalimat efektif jelas, hemat, dan tidak ambigu", "C. kalimat efektif selalu memakai banyak sinonim", "D. kalimat efektif tidak perlu memiliki predikat"],
+      "answer": 1,
+      "explanation": "Kalimat efektif mengutamakan kejelasan, kehematan, dan ketepatan makna."
+    }
+  ]
+}

@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#2563eb"/>
+<title>Modul Analogi TIU CPNS | CPNS Learning</title>
+<style>
+:root{--bg:#f0f4f8;--card:#fff;--box:#f8fafc;--text:#1a2332;--muted:#5c7089;--primary:#2563eb;--primary-light:#eff6ff;--hl-primary:#bfdbfe;--border:#d7e3f4;--success:#16a34a;--success-light:#f0fdf4;--hl-green:#86efac;--danger:#dc2626;--danger-light:#fef2f2;--hl-red:#fca5a5;--warning:#f59e0b;--warning-light:#fffbeb;--hl-yellow:#fcd34d;--gold:#b45309;--l1-bg:#dcfce7;--l1-fg:#166534;--l2-bg:#dbeafe;--l2-fg:#1e40af;--l3-bg:#fee2e2;--l3-fg:#991b1b;--pola-bg:#f3f4f6;--pola-fg:#374151;--year-bg:#fef3c7;--btn-text:#fff;--shadow:0 2px 12px rgba(0,0,0,.04)}
+[data-theme="dark"]{--bg:#0f172a;--card:#1e293b;--box:#16202f;--text:#e8edf4;--muted:#aab6c5;--primary:#6aa7f8;--primary-light:#1e3a5f;--hl-primary:#1d4ed8;--border:#3b4a5e;--success:#4ade80;--success-light:#052e16;--hl-green:#166534;--danger:#f87171;--danger-light:#450a0a;--hl-red:#991b1b;--warning:#fbbf24;--warning-light:#3a2a06;--hl-yellow:#b45309;--gold:#f1c164;--l1-bg:#14532d;--l1-fg:#bbf7d0;--l2-bg:#1e3a8a;--l2-fg:#bfdbfe;--l3-bg:#7f1d1d;--l3-fg:#fecaca;--pola-bg:#334155;--pola-fg:#e2e8f0;--year-bg:#78350f;--year-fg:#fde68a;--btn-text:#0f172a;--shadow:0 2px 12px rgba(0,0,0,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px}
+.wrap{max-width:1000px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin:16px 0;box-shadow:var(--shadow)}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.25;margin-bottom:12px}
+h2{font-size:clamp(20px,4vw,28px);margin:28px 0 14px;padding-bottom:10px;border-bottom:3px solid var(--primary);display:inline-block}
+h3{font-size:19px;margin:22px 0 10px;color:var(--primary)}
+h4{font-size:16px;margin:16px 0 8px}
+p{margin:10px 0}
+.big{font-size:18px}
+.small{font-size:14px;color:var(--muted)}
+.muted{color:var(--muted)}
+.hidden{display:none!important}
+.btn{border:none;border-radius:12px;background:var(--primary);color:var(--btn-text);padding:12px 22px;font-size:15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .2s;text-decoration:none}
+.btn:hover{opacity:.88;transform:translateY(-1px)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn.secondary{background:var(--card);color:var(--primary);border:2px solid var(--primary)}
+.btn.success{background:var(--success)}
+.btn.small{padding:8px 14px;font-size:13px}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.grid{display:grid;gap:14px}
+@media(min-width:700px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:1fr 1fr 1fr}}
+.box{background:var(--box);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.box.clickable{cursor:pointer;transition:all .2s}
+.box.clickable:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 4px 12px rgba(37,99,235,.12)}
+.highlight{background:var(--primary-light);border:1px solid var(--hl-primary);border-radius:14px;padding:18px;margin:14px 0}
+.highlight.green{background:var(--success-light);border-color:var(--hl-green)}
+.highlight.red{background:var(--danger-light);border-color:var(--hl-red)}
+.highlight.yellow{background:var(--warning-light);border-color:var(--hl-yellow)}
+.badge{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.3px}
+.badge.l1{background:var(--l1-bg);color:var(--l1-fg)}
+.badge.l2{background:var(--l2-bg);color:var(--l2-fg)}
+.badge.l3{background:var(--l3-bg);color:var(--l3-fg)}
+.badge.pola{background:var(--pola-bg);color:var(--pola-fg)}
+.badge.year{background:var(--year-bg);color:var(--year-fg)}
+.tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tab{padding:12px 20px;border-radius:12px;border:2px solid var(--border);background:var(--card);cursor:pointer;font-weight:800;font-size:15px;transition:all .2s}
+.tab:hover{border-color:var(--primary)}
+.tab.active{border-color:var(--primary);background:var(--primary-light);color:var(--primary)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.progress-bar{height:10px;background:var(--border);border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-fill{height:100%;background:var(--primary);transition:width .3s;border-radius:999px}
+.progress-text{font-size:13px;color:var(--muted);text-align:center}
+.question-text{font-size:19px;font-weight:800;margin-bottom:16px;line-height:1.5}
+.option-btn{display:block;width:100%;text-align:left;background:var(--card);border:2px solid var(--border);border-radius:12px;padding:14px 16px;margin:10px 0;font-size:16px;cursor:pointer;transition:all .2s}
+.option-btn:hover:not(:disabled){border-color:var(--primary);background:var(--primary-light)}
+.option-btn:disabled{cursor:default;opacity:.92}
+.option-btn.selected{border-color:var(--primary);background:var(--primary-light)}
+.option-btn.correct{border-color:var(--success);background:var(--success-light)}
+.option-btn.wrong{border-color:var(--danger);background:var(--danger-light)}
+.option-label{font-weight:800;margin-right:10px;color:var(--primary)}
+.explanation-box{background:var(--primary-light);border-left:5px solid var(--primary);border-radius:0 14px 14px 0;padding:18px;margin-top:16px}
+.score-number{font-size:clamp(52px,12vw,80px);font-weight:900;color:var(--primary);text-align:center;margin:16px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px;margin:16px 0}
+.stat-item{background:var(--box);border-radius:14px;padding:16px;text-align:center;border:1px solid var(--border)}
+.stat-value{font-size:28px;font-weight:900;color:var(--primary)}
+.stat-label{font-size:13px;color:var(--muted);margin-top:4px}
+.result-item{border:1px solid var(--border);border-radius:14px;padding:18px;margin:12px 0;background:var(--card)}
+.result-item.correct{border-left:5px solid var(--success)}
+.result-item.wrong{border-left:5px solid var(--danger)}
+.result-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.result-status{font-weight:800;font-size:14px}
+.result-status.correct{color:var(--success)}
+.result-status.wrong{color:var(--danger)}
+.result-options{display:grid;gap:8px;margin-top:10px}
+.result-option{background:var(--box);border:1px solid var(--border);border-radius:10px;padding:10px 14px}
+.result-option.is-key{border-color:var(--hl-green);background:var(--success-light)}
+.result-option.is-chosen:not(.is-key){border-color:var(--hl-red);background:var(--danger-light)}
+.result-option-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.result-option-text{font-weight:600;flex:1;min-width:0}
+.option-anal{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.6}
+.result-option.is-key .option-anal{color:var(--text)}
+.result-option-tag{font-size:11px;font-weight:800;letter-spacing:.3px;padding:3px 10px;border-radius:999px;flex-shrink:0;text-transform:uppercase}
+.result-option-tag.key{color:var(--success);background:var(--success-light);border:1px solid var(--hl-green)}
+.result-option-tag.chosen{color:var(--danger);background:var(--danger-light);border:1px solid var(--hl-red)}
+.nav-buttons{display:flex;justify-content:space-between;gap:12px;margin-top:20px}
+.nav-buttons .btn{flex:1;justify-content:center}
+.loading{text-align:center;padding:48px;color:var(--muted)}
+.spinner{width:44px;height:44px;border:4px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 18px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;padding:14px 28px;border-radius:14px;font-size:14px;font-weight:600;z-index:1000;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}
+.fade-in{animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.materi-nav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.materi-nav a{padding:8px 14px;background:var(--box);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);font-size:13px;font-weight:700;transition:all .2s}
+.materi-nav a:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{border:1px solid var(--border);padding:12px 14px;text-align:left}
+th{background:var(--box);font-weight:800}
+td{vertical-align:top}
+ol li,ul li{margin:8px 0}
+.soal-example{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0}
+.soal-example .soal-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.soal-example .pembahasan{margin-top:12px;padding-top:12px;border-top:1px dashed var(--border)}
+.file-input-wrapper{position:relative;display:inline-block;width:100%}
+.file-input-wrapper input[type="file"]{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.file-input-label{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;border:2px dashed var(--border);border-radius:16px;background:var(--box);text-align:center;transition:all .2s;cursor:pointer}
+.file-input-label:hover{border-color:var(--primary);background:var(--primary-light)}
+.modul-topbar{position:sticky;top:0;z-index:900;background:color-mix(in srgb,var(--card) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topbar-inner{max-width:1032px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar-brand{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;color:var(--text);text-decoration:none}
+.topbar-brand:hover{opacity:.85}
+.brand-mark{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--primary),#5d8a7e);flex-shrink:0}
+.topbar-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.topbar-nav .top-link{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:700;transition:all .2s}
+.topbar-nav .top-link:hover{color:var(--text);background:var(--box)}
+.theme-btn{font:inherit;font-size:13px;font-weight:700;color:var(--text);background:var(--box);border:1px solid var(--border);border-radius:999px;padding:8px 14px;cursor:pointer;transition:all .2s}
+.theme-btn:hover{border-color:var(--primary)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;border-radius:10px}
+.table-scroll table{margin:0}
+.back-top{padding:8px 16px 28px}
+.back-top-inner{max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px}
+.back-top-inner .btn{flex:1;justify-content:center;min-width:200px}
+@media(max-width:600px){.wrap{padding:10px}.card{padding:18px}.question-text{font-size:17px}.option-btn{padding:12px 14px;font-size:15px}.nav-buttons{flex-direction:column}th,td{padding:8px 10px;font-size:13px}.tabs{gap:6px}.tab{padding:10px 14px;font-size:14px}.grid.three{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="modul-topbar">
+<div class="topbar-inner">
+<a class="topbar-brand" href="../../../index.html">
+<span class="brand-mark" aria-hidden="true"></span>
+<span>CPNS Learning</span>
+</a>
+<nav class="topbar-nav" aria-label="Navigasi modul">
+<a class="top-link" href="../../../index.html">Beranda</a>
+<a class="top-link" href="../index.html">TIU</a>
+<a class="top-link" href="./index.html">Analogi</a>
+<button class="theme-btn" id="themeToggle" type="button">Mode Gelap</button>
+</nav>
+</div>
+</header>
+
+<div class="wrap">
+
+<header class="card" style="text-align:center">
+<h1>📚 Modul Analogi TIU CPNS</h1>
+<p class="big muted">Edisi Premium - Materi Lengkap & Komprehensif</p>
+<p class="small">Berdasarkan kisi-kisi TIU SKD CPNS</p>
+</header>
+
+<div class="card">
+<div class="tabs">
+<button class="tab active" onclick="switchTab('materi')">📖 Materi Lengkap</button>
+<button class="tab" onclick="switchTab('latihan')">✏️ Latihan Soal</button>
+</div>
+
+<!-- ==================== TAB MATERI ==================== -->
+<div id="tab-materi" class="tab-content active">
+
+<nav class="materi-nav">
+<a href="#m1">Pengantar</a>
+<a href="#m2">Trik Mengerjakan</a>
+<a href="#m3">4 Pola Dasar</a>
+<a href="#m4">Analogi Kalimat</a>
+<a href="#m5">Katalog Pola</a>
+<a href="#m6">Level 1: Pemula</a>
+<a href="#m7">Level 2: Menengah</a>
+<a href="#m8">Level 3: Mahir</a>
+<a href="#m9">Jebakan Umum</a>
+<a href="#m10">Protokol Ujian</a>
+</nav>
+
+<!-- ===== M1: PENGANTAR ===== -->
+<section class="card" id="m1">
+<h2>1. Pengantar: Apa Itu Analogi?</h2>
+<p>Analogi adalah salah satu materi yang <strong>selalu muncul</strong> di tes CPNS maupun kedinasan. Namun di tahun 2022 khususnya SKD kedinasan 2022, materi ini tidak keluar lagi. Untuk SKD 2024 ternyata materi ini <strong>keluar lagi</strong>.</p>
+<div class="highlight yellow">
+<p><strong>Penting:</strong> Jika peserta tidak mendapatkan model soal analogi kata, biasanya para peserta mendapatkan soal <strong>analogi kalimat</strong>. Keduanya menguji kemampuan yang sama: mengenali hubungan antar elemen.</p>
+</div>
+<h3>Definisi Analogi</h3>
+<p>Analogi adalah <strong>persamaan atau persesuaian antara dua benda atau hal yang berlainan</strong>. Dalam ilmu linguistik atau bahasa, analogi merupakan hasil pembentukan unsur bahasa karena pengaruh pola lain dalam bahasa.</p>
+<h3>Mengapa Analogi Penting di TIU?</h3>
+<ul>
+<li>Analogi menguji kemampuan <strong>berpikir logis</strong> dan <strong>analis</strong> yang dibutuhkan dalam pekerjaan ASN.</li>
+<li>Soal analogi sering menjadi <strong>penentu</strong> karena banyak peserta kesulitan membedakan hubungan yang mirip.</li>
+<li>Materi ini muncul di <strong>setiap periode</strong> tes CPNS, baik dalam bentuk analogi kata maupun analogi kalimat.</li>
+</ul>
+<h3>Struktur Dasar Soal Analogi</h3>
+<div class="highlight" style="text-align:center">
+<p class="big" style="font-weight:900;font-size:24px">A : B = C : D</p>
+<p class="small">Ruas kiri = Ruas kanan</p>
+<p class="small">Hubungan antara A dan B harus SAMA dengan hubungan antara C dan D</p>
+</div>
+</section>
+
+<!-- ===== M2: TRIK MENGERJAKAN ===== -->
+<section class="card" id="m2">
+<h2>2. Trik Mengerjakan Soal Analogi</h2>
+<p>Berdasarkan pengalaman mengerjakan soal TIU CPNS, terdapat <strong>3 trik utama</strong> yang harus dikuasai:</p>
+
+<div class="grid three">
+<div class="box">
+<h4>🎯 Trik 1: Tentukan Pola</h4>
+<p class="small">Tentukan pola antar kata (depan ke belakang atau belakang ke depan) dalam satu ruas. Pola yang telah ditentukan berlaku juga untuk jawabannya.</p>
+</div>
+<div class="box">
+<h4>🔗 Trik 2: Buat Kalimat Penghubung</h4>
+<p class="small">Hubungkan dua kata tersebut dengan sebuah kata hubung atau membentuk sebuah kalimat. Kata hubung harus bersifat <strong>umum, tidak spesifik</strong>.</p>
+</div>
+<div class="box">
+<h4>🔍 Trik 3: Cari Kesamaan</h4>
+<p class="small">Mencari kesamaan kata di ruas kiri dengan ruas kanan. Pastikan hubungan C dan D identik dengan hubungan A dan B.</p>
+</div>
+</div>
+
+<h3>Penerapan Trik pada Soal Nyata</h3>
+<div class="soal-example">
+<div class="soal-header">
+<strong>KANDANG : SAPI = ... : ...</strong>
+<span class="badge year">TIU SKD 2025</span>
+</div>
+<p class="small"><strong>Langkah 1 (Tentukan Pola):</strong> Hubungan dibaca dari depan ke belakang. KANDANG → SAPI.</p>
+<p class="small"><strong>Langkah 2 (Kalimat Penghubung):</strong> "KANDANG adalah <em>tempat tinggal bagi</em> SAPI."</p>
+<p class="small"><strong>Langkah 3 (Cari Kesamaan):</strong> Cari pasangan yang memiliki hubungan "tempat tinggal bagi".</p>
+<div class="highlight green">
+<p><strong>Jawaban: B. Rumah : Manusia</strong></p>
+<p class="small">"RUMAH adalah tempat tinggal bagi MANUSIA." ✓</p>
+</div>
+</div>
+
+<div class="soal-example">
+<div class="soal-header">
+<strong>PILOT : PESAWAT = ... : ...</strong>
+<span class="badge year">TIU SKD</span>
+</div>
+<p class="small"><strong>Langkah 1 (Tentukan Pola):</strong> Hubungan dibaca dari belakang ke depan. PESAWAT → PILOT.</p>
+<p class="small"><strong>Langkah 2 (Kalimat Penghubung):</strong> "PESAWAT <em>dikemudikan oleh</em> PILOT."</p>
+<p class="small"><strong>Langkah 3 (Cari Kesamaan):</strong> Cari pasangan yang memiliki hubungan "dikemudikan oleh".</p>
+<div class="highlight green">
+<p><strong>Jawaban: C. Masinis : Kereta Api</strong></p>
+<p class="small">"KERETA API dikemudikan oleh MASINIS." ✓</p>
+</div>
+</div>
+</section>
+
+<!-- ===== M3: 4 POLA DASAR ===== -->
+<section class="card" id="m3">
+<h2>3. Empat Pola Dasar Analogi</h2>
+
+<div class="box">
+<h3 style="margin-top:0">Pola 1: Depan ke Belakang</h3>
+<p><strong>Formula:</strong> A : B = C : D → Hubungan dibaca dari A ke B</p>
+
+<h4>Contoh 1: Tempat Tinggal</h4>
+<div class="soal-example">
+<p><strong>KANDANG : SAPI = ... : ...</strong> <span class="badge year">TIU SKD</span></p>
+<p>A. Kantor : Pekerja | B. Rumah : Manusia | C. Kebun Binatang : Pawang | D. Angkasa : Roket | E. Motor : Bengkel</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Kandang adalah tempat tinggal bagi sapi, sebagaimana rumah adalah tempat tinggal bagi manusia.</p>
+<p><strong>Jawaban: B</strong></p>
+<p class="small"><strong>Analisis pilihan lain:</strong></p>
+<ul class="small">
+<li>A. Kantor adalah tempat <em>bekerja</em>, bukan tempat tinggal.</li>
+<li>C. Kebun binatang adalah tempat hewan dipelihara, pawang adalah orang yang merawat.</li>
+<li>D. Angkasa adalah tempat roket beroperasi, bukan tempat tinggal.</li>
+<li>E. Bengkel adalah tempat perbaikan motor, bukan tempat tinggal.</li>
+</ul>
+</div>
+</div>
+
+<h4>Contoh 2: Proses dan Hasil</h4>
+<div class="soal-example">
+<p><strong>TANAM : PANEN = BELAJAR : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
+<p>A. Lulus | B. Nilai | C. Ujian | D. Sekolah | E. Guru</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Hubungan antara Tanam dan Panen adalah proses dan hasil akhir yang diharapkan. Setelah melakukan proses menanam, hasil yang ditunggu adalah panen. Hal yang sama yaitu setelah melalui proses Belajar, hasil akhir yang diharapkan adalah Lulus.</p>
+<p><strong>Jawaban: A</strong></p>
+</div>
+</div>
+
+<h4>Contoh 3: Kegiatan dan Manfaat</h4>
+<div class="soal-example">
+<p><strong>OLAHRAGA : BUGAR = REKREASI : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
+<p>A. Lelah | B. Uang | C. Liburan | D. Sehat | E. Segar</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Hubungan antara Olahraga dan Bugar adalah kegiatan dan manfaat yang diperoleh. Tujuan atau manfaat dari berolahraga adalah agar tubuh menjadi bugar. Hal yang sama yaitu tujuan atau manfaat dari Rekreasi adalah agar pikiran dan tubuh kembali Segar.</p>
+<p><strong>Jawaban: E</strong></p>
+</div>
+</div>
+</div>
+
+<div class="box">
+<h3 style="margin-top:0">Pola 2: Belakang ke Depan</h3>
+<p><strong>Formula:</strong> A : B = C : D → Hubungan dibaca dari B ke A</p>
+
+<h4>Contoh 1: Pengemudi dan Kendaraan</h4>
+<div class="soal-example">
+<p><strong>PILOT : PESAWAT = ... : ...</strong> <span class="badge year">TIU SKD</span></p>
+<p>A. Sapi : Andong | B. Dosen : Mahasiswa | C. Masinis : Kereta Api | D. Bensin : Motor | E. Kereta Api : Masinis</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Pesawat dikemudikan pilot, sebagaimana kereta api dikemudikan masinis.</p>
+<p><strong>Jawaban: C</strong></p>
+<p class="small"><strong>Analisis pilihan lain:</strong></p>
+<ul class="small">
+<li>A. Sapi menarik andong, tapi sapi bukan pengemudi dalam arti mengoperasikan.</li>
+<li>B. Dosen mengajar mahasiswa, bukan mengemudikan.</li>
+<li>D. Bensin adalah bahan bakar, bukan pengemudi.</li>
+<li>E. Arahnya terbalik! Ini B : A, bukan A : B.</li>
+</ul>
+</div>
+</div>
+
+<h4>Contoh 2: Kondisi dan Reaksi Tubuh</h4>
+<div class="soal-example">
+<p><strong>SAKIT : PUCAT = KEDINGINAN : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
+<p>A. Menggigil | B. Selimut | C. Demam | D. Jaket | E. Es</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Hubungan antara Sakit dan Pucat adalah sebab-akibat (reaksi tubuh). Kondisi sakit dapat menyebabkan wajah menjadi pucat. Hal yang sama yaitu kondisi Kedinginan akan menyebabkan tubuh memberikan reaksi Menggigil.</p>
+<p><strong>Jawaban: A</strong></p>
+</div>
+</div>
+</div>
+
+<div class="box">
+<h3 style="margin-top:0">Pola 3: Silang (A ke C dan B ke D)</h3>
+<p><strong>Formula:</strong> A : B = C : D → A berhubungan dengan C, B berhubungan dengan D</p>
+<p class="small">Biasanya untuk pola ini merupakan jenis <strong>sinonim</strong> atau <strong>antonim</strong>.</p>
+
+<h4>Contoh 1: Antonim</h4>
+<div class="soal-example">
+<p><strong>KECIL : BASAH = BESAR : ...</strong> <span class="badge year">TIU SKD</span></p>
+<p>A. Kering | B. Kemarau | C. Hujan | D. Panas | E. Banjir</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Kecil lawan katanya adalah Besar, sebagaimana Basah lawan katanya Kering.</p>
+<p><strong>Jawaban: A</strong></p>
+</div>
+</div>
+
+<h4>Contoh 2: Sinonim</h4>
+<div class="soal-example">
+<p><strong>FIT : KETAT = ... : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
+<p>A. Jauh : Dekat | B. Kuno : Baru | C. Relatif : Nisbi | D. Benar : Salah | E. Asli : Palsu</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Hubungan kata pada soal adalah persamaan makna. Kata "Fit" memiliki makna yang sama dengan kata "Ketat". Hubungan yang setara adalah "Relatif" yang memiliki arti tidak mutlak yang sama dengan kata "Nisbi" yang memiliki arti tidak mutlak.</p>
+<p><strong>Jawaban: C</strong></p>
+</div>
+</div>
+</div>
+
+<div class="box">
+<h3 style="margin-top:0">Pola 4: Analogi Kalimat</h3>
+<p>Untuk materi analogi kalimat yang keluar di SKD CPNS 2023, cara mengerjakannya adalah dengan <strong>menghubungkan atau mencari hubungan kedua objek</strong> pada kalimat di soal dengan hubungan kedua objek pada pilihan jawaban.</p>
+<p class="small">Penjelasan lengkap ada di bagian <a href="#m4" style="color:var(--primary)">Analogi Kalimat</a>.</p>
+</div>
+</section>
+
+<!-- ===== M4: ANALOGI KALIMAT ===== -->
+<section class="card" id="m4">
+<h2>4. Analogi Kalimat – Teknik Lengkap</h2>
+<p>Analogi kalimat adalah varian soal analogi yang muncul di SKD CPNS 2023. Berbeda dengan analogi kata yang menggunakan pasangan kata, analogi kalimat menggunakan <strong>kalimat lengkap</strong> yang menggambarkan hubungan antar objek.</p>
+<div class="highlight">
+<p><strong>Cara mengerjakan:</strong> Hubungkan atau cari hubungan <strong>kedua objek</strong> pada kalimat di soal dengan hubungan <strong>kedua objek</strong> pada pilihan jawaban.</p>
+</div>
+
+<h3>Kategori Analogi Kalimat</h3>
+<div class="table-scroll">
+<table>
+<tr><th>Kategori</th><th>Ciri Khas</th><th>Contoh dari Soal Asli</th></tr>
+<tr><td>Bagian Tubuh</td><td>Dua objek adalah bagian tubuh dari suatu makhluk</td><td>Elang : sayap & paruh</td></tr>
+<tr><td>Bagian Alami</td><td>Dua objek adalah bagian yang memang ada secara alami</td><td>Tebu : batang & daun</td></tr>
+<tr><td>Tempat/Lokasi</td><td>Dua objek berada di suatu tempat</td><td>Tenda & api unggun : perkemahan</td></tr>
+<tr><td>Bagian Benda</td><td>Dua objek adalah bagian dari suatu benda</td><td>Mobil : kursi penumpang & bagasi</td></tr>
+<tr><td>Bagian Ujung</td><td>Dua objek terletak di ujung suatu benda</td><td>Pensil : ujung pensil & penghapus</td></tr>
+<tr><td>Bagian Bawaan</td><td>Dua objek adalah bagian bawaan yang menyatu</td><td>Sepatu : lubang tali & sol</td></tr>
+<tr><td>Jenis/Kategori</td><td>Dua objek adalah jenis dari suatu kategori</td><td>Akar : serabut & tunggang</td></tr>
+<tr><td>Bagian Tubuh Spesifik</td><td>Dua objek adalah bagian tubuh di lokasi tertentu</td><td>Gajah : belalai & gading (kepala)</td></tr>
+</table>
+</div>
+
+<h3>Contoh 1: Bagian Tubuh</h3>
+<div class="soal-example">
+<p><strong>Soal:</strong> Elang memiliki sayap dan paruh. Hubungan ini sama dengan...</p>
+<p>A. Gadis itu memiliki gelang dan kalung.<br>B. Kuda memiliki pelana dan ladam.<br>C. Kepiting memiliki cangkang dan capit.<br>D. Bunga mawar memiliki bunga dan mawar.<br>E. Becak memiliki pedal dan speaker.</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Sayap dan paruh adalah <strong>bagian tubuh dari elang</strong>, sama seperti cangkang dan capit merupakan <strong>bagian tubuh dari kepiting</strong>.</p>
+<p><strong>Jawaban: C</strong></p>
+<p class="small"><strong>Analisis pilihan lain:</strong></p>
+<ul class="small">
+<li>A. Gelang dan kalung adalah aksesoris, bukan bagian tubuh gadis.</li>
+<li>B. Pelana dan ladam adalah perlengkapan, bukan bagian tubuh kuda.</li>
+<li>D. Bunga dan mawar adalah pengulangan kata, bukan dua bagian berbeda.</li>
+<li>E. Speaker bukan bagian bawaan becak.</li>
+</ul>
+</div>
+</div>
+
+<h3>Contoh 2: Bagian Alami</h3>
+<div class="soal-example">
+<p><strong>Soal:</strong> Tebu memiliki batang dan daun. Hubungan ini sama dengan...</p>
+<p>A. Sapi memiliki kaki dan ekor.<br>B. Anak itu memiliki topi dan sendal.<br>C. Komputer memiliki mouse dan software.<br>D. TV memiliki remote dan antena.<br>E. Kuda memiliki pelana dan sepatu.</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Batang dan daun adalah <strong>bagian yang ada pada tebu</strong>, seperti halnya kaki dan ekor merupakan <strong>bagian yang memang ada</strong> pada sapi.</p>
+<p><strong>Jawaban: A</strong></p>
+<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian yang <em>memang ada secara alami</em> pada objek, bukan aksesoris atau perlengkapan tambahan.</p>
+</div>
+</div>
+
+<h3>Contoh 3: Tempat/Lokasi</h3>
+<div class="soal-example">
+<p><strong>Soal:</strong> Tenda dan api unggun berada di tempat perkemahan. Hubungan ini sama dengan...</p>
+<p>A. Bulan dan bintang berada di malam hari<br>B. Kata dan kalimat berada dalam paragraf<br>C. Buku dan kamus berada di dalam perpustakaan<br>D. Praktek dan teori berada di dalam proses kuliah<br>E. Monitor dan keyboard berada pada CPU</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Tenda dan api unggun adalah bagian yang berada di tempat perkemahan, seperti halnya buku dan kamus berada di dalam perpustakaan.</p>
+<p><strong>Jawaban: C</strong></p>
+<p class="small"><strong>Mengapa E salah?</strong> Monitor dan keyboard berada <em>pada</em> CPU (menempel), bukan berada <em>di dalam</em> suatu tempat/lokasi seperti perkemahan dan perpustakaan.</p>
+</div>
+</div>
+
+<h3>Contoh 4: Bagian Benda</h3>
+<div class="soal-example">
+<p><strong>Soal (TIU CPNS 2023):</strong> Kita mengetahui bahwa mobil memiliki kursi penumpang dan bagasi. Hubungan ini sama dengan...</p>
+<p>A. Pohon memerlukan air dan cahaya<br>B. Dalam pesawat ada pilot dan pramugari<br>C. Sepeda memiliki pedal dan roda<br>D. Manusia memerlukan makan dan minum<br>E. CPU memerlukan listrik dan monitor</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Kursi penumpang dan bagasi adalah bagian dari sebuah mobil, maka analogi kalimat yang tepat adalah pedal dan roda merupakan bagian dari sepeda.</p>
+<p><strong>Jawaban: C</strong></p>
+<p class="small"><strong>Analisis pilihan lain:</strong></p>
+<ul class="small">
+<li>A. Air dan cahaya adalah kebutuhan pohon, bukan bagian dari pohon.</li>
+<li>B. Pilot dan pramugari adalah awak pesawat, bukan bagian dari pesawat.</li>
+<li>D. Makan dan minum adalah kebutuhan manusia, bukan bagian tubuh.</li>
+<li>E. Listrik dan monitor adalah kebutuhan/aksesori CPU, bukan bagian bawaan.</li>
+</ul>
+</div>
+</div>
+
+<h3>Contoh 5: Bagian Ujung</h3>
+<div class="soal-example">
+<p><strong>Soal (TIU CPNS 2023):</strong> Pensil memiliki ujung pensil dan penghapus. Hubungan ini sama dengan...</p>
+<p>A. Buku memiliki sampul dan halaman<br>B. Lampu memiliki bohlam dan sakelar<br>C. Sepatu memiliki tali dan sol<br>D. Kunci memiliki gigi dan gagang<br>E. CPU memiliki monitor dan keyboard</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Ujung pensil dan penghapus merupakan bagian dari pensil yang terletak di ujung pensil, maka analogi kalimat yang tepat adalah gigi dan gagang sama-sama terletak di ujung kunci.</p>
+<p><strong>Jawaban: D</strong></p>
+<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian yang terletak di <em>ujung</em> benda, bukan bagian mana saja.</p>
+</div>
+</div>
+
+<h3>Contoh 6: Bagian Bawaan</h3>
+<div class="soal-example">
+<p><strong>Soal (TIU CPNS 2023):</strong> Pada sepatu terdapat lubang tali dan sol. Hubungan ini sama dengan...</p>
+<p>A. Pada pohon terdapat air dan cahaya<br>B. Pada sepeda terdapat roda dan spion<br>C. Pada CPU terdapat listrik dan monitor<br>D. Pada teater terdapat panggung dan hiburan<br>E. Pada manusia terdapat tangan dan kaki</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Lubang tali dan sol merupakan bagian bawaan yang menyatu pada sepatu sebagaimana tangan dan kaki pada manusia.</p>
+<p><strong>Jawaban: E</strong></p>
+<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian <em>bawaan yang menyatu</em>, bukan aksesoris atau perlengkapan tambahan.</p>
+</div>
+</div>
+
+<h3>Contoh 7: Jenis/Kategori</h3>
+<div class="soal-example">
+<p><strong>Soal (TIU CPNS 2023):</strong> Akar terdiri dari serabut dan tunggang. Memiliki analogi dengan...</p>
+<p>A. Pohon terdiri dari ranting dan daun<br>B. Sepeda terdiri dari pedal dan roda<br>C. Mobil terdiri dari matic dan manual<br>D. Manusia terdiri dari hidung dan mata<br>E. CPU terdiri dari monitor dan mouse</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Serabut dan tunggang adalah jenis-jenis akar, maka analogi yang tepat adalah matic dan manual adalah jenis transmisi pada mobil.</p>
+<p><strong>Jawaban: C</strong></p>
+<p class="small"><strong>Kunci pembeda:</strong> Soal meminta <em>jenis/kategori</em>, bukan bagian fisik.</p>
+</div>
+</div>
+
+<h3>Contoh 8: Bagian Tubuh Spesifik</h3>
+<div class="soal-example">
+<p><strong>Soal (TIU CPNS 2023):</strong> Gajah memiliki belalai dan gading. Hubungan ini sama dengan...</p>
+<p>A. Harimau memiliki kuku dan taring<br>B. Lebah memiliki antena dan sayap<br>C. Semut tentara memiliki rahang dan antena<br>D. Ikan piranha memiliki gigi runcing dan ekor<br>E. Beruang memiliki bulu tebal dan cakar</p>
+<div class="pembahasan">
+<p><strong>Pembahasan:</strong> Belalai dan gading adalah bagian tubuh pada gajah yang terletak di bagian kepala, sama halnya dengan rahang dan antena merupakan bagian tubuh pada semut yang terletak di bagian kepala.</p>
+<p><strong>Jawaban: C</strong></p>
+<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian tubuh di <em>lokasi spesifik</em> (kepala), bukan bagian tubuh mana saja.</p>
+</div>
+</div>
+</section>
+
+<!-- ===== M5: KATALOG POLA ===== -->
+<section class="card" id="m5">
+<h2>5. Katalog Pola Hubungan Lengkap</h2>
+<p>Berikut adalah <strong>semua jenis pola hubungan</strong> yang pernah muncul dalam soal TIU CPNS, beserta contoh dari soal asli:</p>
+
+<div class="grid two">
+<div class="box"><h4>1. Fungsi / Kegunaan</h4><p class="small"><strong>Formula:</strong> A digunakan untuk B</p><p class="small"><strong>Contoh:</strong> Pisau : Memotong, Sapu : Menyapu</p></div>
+<div class="box"><h4>2. Bagian dan Keseluruhan</h4><p class="small"><strong>Formula:</strong> A adalah bagian dari B</p><p class="small"><strong>Contoh Soal:</strong> Soal 58 (Mobil : kursi penumpang & bagasi), Soal 59 (Pensil : ujung & penghapus), Soal 60 (Sepatu : lubang tali & sol)</p></div>
+<div class="box"><h4>3. Bahan Baku dan Hasil Olahan</h4><p class="small"><strong>Formula:</strong> A diolah menjadi B</p><p class="small"><strong>Contoh Soal:</strong> Soal 15 (Nektar : Madu), Soal 47 (Kedelai hitam : Kecap), Soal 57 (Ayam : Daging : Sosis)</p></div>
+<div class="box"><h4>4. Tahapan / Urutan</h4><p class="small"><strong>Formula:</strong> A adalah tahap sebelum B</p><p class="small"><strong>Contoh Soal:</strong> Soal 9 (Telur : Unggas), Soal 12 (Anak : Remaja), Soal 34 (Ulat : Kepompong), Soal 41 (Kecebong : Katak)</p></div>
+<div class="box"><h4>5. Tempat / Lokasi</h4><p class="small"><strong>Formula:</strong> A berada di B</p><p class="small"><strong>Contoh Soal:</strong> Soal 48 (Hiburan : Teras), Soal 56 (Kijang : Melompat : Hutan)</p></div>
+<div class="box"><h4>6. Sifat Khas / Ciri Utama</h4><p class="small"><strong>Formula:</strong> A dikenal karena B</p><p class="small"><strong>Contoh Soal:</strong> Soal 14 (Gendang : Dangdut), Soal 42 (Pahlawan : Berani), Soal 50 (Minyak : Licin), Soal 52 (Pengemis : Miskin)</p></div>
+<div class="box"><h4>7. Intensitas / Tingkatan</h4><p class="small"><strong>Formula:</strong> B adalah bentuk lebih kuat dari A</p><p class="small"><strong>Contoh Soal:</strong> Soal 13 (Menegur : Membentak), Soal 17 (Marah : Murka), Soal 27 (Melihat : Melotot), Soal 35 (Hangat : Panas), Soal 40 (Tersenyum : Terbahak)</p></div>
+<div class="box"><h4>8. Sebab-Akibat</h4><p class="small"><strong>Formula:</strong> A menyebabkan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 2 (Makan : Begah), Soal 22 (Sakit : Pucat), Soal 46 (Luka : Bengkak)</p></div>
+<div class="box"><h4>9. Indikator / Penanda</h4><p class="small"><strong>Formula:</strong> A menandakan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 16 (Harga : Kualitas), Soal 51 (Kualitas : Harga)</p></div>
+<div class="box"><h4>10. Ketiadaan / Ketidakpemilikan</h4><p class="small"><strong>Formula:</strong> A tidak memiliki B</p><p class="small"><strong>Contoh Soal:</strong> Soal 28 (Domba : Taring)</p></div>
+<div class="box"><h4>11. Lawan Kondisi</h4><p class="small"><strong>Formula:</strong> A adalah kondisi tanpa B</p><p class="small"><strong>Contoh Soal:</strong> Soal 3 (Kemandirian : Bantuan), Soal 5 (Perang : Perdamaian), Soal 36 (Mencuri : Dermawan), Soal 38 (Bayi : Mandiri)</p></div>
+<div class="box"><h4>12. Proses dan Hasil</h4><p class="small"><strong>Formula:</strong> A bertujuan menghasilkan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 19 (Diskusi : Keputusan), Soal 24 (Tanam : Panen), Soal 31 (Diskusi : Keputusan = Kegiatan : Laporan)</p></div>
+<div class="box"><h4>13. Sinonim</h4><p class="small"><strong>Formula:</strong> A bermakna sama dengan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 11 (Fit : Ketat = Relatif : Nisbi)</p></div>
+<div class="box"><h4>14. Antonim</h4><p class="small"><strong>Formula:</strong> A berlawanan dengan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 53 (Berbisik : Berteriak = Lembab : Kering)</p></div>
+<div class="box"><h4>15. Kegiatan dan Manfaat</h4><p class="small"><strong>Formula:</strong> A menghasilkan manfaat B</p><p class="small"><strong>Contoh Soal:</strong> Soal 26 (Olahraga : Bugar), Soal 37 (Olahraga : Bugar = Sekolah : Pandai)</p></div>
+<div class="box"><h4>16. Perubahan Wujud / Fase</h4><p class="small"><strong>Formula:</strong> A berubah wujud menjadi B</p><p class="small"><strong>Contoh Soal:</strong> Soal 34 (Ulat : Kepompong = Air : Es)</p></div>
+<div class="box"><h4>17. Kondisi dan Ciri Khas Suasana</h4><p class="small"><strong>Formula:</strong> A identik dengan suasana B</p><p class="small"><strong>Contoh Soal:</strong> Soal 21 (Kemarau : Panas = Gunung : Sejuk), Soal 32 (Pasar : Ramai = Gunung : Sepi)</p></div>
+<div class="box"><h4>18. Aliran Terhambat</h4><p class="small"><strong>Formula:</strong> A dan kondisi ketika alirannya terhambat</p><p class="small"><strong>Contoh Soal:</strong> Soal 23 (Air : Tergenang = Jalan : Macet)</p></div>
+<div class="box"><h4>19. Kegiatan dan Zat Pelengkap</h4><p class="small"><strong>Formula:</strong> A dibantu oleh B</p><p class="small"><strong>Contoh Soal:</strong> Soal 25 (Makan : Garam = Obat : Air)</p></div>
+<div class="box"><h4>20. Perilaku Negatif dan Sifat Positif Berlawanan</h4><p class="small"><strong>Formula:</strong> A berkebalikan dengan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 36 (Mencuri : Dermawan = Perundungan : Pengasih)</p></div>
+</div>
+
+<h3>Cara Membedakan Pola yang Mirip</h3>
+<div class="table-scroll">
+<table>
+<tr><th>Pola yang Mirip</th><th>Cara Membedakan</th><th>Contoh Soal</th></tr>
+<tr><td>Fungsi vs Tempat</td><td>Jika kata kedua menunjukkan <em>kegunaan</em>, itu fungsi. Jika menunjukkan <em>lokasi</em>, itu tempat.</td><td>Soal 48 (Hiburan : Teras = Tempat)</td></tr>
+<tr><td>Sebab-Akibat vs Tahapan</td><td>Sebab-akibat: satu hal <em>menyebabkan</em> hal lain. Tahapan: hanya <em>urutan</em>, bukan penyebab.</td><td>Soal 2 (Sebab-akibat) vs Soal 12 (Tahapan)</td></tr>
+<tr><td>Intensitas vs Sinonim</td><td>Intensitas ada <em>kenaikan derajat</em>. Sinonim bermakna <em>setara</em> tanpa kenaikan.</td><td>Soal 13 (Intensitas) vs Soal 11 (Sinonim)</td></tr>
+<tr><td>Indikator vs Akibat</td><td>Indikator <em>menandai</em> sesuatu. Akibat adalah <em>hasil</em> dari penyebab.</td><td>Soal 16 (Indikator) vs Soal 46 (Akibat)</td></tr>
+<tr><td>Ketiadaan vs Lawan Kata</td><td>Ketiadaan: <em>tidak memiliki</em> sesuatu. Lawan kata: dua kata saling <em>berlawanan makna</em>.</td><td>Soal 28 (Ketiadaan) vs Soal 53 (Lawan kata)</td></tr>
+<tr><td>Proses vs Hasil</td><td>Proses adalah <em>kegiatan yang berlangsung</em>. Hasil adalah <em>sesuatu yang diperoleh</em> setelah proses selesai.</td><td>Soal 6 (Proses) vs Soal 24 (Hasil)</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ===== M6: LEVEL 1 PEMULA ===== -->
+<section class="card" id="m6">
+<h2>6. Level 1 – Pemula</h2>
+<span class="badge l1">Tahap Dasar</span>
+<p>Pada level ini, tujuan utamanya adalah memahami bahwa setiap pasangan kata memiliki hubungan. Hubungan itu harus dapat dijelaskan dengan kalimat sederhana.</p>
+<h3>Kompetensi yang Harus Dicapai</h3>
+<ul>
+<li>Memahami bahwa analogi mencari hubungan, bukan kata yang mirip.</li>
+<li>Mampu membuat kalimat hubungan sederhana.</li>
+<li>Mengenali empat pola dasar analogi.</li>
+<li>Menghindari kesalahan paling umum yang sering dilakukan pemula.</li>
+</ul>
+<h3>Langkah Menjawab untuk Pemula</h3>
+<ol>
+<li><strong>Baca pasangan kata pada soal dengan teliti.</strong> Jangan terburu melihat pilihan.</li>
+<li><strong>Buat kalimat hubungan yang sederhana dan umum.</strong> Gunakan template kalimat jembatan.</li>
+<li><strong>Uji kalimat tersebut pada pilihan jawaban.</strong> Semua pilihan harus diuji.</li>
+<li><strong>Pilih jawaban yang paling sesuai.</strong> Jika ada dua yang cocok, pilih yang lebih spesifik.</li>
+</ol>
+<h3>Contoh Latihan Terbimbing Level 1</h3>
+<div class="soal-example">
+<p><strong>Langkah 1:</strong> Baca soal: TELUR : UNGGAS = TUNAS : ...</p>
+<p><strong>Langkah 2:</strong> Buat kalimat: "Telur berkembang menjadi unggas."</p>
+<p><strong>Langkah 3:</strong> Uji pilihan: "Tunas berkembang menjadi ...?"</p>
+<p><strong>Langkah 4:</strong> Jawaban: E. Tumbuhan (Tunas berkembang menjadi tumbuhan) ✓</p>
+</div>
+<h3>Kesalahan Umum Pemula</h3>
+<div class="highlight red">
+<ul>
+<li>Memilih jawaban hanya karena <strong>temanya sama</strong>, padahal hubungannya berbeda.</li>
+<li>Tidak membuat kalimat hubungan, sehingga <strong>mudah terjebak</strong> pilihan yang mengecoh.</li>
+<li>Tidak memperhatikan <strong>arah hubungan</strong>, misalnya hubungan terbalik.</li>
+<li>Memilih jawaban yang <strong>terlalu umum</strong>, padahal ada jawaban yang lebih spesifik dan lebih tepat.</li>
+</ul>
+</div>
+</section>
+
+<!-- ===== M7: LEVEL 2 MENENGAH ===== -->
+<section class="card" id="m7">
+<h2>7. Level 2 – Menengah</h2>
+<span class="badge l2">Tahap Pengembangan</span>
+<p>Pada level ini, Anda tidak lagi sekadar memahami bahwa dua kata memiliki hubungan. Anda harus mampu mengidentifikasi <strong>jenis hubungan secara presisi</strong>, menyusun <strong>kalimat jembatan yang valid</strong>, serta mengeliminasi pilihan yang mengecoh.</p>
+<h3>Kerangka Berpikir Level 2</h3>
+<ol>
+<li><strong>Amati jenis kata.</strong> Apakah pasangan kata berupa benda, kerja, sifat, proses, atau kondisi abstrak?</li>
+<li><strong>Tentukan relasi inti.</strong> Tanyakan: kata pertama berhubungan sebagai apa terhadap kata kedua?</li>
+<li><strong>Buat kalimat jembatan.</strong> Kalimat harus sederhana, umum, dan dapat dipakai untuk semua pilihan.</li>
+<li><strong>Uji semua opsi.</strong> Opsi yang benar harus lolos tanpa perlu banyak asumsi tambahan.</li>
+<li><strong>Validasi akhir.</strong> Periksa arah hubungan, tingkatan makna, kelas kata, dan domain persoalan.</li>
+</ol>
+<h3>Contoh Analisis Mendalam</h3>
+<div class="soal-example">
+<h4>HAMIL : MELAHIRKAN = MEMASAK : ...</h4>
+<p><strong>Analisis:</strong> Hubungan antara Hamil dan Melahirkan adalah sebuah urutan proses yang berkesinambungan. Kehamilan adalah sebuah proses yang puncaknya adalah tindakan melahirkan. Hal yang sama yaitu Memasak dan Menyajikan. Memasak adalah sebuah proses yang setelah memasak selesai yaitu tindakan Menyajikan.</p>
+<p class="small"><strong>Mengapa bukan "matang"?</strong> Karena matang adalah <em>kondisi</em>, bukan <em>tindakan lanjutan</em> setelah memasak. Jawaban: <strong>E. Menyajikan</strong>.</p>
+</div>
+<div class="soal-example">
+<h4>AIR : TERGENANG = JALAN : ...</h4>
+<p><strong>Analisis:</strong> Hubungan antara Air dan Tergenang adalah sesuatu dan kondisi ketika alirannya terhambat. Air yang tidak bisa mengalir akan tergenang. Hal yang sama yaitu Jalan yang aliran lalu lintasnya terhambat akan mengalami Macet.</p>
+<p class="small">Jawaban: <strong>E. Macet</strong>.</p>
+</div>
+<div class="soal-example">
+<h4>HARGA : KUALITAS = RESPONSIF : ...</h4>
+<p><strong>Analisis:</strong> Hubungan kata pada soal adalah indikator/penanda. Harga yang tinggi sering kali menjadi indikator dari Kualitas yang baik. Dengan analogi yang sama, sifat Responsif (cepat menanggapi) adalah indikator dari Pelayanan yang baik.</p>
+<p class="small">Jawaban: <strong>E. Pelayanan</strong>.</p>
+</div>
+<h3>Protokol Eliminasi Lima Lapis</h3>
+<ol>
+<li>Hapus pilihan yang hanya mirip temanya, tetapi tidak sama hubungannya.</li>
+<li>Hapus pilihan yang arah hubungannya terbalik.</li>
+<li>Hapus pilihan yang tingkatannya tidak setara.</li>
+<li>Hapus pilihan yang kelas katanya tidak sepadan.</li>
+<li>Jika masih tersisa lebih dari satu, pilih yang paling spesifik dan paling dekat domainnya dengan soal.</li>
+</ol>
+</section>
+
+<!-- ===== M8: LEVEL 3 MAHIR ===== -->
+<section class="card" id="m8">
+<h2>8. Level 3 – Mahir</h2>
+<span class="badge l3">Tahap Lanjutan</span>
+<p>Level 3 dirancang untuk menghadapi soal yang tidak langsung terlihat jawabannya. Pada tahap ini, soal sering kali bersifat <strong>abstrak, implisit, memiliki banyak lapisan hubungan</strong>, atau mengandung pilihan yang sangat mirip.</p>
+<h3>Framework Tujuh Pertanyaan Diagnostik</h3>
+<ol>
+<li><strong>Apa jenis entitasnya?</strong> Apakah soal membahas benda konkret, makhluk hidup, kondisi abstrak, proses, sifat, atau hubungan sosial?</li>
+<li><strong>Apa hubungan intinya?</strong> Apakah berupa fungsi, bagian, bahan, tahapan, tempat, sifat, intensitas, sebab-akibat, indikator, ketiadaan, atau lawan kondisi?</li>
+<li><strong>Apakah arah hubungannya sama?</strong> Banyak soal menjebak dengan hubungan yang benar secara tema, tetapi arahnya terbalik.</li>
+<li><strong>Apakah ada perubahan tingkatan?</strong> Jika soal menunjukkan peningkatan, jawaban juga harus menunjukkan peningkatan.</li>
+<li><strong>Apakah kelas katanya setara?</strong> Jika soal menggunakan kata kerja, jawaban terbaik biasanya juga menggunakan kata kerja.</li>
+<li><strong>Apakah domainnya setara?</strong> Jika soal membahas proses biologis, jawaban terkuat biasanya juga berada dalam domain biologis.</li>
+<li><strong>Apakah jawaban membutuhkan asumsi berlebihan?</strong> Jawaban terbaik adalah yang paling sedikit membutuhkan asumsi tambahan.</li>
+</ol>
+<h3>Contoh Analisis Mahir</h3>
+<div class="soal-example">
+<h4>KEMANDIRIAN : BANTUAN = TRANSPORTASI : ...</h4>
+<p><strong>Analisis:</strong> Hubungan antara Kemandirian dan Bantuan adalah lawan kata dari suatu kondisi. Kemandirian adalah kondisi di mana seseorang tidak memerlukan bantuan. Hal yang sama terdapat pada kata Transportasi yaitu adalah kondisi adanya pergerakan atau perpindahan dan lawan dari kondisi tersebut yaitu Kemacetan yang merupakan keadaan dimana pergerakan terhenti atau terhambat.</p>
+<p class="small">Jawaban: <strong>C. Kemacetan</strong>.</p>
+</div>
+<div class="soal-example">
+<h4>BICARA : DEBAT : DISKUSI = ... : ... : ...</h4>
+<p><strong>Analisis:</strong> BICARA merupakan suatu tindakan yang dapat dilakukan dalam bentuk DEBAT (cenderung negatif) atau DISKUSI (cenderung positif), sebagaimana EVALUASI merupakan tindakan awal yang dapat dilakukan dalam bentuk KRITIK (cenderung negatif) atau APRESIASI (cenderung positif).</p>
+<p class="small">Jawaban: <strong>D. Evaluasi : Kritik : Apresiasi</strong>.</p>
+</div>
+<div class="soal-example">
+<h4>AYAM : DAGING : SOSIS = ... : ... : ...</h4>
+<p><strong>Analisis:</strong> Ayam diambil dagingnya untuk dibuat sosis sebagaimana dengan sapi yang diambil susunya untuk dibuat mentega.</p>
+<p class="small">Jawaban: <strong>E. Sapi : Susu : Mentega</strong>.</p>
+</div>
+<h3>Strategi Ketika Dua Opsi Tersisa</h3>
+<ol>
+<li>Ulangi kalimat jembatan dengan lebih ketat. Jangan beri kelonggaran pada salah satu opsi.</li>
+<li>Cari kata pembeda: apakah satu opsi lebih konkret, lebih abstrak, lebih umum, atau lebih spesifik?</li>
+<li>Periksa arah hubungan; jangan sampai terbalik.</li>
+<li>Periksa tingkatan: naik, turun, setara, atau lawan kondisi.</li>
+<li>Periksa domain: hukum, biologi, cuaca, pangan, mekanik, atau sosial.</li>
+<li>Pilih yang paling sedikit membutuhkan asumsi.</li>
+</ol>
+</section>
+
+<!-- ===== M9: JEBAKAN UMUM ===== -->
+<section class="card" id="m9">
+<h2>9. Jebakan Umum dan Cara Menghindarinya</h2>
+<div class="grid two">
+<div class="box">
+<h4>⚠️ Jebakan Tema Sama</h4>
+<p class="small">Pilihan jawaban memiliki tema yang sama dengan soal, tetapi hubungannya berbeda.</p>
+<p class="small"><strong>Contoh:</strong> Soal 48 (Hiburan : Teras). Pilihan D (Halaman) juga tempat, tapi bukan tempat khas untuk upacara.</p>
+<p class="small"><strong>Solusi:</strong> Fokus pada hubungan spesifik, bukan tema umum.</p>
+</div>
+<div class="box">
+<h4>⚠️ Jebakan Arah Terbalik</h4>
+<p class="small">Hubungan benar, tetapi urutannya terbalik (B:A alih-alih A:B).</p>
+<p class="small"><strong>Contoh:</strong> Soal PILOT : PESAWAT. Pilihan E (Kereta Api : Masinis) arahnya terbalik.</p>
+<p class="small"><strong>Solusi:</strong> Selalu periksa arah hubungan sebelum memilih.</p>
+</div>
+<div class="box">
+<h4>⚠️ Jebakan Kondisi vs Tindakan</h4>
+<p class="small">Soal meminta tindakan lanjutan, tetapi pilihan menawarkan kondisi/keadaan.</p>
+<p class="small"><strong>Contoh:</strong> Soal 6 (Hamil : Melahirkan = Memasak : ...). Pilihan A (Matang) adalah kondisi, bukan tindakan.</p>
+<p class="small"><strong>Solusi:</strong> Perhatikan apakah soal meminta proses, tindakan, atau kondisi.</p>
+</div>
+<div class="box">
+<h4>⚠️ Jebakan Bagian Alami vs Aksesoris</h4>
+<p class="small">Soal meminta bagian bawaan, tetapi pilihan menawarkan aksesoris tambahan.</p>
+<p class="small"><strong>Contoh:</strong> Soal 58 (Mobil : kursi & bagasi). Pilihan B (Pesawat : pilot & pramugari) adalah awak, bukan bagian pesawat.</p>
+<p class="small"><strong>Solusi:</strong> Bedakan bagian alami dari perlengkapan.</p>
+</div>
+<div class="box">
+<h4>⚠️ Jebakan Intensitas Tidak Setara</h4>
+<p class="small">Soal menunjukkan peningkatan derajat, tetapi pilihan tidak menunjukkan peningkatan yang setara.</p>
+<p class="small"><strong>Contoh:</strong> Soal 13 (Menegur : Membentak). Pilihan A (Mengamati) bukan peningkatan dari melihat.</p>
+<p class="small"><strong>Solusi:</strong> Pastikan tingkatan intensitas konsisten.</p>
+</div>
+<div class="box">
+<h4>⚠️ Jebakan Proses vs Hasil</h4>
+<p class="small">Soal meminta hasil akhir, tetapi pilihan menawarkan proses atau sebaliknya.</p>
+<p class="small"><strong>Contoh:</strong> Soal 31 (Diskusi : Keputusan = Kegiatan : ...). Pilihan A (Proses) bukan hasil akhir kegiatan.</p>
+<p class="small"><strong>Solusi:</strong> Perhatikan apakah soal meminta proses atau hasil.</p>
+</div>
+</div>
+</section>
+
+<!-- ===== M10: PROTOKOL UJIAN ===== -->
+<section class="card" id="m10">
+<h2>10. Protokol Pengerjaan di Ujian</h2>
+<h3>Protokol 60 Detik per Soal</h3>
+<div class="table-scroll">
+<table>
+<tr><th>Waktu</th><th>Aktivitas</th></tr>
+<tr><td><strong>5 detik</strong></td><td>Baca pasangan kata dan kenali bentuk soal (kata atau kalimat).</td></tr>
+<tr><td><strong>10 detik</strong></td><td>Tentukan kemungkinan hubungan utama.</td></tr>
+<tr><td><strong>20 detik</strong></td><td>Buat kalimat jembatan dan uji pada semua opsi.</td></tr>
+<tr><td><strong>20 detik</strong></td><td>Eliminasi opsi yang mirip tetapi salah.</td></tr>
+<tr><td><strong>5 detik</strong></td><td>Pilih jawaban yang paling konsisten dan paling sedikit membutuhkan asumsi.</td></tr>
+</table>
+</div>
+<h3>Checklist Sebelum Menjawab</h3>
+<ul>
+<li>☐ Saya sudah membuat kalimat hubungan.</li>
+<li>☐ Kalimat hubungan berlaku untuk ruas kiri dan kanan.</li>
+<li>☐ Arah hubungan tidak terbalik.</li>
+<li>☐ Tingkatan intensitas setara.</li>
+<li>☐ Domain/kategori setara.</li>
+<li>☐ Saya tidak perlu mengarang cerita untuk membenarkan jawaban.</li>
+</ul>
+<h3>Strategi Jika Stuck</h3>
+<ol>
+<li>Jangan panik. Lewati soal dan kembali nanti jika masih ada waktu.</li>
+<li>Jika harus menebak, eliminasi dulu 2-3 pilihan yang jelas salah.</li>
+<li>Pilih jawaban yang paling "umum" dan paling sedikit asumsi.</li>
+<li>Untuk analogi kalimat, fokus pada hubungan objek, bukan kata tambahan.</li>
+</ol>
+</section>
+
+</div>
+
+<!-- ==================== TAB LATIHAN ==================== -->
+<div id="tab-latihan" class="tab-content">
+
+<div id="screenLoading" class="card">
+<div class="loading"><div class="spinner"></div><p>Memeriksa soal...</p></div>
+</div>
+
+<div id="screenNoManifest" class="card hidden">
+<div style="text-align:center;padding:24px">
+<p style="font-size:52px">📭</p>
+<h3>Tidak Ada Soal Terdeteksi</h3>
+<p class="small">Pastikan file <strong>manifest.json</strong> berada di folder yang sama dengan file HTML ini.</p>
+<div class="highlight" style="margin-top:16px;text-align:left">
+<p class="small"><strong>Struktur folder yang dibutuhkan:</strong></p>
+<pre style="font-size:13px;background:#1e293b;color:#e2e8f0;padding:14px;border-radius:10px;overflow-x:auto">folder/
+├── index.html
+├── manifest.json
+├── paket-1.json
+├── paket-2.json
+└── ...</pre>
+</div>
+</div>
+</div>
+
+<div id="screenList" class="card hidden">
+<h2>📦 Pilih Paket Soal</h2>
+<p class="small" id="manifestDesc"></p>
+<div class="highlight yellow" style="margin-top:12px">
+<p class="small"><strong>Catatan:</strong> Setiap paket berisi soal dengan tingkat kesulitan <strong>acak</strong> (Pemula, Menengah, dan Mahir tercampur).</p>
+</div>
+<div id="paketList" class="grid" style="margin-top:14px"></div>
+</div>
+
+<div id="screenLoadingSoal" class="card hidden">
+<div class="loading"><div class="spinner"></div><p>Memuat soal...</p></div>
+</div>
+
+<div id="screenError" class="card hidden">
+<div style="text-align:center;padding:24px">
+<p style="font-size:52px">⚠️</p>
+<h3>Gagal Memuat Soal</h3>
+<p class="small" id="errorMsg"></p>
+<button class="btn" onclick="backToList()" style="margin-top:14px">← Kembali</button>
+</div>
+</div>
+
+<div id="screenQuiz" class="card hidden">
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+<div class="progress-text" id="progressText"></div>
+<div class="question-card fade-in" id="questionCard" style="background:var(--box);border-radius:14px;padding:20px;margin-top:14px">
+<div id="questionBadge" style="margin-bottom:10px"></div>
+<div class="question-text" id="questionText"></div>
+<div id="optionsContainer"></div>
+</div>
+<div class="nav-buttons">
+<button class="btn secondary" id="btnPrev" onclick="prevQuestion()">← Sebelumnya</button>
+<button class="btn" id="btnNext" onclick="nextQuestion()">Selanjutnya →</button>
+<button class="btn success hidden" id="btnFinish" onclick="finishQuiz()">✓ Selesai</button>
+</div>
+</div>
+
+<div id="screenResult" class="card hidden">
+<div style="text-align:center">
+<h2>🎉 Latihan Selesai!</h2>
+<div class="score-number" id="scoreNumber"></div>
+<p class="big" id="scoreDetail"></p>
+<div class="stats-grid">
+<div class="stat-item"><div class="stat-value" id="statCorrect"></div><div class="stat-label">Benar</div></div>
+<div class="stat-item"><div class="stat-value" id="statWrong"></div><div class="stat-label">Salah</div></div>
+<div class="stat-item"><div class="stat-value" id="statTotal"></div><div class="stat-label">Total</div></div>
+</div>
+<div class="row" style="justify-content:center">
+<button class="btn secondary" onclick="retryQuiz()">🔄 Ulangi</button>
+<button class="btn" onclick="backToList()">📦 Paket Lain</button>
+</div>
+</div>
+<h3 style="margin-top:28px">📋 Pembahasan Lengkap</h3>
+<div id="resultList" style="margin-top:12px"></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="back-top">
+<div class="back-top-inner">
+<button class="btn" id="backToTop" type="button">↑ Kembali ke atas</button>
+<a class="btn secondary" href="../../../index.html">← Kembali ke web utama</a>
+</div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let manifestData=null,currentQuestions=[],currentPaketName='',currentIndex=0,userAnswers=[];
+
+function switchTab(tab){
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+if(tab==='materi'){document.querySelectorAll('.tab')[0].classList.add('active');document.getElementById('tab-materi').classList.add('active');}
+else{document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-latihan').classList.add('active');}
+}
+
+async function loadManifest(){
+showScreen('screenLoading');
+try{
+const r=await fetch('manifest.json');
+if(!r.ok)throw new Error('manifest.json tidak ditemukan');
+manifestData=await r.json();
+if(!manifestData.paket||manifestData.paket.length===0)throw new Error('Tidak ada paket di manifest.json');
+renderPaketList();showScreen('screenList');
+}catch(e){console.error(e);showScreen('screenNoManifest');}
+}
+
+function renderPaketList(){
+document.getElementById('manifestDesc').textContent=manifestData.deskripsi||'';
+document.getElementById('paketList').innerHTML=manifestData.paket.map(function(p,i){
+return '<div class="box clickable" onclick="loadPaket('+i+')"><h3 style="margin-bottom:6px">📄 '+p.nama+'</h3>'+(p.deskripsi?'<p class="small">'+p.deskripsi+'</p>':'')+'<p class="small" style="margin-top:8px;color:var(--primary)">Klik untuk mulai →</p></div>';
+}).join('');
+}
+
+async function loadPaket(i){
+const p=manifestData.paket[i];currentPaketName=p.nama;
+showScreen('screenLoadingSoal');
+try{
+const r=await fetch(p.file);
+if(!r.ok)throw new Error('File '+p.file+' tidak ditemukan');
+const d=await r.json();
+if(!Array.isArray(d))throw new Error('Format file harus array JSON');
+currentQuestions=normalizeQuestions(d);
+if(currentQuestions.length===0)throw new Error('Tidak ada soal valid');
+startQuiz();
+}catch(e){console.error(e);document.getElementById('errorMsg').textContent=e.message;showScreen('screenError');}
+}
+
+function normalizeQuestions(a){
+return a.map(function(it,i){
+const soal=it.soal||it.question||it.s||('Soal '+(i+1));
+let pil=it.pilihan||it.options||it.o||[];
+if(!Array.isArray(pil)&&typeof pil==='object')pil=['A','B','C','D','E','F','G','H'].map(k=>pil[k]).filter(Boolean);
+const bahas=it.pembahasan||it.explanation||it.b||'';
+const pola=it.pola||it.kategori||it.p||'';
+const analOpsi=it.analisis_opsi||it.analisisOpsi||it.analisis||it.optionAnalysis||it.optionsAnalysis;
+let anal=[];
+if(Array.isArray(analOpsi)){anal=analOpsi;}
+else if(analOpsi&&typeof analOpsi==='object'){
+anal=pil.map(function(_,oi){var letter=String.fromCharCode(65+oi);var v=analOpsi[letter]||analOpsi[letter.toLowerCase()]||analOpsi[String(oi)];return(typeof v==='string'?v:'');});
+}
+let lv=it.level||it.lv||1;
+if(typeof lv==='string'){if(/pemula/i.test(lv))lv=1;else if(/menengah/i.test(lv))lv=2;else if(/mahir/i.test(lv))lv=3;else lv=1;}
+lv=Number(lv);if(![1,2,3].includes(lv))lv=1;
+let k=it.kunci!=null?it.kunci:(it.k!=null?it.k:0);
+k=convertKey(k,pil.length);
+return{soal,pilihan:pil,kunci:k,pembahasan:bahas,pola,level:lv,anal};
+});
+}
+
+function convertKey(k,l){
+if(typeof k==='number')return k;
+if(typeof k==='string'){
+const s=k.trim().toUpperCase();
+if(/^[A-J]$/.test(s))return s.charCodeAt(0)-65;
+const n=parseInt(s,10);
+if(!isNaN(n)){if(n>=0&&n<l)return n;if(n>0&&n<=l)return n-1;}
+}
+return 0;
+}
+
+function startQuiz(){
+currentIndex=0;userAnswers=new Array(currentQuestions.length).fill(null);
+showScreen('screenQuiz');renderQuestion();
+}
+
+function renderQuestion(){
+const q=currentQuestions[currentIndex],t=currentQuestions.length;
+document.getElementById('progressFill').style.width=((currentIndex+1)/t*100)+'%';
+document.getElementById('progressText').textContent=currentPaketName+' — Soal '+(currentIndex+1)+' dari '+t;
+document.getElementById('questionBadge').innerHTML='';
+document.getElementById('questionText').textContent=q.soal;
+document.getElementById('optionsContainer').innerHTML=q.pilihan.map(function(o,i){
+const sc=userAnswers[currentIndex]===i?' selected':'';
+return '<button class="option-btn'+sc+'" onclick="selectAnswer('+i+')"><span class="option-label">'+String.fromCharCode(65+i)+'.</span>'+o+'</button>';
+}).join('');
+document.getElementById('btnPrev').disabled=currentIndex===0;
+if(currentIndex===t-1){document.getElementById('btnNext').classList.add('hidden');document.getElementById('btnFinish').classList.remove('hidden');}
+else{document.getElementById('btnNext').classList.remove('hidden');document.getElementById('btnFinish').classList.add('hidden');}
+const c=document.getElementById('questionCard');c.classList.remove('fade-in');void c.offsetWidth;c.classList.add('fade-in');
+}
+
+function selectAnswer(i){
+userAnswers[currentIndex]=i;
+document.querySelectorAll('.option-btn').forEach(function(b,j){b.classList.toggle('selected',j===i);});
+}
+function prevQuestion(){if(currentIndex>0){currentIndex--;renderQuestion();}}
+function nextQuestion(){if(currentIndex<currentQuestions.length-1){currentIndex++;renderQuestion();}}
+function finishQuiz(){
+const un=userAnswers.filter(a=>a===null).length;
+if(un>0&&!confirm('Masih ada '+un+' soal belum dijawab. Yakin selesai?'))return;
+showResults();
+}
+
+function showResults(){
+let c=0;currentQuestions.forEach(function(q,i){if(userAnswers[i]===q.kunci)c++;});
+const t=currentQuestions.length,w=t-c,p=t>0?Math.round(c/t*100):0;
+showScreen('screenResult');
+document.getElementById('scoreNumber').textContent=p+'%';
+document.getElementById('scoreDetail').textContent='Benar '+c+' dari '+t+' soal';
+document.getElementById('statCorrect').textContent=c;
+document.getElementById('statWrong').textContent=w;
+document.getElementById('statTotal').textContent=t;
+renderResultList();
+}
+
+function renderResultList(){
+document.getElementById('resultList').innerHTML=currentQuestions.map(function(q,i){
+const ua=userAnswers[i],ic=ua===q.kunci,ia=ua!==null;
+const sc=ic?'correct':'wrong',st=ic?'✓ Benar':(ia?'✗ Salah':'⚠ Tidak dijawab');
+return '<div class="result-item '+sc+'"><div class="result-header"><strong>Soal '+(i+1)+'</strong><span class="result-status '+sc+'">'+st+'</span></div>'
++'<p style="margin-top:8px;font-weight:700">'+q.soal+'</p>'
++'<p class="small">Jawaban Anda: '+(ia?String.fromCharCode(65+ua)+'. '+q.pilihan[ua]:'-')+'</p>'
++'<p class="small">Jawaban benar: '+String.fromCharCode(65+q.kunci)+'. '+q.pilihan[q.kunci]+'</p>'
++(q.pola?'<p class="small"><strong>Pola:</strong> '+q.pola+'</p>':'')
++'<h4 style="margin-top:12px">🔍 Analisis Opsi</h4>'
++'<div class="result-options">'+q.pilihan.map(function(o,oi){
+const isKey=oi===q.kunci,isChosen=ua===oi,anT=q.anal&&q.anal.length>oi?q.anal[oi]:'';
+return '<div class="result-option'+(isKey?' is-key':'')+(isChosen&&!isKey?' is-chosen':'')+'">'
++'<div class="result-option-head"><span class="result-option-text"><span class="option-label">'+String.fromCharCode(65+oi)+'.</span>'+o+'</span>'
++(isKey?'<span class="result-option-tag key">✓ Kunci jawaban</span>':'')
++(isChosen&&!isKey?'<span class="result-option-tag chosen">Pilihan Anda</span>':'')
++'</div>'
++(anT?'<p class="option-anal">'+anT+'</p>':'')
++'</div>';
+}).join('')+'</div>'
++(q.pembahasan?'<div class="explanation-box" style="margin-top:10px"><h4 style="color:var(--primary);margin-bottom:6px">💡 Pembahasan</h4><p>'+q.pembahasan+'</p></div>':'')
++'</div>';
+}).join('');
+}
+
+function retryQuiz(){startQuiz();}
+function backToList(){showScreen('screenList');}
+
+function showScreen(id){
+['screenLoading','screenNoManifest','screenList','screenLoadingSoal','screenError','screenQuiz','screenResult'].forEach(function(s){document.getElementById(s).classList.add('hidden');});
+document.getElementById(id).classList.remove('hidden');
+}
+
+/* ---------- Mode Gelap/Terang ---------- */
+function initTheme(){
+var btn=document.getElementById('themeToggle');
+var stored=null;
+try{stored=localStorage.getItem('cpns-theme');}catch(e){}
+var prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var desired=stored||(prefersDark?'dark':'light');
+applyTheme(desired);
+if(btn)btn.addEventListener('click',function(){
+var cur=document.documentElement.getAttribute('data-theme');
+var next=cur==='dark'?'light':'dark';
+applyTheme(next);
+try{localStorage.setItem('cpns-theme',next);}catch(e){}
+});
+}
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme',theme);
+var btn=document.getElementById('themeToggle');
+if(btn){btn.textContent=theme==='dark'?'Mode Terang':'Mode Gelap';}
+}
+
+/* ---------- Kembali ke atas ---------- */
+function initBackToTop(){
+var btn=document.getElementById('backToTop');
+if(btn)btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+}
+
+initTheme();
+initBackToTop();
+
+loadManifest();
+</script>
+</body>
+</html>

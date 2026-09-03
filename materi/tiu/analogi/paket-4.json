@@ -1,0 +1,518 @@
+[
+  {
+    "id": 91,
+    "level": "Pemula",
+    "soal": "GURU : SEKOLAH = DOKTER : ...",
+    "pilihan": ["Pasien", "Rumah Sakit", "Obat", "Penyakit", "Stetoskop"],
+    "kunci": "B",
+    "pola": "Profesi dan tempat kerja utama",
+    "pembahasan": "Guru bekerja di sekolah sebagai tempat utama. Dengan pola yang sama, dokter bekerja di rumah sakit sebagai tempat utama.",
+    "analisis_opsi": {
+      "A": "Salah. Pasien adalah orang yang dilayani dokter, bukan tempat kerja.",
+      "B": "Benar. Rumah sakit adalah tempat kerja utama dokter.",
+      "C": "Salah. Obat adalah alat kerja dokter.",
+      "D": "Salah. Penyakit adalah objek yang ditangani dokter.",
+      "E": "Salah. Stetoskop adalah alat kerja dokter."
+    }
+  },
+  {
+    "id": 92,
+    "level": "Mahir",
+    "soal": "DEMOKRASI : RAKYAT = MONARKI : ...",
+    "pilihan": ["Kerajaan", "Raja", "Parlemen", "Konstitusi", "Keturunan"],
+    "kunci": "B",
+    "pola": "Sistem pemerintahan dan pemegang kekuasaan tertinggi",
+    "pembahasan": "Dalam demokrasi, kekuasaan tertinggi berada di tangan rakyat. Dengan pola yang sama, dalam monarki, kekuasaan tertinggi berada di tangan raja.",
+    "analisis_opsi": {
+      "A": "Salah. Kerajaan adalah bentuk negara, bukan pemegang kekuasaan.",
+      "B": "Benar. Raja adalah pemegang kekuasaan tertinggi dalam monarki.",
+      "C": "Salah. Parlemen adalah lembaga legislatif.",
+      "D": "Salah. Konstitusi adalah dasar hukum.",
+      "E": "Salah. Keturunan adalah cara pewarisan tahta, bukan pemegang kekuasaan."
+    }
+  },
+  {
+    "id": 93,
+    "level": "Menengah",
+    "soal": "BENANG : KAIN = BATU BATA : ...",
+    "pilihan": ["Semen", "Tembok", "Rumah", "Pasir", "Bangunan"],
+    "kunci": "B",
+    "pola": "Komponen dasar dan produk akhir",
+    "pembahasan": "Benang adalah komponen dasar yang dirangkai menjadi kain. Dengan pola yang sama, batu bata adalah komponen dasar yang dirangkai menjadi tembok.",
+    "analisis_opsi": {
+      "A": "Salah. Semen adalah bahan perekat, bukan produk akhir.",
+      "B": "Benar. Batu bata disusun menjadi tembok.",
+      "C": "Salah. Rumah adalah produk yang lebih kompleks dari sekadar batu bata.",
+      "D": "Salah. Pasir adalah bahan bangunan lain.",
+      "E": "Salah. Bangunan terlalu umum."
+    }
+  },
+  {
+    "id": 94,
+    "level": "Pemula",
+    "soal": "KUNCI : GEMBOk = PALU : ...",
+    "pilihan": ["Paku", "Kayu", "Besi", "Tangan", "Meja"],
+    "kunci": "A",
+    "pola": "Alat dan objek yang dipengaruhinya",
+    "pembahasan": "Kunci digunakan untuk membuka atau menutup gembok. Dengan pola yang sama, palu digunakan untuk memukul paku.",
+    "analisis_opsi": {
+      "A": "Benar. Palu digunakan untuk memukul paku.",
+      "B": "Salah. Kayu dapat dipukul palu, tetapi bukan objek utama.",
+      "C": "Salah. Besi dapat dibentuk palu, tetapi bukan objek utama.",
+      "D": "Salah. Tangan adalah yang memegang palu.",
+      "E": "Salah. Meja bukan objek utama palu."
+    }
+  },
+  {
+    "id": 95,
+    "level": "Mahir",
+    "soal": "Perpustakaan menyimpan buku dan jurnal ilmiah. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Museum menyimpan lukisan dan patung",
+      "Toko menjual makanan dan minuman",
+      "Sekolah memiliki guru dan murid",
+      "Kantor memiliki meja dan kursi",
+      "Rumah memiliki kamar dan dapur"
+    ],
+    "kunci": "A",
+    "pola": "Analogi kalimat tempat penyimpanan koleksi khusus",
+    "pembahasan": "Perpustakaan adalah tempat yang menyimpan koleksi khusus berupa buku dan jurnal ilmiah. Dengan pola yang sama, museum adalah tempat yang menyimpan koleksi khusus berupa lukisan dan patung.",
+    "analisis_opsi": {
+      "A": "Benar. Museum menyimpan koleksi khusus lukisan dan patung.",
+      "B": "Salah. Toko adalah tempat jual beli, bukan penyimpanan koleksi.",
+      "C": "Salah. Guru dan murid adalah penghuni sekolah.",
+      "D": "Salah. Meja dan kursi adalah perabot umum, bukan koleksi khusus.",
+      "E": "Salah. Kamar dan dapur adalah ruangan umum rumah."
+    }
+  },
+  {
+    "id": 96,
+    "level": "Menengah",
+    "soal": "LAPAR : MAKAN = HAUS : ...",
+    "pilihan": ["Air", "Minum", "Es", "Gelas", "Botol"],
+    "kunci": "B",
+    "pola": "Kondisi dan tindakan penyelesaian",
+    "pembahasan": "Lapar diselesaikan dengan tindakan makan. Dengan pola yang sama, haus diselesaikan dengan tindakan minum.",
+    "analisis_opsi": {
+      "A": "Salah. Air adalah benda yang diminum, bukan tindakan.",
+      "B": "Benar. Minum adalah tindakan untuk mengatasi haus.",
+      "C": "Salah. Es adalah bentuk air.",
+      "D": "Salah. Gelas adalah wadah.",
+      "E": "Salah. Botol adalah wadah."
+    }
+  },
+  {
+    "id": 97,
+    "level": "Pemula",
+    "soal": "RODA : MOBIL = SAYAP : ...",
+    "pilihan": ["Burung", "Pesawat", "Langit", "Terbang", "Angin"],
+    "kunci": "B",
+    "pola": "Bagian dan keseluruhan",
+    "pembahasan": "Roda adalah bagian dari mobil. Dengan pola yang sama, sayap adalah bagian dari pesawat.",
+    "analisis_opsi": {
+      "A": "Salah. Burung memiliki sayap, tetapi roda bukan bagian makhluk hidup.",
+      "B": "Benar. Sayap adalah bagian dari pesawat.",
+      "C": "Salah. Langit adalah tempat pesawat terbang.",
+      "D": "Salah. Terbang adalah fungsi sayap.",
+      "E": "Salah. Angin adalah medium terbang."
+    }
+  },
+  {
+    "id": 98,
+    "level": "Mahir",
+    "soal": "INFLASI : HARGA = DEFLASI : ...",
+    "pilihan": ["Nilai uang", "Daya beli", "Produksi", "Pengangguran", "Suku bunga"],
+    "kunci": "A",
+    "pola": "Fenomena ekonomi dan objek yang terpengaruh",
+    "pembahasan": "Inflasi menyebabkan kenaikan harga. Dengan pola yang sama, deflasi menyebabkan kenaikan nilai uang atau penurunan harga.",
+    "analisis_opsi": {
+      "A": "Benar. Deflasi berkaitan dengan kenaikan nilai uang.",
+      "B": "Salah. Daya beli adalah dampak, bukan objek langsung.",
+      "C": "Salah. Produksi adalah faktor ekonomi lain.",
+      "D": "Salah. Pengangguran adalah masalah ekonomi lain.",
+      "E": "Salah. Suku bunga adalah instrumen kebijakan."
+    }
+  },
+  {
+    "id": 99,
+    "level": "Menengah",
+    "soal": "SEPEDA : KAYUH = MOBIL : ...",
+    "pilihan": ["Bensin", "Gas", "Setir", "Rem", "Mesin"],
+    "kunci": "B",
+    "pola": "Kendaraan dan cara penggeraknya",
+    "pembahasan": "Sepeda digerakkan dengan cara dikayuh. Dengan pola yang sama, mobil digerakkan dengan cara menginjak gas.",
+    "analisis_opsi": {
+      "A": "Salah. Bensin adalah bahan bakar.",
+      "B": "Benar. Mobil digerakkan dengan menginjak gas.",
+      "C": "Salah. Setir untuk mengarahkan.",
+      "D": "Salah. Rem untuk menghentikan.",
+      "E": "Salah. Mesin adalah penggerak, tetapi bukan tindakan pengemudi."
+    }
+  },
+  {
+    "id": 100,
+    "level": "Pemula",
+    "soal": "MATAHARI : SIANG = BULAN : ...",
+    "pilihan": ["Malam", "Bintang", "Gelap", "Terang", "Purnama"],
+    "kunci": "A",
+    "pola": "Benda langit dan waktu kemunculannya",
+    "pembahasan": "Matahari identik dengan waktu siang. Dengan pola yang sama, bulan identik dengan waktu malam.",
+    "analisis_opsi": {
+      "A": "Benar. Bulan identik dengan malam.",
+      "B": "Salah. Bintang juga muncul malam, tetapi bukan pasangan bulan.",
+      "C": "Salah. Gelap adalah kondisi malam.",
+      "D": "Salah. Terang adalah kondisi siang.",
+      "E": "Salah. Purnama adalah fase bulan."
+    }
+  },
+  {
+    "id": 101,
+    "level": "Mahir",
+    "soal": "Jantung memompa darah ke seluruh tubuh. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Pompa air mengalirkan air ke pipa",
+      "Mesin memutar roda mobil",
+      "Paru-paru menghirup oksigen",
+      "Lambung mencerna makanan",
+      "Otak memproses informasi"
+    ],
+    "kunci": "A",
+    "pola": "Analogi kalimat organ dan fungsi memompa/mengalirkan",
+    "pembahasan": "Jantung berfungsi memompa darah ke seluruh tubuh melalui pembuluh. Dengan pola yang sama, pompa air berfungsi mengalirkan air ke pipa.",
+    "analisis_opsi": {
+      "A": "Benar. Pompa air mengalirkan air ke pipa, sama seperti jantung memompa darah.",
+      "B": "Salah. Mesin memutar roda, bukan memompa.",
+      "C": "Salah. Paru-paru menghirup, bukan memompa.",
+      "D": "Salah. Lambung mencerna, bukan memompa.",
+      "E": "Salah. Otak memproses informasi, bukan memompa."
+    }
+  },
+  {
+    "id": 102,
+    "level": "Menengah",
+    "soal": "POHON : AKAR = BANGUNAN : ...",
+    "pilihan": ["Atap", "Pondasi", "Dinding", "Pintu", "Jendela"],
+    "kunci": "B",
+    "pola": "Objek dan bagian penopang utama",
+    "pembahasan": "Akar adalah bagian yang menopang pohon. Dengan pola yang sama, pondasi adalah bagian yang menopang bangunan.",
+    "analisis_opsi": {
+      "A": "Salah. Atap adalah bagian atas bangunan.",
+      "B": "Benar. Pondasi menopang bangunan.",
+      "C": "Salah. Dinding adalah bagian samping.",
+      "D": "Salah. Pintu adalah akses masuk.",
+      "E": "Salah. Jendela adalah ventilasi."
+    }
+  },
+  {
+    "id": 103,
+    "level": "Pemula",
+    "soal": "KOMPOR : MEMASAK = SETRIKA : ...",
+    "pilihan": ["Pakaian", "Licin", "Panas", "Menyetrika", "Listrik"],
+    "kunci": "D",
+    "pola": "Alat dan fungsinya",
+    "pembahasan": "Kompor berfungsi untuk memasak. Dengan pola yang sama, setrika berfungsi untuk menyetrika.",
+    "analisis_opsi": {
+      "A": "Salah. Pakaian adalah objek yang disetrika.",
+      "B": "Salah. Licin adalah hasil menyetrika.",
+      "C": "Salah. Panas adalah sifat setrika.",
+      "D": "Benar. Menyetrika adalah fungsi setrika.",
+      "E": "Salah. Listrik adalah sumber energi setrika."
+    }
+  },
+  {
+    "id": 104,
+    "level": "Mahir",
+    "soal": "HAKIM : VONIS = JURI : ...",
+    "pilihan": ["Peserta", "Nilai", "Kompetisi", "Pemenang", "Aturan"],
+    "kunci": "B",
+    "pola": "Pihak dan keputusan yang diberikan",
+    "pembahasan": "Hakim memberikan vonis dalam pengadilan. Dengan pola yang sama, juri memberikan nilai dalam kompetisi.",
+    "analisis_opsi": {
+      "A": "Salah. Peserta adalah pihak yang dinilai.",
+      "B": "Benar. Juri memberikan nilai.",
+      "C": "Salah. Kompetisi adalah konteks.",
+      "D": "Salah. Pemenang adalah hasil penilaian.",
+      "E": "Salah. Aturan adalah pedoman."
+    }
+  },
+  {
+    "id": 105,
+    "level": "Menengah",
+    "soal": "KAMERA : FOTO = MIKROFON : ...",
+    "pilihan": ["Suara", "Rekaman", "Penyanyi", "Musik", "Speaker"],
+    "kunci": "A",
+    "pola": "Alat dan objek yang ditangkap",
+    "pembahasan": "Kamera menangkap gambar menjadi foto. Dengan pola yang sama, mikrofon menangkap suara.",
+    "analisis_opsi": {
+      "A": "Benar. Mikrofon menangkap suara.",
+      "B": "Salah. Rekaman adalah hasil tangkapan.",
+      "C": "Salah. Penyanyi adalah sumber suara.",
+      "D": "Salah. Musik adalah jenis suara.",
+      "E": "Salah. Speaker adalah alat penghasil suara."
+    }
+  },
+  {
+    "id": 106,
+    "level": "Pemula",
+    "soal": "PAYUNG : HUJAN = KIPAS : ...",
+    "pilihan": ["Angin", "Panas", "Dingin", "Listrik", "Baling-baling"],
+    "kunci": "B",
+    "pola": "Alat dan kondisi yang diatasi",
+    "pembahasan": "Payung digunakan untuk melindungi dari hujan. Dengan pola yang sama, kipas digunakan untuk mengatasi panas.",
+    "analisis_opsi": {
+      "A": "Salah. Angin adalah yang dihasilkan kipas.",
+      "B": "Benar. Kipas digunakan untuk mengatasi panas.",
+      "C": "Salah. Dingin bukan kondisi yang diatasi kipas.",
+      "D": "Salah. Listrik adalah sumber energi.",
+      "E": "Salah. Baling-baling adalah bagian kipas."
+    }
+  },
+  {
+    "id": 107,
+    "level": "Mahir",
+    "soal": "Kupu dan belalang adalah jenis serangga yang berbeda. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Mawar dan melati adalah jenis bunga yang berbeda",
+      "Ayam dan bebek adalah jenis unggas yang berbeda",
+      "Kucing dan anjing adalah jenis hewan peliharaan",
+      "Apel dan jeruk adalah buah-buahan",
+      "Emas dan perak adalah logam mulia"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat dua jenis dalam satu kategori yang sama",
+    "pembahasan": "Kupu dan belalang adalah dua jenis serangga yang berbeda. Dengan pola yang sama, ayam dan bebek adalah dua jenis unggas yang berbeda.",
+    "analisis_opsi": {
+      "A": "Salah. Mawar dan melati adalah bunga, tetapi tidak spesifik menyebutkan 'jenis yang berbeda'.",
+      "B": "Benar. Ayam dan bebek adalah dua jenis unggas yang berbeda.",
+      "C": "Salah. Kucing dan anjing adalah hewan peliharaan, tetapi tidak dalam kategori taksonomi yang sama.",
+      "D": "Salah. Terlalu umum.",
+      "E": "Salah. Emas dan perak adalah logam mulia, tetapi bukan jenis yang berbeda dalam satu genus."
+    }
+  },
+  {
+    "id": 108,
+    "level": "Menengah",
+    "soal": "BIBIT : TANAMAN = BAKAL : ...",
+    "pilihan": ["Benih", "Tunas", "Buah", "Dewasa", "Pohon"],
+    "kunci": "D",
+    "pola": "Tahap awal dan hasil akhir",
+    "pembahasan": "Bibit adalah tahap awal yang akan menjadi tanaman dewasa. Dengan pola yang sama, bakal adalah tahap awal yang akan menjadi dewasa.",
+    "analisis_opsi": {
+      "A": "Salah. Benih sinonim dengan bibit.",
+      "B": "Salah. Tunas adalah tahap setelah bibit.",
+      "C": "Salah. Buah adalah hasil tanaman.",
+      "D": "Benar. Bakal akan menjadi dewasa.",
+      "E": "Salah. Pohon adalah jenis tanaman."
+    }
+  },
+  {
+    "id": 109,
+    "level": "Pemula",
+    "soal": "LAMPU : TERANG = API : ...",
+    "pilihan": ["Panas", "Asap", "Kayu", "Abu", "Cahaya"],
+    "kunci": "A",
+    "pola": "Benda dan sifat atau efek yang dihasilkan",
+    "pembahasan": "Lampu menghasilkan terang. Dengan pola yang sama, api menghasilkan panas.",
+    "analisis_opsi": {
+      "A": "Benar. Api menghasilkan panas.",
+      "B": "Salah. Asap adalah hasil sampingan.",
+      "C": "Salah. Kayu adalah bahan bakar api.",
+      "D": "Salah. Abu adalah sisa pembakaran.",
+      "E": "Salah. Cahaya juga dihasilkan api, tetapi panas lebih khas."
+    }
+  },
+  {
+    "id": 110,
+    "level": "Mahir",
+    "soal": "EPIDEMI : LOKAL = PANDEMI : ...",
+    "pilihan": ["Regional", "Global", "Nasional", "Internasional", "Universal"],
+    "kunci": "B",
+    "pola": "Tingkatan cakupan wabah",
+    "pembahasan": "Epidemi adalah wabah yang cakupan wilayahnya lokal. Dengan pola yang sama, pandemi adalah wabah yang cakupan wilayahnya global.",
+    "analisis_opsi": {
+      "A": "Salah. Regional lebih luas dari lokal tetapi lebih sempit dari global.",
+      "B": "Benar. Pandemi adalah wabah global.",
+      "C": "Salah. Nasional adalah tingkat negara.",
+      "D": "Salah. Internasional mirip dengan global tetapi kurang tepat secara istilah medis.",
+      "E": "Salah. Universal terlalu luas dan tidak spesifik."
+    }
+  },
+  {
+    "id": 111,
+    "level": "Menengah",
+    "soal": "TINTA : PULPEN = GRAFIT : ...",
+    "pilihan": ["Pensil", "Kertas", "Kayu", "Penghapus", "Pena"],
+    "kunci": "A",
+    "pola": "Bahan inti dan alat tulis",
+    "pembahasan": "Tinta adalah bahan inti dalam pulpen. Dengan pola yang sama, grafit adalah bahan inti dalam pensil.",
+    "analisis_opsi": {
+      "A": "Benar. Grafit adalah bahan inti pensil.",
+      "B": "Salah. Kertas adalah media menulis.",
+      "C": "Salah. Kayu adalah badan pensil.",
+      "D": "Salah. Penghapus adalah pelengkap.",
+      "E": "Salah. Pena adalah alat tulis lain."
+    }
+  },
+  {
+    "id": 112,
+    "level": "Pemula",
+    "soal": "DOKTER : STETOSKOP = NELAYAN : ...",
+    "pilihan": ["Ikan", "Laut", "Jaring", "Perahu", "Pantai"],
+    "kunci": "C",
+    "pola": "Profesi dan alat utama",
+    "pembahasan": "Dokter menggunakan stetoskop sebagai alat utama. Dengan pola yang sama, nelayan menggunakan jaring sebagai alat utama.",
+    "analisis_opsi": {
+      "A": "Salah. Ikan adalah hasil tangkapan.",
+      "B": "Salah. Laut adalah tempat nelayan bekerja.",
+      "C": "Benar. Jaring adalah alat utama nelayan.",
+      "D": "Salah. Perahu adalah kendaraan nelayan.",
+      "E": "Salah. Pantai adalah tempat berlabuh."
+    }
+  },
+  {
+    "id": 113,
+    "level": "Mahir",
+    "soal": "Piano dan gitar adalah alat musik berdawai. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Drum dan gendang adalah alat musik perkusi",
+      "Seruling dan terompet adalah alat musik tiup",
+      "Biola dan cello adalah alat musik gesek",
+      "Keyboard dan organ adalah alat musik elektronik",
+      "Suling dan harmonika adalah alat musik kecil"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat dua alat musik dalam satu kategori cara bermain",
+    "pembahasan": "Piano dan gitar adalah dua alat musik yang dimainkan dengan cara dipetik (berdawai). Dengan pola yang sama, seruling dan terompet adalah dua alat musik yang dimainkan dengan cara ditiup.",
+    "analisis_opsi": {
+      "A": "Salah. Drum dan gendang adalah perkusi, tetapi piano dan gitar bukan kategori yang sama dengan ini.",
+      "B": "Benar. Seruling dan terompet adalah alat musik tiup.",
+      "C": "Salah. Biola dan cello adalah alat musik gesek.",
+      "D": "Salah. Keyboard dan organ adalah alat musik elektronik.",
+      "E": "Salah. Suling dan harmonika adalah alat musik tiup, tetapi 'kecil' bukan kategori yang tepat."
+    }
+  },
+  {
+    "id": 114,
+    "level": "Menengah",
+    "soal": "BENSIN : MOBIL = MAKANAN : ...",
+    "pilihan": ["Manusia", "Hewan", "Tubuh", "Energi", "Lapar"],
+    "kunci": "A",
+    "pola": "Sumber energi dan yang menggunakannya",
+    "pembahasan": "Bensin adalah sumber energi untuk mobil. Dengan pola yang sama, makanan adalah sumber energi untuk manusia.",
+    "analisis_opsi": {
+      "A": "Benar. Makanan adalah sumber energi manusia.",
+      "B": "Salah. Hewan juga membutuhkan makanan, tetapi mobil lebih setara dengan manusia.",
+      "C": "Salah. Tubuh adalah bagian manusia.",
+      "D": "Salah. Energi adalah yang dihasilkan makanan.",
+      "E": "Salah. Lapar adalah kondisi yang diatasi makanan."
+    }
+  },
+  {
+    "id": 115,
+    "level": "Pemula",
+    "soal": "KAKI : BERJALAN = TANGAN : ...",
+    "pilihan": ["Memegang", "Menulis", "Mengambil", "Tangan", "Jari"],
+    "kunci": "A",
+    "pola": "Bagian tubuh dan fungsi utamanya",
+    "pembahasan": "Kaki berfungsi utama untuk berjalan. Dengan pola yang sama, tangan berfungsi utama untuk memegang.",
+    "analisis_opsi": {
+      "A": "Benar. Tangan berfungsi utama untuk memegang.",
+      "B": "Salah. Menulis adalah fungsi spesifik.",
+      "C": "Salah. Mengambil adalah tindakan spesifik.",
+      "D": "Salah. Tangan adalah subjek, bukan fungsi.",
+      "E": "Salah. Jari adalah bagian tangan."
+    }
+  },
+  {
+    "id": 116,
+    "level": "Mahir",
+    "soal": "Katalis mempercepat reaksi kimia. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Stimulan mempercepat respons saraf",
+      "Pupuk mempercepat pertumbuhan tanaman",
+      "Olahraga mempercepat metabolisme",
+      "Kopi mempercepat kerja jantung",
+      "Obat mempercepat penyembuhan"
+    ],
+    "kunci": "A",
+    "pola": "Analogi kalimat zat dan sistem yang dipercepat",
+    "pembahasan": "Katalis adalah zat yang mempercepat reaksi kimia. Dengan pola yang sama, stimulan adalah zat yang mempercepat respons saraf.",
+    "analisis_opsi": {
+      "A": "Benar. Stimulan mempercepat respons saraf, sama seperti katalis mempercepat reaksi kimia.",
+      "B": "Salah. Pupuk mempercepat pertumbuhan, tetapi bukan zat yang bekerja pada sistem biologis secara langsung.",
+      "C": "Salah. Olahraga adalah aktivitas, bukan zat.",
+      "D": "Salah. Kopi adalah minuman, bukan zat spesifik.",
+      "E": "Salah. Obat mempercepat penyembuhan, tetapi tidak spesifik seperti katalis."
+    }
+  },
+  {
+    "id": 117,
+    "level": "Menengah",
+    "soal": "HUJAN : BANJIR = GEMPA : ...",
+    "pilihan": ["Tsunami", "Kerusakan", "Guncangan", "Puing", "Evakuasi"],
+    "kunci": "A",
+    "pola": "Penyebab dan akibat spesifik",
+    "pembahasan": "Hujan dapat menyebabkan banjir. Dengan pola yang sama, gempa dapat menyebabkan tsunami.",
+    "analisis_opsi": {
+      "A": "Benar. Gempa dapat menyebabkan tsunami.",
+      "B": "Salah. Kerusakan adalah dampak umum.",
+      "C": "Salah. Guncangan adalah bagian dari gempa.",
+      "D": "Salah. Puing adalah hasil kerusakan.",
+      "E": "Salah. Evakuasi adalah tindakan setelah gempa."
+    }
+  },
+  {
+    "id": 118,
+    "level": "Pemula",
+    "soal": "RUMAH : ATAP = BUKU : ...",
+    "pilihan": ["Halaman", "Sampul", "Tulisan", "Penulis", "Penerbit"],
+    "kunci": "B",
+    "pola": "Objek dan bagian pelindung atas",
+    "pembahasan": "Atap adalah bagian atas yang melindungi rumah. Dengan pola yang sama, sampul adalah bagian luar yang melindungi buku.",
+    "analisis_opsi": {
+      "A": "Salah. Halaman adalah bagian dalam buku.",
+      "B": "Benar. Sampul melindungi buku.",
+      "C": "Salah. Tulisan adalah isi buku.",
+      "D": "Salah. Penulis adalah pembuat buku.",
+      "E": "Salah. Penerbit adalah pihak yang menerbitkan."
+    }
+  },
+  {
+    "id": 119,
+    "level": "Mahir",
+    "soal": "Filsafat bertujuan mencari kebenaran. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Sains bertujuan mencari fakta",
+      "Hukum bertujuan mencari keadilan",
+      "Seni bertujuan mencari keindahan",
+      "Agama bertujuan mencari ketenangan",
+      "Politik bertujuan mencari kekuasaan"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat disiplin ilmu dan tujuan utamanya",
+    "pembahasan": "Filsafat adalah disiplin yang bertujuan mencari kebenaran. Dengan pola yang sama, hukum adalah disiplin yang bertujuan mencari keadilan.",
+    "analisis_opsi": {
+      "A": "Salah. Sains mencari fakta, tetapi filsafat dan hukum lebih setara sebagai disiplin normatif.",
+      "B": "Benar. Hukum bertujuan mencari keadilan.",
+      "C": "Salah. Seni mencari keindahan, tetapi bukan disiplin normatif.",
+      "D": "Salah. Agama mencari ketenangan, tetapi bukan disiplin akademis.",
+      "E": "Salah. Politik mencari kekuasaan, tetapi bukan tujuan normatif."
+    }
+  },
+  {
+    "id": 120,
+    "level": "Menengah",
+    "soal": "GULA : MANIS = CUKA : ...",
+    "pilihan": ["Asam", "Asin", "Pahit", "Pedas", "Kecut"],
+    "kunci": "A",
+    "pola": "Benda dan rasa khasnya",
+    "pembahasan": "Gula memiliki rasa manis. Dengan pola yang sama, cuka memiliki rasa asam.",
+    "analisis_opsi": {
+      "A": "Benar. Cuka memiliki rasa asam.",
+      "B": "Salah. Asin adalah rasa garam.",
+      "C": "Salah. Pahit adalah rasa obat.",
+      "D": "Salah. Pedas adalah rasa cabai.",
+      "E": "Salah. Kecut mirip dengan asam, tetapi asam lebih tepat secara ilmiah."
+    }
+  }
+]

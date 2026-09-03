@@ -1,0 +1,22 @@
+{
+  "name": "TWK",
+  "fullName": "Tes Wawasan Kebangsaan",
+  "description": "Materi terkait nasionalisme, integritas, bela negara, dan pilar negara. Pilih topik untuk mulai belajar.",
+  "topics": [
+    {
+      "folder": "pancasila",
+      "title": "Pancasila",
+      "subtitle": "Nilai, sila, dan implementasinya dalam kehidupan bernegara."
+    },
+    {
+      "folder": "uud-1945",
+      "title": "UUD 1945",
+      "subtitle": "Pokok-pokok undang-undang dasar dan amandemennya."
+    },
+    {
+      "folder": "sejarah-indonesia",
+      "title": "Sejarah Indonesia",
+      "subtitle": "Peristiwa penting perjuangan dan kebangkitan nasional."
+    }
+  ]
+}

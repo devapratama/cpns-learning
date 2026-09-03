@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5d7b9e" />
+  <title>TWK — Tes Wawasan Kebangsaan | CPNS Learning</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body class="category-page">
+  <script>
+    /* Kedalaman 2 dari root: materi/<kat>/ → "../../" */
+    window.CPNS = { basePath: "../../" };
+  </script>
+
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+
+  <header class="site-header"></header>
+
+  <main id="main">
+    <section class="hero category-hero">
+      <div class="container">
+        <p class="eyebrow">Kategori</p>
+        <h1 id="category-title">TWK — Tes Wawasan Kebangsaan</h1>
+        <p id="category-desc" class="lead">
+          Pilih topik di bawah untuk mulai belajar.
+        </p>
+      </div>
+    </section>
+
+    <section id="materi" class="section" aria-labelledby="materi-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="materi-title">Daftar Topik</h2>
+        </header>
+        <div id="topic-grid" class="materi-grid">
+          <p class="loading-hint">Memuat topik…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/category.js"></script>
+</body>
+</html>

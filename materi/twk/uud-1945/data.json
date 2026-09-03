@@ -1,0 +1,81 @@
+{
+  "category": "TWK",
+  "categoryFolder": "twk",
+  "title": "UUD 1945",
+  "subtitle": "Pokok-pokok undang-undang dasar dan amandemennya.",
+  "quizIntro": "Pilih jawaban yang menurut Anda benar, lalu klik Periksa Jawaban.",
+  "quiz": [
+    {
+      "question": "UUD 1945 disahkan pada tanggal …",
+      "options": ["A. 17 Agustus 1945", "B. 18 Agustus 1945", "C. 1 Juni 1945", "D. 22 Juni 1945"],
+      "answer": 1,
+      "explanation": "UUD 1945 disahkan oleh PPKI pada 18 Agustus 1945."
+    },
+    {
+      "question": "Pembukaan UUD 1945 terdiri atas … alinea.",
+      "options": ["A. tiga", "B. empat", "C. lima", "D. dua"],
+      "answer": 1,
+      "explanation": "Pembukaan UUD 1945 memuat empat alinea."
+    },
+    {
+      "question": "Lembaga yang berwenang mengubah dan menetapkan UUD adalah …",
+      "options": ["A. DPR", "B. MPR", "C. Presiden", "D. Mahkamah Agung"],
+      "answer": 1,
+      "explanation": "Berdasarkan pasal 3 UUD 1945, MPR berwenang mengubah dan menetapkan UUD."
+    },
+    {
+      "question": "UUD 1945 telah diamandemen sebanyak … kali.",
+      "options": ["A. dua", "B. tiga", "C. empat", "D. lima"],
+      "answer": 2,
+      "explanation": "Amandemen dilakukan empat kali, yaitu 1999, 2000, 2001, dan 2002."
+    },
+    {
+      "question": "Pasal 1 Ayat (1) UUD 1945 menyatakan bahwa …",
+      "options": ["A. negara Indonesia berbentuk federal", "B. negara Indonesia ialah negara kesatuan yang berbentuk republik", "C. kekuasaan tertinggi ada pada presiden", "D. Indonesia berbentuk kerajaan"],
+      "answer": 1,
+      "explanation": "UUD 1945 menegaskan Indonesia adalah negara kesatuan yang berbentuk republik."
+    },
+    {
+      "question": "Lembaga yang memegang kekuasaan kehakiman menurut UUD 1945 adalah …",
+      "options": ["A. Mahkamah Agung dan Mahkamah Konstitusi", "B. MPR dan DPR", "C. BPK dan presiden", "D. Kemendagri"],
+      "answer": 0,
+      "explanation": "Kekuasaan kehakiman dijalankan oleh Mahkamah Agung beserta peradilan di bawahnya dan Mahkamah Konstitusi."
+    },
+    {
+      "question": "Mahkamah Konstitusi berwenang untuk …",
+      "options": ["A. mengangkat menteri", "B. menguji undang-undang terhadap UUD 1945", "C. membuat undang-undang", "D. menjaga kedaulatan negara"],
+      "answer": 1,
+      "explanation": "MK menguji undang-undang terhadap UUD 1945 serta memutus sengketa kewenangan lembaga negara."
+    },
+    {
+      "question": "Presiden dan Wakil Presiden menurut UUD 1945 hasil amandemen dipilih …",
+      "options": ["A. oleh MPR", "B. secara langsung oleh rakyat", "C. oleh DPR", "D. oleh para gubernur"],
+      "answer": 1,
+      "explanation": "Perubahan ketiga UUD 1945 menetapkan presiden dan wakil presiden dipilih langsung oleh rakyat."
+    },
+    {
+      "question": "Sistem pemerintahan Indonesia menurut UUD 1945 adalah …",
+      "options": ["A. parlementer", "B. presidensial", "C. liberal", "D. monarki"],
+      "answer": 1,
+      "explanation": "Indonesia menganut sistem presidensial dengan presiden sebagai kepala negara sekaligus kepala pemerintahan."
+    },
+    {
+      "question": "Pasal 33 UUD 1945 mengamanatkan bahwa perekonomian disusun …",
+      "options": ["A. atas dasar persaingan bebas", "B. sebagai usaha bersama berdasar atas asas kekeluargaan", "C. sepenuhnya oleh swasta", "D. untuk kepentingan asing"],
+      "answer": 1,
+      "explanation": "Pasal 33 ayat (1) menyatakan perekonomian disusun sebagai usaha bersama berdasar atas asas kekeluargaan."
+    },
+    {
+      "question": "Hak warga negara memperoleh pendidikan dijamin dalam …",
+      "options": ["A. Pasal 33", "B. Pasal 31", "C. Pasal 28E", "D. Pasal 18"],
+      "answer": 1,
+      "explanation": "Pasal 31 UUD 1945 mengatur hak setiap warga negara mendapatkan pendidikan."
+    },
+    {
+      "question": "Sifat UUD 1945 sebagai hukum dasar tertinggi berarti …",
+      "options": ["A. dapat diubah oleh presiden", "B. setiap peraturan di bawahnya tidak boleh bertentangan dengannya", "C. hanya mengikat lembaga negara", "D. berlaku dikala tertentu"],
+      "answer": 1,
+      "explanation": "Sebagai hukum tertinggi, semua peraturan perundang-undangan harus sesuai dengan UUD 1945."
+    }
+  ]
+}

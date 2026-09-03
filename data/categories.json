@@ -1,0 +1,37 @@
+{
+  "_note": "Daftar kategori yang tampil di homepage. Tambah/hapus/urutkan bebas. Kolom `folder` menunjuk ke folder kategori di bawah materi/.",
+  "categories": [
+    {
+      "folder": "twk",
+      "name": "TWK",
+      "fullName": "Tes Wawasan Kebangsaan",
+      "short": "Nasionalisme, integritas, bela negara, dan pilar negara.",
+      "icon": "W",
+      "color": "#5d7b9e"
+    },
+    {
+      "folder": "tiu",
+      "name": "TIU",
+      "fullName": "Tes Intelegensia Umum",
+      "short": "Kemampuan verbal, numerik, dan figural untuk mengukur daya nalar.",
+      "icon": "I",
+      "color": "#6f8f8a"
+    },
+    {
+      "folder": "tkp",
+      "name": "TKP",
+      "fullName": "Tes Karakteristik Pribadi",
+      "short": "Pelayanan publik, jejaring kerja, sosial budaya, dan profesionalisme.",
+      "icon": "P",
+      "color": "#a4866f"
+    },
+    {
+      "folder": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "fullName": "Pemahaman Kebahasaan",
+      "short": "Kalimat utama, ide pokok, paragraf, kalimat efektif, ejaan, tanda baca, dan kata baku.",
+      "icon": "B",
+      "color": "#7a6d9e"
+    }
+  ]
+}
