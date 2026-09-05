@@ -1,512 +1,524 @@
 [
   {
     "id": 121,
-    "level": "Pemula",
-    "soal": "SUSU : YOGHURT = KETAN : ...",
-    "pilihan": ["Gula", "Tape", "Arak", "Cuka", "Alkohol"],
+    "level": "Mahir",
+    "soal": "DIAGNOSIS : PENYAKIT = ... : ...",
+    "pilihan": [
+      "Autopsi : Jenazah",
+      "Investigasi : Kasus",
+      "Resep : Dokter",
+      "Gejala : Sakit",
+      "Vonis : Hakim"
+    ],
     "kunci": "B",
-    "pola": "Bahan baku dan produk fermentasi",
-    "pembahasan": "Susu difermentasi menjadi yoghurt. Dengan pola yang sama, ketan difermentasi menjadi tape. Hubungan yang diuji adalah bahan baku dan hasil fermentasinya.",
+    "pola": "Proses identifikasi/penyelidikan dan objek yang diselidiki",
+    "pembahasan": "Diagnosis adalah proses identifikasi untuk menentukan penyakit. Investigasi adalah proses penyelidikan untuk mengungkap kasus. Keduanya adalah proses aktif pencarian kebenaran terhadap suatu objek masalah.",
     "analisis_opsi": {
-      "A": "Salah. Gula adalah pemanis, bukan hasil fermentasi ketan.",
-      "B": "Benar. Ketan difermentasi menjadi tape.",
-      "C": "Salah. Arak adalah minuman beralkohol, bukan hasil fermentasi ketan yang umum.",
-      "D": "Salah. Cuka adalah hasil fermentasi asam, bukan dari ketan.",
-      "E": "Salah. Alkohol adalah produk fermentasi umum, tetapi bukan tape."
+      "A": "JEBAKAN HALUS. Autopsi adalah pemeriksaan POST-MORTEM (setelah kematian), bukan identifikasi awal untuk menentukan penyebab.",
+      "B": "Benar. Investigasi adalah proses penyelidikan kasus.",
+      "C": "JEBAKAN TERBALIK. Resep adalah DOKUMEN yang dikeluarkan dokter, bukan proses identifikasi.",
+      "D": "JEBAKAN GEJALA. Gejala adalah indikasi awal, bukan proses identifikasi.",
+      "E": "JEBAKAN HASIL. Vonis adalah hasil akhir, bukan proses penyelidikan."
     }
   },
   {
     "id": 122,
     "level": "Mahir",
-    "soal": "KONSERVATIF : TRADISI = PROGRESIF : ...",
-    "pilihan": ["Perubahan", "Kemajuan", "Pembaruan", "Modernisasi", "Revolusi"],
-    "kunci": "C",
-    "pola": "Sikap dan orientasi utama",
-    "pembahasan": "Konservatif adalah sikap yang berorientasi pada tradisi dan mempertahankan nilai lama. Dengan pola yang sama, progresif adalah sikap yang berorientasi pada pembaruan dan kemajuan.",
+    "soal": "GEJALA : DIAGNOSIS = BUKTI : ...",
+    "pilihan": ["Sidang", "Vonis", "Pengadilan", "Hukum", "Saksi"],
+    "kunci": "B",
+    "pola": "Petunjuk awal dan kesimpulan/verifikasi akhir",
+    "pembahasan": "Gejala adalah petunjuk awal yang mengarah pada diagnosis. Bukti adalah petunjuk awal yang mengarah pada vonis. Keduanya adalah elemen pendukung yang menghasilkan kesimpulan formal.",
     "analisis_opsi": {
-      "A": "Salah. Perubahan terlalu umum, bisa positif atau negatif.",
-      "B": "Salah. Kemajuan adalah hasil, bukan orientasi sikap.",
-      "C": "Benar. Progresif berorientasi pada pembaruan.",
-      "D": "Salah. Modernisasi adalah proses, bukan orientasi sikap.",
-      "E": "Salah. Revolusi adalah perubahan drastis, bukan orientasi progresif."
+      "A": "JEBAKAN PROSES. Sidang adalah proses, bukan kesimpulan yang dihasilkan dari bukti.",
+      "B": "Benar. Bukti menghasilkan/mendukung vonis.",
+      "C": "JEBAKAN TEMPAT. Pengadilan adalah tempat, bukan hasil.",
+      "D": "Salah. Hukum adalah sistem, bukan hasil dari bukti.",
+      "E": "JEBAKAN ELEMEN. Saksi adalah sumber bukti, bukan hasil dari bukti."
     }
   },
   {
     "id": 123,
-    "level": "Menengah",
-    "soal": "KOMPOR : API = LAMPU : ...",
-    "pilihan": ["Cahaya", "Bohlam", "Kabel", "Listrik", "Panas"],
-    "kunci": "D",
-    "pola": "Alat dan sumber energi",
-    "pembahasan": "Kompor menggunakan api sebagai sumber energi untuk berfungsi. Dengan pola yang sama, lampu menggunakan listrik sebagai sumber energi untuk berfungsi.",
+    "level": "Mahir",
+    "soal": "RESEP : APOTEKER = VONIS : ...",
+    "pilihan": ["Jaksa", "Hakim", "Pengadilan", "Terdakwa", "Undang-undang"],
+    "kunci": "B",
+    "pola": "Dokumen keputusan formal dan profesi/otoritas yang mengeluarkannya",
+    "pembahasan": "Resep adalah dokumen resmi yang dikeluarkan oleh apoteker (berdasarkan resep dokter). Vonis adalah dokumen keputusan resmi yang dikeluarkan oleh hakim. Keduanya adalah produk formal dari otoritas spesifik.",
     "analisis_opsi": {
-      "A": "Salah. Cahaya adalah hasil dari lampu, bukan sumber energinya.",
-      "B": "Salah. Bohlam adalah bagian dari lampu.",
-      "C": "Salah. Kabel adalah penghantar listrik, bukan sumber energi.",
-      "D": "Benar. Listrik adalah sumber energi lampu.",
-      "E": "Salah. Panas adalah efek samping lampu."
+      "A": "JEBAKAN MATI. Jaksa mengeluarkan DAKWAAN, bukan vonis.",
+      "B": "Benar. Hakim mengeluarkan vonis.",
+      "C": "JEBAKAN TEMPAT. Pengadilan adalah tempat, bukan subjek yang mengeluarkan.",
+      "D": "Salah. Terdakwa adalah penerima vonis.",
+      "E": "Salah. Undang-undang adalah dasar hukum, bukan produk vonis."
     }
   },
   {
     "id": 124,
-    "level": "Pemula",
-    "soal": "TELINGA : MENDENGAR = HIDUNG : ...",
-    "pilihan": ["Bernapas", "Merasa", "Melihat", "Meraba", "Mencium"],
-    "kunci": "E",
-    "pola": "Organ indera dan fungsi spesifiknya",
-    "pembahasan": "Telinga adalah organ indera yang berfungsi untuk mendengar. Dengan pola yang sama, hidung adalah organ indera yang berfungsi untuk mencium bau.",
+    "level": "Mahir",
+    "soal": "KATALIS : REAKSI KIMIA = ENZIM : ...",
+    "pilihan": ["Pencernaan", "Metabolisme", "Fermentasi", "Respirasi", "Fotosintesis"],
+    "kunci": "B",
+    "pola": "Pemercepat proses dan sistem proses yang dipercepat",
+    "pembahasan": "Katalis adalah zat yang mempercepat reaksi kimia secara umum. Enzim adalah katalis biologis yang mempercepat metabolisme (keseluruhan proses biokimia dalam sel). Keduanya adalah pemercepat proses.",
     "analisis_opsi": {
-      "A": "Salah. Bernapas adalah fungsi umum hidung, bukan fungsi indera spesifik.",
-      "B": "Salah. Merasa adalah fungsi lidah.",
-      "C": "Salah. Melihat adalah fungsi mata.",
-      "D": "Salah. Meraba adalah fungsi kulit.",
-      "E": "Benar. Mencium adalah fungsi indera hidung."
+      "A": "JEBAKAN SPESIFIK. Pencernaan hanyalah SALAH SATU bagian metabolisme.",
+      "B": "Benar. Metabolisme adalah keseluruhan proses yang dipercepat enzim.",
+      "C": "JEBAKAN SPESIFIK. Fermentasi hanyalah salah satu jenis proses.",
+      "D": "JEBAKAN SPESIFIK. Respirasi hanyalah salah satu proses metabolisme.",
+      "E": "JEBAKAN SPESIFIK. Fotosintesis hanya terjadi pada tumbuhan."
     }
   },
   {
     "id": 125,
     "level": "Mahir",
-    "soal": "Hutan dan laut adalah ekosistem alami. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Kota dan desa adalah wilayah administratif",
-      "Gunung dan sungai adalah bentang alam",
-      "Sawah dan tambak adalah area budidaya",
-      "Rumah dan kantor adalah tempat aktivitas",
-      "Mobil dan motor adalah kendaraan bermotor"
-    ],
-    "kunci": "C",
-    "pola": "Analogi kalimat dua contoh dalam satu kategori fungsional",
-    "pembahasan": "Hutan dan laut adalah dua contoh ekosistem alami. Dengan pola yang sama, sawah dan tambak adalah dua contoh area budidaya.",
+    "soal": "HIPOTESIS : PENELITIAN = DAKWAAN : ...",
+    "pilihan": ["Vonis", "Sidang", "Hukuman", "Bukti", "Terdakwa"],
+    "kunci": "B",
+    "pola": "Dugaan/tuntutan awal dan proses pembuktiannya",
+    "pembahasan": "Hipotesis adalah dugaan awal yang harus diuji melalui penelitian. Dakwaan adalah tuntutan awal yang harus dibuktikan melalui sidang pengadilan. Keduanya adalah pernyataan awal yang memerlukan proses verifikasi.",
     "analisis_opsi": {
-      "A": "Salah. Wilayah administratif bukan kategori ekosistem atau area fungsional produksi.",
-      "B": "Salah. Bentang alam terlalu umum dan tidak menunjukkan fungsi budidaya.",
-      "C": "Benar. Sawah dan tambak adalah dua contoh area budidaya.",
-      "D": "Salah. Tempat aktivitas terlalu umum.",
-      "E": "Salah. Kendaraan bermotor bukan kategori area."
+      "A": "JEBAKAN HASIL. Vonis adalah HASIL akhir sidang, bukan proses pembuktian.",
+      "B": "Benar. Sidang adalah proses pembuktian dakwaan.",
+      "C": "JEBAKAN HASIL. Hukuman adalah hasil akhir.",
+      "D": "JEBAKAN ELEMEN. Bukti adalah pendukung, bukan proses.",
+      "E": "JEBAKAN OBJEK. Terdakwa adalah subjek yang didakwa."
     }
   },
   {
     "id": 126,
     "level": "Menengah",
-    "soal": "REM : BERHENTI = GAS : ...",
-    "pilihan": ["Cepat", "Maju", "Jalan", "Ngebut", "Melaju"],
-    "kunci": "E",
-    "pola": "Mekanisme kendaraan dan efek yang dihasilkan",
-    "pembahasan": "Rem digunakan untuk membuat kendaraan berhenti. Dengan pola yang sama, gas digunakan untuk membuat kendaraan melaju.",
+    "soal": "TERMOMETER : SUHU = BAROMETER : ...",
+    "pilihan": ["Kelembaban", "Tekanan udara", "Kecepatan angin", "Curah hujan", "Suhu"],
+    "kunci": "B",
+    "pola": "Alat ukur dan besaran spesifik yang diukur",
+    "pembahasan": "Termometer adalah alat untuk mengukur suhu. Barometer adalah alat untuk mengukur tekanan udara. Keduanya adalah instrumen pengukuran dengan besaran spesifik.",
     "analisis_opsi": {
-      "A": "Salah. Cepat adalah kecepatan, bukan efek langsung gas.",
-      "B": "Salah. Maju adalah arah, bukan efek gas.",
-      "C": "Salah. Jalan bisa bermakna tempat atau tindakan, kurang spesifik.",
-      "D": "Salah. Ngebut terlalu ekstrem dan negatif.",
-      "E": "Benar. Gas membuat kendaraan melaju."
+      "A": "JEBAKAN MATI. Kelembaban diukur dengan HIGROMETER, bukan barometer.",
+      "B": "Benar. Barometer mengukur tekanan udara.",
+      "C": "JEBAKAN MATI. Kecepatan angin diukur dengan ANEMOMETER.",
+      "D": "JEBAKAN MATI. Curah hujan diukur dengan OMBROMETER.",
+      "E": "JEBAKAN ALAT. Suhu diukur dengan termometer, bukan barometer."
     }
   },
   {
     "id": 127,
-    "level": "Pemula",
-    "soal": "PENSIL : MENULIS = GUNTING : ...",
-    "pilihan": ["Memotong", "Menjahit", "Menggambar", "Mengukur", "Menempel"],
-    "kunci": "A",
-    "pola": "Alat dan fungsi utamanya",
-    "pembahasan": "Pensil berfungsi untuk menulis. Dengan pola yang sama, gunting berfungsi untuk memotong.",
+    "level": "Mahir",
+    "soal": "FOTOSINTESIS : KARBOHIDRAT = RESPIRASI : ...",
+    "pilihan": ["Oksigen", "Energi", "Karbon dioksida", "Air", "Glukosa"],
+    "kunci": "B",
+    "pola": "Proses biologi dan produk utama yang dihasilkan",
+    "pembahasan": "Fotosintesis adalah proses yang MENGHASILKAN karbohidrat. Respirasi seluler adalah proses yang MENGHASILKAN energi (ATP). Keduanya adalah proses metabolisme dan produk utamanya.",
     "analisis_opsi": {
-      "A": "Benar. Gunting berfungsi untuk memotong.",
-      "B": "Salah. Menjahit adalah fungsi jarum.",
-      "C": "Salah. Menggambar adalah fungsi pensil, bukan gunting.",
-      "D": "Salah. Mengukur adalah fungsi penggaris.",
-      "E": "Salah. Menempel adalah fungsi lem."
+      "A": "JEBAKAN TERBALIK. Oksigen adalah INPUT fotosintesis, bukan produk respirasi.",
+      "B": "Benar. Respirasi menghasilkan energi (ATP).",
+      "C": "JEBAKAN PRODUK SAMPING. CO2 adalah produk samping respirasi, bukan produk utama yang diinginkan sel.",
+      "D": "Salah. Air adalah produk samping.",
+      "E": "JEBAKAN INPUT. Glukosa adalah INPUT respirasi, bukan produk."
     }
   },
   {
     "id": 128,
     "level": "Mahir",
-    "soal": "RESESI : EKONOMI = PANDEMI : ...",
-    "pilihan": ["Wabah", "Sosial", "Kesehatan", "Penyakit", "Global"],
-    "kunci": "C",
-    "pola": "Kondisi krisis dan domain utama yang terdampak",
-    "pembahasan": "Resesi adalah kondisi krisis dalam domain ekonomi. Dengan pola yang sama, pandemi adalah kondisi krisis dalam domain kesehatan.",
+    "soal": "MUTASI : VARIASI GENETIK = EROSI : ...",
+    "pilihan": ["Banjir", "Perubahan bentuk lahan", "Longsor", "Sedimentasi", "Abrasi"],
+    "kunci": "B",
+    "pola": "Proses alami dan dampak langsung pada objek",
+    "pembahasan": "Mutasi adalah proses yang menghasilkan variasi genetik pada DNA. Erosi adalah proses yang menghasilkan perubahan bentuk lahan pada permukaan bumi. Keduanya adalah proses dan dampak langsungnya.",
     "analisis_opsi": {
-      "A": "Salah. Wabah adalah sinonim pandemi, bukan domain.",
-      "B": "Salah. Sosial adalah domain lain yang terdampak, tetapi bukan domain utama.",
-      "C": "Benar. Pandemi adalah krisis kesehatan.",
-      "D": "Salah. Penyakit adalah objek, bukan domain.",
-      "E": "Salah. Global adalah cakupan, bukan domain."
+      "A": "JEBAKAN SEKUNDER. Banjir adalah akibat TIDAK LANGSUNG dari erosi.",
+      "B": "Benar. Erosi secara langsung mengubah bentuk lahan.",
+      "C": "JEBAKAN SEKUNDER. Longsor adalah jenis erosi, bukan dampaknya.",
+      "D": "JEBAKAN PROSES LAIN. Sedimentasi adalah proses pengendapan, kebalikan erosi.",
+      "E": "JEBAKAN JENIS. Abrasi adalah jenis erosi oleh air laut."
     }
   },
   {
     "id": 129,
     "level": "Menengah",
-    "soal": "BINTANG : LANGIT = IKAN : ...",
-    "pilihan": ["Laut", "Air", "Sungai", "Kolam", "Akuarium"],
+    "soal": "STIMULUS : RESPON = RANGSANGAN : ...",
+    "pilihan": ["Indikator", "Reaksi", "Gejala", "Efek", "Sinyal"],
     "kunci": "B",
-    "pola": "Objek dan medium alami",
-    "pembahasan": "Bintang berada di langit sebagai medium alaminya. Dengan pola yang sama, ikan berada di air sebagai medium alaminya.",
+    "pola": "Sinonim kontekstual (stimulus = rangsangan, respon = reaksi)",
+    "pembahasan": "Stimulus bersinonim dengan rangsangan. Respon bersinonim dengan reaksi. Keduanya adalah pasangan sinonim dalam konteks biologi/psikologi.",
     "analisis_opsi": {
-      "A": "Salah. Laut adalah salah satu habitat ikan, tetapi terlalu spesifik.",
-      "B": "Benar. Air adalah medium alami ikan.",
-      "C": "Salah. Sungai adalah habitat spesifik.",
-      "D": "Salah. Kolam adalah habitat buatan.",
-      "E": "Salah. Akuarium adalah habitat buatan."
+      "A": "JEBAKAN HALUS. Indikator adalah penanda, bukan respons.",
+      "B": "Benar. Reaksi adalah sinonim respon.",
+      "C": "JEBAKAN GEJALA. Gejala adalah manifestasi, bukan respons langsung.",
+      "D": "JEBAKAN HASIL. Efek adalah hasil akhir, bukan respons langsung.",
+      "E": "JEBAKAN INPUT. Sinyal mirip stimulus, bukan respon."
     }
   },
   {
     "id": 130,
-    "level": "Pemula",
-    "soal": "BAJU : TUBUH = TOPI : ...",
-    "pilihan": ["Wajah", "Tangan", "Kaki", "Kepala", "Leher"],
-    "kunci": "D",
-    "pola": "Pakaian dan bagian tubuh yang dilindungi",
-    "pembahasan": "Baju melindungi tubuh. Dengan pola yang sama, topi melindungi kepala.",
+    "level": "Mahir",
+    "soal": "SIMBIOSIS : EKOSISTEM = KONTRAK : ...",
+    "pilihan": ["Bisnis", "Hukum", "Perusahaan", "Negara", "Masyarakat"],
+    "kunci": "B",
+    "pola": "Hubungan/kesepakatan dan sistem formal yang mengaturnya",
+    "pembahasan": "Simbiosis adalah hubungan antar organisme yang diatur oleh ekosistem. Kontrak adalah kesepakatan antar pihak yang diatur oleh sistem hukum. Keduanya adalah hubungan dan sistem pengaturnya.",
     "analisis_opsi": {
-      "A": "Salah. Wajah tidak dilindungi topi.",
-      "B": "Salah. Tangan dilindungi sarung tangan.",
-      "C": "Salah. Kaki dilindungi sepatu.",
-      "D": "Benar. Topi melindungi kepala.",
-      "E": "Salah. Leher dilindungi syal."
+      "A": "JEBAKAN TERLALU UMUM. Bisnis adalah aktivitas, bukan sistem pengatur.",
+      "B": "Benar. Hukum adalah sistem yang mengatur kontrak.",
+      "C": "JEBAKAN ENTITAS. Perusahaan adalah subjek, bukan sistem pengatur.",
+      "D": "JEBAKAN TERLALU LUAS. Negara adalah entitas politik.",
+      "E": "JEBAKAN TERLALU UMUM. Masyarakat adalah kelompok sosial."
     }
   },
   {
     "id": 131,
-    "level": "Mahir",
-    "soal": "Matahari dan bulan adalah benda langit. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Emas dan perak adalah logam mulia",
-      "Mawar dan melati adalah tanaman hias",
-      "Dokter dan guru adalah profesi mulia",
-      "Pagi dan malam adalah waktu",
-      "Hujan dan angin adalah cuaca"
-    ],
-    "kunci": "A",
-    "pola": "Analogi kalimat dua contoh dalam satu kategori material",
-    "pembahasan": "Matahari dan bulan adalah dua contoh benda langit. Dengan pola yang sama, emas dan perak adalah dua contoh logam mulia.",
+    "level": "Menengah",
+    "soal": "DRAFT : FINAL = SKETSA : ...",
+    "pilihan": ["Gambar", "Lukisan", "Kanvas", "Cat", "Pensil"],
+    "kunci": "B",
+    "pola": "Tahap awal perancangan dan hasil akhir karya",
+    "pembahasan": "Draft adalah rancangan awal yang akan disempurnakan menjadi versi final. Sketsa adalah rancangan awal yang akan disempurnakan menjadi lukisan. Keduanya adalah tahap awal dan hasil akhir.",
     "analisis_opsi": {
-      "A": "Benar. Emas dan perak adalah dua contoh logam mulia.",
-      "B": "Salah. Tanaman hias adalah organisme, bukan kategori material.",
-      "C": "Salah. Profesi mulia adalah orang, bukan benda.",
-      "D": "Salah. Waktu adalah konsep abstrak.",
-      "E": "Salah. Cuaca adalah fenomena, bukan benda."
+      "A": "JEBAKAN TERLALU UMUM. Gambar adalah hasil umum, sketsa bisa menjadi gambar tapi lukisan lebih spesifik sebagai karya seni.",
+      "B": "Benar. Lukisan adalah hasil akhir dari sketsa.",
+      "C": "JEBAKAN MEDIA. Kanvas adalah media, bukan hasil.",
+      "D": "Salah. Cat adalah bahan.",
+      "E": "Salah. Pensil adalah alat."
     }
   },
   {
     "id": 132,
-    "level": "Menengah",
-    "soal": "API : PANAS = ANGIN : ...",
-    "pilihan": ["Dingin", "Sejuk", "Kencang", "Ribut", "Hembus"],
+    "level": "Mahir",
+    "soal": "ANESTESI : RASA SAKIT = ANTIHISTAMIN : ...",
+    "pilihan": ["Inflamasi", "Alergi", "Demam", "Batuk", "Infeksi"],
     "kunci": "B",
-    "pola": "Elemen dan sensasi yang dihasilkan",
-    "pembahasan": "Api menghasilkan sensasi panas. Dengan pola yang sama, angin menghasilkan sensasi sejuk.",
+    "pola": "Zat penghambat dan respons biologis yang dihambat",
+    "pembahasan": "Anestesi adalah zat yang menghambat rasa sakit. Antihistamin adalah zat yang menghambat reaksi alergi. Keduanya adalah zat dan respons yang diblokir.",
     "analisis_opsi": {
-      "A": "Salah. Dingin terlalu ekstrem, angin tidak selalu dingin.",
-      "B": "Benar. Angin menghasilkan sensasi sejuk.",
-      "C": "Salah. Kencang adalah kecepatan angin.",
-      "D": "Salah. Ribut adalah suara angin.",
-      "E": "Salah. Hembus adalah tindakan angin."
+      "A": "JEBAKAN SEKUNDER. Inflamasi bisa dihambat antihistamin tapi BUKAN target utama.",
+      "B": "Benar. Antihistamin secara spesifik menghambat alergi.",
+      "C": "JEBAKAN GEJALA. Demam bukan target antihistamin.",
+      "D": "JEBAKAN GEJALA. Batuk bukan target antihistamin.",
+      "E": "JEBAKAN PENYEBAB. Infeksi disebabkan bakteri/virus, bukan histamin."
     }
   },
   {
     "id": 133,
-    "level": "Pemula",
-    "soal": "ROTI : GANDUM = KEJU : ...",
-    "pilihan": ["Kedelai", "Telur", "Susu", "Mentega", "Krim"],
-    "kunci": "C",
-    "pola": "Produk dan bahan baku utama",
-    "pembahasan": "Roti terbuat dari gandum. Dengan pola yang sama, keju terbuat dari susu.",
+    "level": "Mahir",
+    "soal": "KROMOSOM : DNA = NEURON : ...",
+    "pilihan": ["Otak", "Akson", "Sinapsis", "Sistem saraf", "Sel"],
+    "kunci": "B",
+    "pola": "Struktur biologis dan komponen utamanya",
+    "pembahasan": "Kromosom adalah struktur sel yang mengandung DNA sebagai komponen utamanya. Neuron adalah sel saraf yang memiliki akson sebagai komponen utamanya (penghantar impuls). Keduanya adalah struktur dan komponen esensialnya.",
     "analisis_opsi": {
-      "A": "Salah. Kedelai adalah bahan tahu atau tempe.",
-      "B": "Salah. Telur bukan bahan baku keju.",
-      "C": "Benar. Keju terbuat dari susu.",
-      "D": "Salah. Mentega adalah produk susu lain.",
-      "E": "Salah. Krim adalah produk susu lain."
+      "A": "JEBAKAN ORGAN. Otak adalah organ yang tersusun dari neuron, bukan komponen neuron.",
+      "B": "Benar. Akson adalah komponen utama neuron.",
+      "C": "JEBAKAN PENGHUBUNG. Sinapsis adalah celah antar neuron.",
+      "D": "JEBAKAN SISTEM. Sistem saraf adalah sistem yang tersusun dari neuron.",
+      "E": "JEBAKAN KATEGORI. Sel adalah kategori neuron."
     }
   },
   {
     "id": 134,
     "level": "Mahir",
-    "soal": "RENCANA : PELAKSANAAN = ANGGARAN : ...",
-    "pilihan": ["Realisasi", "Laporan", "Evaluasi", "Target", "Program"],
-    "kunci": "A",
-    "pola": "Tahap perencanaan dan tahap pelaksanaan",
-    "pembahasan": "Rencana adalah tahap sebelum pelaksanaan. Dengan pola yang sama, anggaran adalah tahap sebelum realisasi.",
+    "soal": "FASE PADAT : SUBLIMASI = FASE CAIR : ...",
+    "pilihan": ["Kondensasi", "Penguapan", "Pembekuan", "Pencairan", "Deposisi"],
+    "kunci": "B",
+    "pola": "Fase materi dan proses perubahan fase dari fase tersebut",
+    "pembahasan": "Sublimasi adalah perubahan dari fase PADAT langsung ke gas. Penguapan adalah perubahan dari fase CAIR ke gas. Keduanya adalah fase awal dan proses perubahan fasenya.",
     "analisis_opsi": {
-      "A": "Benar. Anggaran diikuti oleh realisasi.",
-      "B": "Salah. Laporan adalah hasil akhir.",
-      "C": "Salah. Evaluasi adalah tahap penilaian.",
-      "D": "Salah. Target adalah sasaran.",
-      "E": "Salah. Program adalah rencana."
+      "A": "JEBAKAN ARAH TERBALIK. Kondensasi adalah perubahan GAS ke CAIR.",
+      "B": "Benar. Penguapan adalah perubahan CAIR ke GAS.",
+      "C": "JEBAKAN ARAH TERBALIK. Pembekuan adalah perubahan CAIR ke PADAT.",
+      "D": "JEBAKAN ARAH TERBALIK. Pencairan adalah perubahan PADAT ke CAIR.",
+      "E": "JEBAKAN ARAH TERBALIK. Deposisi adalah perubahan GAS ke PADAT."
     }
   },
   {
     "id": 135,
     "level": "Menengah",
-    "soal": "HUJAN : AIR = KEMARAU : ...",
-    "pilihan": ["Panas", "Kering", "Gersang", "Debu", "Terik"],
-    "kunci": "B",
-    "pola": "Fenomena dan kondisi yang dihasilkan",
-    "pembahasan": "Hujan menghasilkan air. Dengan pola yang sama, kemarau menghasilkan kondisi kering.",
+    "soal": "EKSPERIMEN : DATA = SURVEI : ...",
+    "pilihan": ["Sampel", "Kuesioner", "Informasi", "Statistik", "Penelitian"],
+    "kunci": "C",
+    "pola": "Metode pengumpulan dan output yang dihasilkan",
+    "pembahasan": "Eksperimen menghasilkan DATA sebagai output utamanya. Survei menghasilkan INFORMASI sebagai output utamanya. Keduanya adalah metode dan outputnya.",
     "analisis_opsi": {
-      "A": "Salah. Panas adalah suhu, bukan kondisi utama kemarau.",
-      "B": "Benar. Kemarau menghasilkan kondisi kering.",
-      "C": "Salah. Gersang terlalu ekstrem.",
-      "D": "Salah. Debu adalah partikel.",
-      "E": "Salah. Terik adalah panas terik."
+      "A": "JEBAKAN SUBJEK. Sampel adalah subjek survei, bukan output.",
+      "B": "JEBAKAN ALAT. Kuesioner adalah alat survei.",
+      "C": "Benar. Informasi adalah output survei.",
+      "D": "JEBAKAN PROSES. Statistik adalah pengolahan data.",
+      "E": "JEBAKAN KATEGORI. Penelitian adalah kategori umum."
     }
   },
   {
     "id": 136,
-    "level": "Pemula",
-    "soal": "DAGING : AYAM = TELUR : ...",
-    "pilihan": ["Sapi", "Burung", "Ikan", "Bebek", "Kambing"],
-    "kunci": "D",
-    "pola": "Produk hewani dan hewan penghasil",
-    "pembahasan": "Daging dihasilkan oleh ayam. Dengan pola yang sama, telur dihasilkan oleh bebek.",
+    "level": "Mahir",
+    "soal": "VAKSIN : IMUNITAS = ANTIBIOTIK : ...",
+    "pilihan": ["Bakteri", "Infeksi", "Kekebalan", "Sembuh", "Obat"],
+    "kunci": "B",
+    "pola": "Zat medis dan efek protektif yang dihasilkan",
+    "pembahasan": "Vaksin menghasilkan IMUNITAS (kekebalan) sebagai efek protektif. Antibiotik menghasilkan kemampuan tubuh melawan INFEKSI sebagai efek protektif. Keduanya adalah zat dan efek protektifnya.",
     "analisis_opsi": {
-      "A": "Salah. Sapi menghasilkan daging atau susu.",
-      "B": "Salah. Burung menghasilkan telur, tetapi bebek lebih umum sebagai penghasil telur konsumsi.",
-      "C": "Salah. Ikan bukan penghasil telur konsumsi umum.",
-      "D": "Benar. Bebek adalah penghasil telur.",
-      "E": "Salah. Kambing menghasilkan daging atau susu."
+      "A": "JEBAKAN TARGET. Bakteri adalah TARGET antibiotik, bukan efek protektif.",
+      "B": "Benar. Antibiotik melindungi tubuh dari infeksi.",
+      "C": "JEBAKAN SINONIM. Kekebalan mirip imunitas, tapi antibiotik tidak menghasilkan kekebalan.",
+      "D": "JEBAKAN HASIL AKHIR. Sembuh adalah hasil akhir, bukan efek protektif spesifik.",
+      "E": "Salah. Obat adalah kategori umum."
     }
   },
   {
     "id": 137,
     "level": "Mahir",
-    "soal": "Guru dan dosen adalah tenaga pendidik. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Dokter dan apoteker adalah tenaga medis",
-      "Perawat dan bidan adalah tenaga kesehatan",
-      "Polisi dan tentara adalah aparat keamanan",
-      "Hakim dan jaksa adalah penegak hukum",
-      "Pilot dan masinis adalah pengemudi transportasi"
-    ],
+    "soal": "KODE ETIK : PROFESI = KONSTITUSI : ...",
+    "pilihan": ["Hukum", "Negara", "Rakyat", "Presiden", "Mahkamah Konstitusi"],
     "kunci": "B",
-    "pola": "Analogi kalimat dua profesi dalam satu kategori tenaga",
-    "pembahasan": "Guru dan dosen adalah dua jenis tenaga pendidik. Dengan pola yang sama, perawat dan bidan adalah dua jenis tenaga kesehatan.",
+    "pola": "Aturan dasar tertinggi dan sistem/entitas yang diaturnya",
+    "pembahasan": "Kode etik adalah aturan dasar tertinggi bagi suatu profesi. Konstitusi adalah aturan dasar tertinggi bagi suatu negara. Keduanya adalah dokumen fundamental dan entitas yang diaturnya.",
     "analisis_opsi": {
-      "A": "Salah. Dokter dan apoteker adalah tenaga medis, tetapi peran mereka berbeda secara signifikan.",
-      "B": "Benar. Perawat dan bidan adalah dua jenis tenaga kesehatan.",
-      "C": "Salah. Polisi dan tentara adalah aparat keamanan.",
-      "D": "Salah. Hakim dan jaksa adalah penegak hukum.",
-      "E": "Salah. Pilot dan masinis adalah pengemudi transportasi."
+      "A": "JEBAKAN TERLALU UMUM. Hukum adalah sistem, konstitusi adalah bagian darinya.",
+      "B": "Benar. Konstitusi mengatur negara.",
+      "C": "JEBAKAN SUBJEK. Rakyat adalah warga negara.",
+      "D": "JEBAKAN PEMIMPIN. Presiden adalah kepala negara.",
+      "E": "JEBAKAN PENJAGA. MK adalah lembaga pengawal konstitusi."
     }
   },
   {
     "id": 138,
-    "level": "Menengah",
-    "soal": "KANGGURU : MELOMPAT = ULAR : ...",
-    "pilihan": ["Melata", "Menjalar", "Merambat", "Meluncur", "Merayap"],
-    "kunci": "E",
-    "pola": "Hewan dan cara bergerak khas",
-    "pembahasan": "Kangguru bergerak dengan cara melompat. Dengan pola yang sama, ular bergerak dengan cara merayap.",
+    "level": "Mahir",
+    "soal": "HORMON : KELENJAR = ENZIM : ...",
+    "pilihan": ["Lambung", "Sel", "Hati", "Pankreas", "Darah"],
+    "kunci": "B",
+    "pola": "Zat aktif biologis dan unit produksi terkecilnya",
+    "pembahasan": "Hormon diproduksi oleh KELENJAR (organ spesifik). Enzim diproduksi oleh SEL (unit terkecil). Keduanya adalah zat aktif dan unit yang memproduksinya.",
     "analisis_opsi": {
-      "A": "Salah. Melata adalah kategori hewan, bukan cara bergerak spesifik.",
-      "B": "Salah. Menjalar mirip, tetapi merayap lebih tepat untuk ular.",
-      "C": "Salah. Merambat biasanya untuk tanaman.",
-      "D": "Salah. Meluncur untuk benda.",
-      "E": "Benar. Ular bergerak dengan merayap."
+      "A": "JEBAKAN ORGAN SPESIFIK. Lambung hanya memproduksi beberapa enzim.",
+      "B": "Benar. Enzim diproduksi oleh sel (semua sel hidup memproduksi enzim).",
+      "C": "JEBAKAN ORGAN SPESIFIK. Hati memproduksi beberapa enzim.",
+      "D": "JEBAKAN ORGAN SPESIFIK. Pankreas memproduksi beberapa enzim.",
+      "E": "JEBAKAN MEDIUM. Darah adalah medium pengangkut."
     }
   },
   {
     "id": 139,
-    "level": "Pemula",
-    "soal": "PINTU : MASUK = JENDELA : ...",
-    "pilihan": ["Keluar", "Cahaya", "Lihat", "Udara", "Kaca"],
-    "kunci": "D",
-    "pola": "Bukaan dan fungsi utama",
-    "pembahasan": "Pintu berfungsi untuk masuk dan keluar orang. Dengan pola yang sama, jendela berfungsi untuk masuknya udara.",
+    "level": "Mahir",
+    "soal": "GELOMBANG : FREKUENSI = CAHAYA : ...",
+    "pilihan": ["Kecepatan", "Panjang gelombang", "Intensitas", "Warna", "Bayangan"],
+    "kunci": "B",
+    "pola": "Fenomena fisika dan parameter pengukurnya",
+    "pembahasan": "Frekuensi adalah parameter utama untuk mengukur/mendeskripsikan gelombang. Panjang gelombang adalah parameter utama untuk mendeskripsikan cahaya (selain frekuensi). Keduanya adalah fenomena dan parameter karakteristiknya.",
     "analisis_opsi": {
-      "A": "Salah. Keluar adalah lawan masuk, bukan fungsi jendela.",
-      "B": "Salah. Cahaya juga fungsi jendela, tetapi udara lebih utama sebagai ventilasi.",
-      "C": "Salah. Lihat adalah tindakan.",
-      "D": "Benar. Jendela berfungsi untuk masuknya udara.",
-      "E": "Salah. Kaca adalah material jendela."
+      "A": "JEBAKAN KONSTAN. Kecepatan cahaya konstan di vakum, bukan parameter variabel.",
+      "B": "Benar. Panjang gelombang adalah parameter cahaya.",
+      "C": "JEBAKAN HALUS. Intensitas bisa parameter, tapi panjang gelombang lebih fundamental.",
+      "D": "JEBAKAN HASIL. Warna adalah hasil persepsi panjang gelombang.",
+      "E": "Salah. Bayangan adalah efek."
     }
   },
   {
     "id": 140,
-    "level": "Mahir",
-    "soal": "MITIGASI : BENCANA = PREVENSI : ...",
-    "pilihan": ["Risiko", "Bahaya", "Ancaman", "Kerugian", "Penyakit"],
-    "kunci": "E",
-    "pola": "Upaya penanganan dan objek yang ditangani",
-    "pembahasan": "Mitigasi adalah upaya untuk mengurangi dampak bencana. Dengan pola yang sama, prevensi adalah upaya untuk mencegah penyakit.",
+    "level": "Menengah",
+    "soal": "EMBRI0 : JANIN = BERUDU : ...",
+    "pilihan": ["Telur", "Katak", "Katak muda", "Dewasa", "Amfibi"],
+    "kunci": "C",
+    "pola": "Tahap perkembangan dan tahap selanjutnya yang lebih spesifik",
+    "pembahasan": "Embrio berkembang menjadi janin (tahap selanjutnya dalam rahim). Berudu berkembang menjadi katak muda (tahap selanjutnya dengan kaki mulai tumbuh). Keduanya adalah tahap awal dan tahap transisi selanjutnya.",
     "analisis_opsi": {
-      "A": "Salah. Risiko terlalu umum.",
-      "B": "Salah. Bahaya mirip dengan bencana.",
-      "C": "Salah. Ancaman mirip dengan bencana.",
-      "D": "Salah. Kerugian adalah hasil.",
-      "E": "Benar. Prevensi adalah upaya mencegah penyakit."
+      "A": "JEBAKAN ARAH TERBALIK. Telur adalah tahap SEBELUM berudu.",
+      "B": "JEBAKAN TERLALU JAUH. Katak adalah tahap akhir, bukan tahap transisi.",
+      "C": "Benar. Katak muda adalah tahap transisi berudu.",
+      "D": "JEBAKAN TERLALU JAUH. Dewasa terlalu umum.",
+      "E": "Salah. Amfibi adalah kategori."
     }
   },
   {
     "id": 141,
-    "level": "Menengah",
-    "soal": "MENIT : JAM = HARI : ...",
-    "pilihan": ["Detik", "Bulan", "Minggu", "Tahun", "Abad"],
-    "kunci": "C",
-    "pola": "Satuan waktu kecil ke satuan waktu lebih besar",
-    "pembahasan": "Menit adalah satuan waktu yang lebih kecil dari jam. Dengan pola yang sama, hari adalah satuan waktu yang lebih kecil dari minggu.",
+    "level": "Mahir",
+    "soal": "STERIL : BAKTERI = KERING : ...",
+    "pilihan": ["Panas", "Air", "Api", "Matahari", "Angin"],
+    "kunci": "B",
+    "pola": "Kondisi dan ketiadaan sesuatu yang seharusnya ada",
+    "pembahasan": "Steril adalah kondisi TIDAK ADA bakteri. Kering adalah kondisi TIDAK ADA air. Keduanya adalah kondisi ketiadaan sesuatu yang biasanya ada.",
     "analisis_opsi": {
-      "A": "Salah. Detik lebih kecil dari menit.",
-      "B": "Salah. Bulan terlalu besar.",
-      "C": "Benar. Hari lebih kecil dari minggu.",
-      "D": "Salah. Tahun terlalu besar.",
-      "E": "Salah. Abad terlalu besar."
+      "A": "JEBAKAN PENYEBAB. Panas adalah penyebab kering, bukan yang tidak ada.",
+      "B": "Benar. Kering berarti tidak ada air.",
+      "C": "JEBAKAN PENYEBAB. Api bisa menyebabkan kering.",
+      "D": "JEBAKAN PENYEBAB. Matahari bisa menyebabkan kering.",
+      "E": "JEBAKAN PENYEBAB. Angin bisa menyebabkan kering."
     }
   },
   {
     "id": 142,
-    "level": "Pemula",
-    "soal": "LEHER : KALUNG = PERGELANGAN TANGAN : ...",
-    "pilihan": ["Jam", "Cincin", "Anting", "Gelang", "Bros"],
-    "kunci": "D",
-    "pola": "Bagian tubuh dan aksesoris yang dikenakan",
-    "pembahasan": "Kalung dikenakan di leher. Dengan pola yang sama, gelang dikenakan di pergelangan tangan.",
+    "level": "Mahir",
+    "soal": "PRESKRIPSI : DOKTER = FATWA : ...",
+    "pilihan": ["Hakim", "Ulama", "Jaksa", "Presiden", "Mahkamah"],
+    "kunci": "B",
+    "pola": "Keputusan/anjuran resmi dan otoritas keagamaan/profesional yang mengeluarkannya",
+    "pembahasan": "Preskripsi adalah anjuran resmi dari dokter. Fatwa adalah anjuran/keputusan resmi dari ulama (otoritas keagamaan). Keduanya adalah produk otoritas dan pemberi otoritasnya.",
     "analisis_opsi": {
-      "A": "Salah. Jam bisa dikenakan di pergelangan tangan, tetapi gelang lebih umum sebagai aksesoris.",
-      "B": "Salah. Cincin dikenakan di jari.",
-      "C": "Salah. Anting dikenakan di telinga.",
-      "D": "Benar. Gelang dikenakan di pergelangan tangan.",
-      "E": "Salah. Bros dikenakan di pakaian."
+      "A": "JEBAKAN MATI. Hakim mengeluarkan VONIS, bukan fatwa.",
+      "B": "Benar. Ulama mengeluarkan fatwa.",
+      "C": "JEBAKAN MATI. Jaksa mengeluarkan DAKWAAN.",
+      "D": "JEBAKAN POLITIK. Presiden mengeluarkan KEPUTUSAN PRESIDEN.",
+      "E": "JEBAKAN LEMBAGA. Mahkamah adalah lembaga, bukan individu."
     }
   },
   {
     "id": 143,
     "level": "Mahir",
-    "soal": "KOLABORASI : SINERGI = KOMPETISI : ...",
-    "pilihan": ["Prestasi", "Juara", "Kalah", "Menang", "Rivalitas"],
-    "kunci": "E",
-    "pola": "Proses dan dinamika yang dihasilkan",
-    "pembahasan": "Kolaborasi menghasilkan sinergi. Dengan pola yang sama, kompetisi menghasilkan rivalitas.",
+    "soal": "SINTESIS : ANALISIS = PENYATUAN : ...",
+    "pilihan": ["Penguraian", "Pemisahan", "Penghancuran", "Peleburan", "Penggabungan"],
+    "kunci": "B",
+    "pola": "Proses dan lawannya (sinonim dari antonim)",
+    "pembahasan": "Sintesis (penggabungan) berlawanan dengan analisis (penguraian). Penyatuan berlawanan dengan pemisahan. Keduanya adalah pasangan antonim.",
     "analisis_opsi": {
-      "A": "Salah. Prestasi adalah hasil positif.",
-      "B": "Salah. Juara adalah pemenang.",
-      "C": "Salah. Kalah adalah hasil negatif.",
-      "D": "Salah. Menang adalah hasil.",
-      "E": "Benar. Kompetisi menghasilkan rivalitas."
+      "A": "JEBAKAN HALUS. Penguraian mirip analisis tapi lebih ke kimia/fisika.",
+      "B": "Benar. Pemisahan adalah lawan penyatuan.",
+      "C": "JEBAKAN EKSTREM. Penghancuran terlalu destruktif.",
+      "D": "JEBAKAN SINONIM. Peleburan mirip penyatuan.",
+      "E": "JEBAKAN SINONIM. Penggabungan adalah sinonim penyatuan."
     }
   },
   {
     "id": 144,
-    "level": "Menengah",
-    "soal": "KULIT : MERABA = HIDUNG : ...",
-    "pilihan": ["Bernapas", "Merasa", "Mencium", "Mendengar", "Melihat"],
-    "kunci": "C",
-    "pola": "Organ indera dan kemampuan spesifiknya",
-    "pembahasan": "Kulit berfungsi untuk meraba. Dengan pola yang sama, hidung berfungsi untuk mencium.",
+    "level": "Mahir",
+    "soal": "ADAPTASI : LINGKUNGAN = AKOMODASI : ...",
+    "pilihan": ["Mata", "Budaya", "Situasi", "Perubahan", "Kebutuhan"],
+    "kunci": "B",
+    "pola": "Penyesuaian dan sistem/konteks yang disesuaikan",
+    "pembahasan": "Adaptasi adalah penyesuaian terhadap lingkungan (biologis). Akomodasi adalah penyesuaian terhadap budaya/situasi sosial. Keduanya adalah proses penyesuaian dan konteksnya.",
     "analisis_opsi": {
-      "A": "Salah. Bernapas adalah fungsi umum hidung.",
-      "B": "Salah. Merasa adalah fungsi lidah.",
-      "C": "Benar. Mencium adalah fungsi hidung.",
-      "D": "Salah. Mendengar adalah fungsi telinga.",
-      "E": "Salah. Melihat adalah fungsi mata."
+      "A": "JEBAKAN SPESIFIK. Akomodasi mata adalah adaptasi lensa, terlalu spesifik.",
+      "B": "Benar. Akomodasi budaya adalah penyesuaian sosial.",
+      "C": "JEBAKAN HALUS. Situasi terlalu umum.",
+      "D": "JEBAKAN ABSTRAK. Perubahan adalah hasil, bukan konteks.",
+      "E": "JEBAKAN ABSTRAK. Kebutuhan adalah pemicu, bukan konteks."
     }
   },
   {
     "id": 145,
-    "level": "Pemula",
-    "soal": "KAPAL : AIR = PESAWAT : ...",
-    "pilihan": ["Langit", "Bandara", "Udara", "Awan", "Angkasa"],
-    "kunci": "C",
-    "pola": "Kendaraan dan medium bergerak",
-    "pembahasan": "Kapal bergerak di air. Dengan pola yang sama, pesawat bergerak di udara.",
+    "level": "Mahir",
+    "soal": "DOKTER : RESEP : APOTEK = ... : ... : ...",
+    "pilihan": [
+      "Guru : Ijazah : Sekolah",
+      "Hakim : Vonis : Pengadilan",
+      "Koki : Resep : Restoran",
+      "Polisi : Tilang : Kantor polisi",
+      "Arsitek : Denah : Kontraktor"
+    ],
+    "kunci": "B",
+    "pola": "Analogi 3 kata: Profesi : Dokumen keputusan : Tempat eksekusi dokumen",
+    "pembahasan": "Dokter mengeluarkan RESEP (dokumen keputusan) yang dieksekusi di APOTEK. Hakim mengeluarkan VONIS (dokumen keputusan) yang dieksekusi di PENGADILAN. Keduanya adalah profesional, dokumen keputusan, dan tempat eksekusi.",
     "analisis_opsi": {
-      "A": "Salah. Langit mirip, tetapi udara lebih tepat sebagai medium.",
-      "B": "Salah. Bandara adalah tempat pesawat.",
-      "C": "Benar. Pesawat bergerak di udara.",
-      "D": "Salah. Awan adalah bagian langit.",
-      "E": "Salah. Angkasa adalah luar ruang."
+      "A": "JEBAKAN HALUS. Ijazah bukan dokumen keputusan yang langsung dieksekusi.",
+      "B": "Benar. Hakim : Vonis : Pengadilan.",
+      "C": "JEBAKAN HALUS. Resep koki bukan dokumen keputusan formal.",
+      "D": "JEBAKAN HALUS. Tilang dieksekusi di tempat kejadian, bukan kantor polisi.",
+      "E": "JEBAKAN HALUS. Kontraktor bukan tempat eksekusi."
     }
   },
   {
     "id": 146,
     "level": "Mahir",
-    "soal": "Dokter dan perawat bekerja di rumah sakit. Hubungan ini sama dengan ...",
+    "soal": "AIR : BEKU : ES = ... : ... : ...",
     "pilihan": [
-      "Guru dan siswa belajar di sekolah",
-      "Pilot dan pramugari bertugas di pesawat",
-      "Hakim dan pengacara bersidang di pengadilan",
-      "Pedagang dan pembeli bertransaksi di pasar",
-      "Koki dan pelayan bekerja di restoran"
+      "Susu : Fermentasi : Keju",
+      "Uap : Kondensasi : Air",
+      "Kayu : Pembakaran : Abu",
+      "Besi : Pemanasan : Cair",
+      "Awan : Pendinginan : Hujan"
     ],
-    "kunci": "E",
-    "pola": "Analogi kalimat dua profesi dan tempat kerja",
-    "pembahasan": "Dokter dan perawat adalah dua profesi yang bekerja bersama di rumah sakit. Dengan pola yang sama, koki dan pelayan adalah dua profesi yang bekerja bersama di restoran.",
+    "kunci": "B",
+    "pola": "Analogi 3 kata: Zat : Proses perubahan : Hasil perubahan",
+    "pembahasan": "AIR (zat) mengalami BEKU (proses) menjadi ES (hasil). UAP (zat) mengalami KONDENSASI (proses) menjadi AIR (hasil). Keduanya adalah zat, proses perubahan fase, dan hasil perubahan.",
     "analisis_opsi": {
-      "A": "Salah. Siswa bukan pekerja.",
-      "B": "Salah. Pesawat adalah kendaraan, bukan tempat kerja tetap.",
-      "C": "Salah. Pengadilan adalah tempat hukum.",
-      "D": "Salah. Pasar adalah tempat transaksi.",
-      "E": "Benar. Koki dan pelayan bekerja di restoran."
+      "A": "JEBAKAN KIMIA. Fermentasi adalah proses kimia/biologi, bukan perubahan fase fisika.",
+      "B": "Benar. Uap : Kondensasi : Air (perubahan fase fisika).",
+      "C": "JEBAKAN KIMIA. Pembakaran adalah reaksi kimia.",
+      "D": "JEBAKAN ARAH. Pemanasan besi menghasilkan cair, tapi ini perubahan PADAT ke CAIR (kebalikan arah dari AIR:BEKU:ES).",
+      "E": "JEBAKAN METEOROLOGI. Awan bukan zat murni."
     }
   },
   {
     "id": 147,
-    "level": "Menengah",
-    "soal": "SALJU : PUTIH = ARANG : ...",
-    "pilihan": ["Gelap", "Abu", "Keras", "Hitam", "Dingin"],
-    "kunci": "D",
-    "pola": "Benda dan warna khasnya",
-    "pembahasan": "Salju berwarna putih. Dengan pola yang sama, arang berwarna hitam.",
+    "level": "Mahir",
+    "soal": "Resep dokter hanya dapat ditebus di apotek yang memiliki izin resmi. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "KTP hanya dapat dibuat di kantor kelurahan",
+      "Ijazah hanya dapat dikeluarkan oleh lembaga pendidikan yang terakreditasi",
+      "SIM hanya dapat diperoleh di kantor polisi",
+      "Paspor hanya dapat dibuat di kantor imigrasi",
+      "Sertifikat tanah hanya dapat diterbitkan oleh BPN"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat: Dokumen : Tempat : Syarat legalitas ganda",
+    "pembahasan": "Resep dokter hanya dapat ditebus di apotek yang memiliki izin resmi (syarat legalitas ganda: dokumen dari dokter + tempat berizin). Ijazah hanya dapat dikeluarkan oleh lembaga pendidikan yang terakreditasi (syarat legalitas ganda: proses pendidikan + lembaga terakreditasi).",
     "analisis_opsi": {
-      "A": "Salah. Gelap terlalu umum.",
-      "B": "Salah. Abu adalah warna lain.",
-      "C": "Salah. Keras adalah sifat fisik.",
-      "D": "Benar. Arang berwarna hitam.",
-      "E": "Salah. Dingin adalah suhu."
+      "A": "JEBAKAN HALUS. KTP hanya memerlukan satu syarat (tempat pembuatan), tidak ada syarat legalitas ganda.",
+      "B": "Benar. Ijazah memerlukan lembaga terakreditasi (syarat ganda).",
+      "C": "JEBAKAN HALUS. SIM hanya memerlukan satu tempat.",
+      "D": "JEBAKAN HALUS. Paspor hanya memerlukan satu tempat.",
+      "E": "JEBAKAN HALUS. Sertifikat tanah hanya memerlukan satu lembaga."
     }
   },
   {
     "id": 148,
-    "level": "Pemula",
-    "soal": "MADU : MANIS = GARAM : ...",
-    "pilihan": ["Pahit", "Asam", "Pedas", "Hambar", "Asin"],
-    "kunci": "E",
-    "pola": "Bahan dan rasa khasnya",
-    "pembahasan": "Madu rasanya manis. Dengan pola yang sama, garam rasanya asin.",
+    "level": "Mahir",
+    "soal": "Enzim amilase mengubah amilum menjadi glukosa dalam proses pencernaan. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Insulin menurunkan gula darah dalam proses metabolisme",
+      "Enzim lipase mengubah lemak menjadi asam lemak dalam proses pencernaan",
+      "Hormon adrenalin meningkatkan detak jantung dalam kondisi darurat",
+      "Antibodi mengikat antigen dalam proses imunitas",
+      "Klorofil menyerap cahaya dalam proses fotosintesis"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat: Enzim : Substrat : Produk : Konteks proses",
+    "pembahasan": "Enzim amilase (enzim spesifik) mengubah amilum (substrat) menjadi glukosa (produk) dalam pencernaan (konteks). Enzim lipase (enzim spesifik) mengubah lemak (substrat) menjadi asam lemak (produk) dalam pencernaan (konteks).",
     "analisis_opsi": {
-      "A": "Salah. Pahit adalah rasa lain.",
-      "B": "Salah. Asam adalah rasa lain.",
-      "C": "Salah. Pedas adalah rasa lain.",
-      "D": "Salah. Hambar adalah tidak berasa.",
-      "E": "Benar. Garam rasanya asin."
+      "A": "JEBAKAN MATI. Insulin adalah HORMON, bukan enzim.",
+      "B": "Benar. Enzim lipase : Lemak : Asam lemak : Pencernaan.",
+      "C": "JEBAKAN MATI. Adrenalin adalah HORMON.",
+      "D": "JEBAKAN PROTEIN. Antibodi adalah protein imun, bukan enzim pencernaan.",
+      "E": "JEBAKAN PIGMEN. Klorofil adalah pigmen, bukan enzim."
     }
   },
   {
     "id": 149,
     "level": "Mahir",
-    "soal": "ADAPTASI : BERTAHAN = INOVASI : ...",
-    "pilihan": ["Bersaing", "Berubah", "Berhasil", "Berkembang", "Bertumbuh"],
-    "kunci": "D",
-    "pola": "Strategi dan tujuan",
-    "pembahasan": "Adaptasi adalah strategi untuk bertahan. Dengan pola yang sama, inovasi adalah strategi untuk berkembang.",
+    "soal": "Sidang paripurna menghasilkan keputusan yang mengikat seluruh anggota dewan. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Rapat kerja menghasilkan laporan yang disampaikan kepada pimpinan",
+      "Musyawarah nasional menghasilkan ketetapan yang mengikat seluruh kader",
+      "Diskusi panel menghasilkan rekomendasi yang disampaikan kepada pemerintah",
+      "Seminar menghasilkan sertifikat yang diberikan kepada peserta",
+      "Lokakarya menghasilkan draf yang akan dibahas kemudian"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat: Forum : Hasil : Cakupan daya ikat",
+    "pembahasan": "Sidang paripurna (forum tertinggi) menghasilkan keputusan yang MENGIKAT SELURUH anggota dewan. Musyawarah nasional (forum tertinggi) menghasilkan ketetapan yang MENGIKAT SELURUH kader. Keduanya adalah forum tertinggi dan hasil yang mengikat seluruh anggota.",
     "analisis_opsi": {
-      "A": "Salah. Bersaing adalah konteks.",
-      "B": "Salah. Berubah adalah cara.",
-      "C": "Salah. Berhasil adalah hasil.",
-      "D": "Benar. Inovasi adalah strategi untuk berkembang.",
-      "E": "Salah. Bertumbuh mirip, tetapi berkembang lebih tepat."
+      "A": "JEBAKAN TIDAK MENGIKAT. Laporan tidak mengikat seluruh anggota.",
+      "B": "Benar. Musyawarah nasional menghasilkan ketetapan yang mengikat seluruh kader.",
+      "C": "JEBAKAN TIDAK MENGIKAT. Rekomendasi tidak mengikat.",
+      "D": "JEBAKAN TIDAK MENGIKAT. Sertifikat tidak mengikat.",
+      "E": "JEBAKAN TIDAK FINAL. Draf belum final dan tidak mengikat."
     }
   },
   {
     "id": 150,
-    "level": "Menengah",
-    "soal": "Padi dan jagung adalah tanaman pangan. Hubungan ini sama dengan ...",
+    "level": "Mahir",
+    "soal": "Vaksin diberikan dalam dosis bertahap agar sistem imun membentuk antibodi secara optimal. Hubungan objek yang setara dengan kalimat di atas adalah...",
     "pilihan": [
-      "Mawar dan melati adalah bunga hias",
-      "Sapi dan ayam adalah hewan ternak",
-      "Emas dan perak adalah logam mulia",
-      "Meja dan kursi adalah perabot rumah",
-      "Buku dan pensil adalah alat tulis"
+      "Pupuk diberikan dalam jumlah banyak agar tanaman tumbuh cepat",
+      "Obat diberikan dalam dosis teratur agar kadar terapeutik dalam darah tercapai",
+      "Air diberikan dalam jumlah banyak agar tubuh terhidrasi",
+      "Suplemen diminum sekali sehari agar praktis",
+      "Antibiotik dihabiskan dalam satu kali minum agar efektif"
     ],
     "kunci": "B",
-    "pola": "Analogi kalimat dua contoh dalam satu kategori produksi",
-    "pembahasan": "Padi dan jagung adalah dua contoh tanaman pangan. Dengan pola yang sama, sapi dan ayam adalah dua contoh hewan ternak.",
+    "pola": "Analogi kalimat: Intervensi : Metode pemberian : Tujuan biologis/farmakologis",
+    "pembahasan": "Vaksin (intervensi) diberikan dalam dosis BERTAHAP (metode) agar sistem imun membentuk antibodi OPTIMAL (tujuan). Obat (intervensi) diberikan dalam dosis TERATUR (metode) agar kadar terapeutik TERCAPAI (tujuan). Keduanya adalah intervensi medis dengan metode pemberian terkontrol dan tujuan spesifik.",
     "analisis_opsi": {
-      "A": "Salah. Bunga hias bukan kategori produksi pangan.",
-      "B": "Benar. Sapi dan ayam adalah dua contoh hewan ternak.",
-      "C": "Salah. Logam mulia bukan kategori produksi pangan.",
-      "D": "Salah. Perabot rumah bukan kategori produksi.",
-      "E": "Salah. Alat tulis bukan kategori produksi."
+      "A": "JEBAKAN JUMLAH BANYAK. Jumlah banyak BUKAN dosis bertahap.",
+      "B": "Benar. Obat : Dosis teratur : Kadar terapeutik tercapai.",
+      "C": "JEBAKAN JUMLAH BANYAK. Jumlah banyak bukan dosis terkontrol.",
+      "D": "JEBAKAN SEKALI. Sekali sehari bukan bertahap.",
+      "E": "JEBAKAN SALAH MEDIS. Antibiotik harus dihabiskan tapi bukan sekali minum."
     }
   }
 ]

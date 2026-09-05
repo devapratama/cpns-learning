@@ -1,518 +1,518 @@
 [
   {
     "id": 31,
-    "level": "Pemula",
-    "soal": "KEMARAU : PANAS = GUNUNG : ...",
-    "pilihan": ["Lava", "Sejuk", "Hutan", "Tebing", "Mendaki"],
+    "level": "Mahir",
+    "soal": "UBUR-UBUR : TULANG = GURUN : ...",
+    "pilihan": ["Pasir", "Air", "Kaktus", "Panas", "Unta"],
     "kunci": "B",
-    "pola": "Keadaan dan ciri khas suasana",
-    "pembahasan": "Musim kemarau memiliki ciri khas cuaca yang panas. Dengan pola yang sama, gunung memiliki ciri khas suhu yang sejuk.",
+    "pola": "Logika Ketiadaan (Negasi)",
+    "pembahasan": "Ubur-ubur adalah hewan yang TIDAK memiliki tulang (invertebrata). Gurun adalah wilayah yang TIDAK memiliki air (atau sungai). Keduanya menunjukkan hubungan ketiadaan atau ketidakpemilikan sifat/benda yang umum.",
     "analisis_opsi": {
-      "A": "Salah. Lava adalah material yang dapat keluar dari gunung, bukan ciri khas suasana gunung.",
-      "B": "Benar. Gunung identik dengan kondisi sejuk.",
-      "C": "Salah. Hutan adalah bagian dari gunung.",
-      "D": "Salah. Tebing adalah bagian dari gunung.",
-      "E": "Salah. Mendaki adalah aktivitas di gunung."
+      "A": "JEBAKAN ASOSIASI. Pasir adalah benda yang ADA di gurun, bukan yang tidak ada.",
+      "B": "Benar. Gurun secara definisi geografis minim/tidak memiliki air.",
+      "C": "JEBAKAN ASOSIASI. Kaktus ada di gurun.",
+      "D": "JEBAKAN SIFAT. Panas adalah sifat yang ADA di gurun.",
+      "E": "JEBAKAN ASOSIASI. Unta ada di gurun."
     }
   },
   {
     "id": 32,
-    "level": "Mahir",
-    "soal": "DISKUSI : KEPUTUSAN = KLARIFIKASI : ...",
-    "pilihan": ["Pernyataan", "Penjelasan", "Masalah", "Kebenaran", "Pertanyaan"],
+    "level": "Menengah",
+    "soal": "KARAT : KEROP0S = RAYAP : ...",
+    "pilihan": ["Kayu", "Hancur", "Rumah", "Gelap", "Patah"],
     "kunci": "B",
-    "pola": "Proses dan hasil yang dituju",
-    "pembahasan": "Proses diskusi bertujuan menghasilkan keputusan. Dengan pola yang sama, proses klarifikasi bertujuan menghasilkan penjelasan atau menegaskan kebenaran. Dari pilihan yang tersedia, hasil langsung klarifikasi adalah penjelasan.",
+    "pola": "Kausalitas Kumulatif (Proses terus-menerus dan akibat ekstremnya)",
+    "pembahasan": "Karat yang dibiarkan terus-menerus akan menyebabkan benda menjadi keropos. Rayap yang dibiarkan terus-menerus akan menyebabkan struktur (kayu/rumah) menjadi hancur.",
     "analisis_opsi": {
-      "A": "Salah. Pernyataan adalah sesuatu yang diklarifikasi, bukan hasil klarifikasi.",
-      "B": "Benar. Klarifikasi menghasilkan penjelasan.",
-      "C": "Salah. Masalah adalah alasan dilakukannya klarifikasi.",
-      "D": "Salah. Kebenaran dapat menjadi tujuan akhir, tetapi penjelasan adalah hasil langsung yang lebih operasional.",
-      "E": "Salah. Pertanyaan adalah pemicu klarifikasi."
+      "A": "JEBAKAN OBJEK. Kayu adalah material yang dimakan rayap, bukan akibat kondisi ekstremnya.",
+      "B": "Benar. Hancur adalah akibat ekstrem dari serangan rayap berkelanjutan.",
+      "C": "JEBAKAN OBJEK. Rumah adalah tempat, bukan kondisi material.",
+      "D": "Salah. Gelap tidak relevan.",
+      "E": "JEBAKAN HALUS. Patah adalah akibat fisik mendadak, sedangkan hancur lebih mewakili proses pengeroposan oleh rayap."
     }
   },
   {
     "id": 33,
-    "level": "Menengah",
-    "soal": "PANAS : MENDIDIH = MATANG : ...",
-    "pilihan": ["Buah", "Masak", "Busuk", "Pohon", "Manis"],
-    "kunci": "C",
-    "pola": "Tahapan perubahan kondisi",
-    "pembahasan": "Kondisi panas adalah kondisi awal yang secara bertahap dapat menjadi mendidih. Dengan pola yang sama, kondisi matang adalah kondisi awal yang secara bertahap dapat menjadi busuk.",
+    "level": "Mahir",
+    "soal": "MENYENTUH : MENCENGKERAM = MENATAP : ...",
+    "pilihan": ["Melirik", "Melotot", "Memejamkan", "Mengedip", "Menangis"],
+    "kunci": "B",
+    "pola": "Tingkatan Intensitas (Normal ke Ekstrem/Paksa)",
+    "pembahasan": "Mencengkeram adalah bentuk memegang/menyentuh yang sangat kuat, erat, dan intens. Melotot adalah bentuk menatap yang sangat kuat, tajam, dan intens.",
     "analisis_opsi": {
-      "A": "Salah. Buah adalah objek, bukan tahapan lanjutan dari matang.",
-      "B": "Salah. Masak adalah sinonim matang.",
-      "C": "Benar. Matang dapat berlanjut menjadi busuk.",
-      "D": "Salah. Pohon adalah tempat buah tumbuh.",
-      "E": "Salah. Manis adalah sifat rasa."
+      "A": "JEBAKAN INTENSITAS RENDAH. Melirik adalah kebalikannya (melihat sekilas/ringan).",
+      "B": "Benar. Melotot adalah intensitas ekstrem dari menatap.",
+      "C": "Salah. Memejamkan adalah tindakan menutup.",
+      "D": "Salah. Mengedip adalah gerakan refleks.",
+      "E": "Salah. Menangis adalah ekspresi emosi."
     }
   },
   {
     "id": 34,
-    "level": "Pemula",
-    "soal": "HIBURAN : TERAS = UPACARA : ...",
-    "pilihan": ["Lelah", "Lapangan", "Berdiri", "Halaman", "Hormat"],
+    "level": "Menengah",
+    "soal": "PENCERNAAN : LAMBUNG = FILTRASI : ...",
+    "pilihan": ["Hati", "Ginjal", "Jantung", "Paru-paru", "Kulit"],
     "kunci": "B",
-    "pola": "Tempat kegiatan",
-    "pembahasan": "Hiburan dapat diadakan di teras. Dengan pola yang sama, upacara umumnya diadakan di lapangan.",
+    "pola": "Proses Biologis dan Organ/Tempat Spesifik Terjadinya",
+    "pembahasan": "Pencernaan (khususnya kimia) terjadi secara utama di lambung. Filtrasi (penyaringan darah dari racun/zat sisa) terjadi secara utama di ginjal.",
     "analisis_opsi": {
-      "A": "Salah. Lelah adalah kondisi setelah kegiatan.",
-      "B": "Benar. Upacara sering dilakukan di lapangan.",
-      "C": "Salah. Berdiri adalah tindakan dalam upacara.",
-      "D": "Salah. Halaman bisa menjadi tempat, tetapi lapangan lebih umum dan formal untuk upacara.",
-      "E": "Salah. Hormat adalah tindakan dalam upacara."
+      "A": "JEBAKAN ORGAN. Hati berfungsi untuk detoksifikasi dan produksi empedu, bukan filtrasi darah utama.",
+      "B": "Benar. Ginjal adalah organ filtrasi.",
+      "C": "Salah. Jantung untuk memompa.",
+      "D": "Salah. Paru-paru untuk respirasi.",
+      "E": "Salah. Kulit untuk ekskresi keringat/perlindungan."
     }
   },
   {
     "id": 35,
     "level": "Mahir",
-    "soal": "BAYI : MANDIRI = PELARI : ...",
-    "pilihan": ["Cepat", "Kuat", "Lambat", "Laju", "Mandiri"],
-    "kunci": "C",
-    "pola": "Lawan sifat atau kondisi",
-    "pembahasan": "Bayi identik dengan kondisi tidak mandiri. Dengan pola yang sama, pelari identik dengan kondisi tidak lambat. Jadi pasangan yang tepat adalah pelari : lambat, karena hubungan yang diuji adalah lawan sifat.",
+    "soal": "SINGKONG : TAPIOKA = KELAPA : ...",
+    "pilihan": ["Minyak", "Santan", "Batok", "Daun", "Kopra"],
+    "kunci": "B",
+    "pola": "Bahan Baku dan Hasil Ekstraksi Zat Antaranya",
+    "pembahasan": "Singkong diekstrak patinya menjadi tapioka. Kelapa diekstrak cairannya/lemaknya menjadi santan. Keduanya adalah proses ekstraksi zat dari bahan baku mentah.",
     "analisis_opsi": {
-      "A": "Salah. Cepat adalah sifat pelari, bukan lawan kondisi yang dimaksud.",
-      "B": "Salah. Kuat adalah sifat pelari.",
-      "C": "Benar. Pelari identik dengan tidak lambat.",
-      "D": "Salah. Laju bukan lawan sifat yang setara.",
-      "E": "Salah. Mandiri tidak relevan dengan pelari."
+      "A": "JEBAKAN PROSES LANJUTAN. Minyak adalah hasil olahan lanjut dari santan/kopra, bukan ekstraksi langsung setara tapioka.",
+      "B": "Benar. Santan adalah hasil ekstraksi langsung dari daging kelapa.",
+      "C": "Salah. Batok adalah limbah/cangkang.",
+      "D": "Salah. Daun adalah bagian pohon.",
+      "E": "JEBAKAN PROSES LANJUTAN. Kopra adalah daging kelapa yang dikeringkan, bukan zat ekstrak."
     }
   },
   {
     "id": 36,
-    "level": "Menengah",
-    "soal": "MENDUNG : HUJAN = TERSANGKA : ...",
-    "pilihan": ["Polisi", "Penjara", "Terdakwa", "Saksi", "Kejahatan"],
+    "level": "Mahir",
+    "soal": "KABUT : JARAK PANDANG = INFLASI : ...",
+    "pilihan": ["Harga", "Uang", "Daya Beli", "Kemiskinan", "Pajak"],
     "kunci": "C",
-    "pola": "Tanda atau tahap awal sebelum kejadian berikutnya",
-    "pembahasan": "Mendung adalah pertanda bahwa hujan kemungkinan besar akan turun. Dengan pola yang sama, tersangka adalah tahap awal sebelum seseorang diajukan ke pengadilan sebagai terdakwa.",
+    "pola": "Fenomena dan Objek yang Dikurangi/Dihambat",
+    "pembahasan": "Kabut adalah fenomena yang mengurangi jarak pandang. Inflasi adalah fenomena ekonomi yang mengurangi daya beli masyarakat.",
     "analisis_opsi": {
-      "A": "Salah. Polisi adalah pihak yang menangani tersangka.",
-      "B": "Salah. Penjara adalah tempat penahanan.",
-      "C": "Benar. Tersangka berlanjut menjadi terdakwa.",
-      "D": "Salah. Saksi adalah pihak lain dalam proses hukum.",
-      "E": "Salah. Kejahatan adalah penyebab seseorang menjadi tersangka."
+      "A": "JEBAKAN MATI. Inflasi justru MENAIKKAN harga, bukan menguranginya.",
+      "B": "JEBAKAN HALUS. Inflasi menurunkan nilai uang, tetapi 'daya beli' adalah padanan fungsional yang lebih tepat untuk 'jarak pandang' (kapasitas).",
+      "C": "Benar. Inflasi mengurangi daya beli.",
+      "D": "Salah. Kemiskinan adalah dampak jangka panjang.",
+      "E": "Salah. Pajak adalah instrumen negara."
     }
   },
   {
     "id": 37,
     "level": "Pemula",
-    "soal": "PENGEMIS : MISKIN = PEGUNUNGAN : ...",
-    "pilihan": ["Sejuk", "Ramai", "Masyarakat", "Sepi", "Indah"],
-    "kunci": "A",
-    "pola": "Subjek dan kondisi yang sering dikaitkan",
-    "pembahasan": "Pengemis adalah seseorang yang sering dikaitkan dengan kondisi miskin. Dengan pola yang sama, pegunungan sering dikaitkan dengan kondisi sejuk.",
+    "soal": "MESIN JAHIT : BENANG = PRINTER : ...",
+    "pilihan": ["Kertas", "Tinta", "Layar", "Listrik", "Cartridge"],
+    "kunci": "B",
+    "pola": "Alat dan Komponen Habis Pakai Esensialnya",
+    "pembahasan": "Mesin jahit memerlukan benang (komponen habis pakai) untuk menghasilkan jahitan. Printer memerlukan tinta (komponen habis pakai) untuk menghasilkan cetakan.",
     "analisis_opsi": {
-      "A": "Benar. Pegunungan identik dengan kondisi sejuk.",
-      "B": "Salah. Ramai bukan ciri khas pegunungan.",
-      "C": "Salah. Masyarakat adalah penghuni, bukan kondisi khas pegunungan.",
-      "D": "Salah. Sepi mungkin benar, tetapi sejuk lebih umum dan lebih khas.",
-      "E": "Salah. Indah bersifat subjektif."
+      "A": "JEBAKAN MEDIA. Kertas adalah media cetak, bukan komponen yang dikeluarkan oleh alat (benang keluar dari mesin membentuk pola, tinta keluar membentuk gambar).",
+      "B": "Benar. Tinta adalah komponen esensial habis pakai.",
+      "C": "Salah. Layar bukan komponen printer.",
+      "D": "Salah. Listrik adalah sumber energi.",
+      "E": "JEBAKAN WADAH. Cartridge adalah wadah tinta, bukan zatnya."
     }
   },
   {
     "id": 38,
     "level": "Mahir",
-    "soal": "KIJANG : MELOMPAT : HUTAN = ... : ... : ...",
-    "pilihan": [
-      "Merpati : Terbang : Udara",
-      "Tembakau : Rokok : Asap",
-      "Makanan : Nasi : Meja Makan",
-      "Sopir : Truk : Darat",
-      "Aku : Kamu : Bapakmu"
-    ],
-    "kunci": "A",
-    "pola": "Subjek, aktivitas khas, dan tempat",
-    "pembahasan": "Kijang melompat di hutan. Dengan pola yang sama, merpati terbang di udara. Hubungan yang diuji adalah subjek, aktivitas khas, dan tempat aktivitas tersebut dilakukan.",
+    "soal": "FANA : ABADI = ANARKI : ...",
+    "pilihan": ["Kekacauan", "Hukum", "Demonstrasi", "Pemerintah", "Damai"],
+    "kunci": "B",
+    "pola": "Antonim Kontekstual (Ketiadaan vs Keberadaan Sistem)",
+    "pembahasan": "Fana bermakna tidak abadi (bisa hancur). Anarki bermakna tidak adanya hukum/pemerintahan (ketiadaan sistem). Lawan dari anarki (ketiadaan hukum) adalah adanya hukum.",
     "analisis_opsi": {
-      "A": "Benar. Merpati terbang di udara.",
-      "B": "Salah. Tembakau, rokok, dan asap adalah bahan, produk, dan hasil pembakaran.",
-      "C": "Salah. Makanan, nasi, dan meja makan adalah kategori, contoh, dan tempat.",
-      "D": "Salah. Sopir adalah pelaku, truk adalah kendaraan, darat adalah tempat, tetapi kata kedua bukan aktivitas khas.",
-      "E": "Salah. Tidak memiliki hubungan logis yang setara."
+      "A": "JEBAKAN SINONIM. Kekacauan adalah sinonim/dampak anarki.",
+      "B": "Benar. Hukum adalah lawan dari anarki (ketiadaan aturan vs adanya aturan).",
+      "C": "Salah. Demonstrasi adalah aktivitas.",
+      "D": "JEBAKAN HALUS. Pemerintah adalah subjek, hukum adalah sistem/aturannya (lebih setara dengan abadi).",
+      "E": "JEBAKAN HALUS. Damai adalah kondisi emosional/sosial, hukum adalah struktur sistem."
     }
   },
   {
     "id": 39,
-    "level": "Pemula",
-    "soal": "MAKAN : GARAM = OBAT : ...",
-    "pilihan": ["Sendok", "Air", "Gelas", "Sakit", "Vitamin"],
-    "kunci": "B",
-    "pola": "Kegiatan dan zat pelengkap atau pembantu",
-    "pembahasan": "Garam ditambahkan saat makan untuk menambah rasa. Dengan pola yang sama, air sering digunakan saat minum obat untuk mempermudah menelan obat.",
+    "level": "Mahir",
+    "soal": "KAPAS : HALUS = INTAN : ...",
+    "pilihan": ["Mahal", "Bening", "Keras", "Tajam", "Indah"],
+    "kunci": "C",
+    "pola": "Benda dan Properti Alami/Fisik Utamanya",
+    "pembahasan": "Halus adalah properti fisik alami dari kapas. Keras adalah properti fisik alami dari intan (skala Mohs tertinggi).",
     "analisis_opsi": {
-      "A": "Salah. Sendok adalah alat makan.",
-      "B": "Benar. Air membantu proses minum obat.",
-      "C": "Salah. Gelas adalah wadah.",
-      "D": "Salah. Sakit adalah alasan minum obat.",
-      "E": "Salah. Vitamin adalah jenis suplemen."
+      "A": "JEBAKAN MATI (SUBJEKTIF). Mahal adalah nilai pasar, bukan properti fisik alami.",
+      "B": "JEBAKAN SIFAT OPTIK. Bening adalah sifat optik, tapi 'keras' adalah sifat mekanik utama intan yang membedakannya dari batu lain.",
+      "C": "Benar. Keras adalah properti fisik alami intan.",
+      "D": "Salah. Tajam adalah bentuk olahan intan, bukan sifat bawaan materialnya.",
+      "E": "JEBAKAN MATI (SUBJEKTIF). Indah adalah penilaian estetika."
     }
   },
   {
     "id": 40,
     "level": "Menengah",
-    "soal": "FIT : KETAT = ... : ...",
-    "pilihan": [
-      "Jauh : Dekat",
-      "Kuno : Baru",
-      "Relatif : Nisbi",
-      "Benar : Salah",
-      "Asli : Palsu"
-    ],
-    "kunci": "C",
-    "pola": "Sinonim atau persamaan makna",
-    "pembahasan": "Kata fit memiliki makna yang sama dengan ketat. Dengan pola yang sama, kata relatif memiliki makna yang sama dengan nisbi, yaitu tidak mutlak.",
+    "soal": "EMBRIO : JANIN = TUNAS : ...",
+    "pilihan": ["Biji", "Daun", "Akar", "Batang", "Pohon"],
+    "kunci": "E",
+    "pola": "Urutan Perkembangan Biologis (Tahap Awal ke Tahap Dewasa)",
+    "pembahasan": "Embrio berkembang menjadi janin (tahap dalam kandungan). Tunas berkembang menjadi pohon (tahap dewasa tanaman).",
     "analisis_opsi": {
-      "A": "Salah. Jauh dan dekat adalah antonim.",
-      "B": "Salah. Kuno dan baru adalah antonim.",
-      "C": "Benar. Relatif dan nisbi adalah sinonim.",
-      "D": "Salah. Benar dan salah adalah antonim.",
-      "E": "Salah. Asli dan palsu adalah antonim."
+      "A": "JEBAKAN ARAH TERBALIK. Biji adalah tahap sebelum tunas.",
+      "B": "Salah. Daun adalah bagian pohon.",
+      "C": "Salah. Akar adalah bagian pohon.",
+      "D": "Salah. Batang adalah bagian pohon.",
+      "E": "Benar. Pohon adalah wujud dewasa dari tunas."
     }
   },
   {
     "id": 41,
-    "level": "Mahir",
-    "soal": "Pensil memiliki ujung pensil dan penghapus. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Buku memiliki sampul dan halaman",
-      "Lampu memiliki bohlam dan sakelar",
-      "Sepatu memiliki tali dan sol",
-      "Kunci memiliki gigi dan gagang",
-      "CPU memiliki monitor dan keyboard"
-    ],
-    "kunci": "D",
-    "pola": "Analogi kalimat bagian ujung",
-    "pembahasan": "Ujung pensil dan penghapus merupakan bagian dari pensil yang terletak di ujung pensil. Dengan pola yang sama, gigi dan gagang merupakan bagian dari kunci yang terletak di ujung kunci.",
+    "level": "Pemula",
+    "soal": "VAKSIN : IMUN = ANTIBIOTIK : ...",
+    "pilihan": ["Sakit", "Bakteri", "Sembuh", "Infeksi", "Virus"],
+    "kunci": "C",
+    "pola": "Zat Medis dan Kondisi Hasil yang Diharapkan",
+    "pembahasan": "Vaksin diberikan agar tubuh menjadi imun (kebal). Antibiotik diberikan agar tubuh menjadi sembuh (dari infeksi bakteri).",
     "analisis_opsi": {
-      "A": "Salah. Sampul dan halaman adalah bagian buku, tetapi tidak spesifik pada ujung.",
-      "B": "Salah. Bohlam dan sakelar adalah bagian lampu, tetapi tidak terletak di ujung.",
-      "C": "Salah. Tali dan sol adalah bagian sepatu, tetapi tidak spesifik pada ujung.",
-      "D": "Benar. Gigi dan gagang terletak pada bagian ujung kunci.",
-      "E": "Salah. Monitor dan keyboard adalah perangkat terpisah dari CPU."
+      "A": "Salah. Sakit adalah kondisi awal.",
+      "B": "JEBAKAN TARGET. Bakteri adalah target antibiotik, bukan kondisi hasil pada tubuh.",
+      "C": "Benar. Sembuh adalah kondisi hasil.",
+      "D": "JEBAKAN TARGET. Infeksi adalah target.",
+      "E": "Salah. Antibiotik tidak mempan untuk virus."
     }
   },
   {
     "id": 42,
-    "level": "Pemula",
-    "soal": "OLAHRAGA : BUGAR = SEKOLAH : ...",
-    "pilihan": ["Ilmu", "Prestasi", "Pendidikan", "Pandai", "Ijazah"],
+    "level": "Menengah",
+    "soal": "TERTAWA : TERBAHAK = MENANGIS : ...",
+    "pilihan": ["Sedih", "Tersedu", "Merintih", "Meraung", "Berteriak"],
     "kunci": "D",
-    "pola": "Kegiatan dan hasil berupa kondisi pada diri seseorang",
-    "pembahasan": "Melakukan olahraga membuat tubuh menjadi bugar. Dengan pola yang sama, menjalani proses di sekolah membuat seseorang menjadi pandai. Kata pandai menggambarkan kondisi intelektual, sejajar dengan bugar yang menggambarkan kondisi fisik.",
+    "pola": "Tingkatan Intensitas Ekspresi (Normal ke Sangat Kuat)",
+    "pembahasan": "Terbahak adalah tertawa yang sangat keras/intens. Meraung adalah menangis yang sangat keras/intens dan penuh emosi.",
     "analisis_opsi": {
-      "A": "Salah. Ilmu adalah hasil belajar, tetapi bukan kata sifat kondisi diri.",
-      "B": "Salah. Prestasi adalah capaian.",
-      "C": "Salah. Pendidikan adalah proses atau bidang.",
-      "D": "Benar. Sekolah membuat seseorang pandai.",
-      "E": "Salah. Ijazah adalah dokumen hasil pendidikan."
+      "A": "Salah. Sedih adalah emosi pemicu.",
+      "B": "JEBAKAN INTENSITAS RENDAH. Tersedu adalah menangis tertahan/pelan.",
+      "C": "JEBAKAN INTENSITAS RENDAH. Merintih lebih ke kesakitan.",
+      "D": "Benar. Meraung adalah intensitas tinggi menangis.",
+      "E": "Salah. Berteriak tidak spesifik untuk menangis."
     }
   },
   {
     "id": 43,
-    "level": "Menengah",
-    "soal": "HUJAN : MENDUNG = ULAT : ...",
-    "pilihan": ["Hijau", "Gatal", "Kepompong", "Metamorfosa", "Telur"],
-    "kunci": "E",
-    "pola": "Tahap awal sebelum kejadian atau tahap berikutnya",
-    "pembahasan": "Mendung adalah tahap sebelum hujan. Dengan pola yang sama, telur adalah tahap awal dalam siklus hidup sebelum menjadi ulat.",
+    "level": "Pemula",
+    "soal": "GADING : GAJAH = CULA : ...",
+    "pilihan": ["Badak", "Kuda", "Sapi", "Kambing", "Rusa"],
+    "kunci": "A",
+    "pola": "Bagian Tubuh Khas/Ikonik dan Hewannya",
+    "pembahasan": "Gading adalah bagian tubuh yang sangat khas dan ikonik dari gajah. Cula adalah bagian tubuh yang sangat khas dan ikonik dari badak.",
     "analisis_opsi": {
-      "A": "Salah. Hijau adalah warna ulat.",
-      "B": "Salah. Gatal adalah efek yang dapat ditimbulkan ulat.",
-      "C": "Salah. Kepompong adalah tahap setelah ulat.",
-      "D": "Salah. Metamorfosa adalah nama proses perubahan.",
-      "E": "Benar. Telur adalah tahap sebelum ulat."
+      "A": "Benar. Cula milik badak.",
+      "B": "Salah. Kuda tidak bercula.",
+      "C": "Salah. Sapi bertanduk, bukan cula.",
+      "D": "Salah. Kambing bertanduk.",
+      "E": "JEBAKAN HALUS. Rusa memiliki tanduk (ranggah), bukan cula."
     }
   },
   {
     "id": 44,
-    "level": "Mahir",
-    "soal": "KEBERANIAN : KESIAPAN = KESEDIHAN : ...",
-    "pilihan": ["Kekecewaan", "Kehilangan", "Kebahagiaan", "Kesabaran", "Ketabahan"],
-    "kunci": "B",
-    "pola": "Emosi dan sumber atau penyebabnya",
-    "pembahasan": "Keberanian sering kali muncul dari kesiapan. Dengan pola yang sama, kesedihan sering kali muncul dari kehilangan.",
+    "level": "Menengah",
+    "soal": "KLAUSTROFOBIA : SEMPIT = AKROFOBIA : ...",
+    "pilihan": ["Tinggi", "Gelap", "Air", "Ramai", "Luar"],
+    "kunci": "A",
+    "pola": "Istilah Psikologi (Fobia) dan Objek Ketakutannya",
+    "pembahasan": "Klaustrofobia adalah ketakutan pada ruang sempit. Akrofobia adalah ketakutan pada ketinggian.",
     "analisis_opsi": {
-      "A": "Salah. Kekecewaan dapat berkaitan dengan kesedihan, tetapi kehilangan adalah sumber yang lebih langsung.",
-      "B": "Benar. Kesedihan sering muncul karena kehilangan.",
-      "C": "Salah. Kebahagiaan adalah lawan dari kesedihan.",
-      "D": "Salah. Kesabaran adalah sikap menghadapi kesedihan.",
-      "E": "Salah. Ketabahan adalah sikap menghadapi kesedihan."
+      "A": "Benar. Akrofobia = takut tinggi.",
+      "B": "Salah. Takut gelap = Niktofobia.",
+      "C": "Salah. Takut air = Hidrofobia.",
+      "D": "Salah. Takut ramai = Agorafobia/Enoklofobia.",
+      "E": "Salah. Takut luar/ruang terbuka = Agorafobia."
     }
   },
   {
     "id": 45,
-    "level": "Pemula",
-    "soal": "HUJAN : BADAI = BERJALAN : ...",
-    "pilihan": ["Berlari", "Melompat", "Merangkak", "Duduk", "Berbaring"],
-    "kunci": "A",
-    "pola": "Tingkat lebih ringan ke tingkat lebih kuat",
-    "pembahasan": "Hujan adalah kondisi cuaca yang lebih ringan dibandingkan badai. Dengan pola yang sama, berjalan adalah aktivitas yang lebih ringan dibandingkan berlari.",
+    "level": "Mahir",
+    "soal": "DEFORESTASI : LONGSOR = KORUPSI : ...",
+    "pilihan": ["Penjara", "Kemisikinan", "Uang", "Hukuman", "KPK"],
+    "kunci": "B",
+    "pola": "Tindakan Merusak dan Dampak Sistemik Jangka Panjangnya",
+    "pembahasan": "Deforestasi (penggundulan hutan) menyebabkan dampak sistemik berupa longsor. Korupsi (penyalahgunaan dana) menyebabkan dampak sistemik berupa kemiskinan (negara/masyarakat).",
     "analisis_opsi": {
-      "A": "Benar. Berlari lebih kuat atau lebih cepat daripada berjalan.",
-      "B": "Salah. Melompat adalah jenis gerak lain.",
-      "C": "Salah. Merangkak lebih lambat, bukan peningkatan.",
-      "D": "Salah. Duduk adalah kondisi diam.",
-      "E": "Salah. Berbaring adalah kondisi diam."
+      "A": "JEBAKAN KONSEKUENSI HUKUM. Penjara adalah hukuman bagi pelaku, bukan dampak sistemik pada lingkungan/negara.",
+      "B": "Benar. Kemiskinan adalah dampak sistemik korupsi pada negara.",
+      "C": "JEBAKAN OBJEK. Uang adalah objek korupsi.",
+      "D": "JEBAKAN KONSEKUENSI HUKUM. Hukuman untuk pelaku.",
+      "E": "Salah. KPK adalah lembaga pemberantas."
     }
   },
   {
     "id": 46,
-    "level": "Menengah",
-    "soal": "MELIHAT : MELOTOT = ... : TERIK",
-    "pilihan": ["Panas", "Hangat", "Mendidih", "Api", "Cuaca"],
-    "kunci": "A",
-    "pola": "Intensitas atau tingkatan lebih kuat",
-    "pembahasan": "Melotot adalah aktivitas melihat yang dilakukan dengan sangat intens. Dengan pola yang sama, terik adalah kondisi panas yang sangat intens.",
+    "level": "Pemula",
+    "soal": "AIR : CAIR = NITROGEN : ...",
+    "pilihan": ["Padat", "Gas", "Beku", "Uap", "Dingin"],
+    "kunci": "B",
+    "pola": "Zat dan Wujud Alaminya pada Suhu Ruang",
+    "pembahasan": "Air pada suhu ruang berwujud cair. Nitrogen pada suhu ruang berwujud gas.",
     "analisis_opsi": {
-      "A": "Benar. Terik adalah panas yang sangat kuat.",
-      "B": "Salah. Hangat adalah tingkat panas yang lebih rendah.",
-      "C": "Salah. Mendidih berkaitan dengan cairan.",
-      "D": "Salah. Api adalah sumber panas.",
-      "E": "Salah. Cuaca adalah kategori umum."
+      "A": "Salah. Padat bukan wujud alami nitrogen di suhu ruang.",
+      "B": "Benar. Nitrogen berwujud gas.",
+      "C": "Salah. Beku adalah proses.",
+      "D": "Salah. Uap adalah wujud gas air.",
+      "E": "Salah. Dingin adalah suhu."
     }
   },
   {
     "id": 47,
-    "level": "Mahir",
-    "soal": "Pada sepatu terdapat lubang tali dan sol. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Pada pohon terdapat air dan cahaya",
-      "Pada sepeda terdapat roda dan spion",
-      "Pada CPU terdapat listrik dan monitor",
-      "Pada teater terdapat panggung dan hiburan",
-      "Pada manusia terdapat tangan dan kaki"
-    ],
-    "kunci": "E",
-    "pola": "Analogi kalimat bagian bawaan yang menyatu",
-    "pembahasan": "Lubang tali dan sol merupakan bagian bawaan yang menyatu pada sepatu. Dengan pola yang sama, tangan dan kaki merupakan bagian bawaan yang menyatu pada manusia.",
+    "level": "Pemula",
+    "soal": "BENUA : ASIA = SAMUDRA : ...",
+    "pilihan": ["Pasifik", "Jawa", "Bumi", "Air", "Atlantik"],
+    "kunci": "A",
+    "pola": "Kategori Umum dan Contoh Spesifiknya",
+    "pembahasan": "Asia adalah salah satu nama benua. Pasifik adalah salah satu nama samudra.",
     "analisis_opsi": {
-      "A": "Salah. Air dan cahaya adalah kebutuhan pohon.",
-      "B": "Salah. Roda adalah bagian sepeda, tetapi spion sering merupakan aksesori tambahan.",
-      "C": "Salah. Listrik dan monitor adalah kebutuhan atau perangkat tambahan CPU.",
-      "D": "Salah. Panggung dan hiburan adalah bagian acara teater.",
-      "E": "Benar. Tangan dan kaki adalah bagian bawaan manusia."
+      "A": "Benar. Pasifik adalah samudra.",
+      "B": "Salah. Jawa adalah pulau/laut.",
+      "C": "Salah. Bumi adalah planet.",
+      "D": "Salah. Air adalah zat.",
+      "E": "Benar secara teknis (Atlantik samudra), namun Pasifik lebih umum dipasangkan dengan Asia dalam konteks geografi regional/global di soal TIU."
     }
   },
   {
     "id": 48,
-    "level": "Pemula",
-    "soal": "PAHLAWAN : BERANI = PROFESOR : ...",
-    "pilihan": ["Pandai", "Bijaksana", "Kuat", "Rajin", "Tegas"],
-    "kunci": "A",
-    "pola": "Tokoh dan sifat khasnya",
-    "pembahasan": "Pahlawan dikenal karena keberaniannya. Dengan pola yang sama, profesor dikenal karena kepandaiannya.",
+    "level": "Menengah",
+    "soal": "STETOSKOP : DOKTER = THEODOLIT : ...",
+    "pilihan": ["Arsitek", "Surveyor", "Tukang", "Ahli Bumi", "Meteorolog"],
+    "kunci": "B",
+    "pola": "Alat Khusus dan Profesi yang Menggunakannya",
+    "pembahasan": "Stetoskop adalah alat khusus yang identik dengan profesi dokter. Theodolit adalah alat khusus ukur tanah yang identik dengan profesi surveyor.",
     "analisis_opsi": {
-      "A": "Benar. Profesor identik dengan pandai.",
-      "B": "Salah. Bijaksana dapat dimiliki profesor, tetapi bukan sifat khas yang paling langsung.",
-      "C": "Salah. Kuat tidak identik dengan profesor.",
-      "D": "Salah. Rajin tidak secara khusus identik dengan profesor.",
-      "E": "Salah. Tegas tidak selalu menjadi ciri khas profesor."
+      "A": "Salah. Arsitek menggunakan alat gambar/CAD.",
+      "B": "Benar. Surveyor menggunakan theodolit.",
+      "C": "Salah. Tukang terlalu umum.",
+      "D": "Salah. Ahli bumi (geolog) menggunakan palu geologi/kompas.",
+      "E": "Salah. Meteorolog menggunakan barometer/anemometer."
     }
   },
   {
     "id": 49,
-    "level": "Menengah",
-    "soal": "MENARIK : MERENGGUT = MEMEGANG : ...",
-    "pilihan": ["Mengambil", "Menggenggam", "Mencengkeram", "Melepas", "Menyentuh"],
+    "level": "Mahir",
+    "soal": "MEMAHAT : BATU = MELUKIS : ...",
+    "pilihan": ["Kuas", "Cat", "Kanvas", "Gambar", "Pensil"],
     "kunci": "C",
-    "pola": "Intensitas tindakan yang lebih kuat",
-    "pembahasan": "Merenggut adalah kegiatan menarik yang dilakukan dengan paksa dan kuat. Dengan pola yang sama, mencengkeram adalah kegiatan memegang dengan sangat kuat dan erat.",
+    "pola": "Aktivitas Seni dan Medium/Tempat Kerjanya",
+    "pembahasan": "Memahat dilakukan PADA batu (sebagai medium). Melukis dilakukan PADA kanvas (sebagai medium).",
     "analisis_opsi": {
-      "A": "Salah. Mengambil bukan peningkatan dari memegang.",
-      "B": "Salah. Menggenggam adalah sinonim memegang.",
-      "C": "Benar. Mencengkeram adalah memegang dengan sangat kuat.",
-      "D": "Salah. Melepas adalah lawan dari memegang.",
-      "E": "Salah. Menyentuh adalah tindakan ringan."
+      "A": "JEBAKAN ALAT. Kuas adalah alat, bukan medium.",
+      "B": "JEBAKAN BAHAN. Cat adalah bahan, bukan medium.",
+      "C": "Benar. Kanvas adalah medium tempat melukis.",
+      "D": "Salah. Gambar adalah hasil.",
+      "E": "JEBAKAN ALAT. Pensil adalah alat."
     }
   },
   {
     "id": 50,
-    "level": "Mahir",
-    "soal": "KUALITAS : HARGA = RESPONSIF : ...",
-    "pilihan": ["Komunikatif", "Tanggap", "Cepat", "Hati-hati", "Keterbukaan"],
-    "kunci": "B",
-    "pola": "Hal yang berkaitan erat",
-    "pembahasan": "Kualitas suatu barang sering kali berkaitan erat dengan harga. Semakin tinggi kualitas, semakin tinggi harga. Dengan pola yang sama, responsif berkaitan erat dengan tanggap.",
+    "level": "Menengah",
+    "soal": "BASAH : KUYUP = KERING : ...",
+    "pilihan": ["Panas", "Kontang", "Gersang", "Haus", "Kerontang"],
+    "kunci": "E",
+    "pola": "Tingkatan Kondisi (Normal ke Ekstrem)",
+    "pembahasan": "Kuyup adalah kondisi basah yang sangat ekstrem. Kerontang adalah kondisi kering yang sangat ekstrem.",
     "analisis_opsi": {
-      "A": "Salah. Komunikatif berkaitan dengan komunikasi, bukan makna terdekat dari responsif.",
-      "B": "Benar. Responsif berkaitan erat dengan tanggap.",
-      "C": "Salah. Cepat adalah bagian dari responsif, tetapi tanggap lebih setara.",
-      "D": "Salah. Hati-hati tidak berkaitan langsung dengan responsif.",
-      "E": "Salah. Keterbukaan tidak berkaitan langsung dengan responsif."
+      "A": "Salah. Panas adalah suhu.",
+      "B": "JEBAKAN HALUS. Kontang biasanya untuk sungai/kolam.",
+      "C": "JEBAKAN HALUS. Gersang biasanya untuk tanah/lahan.",
+      "D": "Salah. Haus adalah kondisi biologis.",
+      "E": "Benar. Kerontang adalah kondisi kering ekstrem (misal: kerontang kerontang)."
     }
   },
   {
     "id": 51,
-    "level": "Pemula",
-    "soal": "PASAR : RAMAI = GUNUNG : ...",
-    "pilihan": ["Tinggi", "Dingin", "Hijau", "Sepi", "Indah"],
-    "kunci": "D",
-    "pola": "Tempat dan suasana khas",
-    "pembahasan": "Pasar identik dengan suasana ramai. Dengan pola yang sama, gunung identik dengan suasana tenang dan sepi.",
+    "level": "Mahir",
+    "soal": "FOTOSINTESIS : OKSIGEN = RESPIRASI : ...",
+    "pilihan": ["Oksigen", "Karbon Dioksida", "Energi", "Air", "Glukosa"],
+    "kunci": "B",
+    "pola": "Proses Biologis dan Produk Sampingan (Byproduct) yang Dilepaskan",
+    "pembahasan": "Fotosintesis melepaskan oksigen sebagai produk sampingan ke lingkungan. Respirasi seluler melepaskan karbon dioksida sebagai produk sampingan ke lingkungan.",
     "analisis_opsi": {
-      "A": "Salah. Tinggi adalah sifat fisik gunung.",
-      "B": "Salah. Dingin adalah suhu gunung.",
-      "C": "Salah. Hijau adalah warna gunung.",
-      "D": "Benar. Gunung identik dengan suasana sepi.",
-      "E": "Salah. Indah bersifat subjektif."
+      "A": "Salah. Oksigen adalah bahan baku respirasi.",
+      "B": "Benar. Karbon dioksida adalah produk buangan respirasi.",
+      "C": "JEBAKAN TUJUAN UTAMA. Energi (ATP) adalah tujuan utama respirasi, bukan produk sampingan yang dilepaskan ke lingkungan seperti oksigen pada fotosintesis.",
+      "D": "Salah. Air juga dihasilkan, tapi CO2 lebih ikonik sebagai gas buangan.",
+      "E": "Salah. Glukosa adalah bahan baku."
     }
   },
   {
     "id": 52,
     "level": "Menengah",
-    "soal": "MELOROT : MELUNCUR = MENDAKI : ...",
-    "pilihan": ["Berjalan", "Berlari", "Naik", "Turun", "Memanjat"],
-    "kunci": "E",
-    "pola": "Kesamaan arah gerak",
-    "pembahasan": "Melorot dan meluncur sama-sama menunjukkan gerakan turun. Dengan pola yang sama, mendaki dan memanjat sama-sama menunjukkan gerakan naik.",
+    "soal": "HANGAT : MENDIDIH = DINGIN : ...",
+    "pilihan": ["Sejuk", "Beku", "Salju", "Es", "Nol"],
+    "kunci": "B",
+    "pola": "Tingkatan Suhu (Normal ke Ekstrem/Perubahan Wujud)",
+    "pembahasan": "Mendidih adalah kondisi panas ekstrem hingga air berubah wujud menjadi gas. Beku adalah kondisi dingin ekstrem hingga air berubah wujud menjadi padat.",
     "analisis_opsi": {
-      "A": "Salah. Berjalan tidak spesifik menunjukkan arah naik.",
-      "B": "Salah. Berlari tidak spesifik menunjukkan arah naik.",
-      "C": "Salah. Naik terlalu umum, sedangkan meluncur dan memanjat adalah kata kerja spesifik.",
-      "D": "Salah. Turun adalah lawan arah.",
-      "E": "Benar. Memanjat adalah gerakan naik seperti mendaki."
+      "A": "Salah. Sejuk adalah tingkatan di atas dingin, bukan ekstrem.",
+      "B": "Benar. Beku adalah kondisi dingin ekstrem.",
+      "C": "Salah. Salju adalah benda.",
+      "D": "JEBAKAN BENDA. Es adalah benda hasil pembekuan, 'beku' adalah kata sifat/kondisi yang setara dengan 'mendidih'.",
+      "E": "Salah. Nol adalah angka."
     }
   },
   {
     "id": 53,
     "level": "Mahir",
-    "soal": "Akar terdiri dari serabut dan tunggang. Memiliki analogi dengan ...",
-    "pilihan": [
-      "Pohon terdiri dari ranting dan daun",
-      "Sepeda terdiri dari pedal dan roda",
-      "Mobil terdiri dari matic dan manual",
-      "Manusia terdiri dari hidung dan mata",
-      "CPU terdiri dari monitor dan mouse"
-    ],
+    "soal": "ULAR : KAKI = IKAN : ...",
+    "pilihan": ["Sirip", "Insang", "Paru-paru", "Sisik", "Ekor"],
     "kunci": "C",
-    "pola": "Analogi kalimat jenis atau kategori",
-    "pembahasan": "Serabut dan tunggang adalah jenis-jenis akar. Dengan pola yang sama, matic dan manual adalah jenis transmisi pada mobil.",
+    "pola": "Logika Ketiadaan (Hewan dan Organ yang TIDAK Dimilikinya)",
+    "pembahasan": "Ular adalah reptil yang TIDAK memiliki kaki. Ikan adalah vertebrata air yang TIDAK memiliki paru-paru (mereka bernapas dengan insang).",
     "analisis_opsi": {
-      "A": "Salah. Ranting dan daun adalah bagian pohon.",
-      "B": "Salah. Pedal dan roda adalah bagian sepeda.",
-      "C": "Benar. Matic dan manual adalah jenis transmisi mobil.",
-      "D": "Salah. Hidung dan mata adalah bagian tubuh manusia.",
-      "E": "Salah. Monitor dan mouse adalah perangkat komputer."
+      "A": "JEBAKAN MATI. Ikan MEMILIKI sirip.",
+      "B": "JEBAKAN MATI. Ikan MEMILIKI insang.",
+      "C": "Benar. Ikan TIDAK memiliki paru-paru.",
+      "D": "JEBAKAN MATI. Ikan MEMILIKI sisik.",
+      "E": "JEBAKAN MATI. Ikan MEMILIKI ekor."
     }
   },
   {
     "id": 54,
     "level": "Pemula",
-    "soal": "LUKA : BENGKAK = PUPUK : ...",
-    "pilihan": ["Subur", "Kebun", "Kotoran", "Tumbuhan", "Kompos"],
-    "kunci": "A",
-    "pola": "Sebab dan akibat",
-    "pembahasan": "Luka dapat menyebabkan bengkak. Dengan pola yang sama, pupuk dapat menyebabkan tanah atau tanaman menjadi subur.",
+    "soal": "WAKTU : DETIK = ARUS : ...",
+    "pilihan": ["Volt", "Ohm", "Ampere", "Watt", "Joule"],
+    "kunci": "C",
+    "pola": "Besaran Fisika dan Satuan Ukurnya",
+    "pembahasan": "Detik adalah satuan ukur untuk waktu. Ampere adalah satuan ukur untuk arus listrik.",
     "analisis_opsi": {
-      "A": "Benar. Pupuk membuat tanaman subur.",
-      "B": "Salah. Kebun adalah tempat tanaman.",
-      "C": "Salah. Kotoran dapat menjadi pupuk, bukan akibat pupuk.",
-      "D": "Salah. Tumbuhan adalah objek yang dipupuk.",
-      "E": "Salah. Kompos adalah jenis pupuk."
+      "A": "Salah. Volt adalah satuan tegangan.",
+      "B": "Salah. Ohm adalah satuan hambatan.",
+      "C": "Benar. Ampere adalah satuan arus.",
+      "D": "Salah. Watt adalah satuan daya.",
+      "E": "Salah. Joule adalah satuan energi."
     }
   },
   {
     "id": 55,
-    "level": "Menengah",
-    "soal": "HANGAT : PANAS = DINGIN : ...",
-    "pilihan": ["Sejuk", "Beku", "Es", "Salju", "Lembap"],
-    "kunci": "B",
-    "pola": "Peningkatan intensitas suhu",
-    "pembahasan": "Panas adalah tingkatan suhu yang lebih tinggi daripada hangat. Dengan pola yang sama, beku adalah tingkatan suhu yang sangat dingin.",
+    "level": "Mahir",
+    "soal": "KANGGURU : MELOMPAT : PADANG RUMPUT = ... : ... : ...",
+    "pilihan": [
+      "Paus : Berenang : Samudra",
+      "Elang : Terbang : Sarang",
+      "Ular : Melata : Pohon",
+      "Katak : Melompat : Darat",
+      "Ikan : Berenang : Akuarium"
+    ],
+    "kunci": "A",
+    "pola": "Analogi 3 Kata: Subjek : Aksi Khas : Habitat Alami Luas",
+    "pembahasan": "Kanguru bergerak khas dengan melompat di habitat alaminya yang luas (padang rumput). Paus bergerak khas dengan berenang di habitat alaminya yang luas (samudra).",
     "analisis_opsi": {
-      "A": "Salah. Sejuk adalah kondisi dingin ringan.",
-      "B": "Benar. Beku adalah tingkat dingin yang sangat tinggi.",
-      "C": "Salah. Es adalah hasil pembekuan.",
-      "D": "Salah. Salju adalah bentuk air beku.",
-      "E": "Salah. Lembap adalah kondisi kelembapan."
+      "A": "Benar. Paus berenang di samudra (habitat alami luas).",
+      "B": "JEBAKAN TEMPAT. Sarang adalah tempat tinggal spesifik, bukan habitat luas.",
+      "C": "Salah. Ular melata di tanah, bukan khusus pohon.",
+      "D": "Salah. Katak hidup di amfibi (air dan darat).",
+      "E": "JEBAKAN BUATAN. Akuarium adalah habitat buatan, bukan alami."
     }
   },
   {
     "id": 56,
     "level": "Mahir",
-    "soal": "BERISIK : TERIAK = REMANG-REMANG : ...",
-    "pilihan": ["Suram", "Redup", "Terang", "Gelap", "Pudar"],
+    "soal": "MENILAI : MENCACI : MEMUJI = ... : ... : ...",
+    "pilihan": [
+      "Bekerja : Malas : Rajin",
+      "Mengemudi : Ugal-ugalan : Tertib",
+      "Berbicara : Membisu : Berteriak",
+      "Merespons : Marah : Senang",
+      "Menghukum : Denda : Penjara"
+    ],
     "kunci": "B",
-    "pola": "Kondisi yang timbul karena sesuatu",
-    "pembahasan": "Berisik dapat timbul karena teriakan. Dengan pola yang sama, remang-remang timbul karena cahaya redup.",
+    "pola": "Analogi 3 Kata: Tindakan Umum : Bentuk Negatif Ekstrem : Bentuk Positif Ekstrem",
+    "pembahasan": "Menilai adalah tindakan umum. Mencaci adalah bentuk menilai yang negatif/ekstrem. Memuji adalah bentuk menilai yang positif/ekstrem. Mengemudi adalah tindakan umum. Ugal-ugalan adalah bentuk negatif. Tertib adalah bentuk positif.",
     "analisis_opsi": {
-      "A": "Salah. Suram mirip dengan remang-remang, bukan penyebabnya.",
-      "B": "Benar. Remang-remang timbul karena cahaya redup.",
-      "C": "Salah. Terang adalah lawan remang-remang.",
-      "D": "Salah. Gelap lebih ekstrem daripada remang-remang.",
-      "E": "Salah. Pudar adalah proses memudar."
+      "A": "Salah. Malas dan rajin adalah sifat, bukan bentuk tindakan menilai.",
+      "B": "Benar. Mengemudi (umum), ugal-ugalan (negatif), tertib (positif).",
+      "C": "Salah. Membisu adalah ketiadaan tindakan (negasi), bukan bentuk negatif dari berbicara.",
+      "D": "Salah. Marah dan senang adalah emosi.",
+      "E": "Salah. Denda dan penjara sama-sama bentuk hukuman (bukan positif vs negatif)."
     }
   },
   {
     "id": 57,
-    "level": "Pemula",
-    "soal": "MINYAK : ... = BISKUIT : RENYAH",
-    "pilihan": ["Cair", "Panas", "Licin", "Goreng", "Kental"],
-    "kunci": "C",
-    "pola": "Benda dan sifat khasnya",
-    "pembahasan": "Biskuit dikenal karena sifatnya yang renyah. Dengan pola yang sama, minyak dikenal karena sifatnya yang licin.",
+    "level": "Mahir",
+    "soal": "Kita mengetahui bahwa pada tubuh kucing terdapat cakar dan kumis. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Pada mobil terdapat setir dan kaca film",
+      "Pada burung terdapat paruh dan bulu",
+      "Pada sepeda terdapat pedal dan bel",
+      "Pada rumah terdapat pintu dan pot bunga",
+      "Pada laptop terdapat keyboard dan stiker"
+    ],
+    "kunci": "B",
+    "pola": "Analogi Kalimat: Bagian Inheren (Bawaan Alami) yang Menyatu",
+    "pembahasan": "Cakar dan kumis adalah bagian INHEREN (bawaan alami) yang menyatu pada tubuh kucing sejak lahir. Paruh dan bulu adalah bagian INHEREN yang menyatu pada tubuh burung.",
     "analisis_opsi": {
-      "A": "Salah. Cair adalah sifat umum minyak, tetapi licin lebih khas.",
-      "B": "Salah. Panas bukan sifat bawaan minyak.",
-      "C": "Benar. Minyak dikenal karena sifat licin.",
-      "D": "Salah. Goreng adalah penggunaan minyak.",
-      "E": "Salah. Kental bukan sifat khas minyak."
+      "A": "JEBAKAN AKSESORI. Kaca film adalah aksesori tambahan, bukan bawaan pabrik.",
+      "B": "Benar. Paruh dan bulu adalah bagian bawaan alami burung.",
+      "C": "JEBAKAN AKSESORI. Bel adalah aksesori tambahan pada sepeda.",
+      "D": "JEBAKAN AKSESORI. Pot bunga adalah benda luar/aksesori rumah.",
+      "E": "JEBAKAN AKSESORI. Stiker adalah aksesori tambahan."
     }
   },
   {
     "id": 58,
-    "level": "Menengah",
-    "soal": "TERSENYUM : TERBAHAK = EMOSI : ...",
-    "pilihan": ["Malu", "Bosan", "Lelah", "Menangis", "Malas"],
-    "kunci": "D",
-    "pola": "Tingkat awal ke tingkat yang lebih intens",
-    "pembahasan": "Tersenyum adalah tingkat awal, sedangkan terbahak adalah tingkatan yang lebih intens. Dengan pola yang sama, emosi adalah tingkat awal, sedangkan menangis adalah tingkatan yang lebih intens.",
+    "level": "Mahir",
+    "soal": "Semut tentara memiliki rahang dan antena di bagian kepalanya. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Harimau memiliki kuku dan taring",
+      "Kupu-kupu memiliki sayap dan antena",
+      "Burung hantu memiliki mata besar dan paruh di bagian kepalanya",
+      "Ikan piranha memiliki gigi runcing dan ekor",
+      "Beruang memiliki bulu tebal dan cakar"
+    ],
+    "kunci": "C",
+    "pola": "Analogi Kalimat: Presisi Spasial (Lokasi Anatomi yang Sama)",
+    "pembahasan": "Rahang dan antena pada semut tentara secara SPASIAL terletak di bagian yang sama, yaitu KEPALA. Mata besar dan paruh pada burung hantu juga secara spasial terletak di bagian KEPALA.",
     "analisis_opsi": {
-      "A": "Salah. Malu adalah jenis emosi lain.",
-      "B": "Salah. Bosan adalah kondisi lain.",
-      "C": "Salah. Lelah adalah kondisi fisik atau mental.",
-      "D": "Benar. Menangis adalah ekspresi emosi yang lebih intens.",
-      "E": "Salah. Malas adalah kondisi lain."
+      "A": "JEBAKAN SPASIAL. Kuku ada di kaki, taring ada di mulut (lokasi berbeda).",
+      "B": "JEBAKAN SPASIAL. Sayap ada di punggung/dada, antena di kepala (lokasi berbeda).",
+      "C": "Benar. Mata dan paruh sama-sama berada di kepala.",
+      "D": "JEBAKAN SPASIAL. Gigi di kepala, ekor di belakang (lokasi berbeda).",
+      "E": "JEBAKAN SPASIAL. Bulu di seluruh tubuh, cakar di kaki (lokasi berbeda)."
     }
   },
   {
     "id": 59,
     "level": "Mahir",
-    "soal": "Gajah memiliki belalai dan gading. Hubungan ini sama dengan ...",
+    "soal": "Piston bergerak naik-turun agar mesin dapat menghasilkan tenaga. Hubungan ini sama dengan ...",
     "pilihan": [
-      "Harimau memiliki kuku dan taring",
-      "Lebah memiliki antena dan sayap",
-      "Semut tentara memiliki rahang dan antena",
-      "Ikan piranha memiliki gigi runcing dan ekor",
-      "Beruang memiliki bulu tebal dan cakar"
+      "Paru-paru mengembang agar oksigen dapat diserap",
+      "Jantung berdetak agar darah dapat beredar",
+      "Akar menyerap air agar tumbuhan dapat tumbuh",
+      "Layar menyala agar gambar dapat terlihat",
+      "Roda berputar agar mobil dapat berjalan"
     ],
-    "kunci": "C",
-    "pola": "Analogi kalimat bagian tubuh di bagian kepala",
-    "pembahasan": "Belalai dan gading adalah bagian tubuh pada gajah yang terletak di bagian kepala. Dengan pola yang sama, rahang dan antena adalah bagian tubuh pada semut tentara yang terletak di bagian kepala.",
+    "kunci": "B",
+    "pola": "Analogi Kalimat: Komponen : Gerakan Mekanis/Siklik : Fungsi Sistem Besar",
+    "pembahasan": "Piston (komponen) melakukan gerakan mekanis siklik (naik-turun) agar sistem besar (mesin) berfungsi. Jantung (komponen) melakukan gerakan mekanis siklik (berdetak) agar sistem besar (peredaran darah) berfungsi.",
     "analisis_opsi": {
-      "A": "Salah. Taring berada di mulut, tetapi kuku tidak berada di kepala.",
-      "B": "Salah. Antena berada di kepala, tetapi sayap berada di tubuh.",
-      "C": "Benar. Rahang dan antena berada di bagian kepala semut.",
-      "D": "Salah. Gigi berada di kepala, tetapi ekor berada di belakang.",
-      "E": "Salah. Bulu tebal dapat berada di seluruh tubuh, dan cakar berada di kaki."
+      "A": "JEBAKAN HALUS. Mengembang adalah perubahan volume, bukan gerakan mekanis siklik pemicu sistem.",
+      "B": "Benar. Jantung berdetak (siklik) agar darah beredar.",
+      "C": "Salah. Menyerap bukan gerakan mekanis.",
+      "D": "Salah. Menyala adalah kondisi elektronik.",
+      "E": "JEBAKAN HALUS. Roda berputar agar mobil berjalan adalah contoh benar, tetapi dalam konteks sistem internal (seperti piston di dalam mesin), jantung di dalam tubuh lebih setara secara presisi anatomi/mekanik."
     }
   },
   {
     "id": 60,
-    "level": "Menengah",
-    "soal": "DOKTER : SPESIALIS = BIJI : ...",
-    "pilihan": ["Batang", "Benih", "Tunas", "Akar", "Buah"],
+    "level": "Mahir",
+    "soal": "Baja lebih kuat daripada besi. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Emas lebih mahal daripada perak",
+      "Berlian lebih keras daripada kaca",
+      "Mobil sport lebih cepat daripada sepeda motor",
+      "Lukisan asli lebih indah daripada duplikat",
+      "Kain sutra lebih mewah daripada katun"
+    ],
     "kunci": "B",
-    "pola": "Proses pengolahan atau pelatihan menjadi bentuk lanjutan",
-    "pembahasan": "Dokter yang melalui proses pelatihan khusus akan menjadi spesialis. Dengan pola yang sama, biji yang melalui proses pengolahan khusus dapat menjadi benih.",
+    "pola": "Analogi Kalimat: Perbandingan Properti Fisik Alami (Objektif)",
+    "pembahasan": "Baja dan besi dibandingkan berdasarkan KEKUATAN (properti fisik alami yang terukur). Berlian dan kaca dibandingkan berdasarkan KEKERASAN (properti fisik alami yang terukur).",
     "analisis_opsi": {
-      "A": "Salah. Batang adalah bagian tanaman.",
-      "B": "Benar. Biji dapat diproses menjadi benih.",
-      "C": "Salah. Tunas adalah tahap pertumbuhan.",
-      "D": "Salah. Akar adalah bagian tanaman.",
-      "E": "Salah. Buah adalah hasil tanaman."
+      "A": "JEBAKAN MATI (SUBJEKTIF). 'Mahal' adalah nilai pasar.",
+      "B": "Benar. 'Keras' adalah properti fisik alami (skala Mohs).",
+      "C": "JEBAKAN HALUS. 'Cepat' memang terukur, tetapi membandingkan mesin buatan manusia, bukan material dasar seperti baja/besi.",
+      "D": "JEBAKAN MATI (SUBJEKTIF). 'Indah' adalah estetika.",
+      "E": "JEBAKAN MATI (SUBJEKTIF). 'Mewah' adalah nilai sosial."
     }
   }
 ]

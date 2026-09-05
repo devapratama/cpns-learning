@@ -26,6 +26,31 @@
       "nama": "Paket 5",
       "file": "paket-5.json",
       "deskripsi": "30 soal analogi"
+    },
+    {
+      "nama": "Paket 6",
+      "file": "paket-6.json",
+      "deskripsi": "30 soal analogi"
+    },
+    {
+      "nama": "Paket 7",
+      "file": "paket-7.json",
+      "deskripsi": "30 soal analogi"
+    },
+    {
+      "nama": "Paket 8",
+      "file": "paket-8.json",
+      "deskripsi": "30 soal analogi"
+    },
+    {
+      "nama": "Paket 9",
+      "file": "paket-9.json",
+      "deskripsi": "30 soal analogi"
+    },
+    {
+      "nama": "Paket 10",
+      "file": "paket-10.json",
+      "deskripsi": "30 soal analogi"
     }
   ]
 }

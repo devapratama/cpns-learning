@@ -1,0 +1,588 @@
+{
+  "nama": "Paket 6",
+  "deskripsi": "30 soal silogisme komplit sesuai pola FR SKD CPNS dengan konteks beragam dan pembahasan bergaya materi",
+  "totalSoal": 30,
+  "soal": [
+    {
+      "id": 1,
+      "pertanyaan": "Semua balita yang terdaftar di Posyandu Melati wajib mendapat imunisasi dasar lengkap. Bayi Budi terdaftar di Posyandu Melati. Pagi ini Bu Siti terlihat mengantri di meja pendaftaran posyandu bersama puluhan ibu lainnya.",
+      "premis": [
+        "Semua balita yang terdaftar di Posyandu Melati wajib mendapat imunisasi dasar lengkap",
+        "Bayi Budi terdaftar di Posyandu Melati",
+        "Pagi ini Bu Siti terlihat mengantri di meja pendaftaran posyandu bersama puluhan ibu lainnya"
+      ],
+      "opsi": [
+        "A. Bayi Budi wajib mendapat imunisasi dasar lengkap",
+        "B. Bu Siti mengantri karena ingin bertemu ibu-ibu lain",
+        "C. Bayi Budi adalah balita yang paling sehat di Posyandu Melati",
+        "D. Bu Siti selalu datang paling awal ke posyandu",
+        "E. Bayi Budi sudah mendapat imunisasi dasar lengkap hari ini"
+      ],
+      "jawaban": "A",
+      "tipe": "Penalaran Langsung (dengan nama pelaku)",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1 (aturan): **Balita terdaftar Posyandu Melati → Wajib imunisasi dasar**\nPremis 2 (fakta): **Bayi Budi terdaftar di Posyandu Melati**\nPremis 3 (bumbu): Bu Siti mengantri bersama puluhan ibu lain — ini info tambahan yang tidak mengubah logika.\n\nKarena Bayi Budi termasuk himpunan 'balita terdaftar', maka sifat himpunan itu berlaku untuknya.\n\n**Kesimpulan: Bayi Budi wajib mendapat imunisasi dasar lengkap.**\n\n**Kenapa opsi lain salah?**\n- Opsi B, D: Asumsi di luar premis (alasan mengantri, waktu kedatangan).\n- Opsi C: Overclaim — tidak ada perbandingan kesehatan.\n- Opsi E: Overclaim — premis bilang 'WAJIB mendapat', bukan 'SUDAH mendapat hari ini'.\n\n**Ingat:** Kalau premisnya 'semua', konklusinya PASTI. Jangan tambah info yang tidak ada di premis."
+    },
+    {
+      "id": 2,
+      "pertanyaan": "Tidak ada burung pemakan biji yang memiliki paruh bengkok. Semua burung parkit di penangkaran Taman Safari adalah burung pemakan biji.",
+      "premis": [
+        "Tidak ada burung pemakan biji yang memiliki paruh bengkok",
+        "Semua burung parkit di penangkaran Taman Safari adalah burung pemakan biji"
+      ],
+      "opsi": [
+        "A. Semua burung parkit di penangkaran Taman Safari memiliki paruh bengkok",
+        "B. Sebagian burung parkit di penangkaran Taman Safari memiliki paruh bengkok",
+        "C. Tidak ada burung parkit di penangkaran Taman Safari yang memiliki paruh bengkok",
+        "D. Semua burung pemakan biji berada di penangkaran Taman Safari",
+        "E. Tidak semua burung parkit di penangkaran Taman Safari memiliki paruh bengkok"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1: **Burung pemakan biji → TIDAK punya paruh bengkok**\nPremis 2: **Burung parkit Taman Safari → Burung pemakan biji**\n\nSilogisme:\n1. Burung parkit Taman Safari → Burung pemakan biji (P → Q)\n2. Burung pemakan biji → Tidak punya paruh bengkok (Q → ~R)\n3. Maka: **Burung parkit Taman Safari → Tidak punya paruh bengkok** (P → ~R)\n\n**Kesimpulan: Tidak ada burung parkit di penangkaran Taman Safari yang memiliki paruh bengkok.**\n\n**Ingat:** Jika dua premis masing-masing memuat kata 'Tidak ada' dan 'Semua', maka kesimpulan harus memuat kata 'Tidak ada'."
+    },
+    {
+      "id": 3,
+      "pertanyaan": "Semua anak yang bermain di zona basah Taman Bermain Ceria wajib memakai baju renang. Beberapa anak yang memakai baju renang juga menyewa pelampung.",
+      "premis": [
+        "Semua anak yang bermain di zona basah Taman Bermain Ceria wajib memakai baju renang",
+        "Beberapa anak yang memakai baju renang juga menyewa pelampung"
+      ],
+      "opsi": [
+        "A. Semua anak yang bermain di zona basah Taman Bermain Ceria menyewa pelampung",
+        "B. Beberapa anak yang bermain di zona basah Taman Bermain Ceria mungkin menyewa pelampung",
+        "C. Semua anak yang menyewa pelampung bermain di zona basah Taman Bermain Ceria",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada anak yang bermain di zona basah yang menyewa pelampung"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Main di zona basah → Pakai baju renang** (Semua P → Q)\nPremis 2: **Beberapa yang pakai baju renang → Sewa pelampung** (Sebagian Q → R)\n\nLangkah:\n1. Semua P masuk ke dalam Q.\n2. Sebagian Q bersifat R.\n3. Maka sebagian P **mungkin** bersifat R.\n\n**Kesimpulan: Beberapa anak yang bermain di zona basah Taman Bermain Ceria mungkin menyewa pelampung.**\n\n**Kenapa opsi A salah?** Kalau salah satu premis mengandung 'beberapa', kesimpulan TIDAK BOLEH 'semua'.\n\n**Ingat:** Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah."
+    },
+    {
+      "id": 4,
+      "pertanyaan": "Jika bus telah melewati uji emisi, maka bus tersebut mendapat stiker biru di kaca depan. Bus 'Sumber Selamat' belum melewati uji emisi.",
+      "premis": [
+        "Jika bus telah melewati uji emisi, maka bus tersebut mendapat stiker biru di kaca depan",
+        "Bus 'Sumber Selamat' belum melewati uji emisi"
+      ],
+      "opsi": [
+        "A. Bus 'Sumber Selamat' mendapat stiker biru di kaca depan",
+        "B. Bus 'Sumber Selamat' tidak mendapat stiker biru di kaca depan",
+        "C. Bus 'Sumber Selamat' mungkin mendapat stiker biru di kaca depan",
+        "D. Tidak dapat disimpulkan apakah Bus 'Sumber Selamat' mendapat stiker biru di kaca depan",
+        "E. Bus 'Sumber Selamat' akan melewati uji emisi bulan depan"
+      ],
+      "jawaban": "D",
+      "tipe": "TDDS (Denying the Antecedent)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Lulus uji emisi → Dapat stiker biru** (P → Q)\nPremis 2: **Bus 'Sumber Selamat' BELUM lulus uji emisi** (~P)\n\nDari ~P, kita **TIDAK BISA** menyimpulkan ~Q. Kenapa? Karena bus bisa dapat stiker biru lewat **jalur lain** atau program khusus yang tidak disebutkan di premis.\n\n**Kenapa opsi B salah?** Banyak yang langsung menjawab 'tidak dapat stiker' karena mengira ~P → ~Q. Padahal itu **TIDAK SAH** secara logika.\n\n**Ingat tabel:**\n- P benar → Q benar ✓\n- Q salah → P salah ✓\n- Q benar → tidak bisa dipastikan\n- **P salah → tidak bisa dipastikan** ← kasus ini!"
+    },
+    {
+      "id": 5,
+      "pertanyaan": "Semua pilot yang menerbangkan pesawat berbadan lebar memiliki lisensi ATPL. Beberapa pilot yang memiliki lisensi ATPL juga menjadi instruktur penerbangan. Kapten Hadi menerbangkan pesawat berbadan lebar.",
+      "premis": [
+        "Semua pilot yang menerbangkan pesawat berbadan lebar memiliki lisensi ATPL",
+        "Beberapa pilot yang memiliki lisensi ATPL juga menjadi instruktur penerbangan",
+        "Kapten Hadi menerbangkan pesawat berbadan lebar"
+      ],
+      "opsi": [
+        "A. Kapten Hadi pasti menjadi instruktur penerbangan",
+        "B. Kapten Hadi mungkin menjadi instruktur penerbangan",
+        "C. Kapten Hadi tidak mungkin menjadi instruktur penerbangan",
+        "D. Semua instruktur penerbangan menerbangkan pesawat berbadan lebar",
+        "E. Tidak ada kesimpulan yang dapat ditarik"
+      ],
+      "jawaban": "B",
+      "tipe": "Nama Pelaku + Beberapa → Mungkin",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: **Terbang pesawat lebar → Punya lisensi ATPL** (P → Q)\nPremis 2: **Beberapa yang punya ATPL → Instruktur** (Q → R, tapi hanya BEBERAPA)\nPremis 3: **Kapten Hadi terbang pesawat lebar** (P benar)\n\nLangkah:\n1. Dari P1 dan P3: Kapten Hadi **PASTI punya lisensi ATPL**.\n2. Dari P2: hanya **BEBERAPA** yang punya ATPL jadi instruktur.\n3. Kita TIDAK TAHU apakah Kapten Hadi termasuk 'beberapa' itu.\n\n**Kesimpulan: Kapten Hadi MUNGKIN menjadi instruktur penerbangan.**\n\n**Ingat:** Jika dalam premis memuat nama pelaku, kesimpulan WAJIB memuat nama pelaku. Karena ada 'beberapa', kesimpulannya 'mungkin'."
+    },
+    {
+      "id": 6,
+      "pertanyaan": "Semua pedagang makanan di Pasar Malam Alun-alun wajib menggunakan sarung tangan plastik. Pak Joko adalah pedagang makanan di Pasar Malam Alun-alun. Malam ini Pak Joko terlihat sibuk melayani pembeli yang memaduki lapaknya.",
+      "premis": [
+        "Semua pedagang makanan di Pasar Malam Alun-alun wajib menggunakan sarung tangan plastik",
+        "Pak Joko adalah pedagang makanan di Pasar Malam Alun-alun",
+        "Malam ini Pak Joko terlihat sibuk melayani pembeli yang memaduki lapaknya"
+      ],
+      "opsi": [
+        "A. Pak Joko menggunakan sarung tangan plastik sesuai ketentuan pasar malam",
+        "B. Pak Joko adalah pedagang yang paling laris di pasar malam",
+        "C. Pak Joko menjual makanan lebih banyak dari pedagang lain",
+        "D. Pak Joko selalu datang paling awal untuk menyiapkan lapak",
+        "E. Pak Joko mendapat untung besar malam ini"
+      ],
+      "jawaban": "A",
+      "tipe": "Penalaran Langsung",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1 (aturan): **Pedagang makanan Pasar Malam → Wajib sarung tangan plastik**\nPremis 2 (fakta): **Pak Joko pedagang makanan Pasar Malam**\nPremis 3 (bumbu): Pak Joko sibuk melayani pembeli — ini info tambahan.\n\n**Kesimpulan: Pak Joko menggunakan sarung tangan plastik sesuai ketentuan pasar malam.**\n\n**Kenapa opsi lain salah?**\n- Opsi B, C: Overclaim — tidak ada perbandingan kelarisan atau jumlah penjualan.\n- Opsi D: Overclaim — tidak ada info waktu kedatangan.\n- Opsi E: Overclaim — tidak ada info soal keuntungan.\n\n**Ingat:** Kesimpulan harus sesuai FAKTA di premis, tidak boleh nambah asumsi."
+    },
+    {
+      "id": 7,
+      "pertanyaan": "Jika suhu oven mencapai 200 derajat Celcius, maka roti tawar akan matang sempurna dalam 15 menit. Roti tawar produksi Pabrik 'Manis' hari ini tidak matang sempurna dalam 15 menit.",
+      "premis": [
+        "Jika suhu oven mencapai 200 derajat Celcius, maka roti tawar akan matang sempurna dalam 15 menit",
+        "Roti tawar produksi Pabrik 'Manis' hari ini tidak matang sempurna dalam 15 menit"
+      ],
+      "opsi": [
+        "A. Suhu oven mencapai 200 derajat Celcius",
+        "B. Suhu oven tidak mencapai 200 derajat Celcius",
+        "C. Suhu oven mungkin mencapai 200 derajat Celcius",
+        "D. Tidak dapat disimpulkan",
+        "E. Roti tawar akan dibuang"
+      ],
+      "jawaban": "B",
+      "tipe": "Modus Tollens",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1: **Suhu 200°C → Matang 15 menit** (P → Q)\nPremis 2: **TIDAK matang 15 menit** (~Q)\n\n**Modus Tollens:** P → Q, ~Q, maka ~P.\n\nLogikanya: Seandainya suhu 200°C, maka roti PASTI matang 15 menit. Tapi faktanya TIDAK matang 15 menit. Berarti suhu PASTI tidak 200°C.\n\n**Kesimpulan: Suhu oven tidak mencapai 200 derajat Celcius.**\n\n**Ingat rumus:** P → Q, ~Q, maka ~P."
+    },
+    {
+      "id": 8,
+      "pertanyaan": "Tidak semua bunga mawar di Toko Bunga 'Florist' berwarna merah. Beberapa pesanan pernikahan menggunakan bunga mawar dari Toko Bunga 'Florist'.",
+      "premis": [
+        "Tidak semua bunga mawar di Toko Bunga 'Florist' berwarna merah",
+        "Beberapa pesanan pernikahan menggunakan bunga mawar dari Toko Bunga 'Florist'"
+      ],
+      "opsi": [
+        "A. Semua pesanan pernikahan menggunakan bunga mawar berwarna merah",
+        "B. Semua pesanan pernikahan tidak menggunakan bunga mawar berwarna merah",
+        "C. Beberapa pesanan pernikahan tidak menggunakan bunga mawar berwarna merah",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Semua bunga mawar di Toko Bunga 'Florist' digunakan untuk pesanan pernikahan"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Semua + Beberapa",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: 'Tidak semua mawar di Florist berwarna merah'\nArtinya: **Sebagian mawar di Florist TIDAK berwarna merah**.\n\nPremis 2: **Beberapa pesanan pernikahan menggunakan mawar dari Florist**\n\n**Ingat:** Jika dua premis masing-masing memuat kata 'Tidak semua' dan 'beberapa', maka kesimpulan harus memuat kata 'Tidak semua/beberapa'.\n\nMiddle term: 'bunga mawar dari Toko Bunga Florist' — tidak boleh muncul di kesimpulan.\n\n**Kesimpulan: Beberapa pesanan pernikahan tidak menggunakan bunga mawar berwarna merah.**"
+    },
+    {
+      "id": 9,
+      "pertanyaan": "Jika kadar salinitas air normal, maka udang vaname akan nafsu makan. Jika udang vaname nafsu makan, maka pertumbuhan udang akan cepat. Pertumbuhan udang di tambak Pak Tejo tidak cepat.",
+      "premis": [
+        "Jika kadar salinitas air normal, maka udang vaname akan nafsu makan",
+        "Jika udang vaname nafsu makan, maka pertumbuhan udang akan cepat",
+        "Pertumbuhan udang di tambak Pak Tejo tidak cepat"
+      ],
+      "opsi": [
+        "A. Kadar salinitas air di tambak Pak Tejo normal",
+        "B. Kadar salinitas air di tambak Pak Tejo tidak normal",
+        "C. Udang vaname di tambak Pak Tejo nafsu makan",
+        "D. Tidak dapat disimpulkan",
+        "E. Tambak Pak Tejo akan panen raya"
+      ],
+      "jawaban": "B",
+      "tipe": "Silogisme Berantai 3 Premis + Modus Tollens",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: **Salinitas normal → Nafsu makan** (P → Q)\nPremis 2: **Nafsu makan → Pertumbuhan cepat** (Q → R)\nPremis 3: **Pertumbuhan TIDAK cepat** (~R)\n\nLangkah:\n1. Gabungkan P1 dan P2: **Salinitas normal → Pertumbuhan cepat** (P → R)\n2. Dari P3: ~R\n3. Modus Tollens: P → R, ~R, maka ~P.\n\n**Kesimpulan: Kadar salinitas air di tambak Pak Tejo tidak normal.**\n\n**Ingat:** Modus Tollens hanya berlaku dari arah belakang (~Q maka ~P)."
+    },
+    {
+      "id": 10,
+      "pertanyaan": "Semua pengunjung arena skating wajib menyewa sepatu roda di loket. Semua pengunjung yang menyewa sepatu roda di loket mendapat kaos kaki gratis.",
+      "premis": [
+        "Semua pengunjung arena skating wajib menyewa sepatu roda di loket",
+        "Semua pengunjung yang menyewa sepatu roda di loket mendapat kaos kaki gratis"
+      ],
+      "opsi": [
+        "A. Semua pengunjung yang mendapat kaos kaki gratis menyewa sepatu roda di loket",
+        "B. Beberapa pengunjung arena skating mendapat kaos kaki gratis",
+        "C. Semua pengunjung arena skating mendapat kaos kaki gratis",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada pengunjung arena skating yang mendapat kaos kaki gratis"
+      ],
+      "jawaban": "C",
+      "tipe": "Semua + Semua (Silogisme Berantai)",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1: **Pengunjung skating → Sewa sepatu roda** (P → Q)\nPremis 2: **Sewa sepatu roda → Dapat kaos kaki** (Q → R)\n\nSilogisme: P → Q, Q → R, maka **P → R**.\n\n**Kesimpulan: Semua pengunjung arena skating mendapat kaos kaki gratis.**\n\n**Kenapa opsi A salah?** Membalik arah premis.\n**Kenapa opsi B ('beberapa') kurang tepat?** Karena premisnya semua 'semua', kesimpulannya juga 'semua'.\n\n**Ingat:** Jika dua premis masing-masing memuat kata 'semua' dan 'semua', maka kesimpulan harus memuat kata 'semua'."
+    },
+    {
+      "id": 11,
+      "pertanyaan": "Setiap pengunjung yang memetik strawberry di Kebun Lembang wajib membawa keranjang kecil. Seorang pengunjung terlihat sedang memetik strawberry di barisan tanaman. Di tangannya terdapat keranjang kecil berisi beberapa strawberry merah.",
+      "premis": [
+        "Setiap pengunjung yang memetik strawberry di Kebun Lembang wajib membawa keranjang kecil",
+        "Seorang pengunjung terlihat sedang memetik strawberry di barisan tanaman",
+        "Di tangannya terdapat keranjang kecil berisi beberapa strawberry merah"
+      ],
+      "opsi": [
+        "A. Pengunjung tersebut membawa keranjang kecil sesuai ketentuan kebun",
+        "B. Pengunjung tersebut memetik strawberry lebih dari satu kilogram",
+        "C. Pengunjung tersebut datang ke kebun bersama keluarganya",
+        "D. Pengunjung tersebut memetik strawberry paling manis di kebun",
+        "E. Pengunjung tersebut mendapat diskon tiket masuk"
+      ],
+      "jawaban": "A",
+      "tipe": "Penalaran Langsung",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1 (aturan): **Memetik strawberry → Wajib bawa keranjang kecil**\nPremis 2 (fakta): Ada pengunjung memetik strawberry\nPremis 3 (bukti): Di tangannya ada keranjang kecil\n\nKesimpulan logisnya: Pengunjung itu **memenuhi kewajiban** membawa keranjang kecil.\n\n**Kenapa opsi lain salah?**\n- Opsi B, C, D, E: Overclaim — tidak ada info soal berat, keluarga, rasa, atau diskon.\n\n**Ingat:** Kesimpulan harus sesuai fakta premis."
+    },
+    {
+      "id": 12,
+      "pertanyaan": "Semua tahu yang diproduksi Pabrik 'Murni' menggunakan kedelai lokal. Tidak ada tahu impor yang menggunakan kedelai lokal.",
+      "premis": [
+        "Semua tahu yang diproduksi Pabrik 'Murni' menggunakan kedelai lokal",
+        "Tidak ada tahu impor yang menggunakan kedelai lokal"
+      ],
+      "opsi": [
+        "A. Beberapa tahu yang diproduksi Pabrik 'Murni' adalah tahu impor",
+        "B. Semua tahu impor diproduksi oleh Pabrik 'Murni'",
+        "C. Tidak ada tahu yang diproduksi Pabrik 'Murni' yang merupakan tahu impor",
+        "D. Beberapa tahu impor menggunakan kedelai lokal",
+        "E. Semua tahu yang diproduksi Pabrik 'Murni' adalah tahu impor"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua (arah berlawanan)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Tahu Pabrik Murni → Kedelai lokal**\nPremis 2: **Tahu impor → TIDAK kedelai lokal**\n\nLogikanya:\n- Tahu Pabrik Murni pasti pakai kedelai lokal.\n- Tahu impor pasti TIDAK pakai kedelai lokal.\n- Karena sifatnya bertolak belakang, **tidak mungkin ada tahu yang sekaligus produksi Pabrik Murni DAN tahu impor**.\n\n**Kesimpulan: Tidak ada tahu yang diproduksi Pabrik 'Murni' yang merupakan tahu impor.**\n\n**Ingat:** Kalau dua kelompok punya sifat yang saling bertolak belakang, mereka TIDAK BISA beririsan."
+    },
+    {
+      "id": 13,
+      "pertanyaan": "Seluruh penari di Sanggar Seni Nusantara wajib memakai selendang saat latihan. Sebagian penari di Sanggar Seni Nusantara juga berlatih memainkan gamelan.",
+      "premis": [
+        "Seluruh penari di Sanggar Seni Nusantara wajib memakai selendang saat latihan",
+        "Sebagian penari di Sanggar Seni Nusantara juga berlatih memainkan gamelan"
+      ],
+      "opsi": [
+        "A. Seluruh penari yang berlatih memainkan gamelan tidak wajib memakai selendang",
+        "B. Seluruh penari di Sanggar Seni Nusantara yang berlatih memainkan gamelan wajib memakai selendang saat latihan",
+        "C. Sebagian penari di Sanggar Seni Nusantara yang berlatih memainkan gamelan tidak wajib memakai selendang",
+        "D. Seluruh penari di Sanggar Seni Nusantara yang tidak berlatih memainkan gamelan tidak wajib memakai selendang",
+        "E. Sebagian penari di Sanggar Seni Nusantara yang tidak berlatih memainkan gamelan tidak wajib memakai selendang"
+      ],
+      "jawaban": "B",
+      "tipe": "Tipe 4 (Semua p→q + Sebagian p→r)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Semua** penari → Wajib selendang (P → Q)\nPremis 2: **Sebagian** penari → Main gamelan (P → R)\n\n**Rumus Tipe 4:**\nPremis 1 = Semua p → q\nPremis 2 = Sebagian p → r\nKesimpulan = **Semua p yang r → q**\n\n**Kesimpulan: Seluruh penari di Sanggar Seni Nusantara yang berlatih memainkan gamelan wajib memakai selendang saat latihan.**\n\n**Kenapa opsi A, C, D, E salah?** Semua bertentangan dengan premis 1 — SEMUA penari wajib pakai selendang, TIDAK TERKECUALI yang main gamelan atau tidak."
+    },
+    {
+      "id": 14,
+      "pertanyaan": "Jika mobil mengalami kerusakan pada sistem injeksi, maka mesin akan sulit dinyalakan di pagi hari. Mobil milik Pak Rahmat sulit dinyalakan di pagi hari.",
+      "premis": [
+        "Jika mobil mengalami kerusakan pada sistem injeksi, maka mesin akan sulit dinyalakan di pagi hari",
+        "Mobil milik Pak Rahmat sulit dinyalakan di pagi hari"
+      ],
+      "opsi": [
+        "A. Mobil milik Pak Rahmat mengalami kerusakan pada sistem injeksi",
+        "B. Mobil milik Pak Rahmat tidak mengalami kerusakan pada sistem injeksi",
+        "C. Mobil milik Pak Rahmat mungkin mengalami kerusakan pada sistem injeksi",
+        "D. Tidak dapat disimpulkan apakah mobil milik Pak Rahmat mengalami kerusakan pada sistem injeksi",
+        "E. Mobil milik Pak Rahmat akan dibawa ke bengkel"
+      ],
+      "jawaban": "D",
+      "tipe": "TDDS (Affirming the Consequent)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Injeksi rusak → Sulit nyala pagi** (P → Q)\nPremis 2: **Mobil Pak Rahmat sulit nyala pagi** (Q benar)\n\nDari Q benar, kita **TIDAK BISA** menyimpulkan P benar. Kenapa? Karena mobil bisa sulit nyala lewat **sebab lain** (misal: aki soak, busi mati) yang tidak disebutkan di premis.\n\n**Kenapa opsi A salah?** Banyak yang langsung menjawab 'pasti injeksi rusak' karena mengira Q benar → P benar. Padahal itu TIDAK SAH.\n\n**Ingat:** Q benar tidak membuktikan P benar. Ini jebakan affirming the consequent."
+    },
+    {
+      "id": 15,
+      "pertanyaan": "Setiap pelanggan yang memesan kopi tubruk di Warung 'Kopi Kenangan' akan mendapat camilan pisang goreng. Seorang pelanggan terlihat sedang menikmati secangkir kopi tubruk di sudut warung. Di piring kecil di depannya terdapat dua potong pisang goreng.",
+      "premis": [
+        "Setiap pelanggan yang memesan kopi tubruk di Warung 'Kopi Kenangan' akan mendapat camilan pisang goreng",
+        "Seorang pelanggan terlihat sedang menikmati secangkir kopi tubruk di sudut warung",
+        "Di piring kecil di depannya terdapat dua potong pisang goreng"
+      ],
+      "opsi": [
+        "A. Pelanggan tersebut mendapat camilan pisang goreng sesuai ketentuan warung",
+        "B. Pelanggan tersebut memesan lebih dari satu cangkir kopi",
+        "C. Pelanggan tersebut adalah pelanggan tetap warung",
+        "D. Pelanggan tersebut menyukai pisang goreng yang sangat manis",
+        "E. Pelanggan tersebut datang ke warung bersama temannya"
+      ],
+      "jawaban": "A",
+      "tipe": "Penalaran Langsung",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1 (aturan): **Pesan kopi tubruk → Dapat pisang goreng**\nPremis 2 (fakta): Ada pelanggan minum kopi tubruk\nPremis 3 (bukti): Di depannya ada pisang goreng\n\nKesimpulan logisnya: Pelanggan itu **mendapat camilan** sesuai ketentuan warung.\n\n**Kenapa opsi lain salah?**\n- Opsi B, C, D, E: Overclaim — tidak ada info soal jumlah cangkir, status pelanggan tetap, rasa, atau teman.\n\n**Ingat:** Kesimpulan harus sesuai fakta premis."
+    },
+    {
+      "id": 16,
+      "pertanyaan": "Tidak ada kendaraan roda empat yang diperbolehkan melintas di jembatan gantung Desa Sukamaju. Semua mobil operasional puskesmas pembantu adalah kendaraan roda empat.",
+      "premis": [
+        "Tidak ada kendaraan roda empat yang diperbolehkan melintas di jembatan gantung Desa Sukamaju",
+        "Semua mobil operasional puskesmas pembantu adalah kendaraan roda empat"
+      ],
+      "opsi": [
+        "A. Semua mobil operasional puskesmas pembantu diperbolehkan melintas di jembatan gantung",
+        "B. Sebagian mobil operasional puskesmas pembantu diperbolehkan melintas di jembatan gantung",
+        "C. Tidak ada mobil operasional puskesmas pembantu yang diperbolehkan melintas di jembatan gantung Desa Sukamaju",
+        "D. Semua kendaraan roda empat adalah mobil operasional puskesmas pembantu",
+        "E. Tidak semua mobil operasional puskesmas pembantu diperbolehkan melintas di jembatan gantung"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1: **Kendaraan roda empat → TIDAK boleh melintas**\nPremis 2: **Mobil puskesmas → Kendaraan roda empat**\n\nSilogisme:\n1. Mobil puskesmas → Roda empat (P → Q)\n2. Roda empat → Tidak boleh melintas (Q → ~R)\n3. Maka: **Mobil puskesmas → Tidak boleh melintas** (P → ~R)\n\n**Kesimpulan: Tidak ada mobil operasional puskesmas pembantu yang diperbolehkan melintas di jembatan gantung Desa Sukamaju.**\n\n**Ingat:** Jika dua premis masing-masing memuat kata 'Tidak ada' dan 'Semua', maka kesimpulan harus memuat kata 'Tidak ada'."
+    },
+    {
+      "id": 17,
+      "pertanyaan": "Semua anak asuh di Panti 'Kasih Ibu' yang lulus SD berhak melanjutkan ke SMP. Beberapa anak asuh yang melanjutkan ke SMP juga mendapat beasiswa dari donatur. Tidak ada penerima beasiswa dari donatur yang tidak memiliki rapor dengan nilai rata-rata di atas 80.",
+      "premis": [
+        "Semua anak asuh di Panti 'Kasih Ibu' yang lulus SD berhak melanjutkan ke SMP",
+        "Beberapa anak asuh yang melanjutkan ke SMP juga mendapat beasiswa dari donatur",
+        "Tidak ada penerima beasiswa dari donatur yang tidak memiliki rapor dengan nilai rata-rata di atas 80"
+      ],
+      "opsi": [
+        "A. Semua anak asuh di Panti 'Kasih Ibu' yang lulus SD memiliki rapor dengan nilai rata-rata di atas 80",
+        "B. Beberapa anak asuh di Panti 'Kasih Ibu' yang lulus SD memiliki rapor dengan nilai rata-rata di atas 80",
+        "C. Tidak ada anak asuh di Panti 'Kasih Ibu' yang lulus SD yang memiliki rapor dengan nilai rata-rata di atas 80",
+        "D. Semua anak yang memiliki rapor dengan nilai rata-rata di atas 80 lulus SD di Panti 'Kasih Ibu'",
+        "E. Beberapa anak yang tidak lulus SD memiliki rapor dengan nilai rata-rata di atas 80"
+      ],
+      "jawaban": "B",
+      "tipe": "Silogisme 3 Premis Kompleks",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: **Lulus SD → Lanjut SMP** (Semua P → Q)\nPremis 2: **Beberapa yang lanjut SMP → Dapat beasiswa** (Sebagian Q → R)\nPremis 3: **Dapat beasiswa → Rapor > 80** (R → S)\n\nLangkah:\n1. Dari P1 dan P2: Semua P → Q, Sebagian Q → R. Hasil: **Sebagian P → R**.\n2. Dari hasil dan P3: Sebagian P → R, R → S. Hasil: **Sebagian P → S**.\n\n**Kesimpulan: Beberapa anak asuh di Panti 'Kasih Ibu' yang lulus SD memiliki rapor dengan nilai rata-rata di atas 80.**\n\n**Kenapa opsi A salah?** Overclaim — premis 2 bilang 'beberapa', bukan 'semua'.\n**Kenapa opsi D salah?** Membalik arah premis."
+    },
+    {
+      "id": 18,
+      "pertanyaan": "Semua mainan edukasi yang dijual di Toko 'Pintar' memiliki label SNI. Beberapa mainan edukasi yang memiliki label SNI juga mendapat diskon akhir tahun.",
+      "premis": [
+        "Semua mainan edukasi yang dijual di Toko 'Pintar' memiliki label SNI",
+        "Beberapa mainan edukasi yang memiliki label SNI juga mendapat diskon akhir tahun"
+      ],
+      "opsi": [
+        "A. Semua mainan edukasi yang dijual di Toko 'Pintar' mendapat diskon akhir tahun",
+        "B. Beberapa mainan edukasi yang dijual di Toko 'Pintar' mungkin mendapat diskon akhir tahun",
+        "C. Semua mainan edukasi yang mendapat diskon akhir tahun dijual di Toko 'Pintar'",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada mainan edukasi di Toko 'Pintar' yang mendapat diskon"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Mainan Toko Pintar → Label SNI** (Semua P → Q)\nPremis 2: **Beberapa yang label SNI → Diskon** (Sebagian Q → R)\n\nLangkah:\n1. Semua P masuk ke dalam Q.\n2. Sebagian Q bersifat R.\n3. Maka sebagian P **mungkin** bersifat R.\n\n**Kesimpulan: Beberapa mainan edukasi yang dijual di Toko 'Pintar' mungkin mendapat diskon akhir tahun.**\n\n**Ingat:** Kalau ada 'beberapa' di salah satu premis, konklusi maksimal 'beberapa'."
+    },
+    {
+      "id": 19,
+      "pertanyaan": "Ingkaran dari pernyataan 'Jika mikrofon telah terhubung ke mixer, maka suara akan terdengar jernih di rekaman' adalah...",
+      "premis": [
+        "Jika mikrofon telah terhubung ke mixer, maka suara akan terdengar jernih di rekaman"
+      ],
+      "opsi": [
+        "A. Jika mikrofon belum terhubung ke mixer, maka suara tidak terdengar jernih di rekaman",
+        "B. Mikrofon telah terhubung ke mixer, tetapi suara tidak terdengar jernih di rekaman",
+        "C. Jika suara tidak terdengar jernih di rekaman, maka mikrofon belum terhubung ke mixer",
+        "D. Mikrofon belum terhubung ke mixer dan suara terdengar jernih di rekaman",
+        "E. Jika suara terdengar jernih di rekaman, maka mikrofon telah terhubung ke mixer"
+      ],
+      "jawaban": "B",
+      "tipe": "Ingkaran Implikasi",
+      "tingkat": "Menengah",
+      "pembahasan": "Ini soal **ingkaran implikasi** (jika... maka...).\n\n**Ingat dari materi tabel Ingkaran:**\n| Pernyataan asli | Ingkaran yang benar |\n|---|---|\n| Jika P maka Q (P → Q) | **P dan ~Q** |\n\n**Penerapan:**\n- Pernyataan asli: 'Jika mikrofon terhubung (P), maka suara jernih (Q)'\n- Ingkaran: **'Mikrofon terhubung (P) DAN suara TIDAK jernih (~Q)'**\n\n**Kesimpulan: Mikrofon telah terhubung ke mixer, TETAPI suara tidak terdengar jernih di rekaman.**\n\n**Kenapa opsi A salah?** Itu ingkaran yang salah (~P → ~Q).\n**Kenapa opsi C salah?** Itu kontraposisi (~Q → ~P), bukan ingkaran."
+    },
+    {
+      "id": 20,
+      "pertanyaan": "Tidak semua pemanjat di Arena 'Rock Climbing' menggunakan tali pengaman jenis dinamis. Beberapa peserta kompetisi nasional adalah pemanjat di Arena 'Rock Climbing'.",
+      "premis": [
+        "Tidak semua pemanjat di Arena 'Rock Climbing' menggunakan tali pengaman jenis dinamis",
+        "Beberapa peserta kompetisi nasional adalah pemanjat di Arena 'Rock Climbing'"
+      ],
+      "opsi": [
+        "A. Semua peserta kompetisi nasional menggunakan tali pengaman jenis dinamis",
+        "B. Semua peserta kompetisi nasional tidak menggunakan tali pengaman jenis dinamis",
+        "C. Beberapa peserta kompetisi nasional tidak menggunakan tali pengaman jenis dinamis",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Semua pemanjat di Arena 'Rock Climbing' adalah peserta kompetisi nasional"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Semua + Beberapa",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: 'Tidak semua pemanjat di Arena Rock Climbing pakai tali dinamis'\nArtinya: **Sebagian pemanjat TIDAK pakai tali dinamis**.\n\nPremis 2: **Beberapa peserta kompetisi nasional adalah pemanjat di Arena Rock Climbing**\n\n**Ingat:** Jika dua premis masing-masing memuat kata 'Tidak semua' dan 'beberapa', maka kesimpulan harus memuat kata 'Tidak semua/beberapa'.\n\n**Kesimpulan: Beberapa peserta kompetisi nasional tidak menggunakan tali pengaman jenis dinamis.**"
+    },
+    {
+      "id": 21,
+      "pertanyaan": "Setiap pekerja di kumbung jamur tiram wajib memakai sepatu bot karet. Seorang pekerja terlihat sedang memanen baglog jamur di rak paling bawah. Di kaki pekerja tersebut terdapat sepatu bot karet berwarna hijau.",
+      "premis": [
+        "Setiap pekerja di kumbung jamur tiram wajib memakai sepatu bot karet",
+        "Seorang pekerja terlihat sedang memanen baglog jamur di rak paling bawah",
+        "Di kaki pekerja tersebut terdapat sepatu bot karet berwarna hijau"
+      ],
+      "opsi": [
+        "A. Pekerja tersebut memakai sepatu bot karet sesuai ketentuan kumbung jamur",
+        "B. Pekerja tersebut adalah mandor di kumbung jamur",
+        "C. Pekerja tersebut memanen jamur lebih dari sepuluh kilogram",
+        "D. Pekerja tersebut selalu datang paling awal ke kumbung",
+        "E. Pekerja tersebut akan mendapat bonus panen bulan ini"
+      ],
+      "jawaban": "A",
+      "tipe": "Penalaran Langsung",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1 (aturan): **Pekerja kumbung → Wajib sepatu bot karet**\nPremis 2 (fakta): Ada pekerja memanen jamur\nPremis 3 (bukti): Di kakinya ada sepatu bot karet\n\nKesimpulan logisnya: Pekerja itu **memenuhi kewajiban** memakai sepatu bot karet.\n\n**Kenapa opsi lain salah?**\n- Opsi B, C, D, E: Overclaim — tidak ada info soal jabatan, jumlah panen, waktu datang, atau bonus.\n\n**Ingat:** Kesimpulan harus sesuai fakta premis."
+    },
+    {
+      "id": 22,
+      "pertanyaan": "Jika kain batik telah melalui proses malam (lilin) lebih dari tiga kali, maka kain tersebut dikategorikan sebagai batik tulis premium. Kain batik 'Soga' telah melalui proses malam lebih dari tiga kali.",
+      "premis": [
+        "Jika kain batik telah melalui proses malam (lilin) lebih dari tiga kali, maka kain tersebut dikategorikan sebagai batik tulis premium",
+        "Kain batik 'Soga' telah melalui proses malam lebih dari tiga kali"
+      ],
+      "opsi": [
+        "A. Kain batik 'Soga' dikategorikan sebagai batik tulis premium",
+        "B. Kain batik 'Soga' tidak dikategorikan sebagai batik tulis premium",
+        "C. Kain batik 'Soga' mungkin dikategorikan sebagai batik tulis premium",
+        "D. Tidak dapat disimpulkan",
+        "E. Semua batik tulis premium adalah kain batik 'Soga'"
+      ],
+      "jawaban": "A",
+      "tipe": "Modus Ponens",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1: **Proses malam > 3x → Batik premium** (P → Q)\nPremis 2: **Batik 'Soga' proses malam > 3x** (P benar)\n\n**Modus Ponens:** P → Q, P benar, maka Q pasti benar.\n\n**Kesimpulan: Kain batik 'Soga' dikategorikan sebagai batik tulis premium.**\n\n**Kenapa opsi C salah?** Modus Ponens memberi KEPASTIAN, bukan kemungkinan.\n\n**Ingat rumus:** P → Q, P benar, maka Q pasti benar."
+    },
+    {
+      "id": 23,
+      "pertanyaan": "Semua peserta kursus renang di kolam 'Tirta' mendapat loker dan handuk. Loker dan handuk disediakan untuk kenyamanan peserta. Rian tidak mendapat loker dan tidak mendapat handuk.",
+      "premis": [
+        "Semua peserta kursus renang di kolam 'Tirta' mendapat loker dan handuk",
+        "Loker dan handuk disediakan untuk kenyamanan peserta",
+        "Rian tidak mendapat loker dan tidak mendapat handuk"
+      ],
+      "opsi": [
+        "A. Rian sedang berada di dalam area kursus renang kolam 'Tirta'",
+        "B. Rian bukan peserta kursus renang di kolam 'Tirta'",
+        "C. Rian tidak memiliki kedisiplinan",
+        "D. Semua peserta kursus renang termasuk Rian tidak disiplin",
+        "E. Semua peserta kursus renang termasuk Rian mendapat kenyamanan"
+      ],
+      "jawaban": "B",
+      "tipe": "Konjungsi (dan) + Nama Pelaku",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: **Peserta kursus Tirta → Dapat loker DAN handuk**\nPremis 2: Loker dan handuk → Untuk kenyamanan (info tambahan)\nPremis 3: **Rian TIDAK dapat loker DAN TIDAK dapat handuk**\n\n**Ingat:** Jika dalam premis memuat nama pelaku, kesimpulan WAJIB memuat nama pelaku.\n\nLogikanya:\n- Peserta kursus pasti dapat loker DAN handuk.\n- Rian tidak dapat keduanya.\n- Karena Rian tidak memenuhi syarat yang pasti dimiliki peserta kursus, maka **Rian bukan peserta kursus renang di kolam 'Tirta'**.\n\n**Kesimpulan: Rian bukan peserta kursus renang di kolam 'Tirta'.**\n\n**Kenapa opsi C salah?** Overclaim — tidak dapat loker ≠ tidak disiplin."
+    },
+    {
+      "id": 24,
+      "pertanyaan": "Semua susu sapi yang masuk ke Pabrik Keju 'Lembang' dipasteurisasi pada suhu tinggi. Semua susu sapi yang dipasteurisasi pada suhu tinggi bebas dari bakteri patogen.",
+      "premis": [
+        "Semua susu sapi yang masuk ke Pabrik Keju 'Lembang' dipasteurisasi pada suhu tinggi",
+        "Semua susu sapi yang dipasteurisasi pada suhu tinggi bebas dari bakteri patogen"
+      ],
+      "opsi": [
+        "A. Semua susu sapi yang bebas dari bakteri patogen masuk ke Pabrik Keju 'Lembang'",
+        "B. Beberapa susu sapi yang masuk ke Pabrik Keju 'Lembang' bebas dari bakteri patogen",
+        "C. Semua susu sapi yang masuk ke Pabrik Keju 'Lembang' bebas dari bakteri patogen",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada susu sapi di Pabrik Keju 'Lembang' yang bebas dari bakteri patogen"
+      ],
+      "jawaban": "C",
+      "tipe": "Semua + Semua (Silogisme Berantai)",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1: **Susu masuk Pabrik Lembang → Pasteurisasi suhu tinggi** (P → Q)\nPremis 2: **Pasteurisasi suhu tinggi → Bebas bakteri patogen** (Q → R)\n\nSilogisme: P → Q, Q → R, maka **P → R**.\n\n**Kesimpulan: Semua susu sapi yang masuk ke Pabrik Keju 'Lembang' bebas dari bakteri patogen.**\n\n**Kenapa opsi A salah?** Membalik arah premis.\n\n**Ingat:** Jika dua premis masing-masing memuat kata 'semua' dan 'semua', maka kesimpulan harus memuat kata 'semua'."
+    },
+    {
+      "id": 25,
+      "pertanyaan": "Semua petani kopi di dataran tinggi Gayo yang lulus sertifikasi organik mendapat akses ekspor langsung. Beberapa petani kopi yang mendapat akses ekspor langsung juga diundang menjadi pembicara di festival kopi internasional. Pak Umar adalah petani kopi di dataran tinggi Gayo yang lulus sertifikasi organik.",
+      "premis": [
+        "Semua petani kopi di dataran tinggi Gayo yang lulus sertifikasi organik mendapat akses ekspor langsung",
+        "Beberapa petani kopi yang mendapat akses ekspor langsung juga diundang menjadi pembicara di festival kopi internasional",
+        "Pak Umar adalah petani kopi di dataran tinggi Gayo yang lulus sertifikasi organik"
+      ],
+      "opsi": [
+        "A. Pak Umar pasti diundang menjadi pembicara di festival kopi internasional",
+        "B. Pak Umar mungkin diundang menjadi pembicara di festival kopi internasional",
+        "C. Pak Umar tidak mungkin diundang menjadi pembicara di festival kopi internasional",
+        "D. Semua pembicara di festival kopi internasional adalah petani kopi Gayo",
+        "E. Tidak ada kesimpulan yang dapat ditarik"
+      ],
+      "jawaban": "B",
+      "tipe": "Nama Pelaku + Beberapa → Mungkin",
+      "tingkat": "Mahir",
+      "pembahasan": "Premis 1: **Lulus organik → Akses ekspor** (P → Q)\nPremis 2: **Beberapa yang akses ekspor → Pembicara festival** (Q → R, tapi hanya BEBERAPA)\nPremis 3: **Pak Umar lulus organik** (P benar)\n\nLangkah:\n1. Dari P1 dan P3: Pak Umar **PASTI dapat akses ekspor**.\n2. Dari P2: hanya **BEBERAPA** yang dapat akses ekspor jadi pembicara.\n3. Kita TIDAK TAHU apakah Pak Umar termasuk 'beberapa' itu.\n\n**Kesimpulan: Pak Umar MUNGKIN diundang menjadi pembicara di festival kopi internasional.**\n\n**Ingat:** Jika dalam premis memuat nama pelaku, kesimpulan WAJIB memuat nama pelaku. Karena ada 'beberapa', kesimpulannya 'mungkin'."
+    },
+    {
+      "id": 26,
+      "pertanyaan": "Jika lampu stadion dinyalakan penuh, maka pertandingan akan berlangsung malam hari. Jika pertandingan berlangsung malam hari, maka tiket yang terjual akan lebih banyak. Lampu stadion tidak dinyalakan penuh.",
+      "premis": [
+        "Jika lampu stadion dinyalakan penuh, maka pertandingan akan berlangsung malam hari",
+        "Jika pertandingan berlangsung malam hari, maka tiket yang terjual akan lebih banyak",
+        "Lampu stadion tidak dinyalakan penuh"
+      ],
+      "opsi": [
+        "A. Tiket yang terjual akan lebih banyak",
+        "B. Tiket yang terjual tidak akan lebih banyak",
+        "C. Pertandingan akan berlangsung malam hari",
+        "D. Tidak dapat disimpulkan apakah tiket yang terjual akan lebih banyak",
+        "E. Pertandingan akan dibatalkan"
+      ],
+      "jawaban": "D",
+      "tipe": "TDDS (Denying the Antecedent pada Rantai)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Lampu penuh → Pertandingan malam** (P → Q)\nPremis 2: **Pertandingan malam → Tiket lebih banyak** (Q → R)\nPremis 3: **Lampu TIDAK penuh** (~P)\n\nLangkah:\n1. Gabungkan P1 dan P2: **Lampu penuh → Tiket lebih banyak** (P → R)\n2. Dari P3: ~P\n\nDari ~P, kita **TIDAK BISA** menyimpulkan ~R. Kenapa? Karena tiket bisa terjual lebih banyak lewat **jalur lain** (misal: pertandingan final, promo tiket) yang tidak disebutkan di premis.\n\n**Kenapa opsi B salah?** Banyak yang langsung menjawab 'tiket tidak lebih banyak' karena mengira ~P → ~R. Padahal itu **TIDAK SAH**.\n\n**Ingat:** P salah → tidak bisa dipastikan."
+    },
+    {
+      "id": 27,
+      "pertanyaan": "Semua pemain skateboard di Arena 'X-Games' wajib memakai helm pelindung. Sebagian pemain skateboard di Arena 'X-Games' juga memakai pelindung lutut.",
+      "premis": [
+        "Semua pemain skateboard di Arena 'X-Games' wajib memakai helm pelindung",
+        "Sebagian pemain skateboard di Arena 'X-Games' juga memakai pelindung lutut"
+      ],
+      "opsi": [
+        "A. Semua pemain yang memakai pelindung lutut wajib memakai helm pelindung",
+        "B. Sebagian pemain skateboard di Arena 'X-Games' wajib memakai helm pelindung dan memakai pelindung lutut",
+        "C. Semua pemain skateboard di Arena 'X-Games' memakai pelindung lutut",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Sebagian pemain skateboard di Arena 'X-Games' tidak wajib memakai helm pelindung"
+      ],
+      "jawaban": "B",
+      "tipe": "Tipe 3 (Semua p→q + Sebagian p→r)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Semua** pemain skateboard → Wajib helm (P → Q)\nPremis 2: **Sebagian** pemain skateboard → Pelindung lutut (P → R)\n\n**Rumus Tipe 3:**\nKesimpulan = **Sebagian p → q dan r**\n\n**Kesimpulan: Sebagian pemain skateboard di Arena 'X-Games' wajib memakai helm pelindung DAN memakai pelindung lutut.**\n\n**Kenapa opsi C salah?** Overclaim — premis 2 bilang 'sebagian', bukan 'semua'.\n**Kenapa opsi E salah?** Bertentangan dengan premis 1."
+    },
+    {
+      "id": 28,
+      "pertanyaan": "Semua karyawan di lini produksi Pabrik Garmen 'Indah' bekerja pada shift pagi. Tidak ada mahasiswa yang magang di Pabrik Garmen 'Indah' yang bekerja pada shift pagi.",
+      "premis": [
+        "Semua karyawan di lini produksi Pabrik Garmen 'Indah' bekerja pada shift pagi",
+        "Tidak ada mahasiswa yang magang di Pabrik Garmen 'Indah' yang bekerja pada shift pagi"
+      ],
+      "opsi": [
+        "A. Beberapa karyawan di lini produksi Pabrik Garmen 'Indah' adalah mahasiswa magang",
+        "B. Semua mahasiswa magang adalah karyawan di lini produksi Pabrik Garmen 'Indah'",
+        "C. Tidak ada karyawan di lini produksi Pabrik Garmen 'Indah' yang merupakan mahasiswa magang",
+        "D. Beberapa mahasiswa magang bekerja pada shift pagi",
+        "E. Semua karyawan di lini produksi Pabrik Garmen 'Indah' adalah mahasiswa magang"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua (arah berlawanan)",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Karyawan lini produksi → Shift pagi**\nPremis 2: **Mahasiswa magang → TIDAK shift pagi**\n\nLogikanya:\n- Karyawan lini produksi pasti shift pagi.\n- Mahasiswa magang pasti TIDAK shift pagi.\n- Karena sifatnya bertolak belakang, **tidak mungkin ada orang yang sekaligus karyawan lini produksi DAN mahasiswa magang**.\n\n**Kesimpulan: Tidak ada karyawan di lini produksi Pabrik Garmen 'Indah' yang merupakan mahasiswa magang.**\n\n**Ingat:** Kalau dua kelompok punya sifat yang saling bertolak belakang, mereka TIDAK BISA beririsan."
+    },
+    {
+      "id": 29,
+      "pertanyaan": "Setiap anggota klub catur 'Bidak' wajib membawa jam catur sendiri saat turnamen. Seorang anggota terlihat sedang bertanding di meja nomor 5. Di sisi papan catur terdapat jam catur digital yang sedang berjalan.",
+      "premis": [
+        "Setiap anggota klub catur 'Bidak' wajib membawa jam catur sendiri saat turnamen",
+        "Seorang anggota terlihat sedang bertanding di meja nomor 5",
+        "Di sisi papan catur terdapat jam catur digital yang sedang berjalan"
+      ],
+      "opsi": [
+        "A. Anggota tersebut membawa jam catur sesuai ketentuan klub",
+        "B. Anggota tersebut adalah juara bertahan turnamen",
+        "C. Anggota tersebut membeli jam catur paling mahal",
+        "D. Anggota tersebut selalu menang di meja nomor 5",
+        "E. Anggota tersebut akan menjadi grandmaster"
+      ],
+      "jawaban": "A",
+      "tipe": "Penalaran Langsung",
+      "tingkat": "Pemula",
+      "pembahasan": "Premis 1 (aturan): **Anggota klub catur → Wajib bawa jam catur**\nPremis 2 (fakta): Ada anggota bertanding\nPremis 3 (bukti): Di sisi papan ada jam catur\n\nKesimpulan logisnya: Anggota itu **memenuhi kewajiban** membawa jam catur.\n\n**Kenapa opsi lain salah?**\n- Opsi B, C, D, E: Overclaim — tidak ada info soal juara, harga jam, rekor meja, atau gelar grandmaster.\n\n**Ingat:** Kesimpulan harus sesuai fakta premis."
+    },
+    {
+      "id": 30,
+      "pertanyaan": "Semua novel fiksi sejarah yang diterbitkan oleh Pustaka 'Nusantara' memiliki halaman glosarium. Beberapa novel fiksi sejarah yang memiliki halaman glosarium juga dilengkapi peta ilustrasi.",
+      "premis": [
+        "Semua novel fiksi sejarah yang diterbitkan oleh Pustaka 'Nusantara' memiliki halaman glosarium",
+        "Beberapa novel fiksi sejarah yang memiliki halaman glosarium juga dilengkapi peta ilustrasi"
+      ],
+      "opsi": [
+        "A. Semua novel fiksi sejarah yang diterbitkan oleh Pustaka 'Nusantara' dilengkapi peta ilustrasi",
+        "B. Beberapa novel fiksi sejarah yang diterbitkan oleh Pustaka 'Nusantara' mungkin dilengkapi peta ilustrasi",
+        "C. Semua novel yang dilengkapi peta ilustrasi diterbitkan oleh Pustaka 'Nusantara'",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada novel fiksi sejarah di Pustaka 'Nusantara' yang dilengkapi peta ilustrasi"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Premis 1: **Novel Pustaka Nusantara → Punya glosarium** (Semua P → Q)\nPremis 2: **Beberapa yang punya glosarium → Peta ilustrasi** (Sebagian Q → R)\n\nLangkah:\n1. Semua P masuk ke dalam Q.\n2. Sebagian Q bersifat R.\n3. Maka sebagian P **mungkin** bersifat R.\n\n**Kesimpulan: Beberapa novel fiksi sejarah yang diterbitkan oleh Pustaka 'Nusantara' mungkin dilengkapi peta ilustrasi.**\n\n**Kenapa opsi A salah?** Kalau salah satu premis mengandung 'beberapa', kesimpulan TIDAK BOLEH 'semua'.\n\n**Ingat:** Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah."
+    }
+  ]
+}

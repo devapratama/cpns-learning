@@ -1,512 +1,518 @@
 [
   {
     "id": 61,
-    "level": "Pemula",
-    "soal": "MATA : MELIHAT = TELINGA : ...",
-    "pilihan": ["Suara", "Hidung", "Mendengar", "Mulut", "Bunyi"],
-    "kunci": "C",
-    "pola": "Organ indera dan fungsinya",
-    "pembahasan": "Mata adalah organ indera yang berfungsi untuk melihat. Dengan pola yang sama, telinga adalah organ indera yang berfungsi untuk mendengar.",
+    "level": "Mahir",
+    "soal": "PAYUNG : HUJAN = ASURANSI : ...",
+    "pilihan": ["Kecelakaan", "Kerugian", "Sakit", "Kematian", "Risiko"],
+    "kunci": "B",
+    "pola": "Alat perlindungan dan risiko spesifik yang dilindungi",
+    "pembahasan": "Payung melindungi dari hujan (risiko spesifik yang terjadi). Asuransi melindungi dari kerugian (risiko finansial spesifik yang terjadi). Keduanya adalah alat proteksi terhadap kerugian/risiko yang bersifat konkret.",
     "analisis_opsi": {
-      "A": "Salah. Suara adalah objek yang didengar, bukan fungsi telinga.",
-      "B": "Salah. Hidung adalah organ indera lain.",
-      "C": "Benar. Telinga berfungsi untuk mendengar.",
-      "D": "Salah. Mulut adalah organ berbicara dan makan.",
-      "E": "Salah. Bunyi adalah objek yang didengar."
+      "A": "JEBAKAN SPESIFIK. Kecelakaan adalah salah satu jenis risiko, tapi asuransi tidak hanya melindungi dari kecelakaan.",
+      "B": "Benar. Kerugian adalah objek perlindungan asuransi secara umum.",
+      "C": "JEBAKAN SPESIFIK. Sakit hanya dicover asuransi kesehatan.",
+      "D": "JEBAKAN SPESIFIK. Kematian hanya dicover asuransi jiwa.",
+      "E": "JEBAKAN ABSTRAK. Risiko terlalu umum, asuransi melindungi dari KERUGIAN sebagai akibat risiko."
     }
   },
   {
     "id": 62,
     "level": "Mahir",
-    "soal": "AMNESIA : INGATAN = BUTA : ...",
-    "pilihan": ["Warna", "Penglihatan", "Kacamata", "Gelap", "Mata"],
-    "kunci": "B",
-    "pola": "Gangguan atau kondisi dan kemampuan yang hilang",
-    "pembahasan": "Amnesia adalah kondisi hilangnya ingatan. Dengan pola yang sama, buta adalah kondisi hilangnya penglihatan.",
+    "soal": "KOMPOR : API = SETRIKA : ...",
+    "pilihan": ["Listrik", "Panas", "Rapi", "Baju", "Licin"],
+    "kunci": "A",
+    "pola": "Alat dan sumber energinya (bukan hasil fungsinya)",
+    "pembahasan": "Kompor menggunakan api sebagai SUMBER ENERGI. Setrika menggunakan listrik sebagai SUMBER ENERGI. Pola ini menuntut kita mencari sumber energi, bukan hasil kerja alat.",
     "analisis_opsi": {
-      "A": "Salah. Warna adalah aspek dalam penglihatan, bukan kemampuan yang hilang.",
-      "B": "Benar. Buta menyebabkan hilangnya penglihatan.",
-      "C": "Salah. Kacamata adalah alat bantu penglihatan.",
-      "D": "Salah. Gelap adalah kondisi lingkungan.",
-      "E": "Salah. Mata adalah organ penglihatan."
+      "A": "Benar. Listrik adalah sumber energi setrika.",
+      "B": "JEBAKAN MATI. Panas adalah HASIL kerja setrika, bukan sumber energinya. Api pada kompor adalah sumber, bukan hasil.",
+      "C": "JEBAKAN FUNGSI. Rapi adalah tujuan penggunaan.",
+      "D": "JEBAKAN OBJEK. Baju adalah objek yang disetrika.",
+      "E": "JEBAKAN HASIL. Licin adalah efek setrika."
     }
   },
   {
     "id": 63,
-    "level": "Menengah",
-    "soal": "KERTAS : PULPEN = KANVAS : ...",
-    "pilihan": ["Cat", "Pelukis", "Pameran", "Kuas", "Bingkai"],
-    "kunci": "D",
-    "pola": "Media dan alat gores",
-    "pembahasan": "Pulpen digunakan untuk menulis atau menggambar pada kertas. Dengan pola yang sama, kuas digunakan untuk melukis pada kanvas.",
+    "level": "Mahir",
+    "soal": "MIOPI : RABUN JAUH = HIPERMETROPI : ...",
+    "pilihan": ["Rabun dekat", "Rabun jauh", "Buta warna", "Silinder", "Katarak"],
+    "kunci": "A",
+    "pola": "Istilah medis dan definisi kondisinya",
+    "pembahasan": "Miopi adalah istilah medis untuk kondisi rabun jauh. Hipermetropi adalah istilah medis untuk kondisi rabun dekat. Keduanya adalah pasangan nama ilmiah dan nama umum gangguan mata.",
     "analisis_opsi": {
-      "A": "Salah. Cat adalah bahan, bukan alat gores utama.",
-      "B": "Salah. Pelukis adalah pelaku.",
-      "C": "Salah. Pameran adalah tempat memajang hasil karya.",
-      "D": "Benar. Kuas adalah alat yang digunakan pada kanvas.",
-      "E": "Salah. Bingkai adalah perlengkapan pelengkap."
+      "A": "Benar. Hipermetropi = rabun dekat.",
+      "B": "JEBAKAN TERBALIK. Rabun jauh adalah miopi, bukan hipermetropi.",
+      "C": "Salah. Buta warna adalah gangguan sel kerucut.",
+      "D": "Salah. Silinder adalah astigmatisme.",
+      "E": "Salah. Katarak adalah kekeruhan lensa."
     }
   },
   {
     "id": 64,
-    "level": "Pemula",
-    "soal": "BURUNG : TERBANG = IKAN : ...",
-    "pilihan": ["Berenang", "Air", "Sirip", "Laut", "Insang"],
+    "level": "Mahir",
+    "soal": "BENIH : PETANI = NASKAH : ...",
+    "pilihan": ["Penulis", "Pembaca", "Penerbit", "Editor", "Sastrawan"],
     "kunci": "A",
-    "pola": "Hewan dan cara bergerak utama",
-    "pembahasan": "Burung bergerak dengan cara terbang. Dengan pola yang sama, ikan bergerak dengan cara berenang.",
+    "pola": "Objek yang diciptakan/ditanam dan penciptanya",
+    "pembahasan": "Petani MENANAM benih sebagai awal proses produksi. Penulis MENULIS naskah sebagai awal proses produksi. Keduanya adalah hubungan antara pencipta dan objek yang diciptakan dari nol.",
     "analisis_opsi": {
-      "A": "Benar. Ikan bergerak utama dengan berenang.",
-      "B": "Salah. Air adalah tempat hidup ikan.",
-      "C": "Salah. Sirip adalah alat bantu gerak ikan.",
-      "D": "Salah. Laut adalah habitat ikan.",
-      "E": "Salah. Insang adalah organ pernapasan ikan."
+      "A": "Benar. Penulis menciptakan naskah.",
+      "B": "JEBAKAN KONSUMEN. Pembaca mengonsumsi, bukan menciptakan.",
+      "C": "JEBAKAN PROSESOR. Penerbit memproses naskah jadi buku, bukan menciptakan.",
+      "D": "JEBAKAN HALUS. Editor memperbaiki naskah, tapi bukan pencipta awalnya. Petani menanam, bukan merawat.",
+      "E": "JEBAKAN HALUS. Sastrawan bisa menulis, tapi tidak semua sastrawan menulis naskah (bisa puisi, prosa)."
     }
   },
   {
     "id": 65,
-    "level": "Mahir",
-    "soal": "Pagi dan malam adalah bagian dari satu hari. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Januari dan Februari adalah nama bulan",
-      "Musim hujan dan musim kemarau adalah bagian dari satu tahun",
-      "Senin dan Jumat adalah hari kerja",
-      "Barat dan timur adalah arah mata angin",
-      "Bulan dan bintang adalah benda langit"
-    ],
-    "kunci": "B",
-    "pola": "Analogi kalimat dua fase dalam satu siklus waktu",
-    "pembahasan": "Pagi dan malam adalah dua bagian dalam satu hari. Dengan pola yang sama, musim hujan dan musim kemarau adalah dua bagian dalam satu tahun.",
+    "level": "Menengah",
+    "soal": "GEMPA : SEISMOGRAF = TEKANAN DARAH : ...",
+    "pilihan": ["Termometer", "Stetoskop", "Tensimeter", "Barometer", "Anemometer"],
+    "kunci": "C",
+    "pola": "Fenomena/kondisi dan alat ukur spesifiknya",
+    "pembahasan": "Seismograf adalah alat untuk mengukur gempa. Tensimeter adalah alat untuk mengukur tekanan darah. Keduanya adalah pasangan fenomena dan alat ukurnya.",
     "analisis_opsi": {
-      "A": "Salah. Januari dan Februari hanya dua contoh bulan, bukan pembagian utama satu siklus.",
-      "B": "Benar. Musim hujan dan musim kemarau adalah bagian dari satu tahun.",
-      "C": "Salah. Senin dan Jumat hanya dua hari tertentu.",
-      "D": "Salah. Barat dan timur adalah arah mata angin.",
-      "E": "Salah. Bulan dan bintang adalah benda langit."
+      "A": "Salah. Termometer mengukur suhu.",
+      "B": "JEBAKAN HALUS. Stetoskop mendengarkan detak jantung, bukan mengukur tekanan darah.",
+      "C": "Benar. Tensimeter mengukur tekanan darah.",
+      "D": "Salah. Barometer mengukur tekanan udara.",
+      "E": "Salah. Anemometer mengukur kecepatan angin."
     }
   },
   {
     "id": 66,
-    "level": "Menengah",
-    "soal": "VAKSIN : PENYAKIT = HELM : ...",
-    "pilihan": ["Kepala", "Motor", "Cedera", "Jalan", "Kacamata"],
-    "kunci": "C",
-    "pola": "Alat pencegahan terhadap risiko",
-    "pembahasan": "Vaksin digunakan untuk mencegah penyakit. Dengan pola yang sama, helm digunakan untuk mencegah atau mengurangi cedera.",
+    "level": "Mahir",
+    "soal": "API : ABU = KAYU : ...",
+    "pilihan": ["Asap", "Arang", "Api", "Panas", "Terbakar"],
+    "kunci": "B",
+    "pola": "Proses pembakaran dan hasil sisa padat",
+    "pembahasan": "Api (pembakaran sempurna) menghasilkan abu sebagai sisa padat. Kayu (pembakaran tidak sempurna) menghasilkan arang sebagai sisa padat. Keduanya adalah hubungan proses pembakaran dan residu padat yang dihasilkan.",
     "analisis_opsi": {
-      "A": "Salah. Kepala adalah bagian tubuh yang dilindungi helm.",
-      "B": "Salah. Motor adalah kendaraan.",
-      "C": "Benar. Helm berfungsi mencegah atau mengurangi cedera.",
-      "D": "Salah. Jalan adalah tempat berkendara.",
-      "E": "Salah. Kacamata adalah alat bantu penglihatan."
+      "A": "JEBAKAN GAS. Asap adalah hasil gas, bukan residu padat seperti abu.",
+      "B": "Benar. Arang adalah residu padat dari pembakaran kayu.",
+      "C": "JEBAKAN TERBALIK. Kayu menghasilkan api, bukan sebaliknya.",
+      "D": "JEBAKAN ENERGI. Panas adalah energi, bukan materi sisa.",
+      "E": "JEBAKAN PROSES. Terbakar adalah kata kerja, bukan benda hasil."
     }
   },
   {
     "id": 67,
-    "level": "Pemula",
-    "soal": "DAUN : HIJAU = DARAH : ...",
-    "pilihan": ["Cair", "Asin", "Oksigen", "Merah", "Pembuluh"],
-    "kunci": "D",
-    "pola": "Benda dan warna khasnya",
-    "pembahasan": "Daun identik dengan warna hijau. Dengan pola yang sama, darah identik dengan warna merah.",
+    "level": "Menengah",
+    "soal": "HUKUM : HAKIM = SEPAK BOLA : ...",
+    "pilihan": ["Pemain", "Wasit", "Pelatih", "Penonton", "Stadion"],
+    "kunci": "B",
+    "pola": "Sistem/aktivitas dan pengadil/pengawasnya",
+    "pembahasan": "Hukum adalah sistem yang diadili/diawasi oleh hakim. Sepak bola adalah permainan yang diadili/diawasi oleh wasit. Keduanya adalah hubungan sistem dan penegak aturannya.",
     "analisis_opsi": {
-      "A": "Salah. Cair adalah sifat fisik darah.",
-      "B": "Salah. Asin adalah rasa, bukan warna khas.",
-      "C": "Salah. Oksigen adalah kandungan yang dibawa darah.",
-      "D": "Benar. Darah identik dengan warna merah.",
-      "E": "Salah. Pembuluh adalah tempat mengalirnya darah."
+      "A": "JEBAKAN PELAKU. Pemain adalah partisipan, bukan pengadil.",
+      "B": "Benar. Wasit mengadili pertandingan.",
+      "C": "JEBAKAN PEMBIMBING. Pelatih membimbing, bukan mengadili.",
+      "D": "Salah. Penonton adalah pengamat.",
+      "E": "Salah. Stadion adalah tempat."
     }
   },
   {
     "id": 68,
     "level": "Mahir",
-    "soal": "KONSTITUSI : NEGARA = ANGGARAN DASAR : ...",
-    "pilihan": ["Perusahaan", "Sekolah", "Undang-Undang", "Pemerintah", "Organisasi"],
-    "kunci": "E",
-    "pola": "Dokumen dasar dan entitas yang diatur",
-    "pembahasan": "Konstitusi adalah dokumen dasar yang menjadi landasan tertinggi bagi negara. Dengan pola yang sama, anggaran dasar adalah dokumen dasar yang menjadi landasan bagi organisasi.",
+    "soal": "PELANGI : HUJAN = AURORA : ...",
+    "pilihan": ["Matahari", "Angin", "Medan magnet", "Malam", "Kutub"],
+    "kunci": "C",
+    "pola": "Fenomena optik atmosfer dan mekanisme penyebabnya",
+    "pembahasan": "Pelangi terjadi karena pembiasan cahaya pada tetesan air hujan. Aurora terjadi karena interaksi partikel bermuatan dengan medan magnet bumi. Keduanya adalah fenomena optik dan mekanisme fisika penyebabnya.",
     "analisis_opsi": {
-      "A": "Salah. Perusahaan dapat memiliki anggaran dasar, tetapi organisasi adalah istilah yang lebih umum dan setara.",
-      "B": "Salah. Sekolah adalah institusi, bukan entitas organisasi secara umum.",
-      "C": "Salah. Undang-undang adalah produk hukum, bukan entitas yang diatur.",
-      "D": "Salah. Pemerintah adalah lembaga negara.",
-      "E": "Benar. Anggaran dasar adalah dasar organisasi."
+      "A": "JEBAKAN SUMBER. Matahari memang sumber cahaya, tapi bukan mekanisme langsung aurora.",
+      "B": "Salah. Angin tidak menyebabkan aurora.",
+      "C": "Benar. Medan magnet bumi membelokkan partikel matahari dan menciptakan aurora.",
+      "D": "JEBAKAN WAKTU. Malam adalah waktu terlihatnya aurora, bukan penyebabnya.",
+      "E": "JEBAKAN LOKASI. Kutub adalah tempat aurora terlihat, bukan penyebabnya."
     }
   },
   {
     "id": 69,
-    "level": "Menengah",
-    "soal": "SUHU : TERMOMETER = TEKANAN : ...",
-    "pilihan": ["Speedometer", "Barometer", "Timbangan", "Meteran", "Jam"],
+    "level": "Mahir",
+    "soal": "KAFEIN : KOPI = MORFIN : ...",
+    "pilihan": ["Obat", "Candu", "Suntik", "Apotek", "Dokter"],
     "kunci": "B",
-    "pola": "Besaran dan alat ukurnya",
-    "pembahasan": "Suhu diukur menggunakan termometer. Dengan pola yang sama, tekanan diukur menggunakan barometer.",
+    "pola": "Zat aktif dan sumber alaminya",
+    "pembahasan": "Kafein adalah zat aktif yang ditemukan dalam kopi. Morfin adalah zat aktif yang ditemukan dalam candu (opium). Keduanya adalah hubungan zat psikoaktif dan sumber tanaman asalnya.",
     "analisis_opsi": {
-      "A": "Salah. Speedometer mengukur kecepatan.",
-      "B": "Benar. Barometer mengukur tekanan udara.",
-      "C": "Salah. Timbangan mengukur massa.",
-      "D": "Salah. Meteran mengukur panjang.",
-      "E": "Salah. Jam mengukur waktu."
+      "A": "JEBAKAN KATEGORI. Obat terlalu umum.",
+      "B": "Benar. Morfin berasal dari getah candu.",
+      "C": "Salah. Suntik adalah metode pemberian.",
+      "D": "Salah. Apotek adalah tempat distribusi.",
+      "E": "Salah. Dokter adalah pemberi resep."
     }
   },
   {
     "id": 70,
-    "level": "Pemula",
-    "soal": "DINGIN : JAKET = HUJAN : ...",
-    "pilihan": ["Air", "Basah", "Payung", "Sungai", "Petir"],
-    "kunci": "C",
-    "pola": "Kondisi dan alat perlindungan",
-    "pembahasan": "Jaket digunakan untuk melindungi tubuh dari dingin. Dengan pola yang sama, payung digunakan untuk melindungi tubuh dari hujan.",
+    "level": "Mahir",
+    "soal": "BENDUNGAN : AIR = PARU-PARU : ...",
+    "pilihan": ["Darah", "Oksigen", "Udara", "Napas", "Karbon dioksida"],
+    "kunci": "B",
+    "pola": "Struktur penampung/pemroses dan zat utama yang diproses",
+    "pembahasan": "Bendungan menampung dan mengelola air sebagai zat utamanya. Paru-paru memproses udara untuk mengekstrak oksigen sebagai zat utamanya. Keduanya adalah struktur dan zat esensial yang diproses.",
     "analisis_opsi": {
-      "A": "Salah. Air adalah unsur hujan.",
-      "B": "Salah. Basah adalah akibat hujan.",
-      "C": "Benar. Payung melindungi tubuh dari hujan.",
-      "D": "Salah. Sungai adalah tempat air mengalir.",
-      "E": "Salah. Petir adalah fenomena cuaca."
+      "A": "JEBAKAN HALUS. Darah melewati paru-paru tapi bukan zat yang diproses paru-paru.",
+      "B": "Benar. Oksigen adalah zat utama yang diekstrak paru-paru.",
+      "C": "JEBAKAN HALUS. Udara masuk ke paru-paru, tapi yang diproses/diambil adalah oksigennya.",
+      "D": "Salah. Napas adalah proses, bukan zat.",
+      "E": "JEBAKAN TERBALIK. CO2 adalah zat yang dibuang, bukan yang diambil."
     }
   },
   {
     "id": 71,
     "level": "Menengah",
-    "soal": "VITAMIN : KESEHATAN = PUPUK : ...",
-    "pilihan": ["Tanaman", "Kesuburan", "Air", "Panen", "Tanah"],
-    "kunci": "B",
-    "pola": "Zat dan kondisi yang ditingkatkan",
-    "pembahasan": "Vitamin membantu meningkatkan kesehatan. Dengan pola yang sama, pupuk membantu meningkatkan kesuburan tanah atau tanaman.",
+    "soal": "PETA : SKALA = TERMOMETER : ...",
+    "pilihan": ["Celcius", "Panas", "Air raksa", "Suhu", "Derajat"],
+    "kunci": "A",
+    "pola": "Alat dan satuan/rasio pengukurannya",
+    "pembahasan": "Skala adalah rasio pengukuran pada peta. Celcius adalah satuan pengukuran pada termometer. Keduanya adalah komponen pengukuran yang melekat pada alatnya.",
     "analisis_opsi": {
-      "A": "Salah. Tanaman adalah objek yang diberi pupuk.",
-      "B": "Benar. Pupuk meningkatkan kesuburan.",
-      "C": "Salah. Air adalah kebutuhan tanaman.",
-      "D": "Salah. Panen adalah hasil akhir.",
-      "E": "Salah. Tanah adalah media tanam."
+      "A": "Benar. Celcius adalah satuan ukur termometer.",
+      "B": "Salah. Panas adalah kondisi yang diukur.",
+      "C": "JEBAKAN KOMPONEN. Air raksa adalah bahan pengisi, bukan satuan.",
+      "D": "Salah. Suhu adalah besaran yang diukur.",
+      "E": "JEBAKAN HALUS. Derajat adalah satuan sudut, Celcius lebih spesifik untuk termometer."
     }
   },
   {
     "id": 72,
-    "level": "Menengah",
-    "soal": "Dapur memiliki kompor dan kulkas. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Garasi memiliki mobil dan motor",
-      "Sekolah memiliki guru dan murid",
-      "Hutan memiliki pohon dan hewan",
-      "Kota memiliki gedung dan jalan",
-      "Kamar mandi memiliki shower dan wastafel"
-    ],
-    "kunci": "E",
-    "pola": "Analogi kalimat ruangan dan peralatan khas",
-    "pembahasan": "Dapur adalah ruangan yang memiliki peralatan khas berupa kompor dan kulkas. Dengan pola yang sama, kamar mandi adalah ruangan yang memiliki peralatan khas berupa shower dan wastafel.",
+    "level": "Mahir",
+    "soal": "MUTASI : GEN = EVOLUSI : ...",
+    "pilihan": ["Sel", "Spesies", "Lingkungan", "Waktu", "Alam"],
+    "kunci": "B",
+    "pola": "Proses perubahan dan unit biologis yang berubah",
+    "pembahasan": "Mutasi adalah perubahan yang terjadi pada tingkat gen. Evolusi adalah perubahan yang terjadi pada tingkat spesies (populasi). Keduanya adalah proses perubahan dan unit biologis tempat perubahan itu terjadi.",
     "analisis_opsi": {
-      "A": "Salah. Mobil dan motor adalah kendaraan yang disimpan, bukan peralatan tetap ruangan.",
-      "B": "Salah. Guru dan murid adalah penghuni sekolah.",
-      "C": "Salah. Pohon dan hewan adalah makhluk hidup di hutan.",
-      "D": "Salah. Gedung dan jalan adalah bagian kota.",
-      "E": "Benar. Kamar mandi memiliki shower dan wastafel sebagai peralatan khas."
+      "A": "JEBAKAN HALUS. Sel terlalu kecil, mutasi terjadi di gen yang ada dalam sel.",
+      "B": "Benar. Evolusi terjadi pada tingkat spesies.",
+      "C": "Salah. Lingkungan adalah faktor pendorong, bukan unit yang berubah.",
+      "D": "Salah. Waktu adalah dimensi, bukan unit biologis.",
+      "E": "Salah. Alam terlalu luas."
     }
   },
   {
     "id": 73,
-    "level": "Pemula",
-    "soal": "KAKI : SEPATU = TANGAN : ...",
-    "pilihan": ["Cincin", "Gelang", "Sarung tangan", "Jam", "Kuku"],
-    "kunci": "C",
-    "pola": "Bagian tubuh dan pelindungnya",
-    "pembahasan": "Sepatu digunakan untuk melindungi kaki. Dengan pola yang sama, sarung tangan digunakan untuk melindungi tangan.",
+    "level": "Mahir",
+    "soal": "INSULIN : GULA DARAH = HEMOGLOBIN : ...",
+    "pilihan": ["Oksigen", "Darah", "Sel darah merah", "Paru-paru", "Jantung"],
+    "kunci": "A",
+    "pola": "Protein pengatur/pengikat dan substansi yang diatur/diikat",
+    "pembahasan": "Insulin adalah protein yang mengatur kadar gula darah. Hemoglobin adalah protein yang mengikat dan mengangkut oksigen. Keduanya adalah protein fungsional dan target substansinya.",
     "analisis_opsi": {
-      "A": "Salah. Cincin adalah aksesoris.",
-      "B": "Salah. Gelang adalah aksesoris.",
-      "C": "Benar. Sarung tangan melindungi tangan.",
-      "D": "Salah. Jam adalah aksesoris atau alat penunjuk waktu.",
-      "E": "Salah. Kuku adalah bagian tubuh."
+      "A": "Benar. Hemoglobin mengikat oksigen.",
+      "B": "JEBAKAN MEDIUM. Darah adalah medium, bukan substansi yang diikat.",
+      "C": "JEBAKAN WADAH. Sel darah merah adalah tempat hemoglobin berada.",
+      "D": "Salah. Paru-paru adalah organ.",
+      "E": "Salah. Jantung adalah organ."
     }
   },
   {
     "id": 74,
     "level": "Mahir",
-    "soal": "HIPOTESIS : PENELITIAN = DAKWAAN : ...",
-    "pilihan": ["Hakim", "Pengacara", "Vonis", "Sidang", "Saksi"],
-    "kunci": "D",
-    "pola": "Tahap awal dan proses lanjutan",
-    "pembahasan": "Hipotesis adalah tahap awal dalam penelitian. Dengan pola yang sama, dakwaan adalah tahap awal dalam sidang.",
+    "soal": "KAMERA : LENSA = TELINGA : ...",
+    "pilihan": ["Gendang telinga", "Suara", "Otak", "Saraf", "Pendengaran"],
+    "kunci": "A",
+    "pola": "Alat/organ dan komponen penerima sinyal pertamanya",
+    "pembahasan": "Lensa adalah komponen pertama kamera yang menerima dan memfokuskan cahaya. Gendang telinga adalah komponen pertama telinga yang menerima dan mengubah gelombang suara. Keduanya adalah komponen penerima sinyal awal.",
     "analisis_opsi": {
-      "A": "Salah. Hakim adalah pihak dalam sidang.",
-      "B": "Salah. Pengacara adalah pihak dalam sidang.",
-      "C": "Salah. Vonis adalah hasil akhir sidang.",
-      "D": "Benar. Dakwaan adalah tahap awal sidang.",
-      "E": "Salah. Saksi adalah pihak dalam sidang."
+      "A": "Benar. Gendang telinga menerima gelombang suara.",
+      "B": "JEBAKAN SINYAL. Suara adalah sinyal yang diterima, bukan komponen penerima.",
+      "C": "JEBAKAN PEMROSES. Otak memproses sinyal, bukan menerimanya pertama kali.",
+      "D": "JEBAKAN PENGHANTAR. Saraf menghantarkan sinyal ke otak.",
+      "E": "JEBAKAN FUNGSI. Pendengaran adalah kemampuan, bukan komponen."
     }
   },
   {
     "id": 75,
     "level": "Menengah",
-    "soal": "NGANTUK : TIDUR = LELAH : ...",
-    "pilihan": ["Istirahat", "Bantal", "Kasur", "Mandi", "Makan"],
+    "soal": "PUPUK : SUBUR = RACUN : ...",
+    "pilihan": ["Mati", "Sakit", "Hama", "Tanaman", "Pestisida"],
     "kunci": "A",
-    "pola": "Kondisi dan tindakan pemulihan",
-    "pembahasan": "Ngantuk adalah kondisi yang membutuhkan tidur. Dengan pola yang sama, lelah adalah kondisi yang membutuhkan istirahat.",
+    "pola": "Zat dan efek langsungnya pada organisme",
+    "pembahasan": "Pupuk menyebabkan tanaman menjadi subur. Racun menyebabkan organisme menjadi mati. Keduanya adalah zat dan efek langsung yang ditimbulkannya.",
     "analisis_opsi": {
-      "A": "Benar. Lelah membutuhkan istirahat.",
-      "B": "Salah. Bantal adalah alat bantu tidur.",
-      "C": "Salah. Kasur adalah tempat tidur.",
-      "D": "Salah. Mandi dapat menyegarkan, tetapi bukan tindakan utama untuk lelah.",
-      "E": "Salah. Makan berkaitan dengan lapar."
+      "A": "Benar. Racun menyebabkan kematian.",
+      "B": "JEBAKAN HALUS. Sakit adalah efek ringan, racun biasanya menyebabkan efek fatal.",
+      "C": "JEBAKAN OBJEK. Hama adalah target racun, bukan efeknya.",
+      "D": "Salah. Tanaman adalah objek pupuk.",
+      "E": "JEBAKAN SINONIM. Pestisida adalah jenis racun."
     }
   },
   {
     "id": 76,
-    "level": "Pemula",
-    "soal": "PADI : BERAS = KELAPA : ...",
-    "pilihan": ["Daun", "Santan", "Akar", "Kulit", "Pohon"],
+    "level": "Mahir",
+    "soal": "BULAN : PASANG = MATAHARI : ...",
+    "pilihan": ["Panas", "Siang", "Gerhana", "Musim", "Cahaya"],
     "kunci": "B",
-    "pola": "Bahan baku dan hasil olahan",
-    "pembahasan": "Padi diolah menjadi beras. Dengan pola yang sama, kelapa diolah menjadi santan.",
+    "pola": "Benda langit dan fenomena periodik yang disebabkannya",
+    "pembahasan": "Bulan menyebabkan fenomena pasang surut air laut. Matahari menyebabkan fenomena siang (dan malam). Keduanya adalah benda langit dan fenomena periodik langsung yang disebabkannya.",
     "analisis_opsi": {
-      "A": "Salah. Daun adalah bagian tanaman kelapa.",
-      "B": "Benar. Kelapa dapat diolah menjadi santan.",
-      "C": "Salah. Akar adalah bagian tanaman.",
-      "D": "Salah. Kulit adalah bagian kelapa.",
-      "E": "Salah. Pohon adalah tanaman kelapa."
+      "A": "JEBAKAN EFEK. Panas adalah efek radiasi, bukan fenomena periodik seperti pasang.",
+      "B": "Benar. Siang adalah fenomena periodik akibat posisi matahari.",
+      "C": "JEBAKAN HALUS. Gerhana melibatkan bulan juga, bukan murni efek matahari.",
+      "D": "JEBAKAN HALUS. Musim disebabkan kemiringan bumi, bukan matahari secara langsung.",
+      "E": "JEBAKAN EFEK. Cahaya adalah radiasi, bukan fenomena periodik."
     }
   },
   {
     "id": 77,
     "level": "Mahir",
-    "soal": "UTOPIA : NYATA = ILUSI : ...",
-    "pilihan": ["Mimpi", "Khayalan", "Fakta", "Angan", "Harapan"],
-    "kunci": "C",
-    "pola": "Lawan realitas",
-    "pembahasan": "Utopia adalah sesuatu yang tidak nyata, berlawanan dengan nyata. Dengan pola yang sama, ilusi adalah sesuatu yang tidak nyata, berlawanan dengan fakta.",
+    "soal": "DNA : KETURUNAN = MEMORI : ...",
+    "pilihan": ["Otak", "Pengalaman", "Ingatan", "Masa lalu", "Pengetahuan"],
+    "kunci": "B",
+    "pola": "Pembawa informasi dan informasi yang dibawa/diwariskan",
+    "pembahasan": "DNA adalah pembawa informasi keturunan dari generasi ke generasi. Memori adalah pembawa informasi pengalaman dari waktu ke waktu. Keduanya adalah media penyimpanan dan informasi yang disimpan.",
     "analisis_opsi": {
-      "A": "Salah. Mimpi mirip dengan ilusi, bukan lawannya.",
-      "B": "Salah. Khayalan mirip dengan ilusi.",
-      "C": "Benar. Fakta adalah lawan dari ilusi.",
-      "D": "Salah. Angan mirip dengan ilusi.",
-      "E": "Salah. Harapan tidak secara langsung menjadi lawan ilusi."
+      "A": "JEBAKAN WADAH. Otak adalah tempat memori berada.",
+      "B": "Benar. Memori menyimpan pengalaman.",
+      "C": "JEBAKAN SINONIM. Ingatan adalah sinonim memori, bukan informasi yang disimpan.",
+      "D": "JEBAKAN HALUS. Masa lalu adalah waktu, bukan informasi spesifik.",
+      "E": "JEBAKAN HALUS. Pengetahuan bisa dari memori, tapi pengalaman lebih langsung."
     }
   },
   {
     "id": 78,
-    "level": "Menengah",
-    "soal": "KULIT : SENTUHAN = MATA : ...",
-    "pilihan": ["Kacamata", "Warna", "Cahaya", "Alis", "Penglihatan"],
-    "kunci": "E",
-    "pola": "Organ indera dan kemampuan yang dihasilkan",
-    "pembahasan": "Kulit menghasilkan kemampuan merasakan sentuhan. Dengan pola yang sama, mata menghasilkan kemampuan penglihatan.",
+    "level": "Mahir",
+    "soal": "TSUNAMI : GEMPA BAWAH LAUT = LONGSOR : ...",
+    "pilihan": ["Hujan deras", "Angin kencang", "Gempa", "Erosi", "Deforestasi"],
+    "kunci": "A",
+    "pola": "Bencana dan pemicu spesifik utamanya",
+    "pembahasan": "Tsunami dipicu oleh gempa bawah laut sebagai penyebab spesifiknya. Longsor dipicu oleh hujan deras pada lereng yang tidak stabil. Keduanya adalah bencana dan pemicu spesifiknya.",
     "analisis_opsi": {
-      "A": "Salah. Kacamata adalah alat bantu penglihatan.",
-      "B": "Salah. Warna adalah objek penglihatan.",
-      "C": "Salah. Cahaya adalah stimulus penglihatan.",
-      "D": "Salah. Alis adalah bagian pelindung mata.",
-      "E": "Benar. Mata menghasilkan penglihatan."
+      "A": "Benar. Hujan deras adalah pemicu utama longsor.",
+      "B": "Salah. Angin kencang tidak memicu longsor.",
+      "C": "JEBAKAN HALUS. Gempa bisa memicu longsor, tapi bukan pemicu utama seperti hujan deras.",
+      "D": "JEBAKAN PROSES. Erosi adalah proses yang terjadi bersamaan, bukan pemicu.",
+      "E": "JEBAKAN FAKTOR. Deforestasi memperparah, tapi hujan deras adalah pemicu langsung."
     }
   },
   {
     "id": 79,
-    "level": "Pemula",
-    "soal": "MALAM : BULAN = SIANG : ...",
-    "pilihan": ["Matahari", "Bintang", "Awan", "Hujan", "Pelangi"],
-    "kunci": "A",
-    "pola": "Waktu dan benda langit khas",
-    "pembahasan": "Malam sering dikaitkan dengan bulan. Dengan pola yang sama, siang sering dikaitkan dengan matahari.",
+    "level": "Menengah",
+    "soal": "VITAMIN C : JERUK = VITAMIN D : ...",
+    "pilihan": ["Wortel", "Sinar matahari", "Ikan", "Susu", "Daging"],
+    "kunci": "B",
+    "pola": "Vitamin dan sumber utamanya",
+    "pembahasan": "Vitamin C banyak ditemukan dalam jeruk. Vitamin D utamanya dihasilkan oleh tubuh saat terpapar sinar matahari. Keduanya adalah vitamin dan sumber utamanya.",
     "analisis_opsi": {
-      "A": "Benar. Siang identik dengan matahari.",
-      "B": "Salah. Bintang lebih identik dengan malam.",
-      "C": "Salah. Awan dapat muncul kapan saja.",
-      "D": "Salah. Hujan adalah fenomena cuaca.",
-      "E": "Salah. Pelangi adalah fenomena optik."
+      "A": "Salah. Wortel mengandung vitamin A.",
+      "B": "Benar. Sinar matahari adalah sumber utama vitamin D.",
+      "C": "JEBAKAN HALUS. Ikan mengandung vitamin D, tapi bukan sumber utama.",
+      "D": "JEBAKAN HALUS. Susu mengandung vitamin D tapi sedikit.",
+      "E": "Salah. Daging bukan sumber vitamin D utama."
     }
   },
   {
     "id": 80,
     "level": "Mahir",
-    "soal": "Helm dan jaket adalah perlengkapan keselamatan pengendara motor. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Sepatu dan kaos kaki adalah perlengkapan siswa",
-      "Jas dan dasi adalah pakaian resmi",
-      "Payung dan jas hujan adalah perlengkapan pejalan kaki saat hujan",
-      "Kacamata dan buku adalah alat pelajar",
-      "Sendok dan garpu adalah alat makan"
-    ],
-    "kunci": "C",
-    "pola": "Analogi kalimat perlengkapan pelindung untuk kondisi tertentu",
-    "pembahasan": "Helm dan jaket adalah perlengkapan pelindung bagi pengendara motor. Dengan pola yang sama, payung dan jas hujan adalah perlengkapan pelindung bagi pejalan kaki saat hujan.",
+    "soal": "OTAK : MEMORI = HARD DISK : ...",
+    "pilihan": ["Data", "Komputer", "File", "Memori", "Informasi"],
+    "kunci": "A",
+    "pola": "Organ/alat penyimpanan dan data yang disimpan",
+    "pembahasan": "Otak menyimpan memori sebagai data biologis. Hard disk menyimpan data sebagai informasi digital. Keduanya adalah media penyimpanan dan data yang disimpan.",
     "analisis_opsi": {
-      "A": "Salah. Sepatu dan kaos kaki adalah perlengkapan umum, bukan perlengkapan keselamatan khusus.",
-      "B": "Salah. Jas dan dasi adalah pakaian resmi.",
-      "C": "Benar. Payung dan jas hujan adalah perlengkapan pelindung saat hujan.",
-      "D": "Salah. Kacamata dan buku adalah alat belajar.",
-      "E": "Salah. Sendok dan garpu adalah alat makan."
+      "A": "Benar. Hard disk menyimpan data.",
+      "B": "JEBAKAN WADAH. Komputer adalah sistem yang mengandung hard disk.",
+      "C": "JEBAKAN HALUS. File adalah unit data, tapi 'data' lebih umum seperti 'memori'.",
+      "D": "JEBAKAN SINONIM. Memori adalah sinonim penyimpanan, bukan data yang disimpan.",
+      "E": "JEBAKAN HALUS. Informasi mirip data, tapi 'data' lebih tepat sebagai padanan memori."
     }
   },
   {
     "id": 81,
     "level": "Menengah",
-    "soal": "GIGI : MENGUNYAH = KAKI : ...",
-    "pilihan": ["Tangan", "Sepatu", "Lutut", "Berjalan", "Lari"],
-    "kunci": "D",
-    "pola": "Bagian tubuh dan fungsi utama",
-    "pembahasan": "Gigi berfungsi utama untuk mengunyah. Dengan pola yang sama, kaki berfungsi utama untuk berjalan.",
+    "soal": "ANTIBIOTIK : BAKTERI = ANTIVIRUS : ...",
+    "pilihan": ["Penyakit", "Virus", "Infeksi", "Obat", "Sakit"],
+    "kunci": "B",
+    "pola": "Obat dan target spesifiknya",
+    "pembahasan": "Antibiotik adalah obat yang menargetkan bakteri. Antivirus adalah obat yang menargetkan virus. Keduanya adalah jenis obat dan target spesifiknya.",
     "analisis_opsi": {
-      "A": "Salah. Tangan adalah bagian tubuh lain.",
-      "B": "Salah. Sepatu adalah pelengkap kaki.",
-      "C": "Salah. Lutut adalah bagian kaki.",
-      "D": "Benar. Kaki berfungsi utama untuk berjalan.",
-      "E": "Salah. Lari juga fungsi kaki, tetapi berjalan lebih umum dan setara dengan mengunyah sebagai fungsi dasar."
+      "A": "JEBAKAN UMUM. Penyakit terlalu luas.",
+      "B": "Benar. Antivirus menargetkan virus.",
+      "C": "JEBAKAN HALUS. Infeksi adalah kondisi, bukan target spesifik.",
+      "D": "Salah. Obat adalah kategori.",
+      "E": "Salah. Sakit adalah kondisi."
     }
   },
   {
     "id": 82,
-    "level": "Pemula",
-    "soal": "PENA : TINTA = PENSIL : ...",
-    "pilihan": ["Kertas", "Penghapus", "Grafit", "Kayu", "Tinta"],
-    "kunci": "C",
-    "pola": "Alat tulis dan bahan inti",
-    "pembahasan": "Pena menggunakan tinta sebagai bahan inti untuk menulis. Dengan pola yang sama, pensil menggunakan grafit sebagai bahan inti untuk menulis.",
+    "level": "Mahir",
+    "soal": "MAGNET : BESI = GRAVITASI : ...",
+    "pilihan": ["Bumi", "Massa", "Benda", "Logam", "Planet"],
+    "kunci": "B",
+    "pola": "Gaya dan properti yang ditariknya",
+    "pembahasan": "Magnet menarik besi (material spesifik). Gravitasi menarik massa (properti universal semua benda). Ini adalah jebakan halus: magnet menarik MATERIAL tertentu, gravitasi menarik PROPERTI universal.",
     "analisis_opsi": {
-      "A": "Salah. Kertas adalah media menulis.",
-      "B": "Salah. Penghapus adalah pelengkap.",
-      "C": "Benar. Pensil menggunakan grafit sebagai bahan inti.",
-      "D": "Salah. Kayu adalah badan pensil.",
-      "E": "Salah. Tinta digunakan pada pena."
+      "A": "JEBAKAN OBJEK. Bumi memiliki gravitasi, tapi gravitasi menarik massa, bukan bumi.",
+      "B": "Benar. Gravitasi menarik massa.",
+      "C": "JEBAKAN HALUS. Benda memiliki massa, tapi yang ditarik adalah MASSANYA, bukan bendanya secara langsung.",
+      "D": "JEBAKAN MATERIAL. Logam hanya ditarik magnet, gravitasi menarik semua massa.",
+      "E": "JEBAKAN OBJEK. Planet memiliki massa, tapi bukan yang ditarik gravitasi."
     }
   },
   {
     "id": 83,
     "level": "Mahir",
-    "soal": "MUSYAWARAH : MUFAKAT = NEGOSIASI : ...",
-    "pilihan": ["Kesepakatan", "Konflik", "Debat", "Perjanjian", "Diskusi"],
-    "kunci": "A",
-    "pola": "Proses dan hasil yang dicapai",
-    "pembahasan": "Musyawarah bertujuan mencapai mufakat. Dengan pola yang sama, negosiasi bertujuan mencapai kesepakatan.",
+    "soal": "FOTOSINTESIS : CAHAYA = RESPIRASI : ...",
+    "pilihan": ["Oksigen", "Glukosa", "Karbon dioksida", "Energi", "Air"],
+    "kunci": "B",
+    "pola": "Proses biologi dan input energi utamanya",
+    "pembahasan": "Fotosintesis menggunakan cahaya sebagai input energi utama. Respirasi seluler menggunakan glukosa sebagai input energi utama. Keduanya adalah proses metabolisme dan sumber energinya.",
     "analisis_opsi": {
-      "A": "Benar. Negosiasi menghasilkan kesepakatan.",
-      "B": "Salah. Konflik adalah lawan dari hasil negosiasi.",
-      "C": "Salah. Debat adalah bentuk komunikasi, bukan hasil negosiasi.",
-      "D": "Salah. Perjanjian dapat menjadi hasil formal, tetapi kesepakatan lebih umum dan langsung.",
-      "E": "Salah. Diskusi adalah proses, bukan hasil."
+      "A": "JEBAKAN HALUS. Oksigen digunakan dalam respirasi, tapi bukan sumber energi.",
+      "B": "Benar. Glukosa adalah sumber energi respirasi.",
+      "C": "JEBAKAN TERBALIK. CO2 adalah output respirasi.",
+      "D": "JEBAKAN HASIL. Energi adalah hasil respirasi, bukan input.",
+      "E": "Salah. Air bukan input utama respirasi."
     }
   },
   {
     "id": 84,
-    "level": "Menengah",
-    "soal": "BANJIR : HUJAN = KEBAKARAN : ...",
-    "pilihan": ["Air", "Asap", "Api", "Hutan", "Panas"],
-    "kunci": "C",
-    "pola": "Akibat dan penyebab",
-    "pembahasan": "Banjir dapat disebabkan oleh hujan. Dengan pola yang sama, kebakaran dapat disebabkan oleh api.",
+    "level": "Mahir",
+    "soal": "KATUB : JANTUNG = KLEP : ...",
+    "pilihan": ["Mesin", "Pompa", "Pipa", "Air", "Tekanan"],
+    "kunci": "A",
+    "pola": "Komponen pengatur aliran dan sistem tempatnya bekerja",
+    "pembahasan": "Katub adalah komponen yang mengatur aliran darah dalam jantung. Klep adalah komponen yang mengatur aliran bahan bakar/udara dalam mesin. Keduanya adalah pengatur aliran dalam sistemnya.",
     "analisis_opsi": {
-      "A": "Salah. Air digunakan untuk memadamkan kebakaran.",
-      "B": "Salah. Asap adalah hasil kebakaran.",
-      "C": "Benar. Api adalah penyebab kebakaran.",
-      "D": "Salah. Hutan adalah tempat kebakaran dapat terjadi.",
-      "E": "Salah. Panas adalah kondisi yang berkaitan, tetapi api lebih langsung."
+      "A": "Benar. Klep bekerja dalam mesin.",
+      "B": "JEBAKAN HALUS. Pompa juga punya klep, tapi jantung lebih setara dengan mesin sebagai sistem kompleks.",
+      "C": "JEBAKAN MEDIUM. Pipa adalah saluran, bukan sistem.",
+      "D": "Salah. Air adalah fluida.",
+      "E": "Salah. Tekanan adalah kondisi."
     }
   },
   {
     "id": 85,
-    "level": "Pemula",
-    "soal": "Pohon memiliki akar dan daun. Hubungan ini sama dengan ...",
+    "level": "Mahir",
+    "soal": "DOKTER : STETOSKOP : PASIEN = ... : ... : ...",
     "pilihan": [
-      "Rumah memiliki atap dan dinding",
-      "Mobil memiliki roda dan mesin",
-      "Buku memiliki sampul dan halaman",
-      "Komputer memiliki monitor dan keyboard",
-      "Kucing memiliki bulu dan ekor"
+      "Guru : Papan tulis : Murid",
+      "Koki : Pisau : Bahan makanan",
+      "Fotografer : Kamera : Model",
+      "Peneliti : Mikroskop : Sampel",
+      "Sopir : Setir : Penumpang"
     ],
-    "kunci": "E",
-    "pola": "Analogi kalimat bagian alami makhluk hidup",
-    "pembahasan": "Akar dan daun adalah bagian alami pohon. Dengan pola yang sama, bulu dan ekor adalah bagian alami kucing.",
+    "kunci": "D",
+    "pola": "Analogi 3 kata: Profesi : Alat diagnostik/pemeriksaan : Objek yang diperiksa",
+    "pembahasan": "Dokter menggunakan stetoskop untuk memeriksa pasien. Peneliti menggunakan mikroskop untuk memeriksa sampel. Keduanya adalah profesional, alat pemeriksaan spesifik, dan objek yang diperiksa.",
     "analisis_opsi": {
-      "A": "Salah. Rumah adalah benda mati.",
-      "B": "Salah. Mobil adalah benda mati.",
-      "C": "Salah. Buku adalah benda mati.",
-      "D": "Salah. Komputer adalah benda mati.",
-      "E": "Benar. Kucing memiliki bulu dan ekor sebagai bagian alami tubuh."
+      "A": "JEBAKAN HALUS. Papan tulis bukan alat diagnostik.",
+      "B": "JEBAKAN HALUS. Pisau adalah alat pengolahan, bukan pemeriksaan.",
+      "C": "JEBAKAN HALUS. Kamera merekam, bukan memeriksa.",
+      "D": "Benar. Mikroskop memeriksa sampel seperti stetoskop memeriksa pasien.",
+      "E": "JEBAKAN HALUS. Setir mengendalikan, bukan memeriksa."
     }
   },
   {
     "id": 86,
     "level": "Mahir",
-    "soal": "ARKEOLOG : ARTEFAK = SEJARAWAN : ...",
-    "pilihan": ["Fosil", "Bintang", "Batuan", "Dokumen", "Cuaca"],
-    "kunci": "D",
-    "pola": "Ahli dan objek kajian",
-    "pembahasan": "Arkeolog meneliti artefak. Dengan pola yang sama, sejarawan meneliti dokumen atau sumber tertulis.",
+    "soal": "MENULIS : MENCORET : MENGARANG = ... : ... : ...",
+    "pilihan": [
+      "Bicara : Membisu : Berpidato",
+      "Menggambar : Mencoret-coret : Melukis",
+      "Bernyanyi : Bergumam : Berteriak",
+      "Membaca : Mengeja : Memahami",
+      "Berjalan : Merangkak : Berlari"
+    ],
+    "kunci": "B",
+    "pola": "Analogi 3 kata: Aktivitas umum : Bentuk negatif/sembarangan : Bentuk positif/profesional",
+    "pembahasan": "Menulis adalah aktivitas umum. Mencoret adalah bentuk negatif/sembarangan dari menulis. Mengarang adalah bentuk positif/kreatif dari menulis. Menggambar adalah aktivitas umum. Mencoret-coret adalah bentuk negatif/sembarangan. Melukis adalah bentuk positif/seni dari menggambar.",
     "analisis_opsi": {
-      "A": "Salah. Fosil lebih berkaitan dengan paleontologi atau arkeologi tertentu.",
-      "B": "Salah. Bintang adalah objek kajian astronom.",
-      "C": "Salah. Batuan adalah objek kajian geologi.",
-      "D": "Benar. Sejarawan meneliti dokumen dan sumber tertulis.",
-      "E": "Salah. Cuaca adalah objek kajian meteorologi."
+      "A": "JEBAKAN NEGASI. Membisu adalah ketiadaan bicara, bukan bentuk negatif.",
+      "B": "Benar. Menggambar : Mencoret-coret (negatif) : Melukis (positif).",
+      "C": "JEBAKAN INTENSITAS. Bergumam dan berteriak adalah perbedaan volume, bukan kualitas.",
+      "D": "JEBAKAN PROSES. Mengeja dan memahami adalah tahapan membaca.",
+      "E": "JEBAKAN INTENSITAS. Merangkak dan berlari adalah perbedaan kecepatan."
     }
   },
   {
     "id": 87,
-    "level": "Menengah",
-    "soal": "GANDUM : ROTI = KENTANG : ...",
-    "pilihan": ["Sawah", "Keripik", "Ladang", "Nasi", "Jagung"],
-    "kunci": "B",
-    "pola": "Bahan pangan dan produk olahan",
-    "pembahasan": "Gandum diolah menjadi roti. Dengan pola yang sama, kentang diolah menjadi keripik.",
+    "level": "Mahir",
+    "soal": "Vaksin merangsang sistem imun untuk membentuk antibodi tanpa menyebabkan penyakit. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Obat pereda nyeri menghambat sinyal rasa sakit ke otak tanpa menyembuhkan penyakit",
+      "Pupuk organik menyuburkan tanah dengan menyediakan nutrisi bagi mikroorganisme",
+      "Terapi gen menggantikan gen yang rusak dengan gen sehat untuk menyembuhkan penyakit keturunan",
+      "Simulasi komputer melatih pengguna menghadapi situasi nyata tanpa risiko nyata",
+      "Latihan fisik memperkuat otot dengan merusak serat otot secara terkendali"
+    ],
+    "kunci": "D",
+    "pola": "Analogi kalimat: Paparan terkendali yang melatih tanpa menyebabkan bahaya nyata",
+    "pembahasan": "Vaksin memberikan paparan terkendali (antigen) yang melatih sistem imun TANPA menyebabkan penyakit nyata. Simulasi komputer memberikan paparan situasi yang melatih pengguna TANPA risiko nyata. Keduanya adalah simulasi/paparan aman untuk pelatihan.",
     "analisis_opsi": {
-      "A": "Salah. Sawah adalah tempat menanam padi.",
-      "B": "Benar. Kentang dapat diolah menjadi keripik.",
-      "C": "Salah. Ladang adalah tempat menanam kentang.",
-      "D": "Salah. Nasi berasal dari beras.",
-      "E": "Salah. Jagung adalah bahan pangan lain."
+      "A": "JEBAKAN HALUS. Obat pereda nyeri tidak melatih, hanya menghambat.",
+      "B": "Salah. Pupuk tidak melatih, hanya menyuburkan.",
+      "C": "JEBAKAN HALUS. Terapi gen menyembuhkan, bukan melatih.",
+      "D": "Benar. Simulasi melatih tanpa risiko nyata.",
+      "E": "JEBAKAN HALUS. Latihan fisik memang merusak otot terkendali, tapi bukan simulasi tanpa risiko."
     }
   },
   {
     "id": 88,
-    "level": "Pemula",
-    "soal": "BULU : BURUNG = RAMBUT : ...",
-    "pilihan": ["Kucing", "Ikan", "Manusia", "Pohon", "Batu"],
-    "kunci": "C",
-    "pola": "Penutup tubuh pada makhluk hidup",
-    "pembahasan": "Bulu adalah penutup tubuh burung. Dengan pola yang sama, rambut adalah penutup tubuh manusia.",
+    "level": "Mahir",
+    "soal": "Enzim bekerja sebagai katalis yang mempercepat reaksi tanpa ikut terkonsumsi dalam reaksi tersebut. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Ragi bekerja sebagai pengembang yang mengubah gula menjadi alkohol dalam fermentasi",
+      "Katalis mobil mengubah gas buang beracun menjadi gas tidak berbahaya tanpa habis",
+      "Insulin bekerja sebagai pengatur yang menurunkan kadar gula darah",
+      "Hormon adrenalin memacu detak jantung saat kondisi darurat",
+      "Antibodi bekerja sebagai pelindung yang mengikat antigen secara spesifik"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat: Katalis yang mempercepat/memfasilitasi tanpa terkonsumsi",
+    "pembahasan": "Enzim adalah katalis biologis yang mempercepat reaksi tanpa ikut terkonsumsi. Katalis mobil adalah katalis kimia yang mengubah gas buang tanpa habis/terkonsumsi. Keduanya adalah katalis yang tidak terkonsumsi.",
     "analisis_opsi": {
-      "A": "Salah. Kucing memiliki bulu.",
-      "B": "Salah. Ikan memiliki sisik.",
-      "C": "Benar. Manusia memiliki rambut.",
-      "D": "Salah. Pohon bukan makhluk hidup yang memiliki rambut.",
-      "E": "Salah. Batu bukan makhluk hidup."
+      "A": "JEBAKAN HALUS. Ragi terkonsumsi dalam fermentasi (habis menjadi alkohol).",
+      "B": "Benar. Katalis mobil tidak habis, seperti enzim.",
+      "C": "JEBAKAN HALUS. Insulin mengatur tapi tidak berfungsi sebagai katalis reaksi.",
+      "D": "Salah. Adrenalin adalah pemicu, bukan katalis.",
+      "E": "JEBAKAN HALUS. Antibodi mengikat antigen tapi tidak mempercepat reaksi."
     }
   },
   {
     "id": 89,
     "level": "Mahir",
-    "soal": "EDUKASI : LITERASI = PELATIHAN : ...",
-    "pilihan": ["Uang", "Kompetensi", "Sertifikat", "Ujian", "Materi"],
+    "soal": "Lensa kamera memfokuskan cahaya agar gambar terbentuk jelas pada sensor. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Gendang telinga menangkap getaran suara agar sinyal dikirim ke otak",
+      "Kornea mata membiaskan cahaya agar bayangan jatuh tepat di retina",
+      "Paru-paru menyerap oksigen agar darah beredar ke seluruh tubuh",
+      "Jantung memompa darah agar nutrisi sampai ke sel",
+      "Lambung mencerna makanan agar nutrisi dapat diserap usus"
+    ],
     "kunci": "B",
-    "pola": "Proses dan kemampuan yang dihasilkan",
-    "pembahasan": "Edukasi meningkatkan literasi. Dengan pola yang sama, pelatihan meningkatkan kompetensi.",
+    "pola": "Analogi kalimat: Komponen optik yang memfokuskan cahaya ke penerima",
+    "pembahasan": "Lensa kamera memfokuskan cahaya ke sensor agar gambar jelas. Kornea mata membiaskan cahaya ke retina agar bayangan jelas. Keduanya adalah komponen optik yang memfokuskan cahaya ke penerima.",
     "analisis_opsi": {
-      "A": "Salah. Uang bukan hasil langsung pelatihan.",
-      "B": "Benar. Pelatihan meningkatkan kompetensi.",
-      "C": "Salah. Sertifikat adalah dokumen bukti pelatihan.",
-      "D": "Salah. Ujian adalah tahap evaluasi.",
-      "E": "Salah. Materi adalah bahan pelatihan."
+      "A": "JEBAKAN HALUS. Gendang telinga menangkap suara, bukan memfokuskan cahaya.",
+      "B": "Benar. Kornea memfokuskan cahaya ke retina.",
+      "C": "Salah. Paru-paru menyerap gas, bukan cahaya.",
+      "D": "Salah. Jantung memompa cairan, bukan cahaya.",
+      "E": "Salah. Lambung mencerna makanan, bukan cahaya."
     }
   },
   {
     "id": 90,
     "level": "Mahir",
-    "soal": "Buku disimpan di rak perpustakaan. Hubungan ini sama dengan ...",
+    "soal": "Hutan hujan tropis menyerap karbon dioksida dan menghasilkan oksigen bagi atmosfer. Hubungan objek yang setara dengan kalimat di atas adalah...",
     "pilihan": [
-      "Pakaian disimpan di lemari",
-      "Uang disimpan di dompet",
-      "Mobil disimpan di garasi",
-      "Dokumen disimpan di arsip",
-      "Makanan disimpan di dapur"
+      "Laut menyerap panas matahari dan mendistribusikannya ke seluruh dunia",
+      "Tanaman hijau menyerap air dan mineral dari tanah untuk pertumbuhan",
+      "Lapisan ozon menyerap radiasi ultraviolet dan melindungi kehidupan di bumi",
+      "Tanah menyerap air hujan dan menyimpannya sebagai cadangan air tanah",
+      "Awan menyerap uap air dan menurunkannya sebagai hujan"
     ],
-    "kunci": "D",
-    "pola": "Analogi kalimat tempat penyimpanan khusus",
-    "pembahasan": "Buku disimpan secara khusus di rak perpustakaan. Dengan pola yang sama, dokumen disimpan secara khusus di arsip.",
+    "kunci": "C",
+    "pola": "Analogi kalimat: Sistem pelindung atmosfer yang menyerap input berbahaya dan menghasilkan output perlindungan",
+    "pembahasan": "Hutan hujan menyerap CO2 (input) dan menghasilkan O2 (output perlindungan) untuk atmosfer. Lapisan ozon menyerap radiasi UV (input berbahaya) dan menghasilkan perlindungan (output) untuk kehidupan. Keduanya adalah sistem penyerap input berbahaya dan penghasil perlindungan.",
     "analisis_opsi": {
-      "A": "Salah. Pakaian disimpan di lemari, tetapi hubungan ini lebih umum dan tidak seformal perpustakaan.",
-      "B": "Salah. Dompet adalah tempat kecil untuk uang.",
-      "C": "Salah. Garasi adalah tempat kendaraan.",
-      "D": "Benar. Arsip adalah tempat penyimpanan khusus dokumen.",
-      "E": "Salah. Dapur adalah tempat umum untuk makanan."
+      "A": "JEBAKAN HALUS. Laut menyerap panas tapi tidak menghasilkan perlindungan.",
+      "B": "JEBAKAN HALUS. Tanaman menyerap untuk diri sendiri, bukan untuk lingkungan.",
+      "C": "Benar. Ozon menyerap UV dan melindungi bumi.",
+      "D": "JEBAKAN HALUS. Tanah menyimpan air tapi tidak menghasilkan perlindungan.",
+      "E": "JEBAKAN HALUS. Awan menyerap uap tapi tidak menghasilkan perlindungan."
     }
   }
 ]

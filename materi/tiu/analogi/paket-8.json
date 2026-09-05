@@ -1,0 +1,518 @@
+[
+  {
+    "id": 211,
+    "level": "Menengah",
+    "soal": "PADI : SEKAM = TEBU : ...",
+    "pilihan": ["Gula", "Air", "Ampas", "Daun", "Nira"],
+    "kunci": "C",
+    "pola": "Bahan Baku dan Limbah/Sisa Ekstraksinya",
+    "pembahasan": "Sekam adalah kulit/sisa limbah dari proses penggilingan padi. Ampas adalah sisa limbah dari proses ekstraksi/perasan tebu. Keduanya menunjukkan hubungan bahan baku dan sisa buangan dari proses pengambilannya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Gula adalah HASIL UTAMA, bukan limbah/sisa.",
+      "B": "Salah. Air adalah kandungan, bukan sisa ekstraksi.",
+      "C": "Benar. Ampas adalah sisa perasan tebu.",
+      "D": "Salah. Daun adalah bagian tumbuhan, bukan sisa olahan.",
+      "E": "JEBAKAN HALUS. Nira adalah cairan awal, bukan sisa buangan."
+    }
+  },
+  {
+    "id": 212,
+    "level": "Mahir",
+    "soal": "MERPATI : DAMAI = TIMBANGAN : ...",
+    "pilihan": ["Berat", "Pasar", "Keadilan", "Hakim", "Logam"],
+    "kunci": "C",
+    "pola": "Simbol/Objek dan Makna Filosofis yang Diwakilinya",
+    "pembahasan": "Burung merpati secara universal dikenal sebagai simbol dari perdamaian. Timbangan secara universal dikenal sebagai simbol dari keadilan. Keduanya adalah objek fisik dan konsep abstrak yang diwakilinya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Berat adalah FUNGSI UKUR, bukan makna filosofis/simbolik.",
+      "B": "Salah. Pasar adalah tempat.",
+      "C": "Benar. Keadilan adalah makna simbolis dari timbangan.",
+      "D": "Salah. Hakim adalah pengguna simbol.",
+      "E": "Salah. Logam adalah bahan pembuat."
+    }
+  },
+  {
+    "id": 213,
+    "level": "Mahir",
+    "soal": "MALARIA : NYAMUK = RABIES : ...",
+    "pilihan": ["Virus", "Anjing", "Air", "Gigitan", "Vaksin"],
+    "kunci": "B",
+    "pola": "Penyakit dan Vektor/Hewan Penular Utamanya",
+    "pembahasan": "Malaria adalah penyakit yang ditularkan melalui vektor nyamuk (Anopheles). Rabies adalah penyakit yang ditularkan melalui vektor hewan seperti anjing (atau kelelawar). Keduanya adalah penyakit dan hewan perantaranya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Virus adalah PATOGEN penyebab, bukan hewan penular (vektor).",
+      "B": "Benar. Anjing adalah vektor penular rabies.",
+      "C": "Salah. Air adalah medium penyakit lain (seperti kolera).",
+      "D": "JEBAKAN HALUS. Gigitan adalah METODE penularan, bukan subjek penularnya.",
+      "E": "Salah. Vaksin adalah pencegah."
+    }
+  },
+  {
+    "id": 214,
+    "level": "Pemula",
+    "soal": "BOTOL : AIR = AMPLOP : ...",
+    "pilihan": ["Kertas", "Surat", "Pos", "Prangko", "Tinta"],
+    "kunci": "B",
+    "pola": "Wadah Pelindung dan Isi Spesifik yang Disimpannya",
+    "pembahasan": "Botol adalah wadah yang dirancang untuk menyimpan air/cairan. Amplop adalah wadah yang dirancang untuk menyimpan surat. Keduanya adalah wadah dan isi utamanya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Kertas adalah BAHAN PEMBUAT amplop, bukan isinya.",
+      "B": "Benar. Surat adalah isi amplop.",
+      "C": "Salah. Pos adalah instansi.",
+      "D": "Salah. Prangko adalah aksesori luar.",
+      "E": "Salah. Tinta adalah bahan penulisan."
+    }
+  },
+  {
+    "id": 215,
+    "level": "Menengah",
+    "soal": "KERTAS : PENA = PAPAN TULIS : ...",
+    "pilihan": ["Buku", "Kapur", "Meja", "Guru", "Penghapus"],
+    "kunci": "B",
+    "pola": "Media Tulis dan Alat Tulis yang Sesuai",
+    "pembahasan": "Kertas adalah media yang ditulis menggunakan pena. Papan tulis adalah media yang ditulis menggunakan kapur (atau spidol). Keduanya adalah pasangan media dan alat tulis yang kompatibel.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Buku adalah PRODUK JADI dari kertas, bukan alat tulis.",
+      "B": "Benar. Kapur adalah alat tulis untuk papan tulis.",
+      "C": "Salah. Meja adalah furnitur.",
+      "D": "Salah. Guru adalah pengguna.",
+      "E": "Salah. Penghapus adalah alat pembersih, bukan alat tulis."
+    }
+  },
+  {
+    "id": 216,
+    "level": "Menengah",
+    "soal": "LANDAK : DURI = SIPUT : ...",
+    "pilihan": ["Lendir", "Cangkang", "Antena", "Air", "Rumput"],
+    "kunci": "B",
+    "pola": "Hewan dan Alat Pertahanan Fisik Utamanya",
+    "pembahasan": "Landak menggunakan duri sebagai alat pertahanan fisik dari predator. Siput menggunakan cangkang sebagai alat pertahanan fisik (bersembunyi). Keduanya adalah hewan dan organ pelindung kerasnya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN HALUS. Lendir adalah alat pertahanan kimia/pelumas, bukan fisik keras.",
+      "B": "Benar. Cangkang adalah pelindung fisik siput.",
+      "C": "Salah. Antena adalah alat indra.",
+      "D": "Salah. Air adalah kebutuhan.",
+      "E": "Salah. Rumput adalah makanan."
+    }
+  },
+  {
+    "id": 217,
+    "level": "Mahir",
+    "soal": "ARSITEK : DENAH = KOMPOSER : ...",
+    "pilihan": ["Lagu", "Partitur", "Panggung", "Penyanyi", "Alat Musik"],
+    "kunci": "B",
+    "pola": "Profesi dan Rancangan/Karya Awal (Cetak Biru)",
+    "pembahasan": "Arsitek membuat denah sebagai rancangan awal/cetak biru sebelum bangunan dibuat. Komposer membuat partitur (notasi balok) sebagai rancangan awal sebelum musik dimainkan. Keduanya adalah profesi dan dokumen rancangannya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Lagu adalah HASIL AKHIR yang didengar, bukan rancangan tertulisnya.",
+      "B": "Benar. Partitur adalah rancangan tertulis komposer.",
+      "C": "Salah. Panggung adalah tempat.",
+      "D": "Salah. Penyanyi adalah eksekutor.",
+      "E": "Salah. Alat musik adalah alat."
+    }
+  },
+  {
+    "id": 218,
+    "level": "Mahir",
+    "soal": "RACUN : ANTIDOTUM = PENYAKIT : ...",
+    "pilihan": ["Virus", "Dokter", "Obat", "Rumah Sakit", "Gejala"],
+    "kunci": "C",
+    "pola": "Zat/Kondisi Berbahaya dan Zat Penawarnya",
+    "pembahasan": "Antidotum adalah zat spesifik yang berfungsi menetralkan racun. Obat adalah zat spesifik yang berfungsi menetralkan/mengatasi penyakit. Keduanya adalah ancaman dan zat penawarnya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Virus adalah PENYEBAB penyakit, bukan penawar.",
+      "B": "JEBAKAN PELAKU. Dokter adalah subjek yang memberikan penawar, bukan zatnya.",
+      "C": "Benar. Obat adalah penawar penyakit.",
+      "D": "Salah. Rumah sakit adalah tempat.",
+      "E": "Salah. Gejala adalah tanda."
+    }
+  },
+  {
+    "id": 219,
+    "level": "Pemula",
+    "soal": "KUPU-KUPU : ULAT = KATAK : ...",
+    "pilihan": ["Telur", "Kecebong", "Kolam", "Lompat", "Hijau"],
+    "kunci": "B",
+    "pola": "Wujud Dewasa dan Wujud Muda/Larvanya",
+    "pembahasan": "Kupu-kupu adalah wujud dewasa dari ulat. Katak adalah wujud dewasa dari kecebong. Keduanya adalah hewan dan fase metamorfosis sebelumnya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN ARAH TERBALIK. Telur adalah fase SEBELUM ulat/kecebong.",
+      "B": "Benar. Kecebong adalah wujud muda katak.",
+      "C": "Salah. Kolam adalah habitat.",
+      "D": "Salah. Lompat adalah aktivitas.",
+      "E": "Salah. Hijau adalah warna."
+    }
+  },
+  {
+    "id": 220,
+    "level": "Pemula",
+    "soal": "DINGIN : JAKET = HUJAN : ...",
+    "pilihan": ["Basah", "Payung", "Air", "Awan", "Banjir"],
+    "kunci": "B",
+    "pola": "Kondisi Cuaca dan Alat Pelindungnya",
+    "pembahasan": "Jaket adalah alat yang digunakan untuk melindungi tubuh dari kondisi dingin. Payung adalah alat yang digunakan untuk melindungi tubuh dari kondisi hujan.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Basah adalah EFEK dari hujan, bukan alat pelindung.",
+      "B": "Benar. Payung adalah alat pelindung dari hujan.",
+      "C": "Salah. Air adalah zat hujan.",
+      "D": "Salah. Awan adalah sumber.",
+      "E": "Salah. Banjir adalah dampak."
+    }
+  },
+  {
+    "id": 221,
+    "level": "Pemula",
+    "soal": "KAKI : SEPATU = TANGAN : ...",
+    "pilihan": ["Kuku", "Cincin", "Sarung Tangan", "Jam Tangan", "Lengan"],
+    "kunci": "C",
+    "pola": "Anggota Tubuh dan Pelindung Luarnya",
+    "pembahasan": "Sepatu adalah pelindung luar yang membungkus kaki. Sarung tangan adalah pelindung luar yang membungkus tangan.",
+    "analisis_opsi": {
+      "A": "Salah. Kuku adalah bagian tubuh.",
+      "B": "JEBAKAN AKSESORI. Cincin adalah perhiasan, bukan pelindung fungsional.",
+      "C": "Benar. Sarung tangan adalah pelindung tangan.",
+      "D": "JEBAKAN AKSESORI. Jam tangan adalah alat penunjuk waktu.",
+      "E": "Salah. Lengan adalah bagian tubuh."
+    }
+  },
+  {
+    "id": 222,
+    "level": "Menengah",
+    "soal": "SUHU : TERMOMETER = KELEMBABAN : ...",
+    "pilihan": ["Barometer", "Higrometer", "Anemometer", "Altimeter", "Speedometer"],
+    "kunci": "B",
+    "pola": "Besaran Fisika dan Alat Ukur Spesifiknya",
+    "pembahasan": "Termometer adalah alat untuk mengukur suhu. Higrometer adalah alat untuk mengukur kelembaban udara.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Barometer mengukur TEKANAN udara.",
+      "B": "Benar. Higrometer mengukur kelembaban.",
+      "C": "Salah. Anemometer mengukur kecepatan angin.",
+      "D": "Salah. Altimeter mengukur ketinggian.",
+      "E": "Salah. Speedometer mengukur kecepatan."
+    }
+  },
+  {
+    "id": 223,
+    "level": "Menengah",
+    "soal": "KAIN : NGENGAT = KAYU : ...",
+    "pilihan": ["Air", "Api", "Rayap", "Cat", "Palu"],
+    "kunci": "C",
+    "pola": "Material dan Hama/Organisme Perusaknya",
+    "pembahasan": "Ngengat (larvanya) adalah organisme/hama yang merusak dan memakan kain. Rayap adalah organisme/hama yang merusak dan memakan kayu.",
+    "analisis_opsi": {
+      "A": "Salah. Air adalah zat abiotik.",
+      "B": "JEBAKAN MATI. Api adalah perusak ABIOTIK (kimia/fisika), bukan organisme biologis.",
+      "C": "Benar. Rayap adalah perusak biologis kayu.",
+      "D": "Salah. Cat adalah pelapis.",
+      "E": "Salah. Palu adalah alat."
+    }
+  },
+  {
+    "id": 224,
+    "level": "Menengah",
+    "soal": "SENIMAN : KARYA = ILMUWAN : ...",
+    "pilihan": ["Laboratorium", "Teori", "Buku", "Gelar", "Eksperimen"],
+    "kunci": "B",
+    "pola": "Profesi dan Produk Intelektual/Utamanya",
+    "pembahasan": "Seniman menghasilkan karya (seni) sebagai produk utamanya. Ilmuwan menghasilkan teori (atau penemuan) sebagai produk intelektual utamanya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Laboratorium adalah TEMPAT kerja.",
+      "B": "Benar. Teori adalah produk utama ilmuwan.",
+      "C": "JEBAKAN HALUS. Buku adalah MEDIA publikasi, bukan produk intelektual murni (bisa ditulis siapa saja).",
+      "D": "Salah. Gelar adalah pengakuan.",
+      "E": "Salah. Eksperimen adalah PROSES, bukan hasil akhir."
+    }
+  },
+  {
+    "id": 225,
+    "level": "Mahir",
+    "soal": "JANTUNG : DETAK = PARU-PARU : ...",
+    "pilihan": ["Darah", "Oksigen", "Kembang", "Napas", "Dada"],
+    "kunci": "C",
+    "pola": "Organ dan Gerakan Mekanis Khasnya",
+    "pembahasan": "Jantung bekerja dengan cara berdetak (kontraksi/relaksasi). Paru-paru bekerja dengan cara mengembang dan mengempis. Keduanya adalah organ dan gerakan mekanis spesifiknya.",
+    "analisis_opsi": {
+      "A": "Salah. Darah adalah cairan yang dipompa.",
+      "B": "Salah. Oksigen adalah gas yang diproses.",
+      "C": "Benar. Kembang (mengembang/mengempis) adalah gerakan mekanis paru-paru.",
+      "D": "JEBAKAN HALUS. Napas adalah KONSEP/FENOMENA udaranya, bukan istilah gerakan mekanis organnya seperti 'detak'.",
+      "E": "Salah. Dada adalah letak."
+    }
+  },
+  {
+    "id": 226,
+    "level": "Mahir",
+    "soal": "GURUN : OASE = LAUT : ...",
+    "pilihan": ["Pasir", "Air", "Pulau", "Ikan", "Ombak"],
+    "kunci": "C",
+    "pola": "Bentang Alam Luas dan Titik Fokus/Lawannya di Tengahnya",
+    "pembahasan": "Gurun adalah bentang alam daratan luas yang kering, dan oase adalah titik air/kehidupan di tengahnya. Laut adalah bentang alam air luas, dan pulau adalah titik daratan di tengahnya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Pasir adalah MATERIAL penyusun gurun.",
+      "B": "Salah. Air adalah material laut.",
+      "C": "Benar. Pulau adalah titik daratan di tengah lautan air.",
+      "D": "Salah. Ikan adalah penghuni.",
+      "E": "Salah. Ombak adalah fenomena."
+    }
+  },
+  {
+    "id": 227,
+    "level": "Menengah",
+    "soal": "BUTA : CAHAYA = TULI : ...",
+    "pilihan": ["Gelap", "Suara", "Telinga", "Sepi", "Bising"],
+    "kunci": "B",
+    "pola": "Kondisi Cacat Indra dan Objek yang Tidak Dapat Ditangkapnya",
+    "pembahasan": "Buta adalah kondisi di mana mata tidak dapat menangkap cahaya. Tuli adalah kondisi di mana telinga tidak dapat menangkap suara.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Gelap adalah KONDISI lingkungan, bukan objek tangkapan indra.",
+      "B": "Benar. Suara adalah objek yang tidak ditangkap orang tuli.",
+      "C": "Salah. Telinga adalah organ.",
+      "D": "Salah. Sepi adalah kondisi.",
+      "E": "Salah. Bising adalah jenis suara."
+    }
+  },
+  {
+    "id": 228,
+    "level": "Pemula",
+    "soal": "KOMPAS : ARAH = JAM : ...",
+    "pilihan": ["Utara", "Waktu", "Detik", "Jarum", "Dinding"],
+    "kunci": "B",
+    "pola": "Alat dan Besaran Abstrak yang Ditunjuknya",
+    "pembahasan": "Kompas adalah alat untuk menunjuk arah. Jam adalah alat untuk menunjuk waktu.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Utara adalah HASIL BACAAN spesifik, bukan besaran umumnya.",
+      "B": "Benar. Waktu adalah besaran yang ditunjuk jam.",
+      "C": "Salah. Detik adalah satuan.",
+      "D": "Salah. Jarum adalah komponen.",
+      "E": "Salah. Dinding adalah tempat."
+    }
+  },
+  {
+    "id": 229,
+    "level": "Pemula",
+    "soal": "MIKROSKOP : BAKTERI = TELESKOP : ...",
+    "pilihan": ["Lensa", "Bintang", "Mata", "Kaca", "Langit"],
+    "kunci": "B",
+    "pola": "Alat Optik dan Objek Spesifik yang Diamatinya",
+    "pembahasan": "Mikroskop digunakan untuk mengamati objek sangat kecil seperti bakteri. Teleskop digunakan untuk mengamati objek sangat jauh seperti bintang.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Lensa adalah KOMPONEN alat.",
+      "B": "Benar. Bintang adalah objek amatan teleskop.",
+      "C": "Salah. Mata adalah organ.",
+      "D": "Salah. Kaca adalah bahan.",
+      "E": "JEBAKAN HALUS. Langit adalah LOKASI, bintang lebih spesifik sebagai objek setara bakteri."
+    }
+  },
+  {
+    "id": 230,
+    "level": "Menengah",
+    "soal": "KARET : BAN = KACA : ...",
+    "pilihan": ["Pasir", "Jendela", "Silika", "Panas", "Mobil"],
+    "kunci": "B",
+    "pola": "Bahan Baku Material dan Produk Fungsional Utamanya",
+    "pembahasan": "Karet adalah bahan baku utama yang dicetak menjadi ban. Kaca adalah bahan baku utama yang dicetak menjadi jendela (atau lensa).",
+    "analisis_opsi": {
+      "A": "JEBAKAN ARAH TERBALIK. Pasir adalah bahan baku kaca.",
+      "B": "Benar. Jendela adalah produk fungsional kaca.",
+      "C": "Salah. Silika adalah kandungan pasir.",
+      "D": "Salah. Panas adalah kondisi proses.",
+      "E": "JEBAKAN MATI. Mobil adalah PENGGUNA ban, bukan produk dari kaca."
+    }
+  },
+  {
+    "id": 231,
+    "level": "Pemula",
+    "soal": "API : PANAS = ES : ...",
+    "pilihan": ["Merah", "Air", "Dingin", "Beku", "Mencair"],
+    "kunci": "C",
+    "pola": "Zat dan Sifat Alami Mutlaknya",
+    "pembahasan": "Panas adalah sifat alami mutlak yang dimiliki api. Dingin adalah sifat alami mutlak yang dimiliki es.",
+    "analisis_opsi": {
+      "A": "Salah. Merah adalah warna.",
+      "B": "Salah. Air adalah wujud cair.",
+      "C": "Benar. Dingin adalah sifat es.",
+      "D": "JEBAKAN HALUS. Beku adalah KONDISI/WUJUD, 'dingin' adalah sifat sensorik yang setara dengan 'panas'.",
+      "E": "Salah. Mencair adalah proses."
+    }
+  },
+  {
+    "id": 232,
+    "level": "Pemula",
+    "soal": "MOBIL : BENSIN = MANUSIA : ...",
+    "pilihan": ["Oksigen", "Makanan", "Air", "Tidur", "Uang"],
+    "kunci": "B",
+    "pola": "Entitas dan Sumber Energi Kalorinya",
+    "pembahasan": "Bensin adalah sumber energi pembakaran bagi mesin mobil. Makanan adalah sumber energi kalori bagi tubuh manusia.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Oksigen adalah zat pembakar (oksidator), bukan SUMBER ENERGI (bahan bakar).",
+      "B": "Benar. Makanan adalah sumber energi manusia.",
+      "C": "Salah. Air adalah pelarut/kebutuhan, bukan sumber kalori.",
+      "D": "Salah. Tidur adalah proses pemulihan.",
+      "E": "Salah. Uang adalah alat tukar."
+    }
+  },
+  {
+    "id": 233,
+    "level": "Menengah",
+    "soal": "PUISI : BAIT = DRAMA : ...",
+    "pilihan": ["Kata", "Adegan", "Panggung", "Penonton", "Dialog"],
+    "kunci": "B",
+    "pola": "Karya Sastra dan Unit Pembentuk Strukturalnya",
+    "pembahasan": "Bait adalah unit pembentuk struktural dari sebuah puisi. Adegan (atau babak) adalah unit pembentuk struktural dari sebuah drama.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Kata adalah unit TERKECIL bahasa, bukan unit struktural karya.",
+      "B": "Benar. Adegan adalah unit pembentuk drama.",
+      "C": "Salah. Panggung adalah tempat.",
+      "D": "Salah. Penonton adalah konsumen.",
+      "E": "JEBAKAN HALUS. Dialog adalah ISI/ELEMEN drama, bukan unit pembagi strukturnya."
+    }
+  },
+  {
+    "id": 234,
+    "level": "Mahir",
+    "soal": "EMAS : LOGAM = BERLIAN : ...",
+    "pilihan": ["Perhiasan", "Mineral", "Cincin", "Mahal", "Batu"],
+    "kunci": "B",
+    "pola": "Objek Spesifik dan Kategori Material Ilmiahnya",
+    "pembahasan": "Emas secara ilmiah dikategorikan sebagai jenis logam. Berlian secara ilmiah dikategorikan sebagai jenis mineral (atau batu mulia). Keduanya adalah benda dan klasifikasi materialnya.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Perhiasan adalah FUNGSI/BENTUK OLAHAN, bukan kategori material dasar.",
+      "B": "Benar. Mineral adalah kategori material berlian.",
+      "C": "Salah. Cincin adalah produk.",
+      "D": "Salah. Mahal adalah nilai.",
+      "E": "JEBAKAN HALUS. Batu terlalu umum, 'mineral' atau 'batu mulia' lebih presisi secara taksonomi material."
+    }
+  },
+  {
+    "id": 235,
+    "level": "Mahir",
+    "soal": "SUHU : CELCIUS : TERMOMETER = ... : ... : ...",
+    "pilihan": [
+      "Arus : Ampere : Amperemeter",
+      "Berat : Timbangan : Kilogram",
+      "Waktu : Detik : Arloji",
+      "Jarak : Kilometer : Peta",
+      "Cahaya : Lux : Lampu"
+    ],
+    "kunci": "A",
+    "pola": "Analogi 3 Kata: Besaran : Satuan : Alat Ukur",
+    "pembahasan": "Suhu (besaran) diukur dalam satuan Celcius menggunakan Termometer (alat). Arus (besaran) diukur dalam satuan Ampere menggunakan Amperemeter (alat).",
+    "analisis_opsi": {
+      "A": "Benar. Arus : Ampere : Amperemeter.",
+      "B": "JEBAKAN URUTAN TERBALIK. Urutannya menjadi Besaran : Alat : Satuan.",
+      "C": "JEBAKAN HALUS. Detik adalah satuan, Arloji adalah alat, tapi 'Waktu' adalah konsep, besaran fisika bakunya adalah 'Kuantitas Waktu' (namun A jauh lebih presisi secara fisika).",
+      "D": "Salah. Peta bukan alat ukur langsung.",
+      "E": "Salah. Lampu bukan alat ukur."
+    }
+  },
+  {
+    "id": 236,
+    "level": "Mahir",
+    "soal": "GANDUM : TEPUNG : ROTI = ... : ... : ...",
+    "pilihan": [
+      "Kapas : Benang : Kain",
+      "Sapi : Susu : Keju",
+      "Kayu : Papan : Meja",
+      "Emas : Tambang : Cincin",
+      "Padi : Beras : Nasi"
+    ],
+    "kunci": "A",
+    "pola": "Analogi 3 Kata: Bahan Mentah : Zat Antara (Intermediate) : Produk Akhir",
+    "pembahasan": "Gandum (mentah) digiling menjadi Tepung (zat antara), lalu dipanggang menjadi Roti (produk akhir). Kapas (mentah) dipintal menjadi Benang (zat antara), lalu ditenun menjadi Kain (produk akhir).",
+    "analisis_opsi": {
+      "A": "Benar. Kapas -> Benang -> Kain.",
+      "B": "JEBAKAN HALUS. Susu langsung diproses menjadi keju, tidak ada 'zat antara' yang setara dengan tepung/benang.",
+      "C": "Salah. Papan adalah bentuk potongan, bukan transformasi zat.",
+      "D": "Salah. Tambang adalah tempat.",
+      "E": "JEBAKAN HALUS. Beras adalah bentuk fisik gabah yang dibuang kulitnya, bukan ekstraksi zat seperti tepung."
+    }
+  },
+  {
+    "id": 237,
+    "level": "Mahir",
+    "soal": "Lebah mengambil nektar dari bunga dan secara tidak sengaja membantu penyerbukan bunga tersebut. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Cacing tanah menggemburkan tanah dan mendapatkan perlindungan dari predator",
+      "Burung pemakan buah menelan biji dan menyebarkannya ke tempat lain melalui kotorannya",
+      "Kutu hidup di kepala manusia dan menyebabkan rasa gatal yang mengganggu",
+      "Tanaman anggrek menempel pada pohon besar untuk mendapatkan cahaya matahari",
+      "Singa memburu rusa untuk memenuhi kebutuhan proteinnya"
+    ],
+    "kunci": "B",
+    "pola": "Analogi Kalimat: Simbiosis Mutualisme (Saling Menguntungkan)",
+    "pembahasan": "Lebah dan bunga melakukan simbiosis mutualisme (lebah dapat makanan, bunga terbantu penyerbukannya). Burung dan tanaman buah juga mutualisme (burung dapat makanan, tanaman terbantu penyebaran bijinya).",
+    "analisis_opsi": {
+      "A": "JEBAKAN HALUS. Ini lebih ke efek samping ekosistem, bukan interaksi langsung dua spesies yang saling memberi.",
+      "B": "Benar. Simbiosis mutualisme (makan vs sebar biji).",
+      "C": "Salah. Ini adalah parasitisme.",
+      "D": "Salah. Ini adalah epifit (komensalisme).",
+      "E": "Salah. Ini adalah predasi."
+    }
+  },
+  {
+    "id": 238,
+    "level": "Mahir",
+    "soal": "Air yang dipanaskan hingga mencapai titik 100 derajat Celcius akan mendidih dan berubah wujud menjadi uap. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Es yang diletakkan di suhu ruang akan mencair dan berubah wujud menjadi air",
+      "Logam yang dipanaskan hingga mencapai titik lelehnya akan mencair dan berubah wujud menjadi cair",
+      "Kayu yang dibakar akan menjadi arang dan melepaskan asap ke udara",
+      "Kapas yang dicelupkan ke dalam air akan basah dan bertambah berat",
+      "Besi yang dibiarkan di udara terbuka akan berkarat dan menjadi rapuh"
+    ],
+    "kunci": "B",
+    "pola": "Analogi Kalimat: Kondisi Ekstrem Spesifik (Titik Kritis) dan Perubahan Wujud",
+    "pembahasan": "Air dipanaskan hingga TITIK KRITIS SPESIFIK (100°C) -> berubah wujud (menguap). Logam dipanaskan hingga TITIK KRITIS SPESIFIK (titik leleh) -> berubah wujud (mencair). Keduanya mensyaratkan ambang batas suhu tertentu.",
+    "analisis_opsi": {
+      "A": "JEBAKAN MATI. Es mencair di suhu ruang bukan karena 'titik kritis spesifik' yang dipanaskan, melainkan proses alami lingkungan.",
+      "B": "Benar. Memerlukan titik leleh (threshold) untuk berubah wujud.",
+      "C": "Salah. Pembakaran kayu adalah reaksi kimia, bukan perubahan wujud fisika.",
+      "D": "Salah. Menyerap air bukan perubahan wujud.",
+      "E": "Salah. Karat adalah reaksi kimia oksidasi."
+    }
+  },
+  {
+    "id": 239,
+    "level": "Mahir",
+    "soal": "Pada sistem tata surya, planet-planet mengelilingi matahari karena terikat oleh gaya gravitasi. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Pada sistem atom, elektron mengelilingi inti atom karena terikat oleh gaya elektromagnetik",
+      "Pada sistem sosial, masyarakat mematuhi hukum karena takut akan sanksi penjara",
+      "Pada sistem ekonomi, harga barang ditentukan oleh permintaan dan penawaran pasar",
+      "Pada sistem komputer, perangkat keras bekerja berdasarkan instruksi dari perangkat lunak",
+      "Pada sistem biologis, darah mengalir ke seluruh tubuh karena pompa dari jantung"
+    ],
+    "kunci": "A",
+    "pola": "Analogi Kalimat: Sistem Mikroskopis/Makroskopis dan Gaya Pengikat Sentralnya",
+    "pembahasan": "Tata surya (sistem makro) memiliki objek (planet) yang mengorbit pusat (matahari) karena GAYA FISIKA (gravitasi). Atom (sistem mikro) memiliki objek (elektron) yang mengorbit pusat (inti) karena GAYA FISIKA (elektromagnetik).",
+    "analisis_opsi": {
+      "A": "Benar. Sistem atom terikat gaya elektromagnetik (fisika murni).",
+      "B": "JEBAKAN MATI. Sistem sosial diikat oleh HUKUM/PSIKOLOGI, bukan gaya fisika fundamental.",
+      "C": "Salah. Ekonomi diikat oleh mekanisme pasar.",
+      "D": "Salah. Komputer diikat oleh logika pemrograman.",
+      "E": "JEBAKAN HALUS. Darah dipompa oleh mekanika otot, bukan diikat oleh 'gaya tarik sentral' seperti gravitasi/elektromagnetik."
+    }
+  },
+  {
+    "id": 240,
+    "level": "Menengah",
+    "soal": "Kita mengetahui bahwa sebuah buku ilmiah memiliki indeks dan daftar pustaka di bagian akhirnya. Hubungan ini sama dengan ...",
+    "pilihan": [
+      "Sebuah novel memiliki prolog dan kata pengantar di bagian awalnya",
+      "Sebuah laporan penelitian memiliki kesimpulan dan saran di bagian akhirnya",
+      "Sebuah film memiliki trailer dan poster di bagian promosinya",
+      "Sebuah rumah memiliki pagar dan taman di bagian depannya",
+      "Sebuah lagu memiliki intro dan bait di bagian tengahnya"
+    ],
+    "kunci": "B",
+    "pola": "Analogi Kalimat: Karya dan Komponen Inheren di Lokasi Spesifik (Akhir)",
+    "pembahasan": "Indeks dan daftar pustaka adalah komponen INHEREN yang secara SPASIAL selalu terletak di BAGIAN AKHIR buku ilmiah. Kesimpulan dan saran adalah komponen INHEREN yang secara spasial selalu terletak di BAGIAN AKHIR laporan penelitian.",
+    "analisis_opsi": {
+      "A": "JEBAKAN SPASIAL. Prolog terletak di AWAL, bukan akhir.",
+      "B": "Benar. Kesimpulan dan saran terletak di akhir laporan.",
+      "C": "JEBAKAN FUNGSI. Trailer dan poster adalah alat promosi, bukan bagian inheren dari isi film itu sendiri.",
+      "D": "JEBAKAN SPASIAL. Pagar dan taman terletak di DEPAN/LUAR, bukan di akhir karya.",
+      "E": "JEBAKAN SPASIAL. Intro terletak di AWAL."
+    }
+  }
+]

@@ -212,6 +212,13 @@
 
   footer{text-align:center; color:var(--ink-soft); font-size:13px; margin-top:36px;}
 
+  /* Venn / Euler diagrams */
+  .venn-wrap{display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin:16px 0 6px;}
+  .venn-item{text-align:center; max-width:200px;}
+  .venn-item svg{width:100%; height:auto; display:block;}
+  .venn-caption{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--ink-soft); margin-top:6px;}
+  .venn-caption b{color:var(--accent);}
+
   @media (max-width:520px){
     .wrap{padding:20px 16px 100px;}
     .scoreboard{margin:0 -16px 22px; padding:10px 16px;}
@@ -224,6 +231,8 @@
     .option{font-size:14px; padding:9px 10px;}
     .situasi, .prompt, .answer, .penjelasan, .notes-table{font-size:13.8px;}
     .topic-dots{flex-wrap:wrap; justify-content:flex-end; max-width:160px;}
+    .venn-wrap{gap:10px;}
+    .venn-item{max-width:150px;}
     
     /* Mobile quiz */
     .quiz-header{margin:0 -16px 16px; padding:12px 16px;}
@@ -338,7 +347,36 @@ const MATERI_DATA = [
       { situasi: 'Nah, ternyata apa yang barusan kamu lakuin di ketiga toples itu ada namanya. Kalimat "semua/sebagian/tidak ada permen rasa coklat" itu namanya <b>premis</b> — semacam "info awal" yang kita anggap benar. Kesimpulan yang kamu tarik ("permen yang saya ambil pasti coklat", dst) itu namanya <b>konklusi</b> — jawaban akhirnya. Dan kata "semua", "sebagian", "tidak ada" itu namanya <b>kuantor</b>.', prompt: 'Ini bukan soal untuk dijawab — coba baca ulang tiga toples di atas sambil mikirin: "oh ini yang namanya premis" dan "oh ini yang namanya konklusi". Kalau udah kebayang, lanjut ke kotak berikutnya.', jawaban: 'Bagus. Sekarang tiga kata ini — premis, konklusi, kuantor — bakal terus dipakai. Yang penting diingat cuma satu: kalau premisnya "semua" atau "tidak ada", konklusinya PASTI. Kalau premisnya "sebagian", konklusinya NGGAK PASTI.' },
       { situasi: 'Sekarang kita pindah dari toples permen ke soal ujian beneran. Di kantor tempat Dika bekerja ada aturan (premis): <i>semua orang yang datang terlambat harus lapor ke atasan langsung.</i> Hari ini, Dika datang terlambat.', prompt: 'Coba jawab dulu: pakai cara yang sama kayak toples permen tadi — apa yang pasti terjadi pada Dika?', jawaban: 'Dika <b>pasti lapor</b> ke atasan — persis kayak toples pertama tadi (kuantor "semua" = pasti). Di soal silogisme, premisnya biasanya ada dua: yang berisi aturan umum (di sini: "semua orang terlambat wajib lapor") disebut <b>premis mayor</b>, dan yang berisi fakta soal satu orang (di sini: "Dika terlambat") disebut <b>premis minor</b>. Kesimpulannya ("Dika lapor ke atasan") ya <b>konklusi</b>, sama seperti tadi. Susunan premis mayor + premis minor + konklusi ini namanya <b>silogisme</b>.' }
     ],
-    notes: `<p class="intro-text">Ingat-ingat aja urutan belajarnya: permen dulu (biar kebayang), baru nama-namanya (premis, konklusi, kuantor), baru dipakai ke soal beneran (Dika). Kalau nanti ketemu soal yang bikin bingung, coba bayangin lagi toples permennya — apakah ini kayak toples "semua", "sebagian", atau "tidak ada"?</p>`,
+    notes: `<p class="intro-text">Ingat-ingat aja urutan belajarnya: permen dulu (biar kebayang), baru nama-namanya (premis, konklusi, kuantor), baru dipakai ke soal beneran (Dika). Kalau nanti ketemu soal yang bikin bingung, coba bayangin lagi toples permennya — apakah ini kayak toples "semua", "sebagian", atau "tidak ada"?</p>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="110" cy="68" r="55" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="110" cy="76" r="24" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="110" y="20" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10.5" fill="var(--accent)">rasa coklat</text>
+          <text x="110" y="79" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--good)">toples</text>
+        </svg>
+        <div class="venn-caption"><b>SEMUA</b> — toples masuk penuh ke lingkaran coklat</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="85" cy="65" r="46" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5" fill-opacity="0.9"/>
+          <circle cx="140" cy="65" r="46" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5" fill-opacity="0.75"/>
+          <text x="62" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--good)">toples</text>
+          <text x="163" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10.5" fill="var(--accent)">coklat</text>
+        </svg>
+        <div class="venn-caption"><b>SEBAGIAN</b> — dua lingkaran cuma bertumpuk sebagian</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="65" cy="65" r="42" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <circle cx="165" cy="65" r="42" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <text x="65" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--good)">toples</text>
+          <text x="165" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10.5" fill="var(--bad)">coklat</text>
+        </svg>
+        <div class="venn-caption"><b>TIDAK ADA</b> — dua lingkaran sama sekali tidak bersentuhan</div>
+      </div>
+    </div>`,
     questions: [
       { q: 'Ada toples permen yang cuma SEBAGIAN isinya rasa strawberry. Kamu ambil satu permen. Bisa nggak dipastikan rasanya strawberry?', options: ['Bisa, pasti strawberry', 'Nggak bisa dipastikan', 'Pasti bukan strawberry', 'Pasti setengah strawberry setengah bukan'], correct: 1, explain: 'Sama seperti toples kedua — "sebagian" artinya nggak semua, jadi nggak bisa dipastikan.' },
       { q: 'Kembali ke aturan Dika ("semua orang terlambat wajib lapor ke atasan"): bagian mana yang disebut premis minor?', options: ['"Semua orang terlambat wajib lapor ke atasan"', '"Dika terlambat"', '"Dika lapor ke atasan"', 'Tidak ada premis minor di sini'], correct: 1, explain: 'Premis minor itu fakta soal satu orang doang (Dika) — bukan aturan umum.' },
@@ -354,7 +392,19 @@ const MATERI_DATA = [
       { situasi: '<i>"Kevin adalah anggota klub sepak bola."</i> <i>"Semua anggota klub sepak bola latihan tiap Sabtu pagi."</i> (Perhatikan: urutannya dibalik dari contoh tadi.)', prompt: 'Coba jawab dulu: mana mayor, mana minor kali ini?', jawaban: 'Sama kayak tadi, cuma urutan penulisannya kebalik: <b>"Semua anggota klub sepak bola latihan tiap Sabtu pagi"</b> tetap jadi premis mayor (aturan besar, ada kata "semua"). <b>"Kevin adalah anggota klub sepak bola"</b> tetap jadi premis minor (cerita soal satu orang, Kevin). Ini buktinya: ngenalin mayor/minor itu dari ISI kalimatnya, bukan dari kalimat mana yang ditulis pertama di soal.' },
       { situasi: '<i>"Semua kucing punya kumis."</i> <i>"Semua kucing anggora adalah kucing."</i> (Kali ini nggak ada nama orang sama sekali.)', prompt: 'Coba jawab dulu: mana mayor, mana minor? Petunjuk: dua-duanya sama-sama pakai kata "semua".', jawaban: '"Semua kucing punya kumis" = <b>premis mayor</b> (aturan paling umum, tentang kucing secara keseluruhan). "Semua kucing anggora adalah kucing" = <b>premis minor</b> (lebih sempit, cuma ngomongin SATU JENIS kucing doang — anggora — bukan kucing secara umum). Jadi premis minor nggak harus selalu ada nama orang seperti Budi atau Kevin — bisa juga kelompok yang lebih kecil/spesifik dibanding premis mayor. Intinya tetap sama: <b>mayor = cakupan lebih luas, minor = cakupan lebih sempit</b>.' }
     ],
-    notes: `<table class="notes-table"><tr><th></th><th>Ciri-cirinya</th></tr><tr><td><b>Premis mayor</b></td><td>Aturan/pernyataan dengan cakupan lebih luas — biasanya ada kata semua/sebagian/tidak ada</td></tr><tr><td><b>Premis minor</b></td><td>Fakta dengan cakupan lebih sempit/spesifik — bisa nama orang, bisa juga sub-kelompok yang lebih kecil</td></tr></table><p class="intro-text" style="margin-top:14px;">Cara cepat pas ngerjain soal: jangan lihat kalimat mana yang ditulis duluan — bandingkan dua kalimatnya, mana yang cakupannya lebih luas (itu mayor), mana yang lebih sempit/spesifik (itu minor).</p>`,
+    notes: `<table class="notes-table"><tr><th></th><th>Ciri-cirinya</th></tr><tr><td><b>Premis mayor</b></td><td>Aturan/pernyataan dengan cakupan lebih luas — biasanya ada kata semua/sebagian/tidak ada</td></tr><tr><td><b>Premis minor</b></td><td>Fakta dengan cakupan lebih sempit/spesifik — bisa nama orang, bisa juga sub-kelompok yang lebih kecil</td></tr></table><p class="intro-text" style="margin-top:14px;">Cara cepat pas ngerjain soal: jangan lihat kalimat mana yang ditulis duluan — bandingkan dua kalimatnya, mana yang cakupannya lebih luas (itu mayor), mana yang lebih sempit/spesifik (itu minor).</p>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="110" cy="65" r="55" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="110" cy="92" r="9" fill="var(--good)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="110" y="24" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--accent)">premis mayor</text>
+          <text x="110" y="42" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--accent)">(aturan besar)</text>
+          <text x="110" y="112" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--good)">premis minor (Budi)</text>
+        </svg>
+        <div class="venn-caption">Titik kecil (satu orang) selalu ada di dalam lingkaran besar (aturan umum) — sebesar apapun perbedaan cakupannya</div>
+      </div>
+    </div>`,
     questions: [
       { q: '"Semua pegawai baru wajib ikut orientasi. Sinta pegawai baru." Mana yang premis mayor?', options: ['"Semua pegawai baru wajib ikut orientasi"', '"Sinta pegawai baru"', 'Dua-duanya sama-sama mayor', 'Tidak ada yang mayor'], correct: 0, explain: 'Ini aturan besar buat semua pegawai baru — cakupannya luas, jadi ini premis mayor.' },
       { q: '"Rudi adalah anggota paduan suara. Semua anggota paduan suara berlatih tiap Kamis." Mana yang premis minor?', options: ['"Semua anggota paduan suara berlatih tiap Kamis"', '"Rudi adalah anggota paduan suara"', 'Keduanya minor', 'Tidak ada yang minor'], correct: 1, explain: 'Meski ditulis duluan, ini tetap premis minor karena cuma ngomongin satu orang (Rudi) — ngenalinnya dari isi, bukan urutan.' },
@@ -408,7 +458,40 @@ const MATERI_DATA = [
       { situasi: '<i>Tidak ada pegawai kontrak yang mendapat tunjangan pensiun.</i> <i>Tidak ada pegawai magang yang mendapat tunjangan pensiun.</i>', prompt: 'Coba jawab dulu: apa hubungan antara pegawai kontrak dan pegawai magang yang bisa disimpulkan?', jawaban: 'Tidak ada kesimpulan pasti — dua premis "tidak ada" tidak memberi info soal hubungan kontrak dan magang itu sendiri.' },
       { situasi: '<i>Semua kepala sekolah adalah PNS.</i>', prompt: 'Coba jawab dulu: apakah otomatis berarti "semua PNS adalah kepala sekolah"?', jawaban: 'Tidak — jebakan pembalikan pernyataan. "Semua A adalah B" tidak bisa otomatis dibalik jadi "semua B adalah A".' }
     ],
-    notes: `<table class="notes-table"><tr><th>Kombinasi premis</th><th>Bisa ditarik konklusi pasti?</th></tr><tr><td>Semua + Semua</td><td>Ya, bisa "semua"</td></tr><tr><td>Semua + Sebagian</td><td>Ya, tapi ikut melemah jadi "sebagian"</td></tr><tr><td>Sebagian + Sebagian</td><td>Tidak bisa</td></tr><tr><td>Tidak ada + Tidak ada</td><td>Tidak bisa</td></tr></table>`,
+    notes: `<table class="notes-table"><tr><th>Kombinasi premis</th><th>Bisa ditarik konklusi pasti?</th></tr><tr><td>Semua + Semua</td><td>Ya, bisa "semua"</td></tr><tr><td>Semua + Sebagian</td><td>Ya, tapi ikut melemah jadi "sebagian"</td></tr><tr><td>Sebagian + Sebagian</td><td>Tidak bisa</td></tr><tr><td>Tidak ada + Tidak ada</td><td>Tidak bisa</td></tr></table>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 150">
+          <circle cx="110" cy="82" r="60" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="110" cy="92" r="36" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <circle cx="110" cy="102" r="15" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <text x="110" y="26" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--accent)">predikat</text>
+          <text x="110" y="62" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--good)">middle term</text>
+          <text x="110" y="104" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--bad)">subjek</text>
+        </svg>
+        <div class="venn-caption">Rantai valid: subjek ⊂ middle term ⊂ predikat — jadi subjek pasti ⊂ predikat</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 150">
+          <circle cx="110" cy="55" r="42" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="75" cy="105" r="30" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5" fill-opacity="0.85"/>
+          <circle cx="150" cy="105" r="30" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5" fill-opacity="0.85"/>
+          <text x="110" y="40" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--accent)">ikut pelatihan</text>
+          <text x="62" y="108" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--good)">guru bersertifikasi</text>
+          <text x="163" y="108" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--bad)">Rudi</text>
+        </svg>
+        <div class="venn-caption">Middle term tidak tersebar: dua kelompok cuma sama-sama masuk lingkaran atas, belum tentu saling beririsan</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="65" cy="65" r="42" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <circle cx="165" cy="65" r="42" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <text x="65" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--good)">pejabat</text>
+          <text x="165" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--bad)">gratifikasi</text>
+        </svg>
+        <div class="venn-caption">"Tidak ada": dua lingkaran terpisah total, tidak bersentuhan sama sekali</div>
+      </div>
+    </div>`,
     questions: [
       { q: '"Semua anggota koperasi wajib membayar iuran bulanan. Pak Joko bukan anggota koperasi." Kesimpulan yang tepat adalah...', options: ['Pak Joko wajib membayar iuran', 'Pak Joko tidak wajib membayar iuran', 'Tidak dapat ditarik kesimpulan pasti', 'Pak Joko sebagian membayar iuran'], correct: 2, explain: 'Premis hanya mengatur syarat untuk anggota koperasi, tidak bicara soal yang bukan anggota.' },
       { q: '"Sebagian pegawai dinas mengikuti diklat kepemimpinan. Semua yang mengikuti diklat kepemimpinan berhak naik pangkat." Kesimpulannya...', options: ['Semua pegawai dinas berhak naik pangkat', 'Sebagian pegawai dinas berhak naik pangkat', 'Tidak ada pegawai dinas yang berhak naik pangkat', 'Tidak dapat ditarik kesimpulan'], correct: 1, explain: 'Premis pertama "sebagian" → hasil gabungannya ikut melemah.' },
@@ -427,7 +510,42 @@ const MATERI_DATA = [
       { situasi: '<i>Kalau hujan turun, jalan pasti basah</i> (P → Q). Jalan <b>basah</b> (Q benar).', prompt: 'Coba jawab dulu: apakah kamu bisa memastikan tadi hujan?', jawaban: 'Tidak bisa — jebakan <i>affirming the consequent</i>.' },
       { situasi: '<i>Kalau hujan turun, jalan pasti basah</i> (P → Q). Ternyata <b>tidak hujan</b> (P salah).', prompt: 'Coba jawab dulu: apakah kamu bisa memastikan jalan tidak basah?', jawaban: 'Tidak bisa — jebakan <i>denying the antecedent</i>.' }
     ],
-    notes: `<table class="notes-table"><tr><th>Yang diketahui</th><th>Kesimpulan pasti?</th></tr><tr><td>P terbukti benar</td><td>Ya → Q benar (modus ponens)</td></tr><tr><td>Q terbukti salah</td><td>Ya → P salah (modus tollens)</td></tr><tr><td>Q terbukti benar</td><td>Tidak bisa dipastikan</td></tr><tr><td>P terbukti salah</td><td>Tidak bisa dipastikan</td></tr></table>`,
+    notes: `<table class="notes-table"><tr><th>Yang diketahui</th><th>Kesimpulan pasti?</th></tr><tr><td>P terbukti benar</td><td>Ya → Q benar (modus ponens)</td></tr><tr><td>Q terbukti salah</td><td>Ya → P salah (modus tollens)</td></tr><tr><td>Q terbukti benar</td><td>Tidak bisa dipastikan</td></tr><tr><td>P terbukti salah</td><td>Tidak bisa dipastikan</td></tr></table>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 90">
+          <rect x="15" y="25" width="65" height="40" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="47" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--good)">P ✓</text>
+          <line x1="83" y1="45" x2="130" y2="45" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <polygon points="130,45 121,40 121,50" fill="var(--ink-soft)"/>
+          <rect x="138" y="25" width="65" height="40" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="170" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--good)">Q ✓</text>
+        </svg>
+        <div class="venn-caption"><b>Modus ponens</b> — P benar mendorong Q ikut pasti benar</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 90">
+          <rect x="15" y="25" width="65" height="40" rx="8" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <text x="47" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--bad)">P ✗</text>
+          <line x1="130" y1="45" x2="83" y2="45" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <polygon points="83,45 92,40 92,50" fill="var(--ink-soft)"/>
+          <rect x="138" y="25" width="65" height="40" rx="8" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <text x="170" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--bad)">Q ✗</text>
+        </svg>
+        <div class="venn-caption"><b>Modus tollens</b> — Q terbukti salah menjalar mundur, P ikut pasti salah</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 90">
+          <rect x="15" y="25" width="65" height="40" rx="8" fill="var(--paper)" stroke="var(--ink-soft)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="47" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--ink-soft)">P ?</text>
+          <line x1="83" y1="45" x2="130" y2="45" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <polygon points="130,45 121,40 121,50" fill="var(--ink-soft)"/>
+          <rect x="138" y="25" width="65" height="40" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="170" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--good)">Q ✓</text>
+        </svg>
+        <div class="venn-caption"><b>Jebakan</b> — Q benar tidak mengalir mundur ke P, arahnya cuma satu jalur</div>
+      </div>
+    </div>`,
     questions: [
       { q: '"Jika surat izin disetujui, kegiatan boleh dilaksanakan. Surat izin disetujui." Kesimpulannya...', options: ['Kegiatan boleh dilaksanakan', 'Kegiatan tidak boleh dilaksanakan', 'Tidak dapat dipastikan', 'Surat izin tidak disetujui'], correct: 0, explain: 'Modus ponens.' },
       { q: '"Jika anggaran cair, proyek berjalan. Proyek tidak berjalan." Kesimpulannya...', options: ['Anggaran cair', 'Anggaran tidak cair', 'Tidak dapat dipastikan', 'Proyek pasti tertunda karena sebab lain'], correct: 1, explain: 'Modus tollens.' },
@@ -447,7 +565,20 @@ const MATERI_DATA = [
       { q: '"Rapat akan dipimpin Direktur atau Wakil Direktur. Direktur hadir memimpin rapat." Kesimpulannya...', options: ['Wakil Direktur juga ikut memimpin', 'Wakil Direktur pasti tidak memimpin rapat', 'Tidak dapat dipastikan soal Wakil Direktur', 'Direktur dan Wakil Direktur bergantian'], correct: 2, explain: 'Menegaskan satu pilihan benar tidak otomatis menyingkirkan pilihan lain pada disjungsi inklusif.' },
       { q: '"Ruang rapat pakai proyektor A atau B, hanya satu yang bisa dipakai. Proyektor A sedang rusak." Kesimpulannya...', options: ['Proyektor B yang dipakai', 'Proyektor A yang dipakai', 'Tidak dapat dipastikan', 'Kedua proyektor rusak'], correct: 0, explain: 'Satu opsi gugur, dan soal menegaskan eksklusif.' },
       { q: '"Pengumuman: piket hari ini Sinta atau Rangga, keduanya tidak mungkin piket bersamaan. Sinta piket hari ini." Kesimpulannya...', options: ['Rangga juga piket', 'Rangga pasti tidak piket hari ini', 'Tidak dapat dipastikan', 'Piket akan diundur'], correct: 1, explain: 'Soal tegas menyatakan eksklusif.' }
-    ]
+    ],
+    notes: `<div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 110">
+          <circle cx="65" cy="55" r="38" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <line x1="42" y1="32" x2="88" y2="78" stroke="var(--bad)" stroke-width="2"/>
+          <line x1="88" y1="32" x2="42" y2="78" stroke="var(--bad)" stroke-width="2"/>
+          <circle cx="160" cy="55" r="38" fill="var(--good-soft)" stroke="var(--good)" stroke-width="2.5"/>
+          <text x="65" y="98" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--bad)">P (gugur)</text>
+          <text x="160" y="98" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--good)">Q (pasti benar)</text>
+        </svg>
+        <div class="venn-caption">Begitu satu pilihan disangkal (dicoret), sisanya otomatis benar — arah ini selalu sah</div>
+      </div>
+    </div>`
   },
   {
     id: 'berantai', title: 'Silogisme hipotetik berantai', chip: 'P→Q, Q→R',
@@ -457,7 +588,24 @@ const MATERI_DATA = [
       { situasi: '<i>Jika mesin dirawat rutin, maka jarang rusak</i> (P→Q). <i>Jika jarang rusak, maka biaya perbaikan rendah</i> (Q→R). Biaya perbaikan mesin ini <b>rendah</b> (R benar).', prompt: 'Coba jawab dulu: apa yang bisa dipastikan soal perawatan mesin ini?', jawaban: 'Tidak dapat dipastikan — menegaskan ujung rantai (R) tidak membuktikan pangkalnya (P).' },
       { situasi: '<i>Jika laporan diverifikasi, maka disetujui direktur</i> (P→Q). <i>Jika disetujui direktur, maka dana dapat dicairkan</i> (Q→R). Dana ini <b>tidak dapat dicairkan</b> (R salah).', prompt: 'Coba jawab dulu: apa yang pasti benar soal laporan ini?', jawaban: 'Laporan pasti <b>tidak diverifikasi, dan tidak disetujui direktur</b> — R salah menjalar mundur ke Q lalu ke P.' }
     ],
-    notes: `<table class="notes-table"><tr><th>Rantai P→Q→R</th><th>Kesimpulan</th></tr><tr><td>P terbukti benar</td><td>Q dan R pasti benar</td></tr><tr><td>R terbukti salah</td><td>Q dan P pasti salah</td></tr><tr><td>R terbukti benar</td><td>Tidak dapat dipastikan P maupun Q</td></tr><tr><td>P terbukti salah</td><td>Tidak dapat dipastikan Q maupun R</td></tr></table>`,
+    notes: `<table class="notes-table"><tr><th>Rantai P→Q→R</th><th>Kesimpulan</th></tr><tr><td>P terbukti benar</td><td>Q dan R pasti benar</td></tr><tr><td>R terbukti salah</td><td>Q dan P pasti salah</td></tr><tr><td>R terbukti benar</td><td>Tidak dapat dipastikan P maupun Q</td></tr><tr><td>P terbukti salah</td><td>Tidak dapat dipastikan Q maupun R</td></tr></table>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 260 90">
+          <rect x="10" y="25" width="60" height="40" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="40" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--good)">P ✓</text>
+          <line x1="73" y1="45" x2="98" y2="45" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <polygon points="98,45 89,40 89,50" fill="var(--ink-soft)"/>
+          <rect x="100" y="25" width="60" height="40" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="130" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--good)">Q ✓</text>
+          <line x1="163" y1="45" x2="188" y2="45" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <polygon points="188,45 179,40 179,50" fill="var(--ink-soft)"/>
+          <rect x="190" y="25" width="60" height="40" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <text x="220" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="13" fill="var(--good)">R ✓</text>
+        </svg>
+        <div class="venn-caption">P benar merambat lurus sampai ujung rantai — semua ikut pasti benar</div>
+      </div>
+    </div>`,
     questions: [
       { q: '"Jika A rajin belajar, ia lulus ujian (P→Q). Jika ia lulus ujian, ia dapat beasiswa (Q→R). A rajin belajar." Kesimpulannya...', options: ['Ia lulus ujian, tapi belum tentu dapat beasiswa', 'Ia lulus ujian dan mendapat beasiswa', 'Tidak dapat dipastikan', 'Ia rajin belajar tapi tidak lulus'], correct: 1, explain: 'Modus ponens berantai.' },
       { q: 'Dengan premis yang sama, kali ini diketahui "A mendapat beasiswa" (R benar). Kesimpulan yang tepat...', options: ['A pasti rajin belajar', 'A pasti lulus ujian', 'Tidak dapat dipastikan soal rajin belajar maupun lulus ujian', 'A pasti rajin belajar dan lulus ujian'], correct: 2, explain: 'Menegaskan ujung rantai tidak membuktikan pangkalnya.' },
@@ -473,7 +621,20 @@ const MATERI_DATA = [
       { situasi: 'Pengumuman: <i>"Peserta lolos jika mengumpulkan berkas lengkap DAN hadir tepat waktu."</i> Ternyata ada peserta yang dinyatakan tidak lolos.', prompt: 'Coba jawab dulu: harus dua-duanya gagal, atau cukup salah satu?', jawaban: 'Cukup salah satu saja. Ingkaran "P dan Q" adalah "bukan P, ATAU bukan Q".' },
       { situasi: 'Aturan parkir: <i>"Kendaraan boleh parkir kalau menunjukkan STNK ATAU kartu member."</i> Satpam menolak sebuah mobil parkir.', prompt: 'Coba jawab dulu: apa yang pasti benar tentang mobil itu?', jawaban: 'Dua-duanya gagal sekaligus. Ingkaran "P atau Q" adalah "bukan P, DAN bukan Q".' }
     ],
-    notes: `<table class="notes-table"><tr><th>Pernyataan asli</th><th>Ingkaran yang benar</th></tr><tr><td>Semua A adalah B</td><td>Sebagian A bukan B</td></tr><tr><td>Sebagian A adalah B</td><td>Tidak ada A yang B</td></tr><tr><td>Tidak ada A yang B</td><td>Sebagian A adalah B</td></tr><tr><td>Jika P maka Q</td><td>P terjadi, tapi Q tidak terjadi</td></tr><tr><td>P dan Q</td><td>Bukan P, atau bukan Q</td></tr><tr><td>P atau Q</td><td>Bukan P, dan bukan Q</td></tr></table>`,
+    notes: `<table class="notes-table"><tr><th>Pernyataan asli</th><th>Ingkaran yang benar</th></tr><tr><td>Semua A adalah B</td><td>Sebagian A bukan B</td></tr><tr><td>Sebagian A adalah B</td><td>Tidak ada A yang B</td></tr><tr><td>Tidak ada A yang B</td><td>Sebagian A adalah B</td></tr><tr><td>Jika P maka Q</td><td>P terjadi, tapi Q tidak terjadi</td></tr><tr><td>P dan Q</td><td>Bukan P, atau bukan Q</td></tr><tr><td>P atau Q</td><td>Bukan P, dan bukan Q</td></tr></table>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="130" cy="65" r="45" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="90" cy="65" r="35" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5" fill-opacity="0.9"/>
+          <circle cx="52" cy="82" r="6" fill="var(--bad)"/>
+          <text x="130" y="26" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--accent)">B</text>
+          <text x="98" y="60" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--good)">A</text>
+          <text x="52" y="100" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8.5" fill="var(--bad)">1 pengecualian</text>
+        </svg>
+        <div class="venn-caption">Cukup satu titik A yang keluar dari B untuk merobohkan "semua A=B" — itulah ingkarannya, "sebagian A bukan B"</div>
+      </div>
+    </div>`,
     questions: [
       { q: 'Ingkaran dari "Semua pegawai hadir tepat waktu" adalah...', options: ['Tidak ada pegawai yang hadir tepat waktu', 'Sebagian pegawai tidak hadir tepat waktu', 'Semua pegawai tidak hadir tepat waktu', 'Sebagian pegawai hadir tepat waktu'], correct: 1, explain: 'Ingkaran "semua" adalah "sebagian tidak".' },
       { q: 'Ingkaran dari "Jika laporan salah, harus direvisi" adalah...', options: ['Jika laporan benar, tidak perlu direvisi', 'Laporan salah, tetapi tidak direvisi', 'Laporan benar dan direvisi', 'Jika laporan tidak salah, tidak direvisi'], correct: 1, explain: 'Ingkaran "jika P maka Q" adalah "P terjadi, Q tidak terjadi".' },
@@ -503,7 +664,31 @@ const MATERI_DATA = [
       { situasi: '<i>Semua peserta pelatihan mengikuti evaluasi akhir</i> (A–B). <i>Sebagian yang mengikuti evaluasi akhir mendapat sertifikat kompetensi</i> (B–C). <i>Semua yang mendapat sertifikat kompetensi berhak ikut uji kompetensi lanjutan</i> (C–D).', prompt: 'Coba jawab dulu: apa kesimpulan akhir untuk peserta pelatihan dan uji kompetensi lanjutan?', jawaban: '<b>Langkah 1</b>: "semua"+"sebagian" → melemah jadi "sebagian". <b>Langkah 2</b>: tetap ikut "sebagian" meski premis 3 "semua". <b>Konklusi akhir: sebagian peserta pelatihan berhak ikut uji kompetensi lanjutan.</b>' },
       { situasi: '<i>Sebagian pegawai mengikuti program mentoring</i> (A–B). <i>Sebagian yang mengikuti mentoring dipromosikan tahun ini</i> (B–C). <i>Semua yang dipromosikan tahun ini mendapat kenaikan gaji</i> (C–D).', prompt: 'Coba jawab dulu: apa kesimpulan akhir untuk pegawai dan kenaikan gaji? Hati-hati di langkah pertama.', jawaban: '<b>Langkah 1</b>: "sebagian"+"sebagian" — tidak menghasilkan konklusi pasti. Rantai putus di sini. <b>Konklusi akhir: tidak dapat dipastikan sama sekali</b>, meski premis ketiga "semua".' }
     ],
-    notes: `<table class="notes-table"><tr><th>Kondisi</th><th>Hasil rantai 3 premis</th></tr><tr><td>Semua tahap "semua"</td><td>Konklusi akhir "semua"</td></tr><tr><td>Salah satu tahap melemah jadi "sebagian"</td><td>Konklusi akhir ikut "sebagian"</td></tr><tr><td>Ada dua premis berurutan sama-sama "sebagian"/"tidak ada"</td><td>Rantai putus — tidak dapat dipastikan, apapun premis berikutnya</td></tr></table>`,
+    notes: `<table class="notes-table"><tr><th>Kondisi</th><th>Hasil rantai 3 premis</th></tr><tr><td>Semua tahap "semua"</td><td>Konklusi akhir "semua"</td></tr><tr><td>Salah satu tahap melemah jadi "sebagian"</td><td>Konklusi akhir ikut "sebagian"</td></tr><tr><td>Ada dua premis berurutan sama-sama "sebagian"/"tidak ada"</td><td>Rantai putus — tidak dapat dipastikan, apapun premis berikutnya</td></tr></table>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 160">
+          <circle cx="110" cy="88" r="65" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="110" cy="96" r="44" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <circle cx="110" cy="104" r="24" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <circle cx="110" cy="112" r="8" fill="var(--skip)" stroke="var(--skip)" stroke-width="1"/>
+          <text x="110" y="20" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="var(--accent)">D (area terbatas)</text>
+          <text x="110" y="50" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--good)">C (kartu pers)</text>
+          <text x="110" y="88" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="var(--bad)">B (jurnalis)</text>
+          <text x="110" y="114" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#fff">A</text>
+        </svg>
+        <div class="venn-caption">Rantai "semua-semua-semua" penuh: A ⊂ B ⊂ C ⊂ D, jadi A pasti ⊂ D</div>
+      </div>
+      <div class="venn-item">
+        <svg viewBox="0 0 220 130">
+          <circle cx="65" cy="65" r="42" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+          <circle cx="150" cy="65" r="42" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+          <text x="65" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--good)">langkah 1</text>
+          <text x="150" y="65" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--bad)">langkah 2</text>
+        </svg>
+        <div class="venn-caption">Kalau "sebagian"+"sebagian" di langkah 1 gagal nyambung, langkah 2 ikut terputus — sekuat apapun premis ketiganya</div>
+      </div>
+    </div>`,
     questions: [
       { q: '"Semua dokter spesialis lulusan pendidikan spesialis. Semua lulusan pendidikan spesialis menempuh program residensi. Semua yang menempuh residensi mendapat sertifikat kompetensi." Kesimpulan tentang dokter spesialis dan sertifikat kompetensi?', options: ['Semua dokter spesialis mendapat sertifikat kompetensi', 'Sebagian dokter spesialis mendapat sertifikat kompetensi', 'Tidak dapat dipastikan', 'Tidak ada dokter spesialis yang mendapat sertifikat'], correct: 0, explain: 'Rantai penuh "semua-semua-semua".' },
       { q: '"Semua anggota tim riset memiliki gelar magister. Sebagian pemilik gelar magister menerima beasiswa lanjutan. Semua penerima beasiswa lanjutan wajib publikasi jurnal." Kesimpulan tentang anggota tim riset dan kewajiban publikasi jurnal?', options: ['Semua anggota tim riset wajib publikasi jurnal', 'Sebagian anggota tim riset wajib publikasi jurnal', 'Tidak ada anggota tim riset yang wajib publikasi jurnal', 'Tidak dapat dipastikan'], correct: 1, explain: 'Langkah 1 melemah jadi "sebagian", terbawa ke langkah 2.' },
@@ -520,7 +705,20 @@ const MATERI_DATA = [
       { situasi: '<i>"Semua kucing adalah hewan berbulu."</i> <i>"Semua kelinci adalah hewan berbulu."</i>', prompt: 'Coba jawab dulu: apakah dua premis ini bisa disambung jadi kesimpulan tentang hubungan kucing dan kelinci?', jawaban: 'Tidak bisa — "hewan berbulu" jadi predikat di kedua premis, bukan penghubung sah. Cuma menunjukkan keduanya sama-sama bagian dari hewan berbulu.' },
       { situasi: 'Empat pernyataan diberikan sekaligus: <i>"Semua peserta magang mengikuti orientasi."</i> <i>"Semua yang mengikuti orientasi mendapat modul panduan."</i> <i>"Semua pegawai tetap mendapat tunjangan transportasi."</i> <i>"Dani adalah peserta magang."</i>', prompt: 'Coba jawab dulu: premis mana yang sebenarnya tidak dipakai, dan apa kesimpulan akhir untuk Dani?', jawaban: 'Premis "pegawai tetap mendapat tunjangan transportasi" adalah <b>premis pengecoh</b>. Rantai yang dipakai: <b>Dani → peserta magang → mengikuti orientasi → mendapat modul panduan</b>.' }
     ],
-    notes: `<table class="notes-table"><tr><th>Langkah</th><th>Yang dicek</th></tr><tr><td>1</td><td>Catat semua istilah unik, apapun urutan soal</td></tr><tr><td>2</td><td>Tulis tiap premis sebagai pasangan istilah</td></tr><tr><td>3</td><td>Cari istilah penghubung (muncul 2x) dan ujung rantai (muncul 1x)</td></tr><tr><td>4</td><td>Cek peran istilah penghubung — predikat di satu premis, subjek di premis lain</td></tr><tr><td>5</td><td>Susun ulang jadi rantai; abaikan premis yang tidak nyambung</td></tr></table>`,
+    notes: `<table class="notes-table"><tr><th>Langkah</th><th>Yang dicek</th></tr><tr><td>1</td><td>Catat semua istilah unik, apapun urutan soal</td></tr><tr><td>2</td><td>Tulis tiap premis sebagai pasangan istilah</td></tr><tr><td>3</td><td>Cari istilah penghubung (muncul 2x) dan ujung rantai (muncul 1x)</td></tr><tr><td>4</td><td>Cek peran istilah penghubung — predikat di satu premis, subjek di premis lain</td></tr><tr><td>5</td><td>Susun ulang jadi rantai; abaikan premis yang tidak nyambung</td></tr></table>
+    <div class="venn-wrap">
+      <div class="venn-item">
+        <svg viewBox="0 0 220 150">
+          <circle cx="110" cy="55" r="42" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="75" cy="105" r="30" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5" fill-opacity="0.85"/>
+          <circle cx="150" cy="105" r="30" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5" fill-opacity="0.85"/>
+          <text x="110" y="40" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--accent)">hewan berbulu</text>
+          <text x="65" y="108" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--good)">kucing</text>
+          <text x="158" y="108" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="var(--bad)">kelinci</text>
+        </svg>
+        <div class="venn-caption">Kucing dan kelinci sama-sama masuk lingkaran "hewan berbulu" tapi tidak saling beririsan — bukan rantai yang sah</div>
+      </div>
+    </div>`,
     questions: [
       { q: 'Urutan acak: "Semua yang lulus tes kompetensi mendapatkan sertifikat. Semua pelamar yang lulus wawancara mengikuti tes kompetensi. Rian lulus wawancara." Kesimpulan akhir yang tepat?', options: ['Rian mendapatkan sertifikat', 'Rian belum tentu mendapatkan sertifikat', 'Tidak dapat dipastikan karena urutan premisnya terbalik', 'Sertifikat Rian tergantung tes lain yang tidak disebutkan'], correct: 0, explain: 'Setelah dipetakan ulang, rantainya tetap tersambung penuh.' },
       { q: '"Semua kucing adalah hewan berbulu. Semua kelinci adalah hewan berbulu." Kesimpulan yang bisa ditarik tentang hubungan kucing dan kelinci?', options: ['Semua kucing adalah kelinci', 'Sebagian kucing adalah kelinci', 'Tidak dapat ditarik kesimpulan — "hewan berbulu" jadi predikat di dua premis', 'Tidak ada kucing yang kelinci'], correct: 2, explain: 'Istilah yang sama sebagai predikat di kedua premis tidak membentuk rantai sah.' },
@@ -803,12 +1001,23 @@ async function startPacket(pkt) {
   }
 }
 
+function resetQuizFooter() {
+  document.getElementById('quiz-footer').innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+      <button class="quiz-btn quiz-btn-finish" id="quiz-submit-btn" onclick="submitQuiz()" disabled>✓ Selesai & Lihat Pembahasan</button>
+    </div>
+  `;
+  document.getElementById('quiz-footer').style.display = 'none';
+}
+
 function exitQuiz() {
   document.getElementById('packet-list-view').classList.remove('hidden');
   document.getElementById('quiz-view').classList.remove('active');
   currentPacket = null;
   userAnswers = [];
   quizSubmitted = false;
+  resetQuizFooter();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -1168,17 +1377,11 @@ function retryPacket() {
   userAnswers = new Array(currentPacket.soal.length).fill(null);
   quizSubmitted = false;
   
-  // Restore normal footer
-  const footer = document.getElementById('quiz-footer');
-  footer.innerHTML = `
-    <div class="quiz-footer-inner">
-      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
-      <button class="quiz-btn quiz-btn-finish" id="quiz-submit-btn" onclick="submitQuiz()" disabled>✓ Selesai & Lihat Pembahasan</button>
-    </div>
-  `;
+  resetQuizFooter();
   
   renderAllQuestions();
   updateProgress();
+  document.getElementById('quiz-footer').style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 

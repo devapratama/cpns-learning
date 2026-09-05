@@ -6,10 +6,10 @@
 <meta name="theme-color" content="#2563eb"/>
 <title>Modul Analogi TIU CPNS | CPNS Learning</title>
 <style>
-:root{--bg:#f0f4f8;--card:#fff;--box:#f8fafc;--text:#1a2332;--muted:#5c7089;--primary:#2563eb;--primary-light:#eff6ff;--hl-primary:#bfdbfe;--border:#d7e3f4;--success:#16a34a;--success-light:#f0fdf4;--hl-green:#86efac;--danger:#dc2626;--danger-light:#fef2f2;--hl-red:#fca5a5;--warning:#f59e0b;--warning-light:#fffbeb;--hl-yellow:#fcd34d;--gold:#b45309;--l1-bg:#dcfce7;--l1-fg:#166534;--l2-bg:#dbeafe;--l2-fg:#1e40af;--l3-bg:#fee2e2;--l3-fg:#991b1b;--pola-bg:#f3f4f6;--pola-fg:#374151;--year-bg:#fef3c7;--btn-text:#fff;--shadow:0 2px 12px rgba(0,0,0,.04)}
+:root{--bg:#f0f4f8;--card:#fff;--box:#f8fafc;--text:#1a2332;--muted:#5c7089;--primary:#2563eb;--primary-light:#eff6ff;--hl-primary:#bfdbfe;--border:#d7e3f4;--success:#16a34a;--success-light:#f0fdf4;--hl-green:#86efac;--danger:#dc2626;--danger-light:#fef2f2;--hl-red:#fca5a5;--warning:#f59e0b;--warning-light:#fffbeb;--hl-yellow:#fcd34d;--gold:#b45309;--l1-bg:#dcfce7;--l1-fg:#166534;--l2-bg:#dbeafe;--l2-fg:#1e40af;--l3-bg:#fee2e2;--l3-fg:#991b1b;--pola-bg:#f3f4f6;--pola-fg:#374151;--year-bg:#fef3c7;--year-fg:#92400e;--btn-text:#fff;--shadow:0 2px 12px rgba(0,0,0,.04)}
 [data-theme="dark"]{--bg:#0f172a;--card:#1e293b;--box:#16202f;--text:#e8edf4;--muted:#aab6c5;--primary:#6aa7f8;--primary-light:#1e3a5f;--hl-primary:#1d4ed8;--border:#3b4a5e;--success:#4ade80;--success-light:#052e16;--hl-green:#166534;--danger:#f87171;--danger-light:#450a0a;--hl-red:#991b1b;--warning:#fbbf24;--warning-light:#3a2a06;--hl-yellow:#b45309;--gold:#f1c164;--l1-bg:#14532d;--l1-fg:#bbf7d0;--l2-bg:#1e3a8a;--l2-fg:#bfdbfe;--l3-bg:#7f1d1d;--l3-fg:#fecaca;--pola-bg:#334155;--pola-fg:#e2e8f0;--year-bg:#78350f;--year-fg:#fde68a;--btn-text:#0f172a;--shadow:0 2px 12px rgba(0,0,0,.35)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px}
 .wrap{max-width:1000px;margin:0 auto;padding:16px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin:16px 0;box-shadow:var(--shadow)}
@@ -124,7 +124,61 @@ ol li,ul li{margin:8px 0}
 .back-top{padding:8px 16px 28px}
 .back-top-inner{max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px}
 .back-top-inner .btn{flex:1;justify-content:center;min-width:200px}
-@media(max-width:600px){.wrap{padding:10px}.card{padding:18px}.question-text{font-size:17px}.option-btn{padding:12px 14px;font-size:15px}.nav-buttons{flex-direction:column}th,td{padding:8px 10px;font-size:13px}.tabs{gap:6px}.tab{padding:10px 14px;font-size:14px}.grid.three{grid-template-columns:1fr}}
+
+/* ===== SOAL INTERAKTIF DI MATERI ===== */
+.is{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin:14px 0}
+.is-q{font-size:17px;font-weight:800;margin-bottom:14px;line-height:1.5}
+.is-opts{display:grid;gap:8px}
+.is-o{display:block;width:100%;text-align:left;background:var(--box);border:2px solid var(--border);border-radius:10px;padding:12px 16px;font-size:15px;cursor:pointer;transition:all .2s;color:var(--text);font-family:inherit}
+.is-o:hover:not(:disabled){border-color:var(--primary);background:var(--primary-light)}
+.is-o:disabled{cursor:default;opacity:.92}
+.is-o.is-correct{border-color:var(--success);background:var(--success-light)}
+.is-o.is-wrong{border-color:var(--danger);background:var(--danger-light)}
+.is-o .opt-label{font-weight:800;margin-right:10px;color:var(--primary)}
+.is-fb{margin-top:14px;padding:16px;border-radius:12px;animation:fadeIn .35s ease}
+.is-fb.fb-correct{background:var(--success-light);border:1px solid var(--hl-green)}
+.is-fb.fb-wrong{background:var(--danger-light);border:1px solid var(--hl-red)}
+.is-status{font-weight:800;font-size:15px;margin-bottom:10px}
+.is-status.st-correct{color:var(--success)}
+.is-status.st-wrong{color:var(--danger)}
+.is-pemb{font-size:14px;line-height:1.7}
+.is-pemb strong{color:var(--primary)}
+.is-hint{font-size:13px;color:var(--muted);margin-top:10px;font-style:italic}
+
+@media(max-width:820px){
+  .table-scroll{overflow-x:auto;}
+  .result-item{padding:14px;}
+  h2{font-size:clamp(19px,4.5vw,26px);}
+}
+@media(max-width:600px){
+  .wrap{padding:10px}
+  .card{padding:18px}
+  h1{font-size:24px}
+  h2{font-size:20px}
+  .big{font-size:16.5px}
+  .question-text{font-size:17px}
+  .option-btn{padding:12px 14px;font-size:15px}
+  .nav-buttons{flex-direction:column}
+  th,td{padding:8px 10px;font-size:13px}
+  .tabs{gap:6px}
+  .tab{padding:10px 14px;font-size:14px;flex:1 1 auto;text-align:center}
+  .grid.three{grid-template-columns:1fr}
+  .topbar-inner{padding:10px 12px}
+  .topbar-brand{font-size:15px}
+  .topbar-nav .top-link{padding:7px 10px;font-size:13px}
+  .theme-btn{padding:7px 12px;font-size:12px}
+  .materi-nav a{padding:10px 12px;font-size:13px}
+  .back-top-inner .btn{flex:1 1 100%;min-width:0}
+  .soal-example{padding:14px}
+}
+@media(max-width:420px){
+  .card{padding:14px}
+  .box,.highlight,.explanation-box{padding:14px}
+  .result-option{padding:9px 12px}
+  .topbar-nav{justify-content:flex-start;width:100%}
+  .stat-value{font-size:24px}
+  .btn{padding:11px 16px}
+}
 </style>
 </head>
 <body>
@@ -162,32 +216,56 @@ ol li,ul li{margin:8px 0}
 
 <nav class="materi-nav">
 <a href="#m1">Pengantar</a>
-<a href="#m2">Trik Mengerjakan</a>
-<a href="#m3">4 Pola Dasar</a>
-<a href="#m4">Analogi Kalimat</a>
-<a href="#m5">Katalog Pola</a>
-<a href="#m6">Level 1: Pemula</a>
-<a href="#m7">Level 2: Menengah</a>
-<a href="#m8">Level 3: Mahir</a>
-<a href="#m9">Jebakan Umum</a>
-<a href="#m10">Protokol Ujian</a>
+<a href="#m2">Tipe Soal</a>
+<a href="#m3">Trik Mengerjakan</a>
+<a href="#m4">4 Pola Dasar</a>
+<a href="#m5">10 Jenis Hubungan</a>
+<a href="#m6">Analogi Kalimat</a>
+<a href="#m7">Katalog Pola</a>
+<a href="#m8">Level 1: Pemula</a>
+<a href="#m9">Level 2: Menengah</a>
+<a href="#m10">Level 3: Mahir</a>
+<a href="#m11">Jebakan Umum</a>
 </nav>
 
 <!-- ===== M1: PENGANTAR ===== -->
 <section class="card" id="m1">
 <h2>1. Pengantar: Apa Itu Analogi?</h2>
+
 <p>Analogi adalah salah satu materi yang <strong>selalu muncul</strong> di tes CPNS maupun kedinasan. Namun di tahun 2022 khususnya SKD kedinasan 2022, materi ini tidak keluar lagi. Untuk SKD 2024 ternyata materi ini <strong>keluar lagi</strong>.</p>
+
 <div class="highlight yellow">
 <p><strong>Penting:</strong> Jika peserta tidak mendapatkan model soal analogi kata, biasanya para peserta mendapatkan soal <strong>analogi kalimat</strong>. Keduanya menguji kemampuan yang sama: mengenali hubungan antar elemen.</p>
 </div>
+
 <h3>Definisi Analogi</h3>
 <p>Analogi adalah <strong>persamaan atau persesuaian antara dua benda atau hal yang berlainan</strong>. Dalam ilmu linguistik atau bahasa, analogi merupakan hasil pembentukan unsur bahasa karena pengaruh pola lain dalam bahasa.</p>
+
+<h3>Analogi dalam Konteks SKD CPNS</h3>
+<p>Berdasarkan <strong>Permenpan RB Nomor 321 Tahun 2024</strong> tentang bentuk soal SKD CPNS, materi ujian kemampuan verbal meliputi tiga komponen:</p>
+<div class="grid three">
+<div class="box">
+<h4>📝 Analogi Kata/Kalimat</h4>
+<p class="small">Menentukan hubungan/padanan kata yang sesuai dengan pola tertentu. Menguji kemampuan mengartikan kata, fungsi kata, hubungan antar kata, dan padanan fungsi.</p>
+</div>
+<div class="box">
+<h4>🔗 Silogisme</h4>
+<p class="small">Menarik kesimpulan logis dari premis-premis yang diberikan. Menguji kemampuan berpikir deduktif.</p>
+</div>
+<div class="box">
+<h4>🧩 Penalaran Analitis</h4>
+<p class="small">Menganalisis informasi dan menarik kesimpulan berdasarkan data yang diberikan.</p>
+</div>
+</div>
+
 <h3>Mengapa Analogi Penting di TIU?</h3>
 <ul>
 <li>Analogi menguji kemampuan <strong>berpikir logis</strong> dan <strong>analis</strong> yang dibutuhkan dalam pekerjaan ASN.</li>
 <li>Soal analogi sering menjadi <strong>penentu</strong> karena banyak peserta kesulitan membedakan hubungan yang mirip.</li>
 <li>Materi ini muncul di <strong>setiap periode</strong> tes CPNS, baik dalam bentuk analogi kata maupun analogi kalimat.</li>
+<li>Kemampuan verbal tidak hanya penting untuk lulus seleksi CPNS, tetapi juga merupakan <strong>keterampilan esensial</strong> dalam pelaksanaan tugas sebagai pelayan publik.</li>
 </ul>
+
 <h3>Struktur Dasar Soal Analogi</h3>
 <div class="highlight" style="text-align:center">
 <p class="big" style="font-weight:900;font-size:24px">A : B = C : D</p>
@@ -196,9 +274,103 @@ ol li,ul li{margin:8px 0}
 </div>
 </section>
 
-<!-- ===== M2: TRIK MENGERJAKAN ===== -->
+<!-- ===== M2: TIPE SOAL ===== -->
 <section class="card" id="m2">
-<h2>2. Trik Mengerjakan Soal Analogi</h2>
+<h2>2. Tipe-Tipe Soal Analogi</h2>
+<p>Soal analogi memiliki beberapa jenis tipe yang biasanya dimunculkan dalam setiap ujian. Mengenali tipe soal sejak awal akan membantu Anda menentukan strategi pengerjaan yang tepat.</p>
+
+<div class="box">
+<h3 style="margin-top:0">Tipe 1: Melengkapi Pasangan Kata</h3>
+<p>Peserta diberikan dua buah kata yang terkait satu sama lain dalam hubungan tertentu. Selanjutnya peserta diberikan kata ketiga lalu diminta menentukan kata keempat sehingga kata ketiga dan keempat memiliki hubungan yang sama dengan dua kata di awal.</p>
+<div class="highlight" style="text-align:center">
+<p style="font-weight:900;font-size:18px">[Kata Pertama] : [Kata Kedua] = [Kata Ketiga] : ...</p>
+</div>
+
+<div class="is" data-a="b">
+<p class="is-q">Massa : Kilogram = Suhu : ... <span class="badge year">TIU SKD 2021</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">a.</span> Panas</button>
+<button class="is-o" data-v="b"><span class="opt-label">b.</span> Celcius</button>
+<button class="is-o" data-v="c"><span class="opt-label">c.</span> Listrik</button>
+<button class="is-o" data-v="d"><span class="opt-label">d.</span> Dinamo</button>
+<button class="is-o" data-v="e"><span class="opt-label">e.</span> Matahari</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Pembahasan:</strong> Massa satuannya Kilogram, Suhu satuannya Celcius. Hubungan: <em>besaran dan satuannya</em>. Gunakan kata hubung <strong>"satuan dari"</strong>.</div>
+<div class="is-hint">💡 Kata hubung: "Kilogram adalah satuan dari massa" → "Celcius adalah satuan dari suhu"</div>
+</div>
+</div>
+</div>
+
+<div class="box">
+<h3 style="margin-top:0">Tipe 2: Memilih Pasangan Kata</h3>
+<p>Peserta diberikan sepasang kata yang terkait satu sama lain dalam hubungan tertentu. Selanjutnya peserta diminta memilih pasangan kata dalam pilihan jawaban yang memiliki hubungan yang sama dengan pasangan kata di awal.</p>
+<div class="highlight" style="text-align:center">
+<p style="font-weight:900;font-size:18px">[Kata Pertama] : [Kata Kedua] = ... : ...</p>
+</div>
+
+<div class="is" data-a="b">
+<p class="is-q">Bank : Uang = ... : ... <span class="badge year">TIU SKD 2021</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">a.</span> Kayu : Hutan</button>
+<button class="is-o" data-v="b"><span class="opt-label">b.</span> Lumbung : Padi</button>
+<button class="is-o" data-v="c"><span class="opt-label">c.</span> Baju : Tekstil</button>
+<button class="is-o" data-v="d"><span class="opt-label">d.</span> Pakaian : Laundry</button>
+<button class="is-o" data-v="e"><span class="opt-label">e.</span> Masak : Dapur</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Pembahasan:</strong> Bank tempat menyimpan uang, Lumbung tempat menyimpan padi. Hubungan: <em>tempat menyimpan</em>. Gunakan kata hubung <strong>"tempat menyimpan"</strong>.</div>
+<div class="is-hint">💡 Kata hubung: "Bank adalah tempat menyimpan uang" → "Lumbung adalah tempat menyimpan padi"</div>
+</div>
+</div>
+</div>
+
+<div class="box">
+<h3 style="margin-top:0">Tipe 3: Analogi Ganda</h3>
+<p>Peserta diberikan dua buah kata dalam dua pasangan yang berbeda. Masing-masing pasangannya rumpang. Peserta diminta melengkapi kedua pasang kata pada analogi tersebut.</p>
+<div class="highlight" style="text-align:center">
+<p style="font-weight:900;font-size:18px">[Kata Pertama] : ... = [Kata Kedua] : ...</p>
+</div>
+
+<div class="is" data-a="c">
+<p class="is-q">Senapan : ... = ... : Menangkap <span class="badge year">TIU SKD 2021</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">a.</span> Terkam - Taring</button>
+<button class="is-o" data-v="b"><span class="opt-label">b.</span> Ikan - Pancing</button>
+<button class="is-o" data-v="c"><span class="opt-label">c.</span> Berburu - Perangkap</button>
+<button class="is-o" data-v="d"><span class="opt-label">d.</span> Peluru - Tajam</button>
+<button class="is-o" data-v="e"><span class="opt-label">e.</span> Berburu - Binatang</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Pembahasan:</strong> Senapan dipakai untuk <strong>berburu</strong>, Perangkap dipakai untuk <strong>menangkap</strong>. Hubungan: <em>alat dan fungsinya</em>.</div>
+<div class="is-hint">💡 Kata hubung: "Senapan dipakai untuk berburu" → "Perangkap dipakai untuk menangkap"</div>
+</div>
+</div>
+
+<div class="is" data-a="d">
+<p class="is-q">... : Doktor = Skripsi : ... <span class="badge year">TIU SKD 2021</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">a.</span> Mahasiswa - Kampus</button>
+<button class="is-o" data-v="b"><span class="opt-label">b.</span> Pascasarjana - Kuliah</button>
+<button class="is-o" data-v="c"><span class="opt-label">c.</span> Rektor - Dekan</button>
+<button class="is-o" data-v="d"><span class="opt-label">d.</span> Disertasi - Sarjana</button>
+<button class="is-o" data-v="e"><span class="opt-label">e.</span> Laboratorium - Meneliti</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Pembahasan:</strong> <strong>Disertasi</strong> tugas akhir seorang Doktor, <strong>Skripsi</strong> tugas akhir dari Sarjana. Hubungan: <em>tugas akhir dan jenjang pendidikan</em>.</div>
+<div class="is-hint">💡 Kata hubung: "Disertasi adalah tugas akhir Doktor" → "Skripsi adalah tugas akhir Sarjana"</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== M3: TRIK MENGERJAKAN ===== -->
+<section class="card" id="m3">
+<h2>3. Trik Mengerjakan Soal Analogi</h2>
 <p>Berdasarkan pengalaman mengerjakan soal TIU CPNS, terdapat <strong>3 trik utama</strong> yang harus dikuasai:</p>
 
 <div class="grid three">
@@ -216,78 +388,135 @@ ol li,ul li{margin:8px 0}
 </div>
 </div>
 
-<h3>Penerapan Trik pada Soal Nyata</h3>
-<div class="soal-example">
-<div class="soal-header">
-<strong>KANDANG : SAPI = ... : ...</strong>
-<span class="badge year">TIU SKD 2025</span>
+<h3>Teknik Kata Hubung (Sangat Penting!)</h3>
+<p>Cara paling efektif untuk mengerjakan soal analogi adalah <strong>membuat kalimat penghubung</strong> menggunakan kata hubung yang tepat. Berikut adalah kata-kata hubung yang paling sering muncul dalam soal TIU CPNS:</p>
+
+<div class="table-scroll">
+<table>
+<tr><th>Kata Hubung</th><th>Contoh Soal</th><th>Kalimat Penghubung</th></tr>
+<tr><td><strong>"Ilmu tentang..."</strong></td><td>Statistika : Data = Geologi : Bumi</td><td>Statistika <em>ilmu tentang</em> data = Geologi <em>ilmu tentang</em> bumi</td></tr>
+<tr><td><strong>"Di..."</strong></td><td>Memasak : Kompor = Menulis : Buku</td><td>Memasak <em>di</em> kompor = Menulis <em>di</em> buku</td></tr>
+<tr><td><strong>"Bagian dari..."</strong></td><td>Pasal : Undang-Undang = Ban : Mobil</td><td>Pasal <em>bagian dari</em> undang-undang = Ban <em>bagian dari</em> mobil</td></tr>
+<tr><td><strong>"Sifat dari..."</strong></td><td>Pasir : Gurun = Basah : Selokan</td><td>Pasir <em>sifat dari</em> gurun = Basah <em>sifat dari</em> selokan</td></tr>
+<tr><td><strong>"Ada pada..."</strong></td><td>Rok : Perempuan = Mosi : Rapat</td><td>Rok <em>ada pada</em> perempuan = Mosi <em>ada pada</em> rapat</td></tr>
+<tr><td><strong>"Tanda..."</strong></td><td>Lampu Kuning : Pelan-Pelan = Matahari : Siang</td><td>Lampu kuning <em>tanda</em> pelan-pelan = Matahari <em>tanda</em> siang</td></tr>
+<tr><td><strong>"Fungsi / Untuk..."</strong></td><td>Kompetitor : Bersaing = Motivator : Mendorong</td><td>Fungsi kompetitor <em>untuk</em> bersaing = Fungsi motivator <em>untuk</em> mendorong</td></tr>
+<tr><td><strong>"Jenis / bagian dari..."</strong></td><td>Pulau : Morotai = Cuaca : Hujan</td><td>Morotai <em>jenis</em> pulau = Hujan <em>jenis</em> cuaca</td></tr>
+<tr><td><strong>"Satuan dari..."</strong></td><td>Massa : Kilogram = Suhu : Celcius</td><td>Kilogram <em>satuan dari</em> massa = Celcius <em>satuan dari</em> suhu</td></tr>
+<tr><td><strong>"Tempat menyimpan..."</strong></td><td>Bank : Uang = Lumbung : Padi</td><td>Bank <em>tempat menyimpan</em> uang = Lumbung <em>tempat menyimpan</em> padi</td></tr>
+</table>
 </div>
-<p class="small"><strong>Langkah 1 (Tentukan Pola):</strong> Hubungan dibaca dari depan ke belakang. KANDANG → SAPI.</p>
-<p class="small"><strong>Langkah 2 (Kalimat Penghubung):</strong> "KANDANG adalah <em>tempat tinggal bagi</em> SAPI."</p>
-<p class="small"><strong>Langkah 3 (Cari Kesamaan):</strong> Cari pasangan yang memiliki hubungan "tempat tinggal bagi".</p>
-<div class="highlight green">
-<p><strong>Jawaban: B. Rumah : Manusia</strong></p>
-<p class="small">"RUMAH adalah tempat tinggal bagi MANUSIA." ✓</p>
+
+<h3>Penerapan Trik pada Soal Nyata</h3>
+<p>Coba jawab soal berikut dengan menentukan pola terlebih dahulu:</p>
+
+<div class="is" data-a="b">
+<p class="is-q">KANDANG : SAPI = ... : ... <span class="badge year">TIU SKD</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Kantor : Pekerja</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Rumah : Manusia</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kebun Binatang : Pawang</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Angkasa : Roket</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Motor : Bengkel</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb">
+<strong>Langkah 1 (Tentukan Pola):</strong> Hubungan dibaca dari depan ke belakang. KANDANG → SAPI.<br>
+<strong>Langkah 2 (Kalimat Penghubung):</strong> "KANDANG adalah <em>tempat tinggal bagi</em> SAPI."<br>
+<strong>Langkah 3 (Cari Kesamaan):</strong> Cari pasangan yang memiliki hubungan "tempat tinggal bagi".<br><br>
+<strong>Jawaban: B. Rumah : Manusia</strong><br>
+"RUMAH adalah tempat tinggal bagi MANUSIA." ✓<br><br>
+<strong>Analisis pilihan lain:</strong><br>
+A. Kantor adalah tempat <em>bekerja</em>, bukan tempat tinggal.<br>
+C. Kebun binatang adalah tempat hewan dipelihara, pawang adalah orang yang merawat.<br>
+D. Angkasa adalah tempat roket beroperasi, bukan tempat tinggal.<br>
+E. Bengkel adalah tempat perbaikan motor, bukan tempat tinggal.
+</div>
 </div>
 </div>
 
-<div class="soal-example">
-<div class="soal-header">
-<strong>PILOT : PESAWAT = ... : ...</strong>
-<span class="badge year">TIU SKD</span>
+<div class="is" data-a="c">
+<p class="is-q">PILOT : PESAWAT = ... : ... <span class="badge year">TIU SKD</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Sapi : Andong</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Dosen : Mahasiswa</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Masinis : Kereta Api</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Bensin : Motor</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Kereta Api : Masinis</button>
 </div>
-<p class="small"><strong>Langkah 1 (Tentukan Pola):</strong> Hubungan dibaca dari belakang ke depan. PESAWAT → PILOT.</p>
-<p class="small"><strong>Langkah 2 (Kalimat Penghubung):</strong> "PESAWAT <em>dikemudikan oleh</em> PILOT."</p>
-<p class="small"><strong>Langkah 3 (Cari Kesamaan):</strong> Cari pasangan yang memiliki hubungan "dikemudikan oleh".</p>
-<div class="highlight green">
-<p><strong>Jawaban: C. Masinis : Kereta Api</strong></p>
-<p class="small">"KERETA API dikemudikan oleh MASINIS." ✓</p>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb">
+<strong>Langkah 1 (Tentukan Pola):</strong> Hubungan dibaca dari belakang ke depan. PESAWAT → PILOT.<br>
+<strong>Langkah 2 (Kalimat Penghubung):</strong> "PESAWAT <em>dikemudikan oleh</em> PILOT."<br>
+<strong>Langkah 3 (Cari Kesamaan):</strong> Cari pasangan yang memiliki hubungan "dikemudikan oleh".<br><br>
+<strong>Jawaban: C. Masinis : Kereta Api</strong><br>
+"KERETA API dikemudikan oleh MASINIS." ✓<br><br>
+<strong>Analisis pilihan lain:</strong><br>
+A. Sapi menarik andong, tapi sapi bukan pengemudi dalam arti mengoperasikan.<br>
+B. Dosen mengajar mahasiswa, bukan mengemudikan.<br>
+D. Bensin adalah bahan bakar, bukan pengemudi.<br>
+<strong>E. Awas jebakan!</strong> Arahnya terbalik! Ini B : A, bukan A : B.
+</div>
+<div class="is-hint">⚠️ Jebakan arah terbalik adalah jebakan paling umum di analogi. Selalu periksa arah hubungan!</div>
 </div>
 </div>
 </section>
 
-<!-- ===== M3: 4 POLA DASAR ===== -->
-<section class="card" id="m3">
-<h2>3. Empat Pola Dasar Analogi</h2>
+<!-- ===== M4: 4 POLA DASAR ===== -->
+<section class="card" id="m4">
+<h2>4. Empat Pola Dasar Analogi</h2>
 
 <div class="box">
 <h3 style="margin-top:0">Pola 1: Depan ke Belakang</h3>
 <p><strong>Formula:</strong> A : B = C : D → Hubungan dibaca dari A ke B</p>
 
 <h4>Contoh 1: Tempat Tinggal</h4>
-<div class="soal-example">
-<p><strong>KANDANG : SAPI = ... : ...</strong> <span class="badge year">TIU SKD</span></p>
-<p>A. Kantor : Pekerja | B. Rumah : Manusia | C. Kebun Binatang : Pawang | D. Angkasa : Roket | E. Motor : Bengkel</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Kandang adalah tempat tinggal bagi sapi, sebagaimana rumah adalah tempat tinggal bagi manusia.</p>
-<p><strong>Jawaban: B</strong></p>
-<p class="small"><strong>Analisis pilihan lain:</strong></p>
-<ul class="small">
-<li>A. Kantor adalah tempat <em>bekerja</em>, bukan tempat tinggal.</li>
-<li>C. Kebun binatang adalah tempat hewan dipelihara, pawang adalah orang yang merawat.</li>
-<li>D. Angkasa adalah tempat roket beroperasi, bukan tempat tinggal.</li>
-<li>E. Bengkel adalah tempat perbaikan motor, bukan tempat tinggal.</li>
-</ul>
+<div class="is" data-a="b">
+<p class="is-q">KANDANG : SAPI = ... : ... <span class="badge year">TIU SKD</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Kantor : Pekerja</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Rumah : Manusia</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kebun Binatang : Pawang</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Angkasa : Roket</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Motor : Bengkel</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: B. Rumah : Manusia</strong><br>Kandang tempat tinggal bagi sapi, sebagaimana rumah tempat tinggal bagi manusia.</div>
 </div>
 </div>
 
-<h4>Contoh 2: Proses dan Hasil</h4>
-<div class="soal-example">
-<p><strong>TANAM : PANEN = BELAJAR : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
-<p>A. Lulus | B. Nilai | C. Ujian | D. Sekolah | E. Guru</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Hubungan antara Tanam dan Panen adalah proses dan hasil akhir yang diharapkan. Setelah melakukan proses menanam, hasil yang ditunggu adalah panen. Hal yang sama yaitu setelah melalui proses Belajar, hasil akhir yang diharapkan adalah Lulus.</p>
-<p><strong>Jawaban: A</strong></p>
+<h4>Contoh 2: Transformasi Bahan Baku</h4>
+<div class="is" data-a="b">
+<p class="is-q">Nektar : Madu = Stevia : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Gula pasir</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Pemanis</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Ekstrak stevia</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Daun stevia</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Sukrosa</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: B. Pemanis</strong><br>Nektar adalah cairan manis alami dari bunga yang diproses lebah menjadi madu. Stevia adalah tanaman yang diolah menjadi produk pemanis. Pola: <em>bahan baku alami → produk olahan fungsional</em>.</div>
 </div>
 </div>
 
-<h4>Contoh 3: Kegiatan dan Manfaat</h4>
-<div class="soal-example">
-<p><strong>OLAHRAGA : BUGAR = REKREASI : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
-<p>A. Lelah | B. Uang | C. Liburan | D. Sehat | E. Segar</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Hubungan antara Olahraga dan Bugar adalah kegiatan dan manfaat yang diperoleh. Tujuan atau manfaat dari berolahraga adalah agar tubuh menjadi bugar. Hal yang sama yaitu tujuan atau manfaat dari Rekreasi adalah agar pikiran dan tubuh kembali Segar.</p>
-<p><strong>Jawaban: E</strong></p>
+<h4>Contoh 3: Proses dan Hasil</h4>
+<div class="is" data-a="a">
+<p class="is-q">TANAM : PANEN = BELAJAR : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Lulus</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Nilai</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Ujian</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Sekolah</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Guru</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A. Lulus</strong><br>Setelah menanam, hasil yang ditunggu adalah panen. Setelah belajar, hasil akhir yang diharapkan adalah lulus.</div>
 </div>
 </div>
 </div>
@@ -297,29 +526,35 @@ ol li,ul li{margin:8px 0}
 <p><strong>Formula:</strong> A : B = C : D → Hubungan dibaca dari B ke A</p>
 
 <h4>Contoh 1: Pengemudi dan Kendaraan</h4>
-<div class="soal-example">
-<p><strong>PILOT : PESAWAT = ... : ...</strong> <span class="badge year">TIU SKD</span></p>
-<p>A. Sapi : Andong | B. Dosen : Mahasiswa | C. Masinis : Kereta Api | D. Bensin : Motor | E. Kereta Api : Masinis</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Pesawat dikemudikan pilot, sebagaimana kereta api dikemudikan masinis.</p>
-<p><strong>Jawaban: C</strong></p>
-<p class="small"><strong>Analisis pilihan lain:</strong></p>
-<ul class="small">
-<li>A. Sapi menarik andong, tapi sapi bukan pengemudi dalam arti mengoperasikan.</li>
-<li>B. Dosen mengajar mahasiswa, bukan mengemudikan.</li>
-<li>D. Bensin adalah bahan bakar, bukan pengemudi.</li>
-<li>E. Arahnya terbalik! Ini B : A, bukan A : B.</li>
-</ul>
+<div class="is" data-a="c">
+<p class="is-q">PILOT : PESAWAT = ... : ... <span class="badge year">TIU SKD</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Sapi : Andong</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Dosen : Mahasiswa</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Masinis : Kereta Api</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Bensin : Motor</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Kereta Api : Masinis</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C. Masinis : Kereta Api</strong><br>Pesawat dikemudikan pilot, sebagaimana kereta api dikemudikan masinis.<br><br><strong>Awas jebakan E!</strong> Arahnya terbalik (B : A, bukan A : B).</div>
+<div class="is-hint">⚠️ Selalu periksa arah hubungan sebelum memilih!</div>
 </div>
 </div>
 
-<h4>Contoh 2: Kondisi dan Reaksi Tubuh</h4>
-<div class="soal-example">
-<p><strong>SAKIT : PUCAT = KEDINGINAN : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
-<p>A. Menggigil | B. Selimut | C. Demam | D. Jaket | E. Es</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Hubungan antara Sakit dan Pucat adalah sebab-akibat (reaksi tubuh). Kondisi sakit dapat menyebabkan wajah menjadi pucat. Hal yang sama yaitu kondisi Kedinginan akan menyebabkan tubuh memberikan reaksi Menggigil.</p>
-<p><strong>Jawaban: A</strong></p>
+<h4>Contoh 2: Proses dan Subjek yang Mengalami</h4>
+<div class="is" data-a="a">
+<p class="is-q">Metamorfosis : Ulat = Sublimasi : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Es kering</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Air</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Uap air</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kristal garam</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Embun</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A. Es kering</strong><br>Metamorfosis adalah proses yang dialami ulat. Sublimasi adalah proses perubahan zat padat langsung menjadi gas yang dialami es kering (CO₂ padat). Pola: <em>nama proses dan subjek yang mengalami proses tersebut</em>.</div>
 </div>
 </div>
 </div>
@@ -330,37 +565,118 @@ ol li,ul li{margin:8px 0}
 <p class="small">Biasanya untuk pola ini merupakan jenis <strong>sinonim</strong> atau <strong>antonim</strong>.</p>
 
 <h4>Contoh 1: Antonim</h4>
-<div class="soal-example">
-<p><strong>KECIL : BASAH = BESAR : ...</strong> <span class="badge year">TIU SKD</span></p>
-<p>A. Kering | B. Kemarau | C. Hujan | D. Panas | E. Banjir</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Kecil lawan katanya adalah Besar, sebagaimana Basah lawan katanya Kering.</p>
-<p><strong>Jawaban: A</strong></p>
+<div class="is" data-a="a">
+<p class="is-q">KECIL : BASAH = BESAR : ... <span class="badge year">TIU SKD</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Kering</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Kemarau</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Hujan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Panas</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Banjir</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A. Kering</strong><br>Kecil lawan katanya Besar, sebagaimana Basah lawan katanya Kering.</div>
+<div class="is-hint">💡 Pola silang: A berpasangan dengan C, B berpasangan dengan D</div>
 </div>
 </div>
 
 <h4>Contoh 2: Sinonim</h4>
-<div class="soal-example">
-<p><strong>FIT : KETAT = ... : ...</strong> <span class="badge year">TIU SKD 2025</span></p>
-<p>A. Jauh : Dekat | B. Kuno : Baru | C. Relatif : Nisbi | D. Benar : Salah | E. Asli : Palsu</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Hubungan kata pada soal adalah persamaan makna. Kata "Fit" memiliki makna yang sama dengan kata "Ketat". Hubungan yang setara adalah "Relatif" yang memiliki arti tidak mutlak yang sama dengan kata "Nisbi" yang memiliki arti tidak mutlak.</p>
-<p><strong>Jawaban: C</strong></p>
+<div class="is" data-a="c">
+<p class="is-q">FIT : KETAT = ... : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Jauh : Dekat</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Kuno : Baru</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Relatif : Nisbi</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Benar : Salah</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Asli : Palsu</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C. Relatif : Nisbi</strong><br>"Fit" bersinonim dengan "Ketat". "Relatif" bersinonim dengan "Nisbi" (keduanya berarti tidak mutlak).</div>
+<div class="is-hint">💡 Pola silang sering digunakan untuk soal sinonim dan antonim</div>
 </div>
 </div>
 </div>
 
 <div class="box">
 <h3 style="margin-top:0">Pola 4: Analogi Kalimat</h3>
-<p>Untuk materi analogi kalimat yang keluar di SKD CPNS 2023, cara mengerjakannya adalah dengan <strong>menghubungkan atau mencari hubungan kedua objek</strong> pada kalimat di soal dengan hubungan kedua objek pada pilihan jawaban.</p>
-<p class="small">Penjelasan lengkap ada di bagian <a href="#m4" style="color:var(--primary)">Analogi Kalimat</a>.</p>
+<p>Untuk materi analogi kalimat yang keluar di SKD CPNS 2023–2025, cara mengerjakannya adalah dengan <strong>menghubungkan atau mencari hubungan kedua objek</strong> pada kalimat di soal dengan hubungan kedua objek pada pilihan jawaban.</p>
+<p class="small">Penjelasan lengkap ada di bagian <a href="#m6" style="color:var(--primary)">Analogi Kalimat</a>.</p>
 </div>
 </section>
 
-<!-- ===== M4: ANALOGI KALIMAT ===== -->
-<section class="card" id="m4">
-<h2>4. Analogi Kalimat – Teknik Lengkap</h2>
-<p>Analogi kalimat adalah varian soal analogi yang muncul di SKD CPNS 2023. Berbeda dengan analogi kata yang menggunakan pasangan kata, analogi kalimat menggunakan <strong>kalimat lengkap</strong> yang menggambarkan hubungan antar objek.</p>
+<!-- ===== M5: 10 JENIS HUBUNGAN ===== -->
+<section class="card" id="m5">
+<h2>5. Sepuluh Jenis Hubungan Kata</h2>
+<p>Berikut adalah <strong>10 jenis hubungan pasangan kata</strong> yang biasa dinyatakan dengan bentuk "= ... : ..." dan digunakan dalam setiap soal analogi TIU CPNS:</p>
+
+<div class="grid two">
+<div class="box"><h4>1. Hubungan Kesamaan Kata / Sinonim</h4><p class="small">Kedua kata memiliki makna yang sama atau mirip.</p><p class="small"><strong>Contoh:</strong> FIT : KETAT = RELATIF : NISBI <span class="badge year">TIU SKD 2025</span></p></div>
+<div class="box"><h4>2. Hubungan Lawan Kata / Antonim</h4><p class="small">Kedua kata memiliki makna yang berlawanan.</p><p class="small"><strong>Contoh:</strong> PERSEKONGKOLAN : SENDIRI = KONTRADIKSI : HARMONI <span class="badge year">TIU SKD 2024</span></p></div>
+<div class="box"><h4>3. Hubungan Jenis dari</h4><p class="small">Kata pertama merupakan salah satu jenis dari kata kedua.</p><p class="small"><strong>Contoh:</strong> PULAU : MOROTAI = CUACA : HUJAN <span class="badge year">TIU SKD 2021</span></p></div>
+<div class="box"><h4>4. Hubungan Sebab-Akibat</h4><p class="small">Kata pertama menyebabkan kata kedua.</p><p class="small"><strong>Contoh:</strong> KEKECEWAAN : KESEDIHAN = KEGIGIHAN : KEBERHASILAN <span class="badge year">TIU SKD 2024</span></p></div>
+<div class="box"><h4>5. Hubungan Kata Benda dan Sifatnya</h4><p class="small">Kata pertama memiliki sifat yang melekat pada kata kedua.</p><p class="small"><strong>Contoh:</strong> SALJU : DINGIN = EMOSI : PANAS <span class="badge year">TIU SKD 2024</span></p></div>
+<div class="box"><h4>6. Hubungan Orang dan Profesinya</h4><p class="small">Kata pertama adalah pelaku dan kata kedua adalah profesi atau aktivitasnya.</p><p class="small"><strong>Contoh:</strong> KOMPETITOR : BERSAING = MOTIVATOR : MENDORONG <span class="badge year">TIU SKD 2021</span></p></div>
+<div class="box"><h4>7. Hubungan Definisi</h4><p class="small">Kata pertama didefinisikan oleh kata kedua.</p><p class="small"><strong>Contoh:</strong> STATISTIKA : DATA = GEOLOGI : BUMI <span class="badge year">TIU SKD 2021</span></p></div>
+<div class="box"><h4>8. Hubungan Urutan Peristiwa</h4><p class="small">Kata pertama terjadi sebelum kata kedua dalam urutan waktu.</p><p class="small"><strong>Contoh:</strong> ANAK : REMAJA = EMBRIO : JANIN <span class="badge year">TIU SKD 2025</span></p></div>
+<div class="box"><h4>9. Hubungan Pancaindra dan Penyakitnya</h4><p class="small">Kata pertama adalah organ indra dan kata kedua adalah gangguan/penyakitnya.</p><p class="small"><strong>Contoh:</strong> MATA : RABUN = TELINGA : TULI</p></div>
+<div class="box"><h4>10. Hubungan Runtun Peristiwa</h4><p class="small">Kata pertama dan kedua adalah rangkaian peristiwa yang berurutan.</p><p class="small"><strong>Contoh:</strong> TANAM : PANEN = BELAJAR : LULUS <span class="badge year">TIU SKD 2025</span></p></div>
+</div>
+
+<h3>Contoh Soal per Jenis Hubungan</h3>
+
+<div class="is" data-a="d">
+<p class="is-q">Persekongkolan : Sendiri = Kontradiksi : ... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Setuju</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Bersama</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Bertentangan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Harmoni</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Konsisten</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D. Harmoni</strong><br>"Persekongkolan" berarti dilakukan bersama, berlawanan dengan "sendiri". "Kontradiksi" berarti bertentangan, berlawanan dengan "harmoni" (keselarasan). Hubungan: <em>antonim</em>.</div>
+</div>
+</div>
+
+<div class="is" data-a="c">
+<p class="is-q">Kekecewaan : Kesedihan = Kegigihan : ... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Kegembiraan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Kelelahan</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Keberhasilan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kemarahan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Keputusasaan</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C. Keberhasilan</strong><br>Kekecewaan mengakibatkan kesedihan. Kegigihan mengakibatkan keberhasilan. Hubungan: <em>sebab-akibat</em>.</div>
+</div>
+</div>
+
+<div class="is" data-a="b">
+<p class="is-q">Statistika : Data = Geologi : ... <span class="badge year">TIU SKD 2021</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Tanah</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Bumi</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Batu</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Pemetaan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Air</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: B. Bumi</strong><br>Statistika <em>ilmu tentang</em> data = Geologi <em>ilmu tentang</em> bumi. Hubungan: <em>definisi ilmu</em>.</div>
+<div class="is-hint">💡 Kata hubung: "ilmu tentang"</div>
+</div>
+</div>
+</section>
+
+<!-- ===== M6: ANALOGI KALIMAT ===== -->
+<section class="card" id="m6">
+<h2>6. Analogi Kalimat – Teknik Lengkap</h2>
+<p>Analogi kalimat adalah varian soal analogi yang muncul di SKD CPNS 2023–2025. Berbeda dengan analogi kata yang menggunakan pasangan kata, analogi kalimat menggunakan <strong>kalimat lengkap</strong> yang menggambarkan hubungan antar objek.</p>
 <div class="highlight">
 <p><strong>Cara mengerjakan:</strong> Hubungkan atau cari hubungan <strong>kedua objek</strong> pada kalimat di soal dengan hubungan <strong>kedua objek</strong> pada pilihan jawaban.</p>
 </div>
@@ -377,155 +693,500 @@ ol li,ul li{margin:8px 0}
 <tr><td>Bagian Bawaan</td><td>Dua objek adalah bagian bawaan yang menyatu</td><td>Sepatu : lubang tali & sol</td></tr>
 <tr><td>Jenis/Kategori</td><td>Dua objek adalah jenis dari suatu kategori</td><td>Akar : serabut & tunggang</td></tr>
 <tr><td>Bagian Tubuh Spesifik</td><td>Dua objek adalah bagian tubuh di lokasi tertentu</td><td>Gajah : belalai & gading (kepala)</td></tr>
+<tr><td>Profesi + Aktivitas + Tempat</td><td>Profesi, aktivitas profesional, objek, dan tempat</td><td>Dokter : mengobati : pasien : RS</td></tr>
+<tr><td>Perbandingan Properti Alami</td><td>Membandingkan dua hal berdasarkan sifat alami</td><td>Pesawat lebih cepat dari kereta</td></tr>
+<tr><td>Fenomena Alam Gradien</td><td>Fenomena alam karena perbedaan gradien</td><td>Air mengalir dari tinggi ke rendah</td></tr>
+<tr><td>Komponen : Gerakan : Sistem</td><td>Komponen bergerak agar sistem berfungsi</td><td>Roda berputar agar mobil berjalan</td></tr>
+<tr><td>Fenomena Siklik Berlawanan</td><td>Fenomena berulang dengan kondisi berlawanan</td><td>Matahari terbit/tenggelam</td></tr>
+<tr><td>Alat : Profesi : Fungsi Spesifik</td><td>Alat khusus, profesi, dan fungsi spesifik</td><td>Gergaji : tukang kayu : potong papan</td></tr>
+<tr><td>Taksonomi Anomali</td><td>Hewan dengan kemampuan tidak umum untuk kelompoknya</td><td>Angsa : unggas yang berenang</td></tr>
+<tr><td>Transformasi Bahan</td><td>Bahan mentah diproses menjadi hasil jadi</td><td>Nasi dimasak menggunakan beras</td></tr>
+<tr><td>Organ + Fungsi Ganda</td><td>Makhluk hidup, organ khusus, dan fungsi ganda</td><td>Burung : paruh untuk makan & berkembang biak</td></tr>
 </table>
 </div>
 
 <h3>Contoh 1: Bagian Tubuh</h3>
-<div class="soal-example">
-<p><strong>Soal:</strong> Elang memiliki sayap dan paruh. Hubungan ini sama dengan...</p>
-<p>A. Gadis itu memiliki gelang dan kalung.<br>B. Kuda memiliki pelana dan ladam.<br>C. Kepiting memiliki cangkang dan capit.<br>D. Bunga mawar memiliki bunga dan mawar.<br>E. Becak memiliki pedal dan speaker.</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Sayap dan paruh adalah <strong>bagian tubuh dari elang</strong>, sama seperti cangkang dan capit merupakan <strong>bagian tubuh dari kepiting</strong>.</p>
-<p><strong>Jawaban: C</strong></p>
-<p class="small"><strong>Analisis pilihan lain:</strong></p>
-<ul class="small">
-<li>A. Gelang dan kalung adalah aksesoris, bukan bagian tubuh gadis.</li>
-<li>B. Pelana dan ladam adalah perlengkapan, bukan bagian tubuh kuda.</li>
-<li>D. Bunga dan mawar adalah pengulangan kata, bukan dua bagian berbeda.</li>
-<li>E. Speaker bukan bagian bawaan becak.</li>
-</ul>
+<div class="is" data-a="c">
+<p class="is-q">Elang memiliki sayap dan paruh. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Gadis itu memiliki gelang dan kalung.</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Kuda memiliki pelana dan ladam.</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kepiting memiliki cangkang dan capit.</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Bunga mawar memiliki bunga dan mawar.</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Becak memiliki pedal dan speaker.</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Sayap dan paruh adalah <strong>bagian tubuh dari elang</strong>, sama seperti cangkang dan capit merupakan <strong>bagian tubuh dari kepiting</strong>.<br><br><strong>Analisis pilihan lain:</strong> A (aksesoris, bukan bagian tubuh), B (perlengkapan), D (pengulangan kata), E (bukan bagian bawaan becak).</div>
 </div>
 </div>
 
 <h3>Contoh 2: Bagian Alami</h3>
-<div class="soal-example">
-<p><strong>Soal:</strong> Tebu memiliki batang dan daun. Hubungan ini sama dengan...</p>
-<p>A. Sapi memiliki kaki dan ekor.<br>B. Anak itu memiliki topi dan sendal.<br>C. Komputer memiliki mouse dan software.<br>D. TV memiliki remote dan antena.<br>E. Kuda memiliki pelana dan sepatu.</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Batang dan daun adalah <strong>bagian yang ada pada tebu</strong>, seperti halnya kaki dan ekor merupakan <strong>bagian yang memang ada</strong> pada sapi.</p>
-<p><strong>Jawaban: A</strong></p>
-<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian yang <em>memang ada secara alami</em> pada objek, bukan aksesoris atau perlengkapan tambahan.</p>
+<div class="is" data-a="a">
+<p class="is-q">Tebu memiliki batang dan daun. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Sapi memiliki kaki dan ekor.</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Anak itu memiliki topi dan sendal.</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Komputer memiliki mouse dan software.</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> TV memiliki remote dan antena.</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Kuda memiliki pelana dan sepatu.</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A</strong><br>Batang dan daun adalah <strong>bagian yang ada pada tebu</strong>, seperti halnya kaki dan ekor merupakan <strong>bagian yang memang ada</strong> pada sapi.<br><br><strong>Kunci pembeda:</strong> Soal meminta bagian yang <em>memang ada secara alami</em> pada objek, bukan aksesoris atau perlengkapan tambahan.</div>
 </div>
 </div>
 
 <h3>Contoh 3: Tempat/Lokasi</h3>
-<div class="soal-example">
-<p><strong>Soal:</strong> Tenda dan api unggun berada di tempat perkemahan. Hubungan ini sama dengan...</p>
-<p>A. Bulan dan bintang berada di malam hari<br>B. Kata dan kalimat berada dalam paragraf<br>C. Buku dan kamus berada di dalam perpustakaan<br>D. Praktek dan teori berada di dalam proses kuliah<br>E. Monitor dan keyboard berada pada CPU</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Tenda dan api unggun adalah bagian yang berada di tempat perkemahan, seperti halnya buku dan kamus berada di dalam perpustakaan.</p>
-<p><strong>Jawaban: C</strong></p>
-<p class="small"><strong>Mengapa E salah?</strong> Monitor dan keyboard berada <em>pada</em> CPU (menempel), bukan berada <em>di dalam</em> suatu tempat/lokasi seperti perkemahan dan perpustakaan.</p>
+<div class="is" data-a="c">
+<p class="is-q">Tenda dan api unggun berada di tempat perkemahan. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Bulan dan bintang berada di malam hari</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Kata dan kalimat berada dalam paragraf</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Buku dan kamus berada di dalam perpustakaan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Praktek dan teori berada di dalam proses kuliah</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Monitor dan keyboard berada pada CPU</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Tenda dan api unggun berada di tempat perkemahan, seperti halnya buku dan kamus berada di dalam perpustakaan.<br><br><strong>Mengapa E salah?</strong> Monitor dan keyboard berada <em>pada</em> CPU (menempel), bukan berada <em>di dalam</em> suatu tempat/lokasi seperti perkemahan dan perpustakaan.</div>
 </div>
 </div>
 
 <h3>Contoh 4: Bagian Benda</h3>
-<div class="soal-example">
-<p><strong>Soal (TIU CPNS 2023):</strong> Kita mengetahui bahwa mobil memiliki kursi penumpang dan bagasi. Hubungan ini sama dengan...</p>
-<p>A. Pohon memerlukan air dan cahaya<br>B. Dalam pesawat ada pilot dan pramugari<br>C. Sepeda memiliki pedal dan roda<br>D. Manusia memerlukan makan dan minum<br>E. CPU memerlukan listrik dan monitor</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Kursi penumpang dan bagasi adalah bagian dari sebuah mobil, maka analogi kalimat yang tepat adalah pedal dan roda merupakan bagian dari sepeda.</p>
-<p><strong>Jawaban: C</strong></p>
-<p class="small"><strong>Analisis pilihan lain:</strong></p>
-<ul class="small">
-<li>A. Air dan cahaya adalah kebutuhan pohon, bukan bagian dari pohon.</li>
-<li>B. Pilot dan pramugari adalah awak pesawat, bukan bagian dari pesawat.</li>
-<li>D. Makan dan minum adalah kebutuhan manusia, bukan bagian tubuh.</li>
-<li>E. Listrik dan monitor adalah kebutuhan/aksesori CPU, bukan bagian bawaan.</li>
-</ul>
+<div class="is" data-a="c">
+<p class="is-q">Kita mengetahui bahwa mobil memiliki kursi penumpang dan bagasi. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Pohon memerlukan air dan cahaya</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Dalam pesawat ada pilot dan pramugari</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Sepeda memiliki pedal dan roda</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Manusia memerlukan makan dan minum</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> CPU memerlukan listrik dan monitor</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Kursi penumpang dan bagasi adalah bagian dari mobil. Pedal dan roda adalah bagian dari sepeda.<br><br><strong>Analisis pilihan lain:</strong> A (kebutuhan, bukan bagian), B (awak pesawat, bukan bagian pesawat), D (kebutuhan), E (kebutuhan/aksesori).</div>
 </div>
 </div>
 
 <h3>Contoh 5: Bagian Ujung</h3>
-<div class="soal-example">
-<p><strong>Soal (TIU CPNS 2023):</strong> Pensil memiliki ujung pensil dan penghapus. Hubungan ini sama dengan...</p>
-<p>A. Buku memiliki sampul dan halaman<br>B. Lampu memiliki bohlam dan sakelar<br>C. Sepatu memiliki tali dan sol<br>D. Kunci memiliki gigi dan gagang<br>E. CPU memiliki monitor dan keyboard</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Ujung pensil dan penghapus merupakan bagian dari pensil yang terletak di ujung pensil, maka analogi kalimat yang tepat adalah gigi dan gagang sama-sama terletak di ujung kunci.</p>
-<p><strong>Jawaban: D</strong></p>
-<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian yang terletak di <em>ujung</em> benda, bukan bagian mana saja.</p>
+<div class="is" data-a="d">
+<p class="is-q">Pensil memiliki ujung pensil dan penghapus. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Buku memiliki sampul dan halaman</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Lampu memiliki bohlam dan sakelar</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Sepatu memiliki tali dan sol</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kunci memiliki gigi dan gagang</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> CPU memiliki monitor dan keyboard</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D</strong><br>Ujung pensil dan penghapus terletak di <em>ujung</em> pensil. Gigi dan gagang sama-sama terletak di <em>ujung</em> kunci.<br><br><strong>Kunci pembeda:</strong> Soal meminta bagian yang terletak di <em>ujung</em> benda, bukan bagian mana saja.</div>
 </div>
 </div>
 
 <h3>Contoh 6: Bagian Bawaan</h3>
-<div class="soal-example">
-<p><strong>Soal (TIU CPNS 2023):</strong> Pada sepatu terdapat lubang tali dan sol. Hubungan ini sama dengan...</p>
-<p>A. Pada pohon terdapat air dan cahaya<br>B. Pada sepeda terdapat roda dan spion<br>C. Pada CPU terdapat listrik dan monitor<br>D. Pada teater terdapat panggung dan hiburan<br>E. Pada manusia terdapat tangan dan kaki</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Lubang tali dan sol merupakan bagian bawaan yang menyatu pada sepatu sebagaimana tangan dan kaki pada manusia.</p>
-<p><strong>Jawaban: E</strong></p>
-<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian <em>bawaan yang menyatu</em>, bukan aksesoris atau perlengkapan tambahan.</p>
+<div class="is" data-a="e">
+<p class="is-q">Pada sepatu terdapat lubang tali dan sol. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Pada pohon terdapat air dan cahaya</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Pada sepeda terdapat roda dan spion</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Pada CPU terdapat listrik dan monitor</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Pada teater terdapat panggung dan hiburan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Pada manusia terdapat tangan dan kaki</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: E</strong><br>Lubang tali dan sol merupakan bagian bawaan yang menyatu pada sepatu sebagaimana tangan dan kaki pada manusia.<br><br><strong>Kunci pembeda:</strong> Soal meminta bagian <em>bawaan yang menyatu</em>, bukan aksesoris atau perlengkapan tambahan. Spion pada sepeda adalah aksesoris tambahan.</div>
 </div>
 </div>
 
 <h3>Contoh 7: Jenis/Kategori</h3>
-<div class="soal-example">
-<p><strong>Soal (TIU CPNS 2023):</strong> Akar terdiri dari serabut dan tunggang. Memiliki analogi dengan...</p>
-<p>A. Pohon terdiri dari ranting dan daun<br>B. Sepeda terdiri dari pedal dan roda<br>C. Mobil terdiri dari matic dan manual<br>D. Manusia terdiri dari hidung dan mata<br>E. CPU terdiri dari monitor dan mouse</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Serabut dan tunggang adalah jenis-jenis akar, maka analogi yang tepat adalah matic dan manual adalah jenis transmisi pada mobil.</p>
-<p><strong>Jawaban: C</strong></p>
-<p class="small"><strong>Kunci pembeda:</strong> Soal meminta <em>jenis/kategori</em>, bukan bagian fisik.</p>
+<div class="is" data-a="c">
+<p class="is-q">Akar terdiri dari serabut dan tunggang. Memiliki analogi dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Pohon terdiri dari ranting dan daun</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Sepeda terdiri dari pedal dan roda</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Mobil terdiri dari matic dan manual</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Manusia terdiri dari hidung dan mata</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> CPU terdiri dari monitor dan mouse</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Serabut dan tunggang adalah <em>jenis-jenis</em> akar. Matic dan manual adalah <em>jenis</em> transmisi pada mobil.<br><br><strong>Kunci pembeda:</strong> Soal meminta <em>jenis/kategori</em>, bukan bagian fisik.</div>
 </div>
 </div>
 
-<h3>Contoh 8: Bagian Tubuh Spesifik</h3>
-<div class="soal-example">
-<p><strong>Soal (TIU CPNS 2023):</strong> Gajah memiliki belalai dan gading. Hubungan ini sama dengan...</p>
-<p>A. Harimau memiliki kuku dan taring<br>B. Lebah memiliki antena dan sayap<br>C. Semut tentara memiliki rahang dan antena<br>D. Ikan piranha memiliki gigi runcing dan ekor<br>E. Beruang memiliki bulu tebal dan cakar</p>
-<div class="pembahasan">
-<p><strong>Pembahasan:</strong> Belalai dan gading adalah bagian tubuh pada gajah yang terletak di bagian kepala, sama halnya dengan rahang dan antena merupakan bagian tubuh pada semut yang terletak di bagian kepala.</p>
-<p><strong>Jawaban: C</strong></p>
-<p class="small"><strong>Kunci pembeda:</strong> Soal meminta bagian tubuh di <em>lokasi spesifik</em> (kepala), bukan bagian tubuh mana saja.</p>
+<h3>Contoh 8: Bagian Tubuh Spesifik (Lokasi Kepala)</h3>
+<div class="is" data-a="c">
+<p class="is-q">Gajah memiliki belalai dan gading. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Harimau memiliki kuku dan taring</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Lebah memiliki antena dan sayap</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Semut tentara memiliki rahang dan antena</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Ikan piranha memiliki gigi runcing dan ekor</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Beruang memiliki bulu tebal dan cakar</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Belalai dan gading terletak di bagian <em>kepala</em> gajah. Rahang dan antena juga terletak di bagian <em>kepala</em> semut.<br><br><strong>Kunci pembeda:</strong> Soal meminta bagian tubuh di <em>lokasi spesifik</em> (kepala), bukan bagian tubuh mana saja. Harimau (kuku di kaki, taring di mulut), lebah (antena di kepala, sayap di punggung), piranha (gigi di kepala, ekor di belakang), beruang (bulu di seluruh tubuh, cakar di kaki).</div>
+</div>
+</div>
+
+<h3>Contoh 9: Profesi + Aktivitas + Tempat</h3>
+<div class="is" data-a="c">
+<p class="is-q">Dokter mengobati pasien di rumah sakit. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Petani menanam padi di sawah</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Koki menyajikan makanan di restoran</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Guru mengajar murid di sekolah</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Burung terbang tinggi di langit biru</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Nelayan bekerja keras untuk keluarga</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Guru (profesi) mengajar (aktivitas profesional) murid (objek aktivitas) di sekolah (tempat bekerja). Struktur: <em>Profesi + Aktivitas + Objek + Tempat</em>.<br><br><strong>Mengapa A dan B kurang tepat?</strong> Meskipun mirip, objek aktivitasnya kurang tepat. Petani menanam padi (padi bukan objek yang diobati/dilayani), koki menyajikan makanan (makanan bukan objek yang dilayani langsung seperti pasien/murid).</div>
+</div>
+</div>
+
+<h3>Contoh 10: Perbandingan Properti Alami</h3>
+<div class="is" data-a="d">
+<p class="is-q">Pesawat terbang lebih cepat daripada kereta api. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Bangunan tinggi lebih kokoh daripada bangunan rendah</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Mobil balap lebih mahal daripada mobil keluarga</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Emas lebih berharga daripada perak</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Cheetah berlari lebih cepat daripada singa</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Buku tebal lebih informatif daripada buku tipis</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D</strong><br>Cheetah dan singa (dua jenis hewan sejenis) dibandingkan berdasarkan kecepatan berlari (<em>properti alami</em>).<br><br><strong>Mengapa B, C, E salah?</strong> "Mahal", "berharga", dan "informatif" adalah penilaian <em>subjektif</em>, bukan properti alami yang terukur.</div>
+<div class="is-hint">⚠️ Jebakan properti subjektif vs alami adalah jebakan yang sangat sering muncul di soal analogi kalimat!</div>
+</div>
+</div>
+
+<h3>Contoh 11: Fenomena Alam Gradien</h3>
+<div class="is" data-a="c">
+<p class="is-q">Air mengalir dari tempat tinggi ke tempat rendah. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Magnet menarik benda-benda berbahan logam tertentu</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Panas menyebar dari benda bersuhu tinggi ke bersuhu rendah</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Angin bertiup dari daerah bertekanan tinggi ke bertekanan rendah</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Bola menggelinding dari puncak bukit ke lembah</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Cahaya merambat lurus dari sumber ke segala arah</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Air mengalir dari tempat tinggi ke rendah karena perbedaan ketinggian. Angin bertiup dari daerah bertekanan tinggi ke rendah karena perbedaan tekanan. Keduanya adalah <em>fenomena alam karena perbedaan gradien</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 12: Komponen : Gerakan : Sistem</h3>
+<div class="is" data-a="d">
+<p class="is-q">Roda berputar agar mobil dapat berjalan. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Mesin bekerja agar pesawat dapat terbang</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Pompa bergerak agar air dapat mengalir</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kunci diputar agar pintu dapat terbuka</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Jantung berdetak agar darah dapat beredar</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Pena digerakkan agar tulisan dapat terbentuk</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D</strong><br>Jantung (komponen) berdetak (gerakan spesifik) agar darah (sistem peredaran) dapat beredar (fungsi utama). Struktur: <em>Komponen + Gerakan Spesifik + Fungsi Sistem</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 13: Fenomena Siklik Berlawanan</h3>
+<div class="is" data-a="b">
+<p class="is-q">Matahari terbit di timur dan terbenam di barat. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Hujan turun dari awan dan menuju ke tanah</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Suhu tinggi di siang hari dan rendah di malam hari</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Musim kemarau terjadi setelah musim hujan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Pelangi muncul setelah hujan dan matahari bersinar</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Air pasang terjadi saat bulan purnama dan surut saat bulan baru</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: B</strong><br>Matahari terbit/tenggelam adalah fenomena berulang dengan arah berlawanan. Suhu tinggi di siang hari dan rendah di malam hari adalah fenomena berulang dengan kondisi berlawanan pada waktu berlawanan.</div>
+</div>
+</div>
+
+<h3>Contoh 14: Alat : Profesi : Fungsi Spesifik</h3>
+<div class="is" data-a="a">
+<p class="is-q">Gergaji digunakan tukang kayu untuk memotong papan. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Teleskop digunakan astronom untuk mengamati bintang</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Komputer digunakan programmer untuk menulis kode</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Palu digunakan oleh anak kecil untuk bermain</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kamera dipajang di toko elektronik untuk dijual</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Pistol digunakan tentara untuk menembak sasaran</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A</strong><br>Teleskop (alat khusus) digunakan astronom (profesi/ahli) untuk mengamati bintang (fungsi spesifik alat dalam pekerjaan).<br><br><strong>Mengapa B kurang tepat?</strong> Komputer bukan alat khusus untuk programmer (banyak profesi lain menggunakannya).<br><strong>Mengapa E kurang tepat?</strong> Tentara tidak selalu menggunakan pistol untuk menembak (berbeda dengan tukang kayu yang selalu menggunakan gergaji untuk memotong).</div>
+</div>
+</div>
+
+<h3>Contoh 15: Taksonomi Anomali</h3>
+<div class="is" data-a="e">
+<p class="is-q">Angsa adalah unggas yang dapat berenang di air. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Gajah adalah mamalia yang memiliki belalai panjang</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Mobil adalah kendaraan yang dapat melaju di jalan raya</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Pesawat adalah alat transportasi yang membawa penumpang</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Jeruk adalah buah yang mengandung vitamin C</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Kelelawar adalah mamalia yang dapat terbang di udara</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: E</strong><br>Angsa (unggas) memiliki kemampuan <em>tidak umum</em> untuk kelompoknya (berenang). Kelelawar (mamalia) memiliki kemampuan <em>tidak umum</em> untuk kelompoknya (terbang).<br><br>Keduanya menunjukkan hubungan: <em>hewan + kelompok taksonomi + kemampuan tidak umum untuk kelompoknya</em>.</div>
+<div class="is-hint">💡 Pola taksonomi anomali menguji pengetahuan tentang pengecualian dalam klasifikasi hewan!</div>
+</div>
+</div>
+
+<h3>Contoh 16: Transformasi Bahan</h3>
+<div class="is" data-a="e">
+<p class="is-q">Nasi dimasak menggunakan beras. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Mobil dikendarai menggunakan bensin</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Komputer digunakan oleh programmer</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kue dipotong dengan pisau</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Rumah dibangun di atas tanah</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Kopi dibuat dari biji kopi</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: E</strong><br>Beras (bahan mentah) diproses/dimasak menjadi nasi (hasil jadi). Biji kopi (bahan mentah) diproses/dibuat menjadi kopi (hasil jadi). Hubungan: <em>transformasi bahan baku</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 17: Organ + Fungsi Ganda</h3>
+<div class="is" data-a="a">
+<p class="is-q">Burung memiliki paruh untuk mencari makanan dan berkembang biak. Hubungan ini sama dengan... <span class="badge year">TIU SKD 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Ikan memiliki insang untuk bernapas dan bertahan hidup</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Kendaraan memiliki roda untuk bergerak dan mengangkut barang</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Komputer memiliki prosesor untuk mengolah data dan menjalankan program</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Pensil dan buku digunakan siswa untuk belajar di kelas</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Langit berwarna biru karena pembiasan cahaya matahari</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A</strong><br>Narasi soal adalah organ makhluk hidup dengan fungsi ganda. Ikan memiliki insang untuk bernapas dan bertahan hidup. Keduanya adalah <em>organ makhluk hidup dengan fungsi ganda</em>.</div>
+<div class="is-hint">💡 Perhatikan konteks narasi soal! Jika soal tentang organ makhluk hidup, jawaban harus tentang organ makhluk hidup juga.</div>
+</div>
+</div>
+
+<h3>Contoh 18: Susunan Komposisi</h3>
+<div class="is" data-a="d">
+<p class="is-q">Tembok bangunan terdiri dari pasir dan semen. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Pantai terdiri dari laut dan pasir</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Pagi terdiri dari matahari dan ayam</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Tabel terdiri dari penggaris dan pensil</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Bunga terdiri dari kelopak dan tangkai</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Batu-bata terdiri dari batu dan lantai</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D</strong><br>Tembok tersusun dari pasir dan semen (komposisi penyusun). Bunga tersusun dari kelopak dan tangkai (komposisi penyusun).</div>
+</div>
+</div>
+
+<h3>Contoh 19: Ciri Khas Karakter</h3>
+<div class="is" data-a="c">
+<p class="is-q">Tepat waktu ciri dari disiplin. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Banyak membaca ciri dari kepintaran</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Banyak menabung ciri dari kaya</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Bertanggung jawab ciri dari berintegritas</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Rajin ciri dari kesuksesan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Murah senyum sifat dari kebahagiaan</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Tepat waktu adalah ciri dari disiplin. Bertanggung jawab adalah ciri dari integritas. Keduanya adalah <em>ciri khas dari suatu karakter/sikap</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 20: Tempat Penahanan</h3>
+<div class="is" data-a="d">
+<p class="is-q">Narapidana ditempatkan di dalam penjara. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Semut ditempatkan di dalam gula</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Harimau ditempatkan di dalam hutan</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Tentara ditempatkan di dalam perang</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kerbau ditempatkan di dalam kandang</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Burung ditempatkan di dalam langit</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D</strong><br>Penjara adalah tempat yang memang didesain dan berfungsi untuk menahan narapidana. Kandang adalah tempat yang memang didesain untuk menahan/mengurung kerbau. Keduanya adalah <em>tempat yang didesain untuk menahan/mengurung</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 21: Alat Menghasilkan Sesuatu</h3>
+<div class="is" data-a="c">
+<p class="is-q">Lampu dapat menghasilkan sebuah cahaya. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Pemanis dapat menghasilkan sebuah gula</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Bensin dapat menghasilkan sebuah mobil</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kompor dapat menghasilkan sebuah api</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kalkulator dapat menghasilkan sebuah angka</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Batu bara dapat menghasilkan sebuah lokomotif</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: C</strong><br>Lampu (alat) menghasilkan cahaya (hasil). Kompor (alat) menghasilkan api (hasil). Keduanya adalah <em>alat dan hasil langsungnya</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 22: Proses Menghasilkan Hasil Formal</h3>
+<div class="is" data-a="a">
+<p class="is-q">Dalam suatu sidang menghasilkan vonis. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Dalam suatu ujian menghasilkan kelulusan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Dalam suatu es menghasilkan cairan</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Dalam suatu sanksi menghasilkan hukuman</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Dalam suatu pohon menghasilkan buah</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Dalam suatu proses tilang menghasilkan pelanggaran</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A</strong><br>Sidang adalah proses formal yang menghasilkan vonis. Ujian adalah proses formal yang menghasilkan kelulusan. Keduanya adalah <em>proses formal dan hasil akhir yang diharapkan</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 23: Bahan Dasar Menghasilkan Dua Produk</h3>
+<div class="is" data-a="a">
+<p class="is-q">Susu segar yang difermentasi dapat diolah menjadi yogurt dan keju. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Tepung terigu dapat digunakan untuk membuat kue dan mie</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Lagu yang dinyanyikan Ardi diiringi petikan gitar dan pukulan gendang</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kain yang dijahit ibu berbahan dasar benang dan kapas</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Gandum yang telah diproses akan dijual dalam bentuk roti dan sereal</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Kue bolu buatan ibu terbuat dari campuran gula dan tepung</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A</strong><br>Susu segar (bahan dasar) melalui proses fermentasi menghasilkan dua produk berbeda (yogurt dan keju). Tepung terigu (bahan dasar) melalui proses pengolahan menghasilkan dua produk berbeda (kue dan mie).</div>
+</div>
+</div>
+
+<h3>Contoh 24: Alat dan Fungsi Penting</h3>
+<div class="is" data-a="e">
+<p class="is-q">Sayap merupakan alat yang digunakan burung untuk membantunya terbang. Hubungan ini sama dengan... <span class="badge year">TIU CPNS 2023</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Roda berfungsi sebagai alat utama mobil untuk bergerak</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Paruh adalah struktur anatomi burung yang berfungsi untuk menarik perhatian lawan jenis</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Rabun adalah keadaan kurangnya penglihatan yang terjadi pada mata</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kurus merupakan kondisi kurangnya berat badan karena kekurangan makan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Setir merupakan perangkat yang digunakan untuk membantu pengemudi menjalankan mobil</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: E</strong><br>Sayap adalah alat yang membantu burung terbang. Setir adalah perangkat yang membantu pengemudi menjalankan mobil. Keduanya adalah <em>alat/perangkat dan fungsi pentingnya</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 25: Analogi 3 Kata (Tindakan Umum : Bentuk Negatif : Bentuk Positif)</h3>
+<div class="is" data-a="d">
+<p class="is-q">Bicara : Debat : Diskusi = ... : ... : ... <span class="badge year">TIU CPNS 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Menulis : Membaca : Menyimpulkan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Tidur : Mimpi : Bangun</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Berdiri : Jalan : Lari</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Evaluasi : Kritik : Apresiasi</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Tanam : Rawat : Panen</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: D</strong><br>BICARA dapat dilakukan dalam bentuk DEBAT (cenderung negatif) atau DISKUSI (cenderung positif). EVALUASI dapat dilakukan dalam bentuk KRITIK (cenderung negatif) atau APRESIASI (cenderung positif).</div>
+<div class="is-hint">💡 Pola: Tindakan umum → bentuk negatif → bentuk positif</div>
+</div>
+</div>
+
+<h3>Contoh 26: Analogi 3 Kata (Subjek : Aksi : Habitat)</h3>
+<div class="is" data-a="a">
+<p class="is-q">Kijang : Melompat : Hutan = ... : ... : ... <span class="badge year">TIU CPNS 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Merpati : Terbang : Udara</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Tembakau : Rokok : Asap</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Makanan : Nasi : Meja Makan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Sopir : Truk : Darat</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Aku : Kamu : Bapakmu</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: A</strong><br>KIJANG MELOMPAT di HUTAN, sebagaimana MERPATI TERBANG di UDARA. Struktur: <em>Subjek + Aksi Khas + Habitat</em>.</div>
+</div>
+</div>
+
+<h3>Contoh 27: Analogi 3 Kata (Sumber : Bagian Diambil : Produk Olahan)</h3>
+<div class="is" data-a="e">
+<p class="is-q">Ayam : Daging : Sosis = ... : ... : ... <span class="badge year">TIU CPNS 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Buaya : Kulit : Dompet</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Burung : Terbang : Langit</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Gajah : Belalai : Gading</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Harimau : Belang : Tas</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Sapi : Susu : Mentega</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Jawaban: E</strong><br>Ayam diambil dagingnya untuk dibuat sosis. Sapi diambil susunya untuk dibuat mentega. Struktur: <em>Sumber + Bagian Diambil + Produk Olahan</em>.</div>
 </div>
 </div>
 </section>
 
-<!-- ===== M5: KATALOG POLA ===== -->
-<section class="card" id="m5">
-<h2>5. Katalog Pola Hubungan Lengkap</h2>
+<!-- ===== M7: KATALOG POLA ===== -->
+<section class="card" id="m7">
+<h2>7. Katalog Pola Hubungan Lengkap</h2>
 <p>Berikut adalah <strong>semua jenis pola hubungan</strong> yang pernah muncul dalam soal TIU CPNS, beserta contoh dari soal asli:</p>
 
 <div class="grid two">
-<div class="box"><h4>1. Fungsi / Kegunaan</h4><p class="small"><strong>Formula:</strong> A digunakan untuk B</p><p class="small"><strong>Contoh:</strong> Pisau : Memotong, Sapu : Menyapu</p></div>
-<div class="box"><h4>2. Bagian dan Keseluruhan</h4><p class="small"><strong>Formula:</strong> A adalah bagian dari B</p><p class="small"><strong>Contoh Soal:</strong> Soal 58 (Mobil : kursi penumpang & bagasi), Soal 59 (Pensil : ujung & penghapus), Soal 60 (Sepatu : lubang tali & sol)</p></div>
-<div class="box"><h4>3. Bahan Baku dan Hasil Olahan</h4><p class="small"><strong>Formula:</strong> A diolah menjadi B</p><p class="small"><strong>Contoh Soal:</strong> Soal 15 (Nektar : Madu), Soal 47 (Kedelai hitam : Kecap), Soal 57 (Ayam : Daging : Sosis)</p></div>
-<div class="box"><h4>4. Tahapan / Urutan</h4><p class="small"><strong>Formula:</strong> A adalah tahap sebelum B</p><p class="small"><strong>Contoh Soal:</strong> Soal 9 (Telur : Unggas), Soal 12 (Anak : Remaja), Soal 34 (Ulat : Kepompong), Soal 41 (Kecebong : Katak)</p></div>
-<div class="box"><h4>5. Tempat / Lokasi</h4><p class="small"><strong>Formula:</strong> A berada di B</p><p class="small"><strong>Contoh Soal:</strong> Soal 48 (Hiburan : Teras), Soal 56 (Kijang : Melompat : Hutan)</p></div>
-<div class="box"><h4>6. Sifat Khas / Ciri Utama</h4><p class="small"><strong>Formula:</strong> A dikenal karena B</p><p class="small"><strong>Contoh Soal:</strong> Soal 14 (Gendang : Dangdut), Soal 42 (Pahlawan : Berani), Soal 50 (Minyak : Licin), Soal 52 (Pengemis : Miskin)</p></div>
-<div class="box"><h4>7. Intensitas / Tingkatan</h4><p class="small"><strong>Formula:</strong> B adalah bentuk lebih kuat dari A</p><p class="small"><strong>Contoh Soal:</strong> Soal 13 (Menegur : Membentak), Soal 17 (Marah : Murka), Soal 27 (Melihat : Melotot), Soal 35 (Hangat : Panas), Soal 40 (Tersenyum : Terbahak)</p></div>
-<div class="box"><h4>8. Sebab-Akibat</h4><p class="small"><strong>Formula:</strong> A menyebabkan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 2 (Makan : Begah), Soal 22 (Sakit : Pucat), Soal 46 (Luka : Bengkak)</p></div>
-<div class="box"><h4>9. Indikator / Penanda</h4><p class="small"><strong>Formula:</strong> A menandakan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 16 (Harga : Kualitas), Soal 51 (Kualitas : Harga)</p></div>
-<div class="box"><h4>10. Ketiadaan / Ketidakpemilikan</h4><p class="small"><strong>Formula:</strong> A tidak memiliki B</p><p class="small"><strong>Contoh Soal:</strong> Soal 28 (Domba : Taring)</p></div>
-<div class="box"><h4>11. Lawan Kondisi</h4><p class="small"><strong>Formula:</strong> A adalah kondisi tanpa B</p><p class="small"><strong>Contoh Soal:</strong> Soal 3 (Kemandirian : Bantuan), Soal 5 (Perang : Perdamaian), Soal 36 (Mencuri : Dermawan), Soal 38 (Bayi : Mandiri)</p></div>
-<div class="box"><h4>12. Proses dan Hasil</h4><p class="small"><strong>Formula:</strong> A bertujuan menghasilkan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 19 (Diskusi : Keputusan), Soal 24 (Tanam : Panen), Soal 31 (Diskusi : Keputusan = Kegiatan : Laporan)</p></div>
-<div class="box"><h4>13. Sinonim</h4><p class="small"><strong>Formula:</strong> A bermakna sama dengan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 11 (Fit : Ketat = Relatif : Nisbi)</p></div>
-<div class="box"><h4>14. Antonim</h4><p class="small"><strong>Formula:</strong> A berlawanan dengan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 53 (Berbisik : Berteriak = Lembab : Kering)</p></div>
-<div class="box"><h4>15. Kegiatan dan Manfaat</h4><p class="small"><strong>Formula:</strong> A menghasilkan manfaat B</p><p class="small"><strong>Contoh Soal:</strong> Soal 26 (Olahraga : Bugar), Soal 37 (Olahraga : Bugar = Sekolah : Pandai)</p></div>
-<div class="box"><h4>16. Perubahan Wujud / Fase</h4><p class="small"><strong>Formula:</strong> A berubah wujud menjadi B</p><p class="small"><strong>Contoh Soal:</strong> Soal 34 (Ulat : Kepompong = Air : Es)</p></div>
-<div class="box"><h4>17. Kondisi dan Ciri Khas Suasana</h4><p class="small"><strong>Formula:</strong> A identik dengan suasana B</p><p class="small"><strong>Contoh Soal:</strong> Soal 21 (Kemarau : Panas = Gunung : Sejuk), Soal 32 (Pasar : Ramai = Gunung : Sepi)</p></div>
-<div class="box"><h4>18. Aliran Terhambat</h4><p class="small"><strong>Formula:</strong> A dan kondisi ketika alirannya terhambat</p><p class="small"><strong>Contoh Soal:</strong> Soal 23 (Air : Tergenang = Jalan : Macet)</p></div>
-<div class="box"><h4>19. Kegiatan dan Zat Pelengkap</h4><p class="small"><strong>Formula:</strong> A dibantu oleh B</p><p class="small"><strong>Contoh Soal:</strong> Soal 25 (Makan : Garam = Obat : Air)</p></div>
-<div class="box"><h4>20. Perilaku Negatif dan Sifat Positif Berlawanan</h4><p class="small"><strong>Formula:</strong> A berkebalikan dengan B</p><p class="small"><strong>Contoh Soal:</strong> Soal 36 (Mencuri : Dermawan = Perundungan : Pengasih)</p></div>
+<div class="box"><h4>1. Fungsi / Kegunaan</h4><p class="small"><strong>Formula:</strong> A digunakan untuk B</p><p class="small"><strong>Contoh Soal:</strong> Kompetitor : Bersaing, Motivator : Mendorong, Setrika : Rapi, Mesin : Gerak</p></div>
+<div class="box"><h4>2. Bagian dan Keseluruhan</h4><p class="small"><strong>Formula:</strong> A adalah bagian dari B</p><p class="small"><strong>Contoh Soal:</strong> Pasal : Undang-Undang = Ban : Mobil, Mobil : kursi penumpang & bagasi</p></div>
+<div class="box"><h4>3. Bahan Baku dan Hasil Olahan</h4><p class="small"><strong>Formula:</strong> A diolah menjadi B</p><p class="small"><strong>Contoh Soal:</strong> Nektar : Madu, Kedelai hitam : Kecap, Ayam : Daging : Sosis</p></div>
+<div class="box"><h4>4. Tahapan / Urutan</h4><p class="small"><strong>Formula:</strong> A adalah tahap sebelum B</p><p class="small"><strong>Contoh Soal:</strong> Telur : Unggas, Anak : Remaja, Kecebong : Katak, Embrio : Janin</p></div>
+<div class="box"><h4>5. Tempat / Lokasi</h4><p class="small"><strong>Formula:</strong> A berada di B</p><p class="small"><strong>Contoh Soal:</strong> Hiburan : Teras = Upacara : Lapangan, Kijang : Melompat : Hutan</p></div>
+<div class="box"><h4>6. Sifat Khas / Ciri Utama</h4><p class="small"><strong>Formula:</strong> A dikenal karena B</p><p class="small"><strong>Contoh Soal:</strong> Gendang : Dangdut, Pahlawan : Berani, Minyak : Licin, Pengemis : Miskin</p></div>
+<div class="box"><h4>7. Intensitas / Tingkatan</h4><p class="small"><strong>Formula:</strong> B adalah bentuk lebih kuat dari A</p><p class="small"><strong>Contoh Soal:</strong> Menegur : Membentak, Marah : Murka, Melihat : Melotot, Hangat : Panas</p></div>
+<div class="box"><h4>8. Sebab-Akibat</h4><p class="small"><strong>Formula:</strong> A menyebabkan B</p><p class="small"><strong>Contoh Soal:</strong> Makan : Begah, Sakit : Pucat, Luka : Bengkak, Kekecewaan : Kesedihan</p></div>
+<div class="box"><h4>9. Indikator / Penanda</h4><p class="small"><strong>Formula:</strong> A menandakan B</p><p class="small"><strong>Contoh Soal:</strong> Harga : Kualitas, Kualitas : Harga, Lampu Kuning : Pelan-Pelan</p></div>
+<div class="box"><h4>10. Ketiadaan / Ketidakpemilikan</h4><p class="small"><strong>Formula:</strong> A tidak memiliki B</p><p class="small"><strong>Contoh Soal:</strong> Domba : Taring, Juara : Kekalahan</p></div>
+<div class="box"><h4>11. Lawan Kondisi</h4><p class="small"><strong>Formula:</strong> A adalah kondisi tanpa B</p><p class="small"><strong>Contoh Soal:</strong> Kemandirian : Bantuan, Perang : Perdamaian, Transportasi : Kemacetan</p></div>
+<div class="box"><h4>12. Proses dan Hasil</h4><p class="small"><strong>Formula:</strong> A bertujuan menghasilkan B</p><p class="small"><strong>Contoh Soal:</strong> Diskusi : Keputusan, Tanam : Panen, Diskusi : Kegiatan : Laporan</p></div>
+<div class="box"><h4>13. Sinonim</h4><p class="small"><strong>Formula:</strong> A bermakna sama dengan B</p><p class="small"><strong>Contoh Soal:</strong> Fit : Ketat = Relatif : Nisbi</p></div>
+<div class="box"><h4>14. Antonim</h4><p class="small"><strong>Formula:</strong> A berlawanan dengan B</p><p class="small"><strong>Contoh Soal:</strong> Berbisik : Berteriak = Lembab : Kering, Persekongkolan : Sendiri</p></div>
+<div class="box"><h4>15. Kegiatan dan Manfaat</h4><p class="small"><strong>Formula:</strong> A menghasilkan manfaat B</p><p class="small"><strong>Contoh Soal:</strong> Olahraga : Bugar, Olahraga : Bugar = Sekolah : Pandai</p></div>
+<div class="box"><h4>16. Perubahan Wujud / Fase</h4><p class="small"><strong>Formula:</strong> A berubah wujud menjadi B</p><p class="small"><strong>Contoh Soal:</strong> Ulat : Kepompong = Air : Es, Metamorfosis : Ulat = Sublimasi : Es kering</p></div>
+<div class="box"><h4>17. Kondisi dan Ciri Khas Suasana</h4><p class="small"><strong>Formula:</strong> A identik dengan suasana B</p><p class="small"><strong>Contoh Soal:</strong> Kemarau : Panas = Gunung : Sejuk, Pasar : Ramai = Gunung : Sepi</p></div>
+<div class="box"><h4>18. Aliran Terhambat</h4><p class="small"><strong>Formula:</strong> A dan kondisi ketika alirannya terhambat</p><p class="small"><strong>Contoh Soal:</strong> Air : Tergenang = Jalan : Macet</p></div>
+<div class="box"><h4>19. Kegiatan dan Zat Pelengkap</h4><p class="small"><strong>Formula:</strong> A dibantu oleh B</p><p class="small"><strong>Contoh Soal:</strong> Makan : Garam = Obat : Air</p></div>
+<div class="box"><h4>20. Perilaku Negatif dan Sifat Positif Berlawanan</h4><p class="small"><strong>Formula:</strong> A berkebalikan dengan B</p><p class="small"><strong>Contoh Soal:</strong> Mencuri : Dermawan = Perundungan : Pengasih</p></div>
 </div>
 
 <h3>Cara Membedakan Pola yang Mirip</h3>
 <div class="table-scroll">
 <table>
 <tr><th>Pola yang Mirip</th><th>Cara Membedakan</th><th>Contoh Soal</th></tr>
-<tr><td>Fungsi vs Tempat</td><td>Jika kata kedua menunjukkan <em>kegunaan</em>, itu fungsi. Jika menunjukkan <em>lokasi</em>, itu tempat.</td><td>Soal 48 (Hiburan : Teras = Tempat)</td></tr>
-<tr><td>Sebab-Akibat vs Tahapan</td><td>Sebab-akibat: satu hal <em>menyebabkan</em> hal lain. Tahapan: hanya <em>urutan</em>, bukan penyebab.</td><td>Soal 2 (Sebab-akibat) vs Soal 12 (Tahapan)</td></tr>
-<tr><td>Intensitas vs Sinonim</td><td>Intensitas ada <em>kenaikan derajat</em>. Sinonim bermakna <em>setara</em> tanpa kenaikan.</td><td>Soal 13 (Intensitas) vs Soal 11 (Sinonim)</td></tr>
-<tr><td>Indikator vs Akibat</td><td>Indikator <em>menandai</em> sesuatu. Akibat adalah <em>hasil</em> dari penyebab.</td><td>Soal 16 (Indikator) vs Soal 46 (Akibat)</td></tr>
-<tr><td>Ketiadaan vs Lawan Kata</td><td>Ketiadaan: <em>tidak memiliki</em> sesuatu. Lawan kata: dua kata saling <em>berlawanan makna</em>.</td><td>Soal 28 (Ketiadaan) vs Soal 53 (Lawan kata)</td></tr>
-<tr><td>Proses vs Hasil</td><td>Proses adalah <em>kegiatan yang berlangsung</em>. Hasil adalah <em>sesuatu yang diperoleh</em> setelah proses selesai.</td><td>Soal 6 (Proses) vs Soal 24 (Hasil)</td></tr>
+<tr><td>Fungsi vs Tempat</td><td>Jika kata kedua menunjukkan <em>kegunaan</em>, itu fungsi. Jika menunjukkan <em>lokasi</em>, itu tempat.</td><td>Hiburan : Teras = Tempat</td></tr>
+<tr><td>Sebab-Akibat vs Tahapan</td><td>Sebab-akibat: satu hal <em>menyebabkan</em> hal lain. Tahapan: hanya <em>urutan</em>, bukan penyebab.</td><td>Makan : Begah (sebab) vs Anak : Remaja (tahapan)</td></tr>
+<tr><td>Intensitas vs Sinonim</td><td>Intensitas ada <em>kenaikan derajat</em>. Sinonim bermakna <em>setara</em> tanpa kenaikan.</td><td>Menegur : Membentak (intensitas) vs Fit : Ketat (sinonim)</td></tr>
+<tr><td>Indikator vs Akibat</td><td>Indikator <em>menandai</em> sesuatu. Akibat adalah <em>hasil</em> dari penyebab.</td><td>Harga : Kualitas (indikator) vs Luka : Bengkak (akibat)</td></tr>
+<tr><td>Ketiadaan vs Lawan Kata</td><td>Ketiadaan: <em>tidak memiliki</em> sesuatu. Lawan kata: dua kata saling <em>berlawanan makna</em>.</td><td>Domba : Taring (ketiadaan) vs Berbisik : Berteriak (lawan)</td></tr>
+<tr><td>Proses vs Hasil</td><td>Proses adalah <em>kegiatan yang berlangsung</em>. Hasil adalah <em>sesuatu yang diperoleh</em> setelah proses selesai.</td><td>Hamil : Melahirkan (proses) vs Tanam : Panen (hasil)</td></tr>
 </table>
 </div>
 </section>
 
-<!-- ===== M6: LEVEL 1 PEMULA ===== -->
-<section class="card" id="m6">
-<h2>6. Level 1 – Pemula</h2>
+<!-- ===== M8: LEVEL 1 PEMULA ===== -->
+<section class="card" id="m8">
+<h2>8. Level 1 – Pemula</h2>
 <span class="badge l1">Tahap Dasar</span>
 <p>Pada level ini, tujuan utamanya adalah memahami bahwa setiap pasangan kata memiliki hubungan. Hubungan itu harus dapat dijelaskan dengan kalimat sederhana.</p>
 <h3>Kompetensi yang Harus Dicapai</h3>
@@ -543,11 +1204,24 @@ ol li,ul li{margin:8px 0}
 <li><strong>Pilih jawaban yang paling sesuai.</strong> Jika ada dua yang cocok, pilih yang lebih spesifik.</li>
 </ol>
 <h3>Contoh Latihan Terbimbing Level 1</h3>
-<div class="soal-example">
-<p><strong>Langkah 1:</strong> Baca soal: TELUR : UNGGAS = TUNAS : ...</p>
-<p><strong>Langkah 2:</strong> Buat kalimat: "Telur berkembang menjadi unggas."</p>
-<p><strong>Langkah 3:</strong> Uji pilihan: "Tunas berkembang menjadi ...?"</p>
-<p><strong>Langkah 4:</strong> Jawaban: E. Tumbuhan (Tunas berkembang menjadi tumbuhan) ✓</p>
+<div class="is" data-a="e">
+<p class="is-q">TELUR : UNGGAS = TUNAS : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Biji</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Daun</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Akar</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Air</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Tumbuhan</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb">
+<strong>Langkah 1:</strong> Baca soal: TELUR : UNGGAS = TUNAS : ...<br>
+<strong>Langkah 2:</strong> Buat kalimat: "Telur berkembang menjadi unggas."<br>
+<strong>Langkah 3:</strong> Uji pilihan: "Tunas berkembang menjadi ...?"<br>
+<strong>Langkah 4:</strong> Jawaban: E. Tumbuhan (Tunas berkembang menjadi tumbuhan) ✓
+</div>
+</div>
 </div>
 <h3>Kesalahan Umum Pemula</h3>
 <div class="highlight red">
@@ -560,9 +1234,9 @@ ol li,ul li{margin:8px 0}
 </div>
 </section>
 
-<!-- ===== M7: LEVEL 2 MENENGAH ===== -->
-<section class="card" id="m7">
-<h2>7. Level 2 – Menengah</h2>
+<!-- ===== M9: LEVEL 2 MENENGAH ===== -->
+<section class="card" id="m9">
+<h2>9. Level 2 – Menengah</h2>
 <span class="badge l2">Tahap Pengembangan</span>
 <p>Pada level ini, Anda tidak lagi sekadar memahami bahwa dua kata memiliki hubungan. Anda harus mampu mengidentifikasi <strong>jenis hubungan secara presisi</strong>, menyusun <strong>kalimat jembatan yang valid</strong>, serta mengeliminasi pilihan yang mengecoh.</p>
 <h3>Kerangka Berpikir Level 2</h3>
@@ -574,21 +1248,82 @@ ol li,ul li{margin:8px 0}
 <li><strong>Validasi akhir.</strong> Periksa arah hubungan, tingkatan makna, kelas kata, dan domain persoalan.</li>
 </ol>
 <h3>Contoh Analisis Mendalam</h3>
-<div class="soal-example">
-<h4>HAMIL : MELAHIRKAN = MEMASAK : ...</h4>
-<p><strong>Analisis:</strong> Hubungan antara Hamil dan Melahirkan adalah sebuah urutan proses yang berkesinambungan. Kehamilan adalah sebuah proses yang puncaknya adalah tindakan melahirkan. Hal yang sama yaitu Memasak dan Menyajikan. Memasak adalah sebuah proses yang setelah memasak selesai yaitu tindakan Menyajikan.</p>
-<p class="small"><strong>Mengapa bukan "matang"?</strong> Karena matang adalah <em>kondisi</em>, bukan <em>tindakan lanjutan</em> setelah memasak. Jawaban: <strong>E. Menyajikan</strong>.</p>
+
+<div class="is" data-a="e">
+<p class="is-q">HAMIL : MELAHIRKAN = MEMASAK : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Matang</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Makanan</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Api</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Dapur</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Menyajikan</button>
 </div>
-<div class="soal-example">
-<h4>AIR : TERGENANG = JALAN : ...</h4>
-<p><strong>Analisis:</strong> Hubungan antara Air dan Tergenang adalah sesuatu dan kondisi ketika alirannya terhambat. Air yang tidak bisa mengalir akan tergenang. Hal yang sama yaitu Jalan yang aliran lalu lintasnya terhambat akan mengalami Macet.</p>
-<p class="small">Jawaban: <strong>E. Macet</strong>.</p>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Hubungan antara Hamil dan Melahirkan adalah sebuah urutan proses yang berkesinambungan. Kehamilan adalah sebuah proses yang puncaknya adalah tindakan melahirkan. Hal yang sama yaitu Memasak dan Menyajikan. Memasak adalah sebuah proses yang setelah memasak selesai yaitu tindakan Menyajikan.<br><br><strong>Mengapa bukan "matang"?</strong> Karena matang adalah <em>kondisi</em>, bukan <em>tindakan lanjutan</em> setelah memasak. Jawaban: <strong>E. Menyajikan</strong>.</div>
 </div>
-<div class="soal-example">
-<h4>HARGA : KUALITAS = RESPONSIF : ...</h4>
-<p><strong>Analisis:</strong> Hubungan kata pada soal adalah indikator/penanda. Harga yang tinggi sering kali menjadi indikator dari Kualitas yang baik. Dengan analogi yang sama, sifat Responsif (cepat menanggapi) adalah indikator dari Pelayanan yang baik.</p>
-<p class="small">Jawaban: <strong>E. Pelayanan</strong>.</p>
 </div>
+
+<div class="is" data-a="e">
+<p class="is-q">AIR : TERGENANG = JALAN : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Rusak</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Aspal</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Bolong</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Raya</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Macet</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Hubungan antara Air dan Tergenang adalah sesuatu dan kondisi ketika alirannya terhambat. Air yang tidak bisa mengalir akan tergenang. Hal yang sama yaitu Jalan yang aliran lalu lintasnya terhambat akan mengalami Macet.<br><br>Jawaban: <strong>E. Macet</strong>.</div>
+</div>
+</div>
+
+<div class="is" data-a="e">
+<p class="is-q">HARGA : KUALITAS = RESPONSIF : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Cerdas</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Komplain</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Lambat</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Pelanggan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Pelayanan</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Hubungan kata pada soal adalah indikator/penanda. Harga yang tinggi sering kali menjadi indikator dari Kualitas yang baik. Dengan analogi yang sama, sifat Responsif (cepat menanggapi) adalah indikator dari Pelayanan yang baik.<br><br>Jawaban: <strong>E. Pelayanan</strong>.</div>
+</div>
+</div>
+
+<div class="is" data-a="c">
+<p class="is-q">PENA : TINTA = VIOLIN : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Nada</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Musik</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Dawai</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Busur</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Melodi</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Pena adalah alat tulis yang memerlukan tinta agar berfungsi. Violin adalah alat musik gesek yang memerlukan dawai agar menghasilkan suara. Keduanya adalah <em>alat dan komponen esensialnya</em>.<br><br>Jawaban: <strong>C. Dawai</strong>.</div>
+</div>
+</div>
+
+<div class="is" data-a="b">
+<p class="is-q">FOTOSINTESIS : KLOROFIL = RESPIRASI : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Oksigen</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Mitokondria</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Karbon dioksida</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Paru-paru</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Hemoglobin</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Fotosintesis adalah proses metabolisme yang terjadi di klorofil. Respirasi adalah proses metabolisme yang terjadi di mitokondria. Keduanya adalah <em>proses metabolisme dan organel tempat terjadinya</em>.<br><br>Jawaban: <strong>B. Mitokondria</strong>.</div>
+</div>
+</div>
+
 <h3>Protokol Eliminasi Lima Lapis</h3>
 <ol>
 <li>Hapus pilihan yang hanya mirip temanya, tetapi tidak sama hubungannya.</li>
@@ -599,9 +1334,9 @@ ol li,ul li{margin:8px 0}
 </ol>
 </section>
 
-<!-- ===== M8: LEVEL 3 MAHIR ===== -->
-<section class="card" id="m8">
-<h2>8. Level 3 – Mahir</h2>
+<!-- ===== M10: LEVEL 3 MAHIR ===== -->
+<section class="card" id="m10">
+<h2>10. Level 3 – Mahir</h2>
 <span class="badge l3">Tahap Lanjutan</span>
 <p>Level 3 dirancang untuk menghadapi soal yang tidak langsung terlihat jawabannya. Pada tahap ini, soal sering kali bersifat <strong>abstrak, implisit, memiliki banyak lapisan hubungan</strong>, atau mengandung pilihan yang sangat mirip.</p>
 <h3>Framework Tujuh Pertanyaan Diagnostik</h3>
@@ -615,21 +1350,82 @@ ol li,ul li{margin:8px 0}
 <li><strong>Apakah jawaban membutuhkan asumsi berlebihan?</strong> Jawaban terbaik adalah yang paling sedikit membutuhkan asumsi tambahan.</li>
 </ol>
 <h3>Contoh Analisis Mahir</h3>
-<div class="soal-example">
-<h4>KEMANDIRIAN : BANTUAN = TRANSPORTASI : ...</h4>
-<p><strong>Analisis:</strong> Hubungan antara Kemandirian dan Bantuan adalah lawan kata dari suatu kondisi. Kemandirian adalah kondisi di mana seseorang tidak memerlukan bantuan. Hal yang sama terdapat pada kata Transportasi yaitu adalah kondisi adanya pergerakan atau perpindahan dan lawan dari kondisi tersebut yaitu Kemacetan yang merupakan keadaan dimana pergerakan terhenti atau terhambat.</p>
-<p class="small">Jawaban: <strong>C. Kemacetan</strong>.</p>
+
+<div class="is" data-a="c">
+<p class="is-q">KEMANDIRIAN : BANTUAN = TRANSPORTASI : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Perjalanan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Penumpang</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kemacetan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Kendaraan</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Pengangkutan</button>
 </div>
-<div class="soal-example">
-<h4>BICARA : DEBAT : DISKUSI = ... : ... : ...</h4>
-<p><strong>Analisis:</strong> BICARA merupakan suatu tindakan yang dapat dilakukan dalam bentuk DEBAT (cenderung negatif) atau DISKUSI (cenderung positif), sebagaimana EVALUASI merupakan tindakan awal yang dapat dilakukan dalam bentuk KRITIK (cenderung negatif) atau APRESIASI (cenderung positif).</p>
-<p class="small">Jawaban: <strong>D. Evaluasi : Kritik : Apresiasi</strong>.</p>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Hubungan antara Kemandirian dan Bantuan adalah lawan kata dari suatu kondisi. Kemandirian adalah kondisi di mana seseorang tidak memerlukan bantuan. Hal yang sama terdapat pada kata Transportasi yaitu adalah kondisi adanya pergerakan atau perpindahan dan lawan dari kondisi tersebut yaitu Kemacetan yang merupakan keadaan dimana pergerakan terhenti atau terhambat.<br><br>Jawaban: <strong>C. Kemacetan</strong>.</div>
 </div>
-<div class="soal-example">
-<h4>AYAM : DAGING : SOSIS = ... : ... : ...</h4>
-<p><strong>Analisis:</strong> Ayam diambil dagingnya untuk dibuat sosis sebagaimana dengan sapi yang diambil susunya untuk dibuat mentega.</p>
-<p class="small">Jawaban: <strong>E. Sapi : Susu : Mentega</strong>.</p>
 </div>
+
+<div class="is" data-a="d">
+<p class="is-q">BICARA : DEBAT : DISKUSI = ... : ... : ... <span class="badge year">TIU CPNS 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Menulis : Membaca : Menyimpulkan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Tidur : Mimpi : Bangun</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Berdiri : Jalan : Lari</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Evaluasi : Kritik : Apresiasi</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Tanam : Rawat : Panen</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> BICARA merupakan suatu tindakan yang dapat dilakukan dalam bentuk DEBAT (cenderung negatif) atau DISKUSI (cenderung positif), sebagaimana EVALUASI merupakan tindakan awal yang dapat dilakukan dalam bentuk KRITIK (cenderung negatif) atau APRESIASI (cenderung positif).<br><br>Jawaban: <strong>D. Evaluasi : Kritik : Apresiasi</strong>.</div>
+</div>
+</div>
+
+<div class="is" data-a="e">
+<p class="is-q">AYAM : DAGING : SOSIS = ... : ... : ... <span class="badge year">TIU CPNS 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Buaya : Kulit : Dompet</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Burung : Terbang : Langit</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Gajah : Belalai : Gading</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Harimau : Belang : Tas</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Sapi : Susu : Mentega</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Ayam diambil dagingnya untuk dibuat sosis sebagaimana dengan sapi yang diambil susunya untuk dibuat mentega.<br><br>Jawaban: <strong>E. Sapi : Susu : Mentega</strong>.</div>
+</div>
+</div>
+
+<div class="is" data-a="d">
+<p class="is-q">MENCURI : DERMAWAN = PERUNDUNGAN : ... <span class="badge year">TIU SKD 2025</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Ketakutan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Pertikaian</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Pahlawan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Pengasih</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Keberanian</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Mencuri (mengambil hak orang lain) adalah tindakan yang berkebalikan dengan sifat dermawan (suka memberi/membantu orang lain). Sifat pengasih (penuh kasih sayang, peduli, dan melindungi) adalah kebalikan langsung dari tindakan perundungan.<br><br>Jawaban: <strong>D. Pengasih</strong>.</div>
+</div>
+</div>
+
+<div class="is" data-a="c">
+<p class="is-q">NEGARA : KONFLIK = BENCANA : ... <span class="badge year">TIU CPNS 2024</span></p>
+<div class="is-opts">
+<button class="is-o" data-v="a"><span class="opt-label">A.</span> Perkotaan</button>
+<button class="is-o" data-v="b"><span class="opt-label">B.</span> Pengangguran</button>
+<button class="is-o" data-v="c"><span class="opt-label">C.</span> Kerusakan</button>
+<button class="is-o" data-v="d"><span class="opt-label">D.</span> Longsor</button>
+<button class="is-o" data-v="e"><span class="opt-label">E.</span> Tekanan</button>
+</div>
+<div class="is-fb hidden">
+<p class="is-status"></p>
+<div class="is-pemb"><strong>Analisis:</strong> Salah satu permasalahan yang terjadi dari suatu NEGARA adalah terjadinya KONFLIK sebagaimana salah satu permasalahan yang terjadi dari suatu BENCANA adalah terjadinya KERUSAKAN.<br><br>Jawaban: <strong>C. Kerusakan</strong>.</div>
+</div>
+</div>
+
 <h3>Strategi Ketika Dua Opsi Tersisa</h3>
 <ol>
 <li>Ulangi kalimat jembatan dengan lebih ketat. Jangan beri kelonggaran pada salah satu opsi.</li>
@@ -641,14 +1437,14 @@ ol li,ul li{margin:8px 0}
 </ol>
 </section>
 
-<!-- ===== M9: JEBAKAN UMUM ===== -->
-<section class="card" id="m9">
-<h2>9. Jebakan Umum dan Cara Menghindarinya</h2>
+<!-- ===== M11: JEBAKAN UMUM ===== -->
+<section class="card" id="m11">
+<h2>11. Jebakan Umum dan Cara Menghindarinya</h2>
 <div class="grid two">
 <div class="box">
 <h4>⚠️ Jebakan Tema Sama</h4>
 <p class="small">Pilihan jawaban memiliki tema yang sama dengan soal, tetapi hubungannya berbeda.</p>
-<p class="small"><strong>Contoh:</strong> Soal 48 (Hiburan : Teras). Pilihan D (Halaman) juga tempat, tapi bukan tempat khas untuk upacara.</p>
+<p class="small"><strong>Contoh:</strong> Soal Hiburan : Teras = Upacara : ... Pilihan D (Halaman) juga tempat, tapi bukan tempat khas untuk upacara.</p>
 <p class="small"><strong>Solusi:</strong> Fokus pada hubungan spesifik, bukan tema umum.</p>
 </div>
 <div class="box">
@@ -660,60 +1456,40 @@ ol li,ul li{margin:8px 0}
 <div class="box">
 <h4>⚠️ Jebakan Kondisi vs Tindakan</h4>
 <p class="small">Soal meminta tindakan lanjutan, tetapi pilihan menawarkan kondisi/keadaan.</p>
-<p class="small"><strong>Contoh:</strong> Soal 6 (Hamil : Melahirkan = Memasak : ...). Pilihan A (Matang) adalah kondisi, bukan tindakan.</p>
+<p class="small"><strong>Contoh:</strong> Soal Hamil : Melahirkan = Memasak : ... Pilihan A (Matang) adalah kondisi, bukan tindakan.</p>
 <p class="small"><strong>Solusi:</strong> Perhatikan apakah soal meminta proses, tindakan, atau kondisi.</p>
 </div>
 <div class="box">
 <h4>⚠️ Jebakan Bagian Alami vs Aksesoris</h4>
 <p class="small">Soal meminta bagian bawaan, tetapi pilihan menawarkan aksesoris tambahan.</p>
-<p class="small"><strong>Contoh:</strong> Soal 58 (Mobil : kursi & bagasi). Pilihan B (Pesawat : pilot & pramugari) adalah awak, bukan bagian pesawat.</p>
+<p class="small"><strong>Contoh:</strong> Soal Mobil : kursi & bagasi. Pilihan B (Pesawat : pilot & pramugari) adalah awak, bukan bagian pesawat.</p>
 <p class="small"><strong>Solusi:</strong> Bedakan bagian alami dari perlengkapan.</p>
 </div>
 <div class="box">
 <h4>⚠️ Jebakan Intensitas Tidak Setara</h4>
 <p class="small">Soal menunjukkan peningkatan derajat, tetapi pilihan tidak menunjukkan peningkatan yang setara.</p>
-<p class="small"><strong>Contoh:</strong> Soal 13 (Menegur : Membentak). Pilihan A (Mengamati) bukan peningkatan dari melihat.</p>
+<p class="small"><strong>Contoh:</strong> Soal Menegur : Membentak. Pilihan A (Mengamati) bukan peningkatan dari melihat.</p>
 <p class="small"><strong>Solusi:</strong> Pastikan tingkatan intensitas konsisten.</p>
 </div>
 <div class="box">
 <h4>⚠️ Jebakan Proses vs Hasil</h4>
 <p class="small">Soal meminta hasil akhir, tetapi pilihan menawarkan proses atau sebaliknya.</p>
-<p class="small"><strong>Contoh:</strong> Soal 31 (Diskusi : Keputusan = Kegiatan : ...). Pilihan A (Proses) bukan hasil akhir kegiatan.</p>
+<p class="small"><strong>Contoh:</strong> Soal Diskusi : Keputusan = Kegiatan : ... Pilihan A (Proses) bukan hasil akhir kegiatan.</p>
 <p class="small"><strong>Solusi:</strong> Perhatikan apakah soal meminta proses atau hasil.</p>
 </div>
+<div class="box">
+<h4>⚠️ Jebakan Properti Subjektif vs Alami</h4>
+<p class="small">Soal membandingkan berdasarkan properti alami, tetapi pilihan menawarkan penilaian subjektif.</p>
+<p class="small"><strong>Contoh:</strong> Soal Pesawat lebih cepat dari kereta. Pilihan B (Mobil balap lebih mahal) adalah penilaian subjektif.</p>
+<p class="small"><strong>Solusi:</strong> Pilih perbandingan berdasarkan properti alami yang terukur.</p>
 </div>
-</section>
-
-<!-- ===== M10: PROTOKOL UJIAN ===== -->
-<section class="card" id="m10">
-<h2>10. Protokol Pengerjaan di Ujian</h2>
-<h3>Protokol 60 Detik per Soal</h3>
-<div class="table-scroll">
-<table>
-<tr><th>Waktu</th><th>Aktivitas</th></tr>
-<tr><td><strong>5 detik</strong></td><td>Baca pasangan kata dan kenali bentuk soal (kata atau kalimat).</td></tr>
-<tr><td><strong>10 detik</strong></td><td>Tentukan kemungkinan hubungan utama.</td></tr>
-<tr><td><strong>20 detik</strong></td><td>Buat kalimat jembatan dan uji pada semua opsi.</td></tr>
-<tr><td><strong>20 detik</strong></td><td>Eliminasi opsi yang mirip tetapi salah.</td></tr>
-<tr><td><strong>5 detik</strong></td><td>Pilih jawaban yang paling konsisten dan paling sedikit membutuhkan asumsi.</td></tr>
-</table>
+<div class="box">
+<h4>⚠️ Jebakan Kategori Semu</h4>
+<p class="small">Dua hal terlihat satu kategori, tetapi sebenarnya berbeda fungsi atau sifatnya.</p>
+<p class="small"><strong>Contoh:</strong> Soal Burung pipit & merpati = jenis unggas. Pilihan E (Buku & pensil = alat tulis) salah karena buku adalah media, bukan alat tulis.</p>
+<p class="small"><strong>Solusi:</strong> Pastikan kedua objek benar-benar satu kategori fungsional.</p>
 </div>
-<h3>Checklist Sebelum Menjawab</h3>
-<ul>
-<li>☐ Saya sudah membuat kalimat hubungan.</li>
-<li>☐ Kalimat hubungan berlaku untuk ruas kiri dan kanan.</li>
-<li>☐ Arah hubungan tidak terbalik.</li>
-<li>☐ Tingkatan intensitas setara.</li>
-<li>☐ Domain/kategori setara.</li>
-<li>☐ Saya tidak perlu mengarang cerita untuk membenarkan jawaban.</li>
-</ul>
-<h3>Strategi Jika Stuck</h3>
-<ol>
-<li>Jangan panik. Lewati soal dan kembali nanti jika masih ada waktu.</li>
-<li>Jika harus menebak, eliminasi dulu 2-3 pilihan yang jelas salah.</li>
-<li>Pilih jawaban yang paling "umum" dan paling sedikit asumsi.</li>
-<li>Untuk analogi kalimat, fokus pada hubungan objek, bukan kata tambahan.</li>
-</ol>
+</div>
 </section>
 
 </div>
@@ -821,6 +1597,35 @@ if(tab==='materi'){document.querySelectorAll('.tab')[0].classList.add('active');
 else{document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-latihan').classList.add('active');}
 }
 
+/* ===== SOAL INTERAKTIF DI MATERI ===== */
+function initInteractiveSoal(){
+document.querySelectorAll('.is').forEach(function(soal){
+const answer=soal.dataset.a;
+soal.querySelectorAll('.is-o').forEach(function(btn){
+btn.addEventListener('click',function(){
+soal.querySelectorAll('.is-o').forEach(function(b){b.disabled=true;});
+const isCorrect=btn.dataset.v===answer;
+btn.classList.add(isCorrect?'is-correct':'is-wrong');
+soal.querySelector('[data-v="'+answer+'"]').classList.add('is-correct');
+const fb=soal.querySelector('.is-fb');
+fb.classList.remove('hidden');
+fb.classList.add(isCorrect?'fb-correct':'fb-wrong');
+const status=fb.querySelector('.is-status');
+if(isCorrect){
+status.textContent='✓ Benar!';
+status.className='is-status st-correct';
+}else{
+status.textContent='✗ Salah. Jawaban yang benar: '+answer.toUpperCase();
+status.className='is-status st-wrong';
+}
+fb.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+});
+});
+}
+initInteractiveSoal();
+
+/* ===== LATIHAN SOAL (dari manifest.json) ===== */
 async function loadManifest(){
 showScreen('screenLoading');
 try{

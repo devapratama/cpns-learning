@@ -1,579 +1,588 @@
 {
   "nama": "Paket 1",
-  "deskripsi": "30 soal silogisme campuran (Pemula, Menengah, Mahir) dengan pembahasan komprehensif bergaya materi",
+  "deskripsi": "30 soal silogisme sesuai FR SKD CPNS dengan pembahasan komprehensif bergaya materi",
   "totalSoal": 30,
   "soal": [
     {
       "id": 1,
-      "pertanyaan": "Semua peserta seleksi CPNS yang lolos administrasi berhak mengikuti tes SKD. Rina telah lolos seleksi administrasi. Kesimpulan yang paling tepat adalah...",
+      "pertanyaan": "Semua peserta pelatihan kerja di Balai Latihan Kota wajib mengenakan helm keselamatan saat praktik di bengkel. Andi adalah peserta pelatihan kerja di Balai Latihan Kota. Hari ini Andi mengikuti praktik pengelasan di bengkel kerja bersama dua puluh peserta lainnya. Kesimpulan yang paling tepat adalah...",
       "premis": [
-        "Semua peserta seleksi CPNS yang lolos administrasi berhak mengikuti tes SKD",
-        "Rina telah lolos seleksi administrasi"
+        "Semua peserta pelatihan kerja di Balai Latihan Kota wajib mengenakan helm keselamatan saat praktik di bengkel",
+        "Andi adalah peserta pelatihan kerja di Balai Latihan Kota",
+        "Hari ini Andi mengikuti praktik pengelasan di bengkel kerja bersama dua puluh peserta lainnya"
       ],
       "opsi": [
-        "A. Rina berhak mengikuti tes SKD",
-        "B. Rina tidak berhak mengikuti tes SKD",
-        "C. Rina mungkin mengikuti tes SKD",
-        "D. Rina pasti lulus tes SKD",
+        "A. Andi mengikuti praktik pengelasan karena ingin mendapat keterampilan baru",
+        "B. Andi adalah peserta pelatihan kerja yang paling rajin di Balai Latihan Kota",
+        "C. Andi wajib mengenakan helm keselamatan saat praktik di bengkel",
+        "D. Andi hadir di bengkel untuk bertemu dua puluh peserta lainnya",
+        "E. Andi sudah mengenakan helm keselamatan sebelum memasuki bengkel"
+      ],
+      "jawaban": "C",
+      "tipe": "Penalaran Langsung (dengan nama pelaku + bumbu narasi)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Peserta pelatihan kerja → Wajib helm keselamatan** (aturan)\n- Premis 2: **Andi = peserta pelatihan kerja** (fakta spesifik)\n- Premis 3: Andi praktik pengelasan bersama 20 peserta lain → **bumbu narasi**, tidak relevan untuk penarikan kesimpulan logis.\n\nLangkah: Andi termasuk himpunan \"peserta pelatihan kerja\". Semua anggota himpunan itu wajib helm keselamatan. Maka **Andi wajib mengenakan helm keselamatan**.\n\n**Evaluasi opsi:**\n- A. Salah — \"ingin mendapat keterampilan baru\" adalah asumsi di luar premis.\n- B. Salah — \"paling rajin\" adalah asumsi di luar premis.\n- **C. BENAR** — Sesuai premis 1 dan 2, menunjukkan hubungan logis antara status Andi dan kewajibannya.\n- D. Salah — \"bertemu peserta lain\" adalah asumsi di luar premis.\n- E. Salah — \"sudah mengenakan\" adalah asumsi di luar premis. Premis hanya bilang \"wajib\", bukan \"sudah\".\n\n**Ingat Tips:** Jika premis memuat nama pelaku, kesimpulan WAJIB memuat nama pelaku. Jangan menambahkan asumsi di luar fakta."
+    },
+    {
+      "id": 2,
+      "pertanyaan": "Setiap pengunjung museum harus membeli tiket masuk terlebih dahulu sebelum memasuki area pameran. Sari dan keluarganya berkunjung ke Museum Nasional pada hari Minggu. Di lobi museum terlihat antrean pengunjung yang cukup panjang. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Setiap pengunjung museum harus membeli tiket masuk terlebih dahulu sebelum memasuki area pameran",
+        "Sari dan keluarganya berkunjung ke Museum Nasional pada hari Minggu",
+        "Di lobi museum terlihat antrean pengunjung yang cukup panjang"
+      ],
+      "opsi": [
+        "A. Sari dan keluarganya datang ke museum karena ingin menghabiskan waktu libur",
+        "B. Sari dan keluarganya harus membeli tiket masuk terlebih dahulu sebelum memasuki area pameran",
+        "C. Sari dan keluarganya datang lebih awal untuk menghindari antrean panjang",
+        "D. Sari dan keluarganya membeli tiket lebih banyak dari biasanya untuk persiapan keluarga",
+        "E. Sari dan keluarganya memesan tiket secara daring karena antrean sangat panjang"
+      ],
+      "jawaban": "B",
+      "tipe": "Penalaran Langsung (dengan nama pelaku + bumbu narasi)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Pengunjung museum → Beli tiket dulu** (aturan)\n- Premis 2: **Sari dan keluarga = pengunjung museum** (fakta spesifik)\n- Premis 3: Antrean panjang di lobi → **bumbu narasi**, tidak relevan.\n\nLangkah: Sari dan keluarga termasuk himpunan \"pengunjung museum\". Maka mereka **harus membeli tiket masuk terlebih dahulu**.\n\n**Evaluasi opsi:**\n- A. Salah — \"ingin menghabiskan waktu libur\" adalah asumsi di luar premis.\n- **B. BENAR** — Sesuai premis 1 dan 2.\n- C. Salah — \"datang lebih awal\" adalah asumsi di luar premis.\n- D. Salah — \"membeli tiket lebih banyak\" adalah asumsi di luar premis.\n- E. Salah — \"memesan daring\" adalah asumsi di luar premis.\n\n**Ingat Tips:** Jangan menambahkan asumsi di luar fakta. Kesimpulan hanya boleh berisi informasi yang secara langsung didukung premis."
+    },
+    {
+      "id": 3,
+      "pertanyaan": "Semua pasien rawat inap di Rumah Sehat mendapat visite dokter setiap pagi. Pak Gunawan dirawat inap di Rumah Sehat sejak tiga hari yang lalu. Pagi ini Pak Gunawan terlihat berada di kamar rawat inapnya membaca koran. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua pasien rawat inap di Rumah Sehat mendapat visite dokter setiap pagi",
+        "Pak Gunawan dirawat inap di Rumah Sehat sejak tiga hari yang lalu",
+        "Pagi ini Pak Gunawan terlihat berada di kamar rawat inapnya membaca koran"
+      ],
+      "opsi": [
+        "A. Pak Gunawan membaca koran untuk menghilangkan rasa bosan selama dirawat",
+        "B. Pak Gunawan sudah dirawat di Rumah Sehat selama tiga hari tanpa keluhan",
+        "C. Pak Gunawan mendapat visite dokter pagi ini",
+        "D. Pak Gunawan akan segera dipulangkan karena kondisinya sudah membaik",
+        "E. Pak Gunawan dirawat di kamar rawat inap karena tidak ada ruang ICU yang tersedia"
+      ],
+      "jawaban": "C",
+      "tipe": "Penalaran Langsung (dengan nama pelaku + bumbu narasi)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Pasien rawat inap → Visite dokter setiap pagi** (aturan)\n- Premis 2: **Pak Gunawan = pasien rawat inap** (fakta spesifik)\n- Premis 3: Pak Gunawan membaca koran di kamar → **bumbu narasi**, tidak relevan.\n\nLangkah: Pak Gunawan termasuk himpunan \"pasien rawat inap\". Maka ia **mendapat visite dokter pagi ini**.\n\n**Evaluasi opsi:**\n- A. Salah — \"menghilangkan rasa bosan\" adalah asumsi di luar premis.\n- B. Salah — \"tanpa keluhan\" adalah asumsi di luar premis.\n- **C. BENAR** — Sesuai premis 1 dan 2.\n- D. Salah — \"akan segera dipulangkan\" adalah asumsi di luar premis.\n- E. Salah — \"tidak ada ruang ICU\" adalah asumsi di luar premis."
+    },
+    {
+      "id": 4,
+      "pertanyaan": "Setiap pengendara sepeda motor wajib memakai helm berstandar SNI saat berkendara di jalan raya. Dina mengendarai sepeda motor menuju kampus setiap pagi. Pagi ini Dina terlihat melintas di jalan raya dengan sepeda motor matic berwarna merah. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Setiap pengendara sepeda motor wajib memakai helm berstandar SNI saat berkendara di jalan raya",
+        "Dina mengendarai sepeda motor menuju kampus setiap pagi",
+        "Pagi ini Dina terlihat melintas di jalan raya dengan sepeda motor matic berwarna merah"
+      ],
+      "opsi": [
+        "A. Dina mengendarai sepeda motor matic karena lebih irit bahan bakar",
+        "B. Dina wajib memakai helm berstandar SNI saat berkendara di jalan raya",
+        "C. Dina selalu datang tepat waktu ke kampus setiap pagi",
+        "D. Dina memilih sepeda motor berwarna merah karena warna kesukaannya",
+        "E. Dina sudah sampai di kampus sebelum pukul delapan pagi"
+      ],
+      "jawaban": "B",
+      "tipe": "Penalaran Langsung (dengan nama pelaku + bumbu narasi)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Pengendara sepeda motor → Wajib helm SNI** (aturan)\n- Premis 2: **Dina = pengendara sepeda motor** (fakta spesifik)\n- Premis 3: Motor matic merah → **bumbu narasi**, tidak relevan.\n\nLangkah: Dina termasuk himpunan \"pengendara sepeda motor\". Maka ia **wajib memakai helm berstandar SNI**.\n\n**Evaluasi opsi:**\n- A. Salah — \"lebih irit\" adalah asumsi di luar premis.\n- **B. BENAR** — Sesuai premis 1 dan 2.\n- C. Salah — \"selalu tepat waktu\" adalah asumsi di luar premis.\n- D. Salah — \"warna kesukaan\" adalah asumsi di luar premis.\n- E. Salah — \"sampai sebelum pukul delapan\" adalah asumsi di luar premis."
+    },
+    {
+      "id": 5,
+      "pertanyaan": "Semua penghuni apartemen Green Garden wajib membayar iuran kebersihan bulanan kepada pengelola. Bu Ratna adalah penghuni apartemen Green Garden di lantai 12. Bulan ini Bu Ratna menerima surat tagihan iuran dari pengelola apartemen melalui kotak surat di lobi. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua penghuni apartemen Green Garden wajib membayar iuran kebersihan bulanan kepada pengelola",
+        "Bu Ratna adalah penghuni apartemen Green Garden di lantai 12",
+        "Bulan ini Bu Ratna menerima surat tagihan iuran dari pengelola apartemen melalui kotak surat di lobi"
+      ],
+      "opsi": [
+        "A. Bu Ratna menerima surat tagihan karena telat membayar iuran bulan lalu",
+        "B. Bu Ratna tinggal di lantai 12 karena pemandangannya paling bagus",
+        "C. Bu Ratna wajib membayar iuran kebersihan bulanan kepada pengelola",
+        "D. Bu Ratna akan membayar iuran melalui transfer bank karena lebih praktis",
+        "E. Bu Ratna sudah membayar iuran kebersihan bulan ini sebelum menerima tagihan"
+      ],
+      "jawaban": "C",
+      "tipe": "Penalaran Langsung (dengan nama pelaku + bumbu narasi)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Penghuni Green Garden → Wajib iuran kebersihan** (aturan)\n- Premis 2: **Bu Ratna = penghuni Green Garden** (fakta spesifik)\n- Premis 3: Surat tagihan via kotak surat → **bumbu narasi**, tidak relevan.\n\nLangkah: Bu Ratna termasuk himpunan \"penghuni Green Garden\". Maka ia **wajib membayar iuran kebersihan bulanan**.\n\n**Evaluasi opsi:**\n- A. Salah — \"telat membayar\" adalah asumsi di luar premis.\n- B. Salah — \"pemandangan bagus\" adalah asumsi di luar premis.\n- **C. BENAR** — Sesuai premis 1 dan 2.\n- D. Salah — \"transfer bank\" adalah asumsi di luar premis.\n- E. Salah — \"sudah membayar\" adalah asumsi di luar premis. Premis bilang \"wajib\", bukan \"sudah\"."
+    },
+    {
+      "id": 6,
+      "pertanyaan": "Tidak ada kucing peliharaan yang bisa terbang. Semua kucing di rumah Bu Marni adalah kucing peliharaan. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak ada kucing peliharaan yang bisa terbang",
+        "Semua kucing di rumah Bu Marni adalah kucing peliharaan"
+      ],
+      "opsi": [
+        "A. Semua kucing di rumah Bu Marni bisa terbang",
+        "B. Sebagian kucing di rumah Bu Marni bisa terbang",
+        "C. Tidak ada kucing di rumah Bu Marni yang bisa terbang",
+        "D. Semua kucing peliharaan bisa terbang",
+        "E. Tidak semua kucing di rumah Bu Marni bisa terbang"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: \"Tidak ada kucing peliharaan yang bisa terbang\" → **Kucing peliharaan → TIDAK bisa terbang**\n- Premis 2: **Kucing Bu Marni → Kucing peliharaan**\n\nSilogisme:\n1. Kucing Bu Marni → Kucing peliharaan (P → Q)\n2. Kucing peliharaan → Tidak bisa terbang (Q → ~R)\n3. Maka: **Kucing Bu Marni → Tidak bisa terbang** (P → ~R)\n\n**Kesimpulan: Tidak ada kucing di rumah Bu Marni yang bisa terbang.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak ada' dan 'Semua', maka kesimpulan harus memuat kata 'Tidak ada'.\"\n\n**Evaluasi opsi:**\n- A, B: Salah — bertentangan dengan premis 1.\n- **C. BENAR** — Sesuai silogisme.\n- D: Salah — kebalikan dari premis 1.\n- E: Kurang tepat — \"tidak semua\" lebih lemah dari \"tidak ada\". Karena premis mendukung kesimpulan yang lebih kuat, pilih \"tidak ada\"."
+    },
+    {
+      "id": 7,
+      "pertanyaan": "Tidak ada kendaraan roda dua yang memiliki empat pintu. Semua sepeda motor adalah kendaraan roda dua. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak ada kendaraan roda dua yang memiliki empat pintu",
+        "Semua sepeda motor adalah kendaraan roda dua"
+      ],
+      "opsi": [
+        "A. Semua sepeda motor memiliki empat pintu",
+        "B. Sebagian sepeda motor memiliki empat pintu",
+        "C. Tidak ada sepeda motor yang memiliki empat pintu",
+        "D. Semua kendaraan roda dua adalah sepeda motor",
+        "E. Tidak semua sepeda motor memiliki empat pintu"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Kendaraan roda dua → TIDAK punya empat pintu**\n- Premis 2: **Sepeda motor → Kendaraan roda dua**\n\nSilogisme:\n1. Sepeda motor → Kendaraan roda dua (P → Q)\n2. Kendaraan roda dua → Tidak punya empat pintu (Q → ~R)\n3. Maka: **Sepeda motor → Tidak punya empat pintu** (P → ~R)\n\n**Kesimpulan: Tidak ada sepeda motor yang memiliki empat pintu.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak ada' dan 'Semua', maka kesimpulan harus memuat kata 'Tidak ada'.\"\n\n**Evaluasi opsi:**\n- A, B: Salah — bertentangan dengan premis.\n- **C. BENAR** — Sesuai silogisme.\n- D: Salah — membalik arah premis 2.\n- E: Kurang tepat — \"tidak semua\" lebih lemah dari \"tidak ada\"."
+    },
+    {
+      "id": 8,
+      "pertanyaan": "Tidak ada ikan air tawar yang hidup di laut dalam. Semua ikan lele adalah ikan air tawar. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak ada ikan air tawar yang hidup di laut dalam",
+        "Semua ikan lele adalah ikan air tawar"
+      ],
+      "opsi": [
+        "A. Semua ikan lele hidup di laut dalam",
+        "B. Sebagian ikan lele hidup di laut dalam",
+        "C. Tidak ada ikan lele yang hidup di laut dalam",
+        "D. Semua ikan yang hidup di laut dalam adalah ikan lele",
+        "E. Tidak semua ikan lele hidup di laut dalam"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Ikan air tawar → TIDAK hidup di laut dalam**\n- Premis 2: **Ikan lele → Ikan air tawar**\n\nSilogisme:\n1. Ikan lele → Ikan air tawar (P → Q)\n2. Ikan air tawar → Tidak hidup di laut dalam (Q → ~R)\n3. Maka: **Ikan lele → Tidak hidup di laut dalam** (P → ~R)\n\n**Kesimpulan: Tidak ada ikan lele yang hidup di laut dalam.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak ada' dan 'Semua', maka kesimpulan harus memuat kata 'Tidak ada'.\"\n\n**Evaluasi opsi:**\n- A, B: Salah — bertentangan dengan premis.\n- **C. BENAR** — Sesuai silogisme.\n- D: Salah — membalik arah premis.\n- E: Kurang tepat — \"tidak semua\" lebih lemah dari \"tidak ada\"."
+    },
+    {
+      "id": 9,
+      "pertanyaan": "Tidak ada sayuran hijau yang mengandung kolesterol tinggi. Semua bayam adalah sayuran hijau. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak ada sayuran hijau yang mengandung kolesterol tinggi",
+        "Semua bayam adalah sayuran hijau"
+      ],
+      "opsi": [
+        "A. Semua bayam mengandung kolesterol tinggi",
+        "B. Sebagian bayam mengandung kolesterol tinggi",
+        "C. Tidak ada bayam yang mengandung kolesterol tinggi",
+        "D. Semua sayuran yang mengandung kolesterol tinggi adalah bayam",
+        "E. Tidak semua bayam mengandung kolesterol tinggi"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Ada + Semua",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Sayuran hijau → TIDAK mengandung kolesterol tinggi**\n- Premis 2: **Bayam → Sayuran hijau**\n\nSilogisme:\n1. Bayam → Sayuran hijau (P → Q)\n2. Sayuran hijau → Tidak mengandung kolesterol tinggi (Q → ~R)\n3. Maka: **Bayam → Tidak mengandung kolesterol tinggi** (P → ~R)\n\n**Kesimpulan: Tidak ada bayam yang mengandung kolesterol tinggi.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak ada' dan 'Semua', maka kesimpulan harus memuat kata 'Tidak ada'.\"\n\n**Evaluasi opsi:**\n- A, B: Salah — bertentangan dengan premis.\n- **C. BENAR** — Sesuai silogisme.\n- D: Salah — membalik arah premis.\n- E: Kurang tepat — \"tidak semua\" lebih lemah dari \"tidak ada\"."
+    },
+    {
+      "id": 10,
+      "pertanyaan": "Semua peserta kursus bahasa Inggris di Lembaga Prima mendapat sertifikat kelulusan. Semua peserta yang mendapat sertifikat kelulusan diundang ke acara penutupan program. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua peserta kursus bahasa Inggris di Lembaga Prima mendapat sertifikat kelulusan",
+        "Semua peserta yang mendapat sertifikat kelulusan diundang ke acara penutupan program"
+      ],
+      "opsi": [
+        "A. Semua peserta yang diundang ke acara penutupan program adalah peserta kursus bahasa Inggris di Lembaga Prima",
+        "B. Sebagian peserta kursus bahasa Inggris di Lembaga Prima diundang ke acara penutupan program",
+        "C. Semua peserta kursus bahasa Inggris di Lembaga Prima diundang ke acara penutupan program",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada peserta kursus bahasa Inggris di Lembaga Prima yang diundang ke acara penutupan program"
+      ],
+      "jawaban": "C",
+      "tipe": "Semua + Semua (Silogisme Berantai)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Peserta kursus Lembaga Prima → Sertifikat kelulusan** (P → Q)\n- Premis 2: **Sertifikat kelulusan → Diundang penutupan** (Q → R)\n\nSilogisme berantai: P → Q, Q → R, maka **P → R**.\n\n**Kesimpulan: Semua peserta kursus bahasa Inggris di Lembaga Prima diundang ke acara penutupan program.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'semua' dan 'semua', maka kesimpulan harus memuat kata 'semua'.\"\n\n> \"Kalimat yang dicetak miring (middle term) tidak boleh dimuat dalam kesimpulan.\"\n\nMiddle term: \"mendapat sertifikat kelulusan\" — tidak boleh muncul di kesimpulan.\n\n**Evaluasi opsi:**\n- A: Salah — membalik arah premis (R → P).\n- B: Kurang tepat — \"sebagian\" lebih lemah dari \"semua\".\n- **C. BENAR** — Sesuai silogisme berantai.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis."
+    },
+    {
+      "id": 11,
+      "pertanyaan": "Semua rumah di Perumahan Bukit Indah mendapat layanan keamanan 24 jam. Semua karyawan PT Sentosa tinggal di Perumahan Bukit Indah. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua rumah di Perumahan Bukit Indah mendapat layanan keamanan 24 jam",
+        "Semua karyawan PT Sentosa tinggal di Perumahan Bukit Indah"
+      ],
+      "opsi": [
+        "A. Sebagian karyawan PT Sentosa mendapat layanan keamanan 24 jam",
+        "B. Semua karyawan PT Sentosa tidak ada yang mendapat layanan keamanan 24 jam",
+        "C. Sebagian karyawan PT Sentosa mendapat layanan keamanan 24 jam tidak tinggal di Perumahan Bukit Indah",
+        "D. Semua karyawan PT Sentosa mendapat layanan keamanan 24 jam",
+        "E. Semua penghuni di Perumahan Bukit Indah adalah karyawan PT Sentosa"
+      ],
+      "jawaban": "D",
+      "tipe": "Semua + Semua (Silogisme Berantai)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Rumah di Bukit Indah → Layanan keamanan 24 jam** (Q → R)\n- Premis 2: **Karyawan PT Sentosa → Tinggal di Bukit Indah** (P → Q)\n\nSilogisme berantai: P → Q, Q → R, maka **P → R**.\n\n**Kesimpulan: Semua karyawan PT Sentosa mendapat layanan keamanan 24 jam.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'semua' dan 'semua', maka kesimpulan harus memuat kata 'semua'.\"\n\n> \"Kalimat yang dicetak miring (middle term) tidak boleh dimuat dalam kesimpulan.\"\n\nMiddle term: \"tinggal di Perumahan Bukit Indah\" — tidak boleh muncul di kesimpulan.\n\n**Evaluasi opsi:**\n- A: Kurang tepat — \"sebagian\" lebih lemah dari \"semua\".\n- B: Salah — bertentangan dengan premis.\n- C: Salah — tidak didukung premis.\n- **D. BENAR** — Sesuai silogisme berantai.\n- E: Salah — membalik arah premis 2."
+    },
+    {
+      "id": 12,
+      "pertanyaan": "Semua anggota klub fotografi kota wajib mengikuti pameran tahunan. Semua peserta pameran tahunan mendapat katalog karya cetak. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua anggota klub fotografi kota wajib mengikuti pameran tahunan",
+        "Semua peserta pameran tahunan mendapat katalog karya cetak"
+      ],
+      "opsi": [
+        "A. Semua peserta yang mendapat katalog karya cetak adalah anggota klub fotografi kota",
+        "B. Sebagian anggota klub fotografi kota mendapat katalog karya cetak",
+        "C. Semua anggota klub fotografi kota mendapat katalog karya cetak",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada anggota klub fotografi kota yang mendapat katalog karya cetak"
+      ],
+      "jawaban": "C",
+      "tipe": "Semua + Semua (Silogisme Berantai)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Anggota klub fotografi → Ikut pameran tahunan** (P → Q)\n- Premis 2: **Peserta pameran → Katalog karya** (Q → R)\n\nSilogisme berantai: P → Q, Q → R, maka **P → R**.\n\n**Kesimpulan: Semua anggota klub fotografi kota mendapat katalog karya cetak.**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'semua' dan 'semua', maka kesimpulan harus memuat kata 'semua'.\"\n\n**Evaluasi opsi:**\n- A: Salah — membalik arah premis.\n- B: Kurang tepat — \"sebagian\" lebih lemah dari \"semua\".\n- **C. BENAR** — Sesuai silogisme berantai.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis."
+    },
+    {
+      "id": 13,
+      "pertanyaan": "Semua peserta lomba memasak di Festival Kuliner wajib menyerahkan resep kepada juri. Beberapa peserta lomba memasak di Festival Kuliner adalah ibu rumah tangga. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua peserta lomba memasak di Festival Kuliner wajib menyerahkan resep kepada juri",
+        "Beberapa peserta lomba memasak di Festival Kuliner adalah ibu rumah tangga"
+      ],
+      "opsi": [
+        "A. Semua ibu rumah tangga wajib menyerahkan resep kepada juri",
+        "B. Beberapa ibu rumah tangga wajib menyerahkan resep kepada juri",
+        "C. Semua peserta lomba memasak di Festival Kuliner adalah ibu rumah tangga",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada ibu rumah tangga yang mengikuti lomba memasak"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Peserta lomba memasak → Wajib serahkan resep** (Semua P adalah Q)\n- Premis 2: **Beberapa peserta lomba memasak → Ibu rumah tangga** (Beberapa P adalah R)\n\nLangkah:\n1. Semua P masuk ke dalam Q\n2. Beberapa P bersifat R\n3. Maka beberapa R (yang juga P) bersifat Q\n\n**Kesimpulan: Beberapa ibu rumah tangga wajib menyerahkan resep kepada juri.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n> \"Kalimat yang dicetak miring (middle term) tidak boleh dimuat dalam kesimpulan.\"\n\nMiddle term: \"peserta lomba memasak di Festival Kuliner\" — tidak boleh muncul di kesimpulan.\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat, premis 2 hanya \"beberapa\".\n- **B. BENAR** — Sesuai aturan \"beberapa\".\n- C: Salah — membalik arah premis 2.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis 2."
+    },
+    {
+      "id": 14,
+      "pertanyaan": "Semua lulusan program beasiswa pemerintah wajib mengabdi di daerah terpencil selama dua tahun. Beberapa lulusan program beasiswa pemerintah adalah dokter spesialis. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua lulusan program beasiswa pemerintah wajib mengabdi di daerah terpencil selama dua tahun",
+        "Beberapa lulusan program beasiswa pemerintah adalah dokter spesialis"
+      ],
+      "opsi": [
+        "A. Semua dokter spesialis wajib mengabdi di daerah terpencil selama dua tahun",
+        "B. Beberapa dokter spesialis wajib mengabdi di daerah terpencil selama dua tahun",
+        "C. Semua lulusan program beasiswa pemerintah adalah dokter spesialis",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada dokter spesialis yang lulusan program beasiswa pemerintah"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Lulusan beasiswa → Wajib abdi daerah terpencil** (Semua P adalah Q)\n- Premis 2: **Beberapa lulusan beasiswa → Dokter spesialis** (Beberapa P adalah R)\n\nLangkah:\n1. Semua P masuk ke dalam Q\n2. Beberapa P bersifat R\n3. Maka beberapa R (yang juga P) bersifat Q\n\n**Kesimpulan: Beberapa dokter spesialis wajib mengabdi di daerah terpencil selama dua tahun.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- **B. BENAR** — Sesuai aturan \"beberapa\".\n- C: Salah — membalik arah premis 2.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis 2."
+    },
+    {
+      "id": 15,
+      "pertanyaan": "Semua pemain orkestra kota wajib hadir di sesi latihan setiap hari Rabu. Beberapa pemain orkestra kota juga menjadi pengajar di konservatori musik. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua pemain orkestra kota wajib hadir di sesi latihan setiap hari Rabu",
+        "Beberapa pemain orkestra kota juga menjadi pengajar di konservatori musik"
+      ],
+      "opsi": [
+        "A. Semua pengajar di konservatori musik wajib hadir di sesi latihan setiap hari Rabu",
+        "B. Beberapa pengajar di konservatori musik wajib hadir di sesi latihan setiap hari Rabu",
+        "C. Semua pemain orkestra kota menjadi pengajar di konservatori musik",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada pengajar di konservatori musik yang menjadi pemain orkestra kota"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Pemain orkestra → Wajib hadir latihan Rabu** (Semua P adalah Q)\n- Premis 2: **Beberapa pemain orkestra → Pengajar konservatori** (Beberapa P adalah R)\n\nLangkah:\n1. Semua P masuk ke dalam Q\n2. Beberapa P bersifat R\n3. Maka beberapa R (yang juga P) bersifat Q\n\n**Kesimpulan: Beberapa pengajar di konservatori musik wajib hadir di sesi latihan setiap hari Rabu.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- **B. BENAR** — Sesuai aturan \"beberapa\".\n- C: Salah — membalik arah premis 2.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis 2."
+    },
+    {
+      "id": 16,
+      "pertanyaan": "Semua produk ekspor harus melewati pemeriksaan karantina sebelum dikirim ke luar negeri. Beberapa produk ekspor adalah hasil perikanan. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua produk ekspor harus melewati pemeriksaan karantina sebelum dikirim ke luar negeri",
+        "Beberapa produk ekspor adalah hasil perikanan"
+      ],
+      "opsi": [
+        "A. Semua hasil perikanan harus melewati pemeriksaan karantina",
+        "B. Beberapa hasil perikanan harus melewati pemeriksaan karantina",
+        "C. Semua produk ekspor adalah hasil perikanan",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada hasil perikanan yang diekspor"
+      ],
+      "jawaban": "B",
+      "tipe": "Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Produk ekspor → Pemeriksaan karantina** (Semua P adalah Q)\n- Premis 2: **Beberapa produk ekspor → Hasil perikanan** (Beberapa P adalah R)\n\nLangkah:\n1. Semua P masuk ke dalam Q\n2. Beberapa P bersifat R\n3. Maka beberapa R (yang juga P) bersifat Q\n\n**Kesimpulan: Beberapa hasil perikanan harus melewati pemeriksaan karantina.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- **B. BENAR** — Sesuai aturan \"beberapa\".\n- C: Salah — membalik arah premis 2.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis 2."
+    },
+    {
+      "id": 17,
+      "pertanyaan": "Tidak semua penghuni kompleks perumahan memiliki kendaraan pribadi. Beberapa peserta rapat RT adalah penghuni kompleks perumahan. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak semua penghuni kompleks perumahan memiliki kendaraan pribadi",
+        "Beberapa peserta rapat RT adalah penghuni kompleks perumahan"
+      ],
+      "opsi": [
+        "A. Semua peserta rapat RT memiliki kendaraan pribadi",
+        "B. Semua peserta rapat RT tidak memiliki kendaraan pribadi",
+        "C. Beberapa peserta rapat RT tidak memiliki kendaraan pribadi",
+        "D. Semua penghuni kompleks perumahan adalah peserta rapat RT",
+        "E. Beberapa penghuni kompleks perumahan bukan peserta rapat RT"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: \"Tidak semua penghuni kompleks punya kendaraan pribadi\" → **Sebagian penghuni TIDAK punya kendaraan pribadi** (bukan \"tidak ada\" — sebagian lain mungkin TETAP punya)\n- Premis 2: **Beberapa peserta rapat RT → Penghuni kompleks**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak semua' dan 'beberapa', maka dalam kesimpulan harus memuat kata 'Tidak semua/beberapa'.\"\n\n> \"Kalimat yang dicetak miring (middle term) tidak boleh dimuat dalam kesimpulan.\"\n\nMiddle term: \"penghuni kompleks perumahan\" — tidak boleh muncul di kesimpulan.\n\nLangkah:\n1. Beberapa peserta rapat RT adalah penghuni kompleks\n2. Tidak semua penghuni kompleks punya kendaraan pribadi (artinya ada yang tidak)\n3. Maka **beberapa peserta rapat RT tidak memiliki kendaraan pribadi**\n\n**Kesimpulan: Beberapa peserta rapat RT tidak memiliki kendaraan pribadi.**\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- B: Salah — \"semua tidak\" terlalu kuat.\n- **C. BENAR** — Sesuai aturan \"Tidak semua + beberapa\".\n- D: Salah — membalik arah premis 2.\n- E: Salah — tidak didukung premis secara langsung."
+    },
+    {
+      "id": 18,
+      "pertanyaan": "Tidak semua pelanggan kedai kopi memesan minuman dingin. Beberapa pengunjung perpustakaan adalah pelanggan kedai kopi. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak semua pelanggan kedai kopi memesan minuman dingin",
+        "Beberapa pengunjung perpustakaan adalah pelanggan kedai kopi"
+      ],
+      "opsi": [
+        "A. Semua pengunjung perpustakaan memesan minuman dingin",
+        "B. Semua pengunjung perpustakaan tidak memesan minuman dingin",
+        "C. Beberapa pengunjung perpustakaan tidak memesan minuman dingin",
+        "D. Semua pelanggan kedai kopi adalah pengunjung perpustakaan",
+        "E. Beberapa pelanggan kedai kopi bukan pengunjung perpustakaan"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: \"Tidak semua pelanggan kedai kopi pesan minuman dingin\" → **Sebagian pelanggan TIDAK pesan minuman dingin**\n- Premis 2: **Beberapa pengunjung perpustakaan → Pelanggan kedai kopi**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak semua' dan 'beberapa', maka dalam kesimpulan harus memuat kata 'Tidak semua/beberapa'.\"\n\n> \"Kalimat yang dicetak miring (middle term) tidak boleh dimuat dalam kesimpulan.\"\n\nMiddle term: \"pelanggan kedai kopi\" — tidak boleh muncul di kesimpulan.\n\n**Kesimpulan: Beberapa pengunjung perpustakaan tidak memesan minuman dingin.**\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- B: Salah — \"semua tidak\" terlalu kuat.\n- **C. BENAR** — Sesuai aturan \"Tidak semua + beberapa\".\n- D: Salah — membalik arah premis 2.\n- E: Salah — tidak didukung premis secara langsung."
+    },
+    {
+      "id": 19,
+      "pertanyaan": "Tidak semua karyawan pabrik tekstil bekerja di bagian penjahitan. Beberapa peserta pelatihan keselamatan kerja adalah karyawan pabrik tekstil. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Tidak semua karyawan pabrik tekstil bekerja di bagian penjahitan",
+        "Beberapa peserta pelatihan keselamatan kerja adalah karyawan pabrik tekstil"
+      ],
+      "opsi": [
+        "A. Semua peserta pelatihan keselamatan kerja bekerja di bagian penjahitan",
+        "B. Semua peserta pelatihan keselamatan kerja tidak bekerja di bagian penjahitan",
+        "C. Beberapa peserta pelatihan keselamatan kerja tidak bekerja di bagian penjahitan",
+        "D. Semua karyawan pabrik tekstil adalah peserta pelatihan keselamatan kerja",
+        "E. Beberapa karyawan pabrik tekstil bukan peserta pelatihan keselamatan kerja"
+      ],
+      "jawaban": "C",
+      "tipe": "Tidak Semua + Beberapa",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: \"Tidak semua karyawan pabrik tekstil kerja di penjahitan\" → **Sebagian karyawan TIDAK kerja di penjahitan**\n- Premis 2: **Beberapa peserta pelatihan → Karyawan pabrik tekstil**\n\n**Ingat Tips:**\n> \"Jika dua premis masing-masing memuat kata 'Tidak semua' dan 'beberapa', maka dalam kesimpulan harus memuat kata 'Tidak semua/beberapa'.\"\n\n> \"Kalimat yang dicetak miring (middle term) tidak boleh dimuat dalam kesimpulan.\"\n\nMiddle term: \"karyawan pabrik tekstil\" — tidak boleh muncul di kesimpulan.\n\n**Kesimpulan: Beberapa peserta pelatihan keselamatan kerja tidak bekerja di bagian penjahitan.**\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- B: Salah — \"semua tidak\" terlalu kuat.\n- **C. BENAR** — Sesuai aturan \"Tidak semua + beberapa\".\n- D: Salah — membalik arah premis 2.\n- E: Salah — tidak didukung premis secara langsung."
+    },
+    {
+      "id": 20,
+      "pertanyaan": "Semua pelukis yang karyanya dipamerkan di galeri nasional memiliki teknik melukis yang unik. Beberapa pelukis dengan teknik melukis yang unik juga menjadi kurator seni. Raden adalah pelukis yang karyanya dipamerkan di galeri nasional. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua pelukis yang karyanya dipamerkan di galeri nasional memiliki teknik melukis yang unik",
+        "Beberapa pelukis dengan teknik melukis yang unik juga menjadi kurator seni",
+        "Raden adalah pelukis yang karyanya dipamerkan di galeri nasional"
+      ],
+      "opsi": [
+        "A. Raden pasti menjadi kurator seni",
+        "B. Raden mungkin menjadi kurator seni",
+        "C. Raden tidak mungkin menjadi kurator seni",
+        "D. Semua kurator seni adalah pelukis yang karyanya dipamerkan di galeri nasional",
+        "E. Tidak ada kesimpulan yang dapat ditarik"
+      ],
+      "jawaban": "B",
+      "tipe": "Nama pelaku + Beberapa → Mungkin",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Dipamerkan galeri nasional → Teknik unik** (Semua P adalah Q)\n- Premis 2: **Beberapa yang teknik unik → Kurator seni** (Beberapa Q adalah R)\n- Premis 3: **Raden → Dipamerkan galeri nasional** (P benar untuk Raden)\n\nLangkah:\n1. Dari P1 dan P3: Raden **PASTI punya teknik unik**\n2. Dari P2: hanya **BEBERAPA** yang teknik unik yang jadi kurator seni\n3. Kita TIDAK TAHU apakah Raden termasuk \"beberapa\" itu atau tidak\n\n**Ingat Tips:**\n> \"Jika dalam premis memuat nama pelaku/orang, maka dalam kesimpulan WAJIB termuat nama pelaku. Ini berarti opsi D dan E salah. Karena dalam premis memuat kata 'beberapa' maka kesimpulan yang tepat adalah '[Nama] mungkin [R]'\"\n\n**Kesimpulan: Raden MUNGKIN menjadi kurator seni.**\n\n**Evaluasi opsi:**\n- A: Salah — \"pasti\" terlalu kuat, premis 2 hanya \"beberapa\".\n- **B. BENAR** — Sesuai aturan nama pelaku + \"beberapa\" → \"mungkin\".\n- C: Salah — kita tidak bisa bilang \"tidak mungkin\", bisa saja Raden termasuk.\n- D: Salah — membalik arah premis + tidak memuat nama pelaku.\n- E: Salah — kesimpulan bisa ditarik (minimal soal teknik unik)."
+    },
+    {
+      "id": 21,
+      "pertanyaan": "Semua atlet yang memenangkan medali emas di kejuaraan nasional mendapat bonus dari pemerintah. Beberapa atlet yang mendapat bonus dari pemerintah menjadi pelatih tim nasional. Lisa adalah atlet yang memenangkan medali emas di kejuaraan nasional. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua atlet yang memenangkan medali emas di kejuaraan nasional mendapat bonus dari pemerintah",
+        "Beberapa atlet yang mendapat bonus dari pemerintah menjadi pelatih tim nasional",
+        "Lisa adalah atlet yang memenangkan medali emas di kejuaraan nasional"
+      ],
+      "opsi": [
+        "A. Lisa pasti menjadi pelatih tim nasional",
+        "B. Lisa mungkin menjadi pelatih tim nasional",
+        "C. Lisa tidak mungkin menjadi pelatih tim nasional",
+        "D. Semua pelatih tim nasional adalah atlet yang memenangkan medali emas",
+        "E. Tidak ada kesimpulan yang dapat ditarik"
+      ],
+      "jawaban": "B",
+      "tipe": "Nama pelaku + Beberapa → Mungkin",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Medali emas → Bonus pemerintah** (Semua P adalah Q)\n- Premis 2: **Beberapa yang dapat bonus → Pelatih timnas** (Beberapa Q adalah R)\n- Premis 3: **Lisa → Medali emas** (P benar untuk Lisa)\n\nLangkah:\n1. Dari P1 dan P3: Lisa **PASTI dapat bonus**\n2. Dari P2: hanya **BEBERAPA** yang dapat bonus yang jadi pelatih timnas\n3. Kita TIDAK TAHU apakah Lisa termasuk \"beberapa\" itu atau tidak\n\n**Ingat Tips:**\n> \"Jika dalam premis memuat nama pelaku/orang, maka dalam kesimpulan WAJIB termuat nama pelaku. Karena dalam premis memuat kata 'beberapa' maka kesimpulan yang tepat adalah '[Nama] mungkin [R]'\"\n\n**Kesimpulan: Lisa MUNGKIN menjadi pelatih tim nasional.**\n\n**Evaluasi opsi:**\n- A: Salah — \"pasti\" terlalu kuat.\n- **B. BENAR** — Sesuai aturan nama pelaku + \"beberapa\" → \"mungkin\".\n- C: Salah — kita tidak bisa bilang \"tidak mungkin\".\n- D: Salah — membalik arah premis + tidak memuat nama pelaku.\n- E: Salah — kesimpulan bisa ditarik."
+    },
+    {
+      "id": 22,
+      "pertanyaan": "Semua peneliti yang mempublikasikan jurnal internasional bereputasi mendapat insentif riset dari lembaga. Beberapa peneliti yang mendapat insentif riset menjadi dosen tamu di universitas asing. Prof. Hartono adalah peneliti yang mempublikasikan jurnal internasional bereputasi. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua peneliti yang mempublikasikan jurnal internasional bereputasi mendapat insentif riset dari lembaga",
+        "Beberapa peneliti yang mendapat insentif riset menjadi dosen tamu di universitas asing",
+        "Prof. Hartono adalah peneliti yang mempublikasikan jurnal internasional bereputasi"
+      ],
+      "opsi": [
+        "A. Prof. Hartono pasti menjadi dosen tamu di universitas asing",
+        "B. Prof. Hartono mungkin menjadi dosen tamu di universitas asing",
+        "C. Prof. Hartono tidak mungkin menjadi dosen tamu di universitas asing",
+        "D. Semua dosen tamu di universitas asing adalah peneliti yang mempublikasikan jurnal internasional",
+        "E. Tidak ada kesimpulan yang dapat ditarik"
+      ],
+      "jawaban": "B",
+      "tipe": "Nama pelaku + Beberapa → Mungkin",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Jurnal internasional → Insentif riset** (Semua P adalah Q)\n- Premis 2: **Beberapa yang dapat insentif → Dosen tamu asing** (Beberapa Q adalah R)\n- Premis 3: **Prof. Hartono → Jurnal internasional** (P benar untuk Prof. Hartono)\n\nLangkah:\n1. Dari P1 dan P3: Prof. Hartono **PASTI dapat insentif riset**\n2. Dari P2: hanya **BEBERAPA** yang dapat insentif yang jadi dosen tamu\n3. Kita TIDAK TAHU apakah Prof. Hartono termasuk \"beberapa\" itu atau tidak\n\n**Ingat Tips:**\n> \"Jika dalam premis memuat nama pelaku/orang, maka dalam kesimpulan WAJIB termuat nama pelaku. Karena dalam premis memuat kata 'beberapa' maka kesimpulan yang tepat adalah '[Nama] mungkin [R]'\"\n\n**Kesimpulan: Prof. Hartono MUNGKIN menjadi dosen tamu di universitas asing.**\n\n**Evaluasi opsi:**\n- A: Salah — \"pasti\" terlalu kuat.\n- **B. BENAR** — Sesuai aturan nama pelaku + \"beberapa\" → \"mungkin\".\n- C: Salah — kita tidak bisa bilang \"tidak mungkin\".\n- D: Salah — membalik arah premis + tidak memuat nama pelaku.\n- E: Salah — kesimpulan bisa ditarik."
+    },
+    {
+      "id": 23,
+      "pertanyaan": "Semua siswa yang mengikuti program akselerasi wajib mengikuti tes IQ. Beberapa siswa yang mengikuti tes IQ juga mengikuti konseling psikologi. Semua siswa yang mengikuti konseling psikologi mendapat rekomendasi dari wali kelas. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua siswa yang mengikuti program akselerasi wajib mengikuti tes IQ",
+        "Beberapa siswa yang mengikuti tes IQ juga mengikuti konseling psikologi",
+        "Semua siswa yang mengikuti konseling psikologi mendapat rekomendasi dari wali kelas"
+      ],
+      "opsi": [
+        "A. Semua siswa yang mengikuti program akselerasi mendapat rekomendasi dari wali kelas",
+        "B. Beberapa siswa yang mengikuti program akselerasi mendapat rekomendasi dari wali kelas",
+        "C. Semua siswa yang mendapat rekomendasi dari wali kelas mengikuti program akselerasi",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada siswa yang mengikuti program akselerasi yang mendapat rekomendasi dari wali kelas"
+      ],
+      "jawaban": "B",
+      "tipe": "3 Premis Kompleks (Semua + Beberapa + Semua)",
+      "tingkat": "Mahir",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Program akselerasi → Tes IQ** (Semua P adalah Q)\n- Premis 2: **Beberapa yang tes IQ → Konseling psikologi** (Beberapa Q adalah R)\n- Premis 3: **Konseling psikologi → Rekomendasi wali kelas** (Semua R adalah S)\n\nLangkah:\n1. Dari P1 dan P2: Beberapa siswa program akselerasi → konseling psikologi (karena semua akselerasi ikut tes IQ, dan beberapa yang tes IQ ikut konseling)\n2. Dari hasil dan P3: Beberapa siswa program akselerasi → dapat rekomendasi wali kelas\n\n**Kesimpulan: Beberapa siswa yang mengikuti program akselerasi mendapat rekomendasi dari wali kelas.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat, premis 2 hanya \"beberapa\".\n- **B. BENAR** — Sesuai silogisme 3 premis.\n- C: Salah — membalik arah premis.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis."
+    },
+    {
+      "id": 24,
+      "pertanyaan": "Semua peserta yang lolos seleksi berkas diundang untuk tes wawancara. Beberapa peserta yang diundang tes wawancara berasal dari luar kota. Tidak ada peserta dari luar kota yang tidak mendapat akomodasi dari panitia. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua peserta yang lolos seleksi berkas diundang untuk tes wawancara",
+        "Beberapa peserta yang diundang tes wawancara berasal dari luar kota",
+        "Tidak ada peserta dari luar kota yang tidak mendapat akomodasi dari panitia"
+      ],
+      "opsi": [
+        "A. Semua peserta yang lolos seleksi berkas mendapat akomodasi dari panitia",
+        "B. Beberapa peserta yang lolos seleksi berkas mendapat akomodasi dari panitia",
+        "C. Semua peserta yang mendapat akomodasi dari panitia lolos seleksi berkas",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada peserta yang lolos seleksi berkas yang mendapat akomodasi dari panitia"
+      ],
+      "jawaban": "B",
+      "tipe": "3 Premis Kompleks (Semua + Beberapa + Tidak Ada)",
+      "tingkat": "Mahir",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Lolos berkas → Diundang wawancara** (Semua P adalah Q)\n- Premis 2: **Beberapa yang diundang → Dari luar kota** (Beberapa Q adalah R)\n- Premis 3: \"Tidak ada peserta luar kota yang tidak dapat akomodasi\" → **Dari luar kota → Dapat akomodasi** (Semua R adalah S)\n\nLangkah:\n1. Dari P1 dan P2: Beberapa peserta yang lolos berkas berasal dari luar kota\n2. Dari hasil dan P3: Beberapa peserta yang lolos berkas mendapat akomodasi dari panitia\n\n**Kesimpulan: Beberapa peserta yang lolos seleksi berkas mendapat akomodasi dari panitia.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- **B. BENAR** — Sesuai silogisme 3 premis.\n- C: Salah — membalik arah premis.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis."
+    },
+    {
+      "id": 25,
+      "pertanyaan": "Semua karyawan yang bekerja lebih dari 10 tahun mendapat cuti panjang. Beberapa karyawan yang mendapat cuti panjang menggunakan cutinya untuk bepergian ke luar negeri. Semua karyawan yang bepergian ke luar negeri wajib mengurus paspor terlebih dahulu. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Semua karyawan yang bekerja lebih dari 10 tahun mendapat cuti panjang",
+        "Beberapa karyawan yang mendapat cuti panjang menggunakan cutinya untuk bepergian ke luar negeri",
+        "Semua karyawan yang bepergian ke luar negeri wajib mengurus paspor terlebih dahulu"
+      ],
+      "opsi": [
+        "A. Semua karyawan yang bekerja lebih dari 10 tahun wajib mengurus paspor terlebih dahulu",
+        "B. Beberapa karyawan yang bekerja lebih dari 10 tahun wajib mengurus paspor terlebih dahulu",
+        "C. Semua karyawan yang wajib mengurus paspor bekerja lebih dari 10 tahun",
+        "D. Tidak dapat ditarik kesimpulan",
+        "E. Tidak ada karyawan yang bekerja lebih dari 10 tahun yang wajib mengurus paspor"
+      ],
+      "jawaban": "B",
+      "tipe": "3 Premis Kompleks (Semua + Beberapa + Semua)",
+      "tingkat": "Mahir",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Kerja > 10 tahun → Cuti panjang** (Semua P adalah Q)\n- Premis 2: **Beberapa yang cuti panjang → Bepergian luar negeri** (Beberapa Q adalah R)\n- Premis 3: **Bepergian luar negeri → Wajib urus paspor** (Semua R adalah S)\n\nLangkah:\n1. Dari P1 dan P2: Beberapa karyawan kerja > 10 tahun bepergian ke luar negeri\n2. Dari hasil dan P3: Beberapa karyawan kerja > 10 tahun wajib urus paspor\n\n**Kesimpulan: Beberapa karyawan yang bekerja lebih dari 10 tahun wajib mengurus paspor terlebih dahulu.**\n\n**Ingat Tips:**\n> \"Kedua premis menggunakan kata 'semua' dan 'beberapa', kesimpulan yang menggunakan 'semua' dan 'tidak ada' dipastikan salah.\"\n\n**Evaluasi opsi:**\n- A: Salah — \"semua\" terlalu kuat.\n- **B. BENAR** — Sesuai silogisme 3 premis.\n- C: Salah — membalik arah premis.\n- D: Salah — kesimpulan bisa ditarik.\n- E: Salah — bertentangan dengan premis."
+    },
+    {
+      "id": 26,
+      "pertanyaan": "Jika seorang pelamar telah lulus tes kesehatan, maka ia berhak mengikuti tes wawancara. Rina telah lulus tes kesehatan. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Jika seorang pelamar telah lulus tes kesehatan, maka ia berhak mengikuti tes wawancara",
+        "Rina telah lulus tes kesehatan"
+      ],
+      "opsi": [
+        "A. Rina berhak mengikuti tes wawancara",
+        "B. Rina tidak berhak mengikuti tes wawancara",
+        "C. Rina mungkin berhak mengikuti tes wawancara",
+        "D. Rina pasti lulus tes wawancara",
         "E. Tidak dapat disimpulkan"
       ],
       "jawaban": "A",
       "tipe": "Modus Ponens",
       "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Ponens** paling dasar — persis seperti toples permen pertama di materi! Coba kita bedah pelan-pelan.\n\nPremis 1 (aturan besar): **Semua yang lolos administrasi → berhak SKD** (kalau kamu lolos, kamu pasti berhak)\nPremis 2 (fakta kecil): **Rina lolos administrasi** (syarat P terbukti benar)\n\nKarena syarat P sudah pasti terpenuhi, akibat Q otomatis mengikuti. Ingat rumus Modus Ponens: **P → Q, P benar, maka Q pasti benar**.\n\nJadi kesimpulannya: **Rina berhak mengikuti tes SKD**.\n\n**Kenapa opsi lain salah?**\n- Opsi C (\"mungkin\") adalah jebakan klasik. Kata \"mungkin\" hanya sah kalau premisnya mengandung \"sebagian\" — di sini premisnya \"semua\", jadi hasilnya PASTI, bukan mungkin.\n- Opsi D (\"pasti lulus SKD\") adalah **overclaim** — premis cuma bilang \"berhak mengikuti\", bukan \"pasti lulus\". Jangan menambahkan info yang tidak pernah dinyatakan.\n- Opsi E salah karena kesimpulannya sangat jelas dan pasti.\n\n**Ingat dari materi:** Kalau premisnya \"semua\" atau \"tidak ada\", konklusinya PASTI. Kalau premisnya \"sebagian\", baru konklusinya NGGAK PASTI."
+      "pembahasan": "Analisis premis:\n- Premis 1: **Lulus tes kesehatan → Berhak tes wawancara** (P → Q)\n- Premis 2: **Rina lulus tes kesehatan** (P benar)\n\n**Modus Ponens:** P → Q, P benar, maka Q pasti benar.\n\n**Kesimpulan: Rina berhak mengikuti tes wawancara.**\n\n**Evaluasi opsi:**\n- **A. BENAR** — Sesuai Modus Ponens.\n- B: Salah — bertentangan dengan Modus Ponens.\n- C: Salah — Modus Ponens memberi KEPASTIAN, bukan kemungkinan.\n- D: Salah — **overclaim**. Premis bilang \"berhak mengikuti\", bukan \"pasti lulus\". Jangan menambah info yang tidak ada.\n- E: Salah — kesimpulan jelas dan pasti.\n\n**Ingat:** Kalau premisnya \"semua\" atau implikasi pasti, konklusinya PASTI. Kalau ada nama pelaku di premis, kesimpulan WAJIB memuat nama pelaku."
     },
     {
-      "id": 2,
-      "pertanyaan": "Jika laporan keuangan telah diaudit, maka laporan tersebut dapat dipublikasikan. Laporan keuangan ini belum diaudit. Kesimpulan yang paling tepat adalah...",
+      "id": 27,
+      "pertanyaan": "Jika jalan tol baru dibuka, maka waktu tempuh perjalanan dari kota A ke kota B berkurang. Waktu tempuh perjalanan dari kota A ke kota B tidak berkurang. Kesimpulan yang paling tepat adalah...",
       "premis": [
-        "Jika laporan keuangan telah diaudit, maka laporan tersebut dapat dipublikasikan",
-        "Laporan keuangan ini belum diaudit"
+        "Jika jalan tol baru dibuka, maka waktu tempuh perjalanan dari kota A ke kota B berkurang",
+        "Waktu tempuh perjalanan dari kota A ke kota B tidak berkurang"
       ],
       "opsi": [
-        "A. Laporan keuangan ini dapat dipublikasikan",
-        "B. Laporan keuangan ini tidak dapat dipublikasikan",
-        "C. Laporan keuangan ini akan diaudit besok",
+        "A. Jalan tol baru dibuka",
+        "B. Jalan tol baru tidak dibuka",
+        "C. Jalan tol baru mungkin dibuka",
         "D. Tidak dapat disimpulkan",
-        "E. Laporan keuangan ini tidak perlu diaudit"
+        "E. Jalan tol baru akan dibuka bulan depan"
+      ],
+      "jawaban": "B",
+      "tipe": "Modus Tollens",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Jalan tol dibuka → Waktu tempuh berkurang** (P → Q)\n- Premis 2: **Waktu tempuh TIDAK berkurang** (~Q)\n\n**Modus Tollens:** P → Q, ~Q, maka ~P.\n\nLogikanya: Seandainya jalan tol dibuka, maka waktu tempuh PASTI berkurang. Tapi faktanya waktu tempuh TIDAK berkurang. Berarti jalan tol PASTI tidak dibuka.\n\n**Kesimpulan: Jalan tol baru tidak dibuka.**\n\n**Evaluasi opsi:**\n- A: Salah — bertentangan dengan Modus Tollens.\n- **B. BENAR** — Sesuai Modus Tollens.\n- C: Salah — Modus Tollens memberi KEPASTIAN, bukan kemungkinan.\n- D: Salah — Modus Tollens adalah pola SAH yang memberi kesimpulan pasti.\n- E: Salah — info tambahan yang tidak ada di premis.\n\n**Ingat:** Modus Tollens hanya berlaku dari arah belakang (~Q maka ~P). Tidak berlaku sebaliknya: jika ~P, tidak bisa langsung disimpulkan ~Q."
+    },
+    {
+      "id": 28,
+      "pertanyaan": "Jika seorang siswa mendapat nilai sempurna di ujian akhir, maka ia mendapat beasiswa penuh dari sekolah. Andi tidak mendapat nilai sempurna di ujian akhir. Kesimpulan yang paling tepat adalah...",
+      "premis": [
+        "Jika seorang siswa mendapat nilai sempurna di ujian akhir, maka ia mendapat beasiswa penuh dari sekolah",
+        "Andi tidak mendapat nilai sempurna di ujian akhir"
+      ],
+      "opsi": [
+        "A. Andi mendapat beasiswa penuh dari sekolah",
+        "B. Andi tidak mendapat beasiswa penuh dari sekolah",
+        "C. Andi mungkin mendapat beasiswa penuh dari sekolah",
+        "D. Tidak dapat disimpulkan apakah Andi mendapat beasiswa penuh dari sekolah",
+        "E. Andi akan mendapat beasiswa dari sumber lain"
       ],
       "jawaban": "D",
       "tipe": "TDDS (Denying the Antecedent)",
       "tingkat": "Menengah",
-      "pembahasan": "Hati-hati! Ini adalah **jebakan denying the antecedent** yang sering banget muncul di soal TIU.\n\nCoba kita tulis logikanya:\n- Premis 1: **Audit → Publikasi** (P → Q)\n- Premis 2: **Belum diaudit** (~P)\n\nNah, dari ~P (syarat tidak terpenuhi), **kita TIDAK BISA** menyimpulkan apapun soal Q. Kenapa? Karena publikasi bisa terjadi lewat **jalur lain** yang tidak disebutkan di premis. Mungkin laporan bisa dipublikasikan tanpa diaudit, mungkin ada mekanisme darurat, kita nggak tahu — premis tidak memberi info soal itu.\n\nBayangkan analogi dari materi: \"Kalau hujan turun, jalan pasti basah. Ternyata tidak hujan.\" Bisakah kita pastikan jalan tidak basah? Tidak! Jalan bisa saja basah karena disiram, karena ada tumpahan air, dll.\n\n**Kenapa opsi B salah?** Itu jebakan terbesar — banyak peserta langsung menjawab \"tidak dipublikasikan\" karena mengira ~P → ~Q. Padahal itu **tidak sah secara logika**.\n\n**Ingat dari materi tabel Modus Ponens/Tollens:**\n- P benar → Q benar ✓ (sah)\n- Q salah → P salah ✓ (sah, ini modus tollens)\n- Q benar → **tidak bisa dipastikan** (jebakan affirming consequent)\n- P salah → **tidak bisa dipastikan** (jebakan denying antecedent) ← kasus soal ini!"
-    },
-    {
-      "id": 3,
-      "pertanyaan": "Semua peserta seleksi CPNS yang lolos administrasi berhak mengikuti tes SKD. Rina telah lolos seleksi administrasi. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua peserta seleksi CPNS yang lolos administrasi berhak mengikuti tes SKD",
-        "Rina telah lolos seleksi administrasi"
-      ],
-      "opsi": [
-        "A. Rina berhak mengikuti tes SKD",
-        "B. Rina tidak berhak mengikuti tes SKD",
-        "C. Rina mungkin mengikuti tes SKD",
-        "D. Rina pasti lulus tes SKD",
-        "E. Tidak dapat disimpulkan"
-      ],
-      "jawaban": "A",
-      "tipe": "Penalaran Langsung",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini contoh **penalaran langsung** paling sederhana — persis seperti materi bagian \"Dasar\" tentang toples permen.\n\n**Premis 1 (mayor):** Semua peserta yang lolos administrasi → berhak SKD (aturan besar)\n**Premis 2 (minor):** Rina adalah peserta yang lolos administrasi (fakta spesifik tentang satu orang)\n\nMiddle term-nya adalah \"peserta yang lolos administrasi\" — muncul di kedua premis dan berperan sebagai jembatan. Karena Rina termasuk dalam kelompok tersebut, sifat kelompok itu otomatis berlaku untuk Rina.\n\n**Kesimpulan:** Rina berhak mengikuti tes SKD.\n\n**Tips dari materi:**\n- Premis mayor = cakupan luas (semua peserta)\n- Premis minor = cakupan sempit/spesifik (Rina doang)\n- Kesimpulan wajib memuat nama pelaku (Rina) karena disebut di premis minor.\n\n**Kenapa opsi D salah?** Itu overclaim — premis hanya menyebut \"berhak mengikuti\", bukan \"pasti lulus\". Jangan menambah hubungan yang tidak dinyatakan di premis!"
-    },
-    {
-      "id": 4,
-      "pertanyaan": "Tidak ada dokumen rahasia yang boleh difotokopi. File yang ditemukan di meja kerja ini boleh difotokopi. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Tidak ada dokumen rahasia yang boleh difotokopi",
-        "File yang ditemukan di meja kerja ini boleh difotokopi"
-      ],
-      "opsi": [
-        "A. File ini adalah dokumen rahasia",
-        "B. File ini bukan dokumen rahasia",
-        "C. File ini mungkin dokumen rahasia",
-        "D. Tidak dapat disimpulkan",
-        "E. File ini akan menjadi dokumen rahasia"
-      ],
-      "jawaban": "B",
-      "tipe": "Modus Tollens Kategorial",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah pola **Modus Tollens** dalam bentuk kategorial (pakai \"tidak ada\"). Coba kita bedah pelan-pelan.\n\n**Premis 1:** Tidak ada dokumen rahasia yang boleh difotokopi\nIni artinya: **Dokumen rahasia → TIDAK boleh difotokopi**\nAtau kontraposisinya: **Boleh difotokopi → BUKAN dokumen rahasia**\n\n**Premis 2:** File ini boleh difotokopi (Q benar, dalam bentuk kontraposisi)\n\nDengan Modus Tollens/Kontraposisi:\n- Boleh difotokopi → Bukan dokumen rahasia\n- File ini boleh difotokopi\n- **Kesimpulan: File ini BUKAN dokumen rahasia**\n\n**Kenapa opsi lain salah?**\n- Opsi A jelas bertentangan langsung dengan premis 1 (dokumen rahasia tidak boleh difotokopi, tapi file ini boleh)\n- Opsi C (\"mungkin\") salah karena kesimpulannya PASTI, bukan mungkin\n- Opsi D (\"tidak dapat disimpulkan\") salah karena kontraposisi memberi kepastian logis\n\n**Ingat dari materi Ingkaran:**\n\"Tidak ada A yang B\" artinya A dan B adalah dua himpunan yang TIDAK BERIRISAN sama sekali. Jadi apapun yang termasuk B, pasti bukan A."
-    },
-    {
-      "id": 5,
-      "pertanyaan": "Semua mahasiswa yang mengikuti program pertukaran pelajar adalah individu yang berwawasan global. Beberapa individu yang berwawasan global adalah pembicara multibahasa yang fasih. Kesimpulan yang paling valid adalah...",
-      "premis": [
-        "Semua mahasiswa yang mengikuti program pertukaran pelajar adalah individu yang berwawasan global",
-        "Beberapa individu yang berwawasan global adalah pembicara multibahasa yang fasih"
-      ],
-      "opsi": [
-        "A. Semua pembicara multibahasa yang fasih adalah mahasiswa yang mengikuti program pertukaran pelajar",
-        "B. Semua individu yang berwawasan global adalah mahasiswa yang mengikuti program pertukaran pelajar",
-        "C. Tidak ada pembicara multibahasa yang fasih yang bukan individu berwawasan global",
-        "D. Beberapa mahasiswa yang mengikuti program pertukaran pelajar adalah pembicara multibahasa yang fasih",
-        "E. Beberapa individu yang berwawasan global bukan mahasiswa yang mengikuti program pertukaran pelajar"
-      ],
-      "jawaban": "D",
-      "tipe": "Semua + Beberapa",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah kombinasi **Semua + Beberapa** yang sering muncul di SKD. Ingat aturan emas dari materi:\n\n> \"Kalau salah satu premis mengandung 'sebagian/beberapa', kesimpulan maksimal juga 'sebagian/beberapa' — tidak boleh lebih kuat.\"\n\n**Bedah premisnya:**\n- Premis 1: **Semua** mahasiswa pertukaran → berwawasan global\n- Premis 2: **Beberapa** yang berwawasan global → pembicara multibahasa\n\n**Langkah penarikan kesimpulan:**\n1. Ada kata \"beberapa\" di premis 2 → kesimpulan harus mengandung \"beberapa\" (eliminasi A, B, C yang pakai \"semua\" atau \"tidak ada\")\n2. Gabungkan: mahasiswa pertukaran → berwawasan global → (sebagian dari mereka) pembicara multibahasa\n3. **Kesimpulan: Beberapa mahasiswa pertukaran adalah pembicara multibahasa yang fasih**\n\n**Kenapa opsi lain salah?**\n- **Opsi A (Semua pembicara...)**: Overclaim + jebakan pembalikan pernyataan. Ingat: \"Semua A adalah B\" TIDAK otomatis berarti \"Semua B adalah A\"\n- **Opsi B (Semua individu berwawasan global...)**: Ini adalah pembalikan premis 1 yang tidak sah\n- **Opsi C (Tidak ada pembicara...)**: Mengklaim sesuatu yang tidak didukung premis manapun\n- **Opsi E**: Meski terdengar masuk akal secara commonsense, ini TIDAK mengikuti dari premis secara logis — jangan menambah hubungan yang tidak dinyatakan!\n\n**Ingat dari materi:** Kalau ada \"beberapa\" di salah satu premis, konklusi maksimal \"beberapa\". Kalau kamu lihat opsi yang pakai \"semua\" padahal ada premis \"beberapa\", langsung eliminasi!"
-    },
-    {
-      "id": 6,
-      "pertanyaan": "Jika anggaran proyek telah dicairkan, maka pembangunan infrastruktur dapat dimulai. Pembangunan infrastruktur belum dimulai. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Jika anggaran proyek telah dicairkan, maka pembangunan infrastruktur dapat dimulai",
-        "Pembangunan infrastruktur belum dimulai"
-      ],
-      "opsi": [
-        "A. Anggaran proyek telah dicairkan",
-        "B. Anggaran proyek belum dicairkan",
-        "C. Anggaran proyek akan dicairkan minggu depan",
-        "D. Tidak dapat disimpulkan",
-        "E. Pembangunan infrastruktur tidak memerlukan anggaran"
-      ],
-      "jawaban": "B",
-      "tipe": "Modus Tollens",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Tollens** klasik — pola paling sering keluar di TIU setelah Modus Ponens.\n\n**Bedah logikanya:**\n- Premis 1: **Anggaran cair → Pembangunan dimulai** (P → Q)\n- Premis 2: **Pembangunan belum dimulai** (~Q, akibat tidak terjadi)\n\nModus Tollens bilang: **Kalau Q tidak terjadi, maka P pasti tidak terjadi** (lewat kontraposisi).\n\nKenapa logis? Coba pikir: seandainya anggaran SUDAH cair, maka pembangunan PASTI sudah dimulai (sesuai premis 1). Tapi faktanya pembangunan belum dimulai. Berarti anggaran PASTI belum cair — karena kalau sudah cair, pasti sudah dimulai.\n\n**Kesimpulan: Anggaran proyek belum dicairkan**.\n\n**Kenapa opsi lain salah?**\n- **Opsi A**: Langsung bertentangan dengan Modus Tollens\n- **Opsi C (\"akan dicairkan minggu depan\")**: Info tambahan yang tidak pernah disebutkan premis — **jangan menambah hubungan yang tidak dinyatakan**\n- **Opsi D**: Salah, karena Modus Tollens memberi kesimpulan PASTI\n- **Opsi E**: Kesimpulan yang tidak berhubungan sama sekali dengan premis\n\n**Ingat dari materi:** Modus Tollens itu SAH dan memberi kepastian. Rumusnya: **P → Q, ~Q, maka ~P**. Beda dengan denying the antecedent (~P → tidak bisa disimpulkan) yang tidak sah."
-    },
-    {
-      "id": 7,
-      "pertanyaan": "Semua pejabat eselon I wajib melaporkan LHKPN. Tidak ada staf administrasi yang merupakan pejabat eselon I. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua pejabat eselon I wajib melaporkan LHKPN",
-        "Tidak ada staf administrasi yang merupakan pejabat eselon I"
-      ],
-      "opsi": [
-        "A. Semua staf administrasi wajib melaporkan LHKPN",
-        "B. Tidak ada staf administrasi yang wajib melaporkan LHKPN",
-        "C. Beberapa staf administrasi wajib melaporkan LHKPN",
-        "D. Tidak dapat ditarik kesimpulan tentang kewajiban LHKPN staf administrasi",
-        "E. Semua staf administrasi adalah pejabat eselon I"
-      ],
-      "jawaban": "D",
-      "tipe": "Semua + Tidak Ada (TDDS)",
-      "tingkat": "Mahir",
-      "pembahasan": "Ini soal **jebakan tingkat mahir** yang banyak menjebak peserta. Coba kita bedah dengan teliti.\n\n**Bedah premis:**\n- Premis 1: **Pejabat eselon I → wajib LHKPN**\n- Premis 2: **Staf administrasi → BUKAN pejabat eselon I**\n\nMiddle term-nya adalah \"pejabat eselon I\". Tapi perhatikan: middle term ini muncul sebagai **SUBJEK di premis 1** dan **PREDIKAT di premis 2** — dan di premis 2 dia dinegasikan (\"tidak ada staf administrasi yang merupakan pejabat eselon I\").\n\n**Masalahnya:** Dari \"staf administrasi bukan eselon I\", kita TIDAK BISA menyimpulkan apapun soal kewajiban LHKPN mereka. Kenapa? Karena premis 1 hanya mengatur kewajiban untuk eselon I — **tidak mengatakan apapun tentang kelompok lain**. Bisa jadi staf administrasi juga wajib LHKPN (lewat aturan lain), bisa jadi tidak. Kita tidak tahu.\n\n**Analoginya seperti toples permen:** Kamu cuma dikasih info soal toples A (semua permen di toples A manis). Terus kamu dikasih toples B dan dibilang \"toples B bukan toples A\". Bisakah kamu simpulkan permen di toples B manis atau tidak? Tidak bisa — kamu tidak punya info soal toples B.\n\n**Kenapa opsi A, B, C salah?** Semuanya mengklaim sesuatu yang **tidak didukung premis manapun**. Ingat prinsip dari materi: **jangan menambah hubungan yang tidak dinyatakan**.\n\n**Opsi E**: Langsung bertentangan dengan premis 2.\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti** — jawaban D."
-    },
-    {
-      "id": 8,
-      "pertanyaan": "Semua kendaraan dinas harus menjalani uji emisi setiap tahun. Mobil dengan nomor polisi B 1234 XYZ adalah kendaraan dinas. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua kendaraan dinas harus menjalani uji emisi setiap tahun",
-        "Mobil dengan nomor polisi B 1234 XYZ adalah kendaraan dinas"
-      ],
-      "opsi": [
-        "A. Mobil B 1234 XYZ harus menjalani uji emisi setiap tahun",
-        "B. Mobil B 1234 XYZ tidak perlu uji emisi",
-        "C. Mobil B 1234 XYZ mungkin perlu uji emisi",
-        "D. Semua mobil harus uji emisi",
-        "E. Tidak dapat disimpulkan"
-      ],
-      "jawaban": "A",
-      "tipe": "Penalaran Langsung",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini lagi-lagi **penalaran langsung** yang sangat standar — tipe soal yang HARUS kamu kuasai dengan sempurna.\n\n**Bedah strukturnya:**\n- Premis 1 (mayor): **Semua kendaraan dinas → wajib uji emisi**\n- Premis 2 (minor): **Mobil B 1234 XYZ adalah kendaraan dinas**\n\nMiddle term: \"kendaraan dinas\" — menjembatani premis mayor dan minor.\n\nKarena mobil B 1234 XYZ termasuk dalam kelompok \"kendaraan dinas\", semua sifat kelompok itu otomatis berlaku untuk mobil ini.\n\n**Kesimpulan: Mobil B 1234 XYZ harus menjalani uji emisi setiap tahun.**\n\n**Kenapa opsi lain salah?**\n- **Opsi B**: Bertentangan langsung dengan premis 1\n- **Opsi C (\"mungkin\")**: Salah! Premisnya \"semua\", jadi hasilnya PASTI. Kata \"mungkin\" cuma sah kalau ada premis \"sebagian\"\n- **Opsi D (\"Semua mobil...\")**: Ini **jebakan pembalikan pernyataan** — dari \"semua kendaraan dinas uji emisi\" TIDAK bisa disimpulkan \"semua mobil uji emisi\". Ingat dari materi: \"Semua A adalah B\" ≠ \"Semua B adalah A\"\n- **Opsi E**: Salah, kesimpulannya sangat jelas\n\n**Tips dari materi:** Kesimpulan WAJIB memuat nama subjek spesifik (mobil B 1234 XYZ) karena disebut di premis minor."
-    },
-    {
-      "id": 9,
-      "pertanyaan": "Tidak semua peserta rapat menyetujui usulan anggaran. Beberapa anggota tim keuangan adalah peserta rapat. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Tidak semua peserta rapat menyetujui usulan anggaran",
-        "Beberapa anggota tim keuangan adalah peserta rapat"
-      ],
-      "opsi": [
-        "A. Semua anggota tim keuangan menyetujui usulan anggaran",
-        "B. Beberapa anggota tim keuangan tidak menyetujui usulan anggaran",
-        "C. Semua peserta rapat tidak menyetujui usulan anggaran",
-        "D. Tidak dapat ditarik kesimpulan pasti tentang persetujuan anggota tim keuangan",
-        "E. Semua anggota tim keuangan adalah peserta rapat"
-      ],
-      "jawaban": "D",
-      "tipe": "Tidak Semua + Beberapa (TDDS)",
-      "tingkat": "Mahir",
-      "pembahasan": "Soal ini menggabungkan **DUA jebakan sekaligus**: pemahaman \"tidak semua\" dan middle term yang tidak tersebar.\n\n**Bedah premis 1 dulu (ini paling penting!):**\n\"Tidak semua peserta rapat menyetujui\" — ingat dari materi Variasi Kata, ini BUKAN sinonim \"tidak ada\"! Ini adalah ingkaran dari \"semua\", yang artinya:\n> **Sebagian peserta rapat TIDAK menyetujui** (tapi bisa jadi sebagian lainnya TETAP menyetujui)\n\nJadi kita hanya tahu: ada minimal satu peserta yang tidak setuju. Tapi kita TIDAK tahu siapa mereka, berapa banyak, atau kelompok mana.\n\n**Bedah premis 2:**\n\"Beberapa anggota tim keuangan adalah peserta rapat\" — ini cuma bilang ada irisan antara tim keuangan dan peserta rapat. Tapi tidak bilang SEMUA tim keuangan adalah peserta rapat.\n\n**Masalahnya:** Middle term \"peserta rapat\" muncul sebagai predikat yang dinegasikan di premis 1, dan sebagai predikat di premis 2. Middle term ini **TIDAK TERSEBAR** — kita tidak punya info spesifik tentang kelompok \"tim keuangan\".\n\n**Analogi dari materi:** Bayangkan toples permen yang cuma SEBAGIAN isinya strawberry. Kamu ambil satu permen. Bisa dipastikan strawberry? Tidak — karena cuma sebagian. Di sini sama: kita tahu sebagian peserta rapat tidak setuju, tapi kita tidak tahu apakah anggota tim keuangan termasuk yang setuju atau tidak.\n\n**Kenapa opsi A, B, C, E salah?**\n- **A**: Overclaim, tidak didukung premis\n- **B**: Meski terdengar masuk akal, ini TIDAK BISA disimpulkan secara logis — bisa saja semua anggota tim keuangan yang jadi peserta rapat justru termasuk yang setuju\n- **C**: Ini salah baca \"tidak semua\" sebagai \"tidak ada\" — jebakan dari materi variasi kata!\n- **E**: Dari \"beberapa anggota tim keuangan adalah peserta rapat\" TIDAK bisa disimpulkan \"semua anggota tim keuangan adalah peserta rapat\"\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti** — jawaban D."
-    },
-    {
-      "id": 10,
-      "pertanyaan": "Jika suatu wilayah ditetapkan sebagai daerah otonomi khusus, maka wilayah tersebut mendapatkan dana alokasi khusus. Wilayah X mendapatkan dana alokasi khusus. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Jika suatu wilayah ditetapkan sebagai daerah otonomi khusus, maka wilayah tersebut mendapatkan dana alokasi khusus",
-        "Wilayah X mendapatkan dana alokasi khusus"
-      ],
-      "opsi": [
-        "A. Wilayah X adalah daerah otonomi khusus",
-        "B. Wilayah X bukan daerah otonomi khusus",
-        "C. Wilayah X mungkin daerah otonomi khusus",
-        "D. Tidak dapat disimpulkan apakah Wilayah X daerah otonomi khusus",
-        "E. Semua wilayah yang mendapat dana alokasi khusus adalah daerah otonomi khusus"
-      ],
-      "jawaban": "D",
-      "tipe": "TDDS (Affirming the Consequent)",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah **jebakan affirming the consequent** — salah satu jebakan paling sering muncul di TIU.\n\n**Bedah logikanya:**\n- Premis 1: **Otonomi khusus → Dana alokasi khusus** (P → Q)\n- Premis 2: **Wilayah X dapat dana alokasi khusus** (Q benar)\n\nNah, dari Q benar, **kita TIDAK BISA** menyimpulkan P benar. Kenapa? Karena dana alokasi khusus bisa datang dari **sumber lain** selain status otonomi khusus. Mungkin Wilayah X dapat dana karena bencana alam, karena program khusus presiden, karena alasan lain — premis tidak memberi info.\n\n**Analogi dari materi:** \"Kalau hujan turun, jalan pasti basah. Jalan basah.\" Bisakah kita pastikan tadi hujan? TIDAK! Jalan bisa basah karena disiram, karena tumpahan air, karena berbagai sebab lain.\n\n**Kenapa opsi A salah?** Ini adalah jebakan terbesar — banyak peserta langsung menjawab \"pasti otonomi khusus\" karena mengira Q benar → P benar. Padahal itu TIDAK SAH secara logika.\n\n**Kenapa opsi B salah?** Kita juga tidak bisa memastikan Wilayah X BUKAN otonomi khusus — bisa saja memang otonomi khusus, bisa juga bukan.\n\n**Kenapa opsi C (\"mungkin\") menarik tapi bukan jawaban terbaik?** Meski \"mungkin\" terdengar aman, di soal TIU biasanya yang dicari adalah pernyataan tentang **kepastian logis**. Karena secara logika kita TIDAK BISA menyimpulkan apapun (bukan \"mungkin ya mungkin tidak\", tapi \"tidak ada info untuk menyimpulkan\"), opsi D lebih tepat.\n\n**Kenapa opsi E salah?** Ini adalah **jebakan pembalikan pernyataan** — dari \"P → Q\" tidak bisa disimpulkan \"Q → P\".\n\n**Ingat tabel dari materi:**\n- P benar → Q pasti benar ✓\n- Q salah → P pasti salah ✓\n- **Q benar → TIDAK BISA DIPASTIKAN** ← kasus ini\n- P salah → TIDAK BISA DIPASTIKAN"
-    },
-    {
-      "id": 11,
-      "pertanyaan": "Semua pegawai yang mengikuti diklat kepemimpinan berhak mendapat sertifikat. Sebagian peserta diklat kepemimpinan adalah pejabat struktural. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua pegawai yang mengikuti diklat kepemimpinan berhak mendapat sertifikat",
-        "Sebagian peserta diklat kepemimpinan adalah pejabat struktural"
-      ],
-      "opsi": [
-        "A. Semua pejabat struktural berhak mendapat sertifikat",
-        "B. Sebagian pejabat struktural berhak mendapat sertifikat",
-        "C. Semua peserta diklat adalah pejabat struktural",
-        "D. Tidak dapat disimpulkan",
-        "E. Sebagian pejabat struktural tidak berhak mendapat sertifikat"
-      ],
-      "jawaban": "B",
-      "tipe": "Semua + Sebagian (Tipe 2)",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah **Tipe 2** dari materi Semua-Sebagian:\n> Premis 1: Sebagian p → q\n> Premis 2: Semua q → r\n> Kesimpulan: Sebagian p → r\n\nTapi di soal ini urutannya dibalik (Semua dulu, baru Sebagian), tapi logikanya sama.\n\n**Bedah premis:**\n- Premis 1: **Semua peserta diklat → berhak sertifikat**\n- Premis 2: **Sebagian pejabat struktural adalah peserta diklat**\n\n**Langkah penarikan kesimpulan:**\n1. Ada kata \"sebagian\" di premis 2 → kesimpulan maksimal \"sebagian\" (eliminasi A dan C yang pakai \"semua\")\n2. Gabungkan: pejabat struktural → (sebagian dari mereka) peserta diklat → berhak sertifikat\n3. **Kesimpulan: Sebagian pejabat struktural berhak mendapat sertifikat**\n\n**Visualisasi himpunan:**\n- Bayangkan lingkaran besar \"berhak sertifikat\"\n- Di dalamnya ada lingkaran lebih kecil \"peserta diklat\"\n- Lingkaran \"pejabat struktural\" BERIRISAN dengan lingkaran \"peserta diklat\" (sebagian pejabat struktural adalah peserta diklat)\n- Karena semua peserta diklat ada di dalam lingkaran \"berhak sertifikat\", maka bagian irisan pejabat struktural-peserta diklat juga pasti ada di dalam \"berhak sertifikat\"\n\n**Kenapa opsi A salah?** Overclaim — dari \"sebagian\" tidak bisa disimpulkan \"semua\"\n\n**Kenapa opsi D salah?** Kesimpulan BISA ditarik — tidak seperti kasus middle term tidak tersebar\n\n**Kenapa opsi E salah?** Kita tidak punya info soal pejabat struktural yang BUKAN peserta diklat — mereka mungkin berhak lewat jalur lain, mungkin tidak. Tidak bisa disimpulkan \"sebagian tidak berhak\".\n\n**Ingat dari materi:** Kalau ada \"sebagian\" di salah satu premis, konklusi maksimal \"sebagian\" — tidak boleh lebih kuat."
-    },
-    {
-      "id": 12,
-      "pertanyaan": "Semua tanaman obat yang terdaftar di BPOM memiliki izin edar. Tanaman X tidak memiliki izin edar. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua tanaman obat yang terdaftar di BPOM memiliki izin edar",
-        "Tanaman X tidak memiliki izin edar"
-      ],
-      "opsi": [
-        "A. Tanaman X terdaftar di BPOM",
-        "B. Tanaman X tidak terdaftar di BPOM",
-        "C. Tanaman X mungkin terdaftar di BPOM",
-        "D. Tidak dapat disimpulkan",
-        "E. Tanaman X adalah tanaman obat"
-      ],
-      "jawaban": "B",
-      "tipe": "Modus Tollens",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini lagi-lagi **Modus Tollens** — pola yang harus kamu kuasai dengan sempurna.\n\n**Bedah logikanya:**\n- Premis 1: **Terdaftar di BPOM → Punya izin edar** (P → Q)\n- Premis 2: **Tanaman X tidak punya izin edar** (~Q)\n\nModus Tollens: **Kalau Q tidak terjadi, maka P pasti tidak terjadi** (lewat kontraposisi).\n\n**Logikanya:** Seandainya Tanaman X terdaftar di BPOM, maka TANAMAN X PASTI punya izin edar (sesuai premis 1). Tapi faktanya Tanaman X TIDAK punya izin edar. Berarti Tanaman X PASTI tidak terdaftar di BPOM.\n\n**Kesimpulan: Tanaman X tidak terdaftar di BPOM.**\n\n**Kenapa opsi A salah?** Langsung bertentangan dengan Modus Tollens\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin. Ingat: Modus Tollens memberi kepastian logis, bukan ketidakpastian.\n\n**Kenapa opsi D salah?** Modus Tollens adalah pola yang SAH dan memberi kesimpulan pasti — bukan TDDS\n\n**Kenapa opsi E salah?** Kita tidak punya info apakah Tanaman X adalah tanaman obat atau bukan. Premis cuma mengatur \"tanaman obat yang terdaftar di BPOM\" — tidak semua tanaman adalah tanaman obat.\n\n**Ingat rumus Modus Tollens dari materi:** P → Q, ~Q, maka ~P. Ini adalah salah satu dari DUA pola sah dalam logika implikasi (satunya Modus Ponens)."
-    },
-    {
-      "id": 13,
-      "pertanyaan": "Tidak ada politisi yang jujur yang menolak transparansi anggaran. Semua anggota Dewan Kehormatan menerima transparansi anggaran. Kesimpulan yang paling valid adalah...",
-      "premis": [
-        "Tidak ada politisi yang jujur yang menolak transparansi anggaran",
-        "Semua anggota Dewan Kehormatan menerima transparansi anggaran"
-      ],
-      "opsi": [
-        "A. Semua politisi yang jujur adalah anggota Dewan Kehormatan",
-        "B. Tidak ada anggota Dewan Kehormatan yang tidak jujur",
-        "C. Beberapa anggota Dewan Kehormatan adalah politisi yang jujur",
-        "D. Semua anggota Dewan Kehormatan adalah politisi yang jujur",
-        "E. Tidak dapat ditarik kesimpulan pasti"
-      ],
-      "jawaban": "E",
-      "tipe": "Tidak Ada + Semua (TDDS)",
-      "tingkat": "Mahir",
-      "pembahasan": "Soal ini adalah **jebakan tingkat mahir** yang mengandalkan middle term yang tidak tersebar. Mari kita bedah dengan teliti.\n\n**Bedah premis 1:**\n\"Tidak ada politisi yang jujur yang menolak transparansi anggaran\"\nIni artinya: **Politisi jujur → MENERIMA transparansi** (bukan menolak)\nAtau dengan kata lain: semua politisi jujur ada di kelompok yang menerima transparansi.\n\n**Bedah premis 2:**\n\"Semua anggota Dewan Kehormatan menerima transparansi anggaran\"\nIni artinya: **Anggota Dewan Kehormatan → menerima transparansi**\n\n**Masalahnya:** Kedua premis memiliki **PREDIKAT yang sama** (\"menerima transparansi\"), tapi middle term-nya (\"menerima transparansi\") tidak tersebar — dia hanya muncul sebagai predikat di kedua premis.\n\n**Visualisasi himpunan:**\n- Ada lingkaran besar \"menerima transparansi\"\n- Di dalamnya ada lingkaran \"politisi jujur\"\n- Di dalamnya juga ada lingkaran \"anggota Dewan Kehormatan\"\n- Tapi kita TIDAK TAHU hubungan antara \"politisi jujur\" dan \"anggota Dewan Kehormatan\" — mereka bisa beririsan, bisa tidak, bisa salah satu himpunan bagian dari yang lain. Kita tidak punya info!\n\n**Analogi dari materi:** Ingat kasus kucing-kelinci? \"Semua kucing adalah hewan berbulu. Semua kelinci adalah hewan berbulu.\" Bisakah kita simpulkan hubungan kucing dan kelinci? Tidak — \"hewan berbulu\" cuma predikat di kedua premis, bukan penghubung sah.\n\n**Kenapa opsi A, B, C, D salah?** Semuanya mengklaim hubungan spesifik antara politisi jujur dan anggota Dewan Kehormatan — hubungan yang TIDAK DIDUKUNG oleh premis manapun. Ini adalah overclaim.\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti** — jawaban E."
-    },
-    {
-      "id": 14,
-      "pertanyaan": "Semua peneliti di lembaga riset nasional memiliki gelar doktoral. Semua lulusan program doktoral telah mempublikasikan minimal satu artikel ilmiah. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua peneliti di lembaga riset nasional memiliki gelar doktoral",
-        "Semua lulusan program doktoral telah mempublikasikan minimal satu artikel ilmiah"
-      ],
-      "opsi": [
-        "A. Beberapa peneliti di lembaga riset nasional telah mempublikasikan minimal satu artikel ilmiah",
-        "B. Semua peneliti di lembaga riset nasional telah mempublikasikan minimal satu artikel ilmiah",
-        "C. Semua orang yang telah mempublikasikan artikel ilmiah adalah peneliti di lembaga riset nasional",
-        "D. Beberapa lulusan program doktoral adalah peneliti di lembaga riset nasional",
-        "E. Tidak ada peneliti di lembaga riset nasional yang belum mempublikasikan artikel ilmiah"
-      ],
-      "jawaban": "B",
-      "tipe": "Silogisme Berantai (Semua-Semua)",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **silogisme berantai** paling dasar — pola **Semua-Semua** yang hasilnya juga **Semua**.\n\n**Bedah rantainya:**\n- Premis 1: **Peneliti → gelar doktoral** (P → Q)\n- Premis 2: **Gelar doktoral → publikasi artikel** (Q → R)\n\n**Langkah penarikan kesimpulan:**\n1. Gabungkan: P → Q → R\n2. Middle term \"gelar doktoral\" menghubungkan premis 1 dan 2 secara sah (predikat di premis 1, subjek di premis 2)\n3. **Kesimpulan: P → R, yaitu Peneliti → publikasi artikel**\n4. **Semua peneliti di lembaga riset nasional telah mempublikasikan minimal satu artikel ilmiah**\n\n**Kenapa opsi A salah?** Meski \"beberapa\" secara teknis benar (kalau semua benar, maka sebagian juga benar), ini BUKAN kesimpulan terkuat. Dalam logika, kita selalu mencari kesimpulan **paling kuat yang didukung premis**. Karena premisnya semua \"semua\", kesimpulannya juga \"semua\".\n\n**Kenapa opsi C salah?** Ini **jebakan pembalikan pernyataan** — dari \"Peneliti → publikasi artikel\" TIDAK bisa disimpulkan \"Publikasi artikel → peneliti\". Ingat dari materi: \"Semua A adalah B\" ≠ \"Semua B adalah A\"\n\n**Kenapa opsi D salah?** Meski terdengar masuk akal, ini tidak mengikuti dari premis secara langsung — ini adalah kesimpulan yang lebih lemah dan tidak langsung\n\n**Kenapa opsi E \"benar secara logika\" tapi bukan jawaban terbaik?** Opsi E sebenarnya ekuivalen dengan B (tidak ada yang belum = semua sudah). Tapi B lebih langsung sebagai kesimpulan silogisme dan lebih sering jadi jawaban yang dicari di soal TIU.\n\n**Ingat dari materi tabel rantai 3 premis:**\n- P benar (semua-semua) → Q dan R pasti benar\n- Konklusi akhir ikut kuat = \"semua\""
-    },
-    {
-      "id": 15,
-      "pertanyaan": "Sebuah perusahaan menerapkan aturan: semua karyawan yang datang terlambat lebih dari 30 menit akan mendapat surat peringatan. Hari ini, Andi datang terlambat 45 menit karena terjebak kemacetan. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua karyawan yang datang terlambat lebih dari 30 menit akan mendapat surat peringatan",
-        "Andi datang terlambat 45 menit"
-      ],
-      "opsi": [
-        "A. Andi mendapat surat peringatan",
-        "B. Andi tidak mendapat surat peringatan karena terjebak macet",
-        "C. Andi mungkin mendapat surat peringatan",
-        "D. Tidak dapat disimpulkan",
-        "E. Andi adalah karyawan yang rajin"
-      ],
-      "jawaban": "A",
-      "tipe": "Modus Ponens (Naratif)",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Ponens dengan bumbu naratif** — soal disisipkan info tambahan yang tidak relevan untuk menjebak.\n\n**Bedah premis logisnya (abaikan bumbu!):**\n- Premis 1: **Terlambat >30 menit → surat peringatan** (P → Q)\n- Premis 2: **Andi terlambat 45 menit** (P benar, karena 45 > 30)\n\n**Kesimpulan logis: Andi mendapat surat peringatan** (modus ponens biasa).\n\n**Nah, sekarang perhatikan bumbu naratif:** \"karena terjebak kemacetan\". Ini adalah **jebakan murni** — tidak ada premis manapun yang menyatakan bahwa kemacetan adalah pengecualian dari aturan. Ingat dari materi:\n\n> \"Info tambahan yang tidak pernah dihubungkan premis manapun → abaikan, jangan menambah hubungan yang tidak dinyatakan.\"\n\nAturan perusahaan tidak bilang \"kecuali karena macet\" — jadi aturan tetap berlaku mutlak.\n\n**Kenapa opsi B salah?** Ini adalah jebakan terbesar — banyak peserta terpengaruh \"alasan manusiawi\" dan menjawab Andi tidak dapat peringatan. Tapi secara logika, tidak ada pengecualian yang disebutkan premis.\n\n**Kenapa opsi C (\"mungkin\") salah?** Premisnya \"semua\", jadi hasilnya PASTI, bukan mungkin.\n\n**Kenapa opsi D salah?** Kesimpulannya sangat jelas dan pasti.\n\n**Kenapa opsi E salah?** Info tentang \"rajin\" tidak ada di premis manapun — jangan menambah hubungan yang tidak dinyatakan.\n\n**Ingat dari materi Paragraf Naratif:**\n- Ciri premis: kata \"wajib, harus, selalu, otomatis, setiap\"\n- Ciri bumbu: deskripsi suasana, alasan personal, latar waktu\n- Pisahkan keduanya — fokus hanya pada premis logis!"
-    },
-    {
-      "id": 16,
-      "pertanyaan": "Tidak semua proposal penelitian mendapat pendanaan dari pemerintah. Beberapa dosen muda mengajukan proposal penelitian. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Tidak semua proposal penelitian mendapat pendanaan dari pemerintah",
-        "Beberapa dosen muda mengajukan proposal penelitian"
-      ],
-      "opsi": [
-        "A. Semua dosen muda mendapat pendanaan",
-        "B. Beberapa dosen muda tidak mendapat pendanaan",
-        "C. Semua proposal dosen muda tidak mendapat pendanaan",
-        "D. Tidak dapat ditarik kesimpulan pasti tentang pendanaan proposal dosen muda",
-        "E. Semua dosen muda adalah peneliti"
-      ],
-      "jawaban": "D",
-      "tipe": "Tidak Semua + Beberapa (TDDS)",
-      "tingkat": "Mahir",
-      "pembahasan": "Soal ini menggabungkan **pemahaman \"tidak semua\"** dan **middle term yang tidak tersebar**. Mari kita bedah pelan-pelan.\n\n**Bedah premis 1:**\n\"Tidak semua proposal penelitian mendapat pendanaan\"\nIngat dari materi: ini adalah ingkaran dari \"semua\", artinya:\n> **Sebagian proposal TIDAK mendapat pendanaan** (tapi bisa jadi sebagian lain TETAP mendapat pendanaan)\n\nJadi kita hanya tahu: ada minimal satu proposal yang tidak dapat pendanaan. Kita TIDAK tahu proposal siapa, berapa banyak, atau kriteria apa.\n\n**Bedah premis 2:**\n\"Beberapa dosen muda mengajukan proposal penelitian\"\nIni cuma bilang ada irisan antara dosen muda dan pengaju proposal. Tidak bilang semua dosen muda mengajukan.\n\n**Masalahnya:**\n- Middle term \"proposal penelitian\" tidak tersebar\n- Kita tidak punya info spesifik apakah proposal dosen muda termasuk yang dapat pendanaan atau tidak\n- Bisa jadi semua proposal dosen muda dapat pendanaan, bisa jadi tidak, bisa jadi sebagian — kita TIDAK TAHU\n\n**Analogi dari materi:** Bayangkan toples permen yang cuma SEBAGIAN isinya strawberry. Kamu ambil satu permen. Bisa dipastikan strawberry? Tidak. Di sini sama: kita tahu sebagian proposal tidak dapat pendanaan, tapi kita tidak tahu apakah proposal dosen muda termasuk yang dapat atau tidak.\n\n**Kenapa opsi A salah?** Overclaim — tidak ada info yang mendukung \"semua dosen muda dapat pendanaan\"\n\n**Kenapa opsi B menarik tapi salah?** Meski terdengar masuk akal secara commonsense (\"kalau tidak semua dapat, pasti ada dosen muda yang tidak dapat\"), ini **TIDAK BISA disimpulkan secara logis**. Bisa saja semua dosen muda yang mengajukan proposal justru termasuk kelompok yang dapat pendanaan — premis tidak melarang ini.\n\n**Kenapa opsi C salah?** Overclaim ke arah sebaliknya — mengklaim \"semua tidak dapat\" padahal kita tidak punya info\n\n**Kenapa opsi E salah?** Info tentang \"peneliti\" tidak ada di premis manapun\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti** — jawaban D.\n\n**Ingat dari materi:** Jangan terjebak commonsense! Logika hanya bekerja berdasarkan premis yang diberikan, bukan asumsi tambahan."
-    },
-    {
-      "id": 17,
-      "pertanyaan": "Semua peserta yang lolos seleksi berkas diundang untuk tes wawancara. Broto tidak diundang untuk tes wawancara. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua peserta yang lolos seleksi berkas diundang untuk tes wawancara",
-        "Broto tidak diundang untuk tes wawancara"
-      ],
-      "opsi": [
-        "A. Broto lolos seleksi berkas",
-        "B. Broto tidak lolos seleksi berkas",
-        "C. Broto mungkin lolos seleksi berkas",
-        "D. Tidak dapat disimpulkan",
-        "E. Broto akan diundang minggu depan"
-      ],
-      "jawaban": "B",
-      "tipe": "Modus Tollens",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Tollens** klasik — pola yang wajib kamu kuasai dengan sempurna.\n\n**Bedah logikanya:**\n- Premis 1: **Lolos berkas → Diundang wawancara** (P → Q)\n- Premis 2: **Broto tidak diundang wawancara** (~Q)\n\nModus Tollens: **Kalau Q tidak terjadi, maka P pasti tidak terjadi**.\n\n**Logikanya:** Seandainya Broto lolos seleksi berkas, maka Broto PASTI diundang wawancara (sesuai premis 1). Tapi faktanya Broto TIDAK diundang. Berarti Broto PASTI tidak lolos seleksi berkas.\n\n**Kesimpulan: Broto tidak lolos seleksi berkas.**\n\n**Kenapa opsi A salah?** Langsung bertentangan dengan Modus Tollens\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin. Modus Tollens memberi kepastian logis.\n\n**Kenapa opsi D salah?** Modus Tollens adalah pola SAH yang memberi kesimpulan pasti — bukan TDDS\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis — **jangan menambah hubungan yang tidak dinyatakan**\n\n**Ingat dari materi:** Modus Tollens itu SAH. Rumusnya: P → Q, ~Q, maka ~P. Beda dengan affirming the consequent (Q benar → tidak bisa disimpulkan) yang tidak sah.\n\n**Tips cepat:** Kalau kamu lihat premis 1 bentuknya \"Semua X → Y\" dan premis 2 mengatakan \"~Y\" (bukan Y / tidak Y), langsung gunakan Modus Tollens — kesimpulannya \"~X\"."
-    },
-    {
-      "id": 18,
-      "pertanyaan": "Semua pegawai yang bekerja di divisi IT menguasai bahasa pemrograman. Sebagian pegawai yang menguasai bahasa pemrograman adalah lulusan ilmu komputer. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua pegawai yang bekerja di divisi IT menguasai bahasa pemrograman",
-        "Sebagian pegawai yang menguasai bahasa pemrograman adalah lulusan ilmu komputer"
-      ],
-      "opsi": [
-        "A. Semua pegawai divisi IT adalah lulusan ilmu komputer",
-        "B. Sebagian pegawai divisi IT adalah lulusan ilmu komputer",
-        "C. Semua lulusan ilmu komputer bekerja di divisi IT",
-        "D. Tidak dapat ditarik kesimpulan pasti",
-        "E. Sebagian lulusan ilmu komputer tidak menguasai bahasa pemrograman"
-      ],
-      "jawaban": "D",
-      "tipe": "Semua + Sebagian (Middle Term Tidak Tersebar)",
-      "tingkat": "Mahir",
-      "pembahasan": "Ini adalah **jebakan undistributed middle** — middle term tidak tersebar. Soal tipe ini sering menjebak peserta yang terburu-buru.\n\n**Bedah premis:**\n- Premis 1: **Divisi IT → Menguasai pemrograman** (Semua)\n- Premis 2: **Sebagian yang menguasai pemrograman → Lulusan ilmu komputer**\n\n**Masalahnya:** Middle term \"menguasai pemrograman\" muncul sebagai **PREDIKAT di kedua premis**. Ingat dari materi:\n\n> \"Middle term harus mencakup seluruh anggota kelompoknya di minimal satu premis. Kalau middle term cuma disebut sebagai predikat dari pernyataan 'semua', middle term itu tidak 'tersebar' — disebut kesalahan undistributed middle.\"\n\n**Visualisasi himpunan:**\n- Lingkaran \"menguasai pemrograman\" adalah lingkaran besar\n- Di dalamnya ada lingkaran \"divisi IT\" (semua divisi IT menguasai pemrograman)\n- Beririsan dengan lingkaran \"lulusan ilmu komputer\" (sebagian yang menguasai pemrograman adalah lulusan ilmu komputer)\n- Tapi kita TIDAK TAHU apakah lingkaran \"divisi IT\" beririsan dengan \"lulusan ilmu komputer\" atau tidak — bisa beririsan, bisa tidak, bisa satu di dalam yang lain. Kita tidak punya info!\n\n**Analogi dari materi:** Ingat kasus kucing-kelinci? \"Semua kucing adalah hewan berbulu. Semua kelinci adalah hewan berbulu.\" Bisakah kita simpulkan hubungan kucing dan kelinci? Tidak — karena \"hewan berbulu\" hanya predikat di kedua premis.\n\n**Kenapa opsi A, B, C, E salah?** Semuanya mengklaim hubungan spesifik antara divisi IT dan lulusan ilmu komputer — hubungan yang TIDAK DIDUKUNG oleh premis manapun. Ini adalah overclaim.\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti** — jawaban D.\n\n**Tips dari materi:** Kalau kamu lihat middle term hanya muncul sebagai predikat di KEDUA premis, waspadai! Itu biasanya jebakan undistributed middle — jawabannya seringkali \"tidak dapat disimpulkan\"."
-    },
-    {
-      "id": 19,
-      "pertanyaan": "Jika hujan turun dengan intensitas tinggi selama lebih dari 2 jam, maka sistem drainase kota akan kewalahan. Hari ini hujan turun dengan intensitas tinggi selama 3 jam. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Jika hujan turun dengan intensitas tinggi selama lebih dari 2 jam, maka sistem drainase kota akan kewalahan",
-        "Hari ini hujan turun dengan intensitas tinggi selama 3 jam"
-      ],
-      "opsi": [
-        "A. Sistem drainase kota akan kewalahan",
-        "B. Sistem drainase kota tidak kewalahan",
-        "C. Sistem drainase kota mungkin kewalahan",
-        "D. Tidak dapat disimpulkan",
-        "E. Hujan akan berhenti dalam 1 jam"
-      ],
-      "jawaban": "A",
-      "tipe": "Modus Ponens",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Ponens** dengan syarat numerik yang harus kamu evaluasi dulu.\n\n**Bedah logikanya:**\n- Premis 1: **Hujan intensitas tinggi > 2 jam → Drainase kewalahan** (P → Q)\n- Premis 2: **Hujan intensitas tinggi selama 3 jam** — apakah ini memenuhi P?\n\n**Evaluasi:** 3 jam > 2 jam, jadi P **BENAR** (syarat terpenuhi).\n\n**Modus Ponens:** P → Q, P benar, maka Q pasti benar.\n\n**Kesimpulan: Sistem drainase kota akan kewalahan.**\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin. Syarat P sudah pasti terpenuhi (3 > 2), jadi Q pasti terjadi.\n\n**Kenapa opsi B salah?** Langsung bertentangan dengan Modus Ponens\n\n**Kenapa opsi D salah?** Modus Ponens memberi kepastian logis — bukan TDDS\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis — **jangan menambah hubungan yang tidak dinyatakan**\n\n**Tips dari materi:** Kadang soal memberi syarat numerik atau kondisi spesifik. Evaluasi dulu apakah premis 2 MEMENUHI syarat di premis 1 atau tidak. Kalau memenuhi (seperti di sini, 3 > 2), gunakan Modus Ponens. Kalau tidak memenuhi (misal hujan cuma 1 jam), itu denying the antecedent — tidak bisa disimpulkan.\n\n**Ingat rumus Modus Ponens:** P → Q, P benar, maka Q pasti benar."
-    },
-    {
-      "id": 20,
-      "pertanyaan": "Semua rumah sakit pemerintah wajib memiliki unit gawat darurat 24 jam. Rumah Sakit Harapan Bangsa tidak memiliki unit gawat darurat 24 jam. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua rumah sakit pemerintah wajib memiliki unit gawat darurat 24 jam",
-        "Rumah Sakit Harapan Bangsa tidak memiliki unit gawat darurat 24 jam"
-      ],
-      "opsi": [
-        "A. Rumah Sakit Harapan Bangsa adalah rumah sakit pemerintah",
-        "B. Rumah Sakit Harapan Bangsa bukan rumah sakit pemerintah",
-        "C. Rumah Sakit Harapan Bangsa mungkin rumah sakit pemerintah",
-        "D. Tidak dapat disimpulkan",
-        "E. Rumah Sakit Harapan Bangsa akan ditutup"
-      ],
-      "jawaban": "B",
-      "tipe": "Modus Tollens",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini lagi-lagi **Modus Tollens** — pola yang harus kamu kuasai dengan sempurna.\n\n**Bedah logikanya:**\n- Premis 1: **RS pemerintah → Punya UGD 24 jam** (P → Q)\n- Premis 2: **RS Harapan Bangsa TIDAK punya UGD 24 jam** (~Q)\n\nModus Tollens: **Kalau Q tidak terjadi, maka P pasti tidak terjadi**.\n\n**Logikanya:** Seandainya RS Harapan Bangsa adalah RS pemerintah, maka RS Harapan Bangsa PASTI punya UGD 24 jam (sesuai premis 1). Tapi faktanya RS Harapan Bangsa TIDAK punya UGD 24 jam. Berarti RS Harapan Bangsa PASTI bukan RS pemerintah.\n\n**Kesimpulan: Rumah Sakit Harapan Bangsa bukan rumah sakit pemerintah.**\n\n**Kenapa opsi A salah?** Langsung bertentangan dengan Modus Tollens\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin. Modus Tollens memberi kepastian logis.\n\n**Kenapa opsi D salah?** Modus Tollens adalah pola SAH yang memberi kesimpulan pasti — bukan TDDS\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis. Premis tidak bilang RS tanpa UGD 24 jam akan ditutup — jangan menambah hubungan yang tidak dinyatakan.\n\n**Ingat dari materi:** Modus Tollens itu SAH dan memberi kepastian. Rumusnya: P → Q, ~Q, maka ~P.\n\n**Tips cepat:** Kalau kamu lihat premis 1 bentuknya \"Semua X → Y\" dan premis 2 mengatakan \"~Y\" (tidak punya Y), langsung gunakan Modus Tollens — kesimpulannya \"~X\" (bukan X)."
-    },
-    {
-      "id": 21,
-      "pertanyaan": "Semua peserta ujian CPNS harus membawa kartu identitas asli. Tidak ada peserta yang tidak membawa kartu identitas asli yang diperbolehkan masuk ruang ujian. Rina diperbolehkan masuk ruang ujian. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua peserta ujian CPNS harus membawa kartu identitas asli",
-        "Tidak ada peserta yang tidak membawa kartu identitas asli yang diperbolehkan masuk ruang ujian",
-        "Rina diperbolehkan masuk ruang ujian"
-      ],
-      "opsi": [
-        "A. Rina membawa kartu identitas asli",
-        "B. Rina tidak membawa kartu identitas asli",
-        "C. Rina mungkin membawa kartu identitas asli",
-        "D. Tidak dapat disimpulkan",
-        "E. Rina bukan peserta ujian CPNS"
-      ],
-      "jawaban": "A",
-      "tipe": "Silogisme Berantai + Kontraposisi",
-      "tingkat": "Menengah",
-      "pembahasan": "Soal ini punya **3 premis** dan butuh langkah kontraposisi. Mari kita bedah pelan-pelan.\n\n**Bedah premis 1:**\n\"Semua peserta ujian CPNS harus membawa kartu identitas asli\"\nIni informasi umum — tapi sebenarnya **tidak langsung terpakai** karena kita akan pakai premis 2 dan 3.\n\n**Bedah premis 2:**\n\"Tidak ada peserta yang tidak membawa kartu identitas asli yang diperbolehkan masuk ruang ujian\"\nIni artinya: **Tidak bawa kartu identitas → Tidak boleh masuk**\nKontraposisinya: **Boleh masuk → Bawa kartu identitas**\n\n**Bedah premis 3:**\n\"Rina diperbolehkan masuk ruang ujian\" (Q benar, dalam bentuk kontraposisi)\n\n**Langkah penarikan kesimpulan:**\n1. Dari kontraposisi premis 2: Boleh masuk → Bawa kartu identitas\n2. Premis 3: Rina boleh masuk\n3. **Kesimpulan: Rina membawa kartu identitas asli**\n\n**Kenapa opsi B salah?** Langsung bertentangan dengan kesimpulan logis\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin — Modus Ponens dari kontraposisi memberi kepastian.\n\n**Kenapa opsi D salah?** Kesimpulan BISA ditarik secara pasti\n\n**Kenapa opsi E salah?** Kita tidak punya info apakah Rina peserta CPNS atau bukan. Premis 2 mengatur semua peserta, bukan hanya peserta CPNS.\n\n**Ingat dari materi:**\n- Kontraposisi: P → Q ekuivalen dengan ~Q → ~P\n- \"Tidak ada X yang Y\" bisa dibaca sebagai \"X → tidak Y\"\n- Selalu cek apakah ada kontraposisi yang bisa memudahkan penarikan kesimpulan\n\n**Tips:** Kadang premis 1 sengaja diberikan sebagai pengecoh — tidak semua premis harus dipakai. Fokus pada premis yang benar-benar terhubung ke fakta spesifik (premis 3)."
-    },
-    {
-      "id": 22,
-      "pertanyaan": "Semua produk yang mendapat sertifikasi SNI memenuhi standar keamanan. Beberapa mainan anak yang beredar di pasar mendapat sertifikasi SNI. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua produk yang mendapat sertifikasi SNI memenuhi standar keamanan",
-        "Beberapa mainan anak yang beredar di pasar mendapat sertifikasi SNI"
-      ],
-      "opsi": [
-        "A. Semua mainan anak memenuhi standar keamanan",
-        "B. Beberapa mainan anak yang beredar di pasar memenuhi standar keamanan",
-        "C. Semua mainan anak tidak memenuhi standar keamanan",
-        "D. Tidak dapat disimpulkan",
-        "E. Semua produk yang memenuhi standar keamanan adalah mainan anak"
-      ],
-      "jawaban": "B",
-      "tipe": "Semua + Beberapa",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah kombinasi **Semua + Beberapa** — ingat aturan emas dari materi:\n\n> \"Kalau salah satu premis mengandung 'sebagian/beberapa', kesimpulan maksimal juga 'sebagian/beberapa' — tidak boleh lebih kuat.\"\n\n**Bedah premis:**\n- Premis 1: **Semua produk SNI → Standar keamanan**\n- Premis 2: **Beberapa mainan anak → Mendapat SNI**\n\n**Langkah penarikan kesimpulan:**\n1. Ada kata \"beberapa\" di premis 2 → kesimpulan maksimal \"beberapa\" (eliminasi A, C, E yang pakai \"semua\" atau \"tidak ada\")\n2. Gabungkan: mainan anak → (beberapa dari mereka) SNI → standar keamanan\n3. **Kesimpulan: Beberapa mainan anak yang beredar di pasar memenuhi standar keamanan**\n\n**Visualisasi himpunan:**\n- Lingkaran besar \"standar keamanan\"\n- Di dalamnya ada lingkaran \"produk SNI\" (semua produk SNI memenuhi standar keamanan)\n- Lingkaran \"mainan anak\" BERIRISAN dengan \"produk SNI\" (beberapa mainan anak mendapat SNI)\n- Karena semua produk SNI ada di dalam \"standar keamanan\", maka bagian irisan mainan anak-SNI juga pasti ada di dalam \"standar keamanan\"\n- Jadi: beberapa mainan anak memenuhi standar keamanan\n\n**Kenapa opsi A salah?** Overclaim — dari \"beberapa\" tidak bisa disimpulkan \"semua\"\n\n**Kenapa opsi C salah?** Overclaim ke arah sebaliknya — tidak ada info yang mendukung \"semua tidak memenuhi\"\n\n**Kenapa opsi D salah?** Kesimpulan BISA ditarik secara logis — tidak seperti kasus middle term tidak tersebar\n\n**Kenapa opsi E salah?** Ini **jebakan pembalikan pernyataan** — dari \"Produk SNI → standar keamanan\" TIDAK bisa disimpulkan \"Standar keamanan → mainan anak\". Ingat dari materi: \"Semua A adalah B\" ≠ \"Semua B adalah A\"\n\n**Ingat dari materi:** Kalau ada \"beberapa\" di salah satu premis, konklusi maksimal \"beberapa\" — tidak boleh lebih kuat."
-    },
-    {
-      "id": 23,
-      "pertanyaan": "Tidak ada pegawai kontrak yang mendapat tunjangan pensiun. Semua pegawai tetap mendapat tunjangan pensiun. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Tidak ada pegawai kontrak yang mendapat tunjangan pensiun",
-        "Semua pegawai tetap mendapat tunjangan pensiun"
-      ],
-      "opsi": [
-        "A. Semua pegawai tetap bukan pegawai kontrak",
-        "B. Tidak ada pegawai tetap yang merupakan pegawai kontrak",
-        "C. Beberapa pegawai kontrak adalah pegawai tetap",
-        "D. Tidak dapat ditarik kesimpulan pasti",
-        "E. Semua pegawai kontrak akan menjadi pegawai tetap"
-      ],
-      "jawaban": "B",
-      "tipe": "Tidak Ada + Semua",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah kombinasi **Tidak Ada + Semua** yang menghasilkan kesimpulan \"Tidak Ada\". Ingat aturan dari materi:\n\n> \"Kalau salah satu premis negatif ('tidak ada'), kesimpulannya juga harus negatif.\"\n\n**Bedah premis:**\n- Premis 1: **Pegawai kontrak → TIDAK dapat tunjangan pensiun** (himpunan pegawai kontrak dan penerima tunjangan pensiun TIDAK BERIRISAN)\n- Premis 2: **Pegawai tetap → Dapat tunjangan pensiun** (himpunan pegawai tetap ADA DI DALAM himpunan penerima tunjangan pensiun)\n\n**Visualisasi himpunan:**\n- Ada lingkaran \"penerima tunjangan pensiun\"\n- Di dalamnya ada lingkaran \"pegawai tetap\"\n- Lingkaran \"pegawai kontrak\" berada di LUAR lingkaran \"penerima tunjangan pensiun\"\n- Karena \"pegawai tetap\" ada di dalam, dan \"pegawai kontrak\" ada di luar, maka **pegawai tetap dan pegawai kontrak TIDAK BERIRISAN**\n\n**Kesimpulan: Tidak ada pegawai tetap yang merupakan pegawai kontrak**\n\n**Kenapa opsi A terdengar benar tapi kurang tepat?** Opsi A (\"semua pegawai tetap bukan pegawai kontrak\") secara logika ekuivalen dengan B. Tapi opsi B lebih langsung sebagai kesimpulan silogisme dengan pola \"Tidak ada X yang Y\".\n\n**Kenapa opsi C salah?** Langsung bertentangan dengan premis — tidak ada irisan antara pegawai kontrak dan pegawai tetap\n\n**Kenapa opsi D salah?** Kesimpulan BISA ditarik secara pasti — ini bukan kasus middle term tidak tersebar\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis — **jangan menambah hubungan yang tidak dinyatakan**\n\n**Ingat dari materi:**\n- Kalau salah satu premis negatif, kesimpulannya juga negatif\n- \"Tidak ada A yang B\" artinya A dan B TIDAK BERIRISAN sama sekali\n- Kalau A tidak beririsan dengan C, dan B ada di dalam C, maka A dan B juga tidak beririsan"
-    },
-    {
-      "id": 24,
-      "pertanyaan": "Jika semua berkas persyaratan telah lengkap, maka proses administrasi dapat diselesaikan dalam 3 hari kerja. Proses administrasi belum selesai dalam 3 hari kerja. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Jika semua berkas persyaratan telah lengkap, maka proses administrasi dapat diselesaikan dalam 3 hari kerja",
-        "Proses administrasi belum selesai dalam 3 hari kerja"
-      ],
-      "opsi": [
-        "A. Semua berkas persyaratan telah lengkap",
-        "B. Tidak semua berkas persyaratan telah lengkap",
-        "C. Semua berkas persyaratan belum lengkap",
-        "D. Tidak dapat disimpulkan",
-        "E. Proses administrasi tidak akan pernah selesai"
-      ],
-      "jawaban": "B",
-      "tipe": "Modus Tollens",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah **Modus Tollens** dengan jebakan pilihan jawaban yang mirip. Mari kita bedah dengan teliti.\n\n**Bedah logikanya:**\n- Premis 1: **Semua berkas lengkap → Selesai 3 hari** (P → Q)\n- Premis 2: **Belum selesai 3 hari** (~Q)\n\nModus Tollens: **Kalau Q tidak terjadi, maka P pasti tidak terjadi**.\n\n**Kesimpulan:** P tidak benar, yaitu \"Semua berkas lengkap\" itu SALAH.\n\nNah, sekarang perhatikan: **ingkaran dari \"semua berkas lengkap\"** adalah apa?\nIngat dari materi Ingkaran:\n> Ingkaran \"semua X adalah Y\" = \"sebagian X bukan Y\"\n\nJadi ingkaran \"semua berkas lengkap\" adalah:\n> **Tidak semua berkas lengkap** (artinya: minimal satu berkas belum lengkap)\n\n**Kesimpulan: Tidak semua berkas persyaratan telah lengkap**\n\n**Kenapa opsi A salah?** Langsung bertentangan dengan Modus Tollens\n\n**Kenapa opsi C (\"semua berkas belum lengkap\") salah?** Ini **jebakan besar** — banyak peserta mengira ingkaran \"semua\" adalah \"tidak ada\" atau \"semua tidak\". Padahal INGAT dari materi:\n- Ingkaran \"semua\" = \"sebagian tidak\" (bukan \"tidak ada sama sekali\")\n- \"Semua berkas belum lengkap\" berarti NOL berkas yang lengkap — itu terlalu kuat, tidak didukung kesimpulan Modus Tollens\n\n**Kenapa opsi D salah?** Modus Tollens memberi kepastian logis — bukan TDDS\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis\n\n**Ingat dari materi Ingkaran:**\n| Pernyataan asli | Ingkaran yang benar |\n|---|---|\n| Semua A adalah B | Sebagian A bukan B |\n| Sebagian A adalah B | Tidak ada A yang B |\n| Tidak ada A yang B | Sebagian A adalah B |\n\nIngkaran \"semua\" BUKAN \"tidak ada\" atau \"semua tidak\" — melainkan \"sebagian tidak\"!"
-    },
-    {
-      "id": 25,
-      "pertanyaan": "Semua anggota tim riset yang mengikuti konferensi internasional wajib mempresentasikan hasil penelitian. Dr. Sari adalah anggota tim riset yang mengikuti konferensi internasional. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua anggota tim riset yang mengikuti konferensi internasional wajib mempresentasikan hasil penelitian",
-        "Dr. Sari adalah anggota tim riset yang mengikuti konferensi internasional"
-      ],
-      "opsi": [
-        "A. Dr. Sari wajib mempresentasikan hasil penelitian",
-        "B. Dr. Sari tidak wajib mempresentasikan hasil penelitian",
-        "C. Dr. Sari mungkin mempresentasikan hasil penelitian",
-        "D. Tidak dapat disimpulkan",
-        "E. Dr. Sari adalah ketua tim riset"
-      ],
-      "jawaban": "A",
-      "tipe": "Modus Ponens (dengan nama pelaku)",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Ponens dengan nama pelaku** — ingat aturan dari materi:\n\n> \"Kalau premis memuat nama pelaku, kesimpulan WAJIB memuat nama pelaku.\"\n\n**Bedah logikanya:**\n- Premis 1: **Anggota tim riset yang ikut konferensi → Wajib presentasi** (P → Q)\n- Premis 2: **Dr. Sari adalah anggota tim riset yang ikut konferensi** (P benar untuk Dr. Sari)\n\nModus Ponens: P → Q, P benar, maka Q pasti benar.\n\n**Kesimpulan: Dr. Sari wajib mempresentasikan hasil penelitian.**\n\n**Kenapa opsi B salah?** Langsung bertentangan dengan Modus Ponens\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin. Premisnya \"semua\", jadi hasilnya pasti.\n\n**Kenapa opsi D salah?** Modus Ponens memberi kepastian logis — bukan TDDS\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis — tidak ada info soal \"ketua tim riset\"\n\n**Tips dari materi:**\n- Premis mayor: aturan besar (semua anggota tim riset...)\n- Premis minor: fakta spesifik tentang satu orang (Dr. Sari)\n- Kesimpulan wajib memuat nama pelaku (Dr. Sari)\n\n**Ingat rumus Modus Ponens:** P → Q, P benar, maka Q pasti benar."
-    },
-    {
-      "id": 26,
-      "pertanyaan": "Semua sekolah negeri di Kota X menerapkan kurikulum merdeka. Beberapa sekolah swasta di Kota X juga menerapkan kurikulum merdeka. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua sekolah negeri di Kota X menerapkan kurikulum merdeka",
-        "Beberapa sekolah swasta di Kota X juga menerapkan kurikulum merdeka"
-      ],
-      "opsi": [
-        "A. Semua sekolah di Kota X menerapkan kurikulum merdeka",
-        "B. Beberapa sekolah swasta adalah sekolah negeri",
-        "C. Semua sekolah negeri adalah sekolah swasta",
-        "D. Tidak dapat ditarik kesimpulan tentang hubungan sekolah negeri dan swasta",
-        "E. Tidak ada sekolah swasta yang menerapkan kurikulum merdeka"
-      ],
-      "jawaban": "D",
-      "tipe": "Semua + Beberapa (Middle Term Tidak Tersebar)",
-      "tingkat": "Mahir",
-      "pembahasan": "Ini lagi-lagi **jebakan undistributed middle** — middle term tidak tersebar. Soal tipe ini sering muncul di SKD.\n\n**Bedah premis:**\n- Premis 1: **Sekolah negeri → Kurikulum merdeka** (Semua)\n- Premis 2: **Beberapa sekolah swasta → Kurikulum merdeka**\n\n**Masalahnya:** Middle term \"menerapkan kurikulum merdeka\" muncul sebagai **PREDIKAT di kedua premis**. Ingat dari materi:\n\n> \"Middle term harus mencakup seluruh anggota kelompoknya di minimal satu premis. Kalau middle term cuma disebut sebagai predikat dari pernyataan 'semua', middle term itu tidak 'tersebar'.\"\n\n**Analogi dari materi:** Persis seperti kasus kucing-kelinci!\n- \"Semua kucing adalah hewan berbulu. Semua kelinci adalah hewan berbulu.\"\n- Bisakah kita simpulkan hubungan kucing dan kelinci? Tidak — karena \"hewan berbulu\" hanya predikat di kedua premis.\n\n**Visualisasi himpunan:**\n- Lingkaran besar \"kurikulum merdeka\"\n- Di dalamnya ada lingkaran \"sekolah negeri\" (semua sekolah negeri pakai kurikulum merdeka)\n- Beririsan dengan lingkaran \"sekolah swasta\" (beberapa sekolah swasta pakai kurikulum merdeka)\n- Tapi kita TIDAK TAHU hubungan antara \"sekolah negeri\" dan \"sekolah swasta\" — mereka adalah dua kategori yang BERBEDA dan tidak saling berhubungan\n\n**Kenapa opsi A salah?** Overclaim — dari \"semua negeri + beberapa swasta\" tidak bisa disimpulkan \"semua sekolah\"\n\n**Kenapa opsi B dan C salah?** Sekolah negeri dan sekolah swasta adalah **dua kategori berbeda** — tidak mungkin satu sama lain. Ini juga bukan kesimpulan logis dari premis.\n\n**Kenapa opsi E salah?** Langsung bertentangan dengan premis 2\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti tentang hubungan sekolah negeri dan swasta** — jawaban D.\n\n**Tips dari materi:** Kalau kamu lihat middle term hanya muncul sebagai predikat di KEDUA premis, waspadai! Itu biasanya jebakan undistributed middle."
-    },
-    {
-      "id": 27,
-      "pertanyaan": "Jika suatu kebijakan telah melalui proses uji publik, maka kebijakan tersebut dapat diimplementasikan. Kebijakan baru tentang transportasi umum telah melalui proses uji publik. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Jika suatu kebijakan telah melalui proses uji publik, maka kebijakan tersebut dapat diimplementasikan",
-        "Kebijakan baru tentang transportasi umum telah melalui proses uji publik"
-      ],
-      "opsi": [
-        "A. Kebijakan baru tentang transportasi umum dapat diimplementasikan",
-        "B. Kebijakan baru tentang transportasi umum tidak dapat diimplementasikan",
-        "C. Kebijakan baru tentang transportasi umum mungkin dapat diimplementasikan",
-        "D. Tidak dapat disimpulkan",
-        "E. Semua kebijakan transportasi umum dapat diimplementasikan"
-      ],
-      "jawaban": "A",
-      "tipe": "Modus Ponens",
-      "tingkat": "Pemula",
-      "pembahasan": "Ini adalah **Modus Ponens** klasik — pola paling sering keluar di TIU.\n\n**Bedah logikanya:**\n- Premis 1: **Uji publik → Dapat diimplementasikan** (P → Q)\n- Premis 2: **Kebijakan transportasi umum sudah uji publik** (P benar)\n\nModus Ponens: **P → Q, P benar, maka Q pasti benar**.\n\n**Kesimpulan: Kebijakan baru tentang transportasi umum dapat diimplementasikan.**\n\n**Kenapa opsi B salah?** Langsung bertentangan dengan Modus Ponens\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin. Premis 1 adalah implikasi pasti (\"jika...maka...\"), bukan kemungkinan.\n\n**Kenapa opsi D salah?** Modus Ponens memberi kepastian logis — bukan TDDS\n\n**Kenapa opsi E salah?** Overclaim — dari satu kebijakan spesifik tidak bisa disimpulkan \"semua kebijakan transportasi umum\". Ingat dari materi: jangan menambah hubungan yang tidak dinyatakan.\n\n**Ingat rumus Modus Ponens dari materi:**\n- Premis 1: P → Q\n- Premis 2: P\n- Kesimpulan: Q\n\nIni adalah salah satu dari DUA pola sah dalam logika implikasi (satunya Modus Tollens)."
-    },
-    {
-      "id": 28,
-      "pertanyaan": "Semua pegawai yang mendapat penilaian kinerja 'sangat baik' berhak atas kenaikan pangkat. Sebagian pegawai yang berhak atas kenaikan pangkat telah mengikuti pelatihan kepemimpinan. Kesimpulan yang paling tepat adalah...",
-      "premis": [
-        "Semua pegawai yang mendapat penilaian kinerja 'sangat baik' berhak atas kenaikan pangkat",
-        "Sebagian pegawai yang berhak atas kenaikan pangkat telah mengikuti pelatihan kepemimpinan"
-      ],
-      "opsi": [
-        "A. Semua pegawai yang mendapat penilaian 'sangat baik' telah mengikuti pelatihan kepemimpinan",
-        "B. Sebagian pegawai yang mendapat penilaian 'sangat baik' telah mengikuti pelatihan kepemimpinan",
-        "C. Semua pegawai yang mengikuti pelatihan kepemimpinan mendapat penilaian 'sangat baik'",
-        "D. Tidak dapat ditarik kesimpulan pasti",
-        "E. Sebagian pegawai yang tidak mendapat penilaian 'sangat baik' telah mengikuti pelatihan kepemimpinan"
-      ],
-      "jawaban": "D",
-      "tipe": "Semua + Sebagian (Middle Term Tidak Tersebar)",
-      "tingkat": "Mahir",
-      "pembahasan": "Ini lagi-lagi **jebakan undistributed middle** — middle term tidak tersebar. Soal tipe ini sering menjebak peserta yang terburu-buru.\n\n**Bedah premis:**\n- Premis 1: **Penilaian 'sangat baik' → Berhak naik pangkat** (Semua)\n- Premis 2: **Sebagian yang berhak naik pangkat → Ikut pelatihan kepemimpinan**\n\n**Masalahnya:** Middle term \"berhak atas kenaikan pangkat\" muncul sebagai **PREDIKAT di premis 1** dan **SUBJEK di premis 2**. Tapi perhatikan — di premis 2, dia hanya mencakup **SEBAGIAN** dari yang berhak naik pangkat, bukan semua. Ini membuat middle term TIDAK TERSEBAR secara penuh.\n\n**Visualisasi himpunan:**\n- Lingkaran besar \"berhak naik pangkat\"\n- Di dalamnya ada lingkaran \"penilaian sangat baik\" (semua yang sangat baik berhak naik pangkat)\n- Beririsan dengan lingkaran \"ikut pelatihan kepemimpinan\" (sebagian yang berhak naik pangkat ikut pelatihan)\n- Tapi kita TIDAK TAHU apakah irisan \"penilaian sangat baik\" dan \"ikut pelatihan kepemimpinan\" ada atau tidak — bisa ada, bisa tidak. Kita tidak punya info!\n\n**Analogi dari materi:** Persis seperti kasus divisi IT dan lulusan ilmu komputer di soal sebelumnya!\n- Semua pegawai IT menguasai pemrograman\n- Sebagian yang menguasai pemrograman adalah lulusan ilmu komputer\n- Bisakah kita simpulkan hubungan pegawai IT dan lulusan ilmu komputer? Tidak — middle term tidak tersebar.\n\n**Kenapa opsi A salah?** Overclaim — dari \"sebagian\" tidak bisa disimpulkan \"semua\"\n\n**Kenapa opsi B menarik tapi salah?** Meski terdengar masuk akal, ini **TIDAK BISA disimpulkan secara logis**. Bisa saja semua pegawai yang sangat baik TIDAK ikut pelatihan kepemimpinan — premis tidak melarang ini.\n\n**Kenapa opsi C salah?** Ini **jebakan pembalikan pernyataan** — dari \"sangat baik → naik pangkat\" TIDAK bisa disimpulkan \"ikut pelatihan → sangat baik\"\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis\n\n**Kesimpulan: Tidak dapat ditarik kesimpulan pasti** — jawaban D.\n\n**Tips dari materi:** Kalau middle term muncul sebagai predikat di premis \"semua\" dan sebagai subjek di premis \"sebagian\", waspadai! Middle term-nya tidak tersebar secara penuh."
+      "pembahasan": "Hati-hati! Ini **jebakan denying the antecedent**.\n\nAnalisis premis:\n- Premis 1: **Nilai sempurna → Beasiswa penuh** (P → Q)\n- Premis 2: **Andi TIDAK nilai sempurna** (~P)\n\nDari ~P, kita **TIDAK BISA** menyimpulkan ~Q. Kenapa? Karena beasiswa bisa didapat lewat **jalur lain** yang tidak disebutkan di premis — mungkin beasiswa prestasi olahraga, beasiswa tidak mampu, dll.\n\n**Ingat dari materi:**\n> \"P → Q, ~P tidak bisa disimpulkan ~Q. Konsepnya adalah p→q ≠ ~p→~q. Alasannya, q bisa terjadi melalui cara lain yang tidak disebutkan dalam soal.\"\n\n**Kesimpulan: Tidak dapat disimpulkan apakah Andi mendapat beasiswa penuh dari sekolah.**\n\n**Evaluasi opsi:**\n- A: Salah — tidak didukung premis.\n- B: Salah — ini jebakan terbesar! Banyak peserta langsung menjawab \"tidak dapat beasiswa\" karena mengira ~P → ~Q. Padahal itu **TIDAK SAH** secara logika.\n- C: Kurang tepat — \"mungkin\" terdengar aman, tapi di soal TIU biasanya yang dicari adalah pernyataan tentang **kepastian logis**. Karena secara logika kita TIDAK BISA menyimpulkan apapun, opsi D lebih tepat.\n- **D. BENAR** — Sesuai aturan TDDS.\n- E: Salah — info tambahan yang tidak ada di premis."
     },
     {
       "id": 29,
-      "pertanyaan": "Tidak ada mahasiswa yang sedang cuti akademik yang diperbolehkan mengikuti ujian semester. Semua peserta ujian semester terdaftar aktif di sistem akademik. Kesimpulan yang paling tepat adalah...",
+      "pertanyaan": "Tono akan melanjutkan kuliah di universitas negeri atau bekerja di perusahaan swasta. Tono tidak diterima di universitas negeri. Kesimpulan yang paling tepat adalah...",
       "premis": [
-        "Tidak ada mahasiswa yang sedang cuti akademik yang diperbolehkan mengikuti ujian semester",
-        "Semua peserta ujian semester terdaftar aktif di sistem akademik"
+        "Tono akan melanjutkan kuliah di universitas negeri atau bekerja di perusahaan swasta",
+        "Tono tidak diterima di universitas negeri"
       ],
       "opsi": [
-        "A. Semua mahasiswa yang terdaftar aktif bukan mahasiswa cuti akademik",
-        "B. Tidak ada mahasiswa cuti akademik yang terdaftar aktif di sistem akademik",
-        "C. Beberapa mahasiswa cuti akademik diperbolehkan mengikuti ujian",
-        "D. Tidak dapat ditarik kesimpulan pasti",
-        "E. Semua mahasiswa yang tidak terdaftar aktif sedang cuti akademik"
+        "A. Tono akan melanjutkan kuliah di universitas negeri",
+        "B. Tono akan bekerja di perusahaan swasta",
+        "C. Tono tidak akan bekerja di perusahaan swasta",
+        "D. Tidak dapat disimpulkan",
+        "E. Tono akan menganggur tahun ini"
       ],
-      "jawaban": "A",
-      "tipe": "Tidak Ada + Semua",
-      "tingkat": "Menengah",
-      "pembahasan": "Ini adalah kombinasi **Tidak Ada + Semua** yang membutuhkan beberapa langkah logika. Mari kita bedah pelan-pelan.\n\n**Bedah premis 1:**\n\"Tidak ada mahasiswa cuti akademik yang diperbolehkan mengikuti ujian semester\"\nArtinya: **Cuti akademik → TIDAK boleh ikut ujian**\nKontraposisinya: **Boleh ikut ujian → BUKAN cuti akademik**\n\n**Bedah premis 2:**\n\"Semua peserta ujian semester terdaftar aktif di sistem akademik\"\nArtinya: **Peserta ujian → Terdaftar aktif**\n\n**Langkah penarikan kesimpulan:**\n1. Dari kontraposisi premis 1: Peserta ujian → Bukan cuti akademik\n2. Dari premis 2: Peserta ujian → Terdaftar aktif\n3. Gabungkan: Peserta ujian adalah himpunan yang:\n   - Bukan cuti akademik (dari 1)\n   - Terdaftar aktif (dari 2)\n4. Karena semua peserta ujian adalah \"bukan cuti akademik\", dan semua peserta ujian adalah \"terdaftar aktif\", maka:\n   **Semua mahasiswa yang terdaftar aktif (sebagai peserta ujian) BUKAN mahasiswa cuti akademik**\n\n**Kesimpulan: Semua mahasiswa yang terdaftar aktif bukan mahasiswa cuti akademik**\n\n**Kenapa opsi B salah?** Kita tidak punya info soal mahasiswa cuti akademik yang terdaftar aktif di sistem (untuk keperluan lain selain ujian). Premis hanya mengatur soal ujian semester.\n\n**Kenapa opsi C salah?** Langsung bertentangan dengan premis 1\n\n**Kenapa opsi D salah?** Kesimpulan BISA ditarik secara logis\n\n**Kenapa opsi E salah?** Ini **jebakan pembalikan pernyataan** — dari \"Peserta ujian → Terdaftar aktif\" TIDAK bisa disimpulkan \"Tidak terdaftar aktif → Cuti akademik\". Bisa saja mahasiswa tidak terdaftar aktif karena alasan lain (lulus, drop out, dll).\n\n**Ingat dari materi:**\n- Kontraposisi: P → Q ekuivalen dengan ~Q → ~P\n- \"Tidak ada X yang Y\" bisa dibaca sebagai \"X → tidak Y\"\n- Selalu cek apakah ada kontraposisi yang bisa memudahkan penarikan kesimpulan"
+      "jawaban": "B",
+      "tipe": "Disjungsi (atau)",
+      "tingkat": "Pemula",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Tono kuliah di universitas negeri ATAU bekerja di perusahaan swasta** (P ∨ Q)\n- Premis 2: **Tono TIDAK diterima di universitas negeri** (~P)\n\n**Disjungsi (atau):** Digunakan untuk menentukan pilihan sehingga harus memilih salah satu saja.\n\nLogikanya: Tono punya DUA pilihan (kuliah atau kerja). Satu pilihan sudah gugur (tidak diterima kuliah). Maka pilihan yang tersisa PASTI terjadi.\n\n**Kesimpulan: Tono akan bekerja di perusahaan swasta.**\n\n**Evaluasi opsi:**\n- A: Salah — bertentangan dengan premis 2.\n- **B. BENAR** — Sesuai aturan disjungsi.\n- C: Salah — bertentangan dengan kesimpulan.\n- D: Salah — kesimpulan jelas dan pasti.\n- E: Salah — info tambahan yang tidak ada di premis.\n\n**Ingat:** Disjungsi = \"atau\". Jika satu pilihan gugur, sisanya otomatis benar."
     },
     {
       "id": 30,
-      "pertanyaan": "Sebuah instansi pemerintah menerapkan sistem penilaian: semua pegawai yang mencapai target kinerja akan mendapat bonus tahunan. Tidak ada pegawai yang mendapat bonus tahunan yang mendapat surat teguran. Andi mendapat surat teguran tahun ini. Kesimpulan yang paling tepat adalah...",
+      "pertanyaan": "Semua taman kota memiliki area bermain anak dan jalur jogging. Tempat yang dikunjungi Rani tidak memiliki area bermain anak dan tidak memiliki jalur jogging. Kesimpulan yang paling tepat adalah...",
       "premis": [
-        "Semua pegawai yang mencapai target kinerja akan mendapat bonus tahunan",
-        "Tidak ada pegawai yang mendapat bonus tahunan yang mendapat surat teguran",
-        "Andi mendapat surat teguran tahun ini"
+        "Semua taman kota memiliki area bermain anak dan jalur jogging",
+        "Tempat yang dikunjungi Rani tidak memiliki area bermain anak dan tidak memiliki jalur jogging"
       ],
       "opsi": [
-        "A. Andi mencapai target kinerja",
-        "B. Andi tidak mencapai target kinerja",
-        "C. Andi mungkin mencapai target kinerja",
+        "A. Tempat yang dikunjungi Rani adalah taman kota",
+        "B. Tempat yang dikunjungi Rani bukan taman kota",
+        "C. Tempat yang dikunjungi Rani mungkin taman kota",
         "D. Tidak dapat disimpulkan",
-        "E. Andi akan mendapat bonus tahun depan"
+        "E. Semua taman kota tidak memiliki area bermain anak"
       ],
       "jawaban": "B",
-      "tipe": "Silogisme Berantai + Modus Tollens",
-      "tingkat": "Mahir",
-      "pembahasan": "Soal ini adalah **silogisme berantai** dengan 3 premis dan butuh Modus Tollens di akhir. Mari kita bedah langkah demi langkah.\n\n**Bedah premis 1:**\n\"Semua pegawai yang mencapai target kinerja akan mendapat bonus tahunan\"\nArtinya: **Capai target → Dapat bonus** (P → Q)\n\n**Bedah premis 2:**\n\"Tidak ada pegawai yang mendapat bonus tahunan yang mendapat surat teguran\"\nArtinya: **Dapat bonus → TIDAK dapat teguran** (Q → ~R)\nKontraposisinya: **Dapat teguran → TIDAK dapat bonus** (R → ~Q)\n\n**Bedah premis 3:**\n\"Andi mendapat surat teguran tahun ini\" (R benar untuk Andi)\n\n**Langkah penarikan kesimpulan:**\n1. Dari kontraposisi premis 2: Dapat teguran → Tidak dapat bonus\n2. Premis 3: Andi dapat teguran\n3. **Modus Tollens/Ponens dari kontraposisi**: Andi tidak dapat bonus (~Q)\n4. Sekarang gunakan premis 1: Capai target → Dapat bonus (P → Q)\n5. Kita tahu ~Q (Andi tidak dapat bonus)\n6. **Modus Tollens**: P → Q, ~Q, maka ~P\n7. **Kesimpulan: Andi tidak mencapai target kinerja**\n\n**Kenapa opsi A salah?** Langsung bertentangan dengan kesimpulan logis\n\n**Kenapa opsi C (\"mungkin\") salah?** Kesimpulannya PASTI, bukan mungkin — Modus Tollens memberi kepastian logis\n\n**Kenapa opsi D salah?** Kesimpulan BISA ditarik secara pasti lewat rantai logika\n\n**Kenapa opsi E salah?** Info tambahan yang tidak pernah disebutkan premis — **jangan menambah hubungan yang tidak dinyatakan**\n\n**Ingat dari materi:**\n- Silogisme berantai: P → Q, Q → R, maka P → R\n- Kontraposisi: P → Q ekuivalen dengan ~Q → ~P\n- Modus Tollens: P → Q, ~Q, maka ~P\n- Kadang butuh beberapa langkah logika untuk sampai ke kesimpulan akhir\n\n**Tips:** Kalau soal punya 3 premis, coba susun rantainya dulu. Kalau ada premis yang bentuknya \"tidak ada\", pertimbangkan kontraposisi untuk memudahkan penarikan kesimpulan."
+      "tipe": "Konjungsi (dan) + Modus Tollens",
+      "tingkat": "Menengah",
+      "pembahasan": "Analisis premis:\n- Premis 1: **Taman kota → Area bermain anak DAN jalur jogging** (P → Q ∧ R)\n- Premis 2: **Tempat Rani TIDAK punya area bermain anak DAN TIDAK punya jalur jogging** (~Q ∧ ~R)\n\n**Konjungsi (dan):** Bernilai benar jika terpenuhi semuanya (kedua pernyataan benar).\n\n**Modus Tollens:** P → Q, ~Q, maka ~P.\n\nLogikanya: Seandainya tempat Rani adalah taman kota, maka tempat itu PASTI punya area bermain anak DAN jalur jogging. Tapi faktanya tempat itu TIDAK punya keduanya. Berarti tempat itu PASTI bukan taman kota.\n\n**Kesimpulan: Tempat yang dikunjungi Rani bukan taman kota.**\n\n**Evaluasi opsi:**\n- A: Salah — bertentangan dengan Modus Tollens.\n- **B. BENAR** — Sesuai Modus Tollens dengan konjungsi.\n- C: Salah — Modus Tollens memberi KEPASTIAN, bukan kemungkinan.\n- D: Salah — Modus Tollens adalah pola SAH yang memberi kesimpulan pasti.\n- E: Salah — bertentangan dengan premis 1.\n\n**Ingat:** Konjungsi = \"dan\". Jika salah satu syarat tidak terpenuhi, maka keseluruhan kondisi tidak terpenuhi."
     }
   ]
 }

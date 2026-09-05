@@ -2,499 +2,523 @@
   {
     "id": 1,
     "level": "Pemula",
-    "soal": "TELUR : UNGGAS = TUNAS : ...",
-    "pilihan": ["Biji", "Daun", "Akar", "Air", "Tumbuhan"],
-    "kunci": "E",
-    "pola": "Perkembangan menjadi wujud dewasa",
-    "pembahasan": "Telur akan menetas dan tumbuh menjadi unggas. Dengan pola yang sama, tunas akan berkembang menjadi tumbuhan. Hubungan yang diuji adalah tahap awal yang berkembang menjadi bentuk dewasa.",
+    "soal": "KAKAO : COKELAT = KEDELAI : ...",
+    "pilihan": ["Tahu", "Tempe", "Kecap", "Susu", "Minyak"],
+    "kunci": "B",
+    "pola": "Transformasi bahan baku menjadi produk olahan",
+    "pembahasan": "Kakao adalah bahan baku yang diolah menjadi cokelat. Dengan pola yang sama, kedelai adalah bahan baku yang diolah menjadi tempe melalui proses fermentasi.",
     "analisis_opsi": {
-      "A": "Salah. Biji adalah asal tunas, bukan hasil perkembangan tunas.",
-      "B": "Salah. Daun adalah bagian tumbuhan, bukan hasil perkembangan tunas.",
-      "C": "Salah. Akar adalah bagian tumbuhan, bukan hasil perkembangan tunas.",
-      "D": "Salah. Air adalah kebutuhan tumbuhan, bukan hasil perkembangan.",
-      "E": "Benar. Tunas berkembang menjadi tumbuhan."
+      "A": "Salah. Tahu memang dari kedelai, tetapi prosesnya berbeda dengan fermentasi kakao menjadi cokelat.",
+      "B": "Benar. Kedelai difermentasi menjadi tempe, sama seperti kakao diolah menjadi cokelat.",
+      "C": "Salah. Kecap dari kedelai hitam, bukan kedelai biasa.",
+      "D": "Salah. Susu kedelai adalah minuman, bukan produk olahan padat.",
+      "E": "Salah. Minyak kedelai bukan produk olahan utama."
     }
   },
   {
     "id": 2,
-    "level": "Mahir",
-    "soal": "KEMANDIRIAN : BANTUAN = TRANSPORTASI : ...",
-    "pilihan": ["Perjalanan", "Penumpang", "Kemacetan", "Kendaraan", "Pengangkutan"],
-    "kunci": "C",
-    "pola": "Lawan kondisi",
-    "pembahasan": "Kemandirian adalah kondisi tidak memerlukan bantuan. Transportasi adalah kondisi adanya pergerakan atau perpindahan. Lawan dari kondisi bergerak adalah kemacetan, yaitu pergerakan yang terhambat atau terhenti.",
+    "level": "Pemula",
+    "soal": "TERSENYUM : TERTAWA = BERBISIK : ...",
+    "pilihan": ["Bergumam", "Berteriak", "Bersuara", "Berbicara", "Berdengung"],
+    "kunci": "B",
+    "pola": "Tingkatan intensitas dari ringan ke kuat",
+    "pembahasan": "Tersenyum adalah bentuk ringan dari tertawa. Berbisik adalah bentuk ringan dari berteriak. Keduanya menunjukkan peningkatan intensitas dari ekspresi yang lemah ke yang lebih kuat.",
     "analisis_opsi": {
-      "A": "Salah. Perjalanan adalah proses transportasi, bukan lawan kondisi.",
-      "B": "Salah. Penumpang adalah orang yang terlibat dalam transportasi.",
-      "C": "Benar. Kemacetan adalah lawan dari kondisi transportasi yang lancar.",
-      "D": "Salah. Kendaraan adalah alat transportasi.",
-      "E": "Salah. Pengangkutan adalah aktivitas transportasi, bukan lawan kondisi."
+      "A": "Salah. Bergumam masih dalam kategori suara pelan, bukan peningkatan intensitas.",
+      "B": "Benar. Berteriak adalah bentuk intens dari berbisik.",
+      "C": "Salah. Bersuara terlalu umum.",
+      "D": "Salah. Berbicara adalah aktivitas netral.",
+      "E": "Salah. Berdengung adalah suara monoton."
     }
   },
   {
     "id": 3,
-    "level": "Menengah",
-    "soal": "MENEGUR : MEMBENTAK = MELIHAT : ...",
-    "pilihan": ["Mengamati", "Memandang", "Menonton", "Mengerling", "Melotot"],
-    "kunci": "E",
-    "pola": "Intensitas meningkat",
-    "pembahasan": "Membentak adalah bentuk menegur dengan intensitas yang lebih keras. Dengan pola yang sama, melotot adalah bentuk melihat dengan intensitas yang lebih tajam atau lebih kuat.",
+    "level": "Mahir",
+    "soal": "FERMENTASI : RAGI = RESPIRASI : ...",
+    "pilihan": ["Oksigen", "Mitokondria", "Karbon dioksida", "Paru-paru", "Hemoglobin"],
+    "kunci": "B",
+    "pola": "Proses biologi dan organel/tempat terjadinya",
+    "pembahasan": "Fermentasi adalah proses biologi yang terjadi dengan bantuan ragi. Respirasi seluler adalah proses biologi yang terjadi di mitokondria. Keduanya menunjukkan hubungan antara proses metabolisme dan tempat spesifik terjadinya.",
     "analisis_opsi": {
-      "A": "Salah. Mengamati adalah sinonim melihat, bukan peningkatan intensitas.",
-      "B": "Salah. Memandang adalah sinonim melihat, bukan peningkatan intensitas.",
-      "C": "Salah. Menonton adalah bentuk melihat, tetapi tidak menunjukkan peningkatan intensitas.",
-      "D": "Salah. Mengerling adalah cara melihat sekilas, bukan peningkatan intensitas.",
-      "E": "Benar. Melotot adalah melihat dengan lebih tajam atau lebih intens."
+      "A": "Salah. Oksigen adalah bahan baku respirasi, bukan tempat terjadinya.",
+      "B": "Benar. Mitokondria adalah organel tempat respirasi seluler terjadi.",
+      "C": "Salah. Karbon dioksida adalah hasil respirasi.",
+      "D": "Salah. Paru-paru adalah organ, bukan organel sel.",
+      "E": "Salah. Hemoglobin adalah protein pengangkut oksigen."
     }
   },
   {
     "id": 4,
     "level": "Pemula",
-    "soal": "KEDELAI HITAM : KECAP = TEBU : ...",
-    "pilihan": ["Gula", "Sirup", "Saus", "Minuman", "Tepung"],
-    "kunci": "A",
-    "pola": "Bahan baku dan hasil olahan",
-    "pembahasan": "Kedelai hitam adalah bahan dasar dalam pembuatan kecap. Dengan pola yang sama, tebu adalah bahan dasar dalam pembuatan gula.",
+    "soal": "KUAS : CAT = PENA : ...",
+    "pilihan": ["Kertas", "Tinta", "Ujung", "Tulisan", "Gambar"],
+    "kunci": "B",
+    "pola": "Alat dan komponen esensial agar berfungsi",
+    "pembahasan": "Kuas memerlukan cat agar dapat berfungsi untuk melukis. Pena memerlukan tinta agar dapat berfungsi untuk menulis. Keduanya menunjukkan hubungan antara alat dan komponen utama yang sangat diperlukan.",
     "analisis_opsi": {
-      "A": "Benar. Tebu adalah bahan baku utama untuk membuat gula.",
-      "B": "Salah. Sirup dapat dibuat dari berbagai bahan, bukan hasil utama tebu dalam pola ini.",
-      "C": "Salah. Saus bukan hasil olahan utama tebu.",
-      "D": "Salah. Minuman terlalu umum dan bukan hasil olahan langsung tebu.",
-      "E": "Salah. Tepung bukan hasil olahan tebu."
+      "A": "Salah. Kertas adalah media, bukan komponen esensial pena.",
+      "B": "Benar. Tinta adalah komponen esensial pena.",
+      "C": "Salah. Ujung adalah bagian pena, bukan komponen yang diperlukan.",
+      "D": "Salah. Tulisan adalah hasil, bukan komponen.",
+      "E": "Salah. Gambar adalah hasil, bukan komponen."
     }
   },
   {
     "id": 5,
-    "level": "Mahir",
-    "soal": "HARGA : KUALITAS = RESPONSIF : ...",
-    "pilihan": ["Cerdas", "Komplain", "Lambat", "Pelanggan", "Pelayanan"],
-    "kunci": "E",
-    "pola": "Indikator atau penanda",
-    "pembahasan": "Harga yang tinggi sering menjadi indikator dari kualitas yang baik. Dengan pola yang sama, sifat responsif sering menjadi indikator dari pelayanan yang baik.",
+    "level": "Menengah",
+    "soal": "TENTATIF : BELUM PASTI = ... : ...",
+    "pilihan": ["Efektif : Berhasil", "Absolut : Mutlak", "Relatif : Terbatas", "Signifikan : Kecil", "Fundamental : Tambahan"],
+    "kunci": "B",
+    "pola": "Sinonim kata serapan",
+    "pembahasan": "Tentatif bersinonim dengan belum pasti. Absolut bersinonim dengan mutlak. Keduanya menunjukkan hubungan persamaan makna antara kata serapan dan padanan kata Indonesianya.",
     "analisis_opsi": {
-      "A": "Salah. Cerdas adalah sifat individu, bukan indikator pelayanan.",
-      "B": "Salah. Komplain adalah reaksi pelanggan, bukan indikator yang dicari.",
-      "C": "Salah. Lambat adalah kebalikan dari responsif.",
-      "D": "Salah. Pelanggan adalah pihak yang menerima pelayanan, bukan indikator pelayanan.",
-      "E": "Benar. Responsif adalah indikator pelayanan yang baik."
+      "A": "Salah. Efektif berarti berhasil guna, bukan sekadar berhasil.",
+      "B": "Benar. Absolut dan mutlak adalah sinonim.",
+      "C": "Salah. Relatif berarti tidak mutlak, bukan terbatas.",
+      "D": "Salah. Signifikan berarti penting, bukan kecil.",
+      "E": "Salah. Fundamental berarti mendasar, bukan tambahan."
     }
   },
   {
     "id": 6,
-    "level": "Pemula",
-    "soal": "SAKIT : PUCAT = KEDINGINAN : ...",
-    "pilihan": ["Menggigil", "Selimut", "Demam", "Jaket", "Es"],
-    "kunci": "A",
-    "pola": "Sebab-akibat pada reaksi tubuh",
-    "pembahasan": "Kondisi sakit dapat menyebabkan wajah menjadi pucat. Dengan pola yang sama, kondisi kedinginan dapat menyebabkan tubuh menggigil.",
+    "level": "Menengah",
+    "soal": "KERJA KERAS : KEBERHASILAN = KEMALASAN : ...",
+    "pilihan": ["Kegembiraan", "Kegagalan", "Keberhasilan", "Kemarahan", "Keputusasaan"],
+    "kunci": "B",
+    "pola": "Sebab-akibat (aktivitas dan hasilnya)",
+    "pembahasan": "Kerja keras sering kali mengakibatkan keberhasilan. Kemalasan sering kali mengakibatkan kegagalan. Keduanya menunjukkan hubungan sebab-akibat antara sifat/aktivitas dan konsekuensinya.",
     "analisis_opsi": {
-      "A": "Benar. Menggigil adalah reaksi tubuh terhadap kondisi kedinginan.",
-      "B": "Salah. Selimut adalah alat untuk mengatasi dingin, bukan reaksi tubuh.",
-      "C": "Salah. Demam adalah kondisi tubuh yang berbeda.",
-      "D": "Salah. Jaket adalah alat untuk menghangatkan tubuh.",
-      "E": "Salah. Es adalah benda dingin, bukan reaksi tubuh."
+      "A": "Salah. Kegembiraan bukan akibat langsung dari kemalasan.",
+      "B": "Benar. Kemalasan mengakibatkan kegagalan.",
+      "C": "Salah. Keberhasilan adalah akibat kerja keras, bukan kemalasan.",
+      "D": "Salah. Kemarahan bukan akibat kemalasan.",
+      "E": "Salah. Keputusasaan terlalu ekstrem."
     }
   },
   {
     "id": 7,
-    "level": "Menengah",
-    "soal": "HAMIL : MELAHIRKAN = MEMASAK : ...",
-    "pilihan": ["Matang", "Makanan", "Api", "Dapur", "Menyajikan"],
-    "kunci": "E",
-    "pola": "Proses dan tindakan lanjutan",
-    "pembahasan": "Kehamilan adalah proses yang puncaknya adalah tindakan melahirkan. Dengan pola yang sama, memasak adalah proses yang setelah selesai dilanjutkan dengan tindakan menyajikan. Matang bukan jawaban terbaik karena matang adalah kondisi, bukan tindakan lanjutan.",
+    "level": "Mahir",
+    "soal": "PERUSAHAAN : KEBANGKRUTAN = NEGARA : ...",
+    "pilihan": ["Kemakmuran", "Konflik", "Pembangunan", "Demokrasi", "Kesejahteraan"],
+    "kunci": "B",
+    "pola": "Entitas dan masalah yang mungkin terjadi",
+    "pembahasan": "Kebangkrutan adalah salah satu masalah atau situasi negatif yang mungkin terjadi pada perusahaan. Konflik adalah salah satu masalah atau situasi negatif yang mungkin terjadi pada negara. Keduanya menunjukkan hubungan antara entitas dan kemungkinan konsekuensi negatifnya.",
     "analisis_opsi": {
-      "A": "Salah. Matang adalah kondisi hasil memasak, bukan tindakan lanjutan.",
-      "B": "Salah. Makanan adalah hasil, bukan tindakan setelah memasak.",
-      "C": "Salah. Api adalah alat atau sumber untuk memasak.",
-      "D": "Salah. Dapur adalah tempat memasak.",
-      "E": "Benar. Menyajikan adalah tindakan lanjutan setelah memasak."
+      "A": "Salah. Kemakmuran adalah kondisi positif, bukan masalah.",
+      "B": "Benar. Konflik adalah masalah yang mungkin terjadi pada negara.",
+      "C": "Salah. Pembangunan adalah proses positif.",
+      "D": "Salah. Demokrasi adalah sistem pemerintahan.",
+      "E": "Salah. Kesejahteraan adalah kondisi positif."
     }
   },
   {
     "id": 8,
-    "level": "Mahir",
-    "soal": "DOMBA : TARING = JUARA : ...",
-    "pilihan": ["Latihan", "Lomba", "Kekalahan", "Hadiah", "Pemenang"],
-    "kunci": "C",
-    "pola": "Ketiadaan atau ketidakpemilikan",
-    "pembahasan": "Domba tidak memiliki taring. Dengan pola yang sama, juara tidak memiliki kekalahan. Hubungan yang diuji adalah ketiadaan sesuatu pada subjek.",
+    "level": "Pemula",
+    "soal": "OLAHRAGA : BUGAR = MAKAN : ...",
+    "pilihan": ["Lapar", "Kenyang", "Gemuk", "Sehat", "Energi"],
+    "kunci": "B",
+    "pola": "Aktivitas dan efek langsung yang dirasakan",
+    "pembahasan": "Bugar adalah efek langsung yang dirasakan setelah berolahraga. Kenyang adalah efek langsung yang dirasakan setelah makan. Keduanya menunjukkan hubungan antara aktivitas dan kondisi yang langsung dirasakan setelahnya.",
     "analisis_opsi": {
-      "A": "Salah. Latihan adalah proses menuju juara, bukan sesuatu yang tidak dimiliki juara.",
-      "B": "Salah. Lomba adalah tempat atau kegiatan untuk menjadi juara.",
-      "C": "Benar. Juara tidak memiliki kekalahan.",
-      "D": "Salah. Hadiah adalah sesuatu yang dapat dimiliki juara.",
-      "E": "Salah. Pemenang adalah sinonim juara."
+      "A": "Salah. Lapar adalah kondisi sebelum makan.",
+      "B": "Benar. Kenyang adalah efek langsung setelah makan.",
+      "C": "Salah. Gemuk adalah efek jangka panjang, bukan langsung.",
+      "D": "Salah. Sehat terlalu umum.",
+      "E": "Salah. Energi adalah hasil metabolisme, bukan efek langsung."
     }
   },
   {
     "id": 9,
-    "level": "Pemula",
-    "soal": "TANAM : PANEN = BELAJAR : ...",
-    "pilihan": ["Lulus", "Nilai", "Ujian", "Sekolah", "Guru"],
-    "kunci": "A",
-    "pola": "Proses dan hasil akhir",
-    "pembahasan": "Setelah melakukan proses menanam, hasil yang ditunggu adalah panen. Dengan pola yang sama, setelah melalui proses belajar, hasil akhir yang diharapkan adalah lulus.",
+    "level": "Mahir",
+    "soal": "ES : DINGIN = API : ...",
+    "pilihan": ["Terang", "Panas", "Merah", "Besar", "Menyala"],
+    "kunci": "B",
+    "pola": "Benda dan sifat yang melekat (karakteristik alami)",
+    "pembahasan": "Dingin adalah sifat yang melekat pada es. Panas adalah sifat yang melekat pada api. Keduanya menunjukkan hubungan antara benda dan karakteristik alaminya yang paling mendasar.",
     "analisis_opsi": {
-      "A": "Benar. Lulus adalah hasil akhir dari proses belajar.",
-      "B": "Salah. Nilai adalah ukuran hasil, bukan hasil akhir utama.",
-      "C": "Salah. Ujian adalah bagian dari proses belajar.",
-      "D": "Salah. Sekolah adalah tempat belajar.",
-      "E": "Salah. Guru adalah pelaku yang membantu proses belajar."
+      "A": "Salah. Terang adalah sifat cahaya, bukan api secara spesifik.",
+      "B": "Benar. Panas adalah sifat melekat api.",
+      "C": "Salah. Merah adalah warna, bukan sifat utama.",
+      "D": "Salah. Besar adalah ukuran, bukan sifat melekat.",
+      "E": "Salah. Menyala adalah aktivitas, bukan sifat."
     }
   },
   {
     "id": 10,
-    "level": "Menengah",
-    "soal": "DINGIN : BEKU = OMBAK : ...",
-    "pilihan": ["Laut", "Gelombang", "Abrasi", "Pasir", "Karang"],
-    "kunci": "C",
-    "pola": "Akibat dari proses yang terus-menerus",
-    "pembahasan": "Dingin yang terus-menerus dapat menyebabkan beku. Dengan pola yang sama, ombak yang terus-menerus dapat menyebabkan abrasi atau pengikisan.",
+    "level": "Mahir",
+    "soal": "HUJAN LEBAT : BANJIR = ANGIN KENCANG : ...",
+    "pilihan": ["Sepoi", "Badai", "Dingin", "Awan", "Daun"],
+    "kunci": "B",
+    "pola": "Kausalitas kumulatif (fenomena alam dan akibat ekstremnya)",
+    "pembahasan": "Hujan lebat yang terus-menerus dapat mengakibatkan banjir. Angin kencang yang terus-menerus dapat mengakibatkan badai. Keduanya menunjukkan hubungan antara fenomena alam dan akibat ekstrem yang ditimbulkannya.",
     "analisis_opsi": {
-      "A": "Salah. Laut adalah tempat ombak, bukan akibat ombak.",
-      "B": "Salah. Gelombang adalah bentuk lain dari ombak.",
-      "C": "Benar. Abrasi adalah akibat dari ombak yang terjadi terus-menerus.",
-      "D": "Salah. Pasir adalah objek yang dapat terkena abrasi.",
-      "E": "Salah. Karang adalah objek di laut, bukan akibat langsung ombak."
+      "A": "Salah. Sepoi adalah bentuk ringan angin, bukan akibat.",
+      "B": "Benar. Badai adalah akibat ekstrem dari angin kencang.",
+      "C": "Salah. Dingin adalah suhu, bukan akibat angin.",
+      "D": "Salah. Awan adalah fenomena lain.",
+      "E": "Salah. Daun adalah objek yang terkena angin."
     }
   },
   {
     "id": 11,
     "level": "Mahir",
-    "soal": "BICARA : DEBAT : DISKUSI = ... : ... : ...",
-    "pilihan": [
-      "Menulis : Membaca : Menyimpulkan",
-      "Tidur : Mimpi : Bangun",
-      "Berdiri : Jalan : Lari",
-      "Evaluasi : Kritik : Apresiasi",
-      "Tanam : Rawat : Panen"
-    ],
-    "kunci": "D",
-    "pola": "Tindakan umum dan dua bentuk berlawanan",
-    "pembahasan": "Bicara adalah tindakan umum yang dapat berbentuk debat yang cenderung negatif atau diskusi yang cenderung positif. Dengan pola yang sama, evaluasi adalah tindakan umum yang dapat berbentuk kritik yang cenderung negatif atau apresiasi yang cenderung positif.",
+    "soal": "KEMERDEKAAN : PENJAJAHAN = PERDAMAIAN : ...",
+    "pilihan": ["Keamanan", "Perang", "Ketertiban", "Kerjasama", "Persatuan"],
+    "kunci": "B",
+    "pola": "Lawan kondisi (keadaan dan lawannya)",
+    "pembahasan": "Kemerdekaan adalah kondisi bebas dari penjajahan. Perdamaian adalah kondisi bebas dari perang. Keduanya menunjukkan hubungan antara suatu kondisi positif dan kondisi negatif yang menjadi lawannya.",
     "analisis_opsi": {
-      "A": "Salah. Menulis, membaca, dan menyimpulkan adalah rangkaian kegiatan literasi, bukan dua bentuk dari satu tindakan.",
-      "B": "Salah. Tidur, mimpi, dan bangun adalah siklus, bukan dua bentuk dari satu tindakan.",
-      "C": "Salah. Berdiri, jalan, dan lari adalah tingkatan gerak, bukan dua bentuk berlawanan.",
-      "D": "Benar. Evaluasi dapat berbentuk kritik atau apresiasi, sebagaimana bicara dapat berbentuk debat atau diskusi.",
-      "E": "Salah. Tanam, rawat, dan panen adalah urutan proses pertanian."
+      "A": "Salah. Keamanan bukan lawan dari perdamaian.",
+      "B": "Benar. Perang adalah lawan dari perdamaian.",
+      "C": "Salah. Ketertiban bukan lawan perdamaian.",
+      "D": "Salah. Kerjasama adalah bentuk perdamaian.",
+      "E": "Salah. Persatuan adalah bentuk perdamaian."
     }
   },
   {
     "id": 12,
-    "level": "Pemula",
-    "soal": "GENDANG : DANGDUT = TAJAM : ...",
-    "pilihan": ["Tumpul", "Luka", "Pop", "Silet", "Asah"],
-    "kunci": "D",
-    "pola": "Ciri khas atau karakteristik utama",
-    "pembahasan": "Gendang adalah alat musik yang menjadi ciri khas musik dangdut. Dengan pola yang sama, tajam adalah karakteristik utama dari silet.",
+    "level": "Menengah",
+    "soal": "MENABUR : TUAI = BELAJAR : ...",
+    "pilihan": ["Lulus", "Nilai", "Ujian", "Sekolah", "Guru"],
+    "kunci": "A",
+    "pola": "Urutan proses (aktivitas awal dan hasil akhir)",
+    "pembahasan": "Menabur adalah proses awal yang akan menghasilkan tuai (panen). Belajar adalah proses awal yang akan menghasilkan kelulusan. Keduanya menunjukkan hubungan antara proses awal dan hasil akhir yang diharapkan.",
     "analisis_opsi": {
-      "A": "Salah. Tumpul adalah lawan kata tajam.",
-      "B": "Salah. Luka adalah akibat dari benda tajam.",
-      "C": "Salah. Pop adalah jenis musik lain.",
-      "D": "Benar. Silet dikenal karena sifatnya yang tajam.",
-      "E": "Salah. Asah adalah tindakan untuk membuat tajam."
+      "A": "Benar. Lulus adalah hasil akhir dari proses belajar.",
+      "B": "Salah. Nilai adalah ukuran, bukan hasil akhir.",
+      "C": "Salah. Ujian adalah bagian dari proses belajar.",
+      "D": "Salah. Sekolah adalah tempat belajar.",
+      "E": "Salah. Guru adalah pengajar."
     }
   },
   {
     "id": 13,
     "level": "Menengah",
-    "soal": "MARAH : MURKA = PERSELISIHAN : ...",
-    "pilihan": ["Perdebatan", "Konflik", "Peperangan", "Diskusi", "Damai"],
+    "soal": "AWAN : HUJAN = TERSANGKA : ...",
+    "pilihan": ["Polisi", "Penjara", "Terdakwa", "Saksi", "Kejahatan"],
     "kunci": "C",
-    "pola": "Tingkatan intensitas atau skala tertinggi",
-    "pembahasan": "Murka adalah bentuk marah pada tingkat yang sangat tinggi. Dengan pola yang sama, peperangan adalah bentuk perselisihan pada tingkat yang sangat tinggi.",
+    "pola": "Pertanda atau tahap awal sebelum peristiwa/tahap selanjutnya",
+    "pembahasan": "Awan adalah pertanda bahwa hujan kemungkinan besar akan turun. Tersangka adalah pertanda atau tahap awal sebelum seseorang diajukan ke pengadilan sebagai terdakwa. Keduanya menunjukkan hubungan antara tahap awal dan tahap selanjutnya.",
     "analisis_opsi": {
-      "A": "Salah. Perdebatan adalah bentuk perselisihan yang lebih ringan.",
-      "B": "Salah. Konflik adalah sinonim atau bentuk umum perselisihan.",
-      "C": "Benar. Peperangan adalah perselisihan pada skala tertinggi.",
-      "D": "Salah. Diskusi adalah bentuk komunikasi yang cenderung positif.",
-      "E": "Salah. Damai adalah lawan dari perselisihan."
+      "A": "Salah. Polisi adalah penegak hukum.",
+      "B": "Salah. Penjara adalah tempat hukuman.",
+      "C": "Benar. Terdakwa adalah tahap selanjutnya setelah tersangka.",
+      "D": "Salah. Saksi adalah pihak lain dalam proses hukum.",
+      "E": "Salah. Kejahatan adalah penyebab seseorang menjadi tersangka."
     }
   },
   {
     "id": 14,
-    "level": "Mahir",
-    "soal": "MENCURI : DERMAWAN = PERUNDUNGAN : ...",
-    "pilihan": ["Ketakutan", "Pertikaian", "Pahlawan", "Pengasih", "Keberanian"],
-    "kunci": "D",
-    "pola": "Lawan perilaku atau sifat",
-    "pembahasan": "Mencuri adalah perilaku mengambil hak orang lain, berkebalikan dengan sifat dermawan yang suka memberi atau membantu. Dengan pola yang sama, perundungan berkebalikan dengan sifat pengasih yang penuh kasih sayang dan melindungi.",
+    "level": "Pemula",
+    "soal": "KEPOMPONG : KUPU-KUPU = TUNAS : ...",
+    "pilihan": ["Biji", "Daun", "Akar", "Air", "Pohon"],
+    "kunci": "E",
+    "pola": "Perkembangan menjadi wujud dewasa",
+    "pembahasan": "Kepompong akan berkembang menjadi kupu-kupu. Tunas akan berkembang menjadi pohon. Keduanya menunjukkan hubungan antara tahap awal perkembangan dan wujud dewasanya.",
     "analisis_opsi": {
-      "A": "Salah. Ketakutan adalah akibat perundungan, bukan sifat lawannya.",
-      "B": "Salah. Pertikaian berkaitan dengan konflik, bukan lawan sifat perundungan.",
-      "C": "Salah. Pahlawan adalah pelaku yang baik, tetapi bukan sifat yang langsung berlawanan dengan perundungan.",
-      "D": "Benar. Pengasih adalah sifat yang berlawanan dengan perundungan.",
-      "E": "Salah. Keberanian tidak secara langsung berlawanan dengan perundungan."
+      "A": "Salah. Biji adalah tahap sebelum tunas.",
+      "B": "Salah. Daun adalah bagian pohon.",
+      "C": "Salah. Akar adalah bagian pohon.",
+      "D": "Salah. Air adalah kebutuhan pohon.",
+      "E": "Benar. Pohon adalah wujud dewasa dari tunas."
     }
   },
   {
     "id": 15,
-    "level": "Pemula",
-    "soal": "ULAT : KEPOMPONG = AIR : ...",
-    "pilihan": ["Es", "Galon", "Embun", "Hujan", "Mendidih"],
-    "kunci": "A",
-    "pola": "Perubahan wujud atau fase",
-    "pembahasan": "Ulat berubah wujud menjadi kepompong. Dengan pola yang sama, air berubah wujud menjadi es.",
+    "level": "Mahir",
+    "soal": "MELIRIK : MENATAP = ... : ...",
+    "pilihan": ["Berbisik : Berteriak", "Berjalan : Berlari", "Tersenyum : Tertawa", "Meraba : Memegang", "Mengangguk : Menggeleng"],
+    "kunci": "C",
+    "pola": "Tingkatan intensitas (derajat) dari lemah ke kuat",
+    "pembahasan": "Melirik adalah cara melihat secara sekilas atau tidak langsung, sedangkan menatap adalah cara melihat yang lebih intens dan fokus. Tersenyum adalah ekspresi ringan, sedangkan tertawa adalah ekspresi yang lebih intens. Keduanya menunjukkan pola peningkatan intensitas.",
     "analisis_opsi": {
-      "A": "Benar. Air dapat berubah wujud menjadi es.",
-      "B": "Salah. Galon adalah wadah air.",
-      "C": "Salah. Embun adalah wujud air yang lain, tetapi bukan perubahan langsung dari air dalam pola ini.",
-      "D": "Salah. Hujan adalah sumber atau bentuk air.",
-      "E": "Salah. Mendidih adalah proses, bukan wujud akhir air."
+      "A": "Salah. Berbisik dan berteriak adalah perbedaan volume, bukan intensitas ekspresi.",
+      "B": "Salah. Berjalan dan berlari adalah perbedaan kecepatan.",
+      "C": "Benar. Tersenyum dan tertawa menunjukkan peningkatan intensitas ekspresi.",
+      "D": "Salah. Meraba dan memegang adalah perbedaan tekanan.",
+      "E": "Salah. Mengangguk dan menggeleng adalah gerakan berlawanan."
     }
   },
   {
     "id": 16,
     "level": "Menengah",
-    "soal": "MAKAN : BEGAH = DEMAM : ...",
-    "pilihan": ["Suhu", "Kejang", "Batuk", "Jatuh", "Operasi"],
-    "kunci": "B",
-    "pola": "Akibat dari kondisi berlebihan atau terus-menerus",
-    "pembahasan": "Makan yang berlebihan atau terus-menerus dapat menyebabkan begah. Dengan pola yang sama, demam yang terus-menerus atau sangat tinggi dapat menyebabkan kejang.",
+    "soal": "PIANO : MUSIK KLASIK = TAJAM : ...",
+    "pilihan": ["Tumpul", "Luka", "Pop", "Silet", "Asah"],
+    "kunci": "D",
+    "pola": "Ciri khas atau karakteristik utama",
+    "pembahasan": "Piano adalah alat musik yang menjadi ciri khas atau identitas dari musik klasik. Tajam adalah karakteristik utama dari silet. Keduanya menunjukkan hubungan antara sesuatu dan ciri khasnya.",
     "analisis_opsi": {
-      "A": "Salah. Suhu adalah gejala demam, bukan akibat lanjutan.",
-      "B": "Benar. Demam tinggi dapat menyebabkan kejang.",
-      "C": "Salah. Batuk adalah gejala penyakit lain.",
-      "D": "Salah. Jatuh bukan akibat fisiologis langsung dari demam.",
-      "E": "Salah. Operasi adalah tindakan medis, bukan akibat alami demam."
+      "A": "Salah. Tumpul adalah lawan kata tajam.",
+      "B": "Salah. Luka adalah akibat dari benda tajam.",
+      "C": "Salah. Pop adalah genre musik lain.",
+      "D": "Benar. Silet memiliki karakteristik tajam.",
+      "E": "Salah. Asah adalah tindakan membuat tajam."
     }
   },
   {
     "id": 17,
     "level": "Mahir",
-    "soal": "NEGARA : KONFLIK = BENCANA : ...",
-    "pilihan": ["Perkotaan", "Pengangguran", "Kerusakan", "Longsor", "Tekanan"],
-    "kunci": "C",
-    "pola": "Masalah atau dampak yang ditimbulkan",
-    "pembahasan": "Salah satu permasalahan yang dapat terjadi pada negara adalah konflik. Dengan pola yang sama, salah satu dampak yang dapat ditimbulkan oleh bencana adalah kerusakan.",
+    "soal": "PENGALAMAN : KEAHLIAN = RESPONSIF : ...",
+    "pilihan": ["Cerdas", "Komplain", "Lambat", "Pelanggan", "Pelayanan"],
+    "kunci": "E",
+    "pola": "Indikator atau penanda",
+    "pembahasan": "Pengalaman yang tinggi sering kali menjadi indikator dari keahlian yang baik. Sifat responsif sering kali menjadi indikator dari pelayanan yang baik. Keduanya menunjukkan hubungan antara suatu sifat dan kualitas yang ditunjukkannya.",
     "analisis_opsi": {
-      "A": "Salah. Perkotaan adalah wilayah, bukan dampak bencana.",
-      "B": "Salah. Pengangguran adalah masalah sosial, tetapi bukan dampak langsung bencana pada pola ini.",
-      "C": "Benar. Kerusakan adalah dampak dari bencana.",
-      "D": "Salah. Longsor adalah jenis bencana, bukan dampak bencana.",
-      "E": "Salah. Tekanan dapat menjadi dampak psikologis, tetapi kerusakan lebih umum dan langsung."
+      "A": "Salah. Cerdas adalah sifat, bukan indikator pelayanan.",
+      "B": "Salah. Komplain adalah reaksi pelanggan.",
+      "C": "Salah. Lambat adalah lawan dari responsif.",
+      "D": "Salah. Pelanggan adalah pihak yang dilayani.",
+      "E": "Benar. Responsif adalah indikator pelayanan yang baik."
     }
   },
   {
     "id": 18,
-    "level": "Pemula",
-    "soal": "KECEBONG : KATAK = DRAFT : ...",
-    "pilihan": ["Penulis", "Naskah", "Kertas", "Surat", "Penerbit"],
-    "kunci": "B",
-    "pola": "Tahap awal berkembang menjadi hasil",
-    "pembahasan": "Kecebong adalah tahap awal yang berkembang menjadi katak. Dengan pola yang sama, draft adalah tahap awal yang berkembang menjadi naskah.",
+    "level": "Mahir",
+    "soal": "KECEWA : SEDIH = MARAH : ...",
+    "pilihan": ["Perdebatan", "Konflik", "Murka", "Diskusi", "Damai"],
+    "kunci": "C",
+    "pola": "Tingkatan intensitas emosi (skala tertinggi)",
+    "pembahasan": "Sedih adalah tingkatan emosi yang lebih tinggi dari kecewa. Murka adalah tingkatan emosi yang lebih tinggi dari marah. Keduanya menunjukkan pola peningkatan intensitas emosi.",
     "analisis_opsi": {
-      "A": "Salah. Penulis adalah orang yang membuat draft.",
-      "B": "Benar. Draft berkembang menjadi naskah.",
-      "C": "Salah. Kertas adalah media untuk menulis draft.",
-      "D": "Salah. Surat adalah jenis tulisan, bukan hasil perkembangan draft.",
-      "E": "Salah. Penerbit adalah pihak yang menerbitkan naskah."
+      "A": "Salah. Perdebatan adalah aktivitas, bukan emosi.",
+      "B": "Salah. Konflik adalah situasi, bukan emosi.",
+      "C": "Benar. Murka adalah tingkat marah yang paling tinggi.",
+      "D": "Salah. Diskusi adalah aktivitas.",
+      "E": "Salah. Damai adalah kondisi, bukan emosi."
     }
   },
   {
     "id": 19,
     "level": "Menengah",
-    "soal": "ULAT : KEPOMPONG = PANTAI : ...",
-    "pilihan": ["Karang", "Buih", "Ikan", "Pasir", "Laut"],
-    "kunci": "E",
-    "pola": "Urutan tahap atau urutan spasial",
-    "pembahasan": "Ulat adalah tahap sebelum kepompong. Dalam urutan spasial, pantai adalah wilayah sebelum laut. Jadi hubungan yang setara adalah pantai menuju laut.",
+    "soal": "RAPAT : KEPUTUSAN = KLARIFIKASI : ...",
+    "pilihan": ["Pernyataan", "Penjelasan", "Masalah", "Kebenaran", "Pertanyaan"],
+    "kunci": "B",
+    "pola": "Proses dan hasil yang dituju",
+    "pembahasan": "Proses rapat bertujuan untuk menghasilkan sebuah keputusan. Proses klarifikasi bertujuan untuk menghasilkan penjelasan. Keduanya menunjukkan hubungan antara proses dan hasil yang diharapkan.",
     "analisis_opsi": {
-      "A": "Salah. Karang adalah objek di laut.",
-      "B": "Salah. Buih adalah fenomena di laut atau pantai.",
-      "C": "Salah. Ikan adalah makhluk hidup di laut.",
-      "D": "Salah. Pasir adalah bagian dari pantai.",
-      "E": "Benar. Pantai berlanjut ke laut sebagai urutan spasial."
+      "A": "Salah. Pernyataan adalah bentuk komunikasi, bukan hasil klarifikasi.",
+      "B": "Benar. Penjelasan adalah hasil dari klarifikasi.",
+      "C": "Salah. Masalah adalah penyebab klarifikasi.",
+      "D": "Salah. Kebenaran terlalu luas, penjelasan lebih spesifik.",
+      "E": "Salah. Pertanyaan adalah pemicu klarifikasi."
     }
   },
   {
     "id": 20,
-    "level": "Mahir",
-    "soal": "AYAM : DAGING : SOSIS = ... : ... : ...",
-    "pilihan": [
-      "Buaya : Kulit : Dompet",
-      "Burung : Terbang : Langit",
-      "Gajah : Belalai : Gading",
-      "Harimau : Belang : Tas",
-      "Sapi : Susu : Mentega"
-    ],
-    "kunci": "E",
-    "pola": "Sumber, bahan yang diambil, dan produk olahan",
-    "pembahasan": "Ayam diambil dagingnya untuk dibuat sosis. Dengan pola yang sama, sapi diambil susunya untuk dibuat mentega. Hubungan ini paling setara karena sama-sama berada dalam domain bahan pangan olahan.",
+    "level": "Pemula",
+    "soal": "PANTAI : PANAS = GUNUNG : ...",
+    "pilihan": ["Lava", "Sejuk", "Hutan", "Tebing", "Mendaki"],
+    "kunci": "B",
+    "pola": "Keadaan dan ciri khas suasananya",
+    "pembahasan": "Pantai memiliki ciri khas cuaca yang panas. Gunung memiliki ciri khas suhu yang sejuk. Keduanya menunjukkan hubungan antara tempat dan ciri khas suasananya.",
     "analisis_opsi": {
-      "A": "Salah. Buaya diambil kulitnya untuk dibuat dompet, tetapi domainnya bukan pangan.",
-      "B": "Salah. Burung, terbang, dan langit adalah subjek, aktivitas, dan tempat.",
-      "C": "Salah. Belalai dan gading adalah bagian tubuh gajah.",
-      "D": "Salah. Belang harimau bukan bahan baku tas secara logis dan etis.",
-      "E": "Benar. Sapi diambil susunya untuk dibuat mentega."
+      "A": "Salah. Lava adalah material gunung berapi.",
+      "B": "Benar. Sejuk adalah ciri khas gunung.",
+      "C": "Salah. Hutan adalah bagian gunung.",
+      "D": "Salah. Tebing adalah bagian gunung.",
+      "E": "Salah. Mendaki adalah aktivitas di gunung."
     }
   },
   {
     "id": 21,
-    "level": "Pemula",
-    "soal": "OLAHRAGA : BUGAR = REKREASI : ...",
-    "pilihan": ["Lelah", "Uang", "Liburan", "Sehat", "Segar"],
-    "kunci": "E",
-    "pola": "Kegiatan dan manfaat yang diperoleh",
-    "pembahasan": "Manfaat olahraga adalah tubuh menjadi bugar. Dengan pola yang sama, manfaat rekreasi adalah pikiran dan tubuh menjadi segar.",
+    "level": "Menengah",
+    "soal": "TAKUT : PUCAT = MARAH : ...",
+    "pilihan": ["Menggigil", "Merah", "Demam", "Jaket", "Es"],
+    "kunci": "B",
+    "pola": "Emosi dan reaksi fisik yang ditimbulkan",
+    "pembahasan": "Kondisi takut dapat menyebabkan wajah menjadi pucat. Kondisi marah dapat menyebabkan wajah menjadi merah. Keduanya menunjukkan hubungan antara emosi dan reaksi fisik yang ditimbulkannya pada tubuh.",
     "analisis_opsi": {
-      "A": "Salah. Lelah adalah kondisi setelah aktivitas berat, bukan manfaat rekreasi.",
-      "B": "Salah. Uang adalah alat, bukan manfaat langsung rekreasi.",
-      "C": "Salah. Liburan adalah sinonim atau bentuk rekreasi.",
-      "D": "Salah. Sehat lebih umum, tetapi segar lebih tepat sebagai manfaat langsung rekreasi.",
-      "E": "Benar. Rekreasi membuat pikiran dan tubuh segar."
+      "A": "Salah. Menggigil adalah reaksi kedinginan.",
+      "B": "Benar. Merah adalah reaksi fisik dari marah.",
+      "C": "Salah. Demam adalah kondisi sakit.",
+      "D": "Salah. Jaket adalah benda.",
+      "E": "Salah. Es adalah benda."
     }
   },
   {
     "id": 22,
-    "level": "Menengah",
-    "soal": "PANAS : TERIK = CAIR : ...",
-    "pilihan": ["Padat", "Meleleh", "Dingin", "Beku", "Encer"],
-    "kunci": "E",
-    "pola": "Intensitas sifat",
-    "pembahasan": "Terik adalah kondisi yang sangat panas. Dengan pola yang sama, encer adalah kondisi yang sangat cair atau memiliki kekentalan sangat rendah.",
+    "level": "Mahir",
+    "soal": "IKAN : PARU-PARU = JUARA : ...",
+    "pilihan": ["Latihan", "Lomba", "Kekalahan", "Hadiah", "Pemenang"],
+    "kunci": "C",
+    "pola": "Ketiadaan atau ketidakpemilikan",
+    "pembahasan": "Ikan tidak memiliki paru-paru (ikan bernapas dengan insang). Juara tidak memiliki kekalahan. Keduanya menunjukkan hubungan ketiadaan atau ketidakpemilikan.",
     "analisis_opsi": {
-      "A": "Salah. Padat adalah wujud lain, bukan tingkat cair.",
-      "B": "Salah. Meleleh adalah proses berubah menjadi cair.",
-      "C": "Salah. Dingin adalah sifat suhu, bukan tingkat cair.",
-      "D": "Salah. Beku adalah lawan dari cair.",
-      "E": "Benar. Encer adalah kondisi sangat cair."
+      "A": "Salah. Latihan adalah proses.",
+      "B": "Salah. Lomba adalah ajang kompetisi.",
+      "C": "Benar. Juara tidak memiliki kekalahan.",
+      "D": "Salah. Hadiah adalah penghargaan.",
+      "E": "Salah. Pemenang adalah sinonim juara."
     }
   },
   {
     "id": 23,
-    "level": "Mahir",
-    "soal": "PERANG : PERDAMAIAN = TRANSPORTASI : ...",
-    "pilihan": ["Kendaraan", "Rambu jalan", "Perjalanan", "Kemacetan", "Tujuan"],
-    "kunci": "D",
-    "pola": "Lawan kondisi",
-    "pembahasan": "Perang adalah kondisi penuh konflik, sedangkan perdamaian adalah kondisi tanpa konflik. Dengan pola yang sama, transportasi adalah kondisi pergerakan, sedangkan kemacetan adalah kondisi pergerakan yang terhambat.",
+    "level": "Menengah",
+    "soal": "Singa dan harimau merupakan bagian dari jenis kucing besar. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Mawar dan anggrek merupakan bagian dari jenis bunga",
+      "Pintu dan jendela merupakan bagian dari jenis rumah",
+      "Panas dan dingin merupakan bagian dari jenis cuaca",
+      "Kacamata dan topi merupakan bagian dari jenis pakaian",
+      "Buku dan pensil merupakan bagian dari jenis alat tulis"
+    ],
+    "kunci": "A",
+    "pola": "Analogi kalimat: spesifik ke umum (jenis dalam kategori)",
+    "pembahasan": "Singa dan harimau adalah dua jenis spesifik dari kategori umum 'kucing besar'. Mawar dan anggrek adalah dua jenis spesifik dari kategori umum 'bunga'. Keduanya menunjukkan hubungan spesifik ke umum.",
     "analisis_opsi": {
-      "A": "Salah. Kendaraan adalah alat transportasi.",
-      "B": "Salah. Rambu jalan adalah pengatur lalu lintas.",
-      "C": "Salah. Perjalanan adalah proses transportasi.",
-      "D": "Benar. Kemacetan adalah lawan dari kondisi transportasi yang lancar.",
-      "E": "Salah. Tujuan adalah akhir perjalanan."
+      "A": "Benar. Mawar dan anggrek adalah jenis-jenis bunga.",
+      "B": "Salah. Pintu dan jendela adalah bagian rumah, bukan jenis rumah.",
+      "C": "Salah. Panas dan dingin adalah kondisi cuaca, bukan jenis cuaca.",
+      "D": "Salah. Kacamata dan topi adalah aksesoris, bukan jenis pakaian.",
+      "E": "Salah. Buku adalah media menulis, pensil adalah alat tulis. Keduanya bukan satu kategori."
     }
   },
   {
     "id": 24,
-    "level": "Pemula",
-    "soal": "NEKTAR : MADU = STEVIA : ...",
-    "pilihan": ["Gula", "Pemanis", "Daun", "Manis", "Obat"],
-    "kunci": "B",
-    "pola": "Bahan baku dan hasil olahan",
-    "pembahasan": "Nektar diolah oleh lebah menjadi madu. Dengan pola yang sama, stevia diolah menjadi pemanis.",
+    "level": "Mahir",
+    "soal": "Sepeda motor lebih cepat daripada sepeda. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Bangunan tinggi lebih kokoh daripada bangunan rendah",
+      "Mobil balap lebih mahal daripada mobil keluarga",
+      "Emas lebih berharga daripada perak",
+      "Singa berlari lebih cepat daripada kura-kura",
+      "Buku tebal lebih informatif daripada buku tipis"
+    ],
+    "kunci": "D",
+    "pola": "Analogi kalimat: perbandingan kinerja berdasarkan properti alami",
+    "pembahasan": "Kalimat soal membandingkan kecepatan (properti alami) antara sepeda motor dan sepeda. Singa berlari lebih cepat daripada kura-kura juga membandingkan kecepatan (properti alami) antara dua hewan. Keduanya membandingkan berdasarkan properti alami yang terukur.",
     "analisis_opsi": {
-      "A": "Salah. Gula umumnya berasal dari tebu, bukan stevia dalam pola ini.",
-      "B": "Benar. Stevia diolah menjadi pemanis.",
-      "C": "Salah. Daun adalah bagian tanaman stevia.",
-      "D": "Salah. Manis adalah sifat, bukan hasil olahan.",
-      "E": "Salah. Obat bukan hasil utama stevia."
+      "A": "Salah. 'Kokoh' adalah properti struktural, bukan perbandingan kinerja.",
+      "B": "Salah. 'Mahal' adalah nilai subjektif, bukan properti alami.",
+      "C": "Salah. 'Berharga' adalah nilai subjektif.",
+      "D": "Benar. Membandingkan kecepatan (properti alami) antara dua hewan.",
+      "E": "Salah. 'Informatif' adalah penilaian subjektif."
     }
   },
   {
     "id": 25,
     "level": "Menengah",
-    "soal": "DISKUSI : KEPUTUSAN = KEGIATAN : ...",
-    "pilihan": ["Proses", "Laporan", "Evaluasi", "Tujuan", "Rencana"],
-    "kunci": "B",
-    "pola": "Hasil akhir dari suatu proses",
-    "pembahasan": "Hasil akhir dari diskusi dapat berupa keputusan. Dengan pola yang sama, hasil akhir dari kegiatan dapat berupa laporan.",
+    "soal": "Keju dibuat dari susu. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Mobil dikendarai menggunakan bensin",
+      "Komputer digunakan oleh programmer",
+      "Kue dipotong dengan pisau",
+      "Rumah dibangun di atas tanah",
+      "Tempe dibuat dari kedelai"
+    ],
+    "kunci": "E",
+    "pola": "Analogi kalimat: transformasi bahan baku menjadi produk",
+    "pembahasan": "Kalimat soal menunjukkan hubungan transformasi bahan baku, di mana susu (bahan mentah) diproses menjadi keju (hasil jadi). Tempe dibuat dari kedelai juga menunjukkan transformasi bahan baku menjadi produk.",
     "analisis_opsi": {
-      "A": "Salah. Proses adalah bagian dari kegiatan, bukan hasil akhir.",
-      "B": "Benar. Laporan adalah hasil akhir dari suatu kegiatan.",
-      "C": "Salah. Evaluasi adalah tahap penilaian, bukan hasil akhir kegiatan.",
-      "D": "Salah. Tujuan adalah arah kegiatan, bukan hasil akhirnya.",
-      "E": "Salah. Rencana adalah tahap awal kegiatan."
+      "A": "Salah. Bensin adalah bahan bakar, bukan bahan baku transformasi.",
+      "B": "Salah. Programmer adalah pengguna, bukan bahan baku.",
+      "C": "Salah. Pisau adalah alat, bukan bahan baku.",
+      "D": "Salah. Tanah adalah tempat, bukan bahan baku.",
+      "E": "Benar. Kedelai adalah bahan baku yang diproses menjadi tempe."
     }
   },
   {
     "id": 26,
     "level": "Mahir",
-    "soal": "KETANGGUHAN : KETEGUHAN = OTORITER : ...",
-    "pilihan": ["Demokratis", "Toleran", "Kepemimpinan", "Memaksa", "Keras"],
-    "kunci": "D",
-    "pola": "Hubungan sifat dan kecenderungan perilaku",
-    "pembahasan": "Ketangguhan dan keteguhan adalah dua sifat yang saling berkaitan dan sama-sama menunjukkan kekuatan atau keuletan. Dengan pola yang sama, otoriter berkaitan erat dengan kecenderungan memaksa atau mendominasi.",
+    "soal": "Kipas berputar agar udara dapat bergerak. Hubungan objek yang setara dengan kalimat di atas adalah...",
+    "pilihan": [
+      "Mesin bekerja agar pesawat dapat terbang",
+      "Pompa bergerak agar air dapat mengalir",
+      "Kunci diputar agar pintu dapat terbuka",
+      "Paru-paru bernapas agar oksigen dapat diserap",
+      "Pena digerakkan agar tulisan dapat terbentuk"
+    ],
+    "kunci": "B",
+    "pola": "Analogi kalimat: komponen melakukan gerakan spesifik agar sistem berfungsi",
+    "pembahasan": "Kipas (komponen) berputar (gerakan spesifik) agar udara dapat bergerak (fungsi sistem). Pompa (komponen) bergerak (gerakan spesifik) agar air dapat mengalir (fungsi sistem). Keduanya menunjukkan hubungan antara komponen, gerakan spesifik, dan fungsi sistem yang lebih besar.",
     "analisis_opsi": {
-      "A": "Salah. Demokratis adalah lawan dari otoriter.",
-      "B": "Salah. Toleran adalah lawan dari sikap otoriter.",
-      "C": "Salah. Kepemimpinan adalah konteks otoriter, bukan perilaku khasnya.",
-      "D": "Benar. Otoriter cenderung bersifat memaksa.",
-      "E": "Salah. Keras dapat berkaitan, tetapi memaksa lebih spesifik sebagai ciri otoriter."
+      "A": "Salah. 'Bekerja' bukan gerakan spesifik.",
+      "B": "Benar. Pompa bergerak agar air mengalir.",
+      "C": "Salah. Kunci bukan komponen dari pintu.",
+      "D": "Salah. Paru-paru adalah organ, bukan komponen mekanis.",
+      "E": "Salah. Pena bukan komponen dari tulisan."
     }
   },
   {
     "id": 27,
-    "level": "Pemula",
-    "soal": "ANAK : REMAJA = EMBRIO : ...",
-    "pilihan": ["Bayi", "Janin", "Rahim", "Lahir", "Sel"],
+    "level": "Menengah",
+    "soal": "KONSER : GEDUNG = UPACARA : ...",
+    "pilihan": ["Lelah", "Lapangan", "Berdiri", "Halaman", "Hormat"],
     "kunci": "B",
-    "pola": "Urutan pertumbuhan",
-    "pembahasan": "Setelah fase anak, tahap selanjutnya adalah remaja. Dengan pola yang sama, setelah fase embrio, tahap selanjutnya dalam kandungan adalah janin.",
+    "pola": "Tempat kegiatan (kegiatan dan tempat khasnya)",
+    "pembahasan": "Konser sering diadakan di gedung. Upacara sering diadakan di lapangan. Keduanya menunjukkan hubungan antara kegiatan dan tempat khas di mana kegiatan tersebut diadakan.",
     "analisis_opsi": {
-      "A": "Salah. Bayi adalah tahap setelah lahir.",
-      "B": "Benar. Embrio berkembang menjadi janin.",
-      "C": "Salah. Rahim adalah tempat embrio berkembang.",
-      "D": "Salah. Lahir adalah peristiwa, bukan tahap perkembangan.",
-      "E": "Salah. Sel adalah tahap paling awal sebelum embrio."
+      "A": "Salah. Lelah adalah kondisi, bukan tempat.",
+      "B": "Benar. Lapangan adalah tempat khas upacara.",
+      "C": "Salah. Berdiri adalah aktivitas, bukan tempat.",
+      "D": "Salah. Halaman bisa untuk upacara, tetapi lapangan lebih khas.",
+      "E": "Salah. Hormat adalah aktivitas dalam upacara."
     }
   },
   {
     "id": 28,
-    "level": "Menengah",
-    "soal": "AIR : TERGENANG = JALAN : ...",
-    "pilihan": ["Rusak", "Aspal", "Bolong", "Raya", "Macet"],
-    "kunci": "E",
-    "pola": "Kondisi ketika aliran terhambat",
-    "pembahasan": "Air yang tidak dapat mengalir akan tergenang. Dengan pola yang sama, jalan yang arus lalu lintasnya terhambat akan mengalami macet.",
+    "level": "Mahir",
+    "soal": "BERBICARA : BERBISIK : BERTERIAK = ... : ... : ...",
+    "pilihan": [
+      "Menulis : Membaca : Menyimpulkan",
+      "Tidur : Mimpi : Bangun",
+      "Berdiri : Jalan : Lari",
+      "Berjalan : Merangkak : Berlari",
+      "Tanam : Rawat : Panen"
+    ],
+    "kunci": "C",
+    "pola": "Analogi 3 kata: tindakan umum, bentuk ringan, bentuk intens",
+    "pembahasan": "Berbicara adalah tindakan umum, berbisik adalah bentuk ringan, dan berteriak adalah bentuk intens. Berdiri adalah tindakan umum, jalan adalah bentuk ringan, dan lari adalah bentuk intens. Keduanya menunjukkan pola tindakan umum dengan dua variasi intensitas.",
     "analisis_opsi": {
-      "A": "Salah. Rusak adalah kondisi fisik jalan, bukan kondisi aliran terhambat.",
-      "B": "Salah. Aspal adalah material jalan.",
-      "C": "Salah. Bolong adalah kerusakan fisik jalan.",
-      "D": "Salah. Raya adalah jenis jalan.",
-      "E": "Benar. Macet adalah kondisi aliran lalu lintas terhambat."
+      "A": "Salah. Menulis, membaca, dan menyimpulkan adalah tiga aktivitas berbeda.",
+      "B": "Salah. Tidur, mimpi, dan bangun adalah urutan waktu.",
+      "C": "Benar. Berdiri, jalan, dan lari menunjukkan peningkatan intensitas.",
+      "D": "Salah. Merangkak lebih ringan dari berjalan, bukan urutannya.",
+      "E": "Salah. Tanam, rawat, dan panen adalah urutan proses."
     }
   },
   {
     "id": 29,
-    "level": "Menengah",
-    "soal": "BERBISIK : BERTERIAK = LEMBAB : ...",
-    "pilihan": ["Kering", "Basah", "Kuat", "Lembut", "Pakaian"],
+    "level": "Mahir",
+    "soal": "IKAN : BERENANG : LAUT = ... : ... : ...",
+    "pilihan": [
+      "Merpati : Terbang : Udara",
+      "Tembakau : Rokok : Asap",
+      "Makanan : Nasi : Meja Makan",
+      "Sopir : Truk : Darat",
+      "Aku : Kamu : Bapakmu"
+    ],
     "kunci": "A",
-    "pola": "Lawan kondisi atau derajat",
-    "pembahasan": "Berbisik adalah berbicara dengan sangat pelan, sedangkan berteriak adalah berbicara dengan sangat keras. Dengan pola yang sama, lembab adalah kondisi mengandung sedikit air, sedangkan kering adalah kondisi tidak mengandung air.",
+    "pola": "Analogi 3 kata: subjek, aksi khas, dan habitat/lokasi",
+    "pembahasan": "Ikan berenang di laut. Merpati terbang di udara. Keduanya menunjukkan hubungan antara subjek, aksi khasnya, dan lokasi/habitat alaminya.",
     "analisis_opsi": {
-      "A": "Benar. Kering adalah lawan dari lembab.",
-      "B": "Salah. Basah lebih dekat ke lembab, bukan lawannya.",
-      "C": "Salah. Kuat adalah sifat suara, bukan lawan lembab.",
-      "D": "Salah. Lembut adalah sifat tekstur atau suara.",
-      "E": "Salah. Pakaian adalah benda, bukan kondisi lawan."
+      "A": "Benar. Merpati terbang di udara.",
+      "B": "Salah. Tembakau, rokok, dan asap adalah urutan transformasi.",
+      "C": "Salah. Makanan, nasi, dan meja makan tidak memiliki pola subjek-aksi-lokasi.",
+      "D": "Salah. Sopir adalah pengemudi, truk adalah kendaraan, darat adalah lokasi. Polanya berbeda.",
+      "E": "Salah. Tidak memiliki hubungan logis."
     }
   },
   {
     "id": 30,
     "level": "Mahir",
-    "soal": "Kita mengetahui bahwa mobil memiliki kursi penumpang dan bagasi. Hubungan ini sama dengan ...",
+    "soal": "SAPI : DAGING : BAKSO = ... : ... : ...",
     "pilihan": [
-      "Pohon memerlukan air dan cahaya",
-      "Dalam pesawat ada pilot dan pramugari",
-      "Sepeda memiliki pedal dan roda",
-      "Manusia memerlukan makan dan minum",
-      "CPU memerlukan listrik dan monitor"
+      "Buaya : Kulit : Dompet",
+      "Burung : Terbang : Langit",
+      "Gajah : Belalai : Gading",
+      "Harimau : Belang : Tas",
+      "Ayam : Telur : Omelet"
     ],
-    "kunci": "C",
-    "pola": "Analogi kalimat bagian benda",
-    "pembahasan": "Kursi penumpang dan bagasi adalah bagian dari mobil. Dengan pola yang sama, pedal dan roda adalah bagian dari sepeda. Soal ini menguji hubungan bagian benda, bukan kebutuhan atau awak.",
+    "kunci": "E",
+    "pola": "Analogi 3 kata: bahan baku, bagian yang diambil, dan produk olahan",
+    "pembahasan": "Sapi diambil dagingnya untuk dibuat bakso. Ayam diambil telurnya untuk dibuat omelet. Keduanya menunjukkan hubungan antara sumber, bagian yang diambil, dan produk olahan.",
     "analisis_opsi": {
-      "A": "Salah. Air dan cahaya adalah kebutuhan pohon, bukan bagian pohon.",
-      "B": "Salah. Pilot dan pramugari adalah awak pesawat, bukan bagian pesawat.",
-      "C": "Benar. Pedal dan roda adalah bagian dari sepeda.",
-      "D": "Salah. Makan dan minum adalah kebutuhan manusia, bukan bagian tubuh.",
-      "E": "Salah. Listrik dan monitor adalah kebutuhan atau perangkat tambahan CPU."
+      "A": "Salah. Buaya diambil kulitnya untuk dompet, tetapi ini bukan produk olahan pangan.",
+      "B": "Salah. Burung, terbang, dan langit adalah subjek-aksi-lokasi.",
+      "C": "Salah. Belalai dan gading adalah bagian tubuh gajah, bukan produk olahan.",
+      "D": "Salah. Harimau dan belang tidak menghasilkan tas secara langsung.",
+      "E": "Benar. Ayam diambil telurnya untuk dibuat omelet."
     }
   }
 ]
