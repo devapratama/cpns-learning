@@ -1,0 +1,31 @@
+{
+  "judul": "Bank Soal TWK \u2014 Materi TWK CPNS",
+  "deskripsi": "5 paket \u00d7 30 soal (150 soal) yang mencakup Pilar Negara, Nasionalisme, Bela Negara, dan Integritas, dengan pembahasan lengkap tiap opsi.",
+  "paket": [
+    {
+      "nama": "Paket 1",
+      "file": "paket-1.json",
+      "deskripsi": "30 soal \u00b7 TWK - Pilar Negara, TWK - Nasionalisme, TWK - Bela Negara, TWK - Integritas \u00b7 tingkat medium/easy"
+    },
+    {
+      "nama": "Paket 2",
+      "file": "paket-2.json",
+      "deskripsi": "30 soal \u00b7 TWK - Pilar Negara, TWK - Nasionalisme, TWK - Bela Negara, TWK - Integritas \u00b7 tingkat medium/easy"
+    },
+    {
+      "nama": "Paket 3",
+      "file": "paket-3.json",
+      "deskripsi": "30 soal \u00b7 TWK - Pilar Negara, TWK - Nasionalisme, TWK - Bela Negara, TWK - Integritas \u00b7 tingkat medium/easy"
+    },
+    {
+      "nama": "Paket 4",
+      "file": "paket-4.json",
+      "deskripsi": "30 soal \u00b7 TWK - Pilar Negara, TWK - Nasionalisme, TWK - Bela Negara, TWK - Integritas \u00b7 tingkat medium/easy"
+    },
+    {
+      "nama": "Paket 5",
+      "file": "paket-5.json",
+      "deskripsi": "30 soal \u00b7 TWK - Pilar Negara, TWK - Bela Negara, TWK - Integritas, TWK - Nasionalisme \u00b7 tingkat medium/easy"
+    }
+  ]
+}

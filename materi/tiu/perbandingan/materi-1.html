@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perbandingan TIU CPNS — Materi & Bank Soal</title>
+<meta name="theme-color" content="#2b3a67">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3E≈%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+  :root{
+    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
+    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth; }
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:28px clamp(14px, 3vw, 24px) 80px;}
+
+  /* ---------- Tab nav ---------- */
+  .tab-nav{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px;}
+  .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
+  .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .tab-content{display:none;} .tab-content.active{display:block;}
+
+  /* ---------- Header & breadcrumb ---------- */
+  .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:8px; max-width:800px; margin:0 auto; padding:24px clamp(14px, 3vw, 24px) 0; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft);}
+  .breadcrumb a{color:var(--accent); text-decoration:none;}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-current{color:var(--ink-soft); font-weight:500;}
+
+  header.top{padding:24px 0 22px; max-width:800px; margin:0 auto;}
+  header.top h1{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; margin:0 0 10px; font-size:clamp(26px, 5vw, 38px);}
+  header.top p{margin:0; color:var(--ink-soft); font-size:1.02rem; max-width:62ch;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+  .tag{padding:5px 11px; border-radius:999px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:var(--accent); background:var(--accent-soft); border:1px solid var(--line);}
+
+  /* ---------- Sticky top nav ---------- */
+  .sticky-nav{
+    position:sticky; top:0; z-index:9;
+    display:flex; gap:6px; overflow-x:auto; align-items:center;
+    padding:10px 0 12px; margin:0 0 6px;
+    background:rgba(243,245,239,0.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:thin;
+  }
+  .sticky-nav::-webkit-scrollbar{height:4px;}
+  .sticky-nav::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .sticky-nav .nav-top{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    color:var(--accent); background:none; border:1px dashed var(--accent); border-radius:999px;
+    padding:5px 11px; cursor:pointer; white-space:nowrap; transition:all .15s;
+  }
+  .sticky-nav .nav-top:hover{background:var(--accent); color:#fff;}
+  .sticky-nav .nav-chip{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    padding:6px 12px; border-radius:999px; border:1px solid var(--line);
+    background:var(--paper); color:var(--ink-soft); cursor:pointer; white-space:nowrap;
+    transition:all .15s; user-select:none; -webkit-tap-highlight-color:transparent;
+  }
+  .sticky-nav .nav-chip:hover{border-color:var(--accent); color:var(--accent);}
+  .sticky-nav .nav-chip.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  /* ---------- Pill switch Dasar / Lanjutan ---------- */
+  .pill-switch{flex:0 0 auto; display:inline-flex; gap:3px; padding:3px; border:1px solid var(--line); border-radius:999px; background:var(--surface); margin-right:5px;}
+  .pill-switch a{font-family:'IBM Plex Mono', monospace; font-size:11px; text-decoration:none; padding:5px 12px; border-radius:999px; color:var(--ink-soft); white-space:nowrap; transition:all .15s;}
+  .pill-switch a:hover{color:var(--accent);}
+  .pill-switch a.active{background:var(--accent); color:#fff;}
+
+  /* ---------- Bagian materi ---------- */
+  section{ scroll-margin-top:76px; margin:0 0 46px; }
+  section > h2{
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.3rem, 1.6rem - 0.5vw, 1.6rem);
+    color:var(--ink); margin:0 0 14px; letter-spacing:-0.01em;
+    display:flex; align-items:center; gap:12px;
+  }
+  section > h2::after{content:''; flex:1; height:1px; background:var(--line);}
+  section > h3{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.15rem, 1.3rem - 0.4vw, 1.3rem); margin:26px 0 8px;}
+  .lead{color:var(--ink-soft); font-size:1.05rem; margin:6px 0 14px;}
+
+  /* ---------- Cards ---------- */
+  .card, .example{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:0 1px 2px rgba(31,36,48,.05), 0 6px 18px rgba(31,36,48,.07);
+  }
+  .card{padding:20px;}
+  .example{padding:20px; margin:16px 0; border-left:5px solid var(--accent);}
+  .example h3{margin-top:0;}
+  .blue{background:var(--accent-soft); border-color:#c9d3ee;}
+  .green{background:var(--good-soft); border-color:#bfe0cc;}
+  .orange{background:var(--skip-soft); border-color:#e8d9a8;}
+  .red{background:var(--bad-soft); border-color:#eccbc6;}
+  .purple{background:#EFEAF9; border-color:#d7c7f0;}
+
+  /* ---------- jawaban / peringatan ---------- */
+  .answer, .warn, .danger{ margin-top:14px; padding:13px 15px; border-radius:11px; font-size:1rem; }
+  .answer{ background:var(--good-soft); border:1px solid #bfe0cc; color:#1f5c3d; font-weight:600; }
+  .warn{ background:var(--skip-soft); border:1px solid #e8d9a8; color:#6b5213; }
+  .danger{ background:var(--bad-soft); border:1px solid #eccbc6; color:#7d2c25; }
+
+  /* ---------- Visual / scene ---------- */
+  .viz{ margin:15px 0; padding:17px; border:1px solid var(--line); border-radius:16px; background:var(--paper); }
+  .viz-title{ font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-bottom:10px; text-transform:uppercase; letter-spacing:.5px; font-family:'IBM Plex Mono', monospace; }
+  .scene{display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;}
+  .scene .box{ min-width:128px; padding:12px 13px; text-align:center; border-radius:13px; border:1px solid var(--line); background:var(--surface); }
+  .visual{margin:12px 0;}
+  .visual .box{display:inline-block; min-width:110px; padding:10px 12px; text-align:center; border-radius:12px; border:1px solid var(--line); background:var(--surface); margin:0 4px;}
+  .bigemoji{font-size:32px; line-height:1.1;}
+  .label{font-size:13px; color:var(--ink-soft); margin-top:5px;}
+  .arrow{font-size:28px; color:var(--accent); font-weight:900; padding:0 2px;}
+  .goodarrow{color:var(--good);}.badarrow{color:var(--bad);}
+
+  /* ---------- Fase / phase ---------- */
+  .phase{display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center;}
+  .phase-card{padding:15px; border-radius:14px; border:1px solid var(--line); background:var(--surface);}
+  .phase-card h4{margin:0 0 5px;}
+  .phase-arrow{font-size:32px; color:var(--accent); font-weight:900; text-align:center;}
+
+  /* ---------- Bar ---------- */
+  .bar-wrap{display:grid; gap:9px; margin-top:10px;}
+  .bar-row{display:grid; grid-template-columns:145px 1fr 80px; gap:10px; align-items:center;}
+  .bar-label{font-size:14px; font-weight:600;}
+  .bar{height:22px; background:var(--line); border-radius:999px; overflow:hidden;}
+  .fill-blue{height:100%; background:#8fa2d9;}
+  .fill-green{height:100%; background:var(--good);}
+  .fill-orange{height:100%; background:var(--skip);}
+  .fill-red{height:100%; background:var(--bad);}
+  .bar-num{text-align:right; font-weight:600; font-size:13px;}
+
+  /* ---------- Layer / mini / grid ---------- */
+  .layer{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px;}
+  .layer .mini{ padding:14px; border:1px solid var(--line); border-radius:13px; background:var(--surface); text-align:center; }
+  .mini .e{font-size:28px;}
+  .mini b{display:block; margin-top:4px;}
+  .small{font-size:12.5px; color:var(--ink-soft);}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:15px; margin:14px 0;}
+  .grid .mini{ padding:14px; border:1px solid var(--line); border-radius:13px; background:var(--surface); text-align:center; }
+
+  /* ---------- Rumus ---------- */
+  .mathbox{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:13px 15px; margin:12px 0; overflow-x:auto; }
+  .formula{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:1.02rem; margin:12px 0; overflow-x:auto; line-height:1.9; }
+
+  /* ---------- Langkah ---------- */
+  .step{display:flex; gap:13px; align-items:flex-start; margin:14px 0;}
+  .num{ width:31px; height:31px; flex:0 0 31px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; font-weight:700; font-family:'IBM Plex Mono', monospace; font-size:14px; }
+
+  /* ---------- Rule / warning ---------- */
+  .rule{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:0 10px 10px 0; padding:16px 20px; margin:14px 0; }
+  .warning{ background:var(--skip-soft); border:1px solid #e8d9a8; border-left:4px solid var(--skip); border-radius:0 10px 10px 0; padding:16px 20px; margin:14px 0; }
+  .rule b, .warning b{color:var(--accent);}
+
+  /* ---------- Tabel ---------- */
+  table{width:100%; border-collapse:collapse; margin:13px 0;}
+  th, td{border:1px solid var(--line); padding:9px 12px; text-align:left; vertical-align:top;}
+  th{background:var(--accent); color:#fff; font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:13px;}
+
+  /* ---------- Details ---------- */
+  details{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:11px 0;}
+  summary{cursor:pointer; font-weight:600;}
+
+  /* ---------- Quiz in-page ---------- */
+  .quiz{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px; margin:14px 0;}
+  .quiz .q{font-weight:600; margin-bottom:9px;}
+  .opts label{display:block; padding:7px 9px; border-radius:8px; cursor:pointer;}
+  .opts label:hover{background:var(--paper);}
+  .quiz-item{ margin:12px 0; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--surface); }
+  .quiz-item .opt{ display:block; padding:6px 9px; border-radius:8px; cursor:pointer; }
+  .quiz-item .opt:hover{background:var(--paper);}
+  .btnrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+  input[type=radio]{ accent-color:var(--accent); }
+  #quizForm button, .btnrow button{
+    border:0; background:var(--accent); color:#fff; font-size:15px; padding:11px 16px;
+    border-radius:10px; font-weight:600; cursor:pointer; font-family:'IBM Plex Mono', monospace; margin-right:7px;
+  }
+  #quizForm button.secondary, .btnrow button.secondary{background:#fff; color:var(--ink); border:1px solid var(--line); margin-right:0;}
+  .quiz.good{outline:2px solid var(--good); outline-offset:2px;}
+  .quiz.bad{outline:2px solid var(--bad); outline-offset:2px;}
+  .result{ display:none; margin-top:16px; padding:16px; border-radius:12px; background:var(--accent-soft); border:1px solid #c9d3ee; }
+  .score{font-size:28px; font-weight:700; font-family:'Fraunces', serif;}
+
+  /* ---------- Footer ---------- */
+  footer, .footer{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-soft); padding:30px 20px; }
+
+  /* ---------- PAKET TRYOUT ---------- */
+  .packet-header{margin-bottom:24px;}
+  .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
+  .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
+  .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(255px, 1fr)); gap:16px;}
+  .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
+  .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
+  .packet-card.disabled{opacity:0.6; pointer-events:none; filter:grayscale(0.5);}
+  .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0 0 6px;}
+  .packet-desc{font-size:13.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent);}
+  .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
+  .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
+  .packet-list.hidden{display:none;}
+
+  .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 0 26px; padding:12px 0; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+  .scoreboard .label{color:var(--ink-soft);}
+  .scoreboard .num{color:var(--accent); font-weight:500;}
+
+  .quiz-view{display:none;}
+  .quiz-view.active{
+    position:fixed; inset:0; z-index:100; background:var(--paper);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+
+.quiz-view.active .quiz-top-row,
+  .quiz-view.active .quiz-packet-name,
+  .quiz-view.active .progress-bar,
+  .quiz-view.active .quiz-body > *,
+  .quiz-view.active .quiz-footer-inner{width:100%; max-width:800px; margin-left:auto; margin-right:auto;}
+  .quiz-view.active .quiz-body .quiz-q-card{order:0;}
+  .quiz-view.active .quiz-body .quiz-nav{order:1;}
+  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; flex-wrap:nowrap;}
+  .quiz-progress-text{flex:0 1 auto; min-width:0; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
+  .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-progress-text b{color:var(--accent); font-weight:600;}
+  .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:15px; margin:0 0 6px;}
+  .progress-bar{height:5px; background:var(--line); border-radius:3px; overflow:hidden;}
+  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
+
+  .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
+
+  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:8px; transition:border-color .2s;}
+  .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
+  .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
+  .quiz-q-text{font-size:15px; margin:0 0 12px; font-weight:500; line-height:1.55;}
+  .quiz-opts{display:flex; flex-direction:column; gap:6px;}
+  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:8px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+  .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.locked{cursor:default; pointer-events:none;}
+  .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
+  .quiz-opt .bubble{flex-shrink:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
+  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .quiz-opt > span:last-child{flex:1; min-width:0;}
+
+  .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+
+  .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:10px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+  .quiz-footer-inner{max-width:800px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto; flex-wrap:nowrap; min-width:0;}
+  .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px; white-space:nowrap; flex:0 0 auto;}
+  .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
+  .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
+  .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
+  .quiz-btn-primary{background:var(--accent); color:#fff;}
+  .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
+  .quiz-btn-skip:hover{background:var(--skip-soft);}
+
+  .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
+  .review-stat{text-align:center;}
+  .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
+  .review-stat-num.good{color:var(--good);}
+  .review-stat-num.bad{color:var(--bad);}
+  .review-stat-num.skip{color:var(--skip);}
+  .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
+
+  .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
+  .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+  .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
+  .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
+  .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
+  .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
+  .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
+
+  .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
+  .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+  .review-premis-list{margin:0; padding-left:18px;}
+  .review-premis-list li{margin-bottom:4px;}
+
+  .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
+  .review-explain.good{border-left:4px solid var(--good);}
+  .review-explain.bad{border-left:4px solid var(--bad);}
+  .review-explain.skip{border-left:4px solid var(--skip);}
+  .review-explain .status{font-weight:600;}
+  .review-explain.good .status{color:var(--good);}
+  .review-explain.bad .status{color:var(--bad);}
+  .review-explain.skip .status{color:var(--skip);}
+  .review-explain b{font-weight:600; color:var(--accent);}
+  .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
+
+  .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
+  .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  .quiz-nav{margin-bottom:12px; padding:10px 12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
+  .quiz-nav-dots{display:flex; flex-wrap:nowrap; overflow-x:auto; gap:4px; scrollbar-width:thin; padding-bottom:2px;}
+  .quiz-nav-dots::-webkit-scrollbar{height:4px;}
+  .quiz-nav-dots::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:6px;}
+  .quiz-nav-dot{flex:0 0 auto; width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
+  .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
+  .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
+  .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  @media (max-width:600px){
+    .wrap{padding:20px 16px 100px;}
+    header.top{ padding:18px 0 16px; }
+    .tab-nav{margin-bottom:18px;}
+    table{font-size:0.85rem;} th,td{padding:7px 9px;}
+    .scoreboard{margin:0 0 22px;}
+    .quiz-header{padding:10px clamp(14px,3vw,24px) 8px;}
+    .quiz-body{padding:10px clamp(14px,3vw,24px) 0;}
+    .quiz-q-card{padding:14px 16px; margin-bottom:0;}
+    .quiz-q-text{font-size:14.5px;}
+    .quiz-opt{font-size:13.5px; padding:7px 10px;}
+    .quiz-opt .bubble{width:22px; height:22px; font-size:11px;}
+    .quiz-packet-name{font-size:14.5px;}
+    .review-q-card{padding:16px;}
+    .quiz-footer{padding:10px 16px;}
+    .quiz-btn{font-size:12.5px; padding:9px 14px;}
+    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+    .bar-row{grid-template-columns:95px 1fr 55px;}
+    .phase{grid-template-columns:1fr;}
+    .phase-arrow{text-align:center; transform:rotate(90deg);}
+    .visual .box{min-width:90px;}
+  }
+
+  @media (max-width:360px){
+    .quiz-footer{padding:8px 10px;}
+    .quiz-footer-inner{gap:6px; justify-content:center;}
+    .quiz-btn{font-size:11px; padding:8px 9px; min-height:38px;}
+    .quiz-btn-skip{font-size:10.5px; padding:6px 8px;}
+    .review-q-head{flex-wrap:wrap; gap:6px;}
+    .review-q-type{font-size:10.5px;}
+  }
+
+  @media (max-height:520px){
+    .quiz-header{padding:8px clamp(14px,3vw,24px) 6px;}
+    .quiz-top-row{margin-bottom:5px;}
+    .quiz-packet-name{font-size:13px; margin:0 0 4px;}
+    .progress-bar{height:4px;}
+    .quiz-body{padding:8px clamp(14px,3vw,24px) 2px;}
+    .quiz-nav{margin-bottom:6px; padding:6px 10px;}
+    .quiz-nav-title{margin-bottom:4px;}
+    .quiz-nav-dot{width:22px; height:22px; font-size:10px;}
+    .quiz-q-card{padding:9px 12px; margin-bottom:2px;}
+    .quiz-q-num{margin-bottom:5px;}
+    .quiz-q-text{margin:0 0 6px;}
+    .quiz-opts{gap:4px; display:grid; grid-template-columns:1fr 1fr;}
+    .quiz-opt{padding:4px 8px; gap:8px;}
+    .quiz-opt .bubble{width:18px; height:18px; font-size:9px;}
+    .quiz-footer{padding:6px 16px;}
+    .quiz-btn{font-size:12px; padding:8px 12px; min-height:34px;}
+    .quiz-btn-skip{font-size:11px; padding:6px 10px;}
+  }
+
+  @media (min-width:1024px){
+    .quiz-view.active .quiz-top-row,
+    .quiz-view.active .quiz-packet-name,
+    .quiz-view.active .progress-bar,
+    .quiz-view.active .quiz-body > *,
+    .quiz-view.active .quiz-footer-inner{max-width:800px;}
+    .quiz-footer-inner{max-width:800px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
+    .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
+    .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
+    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+    .quiz-opts{gap:9px;}
+    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+    .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
+    .quiz-btn{font-size:14px; padding:11px 16px;}
+    .quiz-progress-text{font-size:13px;}
+    .quiz-packet-name{font-size:16px;}
+  }
+</style>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../../../index.html">← Beranda</a>
+  <span class="crumb-sep">/</span>
+  <a href="../index.html">TIU</a>
+  <span class="crumb-sep">/</span>
+  <span class="crumb-current">Perbandingan</span>
+</nav>
+
+<header class="top">
+  <h1>Perbandingan TIU CPNS</h1>
+  <p>Materi lengkap perbandingan untuk TIU — dari dasar senilai dan berbalik nilai sampai sub-pattern lanjutan, lengkap dengan studi kasus, tabel, normalisasi, dan bank soal tryout berdasarkan manifest JSON.</p>
+  <div class="tags">
+    <span class="tag">Untuk pemula total</span>
+    <span class="tag">Visual + emoji</span>
+    <span class="tag">KaTeX</span>
+    <span class="tag">Banyak studi kasus</span>
+    <span class="tag">Tabel & pola</span>
+    <span class="tag">10 quiz</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('materi', this)">📖 Materi Lengkap</button>
+    <button class="tab-btn" id="tab-btn-paket" onclick="switchTab('paket', this)">🎯 Paket Soal Tryout</button>
+  </div>
+
+  <!-- ============ TAB 1: MATERI LENGKAP ============ -->
+  <div id="tab-materi" class="tab-content active">
+
+    <nav class="sticky-nav" id="sticky-nav" aria-label="Navigasi antar materi"></nav>
+
+    <section id="mulai">
+<h2>Kita mulai dari yang sangat sederhana 🍦</h2>
+<p class="lead">Tujuan pertama bukan menghitung. Tujuan pertama adalah melihat hubungan.</p>
+
+<div class="example">
+  <p>Bayangkan kamu membeli es krim. Satu es krim harganya Rp5.000.</p>
+  <p>Kalau membeli 1, kamu membayar Rp5.000. Kalau membeli 2, kamu membayar Rp10.000. Kalau membeli 4, kamu membayar Rp20.000.</p>
+
+  <div class="viz">
+    <div class="viz-title">Cerita yang kita “lihat”</div>
+    <div class="scene">
+      <div class="box"><div class="bigemoji">🍦</div><b>1 es krim</b><div class="label">Rp5.000</div></div>
+      <div class="arrow">→</div>
+      <div class="box"><div class="bigemoji">🍦🍦</div><b>2 es krim</b><div class="label">Rp10.000</div></div>
+      <div class="arrow">→</div>
+      <div class="box"><div class="bigemoji">🍦🍦🍦🍦</div><b>4 es krim</b><div class="label">Rp20.000</div></div>
+    </div>
+  </div>
+
+  <p>Yang terjadi sangat sederhana: <b>es krim bertambah → harga bertambah</b>.</p>
+  <div class="answer">Hubungan seperti ini disebut <b>perbandingan senilai</b>.</div>
+</div>
+
+<div class="example">
+  <p>Sekarang ganti ceritanya. Ada halaman yang harus dibersihkan. 🧹</p>
+  <p>Semakin banyak orang yang bekerja, semakin cepat halaman selesai.</p>
+
+  <div class="viz">
+    <div class="viz-title">Sekarang arah perubahannya berbeda</div>
+    <div class="phase">
+      <div class="phase-card">
+        👷 👷<br>
+        <b>2 orang</b><br>
+        ⏱️ 6 jam
+      </div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">
+        👷 👷 👷 👷<br>
+        <b>4 orang</b><br>
+        ⏱️ lebih singkat
+      </div>
+    </div>
+  </div>
+
+  <p>Kali ini orang bertambah, tetapi waktu berkurang.</p>
+  <div class="answer">Hubungan seperti ini disebut <b>perbandingan berbalik nilai</b>.</div>
+</div>
+
+<div class="card blue">
+  <h3 style="margin-top:0">Dua gambar yang harus mulai terasa familiar 🧠</h3>
+  <div class="layer">
+    <div class="mini"><div class="e">📈 → 📈</div><b>Senilai</b><span class="small">bergerak searah</span></div>
+    <div class="mini"><div class="e">📈 → 📉</div><b>Berbalik nilai</b><span class="small">bergerak berlawanan</span></div>
+  </div>
+</div>
+</section>
+
+<section id="dasar">
+<h2>Perbandingan itu bicara tentang bagian</h2>
+<p class="lead">Angka \(2:3\) akan lebih mudah dipahami kalau kita tidak membacanya sebagai simbol, tetapi sebagai bagian.</p>
+
+<div class="example">
+  <p>Perbandingan apel Ani dan Budi adalah \(2:3\).</p>
+
+  <div class="viz">
+    <div class="viz-title">Bayangkan dua kelompok apel</div>
+    <div class="scene">
+      <div class="box">
+        <div class="bigemoji">👧</div>
+        🍎 🍎<br>
+        <b>Ani = 2 bagian</b>
+      </div>
+      <div class="arrow">↔</div>
+      <div class="box">
+        <div class="bigemoji">👦</div>
+        🍎 🍎 🍎<br>
+        <b>Budi = 3 bagian</b>
+      </div>
+    </div>
+  </div>
+
+  <p>Jadi seluruh bagian ada:</p>
+  <div class="mathbox">\[2+3=5\text{ bagian}\]</div>
+
+  <p>Kalau total apel 50, maka satu bagian bernilai:</p>
+  <div class="mathbox">\[50\div5=10\]</div>
+
+  <p>Ani punya 2 bagian:</p>
+  <div class="mathbox">\[2\times10=20\]</div>
+
+  <div class="visual">
+    👧 🍎🍎 <span class="arrow">→</span> <b>20 apel</b>
+  </div>
+
+  <div class="answer">Jadi Ani mendapat <b>20 apel</b>.</div>
+</div>
+
+<div class="example">
+  <p><b>Contoh lain.</b> Uang Rina dan Dita berbanding \(2:3\), totalnya Rp100.000.</p>
+  <div class="viz">
+    <div class="viz-title">Bagi total menjadi 5 bagian</div>
+    <div class="scene">
+      <div class="box">🟦🟦<br><b>Rina</b></div>
+      <div class="box">🟦🟦🟦<br><b>Dita</b></div>
+    </div>
+  </div>
+  <div class="step"><div class="num">1</div><div>Total bagian \(=2+3=5\).</div></div>
+  <div class="step"><div class="num">2</div><div>Satu bagian \(=100.000\div5=20.000\).</div></div>
+  <div class="step"><div class="num">3</div><div>Rina \(=2\times20.000=40.000\).</div></div>
+  <div class="answer">Rina = <b>Rp40.000</b>.</div>
+</div>
+</section>
+
+<section id="senilai">
+<h2>Perbandingan senilai 📈📈</h2>
+<p class="lead">Kita mencari situasi ketika satu hal bertambah dan hal lain ikut bertambah.</p>
+
+<div class="viz">
+  <div class="viz-title">Gambar inti</div>
+  <div class="scene">
+    <div class="box">📦<br><b>barang</b><br>↑</div>
+    <div class="arrow goodarrow">→</div>
+    <div class="box">💰<br><b>harga total</b><br>↑</div>
+  </div>
+</div>
+
+<div class="card green">
+  <p>Hubungannya dapat ditulis:</p>
+  <div class="mathbox">
+    \[
+    \frac{A_1}{A_2}=\frac{B_1}{B_2}
+    \]
+  </div>
+  <p>Atau:</p>
+  <div class="mathbox">
+    \[
+    A_1B_2=A_2B_1
+    \]
+  </div>
+</div>
+
+<h3>📚 Contoh: buku</h3>
+<div class="example">
+  <p><b>Soal:</b> 4 buku berharga Rp20.000. Berapa harga 10 buku?</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">📚📚📚📚<br><b>4 buku</b><br>Rp20.000</div>
+      <div class="arrow">⇒</div>
+      <div class="box">📚📚📚📚📚📚📚📚📚📚<br><b>10 buku</b><br>Rp ?</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Buku bertambah dan harga total bertambah → <b>senilai</b>.</div></div>
+  <div class="step"><div class="num">2</div><div>Tulis dua keadaan:</div></div>
+  <div class="mathbox">
+    \[
+    4\rightarrow20.000
+    \qquad
+    10\rightarrow x
+    \]
+  </div>
+  <div class="step"><div class="num">3</div><div>Kalikan silang:</div></div>
+  <div class="mathbox">
+    \[
+    4x=10\times20.000
+    \]
+  </div>
+  <div class="step"><div class="num">4</div><div>Hitung:</div></div>
+  <div class="mathbox">
+    \[
+    x=\frac{200.000}{4}=50.000
+    \]
+  </div>
+
+  <div class="visual">📚 10 buku <span class="arrow">→</span> 💰 <b>Rp50.000</b></div>
+  <div class="answer">Jawaban: <b>Rp50.000</b>.</div>
+</div>
+
+<h3>⛽ Contoh: bensin</h3>
+<div class="example">
+  <p><b>Soal:</b> 12 liter bensin cukup untuk 144 km. Berapa liter untuk 240 km dengan konsumsi yang sama?</p>
+
+  <div class="viz">
+    <div class="bar-wrap">
+      <div class="bar-row"><div class="bar-label">144 km</div><div class="bar"><div class="fill-blue" style="width:60%"></div></div><div class="bar-num">12 L</div></div>
+      <div class="bar-row"><div class="bar-label">240 km</div><div class="bar"><div class="fill-green" style="width:100%"></div></div><div class="bar-num">? L</div></div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Jarak naik → bensin juga naik.</div></div>
+  <div class="step"><div class="num">2</div><div>Berarti senilai.</div></div>
+  <div class="mathbox">
+    \[
+    12\times240=144x
+    \]
+    \[
+    x=\frac{2880}{144}=20
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>20 liter</b>.</div>
+</div>
+
+<h3>🖨️ Contoh: mesin</h3>
+<div class="example">
+  <p><b>Soal:</b> 3 mesin menghasilkan 600 produk dalam waktu yang sama. Jika menjadi 5 mesin dengan kemampuan sama, berapa produk?</p>
+  <div class="viz">
+    <div class="scene">
+      <div class="box">🖨️🖨️🖨️<br><b>3 mesin</b><br>📦 600</div>
+      <div class="arrow goodarrow">→</div>
+      <div class="box">🖨️🖨️🖨️🖨️🖨️<br><b>5 mesin</b><br>📦 ?</div>
+    </div>
+  </div>
+  <div class="mathbox">
+    \[
+    x=600\times\frac{5}{3}=1.000
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>1.000 produk</b>.</div>
+</div>
+</section>
+
+<section id="berbalik">
+<h2>Perbandingan berbalik nilai 📈📉</h2>
+<p class="lead">Kali ini satu hal bertambah, tetapi yang satunya berkurang.</p>
+
+<div class="viz">
+  <div class="viz-title">Gambar inti</div>
+  <div class="scene">
+    <div class="box">👷<br><b>pekerja</b><br>↑</div>
+    <div class="arrow badarrow">→</div>
+    <div class="box">⏱️<br><b>waktu</b><br>↓</div>
+  </div>
+</div>
+
+<div class="card orange">
+  <p>Untuk pekerjaan/jarak/target yang tetap:</p>
+  <div class="mathbox">
+    \[
+    A_1B_1=A_2B_2
+    \]
+  </div>
+</div>
+
+<h3>👷 Contoh: pekerja</h3>
+<div class="example">
+  <p><b>Soal:</b> 8 pekerja menyelesaikan pekerjaan dalam 15 hari. Jika menjadi 12 pekerja, berapa hari?</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">👷×8<br>📅 15 hari<br>🏗️ sama</div>
+      <div class="arrow">⇒</div>
+      <div class="box">👷×12<br>📅 ? hari<br>🏗️ sama</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Pekerja bertambah.</div></div>
+  <div class="step"><div class="num">2</div><div>Pekerjaan sama → waktu harus berkurang.</div></div>
+  <div class="step"><div class="num">3</div><div>Berbalik nilai.</div></div>
+  <div class="mathbox">
+    \[
+    8\times15=12x
+    \]
+    \[
+    x=\frac{120}{12}=10
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>10 hari</b>.</div>
+</div>
+
+<h3>🚗 Contoh: kecepatan dan waktu</h3>
+<div class="example">
+  <p><b>Soal:</b> Jarak yang sama ditempuh 4 jam pada 60 km/jam. Jika kecepatan 80 km/jam, berapa waktu?</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">🚗 60 km/jam<br>⏱️ 4 jam<br>📍 jarak tetap</div>
+      <div class="arrow">⇒</div>
+      <div class="box">🚗💨 80 km/jam<br>⏱️ ?<br>📍 jarak tetap</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Kecepatan naik.</div></div>
+  <div class="step"><div class="num">2</div><div>Jarak tetap → waktu turun.</div></div>
+  <div class="mathbox">
+    \[
+    60\times4=80x
+    \]
+    \[
+    x=3
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>3 jam</b>.</div>
+</div>
+
+<h3>🐔 Contoh: jumlah ayam dan lama pakan</h3>
+<div class="example">
+  <p><b>Soal:</b> 30 ayam menghabiskan persediaan pakan dalam 15 hari. Jika ayam menjadi 45 ekor, berapa hari?</p>
+
+  <div class="viz">
+    <div class="phase">
+      <div class="phase-card">🐔×30<br>🌾<br><b>15 hari</b></div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">🐔×45<br>🌾 sama<br><b>? hari</b></div>
+    </div>
+  </div>
+
+  <div class="mathbox">
+    \[
+    30\times15=45x
+    \]
+    \[
+    x=10
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>10 hari</b>.</div>
+</div>
+
+<div class="warn"><b>Cek cepat:</b> kalau pekerja dibuat 2 kali lipat, waktu untuk pekerjaan yang sama harus menjadi setengah. Kalau jawaban malah lebih besar, hampir pasti ada kesalahan.</div>
+</section>
+
+<section id="majemuk">
+<h2>Perbandingan majemuk: kalau yang berubah lebih dari satu hal</h2>
+<p class="lead">Bagian ini sering terlihat menakutkan. Sebenarnya kita hanya mengerjakan perubahan satu per satu.</p>
+
+<div class="viz">
+  <div class="viz-title">Misalnya produksi dipengaruhi dua hal</div>
+  <div class="scene">
+    <div class="box">👷<br><b>jumlah pekerja</b></div>
+    <div class="arrow">+</div>
+    <div class="box">⏱️<br><b>waktu</b></div>
+    <div class="arrow">→</div>
+    <div class="box">📦<br><b>hasil</b></div>
+  </div>
+</div>
+
+<h3>🏭 Contoh: pekerja berubah, waktu tetap</h3>
+<div class="example">
+  <p><b>Soal:</b> 8 pekerja menghasilkan 2.000 buku dalam 5 hari. Jika menjadi 10 pekerja dan tetap 5 hari, berapa buku?</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">👷×8<br>⏱️5 hari<br>📚2.000</div>
+      <div class="arrow">⇒</div>
+      <div class="box">👷×10<br>⏱️5 hari<br>📚?</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Waktu tetap, jadi kita hanya melihat pekerja → hasil.</div></div>
+  <div class="step"><div class="num">2</div><div>Pekerja naik → hasil naik. Senilai.</div></div>
+  <div class="mathbox">
+    \[
+    x=2.000\times\frac{10}{8}=2.500
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>2.500 buku</b>.</div>
+</div>
+
+<h3>🧮 Contoh: pekerja dan waktu sama-sama berubah</h3>
+<div class="example">
+  <p><b>Soal:</b> 5 pekerja menghasilkan 300 unit dalam 4 jam. Berapa unit jika 8 pekerja bekerja 6 jam dengan produktivitas sama?</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">👷×5<br>⏱️4 jam<br>📦300</div>
+      <div class="arrow">⇒</div>
+      <div class="box">👷×8<br>⏱️6 jam<br>📦?</div>
+    </div>
+  </div>
+
+  <p>Supaya tidak bingung, kita ubah satu hal dahulu.</p>
+
+  <div class="step"><div class="num">1</div><div>Ubah pekerja dari 5 menjadi 8.</div></div>
+  <div class="mathbox">
+    \[
+    300\times\frac{8}{5}=480
+    \]
+  </div>
+
+  <div class="viz">
+    👷×5 + ⏱️4 jam → 📦300
+    <span class="arrow">⇒</span>
+    👷×8 + ⏱️4 jam → 📦<b>480</b>
+  </div>
+
+  <div class="step"><div class="num">2</div><div>Sekarang ubah waktu dari 4 menjadi 6 jam.</div></div>
+  <div class="mathbox">
+    \[
+    480\times\frac{6}{4}=720
+    \]
+  </div>
+
+  <div class="viz">
+    👷×8 + ⏱️4 jam → 📦480
+    <span class="arrow">⇒</span>
+    👷×8 + ⏱️6 jam → 📦<b>720</b>
+  </div>
+
+  <div class="answer">Jawaban: <b>720 unit</b>.</div>
+</div>
+
+<h3>🎯 Contoh: hasil tetap, waktu berubah</h3>
+<div class="example">
+  <p><b>Soal:</b> 20 pekerja dapat mencapai target dalam 6 hari. Target tetap sama, tetapi waktu hanya 4 hari. Berapa pekerja?</p>
+
+  <div class="viz">
+    <div class="phase">
+      <div class="phase-card">👷20<br>⏱️6 hari<br>🎯 target</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">👷?<br>⏱️4 hari<br>🎯 target sama</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Target tetap.</div></div>
+  <div class="step"><div class="num">2</div><div>Waktu turun, sehingga pekerja harus naik.</div></div>
+  <div class="step"><div class="num">3</div><div>Jadi pekerja dan waktu berbalik nilai.</div></div>
+  <div class="mathbox">
+    \[
+    20\times6=4x
+    \]
+    \[
+    x=30
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>30 pekerja</b>.</div>
+</div>
+
+<div class="card blue">
+  <b>Mantra 3 variabel:</b> “Kunci satu variabel → lihat hubungan dua yang tersisa → lakukan lagi untuk variabel berikutnya.”
+</div>
+</section>
+
+<section id="tabel">
+<h2>Tabel: cara paling aman untuk soal yang ramai</h2>
+<p class="lead">Kalau cerita mulai panjang, pindahkan ceritanya ke tabel. Tabel membuat hubungan terlihat.</p>
+
+<h3>Contoh: pekerja, waktu, hasil</h3>
+<div class="example">
+  <p>10 pekerja menghasilkan 800 unit dalam 4 jam. Bagaimana kalau pekerja menjadi 20 orang dan waktunya 6 jam?</p>
+
+  <div class="viz">
+    <div class="viz-title">Cerita menjadi tabel</div>
+    <table>
+      <tr><th></th><th>Pekerja 👷</th><th>Waktu ⏱️</th><th>Hasil 📦</th></tr>
+      <tr><td>Awal</td><td>10</td><td>4 jam</td><td>800</td></tr>
+      <tr><td>Baru</td><td>20</td><td>6 jam</td><td>?</td></tr>
+    </table>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Pekerja \(10\rightarrow20\) = 2 kali.</div></div>
+  <div class="step"><div class="num">2</div><div>Waktu \(4\rightarrow6\) = \(1{,}5\) kali.</div></div>
+  <div class="step"><div class="num">3</div><div>Hasil mendapat kedua pengaruh:</div></div>
+
+  <div class="mathbox">
+    \[
+    x=800\times2\times1{,}5=2.400
+    \]
+  </div>
+
+  <div class="visual">👷 ×2 <span class="arrow">+</span> ⏱️ ×1,5 <span class="arrow">→</span> 📦 ×3</div>
+  <div class="answer">Jawaban: <b>2.400 unit</b>.</div>
+</div>
+
+<h3>Contoh: membaca tabel sebagai “siapa naik, siapa turun?”</h3>
+<div class="example">
+<table>
+  <tr><th></th><th>Keadaan 1</th><th>Keadaan 2</th><th>Arah</th></tr>
+  <tr><td>👷 Pekerja</td><td>12</td><td>18</td><td>⬆️</td></tr>
+  <tr><td>📅 Waktu</td><td>20</td><td>\(x\)</td><td>⬇️</td></tr>
+  <tr><td>🏗️ Pekerjaan</td><td colspan="2">tetap</td><td>🔒</td></tr>
+</table>
+<p>Begitu tabel dibuat, kita langsung melihat: pekerja naik, pekerjaan tetap, maka waktu harus turun. Ini <b>berbalik nilai</b>.</p>
+</div>
+
+<div class="card green">
+  <b>Gunakan tabel terutama ketika soal memuat 3 hal atau lebih.</b> Tabel bukan sekadar rapi; tabel membantu mencegah kita salah memasangkan angka.
+</div>
+</section>
+
+<section id="bertahap">
+<h2>Perbandingan bertahap: ketika proses “berhenti” di tengah 🎬</h2>
+<p class="lead">Ini bagian yang sangat penting. Jangan lompat dari awal langsung ke akhir.</p>
+
+<div class="viz">
+  <div class="viz-title">Bayangkan proyek sebagai film</div>
+  <div class="scene">
+    <div class="box"><div class="bigemoji">1️⃣</div><b>Babak 1</b><div class="label">kondisi awal</div></div>
+    <div class="arrow">→</div>
+    <div class="box"><div class="bigemoji">⏳</div><b>Sudah berjalan</b><div class="label">sebagian selesai</div></div>
+    <div class="arrow">→</div>
+    <div class="box"><div class="bigemoji">🔄</div><b>Ada perubahan</b><div class="label">orang/mesin berubah</div></div>
+    <div class="arrow">→</div>
+    <div class="box"><div class="bigemoji">2️⃣</div><b>Babak 2</b><div class="label">sisa pekerjaan</div></div>
+  </div>
+</div>
+
+<div class="card orange">
+  <p>Urutan aman:</p>
+  <div class="mathbox">
+    \[
+    \boxed{\text{Total}}
+    \rightarrow
+    \boxed{\text{Sudah dikerjakan}}
+    \rightarrow
+    \boxed{\text{Sisa}}
+    \rightarrow
+    \boxed{\text{Kondisi baru}}
+    \]
+  </div>
+</div>
+
+<h3>👷 Contoh lengkap: 2 pekerja keluar setelah 5 hari</h3>
+<div class="example">
+  <p><b>Soal:</b> 12 pekerja direncanakan menyelesaikan proyek dalam 20 hari. Setelah bekerja 5 hari, 2 pekerja keluar. Berapa hari lagi?</p>
+
+  <div class="viz">
+    <div class="phase">
+      <div class="phase-card">
+        <h4>Babak 1 🎬</h4>
+        👷12 orang<br>📅5 hari<br>✅ sudah bekerja
+      </div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">
+        <h4>Babak 2 🎬</h4>
+        👷10 orang<br>📅? hari<br>🧱 sisa
+      </div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div><b>Total pekerjaan.</b> Kalau 12 orang bekerja 20 hari:</div></div>
+  <div class="mathbox">
+    \[
+    12\times20=240\text{ pekerja-hari}
+    \]
+  </div>
+
+  <div class="viz">
+    <div class="viz-title">Seluruh pekerjaan = 240 pekerja-hari</div>
+    <div class="bar"><div class="fill-blue" style="width:100%"></div></div>
+  </div>
+
+  <div class="step"><div class="num">2</div><div><b>Yang sudah dikerjakan.</b></div></div>
+  <div class="mathbox">
+    \[
+    12\times5=60
+    \]
+  </div>
+
+  <div class="viz">
+    <div class="viz-title">Bagian yang sudah selesai = 60</div>
+    <div class="bar"><div class="fill-green" style="width:25%"></div></div>
+  </div>
+
+  <div class="step"><div class="num">3</div><div><b>Sisa pekerjaan.</b></div></div>
+  <div class="mathbox">
+    \[
+    240-60=180
+    \]
+  </div>
+
+  <div class="viz">
+    <div class="viz-title">Bagian yang tersisa = 180</div>
+    <div class="bar"><div class="fill-orange" style="width:75%"></div></div>
+  </div>
+
+  <div class="step"><div class="num">4</div><div><b>Kondisi berubah.</b> Dua orang keluar:</div></div>
+  <div class="mathbox">
+    \[
+    12-2=10\text{ pekerja}
+    \]
+  </div>
+
+  <div class="step"><div class="num">5</div><div><b>Berapa waktu untuk sisa 180?</b></div></div>
+  <div class="mathbox">
+    \[
+    10x=180
+    \]
+    \[
+    x=18
+    \]
+  </div>
+
+  <div class="visual">👷10 + ⏱️18 hari <span class="arrow">→</span> ✅ <b>sisa selesai</b></div>
+  <div class="answer">Jawaban: <b>18 hari lagi</b>.</div>
+</div>
+
+<h3>⏱️ Contoh: waktu dipaksa lebih singkat</h3>
+<div class="example">
+  <p><b>Soal:</b> 60 pekerja diperkirakan menyelesaikan pekerjaan dalam 10 hari. Setelah 4 hari, pekerjaan harus selesai dalam 4 hari lagi. Berapa pekerja yang diperlukan pada fase kedua?</p>
+
+  <div class="viz">
+    <div class="phase">
+      <div class="phase-card">👷60<br>📅10 hari<br>🏗️ total</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">👷60<br>📅4 hari<br>✅ sudah dikerjakan</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">👷?<br>📅4 hari<br>🧱 sisa</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Total:</div></div>
+  <div class="mathbox">\[60\times10=600\]</div>
+  <div class="step"><div class="num">2</div><div>Sudah dikerjakan:</div></div>
+  <div class="mathbox">\[60\times4=240\]</div>
+  <div class="step"><div class="num">3</div><div>Sisa:</div></div>
+  <div class="mathbox">\[600-240=360\]</div>
+  <div class="step"><div class="num">4</div><div>Sisa 360 harus selesai 4 hari:</div></div>
+  <div class="mathbox">
+    \[
+    4x=360
+    \]
+    \[
+    x=90
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>90 pekerja</b>.</div>
+</div>
+
+<h3>🖨️ Contoh: mesin berkurang</h3>
+<div class="example">
+  <p><b>Soal:</b> 10 mesin membutuhkan 6 jam untuk target tertentu. Setelah 2 jam, 2 mesin berhenti. Berapa total waktu?</p>
+
+  <div class="viz">
+    <div class="phase">
+      <div class="phase-card">🖨️×10<br>⏱️2 jam<br>✅ fase 1</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-card">🖨️×8<br>⏱️? jam<br>🧱 sisa</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Total beban:</div></div>
+  <div class="mathbox">\[10\times6=60\text{ mesin-jam}\]</div>
+  <div class="step"><div class="num">2</div><div>Fase pertama:</div></div>
+  <div class="mathbox">\[10\times2=20\]</div>
+  <div class="step"><div class="num">3</div><div>Sisa:</div></div>
+  <div class="mathbox">\[60-20=40\]</div>
+  <div class="step"><div class="num">4</div><div>Mesin tersisa 8:</div></div>
+  <div class="mathbox">\[8x=40\Rightarrow x=5\]</div>
+  <div class="step"><div class="num">5</div><div>Total waktu:</div></div>
+  <div class="mathbox">\[2+5=7\text{ jam}\]</div>
+  <div class="answer">Jawaban: <b>7 jam</b>.</div>
+</div>
+
+<div class="danger">
+  <b>Alarm:</b> kata “setelah”, “kemudian”, “sudah bekerja”, “sebagian selesai”, “masuk”, “keluar”, atau “berhenti”
+  biasanya berarti jangan memakai satu perbandingan langsung. Berhenti dan pecah menjadi fase.
+</div>
+</section>
+
+<section id="normalisasi">
+<h2>Normalisasi: kalau angka tidak bisa langsung dibandingkan 🔧</h2>
+<p class="lead">Kadang dua informasi menggunakan “ukuran” yang berbeda. Kita samakan dulu basisnya.</p>
+
+<h3>🐔 Contoh: ayam dan karung pakan</h3>
+<div class="example">
+  <p><b>Soal:</b> 1 ayam menghabiskan 1 karung pakan dalam 6 hari. Berapa hari 2 ayam dapat menghabiskan 8 karung, dengan pola konsumsi yang sama?</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">🐔 1 ayam<br>🌾 1 karung<br>⏱️ 6 hari</div>
+      <div class="arrow">⇒</div>
+      <div class="box">🐔 2 ayam<br>🌾 8 karung<br>⏱️ ?</div>
+    </div>
+  </div>
+
+  <p>Kita jangan langsung menggabungkan semua angka. Samakan dulu dengan pertanyaan kecil.</p>
+
+  <div class="step"><div class="num">1</div><div>Kalau 1 ayam membutuhkan 6 hari untuk 1 karung, maka untuk 8 karung dengan 1 ayam:</div></div>
+  <div class="mathbox">
+    \[
+    8\times6=48\text{ hari}
+    \]
+  </div>
+
+  <div class="visual">🐔1 + 🌾8 <span class="arrow">→</span> ⏱️ <b>48 hari</b></div>
+
+  <div class="step"><div class="num">2</div><div>Sekarang jumlah ayam menjadi 2. Dua kali lebih banyak ayam → waktu menjadi setengah.</div></div>
+  <div class="mathbox">
+    \[
+    48\div2=24
+    \]
+  </div>
+
+  <div class="visual">🐔2 + 🌾8 <span class="arrow">→</span> ⏱️ <b>24 hari</b></div>
+  <div class="answer">Jawaban: <b>24 hari</b>.</div>
+</div>
+
+<h3>🧩 Kenapa perlu normalisasi?</h3>
+<div class="example">
+  <p>Bayangkan kamu ingin membandingkan harga 3 botol dengan harga 2 lusin botol. Kamu tidak boleh langsung membandingkan angka 3 dan 2 karena satuannya berbeda.</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">🍾 3 botol</div>
+      <div class="arrow">↔</div>
+      <div class="box">🍾 2 lusin = 24 botol</div>
+    </div>
+  </div>
+
+  <p>Kita ubah semuanya ke satuan yang sama dulu: <b>botol</b>.</p>
+  <div class="answer">Aturan: <b>samakan satuan atau basis → baru bandingkan.</b></div>
+</div>
+
+<div class="card purple">
+  <b>Normalisasi sederhana:</b> kalau dua kondisi memakai ukuran yang berbeda, buat keduanya berada pada “satu bahasa” terlebih dahulu.
+</div>
+</section>
+
+<section id="gabungan">
+<h2>Perbandingan gabungan: dua kemampuan bekerja bersama 🤝</h2>
+<p class="lead">Kalau dua tim bekerja bersamaan, kita gabungkan <b>kemampuan per waktu</b>, bukan menjumlahkan waktunya.</p>
+
+<div class="viz">
+  <div class="viz-title">Bayangkan dua mesin bekerja bersamaan</div>
+  <div class="scene">
+    <div class="box">👷A<br><b>rate A</b></div>
+    <div class="arrow">+</div>
+    <div class="box">👷B<br><b>rate B</b></div>
+    <div class="arrow">→</div>
+    <div class="box">🤝<br><b>rate gabungan</b></div>
+  </div>
+</div>
+
+<h3>🤝 Contoh: Tim A dan Tim B</h3>
+<div class="example">
+  <p><b>Soal:</b> Tim A menyelesaikan satu pekerjaan dalam 12 hari. Tim B menyelesaikannya dalam 18 hari. Jika keduanya bekerja bersama, berapa hari?</p>
+
+  <div class="step"><div class="num">1</div><div>Kalau A menyelesaikan 1 pekerjaan dalam 12 hari, kemampuan A per hari:</div></div>
+  <div class="mathbox">
+    \[
+    \text{rate A}=\frac1{12}
+    \]
+  </div>
+
+  <div class="step"><div class="num">2</div><div>Kemampuan B:</div></div>
+  <div class="mathbox">
+    \[
+    \text{rate B}=\frac1{18}
+    \]
+  </div>
+
+  <div class="step"><div class="num">3</div><div>Karena bekerja bersama, kemampuan mereka dijumlahkan:</div></div>
+  <div class="mathbox">
+    \[
+    \frac1{12}+\frac1{18}
+    =
+    \frac3{36}+\frac2{36}
+    =
+    \frac5{36}
+    \]
+  </div>
+
+  <div class="step"><div class="num">4</div><div>Artinya dalam 1 hari mereka menyelesaikan \(\frac5{36}\) pekerjaan. Maka satu pekerjaan memerlukan:</div></div>
+  <div class="mathbox">
+    \[
+    \frac{1}{5/36}
+    =
+    \frac{36}{5}
+    =
+    7{,}2
+    \]
+  </div>
+
+  <div class="visual">👷A + 👷B <span class="arrow">→</span> 🏗️ <b>selesai 7,2 hari</b></div>
+  <div class="answer">Jawaban: <b>7,2 hari</b>.</div>
+</div>
+
+<h3>💡 Contoh yang bisa dilihat tanpa banyak rumus</h3>
+<div class="example">
+  <p>A selesai sendiri dalam 10 hari. B juga selesai sendiri dalam 10 hari.</p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">👷A<br><b>10 hari</b></div>
+      <div class="arrow">+</div>
+      <div class="box">👷B<br><b>10 hari</b></div>
+      <div class="arrow">→</div>
+      <div class="box">🤝<br><b>5 hari</b></div>
+    </div>
+  </div>
+
+  <p>Dalam 5 hari A menyelesaikan separuh pekerjaan dan B juga separuh. Digabung, selesai satu pekerjaan.</p>
+  <div class="answer">Jawaban: <b>5 hari</b>.</div>
+</div>
+
+<div class="danger"><b>Jangan menjumlahkan hari.</b> \(10+10=20\) bukan jawabannya. Yang dijumlahkan adalah kemampuan kerja per hari.</div>
+</section>
+
+<section id="kuantitatif">
+<h2>Perbandingan kuantitatif: bandingkan \(X\) dan \(Y\) 🔵🔴</h2>
+<p class="lead">Format ini sedikit berbeda. Kita bukan selalu mencari “berapa harga” atau “berapa hari”, tetapi menentukan hubungan dua kuantitas.</p>
+
+<div class="viz">
+  <div class="viz-title">Pertanyaan yang ingin dijawab</div>
+  <div class="scene">
+    <div class="box">🔵<br><b>\(X\)</b></div>
+    <div class="arrow">↔</div>
+    <div class="box">🔴<br><b>\(Y\)</b></div>
+    <div class="arrow">→</div>
+    <div class="box">❓<br><b>mana lebih besar?</b></div>
+  </div>
+</div>
+
+<h3>🔢 Contoh: hitung langsung</h3>
+<div class="example">
+  <div class="mathbox">
+    \[
+    X=2+5,\qquad Y=10-3
+    \]
+  </div>
+  <div class="mathbox">
+    \[
+    X=7,\qquad Y=7
+    \]
+  </div>
+  <div class="visual">🔵7 <span class="arrow">=</span> 🔴7</div>
+  <div class="answer">Jadi \(X=Y\).</div>
+</div>
+
+<h3>🪞 Contoh: bentuk berbeda, ternyata sama</h3>
+<div class="example">
+  <div class="mathbox">
+    \[
+    X=3a+2b,\qquad Y=2b+3a
+    \]
+  </div>
+  <p>Urutan suku dalam penjumlahan boleh ditukar.</p>
+  <div class="mathbox">
+    \[
+    3a+2b=2b+3a
+    \]
+  </div>
+  <div class="visual">🔵\(X\) <span class="arrow">=</span> 🔴\(Y\)</div>
+  <div class="answer">Jadi \(X=Y\).</div>
+</div>
+
+<h3>🧩 Contoh: nilai variabel diketahui</h3>
+<div class="example">
+  <p>Diketahui \(x=4\) dan \(y=2\).</p>
+  <div class="mathbox">
+    \[
+    X=x+y,\qquad Y=x-y
+    \]
+  </div>
+  <div class="mathbox">
+    \[
+    X=4+2=6
+    \]
+    \[
+    Y=4-2=2
+    \]
+  </div>
+  <div class="visual">🔵6 <span class="arrow">></span> 🔴2</div>
+  <div class="answer">Jadi \(X>Y\).</div>
+</div>
+
+<h3>🎲 Contoh: hubungan tidak dapat ditentukan</h3>
+<div class="example">
+  <p>Diketahui \(x>0\). Bandingkan:</p>
+  <div class="mathbox">
+    \[
+    X=x,\qquad Y=2-x
+    \]
+  </div>
+
+  <div class="viz">
+    <div class="viz-title">Coba nilai yang memenuhi syarat</div>
+    <div class="scene">
+      <div class="box">🎲 \(x=1\)<br>🔵 \(X=1\)<br>🔴 \(Y=1\)</div>
+      <div class="arrow">→</div>
+      <div class="box">✅ \(X=Y\)</div>
+    </div>
+  </div>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">🎲 \(x=2\)<br>🔵 \(X=2\)<br>🔴 \(Y=0\)</div>
+      <div class="arrow">→</div>
+      <div class="box">✅ \(X>Y\)</div>
+    </div>
+  </div>
+
+  <p>Karena hasil hubungan berubah, kita tidak boleh mengatakan satu hubungan yang selalu benar.</p>
+  <div class="answer">Kesimpulan: hubungan \(X\) dan \(Y\) <b>tidak dapat ditentukan</b>.</div>
+</div>
+</section>
+
+<section id="strategi">
+<h2>Strategi universal saat ujian 🧠</h2>
+<p class="lead">Setelah semua materi, sekarang kita gabungkan semuanya menjadi satu kebiasaan berpikir.</p>
+
+<div class="example">
+  <h3 style="margin-top:0">Saat pertama melihat soal, jangan hitung dulu.</h3>
+  <div class="viz">
+    <div class="scene">
+      <div class="box">📖<br><b>Soal panjang</b></div>
+      <div class="arrow">→</div>
+      <div class="box">🔎<br><b>Apa variabelnya?</b></div>
+      <div class="arrow">→</div>
+      <div class="box">📌<br><b>Apa yang tetap?</b></div>
+      <div class="arrow">→</div>
+      <div class="box">📈📈 / 📈📉<br><b>Arah hubungan</b></div>
+    </div>
+  </div>
+</div>
+
+<div class="example">
+  <p><b>Kalau barang bertambah dan biaya bertambah:</b></p>
+  <div class="visual">📦 ↑ <span class="arrow">→</span> 💰 ↑ <span class="arrow">→</span> <b>Senilai</b></div>
+
+  <p><b>Kalau pekerja bertambah dan waktu berkurang:</b></p>
+  <div class="visual">👷 ↑ <span class="arrow">→</span> ⏱️ ↓ <span class="arrow">→</span> <b>Berbalik</b></div>
+</div>
+
+<div class="example">
+  <p><b>Kalau ada pekerja + waktu + hasil:</b></p>
+  <div class="visual">👷 + ⏱️ + 📦 <span class="arrow">→</span> <b>Majemuk</b></div>
+
+  <p><b>Kalau ada kata “setelah”, “kemudian”, “sebagian sudah selesai”:</b></p>
+  <div class="visual">🎬 fase 1 <span class="arrow">→</span> 🔄 perubahan <span class="arrow">→</span> 🎬 fase 2 <span class="arrow">→</span> <b>Bertahap</b></div>
+
+  <p><b>Kalau dua tim bekerja bersama:</b></p>
+  <div class="visual">👷A + 👷B <span class="arrow">→</span> ⚡ rate A + rate B <span class="arrow">→</span> <b>Gabungan</b></div>
+</div>
+
+<div class="example">
+  <h3 style="margin-top:0">Satu contoh diagnosis lengkap</h3>
+  <p>
+    <b>Soal:</b> “15 pekerja dapat menyelesaikan proyek dalam 12 hari.
+    Setelah 4 hari, 3 pekerja dipindahkan. Berapa hari lagi proyek selesai?”
+  </p>
+
+  <div class="viz">
+    <div class="scene">
+      <div class="box">👷15<br>📅12 hari<br>🏗️ proyek</div>
+      <div class="arrow">→</div>
+      <div class="box">⏳4 hari<br>✅ sudah berjalan</div>
+      <div class="arrow">→</div>
+      <div class="box">👷−3<br>🔄 berubah</div>
+      <div class="arrow">→</div>
+      <div class="box">❓</div>
+    </div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div>Kata “setelah 4 hari” memberi alarm: <b>bertahap</b>.</div></div>
+  <div class="step"><div class="num">2</div><div>Total pekerjaan:</div></div>
+  <div class="mathbox">\[15\times12=180\]</div>
+  <div class="step"><div class="num">3</div><div>Sudah dikerjakan:</div></div>
+  <div class="mathbox">\[15\times4=60\]</div>
+  <div class="step"><div class="num">4</div><div>Sisa:</div></div>
+  <div class="mathbox">\[180-60=120\]</div>
+  <div class="step"><div class="num">5</div><div>Pekerja baru: \(15-3=12\).</div></div>
+  <div class="step"><div class="num">6</div><div>Sisa 120 dengan 12 pekerja:</div></div>
+  <div class="mathbox">
+    \[
+    12x=120
+    \]
+    \[
+    x=10
+    \]
+  </div>
+  <div class="answer">Jawaban: <b>10 hari lagi</b>.</div>
+</div>
+
+<div class="card blue">
+  <h3 style="margin-top:0">Peta 10 detik</h3>
+  <table>
+    <tr><th>Lihat ini...</th><th>Pikirkan ini...</th></tr>
+    <tr><td>📈 → 📈</td><td><b>Senilai</b></td></tr>
+    <tr><td>📈 → 📉</td><td><b>Berbalik nilai</b></td></tr>
+    <tr><td>👷 + ⏱️ + 📦</td><td><b>Majemuk / tabel</b></td></tr>
+    <tr><td>“setelah”, “kemudian”, “sudah...”</td><td><b>Bertahap</b></td></tr>
+    <tr><td>🤝 dua pihak bekerja bersama</td><td><b>Gabungkan rate</b></td></tr>
+    <tr><td>🔵 \(X\) vs 🔴 \(Y\)</td><td><b>Perbandingan kuantitatif</b></td></tr>
+    <tr><td>Angka/satuan belum sebanding</td><td><b>Normalisasi</b></td></tr>
+  </table>
+</div>
+</section>
+
+<section id="quiz">
+<h2>Quiz 10 soal 🎯</h2>
+<p class="lead">Kerjakan tanpa melihat kunci. Beberapa soal sengaja meminta kita mengenali family terlebih dahulu.</p>
+
+<form id="quizForm">
+
+<div class="quiz" data-answer="b">
+  <div class="q">1. Empat pulpen berharga Rp12.000. Berapa harga 10 pulpen dengan harga satuan sama?</div>
+  <div class="visual">🖊️4 → 💰12.000 ⇒ 🖊️10 → 💰❓</div>
+  <div class="opts">
+    <label><input type="radio" name="q1" value="a"> A. Rp20.000</label>
+    <label><input type="radio" name="q1" value="b"> B. Rp30.000</label>
+    <label><input type="radio" name="q1" value="c"> C. Rp32.000</label>
+    <label><input type="radio" name="q1" value="d"> D. Rp36.000</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="c">
+  <div class="q">2. Delapan pekerja menyelesaikan pekerjaan dalam 15 hari. Jika pekerja menjadi 12 orang, berapa hari?</div>
+  <div class="visual">👷8 → 📅15 ⇒ 👷12 → 📅❓</div>
+  <div class="opts">
+    <label><input type="radio" name="q2" value="a"> A. 8 hari</label>
+    <label><input type="radio" name="q2" value="b"> B. 9 hari</label>
+    <label><input type="radio" name="q2" value="c"> C. 10 hari</label>
+    <label><input type="radio" name="q2" value="d"> D. 12 hari</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="d">
+  <div class="q">3. Enam pekerja menghasilkan 900 unit dalam 5 hari. Dengan produktivitas sama, berapa unit dihasilkan 8 pekerja dalam 5 hari?</div>
+  <div class="visual">👷6 + ⏱️5 → 📦900 ⇒ 👷8 + ⏱️5 → 📦❓</div>
+  <div class="opts">
+    <label><input type="radio" name="q3" value="a"> A. 1.000</label>
+    <label><input type="radio" name="q3" value="b"> B. 1.050</label>
+    <label><input type="radio" name="q3" value="c"> C. 1.100</label>
+    <label><input type="radio" name="q3" value="d"> D. 1.200</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="a">
+  <div class="q">4. Dua belas pekerja direncanakan menyelesaikan proyek dalam 20 hari. Setelah 5 hari, 2 pekerja keluar. Berapa hari lagi yang diperlukan?</div>
+  <div class="visual">👷12 + 📅20 → ⏳5 hari → 👷−2 → 📅❓</div>
+  <div class="opts">
+    <label><input type="radio" name="q4" value="a"> A. 18 hari</label>
+    <label><input type="radio" name="q4" value="b"> B. 16 hari</label>
+    <label><input type="radio" name="q4" value="c"> C. 15 hari</label>
+    <label><input type="radio" name="q4" value="d"> D. 14 hari</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="b">
+  <div class="q">5. Tim A menyelesaikan pekerjaan dalam 10 hari. Tim B dalam 15 hari. Jika bekerja bersama, berapa hari?</div>
+  <div class="visual">👷A → 10 hari + 👷B → 15 hari ⇒ 🤝❓</div>
+  <div class="opts">
+    <label><input type="radio" name="q5" value="a"> A. 5 hari</label>
+    <label><input type="radio" name="q5" value="b"> B. 6 hari</label>
+    <label><input type="radio" name="q5" value="c"> C. 8 hari</label>
+    <label><input type="radio" name="q5" value="d"> D. 12 hari</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="c">
+  <div class="q">6. Lima belas liter bensin cukup untuk 180 km. Dengan konsumsi sama, berapa liter untuk 300 km?</div>
+  <div class="visual">⛽15 L → 🚗180 km ⇒ ⛽❓ → 🚗300 km</div>
+  <div class="opts">
+    <label><input type="radio" name="q6" value="a"> A. 20 liter</label>
+    <label><input type="radio" name="q6" value="b"> B. 22,5 liter</label>
+    <label><input type="radio" name="q6" value="c"> C. 25 liter</label>
+    <label><input type="radio" name="q6" value="d"> D. 27,5 liter</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="a">
+  <div class="q">7. Dua puluh pekerja menyelesaikan target dalam 4 hari. Jika target tetap dan waktu menjadi 5 hari, berapa pekerja diperlukan?</div>
+  <div class="visual">👷20 + ⏱️4 → 🎯 tetap ⇒ 👷❓ + ⏱️5</div>
+  <div class="opts">
+    <label><input type="radio" name="q7" value="a"> A. 16</label>
+    <label><input type="radio" name="q7" value="b"> B. 18</label>
+    <label><input type="radio" name="q7" value="c"> C. 20</label>
+    <label><input type="radio" name="q7" value="d"> D. 25</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="d">
+  <div class="q">8. Sepuluh mesin menghasilkan 1.500 unit dalam 6 jam. Jika mesin menjadi 15 dan waktu menjadi 8 jam, berapa unit?</div>
+  <div class="visual">🖨️10 + ⏱️6 → 📦1.500 ⇒ 🖨️15 + ⏱️8 → 📦❓</div>
+  <div class="opts">
+    <label><input type="radio" name="q8" value="a"> A. 2.000</label>
+    <label><input type="radio" name="q8" value="b"> B. 2.400</label>
+    <label><input type="radio" name="q8" value="c"> C. 2.750</label>
+    <label><input type="radio" name="q8" value="d"> D. 3.000</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="b">
+  <div class="q">9. Lima belas pekerja menyelesaikan 60% pekerjaan dalam 8 hari. Berapa pekerja diperlukan untuk menyelesaikan sisa 40% dalam 4 hari dengan produktivitas sama?</div>
+  <div class="visual">👷15 + ⏱️8 → ✅60% ⇒ 👷❓ + ⏱️4 → ✅40%</div>
+  <div class="opts">
+    <label><input type="radio" name="q9" value="a"> A. 10</label>
+    <label><input type="radio" name="q9" value="b"> B. 20</label>
+    <label><input type="radio" name="q9" value="c"> C. 25</label>
+    <label><input type="radio" name="q9" value="d"> D. 30</label>
+  </div>
+</div>
+
+<div class="quiz" data-answer="c">
+  <div class="q">10. Sebuah perjalanan ditempuh 3 jam dengan kecepatan 80 km/jam. Jika jarak yang sama harus ditempuh dalam 2 jam, berapa kecepatannya?</div>
+  <div class="visual">🚗80 km/jam + ⏱️3 → 📍jarak tetap ⇒ 🚗❓ + ⏱️2</div>
+  <div class="opts">
+    <label><input type="radio" name="q10" value="a"> A. 100 km/jam</label>
+    <label><input type="radio" name="q10" value="b"> B. 110 km/jam</label>
+    <label><input type="radio" name="q10" value="c"> C. 120 km/jam</label>
+    <label><input type="radio" name="q10" value="d"> D. 140 km/jam</label>
+  </div>
+</div>
+
+<button type="button" onclick="checkQuiz()">Periksa Jawaban</button>
+<button type="button" class="secondary" onclick="resetQuiz()">Ulangi Quiz</button>
+<div class="result" id="result"></div>
+</form>
+
+<details>
+<summary>Kunci dan pembahasan singkat</summary>
+<ol>
+<li><b>B.</b> Senilai: \(12.000\div4\times10=30.000\).</li>
+<li><b>C.</b> Berbalik: \(8\times15=12x\), jadi \(x=10\).</li>
+<li><b>D.</b> Senilai terhadap pekerja: \(900\times\frac{8}{6}=1.200\).</li>
+<li><b>A.</b> Total \(12\times20=240\); sudah \(12\times5=60\); sisa 180; pekerja tersisa 10; \(180\div10=18\).</li>
+<li><b>B.</b> \(\frac1{10}+\frac1{15}=\frac16\), jadi 6 hari.</li>
+<li><b>C.</b> \(15\times\frac{300}{180}=25\) liter.</li>
+<li><b>A.</b> \(20\times4=5x\), jadi \(x=16\).</li>
+<li><b>D.</b> \(1.500\times\frac{15}{10}\times\frac{8}{6}=3.000\).</li>
+<li><b>B.</b> 60% = \(15\times8=120\) pekerja-hari. 40% = \(80\) pekerja-hari. \(80\div4=20\).</li>
+<li><b>C.</b> Jarak tetap: \(80\times3=2x\), jadi \(x=120\) km/jam.</li>
+</ol>
+</details>
+</section>
+
+<section>
+<div class="card green">
+  <h2 style="margin-top:0">Gambar besar yang harus menempel 🧠</h2>
+  <div class="layer">
+    <div class="mini"><div class="e">📈📈</div><b>Senilai</b><span class="small">searah</span></div>
+    <div class="mini"><div class="e">📈📉</div><b>Berbalik</b><span class="small">berlawanan</span></div>
+    <div class="mini"><div class="e">👷⏱️📦</div><b>Majemuk</b><span class="small">banyak faktor</span></div>
+    <div class="mini"><div class="e">🎬🔄</div><b>Bertahap</b><span class="small">ada perubahan</span></div>
+    <div class="mini"><div class="e">🤝⚡</div><b>Gabungan</b><span class="small">rate digabung</span></div>
+    <div class="mini"><div class="e">🔧📏</div><b>Normalisasi</b><span class="small">samakan basis</span></div>
+  </div>
+  <p>
+    Gunakan emoji sebagai <b>gambar pengingat</b>, bukan sebagai pengganti pemahaman.
+    Target akhirnya adalah melihat sebuah soal lalu otomatis tahu cerita itu termasuk pola yang mana.
+  </p>
+</div>
+</section>
+
+  </div>
+
+  <!-- ============ TAB 2: PAKET SOAL ============ -->
+  <div id="tab-paket" class="tab-content">
+
+    <div id="packet-list-view" class="packet-list">
+      <div class="packet-header">
+        <h2 id="packet-title">Memuat...</h2>
+        <p id="packet-desc">Mohon tunggu...</p>
+      </div>
+
+      <div class="scoreboard">
+        <span class="label">Total Tryout</span>
+        <span class="num" id="tryout-score">0 / 0</span>
+      </div>
+
+      <div id="packet-container" class="packet-grid">
+        <div class="empty-state">Memuat daftar paket soal...</div>
+      </div>
+    </div>
+
+    <div id="quiz-view" class="quiz-view">
+      <div class="quiz-header">
+        <div class="quiz-top-row">
+          <button class="quiz-back-btn" onclick="exitQuiz()">← Keluar</button>
+          <div class="quiz-progress-text">
+            Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> &nbsp;·&nbsp; Dijawab <b id="quiz-answered-count">0</b>
+          </div>
+        </div>
+        <div class="quiz-packet-name" id="quiz-packet-name">Paket 1</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="quiz-progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="quiz-body" id="quiz-body"></div>
+
+      <div class="quiz-footer" id="quiz-footer" style="display:none;">
+        <div class="quiz-footer-inner">
+          <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
+          <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+          <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Materi Perbandingan TIU — versi final visual, dengan studi kasus, tabel, normalisasi,
+    perbandingan bertahap, perbandingan gabungan, perbandingan majemuk, dan quiz.
+  </footer>
+
+</div>
+
+<script>
+function checkQuiz(){
+  const boxes=[...document.querySelectorAll('.quiz')];
+  let score=0,answered=0;
+  boxes.forEach(box=>{
+    box.classList.remove('good','bad');
+    const chosen=box.querySelector('input:checked');
+    if(chosen){
+      answered++;
+      if(chosen.value===box.dataset.answer){
+        score++;
+        box.classList.add('good');
+      }else{
+        box.classList.add('bad');
+      }
+    }
+  });
+  const result=document.getElementById('result');
+  result.style.display='block';
+  const msg =
+    score===10 ? 'Semua benar. Pola perbandingan sudah sangat baik.' :
+    score>=8 ? 'Pemahaman sudah kuat. Ulangi bagian yang masih salah.' :
+    score>=6 ? 'Dasar sudah cukup. Ulangi contoh pada family yang masih keliru.' :
+               'Kembali ke bagian dasar dan strategi, kemudian coba lagi.';
+  result.innerHTML='<div class="score">'+score+'/10</div><div>Terjawab '+answered+'/10. '+msg+'</div>';
+  result.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function resetQuiz(){
+  document.getElementById('quizForm').reset();
+  document.querySelectorAll('.quiz').forEach(x=>x.classList.remove('good','bad'));
+  document.getElementById('result').style.display='none';
+  document.getElementById('quiz').scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  var letters = ['A', 'B', 'C', 'D', 'E'];
+  var tryoutAnswered = 0, tryoutCorrect = 0;
+  var currentPacket = null;
+  var userAnswers = [];
+  var quizSubmitted = false;
+  var currentQuestionIndex = 0;
+  var isLanjutan = /materi-2\.html/i.test((location.pathname.split('/').pop() || ''));
+
+  /* ---------- TAB SWITCHER ---------- */
+  function switchTab(tabName, btn) {
+    document.querySelectorAll('.tab-content').forEach(function (el) { el.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function (el) { el.classList.remove('active'); });
+    document.getElementById('tab-' + tabName).classList.add('active');
+    if (btn) btn.classList.add('active');
+  }
+
+  /* ---------- STICKY NAV MATERI ---------- */
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section'));
+  var nav = document.getElementById('sticky-nav');
+  var chips = [];
+
+  var upBtn = document.createElement('button');
+  upBtn.type = 'button';
+  upBtn.className = 'nav-top';
+  upBtn.textContent = '↑ Atas';
+  upBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(upBtn);
+
+  var pill = document.createElement('span');
+  pill.className = 'pill-switch';
+  var pillDasar = document.createElement('a');
+  pillDasar.href = 'materi-1.html';
+  pillDasar.textContent = 'Dasar';
+  var pillLanjut = document.createElement('a');
+  pillLanjut.href = 'materi-2.html';
+  pillLanjut.textContent = 'Lanjutan';
+  pill.appendChild(pillDasar);
+  pill.appendChild(pillLanjut);
+  if (isLanjutan) pillLanjut.classList.add('active');
+  else pillDasar.classList.add('active');
+  nav.appendChild(pill);
+
+  sections.forEach(function (sec) {
+    var h = sec.querySelector('h2');
+    if (!h) return;
+    var label = h.textContent
+      .replace(/^BAB\s*\d+\s*[—-]\s*/i, '')
+      .replace(/^\d+\.\s*/, '')
+      .trim();
+    if (label.length > 28) {
+      var cut = label.slice(0, 28);
+      var sp = cut.lastIndexOf(' ');
+      if (sp > 14) cut = cut.slice(0, sp);
+      label = cut + '…';
+    }
+    var chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'nav-chip';
+    chip.textContent = label;
+    chip.addEventListener('click', function () {
+      var top = sec.getBoundingClientRect().top + window.pageYOffset - 76;
+      window.scrollTo({ top: top < 0 ? 0 : top, behavior: 'smooth' });
+    });
+    nav.appendChild(chip);
+    chips.push(chip);
+  });
+
+  var bankChip = document.createElement('button');
+  bankChip.type = 'button';
+  bankChip.className = 'nav-chip';
+  bankChip.textContent = 'Paket Soal';
+  bankChip.addEventListener('click', function () {
+    switchTab('paket', document.getElementById('tab-btn-paket'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(bankChip);
+
+  var raf = 0;
+  function updateNav() {
+    if (raf) return;
+    raf = window.requestAnimationFrame(function () {
+      raf = 0;
+      var active = -1;
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top <= 150) active = i;
+        else break;
+      }
+      if (active === -1) active = 0;
+      chips.forEach(function (c, idx) { c.classList.toggle('active', idx === active); });
+      var chip = chips[active] || chips[0];
+      var nRect = nav.getBoundingClientRect();
+      if (nRect.top <= 0) {
+        var cRect = chip.getBoundingClientRect();
+        var target = nav.scrollLeft + (cRect.left + cRect.width / 2) - (nRect.left + nRect.width / 2);
+        var max = nav.scrollWidth - nav.clientWidth;
+        if (target < 0) target = 0;
+        if (target > max) target = max;
+        if (Math.abs(target - nav.scrollLeft) > 1) nav.scrollLeft = target;
+      }
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  window.addEventListener('resize', updateNav);
+  updateNav();
+
+  /* ---------- SCOREBOARD ---------- */
+  function updateTryoutScore() {
+    document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered;
+  }
+
+  /* ---------- PACKET LOADER ---------- */
+  async function loadPackets() {
+    var container = document.getElementById('packet-container');
+    var titleEl = document.getElementById('packet-title');
+    var descEl = document.getElementById('packet-desc');
+
+    try {
+      var response = await fetch('manifest.json');
+      if (!response.ok) throw new Error('Manifest not found');
+      var manifest = await response.json();
+
+      titleEl.textContent = manifest.judul || 'Bank Soal';
+      descEl.textContent = manifest.deskripsi || '';
+
+      container.innerHTML = '';
+      if (!manifest.paket || manifest.paket.length === 0) {
+        container.innerHTML = '<div class="empty-state">Belum ada paket soal yang tersedia.</div>';
+        return;
+      }
+
+      manifest.paket.forEach(function (pkt, idx) {
+        var card = document.createElement('div');
+        card.className = 'packet-card';
+        card.innerHTML =
+          '<div class="packet-title">' + escapeHtml(pkt.nama) + '</div>' +
+          '<div class="packet-desc">' + escapeHtml(pkt.deskripsi || 'Paket latihan perbandingan TIU') + '</div>' +
+          '<div class="packet-meta"><span class="packet-badge">' + escapeHtml(pkt.file) + '</span><span>Paket ' + (idx + 1) + '</span></div>';
+        card.addEventListener('click', function () { startPacket(pkt); });
+        container.appendChild(card);
+      });
+
+    } catch (err) {
+      titleEl.textContent = 'Bank Soal Perbandingan TIU CPNS';
+      descEl.textContent = 'Pastikan file manifest.json tersedia di folder yang sama.';
+      container.innerHTML =
+        '<div class="empty-state"><strong>manifest.json belum ditemukan</strong><br>' +
+        'Buat file manifest.json di folder yang sama agar paket soal bisa dimuat.<br>' +
+        '<small style="opacity:0.7">Error: ' + escapeHtml(err.message) + '</small></div>';
+    }
+  }
+
+  /* ---------- QUIZ ENGINE - SATU SOAL PER LAYAR ---------- */
+  function normalizePacket(data) {
+    if (!data || typeof data !== 'object') return data;
+
+    var firstSoal = Array.isArray(data.soal) ? data.soal[0] : null;
+    if (firstSoal && firstSoal.opsi && typeof firstSoal.opsi === 'object' && !Array.isArray(firstSoal.opsi)) {
+      var order = ['A', 'B', 'C', 'D', 'E'];
+      var mapped = data.soal.map(function (s) {
+        var opsi = [];
+        order.forEach(function (k) {
+          if (s.opsi && s.opsi[k] !== undefined) opsi.push(k + '. ' + s.opsi[k]);
+        });
+        var pembahasan = String(s.pembahasan || '');
+        if (s.mekanisme) pembahasan += '\n\n**Mekanisme:**\n' + String(s.mekanisme).replace(/^\s*>\s?/gm, '');
+        if (s.distraktor_diagnostik && typeof s.distraktor_diagnostik === 'object') {
+          var lines = [];
+          order.forEach(function (k) {
+            if (s.distraktor_diagnostik[k] === undefined) return;
+            var line = k + '. ' + s.distraktor_diagnostik[k];
+            if (String(s.jawaban || '').toUpperCase() === k) line = '**' + line + '**';
+            lines.push(line);
+          });
+          if (lines.length) pembahasan += '\n\n**Analisis opsi:**\n' + lines.join('\n');
+        }
+        return {
+          id: s.id != null ? s.id : undefined,
+          pertanyaan: s.soal,
+          opsi: opsi,
+          jawaban: String(s.jawaban || '').toUpperCase(),
+          tipe: (s.family && s.subpattern) ? (s.family + ' · ' + s.subpattern) : 'Perbandingan',
+          pembahasan: pembahasan
+        };
+      });
+      return {
+        nama: data.paket || 'Bank Soal',
+        deskripsi: data.jenis || '',
+        jumlah_soal: mapped.length,
+        soal: mapped
+      };
+    }
+
+    if (Array.isArray(data.soal)) return data;
+
+    if (Array.isArray(data.questions)) {
+      var optKeys = ['a', 'b', 'c', 'd', 'e'];
+
+      var soal = data.questions.map(function (q) {
+        var opsi = [];
+        optKeys.forEach(function (k) {
+          if (q.options && q.options[k] !== undefined) {
+            opsi.push(k.toUpperCase() + '. ' + q.options[k]);
+          }
+        });
+
+        var pembahasan = q.explanation || '';
+
+        var pa = q.pattern_analysis;
+        if (pa && pa.step_by_step && pa.step_by_step.length) {
+          pembahasan += '\n\n**Langkah penyelesaian:**\n' +
+            pa.step_by_step.map(function (s, i) { return (i + 1) + '. ' + s; }).join('\n');
+        }
+
+        var lines = [];
+        optKeys.forEach(function (k) {
+          if (!q.options || q.options[k] === undefined) return;
+          var reason = (q.distractor_analysis && q.distractor_analysis[k]) ? q.distractor_analysis[k] : '';
+          var line = k.toUpperCase() + '. ' + q.options[k] + (reason ? ' — ' + reason : '');
+          if (String(q.correct_option || '').toUpperCase() === k.toUpperCase()) {
+            line = '**' + line + '**';
+          }
+          lines.push(line);
+        });
+        if (lines.length) {
+          pembahasan += '\n\n**Analisis opsi:**\n' + lines.join('\n');
+        }
+
+        return {
+          id: q.id != null ? q.id : undefined,
+          pertanyaan: q.question,
+          opsi: opsi,
+          jawaban: String(q.correct_option || '').toUpperCase(),
+          tipe: q.pattern_subtype || '',
+          pembahasan: pembahasan
+        };
+      });
+
+      return {
+        nama: (data.package && data.package.title) || data.nama || 'Bank Soal',
+        deskripsi: (data.package && data.package.instruction) || data.deskripsi || '',
+        jumlah_soal: soal.length,
+        soal: soal
+      };
+    }
+
+    return data;
+  }
+
+  async function startPacket(pkt) {
+    document.getElementById('packet-list-view').classList.add('hidden');
+    document.getElementById('quiz-view').classList.add('active');
+    document.getElementById('quiz-packet-name').textContent = pkt.nama;
+
+    var body = document.getElementById('quiz-body');
+    body.innerHTML =
+      '<div class="loading-state"><div class="loading-spinner"></div>' +
+      '<div>Memuat soal dari <b>' + escapeHtml(pkt.file) + '</b>...</div></div>';
+    document.getElementById('quiz-footer').style.display = 'none';
+
+    try {
+      var response = await fetch(pkt.file);
+      if (!response.ok) throw new Error('File tidak ditemukan');
+      var data = await response.json();
+
+      currentPacket = normalizePacket(data);
+      userAnswers = [];
+      quizSubmitted = false;
+      currentQuestionIndex = 0;
+
+      var soal = (currentPacket && currentPacket.soal) || [];
+
+      if (soal.length === 0) {
+        body.innerHTML =
+          '<div class="empty-state"><strong>' + escapeHtml(pkt.nama) + ' masih kosong</strong><br>' +
+          'Belum ada soal pada file <b>' + escapeHtml(pkt.file) + '</b>.<br>' +
+          '<small>Tambahkan soal pada array "soal", lalu klik paket ini lagi.</small></div>';
+        return;
+      }
+
+      userAnswers = new Array(soal.length).fill(null);
+      document.getElementById('quiz-total-num').textContent = soal.length;
+      document.getElementById('quiz-answered-count').textContent = '0';
+      document.getElementById('quiz-progress-fill').style.width = '0%';
+
+      renderQuestion();
+      body.scrollTop = 0;
+    } catch (err) {
+      body.innerHTML =
+        '<div class="empty-state"><strong>Gagal memuat ' + escapeHtml(pkt.file) + '</strong><br>' +
+        'Pastikan file JSON paket soal tersedia.<br>' +
+        '<small style="opacity:0.7">Error: ' + escapeHtml(err.message) + '</small></div>';
+      setTimeout(function () { exitQuiz(); }, 2000);
+    }
+  }
+
+  function resetQuizFooter() {
+    document.getElementById('quiz-footer').innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()" disabled>← Kembali</button>' +
+      '<button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="nextQuestion()">Selanjutnya →</button>' +
+      '</div>';
+    document.getElementById('quiz-footer').style.display = 'none';
+  }
+
+  function exitQuiz() {
+    document.getElementById('packet-list-view').classList.remove('hidden');
+    document.getElementById('quiz-view').classList.remove('active');
+    currentPacket = null;
+    userAnswers = [];
+    quizSubmitted = false;
+    currentQuestionIndex = 0;
+    resetQuizFooter();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderAnswerFooter() {
+    var isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
+    document.getElementById('quiz-footer').innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()"' + (currentQuestionIndex === 0 ? ' disabled' : '') + '>← Kembali</button>' +
+      '<button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="' + (isLast ? 'submitQuiz()' : 'nextQuestion()') + '">' + (isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →') + '</button>' +
+      '</div>';
+    document.getElementById('quiz-footer').style.display = 'block';
+  }
+
+  function goToQuestion(qi) {
+    if (!currentPacket) return;
+    currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
+    renderQuestion();
+    var body = document.getElementById('quiz-body');
+    if (body && body.scrollTo) body.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function prevQuestion() {
+    goToQuestion(currentQuestionIndex - 1);
+  }
+
+  function nextQuestion() {
+    if (!currentPacket) return;
+    if (currentQuestionIndex >= currentPacket.soal.length - 1) {
+      submitQuiz();
+      return;
+    }
+    goToQuestion(currentQuestionIndex + 1);
+  }
+
+  function renderQuestion() {
+    var body = document.getElementById('quiz-body');
+    var total = currentPacket.soal.length;
+    if (total === 0) { body.innerHTML = ''; return; }
+    currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
+    var qi = currentQuestionIndex;
+
+    body.innerHTML = '';
+
+    var navEl = document.createElement('div');
+    navEl.className = 'quiz-nav';
+    var navTitle = document.createElement('div');
+    navTitle.className = 'quiz-nav-title';
+    navTitle.textContent = 'Navigasi Soal';
+    navEl.appendChild(navTitle);
+
+    var navDots = document.createElement('div');
+    navDots.className = 'quiz-nav-dots';
+
+    currentPacket.soal.forEach(function (s, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '');
+      dot.textContent = i + 1;
+      dot.addEventListener('click', function () {
+        if (i !== currentQuestionIndex) goToQuestion(i);
+      });
+      navDots.appendChild(dot);
+    });
+    navEl.appendChild(navDots);
+    body.appendChild(navEl);
+
+    var currentDot = navDots.querySelector('.quiz-nav-dot.current');
+    if (currentDot && currentDot.scrollIntoView) {
+      currentDot.scrollIntoView({ block: 'nearest', inline: 'center' });
+    }
+
+    var soal = currentPacket.soal[qi];
+    var card = document.createElement('div');
+    card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
+
+    var numBadge = document.createElement('div');
+    numBadge.className = 'quiz-q-num';
+    numBadge.textContent = 'SOAL ' + (qi + 1);
+    card.appendChild(numBadge);
+
+    var qText = document.createElement('p');
+    qText.className = 'quiz-q-text';
+    qText.textContent = soal.pertanyaan;
+    card.appendChild(qText);
+
+    var optsWrap = document.createElement('div');
+    optsWrap.className = 'quiz-opts';
+
+    (soal.opsi || []).forEach(function (optText, oi) {
+      var opt = document.createElement('div');
+      opt.className = 'quiz-opt';
+
+      var match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+      var letter = match ? match[1] : letters[oi];
+      var text = match ? match[2] : optText;
+
+      opt.innerHTML = '<span class="bubble">' + letter + '</span><span>' + escapeHtml(text) + '</span>';
+
+      if (userAnswers[qi] === oi) {
+        opt.classList.add('selected');
+      }
+
+      opt.addEventListener('click', function () { handleOptionSelect(qi, oi); });
+      optsWrap.appendChild(opt);
+    });
+
+    card.appendChild(optsWrap);
+    body.appendChild(card);
+    renderLatex(card);
+
+    document.getElementById('quiz-current-num').textContent = qi + 1;
+    renderAnswerFooter();
+    updateProgress();
+    requestAnimationFrame(fitQuestionCard);
+  }
+
+  function fitQuestionCard() {
+    if (quizSubmitted) return;
+    var body = document.getElementById('quiz-body');
+    var card = document.querySelector('.quiz-q-card');
+    if (!body || !card) return;
+    if (typeof body.clientHeight !== 'number' || body.clientHeight <= 0) return;
+
+    card.style.zoom = '';
+
+    var bodyTop = body.getBoundingClientRect().top;
+    var availH = body.clientHeight - (card.getBoundingClientRect().top - bodyTop) - 20;
+    var availW = body.clientWidth;
+    if (window.matchMedia && window.matchMedia('(min-width:1024px)').matches) {
+      var navElWide = body.querySelector('.quiz-nav');
+      if (navElWide) {
+        var padLW = parseFloat(getComputedStyle(body).paddingLeft) || 0;
+        var padRW = parseFloat(getComputedStyle(body).paddingRight) || 0;
+        availW = body.clientWidth - padLW - padRW - navElWide.getBoundingClientRect().width - 14;
+      }
+    }
+    availW = Math.min(availW, 800);
+
+    var cardH = card.getBoundingClientRect().height;
+    var cardW = card.getBoundingClientRect().width;
+    if (cardH <= 0 || cardW <= 0) return;
+
+    var needed = Math.min(availH / cardH, availW / cardW);
+    card.style.zoom = Math.max(0.8, Math.min(1.5, needed));
+  }
+
+  function handleOptionSelect(qi, oi) {
+    if (quizSubmitted) return;
+
+    if (userAnswers[qi] === oi) {
+      userAnswers[qi] = null;
+    } else {
+      userAnswers[qi] = oi;
+    }
+
+    var optsWrap = document.querySelectorAll('.quiz-opts')[0];
+    if (optsWrap && optsWrap.children.length === (currentPacket.soal[qi].opsi || []).length) {
+      var played = 0;
+      Array.prototype.forEach.call(optsWrap.children, function (opt, i) {
+        opt.classList.toggle('selected', i === userAnswers[qi]);
+        played = i;
+      });
+    }
+
+    var card = document.querySelector('.quiz-q-card');
+    if (card) card.classList.toggle('answered', userAnswers[qi] !== null);
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    var answered = userAnswers.filter(function (a) { return a !== null; }).length;
+    var total = currentPacket ? currentPacket.soal.length : 0;
+
+    document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
+    document.getElementById('quiz-answered-count').textContent = answered;
+    if (total > 0) {
+      document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
+    }
+  }
+
+  function correctIndex(soal) {
+    return String(soal.jawaban || '').charCodeAt(0) - 'A'.charCodeAt(0);
+  }
+
+  function submitQuiz(skipConfirm) {
+    if (!currentPacket) return;
+
+    var answered = userAnswers.filter(function (a) { return a !== null; }).length;
+    var total = currentPacket.soal.length;
+
+    if (!skipConfirm && answered < total) {
+      var skipped = total - answered;
+      if (!confirm('Masih ada ' + skipped + ' soal yang belum dijawab.\nSoal yang tidak dijawab akan dianggap salah.\n\nLanjutkan ke pembahasan?')) {
+        return;
+      }
+    }
+
+    var correct = 0;
+    currentPacket.soal.forEach(function (soal, qi) {
+      if (userAnswers[qi] === correctIndex(soal)) correct++;
+    });
+
+    tryoutAnswered += total;
+    tryoutCorrect += correct;
+    updateTryoutScore();
+
+    quizSubmitted = true;
+    renderReviewMode();
+    var qb = document.getElementById('quiz-body');
+    if (qb) qb.scrollTop = 0;
+  }
+
+  function skipToReview() {
+    if (!currentPacket) return;
+    if (!confirm('Lewati semua soal dan langsung lihat pembahasan?\nSemua soal yang belum dijawab akan dianggap salah.')) return;
+    submitQuiz(true);
+  }
+
+  function renderMarkdown(src) {
+    return String(src)
+      .replace(/^\s*>\s?/gm, '')
+      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+      .replace(/\n{2,}/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function renderLatex(root) {
+    if (root && window.renderMathInElement) {
+      try {
+        renderMathInElement(root, {
+          delimiters: [
+            { left: '\\(', right: '\\)', display: false },
+            { left: '$$', right: '$$', display: true },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      } catch (err) {
+        /* KaTeX belum dimuat; teks tetap ditampilkan apa adanya */
+      }
+    }
+  }
+
+  function renderReviewMode() {
+    var body = document.getElementById('quiz-body');
+    body.innerHTML = '';
+    document.getElementById('quiz-footer').style.display = 'none';
+
+    var correct = 0, wrong = 0, skipped = 0;
+    currentPacket.soal.forEach(function (soal, qi) {
+      var ci = correctIndex(soal);
+      if (userAnswers[qi] === null) skipped++;
+      else if (userAnswers[qi] === ci) correct++;
+      else wrong++;
+    });
+
+    var total = currentPacket.soal.length;
+    var percent = total ? Math.round((correct / total) * 100) : 0;
+
+    var summary = document.createElement('div');
+    summary.className = 'review-summary';
+    summary.innerHTML =
+      '<div class="review-stat"><div class="review-stat-num">' + percent + '%</div><div class="review-stat-label">Skor</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num good">' + correct + '</div><div class="review-stat-label">Benar</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num bad">' + wrong + '</div><div class="review-stat-label">Salah</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num skip">' + skipped + '</div><div class="review-stat-label">Dilewati</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num">' + total + '</div><div class="review-stat-label">Total</div></div>';
+    body.appendChild(summary);
+
+    currentPacket.soal.forEach(function (soal, qi) {
+      var userAns = userAnswers[qi];
+      var ci = correctIndex(soal);
+      var isSkipped = userAns === null;
+      var isCorrect = !isSkipped && userAns === ci;
+
+      var card = document.createElement('div');
+      card.className = 'review-q-card';
+
+      var headRow = document.createElement('div');
+      headRow.className = 'review-q-head';
+
+      var numBadge = document.createElement('span');
+      if (isSkipped) {
+        numBadge.className = 'review-q-badge skipped';
+        numBadge.textContent = '#' + (qi + 1) + ' · ⊘ Dilewati';
+      } else if (isCorrect) {
+        numBadge.className = 'review-q-badge correct';
+        numBadge.textContent = '#' + (qi + 1) + ' · ✓ Benar';
+      } else {
+        numBadge.className = 'review-q-badge wrong';
+        numBadge.textContent = '#' + (qi + 1) + ' · ✗ Salah';
+      }
+      headRow.appendChild(numBadge);
+
+      if (soal.tipe) {
+        var typeBadge = document.createElement('span');
+        typeBadge.className = 'review-q-type';
+        typeBadge.textContent = soal.tipe;
+        headRow.appendChild(typeBadge);
+      }
+      card.appendChild(headRow);
+
+      var qText = document.createElement('p');
+      qText.className = 'quiz-q-text';
+      qText.textContent = soal.pertanyaan;
+      card.appendChild(qText);
+
+      if (soal.premis && soal.premis.length > 0) {
+        var premisBox = document.createElement('div');
+        premisBox.className = 'review-premis';
+        var premisLabel = document.createElement('div');
+        premisLabel.className = 'review-premis-label';
+        premisLabel.textContent = 'Premis';
+        premisBox.appendChild(premisLabel);
+        var premisList = document.createElement('ol');
+        premisList.className = 'review-premis-list';
+        soal.premis.forEach(function (p) {
+          var li = document.createElement('li');
+          li.textContent = p;
+          premisList.appendChild(li);
+        });
+        premisBox.appendChild(premisList);
+        card.appendChild(premisBox);
+      }
+
+      var optsWrap = document.createElement('div');
+      optsWrap.className = 'quiz-opts';
+
+      (soal.opsi || []).forEach(function (optText, oi) {
+        var opt = document.createElement('div');
+        opt.className = 'quiz-opt locked';
+
+        var match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+        var letter = match ? match[1] : letters[oi];
+        var text = match ? match[2] : optText;
+
+        opt.innerHTML = '<span class="bubble">' + letter + '</span><span>' + escapeHtml(text) + '</span>';
+
+        if (oi === ci) {
+          if (isCorrect || isSkipped) opt.classList.add('review-correct');
+          else opt.classList.add('review-reveal');
+        }
+        if (!isSkipped && oi === userAns && !isCorrect) {
+          opt.classList.add('review-wrong');
+        }
+        optsWrap.appendChild(opt);
+      });
+
+      card.appendChild(optsWrap);
+
+      if (soal.pembahasan) {
+        var explain = document.createElement('div');
+        var explainClass = 'review-explain ';
+        var prefix = '';
+        if (isSkipped) {
+          explainClass += 'skip';
+          prefix = '<span class="status">⊘ Dilewati.</span> ';
+        } else if (isCorrect) {
+          explainClass += 'good';
+          prefix = '<span class="status">✓ Benar.</span> ';
+        } else {
+          explainClass += 'bad';
+          prefix = '<span class="status">✗ Kurang tepat.</span> ';
+        }
+        explain.className = explainClass;
+        explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
+        card.appendChild(explain);
+      }
+
+      renderLatex(card);
+      body.appendChild(card);
+    });
+
+    var footer = document.getElementById('quiz-footer');
+    footer.innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>' +
+      '</div>';
+    footer.style.display = 'block';
+  }
+
+  function retryPacket() {
+    if (!currentPacket) return;
+    currentQuestionIndex = 0;
+    userAnswers = new Array(currentPacket.soal.length).fill(null);
+    quizSubmitted = false;
+    renderQuestion();
+    var qb = document.getElementById('quiz-body');
+    if (qb) qb.scrollTop = 0;
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* Expose needed globals for inline onclick handlers */
+  window.switchTab = switchTab;
+  window.loadPackets = loadPackets;
+  window.startPacket = startPacket;
+  window.normalizePacket = normalizePacket;
+  window.closePacket = null;
+  window.exitQuiz = exitQuiz;
+  window.goToQuestion = goToQuestion;
+  window.prevQuestion = prevQuestion;
+  window.nextQuestion = nextQuestion;
+  window.submitQuiz = submitQuiz;
+  window.skipToReview = skipToReview;
+  window.retryPacket = retryPacket;
+
+  /* ---------- RENDER MATH STATIS (materi) ---------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var tabMateri = document.getElementById('tab-materi');
+    if (tabMateri && window.renderMathInElement) {
+      try {
+        renderMathInElement(tabMateri, {
+          delimiters: [
+            { left: '\\(', right: '\\)', display: false },
+            { left: '$$', right: '$$', display: true },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      } catch (err) { /* teks tetap tampil apa adanya */ }
+    }
+  });
+
+  var fitTimer = null;
+  function refitOnResize() {
+    if (!document.getElementById('quiz-view').classList.contains('active')) return;
+    var qv = document.getElementById('quiz-view');
+    if (!qv.classList.contains('active')) return;
+    fitQuestionCard();
+  }
+  window.addEventListener('resize', function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(refitOnResize, 150);
+  });
+  window.addEventListener('orientationchange', function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(refitOnResize, 250);
+  });
+
+  loadPackets();
+})();
+</script>
+</body>
+</html>

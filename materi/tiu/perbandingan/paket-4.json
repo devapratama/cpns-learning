@@ -1,0 +1,327 @@
+{
+  "paket": 4,
+  "jenis": "perbandingan",
+  "jumlah_soal": 20,
+  "soal": [
+    {
+      "id": "P4-01",
+      "family": "RASIO DASAR",
+      "subpattern": "rasio bagian terhadap keseluruhan",
+      "difficulty": "mudah",
+      "soal": "Dalam sebuah perpustakaan, rasio buku fiksi terhadap seluruh koleksi adalah 3:8. Jika total koleksi 400 buku, berapa buku fiksi?",
+      "opsi": {
+        "A": "150",
+        "B": "250",
+        "C": "50",
+        "D": "152",
+        "E": "148"
+      },
+      "jawaban": "A",
+      "pembahasan": "Jumlah seluruh bagian = 8. Bagian yang dicari adalah 3 bagian, sehingga nilainya = 3/8×400 = 150."
+    },
+    {
+      "id": "P4-02",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "senilai dengan representasi verbal",
+      "difficulty": "sedang",
+      "soal": "Sebuah mesin mencetak 72 label dalam 4 menit. Dengan laju tetap, berapa label dicetak dalam 7 menit?",
+      "opsi": {
+        "A": "18",
+        "B": "126",
+        "C": "144",
+        "D": "288/7",
+        "E": "108"
+      },
+      "jawaban": "B",
+      "pembahasan": "Cari dulu hasil untuk 1 unit. Nilai per unit = 72/4. Untuk 7 unit, nilainya = 72/4×7 = 126."
+    },
+    {
+      "id": "P4-03",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "persediaan bertambah sebanding",
+      "difficulty": "sedang",
+      "soal": "Sebuah sekolah menerima 240 lembar formulir untuk 6 kelas dengan kebutuhan per kelas sama. Jika jumlah kelas menjadi 9, berapa formulir dibutuhkan?",
+      "opsi": {
+        "A": "320",
+        "B": "400",
+        "C": "360",
+        "D": "160",
+        "E": "40"
+      },
+      "jawaban": "C",
+      "pembahasan": "Cari dulu hasil untuk 1 unit. Nilai per unit = 240/6. Untuk 9 unit, nilainya = 240/6×9 = 360."
+    },
+    {
+      "id": "P4-04",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "pekerja dengan tingkat kemampuan sama",
+      "difficulty": "sedang",
+      "soal": "Sebuah persediaan dapat dipindahkan dalam 10 jam oleh 8 pekerja. Jika pekerja menjadi 5 orang dan kemampuan tiap orang tetap, berapa jam diperlukan?",
+      "opsi": {
+        "A": "17",
+        "B": "16",
+        "C": "15",
+        "D": "40/3",
+        "E": "4"
+      },
+      "jawaban": "B",
+      "pembahasan": "Jumlah pekerja berkurang dari 8 menjadi 5, sehingga waktu yang dibutuhkan bertambah. Untuk pekerjaan yang sama, jumlah pekerja × waktu tetap. Jadi 8×10 = 5×t. Maka t = 8×10/5 = 16 jam."
+    },
+    {
+      "id": "P4-05",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "berbalik nilai dengan tabel",
+      "difficulty": "sedang",
+      "soal": "Perhatikan tabel berikut. Sebuah percetakan buku menggunakan mesin dengan kemampuan yang sama. Jika 12 mesin digunakan, berapa waktu yang diperlukan?\nTabel:\n| Mesin | Waktu (jam) |\n|---:|---:|\n| 6 | 20 |\n| 12 | ? |",
+      "opsi": {
+        "A": "8",
+        "B": "9",
+        "C": "12",
+        "D": "10",
+        "E": "15"
+      },
+      "jawaban": "D",
+      "pembahasan": "Untuk pekerjaan yang sama, jumlah mesin dan waktu saling berlawanan. Jadi 6×20 = 12×t. Maka t = 120÷12 = 10 jam."
+    },
+    {
+      "id": "P4-06",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "multi-variabel dengan rasio parsial",
+      "difficulty": "sulit",
+      "soal": "Sebuah mesin memerlukan 6 jam untuk menghasilkan 180 unit dengan 3 operator. Jika operator menjadi 4 dan waktu menjadi 5 jam, dengan produktivitas per operator per jam tetap, berapa unit dihasilkan?",
+      "opsi": {
+        "A": "200",
+        "B": "230",
+        "C": "220",
+        "D": "183",
+        "E": "180"
+      },
+      "jawaban": "A",
+      "pembahasan": "Operator berubah dari 3 menjadi 4, jadi dikali 4/3. Waktu berubah dari 6 menjadi 5 jam, jadi dikali 5/6. Maka hasil baru = 180 × 4/3 × 5/6 = 200 unit."
+    },
+    {
+      "id": "P4-07",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "produksi × pekerja × jam kerja",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah kegiatan sekolah menghasilkan 480 paket dari 8 siswa yang bekerja 6 jam. Berapa paket dihasilkan jika 10 siswa bekerja 5 jam dengan produktivitas per siswa per jam tetap?",
+      "opsi": {
+        "A": "483",
+        "B": "480",
+        "C": "540",
+        "D": "500",
+        "E": "520"
+      },
+      "jawaban": "D",
+      "pembahasan": "Jumlah siswa berubah dari 8 menjadi 10, jadi dikali 10/8 = 5/4. Waktu berubah dari 6 menjadi 5 jam, jadi dikali 5/6. Maka hasil baru = 480 × 5/4 × 5/6 = 500 paket."
+    },
+    {
+      "id": "P4-08",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "target waktu dipercepat",
+      "difficulty": "sulit",
+      "soal": "Sebuah gudang harus menyelesaikan pemindahan 360 kotak. Jika 6 pekerja bekerja selama 10 jam, seluruh pekerjaan selesai. Setelah 4 jam pertama, batas akhir dipercepat sehingga pekerjaan harus selesai pada jam ke-8 sejak awal. Jika kemampuan setiap pekerja sama, berapa pekerja yang harus bekerja mulai jam ke-5?",
+      "opsi": {
+        "A": "6 orang",
+        "B": "7 orang",
+        "C": "8 orang",
+        "D": "9 orang",
+        "E": "10 orang"
+      },
+      "jawaban": "D",
+      "pembahasan": "Enam pekerja menyelesaikan 360 kotak dalam 10 jam. Artinya 1 pekerja dalam 1 jam menyelesaikan 360 ÷ (6 × 10) = 6 kotak. Dalam 4 jam pertama, 6 pekerja menyelesaikan 6 × 6 × 4 = 144 kotak. Sisa = 360 − 144 = 216 kotak. Waktu yang tersisa hanya 4 jam, jadi pekerja yang diperlukan = 216 ÷ (6 × 4) = 9 orang."
+    },
+    {
+      "id": "P4-09",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "pekerja masuk/keluar dua fase",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah buku paket sebanyak 400 unit harus dibungkus. Empat pekerja dapat membungkus 24 unit per jam secara bersama-sama selama 4 jam. Setelah itu dua pekerja tambahan masuk. Dengan kemampuan tiap pekerja tetap, berapa unit yang masih tersisa setelah 3 jam berikutnya?",
+      "opsi": {
+        "A": "194 unit",
+        "B": "196 unit",
+        "C": "198 unit",
+        "D": "200 unit",
+        "E": "202 unit"
+      },
+      "jawaban": "B",
+      "pembahasan": "Empat pekerja menyelesaikan 24×4 = 96 unit. Setelah dua pekerja masuk, jumlah pekerja menjadi 6. Laju baru = 24×6/4 = 36 unit per jam. Dalam 3 jam, selesai 36×3 = 108 unit. Total selesai = 96+108 = 204 unit. Sisa = 400−204 = 196 unit."
+    },
+    {
+      "id": "P4-10",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "sisa bahan/persediaan",
+      "difficulty": "sedang",
+      "soal": "Sebuah mesin memiliki target 500 unit. Pada fase pertama mesin menghasilkan 40 unit/jam selama 5 jam. Setelah itu laju menjadi 25 unit/jam. Berapa jam diperlukan setelah fase pertama?",
+      "opsi": {
+        "A": "11",
+        "B": "12",
+        "C": "25/2",
+        "D": "13",
+        "E": "8"
+      },
+      "jawaban": "B",
+      "pembahasan": "Fase 1 menyelesaikan 40×5 = 200 unit pekerjaan. Sisa = 500-200 = 300. Pada fase 2, laju 25 unit per jam; waktu untuk sisa = 300/25 = 12 jam."
+    },
+    {
+      "id": "P4-11",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "laju gabungan dua kelompok",
+      "difficulty": "sedang",
+      "soal": "Dua kelompok siswa mengemas paket dengan laju 18 dan 12 paket per jam. Berapa jam yang diperlukan untuk mengemas 150 paket jika keduanya bekerja bersama sejak awal?",
+      "opsi": {
+        "A": "6",
+        "B": "5",
+        "C": "25/3",
+        "D": "4",
+        "E": "7"
+      },
+      "jawaban": "B",
+      "pembahasan": "Yang kita jumlahkan adalah banyak pekerjaan per jam. Laju gabungan = 18 + 12 = 30 unit/jam. Waktu yang diperlukan = 150/30 = 5 jam."
+    },
+    {
+      "id": "P4-12",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi sebelum perbandingan X/Y",
+      "difficulty": "sedang-tinggi",
+      "soal": "X menyatakan 3.600 meter dalam 6 menit, sedangkan Y menyatakan 20 meter per detik. Setelah dinormalisasi ke meter per detik, bagaimana hubungan X dan Y?",
+      "opsi": {
+        "A": "2X > 3Y",
+        "B": "X > Y",
+        "C": "X < Y",
+        "D": "Hubungan tidak dapat ditentukan",
+        "E": "X = Y"
+      },
+      "jawaban": "C",
+      "pembahasan": "Enam menit = 360 detik. Jadi X = 3.600 ÷ 360 = 10 meter per detik. Y = 20 meter per detik. Karena 10 lebih kecil daripada 20, maka X < Y."
+    },
+    {
+      "id": "P4-13",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi ke satu unit",
+      "difficulty": "mudah",
+      "soal": "Sebuah kain panjangnya 2 m 15 cm dan dijual seharga Rp43.000. Jika harga kain dihitung sebanding dengan panjangnya, berapa harga 1 meter kain?",
+      "opsi": {
+        "A": "Rp18.000",
+        "B": "Rp20.000",
+        "C": "Rp21.500",
+        "D": "Rp23.000",
+        "E": "Rp43.000"
+      },
+      "jawaban": "B",
+      "pembahasan": "2 m 15 cm = 2,15 m. Harga 1 meter = Rp43.000 ÷ 2,15 = Rp20.000. Jadi harga 1 meter kain adalah Rp20.000."
+    },
+    {
+      "id": "P4-14",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel berbalik nilai",
+      "difficulty": "sedang",
+      "soal": "Jika 5 mesin membutuhkan 24 jam, berapa waktu yang dibutuhkan 8 mesin?\nTabel:\n| Mesin | Waktu (jam) |\n|---:|---:|\n| 5 | 24 |\n| 8 | ? |",
+      "opsi": {
+        "A": "14",
+        "B": "16",
+        "C": "15",
+        "D": "24",
+        "E": "5/3"
+      },
+      "jawaban": "C",
+      "pembahasan": "Jumlah mesin dan waktu saling berlawanan. Jadi, hasil kali jumlah mesin dan waktu tetap: 5×24 = 120. Maka waktu saat mesin 8 = 120/8 = 15 jam."
+    },
+    {
+      "id": "P4-15",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel perubahan kondisi",
+      "difficulty": "sedang-tinggi",
+      "soal": "Perhatikan tabel berikut. Dengan laju produksi yang tetap, berapa produk yang dihasilkan saat waktu kerja menjadi 9 jam jika 6 jam menghasilkan 144 unit?\nTabel:\n| Kondisi | Waktu kerja (jam) | Produk (unit) |\n|---|---:|---:|\n| Awal | 6 | 144 |\n| Baru | 9 | ? |",
+      "opsi": {
+        "A": "288",
+        "B": "219",
+        "C": "144",
+        "D": "216",
+        "E": "213"
+      },
+      "jawaban": "D",
+      "pembahasan": "Dalam 6 jam dihasilkan 144 unit, jadi 1 jam menghasilkan 144 ÷ 6 = 24 unit. Dalam 9 jam, hasilnya 9 × 24 = 216 unit."
+    },
+    {
+      "id": "P4-16",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "jebakan asumsi",
+      "difficulty": "sulit",
+      "soal": "Dalam gudang, X dan Y adalah jumlah dua jenis barang. Diketahui X + Y = 30, X > 12, dan Y > 9. Manakah kesimpulan yang dapat dipastikan?",
+      "opsi": {
+        "A": "X > Y",
+        "B": "X = Y",
+        "C": "X < Y",
+        "D": "2X > 3Y",
+        "E": "Hubungan X dan Y tidak dapat ditentukan"
+      },
+      "jawaban": "E",
+      "pembahasan": "Contoh X=13 dan Y=17 memenuhi semua syarat. Contoh lain X=20 dan Y=10 juga memenuhi syarat. Karena hubungan X dan Y bisa berbeda, hubungan keduanya tidak dapat ditentukan."
+    },
+    {
+      "id": "P4-17",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "kondisi tambahan",
+      "difficulty": "sulit",
+      "soal": "Diketahui X = 4k + 2 dan Y = 3k + 8 dengan k > 6. Manakah hubungan yang benar?",
+      "opsi": {
+        "A": "X < Y",
+        "B": "X = Y",
+        "C": "Hubungan tidak dapat ditentukan",
+        "D": "2X = 3Y",
+        "E": "X > Y"
+      },
+      "jawaban": "E",
+      "pembahasan": "Selisih X dan Y = (4k + 2) − (3k + 8) = k − 6. Karena k > 6, selisihnya positif. Jadi X > Y."
+    },
+    {
+      "id": "P4-18",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "waktu pengisian / kuantitas",
+      "difficulty": "sedang",
+      "soal": "Sebuah mesin pengisi membutuhkan 6 menit untuk mengisi 18 liter. Dengan laju tetap, berapa liter yang diisi dalam 10 menit?",
+      "opsi": {
+        "A": "30",
+        "B": "18",
+        "C": "20",
+        "D": "40",
+        "E": "54/5"
+      },
+      "jawaban": "A",
+      "pembahasan": "Dalam 6 menit mesin mengisi 18 liter, jadi tiap menit mengisi 18÷6 = 3 liter. Dalam 10 menit, volumenya = 3×10 = 30 liter."
+    },
+    {
+      "id": "P4-19",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "multi-variabel dengan data tidak langsung",
+      "difficulty": "sulit",
+      "soal": "Sebuah sekolah menyelesaikan 360 lembar dengan 6 printer dalam 4 jam. Jika printer menjadi 9 dan waktu kerja menjadi 5 jam, dengan produktivitas per printer per jam tetap, berapa lembar yang dapat diselesaikan?",
+      "opsi": {
+        "A": "360",
+        "B": "655",
+        "C": "675",
+        "D": "715",
+        "E": "695"
+      },
+      "jawaban": "C",
+      "pembahasan": "Jumlah printer berubah dari 6 menjadi 9, jadi dikali 9/6 = 3/2. Waktu berubah dari 4 menjadi 5 jam, jadi dikali 5/4. Maka hasil baru = 360 × 3/2 × 5/4 = 675 lembar."
+    },
+    {
+      "id": "P4-20",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "jarak tetap dengan kecepatan pecahan sederhana",
+      "difficulty": "sedang",
+      "soal": "Sebuah truk membawa persediaan menempuh jarak tetap. Pada kecepatan 48 km/jam, waktu tempuhnya 5 jam. Jika kecepatan menjadi 60 km/jam, berapa waktu tempuhnya?",
+      "opsi": {
+        "A": "4 jam",
+        "B": "6 jam",
+        "C": "4,5 jam",
+        "D": "3 jam",
+        "E": "5,5 jam"
+      },
+      "jawaban": "A",
+      "pembahasan": "Jarak yang ditempuh tetap, jadi kecepatan dan waktu saling berlawanan. 48×5 = 60×t. Maka t = 240÷60 = 4 jam."
+    }
+  ]
+}

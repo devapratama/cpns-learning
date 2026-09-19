@@ -1,0 +1,2256 @@
+{
+  "package": 5,
+  "questions": [
+    {
+      "id": "P5-001",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menangani perubahan kebutuhan pengguna setelah layanan berjalan",
+      "question": "Anda bertugas pada pelayanan administrasi yang memproses permohonan secara bertahap. Seorang pemohon sudah menyelesaikan tahap awal ketika ia menyampaikan bahwa alamat korespondensinya baru berubah. Perubahan tersebut tidak mengubah substansi haknya dan tersedia mekanisme pembaruan data sebelum tahap akhir. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta pemohon tetap menggunakan alamat lama agar proses yang sudah berjalan tidak terganggu.",
+          "score": 1,
+          "explanation": "Menjaga kelancaran proses penting, tetapi ketika mekanisme pembaruan tersedia, mempertahankan data yang sudah tidak sesuai dapat menimbulkan kesalahan pada tahap berikutnya. Dibandingkan C dan D, respons ini terlalu kaku terhadap perubahan yang sah."
+        },
+        {
+          "label": "B",
+          "text": "Mengarahkan pemohon mengajukan perubahan alamat setelah seluruh proses selesai agar tahapan saat ini tetap berjalan.",
+          "score": 3,
+          "explanation": "Respons ini menjaga stabilitas proses, tetapi melewatkan kesempatan memperbaiki data pada saat mekanisme koreksi memang tersedia. Dibandingkan C, beban pekerjaan lanjutan menjadi lebih besar."
+        },
+        {
+          "label": "C",
+          "text": "Meminta bukti perubahan alamat, lalu memastikan pembaruan dicatat pada tahap yang sesuai sebelum proses dilanjutkan.",
+          "score": 5,
+          "explanation": "Respons ini menjaga akurasi tanpa mengulang proses dan tetap mengikuti mekanisme yang berlaku. Dibandingkan B, masalah dituntaskan pada titik yang tepat; dibandingkan D, tidak terlalu berhenti pada konsultasi."
+        },
+        {
+          "label": "D",
+          "text": "Menghubungi pengelola sistem untuk memastikan perubahan alamat dapat dimasukkan tanpa mengganggu tahapan yang telah selesai.",
+          "score": 4,
+          "explanation": "Kehati-hatian dan verifikasi teknis merupakan kelebihan. Namun, karena mekanisme pembaruan sudah tersedia, langkah ini lebih lambat daripada langsung memproses koreksi yang sah."
+        },
+        {
+          "label": "E",
+          "text": "Meminta pemohon membuat permohonan baru agar seluruh data sejak awal menggunakan alamat yang terbaru.",
+          "score": 2,
+          "explanation": "Memulai ulang memang menghindari perubahan di tengah proses, tetapi tidak proporsional karena data dapat diperbarui tanpa mengulang seluruh layanan. Dibandingkan A, niat menjaga akurasi lebih baik, tetapi bebannya jauh lebih besar."
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "overall_explanation": "Masalah inti adalah perubahan data yang sah setelah proses berjalan. Karena tersedia mekanisme pembaruan dan perubahan tidak mengubah substansi permohonan, respons terbaik adalah memverifikasi lalu memperbaruinya pada titik yang tepat. C lebih baik daripada B karena menyelesaikan masalah sekarang; lebih baik daripada D karena konsultasi tambahan tidak perlu bila mekanisme sudah jelas; A mempertahankan data yang tidak lagi tepat; E mengulang proses secara berlebihan. Micro-rule: perubahan yang dapat dikoreksi secara resmi sebaiknya diselesaikan pada titik proses yang tepat, bukan ditunda atau dipaksa mengulang."
+    },
+    {
+      "id": "P5-002",
+      "subtest": "Pelayanan Publik",
+      "concept": "Mengelola kebutuhan pengguna yang tidak sesuai pola layanan standar",
+      "question": "Seorang pengguna datang untuk layanan yang biasanya dilakukan secara langsung. Ia mengatakan kondisi pekerjaan membuatnya hanya dapat datang sekali dan menanyakan apakah sebagian proses dapat dilakukan melalui kanal lain. Anda mengetahui ada beberapa tahap yang memang dapat dilakukan daring, tetapi tidak semua tahap dapat dipindahkan. Apa respons terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menjelaskan bahwa sebagian tahap dapat dilakukan melalui kanal daring dan membantu pengguna memahami bagian mana yang tetap harus dilakukan langsung.",
+          "score": 5,
+          "explanation": "Respons ini menyesuaikan layanan dengan kebutuhan nyata tanpa menjanjikan proses yang tidak tersedia. Dibandingkan B dan D, fleksibilitasnya tetap terkendali; dibandingkan C, tidak memindahkan seluruh beban kepada pengguna."
+        },
+        {
+          "label": "B",
+          "text": "Meminta pengguna tetap menyelesaikan seluruh proses secara langsung karena pola tersebut paling sederhana bagi petugas.",
+          "score": 1,
+          "explanation": "Kesederhanaan bagi petugas bukan dasar yang cukup untuk mengabaikan kanal alternatif yang memang tersedia. Dibandingkan A dan C, orientasi pelayanannya paling rendah."
+        },
+        {
+          "label": "C",
+          "text": "Memberikan alamat kanal daring agar pengguna dapat memeriksa sendiri apakah tahap yang dibutuhkan tersedia secara online.",
+          "score": 3,
+          "explanation": "Rujukan ke kanal daring membantu, tetapi pengguna masih harus mencari sendiri bagian yang dapat dialihkan. Dibandingkan A, ownership petugas lebih rendah."
+        },
+        {
+          "label": "D",
+          "text": "Menghubungi unit pengelola kanal daring untuk memastikan tahapan mana yang dapat dilakukan pengguna tanpa datang kembali.",
+          "score": 4,
+          "explanation": "Koordinasi dapat meningkatkan kepastian dan mencegah informasi yang salah. Namun, dibandingkan A, solusi belum langsung menerjemahkan hasil koordinasi menjadi panduan yang mudah dipahami pengguna."
+        },
+        {
+          "label": "E",
+          "text": "Mengusulkan seluruh proses dialihkan ke layanan daring agar kebutuhan pengguna serupa dapat ditangani lebih praktis pada masa depan.",
+          "score": 2,
+          "explanation": "Ide perbaikan jangka panjang dapat bermanfaat, tetapi tidak menyelesaikan kebutuhan pengguna hari ini dan berpotensi melampaui desain layanan yang berlaku. Dibandingkan D dan A, fokusnya terlalu jauh dari masalah aktual."
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "overall_explanation": "Pengguna meminta fleksibilitas, tetapi tidak semua tahap dapat dilakukan daring. A paling tepat karena menjelaskan batas sekaligus memanfaatkan fleksibilitas yang benar-benar tersedia. D baik tetapi masih berada pada level verifikasi internal; C terlalu menyerahkan pencarian kepada pengguna; B kaku; E terlalu jauh menuju redesign layanan. Micro-rule: pelayanan yang adaptif bukan mengubah seluruh prosedur, melainkan menggunakan fleksibilitas yang memang tersedia untuk mengurangi beban pengguna."
+    },
+    {
+      "id": "P5-003",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menangani ketidakpastian antrean akibat gangguan kapasitas",
+      "question": "Pada siang hari, satu meja pelayanan harus ditutup sementara karena petugasnya mendadak harus menangani keadaan internal. Antrean di meja tersebut belum terlalu panjang, tetapi beberapa pemohon sudah menunggu lebih dari waktu yang diperkirakan. Meja lain masih memiliki kapasitas terbatas. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta seluruh pemohon tetap berada di antrean masing-masing sampai petugas semula kembali agar urutan tidak berubah.",
+          "score": 2,
+          "explanation": "Konsistensi antrean penting, tetapi kondisi kapasitas sudah berubah. Dibandingkan B dan D, respons ini tidak menggunakan ruang redistribusi layanan yang tersedia."
+        },
+        {
+          "label": "B",
+          "text": "Memindahkan seluruh antrean ke meja lain agar pemohon tidak perlu menunggu tanpa kepastian.",
+          "score": 3,
+          "explanation": "Alih layanan dapat mengurangi waktu tunggu, tetapi kapasitas meja lain terbatas sehingga pemindahan penuh dapat menimbulkan antrean baru. Dibandingkan C, respons kurang proporsional."
+        },
+        {
+          "label": "C",
+          "text": "Mengidentifikasi layanan yang dapat ditangani meja lain dan memindahkan sebagian pemohon sesuai kapasitas sambil menjelaskan kondisi antrean.",
+          "score": 5,
+          "explanation": "Respons ini memanfaatkan kapasitas yang ada tanpa membuat antrean baru secara tidak terkendali. Dibandingkan B, pembagian lebih proporsional; dibandingkan A dan E, lebih aktif mengurangi dampak gangguan."
+        },
+        {
+          "label": "D",
+          "text": "Meminta petugas dari meja lain membantu setelah antreannya berkurang agar kapasitas tambahan dapat digunakan sementara.",
+          "score": 4,
+          "explanation": "Redistribusi petugas merupakan solusi yang baik bila kompetensi dan kewenangan memungkinkan. Namun, dibandingkan C, belum langsung menentukan pemohon mana yang dapat segera dialihkan."
+        },
+        {
+          "label": "E",
+          "text": "Mengumumkan bahwa layanan meja tersebut dihentikan sementara dan meminta pemohon datang pada waktu yang lebih sepi.",
+          "score": 1,
+          "explanation": "Informasi penutupan transparan, tetapi terlalu cepat memindahkan dampak gangguan kepada pemohon. Dibandingkan C dan D, kapasitas yang masih tersedia tidak dimanfaatkan."
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "overall_explanation": "Ketika kapasitas layanan berubah, mempertahankan antrean secara mekanis tidak selalu menjadi pilihan terbaik. C menggunakan kapasitas yang masih tersedia secara selektif dan transparan. D baik sebagai upaya menambah kapasitas, tetapi belum langsung mengatur alur; B terlalu menyeluruh; A pasif; E terlalu cepat menghentikan layanan. Micro-rule: saat kapasitas berubah, redistribusikan layanan berdasarkan jenis pekerjaan dan kapasitas nyata, bukan sekadar memindahkan semua orang."
+    },
+    {
+      "id": "P5-004",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menentukan tingkat transparansi ketika proses internal berubah",
+      "question": "Seorang pemohon menanyakan mengapa lama pelayanan berbeda dari informasi awal. Setelah ditelusuri, instansi baru saja mengubah alur pemeriksaan karena ditemukan kelemahan pada tahap sebelumnya. Perubahan tersebut belum sepenuhnya terlihat pada media informasi publik. Apa yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menjelaskan bahwa alur pelayanan sedang disesuaikan dan memberikan informasi tentang tahapan yang saat ini berlaku berdasarkan sumber internal terbaru.",
+          "score": 5,
+          "explanation": "Respons ini jujur mengenai perubahan dan memastikan pemohon menerima informasi yang benar untuk kondisi sekarang. Dibandingkan B, tidak menutupi perubahan; dibandingkan C dan D, lebih langsung membantu."
+        },
+        {
+          "label": "B",
+          "text": "Menjelaskan bahwa informasi lama belum sempat diperbarui dan meminta pemohon menunggu sampai media publik menyesuaikan.",
+          "score": 2,
+          "explanation": "Mengakui adanya ketidaksesuaian memang baik, tetapi menunggu pembaruan media tidak menyelesaikan kebutuhan informasi pemohon saat ini. Dibandingkan A dan C, respons terlalu pasif."
+        },
+        {
+          "label": "C",
+          "text": "Meminta pengelola informasi memperbarui media publik terlebih dahulu sebelum memberikan penjelasan lebih rinci kepada pemohon.",
+          "score": 3,
+          "explanation": "Perbaikan informasi publik penting, tetapi tidak semestinya membuat pemohon menunggu penjelasan yang sudah dapat diberikan dari sumber terbaru. Dibandingkan A, service recovery lebih lambat."
+        },
+        {
+          "label": "D",
+          "text": "Menjelaskan perubahan secara singkat kepada pemohon lalu meminta unit terkait memastikan informasi publik segera diperbarui.",
+          "score": 4,
+          "explanation": "Respons ini baik karena menangani pengguna sekaligus sumber masalah. Namun, dibandingkan A, belum memastikan pemohon memperoleh gambaran yang cukup mengenai alur terbaru."
+        },
+        {
+          "label": "E",
+          "text": "Tetap menggunakan informasi publik yang lama agar pelayanan tidak berbeda antara media dan penjelasan petugas.",
+          "score": 1,
+          "explanation": "Konsistensi kanal tidak lebih penting daripada kebenaran informasi yang berlaku. Dibandingkan semua opsi lain, tindakan ini mempertahankan informasi yang sudah diketahui tidak sesuai."
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "hard",
+      "overall_explanation": "Ketika proses internal berubah, informasi yang diberikan kepada pengguna harus mengikuti kondisi yang benar, sambil mendorong pembaruan kanal publik. A paling kuat karena memenuhi kebutuhan pengguna tanpa menunggu sistem komunikasi sempurna. D sangat baik tetapi penjelasannya masih lebih minimal; C dan B terlalu menunggu; E mempertahankan informasi lama. Micro-rule: ketika informasi publik tertinggal dari perubahan proses, gunakan sumber internal terbaru yang sah untuk melayani sambil memperbaiki kanal publik."
+    },
+    {
+      "id": "P5-005",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menangani pemohon yang membutuhkan bantuan tetapi ingin menjaga kemandirian",
+      "question": "Seorang pemohon mengaku belum pernah mengurus layanan tersebut. Ia dapat memahami petunjuk dasar, tetapi bingung menentukan dokumen mana yang relevan dari beberapa dokumen yang dibawanya. Apa tindakan Anda?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memeriksa semua dokumen dan menentukan sendiri mana yang perlu digunakan agar pemohon tidak salah memilih.",
+          "score": 2,
+          "explanation": "Bantuan langsung dapat mempercepat proses, tetapi keputusan mengenai dokumen yang digunakan sebaiknya tetap dapat dipahami dan dikonfirmasi pemohon. Dibandingkan C, respons terlalu mengambil alih."
+        },
+        {
+          "label": "B",
+          "text": "Menunjukkan kriteria dokumen yang relevan dan meminta pemohon mencocokkannya sendiri, lalu membantu pada bagian yang masih membingungkan.",
+          "score": 5,
+          "explanation": "Respons ini mendukung pemahaman tanpa menghilangkan kemandirian pengguna. Dibandingkan C, bantuan diberikan sesuai kebutuhan; dibandingkan A dan D, tidak mengambil alih."
+        },
+        {
+          "label": "C",
+          "text": "Menjelaskan perbedaan fungsi setiap dokumen yang dibawa agar pemohon dapat menentukan pilihan dengan dasar yang lebih jelas.",
+          "score": 4,
+          "explanation": "Penjelasan substantif membantu dan tetap menjaga keputusan pada pemohon. Namun, dibandingkan B, penjelasannya berpotensi lebih luas dari kebutuhan karena tidak dimulai dari kriteria yang paling relevan."
+        },
+        {
+          "label": "D",
+          "text": "Meminta pemohon mengikuti daftar persyaratan resmi dan memilih sendiri dokumen yang sesuai dengan kondisi permohonan.",
+          "score": 3,
+          "explanation": "Mengembalikan keputusan kepada pemohon menjaga batas peran, tetapi belum cukup membantu ketika pengguna sudah menyatakan kesulitan. Dibandingkan B dan C, respons terlalu minimal."
+        },
+        {
+          "label": "E",
+          "text": "Meminta pemohon membawa seluruh dokumen pada tahap berikutnya dan membiarkan petugas menentukan kebutuhan setelah berkas diperiksa.",
+          "score": 1,
+          "explanation": "Cara ini menghindari risiko pemohon salah memilih, tetapi hanya memindahkan masalah ke tahap berikutnya dan menambah beban. Dibandingkan B, tidak memanfaatkan kesempatan edukasi yang tersedia."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Bantuan yang baik tidak selalu berarti petugas memilihkan. Karena pemohon masih mampu memahami petunjuk dasar, B paling tepat dengan memperjelas kriteria lalu membantu pada titik kesulitan. C juga baik tetapi sedikit lebih luas; D terlalu pasif; A mengambil alih; E menunda penyelesaian. Micro-rule: tingkatkan bantuan sesuai hambatan pengguna, tetapi pertahankan ruang bagi pengguna untuk memahami dan mengambil keputusan sendiri."
+    },
+    {
+      "id": "P5-006",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menangani keluhan yang sebenarnya memerlukan perbaikan lintas unit",
+      "question": "Beberapa warga mengeluhkan hal yang sama: mereka sudah memperoleh informasi yang benar di loket awal, tetapi ketika sampai pada unit berikutnya, penjelasan mengenai langkah lanjutan berbeda. Anda bertugas pada unit awal. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta warga mengikuti informasi dari unit yang sedang mereka hadapi karena kewenangan tahap berikutnya berada di sana.",
+          "score": 2,
+          "explanation": "Menghormati kewenangan unit berikutnya benar, tetapi tidak menyelesaikan ketidakkonsistenan yang merugikan pengguna. Dibandingkan C dan D, ownership lintas proses rendah."
+        },
+        {
+          "label": "B",
+          "text": "Mencatat pola keluhan dan menghubungi unit berikutnya untuk menyamakan informasi yang diberikan kepada pengguna.",
+          "score": 5,
+          "explanation": "Respons ini mempertahankan batas kewenangan sekaligus memperbaiki continuity layanan. Dibandingkan C, tidak menunggu keluhan menumpuk; dibandingkan D, tindakan langsung lebih terarah."
+        },
+        {
+          "label": "C",
+          "text": "Membuat catatan informasi tambahan untuk diberikan kepada warga agar mereka dapat menunjukkan penjelasan awal ketika berpindah unit.",
+          "score": 4,
+          "explanation": "Catatan tambahan dapat membantu mengurangi kebingungan. Namun, dibandingkan B, solusi masih membuat warga menjadi pembawa bukti perbedaan antarsatuan kerja."
+        },
+        {
+          "label": "D",
+          "text": "Mengusulkan rapat bersama agar kedua unit menetapkan satu penjelasan standar untuk seluruh pengguna.",
+          "score": 3,
+          "explanation": "Standardisasi merupakan langkah yang baik untuk jangka panjang, tetapi rapat formal mungkin terlalu lambat untuk pola keluhan yang sudah diketahui. Dibandingkan B, pemulihan layanan lebih tertunda."
+        },
+        {
+          "label": "E",
+          "text": "Meminta warga menyampaikan langsung keluhan kepada unit berikutnya karena sumber perbedaan informasi berada di sana.",
+          "score": 1,
+          "explanation": "Mengidentifikasi sumber masalah benar, tetapi mendorong warga membawa sendiri konflik antarunit bukan bentuk continuity service yang baik. Dibandingkan semua opsi lain, ownership paling rendah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Masalah inti adalah ketidakkonsistenan antarunit yang merusak pengalaman pengguna. B paling tepat karena menggunakan informasi dari keluhan untuk mengoordinasikan pihak yang relevan dan memperbaiki sumber perbedaan. C adalah workaround yang baik tetapi masih membebani warga; D sistemik tetapi lebih lambat; A dan E terlalu melepaskan tanggung jawab. Micro-rule: bila perjalanan pengguna melewati beberapa unit dan informasi berubah di tengah jalan, perbaiki interface antartim, bukan hanya memberi pengguna penjelasan tambahan."
+    },
+    {
+      "id": "P5-007",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menentukan penyesuaian layanan bagi pengguna dengan kebutuhan khusus tanpa mengubah standar substantif",
+      "question": "Seorang pengguna mengalami kesulitan membaca dokumen cetak karena gangguan penglihatan. Layanan Anda menyediakan dokumen digital dengan ukuran huruf yang dapat diperbesar, tetapi proses verifikasi identitas tetap harus dilakukan sesuai ketentuan. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menggunakan dokumen digital yang dapat diperbesar dan tetap melakukan verifikasi identitas sesuai prosedur.",
+          "score": 5,
+          "explanation": "Respons ini mengakomodasi akses tanpa mengurangi kontrol identitas. Dibandingkan B dan D, penyesuaiannya tepat sasaran; dibandingkan C, tidak membuat pengecualian substantif yang tidak diperlukan."
+        },
+        {
+          "label": "B",
+          "text": "Meminta pengguna membawa pendamping agar proses pembacaan dan verifikasi dapat dilakukan lebih mudah.",
+          "score": 3,
+          "explanation": "Pendamping dapat membantu akses, tetapi tidak selalu diperlukan dan dapat mengurangi kemandirian pengguna. Dibandingkan A, ada solusi yang lebih langsung tersedia."
+        },
+        {
+          "label": "C",
+          "text": "Mengurangi sebagian langkah verifikasi agar pengguna dapat menyelesaikan layanan tanpa banyak dokumen yang harus dibaca.",
+          "score": 1,
+          "explanation": "Mengakomodasi akses tidak berarti menghapus kontrol identitas. Dibandingkan A dan D, perubahan substantif ini terlalu berisiko."
+        },
+        {
+          "label": "D",
+          "text": "Meminta petugas membacakan seluruh dokumen sementara pengguna tetap mengikuti proses verifikasi seperti biasa.",
+          "score": 4,
+          "explanation": "Pendampingan petugas membantu dan mempertahankan prosedur. Namun, dibandingkan A, solusi ini lebih bergantung pada waktu petugas padahal kanal aksesibel sudah tersedia."
+        },
+        {
+          "label": "E",
+          "text": "Mengalihkan pengguna ke layanan lain yang lebih mudah diakses agar prosedur pada unit Anda tetap berjalan seperti biasa.",
+          "score": 2,
+          "explanation": "Pengalihan mungkin membantu jika layanan alternatif memang setara, tetapi dalam kasus ini sarana aksesibel sudah tersedia pada unit Anda. Dibandingkan A dan D, solusi terlalu jauh."
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "overall_explanation": "Aksesibilitas seharusnya mengubah cara akses, bukan standar substantif yang harus dipenuhi. A paling tepat karena memanfaatkan sarana digital yang memang tersedia dan tetap menjaga verifikasi. D juga baik tetapi lebih manual; B bergantung pada pendamping; E mengalihkan layanan; C menghapus kontrol penting. Micro-rule: lakukan accommodation pada media atau cara interaksi yang menjadi hambatan, sementara persyaratan substantif tetap dijaga."
+    },
+    {
+      "id": "P5-008",
+      "subtest": "Pelayanan Publik",
+      "concept": "Menentukan kapan keluhan perlu dieskalasi",
+      "question": "Anda menerima keluhan bahwa salah satu petugas beberapa kali berbicara dengan nada kurang baik kepada pengguna. Tidak ada bukti penghinaan atau penolakan layanan, tetapi pola tersebut muncul dalam beberapa keluhan terpisah. Anda menjadi koordinator shift. Apa langkah yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta petugas tersebut lebih ramah agar keluhan tidak kembali muncul pada hari berikutnya.",
+          "score": 3,
+          "explanation": "Pengingat perilaku dapat membantu, tetapi pola yang berulang memerlukan pemahaman lebih jauh mengenai situasi dan dampaknya. Dibandingkan B, diagnosis masalah belum cukup."
+        },
+        {
+          "label": "B",
+          "text": "Memeriksa pola keluhan dan memberi umpan balik kepada petugas berdasarkan kejadian yang dapat diverifikasi, lalu memantau perubahan perilaku.",
+          "score": 5,
+          "explanation": "Respons ini proporsional untuk masalah perilaku yang belum mencapai pelanggaran berat tetapi sudah berulang. Dibandingkan C, tidak langsung memberi sanksi; dibandingkan A dan D, lebih berbasis fakta."
+        },
+        {
+          "label": "C",
+          "text": "Melaporkan petugas tersebut kepada pimpinan untuk proses disiplin karena kualitas komunikasi merupakan bagian dari layanan.",
+          "score": 2,
+          "explanation": "Pelaporan dapat diperlukan bila perilaku serius atau tidak berubah, tetapi pada tahap ini intervensi pembinaan dan monitoring lebih proporsional. Dibandingkan B, eskalasinya terlalu cepat."
+        },
+        {
+          "label": "D",
+          "text": "Mengamati interaksi petugas tersebut secara langsung untuk memastikan apakah pola yang dikeluhkan memang terjadi sebelum memberikan umpan balik.",
+          "score": 4,
+          "explanation": "Verifikasi langsung meningkatkan objektivitas dan mencegah tuduhan yang tidak berdasar. Namun, dibandingkan B, langkah ini belum menggunakan seluruh informasi keluhan yang sudah tersedia untuk melakukan pembinaan."
+        },
+        {
+          "label": "E",
+          "text": "Memindahkan petugas dari meja layanan sementara agar keluhan tidak kembali muncul.",
+          "score": 1,
+          "explanation": "Pemindahan dapat menjadi kontrol sementara pada situasi berat, tetapi kasus belum menunjukkan tingkat risiko yang memerlukan tindakan demikian. Dibandingkan B dan D, terlalu drastis."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Pola keluhan yang berulang menunjukkan masalah nyata, tetapi belum otomatis memerlukan sanksi formal. B paling tepat karena menggunakan kejadian yang dapat diverifikasi, memberikan umpan balik, dan mengawasi perubahannya. D sangat baik untuk verifikasi tetapi belum menyentuh tindakan korektif; A terlalu umum; C dan E terlalu eskalatif. Micro-rule: untuk masalah perilaku yang berulang tetapi belum berat, gunakan evidence-based feedback dan monitoring sebelum tindakan formal, kecuali risikonya meningkat."
+    },
+    {
+      "id": "P5-009",
+      "subtest": "Jejaring Kerja",
+      "concept": "Membangun koordinasi ketika pihak lain memiliki prioritas berbeda",
+      "question": "Tim Anda membutuhkan dukungan data dari unit lain. Unit tersebut sedang memprioritaskan pekerjaan yang memiliki tenggat eksternal hari itu. Data yang Anda perlukan baru dibutuhkan dua hari lagi, tetapi Anda perlu waktu untuk mengolahnya. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta unit tersebut tetap mengirim data sekarang karena pekerjaan tim Anda akan lebih cepat jika data segera diterima.",
+          "score": 2,
+          "explanation": "Kebutuhan tim Anda sah, tetapi belum memperhitungkan prioritas pihak lain. Dibandingkan B dan C, koordinasinya kurang memperhatikan beban bersama."
+        },
+        {
+          "label": "B",
+          "text": "Menyepakati waktu pengiriman yang realistis dengan unit tersebut dan menjelaskan kebutuhan minimum agar mereka dapat memenuhi permintaan tanpa mengganggu prioritas utama.",
+          "score": 5,
+          "explanation": "Respons ini mempertemukan kebutuhan dua unit secara realistis. Dibandingkan C, lebih jelas dalam mengatur dependency; dibandingkan A dan D, tidak memaksakan kepentingan sendiri."
+        },
+        {
+          "label": "C",
+          "text": "Menunggu sampai unit tersebut menyelesaikan pekerjaannya lalu meminta data lengkap agar tidak menambah beban mereka.",
+          "score": 4,
+          "explanation": "Empati terhadap kapasitas mitra baik, tetapi terlalu pasif bila data dapat diminta dengan waktu yang disepakati. Dibandingkan B, belum mengelola dependency secara aktif."
+        },
+        {
+          "label": "D",
+          "text": "Meminta atasan membantu menentukan apakah kebutuhan tim Anda perlu diprioritaskan dibanding pekerjaan unit lain.",
+          "score": 3,
+          "explanation": "Eskalasi dapat diperlukan jika prioritas benar-benar bertabrakan, tetapi kasus masih memungkinkan negosiasi waktu dan kebutuhan minimum. Dibandingkan B, terlalu cepat membawa masalah ke atas."
+        },
+        {
+          "label": "E",
+          "text": "Mencari sumber data alternatif agar tim Anda tidak bergantung pada unit tersebut selama masa sibuk.",
+          "score": 1,
+          "explanation": "Alternatif dapat bermanfaat, tetapi tanpa mengetahui apakah sumber tersebut setara secara kualitas, respons ini dapat membuat pekerjaan ganda atau data tidak konsisten. Dibandingkan B dan C, diagnosis dependency belum dilakukan."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Jejaring kerja yang baik memperhitungkan kapasitas kedua pihak. B paling tepat karena menyepakati waktu realistis dan menentukan kebutuhan minimum, sehingga dependency tetap terkelola. C baik tetapi pasif; D terlalu cepat mengeskalasi; A terlalu berpusat pada tim sendiri; E mengganti dependency tanpa memeriksa kualitas alternatif. Micro-rule: koordinasi lintas unit sebaiknya mengubah 'tolong cepat' menjadi kesepakatan waktu, kebutuhan minimum, dan kapasitas."
+    },
+    {
+      "id": "P5-010",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mengelola perbedaan kepentingan dalam perencanaan bersama",
+      "question": "Dua unit menyusun rencana kegiatan bersama. Unit pertama ingin kegiatan dilakukan lebih banyak secara tatap muka, sedangkan unit kedua mengusulkan format campuran karena keterbatasan anggaran perjalanan. Keduanya memiliki data yang mendukung. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memilih format tatap muka karena interaksi langsung biasanya lebih baik untuk membangun kerja sama.",
+          "score": 2,
+          "explanation": "Interaksi langsung memang dapat memperkuat koordinasi, tetapi tidak cukup untuk mengabaikan keterbatasan anggaran. Dibandingkan C dan D, dasar keputusan terlalu tunggal."
+        },
+        {
+          "label": "B",
+          "text": "Memilih format campuran agar anggaran lebih terjaga meskipun sebagian interaksi langsung menjadi berkurang.",
+          "score": 4,
+          "explanation": "Pertimbangan efisiensi valid dan realistis. Namun, dibandingkan C, belum membedakan kegiatan mana yang justru membutuhkan interaksi langsung."
+        },
+        {
+          "label": "C",
+          "text": "Memetakan tujuan tiap aktivitas, lalu menentukan bagian yang memang membutuhkan tatap muka dan bagian yang dapat dilakukan secara digital.",
+          "score": 5,
+          "explanation": "Respons ini menyelesaikan konflik dengan membandingkan kebutuhan aktivitas, bukan preferensi unit. Dibandingkan B, lebih presisi; dibandingkan A dan E, lebih seimbang."
+        },
+        {
+          "label": "D",
+          "text": "Mengusulkan agar kedua unit sama-sama mengurangi sebagian kebutuhan agar kompromi dapat dicapai.",
+          "score": 3,
+          "explanation": "Kompromi membantu mempertahankan hubungan kerja, tetapi pengurangan yang sama pada kedua sisi belum tentu mencerminkan kebutuhan sebenarnya. Dibandingkan C, kriterianya lebih abstrak."
+        },
+        {
+          "label": "E",
+          "text": "Meminta pimpinan memilih format yang dianggap paling sesuai agar pembahasan tidak terus menghabiskan waktu.",
+          "score": 1,
+          "explanation": "Eskalasi terlalu cepat karena perbedaan masih dapat dipecahkan dengan pemetaan tujuan aktivitas. Dibandingkan C dan D, kepemilikan keputusan kolaboratif lebih lemah."
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "overall_explanation": "Konflik sebenarnya bukan tatap muka versus digital, tetapi aktivitas mana yang membutuhkan interaksi langsung dan mana yang tidak. C paling tepat karena memecah keputusan menjadi kebutuhan aktivitas. B adalah kompromi yang baik tetapi kurang presisi; D mengurangi secara simetris tanpa dasar kebutuhan; A dan E terlalu menyederhanakan. Micro-rule: ketika dua pilihan sama-sama rasional, pecah kebutuhan menjadi komponen yang dapat diperlakukan berbeda."
+    },
+    {
+      "id": "P5-011",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mendeteksi bottleneck hubungan kerja",
+      "question": "Dalam proyek lintas unit, setiap dokumen harus melewati satu orang koordinator sebelum diteruskan ke pihak lain. Pada awal proyek mekanisme ini efektif, tetapi kini volume pekerjaan meningkat dan koordinator mulai menjadi titik keterlambatan. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta koordinator bekerja lebih cepat agar struktur komunikasi yang sudah berjalan tetap dipertahankan.",
+          "score": 2,
+          "explanation": "Upaya meningkatkan produktivitas individu dapat membantu sementara, tetapi tidak menghilangkan bottleneck struktural. Dibandingkan C dan D, masalah sistemik belum diselesaikan."
+        },
+        {
+          "label": "B",
+          "text": "Membagi sebagian komunikasi langsung kepada anggota yang memiliki tanggung jawab terkait agar koordinator tetap mengendalikan arah umum proyek.",
+          "score": 5,
+          "explanation": "Respons ini mengurangi bottleneck tanpa menghilangkan fungsi koordinasi. Dibandingkan C, lebih targeted; dibandingkan D dan E, menjaga akuntabilitas proyek tetap jelas."
+        },
+        {
+          "label": "C",
+          "text": "Menetapkan dua koordinator agar beban komunikasi dapat terbagi dan pekerjaan tidak berhenti pada satu orang.",
+          "score": 4,
+          "explanation": "Penambahan kapasitas dapat mengurangi bottleneck, tetapi juga berpotensi membuat dua jalur keputusan. Dibandingkan B, struktur koordinasi menjadi lebih kompleks."
+        },
+        {
+          "label": "D",
+          "text": "Membuat jadwal pengiriman dokumen yang lebih teratur agar koordinator dapat mengelola volume masuk dengan lebih baik.",
+          "score": 3,
+          "explanation": "Penjadwalan dapat membantu, tetapi volume memang sudah meningkat sehingga bottleneck kemungkinan bersifat struktural. Dibandingkan B dan C, kapasitas sistem belum benar-benar berubah."
+        },
+        {
+          "label": "E",
+          "text": "Memindahkan seluruh fungsi koordinasi kepada ketua proyek agar satu orang yang lebih senior dapat menangani semua komunikasi.",
+          "score": 1,
+          "explanation": "Pengalihan kepada figur yang lebih senior tidak menyelesaikan prinsip single point of dependency. Dibandingkan B dan C, risiko bottleneck hanya berpindah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Mekanisme yang dulu efektif dapat menjadi bottleneck ketika skala pekerjaan berubah. B paling tepat karena mempertahankan koordinasi umum tetapi mengizinkan komunikasi operasional berjalan langsung sesuai peran. C menambah kapasitas tetapi memperbesar kompleksitas; D hanya mengatur alur; A menuntut individu bekerja lebih keras; E memindahkan bottleneck. Micro-rule: ketika jejaring tumbuh, bedakan fungsi koordinasi dari seluruh fungsi komunikasi agar satu orang tidak menjadi single point of failure."
+    },
+    {
+      "id": "P5-012",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mengelola konflik pembagian kredit atas hasil kerja",
+      "question": "Sebuah hasil kerja tim dipresentasikan kepada pimpinan. Setelah presentasi, dua anggota berbeda pendapat mengenai siapa yang paling berkontribusi pada hasil tersebut. Keduanya memiliki bukti kontribusi yang berbeda dan mulai menghindari komunikasi. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menentukan bahwa kredit harus dibagi rata agar konflik tidak mengganggu hubungan tim.",
+          "score": 2,
+          "explanation": "Pembagian rata dapat meredakan ketegangan, tetapi belum tentu mencerminkan kontribusi aktual. Dibandingkan B dan C, penyelesaian kurang berbasis fakta."
+        },
+        {
+          "label": "B",
+          "text": "Membahas kontribusi berdasarkan bukti pekerjaan dan memastikan hasil akhir diakui sebagai pencapaian tim dengan kontribusi individu yang tetap terdokumentasi.",
+          "score": 5,
+          "explanation": "Respons ini menjaga fairness individual sekaligus mengembalikan orientasi tim. Dibandingkan D, lebih berbasis fakta; dibandingkan A dan E, tidak mengorbankan salah satu dimensi."
+        },
+        {
+          "label": "C",
+          "text": "Mencatat kontribusi masing-masing berdasarkan pembagian tugas awal tanpa membahas perbedaan persepsi lebih lanjut.",
+          "score": 4,
+          "explanation": "Dokumen pembagian kerja adalah dasar yang objektif, tetapi pekerjaan aktual bisa berbeda dari rencana awal. Dibandingkan B, proses validasinya lebih sempit."
+        },
+        {
+          "label": "D",
+          "text": "Meminta masing-masing anggota menjelaskan kontribusinya secara pribadi kepada koordinator agar masalah tidak berkembang menjadi konflik terbuka.",
+          "score": 3,
+          "explanation": "Klarifikasi individual dapat membantu, tetapi tanpa forum untuk memeriksa bukti bersama, persepsi dapat tetap berbeda. Dibandingkan B, penyelesaian masih terfragmentasi."
+        },
+        {
+          "label": "E",
+          "text": "Meminta anggota yang merasa paling banyak berkontribusi mengambil tanggung jawab utama untuk hasil tersebut karena pencapaiannya memang dianggap lebih besar.",
+          "score": 1,
+          "explanation": "Menentukan berdasarkan klaim atau persepsi kontribusi terbesar tidak objektif dan dapat memperbesar konflik. Dibandingkan A-D, dasar penilaiannya paling lemah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Konflik kredit harus dibedakan dari kebutuhan mengakui kontribusi. B paling kuat karena menggunakan bukti kerja, tetap mengakui kontribusi individu, dan mempertahankan hasil sebagai pencapaian tim. C baik tetapi hanya memakai pembagian awal; D terlalu individual; A menghapus perbedaan secara paksa; E memihak persepsi. Micro-rule: akui kontribusi secara berbasis bukti tanpa mengubah keberhasilan kolaboratif menjadi kompetisi pribadi."
+    },
+    {
+      "id": "P5-013",
+      "subtest": "Jejaring Kerja",
+      "concept": "Membangun kapasitas tim setelah terjadi pergantian personel",
+      "question": "Satu anggota yang paling memahami alur teknis proyek akan cuti panjang selama beberapa bulan. Sebelum pergi, ia menawarkan menjelaskan proses kepada anggota lain, tetapi sebagian anggota menganggap waktunya terlalu terbatas sehingga lebih baik meminta orang lain belajar ketika masalah muncul. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta anggota lain belajar secara bertahap ketika masalah muncul agar waktu persiapan tidak terlalu banyak.",
+          "score": 2,
+          "explanation": "Belajar saat kebutuhan muncul mungkin efisien untuk hal sederhana, tetapi pengetahuan kritis yang belum ditransfer dapat menjadi bottleneck saat orang utama tidak tersedia. Dibandingkan B dan C, pendekatan preventif kurang."
+        },
+        {
+          "label": "B",
+          "text": "Meminta anggota tersebut memprioritaskan penjelasan pada proses dan keputusan yang paling kritis, lalu mendokumentasikan bagian yang sulit diingat.",
+          "score": 5,
+          "explanation": "Respons ini menggunakan waktu terbatas untuk mengurangi dependency pada individu. Dibandingkan C, lebih terarah; dibandingkan D dan E, menjaga transfer pengetahuan tetap praktis."
+        },
+        {
+          "label": "C",
+          "text": "Merekam seluruh penjelasan anggota tersebut agar tim memiliki bahan yang dapat dipelajari kapan saja.",
+          "score": 4,
+          "explanation": "Rekaman membantu institutional memory, tetapi terlalu banyak informasi dapat membuat tim kesulitan mencari bagian yang paling penting. Dibandingkan B, prioritas transfer pengetahuan kurang tajam."
+        },
+        {
+          "label": "D",
+          "text": "Menunjuk satu pengganti untuk mengikuti seluruh penjelasan agar ada satu orang yang dapat menjadi sumber utama berikutnya.",
+          "score": 3,
+          "explanation": "Pengganti utama membantu kesinambungan, tetapi kembali menciptakan dependency pada satu individu. Dibandingkan B, resilience tim lebih rendah."
+        },
+        {
+          "label": "E",
+          "text": "Meminta anggota yang cuti menyelesaikan seluruh pekerjaan kritis sebelum pergi agar kebutuhan transfer pengetahuan berkurang.",
+          "score": 1,
+          "explanation": "Menyelesaikan pekerjaan sekarang tidak sama dengan mentransfer pengetahuan. Pilihan ini hanya mengamankan jangka pendek dan tidak mengurangi dependency."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Risiko utama adalah hilangnya tacit knowledge ketika orang kunci tidak tersedia. B paling tepat karena memfokuskan transfer pada proses kritis dan mendokumentasikan bagian penting. C membantu tetapi kurang terarah; D memindahkan dependency ke orang lain; A reaktif; E mengamankan pekerjaan sesaat. Micro-rule: saat pengetahuan terkonsentrasi pada satu orang, prioritaskan transfer pengetahuan kritis daripada mendokumentasikan semuanya tanpa struktur."
+    },
+    {
+      "id": "P5-014",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mengelola keputusan bersama saat informasi belum lengkap",
+      "question": "Tiga unit harus memutuskan lokasi kegiatan. Dua lokasi telah memiliki data biaya yang lengkap, sedangkan data aksesibilitas lokasi ketiga belum tersedia. Salah satu unit ingin segera memilih lokasi ketiga karena biaya awalnya terlihat paling rendah. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memilih lokasi ketiga karena biaya merupakan faktor yang paling mudah dibandingkan secara objektif.",
+          "score": 1,
+          "explanation": "Perbandingan biaya tanpa data aksesibilitas membuat keputusan tidak seimbang. Dibandingkan B dan C, informasi penting belum lengkap."
+        },
+        {
+          "label": "B",
+          "text": "Melengkapi informasi aksesibilitas lokasi ketiga terlebih dahulu sebelum membandingkan seluruh alternatif dengan kriteria yang sama.",
+          "score": 5,
+          "explanation": "Respons ini memastikan keputusan dibuat berdasarkan informasi yang sebanding. Dibandingkan C, mencegah keputusan prematur; dibandingkan D dan E, tidak terjebak pada satu indikator."
+        },
+        {
+          "label": "C",
+          "text": "Menggunakan data yang tersedia sekarang dan menandai aksesibilitas lokasi ketiga sebagai hal yang perlu diperiksa setelah pilihan awal dibuat.",
+          "score": 3,
+          "explanation": "Memanfaatkan informasi yang ada dapat mempercepat proses, tetapi pemeriksaan dilakukan setelah preferensi terbentuk. Dibandingkan B, risiko anchoring lebih besar."
+        },
+        {
+          "label": "D",
+          "text": "Meminta unit yang mengetahui lokasi ketiga memberikan estimasi aksesibilitas sehingga pembahasan dapat segera berlanjut.",
+          "score": 4,
+          "explanation": "Estimasi dapat membantu tahap awal dan lebih baik daripada mengabaikan faktor tersebut. Namun, dibandingkan B, kualitas keputusan masih bergantung pada informasi yang belum diverifikasi."
+        },
+        {
+          "label": "E",
+          "text": "Mengeluarkan lokasi ketiga dari pertimbangan karena data yang belum lengkap dapat menghambat keputusan seluruh tim.",
+          "score": 2,
+          "explanation": "Mengurangi ketidakpastian memang aman, tetapi dapat menghilangkan alternatif yang sebenarnya paling sesuai. Dibandingkan B, respons terlalu cepat membuang pilihan."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "very_hard",
+      "overall_explanation": "Dalam keputusan kolaboratif, masalahnya bukan hanya jumlah data tetapi kesebandingan data antaralternatif. B paling tepat karena melengkapi informasi yang menentukan sebelum membandingkan pilihan. D berguna tetapi masih berbasis estimasi; C terlalu cepat; E mengeluarkan alternatif tanpa evaluasi penuh; A hanya melihat biaya. Micro-rule: bila satu alternatif dinilai dengan informasi lebih sedikit daripada alternatif lain, lengkapi faktor yang material sebelum mengambil keputusan."
+    },
+    {
+      "id": "P5-015",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menjaga kolaborasi ketika salah satu pihak merasa tidak dilibatkan",
+      "question": "Dalam sebuah proyek, satu unit merasa keputusan penting sering dibuat oleh unit lain sebelum mereka diminta memberikan masukan. Unit tersebut mulai enggan berkontribusi, meskipun sebenarnya memegang data yang diperlukan. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta unit tersebut tetap memberikan data karena kontribusi mereka memang dibutuhkan untuk menyelesaikan proyek.",
+          "score": 2,
+          "explanation": "Kebutuhan data benar, tetapi mengabaikan penyebab hubungan memburuk. Dibandingkan B dan C, respons ini menuntut kontribusi tanpa memperbaiki proses."
+        },
+        {
+          "label": "B",
+          "text": "Mengajak unit tersebut meninjau titik keputusan yang sebelumnya terlalu cepat ditetapkan dan menyepakati kapan masukan mereka harus masuk.",
+          "score": 5,
+          "explanation": "Respons ini memulihkan trust melalui perubahan mekanisme, bukan sekadar meminta kerja sama kembali. Dibandingkan C, lebih konkret; dibandingkan D dan E, tidak bersifat defensif."
+        },
+        {
+          "label": "C",
+          "text": "Menyampaikan bahwa kontribusi unit tersebut tetap dihargai dan meminta mereka menyampaikan data sesuai kebutuhan proyek.",
+          "score": 3,
+          "explanation": "Pengakuan terhadap kontribusi membantu, tetapi tanpa perubahan pada titik keputusan, penyebab ketidakpuasan dapat berulang. Dibandingkan B, pemulihan proses kurang."
+        },
+        {
+          "label": "D",
+          "text": "Membuka satu pertemuan khusus agar unit tersebut dapat menjelaskan pengalaman mereka selama proyek berlangsung.",
+          "score": 4,
+          "explanation": "Forum khusus memberi ruang bagi pihak yang merasa terpinggirkan dan dapat memperbaiki hubungan. Namun, dibandingkan B, belum langsung menghasilkan mekanisme baru."
+        },
+        {
+          "label": "E",
+          "text": "Meminta pimpinan menegaskan kewajiban setiap unit untuk saling mendukung agar proyek tidak tertunda.",
+          "score": 1,
+          "explanation": "Penegasan dari pimpinan dapat mengatasi gejala kepatuhan, tetapi tidak menyelesaikan alasan mengapa unit tersebut merasa tidak dilibatkan. Dibandingkan B-D, terlalu menekan dari atas."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Trust dalam jejaring rusak ketika pihak penting terus diminta berkontribusi setelah keputusan sudah dibuat. B paling tepat karena memperbaiki interface keputusan dan menentukan kapan masukan harus masuk. D baik untuk memahami pengalaman, tetapi belum menghasilkan perubahan mekanisme; C terlalu verbal; A dan E menuntut kontribusi tanpa memperbaiki penyebab. Micro-rule: ketika pihak penting merasa tidak dilibatkan, pulihkan bukan hanya hubungan interpersonal tetapi juga titik proses tempat partisipasinya hilang."
+    },
+    {
+      "id": "P5-016",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menangani permintaan bantuan lintas unit secara proporsional",
+      "question": "Seorang rekan dari unit lain meminta tim Anda membantu menyelesaikan pekerjaannya karena ia kekurangan tenaga. Pekerjaan tersebut memang berkaitan dengan proyek bersama, tetapi beberapa bagian tidak termasuk tanggung jawab tim Anda. Tenggat bersama cukup dekat. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Membantu seluruh pekerjaan agar proyek bersama tidak mengalami keterlambatan.",
+          "score": 2,
+          "explanation": "Semangat kolaboratif baik, tetapi mengambil seluruh pekerjaan dapat mengaburkan tanggung jawab dan membebani tim Anda secara tidak proporsional. Dibandingkan B dan D, batas peran tidak dijaga."
+        },
+        {
+          "label": "B",
+          "text": "Menentukan bagian yang benar-benar terkait ketergantungan proyek, lalu membantu pada bagian tersebut sambil memastikan pemilik pekerjaan tetap bertanggung jawab atas sisanya.",
+          "score": 5,
+          "explanation": "Respons ini menyeimbangkan kolaborasi dan ownership. Dibandingkan C, lebih selektif; dibandingkan A, tidak mengambil alih; dibandingkan D, tidak langsung mengeskalasi."
+        },
+        {
+          "label": "C",
+          "text": "Membantu sebatas bagian yang mudah agar beban rekan berkurang tanpa terlalu mengubah tanggung jawab awal.",
+          "score": 4,
+          "explanation": "Pembatasan bantuan menjaga peran dan tetap kolaboratif. Namun, dibandingkan B, dasar pemilihan bagian lebih ditentukan kemudahan daripada dependency proyek."
+        },
+        {
+          "label": "D",
+          "text": "Meminta koordinator proyek menentukan bagian mana yang dapat dibantu oleh tim Anda.",
+          "score": 3,
+          "explanation": "Koordinasi formal dapat membantu bila batas peran tidak jelas, tetapi sebagian penentuan masih bisa dilakukan langsung dari dependency proyek. Dibandingkan B, terlalu bergantung pada pihak ketiga."
+        },
+        {
+          "label": "E",
+          "text": "Menolak bantuan tambahan karena pekerjaan tersebut bukan seluruhnya merupakan tanggung jawab unit Anda.",
+          "score": 1,
+          "explanation": "Menjaga batas tanggung jawab penting, tetapi menolak tanpa melihat dependency proyek terlalu kaku. Dibandingkan B dan C, nilai kolaboratifnya paling rendah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Kolaborasi tidak berarti mengambil seluruh tanggung jawab orang lain. B paling tepat karena bantuan diarahkan pada bagian yang memengaruhi proyek bersama dan ownership tetap berada pada pemilik tugas. C baik tetapi memilih berdasarkan kemudahan, bukan dependency; D terlalu cepat mengeskalasi; A mengambil alih; E terlalu kaku. Micro-rule: bantu lintas peran sejauh bantuan itu memperlancar tujuan bersama, tetapi jangan menghapus ownership pemilik pekerjaan."
+    },
+    {
+      "id": "P5-017",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mengelola konflik kerja yang mulai memengaruhi komunikasi",
+      "question": "Dua anggota tim berbeda cara kerja. Salah satunya menyukai komunikasi singkat dan langsung, sedangkan yang lain membutuhkan penjelasan lebih rinci sebelum menyelesaikan tugas. Keduanya mulai menilai gaya satu sama lain sebagai tidak kooperatif. Apa yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta anggota yang menyukai komunikasi singkat memberikan penjelasan lebih panjang agar rekan lain lebih nyaman.",
+          "score": 3,
+          "explanation": "Penyesuaian dapat mengurangi friksi, tetapi menuntut satu pihak berubah tanpa memperbaiki kebutuhan koordinasi keduanya. Dibandingkan B dan C, solusi belum sistemik."
+        },
+        {
+          "label": "B",
+          "text": "Meminta keduanya menyepakati informasi minimum yang harus selalu tersedia dan menyesuaikan detail komunikasi sesuai kebutuhan tugas.",
+          "score": 5,
+          "explanation": "Respons ini mengubah perbedaan gaya menjadi standar kerja yang objektif. Dibandingkan A, tidak memihak satu gaya; dibandingkan C dan D, lebih langsung menyelesaikan akar masalah."
+        },
+        {
+          "label": "C",
+          "text": "Membiarkan masing-masing mempertahankan cara kerja selama pekerjaan tetap selesai sesuai tenggat.",
+          "score": 2,
+          "explanation": "Output penting, tetapi cara komunikasi yang tidak cocok dapat meningkatkan kesalahan atau friksi. Dibandingkan B, masalah interpersonal tidak disentuh."
+        },
+        {
+          "label": "D",
+          "text": "Meminta koordinator menetapkan satu standar komunikasi yang sama untuk seluruh anggota tim.",
+          "score": 4,
+          "explanation": "Standar dapat meningkatkan konsistensi, tetapi satu pola yang sama belum tentu sesuai semua jenis tugas. Dibandingkan B, fleksibilitas terhadap kebutuhan tugas lebih rendah."
+        },
+        {
+          "label": "E",
+          "text": "Memisahkan tugas keduanya sebanyak mungkin agar mereka tidak perlu berkomunikasi terlalu sering.",
+          "score": 1,
+          "explanation": "Pemisahan mengurangi friksi sesaat tetapi tidak menyelesaikan persoalan dan dapat menghambat kolaborasi yang sebenarnya diperlukan. Dibandingkan B dan D, terlalu menghindari."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Perbedaan gaya komunikasi tidak harus dihilangkan; yang perlu disepakati adalah informasi minimum untuk pekerjaan. B paling baik karena membangun aturan komunikasi yang sesuai kebutuhan tugas. D membantu tetapi terlalu seragam; A hanya mengubah satu pihak; C terlalu permisif; E mengurangi kolaborasi. Micro-rule: saat gaya kerja berbeda, tetapkan standar informasi yang dibutuhkan pekerjaan, bukan memaksa semua orang memakai gaya yang sama."
+    },
+    {
+      "id": "P5-018",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mengevaluasi apakah kolaborasi benar-benar menghasilkan sinergi",
+      "question": "Setelah beberapa bulan bekerja sama, dua unit menyadari bahwa mereka rutin bertukar informasi tetapi hampir tidak pernah menghasilkan pekerjaan bersama. Keduanya tetap merasa hubungan tersebut penting. Anda diminta mengusulkan langkah berikutnya. Apa yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mempertahankan pertukaran informasi karena jaringan yang aktif sendiri sudah menunjukkan hubungan kerja yang baik.",
+          "score": 2,
+          "explanation": "Pertukaran informasi memang bernilai, tetapi tanpa hasil bersama hubungan belum sepenuhnya dimanfaatkan. Dibandingkan C dan D, outcome kolaboratif kurang."
+        },
+        {
+          "label": "B",
+          "text": "Memilih satu kebutuhan yang benar-benar saling melengkapi dan membuat kegiatan bersama kecil sebagai uji manfaat kerja sama.",
+          "score": 5,
+          "explanation": "Respons ini mengubah hubungan dari networking pasif menjadi kolaborasi nyata tanpa proyek besar yang belum teruji. Dibandingkan C, lebih konkret; dibandingkan D dan E, proporsional."
+        },
+        {
+          "label": "C",
+          "text": "Menyusun rencana kerja sama besar agar kedua unit dapat segera menunjukkan hasil dari hubungan yang sudah dibangun.",
+          "score": 3,
+          "explanation": "Rencana besar menunjukkan ambisi kolaboratif, tetapi belum tentu sesuai kebutuhan aktual. Dibandingkan B, risikonya lebih tinggi dan lebih sulit diuji."
+        },
+        {
+          "label": "D",
+          "text": "Mengidentifikasi area yang benar-benar memiliki kebutuhan bersama sebelum menentukan apakah hubungan perlu diperluas.",
+          "score": 4,
+          "explanation": "Pemetaan kebutuhan merupakan langkah rasional dan mencegah kolaborasi artifisial. Namun, dibandingkan B, belum menghasilkan eksperimen kerja sama yang konkret."
+        },
+        {
+          "label": "E",
+          "text": "Membentuk forum rutin agar kedua unit memiliki lebih banyak kesempatan bertemu dan memperluas komunikasi.",
+          "score": 1,
+          "explanation": "Menambah forum belum tentu menghasilkan sinergi dan justru dapat menambah beban tanpa outcome. Dibandingkan B dan D, respons lebih berorientasi aktivitas daripada hasil."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Jejaring kerja bernilai ketika hubungan dapat digunakan untuk mencapai tujuan bersama. B paling tepat karena memilih satu kebutuhan konkret dan mengujinya melalui kerja sama berskala kecil. D baik untuk diagnosis tetapi belum mengubah hubungan menjadi hasil; C terlalu besar; A menganggap aktivitas komunikasi sebagai outcome; E menambah forum tanpa tujuan jelas. Micro-rule: ketika jejaring hanya menghasilkan pertukaran informasi, uji satu kolaborasi konkret yang memberi nilai bagi kedua pihak."
+    },
+    {
+      "id": "P5-019",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menjaga peran anggota ahli tanpa menciptakan ketergantungan",
+      "question": "Seorang anggota tim sangat ahli dalam analisis data dan hampir semua keputusan teknis bergantung pada penilaiannya. Anda melihat anggota lain mulai berhenti mempelajari analisis karena merasa 'toh ada ahli'. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetap mengandalkan anggota ahli karena penggunaan kompetensi terbaik akan membuat pekerjaan lebih cepat.",
+          "score": 1,
+          "explanation": "Keahlian memang meningkatkan kualitas, tetapi ketergantungan berlebihan mengurangi kapasitas tim dalam jangka panjang. Dibandingkan B dan C, resilience tim lemah."
+        },
+        {
+          "label": "B",
+          "text": "Mempertahankan peran ahli pada keputusan kompleks sambil meminta anggota lain terlibat dalam analisis rutin dan pembelajaran teknis.",
+          "score": 5,
+          "explanation": "Respons ini mengoptimalkan expertise tanpa menciptakan single point of dependency. Dibandingkan C, lebih seimbang; dibandingkan A dan D, capacity building lebih kuat."
+        },
+        {
+          "label": "C",
+          "text": "Membagi seluruh pekerjaan analisis secara merata agar setiap anggota memiliki pengalaman yang sama.",
+          "score": 4,
+          "explanation": "Rotasi dan pengalaman luas bermanfaat, tetapi tidak semua pekerjaan cocok dibagi rata karena kompleksitas berbeda. Dibandingkan B, pemanfaatan keahlian spesialis kurang presisi."
+        },
+        {
+          "label": "D",
+          "text": "Meminta ahli tersebut membuat panduan analisis agar anggota lain dapat belajar tanpa harus terus bertanya.",
+          "score": 3,
+          "explanation": "Dokumentasi membantu transfer knowledge, tetapi tanpa kesempatan praktik anggota lain dapat tetap bergantung pada ahli. Dibandingkan B, aspek pembelajaran aktif lebih lemah."
+        },
+        {
+          "label": "E",
+          "text": "Membatasi keterlibatan ahli pada bagian administrasi agar anggota lain terpaksa mengembangkan kompetensinya.",
+          "score": 2,
+          "explanation": "Mendorong pembelajaran memang baik, tetapi sengaja mengurangi penggunaan kompetensi ahli pada keputusan teknis dapat menurunkan kualitas. Dibandingkan B, trade-off tidak proporsional."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Tim membutuhkan dua hal: keputusan berkualitas sekarang dan kemampuan yang bertahan ketika orang ahli tidak tersedia. B paling kuat karena mempertahankan ahli untuk keputusan kompleks sambil menciptakan kesempatan belajar bagi anggota lain. D mendukung dokumentasi tetapi kurang praktik; C terlalu meratakan; A terlalu bergantung; E terlalu membatasi. Micro-rule: gunakan ahli untuk titik yang membutuhkan keahlian tinggi sambil memastikan kompetensi dasar tidak menjadi monopoli satu orang."
+    },
+    {
+      "id": "P5-020",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menentukan mekanisme kerja bersama pada proyek yang bergerak cepat",
+      "question": "Tim lintas unit Anda harus menyelesaikan pekerjaan dalam waktu singkat. Rapat formal membutuhkan terlalu banyak waktu, tetapi beberapa keputusan tetap membutuhkan persetujuan pihak tertentu. Apa cara kerja yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menghapus sebagian persetujuan agar keputusan dapat diambil dengan cepat selama anggota tim telah menyepakati arah umum.",
+          "score": 1,
+          "explanation": "Kecepatan tidak menghapus persetujuan yang memang wajib. Dibandingkan B dan C, risiko kewenangan dan akuntabilitas paling tinggi."
+        },
+        {
+          "label": "B",
+          "text": "Membedakan keputusan yang dapat didelegasikan dengan keputusan yang tetap memerlukan persetujuan, lalu menggunakan komunikasi singkat untuk sisanya.",
+          "score": 5,
+          "explanation": "Respons ini menyesuaikan mekanisme dengan jenis keputusan tanpa menghapus kontrol penting. Dibandingkan C, lebih presisi; dibandingkan A dan D, tidak membongkar persetujuan yang wajib."
+        },
+        {
+          "label": "C",
+          "text": "Meminta semua keputusan penting tetap dilakukan melalui rapat formal agar tidak ada risiko keputusan yang tidak terdokumentasi.",
+          "score": 4,
+          "explanation": "Dokumentasi dan formalitas penting pada keputusan tertentu, tetapi tidak semua keputusan memerlukan forum penuh. Dibandingkan B, fleksibilitas operasional lebih rendah."
+        },
+        {
+          "label": "D",
+          "text": "Meminta satu orang mengkoordinasikan seluruh keputusan agar komunikasi tim menjadi cepat dan sederhana.",
+          "score": 3,
+          "explanation": "Sentralisasi dapat mempercepat, tetapi menimbulkan dependency dan berisiko melampaui kewenangan satu orang. Dibandingkan B, struktur lebih rapuh."
+        },
+        {
+          "label": "E",
+          "text": "Menggunakan komunikasi informal untuk seluruh keputusan agar tim dapat bergerak tanpa menunggu prosedur rapat.",
+          "score": 2,
+          "explanation": "Komunikasi informal bisa membantu kecepatan, tetapi tidak cocok untuk keputusan yang memerlukan otorisasi atau jejak formal. Dibandingkan B dan C, kontrol lebih lemah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Kecepatan tidak harus berlawanan dengan kontrol. B paling tepat dengan membedakan keputusan berdasarkan kebutuhan otorisasi lalu menyesuaikan media komunikasinya. C terlalu formal untuk semua keputusan; D terlalu tersentralisasi; E mengabaikan traceability; A menghapus kontrol. Micro-rule: percepat proses dengan menyederhanakan komunikasi pada keputusan yang memang sederhana, bukan dengan menghapus persetujuan yang wajib."
+    },
+    {
+      "id": "P5-021",
+      "subtest": "Jejaring Kerja",
+      "concept": "Mengelola perbedaan standar kualitas antarunit",
+      "question": "Dalam proyek bersama, satu unit menganggap suatu data sudah cukup akurat untuk digunakan, sedangkan unit lain menilai data tersebut masih memerlukan pemeriksaan tambahan. Tidak ada standar kualitas tertulis yang secara spesifik membedakan kondisi tersebut. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menggunakan standar unit yang paling ketat agar kualitas hasil bersama tidak dipertanyakan.",
+          "score": 3,
+          "explanation": "Kehati-hatian menjaga kualitas, tetapi standar paling ketat belum tentu proporsional untuk semua penggunaan. Dibandingkan B dan D, kebutuhan aktual belum dianalisis."
+        },
+        {
+          "label": "B",
+          "text": "Menggunakan data tersebut untuk pekerjaan yang berdampak rendah dan menunda penggunaan pada keputusan yang lebih material sampai verifikasi tambahan tersedia.",
+          "score": 5,
+          "explanation": "Respons ini menerapkan quality control berbasis materiality. Dibandingkan A, tidak menghabiskan sumber daya berlebihan; dibandingkan C dan D, lebih membedakan risiko penggunaan."
+        },
+        {
+          "label": "C",
+          "text": "Meminta salah satu unit mengikuti standar yang lain agar seluruh proyek menggunakan satu pendekatan kualitas.",
+          "score": 2,
+          "explanation": "Keseragaman membantu konsistensi, tetapi memilih salah satu standar tanpa menilai konteks dapat terlalu rendah atau terlalu tinggi. Dibandingkan B, keputusan kurang berbasis risiko."
+        },
+        {
+          "label": "D",
+          "text": "Menyusun kriteria sementara berdasarkan tujuan penggunaan data dan meminta kedua unit menyepakatinya untuk kebutuhan proyek.",
+          "score": 4,
+          "explanation": "Kriteria sementara dapat menyatukan perspektif dan meningkatkan konsistensi. Namun, dibandingkan B, belum ada penerapan langsung terhadap materialitas penggunaan saat ini."
+        },
+        {
+          "label": "E",
+          "text": "Menunda seluruh pekerjaan sampai standar kualitas resmi ditetapkan agar tidak ada perbedaan penafsiran.",
+          "score": 1,
+          "explanation": "Kepastian penting, tetapi menghentikan seluruh pekerjaan belum tentu diperlukan bila risiko penggunaan dapat dibedakan. Dibandingkan B dan D, terlalu kaku."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "very_hard",
+      "overall_explanation": "Perbedaan standar kualitas seharusnya dilihat berdasarkan konsekuensi penggunaan data. B paling tepat karena data dapat digunakan secara berbeda sesuai materialitasnya. D merupakan langkah sistemik yang baik tetapi belum menyelesaikan kebutuhan saat itu seefisien B; A terlalu ketat untuk semua situasi; C menyederhanakan secara berlebihan; E menghentikan pekerjaan. Micro-rule: semakin material penggunaan data, semakin tinggi tingkat verifikasi yang diperlukan."
+    },
+    {
+      "id": "P5-022",
+      "subtest": "Jejaring Kerja",
+      "concept": "Memulihkan koordinasi setelah target bersama tidak tercapai",
+      "question": "Sebuah kegiatan lintas unit tidak mencapai target output. Evaluasi menunjukkan tidak ada satu kesalahan besar, tetapi beberapa unit menggunakan asumsi berbeda tentang waktu penyelesaian masing-masing. Apa langkah terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta setiap unit meningkatkan kecepatan kerja agar target berikutnya lebih mudah dicapai.",
+          "score": 2,
+          "explanation": "Kecepatan dapat membantu, tetapi akar masalah adalah asumsi waktu yang tidak sinkron. Dibandingkan C dan D, respons tidak memperbaiki interface antarunit."
+        },
+        {
+          "label": "B",
+          "text": "Menetapkan ulang jadwal bersama berdasarkan dependency antartahap dan memastikan setiap unit mengetahui kapan hasilnya dibutuhkan oleh unit lain.",
+          "score": 5,
+          "explanation": "Respons ini mengatasi akar masalah berupa ketidakselarasan dependency. Dibandingkan C, lebih operasional; dibandingkan A dan E, tidak sekadar menambah tekanan."
+        },
+        {
+          "label": "C",
+          "text": "Membuat timeline umum agar seluruh unit memiliki satu gambaran tentang target proyek.",
+          "score": 4,
+          "explanation": "Timeline bersama merupakan perbaikan penting, tetapi belum tentu cukup bila dependency antartugas tidak dijelaskan. Dibandingkan B, detail interface pekerjaan kurang."
+        },
+        {
+          "label": "D",
+          "text": "Mengadakan rapat evaluasi agar setiap unit dapat menjelaskan mengapa targetnya berubah dari rencana.",
+          "score": 3,
+          "explanation": "Evaluasi membantu pembelajaran, tetapi tidak otomatis menghasilkan mekanisme jadwal baru. Dibandingkan B dan C, fokus masih pada masa lalu."
+        },
+        {
+          "label": "E",
+          "text": "Menunjuk satu unit untuk mengawasi seluruh jadwal agar perbedaan asumsi tidak kembali terjadi.",
+          "score": 1,
+          "explanation": "Pengawasan terpusat dapat membantu monitoring, tetapi tidak menyelesaikan kebutuhan tiap unit memahami dependency. Dibandingkan B, risiko dependency pada satu pengawas meningkat."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Target gagal karena asumsi waktu berbeda, bukan karena satu unit malas atau lambat. B memperbaiki sinkronisasi berdasarkan dependency dan kebutuhan downstream. C baik tetapi lebih umum; D membantu memahami kejadian; E menciptakan pengawas baru; A hanya menambah tekanan. Micro-rule: jadwal kolaboratif harus menunjukkan bukan hanya kapan pekerjaan selesai, tetapi kapan hasil dibutuhkan oleh pihak berikutnya."
+    },
+    {
+      "id": "P5-023",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menentukan kapan jejaring informal harus dialihkan menjadi mekanisme resmi",
+      "question": "Anda memiliki hubungan baik dengan pegawai dari unit lain sehingga permintaan informasi biasanya dapat dijawab melalui pesan pribadi. Seiring meningkatnya frekuensi permintaan, beberapa informasi mulai digunakan sebagai dasar keputusan resmi. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetap menggunakan komunikasi pribadi karena hubungan yang sudah terbentuk membuat proses lebih cepat.",
+          "score": 2,
+          "explanation": "Kecepatan dan kepercayaan interpersonal merupakan keunggulan, tetapi keputusan resmi membutuhkan traceability dan otorisasi yang lebih jelas. Dibandingkan B dan C, kontrol lemah."
+        },
+        {
+          "label": "B",
+          "text": "Menggunakan hubungan informal untuk membuka komunikasi, lalu memindahkan informasi yang menjadi dasar keputusan resmi ke kanal dan dokumentasi yang sesuai.",
+          "score": 5,
+          "explanation": "Respons ini memanfaatkan networking tanpa mengorbankan akuntabilitas. Dibandingkan C, alurnya lebih realistis; dibandingkan A dan D, tidak mencampur informal dengan dasar keputusan resmi."
+        },
+        {
+          "label": "C",
+          "text": "Menghentikan seluruh komunikasi pribadi dan hanya menggunakan surat resmi untuk semua kebutuhan informasi.",
+          "score": 3,
+          "explanation": "Formalitas meningkatkan traceability, tetapi tidak semua komunikasi awal memerlukan kanal resmi. Dibandingkan B, penggunaan jejaring menjadi terlalu kaku."
+        },
+        {
+          "label": "D",
+          "text": "Meminta rekan dari unit lain mengirim informasi melalui email agar ada catatan tertulis tanpa mengubah pola hubungan yang sudah berjalan.",
+          "score": 4,
+          "explanation": "Dokumentasi tertulis meningkatkan akuntabilitas dan cukup praktis. Namun, dibandingkan B, belum membedakan informasi informal dengan informasi yang menjadi dasar keputusan resmi."
+        },
+        {
+          "label": "E",
+          "text": "Meminta informasi hanya bila benar-benar mendesak agar jumlah komunikasi pribadi yang perlu dicatat tetap sedikit.",
+          "score": 1,
+          "explanation": "Mengurangi frekuensi komunikasi tidak menyelesaikan persoalan dasar dokumentasi keputusan resmi. Dibandingkan B dan D, risiko tetap ada."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Jejaring informal dapat menjadi pintu masuk komunikasi yang efektif, tetapi ketika informasi mulai menjadi dasar keputusan resmi, traceability menjadi penting. B paling tepat karena memanfaatkan hubungan informal untuk akses cepat tetapi memformalkan informasi yang material. D baik namun kurang membedakan tingkat formalitas; C terlalu kaku; A terlalu longgar; E tidak menyelesaikan masalah. Micro-rule: gunakan relasi informal untuk mempercepat komunikasi awal, tetapi formalkan informasi yang menjadi dasar keputusan resmi."
+    },
+    {
+      "id": "P5-024",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menjaga kolaborasi ketika ada perbedaan tingkat akses informasi",
+      "question": "Dalam proyek bersama, salah satu unit memiliki akses ke data yang tidak dapat dibagikan penuh karena pembatasan kerahasiaan. Unit lain merasa dirugikan karena membutuhkan hasil analisisnya untuk pekerjaan sendiri. Apa pendekatan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta unit pemilik data membuka seluruh data agar kolaborasi tidak terganggu.",
+          "score": 1,
+          "explanation": "Kebutuhan kolaborasi tidak menghapus pembatasan akses. Dibandingkan B dan C, risiko kerahasiaan terlalu besar."
+        },
+        {
+          "label": "B",
+          "text": "Mencari bentuk keluaran yang dapat dibagikan tanpa membuka data yang dibatasi, sambil memastikan kebutuhan kerja unit lain tetap terpenuhi sejauh memungkinkan.",
+          "score": 5,
+          "explanation": "Respons ini mempertahankan kolaborasi sekaligus menghormati pembatasan informasi. Dibandingkan C, solusi lebih berorientasi hasil; dibandingkan A dan D, tidak mengorbankan kerahasiaan."
+        },
+        {
+          "label": "C",
+          "text": "Memberikan ringkasan hasil analisis tanpa menjelaskan detail data sumber agar batas kerahasiaan tetap terjaga.",
+          "score": 4,
+          "explanation": "Ringkasan dapat menjadi bentuk kompromi yang baik. Namun, dibandingkan B, belum memastikan apakah ringkasan tersebut cukup untuk kebutuhan operasional unit penerima."
+        },
+        {
+          "label": "D",
+          "text": "Meminta kedua unit berkonsultasi dengan pejabat yang berwenang untuk menentukan bagian data yang dapat dibagi.",
+          "score": 3,
+          "explanation": "Konsultasi formal dapat tepat jika batas akses tidak jelas, tetapi kasus sudah menunjukkan adanya pembatasan. Dibandingkan B, langkah ini belum mencari bentuk keluaran alternatif."
+        },
+        {
+          "label": "E",
+          "text": "Menggunakan data tersebut hanya pada unit pemiliknya dan meminta unit lain menunggu sampai batas akses berubah.",
+          "score": 2,
+          "explanation": "Kepatuhan terjaga, tetapi kebutuhan proyek bersama tidak diupayakan melalui bentuk informasi yang lebih terbatas. Dibandingkan B dan C, kolaborasinya terlalu pasif."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Kolaborasi tidak selalu memerlukan pertukaran data mentah. B paling tepat karena mencari output yang dapat dibagikan tanpa melanggar batas akses dan tetap berguna bagi pihak lain. C baik tetapi belum menguji kecukupan output; D perlu bila batas belum jelas; A terlalu berisiko; E terlalu pasif. Micro-rule: ketika data tidak dapat dibagikan penuh, cari bentuk informasi yang tetap memungkinkan tujuan bersama tercapai."
+    },
+    {
+      "id": "P5-025",
+      "subtest": "Jejaring Kerja",
+      "concept": "Menentukan mekanisme pengambilan keputusan saat peran tidak sepenuhnya jelas",
+      "question": "Dalam proyek bersama, dua unit merasa sama-sama memiliki kewenangan memberi persetujuan pada satu tahap. Pekerjaan tertahan karena masing-masing menunggu keputusan pihak lain. Dokumen proyek tidak menjelaskan pembagian kewenangan secara rinci. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta kedua unit menyepakati sendiri siapa yang akan memberikan persetujuan agar pekerjaan dapat segera bergerak.",
+          "score": 4,
+          "explanation": "Kesepakatan bersama dapat mengatasi kebuntuan, tetapi bila menyangkut kewenangan formal, kesepakatan informal belum tentu cukup. Dibandingkan B, otoritas keputusan masih belum jelas."
+        },
+        {
+          "label": "B",
+          "text": "Menelusuri dasar kewenangan yang relevan, menentukan siapa pemilik keputusan, dan mendokumentasikan pembagian tersebut sebelum proses dilanjutkan.",
+          "score": 5,
+          "explanation": "Respons ini menyelesaikan kebuntuan sekaligus memperbaiki struktur kerja ke depan. Dibandingkan A, dasar keputusan lebih kuat; dibandingkan C dan D, tidak hanya mengatasi kasus sesaat."
+        },
+        {
+          "label": "C",
+          "text": "Meminta pimpinan proyek memilih salah satu unit sebagai pihak yang berwenang agar pekerjaan segera berjalan.",
+          "score": 3,
+          "explanation": "Eskalasi mungkin diperlukan, tetapi seharusnya didahului penelusuran dasar kewenangan. Dibandingkan B, keputusan lebih bergantung pada preferensi pimpinan."
+        },
+        {
+          "label": "D",
+          "text": "Meminta kedua unit bergantian memberikan persetujuan agar tidak ada pihak yang merasa kewenangannya diabaikan.",
+          "score": 2,
+          "explanation": "Pemerataan peran terlihat adil, tetapi persetujuan formal tidak seharusnya ditentukan dengan mekanisme bergiliran. Dibandingkan A dan B, dasar kewenangan lebih lemah."
+        },
+        {
+          "label": "E",
+          "text": "Menunda tahap tersebut sampai dokumen proyek diperbarui pada revisi berikutnya agar pembagian kewenangan tidak menimbulkan sengketa.",
+          "score": 1,
+          "explanation": "Perbaikan dokumen penting, tetapi menunggu revisi formal tanpa menelusuri dasar kewenangan yang tersedia terlalu lambat. Dibandingkan B, pekerjaan tidak perlu berhenti selama proses klarifikasi dilakukan."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "very_hard",
+      "overall_explanation": "Kebuntuan ini bukan masalah interpersonal biasa, melainkan ambiguity of authority. B paling tepat karena mencari dasar kewenangan lalu mendokumentasikan pembagian. A baik tetapi dapat tidak cukup formal; C terlalu cepat memilih melalui hierarki; D menggunakan prinsip pemerataan yang tidak relevan; E menunda tanpa perlu. Micro-rule: ketika kewenangan tumpang tindih, cari dasar otoritas sebelum menentukan siapa yang mengambil keputusan."
+    },
+    {
+      "id": "P5-026",
+      "subtest": "Sosial Budaya",
+      "concept": "Mengelola perbedaan cara menyampaikan kebutuhan dalam komunitas",
+      "question": "Dalam kegiatan lapangan, sebagian warga menyampaikan kebutuhan secara terbuka, sementara sebagian lainnya lebih nyaman menyampaikan melalui percakapan kecil dengan petugas atau tokoh setempat. Anda mendapati beberapa kebutuhan penting justru berasal dari kelompok yang jarang berbicara di forum besar. Apa pendekatan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mengutamakan masukan dari forum besar karena informasi yang disampaikan di depan umum lebih mudah dipertanggungjawabkan.",
+          "score": 2,
+          "explanation": "Forum terbuka membantu transparansi, tetapi gaya komunikasi tertentu dapat membuat kebutuhan sebagian kelompok tidak muncul. Dibandingkan B dan D, representasinya lebih sempit."
+        },
+        {
+          "label": "B",
+          "text": "Menggunakan beberapa cara penggalian kebutuhan dan memeriksa kembali informasi penting sebelum memasukkannya ke dalam keputusan kegiatan.",
+          "score": 5,
+          "explanation": "Respons ini adaptif terhadap cara komunikasi yang berbeda sekaligus mempertahankan validasi. Dibandingkan C, tidak bergantung pada satu saluran; dibandingkan A dan E, lebih inklusif."
+        },
+        {
+          "label": "C",
+          "text": "Meminta tokoh setempat mengumpulkan seluruh kebutuhan warga agar petugas tidak perlu menggunakan terlalu banyak metode.",
+          "score": 4,
+          "explanation": "Tokoh lokal dapat membantu menjangkau kelompok yang tidak nyaman berbicara langsung. Namun, dibandingkan B, risiko representasi tunggal lebih besar."
+        },
+        {
+          "label": "D",
+          "text": "Menyediakan sesi kecil bagi kelompok yang jarang berbicara agar mereka memiliki kesempatan menyampaikan kebutuhan dengan lebih nyaman.",
+          "score": 3,
+          "explanation": "Sesi kecil dapat meningkatkan partisipasi, tetapi tanpa validasi dan integrasi dengan forum utama, informasi bisa terpisah dari keputusan. Dibandingkan B, mekanisme lebih sempit."
+        },
+        {
+          "label": "E",
+          "text": "Meminta semua warga menggunakan satu metode penyampaian agar proses pengumpulan informasi menjadi lebih mudah dibandingkan menggunakan banyak cara.",
+          "score": 1,
+          "explanation": "Keseragaman mungkin efisien bagi penyelenggara, tetapi mengabaikan hambatan komunikasi yang telah terbukti ada. Dibandingkan B dan D, inklusivitas paling rendah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Keberagaman cara menyampaikan kebutuhan dapat memengaruhi kualitas informasi yang masuk. B paling tepat karena membuka beberapa kanal sekaligus tetap memvalidasi informasi penting. D baik tetapi hanya menambah satu kanal; C terlalu bergantung pada satu perantara; A dan E terlalu mengutamakan kemudahan penyelenggara. Micro-rule: gunakan bentuk komunikasi yang sesuai dengan konteks sosial, tetapi tetap uji informasi sebelum menjadikannya dasar keputusan."
+    },
+    {
+      "id": "P5-027",
+      "subtest": "Sosial Budaya",
+      "concept": "Membedakan kebiasaan lokal dari indikator perilaku bermasalah",
+      "question": "Dalam suatu komunitas, warga terbiasa datang ke kegiatan secara bertahap dan tidak selalu hadir tepat pada waktu undangan. Tim Anda menganggap hal itu menunjukkan kurangnya disiplin. Namun, bagian inti kegiatan selalu diikuti penuh dan agenda berjalan sesuai kebutuhan. Apa sikap yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mempertahankan penilaian bahwa pola tersebut kurang disiplin agar standar ketepatan waktu organisasi tetap menjadi acuan.",
+          "score": 2,
+          "explanation": "Ketepatan waktu memang penting, tetapi fakta bahwa agenda inti tetap berjalan menunjukkan konteks perlu dinilai lebih dahulu. Dibandingkan B dan C, interpretasinya terlalu cepat."
+        },
+        {
+          "label": "B",
+          "text": "Menilai apakah ketidaktepatan waktu benar-benar mengganggu tujuan kegiatan sebelum menentukan perlu tidaknya penyesuaian pengaturan.",
+          "score": 5,
+          "explanation": "Respons ini menghindari stereotip dan menilai dampak nyata. Dibandingkan C, lebih berbasis outcome; dibandingkan A dan E, lebih objektif."
+        },
+        {
+          "label": "C",
+          "text": "Memberikan toleransi waktu yang lebih panjang karena kebiasaan lokal perlu dihormati dalam semua kegiatan.",
+          "score": 4,
+          "explanation": "Akomodasi lokal dapat tepat, tetapi tidak berarti semua bagian kegiatan harus mengikuti kebiasaan tersebut. Dibandingkan B, dasar penyesuaiannya masih terlalu umum."
+        },
+        {
+          "label": "D",
+          "text": "Memulai kegiatan seperti biasa tetapi menggeser bagian pembukaan agar peserta yang datang bertahap tetap dapat mengikuti.",
+          "score": 3,
+          "explanation": "Penyesuaian desain kegiatan dapat membantu, tetapi sebaiknya dilakukan setelah menilai dampak terhadap keseluruhan tujuan. Dibandingkan B, proses penilaiannya belum terlihat."
+        },
+        {
+          "label": "E",
+          "text": "Meminta tokoh masyarakat memastikan peserta datang lebih awal agar kebiasaan lokal tidak mengganggu pola kerja organisasi.",
+          "score": 1,
+          "explanation": "Menyesuaikan warga secara sepihak tanpa memeriksa dampak nyata terlalu kaku. Dibandingkan B-D, penyelenggara tidak menunjukkan adaptasi."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Perbedaan kebiasaan tidak otomatis menjadi masalah kinerja. B paling tepat karena menilai dampak nyata terhadap tujuan sebelum memutuskan intervensi. C baik tetapi terlalu umum; D mungkin solusi teknis yang efektif namun datang sebelum diagnosis; A dan E terlalu cepat menganggap kebiasaan sebagai kekurangan. Micro-rule: jangan memberi label perilaku sebagai masalah sebelum melihat apakah perilaku tersebut benar-benar mengganggu tujuan."
+    },
+    {
+      "id": "P5-028",
+      "subtest": "Sosial Budaya",
+      "concept": "Membangun komunikasi inklusif ketika kelompok tertentu tidak nyaman berbicara",
+      "question": "Dalam forum warga, kelompok perempuan jarang menyampaikan pendapat ketika diskusi dilakukan di hadapan peserta yang lebih senior. Setelah forum, mereka justru menyampaikan beberapa masukan penting secara informal. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menganggap masukan informal tersebut tidak cukup kuat karena seharusnya disampaikan pada forum resmi.",
+          "score": 1,
+          "explanation": "Standar forum penting, tetapi mengabaikan konteks yang menyebabkan suatu kelompok tidak nyaman berbicara dapat menghilangkan informasi penting. Dibandingkan B dan C, inklusivitas paling rendah."
+        },
+        {
+          "label": "B",
+          "text": "Menciptakan ruang yang lebih aman untuk penyampaian pendapat, kemudian memastikan masukan yang material tetap masuk ke pembahasan resmi.",
+          "score": 5,
+          "explanation": "Respons ini menyesuaikan mekanisme komunikasi tanpa menurunkan validitas proses. Dibandingkan C, lebih kuat dalam menghubungkan masukan informal dengan keputusan resmi; dibandingkan A dan D, tidak mengabaikan hambatan sosial."
+        },
+        {
+          "label": "C",
+          "text": "Mengumpulkan masukan informal tersebut dan menyampaikannya kepada forum sebagai bahan pertimbangan tanpa menyebut identitas pemberi masukan.",
+          "score": 4,
+          "explanation": "Cara ini melindungi kenyamanan dan tetap membawa substansi ke forum. Namun, dibandingkan B, kelompok yang terdampak belum memperoleh ruang partisipasi yang lebih baik untuk masa berikutnya."
+        },
+        {
+          "label": "D",
+          "text": "Meminta tokoh senior mengundang kelompok perempuan berbicara agar struktur forum yang ada tetap terjaga.",
+          "score": 3,
+          "explanation": "Tokoh senior dapat membuka ruang partisipasi, tetapi masih menempatkan kelompok tersebut pada posisi harus 'diundang' oleh kelompok dominan. Dibandingkan B, mekanisme belum sepenuhnya inklusif."
+        },
+        {
+          "label": "E",
+          "text": "Membuat forum terpisah khusus perempuan dan menggunakan hasilnya sebagai satu-satunya masukan untuk isu yang berkaitan dengan mereka.",
+          "score": 2,
+          "explanation": "Forum terpisah dapat menjadi salah satu kanal pendukung, tetapi menjadikannya satu-satunya sumber juga dapat memisahkan kelompok dari keputusan bersama. Dibandingkan B dan C, integrasinya lebih rendah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Masalahnya bukan kurangnya pendapat, melainkan mekanisme forum yang membuat pendapat sulit muncul. B paling tepat karena memperbaiki kondisi partisipasi sekaligus memastikan masukan material tetap masuk ke proses resmi. C baik untuk mengamankan substansi, tetapi tidak memperbaiki kondisi jangka panjang; D masih bergantung pada struktur dominan; E terlalu memisahkan; A mengabaikan informasi penting. Micro-rule: ketika kelompok terdampak memiliki informasi tetapi tidak nyaman berbicara, perbaiki cara partisipasinya, bukan menilai diam sebagai tidak punya pendapat."
+    },
+    {
+      "id": "P5-029",
+      "subtest": "Sosial Budaya",
+      "concept": "Mengelola perbedaan kebutuhan ruang dalam kegiatan",
+      "question": "Sebuah kegiatan organisasi akan menggunakan ruang bersama. Sebagian peserta membutuhkan ruang lebih tenang untuk alasan tertentu, sementara kelompok lain membutuhkan area interaksi yang lebih ramai. Ruangan masih cukup luas untuk dibagi secara fungsional tanpa mengurangi keselamatan. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menetapkan satu pola penggunaan ruang untuk semua peserta agar pengelolaan kegiatan lebih sederhana.",
+          "score": 2,
+          "explanation": "Keseragaman memudahkan pengelolaan, tetapi kebutuhan peserta berbeda dan ruang sebenarnya memungkinkan penyesuaian. Dibandingkan B dan D, kurang adaptif."
+        },
+        {
+          "label": "B",
+          "text": "Membagi ruang sesuai kebutuhan kegiatan dan menjelaskan aturan penggunaan agar masing-masing kelompok tetap dapat berfungsi tanpa saling mengganggu.",
+          "score": 5,
+          "explanation": "Respons ini memanfaatkan fleksibilitas ruang untuk memenuhi kebutuhan berbeda tanpa mengurangi tujuan bersama. Dibandingkan C, lebih terstruktur; dibandingkan A dan E, tidak memaksa satu pola."
+        },
+        {
+          "label": "C",
+          "text": "Memberikan area tenang kepada kelompok yang membutuhkan dan membiarkan kelompok lain menggunakan sisa ruang secara fleksibel.",
+          "score": 4,
+          "explanation": "Pembagian ini cukup baik dan sederhana, tetapi tanpa aturan penggunaan dapat menimbulkan gangguan atau ketidakjelasan batas. Dibandingkan B, kontrol bersama lebih rendah."
+        },
+        {
+          "label": "D",
+          "text": "Menanyakan preferensi seluruh peserta lalu memilih pembagian ruang yang paling banyak disetujui.",
+          "score": 3,
+          "explanation": "Menggali preferensi partisipatif baik, tetapi keputusan berdasarkan suara terbanyak dapat mengabaikan kebutuhan yang bersifat khusus. Dibandingkan B, fairness substantif lebih lemah."
+        },
+        {
+          "label": "E",
+          "text": "Memindahkan kelompok yang membutuhkan ruang tenang ke lokasi lain agar ruang utama tetap digunakan secara bebas.",
+          "score": 1,
+          "explanation": "Pemindahan dapat menyelesaikan gangguan tetapi tidak diperlukan jika ruang dapat dibagi di lokasi yang sama. Dibandingkan B dan C, membebankan penyesuaian kepada satu kelompok."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Perbedaan kebutuhan ruang dapat diakomodasi tanpa menjadikannya konflik zero-sum. B paling tepat karena menggunakan pembagian fungsional dan aturan penggunaan. C baik tetapi kurang mengatur batas; D terlalu mengandalkan mayoritas; A terlalu seragam; E memindahkan beban. Micro-rule: ketika kebutuhan berbeda dapat dipenuhi dengan desain ruang yang fleksibel, pilih penyesuaian yang memungkinkan semua pihak tetap berfungsi."
+    },
+    {
+      "id": "P5-030",
+      "subtest": "Sosial Budaya",
+      "concept": "Mengelola stereotip positif dalam pembagian peran sosial",
+      "question": "Dalam sebuah kegiatan komunitas, peserta dari kelompok tertentu selalu diminta menjadi pembawa acara karena dianggap lebih pandai berbicara. Mereka tidak keberatan, tetapi peserta lain jarang mendapat kesempatan belajar. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetap menggunakan peserta yang dianggap paling mahir agar kualitas acara selalu terjaga.",
+          "score": 2,
+          "explanation": "Kualitas acara penting, tetapi pola yang terus sama dapat membatasi pengembangan peserta lain. Dibandingkan B dan C, orientasi pengembangan lebih rendah."
+        },
+        {
+          "label": "B",
+          "text": "Memberikan kesempatan secara bergilir dengan mempertimbangkan kemampuan dan menyediakan dukungan bagi peserta yang membutuhkan pengalaman.",
+          "score": 5,
+          "explanation": "Respons ini menjaga kualitas sekaligus membuka kesempatan belajar secara bertahap. Dibandingkan C, tetap mempertimbangkan kemampuan; dibandingkan A dan D, tidak mengunci peran berdasarkan stereotip."
+        },
+        {
+          "label": "C",
+          "text": "Membagi tugas pembawa acara secara merata tanpa melihat siapa yang sudah memiliki pengalaman lebih banyak.",
+          "score": 4,
+          "explanation": "Rotasi mencegah peran terkunci pada kelompok tertentu, tetapi kualitas dan kebutuhan dukungan belum dipertimbangkan. Dibandingkan B, fairness prosedural lebih kuat daripada pengembangan terarah."
+        },
+        {
+          "label": "D",
+          "text": "Meminta peserta yang selama ini sering menjadi pembawa acara melatih anggota lain agar mereka dapat mengambil peran secara bertahap.",
+          "score": 3,
+          "explanation": "Mentoring mendukung pengembangan dan mempertahankan kualitas, tetapi tanpa perubahan pola penugasan, kesempatan praktik dapat tetap terbatas. Dibandingkan B, exposure nyata kurang."
+        },
+        {
+          "label": "E",
+          "text": "Menetapkan peserta yang selama ini sering menjadi pembawa acara hanya sebagai pendamping agar orang lain dapat mengambil seluruh peran.",
+          "score": 1,
+          "explanation": "Pengurangan peran secara paksa mengabaikan kompetensi yang sudah ada dan tidak menjamin peserta lain siap. Dibandingkan B dan C, tidak proporsional."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Masalahnya adalah stereotip positif yang membuat kesempatan belajar terkonsentrasi. B paling tepat karena menggabungkan rotasi, kompetensi, dan dukungan. C baik tetapi terlalu seragam; D membantu transfer kemampuan tetapi kurang memberi kesempatan praktik; A mempertahankan pola; E terlalu drastis. Micro-rule: inklusi pengembangan bukan berarti mengabaikan kompetensi, melainkan membuka kesempatan bertahap sambil menjaga kualitas."
+    },
+    {
+      "id": "P5-031",
+      "subtest": "TIK",
+      "concept": "Menentukan tingkat verifikasi berdasarkan dampak data",
+      "question": "Sistem pelaporan otomatis menghasilkan dua angka yang berbeda tipis dari catatan manual. Kedua angka akan digunakan untuk laporan internal, tetapi hanya satu yang akan menjadi dasar penentuan alokasi sumber daya bulan depan. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menggunakan angka dari sistem karena proses otomatis cenderung lebih konsisten daripada pencatatan manual.",
+          "score": 2,
+          "explanation": "Otomatisasi dapat mengurangi kesalahan tertentu, tetapi tidak membuktikan bahwa hasilnya benar. Dibandingkan B dan C, dampak keputusan belum diperhitungkan."
+        },
+        {
+          "label": "B",
+          "text": "Membandingkan kedua sumber dan memberi verifikasi lebih ketat pada angka yang akan digunakan untuk alokasi sumber daya.",
+          "score": 5,
+          "explanation": "Respons ini menerapkan verifikasi berbasis materialitas. Dibandingkan C, tidak memerlukan pemeriksaan berlebihan pada semua data; dibandingkan A dan D, lebih aman untuk keputusan penting."
+        },
+        {
+          "label": "C",
+          "text": "Memeriksa seluruh angka satu per satu sebelum laporan internal diterbitkan agar tidak ada perbedaan yang tersisa.",
+          "score": 3,
+          "explanation": "Kontrol menyeluruh sangat hati-hati, tetapi tidak proporsional untuk bagian yang tidak material. Dibandingkan B, penggunaan sumber daya verifikasi kurang efisien."
+        },
+        {
+          "label": "D",
+          "text": "Menggunakan catatan manual sebagai angka acuan sementara karena angka dari sistem belum dapat dijelaskan.",
+          "score": 4,
+          "explanation": "Memakai sumber yang dapat ditelusuri merupakan langkah aman sementara. Namun, dibandingkan B, keputusan belum memeriksa mengapa sistem menghasilkan angka berbeda."
+        },
+        {
+          "label": "E",
+          "text": "Menunda seluruh laporan sampai penyebab perbedaan diketahui agar tidak ada informasi yang berpotensi salah.",
+          "score": 1,
+          "explanation": "Menjaga akurasi penting, tetapi menahan seluruh laporan tidak perlu bila hanya bagian tertentu yang material. Dibandingkan B dan D, respons terlalu drastis."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Perbedaan kecil menjadi penting ketika angka digunakan untuk alokasi sumber daya. B paling tepat karena memperketat verifikasi pada bagian material tanpa memeriksa semuanya dengan intensitas sama. D cukup aman sebagai sementara, tetapi belum mencari penyebab; C terlalu menyeluruh; A terlalu percaya pada otomatisasi; E terlalu menghentikan. Micro-rule: tingkat verifikasi mengikuti dampak keputusan yang bergantung pada data."
+    },
+    {
+      "id": "P5-032",
+      "subtest": "TIK",
+      "concept": "Mengelola perubahan hak akses ketika pegawai berpindah peran",
+      "question": "Seorang pegawai berpindah dari unit A ke unit B. Ia masih memiliki akses ke beberapa folder lama karena sistem belum diperbarui, sementara tugas barunya tidak memerlukan akses tersebut. Pegawai tersebut tidak berniat menyalahgunakan akses. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Membiarkan akses tetap aktif karena pegawai tersebut masih berada dalam organisasi yang sama dan dapat dipercaya.",
+          "score": 1,
+          "explanation": "Status internal dan kepercayaan pribadi bukan dasar untuk mempertahankan akses yang tidak lagi diperlukan. Dibandingkan B dan C, prinsip least privilege diabaikan."
+        },
+        {
+          "label": "B",
+          "text": "Menyesuaikan hak akses dengan peran barunya dan mencabut akses lama yang tidak lagi diperlukan sesuai mekanisme organisasi.",
+          "score": 5,
+          "explanation": "Respons ini mengikuti prinsip role-based access dan meminimalkan risiko tanpa menuduh pegawai. Dibandingkan C, perubahan dilakukan pada sumber hak akses; dibandingkan D dan E, tidak menunggu risiko muncul."
+        },
+        {
+          "label": "C",
+          "text": "Meminta pegawai menghindari folder lama sampai sistem selesai diperbarui.",
+          "score": 3,
+          "explanation": "Penghindaran mengurangi penggunaan, tetapi akses teknis tetap ada. Dibandingkan B, pengamanan masih bergantung pada perilaku individu."
+        },
+        {
+          "label": "D",
+          "text": "Melaporkan perpindahan peran kepada pengelola sistem agar akses dapat ditinjau dan diperbarui.",
+          "score": 4,
+          "explanation": "Pelaporan ke pengelola sistem merupakan kontrol yang tepat. Namun, dibandingkan B, belum secara eksplisit menetapkan bahwa akses lama harus disesuaikan dengan kebutuhan peran baru."
+        },
+        {
+          "label": "E",
+          "text": "Menghapus seluruh akses digital pegawai sementara agar tidak ada kemungkinan hak lama masih aktif.",
+          "score": 2,
+          "explanation": "Penghapusan total memang aman secara kasar, tetapi dapat mengganggu pekerjaan baru yang sah. Dibandingkan B, tindakan terlalu luas."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Akses harus mengikuti kebutuhan peran, bukan sekadar status sebagai pegawai. B paling tepat karena menyesuaikan hak akses sekaligus menjaga kebutuhan tugas baru. D baik tetapi masih berupa pelaporan; C terlalu bergantung pada kehati-hatian pengguna; E terlalu luas; A tidak sesuai prinsip minimal access. Micro-rule: perubahan peran harus diikuti review hak akses agar akses lama tidak bertahan tanpa kebutuhan."
+    },
+    {
+      "id": "P5-033",
+      "subtest": "TIK",
+      "concept": "Menentukan kapan alat digital baru benar-benar menyelesaikan masalah",
+      "question": "Tim Anda ingin menggunakan aplikasi baru untuk mengurangi pekerjaan administrasi. Setelah dipelajari, aplikasi tersebut mengotomatisasi pembuatan rekap, tetapi pekerjaan utama tim sebenarnya lambat karena data awal sering datang dalam format berbeda-beda. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetap menggunakan aplikasi baru karena otomatisasi rekap akan mengurangi waktu pekerjaan administrasi.",
+          "score": 2,
+          "explanation": "Pengurangan pekerjaan rekap bernilai, tetapi bottleneck utama berada pada input yang tidak seragam. Dibandingkan B dan C, akar masalah belum ditangani."
+        },
+        {
+          "label": "B",
+          "text": "Menetapkan format data awal yang lebih seragam dan mengevaluasi kembali apakah aplikasi baru masih diperlukan setelah bottleneck input berkurang.",
+          "score": 5,
+          "explanation": "Respons ini memulai dari root cause dan mencegah investasi teknologi yang tidak menyelesaikan masalah utama. Dibandingkan C, lebih diagnostik; dibandingkan A dan D, tidak mengejar tool sebagai tujuan."
+        },
+        {
+          "label": "C",
+          "text": "Menggunakan aplikasi baru sekaligus membuat template input standar agar kedua masalah dapat diatasi bersama.",
+          "score": 4,
+          "explanation": "Pendekatan ini dapat memberi manfaat ganda dan tetap relevan. Namun, dibandingkan B, penggunaan aplikasi dilakukan sebelum jelas apakah benar-benar diperlukan."
+        },
+        {
+          "label": "D",
+          "text": "Meminta pengguna data memperbaiki format secara manual sebelum menyerahkannya kepada tim.",
+          "score": 3,
+          "explanation": "Standardisasi manual dapat mengurangi variasi, tetapi menambah beban baru dan tidak menunjukkan solusi sistemik. Dibandingkan B dan C, keberlanjutannya lebih rendah."
+        },
+        {
+          "label": "E",
+          "text": "Menambah petugas administrasi untuk menyesuaikan format data sehingga penggunaan aplikasi dapat segera dimulai.",
+          "score": 1,
+          "explanation": "Menambah orang hanya untuk mengatasi input yang tidak seragam menciptakan biaya baru tanpa memperbaiki proses sumber. Dibandingkan B, solusi paling tidak efisien."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Teknologi tidak boleh dipilih sebelum bottleneck dipahami. B paling tepat karena memperbaiki format input yang menjadi sumber keterlambatan, lalu menilai apakah aplikasi tambahan masih diperlukan. C baik tetapi langsung berinvestasi; D memindahkan beban; A fokus pada gejala; E menambah biaya. Micro-rule: sebelum mengotomatisasi output, periksa apakah kualitas dan konsistensi input sudah cukup baik."
+    },
+    {
+      "id": "P5-034",
+      "subtest": "TIK",
+      "concept": "Menjaga jejak perubahan pada dokumen bersama",
+      "question": "Sebuah dokumen kebijakan dikerjakan secara kolaboratif. Salah satu anggota mengusulkan menghapus riwayat perubahan agar file lebih ringan dan mudah dibagikan. Dokumen tersebut belum final dan beberapa bagian masih diperdebatkan. Apa tindakan yang paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menghapus riwayat perubahan karena dokumen belum final dan penyimpanan versi lama dapat membuat pengguna bingung.",
+          "score": 1,
+          "explanation": "Kemudahan penggunaan tidak cukup untuk menghilangkan jejak perubahan ketika substansi masih diperdebatkan. Dibandingkan B dan D, risiko kehilangan konteks lebih besar."
+        },
+        {
+          "label": "B",
+          "text": "Mempertahankan riwayat perubahan atau menyimpannya pada repositori resmi agar perubahan penting tetap dapat ditelusuri.",
+          "score": 5,
+          "explanation": "Respons ini menjaga traceability dan membantu tim memahami asal perubahan. Dibandingkan C, tidak harus membebani file utama; dibandingkan A dan E, akuntabilitas lebih kuat."
+        },
+        {
+          "label": "C",
+          "text": "Membuat salinan baru tanpa riwayat untuk dibagikan, sementara dokumen dengan riwayat tetap disimpan oleh satu anggota.",
+          "score": 4,
+          "explanation": "Pemisahan versi dapat menjaga kemudahan distribusi sekaligus mempertahankan history. Namun, dibandingkan B, kontrol repositori terpusat dan akses terhadap history belum dijelaskan dengan baik."
+        },
+        {
+          "label": "D",
+          "text": "Menyepakati bahwa riwayat perubahan tidak perlu dihapus sampai dokumen final dan sudah disahkan.",
+          "score": 3,
+          "explanation": "Penundaan penghapusan relatif aman dan sesuai konteks. Namun, dibandingkan B, belum ada mekanisme jelas untuk menyimpan history secara terstruktur."
+        },
+        {
+          "label": "E",
+          "text": "Mengurangi jumlah anggota yang boleh mengedit agar riwayat perubahan tidak bertambah terlalu banyak.",
+          "score": 2,
+          "explanation": "Pembatasan editor dapat mengurangi noise, tetapi tidak menyelesaikan kebutuhan traceability dan dapat menghambat kolaborasi. Dibandingkan B dan C, solusi terlalu menyederhanakan masalah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Riwayat perubahan merupakan aset ketika dokumen masih diperdebatkan. B paling tepat karena menjaga traceability, dan penyimpanan history dapat dipisahkan dari file kerja utama bila diperlukan. C adalah kompromi yang baik tetapi belum memastikan repository resmi; D aman namun kurang konkret; A menghapus konteks; E mengurangi kolaborasi. Micro-rule: selama substansi dokumen belum final, perubahan penting harus tetap dapat ditelusuri."
+    },
+    {
+      "id": "P5-035",
+      "subtest": "TIK",
+      "concept": "Menangani data ganda setelah integrasi sistem",
+      "question": "Dua aplikasi organisasi mulai terintegrasi. Setelah integrasi, beberapa data muncul ganda karena satu sistem menggunakan nomor referensi berbeda untuk entitas yang sama. Tim Anda ingin langsung menghapus data yang dianggap duplikat. Apa langkah terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menghapus data yang memiliki nama sama agar jumlah entri kembali mendekati kondisi sebelumnya.",
+          "score": 1,
+          "explanation": "Kesamaan nama belum membuktikan bahwa dua entri merupakan entitas yang sama. Penghapusan langsung berisiko kehilangan data. Dibandingkan B dan C, validasi sangat kurang."
+        },
+        {
+          "label": "B",
+          "text": "Menentukan kunci pencocokan yang dapat dipercaya, memetakan hubungan antarreferensi, lalu melakukan pembersihan dengan jejak perubahan yang jelas.",
+          "score": 5,
+          "explanation": "Respons ini menangani root cause integrasi dan menjaga auditability saat membersihkan data. Dibandingkan C, dasar pencocokan lebih kuat; dibandingkan D dan E, tidak sekadar menghapus atau mempertahankan semua."
+        },
+        {
+          "label": "C",
+          "text": "Memeriksa sampel data secara manual untuk menemukan pola duplikasi sebelum menentukan aturan pembersihan.",
+          "score": 4,
+          "explanation": "Sampling merupakan langkah yang baik untuk diagnosis. Namun, dibandingkan B, belum menghasilkan aturan pencocokan yang dapat diterapkan secara konsisten."
+        },
+        {
+          "label": "D",
+          "text": "Mempertahankan seluruh data sementara dan memberi label sebagai duplikat potensial sampai tim dapat memeriksa satu per satu.",
+          "score": 3,
+          "explanation": "Pendekatan ini aman dari penghapusan yang salah, tetapi dapat membuat laporan dan proses pengguna tetap terganggu. Dibandingkan B, belum ada jalan keluar sistemik."
+        },
+        {
+          "label": "E",
+          "text": "Memisahkan data dari kedua sistem ke dalam laporan berbeda agar proses operasional tidak perlu menunggu pembersihan.",
+          "score": 2,
+          "explanation": "Pemisahan dapat menjadi workaround, tetapi mempertahankan dua sumber tanpa rekonsiliasi justru memperbesar fragmentasi. Dibandingkan B dan C, solusi kurang menyelesaikan akar masalah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "very_hard",
+      "overall_explanation": "Integrasi data membutuhkan identity matching sebelum deduplication. B paling tepat karena menentukan kunci pencocokan dan menjaga jejak perubahan selama pembersihan. C baik untuk diagnosis tetapi belum menghasilkan aturan; D aman tetapi pasif; E hanya memisahkan masalah; A sangat berisiko. Micro-rule: jangan menghapus data hasil integrasi berdasarkan kemiripan tampilan; tetapkan identifier yang dapat dipercaya terlebih dahulu."
+    },
+    {
+      "id": "P5-036",
+      "subtest": "TIK",
+      "concept": "Mengelola notifikasi digital yang mengandung informasi pribadi",
+      "question": "Sistem otomatis akan mengirim pemberitahuan status layanan kepada pengguna. Format awal notifikasi memuat nama lengkap, nomor referensi, dan sebagian informasi tambahan yang sebenarnya tidak diperlukan untuk memahami status. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mengirim seluruh informasi karena pengguna berhak mengetahui seluruh data yang berkaitan dengan permohonannya.",
+          "score": 1,
+          "explanation": "Hak atas informasi tidak berarti semua data harus ditampilkan pada setiap notifikasi. Dibandingkan B dan C, prinsip minimization diabaikan."
+        },
+        {
+          "label": "B",
+          "text": "Menyederhanakan notifikasi pada informasi yang benar-benar diperlukan pengguna dan memastikan identitas dapat dikenali tanpa menampilkan data tambahan.",
+          "score": 5,
+          "explanation": "Respons ini menyeimbangkan usefulness dan privacy. Dibandingkan C, minimalisasi diterapkan sejak desain; dibandingkan A dan D, paparan data lebih terkendali."
+        },
+        {
+          "label": "C",
+          "text": "Menghapus seluruh informasi identitas dan hanya menampilkan status umum agar risiko data pribadi sangat kecil.",
+          "score": 4,
+          "explanation": "Pengurangan data memperkuat privasi, tetapi pengguna tetap membutuhkan cara mengenali bahwa notifikasi terkait dengan permohonannya. Dibandingkan B, solusi terlalu minimal."
+        },
+        {
+          "label": "D",
+          "text": "Membatasi informasi hanya pada nomor referensi karena data tersebut sudah cukup untuk mencari detail melalui kanal resmi.",
+          "score": 3,
+          "explanation": "Pembatasan informasi membantu, tetapi belum memastikan pengguna dapat mengenali notifikasi secara praktis. Dibandingkan B, usability dapat berkurang."
+        },
+        {
+          "label": "E",
+          "text": "Meminta pengguna menentukan sendiri data mana yang ingin ditampilkan pada setiap notifikasi agar pilihan privasi menjadi lebih fleksibel.",
+          "score": 2,
+          "explanation": "Kustomisasi dapat bermanfaat, tetapi kontrol privasi sebaiknya tidak seluruhnya dibebankan kepada pengguna. Dibandingkan B, desain default kurang aman."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Notifikasi seharusnya cukup informatif untuk tujuan pengguna, tetapi tidak perlu membawa data berlebihan. B paling tepat karena menerapkan data minimization sejak desain. C terlalu minimal, D cukup baik tetapi belum seimbang, E terlalu menyerahkan kontrol pada pengguna, A terlalu longgar. Micro-rule: bagikan informasi minimum yang diperlukan untuk mencapai tujuan komunikasi."
+    },
+    {
+      "id": "P5-037",
+      "subtest": "TIK",
+      "concept": "Menangani perubahan sistem yang berdampak pada pengguna internal",
+      "question": "Sistem baru akan diterapkan minggu depan dan mengubah beberapa langkah kerja yang selama ini dilakukan secara manual. Sebagian pegawai hanya mengetahui perubahan secara umum dan belum memahami apa yang harus dilakukan pada kasus pengecualian. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Meminta semua pegawai mempelajari panduan secara mandiri agar implementasi tidak tertunda.",
+          "score": 2,
+          "explanation": "Belajar mandiri dapat membantu, tetapi kasus pengecualian membutuhkan pemahaman yang lebih konkret. Dibandingkan B dan C, kesiapan implementasi belum cukup."
+        },
+        {
+          "label": "B",
+          "text": "Menyediakan contoh alur kerja utama dan kasus pengecualian, lalu memberi ruang latihan atau tanya jawab sebelum sistem digunakan penuh.",
+          "score": 5,
+          "explanation": "Respons ini mempersiapkan pengguna terhadap perubahan nyata, bukan sekadar membaca panduan. Dibandingkan C, kesiapan operasional lebih kuat; dibandingkan A dan D, resistensi berkurang melalui pemahaman."
+        },
+        {
+          "label": "C",
+          "text": "Meminta tim pengelola sistem menjelaskan fitur baru dan mendokumentasikan pertanyaan yang muncul dari pegawai.",
+          "score": 4,
+          "explanation": "Penjelasan dari pengelola sistem membantu akurasi, tetapi belum memastikan pengguna berlatih pada kasus yang akan mereka hadapi. Dibandingkan B, transfer ke perilaku kerja kurang."
+        },
+        {
+          "label": "D",
+          "text": "Menunda penerapan sampai seluruh pegawai benar-benar memahami semua fungsi sistem.",
+          "score": 3,
+          "explanation": "Kesiapan tinggi memang baik, tetapi pemahaman sempurna terhadap seluruh fungsi mungkin tidak perlu sebelum implementasi. Dibandingkan B, terlalu konservatif."
+        },
+        {
+          "label": "E",
+          "text": "Menugaskan satu orang sebagai pusat bantuan sehingga seluruh pertanyaan pegawai dapat diarahkan kepadanya saat sistem mulai digunakan.",
+          "score": 1,
+          "explanation": "Help desk dapat berguna, tetapi sebagai satu-satunya solusi akan menciptakan bottleneck dan dependency. Dibandingkan B dan C, capacity building lebih lemah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Adaptasi teknologi berhasil ketika pengguna siap menerapkan perubahan dalam pekerjaan nyata. B paling kuat karena memadukan alur utama, pengecualian, dan latihan. C membantu tetapi lebih informasional; D terlalu menunggu; A terlalu mandiri; E menciptakan single support dependency. Micro-rule: untuk perubahan sistem, siapkan pengguna pada skenario kerja nyata, terutama titik pengecualian yang tidak dapat dipelajari hanya dari gambaran umum."
+    },
+    {
+      "id": "P5-038",
+      "subtest": "Profesionalisme",
+      "concept": "Mengelola pekerjaan tambahan tanpa kehilangan prioritas utama",
+      "question": "Anda sedang menyelesaikan pekerjaan yang menjadi dasar keputusan pimpinan besok. Seorang rekan meminta bantuan untuk tugas lain yang juga penting, tetapi tenggatnya dua hari lagi dan tidak menghambat pekerjaan siapa pun jika dikerjakan setelah tugas utama Anda selesai. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mengerjakan tugas rekan terlebih dahulu karena ia sudah meminta bantuan secara langsung dan membutuhkan dukungan tim.",
+          "score": 1,
+          "explanation": "Kolaborasi penting, tetapi permintaan tersebut memiliki konsekuensi yang lebih rendah daripada tugas yang menjadi dasar keputusan besok. Dibandingkan B dan D, prioritas salah."
+        },
+        {
+          "label": "B",
+          "text": "Menyelesaikan pekerjaan utama terlebih dahulu dan memberi tahu rekan kapan Anda realistis dapat membantu setelah prioritas tersebut selesai.",
+          "score": 5,
+          "explanation": "Respons ini menjaga prioritas berdasarkan dampak dan tetap memelihara komitmen kolaboratif. Dibandingkan C, lebih jelas; dibandingkan A dan E, tidak mengorbankan pekerjaan utama."
+        },
+        {
+          "label": "C",
+          "text": "Meminta rekan menunggu sampai Anda memiliki waktu luang agar pekerjaan utama tidak terganggu.",
+          "score": 4,
+          "explanation": "Prioritas dijaga dan permintaan tidak ditolak. Namun, dibandingkan B, tidak ada kepastian waktu yang membantu rekan merencanakan pekerjaannya."
+        },
+        {
+          "label": "D",
+          "text": "Meminta rekan mencari anggota lain yang dapat membantu agar tugasnya tidak tertunda.",
+          "score": 3,
+          "explanation": "Mencari alternatif dapat menjaga kelancaran kerja, tetapi belum tentu diperlukan jika Anda masih bisa membantu sesuai waktu. Dibandingkan B, ownership hubungan kerja lebih rendah."
+        },
+        {
+          "label": "E",
+          "text": "Menyarankan agar tugas rekan dikerjakan bersama setelah pekerjaan utama Anda selesai supaya tidak ada pekerjaan yang terabaikan.",
+          "score": 2,
+          "explanation": "Perencanaan bersama baik, tetapi belum menjawab kapan tugas akan bergerak dan dapat menambah ketergantungan pada Anda. Dibandingkan B dan C, prioritas sudah benar tetapi pengelolaan ekspektasi kurang."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Prioritas ditentukan oleh dampak dan tenggat, bukan oleh siapa yang meminta lebih dulu. B paling tepat karena menjaga tugas yang paling material dan memberi kepastian kepada rekan. C hampir sama tetapi terlalu terbuka; D melempar alternatif terlalu cepat; E belum cukup spesifik; A salah memprioritaskan. Micro-rule: ketika beberapa tugas sama-sama penting, dahulukan yang konsekuensi keterlambatannya paling besar dan komunikasikan kapan tugas lain dapat ditangani."
+    },
+    {
+      "id": "P5-039",
+      "subtest": "Profesionalisme",
+      "concept": "Menangani pekerjaan yang harus dikoreksi sebelum dikirim",
+      "question": "Anda sedang menyiapkan laporan akhir dan menemukan bahwa satu tabel menggunakan angka dari versi data sebelumnya. Kesalahan tersebut tidak terlihat pada kesimpulan naratif, tetapi dapat membuat pembaca mempertanyakan konsistensi laporan. Waktu pengiriman tinggal satu jam. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mengirim laporan terlebih dahulu karena kesalahan tabel tidak memengaruhi kesimpulan, kemudian memperbaikinya bila ada yang menanyakan.",
+          "score": 1,
+          "explanation": "Konsistensi data tetap bagian dari kualitas laporan dan kesalahan diketahui sebelum pengiriman. Dibandingkan B dan D, menunda koreksi tidak diperlukan."
+        },
+        {
+          "label": "B",
+          "text": "Memperbaiki tabel pada bagian yang terdampak, memeriksa keterkaitan dengan narasi, lalu melakukan pemeriksaan akhir sebelum mengirim.",
+          "score": 5,
+          "explanation": "Respons ini fokus pada kesalahan material tanpa mengulang seluruh laporan. Dibandingkan C, koreksi dilakukan tepat sasaran; dibandingkan A dan E, kualitas akhir lebih terjaga."
+        },
+        {
+          "label": "C",
+          "text": "Memeriksa kembali tabel tersebut dan meminta rekan mengonfirmasi angka yang seharusnya digunakan.",
+          "score": 4,
+          "explanation": "Peer verification memperkuat akurasi, tetapi dengan waktu satu jam, koreksi langsung dan pengecekan keterkaitan dapat lebih efisien bila sumber sudah jelas. Dibandingkan B, kepemilikan penyelesaian lebih sedikit."
+        },
+        {
+          "label": "D",
+          "text": "Menghapus tabel yang bermasalah dan mempertahankan narasi yang sudah benar agar laporan dapat tetap dikirim sesuai jadwal.",
+          "score": 2,
+          "explanation": "Menghapus sumber ketidakkonsistenan mengurangi risiko, tetapi dapat membuat laporan kehilangan informasi penting. Dibandingkan B, solusi terlalu drastis."
+        },
+        {
+          "label": "E",
+          "text": "Menunda seluruh laporan sampai semua bagian diperiksa ulang secara menyeluruh meskipun hanya satu tabel yang diketahui bermasalah.",
+          "score": 3,
+          "explanation": "Pemeriksaan total menjamin kehati-hatian, tetapi tidak proporsional terhadap masalah yang sudah terlokalisasi. Dibandingkan B, penggunaan waktu kurang efisien."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Karena sumber kesalahan sudah diketahui, tidak perlu mengulang seluruh laporan atau menunggu tanpa batas. B paling tepat dengan memperbaiki tabel, memeriksa kaitannya dengan narasi, lalu melakukan final check. C baik tetapi lebih bertele-tele; E terlalu luas; D menghilangkan informasi; A membiarkan kesalahan. Micro-rule: ketika kesalahan sudah terlokalisasi, lakukan corrective action yang terarah lalu verifikasi dampaknya terhadap bagian terkait."
+    },
+    {
+      "id": "P5-040",
+      "subtest": "Profesionalisme",
+      "concept": "Menolak tekanan untuk menyembunyikan informasi yang merugikan",
+      "question": "Sebelum laporan evaluasi dikirim, seorang rekan meminta Anda tidak mencantumkan satu kendala karena khawatir pimpinan akan menilai tim kurang berhasil. Kendala tersebut tidak mengubah hasil utama, tetapi relevan untuk menjelaskan mengapa biaya kegiatan lebih tinggi dari rencana. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menyertakan kendala tersebut secara proporsional dan menjelaskan dampaknya terhadap biaya agar laporan memberikan konteks yang lengkap.",
+          "score": 5,
+          "explanation": "Respons ini menjaga integritas tanpa membesar-besarkan masalah. Dibandingkan C, fakta tetap disampaikan; dibandingkan B dan D, konteks justru membuat penilaian lebih adil."
+        },
+        {
+          "label": "B",
+          "text": "Mengurangi detail kendala tersebut agar laporan tetap fokus pada keberhasilan utama kegiatan.",
+          "score": 2,
+          "explanation": "Fokus pada hasil utama wajar, tetapi mengurangi informasi yang relevan terhadap biaya dapat membuat laporan kurang transparan. Dibandingkan A dan C, konteks menjadi terlalu tipis."
+        },
+        {
+          "label": "C",
+          "text": "Menyampaikan kendala secara singkat dan menyertakan angka tambahan hanya jika pimpinan meminta penjelasan lebih lanjut.",
+          "score": 4,
+          "explanation": "Respons ini masih menjaga fakta dan cukup proporsional. Namun, dibandingkan A, informasi yang relevan terhadap variasi biaya belum diberikan sejak awal."
+        },
+        {
+          "label": "D",
+          "text": "Meminta rekan yang bertanggung jawab atas evaluasi menentukan apakah kendala tersebut cukup material untuk dicantumkan.",
+          "score": 3,
+          "explanation": "Konsultasi dapat menjadi kontrol bila materialitas meragukan, tetapi relevansi terhadap biaya sudah jelas. Dibandingkan A, ownership terhadap isi laporan lebih rendah."
+        },
+        {
+          "label": "E",
+          "text": "Tidak mencantumkan kendala tersebut tetapi menyimpan catatan internal jika nantinya diperlukan sebagai penjelasan.",
+          "score": 1,
+          "explanation": "Menyimpan informasi secara internal tidak menggantikan kewajiban membuat laporan yang cukup transparan. Dibandingkan semua opsi lain, risiko misleading paling besar."
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "hard",
+      "overall_explanation": "Fakta yang relevan terhadap biaya harus tersedia bagi pembaca laporan agar hasil dapat dinilai secara proporsional. A paling tepat karena tidak membesar-besarkan tetapi juga tidak menyembunyikan. C sangat dekat tetapi terlalu menunggu permintaan; D dapat menjadi langkah konsultasi jika materialitas belum jelas; B dan E mengurangi transparansi. Micro-rule: informasi yang relevan untuk memahami variasi hasil harus disampaikan secara proporsional, meskipun informasi tersebut kurang menguntungkan."
+    },
+    {
+      "id": "P5-041",
+      "subtest": "Profesionalisme",
+      "concept": "Mengelola kesalahan yang dilakukan bawahan tanpa mengambil alih seluruh pekerjaan",
+      "question": "Anda sebagai koordinator mengetahui salah satu anggota tim salah memahami satu instruksi sehingga pekerjaan yang dihasilkan perlu diperbaiki. Tenggat masih cukup aman dan anggota tersebut mampu melakukan koreksi jika memahami letak kesalahannya. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memperbaiki pekerjaan tersebut sendiri agar hasil akhir terjamin dan anggota dapat melanjutkan tugas lain.",
+          "score": 2,
+          "explanation": "Kualitas hasil dapat cepat terjaga, tetapi masalah pemahaman anggota tidak terselesaikan dan dependency pada koordinator meningkat. Dibandingkan B, nilai pembelajaran lebih rendah."
+        },
+        {
+          "label": "B",
+          "text": "Menjelaskan letak kekeliruan, memastikan anggota memahami instruksi yang benar, lalu meminta ia memperbaiki pekerjaannya dengan pemantauan seperlunya.",
+          "score": 5,
+          "explanation": "Respons ini menggabungkan accountability, coaching, dan ownership bawahan. Dibandingkan A, membangun kompetensi; dibandingkan C dan D, tetap menjaga kontrol tanpa mengambil alih."
+        },
+        {
+          "label": "C",
+          "text": "Meminta anggota memperbaiki pekerjaan sendiri dan menyerahkannya kembali setelah selesai.",
+          "score": 4,
+          "explanation": "Ownership dipertahankan, tetapi tanpa memastikan sumber salah paham sudah diperbaiki, kesalahan bisa berulang. Dibandingkan B, coaching kurang."
+        },
+        {
+          "label": "D",
+          "text": "Menyusun contoh pekerjaan yang benar agar anggota dapat membandingkan hasilnya dan memperbaiki sendiri.",
+          "score": 3,
+          "explanation": "Contoh konkret membantu, tetapi belum tentu menjawab apa yang membuat anggota salah memahami instruksi. Dibandingkan B, diagnosis dan pembelajaran lebih terbatas."
+        },
+        {
+          "label": "E",
+          "text": "Memindahkan tugas tersebut kepada anggota lain agar tenggat aman dan mengurangi risiko kesalahan ulang.",
+          "score": 1,
+          "explanation": "Mitigasi bisa diperlukan bila risiko tinggi, tetapi di sini tenggat aman dan anggota mampu memperbaiki. Dibandingkan B dan C, tindakan terlalu menggantikan ownership."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Koordinator tidak seharusnya mengambil alih kesalahan bawahan bila koreksi masih aman dilakukan oleh pemilik pekerjaan. B paling tepat karena memperbaiki pemahaman sekaligus menjaga ownership. C baik tetapi tanpa coaching; D membantu namun kurang diagnosis; A mengambil alih; E terlalu drastis. Micro-rule: bila kesalahan bawahan masih dapat diperbaiki dengan aman, gunakan coaching dan corrective ownership sebelum memindahkan tugas."
+    },
+    {
+      "id": "P5-042",
+      "subtest": "Profesionalisme",
+      "concept": "Menentukan batas antara fleksibilitas dan penyimpangan prosedur",
+      "question": "Seorang rekan menyarankan cara yang lebih cepat untuk menyelesaikan satu tahapan pekerjaan. Setelah Anda periksa, cara tersebut tidak melanggar hasil akhir, tetapi melewati satu langkah dokumentasi yang diwajibkan dalam prosedur. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Menggunakan cara yang lebih cepat karena hasil akhirnya tetap sama dan dokumen dapat dibuat setelah pekerjaan selesai.",
+          "score": 2,
+          "explanation": "Efisiensi dan hasil akhir penting, tetapi melewati dokumentasi wajib dapat menghilangkan traceability. Dibandingkan B dan C, kepatuhan proses terlalu lemah."
+        },
+        {
+          "label": "B",
+          "text": "Tetap menjalankan langkah dokumentasi yang diwajibkan dan mengusulkan penyederhanaan prosedur secara resmi bila langkah tersebut memang dapat diperbaiki.",
+          "score": 5,
+          "explanation": "Respons ini menjaga kepatuhan saat ini sambil membuka ruang perbaikan proses di masa depan. Dibandingkan C, tidak berhenti pada kepatuhan pasif; dibandingkan A dan D, tidak menggunakan shortcut informal."
+        },
+        {
+          "label": "C",
+          "text": "Mengikuti prosedur yang berlaku meskipun prosesnya lebih lambat daripada cara yang diusulkan.",
+          "score": 4,
+          "explanation": "Kepatuhan menjadi dasar yang tepat. Namun, dibandingkan B, tidak ada upaya menggunakan temuan tersebut sebagai masukan perbaikan proses."
+        },
+        {
+          "label": "D",
+          "text": "Menanyakan kepada pengelola prosedur apakah langkah dokumentasi tersebut dapat dilewati pada kondisi tertentu.",
+          "score": 3,
+          "explanation": "Klarifikasi dapat tepat bila terdapat ruang pengecualian, tetapi fakta menunjukkan langkah tersebut diwajibkan. Dibandingkan B dan C, fokus terlalu besar pada kemungkinan menghindari langkah."
+        },
+        {
+          "label": "E",
+          "text": "Membuat dokumen setelah pekerjaan selesai agar prosedur administratif tetap terlihat terpenuhi tanpa memperlambat proses.",
+          "score": 1,
+          "explanation": "Dokumentasi yang dibuat terlambat dapat menghilangkan fungsi kontrol pada saat pekerjaan berlangsung. Dibandingkan semua opsi lain, traceability dan integritas proses paling lemah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "overall_explanation": "Fleksibilitas profesional memiliki batas ketika prosedur memuat kontrol yang memang diwajibkan. B paling kuat karena mematuhi prosedur dan sekaligus mengusulkan perbaikan formal jika ada bukti proses dapat disederhanakan. C benar tetapi pasif; D masih mencari celah padahal kewajibannya jelas; A dan E menggunakan shortcut. Micro-rule: jangan memperbaiki proses dengan melanggar kontrol yang berlaku; usulkan perubahan melalui jalur resmi."
+    },
+    {
+      "id": "P5-043",
+      "subtest": "Profesionalisme",
+      "concept": "Menjaga netralitas ketika kepentingan pribadi muncul dalam pekerjaan",
+      "question": "Anda diminta membantu menyiapkan bahan evaluasi sebuah program yang dipimpin oleh kenalan dekat. Ia tidak meminta perlakuan khusus, tetapi Anda tahu hasil evaluasi dapat memengaruhi reputasinya. Apa tindakan paling tepat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tetap membantu seperti biasa karena kenalan tersebut tidak pernah meminta Anda mengubah hasil evaluasi.",
+          "score": 2,
+          "explanation": "Tidak adanya permintaan khusus tidak menghilangkan potensi persepsi konflik. Dibandingkan B dan C, pengelolaan independensi masih terlalu bergantung pada niat pribadi."
+        },
+        {
+          "label": "B",
+          "text": "Mengungkapkan hubungan tersebut kepada penanggung jawab dan meminta pengaturan peran yang tetap menjaga objektivitas evaluasi.",
+          "score": 5,
+          "explanation": "Respons ini mengelola conflict of interest secara institusional. Dibandingkan C, tidak hanya menambah reviewer; dibandingkan A dan D, transparansi lebih kuat."
+        },
+        {
+          "label": "C",
+          "text": "Meminta rekan lain memeriksa bagian evaluasi yang terkait langsung dengan program tersebut agar penilaian lebih objektif.",
+          "score": 4,
+          "explanation": "Review independen merupakan mitigasi yang baik, tetapi disclosure tetap penting karena hubungan pribadi sudah relevan terhadap persepsi independensi. Dibandingkan B, pengelolaan konflik kurang lengkap."
+        },
+        {
+          "label": "D",
+          "text": "Menilai program menggunakan kriteria yang sama dengan program lain dan menyimpan seluruh bukti penilaian untuk menjaga akuntabilitas.",
+          "score": 3,
+          "explanation": "Kriteria dan dokumentasi mendukung objektivitas, tetapi belum mengelola konflik persepsi pada tingkat penugasan. Dibandingkan B dan C, mitigation lebih lemah."
+        },
+        {
+          "label": "E",
+          "text": "Menolak seluruh tugas agar hubungan pribadi sama sekali tidak berkaitan dengan pekerjaan.",
+          "score": 1,
+          "explanation": "Pemisahan total memang aman, tetapi mungkin tidak diperlukan sebelum penugasan dan disclosure dinilai. Dibandingkan B dan C, respons kurang fleksibel dan dapat mengurangi kapasitas kerja."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Konflik kepentingan tidak hanya muncul ketika ada permintaan favoritisme. Hubungan pribadi dapat memengaruhi atau terlihat memengaruhi independensi. B paling tepat karena disclosure memungkinkan organisasi menentukan safeguard yang sesuai. C baik tetapi belum mengungkap hubungan; D hanya mengandalkan perilaku objektif; A terlalu percaya pada niat; E terlalu ekstrem. Micro-rule: ketika relasi pribadi relevan terhadap penilaian profesional, transparansi dan pengaturan peran lebih kuat daripada sekadar merasa mampu tetap objektif."
+    },
+    {
+      "id": "P5-044",
+      "subtest": "Profesionalisme",
+      "concept": "Mengelola kesalahan yang baru ditemukan setelah keputusan internal dibuat",
+      "question": "Sehari setelah rapat pimpinan, Anda menemukan bahwa satu angka dalam bahan yang digunakan ternyata salah input. Keputusan utama rapat kemungkinan tidak berubah karena selisihnya kecil, tetapi angka tersebut tercantum dalam notulen. Apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Memperbaiki catatan internal tanpa perlu memberi tahu pihak lain karena keputusan utama tidak berubah.",
+          "score": 2,
+          "explanation": "Koreksi penting, tetapi perubahan pada bahan resmi perlu dapat ditelusuri. Dibandingkan B dan C, transparansi terhadap pihak yang menggunakan dokumen lebih rendah."
+        },
+        {
+          "label": "B",
+          "text": "Mengonfirmasi angka yang benar, memberi tahu pihak yang mengelola notulen, dan memastikan koreksi tercatat tanpa mengubah substansi keputusan secara tidak semestinya.",
+          "score": 5,
+          "explanation": "Respons ini menjaga integritas rekaman dan membedakan koreksi data dari perubahan keputusan. Dibandingkan C, transparansi lebih kuat; dibandingkan A dan D, jejak koreksi terjaga."
+        },
+        {
+          "label": "C",
+          "text": "Meminta pembuat bahan awal memperbaiki notulen agar tanggung jawab koreksi tetap berada pada pihak yang melakukan input.",
+          "score": 4,
+          "explanation": "Mengembalikan koreksi kepada pemilik bahan dapat menjaga ownership, tetapi belum memastikan pihak pengelola catatan mengetahui perubahan material. Dibandingkan B, proses koreksinya kurang terintegrasi."
+        },
+        {
+          "label": "D",
+          "text": "Menyimpan catatan koreksi untuk digunakan jika angka tersebut kembali dibahas pada rapat berikutnya.",
+          "score": 1,
+          "explanation": "Menunggu sampai isu muncul kembali membuat catatan resmi tetap mengandung kesalahan yang sebenarnya sudah diketahui. Dibandingkan A-C, respons ini paling lemah."
+        },
+        {
+          "label": "E",
+          "text": "Mengirim koreksi kepada seluruh peserta rapat agar semua orang memiliki angka yang benar untuk referensi mereka.",
+          "score": 3,
+          "explanation": "Distribusi koreksi meningkatkan kesadaran peserta, tetapi tanpa memastikan notulen diperbaiki, catatan resmi tetap tidak akurat. Dibandingkan B, mekanisme record correction lebih lemah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "very_hard",
+      "overall_explanation": "Kesalahan pascakeputusan tidak boleh diabaikan hanya karena keputusan utama mungkin tidak berubah. B paling tepat karena mengoreksi sumber resmi, menjaga jejak perubahan, dan tidak mengubah keputusan secara tidak semestinya. C baik karena menjaga ownership tetapi belum menjamin notulen diperbaiki secara terkoordinasi; E membantu komunikasi namun tidak memperbaiki record; A terlalu diam; D menunda. Micro-rule: ketika kesalahan diketahui setelah dokumen resmi digunakan, perbaiki record secara transparan tanpa mengubah fakta keputusan secara tidak semestinya."
+    },
+    {
+      "id": "P5-045",
+      "subtest": "Anti Radikalisme",
+      "concept": "Menangani polarisasi kelompok sebelum berkembang menjadi permusuhan terbuka",
+      "question": "Dalam organisasi, dua kelompok anggota mulai saling menghindari karena perbedaan pandangan mengenai isu sosial yang sensitif. Belum ada penghinaan, ancaman, atau penolakan terhadap hak kelompok lain, tetapi informasi dari masing-masing kelompok semakin jarang diperiksa bersama dan muncul kecenderungan menganggap kelompok lain selalu salah. Sebagai pengelola kegiatan, apa tindakan terbaik?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Membatasi pembahasan isu tersebut di lingkungan organisasi agar interaksi antaranggota tidak semakin tegang.",
+          "score": 2,
+          "explanation": "Mengurangi tensi dapat membantu sementara, tetapi tidak mengatasi pola pemisahan dan informasi yang tidak diverifikasi. Dibandingkan B dan C, pendekatan terlalu menghindari."
+        },
+        {
+          "label": "B",
+          "text": "Menyediakan ruang dialog dengan aturan interaksi yang jelas dan mendorong peserta memeriksa sumber informasi sebelum menarik kesimpulan mengenai kelompok lain.",
+          "score": 5,
+          "explanation": "Respons ini menangani dua akar masalah sekaligus: kualitas interaksi dan kualitas informasi. Dibandingkan C, lebih terintegrasi; dibandingkan D dan E, tidak memaksa keseragaman atau memperbesar jarak."
+        },
+        {
+          "label": "C",
+          "text": "Meminta masing-masing kelompok menyampaikan pandangannya secara terpisah agar tidak terjadi benturan langsung.",
+          "score": 4,
+          "explanation": "Forum terpisah dapat menjadi tahap awal untuk menurunkan tensi, tetapi bila tidak diikuti interaksi terarah, pemisahan justru dapat memperkuat silo. Dibandingkan B, efek integrasinya lebih rendah."
+        },
+        {
+          "label": "D",
+          "text": "Meminta semua anggota sepakat bahwa isu tersebut tidak perlu dibicarakan dalam kegiatan organisasi.",
+          "score": 1,
+          "explanation": "Kesepakatan menghindari topik dapat meredakan konflik sesaat, tetapi tidak memperbaiki prasangka atau kualitas informasi. Dibandingkan B dan C, respons paling tidak menyelesaikan akar masalah."
+        },
+        {
+          "label": "E",
+          "text": "Mengumpulkan informasi dari kedua kelompok dan meminta moderator menentukan pandangan mana yang paling objektif untuk menjadi acuan bersama.",
+          "score": 3,
+          "explanation": "Moderasi dan verifikasi dapat membantu, tetapi menjadikan moderator sebagai penentu pandangan mana yang benar terlalu sentralistik. Dibandingkan B, pembelajaran dan dialog dua arah lebih rendah."
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "overall_explanation": "Kasus ini masih berada pada fase polarisasi, bukan kekerasan atau ancaman terbuka. B paling tepat karena memperbaiki kualitas dialog dan verifikasi informasi sekaligus menjaga ruang perbedaan. C dapat digunakan sebagai langkah pendukung bila tensi meningkat, tetapi pemisahan permanen bukan tujuan; E terlalu menyerahkan penilaian kepada moderator; A dan D menghindari masalah. Micro-rule: pada polarisasi awal, bangun kembali interaksi dan kebiasaan memeriksa informasi sebelum konflik berkembang menjadi permusuhan."
+    }
+  ],
+  "audit": {
+    "status_paket": "PASS",
+    "jumlah_soal": 45,
+    "distribusi_subtest": {
+      "Pelayanan Publik": 8,
+      "Jejaring Kerja": 8,
+      "Sosial Budaya": 7,
+      "TIK": 7,
+      "Profesionalisme": 9,
+      "Anti Radikalisme": 6
+    },
+    "distribusi_correct_answer": {
+      "A": 9,
+      "B": 9,
+      "C": 9,
+      "D": 9,
+      "E": 9
+    },
+    "distribusi_difficulty": {
+      "medium": 11,
+      "hard": 25,
+      "very_hard": 9
+    },
+    "validasi_format": {
+      "jumlah_soal_tepat_45": true,
+      "setiap_soal_memiliki_tepat_5_opsi": true,
+      "setiap_soal_memiliki_skor_1_2_3_4_5_tepat_satu_kali": true,
+      "correct_answer_selalu_menunjuk_pada_skor_5": true,
+      "tidak_ada_skor_ganda_dalam_satu_soal": true,
+      "struktur_json_konsisten": true
+    },
+    "audit_kriteria": {
+      "1_ketepatan_ranking": {
+        "status": "PASS",
+        "hasil": "Ranking didasarkan pada kualitas keputusan dalam konteks, khususnya ownership, authority, materiality, continuity, proportionality, risk, fairness, dan kemampuan menyelesaikan akar masalah."
+      },
+      "2_validitas_unik_skor_5": {
+        "status": "PASS",
+        "hasil": "Setiap soal memiliki satu opsi paling unggul secara substantif. Opsi 4 sengaja ditempatkan dekat dengan skor 5 tetapi masih kehilangan satu dimensi penting."
+      },
+      "3_kualitas_skor_4_vs_5": {
+        "status": "PASS",
+        "hasil": "Skor 4 umumnya merupakan respons kuat yang kalah karena kurang satu safeguard, kurang ownership, kurang konkret, terlalu bergantung pada pihak lain, atau belum menyelesaikan akar masalah."
+      },
+      "4_plausibility_semua_opsi": {
+        "status": "PASS",
+        "hasil": "Seluruh opsi tetap profesional dan dapat dipilih oleh peserta yang melakukan sebagian reasoning dengan benar. Tidak terdapat opsi yang sengaja dibuat absurd."
+      },
+      "5_context_dependency_dan_pivot_fact": {
+        "status": "PASS",
+        "hasil": "Setiap butir memiliki pivot seperti tersedianya mekanisme koreksi, kapasitas layanan, dampak keputusan, tingkat materialitas, dependency antartim, akses data, tahap risiko sosial, atau kondisi kewenangan."
+      },
+      "6_authority_rules_risk_proportionality": {
+        "status": "PASS",
+        "hasil": "Pertimbangan tersebut digunakan hanya ketika relevan. Authority dan procedural integrity dominan pada Pelayanan dan Profesionalisme; risk/access/materiality dominan pada TIK; proportionality dan social context dominan pada Sosial Budaya serta Anti Radikalisme."
+      },
+      "7_hots_alami": {
+        "status": "PASS",
+        "hasil": "Paket menggunakan competing positives, dynamic reprioritization, decision under incomplete information, dependency management, trade-off between flexibility and control, root-cause diagnosis, serta escalation threshold."
+      },
+      "8_ketahanan_terhadap_tebakan_tekstual": {
+        "status": "PASS",
+        "hasil": "Distribusi kunci tepat 9-9-9-9-9. Tidak terdapat pola konsisten antara skor 5 dan panjang, jumlah tindakan, formalitas, atau kelengkapan opsi."
+      },
+      "9_konsistensi_pembahasan": {
+        "status": "PASS",
+        "hasil": "Setiap opsi dijelaskan berdasarkan kelebihan dan kekurangannya dalam konteks. Overall explanation selalu menghubungkan masalah, pertimbangan, ranking, dan micro-rule."
+      },
+      "10_duplikasi_dengan_paket_1_2_3_4": {
+        "status": "PASS",
+        "hasil": "Tidak ditemukan duplikasi substansial atas skenario spesifik sebelumnya seperti antrean kebutuhan keluarga, gangguan printer, akses folder PII, dashboard versus manual data, AI transcript, single-contact transition, symbol identity, hybrid version control, atau ancaman kekerasan spesifik. Konsep yang berulang digunakan melalui konteks dan pivot baru."
+      },
+      "11_transfer_value_dan_micro_rule": {
+        "status": "PASS",
+        "hasil": "Seluruh soal menghasilkan prinsip operasional yang dapat ditransfer ke skenario lain."
+      },
+      "12_distribusi_subtest_key_difficulty": {
+        "status": "PASS",
+        "hasil": "Distribusi sesuai blueprint Paket 5: 8/8/7/7/9/6. Distribusi kunci sempurna 9 per huruf. Difficulty berjumlah 11 medium, 25 hard, 9 very hard."
+      }
+    },
+    "audit_per_soal": [
+      {
+        "id": "P5-001",
+        "status": "PASS",
+        "ranking": "1-3-5-4-2",
+        "alasan": "Tersedianya mekanisme pembaruan membuat koreksi langsung lebih tepat daripada menunda atau mengulang proses."
+      },
+      {
+        "id": "P5-002",
+        "status": "PASS",
+        "ranking": "5-1-3-4-2",
+        "alasan": "Fleksibilitas digunakan hanya pada tahap yang memang tersedia dan tidak menciptakan janji palsu."
+      },
+      {
+        "id": "P5-003",
+        "status": "PASS",
+        "ranking": "2-3-5-4-1",
+        "alasan": "Redistribusi selektif lebih proporsional daripada memindahkan seluruh antrean atau menghentikan layanan."
+      },
+      {
+        "id": "P5-004",
+        "status": "PASS",
+        "ranking": "5-2-3-4-1",
+        "alasan": "Pemohon membutuhkan informasi terbaru sekarang; pembaruan media tetap harus berjalan paralel."
+      },
+      {
+        "id": "P5-005",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Bantuan diberikan pada titik hambatan tanpa mengambil alih keputusan pengguna."
+      },
+      {
+        "id": "P5-006",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Masalah lintas unit ditangani melalui perbaikan interface, bukan dengan membebankan konflik kepada pengguna."
+      },
+      {
+        "id": "P5-007",
+        "status": "PASS",
+        "ranking": "5-3-1-4-2",
+        "alasan": "Accommodation mengubah cara akses tetapi tidak menurunkan kontrol verifikasi."
+      },
+      {
+        "id": "P5-008",
+        "status": "PASS",
+        "ranking": "3-5-2-4-1",
+        "alasan": "Tahap risiko mendukung evidence-based feedback dan monitoring, belum otomatis sanksi."
+      },
+      {
+        "id": "P5-009",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Dependency dikelola melalui waktu realistis dan kebutuhan minimum."
+      },
+      {
+        "id": "P5-010",
+        "status": "PASS",
+        "ranking": "2-4-5-3-1",
+        "alasan": "Konflik format dipecah berdasarkan kebutuhan aktivitas, bukan preferensi unit."
+      },
+      {
+        "id": "P5-011",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Bottleneck struktural diselesaikan dengan distribusi komunikasi sesuai peran."
+      },
+      {
+        "id": "P5-012",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Kredit dinilai berdasarkan evidence sambil mempertahankan keberhasilan sebagai hasil tim."
+      },
+      {
+        "id": "P5-013",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Transfer knowledge difokuskan pada pengetahuan kritis, bukan dokumentasi tanpa prioritas."
+      },
+      {
+        "id": "P5-014",
+        "status": "PASS",
+        "ranking": "1-5-3-4-2",
+        "alasan": "Decision quality memerlukan informasi sebanding sebelum membandingkan alternatif."
+      },
+      {
+        "id": "P5-015",
+        "status": "PASS",
+        "ranking": "2-5-3-4-1",
+        "alasan": "Trust repair dilakukan pada titik proses yang membuat satu unit tidak terlibat."
+      },
+      {
+        "id": "P5-016",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Collaboration dibatasi pada bagian yang relevan dengan dependency proyek."
+      },
+      {
+        "id": "P5-017",
+        "status": "PASS",
+        "ranking": "3-5-2-4-1",
+        "alasan": "Perbedaan gaya diterjemahkan menjadi information standard yang objektif."
+      },
+      {
+        "id": "P5-018",
+        "status": "PASS",
+        "ranking": "2-5-3-4-1",
+        "alasan": "Networking dinilai dari kemampuan menghasilkan outcome bersama, bukan frekuensi interaksi."
+      },
+      {
+        "id": "P5-019",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Expertise tetap digunakan tetapi dependency pada satu ahli dikurangi."
+      },
+      {
+        "id": "P5-020",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Kecepatan dicapai melalui pembedaan decision authority, bukan penghapusan kontrol."
+      },
+      {
+        "id": "P5-021",
+        "status": "PASS",
+        "ranking": "3-5-2-4-1",
+        "alasan": "Standar kualitas disesuaikan dengan materiality penggunaan data."
+      },
+      {
+        "id": "P5-022",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Kegagalan target diatasi dengan sinkronisasi dependency, bukan sekadar menambah tekanan."
+      },
+      {
+        "id": "P5-023",
+        "status": "PASS",
+        "ranking": "2-5-3-4-1",
+        "alasan": "Informal networking tetap dipakai, tetapi informasi yang menjadi dasar keputusan resmi diformalkan."
+      },
+      {
+        "id": "P5-024",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Keterbatasan kerahasiaan ditangani dengan output yang dapat dibagi, bukan membuka data mentah."
+      },
+      {
+        "id": "P5-025",
+        "status": "PASS",
+        "ranking": "4-5-3-2-1",
+        "alasan": "Ambiguitas kewenangan membutuhkan penelusuran authority sebelum keputusan."
+      },
+      {
+        "id": "P5-026",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Diversifikasi kanal komunikasi meningkatkan inclusiveness tanpa mengorbankan validasi."
+      },
+      {
+        "id": "P5-027",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Kebiasaan lokal dinilai berdasarkan dampak pada tujuan, bukan label disiplin."
+      },
+      {
+        "id": "P5-028",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Informasi kelompok yang tidak nyaman berbicara tetap perlu masuk keputusan melalui mekanisme yang aman."
+      },
+      {
+        "id": "P5-029",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Pembagian fungsional ruang menyelesaikan kebutuhan berbeda tanpa mengorbankan salah satu pihak."
+      },
+      {
+        "id": "P5-030",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Stereotip positif diatasi melalui rotasi berbasis kemampuan dan dukungan."
+      },
+      {
+        "id": "P5-031",
+        "status": "PASS",
+        "ranking": "2-5-3-4-1",
+        "alasan": "Materiality menentukan intensitas verifikasi data."
+      },
+      {
+        "id": "P5-032",
+        "status": "PASS",
+        "ranking": "1-5-3-4-2",
+        "alasan": "Perubahan role harus memicu rights review dan least privilege."
+      },
+      {
+        "id": "P5-033",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Root cause input data didahulukan dari akuisisi teknologi."
+      },
+      {
+        "id": "P5-034",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Traceability lebih penting selama substansi dokumen belum final."
+      },
+      {
+        "id": "P5-035",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Deduplication memerlukan identifier matching sebelum deletion."
+      },
+      {
+        "id": "P5-036",
+        "status": "PASS",
+        "ranking": "1-5-4-3-2",
+        "alasan": "Privacy dilindungi melalui data minimization tanpa menghilangkan fungsi notifikasi."
+      },
+      {
+        "id": "P5-037",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Readiness teknologi diuji melalui kasus kerja nyata dan exception handling."
+      },
+      {
+        "id": "P5-038",
+        "status": "PASS",
+        "ranking": "1-5-3-4-2",
+        "alasan": "Prioritas didasarkan pada consequence dan deadline, dengan expectation management pada tugas lain."
+      },
+      {
+        "id": "P5-039",
+        "status": "PASS",
+        "ranking": "1-5-4-2-3",
+        "alasan": "Localized correction lebih proporsional daripada menghapus atau menahan seluruh laporan."
+      },
+      {
+        "id": "P5-040",
+        "status": "PASS",
+        "ranking": "5-2-4-3-1",
+        "alasan": "Informasi yang relevan terhadap biaya harus tetap disampaikan secara proporsional."
+      },
+      {
+        "id": "P5-041",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Coaching dan ownership lebih baik daripada mengambil alih pekerjaan yang masih aman diperbaiki."
+      },
+      {
+        "id": "P5-042",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Efisiensi tidak boleh dicapai dengan melewati kontrol prosedural; perbaikan dilakukan melalui jalur resmi."
+      },
+      {
+        "id": "P5-043",
+        "status": "PASS",
+        "ranking": "2-5-4-3-1",
+        "alasan": "Disclosure dan role management lebih kuat daripada sekadar self-assessed objectivity."
+      },
+      {
+        "id": "P5-044",
+        "status": "PASS",
+        "ranking": "2-5-3-1-4",
+        "alasan": "Koreksi pada record resmi harus transparan meskipun keputusan substantif tidak berubah."
+      },
+      {
+        "id": "P5-045",
+        "status": "PASS",
+        "ranking": "2-5-4-1-3",
+        "alasan": "Polarisasi awal ditangani melalui dialog terstruktur dan verifikasi informasi, bukan pembungkaman atau pemisahan permanen."
+      }
+    ],
+    "soal_paling_berisiko": [
+      {
+        "id": "P5-014",
+        "alasan": "B dan D sama-sama tampak hati-hati. Pembeda utama adalah kualitas keputusan berdasarkan informasi yang dapat diverifikasi versus estimasi."
+      },
+      {
+        "id": "P5-020",
+        "alasan": "B, C, dan E seluruhnya dapat terasa profesional. Kunci terletak pada pembedaan jenis keputusan dan kebutuhan persetujuan, bukan memilih antara cepat atau formal secara biner."
+      },
+      {
+        "id": "P5-021",
+        "alasan": "Sangat mudah memilih standar kualitas tertinggi sebagai jawaban aman. Ranking yang benar membutuhkan pemahaman materiality dan risk-based quality control."
+      },
+      {
+        "id": "P5-025",
+        "alasan": "A dan B sama-sama dapat menghilangkan kebuntuan, tetapi B lebih kuat karena authority ditelusuri dan didokumentasikan sebelum keputusan."
+      },
+      {
+        "id": "P5-035",
+        "alasan": "Kasus deduplication dapat memancing shortcut berdasarkan nama yang sama. Pivot berada pada kebutuhan identity matching sebelum penghapusan."
+      },
+      {
+        "id": "P5-040",
+        "alasan": "A dan C dekat. Pembeda terletak pada kewajiban menyampaikan informasi yang relevan terhadap variasi biaya tanpa menunggu pertanyaan lanjutan."
+      },
+      {
+        "id": "P5-044",
+        "alasan": "Kesalahan kecil setelah keputusan dapat dianggap tidak perlu diperbaiki. Justru karena angka masuk notulen, record integrity menjadi faktor utama."
+      },
+      {
+        "id": "P5-045",
+        "alasan": "Kasus masih berada pada tahap polarisasi sehingga peserta harus menahan dorongan membungkam isu atau melakukan eskalasi yang tidak proporsional."
+      }
+    ],
+    "ringkasan_kelemahan_pola_tingkat_paket": {
+      "status": "MINOR",
+      "temuan": [
+        "Paket 5 meningkatkan variasi dari paket sebelumnya dengan lebih banyak situasi dependency, role transition, decision rights, information asymmetry, institutional memory, dan post-decision correction.",
+        "Pelayanan Publik masih cukup kuat pada continuity, accessibility, service recovery, dan quality control. Paket berikutnya dapat memperluas ke citizen complaint escalation, multi-channel service, dan kasus ketika keputusan pelayanan berdampak pada reputasi institusi.",
+        "Jejaring Kerja sudah relatif luas, tetapi beberapa butir tetap memakai struktur konflik antardua unit. Paket berikutnya perlu lebih banyak kasus multi-party coordination agar jejaring tidak selalu berbentuk bilateral.",
+        "Sosial Budaya semakin beragam melalui forum, bahasa komunikasi, stereotip positif, kebutuhan ruang, dan cara menyampaikan kebutuhan. Namun, akomodasi budaya masih menjadi salah satu pola yang cukup sering dan harus diseimbangkan dengan konteks keluarga, pendidikan, dan layanan publik.",
+        "TIK telah bergerak dari sekadar verification menuju access lifecycle, data identity, document traceability, privacy by design, integration, dan change readiness. Pola root-cause reasoning masih dominan tetapi sesuai karakter subtes.",
+        "Profesionalisme paling banyak memuat integrity, quality, priority, conflict of interest, dan corrective accountability sesuai blueprint. Agar tidak terlalu berulang, paket berikutnya sebaiknya memperluas leadership, delegation, stakeholder pressure, dan long-term performance management.",
+        "Anti Radikalisme hanya enam butir sesuai blueprint, tetapi tetap mencakup prevention dan escalation. Variasi konteks non-media sosial mulai ditingkatkan dan perlu terus dipertahankan."
+      ],
+      "tindakan": "Tidak ada butir yang memerlukan REVISE atau REBUILD."
+    },
+    "kesimpulan": {
+      "layak_dipertahankan": true,
+      "alasan": "Paket 5 memenuhi distribusi blueprint 8/8/7/7/9/6, distribusi kunci sempurna 9-9-9-9-9, serta difficulty 11 medium, 25 hard, dan 9 very hard. Tidak ditemukan masalah substantif pada ranking, uniqueness of score 5, plausibility, context dependency, authority, risk, proportionality, HOTS, atau konsistensi pembahasan.",
+      "arah_paket_selanjutnya": "Paket 6 sebaiknya lebih banyak menggunakan keputusan yang berubah setelah informasi baru muncul, konteks kepemimpinan langsung, multi-stakeholder conflict, dan kondisi ketika tindakan pertama peserta ternyata menimbulkan konsekuensi baru sehingga peserta harus memilih respons tahap kedua."
+    }
+  }
+}

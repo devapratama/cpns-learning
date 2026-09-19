@@ -6,8 +6,7 @@
    benar, apa pun kedalaman foldernya.
 
    Fitur:
-   - Inisialisasi header/navbar (brand, navigasi, toggle tema)
-   - Dark mode (simpan di localStorage, ikut preferensi sistem)
+   - Inisialisasi header/navbar (brand, navigasi)
    - Footer tahun otomatis
    ============================================================ */
 
@@ -34,7 +33,7 @@
   function headerHTML() {
     return [
       '<div class="container header-inner">',
-      '  <a class="brand" href="' + url("index.html") + '">',
+      '  <a class="brand" href="' + url("index.html") + '" aria-label="CPNS Learning — Beranda">',
       '    <span class="brand-mark" aria-hidden="true"></span>',
       '    <span class="brand-text">CPNS Learning</span>',
       "  </a>",
@@ -49,7 +48,6 @@
       '      <li><a href="' + url("index.html") + '">Beranda</a></li>',
       '      <li><a href="' + url("index.html") + '#kategori">Kategori</a></li>',
       "    </ul>",
-      '    <button class="theme-toggle" type="button" aria-pressed="false">Mode Gelap</button>',
       "  </nav>",
       "</div>",
     ].join("\n");
@@ -85,42 +83,6 @@
     });
   }
 
-  /* ---------- Dark mode ---------- */
-  function initTheme() {
-    var button = document.querySelector(".theme-toggle");
-    var stored = null;
-    try {
-      stored = localStorage.getItem("cpns-theme");
-    } catch (e) {
-      /* localStorage mungkin tidak tersedia; abaikan */
-    }
-    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    var desired = stored || (prefersDark ? "dark" : "light");
-    applyTheme(desired);
-
-    if (button) {
-      button.addEventListener("click", function () {
-        var current = document.documentElement.getAttribute("data-theme");
-        var next = current === "dark" ? "light" : "dark";
-        applyTheme(next);
-        try {
-          localStorage.setItem("cpns-theme", next);
-        } catch (e) {
-          /* abaikan */
-        }
-      });
-    }
-  }
-
-  function applyTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    var button = document.querySelector(".theme-toggle");
-    if (button) {
-      button.textContent = theme === "dark" ? "Mode Terang" : "Mode Gelap";
-      button.setAttribute("aria-pressed", String(theme === "dark"));
-    }
-  }
-
   /* ---------- Footer tahun ---------- */
   function setYear() {
     var el = document.getElementById("year");
@@ -130,7 +92,6 @@
   document.addEventListener("DOMContentLoaded", function () {
     mountCommon();
     initNav();
-    initTheme();
     setYear();
   });
 })();

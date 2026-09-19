@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul 01 — Peta Besar TWK | Materi TWK | CPNS Learning</title>
+<meta name="description" content="Modul fondasi untuk memahami apa sebenarnya TWK, bagaimana materi menjadi konsep, bagaimana soal dibentuk, dan bagaimana memilih jawaban yang paling tepat.">
+<style>
+:root{
+  --bg:#08101d; --panel:#101a2b; --panel2:#14223a; --soft:#1b2c49;
+  --text:#edf3fc; --muted:#a9b7ce; --line:#2b3c59;
+  --blue:#80adff; --mint:#90dfc3; --gold:#e7c779; --red:#e6a0a0;
+  --radius:20px; --shadow:0 24px 75px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 8% 0%,#182849 0,transparent 30%),
+    radial-gradient(circle at 93% 10%,#123d3c 0,transparent 25%),
+    var(--bg);
+  color:var(--text);
+  font:16px/1.8 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,calc(100% - 34px));margin:auto}
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:100}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--mint))}
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(8,16,29,.84);backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.06)
+}
+.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:850}.brand span{color:var(--blue)}
+.navlinks{display:flex;gap:15px;overflow:auto;white-space:nowrap;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--text)}
+.hero{padding:80px 0 66px}
+.hero-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:28px;align-items:stretch}
+.eyebrow{
+  display:inline-flex;font-size:12px;font-weight:850;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--mint)
+}
+h1{font-size:clamp(42px,6vw,74px);line-height:1.01;letter-spacing:-.05em;margin:14px 0 23px}
+h2{font-size:clamp(30px,4.1vw,45px);line-height:1.08;letter-spacing:-.03em;margin:8px 0 13px}
+h3{font-size:21px;line-height:1.25;margin:0 0 9px}
+.lead{font-size:20px;color:#d6e0f2;max-width:900px}
+.hero-card,.card,.story,.worked,.callout,.contrast,.anchor,.sourcebox{
+  background:linear-gradient(160deg,rgba(20,31,52,.96),rgba(12,20,35,.96));
+  border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius)
+}
+.hero-card{padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-card .big{font-size:38px;line-height:1.06;letter-spacing:-.04em;font-weight:850;margin:14px 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{
+  padding:6px 10px;border-radius:999px;background:#172640;
+  border:1px solid #344766;font-size:12px;color:#dae6f7
+}
+.section{padding:54px 0}
+.section.alt{background:rgba(255,255,255,.016);border-block:1px solid rgba(255,255,255,.05)}
+.section-head{display:grid;grid-template-columns:1fr .75fr;gap:35px;align-items:end;margin-bottom:25px}
+.section-head p{margin:0;color:var(--muted)}
+.story,.worked,.callout,.sourcebox{padding:28px;margin:20px 0}
+.meta{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);font-weight:850;margin-bottom:8px}
+.quote{font-size:24px;line-height:1.42;border-left:4px solid var(--mint);padding:12px 18px;margin:22px 0}
+.rule{border-left:3px solid var(--blue);padding:14px 17px;background:#111b30;border-radius:0 14px 14px 0;margin:19px 0}
+.triple{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{padding:23px}.card p:last-child{margin-bottom:0}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:23px 0}
+.flow div{padding:18px 13px;text-align:center;border:1px solid var(--line);background:#111a2b;border-radius:15px}
+.flow b{display:block}.flow span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
+.stage{display:grid;grid-template-columns:repeat(8,1fr);gap:7px;margin:22px 0}
+.stage div{min-height:92px;padding:13px 8px;border:1px solid var(--line);background:#111a2b;border-radius:14px;text-align:center}
+.stage b{display:block;font-size:12px}.stage span{display:block;font-size:10px;color:var(--muted);margin-top:5px}
+.definition{
+  display:grid;grid-template-columns:190px 1fr;gap:16px;padding:18px 0;
+  border-bottom:1px dashed #33425d
+}
+.definition:last-child{border-bottom:0}
+.term{font-weight:850;color:#dce7fa}.term small{display:block;color:var(--muted);font-size:11px;font-weight:500}
+.matrix{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:20px 0}
+.matrix>div{padding:15px;background:#111a2b}.matrix .head{background:#18253f;font-weight:850}.focus{color:var(--mint);font-weight:760}
+.storyboard{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.storyboard .card{min-height:220px}
+.good{border-color:#3d7567;background:linear-gradient(160deg,#132c29,#0f1d24)}
+.near{border-color:#6b583b;background:linear-gradient(160deg,#282318,#151a24)}
+.tag{display:inline-block;padding:5px 8px;border-radius:999px;background:#1b2944;border:1px solid #354766;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:850;margin-bottom:10px}
+.worked .step-list{counter-reset:s}
+.step{counter-increment:s;position:relative;padding:15px 0 15px 43px;border-bottom:1px dashed #33425d}
+.step:last-child{border:0}.step:before{
+  content:counter(s);position:absolute;left:0;top:14px;width:28px;height:28px;
+  border-radius:50%;display:grid;place-items:center;background:#1d2b47;font-weight:850
+}
+.anchor{padding:23px;border-color:#425779}.anchor h3{color:#d9e6fb}
+.contrast{padding:23px}
+.contrast h3{margin-bottom:10px}
+.contrast.good{border-color:#3e7667}.contrast.near{border-color:#725c3b}
+.protocol{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:22px 0}
+.protocol div{padding:16px 9px;text-align:center;border:1px solid var(--line);background:#111a2b;border-radius:14px}
+.protocol b{display:block;font-size:13px}.protocol span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.check{padding:16px 18px;border:1px solid var(--line);background:#111a2b;border-radius:14px}
+.check:before{content:"□";color:var(--mint);font-size:20px;margin-right:9px}
+.sourcebox a{text-decoration:underline;text-underline-offset:3px;color:#b3caff}
+.fine{font-size:12px;color:#8f9bb0}
+.footer{padding:55px 0 90px;color:var(--muted)}
+@media(max-width:1000px){
+  .hero-grid,.section-head,.columns,.storyboard{grid-template-columns:1fr}
+  .triple{grid-template-columns:1fr 1fr}.stage{grid-template-columns:repeat(4,1fr)}
+  .protocol{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:680px){
+  .container{width:calc(100% - 22px)}.hero{padding-top:50px}h1{font-size:43px}.lead{font-size:18px}
+  .navlinks{display:none}.section{padding:43px 0}.triple{grid-template-columns:1fr}
+  .stage{grid-template-columns:1fr 1fr}.protocol{grid-template-columns:1fr 1fr}
+  .definition{grid-template-columns:1fr;gap:4px}.matrix{grid-template-columns:1fr}.checks{grid-template-columns:1fr}
+}
+</style>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
+  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
+  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
+  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
+  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
+  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
+  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
+  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
+  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
+  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
+}
+
+/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
+.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
+.cpns-crumb a{color:var(--accent);text-decoration:none;}
+.cpns-crumb a:hover{text-decoration:underline;}
+.cpns-crumb .sep{color:var(--line);}
+.cpns-crumb .cur{color:var(--muted);}
+.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
+.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
+.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
+.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
+.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
+.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
+.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
+.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
+.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
+.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
+body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
+img{max-width:100%;height:auto;border-radius:8px;}
+table{max-width:100%;}
+@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
+
+/* ===== harmonisasi dari tema gelap ke terang (Modul 01-02) ===== */
+body{margin:0;background:var(--paper)!important;color:var(--ink)!important;}
+body::before,body::after{display:none;}
+.topbar{background:rgba(243,245,239,.92)!important;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)!important;color:var(--ink);}
+.brand{color:var(--ink);} .brand span{color:var(--accent);}
+.navlinks{color:var(--muted);} .navlinks a{color:var(--muted);} .navlinks a:hover{color:var(--ink);}
+.eyebrow{color:var(--accent);} .kicker{color:var(--accent2);} .meta{color:var(--accent2);}
+.lead{color:var(--muted);}
+.hero-card,.card,.story,.worked,.callout,.contrast,.anchor,.sourcebox,.compare-card,.checkpoint,.node,.tbody,
+.timeline .tbody,.mini-diagram div,.option,.rule,.flow div,.stage div,.protocol div,.check,.matrix>div,.logbox{
+  background:#FFFFFF!important;border:1px solid var(--line)!important;
+  box-shadow:var(--shadow);color:var(--ink);
+}
+.pill,.pill2,.badge,.tag{background:var(--soft)!important;border:1px solid var(--line)!important;color:var(--ink);}
+.pill b,.tag b{color:var(--ink);}
+.section.alt{background:rgba(31,36,48,.02)!important;border-block:1px solid var(--line)!important;}
+.flow div,.stage div,.protocol div{border:1px solid var(--line);}
+.stage b,.flow b,.mini-diagram b{color:var(--ink);} .stage span,.flow span,.mini-diagram span{color:var(--muted);}
+.matrix{background:var(--line);border:1px solid var(--line);}
+.matrix>div{background:#fff;} .matrix .head{background:var(--soft);color:var(--ink);}
+.focus{color:var(--accent2);}
+.term{color:var(--ink);} .term small{color:var(--muted);}
+.good{border-color:var(--good)!important;background:var(--greenSoft)!important;}
+.near{border-color:var(--gold)!important;background:var(--goldSoft)!important;}
+.contrast.good{border-color:var(--good);background:var(--greenSoft)!important;}
+.contrast.near{border-color:var(--gold);background:var(--goldSoft)!important;}
+.step:before,.step-row:before{background:var(--accent-soft,#E6E9F2);color:var(--accent);border:1px solid var(--accent);}
+.step,.step-row,.definition{border-bottom:1px dashed var(--line)!important;}
+.anchor{border-color:var(--line);} .anchor h3{color:var(--ink);}
+.sourcebox a,.sourcebox a:visited{color:var(--accent);}
+.fine{color:#8A93A5;}
+.dot{border-color:var(--accent);background:var(--soft);color:var(--accent);}
+.timeline:before{background:var(--line);}
+.keyline{color:var(--ink);}
+.badge{background:var(--soft);color:var(--accent);}
+table th{color:var(--ink);background:var(--soft);}
+.option{border:1px solid var(--line);} .option.key{border-color:var(--good);background:var(--greenSoft);} .option.near{border-color:var(--gold);background:var(--goldSoft);}
+.section-nav a{color:var(--accent);border:1px solid var(--line);}
+.quote{color:var(--ink);border-left-color:var(--accent);}
+.footer{color:var(--muted);}
+.arrow{display:none;}
+
+</style>
+</head>
+<body>
+<nav class="cpns-crumb" aria-label="Breadcrumb">
+  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+  <a href="../../index.html">TWK</a><span class="sep">/</span>
+  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+  <span class="cur">Modul 01</span>
+</nav>
+
+
+<div class="progress"><span id="bar"></span></div>
+
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand">Ultimate <span>TWK</span> Knowledge System</div>
+    <nav class="navlinks">
+      <a href="#masalah">Masalah</a>
+      <a href="#konsep">Konsep</a>
+      <a href="#cerita">Satu cerita</a>
+      <a href="#bahasa">Bahasa soal</a>
+      <a href="#gravity">Gravity center</a>
+      <a href="#opsi">Opsi</a>
+      <a href="#peta">Concept map</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="eyebrow">MODUL 01 · PETA BESAR TWK</span>
+    <h1>“Saya tahu kata-katanya. Mengapa semua opsi terasa benar?”</h1>
+    <p class="lead">
+      Ini adalah pertanyaan awal yang lebih penting daripada “materi TWK apa saja?”.
+      Banyak peserta sudah mengenal Pancasila, UUD, sejarah, nasionalisme, dan bela negara,
+      tetapi masih kesulitan ketika soal menyajikan lima pilihan yang semuanya tampak baik.
+    </p>
+    <p>
+      Modul ini akan membangun satu kemampuan inti:
+      <strong>melihat struktur di balik soal</strong>—bukan hanya mengenali kata.
+    </p>
+  </div>
+  <aside class="hero-card">
+    <div>
+      <div class="eyebrow">Target akhir</div>
+      <div class="big">Dari “tahu materi” menjadi “tahu apa yang sedang diuji”.</div>
+      <p class="muted">
+        Kita akan bergerak dari pengetahuan, ke konsep, ke hubungan, ke konteks,
+        ke bahasa soal, lalu ke diskriminasi jawaban.
+      </p>
+    </div>
+    <div class="pills">
+      <span class="pill">Pengetahuan</span><span class="pill">Konsep</span><span class="pill">Konteks</span>
+      <span class="pill">Aktor</span><span class="pill">Scope</span><span class="pill">Gravity center</span>
+      <span class="pill">Distractor</span><span class="pill">Directness</span>
+    </div>
+  </aside>
+</div>
+</section>
+
+<section class="section" id="masalah">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">KITA MULAI DARI PENGALAMAN</span><h2>Kenapa peserta yang “tahu materi” tetap bisa bingung?</h2></div>
+    <p>Karena mengetahui sebuah kata tidak sama dengan memahami hubungan yang membuat kata itu tepat dalam konteks tertentu.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Situasi konkret</div>
+    <p>Bayangkan Anda membaca stimulus: sekelompok siswa dari berbagai daerah mengadakan kegiatan bersama. Mereka menghormati perbedaan, berdiskusi sebelum mengambil keputusan, menggalang bantuan, dan menjaga agar tidak terjadi konflik.</p>
+    <p>Anda bisa melihat banyak hal positif. Ada yang terasa seperti <strong>persatuan</strong>, ada <strong>toleransi</strong>, ada <strong>musyawarah</strong>, bahkan bisa muncul <strong>kemanusiaan</strong> atau <strong>integritas</strong>.</p>
+    <p>Lalu pertanyaan bertanya satu hal yang sangat spesifik: <em>“Tindakan tersebut paling mencerminkan prinsip apa dalam pengambilan keputusan bersama?”</em></p>
+    <p>Di sinilah persoalan sebenarnya muncul. Anda tidak lagi ditanya apakah tindakan itu baik. Anda ditanya <strong>konsep mana yang paling langsung menjelaskan bagian tertentu dari cerita</strong>.</p>
+  </div>
+
+  <div class="quote">
+    <strong>TWK bukan selalu ujian “benar atau salah”.</strong>
+    Sering kali ia menjadi ujian “di antara beberapa hal yang benar, mana yang paling tepat terhadap struktur pertanyaan?”
+  </div>
+
+  <div class="columns">
+    <article class="card">
+      <span class="tag">Masalah 1</span>
+      <h3>Tahu istilah, tetapi tidak tahu batas</h3>
+      <p>Anda tahu “persatuan”. Tetapi apakah semua kerja sama adalah persatuan? Apakah semua tindakan toleran adalah persatuan? Apakah membuat semua orang sama adalah persatuan?</p>
+    </article>
+    <article class="card">
+      <span class="tag">Masalah 2</span>
+      <h3>Tahu konsep, tetapi salah membaca pertanyaan</h3>
+      <p>Anda mengenal sila keempat, tetapi pertanyaan ternyata menanyakan dampak kebijakan, bukan proses pengambilan keputusan. Konsep yang benar dapat jatuh karena level pertanyaannya salah.</p>
+    </article>
+  </div>
+
+  <div class="rule">
+    <strong>Pelajaran pertama:</strong> jangan mengejar kata jawaban sebelum memahami <em>apa yang sebenarnya diminta oleh pertanyaan</em>.
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">PERJALANAN BELAJAR</span><h2>Dari belum tahu sampai mampu mendiskriminasi jawaban</h2></div>
+    <p>Enam perubahan kemampuan ini akan dipakai lagi di semua modul berikutnya.</p>
+  </div>
+
+  <div class="stage">
+    <div><b>1 · BELUM TAHU</b><span>kata-kata terasa asing</span></div>
+    <div><b>2 · TAHU</b><span>mengenali nama/definisi</span></div>
+    <div><b>3 · PAHAM</b><span>mengerti contoh dan alasan</span></div>
+    <div><b>4 · BANDINGKAN</b><span>membedakan konsep tetangga</span></div>
+    <div><b>5 · PETAKAN</b><span>membaca stimulus dan bahasa</span></div>
+    <div><b>6 · DISKRIMINASI</b><span>memilih yang paling tepat</span></div>
+    <div><b>7 · TRANSFER</b><span>konsep tetap bekerja dalam konteks baru</span></div>
+    <div><b>8 · AUDIT</b><span>menilai apakah soal/opsi sendiri aman</span></div>
+  </div>
+
+  <div class="story">
+    <div class="meta">Contoh sederhana</div>
+    <p>Belajar istilah “musyawarah” berada pada level <strong>tahu</strong>. Mampu menjelaskan mengapa pembicaraan bersama berbeda dari pemaksaan berada pada level <strong>paham</strong>. Mampu membedakan musyawarah dari voting dalam berbagai konteks masuk level <strong>bandingkan</strong>. Mampu membaca soal dan menemukan bahwa pertanyaan sebenarnya menyoroti <em>proses</em>, bukan hasil, masuk level <strong>petakan</strong>. Mampu menjelaskan mengapa opsi A lebih langsung daripada B meskipun B juga baik masuk level <strong>diskriminasi</strong>.</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="konsep">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">MATERI ≠ KONSEP</span><h2>Mulai dari membedakan apa yang kita pelajari</h2></div>
+    <p>Satu materi bisa menghasilkan banyak konsep. Satu konsep dapat muncul dalam banyak materi.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Contoh</div>
+    <p>“Pancasila” adalah <strong>materi/bidang pengetahuan</strong>. Tetapi dari materi Pancasila kita dapat membahas konsep ketuhanan, kemanusiaan, persatuan, kerakyatan, keadilan, nilai, norma, implementasi, hubungan antarsila, dan seterusnya.</p>
+    <p>“Sejarah” juga merupakan bidang yang sangat luas. Dari satu peristiwa sejarah, kita dapat menguji tokoh, tujuan, sebab, akibat, makna, nilai, atau aplikasi modern.</p>
+    <p>Jadi ketika soal menyebut sebuah materi, jangan langsung menyimpulkan bahwa seluruh materi itu sedang diuji.</p>
+  </div>
+
+  <div class="columns">
+    <article class="card">
+      <h3>Materi</h3>
+      <p>Bidang pengetahuan yang menjadi tempat kita mengambil fakta dan konsep.</p>
+      <p><strong>Contoh:</strong> Pancasila, UUD, sejarah kebangsaan, nasionalisme, bela negara, integritas.</p>
+    </article>
+    <article class="card">
+      <h3>Konsep</h3>
+      <p>Gagasan yang lebih spesifik yang digunakan untuk memahami suatu fenomena.</p>
+      <p><strong>Contoh:</strong> persatuan, kedaulatan, musyawarah, keadilan, kewarganegaraan, integrasi.</p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <div class="meta">Istilah berikutnya</div>
+    <h3>Indikator = tanda konkret yang menunjukkan bahwa konsep sedang terjadi.</h3>
+    <p>Misalnya konsepnya adalah <strong>integritas</strong>. “Tetap jujur ketika tidak ada pengawasan” merupakan indikator perilaku yang jauh lebih konkret daripada hanya mengatakan “memiliki integritas”.</p>
+    <p>Indikator diperlukan karena soal tidak dapat menguji konsep abstrak tanpa memberikan bukti atau perilaku yang dapat diamati.</p>
+  </div>
+
+  <div class="matrix">
+    <div class="head">Lapisan</div><div class="head">Pertanyaan</div><div class="head">Contoh</div>
+    <div>Materi</div><div>“Bidang apa yang sedang dipelajari?”</div><div class="focus">Pancasila</div>
+    <div>Konsep</div><div>“Gagasan apa yang relevan?”</div><div class="focus">Persatuan</div>
+    <div>Indikator</div><div>“Tindakan apa yang menunjukkan konsep?”</div><div class="focus">Kelompok berbeda bekerja menuju satu tujuan tanpa menghapus identitas</div>
+    <div>Stimulus</div><div>“Cerita/bukti apa yang diberikan?”</div><div class="focus">Narasi kegiatan organisasi</div>
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">STIMULUS & KONTEKS</span><h2>Kenapa soal tidak langsung bertanya definisinya?</h2></div>
+    <p>Karena pembuat soal ingin melihat apakah Anda dapat memakai konsep, bukan sekadar mengucapkannya.</p>
+  </div>
+
+  <div class="storyboard">
+    <article class="card">
+      <span class="tag">Tanpa konteks</span>
+      <h3>“Apa itu integritas?”</h3>
+      <p>Ini terutama menguji kemampuan definisional.</p>
+    </article>
+    <article class="card good">
+      <span class="tag">Dengan konteks</span>
+      <h3>“Pegawai menemukan kesalahan data yang menguntungkan dirinya dan memilih melaporkannya.”</h3>
+      <p>Sekarang pembaca harus menghubungkan fakta tindakan dengan konsep.</p>
+    </article>
+  </div>
+
+  <div class="story">
+    <div class="meta">Apa itu stimulus?</div>
+    <p>Stimulus adalah bahan yang diberikan sebelum pertanyaan: cerita, fakta, pernyataan, kutipan, pasal, kronologi, tabel, kondisi, atau situasi.</p>
+    <p>Ia berfungsi sebagai <strong>bukti</strong> yang membatasi kemungkinan jawaban. Karena itu, target reasoning bukan membaca semua kalimat sebagai informasi yang sama penting. Anda harus menemukan detail yang menjadi evidence.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Apa itu konteks?</div>
+    <p>Konteks adalah keadaan yang membuat sebuah tindakan atau konsep memiliki makna tertentu. “Membatasi” dapat buruk dalam satu konteks tetapi sah dan perlu dalam konteks lain. “Voting” dapat relevan dalam satu prosedur, tetapi tidak otomatis menjelaskan semua bentuk pengambilan keputusan. “Menolong” dapat menjadi kebaikan umum, tetapi pertanyaan mungkin meminta keadilan distribusi.</p>
+  </div>
+
+  <div class="rule">
+    <strong>Jangan bertanya:</strong> “Apa kata paling mencolok di stimulus?”<br>
+    <strong>Tanyakan:</strong> “Detail apa yang mengubah makna tindakan dalam konteks ini?”
+  </div>
+</div>
+</section>
+
+<section class="section" id="cerita">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">SATU CERITA, BANYAK KONSEP</span><h2>Kita akan memakai satu cerita untuk melihat bagaimana soal berubah.</h2></div>
+    <p>Inilah latihan utama dalam modul ini: jangan mengubah ceritanya; ubah fokus pertanyaannya.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Cerita besar</div>
+    <p>Sebuah sekolah memiliki siswa dari banyak daerah dan keyakinan. Beberapa siswa ingin mengadakan festival budaya. Panitia memberi ruang bagi berbagai kelompok untuk menampilkan identitas mereka. Sebelum menentukan jadwal, panitia mengundang semua kelompok berdiskusi. Ketika dua kelompok berebut jadwal utama, panitia membuat mekanisme pembagian yang dapat dipertanggungjawabkan. Setelah festival berlangsung, seluruh siswa bekerja bersama dan tidak merendahkan kelompok lain.</p>
+  </div>
+
+  <div class="storyboard">
+    <article class="contrast good">
+      <span class="tag">Fokus A</span>
+      <h3>Keberagaman tetap ada tetapi menjadi satu kegiatan</h3>
+      <p><strong>Kandidat:</strong> persatuan/integrasi/Bhinneka.</p>
+      <p><strong>Evidence:</strong> banyak identitas + satu kegiatan bersama.</p>
+    </article>
+    <article class="contrast good">
+      <span class="tag">Fokus B</span>
+      <h3>Pihak berbeda diberi kesempatan menyampaikan pendapat</h3>
+      <p><strong>Kandidat:</strong> sila keempat/musyawarah.</p>
+      <p><strong>Evidence:</strong> proses sebelum keputusan.</p>
+    </article>
+    <article class="contrast good">
+      <span class="tag">Fokus C</span>
+      <h3>Jadwal dibagi berdasarkan pertimbangan yang adil</h3>
+      <p><strong>Kandidat:</strong> sila kelima/keadilan sosial.</p>
+      <p><strong>Evidence:</strong> distribusi akses terhadap fasilitas.</p>
+    </article>
+    <article class="contrast good">
+      <span class="tag">Fokus D</span>
+      <h3>Tidak ada kelompok yang dihina karena identitasnya</h3>
+      <p><strong>Kandidat:</strong> sila kedua/toleransi sesuai fokus.</p>
+      <p><strong>Evidence:</strong> perlakuan terhadap manusia/kelompok.</p>
+    </article>
+  </div>
+
+  <div class="worked">
+    <div class="meta">Worked reasoning</div>
+    <div class="step-list">
+      <div class="step"><strong>Langkah 1 — jangan pilih konsep dulu.</strong> Bacalah apa yang dilakukan dan siapa yang terlibat.</div>
+      <div class="step"><strong>Langkah 2 — cari problem.</strong> Apakah problemnya keberagaman, proses keputusan, pembagian fasilitas, atau perlakuan manusia?</div>
+      <div class="step"><strong>Langkah 3 — cari relasi.</strong> Siswa dengan siswa? Kelompok dengan kelompok? Panitia dengan peserta?</div>
+      <div class="step"><strong>Langkah 4 — lihat pertanyaan.</strong> “Mengapa”, “bagaimana”, “dampak”, “sikap”, dan “prinsip” dapat meminta level berbeda.</div>
+      <div class="step"><strong>Langkah 5 — pilih konsep yang paling langsung menjelaskan fokus tersebut.</strong></div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <strong>Konsep yang sama dapat hidup bersamaan.</strong>
+    Pertanyaanlah yang memberi tahu kita konsep mana yang menjadi pusat.
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="bahasa">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">BAHASA SOAL</span><h2>Kata-kata pertanyaan mengubah pekerjaan otak Anda</h2></div>
+    <p>Kata seperti “tujuan”, “dampak”, “upaya”, dan “sesuai” bukan hiasan. Ia memberi petunjuk tentang relasi yang harus dicari.</p>
+  </div>
+
+  <div class="matrix">
+    <div class="head">Bahasa pertanyaan</div><div class="head">Yang dicari</div><div class="head">Kesalahan umum</div>
+    <div><strong>Tujuan</strong></div><div class="focus">Mengapa tindakan dilakukan / end-state yang dikejar</div><div>Memilih akibat yang muncul setelahnya.</div>
+    <div><strong>Dampak / akibat</strong></div><div class="focus">Apa yang terjadi sebagai konsekuensi</div><div>Menjawab dengan tujuan awal.</div>
+    <div><strong>Upaya</strong></div><div class="focus">Tindakan sebagai jalan menuju hasil</div><div>Memilih hasil akhir.</div>
+    <div><strong>Sikap</strong></div><div class="focus">Postur/perilaku yang seharusnya dilakukan</div><div>Menjawab dengan definisi.</div>
+    <div><strong>Alasan</strong></div><div class="focus">Mengapa sesuatu dapat terjadi/ditetapkan</div><div>Memberi dampak yang tidak menjelaskan penyebab.</div>
+    <div><strong>Paling tepat</strong></div><div class="focus">Kandidat terbaik relatif terhadap semua opsi</div><div>Mencari opsi yang sekadar benar.</div>
+  </div>
+
+  <div class="storyboard">
+    <article class="card">
+      <span class="tag">Contoh 1</span>
+      <h3>“Bertujuan untuk...”</h3>
+      <p>Fokusnya adalah <strong>niat/fungsi yang hendak dicapai</strong>, bukan apa yang baru terjadi setelah tindakan.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Contoh 2</span>
+      <h3>“Dampaknya adalah...”</h3>
+      <p>Fokus bergeser ke <strong>konsekuensi</strong>. Opsi yang hanya menyebut tujuan dapat kalah meskipun benar secara umum.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Contoh 3</span>
+      <h3>“Sikap yang paling tepat...”</h3>
+      <p>Anda perlu mencari <strong>tindakan normatif</strong>, bukan sekadar menjelaskan apa yang sedang terjadi.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Contoh 4</span>
+      <h3>“Sesuai dengan...”</h3>
+      <p>Kata ini menuntut <strong>kesesuaian dengan kerangka</strong> yang disebut, bukan tindakan baik secara umum.</p>
+    </article>
+  </div>
+
+  <div class="rule"><strong>Bahasa soal = instruksi kerja.</strong> Baca kata tanya dan kata pembatas sebelum menilai opsi.</div>
+</div>
+</section>
+
+<section class="section" id="gravity">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">GRAVITY CENTER</span><h2>Apa sebenarnya “pusat gravitasi” sebuah soal?</h2></div>
+    <p>Istilah ini dipakai untuk menunjuk konsep/fokus yang paling menarik seluruh detail penting dalam stimulus dan pertanyaan.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Bahasa sederhana</div>
+    <p>Bayangkan sebuah ruangan berisi sepuluh benda. Lima benda berada di sekitar meja. Satu benda yang menjadi pusat perhatian tidak harus paling besar; ia adalah benda yang membuat hubungan benda-benda lain masuk akal.</p>
+    <p>Dalam soal TWK, gravity center bukan kata yang paling sering muncul. Ia adalah <strong>konsep yang paling mampu menjelaskan hubungan inti antara stimulus dan pertanyaan</strong>.</p>
+  </div>
+
+  <div class="protocol">
+    <div><b>01</b><span>Masalah</span></div>
+    <div><b>02</b><span>Tujuan</span></div>
+    <div><b>03</b><span>Aktor</span></div>
+    <div><b>04</b><span>Relasi</span></div>
+    <div><b>05</b><span>Kata tanya</span></div>
+    <div><b>06</b><span>Konsep pusat</span></div>
+  </div>
+
+  <div class="worked">
+    <div class="meta">Worked example · satu adegan, tiga gravity center</div>
+    <p><strong>Stimulus:</strong> pemerintah daerah mempertemukan dua kelompok yang berselisih dan meminta mereka menyepakati penggunaan fasilitas publik.</p>
+    <div class="step-list">
+      <div class="step"><strong>Jika pertanyaan:</strong> “Mengapa pemerintah mengadakan pertemuan?” → fokus dapat berada pada <strong>penyelesaian konflik/tujuan tindakan</strong>.</div>
+      <div class="step"><strong>Jika pertanyaan:</strong> “Bagaimana keputusan penggunaan fasilitas dibuat?” → fokus bergeser ke <strong>proses pengambilan keputusan</strong>.</div>
+      <div class="step"><strong>Jika pertanyaan:</strong> “Bagaimana perbedaan kelompok tetap dapat hidup bersama?” → fokus bergeser ke <strong>persatuan/integrasi/harmoni</strong> sesuai rincian cerita.</div>
+    </div>
+  </div>
+
+  <div class="anchor">
+    <div class="meta">Jangan gunakan shortcut</div>
+    <h3>Jangan mencari gravity center dari satu kata.</h3>
+    <p>Kalimat “lintas agama” tidak otomatis membuat semua soal menjadi sila pertama. Kalimat “Indonesia” tidak otomatis membuat semua soal menjadi nasionalisme. Kalimat “membantu” tidak otomatis membuatnya menjadi sila kedua.</p>
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">ACTOR & SCOPE</span><h2>Siapa melakukan apa? Pada level apa?</h2></div>
+    <p>Banyak jawaban salah bukan karena konsepnya salah, tetapi karena subjek atau cakupannya bergeser.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Contoh</div>
+    <p>Stem: <strong>“Pemerintah daerah memfasilitasi dialog antarwarga.”</strong></p>
+    <p>Opsi: <strong>“Warga harus memperkuat diplomasi internasional.”</strong></p>
+    <p>Konsep “diplomasi” memang terkait kehidupan bernegara, tetapi aktornya salah dan scope-nya bergeser. Jawaban yang terdengar intelektual tidak otomatis tepat.</p>
+  </div>
+
+  <div class="matrix">
+    <div class="head">Pertanyaan aktor</div><div class="head">Contoh</div><div class="head">Yang perlu dijaga</div>
+    <div><strong>WHO?</strong></div><div>Presiden, DPR, pemerintah daerah, warga, organisasi</div><div class="focus">Jangan tukar aktor</div>
+    <div><strong>DOES WHAT?</strong></div><div>Membuat aturan, mengawasi, berdiskusi, memilih, melindungi</div><div class="focus">Jangan tukar fungsi</div>
+    <div><strong>TO WHOM?</strong></div><div>Warga, kelompok, lembaga, publik</div><div class="focus">Perhatikan objek</div>
+    <div><strong>FOR WHAT?</strong></div><div>Tujuan/kepentingan</div><div class="focus">Bedakan tujuan dan akibat</div>
+  </div>
+
+  <div class="rule"><strong>Actor lock:</strong> tuliskan di kepala satu kalimat: <em>“Siapa yang sedang melakukan tindakan utama?”</em> Sebelum memilih jawaban, periksa kembali apakah opsi masih berbicara tentang aktor yang sama.</div>
+</div>
+</section>
+
+<section class="section" id="opsi">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">DARI KONSEP KE OPSI</span><h2>Kenapa opsi yang salah sering tetap terlihat masuk akal?</h2></div>
+    <p>Karena distractor yang bagus tidak harus salah total. Ia cukup sedikit bergeser dari target.</p>
+  </div>
+
+  <div class="story">
+    <div class="meta">Contoh</div>
+    <p>Target pertanyaan: <strong>proses pengambilan keputusan yang melibatkan pihak terkait</strong>.</p>
+    <p>Opsi A: melibatkan pihak terkait dalam pembahasan. <br>
+    Opsi B: hasil keputusan menguntungkan banyak orang. <br>
+    Opsi C: semua pihak tetap rukun setelah keputusan. <br>
+    Opsi D: bantuan dibagikan secara adil.</p>
+    <p>A, B, C, dan D dapat terdengar baik. Tetapi bila pertanyaan menyoroti <strong>proses sebelum keputusan</strong>, A paling direct. B adalah hasil/efek, C adalah kondisi hubungan setelahnya, D adalah dimensi keadilan.</p>
+  </div>
+
+  <div class="triple">
+    <article class="contrast good">
+      <span class="tag">Exact match</span>
+      <h3>Tepat sasaran</h3>
+      <p>Konsep, aktor, relasi, scope, dan level sesuai pertanyaan.</p>
+    </article>
+    <article class="contrast near">
+      <span class="tag">Neighbor</span>
+      <h3>Benar tetapi konsep tetangga</h3>
+      <p>Tindakan baik, namun menjawab problem berbeda.</p>
+    </article>
+    <article class="contrast near">
+      <span class="tag">Level shift</span>
+      <h3>Benar tetapi salah level</h3>
+      <p>Tujuan dijawab dengan dampak; proses dijawab dengan hasil; nilai dijawab dengan contoh yang terlalu umum.</p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <div class="meta">Directness</div>
+    <h3>Directness = seberapa langsung sebuah opsi menjawab pertanyaan.</h3>
+    <p>Ini bukan ukuran “seberapa bagus” kalimat opsi. Opsi yang sangat bagus secara moral dapat kalah jika tidak menjawab relasi yang diminta.</p>
+  </div>
+
+  <div class="callout">
+    <div class="meta">Concept neighbor</div>
+    <h3>Concept neighbor = konsep yang berdampingan dan berbagi wilayah makna.</h3>
+    <p>Contoh: persatuan–integrasi, kemanusiaan–toleransi, nasionalisme–bela negara, musyawarah–demokrasi, tujuan–dampak. Karena dekat, mereka ideal menjadi distractor yang sulit.</p>
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">“BENAR” VS “PALING TEPAT”</span><h2>Ini inti diskriminasi jawaban.</h2></div>
+    <p>Jangan mengubah ujian menjadi kompetisi siapa yang menemukan kalimat paling baik.</p>
+  </div>
+
+  <div class="storyboard">
+    <article class="card good">
+      <span class="tag">Benar secara umum</span>
+      <h3>“Kita harus menghargai orang lain.”</h3>
+      <p>Benar sebagai prinsip moral luas. Tetapi bisa menjadi terlalu umum untuk soal yang meminta bentuk penerapan tertentu.</p>
+    </article>
+    <article class="card good">
+      <span class="tag">Lebih direct</span>
+      <h3>“Memberi kesempatan kelompok berbeda menyampaikan pendapat sebelum keputusan.”</h3>
+      <p>Ketika targetnya proses pengambilan keputusan, indikator ini lebih spesifik dan lebih dekat.</p>
+    </article>
+  </div>
+
+  <div class="worked">
+    <div class="meta">Master directness test</div>
+    <div class="step-list">
+      <div class="step"><strong>Apakah opsi faktual?</strong> Jika tidak, gugur.</div>
+      <div class="step"><strong>Apakah konsepnya relevan?</strong> Jika hanya baik secara umum, jangan berhenti.</div>
+      <div class="step"><strong>Apakah aktornya tepat?</strong> Jangan memindahkan tindakan warga menjadi tindakan negara.</div>
+      <div class="step"><strong>Apakah scope-nya tepat?</strong> Individu, kelompok, masyarakat, dan negara bukan satu hal.</div>
+      <div class="step"><strong>Apakah levelnya tepat?</strong> Tujuan, proses, hasil, dan dampak berbeda.</div>
+      <div class="step"><strong>Apakah ada opsi yang lebih direct?</strong> Jika ada, opsi yang lebih umum dapat kalah.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="reasoning">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">REASONING ENGINE</span><h2>Sekarang kita buat cara berpikir yang bisa dipakai berulang.</h2></div>
+    <p>Engine ini akan menjadi kerangka bersama untuk modul Pancasila, UUD, sejarah, nasionalisme, bela negara, integritas, dan modul strategi.</p>
+  </div>
+
+  <div class="protocol">
+    <div><b>1</b><span>Baca stimulus</span></div>
+    <div><b>2</b><span>Tandai fakta</span></div>
+    <div><b>3</b><span>Kunci aktor</span></div>
+    <div><b>4</b><span>Tentukan masalah</span></div>
+    <div><b>5</b><span>Tentukan relasi</span></div>
+    <div><b>6</b><span>Baca pertanyaan</span></div>
+  </div>
+
+  <div class="protocol">
+    <div><b>7</b><span>Buat kandidat konsep</span></div>
+    <div><b>8</b><span>Cari concept neighbor</span></div>
+    <div><b>9</b><span>Uji scope</span></div>
+    <div><b>10</b><span>Uji level</span></div>
+    <div><b>11</b><span>Uji directness</span></div>
+    <div><b>12</b><span>Pilih paling tepat</span></div>
+  </div>
+
+  <div class="worked">
+    <div class="meta">Contoh lengkap</div>
+    <p><strong>Stimulus:</strong> organisasi kampus yang terdiri dari mahasiswa berbagai daerah mengadakan forum untuk menyepakati program bersama. Ketua tidak langsung menetapkan keputusan; anggota menyampaikan alasan, lalu keputusan diambil melalui mekanisme yang disepakati.</p>
+    <p><strong>Pertanyaan non-MCQ:</strong> “Bagian mana dari cerita yang harus Anda jadikan bukti utama jika fokus pertanyaannya adalah prinsip pengambilan keputusan bersama?”</p>
+    <div class="step-list">
+      <div class="step"><strong>Fakta:</strong> organisasi beragam, ada forum, ada penyampaian pendapat, ada keputusan.</div>
+      <div class="step"><strong>Aktor:</strong> anggota dan pimpinan organisasi.</div>
+      <div class="step"><strong>Problem:</strong> bagaimana keputusan bersama dibuat.</div>
+      <div class="step"><strong>Relasi:</strong> anggota ↔ pimpinan dalam proses keputusan.</div>
+      <div class="step"><strong>Kandidat:</strong> persatuan, musyawarah, demokrasi, keadilan.</div>
+      <div class="step"><strong>Neighbor check:</strong> persatuan menjelaskan kebersamaan, tetapi bukan pusat proses keputusan; keadilan dapat terkait, tetapi bukti paling spesifik adalah mekanisme pembahasan.</div>
+      <div class="step"><strong>Directness:</strong> musyawarah/proses permusyawaratan lebih langsung terhadap fokus pertanyaan.</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <strong>Perhatikan perubahan mentalnya:</strong>
+    kita tidak mencari jawaban dari “kata apa yang saya ingat?”,
+    tetapi dari “hubungan apa yang sedang diuji?”
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="hubungan">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">SELURUH TWK SEBAGAI SATU JARINGAN</span><h2>Sekarang hubungkan materi-materinya.</h2></div>
+    <p>Tujuannya bukan membuat enam belas pulau. Tujuannya membuat satu peta.</p>
+  </div>
+
+  <div class="flow">
+    <div><b>SEJARAH</b><span>bagaimana masalah kebangsaan berkembang</span></div>
+    <div><b>PANCASILA</b><span>nilai dasar kehidupan bersama</span></div>
+    <div><b>UUD</b><span>nilai diterjemahkan ke norma konstitusional</span></div>
+    <div><b>LEMBAGA</b><span>kewenangan dijalankan melalui institusi</span></div>
+    <div><b>DEMOKRASI</b><span>keputusan dan partisipasi</span></div>
+    <div><b>BHINNEKA/NKRI</b><span>keberagaman dalam kesatuan</span></div>
+    <div><b>NASIONALISME</b><span>orientasi kebangsaan</span></div>
+    <div><b>BELA NEGARA</b><span>kontribusi dan perlindungan</span></div>
+    <div><b>INTEGRITAS</b><span>konsistensi nilai dan tindakan</span></div>
+    <div><b>KONTEMPORER</b><span>penerapan pada tantangan baru</span></div>
+    <div><b>BAHASA</b><span>bagaimana semua konsep diuji</span></div>
+    <div><b>DISKRIMINASI</b><span>bagaimana jawaban dibedakan</span></div>
+  </div>
+
+  <div class="story">
+    <div class="meta">Contoh hubungan</div>
+    <p>Sejarah menunjukkan bagaimana rasa kebangsaan berkembang. Pancasila memberi kerangka nilai. UUD memberi kerangka konstitusional. Lembaga menjalankan kewenangan. Demokrasi mengatur partisipasi dan pengambilan keputusan. Bhinneka dan NKRI membantu memahami keberagaman dalam satu negara. Nasionalisme memberi orientasi pada kepentingan kebangsaan. Bela negara menerjemahkan kontribusi. Integritas menentukan kualitas tindakan individu ketika menjalankan semuanya.</p>
+    <p>Modul semantik dan reasoning kemudian mengajari cara membaca bagaimana seluruh konsep tersebut diubah menjadi soal.</p>
+  </div>
+
+  <div class="anchor" id="peta">
+    <div class="meta">Concept map utama</div>
+    <h3>MANUSIA → MASYARAKAT → BANGSA → NEGARA → NILAI → NORMA → INSTITUSI → TINDAKAN → SOAL → DISKRIMINASI</h3>
+    <p>Inilah peta besar yang akan menjadi tulang punggung 18 modul.</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="checkpoint">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">CHECKPOINT PEMAHAMAN</span><h2>Jangan lanjut hanya karena halaman sudah selesai.</h2></div>
+    <p>Jawab dengan bahasa sendiri. Hindari mengulang definisi.</p>
+  </div>
+
+  <div class="checks">
+    <div class="check">Apa bedanya mengetahui sebuah istilah dengan memahami sebuah konsep?</div>
+    <div class="check">Mengapa satu materi dapat menghasilkan banyak konsep yang berbeda?</div>
+    <div class="check">Mengapa satu konsep dapat muncul dalam beberapa materi berbeda?</div>
+    <div class="check">Apa fungsi indikator dalam menghubungkan konsep abstrak dengan tindakan konkret?</div>
+    <div class="check">Mengapa stimulus bukan sekadar cerita pembuka yang boleh diabaikan?</div>
+    <div class="check">Bagaimana konteks dapat mengubah penilaian Anda terhadap suatu tindakan?</div>
+    <div class="check">Apa yang dimaksud gravity center dengan bahasa Anda sendiri?</div>
+    <div class="check">Mengapa kata yang paling sering muncul dalam stimulus belum tentu gravity center?</div>
+    <div class="check">Mengapa actor/scope penting dalam menentukan ketepatan jawaban?</div>
+    <div class="check">Apa beda tujuan, proses, hasil, dan dampak?</div>
+    <div class="check">Mengapa konsep neighbor menjadi distractor yang efektif?</div>
+    <div class="check">Apa arti directness dan mengapa opsi yang “lebih baik” belum tentu lebih direct?</div>
+    <div class="check">Apa perbedaan “benar secara umum” dan “paling tepat dalam konteks soal”?</div>
+    <div class="check">Bisakah satu cerita mengandung lebih dari tiga konsep sekaligus? Jelaskan.</div>
+    <div class="check">Mengapa pertanyaan berbeda dapat membuat gravity center berubah walaupun stimulusnya sama?</div>
+    <div class="check">Dapatkah Anda menjalankan 12 langkah reasoning engine tanpa menghafal satu jawaban?</div>
+    <div class="check">Apa yang akan Anda lakukan ketika Anda tidak ingat istilah teknis tetapi memahami hubungan yang digambarkan soal?</div>
+    <div class="check">Apa yang akan Anda lakukan ketika dua opsi sama-sama benar?</div>
+    <div class="check">Apa kesalahan yang terjadi jika Anda membaca opsi sebelum benar-benar memahami pertanyaan?</div>
+    <div class="check">Bagaimana modul-modul TWK lain akan terhubung dalam satu concept map?</div>
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">CATATAN METODOLOGIS</span><h2>Bagaimana modul ini dibangun?</h2></div>
+    <p>Corpus 600 dipakai untuk memahami pola konstruksi dan diskriminasi, bukan sebagai sumber kebenaran faktual tunggal.</p>
+  </div>
+  <div class="sourcebox">
+    <p>
+      Modul ini menyerap pola yang terlihat dalam corpus 600 soal TWK yang telah dianalisis:
+      banyak soal bergerak dari konsep utama menuju konsep tetangga, menggunakan actor/scope,
+      pertanyaan tujuan/dampak/upaya, classification, hubungan sebab-akibat, dan situasi aplikasi.
+      Pola tersebut dipakai sebagai <strong>peta cara menguji</strong>, bukan sebagai definisi resmi TWK.
+    </p>
+    <p class="fine">
+      Catatan pembelajaran: istilah seperti <em>gravity center</em>, <em>directness</em>, dan
+      <em>concept neighbor</em> adalah istilah operasional dalam sistem belajar ini. Mereka
+      digunakan untuk membantu peserta melihat struktur soal dengan lebih jelas; istilah tersebut
+      tidak harus dipahami sebagai istilah baku dalam peraturan pemerintah.
+    </p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="container">
+  <div class="eyebrow">ULTIMATE TWK KNOWLEDGE SYSTEM</div>
+  <h2>Setelah modul ini, jangan lagi bertanya “materi apa yang muncul?” saja.</h2>
+  <p>
+    Mulai bertanya: <strong>apa konsepnya, apa buktinya, siapa aktornya, apa relasinya,
+    apa yang diminta pertanyaan, dan mengapa satu opsi lebih direct daripada opsi lain?</strong>
+  </p>
+</div>
+</footer>
+
+<script>
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>{
+  const d=document.documentElement;
+  const p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  bar.style.width=Math.max(0,Math.min(100,p))+'%';
+});
+</script>
+
+<nav class="cpns-modnav" aria-label="Navigasi modul">
+  <span class="cpns-navbtn off">← Awal</span>
+  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m01" type="button">Tandai selesai</button>
+  <a class="cpns-navbtn" href="02-fondasi-bangsa-dan-negara.html">Modul 02 →</a>
+</nav>
+
+<script>
+(function(){
+  var bar=document.getElementById('cpns-progress-bar');
+  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+  var done=document.getElementById('cpns-done');
+  if(done){var key=done.getAttribute('data-key');
+    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+    refresh();
+  }
+})();
+</script>
+
+</body>
+</html>

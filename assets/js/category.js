@@ -53,13 +53,16 @@
     var categoryFolder = (data.folder || data.name || "").toLowerCase();
 
     grid.innerHTML = "";
-    categories.forEach(function (t) {
+    categories.forEach(function (t, i) {
       var a = document.createElement("a");
       a.className = "materi-card";
       a.href = base + "materi/" + encodeURIComponent(categoryFolder) + "/" +
         encodeURIComponent(t.folder || "") + "/index.html";
       a.setAttribute("aria-label", t.title);
+      var no = String(i + 1);
+      var kicker = [String(categoryFolder).toUpperCase(), no.padStart(2, "0")].join(" · ");
       a.innerHTML = [
+        '<span class="materi-card-kicker">' + escapeHtml(kicker) + "</span>",
         '<h3 class="materi-card-title">' + escapeHtml(t.title) + "</h3>",
         t.subtitle ? '<p class="materi-card-desc">' + escapeHtml(t.subtitle) + "</p>" : "",
       ].join("");

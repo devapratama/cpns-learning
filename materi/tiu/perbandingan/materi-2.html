@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perbandingan TIU CPNS — Materi & Bank Soal</title>
+<meta name="theme-color" content="#2b3a67">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3E≈%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+  :root{
+    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
+    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth; }
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:28px clamp(14px, 3vw, 24px) 80px;}
+
+  /* ---------- Tab nav ---------- */
+  .tab-nav{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px;}
+  .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
+  .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .tab-content{display:none;} .tab-content.active{display:block;}
+
+  /* ---------- Header & breadcrumb ---------- */
+  .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:8px; max-width:800px; margin:0 auto; padding:24px clamp(14px, 3vw, 24px) 0; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft);}
+  .breadcrumb a{color:var(--accent); text-decoration:none;}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-current{color:var(--ink-soft); font-weight:500;}
+
+  header.top{padding:24px 0 22px; max-width:800px; margin:0 auto;}
+  header.top h1{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; margin:0 0 10px; font-size:clamp(26px, 5vw, 38px);}
+  header.top p{margin:0; color:var(--ink-soft); font-size:1.02rem; max-width:62ch;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+  .tag{padding:5px 11px; border-radius:999px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:var(--accent); background:var(--accent-soft); border:1px solid var(--line);}
+
+  /* ---------- Sticky top nav ---------- */
+  .sticky-nav{
+    position:sticky; top:0; z-index:9;
+    display:flex; gap:6px; overflow-x:auto; align-items:center;
+    padding:10px 0 12px; margin:0 0 6px;
+    background:rgba(243,245,239,0.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:thin;
+  }
+  .sticky-nav::-webkit-scrollbar{height:4px;}
+  .sticky-nav::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .sticky-nav .nav-top{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    color:var(--accent); background:none; border:1px dashed var(--accent); border-radius:999px;
+    padding:5px 11px; cursor:pointer; white-space:nowrap; transition:all .15s;
+  }
+  .sticky-nav .nav-top:hover{background:var(--accent); color:#fff;}
+  .sticky-nav .nav-chip{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    padding:6px 12px; border-radius:999px; border:1px solid var(--line);
+    background:var(--paper); color:var(--ink-soft); cursor:pointer; white-space:nowrap;
+    transition:all .15s; user-select:none; -webkit-tap-highlight-color:transparent;
+  }
+  .sticky-nav .nav-chip:hover{border-color:var(--accent); color:var(--accent);}
+  .sticky-nav .nav-chip.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  /* ---------- Pill switch Dasar / Lanjutan ---------- */
+  .pill-switch{flex:0 0 auto; display:inline-flex; gap:3px; padding:3px; border:1px solid var(--line); border-radius:999px; background:var(--surface); margin-right:5px;}
+  .pill-switch a{font-family:'IBM Plex Mono', monospace; font-size:11px; text-decoration:none; padding:5px 12px; border-radius:999px; color:var(--ink-soft); white-space:nowrap; transition:all .15s;}
+  .pill-switch a:hover{color:var(--accent);}
+  .pill-switch a.active{background:var(--accent); color:#fff;}
+
+  /* ---------- Bagian materi ---------- */
+  section{ scroll-margin-top:76px; margin:0 0 46px; }
+  section > h2{
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.3rem, 1.6rem - 0.5vw, 1.6rem);
+    color:var(--ink); margin:0 0 14px; letter-spacing:-0.01em;
+    display:flex; align-items:center; gap:12px;
+  }
+  section > h2::after{content:''; flex:1; height:1px; background:var(--line);}
+  section > h3{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.15rem, 1.3rem - 0.4vw, 1.3rem); margin:26px 0 8px;}
+  .lead{color:var(--ink-soft); font-size:1.05rem; margin:6px 0 14px;}
+
+  /* ---------- Cards ---------- */
+  .card, .example{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:0 1px 2px rgba(31,36,48,.05), 0 6px 18px rgba(31,36,48,.07);
+  }
+  .card{padding:20px;}
+  .example{padding:20px; margin:16px 0; border-left:5px solid var(--accent);}
+  .example h3{margin-top:0;}
+  .blue{background:var(--accent-soft); border-color:#c9d3ee;}
+  .green{background:var(--good-soft); border-color:#bfe0cc;}
+  .orange{background:var(--skip-soft); border-color:#e8d9a8;}
+  .red{background:var(--bad-soft); border-color:#eccbc6;}
+  .purple{background:#EFEAF9; border-color:#d7c7f0;}
+
+  /* ---------- jawaban / peringatan ---------- */
+  .answer, .warn, .danger{ margin-top:14px; padding:13px 15px; border-radius:11px; font-size:1rem; }
+  .answer{ background:var(--good-soft); border:1px solid #bfe0cc; color:#1f5c3d; font-weight:600; }
+  .warn{ background:var(--skip-soft); border:1px solid #e8d9a8; color:#6b5213; }
+  .danger{ background:var(--bad-soft); border:1px solid #eccbc6; color:#7d2c25; }
+
+  /* ---------- Visual / scene ---------- */
+  .viz{ margin:15px 0; padding:17px; border:1px solid var(--line); border-radius:16px; background:var(--paper); }
+  .viz-title{ font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-bottom:10px; text-transform:uppercase; letter-spacing:.5px; font-family:'IBM Plex Mono', monospace; }
+  .scene{display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;}
+  .scene .box{ min-width:128px; padding:12px 13px; text-align:center; border-radius:13px; border:1px solid var(--line); background:var(--surface); }
+  .visual{margin:12px 0;}
+  .visual .box{display:inline-block; min-width:110px; padding:10px 12px; text-align:center; border-radius:12px; border:1px solid var(--line); background:var(--surface); margin:0 4px;}
+  .bigemoji{font-size:32px; line-height:1.1;}
+  .label{font-size:13px; color:var(--ink-soft); margin-top:5px;}
+  .arrow{font-size:28px; color:var(--accent); font-weight:900; padding:0 2px;}
+  .goodarrow{color:var(--good);}.badarrow{color:var(--bad);}
+
+  /* ---------- Fase / phase ---------- */
+  .phase{display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center;}
+  .phase-card{padding:15px; border-radius:14px; border:1px solid var(--line); background:var(--surface);}
+  .phase-card h4{margin:0 0 5px;}
+  .phase-arrow{font-size:32px; color:var(--accent); font-weight:900; text-align:center;}
+
+  /* ---------- Bar ---------- */
+  .bar-wrap{display:grid; gap:9px; margin-top:10px;}
+  .bar-row{display:grid; grid-template-columns:145px 1fr 80px; gap:10px; align-items:center;}
+  .bar-label{font-size:14px; font-weight:600;}
+  .bar{height:22px; background:var(--line); border-radius:999px; overflow:hidden;}
+  .fill-blue{height:100%; background:#8fa2d9;}
+  .fill-green{height:100%; background:var(--good);}
+  .fill-orange{height:100%; background:var(--skip);}
+  .fill-red{height:100%; background:var(--bad);}
+  .bar-num{text-align:right; font-weight:600; font-size:13px;}
+
+  /* ---------- Layer / mini / grid ---------- */
+  .layer{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px;}
+  .layer .mini{ padding:14px; border:1px solid var(--line); border-radius:13px; background:var(--surface); text-align:center; }
+  .mini .e{font-size:28px;}
+  .mini b{display:block; margin-top:4px;}
+  .small{font-size:12.5px; color:var(--ink-soft);}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:15px; margin:14px 0;}
+  .grid .mini{ padding:14px; border:1px solid var(--line); border-radius:13px; background:var(--surface); text-align:center; }
+
+  /* ---------- Rumus ---------- */
+  .mathbox{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:13px 15px; margin:12px 0; overflow-x:auto; }
+  .formula{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:1.02rem; margin:12px 0; overflow-x:auto; line-height:1.9; }
+
+  /* ---------- Langkah ---------- */
+  .step{display:flex; gap:13px; align-items:flex-start; margin:14px 0;}
+  .num{ width:31px; height:31px; flex:0 0 31px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; font-weight:700; font-family:'IBM Plex Mono', monospace; font-size:14px; }
+
+  /* ---------- Rule / warning ---------- */
+  .rule{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:0 10px 10px 0; padding:16px 20px; margin:14px 0; }
+  .warning{ background:var(--skip-soft); border:1px solid #e8d9a8; border-left:4px solid var(--skip); border-radius:0 10px 10px 0; padding:16px 20px; margin:14px 0; }
+  .rule b, .warning b{color:var(--accent);}
+
+  /* ---------- Tabel ---------- */
+  table{width:100%; border-collapse:collapse; margin:13px 0;}
+  th, td{border:1px solid var(--line); padding:9px 12px; text-align:left; vertical-align:top;}
+  th{background:var(--accent); color:#fff; font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:13px;}
+
+  /* ---------- Details ---------- */
+  details{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:11px 0;}
+  summary{cursor:pointer; font-weight:600;}
+
+  /* ---------- Quiz in-page ---------- */
+  .quiz{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px; margin:14px 0;}
+  .quiz .q{font-weight:600; margin-bottom:9px;}
+  .opts label{display:block; padding:7px 9px; border-radius:8px; cursor:pointer;}
+  .opts label:hover{background:var(--paper);}
+  .quiz-item{ margin:12px 0; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--surface); }
+  .quiz-item .opt{ display:block; padding:6px 9px; border-radius:8px; cursor:pointer; }
+  .quiz-item .opt:hover{background:var(--paper);}
+  .btnrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+  input[type=radio]{ accent-color:var(--accent); }
+  #quizForm button, .btnrow button{
+    border:0; background:var(--accent); color:#fff; font-size:15px; padding:11px 16px;
+    border-radius:10px; font-weight:600; cursor:pointer; font-family:'IBM Plex Mono', monospace; margin-right:7px;
+  }
+  #quizForm button.secondary, .btnrow button.secondary{background:#fff; color:var(--ink); border:1px solid var(--line); margin-right:0;}
+  .quiz.good{outline:2px solid var(--good); outline-offset:2px;}
+  .quiz.bad{outline:2px solid var(--bad); outline-offset:2px;}
+  .result{ display:none; margin-top:16px; padding:16px; border-radius:12px; background:var(--accent-soft); border:1px solid #c9d3ee; }
+  .score{font-size:28px; font-weight:700; font-family:'Fraunces', serif;}
+
+  /* ---------- Footer ---------- */
+  footer, .footer{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-soft); padding:30px 20px; }
+
+  /* ---------- PAKET TRYOUT ---------- */
+  .packet-header{margin-bottom:24px;}
+  .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
+  .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
+  .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(255px, 1fr)); gap:16px;}
+  .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
+  .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
+  .packet-card.disabled{opacity:0.6; pointer-events:none; filter:grayscale(0.5);}
+  .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0 0 6px;}
+  .packet-desc{font-size:13.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent);}
+  .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
+  .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
+  .packet-list.hidden{display:none;}
+
+  .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 0 26px; padding:12px 0; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+  .scoreboard .label{color:var(--ink-soft);}
+  .scoreboard .num{color:var(--accent); font-weight:500;}
+
+  .quiz-view{display:none;}
+  .quiz-view.active{
+    position:fixed; inset:0; z-index:100; background:var(--paper);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+
+  .quiz-view.active .quiz-top-row,
+  .quiz-view.active .quiz-packet-name,
+  .quiz-view.active .progress-bar,
+  .quiz-view.active .quiz-body > *,
+.quiz-view.active .quiz-footer-inner{width:100%; max-width:800px; margin-left:auto; margin-right:auto;}
+  .quiz-view.active .quiz-body .quiz-q-card{order:0;}
+  .quiz-view.active .quiz-body .quiz-nav{order:1;}
+
+  .quiz-header{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px clamp(14px,3vw,24px) 10px;}
+  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; flex-wrap:nowrap;}
+  .quiz-progress-text{flex:0 1 auto; min-width:0; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
+  .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-progress-text b{color:var(--accent); font-weight:600;}
+  .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:15px; margin:0 0 6px;}
+  .progress-bar{height:5px; background:var(--line); border-radius:3px; overflow:hidden;}
+  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
+
+  .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
+
+  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:8px; transition:border-color .2s;}
+  .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
+  .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
+  .quiz-q-text{font-size:15px; margin:0 0 12px; font-weight:500; line-height:1.55;}
+  .quiz-opts{display:flex; flex-direction:column; gap:6px;}
+  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:8px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+  .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.locked{cursor:default; pointer-events:none;}
+  .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
+  .quiz-opt .bubble{flex-shrink:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
+  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .quiz-opt > span:last-child{flex:1; min-width:0;}
+
+  .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+
+  .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:10px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+  .quiz-footer-inner{max-width:800px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto; flex-wrap:nowrap; min-width:0;}
+  .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px; white-space:nowrap; flex:0 0 auto;}
+  .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
+  .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
+  .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
+  .quiz-btn-primary{background:var(--accent); color:#fff;}
+  .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
+  .quiz-btn-skip:hover{background:var(--skip-soft);}
+
+  .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
+  .review-stat{text-align:center;}
+  .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
+  .review-stat-num.good{color:var(--good);}
+  .review-stat-num.bad{color:var(--bad);}
+  .review-stat-num.skip{color:var(--skip);}
+  .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
+
+  .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
+  .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+  .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
+  .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
+  .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
+  .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
+  .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
+
+  .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
+  .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+  .review-premis-list{margin:0; padding-left:18px;}
+  .review-premis-list li{margin-bottom:4px;}
+
+  .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
+  .review-explain.good{border-left:4px solid var(--good);}
+  .review-explain.bad{border-left:4px solid var(--bad);}
+  .review-explain.skip{border-left:4px solid var(--skip);}
+  .review-explain .status{font-weight:600;}
+  .review-explain.good .status{color:var(--good);}
+  .review-explain.bad .status{color:var(--bad);}
+  .review-explain.skip .status{color:var(--skip);}
+  .review-explain b{font-weight:600; color:var(--accent);}
+  .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
+
+  .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
+  .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  .quiz-nav{margin-bottom:12px; padding:10px 12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
+  .quiz-nav-dots{display:flex; flex-wrap:nowrap; overflow-x:auto; gap:4px; scrollbar-width:thin; padding-bottom:2px;}
+  .quiz-nav-dots::-webkit-scrollbar{height:4px;}
+  .quiz-nav-dots::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:6px;}
+  .quiz-nav-dot{flex:0 0 auto; width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
+  .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
+  .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
+  .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  @media (max-width:600px){
+    .wrap{padding:20px 16px 100px;}
+    header.top{ padding:18px 0 16px; }
+    .tab-nav{margin-bottom:18px;}
+    table{font-size:0.85rem;} th,td{padding:7px 9px;}
+    .scoreboard{margin:0 0 22px;}
+    .quiz-header{padding:10px clamp(14px,3vw,24px) 8px;}
+    .quiz-body{padding:10px clamp(14px,3vw,24px) 0;}
+    .quiz-q-card{padding:14px 16px; margin-bottom:0;}
+    .quiz-q-text{font-size:14.5px;}
+    .quiz-opt{font-size:13.5px; padding:7px 10px;}
+    .quiz-opt .bubble{width:22px; height:22px; font-size:11px;}
+    .quiz-packet-name{font-size:14.5px;}
+    .review-q-card{padding:16px;}
+    .quiz-footer{padding:10px 16px;}
+    .quiz-btn{font-size:12.5px; padding:9px 14px;}
+    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+    .bar-row{grid-template-columns:95px 1fr 55px;}
+    .phase{grid-template-columns:1fr;}
+    .phase-arrow{text-align:center; transform:rotate(90deg);}
+    .visual .box{min-width:90px;}
+  }
+
+  @media (max-width:360px){
+    .quiz-footer{padding:8px 10px;}
+    .quiz-footer-inner{gap:6px; justify-content:center;}
+    .quiz-btn{font-size:11px; padding:8px 9px; min-height:38px;}
+    .quiz-btn-skip{font-size:10.5px; padding:6px 8px;}
+    .review-q-head{flex-wrap:wrap; gap:6px;}
+    .review-q-type{font-size:10.5px;}
+  }
+
+  @media (max-height:520px){
+    .quiz-header{padding:8px clamp(14px,3vw,24px) 6px;}
+    .quiz-top-row{margin-bottom:5px;}
+    .quiz-packet-name{font-size:13px; margin:0 0 4px;}
+    .progress-bar{height:4px;}
+    .quiz-body{padding:8px clamp(14px,3vw,24px) 2px;}
+    .quiz-nav{margin-bottom:6px; padding:6px 10px;}
+    .quiz-nav-title{margin-bottom:4px;}
+    .quiz-nav-dot{width:22px; height:22px; font-size:10px;}
+    .quiz-q-card{padding:9px 12px; margin-bottom:2px;}
+    .quiz-q-num{margin-bottom:5px;}
+    .quiz-q-text{margin:0 0 6px;}
+    .quiz-opts{gap:4px; display:grid; grid-template-columns:1fr 1fr;}
+    .quiz-opt{padding:4px 8px; gap:8px;}
+    .quiz-opt .bubble{width:18px; height:18px; font-size:9px;}
+.quiz-footer{padding:6px 16px;}
+    .quiz-btn{font-size:12px; padding:8px 12px; min-height:34px;}
+    .quiz-btn-skip{font-size:11px; padding:6px 10px;}
+  }
+
+  @media (min-width:1024px){
+    .quiz-view.active .quiz-top-row,
+    .quiz-view.active .quiz-packet-name,
+    .quiz-view.active .progress-bar,
+    .quiz-view.active .quiz-body > *,
+    .quiz-view.active .quiz-footer-inner{max-width:800px;}
+  .quiz-footer-inner{max-width:800px;}
+  .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
+    .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
+    .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
+    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+    .quiz-opts{gap:9px;}
+    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+    .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
+    .quiz-btn{font-size:14px; padding:11px 16px;}
+    .quiz-progress-text{font-size:13px;}
+    .quiz-packet-name{font-size:16px;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../../../index.html">← Beranda</a>
+  <span class="crumb-sep">/</span>
+  <a href="../index.html">TIU</a>
+  <span class="crumb-sep">/</span>
+  <span class="crumb-current">Perbandingan</span>
+</nav>
+
+<header class="top">
+  <h1>Perbandingan TIU CPNS — Sub-Pattern Lanjutan</h1>
+  <p>Ini adalah HTML pendamping. Materi fundamental tetap berada pada HTML sebelumnya. Di sini kita fokus pada pola-pola turunan yang membuat soal perbandingan menjadi lebih beragam, terutama ketika angka berubah, kondisi bertingkat, beberapa rasio harus disambungkan, atau dua kelompok bekerja bersama.</p>
+  <div class="tags"><span class="tag">Rasio bertingkat</span><span class="tag">Total & selisih</span><span class="tag">Perubahan rasio</span><span class="tag">Skala & satuan</span><span class="tag">Majemuk campuran</span><span class="tag">Tabel</span><span class="tag">Multi-tahap</span><span class="tag">Normalisasi</span><span class="tag">Laju gabungan</span><span class="tag">X vs Y lanjut</span></div>
+</header>
+
+<div class="wrap">
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('materi', this)">📖 Materi Lengkap</button>
+    <button class="tab-btn" id="tab-btn-paket" onclick="switchTab('paket', this)">🎯 Paket Soal Tryout</button>
+  </div>
+
+  <!-- ============ TAB 1: MATERI LENGKAP ============ -->
+  <div id="tab-materi" class="tab-content active">
+
+    <nav class="sticky-nav" id="sticky-nav" aria-label="Navigasi antar materi"></nav>
+
+    <section id="peta">
+<h2>Bagian ini sebenarnya mengajari apa?</h2>
+<p class="lead">Kita tidak menambah “jenis matematika baru”. Kita memperbanyak bentuk cerita yang dibangun dari keluarga fundamental yang sudah dipelajari.</p>
+<div class="grid">
+<div class="mini"><div class="e">🧩</div><b>Rasio bertingkat</b><span class="small">A dibanding B, lalu B dibanding C.</span></div>
+<div class="mini"><div class="e">➕➖</div><b>Rasio berubah</b><span class="small">Orang/barang ditambah atau dikurangi, lalu rasio baru dibentuk.</span></div>
+<div class="mini"><div class="e">📏</div><b>Skala & satuan</b><span class="small">Ukuran fisik dan ukuran gambar/peta harus disamakan basis.</span></div>
+<div class="mini"><div class="e">👷⏱️📦</div><b>Majemuk campuran</b><span class="small">Beberapa faktor berubah sekaligus; sebagian senilai, sebagian berbalik.</span></div>
+<div class="mini"><div class="e">📊</div><b>Tabel lanjutan</b><span class="small">Data dipakai untuk membaca pola atau mencari kondisi yang hilang.</span></div>
+<div class="mini"><div class="e">🎬🔄🎬</div><b>Multi-tahap</b><span class="small">Ada lebih dari satu perubahan kondisi.</span></div>
+<div class="mini"><div class="e">🔧</div><b>Normalisasi</b><span class="small">Semua kondisi diubah ke basis yang sama sebelum dibandingkan.</span></div>
+<div class="mini"><div class="e">🤝⚡</div><b>Laju gabungan</b><span class="small">Beberapa pelaku menyumbang laju pekerjaan masing-masing.</span></div>
+</div>
+<div class="warning"><b>Prinsip penting:</b> jangan hafalkan nama sub-pattern. Kenali transformasi yang terjadi pada soal: <b>menyambungkan rasio → mengubah kondisi → menyamakan basis → menghitung keadaan akhir</b>.</div>
+</section>
+
+<section id="rasio">
+<h2>1. Rasio bertingkat dan rasio berantai 🔗</h2>
+<p class="lead">Pola ini muncul ketika kita tidak diberi A:B:C sekaligus. Kita harus menyambungkan dua rasio yang memiliki variabel tengah yang sama.</p>
+<div class="example blue">
+<h3>📚 Contoh 1 — Buku merah, biru, hijau</h3>
+<p>Perbandingan buku merah dan biru adalah \(2:3\). Perbandingan buku biru dan hijau adalah \(4:5\). Berapa perbandingan merah : biru : hijau?</p>
+<div class="step"><div class="num">1</div><div>Tuliskan dua rasio: \(M:B=2:3\) dan \(B:H=4:5\).</div></div>
+<div class="step"><div class="num">2</div><div>Angka untuk <b>B</b> harus sama. KPK dari 3 dan 4 adalah 12.</div></div>
+<div class="formula">\[M:B=8:12\qquad B:H=12:15\]</div>
+<div class="step"><div class="num">3</div><div>Gabungkan: \(M:B:H=8:12:15\).</div></div>
+</div>
+<div class="example green">
+<h3>🍎 Contoh 2 — Menghubungkan dua rasio</h3>
+<p>Apel : jeruk = \(3:4\), sedangkan jeruk : mangga = \(6:5\). Cari apel : jeruk : mangga.</p>
+<p>Agar jeruk sama, \(4\to12\) dan \(6\to12\).</p>
+<div class="formula">\[A:J=9:12,\quad J:M=12:10\]</div>
+<p>Jadi \(A:J:M=9:12:10\).</p>
+</div>
+<div class="rule"><b>Alarm jebakan:</b> jangan langsung menulis \(3:4:6:5\). Angka “4” dan “6” mewakili jumlah yang berbeda sampai kita samakan nilai variabel tengah.</div>
+</section>
+
+<section id="perubahan">
+<h2>2. Rasio setelah ditambah atau dikurangi ➕➖</h2>
+<p class="lead">Di sini rasio awal bukan jawaban akhir. Ada peristiwa yang mengubah salah satu atau kedua kelompok.</p>
+<div class="example orange">
+<h3>🍬 Contoh 1 — Permen bertambah</h3>
+<p>Perbandingan permen Ani dan Budi adalah \(3:5\). Ani mendapat 6 permen lagi sehingga perbandingannya menjadi \(3:4\). Berapa permen Ani mula-mula?</p>
+<div class="step"><div class="num">1</div><div>Misalkan awalnya Ani \(=3k\), Budi \(=5k\).</div></div>
+<div class="step"><div class="num">2</div><div>Setelah Ani mendapat 6, Ani menjadi \(3k+6\). Budi tetap \(5k\).</div></div>
+<div class="step"><div class="num">3</div><div>Rasio baru \(3:4\) berarti \(\frac{3k+6}{5k}=\frac34\).</div></div>
+<div class="formula">\[4(3k+6)=15k\Rightarrow12k+24=15k\Rightarrow k=8\]</div>
+<p>Jadi permen Ani mula-mula \(3k=24\).</p>
+</div>
+<div class="example blue">
+<h3>🎒 Contoh 2 — Barang dipindahkan</h3>
+<p>Perbandingan buku kelas A dan kelas B adalah \(7:5\). Sebanyak 12 buku dipindahkan dari A ke B. Setelah itu perbandingannya menjadi \(5:4\). Misalkan awalnya \(A=7k\) dan \(B=5k\).</p>
+<div class="formula">\[\frac{7k-12}{5k+12}=\frac54\]</div>
+<p>Setelah dikalikan silang: \(4(7k-12)=5(5k+12)\), sehingga \(28k-48=25k+60\), jadi \(k=36\).</p>
+<p>Awalnya A = \(252\) buku dan B = \(180\) buku.</p>
+</div>
+<div class="rule"><b>Pola umum:</b> nyatakan nilai awal sebagai “bagian rasio × \(k\)”, kemudian masukkan kejadian perubahan ke pembilang atau penyebut yang sesuai.</div>
+</section>
+
+<section id="skala">
+<h2>3. Skala, jarak, harga satuan, dan perubahan satuan 📏</h2>
+<p class="lead">Sub-pattern ini terutama menguji apakah kita sadar bahwa dua angka belum tentu boleh langsung dibandingkan. Satuannya harus sejalan.</p>
+<div class="example purple">
+<h3>🗺️ Contoh 1 — Skala peta</h3>
+<p>Sebuah peta berskala \(1:50.000\). Jarak dua kota pada peta adalah 6 cm. Berapa jarak sebenarnya?</p>
+<div class="step"><div class="num">1</div><div>Setiap 1 cm pada peta mewakili 50.000 cm sebenarnya.</div></div>
+<div class="step"><div class="num">2</div><div>Untuk 6 cm: \(6\times50.000=300.000\) cm.</div></div>
+<div class="step"><div class="num">3</div><div>Ubah ke km: \(300.000\) cm = 3 km.</div></div>
+</div>
+<div class="example green">
+<h3>⛽ Contoh 2 — Liter versus mililiter</h3>
+<p>Motor A menempuh 60 km dengan 4 liter bensin. Motor B menempuh 900 mL untuk 18 km. Mana yang lebih hemat?</p>
+<div class="formula">\[A=15\text{ km/L}\]</div>
+<p>Untuk B, \(900\text{ mL}=0{,}9\text{ L}\), maka \(B=18/0{,}9=20\text{ km/L}\).</p>
+<p>Motor B lebih hemat karena mampu menempuh lebih banyak kilometer per liter.</p>
+</div>
+<div class="rule"><b>Teknik:</b> pilih satu basis: per km, per liter, per buah, per jam, atau per meter. Setelah basis sama, barulah dibandingkan.</div>
+</section>
+
+<section id="campuran">
+<h2>4. Majemuk campuran: sebagian senilai, sebagian berbalik 🔀</h2>
+<p class="lead">Ini pola penting karena satu soal dapat memuat beberapa hubungan sekaligus.</p>
+<div class="example blue">
+<h3>🏭 Contoh — Pekerja, waktu, dan target produksi</h3>
+<p>6 pekerja menghasilkan 900 barang dalam 5 hari. Berapa barang yang dapat dihasilkan oleh 8 pekerja dalam 6 hari, dengan kemampuan setiap pekerja sama?</p>
+<table><tr><th>Kondisi</th><th>Pekerja</th><th>Hari</th><th>Hasil</th></tr><tr><td>Awal</td><td>6</td><td>5</td><td>900</td></tr><tr><td>Baru</td><td>8</td><td>6</td><td>?</td></tr></table>
+<div class="step"><div class="num">1</div><div>Pekerja naik \(6\to8\): hasil <b>senilai</b>, faktor \(\frac86\).</div></div>
+<div class="step"><div class="num">2</div><div>Hari naik \(5\to6\): hasil juga <b>senilai</b>, faktor \(\frac65\).</div></div>
+<div class="formula">\[900\times\frac86\times\frac65=1.440\]</div>
+<p>Jadi hasilnya 1.440 barang.</p>
+</div>
+<div class="example orange">
+<h3>🎯 Contoh — Target tetap, pekerja dan waktu berubah</h3>
+<p>Sebuah pekerjaan selesai oleh 12 orang dalam 15 hari. Jika hanya 9 orang yang bekerja, berapa hari diperlukan?</p>
+<div class="formula">\[12\times15=9\times t\Rightarrow t=20\]</div>
+<p>Di sini target pekerjaannya tetap. Pekerja turun, waktu naik: <b>berbalik nilai</b>.</p>
+</div>
+<div class="warning"><b>Cara membaca soal:</b> jangan bertanya “ini senilai atau berbalik?” untuk seluruh soal sekaligus. Tanyakan untuk <b>setiap variabel</b>: apakah perubahan variabel ini menaikkan atau menurunkan target/lamanya waktu?</div>
+</section>
+
+<section id="tabel">
+<h2>5. Tabel lanjutan: menemukan pola dari data 📊</h2>
+<p class="lead">Pada soal TIU, tabel bisa menjadi bentuk soal tersendiri. Kita mencari nilai yang hilang atau menentukan hubungan dari beberapa pasangan kondisi.</p>
+<div class="example purple">
+<h3>📊 Contoh 1 — Tabel senilai</h3>
+<table><tr><th>Jumlah botol</th><th>Harga</th></tr><tr><td>2</td><td>Rp14.000</td></tr><tr><td>5</td><td>?</td></tr><tr><td>8</td><td>Rp56.000</td></tr></table>
+<p>Harga per botol = \(14.000/2=7.000\). Jadi 5 botol = \(5\times7.000=35.000\).</p>
+</div>
+<div class="example green">
+<h3>📈 Contoh 2 — Tabel berbalik</h3>
+<table><tr><th>Pekerja</th><th>Hari</th></tr><tr><td>4</td><td>18</td></tr><tr><td>6</td><td>?</td></tr><tr><td>9</td><td>8</td></tr></table>
+<p>Cek invariant: \(4\times18=72\) dan \(9\times8=72\). Jadi untuk 6 pekerja, \(6t=72\), sehingga \(t=12\) hari.</p>
+</div>
+<div class="example blue">
+<h3>🧠 Contoh 3 — Data cukup atau tidak?</h3>
+<p>Sebuah tabel hanya memberi satu pasangan “pekerja-waktu”. Apakah itu cukup untuk mengetahui hasil produksi jika produktivitas per pekerja tidak dinyatakan sama?</p>
+<p><b>Tidak selalu.</b> Kita perlu tahu hubungan produktivitasnya. Inilah contoh bahwa tabel tetap membutuhkan model hubungan, bukan sekadar membaca angka.</p>
+</div>
+</section>
+
+<section id="multi">
+<h2>6. Perbandingan multi-tahap: perubahan terjadi lebih dari sekali 🎬</h2>
+<p class="lead">Pola bertahap menjadi lebih sulit ketika kondisi berubah dua atau tiga kali.</p>
+<div class="example orange">
+<h3>👷 Contoh — Tiga fase pekerjaan</h3>
+<p>Sebuah pekerjaan dapat diselesaikan 10 pekerja dalam 18 hari. Selama 6 hari pertama, semua 10 pekerja bekerja. Setelah itu 4 pekerja keluar. Berapa hari total yang dibutuhkan?</p>
+<div class="visual"><div class="box"><strong>Fase 1</strong>10 pekerja<br>6 hari</div><div>➡️</div><div class="box"><strong>Sisa</strong>pekerjaan</div><div>➡️</div><div class="box"><strong>Fase 2</strong>6 pekerja<br>? hari</div></div>
+<div class="step"><div class="num">1</div><div>Total pekerjaan = \(10\times18=180\) pekerja-hari.</div></div>
+<div class="step"><div class="num">2</div><div>Sudah selesai = \(10\times6=60\) pekerja-hari.</div></div>
+<div class="step"><div class="num">3</div><div>Sisa = \(180-60=120\) pekerja-hari.</div></div>
+<div class="step"><div class="num">4</div><div>Dengan 6 pekerja: \(6t=120\Rightarrow t=20\) hari.</div></div>
+<p>Total waktu = \(6+20=26\) hari.</p>
+</div>
+<div class="example red">
+<h3>🖨️ Contoh — Dua kali perubahan</h3>
+<p>Sebuah mesin dapat menyelesaikan pekerjaan dalam 24 jam. Setelah 8 jam, satu mesin tambahan ikut bekerja. Setelah 4 jam bekerja bersama, satu mesin berhenti. Berapa waktu yang masih dibutuhkan jika kedua mesin memiliki laju sama?</p>
+<p>Gunakan “satu pekerjaan” sebagai total. Laju satu mesin = \(1/24\) pekerjaan per jam.</p>
+<p>Fase pertama menyelesaikan \(8/24=1/3\). Sisa \(2/3\).</p>
+<p>Fase kedua: dua mesin bekerja selama 4 jam, lajunya \(2/24=1/12\), sehingga selesai \(4/12=1/3\). Sisa akhirnya \(1/3\).</p>
+<p>Setelah satu mesin berhenti, tinggal satu mesin. Waktu untuk \(1/3\) pekerjaan adalah \((1/3)\times24=8\) jam.</p>
+<p>Total = \(8+4+8=20\) jam.</p>
+</div>
+<div class="rule"><b>Urutan aman:</b> hitung total → hitung bagian yang sudah selesai → hitung sisa → masukkan kondisi baru → ulangi bila ada perubahan lagi.</div>
+</section>
+
+<section id="normal">
+<h2>7. Normalisasi: samakan “bahasa” angka terlebih dahulu 🔧</h2>
+<p class="lead">Normalisasi bukan keluarga perbandingan baru. Ia adalah teknik yang dipakai ketika dua kondisi belum menggunakan basis yang sama.</p>
+<div class="example green">
+<h3>🐔 Contoh — Pakan dan jumlah ayam</h3>
+<p>1 ayam menghabiskan 1 karung pakan dalam 6 hari. Berapa lama 3 ayam menghabiskan 4 karung pakan?</p>
+<div class="step"><div class="num">1</div><div>1 ayam menghabiskan 1 karung dalam 6 hari, berarti 1 karung membutuhkan \(6\) ayam-hari.</div></div>
+<div class="step"><div class="num">2</div><div>4 karung membutuhkan \(4\times6=24\) ayam-hari.</div></div>
+<div class="step"><div class="num">3</div><div>Dengan 3 ayam: \(24/3=8\) hari.</div></div>
+</div>
+<div class="example blue">
+<h3>⚖️ Contoh — Menormalkan produktivitas</h3>
+<p>Tim A menghasilkan 120 barang dalam 4 jam. Tim B menghasilkan 150 barang dalam 6 jam. Bandingkan produktivitasnya.</p>
+<div class="formula">\[A=120/4=30\text{ barang/jam}\qquad B=150/6=25\text{ barang/jam}\]</div>
+<p>Setelah dinormalisasi ke “barang per jam”, Tim A lebih produktif.</p>
+</div>
+<div class="rule"><b>Pertanyaan kunci:</b> “angka ini sebenarnya sedang berbicara tentang apa?” Kemudian pilih basis yang sama untuk kedua kondisi.</div>
+</section>
+
+<section id="gabungan">
+<h2>8. Laju gabungan dengan kemampuan yang berbeda 🤝</h2>
+<p class="lead">Pada pola lanjutan, tiap kelompok boleh memiliki laju berbeda. Jangan menyamakan semua pekerja hanya karena jumlah orangnya berbeda.</p>
+<div class="example blue">
+<h3>🤝 Contoh — Dua tim dengan kemampuan berbeda</h3>
+<p>Tim A menyelesaikan pekerjaan dalam 12 hari. Tim B menyelesaikannya dalam 18 hari. Jika bekerja bersama, berapa hari?</p>
+<div class="formula">\[r_A=\frac1{12},\qquad r_B=\frac1{18}\]</div>
+<p>Laju bersama:</p>
+<div class="formula">\[r=\frac1{12}+\frac1{18}=\frac5{36}\]</div>
+<p>Maka waktu:</p>
+<div class="formula">\[t=\frac1{5/36}=\frac{36}{5}=7{,}2\text{ hari}\]</div>
+</div>
+<div class="example orange">
+<h3>👷 Contoh — Tiga kelompok</h3>
+<p>Kelompok A selesai dalam 10 hari, B dalam 15 hari, C dalam 30 hari. Jika ketiganya bekerja bersama, laju total:</p>
+<div class="formula">\[\frac1{10}+\frac1{15}+\frac1{30}=\frac15\]</div>
+<p>Jadi pekerjaan selesai dalam 5 hari.</p>
+</div>
+<div class="warning"><b>Jebakan terbesar:</b> jangan menjumlahkan waktu. Yang dijumlahkan adalah <b>laju</b>.</div>
+</section>
+
+<section id="xy">
+<h2>9. Kuantitatif X vs Y: sub-pattern yang lebih licin 🔵🔴</h2>
+<p class="lead">Format X dan Y dapat menyembunyikan perbandingan di balik bentuk aljabar. Tujuan utamanya adalah menentukan hubungan tanpa melakukan kerja yang tidak perlu.</p>
+<div class="example purple">
+<h3>🪞 Contoh 1 — Bentuk berbeda, nilai sama</h3>
+<p>Diketahui \(x=8\). Bandingkan:</p>
+<div class="formula">\[X=3x+4,\qquad Y=x+20\]</div>
+<p>Substitusi: \(X=28\) dan \(Y=28\). Jadi \(X=Y\).</p>
+</div>
+<div class="example blue">
+<h3>🔄 Contoh 2 — Tidak boleh terjebak contoh tunggal</h3>
+<p>Diketahui \(x&gt;0\). Apakah selalu \(x+1&gt;1/x\)?</p>
+<p>Coba dua nilai yang memenuhi syarat:</p>
+<div class="visual"><div class="box"><strong>x=1</strong>2 &gt; 1</div><div class="box"><strong>x=0,5</strong>1,5 &lt; 2</div></div>
+<p>Hubungan tidak selalu sama. Maka hubungan X dan Y <b>tidak dapat ditentukan</b> dari syarat tersebut.</p>
+</div>
+<div class="example green">
+<h3>🧠 Contoh 3 — Cari bentuk yang lebih sederhana</h3>
+<p>Bandingkan \(X=2(a+b)\) dan \(Y=2a+2b\).</p>
+<div class="formula">\[X=2a+2b=Y\]</div>
+<p>Tidak perlu memberi nilai pada \(a\) dan \(b\). Keduanya identik secara aljabar.</p>
+</div>
+<div class="rule"><b>Urutan strategi:</b> sederhanakan → substitusi bila diberi nilai → uji lebih dari satu contoh bila syarat belum menentukan → simpulkan hubungan.</div>
+</section>
+
+<section id="quiz">
+<h2>Quiz sub-pattern — 12 soal 🎯</h2>
+<p class="lead">Quiz ini sengaja tidak mengulang contoh dasar. Fokusnya adalah kemampuan mengenali pola turunan.</p>
+<div class="card">
+<form id="quizForm">
+<div class="quiz-item"><b>1.</b> A:B = 2:3 dan B:C = 4:5. A:B:C = ...<label class="opt"><input type="radio" name="q1" value="a"> A. 2:3:5</label><label class="opt"><input type="radio" name="q1" value="b"> B. 8:12:15</label><label class="opt"><input type="radio" name="q1" value="c"> C. 8:3:15</label><label class="opt"><input type="radio" name="q1" value="d"> D. 6:12:5</label></div>
+<div class="quiz-item"><b>2.</b> Perbandingan A:B = 3:5. A bertambah 6 dan menjadi berbanding 4:5. Nilai A mula-mula ...<label class="opt"><input type="radio" name="q2" value="a"> A. 12</label><label class="opt"><input type="radio" name="q2" value="b"> B. 15</label><label class="opt"><input type="radio" name="q2" value="c"> C. 18</label><label class="opt"><input type="radio" name="q2" value="d"> D. 24</label></div>
+<div class="quiz-item"><b>3.</b> Skala peta 1:25.000. Jarak pada peta 8 cm. Jarak sebenarnya ...<label class="opt"><input type="radio" name="q3" value="a"> A. 1 km</label><label class="opt"><input type="radio" name="q3" value="b"> B. 2 km</label><label class="opt"><input type="radio" name="q3" value="c"> C. 2,5 km</label><label class="opt"><input type="radio" name="q3" value="d"> D. 20 km</label></div>
+<div class="quiz-item"><b>4.</b> 6 pekerja menghasilkan 900 barang dalam 5 hari. Dengan 8 pekerja selama 6 hari, hasilnya ...<label class="opt"><input type="radio" name="q4" value="a"> A. 1.200</label><label class="opt"><input type="radio" name="q4" value="b"> B. 1.260</label><label class="opt"><input type="radio" name="q4" value="c"> C. 1.440</label><label class="opt"><input type="radio" name="q4" value="d"> D. 1.500</label></div>
+<div class="quiz-item"><b>5.</b> 4 pekerja menyelesaikan pekerjaan dalam 18 hari. Dengan 6 pekerja, waktu yang diperlukan ...<label class="opt"><input type="radio" name="q5" value="a"> A. 10 hari</label><label class="opt"><input type="radio" name="q5" value="b"> B. 12 hari</label><label class="opt"><input type="radio" name="q5" value="c"> C. 15 hari</label><label class="opt"><input type="radio" name="q5" value="d"> D. 16 hari</label></div>
+<div class="quiz-item"><b>6.</b> Tim A 10 hari, Tim B 15 hari. Jika bekerja bersama, waktu ...<label class="opt"><input type="radio" name="q6" value="a"> A. 5 hari</label><label class="opt"><input type="radio" name="q6" value="b"> B. 6 hari</label><label class="opt"><input type="radio" name="q6" value="c"> C. 7 hari</label><label class="opt"><input type="radio" name="q6" value="d"> D. 8 hari</label></div>
+<div class="quiz-item"><b>7.</b> A:B = 7:5. Dipindahkan 12 dari A ke B sehingga menjadi 5:4. Nilai awal A ...<label class="opt"><input type="radio" name="q7" value="a"> A. 168</label><label class="opt"><input type="radio" name="q7" value="b"> B. 210</label><label class="opt"><input type="radio" name="q7" value="c"> C. 252</label><label class="opt"><input type="radio" name="q7" value="d"> D. 288</label></div>
+<div class="quiz-item"><b>8.</b> Data 2 botol = Rp14.000, 8 botol = Rp56.000. Harga 5 botol ...<label class="opt"><input type="radio" name="q8" value="a"> A. Rp28.000</label><label class="opt"><input type="radio" name="q8" value="b"> B. Rp35.000</label><label class="opt"><input type="radio" name="q8" value="c"> C. Rp40.000</label><label class="opt"><input type="radio" name="q8" value="d"> D. Rp42.000</label></div>
+<div class="quiz-item"><b>9.</b> Sebuah pekerjaan memerlukan 12 pekerja selama 15 hari. Setelah 5 hari, 3 pekerja keluar. Waktu yang masih dibutuhkan ...<label class="opt"><input type="radio" name="q9" value="a"> A. 10 hari</label><label class="opt"><input type="radio" name="q9" value="b"> B. 12 hari</label><label class="opt"><input type="radio" name="q9" value="c"> C. 13⅓ hari</label><label class="opt"><input type="radio" name="q9" value="d"> D. 15 hari</label></div>
+<div class="quiz-item"><b>10.</b> 1 ayam menghabiskan 1 karung pakan dalam 6 hari. 3 ayam menghabiskan 4 karung dalam ...<label class="opt"><input type="radio" name="q10" value="a"> A. 6 hari</label><label class="opt"><input type="radio" name="q10" value="b"> B. 8 hari</label><label class="opt"><input type="radio" name="q10" value="c"> C. 10 hari</label><label class="opt"><input type="radio" name="q10" value="d"> D. 12 hari</label></div>
+<div class="quiz-item"><b>11.</b> Jika \(X=2(a+b)\) dan \(Y=2a+2b\), hubungan X dan Y ...<label class="opt"><input type="radio" name="q11" value="a"> A. X &gt; Y</label><label class="opt"><input type="radio" name="q11" value="b"> B. X &lt; Y</label><label class="opt"><input type="radio" name="q11" value="c"> C. X = Y</label><label class="opt"><input type="radio" name="q11" value="d"> D. Tidak dapat ditentukan</label></div>
+<div class="quiz-item"><b>12.</b> Diketahui x&gt;0. Apakah selalu \(x+1&gt;1/x\)?<label class="opt"><input type="radio" name="q12" value="a"> A. Selalu benar</label><label class="opt"><input type="radio" name="q12" value="b"> B. Selalu salah</label><label class="opt"><input type="radio" name="q12" value="c"> C. Benar untuk semua x&gt;1</label><label class="opt"><input type="radio" name="q12" value="d"> D. Tidak dapat ditentukan untuk semua x&gt;0</label></div>
+<div class="btnrow"><button type="button" onclick="checkQuiz()">Periksa Jawaban</button><button type="button" class="secondary" onclick="resetQuiz()">Ulangi Quiz</button></div><div id="quizResult" class="result"></div>
+</form>
+</div>
+</section>
+
+  </div>
+
+  <!-- ============ TAB 2: PAKET SOAL ============ -->
+  <div id="tab-paket" class="tab-content">
+
+    <div id="packet-list-view" class="packet-list">
+      <div class="packet-header">
+        <h2 id="packet-title">Memuat...</h2>
+        <p id="packet-desc">Mohon tunggu...</p>
+      </div>
+
+      <div class="scoreboard">
+        <span class="label">Total Tryout</span>
+        <span class="num" id="tryout-score">0 / 0</span>
+      </div>
+
+      <div id="packet-container" class="packet-grid">
+        <div class="empty-state">Memuat daftar paket soal...</div>
+      </div>
+    </div>
+
+    <div id="quiz-view" class="quiz-view">
+      <div class="quiz-header">
+        <div class="quiz-top-row">
+          <button class="quiz-back-btn" onclick="exitQuiz()">← Keluar</button>
+          <div class="quiz-progress-text">
+            Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> &nbsp;·&nbsp; Dijawab <b id="quiz-answered-count">0</b>
+          </div>
+        </div>
+        <div class="quiz-packet-name" id="quiz-packet-name">Paket 1</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="quiz-progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="quiz-body" id="quiz-body"></div>
+
+      <div class="quiz-footer" id="quiz-footer" style="display:none;">
+        <div class="quiz-footer-inner">
+          <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
+          <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+          <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">Materi ini adalah HTML pendamping untuk sub-pattern. Fondasi konsep senilai, berbalik nilai, majemuk, bertahap, gabungan, normalisasi, dan format X vs Y tetap dirujuk dari HTML fundamental sebelumnya.</div>
+
+</div>
+<script>
+const keys={q1:'b',q2:'d',q3:'b',q4:'c',q5:'c',q6:'b',q7:'c',q8:'b',q9:'c',q10:'b',q11:'c',q12:'d'};
+function checkQuiz(){let score=0,total=Object.keys(keys).length;for(const q in keys){const el=document.querySelector('input[name="'+q+'"]:checked');if(el&&el.value===keys[q])score++;}document.getElementById('quizResult').textContent='Skor: '+score+' / '+total+' benar.';}
+function resetQuiz(){document.getElementById('quizForm').reset();document.getElementById('quizResult').textContent='';}
+</script>
+<script>
+(function () {
+  "use strict";
+
+  var letters = ['A', 'B', 'C', 'D', 'E'];
+  var tryoutAnswered = 0, tryoutCorrect = 0;
+  var currentPacket = null;
+  var userAnswers = [];
+  var quizSubmitted = false;
+  var currentQuestionIndex = 0;
+  var isLanjutan = /materi-2\.html/i.test((location.pathname.split('/').pop() || ''));
+
+  /* ---------- TAB SWITCHER ---------- */
+  function switchTab(tabName, btn) {
+    document.querySelectorAll('.tab-content').forEach(function (el) { el.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function (el) { el.classList.remove('active'); });
+    document.getElementById('tab-' + tabName).classList.add('active');
+    if (btn) btn.classList.add('active');
+  }
+
+  /* ---------- STICKY NAV MATERI ---------- */
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section'));
+  var nav = document.getElementById('sticky-nav');
+  var chips = [];
+
+  var upBtn = document.createElement('button');
+  upBtn.type = 'button';
+  upBtn.className = 'nav-top';
+  upBtn.textContent = '↑ Atas';
+  upBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(upBtn);
+
+  var pill = document.createElement('span');
+  pill.className = 'pill-switch';
+  var pillDasar = document.createElement('a');
+  pillDasar.href = 'materi-1.html';
+  pillDasar.textContent = 'Dasar';
+  var pillLanjut = document.createElement('a');
+  pillLanjut.href = 'materi-2.html';
+  pillLanjut.textContent = 'Lanjutan';
+  pill.appendChild(pillDasar);
+  pill.appendChild(pillLanjut);
+  if (isLanjutan) pillLanjut.classList.add('active');
+  else pillDasar.classList.add('active');
+  nav.appendChild(pill);
+
+  sections.forEach(function (sec) {
+    var h = sec.querySelector('h2');
+    if (!h) return;
+    var label = h.textContent
+      .replace(/^BAB\s*\d+\s*[—-]\s*/i, '')
+      .replace(/^\d+\.\s*/, '')
+      .trim();
+    if (label.length > 28) {
+      var cut = label.slice(0, 28);
+      var sp = cut.lastIndexOf(' ');
+      if (sp > 14) cut = cut.slice(0, sp);
+      label = cut + '…';
+    }
+    var chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'nav-chip';
+    chip.textContent = label;
+    chip.addEventListener('click', function () {
+      var top = sec.getBoundingClientRect().top + window.pageYOffset - 76;
+      window.scrollTo({ top: top < 0 ? 0 : top, behavior: 'smooth' });
+    });
+    nav.appendChild(chip);
+    chips.push(chip);
+  });
+
+  var bankChip = document.createElement('button');
+  bankChip.type = 'button';
+  bankChip.className = 'nav-chip';
+  bankChip.textContent = 'Paket Soal';
+  bankChip.addEventListener('click', function () {
+    switchTab('paket', document.getElementById('tab-btn-paket'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(bankChip);
+
+  var raf = 0;
+  function updateNav() {
+    if (raf) return;
+    raf = window.requestAnimationFrame(function () {
+      raf = 0;
+      var active = -1;
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top <= 150) active = i;
+        else break;
+      }
+      if (active === -1) active = 0;
+      chips.forEach(function (c, idx) { c.classList.toggle('active', idx === active); });
+      var chip = chips[active] || chips[0];
+      var nRect = nav.getBoundingClientRect();
+      if (nRect.top <= 0) {
+        var cRect = chip.getBoundingClientRect();
+        var target = nav.scrollLeft + (cRect.left + cRect.width / 2) - (nRect.left + nRect.width / 2);
+        var max = nav.scrollWidth - nav.clientWidth;
+        if (target < 0) target = 0;
+        if (target > max) target = max;
+        if (Math.abs(target - nav.scrollLeft) > 1) nav.scrollLeft = target;
+      }
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  window.addEventListener('resize', updateNav);
+  updateNav();
+
+  /* ---------- SCOREBOARD ---------- */
+  function updateTryoutScore() {
+    document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered;
+  }
+
+  /* ---------- PACKET LOADER ---------- */
+  async function loadPackets() {
+    var container = document.getElementById('packet-container');
+    var titleEl = document.getElementById('packet-title');
+    var descEl = document.getElementById('packet-desc');
+
+    try {
+      var response = await fetch('manifest.json');
+      if (!response.ok) throw new Error('Manifest not found');
+      var manifest = await response.json();
+
+      titleEl.textContent = manifest.judul || 'Bank Soal';
+      descEl.textContent = manifest.deskripsi || '';
+
+      container.innerHTML = '';
+      if (!manifest.paket || manifest.paket.length === 0) {
+        container.innerHTML = '<div class="empty-state">Belum ada paket soal yang tersedia.</div>';
+        return;
+      }
+
+      manifest.paket.forEach(function (pkt, idx) {
+        var card = document.createElement('div');
+        card.className = 'packet-card';
+        card.innerHTML =
+          '<div class="packet-title">' + escapeHtml(pkt.nama) + '</div>' +
+          '<div class="packet-desc">' + escapeHtml(pkt.deskripsi || 'Paket latihan perbandingan TIU') + '</div>' +
+          '<div class="packet-meta"><span class="packet-badge">' + escapeHtml(pkt.file) + '</span><span>Paket ' + (idx + 1) + '</span></div>';
+        card.addEventListener('click', function () { startPacket(pkt); });
+        container.appendChild(card);
+      });
+
+    } catch (err) {
+      titleEl.textContent = 'Bank Soal Perbandingan TIU CPNS';
+      descEl.textContent = 'Pastikan file manifest.json tersedia di folder yang sama.';
+      container.innerHTML =
+        '<div class="empty-state"><strong>manifest.json belum ditemukan</strong><br>' +
+        'Buat file manifest.json di folder yang sama agar paket soal bisa dimuat.<br>' +
+        '<small style="opacity:0.7">Error: ' + escapeHtml(err.message) + '</small></div>';
+    }
+  }
+
+  /* ---------- QUIZ ENGINE - SATU SOAL PER LAYAR ---------- */
+  function normalizePacket(data) {
+    if (!data || typeof data !== 'object') return data;
+
+    var firstSoal = Array.isArray(data.soal) ? data.soal[0] : null;
+    if (firstSoal && firstSoal.opsi && typeof firstSoal.opsi === 'object' && !Array.isArray(firstSoal.opsi)) {
+      var order = ['A', 'B', 'C', 'D', 'E'];
+      var mapped = data.soal.map(function (s) {
+        var opsi = [];
+        order.forEach(function (k) {
+          if (s.opsi && s.opsi[k] !== undefined) opsi.push(k + '. ' + s.opsi[k]);
+        });
+        var pembahasan = String(s.pembahasan || '');
+        if (s.mekanisme) pembahasan += '\n\n**Mekanisme:**\n' + String(s.mekanisme).replace(/^\s*>\s?/gm, '');
+        if (s.distraktor_diagnostik && typeof s.distraktor_diagnostik === 'object') {
+          var lines = [];
+          order.forEach(function (k) {
+            if (s.distraktor_diagnostik[k] === undefined) return;
+            var line = k + '. ' + s.distraktor_diagnostik[k];
+            if (String(s.jawaban || '').toUpperCase() === k) line = '**' + line + '**';
+            lines.push(line);
+          });
+          if (lines.length) pembahasan += '\n\n**Analisis opsi:**\n' + lines.join('\n');
+        }
+        return {
+          id: s.id != null ? s.id : undefined,
+          pertanyaan: s.soal,
+          opsi: opsi,
+          jawaban: String(s.jawaban || '').toUpperCase(),
+          tipe: (s.family && s.subpattern) ? (s.family + ' · ' + s.subpattern) : 'Perbandingan',
+          pembahasan: pembahasan
+        };
+      });
+      return {
+        nama: data.paket || 'Bank Soal',
+        deskripsi: data.jenis || '',
+        jumlah_soal: mapped.length,
+        soal: mapped
+      };
+    }
+
+    if (Array.isArray(data.soal)) return data;
+
+    if (Array.isArray(data.questions)) {
+      var optKeys = ['a', 'b', 'c', 'd', 'e'];
+
+      var soal = data.questions.map(function (q) {
+        var opsi = [];
+        optKeys.forEach(function (k) {
+          if (q.options && q.options[k] !== undefined) {
+            opsi.push(k.toUpperCase() + '. ' + q.options[k]);
+          }
+        });
+
+        var pembahasan = q.explanation || '';
+
+        var pa = q.pattern_analysis;
+        if (pa && pa.step_by_step && pa.step_by_step.length) {
+          pembahasan += '\n\n**Langkah penyelesaian:**\n' +
+            pa.step_by_step.map(function (s, i) { return (i + 1) + '. ' + s; }).join('\n');
+        }
+
+        var lines = [];
+        optKeys.forEach(function (k) {
+          if (!q.options || q.options[k] === undefined) return;
+          var reason = (q.distractor_analysis && q.distractor_analysis[k]) ? q.distractor_analysis[k] : '';
+          var line = k.toUpperCase() + '. ' + q.options[k] + (reason ? ' — ' + reason : '');
+          if (String(q.correct_option || '').toUpperCase() === k.toUpperCase()) {
+            line = '**' + line + '**';
+          }
+          lines.push(line);
+        });
+        if (lines.length) {
+          pembahasan += '\n\n**Analisis opsi:**\n' + lines.join('\n');
+        }
+
+        return {
+          id: q.id != null ? q.id : undefined,
+          pertanyaan: q.question,
+          opsi: opsi,
+          jawaban: String(q.correct_option || '').toUpperCase(),
+          tipe: q.pattern_subtype || '',
+          pembahasan: pembahasan
+        };
+      });
+
+      return {
+        nama: (data.package && data.package.title) || data.nama || 'Bank Soal',
+        deskripsi: (data.package && data.package.instruction) || data.deskripsi || '',
+        jumlah_soal: soal.length,
+        soal: soal
+      };
+    }
+
+    return data;
+  }
+
+  async function startPacket(pkt) {
+    document.getElementById('packet-list-view').classList.add('hidden');
+    document.getElementById('quiz-view').classList.add('active');
+    document.getElementById('quiz-packet-name').textContent = pkt.nama;
+
+    var body = document.getElementById('quiz-body');
+    body.innerHTML =
+      '<div class="loading-state"><div class="loading-spinner"></div>' +
+      '<div>Memuat soal dari <b>' + escapeHtml(pkt.file) + '</b>...</div></div>';
+    document.getElementById('quiz-footer').style.display = 'none';
+
+    try {
+      var response = await fetch(pkt.file);
+      if (!response.ok) throw new Error('File tidak ditemukan');
+      var data = await response.json();
+
+      currentPacket = normalizePacket(data);
+      userAnswers = [];
+      quizSubmitted = false;
+      currentQuestionIndex = 0;
+
+      var soal = (currentPacket && currentPacket.soal) || [];
+
+      if (soal.length === 0) {
+        body.innerHTML =
+          '<div class="empty-state"><strong>' + escapeHtml(pkt.nama) + ' masih kosong</strong><br>' +
+          'Belum ada soal pada file <b>' + escapeHtml(pkt.file) + '</b>.<br>' +
+          '<small>Tambahkan soal pada array "soal", lalu klik paket ini lagi.</small></div>';
+        return;
+      }
+
+      userAnswers = new Array(soal.length).fill(null);
+      document.getElementById('quiz-total-num').textContent = soal.length;
+      document.getElementById('quiz-answered-count').textContent = '0';
+      document.getElementById('quiz-progress-fill').style.width = '0%';
+
+      renderQuestion();
+      body.scrollTop = 0;
+    } catch (err) {
+      body.innerHTML =
+        '<div class="empty-state"><strong>Gagal memuat ' + escapeHtml(pkt.file) + '</strong><br>' +
+        'Pastikan file JSON paket soal tersedia.<br>' +
+        '<small style="opacity:0.7">Error: ' + escapeHtml(err.message) + '</small></div>';
+      setTimeout(function () { exitQuiz(); }, 2000);
+    }
+  }
+
+  function resetQuizFooter() {
+    document.getElementById('quiz-footer').innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()" disabled>← Kembali</button>' +
+      '<button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="nextQuestion()">Selanjutnya →</button>' +
+      '</div>';
+    document.getElementById('quiz-footer').style.display = 'none';
+  }
+
+  function exitQuiz() {
+    document.getElementById('packet-list-view').classList.remove('hidden');
+    document.getElementById('quiz-view').classList.remove('active');
+    currentPacket = null;
+    userAnswers = [];
+    quizSubmitted = false;
+    currentQuestionIndex = 0;
+    resetQuizFooter();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderAnswerFooter() {
+    var isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
+    document.getElementById('quiz-footer').innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()"' + (currentQuestionIndex === 0 ? ' disabled' : '') + '>← Kembali</button>' +
+      '<button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="' + (isLast ? 'submitQuiz()' : 'nextQuestion()') + '">' + (isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →') + '</button>' +
+      '</div>';
+    document.getElementById('quiz-footer').style.display = 'block';
+  }
+
+  function goToQuestion(qi) {
+    if (!currentPacket) return;
+    currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
+    renderQuestion();
+    var body = document.getElementById('quiz-body');
+    if (body && body.scrollTo) body.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function prevQuestion() {
+    goToQuestion(currentQuestionIndex - 1);
+  }
+
+  function nextQuestion() {
+    if (!currentPacket) return;
+    if (currentQuestionIndex >= currentPacket.soal.length - 1) {
+      submitQuiz();
+      return;
+    }
+    goToQuestion(currentQuestionIndex + 1);
+  }
+
+  function renderQuestion() {
+    var body = document.getElementById('quiz-body');
+    var total = currentPacket.soal.length;
+    if (total === 0) { body.innerHTML = ''; return; }
+    currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
+    var qi = currentQuestionIndex;
+
+    body.innerHTML = '';
+
+    var navEl = document.createElement('div');
+    navEl.className = 'quiz-nav';
+    var navTitle = document.createElement('div');
+    navTitle.className = 'quiz-nav-title';
+    navTitle.textContent = 'Navigasi Soal';
+    navEl.appendChild(navTitle);
+
+    var navDots = document.createElement('div');
+    navDots.className = 'quiz-nav-dots';
+
+    currentPacket.soal.forEach(function (s, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '');
+      dot.textContent = i + 1;
+      dot.addEventListener('click', function () {
+        if (i !== currentQuestionIndex) goToQuestion(i);
+      });
+      navDots.appendChild(dot);
+    });
+    navEl.appendChild(navDots);
+    body.appendChild(navEl);
+
+    var currentDot = navDots.querySelector('.quiz-nav-dot.current');
+    if (currentDot && currentDot.scrollIntoView) {
+      currentDot.scrollIntoView({ block: 'nearest', inline: 'center' });
+    }
+
+    var soal = currentPacket.soal[qi];
+    var card = document.createElement('div');
+    card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
+
+    var numBadge = document.createElement('div');
+    numBadge.className = 'quiz-q-num';
+    numBadge.textContent = 'SOAL ' + (qi + 1);
+    card.appendChild(numBadge);
+
+    var qText = document.createElement('p');
+    qText.className = 'quiz-q-text';
+    qText.textContent = soal.pertanyaan;
+    card.appendChild(qText);
+
+    var optsWrap = document.createElement('div');
+    optsWrap.className = 'quiz-opts';
+
+    (soal.opsi || []).forEach(function (optText, oi) {
+      var opt = document.createElement('div');
+      opt.className = 'quiz-opt';
+
+      var match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+      var letter = match ? match[1] : letters[oi];
+      var text = match ? match[2] : optText;
+
+      opt.innerHTML = '<span class="bubble">' + letter + '</span><span>' + escapeHtml(text) + '</span>';
+
+      if (userAnswers[qi] === oi) {
+        opt.classList.add('selected');
+      }
+
+      opt.addEventListener('click', function () { handleOptionSelect(qi, oi); });
+      optsWrap.appendChild(opt);
+    });
+
+    card.appendChild(optsWrap);
+    body.appendChild(card);
+    renderLatex(card);
+
+    document.getElementById('quiz-current-num').textContent = qi + 1;
+    renderAnswerFooter();
+    updateProgress();
+    requestAnimationFrame(fitQuestionCard);
+  }
+
+function fitQuestionCard() {
+    if (quizSubmitted) return;
+    var body = document.getElementById('quiz-body');
+    var card = document.querySelector('.quiz-q-card');
+    if (!body || !card) return;
+    if (typeof body.clientHeight !== 'number' || body.clientHeight <= 0) return;
+
+    card.style.zoom = '';
+
+    var bodyTop = body.getBoundingClientRect().top;
+    var availH = body.clientHeight - (card.getBoundingClientRect().top - bodyTop) - 20;
+    var availW = body.clientWidth;
+    if (window.matchMedia && window.matchMedia('(min-width:1024px)').matches) {
+      var navElWide = body.querySelector('.quiz-nav');
+      if (navElWide) {
+        var padLW = parseFloat(getComputedStyle(body).paddingLeft) || 0;
+        var padRW = parseFloat(getComputedStyle(body).paddingRight) || 0;
+        availW = body.clientWidth - padLW - padRW - navElWide.getBoundingClientRect().width - 14;
+      }
+    }
+    availW = Math.min(availW, 800);
+
+    var cardH = card.getBoundingClientRect().height;
+    var cardW = card.getBoundingClientRect().width;
+    if (cardH <= 0 || cardW <= 0) return;
+
+    var needed = Math.min(availH / cardH, availW / cardW);
+    card.style.zoom = Math.max(0.8, Math.min(1.5, needed));
+  }
+
+  function handleOptionSelect(qi, oi) {
+    if (quizSubmitted) return;
+
+    if (userAnswers[qi] === oi) {
+      userAnswers[qi] = null;
+    } else {
+      userAnswers[qi] = oi;
+    }
+
+    var optsWrap = document.querySelectorAll('.quiz-opts')[0];
+    if (optsWrap && optsWrap.children.length === (currentPacket.soal[qi].opsi || []).length) {
+      var played = 0;
+      Array.prototype.forEach.call(optsWrap.children, function (opt, i) {
+        opt.classList.toggle('selected', i === userAnswers[qi]);
+        played = i;
+      });
+    }
+
+    var card = document.querySelector('.quiz-q-card');
+    if (card) card.classList.toggle('answered', userAnswers[qi] !== null);
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    var answered = userAnswers.filter(function (a) { return a !== null; }).length;
+    var total = currentPacket ? currentPacket.soal.length : 0;
+
+    document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
+    document.getElementById('quiz-answered-count').textContent = answered;
+    if (total > 0) {
+      document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
+    }
+  }
+
+  function correctIndex(soal) {
+    return String(soal.jawaban || '').charCodeAt(0) - 'A'.charCodeAt(0);
+  }
+
+  function submitQuiz(skipConfirm) {
+    if (!currentPacket) return;
+
+    var answered = userAnswers.filter(function (a) { return a !== null; }).length;
+    var total = currentPacket.soal.length;
+
+    if (!skipConfirm && answered < total) {
+      var skipped = total - answered;
+      if (!confirm('Masih ada ' + skipped + ' soal yang belum dijawab.\nSoal yang tidak dijawab akan dianggap salah.\n\nLanjutkan ke pembahasan?')) {
+        return;
+      }
+    }
+
+    var correct = 0;
+    currentPacket.soal.forEach(function (soal, qi) {
+      if (userAnswers[qi] === correctIndex(soal)) correct++;
+    });
+
+    tryoutAnswered += total;
+    tryoutCorrect += correct;
+    updateTryoutScore();
+
+    quizSubmitted = true;
+    renderReviewMode();
+    var qb = document.getElementById('quiz-body');
+    if (qb) qb.scrollTop = 0;
+  }
+
+  function skipToReview() {
+    if (!currentPacket) return;
+    if (!confirm('Lewati semua soal dan langsung lihat pembahasan?\nSemua soal yang belum dijawab akan dianggap salah.')) return;
+    submitQuiz(true);
+  }
+
+  function renderMarkdown(src) {
+    return String(src)
+      .replace(/^\s*>\s?/gm, '')
+      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+      .replace(/\n{2,}/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function renderLatex(root) {
+    if (root && window.renderMathInElement) {
+      try {
+        renderMathInElement(root, {
+          delimiters: [
+            { left: '\\(', right: '\\)', display: false },
+            { left: '$$', right: '$$', display: true },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      } catch (err) {
+        /* KaTeX belum dimuat; teks tetap ditampilkan apa adanya */
+      }
+    }
+  }
+
+  function renderReviewMode() {
+    var body = document.getElementById('quiz-body');
+    body.innerHTML = '';
+    document.getElementById('quiz-footer').style.display = 'none';
+
+    var correct = 0, wrong = 0, skipped = 0;
+    currentPacket.soal.forEach(function (soal, qi) {
+      var ci = correctIndex(soal);
+      if (userAnswers[qi] === null) skipped++;
+      else if (userAnswers[qi] === ci) correct++;
+      else wrong++;
+    });
+
+    var total = currentPacket.soal.length;
+    var percent = total ? Math.round((correct / total) * 100) : 0;
+
+    var summary = document.createElement('div');
+    summary.className = 'review-summary';
+    summary.innerHTML =
+      '<div class="review-stat"><div class="review-stat-num">' + percent + '%</div><div class="review-stat-label">Skor</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num good">' + correct + '</div><div class="review-stat-label">Benar</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num bad">' + wrong + '</div><div class="review-stat-label">Salah</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num skip">' + skipped + '</div><div class="review-stat-label">Dilewati</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num">' + total + '</div><div class="review-stat-label">Total</div></div>';
+    body.appendChild(summary);
+
+    currentPacket.soal.forEach(function (soal, qi) {
+      var userAns = userAnswers[qi];
+      var ci = correctIndex(soal);
+      var isSkipped = userAns === null;
+      var isCorrect = !isSkipped && userAns === ci;
+
+      var card = document.createElement('div');
+      card.className = 'review-q-card';
+
+      var headRow = document.createElement('div');
+      headRow.className = 'review-q-head';
+
+      var numBadge = document.createElement('span');
+      if (isSkipped) {
+        numBadge.className = 'review-q-badge skipped';
+        numBadge.textContent = '#' + (qi + 1) + ' · ⊘ Dilewati';
+      } else if (isCorrect) {
+        numBadge.className = 'review-q-badge correct';
+        numBadge.textContent = '#' + (qi + 1) + ' · ✓ Benar';
+      } else {
+        numBadge.className = 'review-q-badge wrong';
+        numBadge.textContent = '#' + (qi + 1) + ' · ✗ Salah';
+      }
+      headRow.appendChild(numBadge);
+
+      if (soal.tipe) {
+        var typeBadge = document.createElement('span');
+        typeBadge.className = 'review-q-type';
+        typeBadge.textContent = soal.tipe;
+        headRow.appendChild(typeBadge);
+      }
+      card.appendChild(headRow);
+
+      var qText = document.createElement('p');
+      qText.className = 'quiz-q-text';
+      qText.textContent = soal.pertanyaan;
+      card.appendChild(qText);
+
+      if (soal.premis && soal.premis.length > 0) {
+        var premisBox = document.createElement('div');
+        premisBox.className = 'review-premis';
+        var premisLabel = document.createElement('div');
+        premisLabel.className = 'review-premis-label';
+        premisLabel.textContent = 'Premis';
+        premisBox.appendChild(premisLabel);
+        var premisList = document.createElement('ol');
+        premisList.className = 'review-premis-list';
+        soal.premis.forEach(function (p) {
+          var li = document.createElement('li');
+          li.textContent = p;
+          premisList.appendChild(li);
+        });
+        premisBox.appendChild(premisList);
+        card.appendChild(premisBox);
+      }
+
+      var optsWrap = document.createElement('div');
+      optsWrap.className = 'quiz-opts';
+
+      (soal.opsi || []).forEach(function (optText, oi) {
+        var opt = document.createElement('div');
+        opt.className = 'quiz-opt locked';
+
+        var match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+        var letter = match ? match[1] : letters[oi];
+        var text = match ? match[2] : optText;
+
+        opt.innerHTML = '<span class="bubble">' + letter + '</span><span>' + escapeHtml(text) + '</span>';
+
+        if (oi === ci) {
+          if (isCorrect || isSkipped) opt.classList.add('review-correct');
+          else opt.classList.add('review-reveal');
+        }
+        if (!isSkipped && oi === userAns && !isCorrect) {
+          opt.classList.add('review-wrong');
+        }
+        optsWrap.appendChild(opt);
+      });
+
+      card.appendChild(optsWrap);
+
+      if (soal.pembahasan) {
+        var explain = document.createElement('div');
+        var explainClass = 'review-explain ';
+        var prefix = '';
+        if (isSkipped) {
+          explainClass += 'skip';
+          prefix = '<span class="status">⊘ Dilewati.</span> ';
+        } else if (isCorrect) {
+          explainClass += 'good';
+          prefix = '<span class="status">✓ Benar.</span> ';
+        } else {
+          explainClass += 'bad';
+          prefix = '<span class="status">✗ Kurang tepat.</span> ';
+        }
+        explain.className = explainClass;
+        explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
+        card.appendChild(explain);
+      }
+
+      renderLatex(card);
+      body.appendChild(card);
+    });
+
+    var footer = document.getElementById('quiz-footer');
+    footer.innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>' +
+      '</div>';
+    footer.style.display = 'block';
+  }
+
+  function retryPacket() {
+    if (!currentPacket) return;
+    currentQuestionIndex = 0;
+    userAnswers = new Array(currentPacket.soal.length).fill(null);
+    quizSubmitted = false;
+    renderQuestion();
+    var qb = document.getElementById('quiz-body');
+    if (qb) qb.scrollTop = 0;
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* Expose needed globals for inline onclick handlers */
+  window.switchTab = switchTab;
+  window.loadPackets = loadPackets;
+  window.startPacket = startPacket;
+  window.normalizePacket = normalizePacket;
+  window.closePacket = null;
+  window.exitQuiz = exitQuiz;
+  window.goToQuestion = goToQuestion;
+  window.prevQuestion = prevQuestion;
+  window.nextQuestion = nextQuestion;
+  window.submitQuiz = submitQuiz;
+  window.skipToReview = skipToReview;
+  window.retryPacket = retryPacket;
+
+  /* ---------- RENDER MATH STATIS (materi) ---------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var tabMateri = document.getElementById('tab-materi');
+    if (tabMateri && window.renderMathInElement) {
+      try {
+        renderMathInElement(tabMateri, {
+          delimiters: [
+            { left: '\\(', right: '\\)', display: false },
+            { left: '$$', right: '$$', display: true },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      } catch (err) { /* teks tetap tampil apa adanya */ }
+    }
+  });
+
+  var fitTimer = null;
+  function refitOnResize() {
+    if (!document.getElementById('quiz-view').classList.contains('active')) return;
+    var qv = document.getElementById('quiz-view');
+    if (!qv.classList.contains('active')) return;
+    fitQuestionCard();
+  }
+  window.addEventListener('resize', function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(refitOnResize, 150);
+  });
+  window.addEventListener('orientationchange', function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(refitOnResize, 250);
+  });
+
+  loadPackets();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2b3a67">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3E…%3C/text%3E%3C/svg%3E">
+<title>Deret TIU CPNS — Materi &amp; Bank Soal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+  :root{
+    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
+    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth; }
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:28px clamp(14px, 3vw, 24px) 80px;}
+
+  /* ---------- Tab nav ---------- */
+  .tab-nav{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px;}
+  .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
+  .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .tab-content{display:none;} .tab-content.active{display:block;}
+
+  /* ---------- Header & breadcrumb ---------- */
+  .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:8px; max-width:800px; margin:0 auto; padding:24px clamp(14px, 3vw, 24px) 0; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft);}
+  .breadcrumb a{color:var(--accent); text-decoration:none;}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-current{color:var(--ink-soft); font-weight:500;}
+
+  header.top{padding:24px 0 22px; max-width:800px; margin:0 auto;}
+  header.top h1{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; margin:0 0 10px; font-size:clamp(26px, 5vw, 38px);}
+  header.top p{margin:0; color:var(--ink-soft); font-size:1.02rem; max-width:62ch;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+  .tag{padding:5px 11px; border-radius:999px; font-size:12px; font-family:'IBM Plex Mono', monospace; color:var(--accent); background:var(--accent-soft); border:1px solid var(--line);}
+
+  /* ---------- Sticky top nav ---------- */
+  .sticky-nav{
+    position:sticky; top:0; z-index:9;
+    display:flex; gap:6px; overflow-x:auto; align-items:center;
+    padding:10px 0 12px; margin:0 0 6px;
+    background:rgba(243,245,239,0.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:thin;
+  }
+  .sticky-nav::-webkit-scrollbar{height:4px;}
+  .sticky-nav::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .sticky-nav .nav-top{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    color:var(--accent); background:none; border:1px dashed var(--accent); border-radius:999px;
+    padding:5px 11px; cursor:pointer; white-space:nowrap; transition:all .15s;
+  }
+  .sticky-nav .nav-top:hover{background:var(--accent); color:#fff;}
+  .sticky-nav .nav-chip{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    padding:6px 12px; border-radius:999px; border:1px solid var(--line);
+    background:var(--paper); color:var(--ink-soft); cursor:pointer; white-space:nowrap;
+    transition:all .15s; user-select:none; -webkit-tap-highlight-color:transparent;
+  }
+  .sticky-nav .nav-chip:hover{border-color:var(--accent); color:var(--accent);}
+  .sticky-nav .nav-chip.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  /* ---------- Bagian materi ---------- */
+  section{ scroll-margin-top:76px; margin:0 0 46px; }
+  section > h2{
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.3rem, 1.6rem - 0.5vw, 1.6rem);
+    color:var(--ink); margin:0 0 14px; letter-spacing:-0.01em;
+    display:flex; align-items:center; gap:12px;
+  }
+  section > h2::after{content:''; flex:1; height:1px; background:var(--line);}
+  section > h3{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.15rem, 1.3rem - 0.4vw, 1.3rem); margin:26px 0 8px;}
+  .lead{color:var(--ink-soft); font-size:1.05rem; margin:6px 0 14px;}
+
+  /* ---------- Cards ---------- */
+  .card, .example{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:0 1px 2px rgba(31,36,48,.05), 0 6px 18px rgba(31,36,48,.07);
+  }
+  .card{padding:20px;}
+  .example{padding:20px; margin:16px 0; border-left:5px solid var(--accent);}
+  .example h3{margin-top:0;}
+  .blue{background:var(--accent-soft); border-color:#c9d3ee;}
+  .green{background:var(--good-soft); border-color:#bfe0cc;}
+  .orange{background:var(--skip-soft); border-color:#e8d9a8;}
+  .red{background:var(--bad-soft); border-color:#eccbc6;}
+  .purple{background:#EFEAF9; border-color:#d7c7f0;}
+
+  /* ---------- jawaban / peringatan ---------- */
+  .answer, .warn, .danger{ margin-top:14px; padding:13px 15px; border-radius:11px; font-size:1rem; }
+  .answer{ background:var(--good-soft); border:1px solid #bfe0cc; color:#1f5c3d; font-weight:600; }
+  .warn{ background:var(--skip-soft); border:1px solid #e8d9a8; color:#6b5213; }
+  .danger{ background:var(--bad-soft); border:1px solid #eccbc6; color:#7d2c25; }
+
+  /* ---------- Visual / scene ---------- */
+  .viz{ margin:15px 0; padding:17px; border:1px solid var(--line); border-radius:16px; background:var(--paper); }
+  .viz-title{ font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-bottom:10px; text-transform:uppercase; letter-spacing:.5px; font-family:'IBM Plex Mono', monospace; }
+  .scene{display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;}
+  .scene .box{ min-width:128px; padding:12px 13px; text-align:center; border-radius:13px; border:1px solid var(--line); background:var(--surface); }
+  .visual{margin:12px 0;}
+  .visual .box{display:inline-block; min-width:110px; padding:10px 12px; text-align:center; border-radius:12px; border:1px solid var(--line); background:var(--surface); margin:0 4px;}
+  .bigemoji{font-size:32px; line-height:1.1;}
+  .label{font-size:13px; color:var(--ink-soft); margin-top:5px;}
+  .arrow{font-size:28px; color:var(--accent); font-weight:900; padding:0 2px;}
+  .goodarrow{color:var(--good);}.badarrow{color:var(--bad);}
+
+  /* ---------- Fase / phase ---------- */
+  .phase{display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center;}
+  .phase-card{padding:15px; border-radius:14px; border:1px solid var(--line); background:var(--surface);}
+  .phase-card h4{margin:0 0 5px;}
+  .phase-arrow{font-size:32px; color:var(--accent); font-weight:900; text-align:center;}
+
+  /* ---------- Bar ---------- */
+  .bar-wrap{display:grid; gap:9px; margin-top:10px;}
+  .bar-row{display:grid; grid-template-columns:145px 1fr 80px; gap:10px; align-items:center;}
+  .bar-label{font-size:14px; font-weight:600;}
+  .bar{height:22px; background:var(--line); border-radius:999px; overflow:hidden;}
+  .fill-blue{height:100%; background:#8fa2d9;}
+  .fill-green{height:100%; background:var(--good);}
+  .fill-orange{height:100%; background:var(--skip);}
+  .fill-red{height:100%; background:var(--bad);}
+  .bar-num{text-align:right; font-weight:600; font-size:13px;}
+
+  /* ---------- Layer / mini / grid ---------- */
+  .layer{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px;}
+  .layer .mini{ padding:14px; border:1px solid var(--line); border-radius:13px; background:var(--surface); text-align:center; }
+  .mini .e{font-size:28px;}
+  .mini b{display:block; margin-top:4px;}
+  .small{font-size:12.5px; color:var(--ink-soft);}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:15px; margin:14px 0;}
+  .grid .mini{ padding:14px; border:1px solid var(--line); border-radius:13px; background:var(--surface); text-align:center; }
+
+  /* ---------- Rumus ---------- */
+  .mathbox{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:13px 15px; margin:12px 0; overflow-x:auto; }
+  .formula{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:1.02rem; margin:12px 0; overflow-x:auto; line-height:1.9; }
+
+  /* ---------- Langkah ---------- */
+  .step{display:flex; gap:13px; align-items:flex-start; margin:14px 0;}
+  .num{ width:31px; height:31px; flex:0 0 31px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; font-weight:700; font-family:'IBM Plex Mono', monospace; font-size:14px; }
+  .step-body{flex:1; min-width:0;}
+
+  /* ---------- Rule / warning ---------- */
+  .rule{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:0 10px 10px 0; padding:16px 20px; margin:14px 0; }
+  .warning{ background:var(--skip-soft); border:1px solid #e8d9a8; border-left:4px solid var(--skip); border-radius:0 10px 10px 0; padding:16px 20px; margin:14px 0; }
+  .rule b, .warning b{color:var(--accent);}
+
+  /* ---------- Tabel ---------- */
+  table{width:100%; border-collapse:collapse; margin:13px 0;}
+  th, td{border:1px solid var(--line); padding:9px 12px; text-align:left; vertical-align:top;}
+  th{background:var(--accent); color:#fff; font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:13px;}
+
+  /* ---------- Details ---------- */
+  details{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:11px 0;}
+  summary{cursor:pointer; font-weight:600;}
+  details.reveal{background:var(--surface); border:1px dashed var(--line); border-radius:10px; padding:10px 14px; margin:12px 0;}
+  details.reveal > summary{cursor:pointer; color:var(--accent); font-weight:600; font-family:'IBM Plex Mono', monospace; font-size:12.5px; user-select:none; -webkit-tap-highlight-color:transparent;}
+  details.reveal > summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  details.reveal[open]{border-style:solid;}
+  details.reveal[open] > summary{margin-bottom:10px;}
+
+  /* ---------- Kicker / kutipan dialog ---------- */
+  .kicker{font-size:12.5px; color:var(--ink-soft); font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:8px; font-family:'IBM Plex Mono', monospace;}
+  .mono{font-family:'IBM Plex Mono', monospace; font-size:.92rem;}
+
+  /* ---------- Quiz in-page ---------- */
+  .quiz{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px; margin:14px 0;}
+  .quiz .q{font-weight:600; margin-bottom:9px;}
+  .opts label{display:block; padding:7px 9px; border-radius:8px; cursor:pointer;}
+  .opts label:hover{background:var(--paper);}
+  .quiz-item{ margin:12px 0; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--surface); }
+  .quiz-item .opt{ display:block; padding:6px 9px; border-radius:8px; cursor:pointer; }
+  .quiz-item .opt:hover{background:var(--paper);}
+  .btnrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+  input[type=radio]{ accent-color:var(--accent); }
+  #quizForm button, .btnrow button{
+    border:0; background:var(--accent); color:#fff; font-size:15px; padding:11px 16px;
+    border-radius:10px; font-weight:600; cursor:pointer; font-family:'IBM Plex Mono', monospace; margin-right:7px;
+  }
+  #quizForm button.secondary, .btnrow button.secondary{background:#fff; color:var(--ink); border:1px solid var(--line); margin-right:0;}
+  .quiz.good{outline:2px solid var(--good); outline-offset:2px;}
+  .quiz.bad{outline:2px solid var(--bad); outline-offset:2px;}
+  .result{ display:none; margin-top:16px; padding:16px; border-radius:12px; background:var(--accent-soft); border:1px solid #c9d3ee; }
+  .score{font-size:28px; font-weight:700; font-family:'Fraunces', serif;}
+
+  /* ---------- Footer ---------- */
+  footer, .footer{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-soft); padding:30px 20px; }
+
+  /* ---------- PAKET TRYOUT ---------- */
+  .packet-header{margin-bottom:24px;}
+  .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
+  .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
+  .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(255px, 1fr)); gap:16px;}
+  .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
+  .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
+  .packet-card.disabled{opacity:0.6; pointer-events:none; filter:grayscale(0.5);}
+  .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0 0 6px;}
+  .packet-desc{font-size:13.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent);}
+  .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
+  .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
+  .packet-list.hidden{display:none;}
+
+  .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 0 26px; padding:12px 0; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+  .scoreboard .label{color:var(--ink-soft);}
+  .scoreboard .num{color:var(--accent); font-weight:500;}
+
+  .quiz-view{display:none;}
+  .quiz-view.active{
+    position:fixed; inset:0; z-index:100; background:var(--paper);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+
+  .quiz-view.active .quiz-top-row,
+  .quiz-view.active .quiz-packet-name,
+  .quiz-view.active .progress-bar,
+  .quiz-view.active .quiz-body > *,
+  .quiz-view.active .quiz-footer-inner{width:100%; max-width:800px; margin-left:auto; margin-right:auto;}
+  .quiz-view.active .quiz-body .quiz-q-card{order:0;}
+  .quiz-view.active .quiz-body .quiz-nav{order:1;}
+  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; flex-wrap:nowrap;}
+  .quiz-progress-text{flex:0 1 auto; min-width:0; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
+  .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-progress-text b{color:var(--accent); font-weight:600;}
+  .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:15px; margin:0 0 6px;}
+  .quiz-header{padding:12px clamp(14px,3vw,24px) 10px;}
+  .progress-bar{height:5px; background:var(--line); border-radius:3px; overflow:hidden;}
+  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
+
+  .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
+
+  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:8px; transition:border-color .2s;}
+  .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
+  .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
+  .quiz-q-text{font-size:15px; margin:0 0 12px; font-weight:500; line-height:1.55;}
+  .quiz-opts{display:flex; flex-direction:column; gap:6px;}
+  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:8px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+  .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.locked{cursor:default; pointer-events:none;}
+  .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
+  .quiz-opt .bubble{flex-shrink:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
+  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .quiz-opt > span:last-child{flex:1; min-width:0;}
+
+  .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+
+  .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:10px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+  .quiz-footer-inner{max-width:800px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto; flex-wrap:nowrap; min-width:0;}
+  .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px; white-space:nowrap; flex:0 0 auto;}
+  .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
+  .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
+  .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
+  .quiz-btn-primary{background:var(--accent); color:#fff;}
+  .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
+  .quiz-btn-skip:hover{background:var(--skip-soft);}
+
+  .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
+  .review-stat{text-align:center;}
+  .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
+  .review-stat-num.good{color:var(--good);}
+  .review-stat-num.bad{color:var(--bad);}
+  .review-stat-num.skip{color:var(--skip);}
+  .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
+
+  .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
+  .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+  .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
+  .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
+  .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
+  .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
+  .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
+
+  .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
+  .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+  .review-premis-list{margin:0; padding-left:18px;}
+  .review-premis-list li{margin-bottom:4px;}
+
+  .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
+  .review-explain.good{border-left:4px solid var(--good);}
+  .review-explain.bad{border-left:4px solid var(--bad);}
+  .review-explain.skip{border-left:4px solid var(--skip);}
+  .review-explain .status{font-weight:600;}
+  .review-explain.good .status{color:var(--good);}
+  .review-explain.bad .status{color:var(--bad);}
+  .review-explain.skip .status{color:var(--skip);}
+  .review-explain b{font-weight:600; color:var(--accent);}
+  .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
+
+  .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
+  .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  .quiz-nav{margin-bottom:12px; padding:10px 12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
+  .quiz-nav-dots{display:flex; flex-wrap:nowrap; overflow-x:auto; gap:4px; scrollbar-width:thin; padding-bottom:2px;}
+  .quiz-nav-dots::-webkit-scrollbar{height:4px;}
+  .quiz-nav-dots::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:6px;}
+  .quiz-nav-dot{flex:0 0 auto; width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
+  .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
+  .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
+  .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  @media (max-width:600px){
+    .wrap{padding:20px 16px 100px;}
+    header.top{ padding:18px 0 16px; }
+    .tab-nav{margin-bottom:18px;}
+    table{font-size:0.85rem;} th,td{padding:7px 9px;}
+    .scoreboard{margin:0 0 22px;}
+    .quiz-header{padding:10px clamp(14px,3vw,24px) 8px;}
+    .quiz-body{padding:10px clamp(14px,3vw,24px) 0;}
+    .quiz-q-card{padding:14px 16px; margin-bottom:0;}
+    .quiz-q-text{font-size:14.5px;}
+    .quiz-opt{font-size:13.5px; padding:7px 10px;}
+    .quiz-opt .bubble{width:22px; height:22px; font-size:11px;}
+    .quiz-packet-name{font-size:14.5px;}
+    .review-q-card{padding:16px;}
+    .quiz-footer{padding:10px 16px;}
+    .quiz-btn{font-size:12.5px; padding:9px 14px;}
+    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+    .bar-row{grid-template-columns:95px 1fr 55px;}
+    .phase{grid-template-columns:1fr;}
+    .phase-arrow{text-align:center; transform:rotate(90deg);}
+    .visual .box{min-width:90px;}
+  }
+
+  @media (max-width:360px){
+    .quiz-footer{padding:8px 10px;}
+    .quiz-footer-inner{gap:6px; justify-content:center;}
+    .quiz-btn{font-size:11px; padding:8px 9px; min-height:38px;}
+    .quiz-btn-skip{font-size:10.5px; padding:6px 8px;}
+    .review-q-head{flex-wrap:wrap; gap:6px;}
+    .review-q-type{font-size:10.5px;}
+  }
+
+  @media (max-height:520px){
+    .quiz-header{padding:8px clamp(14px,3vw,24px) 6px;}
+    .quiz-top-row{margin-bottom:5px;}
+    .quiz-packet-name{font-size:13px; margin:0 0 4px;}
+    .progress-bar{height:4px;}
+    .quiz-body{padding:8px clamp(14px,3vw,24px) 2px;}
+    .quiz-nav{margin-bottom:6px; padding:6px 10px;}
+    .quiz-nav-title{margin-bottom:4px;}
+    .quiz-nav-dot{width:22px; height:22px; font-size:10px;}
+    .quiz-q-card{padding:9px 12px; margin-bottom:2px;}
+    .quiz-q-num{margin-bottom:5px;}
+    .quiz-q-text{margin:0 0 6px;}
+    .quiz-opts{gap:4px; display:grid; grid-template-columns:1fr 1fr;}
+    .quiz-opt{padding:4px 8px; gap:8px;}
+    .quiz-opt .bubble{width:18px; height:18px; font-size:9px;}
+    .quiz-footer{padding:6px 16px;}
+    .quiz-btn{font-size:12px; padding:8px 12px; min-height:34px;}
+    .quiz-btn-skip{font-size:11px; padding:6px 10px;}
+  }
+
+  @media (min-width:1024px){
+    .quiz-view.active .quiz-top-row,
+    .quiz-view.active .quiz-packet-name,
+    .quiz-view.active .progress-bar,
+    .quiz-view.active .quiz-body > *,
+    .quiz-view.active .quiz-footer-inner{max-width:800px;}
+    .quiz-footer-inner{max-width:800px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
+    .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
+    .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
+    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+    .quiz-opts{gap:9px;}
+    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+    .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
+    .quiz-btn{font-size:14px; padding:11px 16px;}
+    .quiz-progress-text{font-size:13px;}
+    .quiz-packet-name{font-size:16px;}
+  }
+</style>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../../../index.html">← Beranda</a>
+  <span class="crumb-sep">/</span>
+  <a href="../index.html">TIU</a>
+  <span class="crumb-sep">/</span>
+  <span class="crumb-current">Deret</span>
+</nav>
+
+<header class="top">
+  <h1>Deret TIU CPNS</h1>
+  <p>Materi lengkap deret dan pola bilangan untuk TIU — dari selisih tetap, perkalian-pembagian, operasi campuran, sampai subderet, rekursif, bilangan khusus, dan pola multi-layer. Dilengkapi bank soal tryout berbasis manifest JSON.</p>
+  <div class="tags">
+    <span class="tag">Untuk pemula</span>
+    <span class="tag">15 bab bertahap</span>
+    <span class="tag">KaTeX</span>
+    <span class="tag">Banyak latihan</span>
+    <span class="tag">Pola angka</span>
+    <span class="tag">5 paket tryout</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('materi', this)">📖 Materi Lengkap</button>
+    <button class="tab-btn" id="tab-btn-paket" onclick="switchTab('paket', this)">🎯 Paket Soal Tryout</button>
+  </div>
+
+  <!-- ============ TAB 1: MATERI LENGKAP ============ -->
+  <div id="tab-materi" class="tab-content active">
+
+    <nav class="sticky-nav" id="sticky-nav" aria-label="Navigasi antar materi"></nav>
+
+    <section id="cara">
+<h2>Cara Memakai Buku Ini</h2>
+<p class="lead">Buku ini dibuat seperti guru yang duduk di sebelah Anda. Karena itu, jangan langsung membaca jawaban. Pada setiap contoh, berhenti sebentar dan coba cari polanya sendiri.</p>
+
+<div class="grid">
+  <div class="mini"><div class="e">👀</div><b>Kebiasaan 1 — Lihat sebelum menghitung</b><span class="small">Perhatikan apakah angka naik, turun, berganti tanda, atau melonjak jauh.</span></div>
+  <div class="mini"><div class="e">🧪</div><b>Kebiasaan 2 — Uji dugaan</b><span class="small">Jangan menerima pola hanya karena cocok pada dua langkah.</span></div>
+  <div class="mini"><div class="e">⚖️</div><b>Kebiasaan 3 — Bandingkan beberapa cara</b><span class="small">Selisih, perkalian atau pembagian, operasi campuran, posisi, dan hubungan antarsuku dapat menghasilkan jawaban berbeda.</span></div>
+  <div class="mini"><div class="e">🔁</div><b>Kebiasaan 4 — Berpindah cara bila perlu</b><span class="small">Kalau sebuah metode gagal menjelaskan data, tinggalkan dan lanjutkan pemeriksaan.</span></div>
+</div>
+
+<div class="warning"><b>Catatan penting:</b> sejumlah suku yang terbatas secara matematis dapat cocok dengan lebih dari satu aturan. Dalam konteks latihan TIU, kita mencari aturan yang konsisten, wajar, dan menghasilkan jawaban yang dapat dibedakan dengan jelas.</div>
+
+<div class="example purple">
+  <div class="kicker">Cara berpikir yang akan dilatih</div>
+  <p><b>Murid:</b> "Saya melihat angkanya, tetapi belum tahu polanya."</p>
+  <p><b>Guru:</b> "Tidak apa-apa. Kita tidak perlu menebak. Kita mulai dari pemeriksaan yang paling sederhana."</p>
+  <p><b>Murid:</b> "Kalau cara pertama tidak cocok?"</p>
+  <p><b>Guru:</b> "Kita pindah ke cara berikutnya. Yang penting setiap dugaan diuji."</p>
+</div>
+
+<div class="example green">
+  <div class="kicker">Target buku ini</div>
+  <p>Pada akhir pembelajaran, Anda tidak harus langsung mengenali semua pola dalam satu detik. Anda harus tahu <i>apa yang perlu dicoba berikutnya</i> ketika pola pertama tidak cocok.</p>
+</div>
+
+<div class="card blue">
+  <h3>Peta mental — empat pertanyaan untuk setiap deret</h3>
+  <div class="grid">
+    <div class="mini"><b>1. Apa yang saya lihat?</b><span class="small">Naik, turun, melonjak, berganti?</span></div>
+    <div class="mini"><b>2. Apa yang saya coba?</b><span class="small">Selisih, perkalian atau pembagian, operasi, posisi?</span></div>
+    <div class="mini"><b>3. Bagaimana saya tahu benar?</b><span class="small">Uji semua hubungan yang tersedia.</span></div>
+    <div class="mini"><b>4. Kapan ganti cara?</b><span class="small">Saat metode tidak menjelaskan data.</span></div>
+  </div>
+</div>
+
+<h3>Wajib dikuasai dan lanjutan</h3>
+<table>
+  <tr><th>Wajib dikuasai</th><th>Perlu dipelajari setelah dasar kuat</th></tr>
+  <tr><td>Selisih tetap, selisih berubah sederhana, perkalian/pembagian, operasi campuran, ganjil-genap, pola rekursif sederhana, Fibonacci, bilangan khusus, tanda, missing term.</td><td>Parameter operasi yang ikut berpola, pola berbasis nomor suku, multiple missing term, pecahan yang lebih rumit, kombinasi beberapa grammar, rekursi yang lebih kompleks.</td></tr>
+</table>
+</section>
+
+    <section id="diagnostic">
+<h2>Latihan Awal — Belum Perlu Pandai, Cukup Amati</h2>
+<p class="lead">Kerjakan tanpa mencari rumus. Tujuannya melihat kebiasaan awal Anda.</p>
+
+<div class="example">
+  <h3>Nomor 1</h3>
+  <div class="mathbox formula">\(4, 7, 10, 13, \dots\)</div>
+  <p><b>Pertanyaan:</b> Apa yang Anda cek lebih dahulu?</p>
+  <div class="grid">
+    <div class="mini"><b>A.</b><span class="small">Fibonacci</span></div>
+    <div class="mini"><b>B.</b><span class="small">Selisih</span></div>
+    <div class="mini"><b>C.</b><span class="small">Bilangan prima</span></div>
+    <div class="mini"><b>D.</b><span class="small">Ganjil-genap</span></div>
+  </div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Jawaban pembelajaran: B. Selisih. Perubahan selalu +3.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Nomor 2</h3>
+  <div class="mathbox formula">\(3, 6, 12, 24, \dots\)</div>
+  <p><b>Pertanyaan:</b> Selisihnya tidak tetap. Pemeriksaan berikutnya yang lebih masuk akal?</p>
+  <div class="grid">
+    <div class="mini"><b>A.</b><span class="small">Perkalian atau pembagian</span></div>
+    <div class="mini"><b>B.</b><span class="small">Prima</span></div>
+    <div class="mini"><b>C.</b><span class="small">Pecahan</span></div>
+    <div class="mini"><b>D.</b><span class="small">Posisi suku</span></div>
+  </div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Jawaban pembelajaran: A. Perkalian atau pembagian. Setiap suku ×2.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Nomor 3</h3>
+  <div class="mathbox formula">\(10, 100, 8, 90, 6, 80, \dots\)</div>
+  <p><b>Pertanyaan:</b> Mengapa selisih berurutan bukan pemeriksaan yang paling nyaman?</p>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Jawaban pembelajaran: karena dua pola berjalan bersamaan. Pisahkan posisi ganjil dan genap.</div>
+  </details>
+</div>
+
+<div class="card green">
+  <div class="kicker">Catatan</div>
+  <p>Latihan awal ini bukan tes nilai. Ia memperkenalkan kebiasaan dasar: pilih pemeriksaan berdasarkan bentuk deret, bukan berdasarkan tebakan.</p>
+</div>
+</section>
+
+    <section id="bab1">
+<h2>Bab 1 — Mengenal Deret: Jangan Takut dengan Angka</h2>
+<p class="lead">Deret hanyalah angka yang disusun berurutan. Tugas kita adalah menemukan hubungan yang menghubungkan satu bagian dengan bagian lainnya.</p>
+
+<div class="example">
+  <h3>Contoh 1 — sangat mudah</h3>
+  <div class="mathbox formula">\(2, 4, 6, 8, 10, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Langkah 1:</b> bandingkan 2 ke 4 → +2.<br>
+  <b>Langkah 2:</b> 4 ke 6 → +2.<br>
+  <b>Langkah 3:</b> 6 ke 8 → +2.<br>
+  <b>Langkah 4:</b> 8 ke 10 → +2.</p>
+  <p>Jadi berikutnya adalah <b>10 + 2 = 12</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa kita mulai dari sini?</div>
+  <p>Karena hubungan paling sederhana biasanya paling cepat diperiksa. Jangan memulai dengan rumus yang rumit jika perubahan kecil sudah menjelaskan seluruh deret.</p>
+</div>
+
+<div class="example">
+  <h3>Contoh 2 — deret turun</h3>
+  <div class="mathbox formula">\(25, 21, 17, 13, 9, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Perubahan selalu −4. Jadi berikutnya = <b>5</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 3 — terlihat mudah, tetapi belum boleh menebak</h3>
+  <div class="mathbox formula">\(2, 4, 8, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Di sini ada pola ×2. Tetapi dengan hanya tiga angka, kita tetap harus melihat apakah pola itu konsisten bila data berikutnya tersedia. Kebiasaan yang baik adalah selalu menguji dengan semua suku yang diberikan.</p>
+  </details>
+</div>
+
+<div class="example green">
+  <div class="kicker">Kalimat kunci</div>
+  <p>"Saya tidak sedang menebak angka berikutnya. Saya sedang mencari aturan yang menghasilkan angka-angka tersebut."</p>
+</div>
+
+<div class="card blue">
+  <h3>Bagaimana kalau Anda belum melihat pola?</h3>
+  <div class="mathbox formula">\(8, 13, 18, 23, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Belum tahu? Tidak masalah. Ambil dua pasangan:</p>
+  <div class="mathbox formula">\[
+    \begin{aligned}
+      13 - 8 &= 5\\
+      18 - 13 &= 5\\
+      23 - 18 &= 5
+    \end{aligned}
+  \]</div>
+  <p>Sekarang pola mulai terlihat: <b>+5</b>. Jawaban = <b>28</b>.</p>
+  <p>Perhatikan bahwa kita tidak membutuhkan tebakan cerdas. Kita hanya melakukan pemeriksaan sederhana.</p>
+  </details>
+</div>
+</section>
+
+    <section id="bab2">
+<h2>Bab 2 — Selisih Tetap: Dasar Pertama</h2>
+<p class="lead"><b>Selisih</b> adalah berapa banyak suatu angka berubah ketika berpindah ke angka berikutnya.</p>
+
+<div class="example">
+  <h3>Contoh 1</h3>
+  <div class="mathbox formula">\(4, 9, 14, 19, 24, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="mathbox formula">\[
+    \begin{aligned}
+      9 - 4 &= 5 & 14 - 9 &= 5\\
+      19 - 14 &= 5 & 24 - 19 &= 5
+    \end{aligned}
+  \]</div>
+  <p>Selisih selalu +5. Maka <b>24 + 5 = 29</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 2 — pengurangan</h3>
+  <div class="mathbox formula">\(31, 27, 23, 19, 15, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisihnya −4 pada setiap langkah. Jawaban = <b>11</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 3 — pola belum berhenti di satu selisih</h3>
+  <div class="mathbox formula">\(5, 8, 11, 14, 17, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih: +3, +3, +3, +3 → berikutnya <b>20</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa memilih selisih?</div>
+  <p>Karena perubahan antarangka terlihat stabil. Tidak perlu memeriksa pola khusus jika +a atau −a sudah menjelaskan semua transisi.</p>
+</div>
+
+<h3>Latihan kontra</h3>
+<div class="card red">
+  <div class="mathbox formula">\(5, 8, 12, 17, 23, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisihnya +3, +4, +5, +6. Ini <b>bukan</b> selisih tetap. Jangan memaksakan jawaban 29 hanya karena Anda terbiasa mencari +6.</p>
+  </details>
+</div>
+</section>
+
+    <section id="bab3">
+<h2>Bab 3 — Perkalian dan Pembagian</h2>
+
+<div class="example purple">
+  <div class="kicker">Berpikir keras</div>
+  <p><b>Saya melihat:</b> angkanya melonjak.</p>
+  <p><b>Saya coba:</b> selisih.</p>
+  <p><b>Hasil:</b> selisih berubah jauh.</p>
+  <p><b>Saya pindah:</b> cek apakah setiap angka beberapa kali lipat dari sebelumnya.</p>
+</div>
+
+<p>Kalau angka membesar atau mengecil dengan cepat, periksa apakah satu suku merupakan kelipatan suku sebelumnya.</p>
+
+<div class="example">
+  <h3>Contoh 1 — perkalian tetap</h3>
+  <div class="mathbox formula">\(3, 6, 12, 24, 48, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="mathbox formula">\[
+    \begin{aligned}
+      6 \div 3 &= 2 & 12 \div 6 &= 2\\
+      24 \div 12 &= 2 & 48 \div 24 &= 2
+    \end{aligned}
+  \]</div>
+  <p>Jadi ×2 → jawaban <b>96</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 2 — pembagian tetap</h3>
+  <div class="mathbox formula">\(160, 80, 40, 20, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Setiap suku dibagi 2 → jawaban <b>10</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 3 — pengali berubah</h3>
+  <div class="mathbox formula">\(2, 4, 12, 48, 240, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Operasi: ×2, ×3, ×4, ×5. Jadi berikutnya ×6 → <b>1440</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa memilih perkalian atau pembagian?</div>
+  <p>Perhatikan "berapa kali lipat" bukan hanya "berapa selisih". Pada deret yang tumbuh sangat cepat, rasio sering lebih informatif daripada selisih.</p>
+</div>
+
+<h3>Kontra: selisih atau rasio?</h3>
+<div class="card red">
+  <div class="mathbox formula">\(10, 20, 30, 40, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih tetap +10. Rasio tidak tetap. Gunakan selisih.</p>
+  </details>
+  <div class="mathbox formula">\(5, 10, 20, 40, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih berubah, tetapi rasio tetap ×2. Gunakan rasio.</p>
+  </details>
+</div>
+</section>
+
+    <section id="drill-selisih-rasio">
+<h2>Latihan Peralihan — Selisih atau Kali/Bagi?</h2>
+<p class="lead">Tujuan latihan ini bukan menghitung cepat. Tujuannya memilih <b>alat pemeriksaan yang tepat</b>.</p>
+
+<div class="example">
+  <h3>A.</h3>
+  <div class="mathbox formula">\(7, 12, 17, 22, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Selisih +5. Jawaban: <b>27</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>B.</h3>
+  <div class="mathbox formula">\(7, 14, 28, 56, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Selisih berubah, tetapi rasio ×2. Jawaban: <b>112</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>C.</h3>
+  <div class="mathbox formula">\(12, 18, 24, 30, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Selisih +6. Tidak perlu mencari perkalian.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>D.</h3>
+  <div class="mathbox formula">\(12, 24, 22, 44, 42, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Selisih tidak tetap dan rasio tidak tetap. Coba operasi bergantian: ×2, −2, ×2, −2 → jawaban <b>84</b>.</div>
+  </details>
+</div>
+
+<div class="card green">
+  <div class="kicker">Checkpoint</div>
+  <p>Anda tidak harus langsung tahu pola. Anda harus tahu <i>pemeriksaan berikutnya</i> yang masuk akal.</p>
+</div>
+</section>
+
+    <section id="bab4">
+<h2>Bab 4 — Selisih yang Berubah</h2>
+<p class="lead">Ketika selisih tidak sama, jangan menganggap deret itu "acak". Cari pola di dalam selisih.</p>
+
+<div class="example">
+  <h3>Contoh 1 — selisih bertambah teratur</h3>
+  <div class="mathbox formula">\(2, 5, 10, 17, 26, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih: +3, +5, +7, +9.</p>
+  <p>Sekarang lihat selisih itu: 3 → 5 bertambah 2, 5 → 7 bertambah 2, 7 → 9 bertambah 2.</p>
+  <p>Jadi selisih berikutnya +11. Maka <b>26 + 11 = 37</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 2 — selisih turun</h3>
+  <div class="mathbox formula">\(50, 44, 36, 26, 14, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih: −6, −8, −10, −12. Selisih semakin kecil 2 lagi → −14.</p>
+  <p>Maka <b>14 − 14 = 0</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 3 — selisih kedua tetap</h3>
+  <div class="mathbox formula">\(1, 4, 9, 16, 25, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih pertama: +3, +5, +7, +9. Selisih kedua: +2, +2, +2.</p>
+  <p>Jadi selisih berikutnya +11 → jawaban <b>36</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa metode ini bekerja?</div>
+  <p>Kita tidak lagi mencari pola langsung pada angka utama. Kita menurunkan masalah satu tingkat: jika perubahan pertama memiliki pola, gunakan pola itu untuk menemukan perubahan berikutnya.</p>
+</div>
+</section>
+
+    <section id="bab5">
+<h2>Bab 5 — Operasi Campuran: Saat Aturan Bergantian</h2>
+
+<div class="example purple">
+  <div class="kicker">Berpikir keras</div>
+  <p><b>Saya melihat:</b> kadang naik sedikit, kadang melonjak.</p>
+  <p><b>Saya coba:</b> selisih tetap.</p>
+  <p><b>Hasil:</b> tidak cocok.</p>
+  <p><b>Saya coba:</b> apakah ada dua operasi yang bergantian?</p>
+</div>
+
+<p>Dalam beberapa deret, angka tidak selalu ditambah dengan jumlah yang sama atau dikali dengan bilangan yang sama. Operasinya dapat berganti.</p>
+
+<div class="example">
+  <h3>Contoh 1 — +2 lalu ×2</h3>
+  <div class="mathbox formula">\(3, 5, 10, 12, 24, 26, 52, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="mathbox formula">\[
+    \begin{aligned}
+      3 + 2 &= 5 & 5 \times 2 &= 10\\
+      10 + 2 &= 12 & 12 \times 2 &= 24\\
+      24 + 2 &= 26 & 26 \times 2 &= 52
+    \end{aligned}
+  \]</div>
+  <p>Operasi berikutnya +2. Maka <b>52 + 2 = 54</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 2 — bentuk serupa dengan parameter berbeda</h3>
+  <div class="mathbox formula">\(10, 13, 26, 29, 58, 61, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pola: +3, ×2, +3, ×2, +3 → berikutnya <b>122</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh 3 — pengurangan dan perkalian</h3>
+  <div class="mathbox formula">\(20, 10, 15, 5, 10, 0, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>−10, +5, −10, +5, −10 → berikutnya +5 = <b>5</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa memilih operasi campuran?</div>
+  <p>Jika selisih tidak masuk akal dan rasio juga tidak tetap, lihat apakah operasi berganti dengan pola yang berulang.</p>
+</div>
+
+<div class="warning">Jangan hanya menemukan urutan "×2, −". Tanyakan juga: apakah angka yang dikurangkan tetap, atau justru berubah menurut pola?</div>
+</section>
+
+    <section id="bab6">
+<h2>Bab 6 — Ganjil-Genap dan Subderet</h2>
+
+<div class="example purple">
+  <div class="kicker">Berpikir keras</div>
+  <p><b>Saya melihat:</b> jika semua angka dibandingkan berurutan, polanya berantakan.</p>
+  <p><b>Saya coba:</b> lihat posisi 1, 3, 5, ...</p>
+  <p><b>Lalu:</b> lihat posisi 2, 4, 6, ...</p>
+  <p><b>Kalau keduanya rapi:</b> kemungkinan ada dua subderet yang berjalan bersamaan.</p>
+</div>
+
+<p>Kadang-kadang deret sengaja membuat posisi ganjil dan posisi genap mempunyai pola yang berbeda.</p>
+
+<div class="example">
+  <h3>Contoh utama</h3>
+  <div class="mathbox formula">\(215, 321, 207, 314, 199, 307, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pisahkan:</p>
+  <div class="mathbox mono">Posisi ganjil: 215, 207, 199, ... → −8<br>
+  Posisi genap: 321, 314, 307, ... → −7</div>
+  <p>Suku ke-7 berada pada kelompok ganjil: 199 − 8 = <b>191</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh kedua</h3>
+  <div class="mathbox formula">\(10, 100, 8, 90, 6, 80, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Ganjil: 10, 8, 6 → −2. Genap: 100, 90, 80 → −10.</p>
+  <p>Suku berikutnya adalah posisi ganjil → <b>4</b>.</p>
+  </details>
+</div>
+
+<div class="card red">
+  <div class="kicker">Contoh kontra</div>
+  <p>tidak semua deret naik-turun memerlukan ganjil-genap.</p>
+  <div class="mathbox formula">\(10, 14, 18, 22, 26, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Semua angka naik teratur. Ganjil-genap justru menambah pekerjaan yang tidak perlu. Selisih +4 sudah cukup.</p>
+  </details>
+</div>
+
+<h3>Kapan saya harus mencoba cara ini?</h3>
+<div class="step"><div class="num">1</div><div class="step-body">Selisih biasa terlihat tidak beraturan.</div></div>
+<div class="step"><div class="num">2</div><div class="step-body">Rasio juga tidak menjelaskan deret.</div></div>
+<div class="step"><div class="num">3</div><div class="step-body">Ada kesan angka "bergantian" tinggi-rendah atau besar-kecil.</div></div>
+<div class="step"><div class="num">4</div><div class="step-body">Coba pisahkan posisi 1-3-5-... dan 2-4-6-...</div></div>
+
+<div class="example blue">
+  <div class="kicker">Intinya</div>
+  <p>bukan semua angka harus membentuk satu pola. Kadang-kadang ada dua pola yang berjalan berdampingan.</p>
+</div>
+
+<div class="card green">
+  <div class="kicker">Checkpoint Dasar</div>
+  <p>sebelum lanjut, Anda seharusnya sudah bisa membedakan selisih tetap, rasio tetap, operasi campuran, dan subderet sederhana.</p>
+</div>
+</section>
+
+    <section id="bab7">
+<h2>Bab 7 — Pola Rekursif dan Fibonacci</h2>
+
+<div class="example purple">
+  <div class="kicker">Berpikir keras</div>
+  <p><b>Saya melihat:</b> angka berikutnya tidak mudah dijelaskan hanya dengan satu operasi.</p>
+  <p><b>Saya coba:</b> bandingkan dengan satu atau dua suku sebelumnya.</p>
+  <p><b>Jika cocok:</b> mungkin deret dibentuk dari hubungan antarsuku.</p>
+</div>
+
+<p>Pada pola rekursif, suku berikutnya dibuat dari satu atau lebih suku sebelumnya.</p>
+
+<div class="example">
+  <h3>Fibonacci</h3>
+  <div class="mathbox formula">\(1, 1, 2, 3, 5, 8, 13, 21, 34, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Ambil dua angka terakhir: <b>21 + 34 = 55</b>.</p>
+  <div class="mathbox mono">
+    1 + 1 = 2 · 1 + 2 = 3 · 2 + 3 = 5 · 3 + 5 = 8<br>
+    5 + 8 = 13 · 8 + 13 = 21 · 13 + 21 = 34 · 21 + 34 = 55
+  </div>
+  </details>
+</div>
+
+<div class="danger"><b>Perhatikan:</b> Fibonacci bukan sekadar "selisih berubah". Hubungan pembentuknya adalah jumlah dua suku sebelumnya.</div>
+
+<h3>Contoh variasi rekursif</h3>
+<div class="example">
+  <div class="mathbox formula">\(2, 3, 5, 8, 13, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>2 + 3 = 5 · 3 + 5 = 8 · 5 + 8 = 13 · 8 + 13 = <b>21</b></p>
+  </details>
+</div>
+
+<div class="example green">
+  <div class="kicker">Pola rekursif lebih luas</div>
+  <p>Ada barisan yang menggunakan dua suku sebelumnya tetapi menambahkan atau mengurangi nilai tertentu. Untuk pemula, kuasai prinsip "lihat satu atau dua suku sebelumnya" terlebih dahulu.</p>
+</div>
+</section>
+
+    <section id="bab8">
+<h2>Bab 8 — Bilangan Khusus</h2>
+<p class="lead">Bilangan khusus perlu dikenal, tetapi jangan menjadikannya pemeriksaan pertama untuk semua soal.</p>
+
+<h3>8.1 Bilangan prima</h3>
+<div class="example">
+  <div class="mathbox formula">\(2, 3, 5, 7, 11, 13, 17, 19, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Berikutnya <b>23</b>.</p>
+  </details>
+</div>
+
+<h3>8.2 Bilangan kuadrat</h3>
+<div class="example">
+  <div class="mathbox formula">\(4, 9, 16, 25, 36, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>\(2^2, 3^2, 4^2, 5^2, 6^2\) → berikutnya \(7^2 =\) <b>49</b>.</p>
+  </details>
+</div>
+
+<h3>8.3 Bilangan pangkat tiga</h3>
+<div class="example">
+  <div class="mathbox formula">\(8, 27, 64, 125, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>\(2^3, 3^3, 4^3, 5^3\) → berikutnya \(6^3 =\) <b>216</b>.</p>
+  </details>
+</div>
+
+<h3>8.4 Mengapa harus hati-hati?</h3>
+<div class="example">
+  <div class="mathbox formula">\(5, 7, 11, 13, 17, 19, 23, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Deret ini memang terdiri dari bilangan prima. Tetapi deret yang sama juga memiliki selisih: +2, +4, +2, +4, +2, +4.</p>
+  <p>Setelah 23 → +2 = 25 → +4 = <b>29</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Pelajaran</div>
+  <p>sebuah ciri dapat benar tetapi belum tentu merupakan cara yang paling berguna untuk konteks soal. Selalu baca seluruh susunan dan perhatikan apa yang diminta.</p>
+</div>
+</section>
+
+    <section id="bab9">
+<h2>Bab 9 — Tanda Positif-Negatif, Pecahan, dan Desimal</h2>
+
+<h3>9.1 Tanda berganti</h3>
+<div class="example">
+  <div class="mathbox formula">\(6, -6, 6, -6, 6, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pola ×(−1) → jawaban <b>−6</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <div class="mathbox formula">\(12, -6, 3, -1.5, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pola \(\times\left(-\frac{1}{2}\right)\).</p>
+  <p>\(-1.5 \times \left(-\frac{1}{2}\right) =\) <b>0.75</b>.</p>
+  </details>
+</div>
+
+<h3>9.2 Pecahan</h3>
+<div class="example">
+  <div class="mathbox formula">\(\frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pembilang naik 1 dan penyebut naik 1 → berikutnya <b>5/6</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Jangan hanya melihat pembilang</h3>
+  <div class="mathbox formula">\(\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pembilang tetap, penyebut dikali 2. Nilai keseluruhan dibagi 2.</p>
+  <p>Berikutnya = <b>1/32</b>.</p>
+  </details>
+</div>
+
+<h3>9.3 Desimal</h3>
+<div class="example">
+  <div class="mathbox formula">\(0.5, 1, 2, 4, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>×2 → berikutnya <b>8</b>.</p>
+  </details>
+</div>
+
+<div class="warning">Pada pecahan dan desimal, tulis operasi dengan jelas. Kesalahan tanda dan posisi koma dapat menghasilkan jawaban yang salah meskipun pola sudah benar.</div>
+
+<div class="card green">
+  <div class="kicker">Checkpoint Menengah</div>
+  <p>Anda seharusnya sudah bisa membaca bilangan khusus, perubahan tanda, dan mengenali hubungan antarsuku sederhana.</p>
+</div>
+</section>
+
+    <section id="bab10">
+<h2>Bab 10 — Pola Bertingkat: Operasi Juga Bisa Berpola</h2>
+
+<div class="example purple">
+  <div class="kicker">Berpikir keras</div>
+  <p><b>Saya sudah menemukan:</b> ×2 lalu pengurangan.</p>
+  <p><b>Tetapi belum selesai:</b> berapa besar pengurangannya?</p>
+  <p><b>Saya lanjutkan:</b> 6, 12, 24, 48 juga membentuk pola.</p>
+</div>
+
+<p>Ini salah satu bentuk deret yang lebih menantang. Kita perlu melihat <b>dua lapisan</b>.</p>
+
+<div class="example">
+  <h3>Contoh</h3>
+  <div class="mathbox formula">\(123,\) \(246,\) \(240,\) \(480,\) \(468,\) \(936,\) \(912,\) \(1824,\) \(1776,\) \(\dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Operasi utama: ×2, −6, ×2, −12, ×2, −24, ×2, −48.</p>
+  <p>Sekarang lihat angka yang dikurangkan: 6, 12, 24, 48 → setiap kali ×2.</p>
+  <div class="mathbox mono">
+    Lapisan 1: ×2, −, ×2, −, ×2, −, ...<br>
+    Lapisan 2: 6, 12, 24, 48, ... → ×2
+  </div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Contoh sederhana</h3>
+  <div class="mathbox formula">\(10, 20, 18, 36, 32, 64, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>×2, −2, ×2, −4, ×2, ... dengan pengurang 2, 4, ... → ×2. Berikutnya −8: <b>64 − 8 = 56</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa ini sulit?</div>
+  <p>Karena peserta bisa menemukan pola "×2 lalu dikurangi", tetapi masih belum tahu berapa angka yang harus dikurangkan. Ia harus menemukan pola kedua.</p>
+</div>
+</section>
+
+    <section id="bab11">
+<h2>Bab 11 — Pola Berdasarkan Posisi atau Nomor Suku</h2>
+<p class="lead">Sesekali lebih mudah membaca deret berdasarkan urutan sukunya.</p>
+
+<div class="example">
+  <div class="mathbox formula">\(3, 6, 11, 18, 27, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Suku ke-1 = \(1^2 + 2 = 3\) · Suku ke-2 = \(2^2 + 2 = 6\) · Suku ke-3 = \(3^2 + 2 = 11\)</p>
+  <p>Suku ke-4 = \(4^2 + 2 = 18\) · Suku ke-5 = \(5^2 + 2 = 27\) · Suku ke-6 = \(6^2 + 2 =\) <b>38</b></p>
+  </details>
+</div>
+
+<p>Untuk pemula, cara ini bukan pemeriksaan pertama. Coba hubungan sederhana terlebih dahulu. Gunakan nomor suku ketika struktur tersebut memang terlihat membantu.</p>
+
+<div class="card blue">
+  <div class="kicker">Petunjuk</div>
+  <p>jika angka tampak dekat dengan 1, 4, 9, 16, 25, ... atau 2, 4, 8, 16, ... pertimbangkan apakah nomor urut menjadi bagian dari pembentuk pola.</p>
+</div>
+</section>
+
+    <section id="bab12">
+<h2>Bab 12 — Missing Term: Angka yang Hilang Tidak Selalu di Belakang</h2>
+<p class="lead">Dalam soal ujian, yang dicari bisa berupa angka berikutnya, angka di tengah, angka di awal, atau beberapa angka sekaligus.</p>
+
+<h3>12.1 Hilang di akhir</h3>
+<div class="example">
+  <div class="mathbox formula">\(7, 11, 15, 19, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>+4 → <b>23</b></p>
+  </details>
+</div>
+
+<h3>12.2 Hilang di tengah</h3>
+<div class="example">
+  <div class="mathbox formula">\(3, 6, \dots, 24, 48\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>×2 → angka hilang = <b>12</b></p>
+  </details>
+</div>
+
+<h3>12.3 Hilang di awal</h3>
+<div class="example">
+  <div class="mathbox formula">\(\dots, 12, 16, 20, 24, 28\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih +4 → angka sebelumnya = <b>8</b></p>
+  </details>
+</div>
+
+<h3>12.4 Dua angka hilang</h3>
+<div class="example">
+  <div class="mathbox formula">\(123,\) \(246,\) \(240,\) \(480,\) \(468,\) \(936,\) \(\dots,\) \(\dots,\) \(1776\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>×2, −6, ×2, −12, ×2, −24, ×2, −48.</p>
+  <p>Dua angka yang hilang: <b>936 − 24 = 912</b> dan <b>912 × 2 = 1824</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Mini Drill — Tentukan arah berpikir</h3>
+  <div class="mathbox formula">\(\dots, 18, 24, 30, 36\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Karena angka yang hilang berada di depan, kita bergerak <b>mundur</b>: 18 − 6 = <b>12</b>.</p>
+  </details>
+  <div class="mathbox formula">\(6, 12, \dots, 48, 96\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Karena polanya ×2, angka tengah = <b>24</b>.</p>
+  </details>
+</div>
+
+<div class="example blue">
+  <div class="kicker">Mengapa posisi missing term penting?</div>
+  <p>Jika angka hilang berada di tengah, kita bisa memakai informasi sebelum dan sesudahnya. Jika berada di awal, kita perlu bergerak mundur. Jadi cara berpikirnya sedikit berbeda.</p>
+</div>
+</section>
+
+    <section id="salah-langkah">
+<h2>Latihan Kesalahan — Belajar dari Pola yang Salah</h2>
+<p class="lead">Bagian ini sengaja memperlihatkan cara berpikir yang keliru. Membaca kesalahan membantu Anda mengenali jebakan lebih cepat.</p>
+
+<div class="card red">
+  <h3>Kesalahan 1 — Terlalu cepat memakai ×2</h3>
+  <div class="mathbox formula">\(4, 8, 16, 31, \dots\)</div>
+  <p>Empat menjadi delapan dan delapan menjadi enam belas memang ×2. Tetapi 16 ×2 = 32, bukan 31. Jadi ×2 gagal menjelaskan seluruh data.</p>
+</div>
+
+<div class="card red">
+  <h3>Kesalahan 2 — Menganggap semua pola harus memakai selisih</h3>
+  <div class="mathbox formula">\(3, 6, 12, 24, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisihnya +3, +6, +12, tetapi pola yang lebih langsung adalah ×2.</p>
+  </details>
+</div>
+
+<div class="card red">
+  <h3>Kesalahan 3 — Melihat semua angka sebagai satu kelompok</h3>
+  <div class="mathbox formula">\(20, 100, 18, 90, 16, 80, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Jika dibandingkan berurutan, hubungan terlihat berantakan. Pisahkan posisi ganjil dan genap:</p>
+  <div class="mathbox mono">Ganjil: 20, 18, 16 → −2<br>Genap: 100, 90, 80 → −10</div>
+  <p>Berikutnya = <b>14</b>.</p>
+  </details>
+</div>
+
+<div class="example green">
+  <div class="kicker">Remedial</div>
+  <p>setiap kali Anda salah mengenali pola, tuliskan bukan hanya "jawaban saya salah", tetapi <i>"pemeriksaan saya berhenti terlalu cepat di sini"</i>. Tujuannya memperbaiki proses, bukan sekadar mengganti jawaban.</p>
+</div>
+</section>
+
+    <section id="bab13">
+<h2>Bab 13 — Pola yang Sering Menjebak</h2>
+
+<h3>13.1 Terlalu cepat mengatakan "Fibonacci"</h3>
+<div class="example">
+  <div class="mathbox formula">\(1, 2, 4, 7, 11, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Selisih: +1, +2, +3, +4. Ini bukan Fibonacci. Berikutnya +5 → <b>16</b>.</p>
+  </details>
+</div>
+
+<h3>13.2 Terlalu cepat mengatakan "×2"</h3>
+<div class="example">
+  <div class="mathbox formula">\(3, 6, 12, 24, 47, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Empat angka awal tampak ×2, tetapi 24 ×2 = 48, bukan 47. Jadi ×2 tidak menjelaskan keseluruhan data.</p>
+  </details>
+</div>
+
+<h3>13.3 Terlalu cepat mengatakan "bilangan prima"</h3>
+<div class="example">
+  <div class="mathbox formula">\(5, 7, 11, 13, 17, 19, 23, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Memang semuanya prima, tetapi pola selisih +2, +4, +2, +4 lebih langsung digunakan untuk menentukan kelanjutan yang dimaksud.</p>
+  </details>
+</div>
+
+<h3>13.4 Memilih pola yang terlalu rumit</h3>
+<p>Jika +4 sudah menjelaskan seluruh deret, jangan membuat rumus panjang yang hanya cocok dengan cara yang lebih rumit.</p>
+
+<div class="example green">
+  <div class="kicker">Aturan praktis</div>
+  <p>sederhana bukan berarti asal. Pola sederhana yang konsisten biasanya lebih berguna daripada rumus rumit yang dibuat untuk memaksa semua angka cocok.</p>
+</div>
+
+<h3>13.5 Mengabaikan tanda</h3>
+<div class="example">
+  <div class="mathbox formula">\(8, -16, 32, -64, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Pola bukan hanya ×2. Tanda juga berganti. Cara lengkapnya adalah ×(−2). Berikutnya = <b>128</b>.</p>
+  </details>
+</div>
+
+<div class="card green">
+  <div class="kicker">Checkpoint Validasi</div>
+  <p>jangan lanjut jika Anda masih sering menerima pola hanya karena cocok pada dua langkah.</p>
+</div>
+</section>
+
+    <section id="bab14">
+<h2>Bab 14 — Strategi Sistematis Mencari Pola</h2>
+<p class="lead">Setelah semua keluarga dasar dipelajari, sekarang satukan menjadi satu prosedur pengerjaan.</p>
+
+<div class="step"><div class="num">1</div><div class="step-body"><b>Lihat semua angka.</b> Jangan langsung menghitung satu pasangan.</div></div>
+<div class="step"><div class="num">2</div><div class="step-body"><b>Perhatikan arah.</b> Naik, turun, berganti, atau naik-turun?</div></div>
+<div class="step"><div class="num">3</div><div class="step-body"><b>Hitung selisih.</b> Apakah +a atau −a tetap?</div></div>
+<div class="step"><div class="num">4</div><div class="step-body"><b>Jika selisih berubah, lihat perubahan pada selisih.</b></div></div>
+<div class="step"><div class="num">5</div><div class="step-body"><b>Jika angka tumbuh/mengecil cepat, cek perkalian atau pembagian.</b></div></div>
+<div class="step"><div class="num">6</div><div class="step-body"><b>Jika selisih dan rasio tidak cocok, cari operasi campuran.</b></div></div>
+<div class="step"><div class="num">7</div><div class="step-body"><b>Jika operasinya tampak bergantian, cek periodenya.</b></div></div>
+<div class="step"><div class="num">8</div><div class="step-body"><b>Jika parameter operasi berubah, cari pola pada parameter tersebut.</b></div></div>
+<div class="step"><div class="num">9</div><div class="step-body"><b>Jika urutan tampak acak, pisahkan posisi ganjil dan genap.</b></div></div>
+<div class="step"><div class="num">10</div><div class="step-body"><b>Periksa hubungan rekursif.</b> Apakah suku baru berasal dari satu atau dua suku sebelumnya?</div></div>
+<div class="step"><div class="num">11</div><div class="step-body"><b>Periksa bilangan khusus.</b> Prima, kuadrat, kubik, Fibonacci, dan keluarga yang relevan.</div></div>
+<div class="step"><div class="num">12</div><div class="step-body"><b>Periksa posisi suku.</b> Apakah nomor urut menjadi bagian dari pola?</div></div>
+<div class="step"><div class="num">13</div><div class="step-body"><b>Uji kembali seluruh data.</b></div></div>
+<div class="step"><div class="num">14</div><div class="step-body"><b>Baru gunakan opsi sebagai verifikasi.</b></div></div>
+
+<h3>Contoh berpikir lengkap</h3>
+<div class="example">
+  <div class="mathbox formula">\(4, 7, 13, 22, 34, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Langkah 1:</b> angka naik.<br>
+  <b>Langkah 2:</b> selisih = +3, +6, +9, +12.<br>
+  <b>Langkah 3:</b> selisih bertambah 3 setiap kali.<br>
+  <b>Langkah 4:</b> selisih berikutnya +15.<br>
+  <b>Langkah 5:</b> 34 + 15 = <b>49</b>.<br>
+  <b>Verifikasi:</b> pola selisih konsisten pada semua transisi yang diberikan.</p>
+  </details>
+</div>
+
+<h3>Kapan berhenti?</h3>
+<div class="example green">
+  <div class="kicker">Batasan pencarian pola</div>
+  <p>Anda boleh berhenti mencari pola lain ketika satu aturan sudah menjelaskan seluruh data yang diberikan, masuk akal, dan menghasilkan satu jawaban yang jelas. Terus mencari pola setelah itu hanya menambah waktu dan dapat membuat Anda ragu pada jawaban yang sebenarnya sudah cukup kuat.</p>
+</div>
+</section>
+
+    <section id="simulasi">
+<h2>Simulasi Singkat — Berpikir Seperti Saat Tes</h2>
+<p class="lead">Di ujian, kita tidak memiliki waktu tak terbatas. Latihan berikut melatih keputusan cepat, bukan sekadar hafalan.</p>
+
+<div class="warning">TARGET LATIHAN: sekitar 30–45 detik per soal mudah. Jangan mengorbankan ketelitian hanya demi cepat.</div>
+
+<div class="example">
+  <h3>Simulasi 1</h3>
+  <div class="mathbox formula">\(7, 12, 17, 22, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Jalur cepat:</b> selisih +5 → <b>27</b>.</p>
+  <p><b>Keputusan:</b> berhenti. Tidak perlu mencari pola yang lebih rumit.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Simulasi 2</h3>
+  <div class="mathbox formula">\(2, 4, 8, 10, 20, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Jalur cepat:</b> selisih tidak tetap → cek pola operasi → ×2, +2, ×2, +2 → berikutnya ×2 → <b>40</b>.</p>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Simulasi 3</h3>
+  <div class="mathbox formula">\(11, 100, 9, 90, 7, 80, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Jalur cepat:</b> urutan penuh tidak nyaman → pisahkan ganjil-genap → ganjil 11, 9, 7 → −2 → jawaban <b>5</b>.</p>
+  </details>
+</div>
+
+<div class="card green">
+  <div class="kicker">Tujuan simulasi</div>
+  <p>melatih pemilihan metode. Mengetahui banyak pola tetapi tidak tahu kapan menggunakannya tetap dapat membuat waktu habis.</p>
+</div>
+</section>
+
+    <section id="bab15">
+<h2>Bab 15 — Latihan Bertahap</h2>
+<p class="lead">Latihan berikut sengaja dibuat untuk melatih <b>cara memilih strategi</b>. Jangan lihat pembahasan sebelum mencoba.</p>
+
+<h3>Latihan 1 — Selisih tetap</h3>
+<div class="example">
+  <div class="mathbox formula">\(12, 17, 22, 27, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Jawaban:</b> 32.<br>
+  <b>Pembahasan:</b> +5 pada setiap langkah.</p>
+  </details>
+</div>
+
+<h3>Latihan 2 — Selisih turun</h3>
+<div class="example">
+  <div class="mathbox formula">\(40, 34, 28, 22, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Jawaban:</b> 16.<br>
+  <b>Pembahasan:</b> −6 pada setiap langkah.</p>
+  </details>
+</div>
+
+<h3>Latihan 3 — Selisih bertingkat</h3>
+<div class="example">
+  <div class="mathbox formula">\(3, 7, 13, 21, 31, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Pikirkan:</b> jangan buru-buru menjumlahkan angka tetap.<br>
+  <b>Selisih:</b> +4, +6, +8, +10.<br>
+  <b>Berikutnya:</b> +12 → <b>43</b>.</p>
+  </details>
+</div>
+
+<h3>Latihan 4 — Perkalian</h3>
+<div class="example">
+  <div class="mathbox formula">\(4, 12, 36, 108, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Jawaban:</b> 324.<br>
+  <b>Pembahasan:</b> ×3.</p>
+  </details>
+</div>
+
+<h3>Latihan 5 — Campuran</h3>
+<div class="example">
+  <div class="mathbox formula">\(4, 8, 6, 12, 10, 20, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p><b>Pola:</b> ×2, −2, ×2, −2, ×2.<br>
+  <b>Jawaban:</b> 18.</p>
+  </details>
+</div>
+
+<h3>Latihan 6 — Ganjil-genap</h3>
+<div class="example">
+  <div class="mathbox formula">\(12, 50, 10, 45, 8, 40, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Ganjil: 12, 10, 8 → −2. Genap: 50, 45, 40 → −5.<br>
+  Berikutnya posisi ganjil → <b>6</b>.</p>
+  </details>
+</div>
+
+<h3>Latihan 7 — Fibonacci</h3>
+<div class="example">
+  <div class="mathbox formula">\(2, 3, 5, 8, 13, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>5 + 8 = 13 dan 8 + 13 = <b>21</b>.</p>
+  </details>
+</div>
+
+<h3>Latihan 8 — Pola operator bertingkat</h3>
+<div class="example">
+  <div class="mathbox formula">\(20, 40, 36, 72, 64, 128, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>×2, −4, ×2, −8, ×2, ... Pengurang 4, 8 → berikutnya 16.<br>
+  128 − 16 = <b>112</b>.</p>
+  </details>
+</div>
+
+<h3>Latihan 9 — Missing term di tengah</h3>
+<div class="example">
+  <div class="mathbox formula">\(5, 10, \dots, 40, 80\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>×2 → angka hilang = <b>20</b>.</p>
+  </details>
+</div>
+
+<h3>Latihan 10 — Jangan percaya tebakan pertama</h3>
+<div class="example">
+  <div class="mathbox formula">\(1, 4, 9, 16, 25, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <p>Terlihat sebagai kuadrat. Tetapi untuk mengerjakannya, kita tetap bisa memeriksa selisih: +3, +5, +7, +9 → +11. Jawaban tetap <b>36</b>.</p>
+  <p><b>Pelajaran:</b> cara melihat boleh berbeda; yang penting hubungan pembentuknya konsisten.</p>
+  </details>
+</div>
+
+<h3>Checklist setelah latihan</h3>
+<table>
+  <tr><th>Pertanyaan</th><th>Ya / Belum</th></tr>
+  <tr><td>Saya menghitung selisih sebelum menebak pola?</td><td></td></tr>
+  <tr><td>Saya tahu kapan harus mencoba perkalian atau pembagian?</td><td></td></tr>
+  <tr><td>Saya tahu kapan harus memisahkan ganjil-genap?</td><td></td></tr>
+  <tr><td>Saya bisa mengenali hubungan dua suku sebelumnya?</td><td></td></tr>
+  <tr><td>Saya menguji pola pada seluruh deret?</td><td></td></tr>
+  <tr><td>Saya tidak memilih pola hanya karena "terlihat mirip"?</td><td></td></tr>
+</table>
+</section>
+
+    <section id="latihan-terpadu">
+<h2>Latihan Terpadu — Pilih Jalur Sebelum Menghitung</h2>
+<p class="lead">Untuk setiap soal, lakukan dua langkah: <b>(1) pilih pemeriksaan pertama, (2) baru cari jawabannya.</b></p>
+
+<div class="example">
+  <h3>Soal 1</h3>
+  <div class="mathbox formula">\(14, 19, 24, 29, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Pemeriksaan pertama: <b>selisih</b> → +5 → jawaban <b>34</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Soal 2</h3>
+  <div class="mathbox formula">\(2, 6, 18, 54, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Pemeriksaan pertama: <b>perkalian atau pembagian</b> → ×3 → jawaban <b>162</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Soal 3</h3>
+  <div class="mathbox formula">\(2, 5, 9, 14, 20, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Pemeriksaan pertama: <b>selisih</b> → +3, +4, +5, +6 → berikutnya +7 → <b>27</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Soal 4</h3>
+  <div class="mathbox formula">\(4, 8, 6, 12, 10, 20, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Pemeriksaan pertama: <b>operasi campuran</b> → ×2, −2, ×2, −2, ×2 → berikutnya <b>18</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Soal 5</h3>
+  <div class="mathbox formula">\(10, 50, 8, 45, 6, 40, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Pemeriksaan pertama: <b>subderet ganjil-genap</b> → ganjil −2 → jawaban <b>4</b>.</div>
+  </details>
+</div>
+
+<div class="example">
+  <h3>Soal 6</h3>
+  <div class="mathbox formula">\(1, 1, 2, 3, 5, 8, \dots\)</div>
+  <details class="reveal"><summary>Coba dulu — buka pembahasan</summary>
+  <div class="answer">Pemeriksaan pertama: <b>hubungan dua suku sebelumnya</b> → 5 + 8 = <b>13</b>.</div>
+  </details>
+</div>
+
+<div class="card green">
+  <div class="kicker">Nilai latihan</div>
+  <p>yang ingin dilatih bukan sekadar enam jawaban benar. Anda harus dapat menjelaskan <i>mengapa jalur pemeriksaan itu dipilih</i>.</p>
+</div>
+</section>
+
+    <section id="peta">
+<h2>Peta Penguasaan Deret</h2>
+<p class="lead">Gunakan peta ini sebagai pemeriksaan akhir sebelum berpindah ke latihan soal yang lebih banyak.</p>
+
+<table>
+  <tr><th>Keluarga</th><th>Contoh</th><th>Pertanyaan utama</th></tr>
+  <tr><td>Selisih tetap</td><td>2, 5, 8, 11</td><td>"Berubah berapa setiap langkah?"</td></tr>
+  <tr><td>Selisih berubah</td><td>2, 5, 10, 17</td><td>"Apakah selisihnya sendiri berpola?"</td></tr>
+  <tr><td>Rasio tetap</td><td>3, 6, 12, 24</td><td>"Setiap suku berapa kali suku sebelumnya?"</td></tr>
+  <tr><td>Rasio berubah</td><td>2, 4, 12, 48</td><td>"Apakah pengalinya ikut berpola?"</td></tr>
+  <tr><td>Operasi campuran</td><td>3, 5, 10, 12, 24</td><td>"Apakah ada operasi yang bergantian?"</td></tr>
+  <tr><td>Subderet</td><td>215, 321, 207, 314</td><td>"Apakah ganjil dan genap memiliki pola masing-masing?"</td></tr>
+  <tr><td>Rekursif</td><td>1, 1, 2, 3, 5</td><td>"Apakah suku baru berasal dari suku sebelumnya?"</td></tr>
+  <tr><td>Bilangan khusus</td><td>2, 3, 5, 7</td><td>"Apakah angka berasal dari keluarga khusus?"</td></tr>
+  <tr><td>Tanda</td><td>6, −6, 6, −6</td><td>"Apakah tanda merupakan bagian dari pola?"</td></tr>
+  <tr><td>Pecahan</td><td>\(\frac{1}{2}, \frac{2}{3}, \frac{3}{4}\)</td><td>"Apa yang berubah pada pembilang dan penyebut?"</td></tr>
+  <tr><td>Multi-layer</td><td>123, 246, 240, 480, ...</td><td>"Apakah operator dan parameternya sama-sama berpola?"</td></tr>
+  <tr><td>Posisi</td><td>3, 6, 11, 18, 27</td><td>"Apakah nomor suku membantu menjelaskan angka?"</td></tr>
+</table>
+
+<div class="example green">
+  <div class="kicker">Target pemula setelah menyelesaikan materi</div>
+  <p>Anda tidak harus langsung bisa menyelesaikan semua deret sulit. Yang harus sudah terbentuk adalah kebiasaan berpikir: <b>lihat → uji → bandingkan → pilih metode → verifikasi</b>.</p>
+</div>
+
+<div class="card blue">
+  <h3>Uji Kesiapan Belajar</h3>
+  <p>Sebelum beralih ke latihan soal yang lebih banyak, pastikan Anda dapat melakukan empat hal berikut:</p>
+  <table>
+    <tr><th>Kemampuan</th><th>Tanda sudah siap</th></tr>
+    <tr><td><b>Melihat</b></td><td>Anda dapat melihat apakah deret naik, turun, melonjak, atau berganti pola.</td></tr>
+    <tr><td><b>Mencoba</b></td><td>Anda tahu pemeriksaan pertama yang masuk akal tanpa langsung menebak.</td></tr>
+    <tr><td><b>Menguji</b></td><td>Anda memeriksa apakah dugaan benar pada seluruh hubungan yang tersedia.</td></tr>
+    <tr><td><b>Berpindah</b></td><td>Anda dapat meninggalkan suatu metode ketika metode itu terbukti tidak cocok.</td></tr>
+  </table>
+</div>
+</section>
+
+  </div>
+
+  <!-- ============ TAB 2: PAKET SOAL ============ -->
+  <div id="tab-paket" class="tab-content">
+
+    <div id="packet-list-view" class="packet-list">
+      <div class="packet-header">
+        <h2 id="packet-title">Memuat...</h2>
+        <p id="packet-desc">Mohon tunggu...</p>
+      </div>
+
+      <div class="scoreboard">
+        <span class="label">Total Tryout</span>
+        <span class="num" id="tryout-score">0 / 0</span>
+      </div>
+
+      <div id="packet-container" class="packet-grid">
+        <div class="empty-state">Memuat daftar paket soal...</div>
+      </div>
+    </div>
+
+    <div id="quiz-view" class="quiz-view">
+      <div class="quiz-header">
+        <div class="quiz-top-row">
+          <button class="quiz-back-btn" onclick="exitQuiz()">← Keluar</button>
+          <div class="quiz-progress-text">
+            Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> &nbsp;·&nbsp; Dijawab <b id="quiz-answered-count">0</b>
+          </div>
+        </div>
+        <div class="quiz-packet-name" id="quiz-packet-name">Paket 1</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="quiz-progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="quiz-body" id="quiz-body"></div>
+
+      <div class="quiz-footer" id="quiz-footer" style="display:none;">
+        <div class="quiz-footer-inner">
+          <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
+          <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+          <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Materi Deret TIU — dari selisih tetap, operasi campuran, subderet, rekursif, bilangan khusus,
+    sampai multi-layer, lengkap dengan latihan bertahap dan bank soal tryout.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var letters = ['A', 'B', 'C', 'D', 'E'];
+  var tryoutAnswered = 0, tryoutCorrect = 0;
+  var packetScores = {};
+  var currentPacket = null;
+  var currentPacketKey = null;
+  var userAnswers = [];
+  var quizSubmitted = false;
+  var currentQuestionIndex = 0;
+
+  /* ---------- TAB SWITCHER ---------- */
+  function switchTab(tabName, btn) {
+    document.querySelectorAll('.tab-content').forEach(function (el) { el.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function (el) { el.classList.remove('active'); });
+    document.getElementById('tab-' + tabName).classList.add('active');
+    if (btn) btn.classList.add('active');
+  }
+
+  /* ---------- STICKY NAV MATERI ---------- */
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section'));
+  var nav = document.getElementById('sticky-nav');
+  var chips = [];
+
+  var upBtn = document.createElement('button');
+  upBtn.type = 'button';
+  upBtn.className = 'nav-top';
+  upBtn.textContent = '↑ Atas';
+  upBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(upBtn);
+
+  sections.forEach(function (sec) {
+    var h = sec.querySelector('h2');
+    if (!h) return;
+    var label = h.textContent
+      .replace(/^BAB\s*\d+\s*[—-]\s*/i, '')
+      .replace(/^\d+\.\s*/, '')
+      .trim();
+    if (label.length > 28) {
+      var cut = label.slice(0, 28);
+      var sp = cut.lastIndexOf(' ');
+      if (sp > 14) cut = cut.slice(0, sp);
+      label = cut + '…';
+    }
+    var chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'nav-chip';
+    chip.textContent = label;
+    chip.addEventListener('click', function () {
+      var top = sec.getBoundingClientRect().top + window.pageYOffset - 76;
+      window.scrollTo({ top: top < 0 ? 0 : top, behavior: 'smooth' });
+    });
+    nav.appendChild(chip);
+    chips.push(chip);
+  });
+
+  var bankChip = document.createElement('button');
+  bankChip.type = 'button';
+  bankChip.className = 'nav-chip';
+  bankChip.textContent = 'Paket Soal';
+  bankChip.addEventListener('click', function () {
+    switchTab('paket', document.getElementById('tab-btn-paket'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(bankChip);
+
+  var raf = 0;
+  function updateNav() {
+    if (raf) return;
+    raf = window.requestAnimationFrame(function () {
+      raf = 0;
+      var active = -1;
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top <= 150) active = i;
+        else break;
+      }
+      if (active === -1) active = 0;
+      chips.forEach(function (c, idx) { c.classList.toggle('active', idx === active); });
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  window.addEventListener('resize', updateNav);
+  updateNav();
+
+  /* ---------- SCOREBOARD ---------- */
+  function updateTryoutScore() {
+    document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered;
+  }
+
+  /* ---------- PACKET LOADER ---------- */
+  async function loadPackets() {
+    var container = document.getElementById('packet-container');
+    var titleEl = document.getElementById('packet-title');
+    var descEl = document.getElementById('packet-desc');
+
+    try {
+      var response = await fetch('manifest.json');
+      if (!response.ok) throw new Error('Manifest not found');
+      var manifest = await response.json();
+
+      titleEl.textContent = manifest.judul || 'Bank Soal';
+      descEl.textContent = manifest.deskripsi || '';
+
+      container.innerHTML = '';
+      if (!manifest.paket || manifest.paket.length === 0) {
+        container.innerHTML = '<div class="empty-state">Belum ada paket soal yang tersedia.</div>';
+        return;
+      }
+
+      manifest.paket.forEach(function (pkt, idx) {
+        var card = document.createElement('div');
+        card.className = 'packet-card';
+        card.innerHTML =
+          '<div class="packet-title">' + escapeHtml(pkt.nama) + '</div>' +
+          '<div class="packet-desc">' + escapeHtml(pkt.deskripsi || 'Paket latihan deret TIU') + '</div>' +
+          '<div class="packet-meta"><span class="packet-badge">' + escapeHtml(pkt.file) + '</span><span>Paket ' + (idx + 1) + '</span></div>';
+        card.addEventListener('click', function () { startPacket(pkt); });
+        container.appendChild(card);
+      });
+
+    } catch (err) {
+      titleEl.textContent = 'Bank Soal Deret TIU CPNS';
+      descEl.textContent = 'Pastikan file manifest.json tersedia di folder yang sama.';
+      container.innerHTML =
+        '<div class="empty-state"><strong>manifest.json belum ditemukan</strong><br>' +
+        'Buat file manifest.json di folder yang sama agar paket soal bisa dimuat.<br>' +
+        '<small style="opacity:0.7">Error: ' + escapeHtml(err.message) + '</small></div>';
+    }
+  }
+
+  /* ---------- QUIZ ENGINE - SATU SOAL PER LAYAR ---------- */
+  function normalizePacket(data) {
+    if (!data || typeof data !== 'object') return data;
+
+    var firstSoal = Array.isArray(data.soal) ? data.soal[0] : null;
+    if (firstSoal && firstSoal.opsi && typeof firstSoal.opsi === 'object' && !Array.isArray(firstSoal.opsi)) {
+      var order = ['A', 'B', 'C', 'D', 'E'];
+      var mapped = data.soal.map(function (s) {
+        var opsi = [];
+        order.forEach(function (k) {
+          if (s.opsi && s.opsi[k] !== undefined) opsi.push(k + '. ' + s.opsi[k]);
+        });
+        var pembahasan = String(s.pembahasan || '');
+        if (s.mekanisme) pembahasan += '\n\n**Mekanisme:**\n' + String(s.mekanisme).replace(/^\s*>\s?/gm, '');
+        if (s.distraktor_diagnostik && typeof s.distraktor_diagnostik === 'object') {
+          var lines = [];
+          order.forEach(function (k) {
+            if (s.distraktor_diagnostik[k] === undefined) return;
+            var line = k + '. ' + s.distraktor_diagnostik[k];
+            if (String(s.jawaban || '').toUpperCase() === k) line = '**' + line + '**';
+            lines.push(line);
+          });
+          if (lines.length) pembahasan += '\n\n**Analisis opsi:**\n' + lines.join('\n');
+        }
+        return {
+          id: s.id != null ? s.id : undefined,
+          pertanyaan: s.soal,
+          opsi: opsi,
+          jawaban: String(s.jawaban || '').toUpperCase(),
+          tipe: (s.family && s.subpattern) ? (s.family + ' · ' + s.subpattern) : 'Perbandingan',
+          pembahasan: pembahasan
+        };
+      });
+      return {
+        nama: data.paket || 'Bank Soal',
+        deskripsi: data.jenis || '',
+        jumlah_soal: mapped.length,
+        soal: mapped
+      };
+    }
+
+    if (Array.isArray(data.soal)) return data;
+
+    if (Array.isArray(data.questions)) {
+      var optOrder = ['A', 'B', 'C', 'D', 'E'];
+
+      function optText(q, k) {
+        if (!q.options) return undefined;
+        if (q.options[k] !== undefined) return q.options[k];
+        return q.options[k.toLowerCase()] !== undefined ? q.options[k.toLowerCase()] : undefined;
+      }
+
+      var soal = data.questions.map(function (q) {
+        var opsi = [];
+        optOrder.forEach(function (k) {
+          if (optText(q, k) !== undefined) opsi.push(k + '. ' + optText(q, k));
+        });
+
+        var jawaban = String(q.answer || q.correct_option || '').toUpperCase();
+
+        var pembahasan = q.explanation || '';
+
+        if (q.pattern_analysis && q.pattern_analysis.core_pattern) {
+          pembahasan = '**Inti pola:** ' + q.pattern_analysis.core_pattern + '\n\n' + pembahasan;
+        } else if (q.generating_rule) {
+          pembahasan = '**Inti pola:** ' + q.generating_rule + '\n\n' + pembahasan;
+        }
+
+        var steps = (q.reasoning && q.reasoning.steps && q.reasoning.steps.length) ? q.reasoning.steps
+          : (q.pattern_analysis && q.pattern_analysis.step_by_step && q.pattern_analysis.step_by_step.length ? q.pattern_analysis.step_by_step : null);
+        if (steps) {
+          pembahasan += '\n\n**Langkah penyelesaian:**\n' +
+            steps.map(function (s, i) { return (i + 1) + '. ' + s; }).join('\n');
+        } else if (q.reasoning && q.reasoning.rule) {
+          pembahasan += '\n\n**Langkah penyelesaian:**\n' + q.reasoning.rule;
+        }
+
+        var lines = [];
+        optOrder.forEach(function (k) {
+          var text = optText(q, k);
+          if (text === undefined) return;
+          var reason = '';
+          if (q.distractor_analysis) {
+            reason = q.distractor_analysis[k] !== undefined ? q.distractor_analysis[k]
+              : (q.distractor_analysis[k.toLowerCase()] !== undefined ? q.distractor_analysis[k.toLowerCase()] : '');
+          }
+          var line = k + '. ' + text + (reason ? ' — ' + reason : '');
+          if (jawaban === k) line = '**' + line + '**';
+          lines.push(line);
+        });
+        if (lines.length) {
+          pembahasan += '\n\n**Analisis opsi:**\n' + lines.join('\n');
+        }
+
+        return {
+          id: q.id != null ? q.id : undefined,
+          pertanyaan: q.sequence || q.question,
+          opsi: opsi,
+          jawaban: jawaban,
+          tipe: (q.pattern_family && q.pattern_type) ? (q.pattern_family + ' · ' + q.pattern_type) : (q.pattern_subtype || ''),
+          pembahasan: pembahasan
+        };
+      });
+
+      return {
+        nama: data.title || ((data.package && data.package.title) || data.nama) || 'Bank Soal',
+        deskripsi: data.version || ((data.package && data.package.instruction) || data.deskripsi) || '',
+        jumlah_soal: soal.length,
+        soal: soal
+      };
+    }
+
+    return data;
+  }
+
+  async function startPacket(pkt) {
+    document.getElementById('packet-list-view').classList.add('hidden');
+    document.getElementById('quiz-view').classList.add('active');
+    document.getElementById('quiz-packet-name').textContent = pkt.nama;
+
+    var body = document.getElementById('quiz-body');
+    body.innerHTML =
+      '<div class="loading-state"><div class="loading-spinner"></div>' +
+      '<div>Memuat soal dari <b>' + escapeHtml(pkt.file) + '</b>...</div></div>';
+    document.getElementById('quiz-footer').style.display = 'none';
+
+    try {
+      var response = await fetch(pkt.file);
+      if (!response.ok) throw new Error('File tidak ditemukan');
+      var data = await response.json();
+
+      currentPacket = normalizePacket(data);
+      currentPacketKey = pkt.file;
+      userAnswers = [];
+      quizSubmitted = false;
+      currentQuestionIndex = 0;
+
+      var soal = (currentPacket && currentPacket.soal) || [];
+
+      if (soal.length === 0) {
+        currentPacketKey = null;
+        body.innerHTML =
+          '<div class="empty-state"><strong>' + escapeHtml(pkt.nama) + ' masih kosong</strong><br>' +
+          'Belum ada soal pada file <b>' + escapeHtml(pkt.file) + '</b>.<br>' +
+          '<small>Tambahkan soal pada data paket, lalu klik paket ini lagi.</small></div>';
+        return;
+      }
+
+      userAnswers = new Array(soal.length).fill(null);
+      document.getElementById('quiz-total-num').textContent = soal.length;
+      document.getElementById('quiz-answered-count').textContent = '0';
+      document.getElementById('quiz-progress-fill').style.width = '0%';
+
+      renderQuestion();
+      body.scrollTop = 0;
+    } catch (err) {
+      body.innerHTML =
+        '<div class="empty-state"><strong>Gagal memuat ' + escapeHtml(pkt.file) + '</strong><br>' +
+        'Pastikan file JSON paket soal tersedia.<br>' +
+        '<small style="opacity:0.7">Error: ' + escapeHtml(err.message) + '</small></div>';
+      setTimeout(function () { exitQuiz(); }, 2000);
+    }
+  }
+
+  function resetQuizFooter() {
+    document.getElementById('quiz-footer').innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()" disabled>← Kembali</button>' +
+      '<button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="nextQuestion()">Selanjutnya →</button>' +
+      '</div>';
+    document.getElementById('quiz-footer').style.display = 'none';
+  }
+
+  function exitQuiz() {
+    document.getElementById('packet-list-view').classList.remove('hidden');
+    document.getElementById('quiz-view').classList.remove('active');
+    currentPacket = null;
+    currentPacketKey = null;
+    userAnswers = [];
+    quizSubmitted = false;
+    currentQuestionIndex = 0;
+    resetQuizFooter();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderAnswerFooter() {
+    var isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
+    document.getElementById('quiz-footer').innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()"' + (currentQuestionIndex === 0 ? ' disabled' : '') + '>← Kembali</button>' +
+      '<button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="' + (isLast ? 'submitQuiz()' : 'nextQuestion()') + '">' + (isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →') + '</button>' +
+      '</div>';
+    document.getElementById('quiz-footer').style.display = 'block';
+  }
+
+  function goToQuestion(qi) {
+    if (!currentPacket) return;
+    currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
+    renderQuestion();
+    var body = document.getElementById('quiz-body');
+    if (body && body.scrollTo) body.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function prevQuestion() {
+    goToQuestion(currentQuestionIndex - 1);
+  }
+
+  function nextQuestion() {
+    if (!currentPacket) return;
+    if (currentQuestionIndex >= currentPacket.soal.length - 1) {
+      submitQuiz();
+      return;
+    }
+    goToQuestion(currentQuestionIndex + 1);
+  }
+
+  function renderQuestion() {
+    var body = document.getElementById('quiz-body');
+    var total = currentPacket.soal.length;
+    if (total === 0) { body.innerHTML = ''; return; }
+    currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
+    var qi = currentQuestionIndex;
+
+    body.innerHTML = '';
+
+    var navEl = document.createElement('div');
+    navEl.className = 'quiz-nav';
+    var navTitle = document.createElement('div');
+    navTitle.className = 'quiz-nav-title';
+    navTitle.textContent = 'Navigasi Soal';
+    navEl.appendChild(navTitle);
+
+    var navDots = document.createElement('div');
+    navDots.className = 'quiz-nav-dots';
+
+    currentPacket.soal.forEach(function (s, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '');
+      dot.textContent = i + 1;
+      dot.addEventListener('click', function () {
+        if (i !== currentQuestionIndex) goToQuestion(i);
+      });
+      navDots.appendChild(dot);
+    });
+    navEl.appendChild(navDots);
+    body.appendChild(navEl);
+
+    var currentDot = navDots.querySelector('.quiz-nav-dot.current');
+    if (currentDot && currentDot.scrollIntoView) {
+      currentDot.scrollIntoView({ block: 'nearest', inline: 'center' });
+    }
+
+    var soal = currentPacket.soal[qi];
+    var card = document.createElement('div');
+    card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
+
+    var numBadge = document.createElement('div');
+    numBadge.className = 'quiz-q-num';
+    numBadge.textContent = 'SOAL ' + (qi + 1);
+    card.appendChild(numBadge);
+
+    var qText = document.createElement('p');
+    qText.className = 'quiz-q-text';
+    qText.textContent = soal.pertanyaan;
+    card.appendChild(qText);
+
+    var optsWrap = document.createElement('div');
+    optsWrap.className = 'quiz-opts';
+
+    (soal.opsi || []).forEach(function (optText, oi) {
+      var opt = document.createElement('div');
+      opt.className = 'quiz-opt';
+
+      var match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+      var letter = match ? match[1] : letters[oi];
+      var text = match ? match[2] : optText;
+
+      opt.innerHTML = '<span class="bubble">' + letter + '</span><span>' + escapeHtml(text) + '</span>';
+
+      if (userAnswers[qi] === oi) {
+        opt.classList.add('selected');
+      }
+
+      opt.addEventListener('click', function () { handleOptionSelect(qi, oi); });
+      optsWrap.appendChild(opt);
+    });
+
+    card.appendChild(optsWrap);
+    body.appendChild(card);
+    renderLatex(card);
+
+    document.getElementById('quiz-current-num').textContent = qi + 1;
+    renderAnswerFooter();
+    updateProgress();
+    requestAnimationFrame(fitQuestionCard);
+  }
+
+  function fitQuestionCard() {
+    if (quizSubmitted) return;
+    var body = document.getElementById('quiz-body');
+    var card = document.querySelector('.quiz-q-card');
+    if (!body || !card) return;
+    if (typeof body.clientHeight !== 'number' || body.clientHeight <= 0) return;
+
+    card.style.zoom = '';
+
+    var bodyTop = body.getBoundingClientRect().top;
+    var availH = body.clientHeight - (card.getBoundingClientRect().top - bodyTop) - 20;
+    var availW = body.clientWidth;
+    if (window.matchMedia && window.matchMedia('(min-width:1024px)').matches) {
+      var navElWide = body.querySelector('.quiz-nav');
+      if (navElWide) {
+        var padLW = parseFloat(getComputedStyle(body).paddingLeft) || 0;
+        var padRW = parseFloat(getComputedStyle(body).paddingRight) || 0;
+        availW = body.clientWidth - padLW - padRW - navElWide.getBoundingClientRect().width - 14;
+      }
+    }
+    availW = Math.min(availW, 800);
+
+    var cardH = card.getBoundingClientRect().height;
+    var cardW = card.getBoundingClientRect().width;
+    if (cardH <= 0 || cardW <= 0) return;
+
+    var needed = Math.min(availH / cardH, availW / cardW);
+    card.style.zoom = Math.max(0.8, Math.min(1.5, needed));
+  }
+
+  function handleOptionSelect(qi, oi) {
+    if (quizSubmitted) return;
+
+    if (userAnswers[qi] === oi) {
+      userAnswers[qi] = null;
+    } else {
+      userAnswers[qi] = oi;
+    }
+
+    var optsWrap = document.querySelectorAll('.quiz-opts')[0];
+    if (optsWrap && optsWrap.children.length === (currentPacket.soal[qi].opsi || []).length) {
+      Array.prototype.forEach.call(optsWrap.children, function (opt, i) {
+        opt.classList.toggle('selected', i === userAnswers[qi]);
+      });
+    }
+
+    var card = document.querySelector('.quiz-q-card');
+    if (card) card.classList.toggle('answered', userAnswers[qi] !== null);
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    var answered = userAnswers.filter(function (a) { return a !== null; }).length;
+    var total = currentPacket ? currentPacket.soal.length : 0;
+
+    document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
+    document.getElementById('quiz-answered-count').textContent = answered;
+    if (total > 0) {
+      document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
+    }
+  }
+
+  function correctIndex(soal) {
+    return String(soal.jawaban || '').charCodeAt(0) - 'A'.charCodeAt(0);
+  }
+
+  function submitQuiz(skipConfirm) {
+    if (!currentPacket) return;
+
+    var answered = userAnswers.filter(function (a) { return a !== null; }).length;
+    var total = currentPacket.soal.length;
+
+    if (!skipConfirm && answered < total) {
+      var skipped = total - answered;
+      if (!confirm('Masih ada ' + skipped + ' soal yang belum dijawab.\nSoal yang tidak dijawab akan dianggap salah.\n\nLanjutkan ke pembahasan?')) {
+        return;
+      }
+    }
+
+    var correct = 0;
+    currentPacket.soal.forEach(function (soal, qi) {
+      if (userAnswers[qi] === correctIndex(soal)) correct++;
+    });
+
+    var key = currentPacketKey || (currentPacket && currentPacket.nama) || 'bank-soal';
+    var prev = packetScores[key];
+    if (prev) {
+      tryoutAnswered -= prev.answered;
+      tryoutCorrect -= prev.correct;
+    }
+    packetScores[key] = { answered: total, correct: correct };
+    tryoutAnswered += total;
+    tryoutCorrect += correct;
+    updateTryoutScore();
+
+    quizSubmitted = true;
+    renderReviewMode();
+    var qb = document.getElementById('quiz-body');
+    if (qb) qb.scrollTop = 0;
+  }
+
+  function skipToReview() {
+    if (!currentPacket) return;
+    if (!confirm('Lewati semua soal dan langsung lihat pembahasan?\nSemua soal yang belum dijawab akan dianggap salah.')) return;
+    submitQuiz(true);
+  }
+
+  function renderMarkdown(src) {
+    return String(src)
+      .replace(/^\s*>\s?/gm, '')
+      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+      .replace(/\n{2,}/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function renderLatex(root) {
+    if (root && window.renderMathInElement) {
+      try {
+        renderMathInElement(root, {
+          delimiters: [
+            { left: '\\(', right: '\\)', display: false },
+            { left: '$$', right: '$$', display: true },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      } catch (err) {
+        /* KaTeX belum dimuat; teks tetap ditampilkan apa adanya */
+      }
+    }
+  }
+
+  function renderReviewMode() {
+    var body = document.getElementById('quiz-body');
+    body.innerHTML = '';
+    document.getElementById('quiz-footer').style.display = 'none';
+
+    var correct = 0, wrong = 0, skipped = 0;
+    currentPacket.soal.forEach(function (soal, qi) {
+      var ci = correctIndex(soal);
+      if (userAnswers[qi] === null) skipped++;
+      else if (userAnswers[qi] === ci) correct++;
+      else wrong++;
+    });
+
+    var total = currentPacket.soal.length;
+    var percent = total ? Math.round((correct / total) * 100) : 0;
+
+    var summary = document.createElement('div');
+    summary.className = 'review-summary';
+    summary.innerHTML =
+      '<div class="review-stat"><div class="review-stat-num">' + percent + '%</div><div class="review-stat-label">Skor</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num good">' + correct + '</div><div class="review-stat-label">Benar</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num bad">' + wrong + '</div><div class="review-stat-label">Salah</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num skip">' + skipped + '</div><div class="review-stat-label">Dilewati</div></div>' +
+      '<div class="review-stat"><div class="review-stat-num">' + total + '</div><div class="review-stat-label">Total</div></div>';
+    body.appendChild(summary);
+
+    currentPacket.soal.forEach(function (soal, qi) {
+      var userAns = userAnswers[qi];
+      var ci = correctIndex(soal);
+      var isSkipped = userAns === null;
+      var isCorrect = !isSkipped && userAns === ci;
+
+      var card = document.createElement('div');
+      card.className = 'review-q-card';
+
+      var headRow = document.createElement('div');
+      headRow.className = 'review-q-head';
+
+      var numBadge = document.createElement('span');
+      if (isSkipped) {
+        numBadge.className = 'review-q-badge skipped';
+        numBadge.textContent = '#' + (qi + 1) + ' · ⊘ Dilewati';
+      } else if (isCorrect) {
+        numBadge.className = 'review-q-badge correct';
+        numBadge.textContent = '#' + (qi + 1) + ' · ✓ Benar';
+      } else {
+        numBadge.className = 'review-q-badge wrong';
+        numBadge.textContent = '#' + (qi + 1) + ' · ✗ Salah';
+      }
+      headRow.appendChild(numBadge);
+
+      if (soal.tipe) {
+        var typeBadge = document.createElement('span');
+        typeBadge.className = 'review-q-type';
+        typeBadge.textContent = soal.tipe;
+        headRow.appendChild(typeBadge);
+      }
+      card.appendChild(headRow);
+
+      var qText = document.createElement('p');
+      qText.className = 'quiz-q-text';
+      qText.textContent = soal.pertanyaan;
+      card.appendChild(qText);
+
+      if (soal.premis && soal.premis.length > 0) {
+        var premisBox = document.createElement('div');
+        premisBox.className = 'review-premis';
+        var premisLabel = document.createElement('div');
+        premisLabel.className = 'review-premis-label';
+        premisLabel.textContent = 'Premis';
+        premisBox.appendChild(premisLabel);
+        var premisList = document.createElement('ol');
+        premisList.className = 'review-premis-list';
+        soal.premis.forEach(function (p) {
+          var li = document.createElement('li');
+          li.textContent = p;
+          premisList.appendChild(li);
+        });
+        premisBox.appendChild(premisList);
+        card.appendChild(premisBox);
+      }
+
+      var optsWrap = document.createElement('div');
+      optsWrap.className = 'quiz-opts';
+
+      (soal.opsi || []).forEach(function (optText, oi) {
+        var opt = document.createElement('div');
+        opt.className = 'quiz-opt locked';
+
+        var match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+        var letter = match ? match[1] : letters[oi];
+        var text = match ? match[2] : optText;
+
+        opt.innerHTML = '<span class="bubble">' + letter + '</span><span>' + escapeHtml(text) + '</span>';
+
+        if (oi === ci) {
+          if (isCorrect || isSkipped) opt.classList.add('review-correct');
+          else opt.classList.add('review-reveal');
+        }
+        if (!isSkipped && oi === userAns && !isCorrect) {
+          opt.classList.add('review-wrong');
+        }
+        optsWrap.appendChild(opt);
+      });
+
+      card.appendChild(optsWrap);
+
+      if (soal.pembahasan) {
+        var explain = document.createElement('div');
+        var explainClass = 'review-explain ';
+        var prefix = '';
+        if (isSkipped) {
+          explainClass += 'skip';
+          prefix = '<span class="status">⊘ Dilewati.</span> ';
+        } else if (isCorrect) {
+          explainClass += 'good';
+          prefix = '<span class="status">✓ Benar.</span> ';
+        } else {
+          explainClass += 'bad';
+          prefix = '<span class="status">✗ Kurang tepat.</span> ';
+        }
+        explain.className = explainClass;
+        explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
+        card.appendChild(explain);
+      }
+
+      renderLatex(card);
+      body.appendChild(card);
+    });
+
+    var footer = document.getElementById('quiz-footer');
+    footer.innerHTML =
+      '<div class="quiz-footer-inner">' +
+      '<button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>' +
+      '<button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>' +
+      '</div>';
+    footer.style.display = 'block';
+  }
+
+  function retryPacket() {
+    if (!currentPacket) return;
+    currentQuestionIndex = 0;
+    userAnswers = new Array(currentPacket.soal.length).fill(null);
+    quizSubmitted = false;
+    renderQuestion();
+    var qb = document.getElementById('quiz-body');
+    if (qb) qb.scrollTop = 0;
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* Expose needed globals for inline onclick handlers */
+  window.switchTab = switchTab;
+  window.loadPackets = loadPackets;
+  window.startPacket = startPacket;
+  window.normalizePacket = normalizePacket;
+  window.exitQuiz = exitQuiz;
+  window.goToQuestion = goToQuestion;
+  window.prevQuestion = prevQuestion;
+  window.nextQuestion = nextQuestion;
+  window.submitQuiz = submitQuiz;
+  window.skipToReview = skipToReview;
+  window.retryPacket = retryPacket;
+
+  /* ---------- RENDER MATH STATIS (materi) ---------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var tabMateri = document.getElementById('tab-materi');
+    if (tabMateri && window.renderMathInElement) {
+      try {
+        renderMathInElement(tabMateri, {
+          delimiters: [
+            { left: '\\(', right: '\\)', display: false },
+            { left: '$$', right: '$$', display: true },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      } catch (err) { /* teks tetap tampil apa adanya */ }
+    }
+  });
+
+  var fitTimer = null;
+  function refitOnResize() {
+    if (!document.getElementById('quiz-view').classList.contains('active')) return;
+    var qv = document.getElementById('quiz-view');
+    if (!qv.classList.contains('active')) return;
+    fitQuestionCard();
+  }
+  window.addEventListener('resize', function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(refitOnResize, 150);
+  });
+  window.addEventListener('orientationchange', function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(refitOnResize, 250);
+  });
+
+  loadPackets();
+})();
+</script>
+</body>
+</html>

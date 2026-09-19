@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2b3a67">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EA%3C/text%3E%3C/svg%3E">
+<title>Analogi TIU CPNS — Materi & Bank Soal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
+    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 80px;}
+  
+  header.top{padding:8px 0 20px;}
+  header.top h1{font-family:'Fraunces', serif;font-weight:600;font-size:clamp(24px,5vw,36px);letter-spacing:-0.01em;margin:0 0 10px;}
+  header.top p{color:var(--ink-soft); margin:0; font-size:15.5px; max-width:60ch;}
+
+  .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-bottom:14px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
+  .breadcrumb a{color:var(--accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-current{color:var(--ink-soft);}
+  
+  .tab-nav{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px;}
+  .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
+  .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .tab-content{display:none;} .tab-content.active{display:block;}
+
+  .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 -20px 26px; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+  .scoreboard .label{color:var(--ink-soft);}
+  .scoreboard .num{color:var(--accent); font-weight:500;}
+
+  .progress-map{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:26px;}
+  .progress-map span{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); background:var(--accent-soft); border:1px dashed var(--accent); border-radius:6px; padding:3px 7px;}
+
+  section.topic{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); margin-bottom:18px; overflow:hidden;}
+  .topic-head{width:100%; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; background:none; border:none; cursor:pointer; text-align:left; font-family:inherit; color:inherit;}
+  .topic-head .th-left{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .topic-head h2{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0;}
+  .chip{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); border:1px dashed var(--accent); border-radius:6px; padding:3px 8px; transform:rotate(-1deg); white-space:nowrap;}
+  .topic-dots{display:flex; gap:5px; align-items:center;}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--line); flex-shrink:0;}
+  .dot.correct{background:var(--good);} .dot.wrong{background:var(--bad);}
+  .chevron{transition:transform .2s ease; color:var(--ink-soft); flex-shrink:0;}
+  .topic.open .chevron{transform:rotate(180deg);}
+  .topic-body{display:none;} .topic.open .topic-body{display:block; border-top:1px solid var(--line);}
+  .topic-inner{padding:20px;}
+
+  .section-label{font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 14px; display:flex; align-items:center; gap:8px;}
+  .section-label::after{content:'';flex:1;height:1px;background:var(--line);}
+  .section-label.second{margin:28px 0 14px;}
+  .penjelasan{font-size:14.5px; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--line);}
+  .penjelasan p{margin:0 0 12px;} .penjelasan p:last-child{margin-bottom:0;}
+  .penjelasan b, .penjelasan i{color:var(--accent);}
+  .penjelasan ol, .penjelasan ul{margin:0 0 12px; padding-left:20px;}
+  .penjelasan li{margin-bottom:6px;}
+  .materi-block{padding-bottom:6px; margin-bottom:6px;}
+  .scenario{margin-bottom:16px; padding-bottom:16px; border-bottom:1px dotted var(--line);}
+  .scenario:last-child{border-bottom:none; margin-bottom:0; padding-bottom:0;}
+  .situasi{font-size:14.5px; margin:0 0 8px;} .situasi b{color:var(--accent);}
+  .prompt{font-size:14px; color:var(--ink-soft); font-style:italic; margin:0 0 10px;}
+  .reveal-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:var(--accent); color:#fff; border:none; border-radius:6px; padding:6px 12px; cursor:pointer;}
+  .reveal-btn:hover{opacity:.9;}
+  .answer{display:none; margin-top:10px; padding:10px 12px; background:var(--accent-soft); border-radius:8px; font-size:14.5px;}
+  .answer.show{display:block;} .answer b{color:var(--accent);}
+  .intro-text{font-size:14.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .notes-table{width:100%; border-collapse:collapse; font-size:13.5px; margin-top:16px; display:block; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  .notes-table th, .notes-table td{border:1px solid var(--line); padding:6px 8px; text-align:left;}
+  .notes-table th{background:var(--paper);}
+
+  .question{margin-bottom:26px;} .question:last-child{margin-bottom:0;}
+  .q-text{font-size:15.5px; margin:0 0 12px; font-weight:500;}
+  .options{display:flex; flex-direction:column; gap:8px;}
+  .option{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1px solid var(--line); border-radius:10px; cursor:pointer; font-size:14.5px; transition:border-color .15s ease, background .15s ease; word-break:break-word;}
+  .option:hover{border-color:var(--accent);}
+  .option .bubble{flex-shrink:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); margin-top:1px;}
+  .option.locked{cursor:default;}
+  .option.chosen-correct{border-color:var(--good); background:var(--good-soft);}
+  .option.chosen-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .option.chosen-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .option.chosen-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .option.reveal-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .option.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .explain{margin-top:10px; font-size:14px; padding:10px 12px; border-radius:8px; display:none;}
+  .explain.show{display:block;}
+  .explain.good{background:var(--good-soft); color:var(--good);}
+  .explain.bad{background:var(--bad-soft); color:var(--bad);}
+  .explain b{font-weight:600;}
+
+  /* Packet Header */
+  .packet-header{margin-bottom:24px;}
+  .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
+  .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
+
+  /* Packet Grid */
+  .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:16px;}
+  .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
+  .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
+  .packet-card.disabled{opacity:0.6; pointer-events:none; filter:grayscale(0.5);}
+  .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0 0 6px;}
+  .packet-desc{font-size:13.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent);}
+  .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
+  .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
+
+  /* ========== QUIZ MODE - ONE QUESTION PER SCREEN ========== */
+  .quiz-view{display:none;}
+  .quiz-view.active{
+    position:fixed; inset:0; z-index:100; background:var(--paper);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+  .packet-list.hidden{display:none;}
+
+  .quiz-view.active .quiz-top-row,
+  .quiz-view.active .quiz-packet-name,
+  .quiz-view.active .progress-bar,
+  .quiz-view.active .quiz-body > *,
+  .quiz-view.active .quiz-footer-inner{width:100%; max-width:760px; margin-left:auto; margin-right:auto;}
+  .quiz-view.active .quiz-body .quiz-q-card{order:0;}
+  .quiz-view.active .quiz-body .quiz-nav{order:1;}
+
+  .quiz-header{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px clamp(14px,3vw,24px) 10px;}
+  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; flex-wrap:nowrap;}
+  .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
+  .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-progress-text{flex:0 1 auto; min-width:0; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .quiz-progress-text b{color:var(--accent); font-weight:600;}
+  .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:15px; margin:0 0 6px;}
+  .progress-bar{height:5px; background:var(--line); border-radius:3px; overflow:hidden;}
+  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
+
+  .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
+
+  /* Question Card */
+  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin-bottom:8px; transition:border-color .2s;}
+  .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
+  .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
+  .quiz-q-text{font-size:15px; margin:0 0 12px; font-weight:500; line-height:1.5;}
+  .quiz-opts{display:flex; flex-direction:column; gap:6px;}
+  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:8px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; line-height:1.5; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+  .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+  .quiz-opt.locked{cursor:default; pointer-events:none;}
+  .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
+  .quiz-opt .bubble{flex-shrink:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
+  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .quiz-opt > span:last-child{flex:1; min-width:0;}
+
+  /* Review states for options */
+  .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
+  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
+  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+
+  /* Footer */
+  .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:10px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+  .quiz-footer-inner{max-width:760px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto; flex-wrap:nowrap; min-width:0;}
+  .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px; white-space:nowrap; flex:0 0 auto;}
+  .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
+  .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
+  .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
+  .quiz-btn-primary{background:var(--accent); color:#fff;}
+  .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-finish{background:var(--good); color:#fff;}
+  .quiz-btn-finish:hover:not(:disabled){opacity:.9;}
+  .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
+  .quiz-btn-skip:hover{background:var(--skip-soft);}
+
+  /* Review Mode */
+  .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
+  .review-stat{text-align:center;}
+  .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
+  .review-stat-num.good{color:var(--good);}
+  .review-stat-num.bad{color:var(--bad);}
+  .review-stat-num.skip{color:var(--skip);}
+  .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
+
+  .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
+  .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+  .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
+  .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
+  .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
+  .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
+  .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
+
+  /* Premis box in review */
+  .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
+  .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+  .review-premis-list{margin:0; padding-left:18px;}
+  .review-premis-list li{margin-bottom:4px;}
+
+  .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
+  .review-explain.good{border-left:4px solid var(--good);}
+  .review-explain.bad{border-left:4px solid var(--bad);}
+  .review-explain.skip{border-left:4px solid var(--skip);}
+  .review-explain .status{font-weight:600;}
+  .review-explain.good .status{color:var(--good);}
+  .review-explain.bad .status{color:var(--bad);}
+  .review-explain.skip .status{color:var(--skip);}
+  .review-explain b{font-weight:600; color:var(--accent);}
+  .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
+
+  /* Loading state */
+  .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
+  .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  /* Question Navigator (mini map) */
+  .quiz-nav{margin-bottom:12px; padding:10px 12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
+  .quiz-nav-dots{display:flex; flex-wrap:nowrap; overflow-x:auto; gap:4px; scrollbar-width:thin; padding-bottom:2px;}
+  .quiz-nav-dots::-webkit-scrollbar{height:4px;}
+  .quiz-nav-dots::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:6px;}
+  .quiz-nav-dot{flex:0 0 auto; width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
+  .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
+  .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
+  .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
+
+  /* INLINE NAV for narrow/short screens (compact single row) */
+  @media (max-width:600px), (max-height:520px){
+    .quiz-nav{display:flex; align-items:center; gap:8px; flex-wrap:nowrap; padding:6px 10px; margin-bottom:8px;}
+    .quiz-nav-title{flex:0 0 auto; margin:0; white-space:nowrap;}
+    .quiz-nav-dots{flex:1 1 auto; min-width:0;}
+  }
+
+  footer{text-align:center; color:var(--ink-soft); font-size:13px; margin-top:36px;}
+
+  /* Venn / Euler diagrams */
+  .venn-wrap{display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin:16px 0 6px;}
+  .venn-item{text-align:center; max-width:200px;}
+  .venn-item svg{width:100%; height:auto; display:block;}
+  .venn-caption{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--ink-soft); margin-top:6px;}
+  .venn-caption b{color:var(--accent);}
+
+  @media (max-width:520px){
+    .wrap{padding:20px 16px 100px;}
+    .tab-btn{font-size:12px; padding:7px 11px;}
+    .scoreboard{margin:0 -16px 22px; padding:10px 16px;}
+    .topic-inner{padding:16px;}
+    .topic-head{padding:16px; flex-wrap:wrap; row-gap:8px;}
+    .topic-head h2{font-size:16.5px;}
+    .chip{font-size:11px; padding:2px 7px;}
+    .progress-map span{font-size:10.5px;}
+    .q-text{font-size:15px;}
+    .option{font-size:14px; padding:9px 10px;}
+    .situasi, .prompt, .answer, .penjelasan, .notes-table{font-size:13.8px;}
+    .topic-dots{flex-wrap:wrap; justify-content:flex-end; max-width:160px;}
+    .venn-wrap{gap:10px;}
+    .venn-item{max-width:150px;}
+    
+    /* Mobile quiz */
+    .quiz-header{padding:10px clamp(14px,3vw,24px) 8px;}
+    .quiz-body{padding:10px clamp(14px,3vw,24px) 0;}
+    .quiz-q-card{padding:12px 14px; margin-bottom:0;}
+    .quiz-q-num{margin-bottom:8px;}
+    .quiz-q-text{font-size:14.5px; line-height:1.45;}
+    .quiz-opt{font-size:13.5px; padding:6px 10px; line-height:1.42;}
+    .quiz-opt .bubble{width:22px; height:22px; font-size:11px;}
+    .quiz-packet-name{font-size:14.5px;}
+    .review-q-card{padding:16px;}
+    .quiz-footer{padding:10px 16px;}
+    .quiz-btn{font-size:12.5px; padding:9px 14px;}
+    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+  }
+
+  @media (max-width:360px){
+    .quiz-footer{padding:8px 10px;}
+    .quiz-footer-inner{gap:6px; justify-content:center;}
+    .quiz-btn{font-size:11px; padding:8px 9px; min-height:38px;}
+    .quiz-btn-skip{font-size:10.5px; padding:6px 8px;}
+    .review-q-head{flex-wrap:wrap; gap:6px;}
+    .review-q-type{font-size:10.5px;}
+  }
+
+  @media (max-height:520px){
+    .quiz-header{padding:8px clamp(14px,3vw,24px) 6px;}
+    .quiz-top-row{margin-bottom:5px;}
+    .quiz-packet-name{font-size:13px; margin:0 0 4px;}
+    .progress-bar{height:4px;}
+    .quiz-body{padding:8px clamp(14px,3vw,24px) 2px;}
+    .quiz-nav{margin-bottom:6px; padding:6px 10px;}
+    .quiz-nav-title{margin-bottom:4px;}
+    .quiz-nav-dot{width:22px; height:22px; font-size:10px;}
+    .quiz-q-card{padding:9px 12px; margin-bottom:2px;}
+    .quiz-q-num{margin-bottom:5px;}
+    .quiz-q-text{margin:0 0 6px;}
+    .quiz-opts{gap:4px; display:grid; grid-template-columns:1fr 1fr;}
+    .quiz-opt{padding:4px 8px; gap:8px;}
+    .quiz-opt .bubble{width:18px; height:18px; font-size:9px;}
+    .quiz-footer{padding:6px 16px;}
+    .quiz-btn{font-size:12px; padding:8px 12px; min-height:34px;}
+    .quiz-btn-skip{font-size:11px; padding:6px 10px;}
+  }
+
+  @media (min-width:1024px){
+    .quiz-view.active .quiz-top-row,
+    .quiz-view.active .quiz-packet-name,
+    .quiz-view.active .progress-bar,
+    .quiz-view.active .quiz-body > *,
+    .quiz-view.active .quiz-footer-inner{max-width:800px;}
+    .quiz-footer-inner{max-width:800px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
+    .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
+    .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
+    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+    .quiz-opts{gap:9px;}
+    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+    .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
+    .quiz-btn{font-size:14px; padding:11px 16px;}
+    .quiz-progress-text{font-size:13px;}
+    .quiz-packet-name{font-size:16px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../../index.html">← Beranda</a>
+    <span class="crumb-sep">/</span>
+    <a href="../index.html">TIU</a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb-current">Analogi</span>
+  </nav>
+
+  <header class="top">
+    <h1>Analogi TIU CPNS</h1>
+    <p>Materi analogi kata &amp; kalimat end-to-end dan bank soal tryout berbasis manifest JSON.</p>
+  </header>
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('materi', event)">📖 Materi Lengkap</button>
+    <button class="tab-btn" onclick="switchTab('paket', event)">🎯 Paket Soal Tryout</button>
+  </div>
+
+  <!-- TAB 1: MATERI LENGKAP -->
+  <div id="tab-materi" class="tab-content active">
+    <div class="progress-map">
+      <span>1. Hubungan</span><span>2. Bentuk</span><span>3. Trik utama</span><span>4. 9 pola</span><span>5. Arah</span><span>6. Kalimat</span><span>7. Pilihan sulit</span><span>8. Prosedur</span>
+    </div>
+
+    <div class="scoreboard">
+      <span class="label">Skor Materi</span>
+      <span class="num" id="materi-score">0 / 0</span>
+    </div>
+
+    <div id="topics"></div>
+  </div>
+
+  <!-- TAB 2: PAKET SOAL -->
+  <div id="tab-paket" class="tab-content">
+    
+    <!-- Packet List View -->
+    <div id="packet-list-view" class="packet-list">
+      <div class="packet-header">
+        <h2 id="packet-title">Memuat...</h2>
+        <p id="packet-desc">Mohon tunggu...</p>
+      </div>
+
+      <div class="scoreboard">
+        <span class="label">Total Tryout</span>
+        <span class="num" id="tryout-score">0 / 0</span>
+      </div>
+      
+      <div id="packet-container" class="packet-grid">
+        <div class="empty-state">Memuat daftar paket soal...</div>
+      </div>
+    </div>
+
+    <!-- Quiz View (satu soal per layar) -->
+    <div id="quiz-view" class="quiz-view">
+      <div class="quiz-header">
+        <div class="quiz-top-row">
+          <button class="quiz-back-btn" onclick="exitQuiz()">← Keluar</button>
+          <div class="quiz-progress-text">
+            Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> &nbsp;·&nbsp; Dijawab <b id="quiz-answered-count">0</b>
+          </div>
+        </div>
+        <div class="quiz-packet-name" id="quiz-packet-name">Paket 1</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="quiz-progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="quiz-body" id="quiz-body"></div>
+
+      <div class="quiz-footer" id="quiz-footer" style="display:none;">
+        <div class="quiz-footer-inner">
+          <button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()" disabled>← Kembali</button>
+          <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+          <button class="quiz-btn quiz-btn-primary" onclick="nextQuestion()">Selanjutnya →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Sistem pembelajaran adaptif · Materi & Soal Analogi TIU</footer>
+</div>
+
+<script>
+/**
+ * DATA MATERI ORIGINAL (TIDAK DIUBAH)
+ */
+const MATERI_DATA = [
+  {
+    id: 'pengantar',
+    title: 'Inti Analogi: Hubungan, Bukan Kemiripan',
+    chip: 'kata kunci: "hubungan apa?"',
+    penjelasan: `<p>Soal analogi TIU menguji kemampuan menemukan <b>hubungan antara dua kata atau dua kelompok informasi</b>, lalu mencari pasangan yang punya <b>hubungan yang sama</b>.</p><p>Kesalahan paling umum saat pertama belajar adalah bertanya, <i>"kata apa yang paling mirip?"</i>. Padahal yang dicari bukan kemiripan kata, melainkan <b>"hubungan apa yang terjadi antara kata pertama dan kata kedua?"</b>.</p><p>Contoh: <b>NEKTAR : MADU</b>. Kamu tidak perlu menghafal bahwa nektar pernah dipasangkan dengan madu. Yang perlu dipahami adalah <b>nektar merupakan bahan yang menghasilkan madu</b>. Maka saat muncul <b>STEVIA : ...</b>, jawabannya adalah yang dihasilkan dari stevia: <b>pemanis</b>.</p>`,
+    materi: [
+      { situasi: 'Soal FR: <b>NEKTAR : MADU = STEVIA : ...</b> dengan pilihan <b>A. Gula · B. Pemanis · C. Ekstrak stevia · D. Daun · E. Sukrosa</b>.', prompt: 'Coba jawab dulu: jangan cari kata yang mirip dengan nektar. Rumuskan dulu hubungan nektar → madu, lalu terapkan ke stevia. Pilih yang mana?', jawaban: 'Hubungan pertamanya <b>bahan → produk</b>: nektar adalah bahan yang menghasilkan madu. Maka kita butuh sesuatu yang dihasilkan dari stevia → <b>stevia menghasilkan pemanis (B)</b>.<br><br><b>Gula</b> dan <b>sukrosa</b> masih satu tema rasa manis tapi bukan hasil dari stevia; <b>ekstrak stevia</b> adalah bentuk olahan, bukan produk akhir yang dimaksud; <b>daun</b> hanyalah bagian tumbuhan.<br><br>Perhatikan: yang diuji bukan "stevia berhubungan dengan apa?", melainkan <b>"apa yang dihasilkan dari stevia, sebagaimana madu dihasilkan dari nektar?"</b>.' },
+      { situasi: '<b>DOKTER : RUMAH SAKIT</b> — kemudian muncul <b>GURU : ...</b>.', prompt: 'Coba jawab dulu: jangan cari kata yang sekadar berhubungan dengan guru (murid, buku, pelajaran). Kata apa yang punya hubungan SAMA dengan guru sebagaimana rumah sakit terhadap dokter?', jawaban: '<b>Sekolah.</b> Karena <b>guru bekerja di sekolah</b>, persis seperti <b>dokter bekerja di rumah sakit</b>. Polanya: <b>DOKTER → bekerja di → RUMAH SAKIT</b>, lalu <b>GURU → bekerja di → SEKOLAH</b>. Inilah inti soal analogi: mengganti pasangan katanya, tapi mempertahankan hubungannya.' },
+      { situasi: '<b>RODA : MOBIL</b>', prompt: 'Coba jawab dulu: cari rumusan yang PALING berguna. Jangan berhenti pada "roda berkaitan dengan mobil" — itu terlalu umum. Apa rumusan yang lebih tepat?', jawaban: '<b>Roda merupakan bagian dari mobil.</b> Maka ketika menemukan pilihan, cari yang berbunyi <b>"X merupakan bagian dari Y"</b> — bukan sembarang pasangan yang berhubungan dengan kendaraan. Mempersempit rumusan seperti ini yang membuat jawaban jadi mudah dibandingkan.' },
+      { situasi: 'Sekarang kebiasaan yang harus terbentuk. Setiap kali melihat <b>A : B</b>, biasakan tiga pertanyaan ini muncul di kepala:', prompt: 'Ini bukan soal untuk dijawab — baca tiga pertanyaan di samping sambil menguji: (1) Apa arti A dan B? (2) Apa hubungan A terhadap B? (3) Apakah arah hubungannya dari A ke B, atau sebaliknya?', jawaban: 'Bagus. Tiga pertanyaan ini akan membedakan peserta yang baru "kenal" relasi dengan peserta yang benar-benar bisa memilih jawaban. Baris berikutnya (Bab Pembukaan) memperdalam pertanyaan ketiga — soal arah.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Langkah</th><th>Pertanyaan wajib</th></tr><tr><td>1</td><td>Apa arti A dan B?</td></tr><tr><td>2</td><td>Apa hubungan A terhadap B?</td></tr><tr><td>3</td><td>Apakah arahnya dari A ke B atau sebaliknya?</td></tr></table><p class="intro-text" style="margin-top:14px;">Gampangnya: analogi = mencari pasangan yang <b>hubungannya SAMA</b>, bukan pasangan yang <b>temanya mirip</b>.</p>`,
+    questions: [
+      { q: 'Analogi TIU sebenarnya menguji...', options: ['Kemampuan menghafal pasangan kata yang sering keluar', 'Kemampuan menemukan hubungan yang sama antara dua pasangan', 'Kemiripan bunyi atau ejaan kata', 'Panjang pendeknya kata'], correct: 1, explain: 'Kuncinya hubungan yang SAMA, bukan kata yang mirip atau tema yang sama.' },
+      { q: 'NEKTAR : MADU = STEVIA : ...', options: ['Gula', 'Pemanis', 'Ekstrak stevia', 'Daun'], correct: 1, explain: 'Nektar → madu adalah bahan → produk. Stevia → pemanis juga bahan → produk.' },
+      { q: 'DOKTER : RUMAH SAKIT sejajar dengan GURU : ...', options: ['Murid', 'Buku', 'Sekolah', 'Pelajaran'], correct: 2, explain: 'Dokter bekerja di rumah sakit; guru bekerja di sekolah.' },
+      { q: 'RODA : MOBIL. Rumusan hubungan yang PALING tepat adalah...', options: ['Roda berkaitan dengan mobil', 'Roda merupakan bagian dari mobil', 'Roda dan mobil sama-sama terkait kendaraan', 'Mobil membutuhkan roda'], correct: 1, explain: '"Bagian dari" lebih spesifik dan berguna daripada sekadar "berkaitan".' }
+    ]
+  },
+  {
+    id: 'bentuk-soal',
+    title: 'Empat Bentuk Soal Analogi',
+    chip: 'cara bacanya beda tiap bentuk',
+    penjelasan: `<p>Dalam bahan soal, analogi muncul dalam beberapa bentuk — dan <b>cara membaca soalnya berbeda</b>. Mengenali bentuknya lebih dulu mengarahkan cara berpikir.</p><p><b>A. Pasangan kata dasar</b> (<b>A : B</b>) — cari hubungan antara A dan B, misal <b>NEKTAR : MADU</b> = bahan → produk.<br><b>B. Tiga kata</b> (<b>A : B = C : ...</b>) — tiga kata diketahui, satu yang dicari, misal <b>NEKTAR : MADU = STEVIA : ...</b>.<br><b>C. Analogi ganda</b> (<b>A : B = C : D</b>) — dua pasangan yang dibandingkan sekaligus; Anda tidak mengisi bagian yang hilang melainkan memilih pasangan yang lengkap dengan relasi yang sama.<br><b>D. Analogi kalimat</b> — bukan kata → kata, melainkan <b>hubungan dalam satu kalimat → hubungan dalam kalimat lain</b>.</p>`,
+    materi: [
+      { situasi: 'Coba kenali bentuknya. Tiga soal acak: <b>1)</b> NEKTAR : MADU · <b>2)</b> NEKTAR : MADU = STEVIA : ... · <b>3)</b> "Dokter mengobati pasien di rumah sakit."', prompt: 'Coba jawab dulu: masing-masing masuk bentuk apa — pasangan kata dasar, tiga kata, atau analogi kalimat?', jawaban: 'Soal <b>1</b> = pasangan kata dasar (A : B). Soal <b>2</b> = tiga kata (A : B = C : ...). Soal <b>3</b> = analogi kalimat (dibandingkan struktur hubungannya dengan kalimat lain). Bentuk keempat, analogi ganda, biasanya menyediakan pilihan berupa pasangan lengkap yang harus dibandingkan relasinya.' },
+      { situasi: 'Kalimat pembanding: <b>"A adalah bagian dari B, maka C harus menjadi bagian dari D."</b> — bayangkan pilihan yang memuat pasangan lengkap seperti <b>RODA : MOBIL</b>.', prompt: 'Coba jawab dulu: di bentuk ini apa yang kamu bandingkan — mengisi satu bagian yang hilang, atau membandingkan dua pasangan sekaligus?', jawaban: '<b>Dua pasangan sekaligus.</b> Di analogi ganda kamu tidak mengisi bagian yang hilang; kamu membandingkan relasi passangan pertama (A—B) dengan relasi pasangan kedua (C—D). Cara berpikirnya tetap sama: <b>temukan relasi dulu</b>, baru tentukan mana yang setara.' },
+      { situasi: 'Ilustrasi bentuk tiga kata yang jebakan: <b>NEKTAR : MADU = STEVIA : ...</b>', prompt: 'Coba jawab dulu: apa yang terjadi kalau kamu menjawab dengan mengandalkan tema (gula, sukrosa) alih-alih relasi (bahan → produk)?', jawaban: 'Kamu akan memilih <b>Gula</b> atau <b>Sukrosa</b> karena satu tema rasa manis — padahal keduanya bukan hasil yang dihasilkan dari stevia. Dengan relasi bahan → produk, jawabannya tetap <b>Pemanis</b>. Bentuk tiga kata menuntut relasi yang sama persis, bukan sekadar kesamaan tema.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Bentuk</th><th>Pola</th><th>Cara baca</th></tr><tr><td>A. Pasangan kata dasar</td><td>A : B</td><td>Cari hubungan A ke B</td></tr><tr><td>B. Tiga kata</td><td>A : B = C : ...</td><td>Relasi A—B diterapkan ke C</td></tr><tr><td>C. Analogi ganda</td><td>A : B = C : D</td><td>Bandingkan dua pasangan sekaligus</td></tr><tr><td>D. Analogi kalimat</td><td>kalimat : kalimat</td><td>Bandingkan struktur hubungan</td></tr></table>`,
+    questions: [
+      { q: 'Bentuk A : B = C : ... disebut...', options: ['Pasangan kata dasar', 'Tiga kata', 'Analogi ganda', 'Analogi kalimat'], correct: 1, explain: 'Tiga kata diketahui, satu yang hilang → bentuk tiga kata.' },
+      { q: 'Pada analogi ganda (A : B = C : D), yang dibandingkan adalah...', options: ['Hanya kata pertama saja', 'Dua pasangan sekaligus', 'Satu pasangan saja', 'Panjang tiap kata'], correct: 1, explain: 'Bentuk ini membandingkan relasi dua pasangan lengkap sekaligus.' },
+      { q: 'Ciri paling khas analogi kalimat adalah...', options: ['Membandingkan struktur hubungan dalam dua kalimat', 'Hanya membandingkan dua kata', 'Bentuknya selalu tiga kata', 'Tidak memiliki pilihan jawaban'], correct: 0, explain: 'Yang dibandingkan adalah peran dan hubungan antar unsur kalimat, bukan kata-katanya.' }
+    ]
+  },
+  {
+    id: 'teknik-kalimat',
+    title: 'Trik Utama: Ubah Pasangan Jadi Kalimat',
+    chip: 'PENA : TINTA → jadi kalimat',
+    penjelasan: `<p>Ini teknik paling penting untuk pemula. Jangan hanya menatap <b>A : B</b> — <b>ubah menjadi kalimat</b>. Begitu pasangan jadi kalimat, hubungannya langsung terlihat jelas.</p>`,
+    materi: [
+      { situasi: '<b>PENA : TINTA</b>', prompt: 'Coba jawab dulu: buat dua kemungkinan kalimat dari pasangan ini. Contoh bebas, tidak perlu sempurna.', jawaban: 'Beberapa kemungkinan: <b>"Pena membutuhkan tinta."</b> atau <b>"Tinta digunakan oleh pena."</b> Dua-duanya sah — intinya kamu sudah memaksakan diri menjelaskan hubungannya. Sekarang hubungannya jauh lebih jelas daripada sekadar menatap kata "pena, tinta". Teknik yang sama bekerja pada soal yang jauh lebih abstrak.' },
+      { situasi: 'Soal FR: <b>METAMORFOSIS : ULAT = SUBLIMASI : ...</b> dengan pilihan <b>A. Es kering · B. Air · C. Uap air · D. Kristal garam · E. Embun</b>.', prompt: 'Coba jawab dulu: jangan cari "benda yang mirip ulat". Pertanyaannya: objek apa yang mengalami sublimasi, sebagaimana ulat mengalami metamorfosis?', jawaban: '<b>A. Es kering.</b> Hubungannya <b>nama proses → objek yang mengalami proses tersebut</b>: ulat adalah objek yang mengalami metamorfosis, dan es kering adalah objek yang mengalami sublimasi.<br><br>Jebakannya di sini: kalau kamu mengira hubungannya "proses → hasil", kamu akan memilih uap air atau embun. Kalau kamu mengira "benda → proses", kamu bingung sendiri. Membaca hubungan secara tepat, bukan menghafal contoh, yang menyelamatkan.' }
+    ],
+    notes: `<pre>METAMORFOSIS
+      ↓
+proses yang dialami oleh
+      ↓
+      ULAT
+
+SUBLIMASI
+      ↓
+proses yang dialami oleh
+      ↓
+    ES KERING</pre><p class="intro-text" style="margin-top:14px;">Pola ini <b>bukan</b> proses → hasil, juga <b>bukan</b> benda → proses, melainkan <b>nama proses → objek yang mengalami proses tersebut</b>.</p>`,
+    questions: [
+      { q: 'METAMORFOSIS : ULAT = SUBLIMASI : ...', options: ['Es kering', 'Air', 'Uap air', 'Embun'], correct: 0, explain: 'Ulat mengalami metamorfosis; es kering mengalami sublimasi — nama proses → objek yang mengalami proses.' },
+      { q: 'Teknik utama yang paling membantu pemula adalah...', options: ['Menghafal pasangan kata yang pernah keluar', 'Mengubah pasangan kata menjadi kalimat hubungan', 'Mencari kata yang bunyinya mirip', 'Menebak dari tema yang sama'], correct: 1, explain: 'Pasangan yang diubah menjadi kalimat membuat hubungannya eksplisit.' },
+      { q: 'PENA : TINTA. Rumusan hubungan yang paling jelas adalah...', options: ['Pena dan tinta sama-sama alat untuk menulis', 'Pena membutuhkan tinta', 'Tinta dijual di toko alat tulis', 'Pena lebih mahal daripada tinta'], correct: 1, explain: 'Mengubah pasangan jadi kalimat: "pena membutuhkan tinta" — hubungan yang jelas dan bisa diterapkan ke pasangan lain.' }
+    ]
+  },
+  {
+    id: 'pola-hubungan',
+    title: 'Sembilan Keluarga Hubungan',
+    chip: 'kuasai pola, bukan hafalan',
+    penjelasan: `<p>Anda tidak perlu menghafal ratusan pasangan kata. Yang perlu dikuasai adalah <b>keluarga hubungan</b>. Begitu pola dikenali, pasangan baru yang belum pernah dilihat pun mudah dipetakan.</p><p>Sembilan pola inti: <b>sinonim & antonim</b>, <b>bagian–keseluruhan</b>, <b>bahan–produk</b>, <b>alat/fungsi</b>, <b>profesi–tindakan–objek–tempat</b>, <b>sebab–akibat</b>, <b>tingkatan/intensitas</b>, <b>karakteristik</b>, dan <b>perbandingan</b>.</p>`,
+    materi: [
+      { situasi: 'Soal FR: <b>KEDELAI HITAM : KECAP = TEBU : ...</b>', prompt: 'Coba jawab dulu: kategorikan dulu — pasangan ini masuk keluarga hubungan yang mana? Lalu isi titik-titiknya.', jawaban: 'Pola <b>bahan → produk</b>: kedelai hitam digunakan sebagai bahan dasar kecap, maka tebu digunakan sebagai bahan dasar <b>gula</b>. Pola yang sama juga muncul di NEKTAR : MADU. Perhatikan, hubungannya BUKAN sekadar "kedelai hitam dan kecap sama-sama makanan" — itu terlalu umum.' },
+      { situasi: '<b>TERSENYUM : TERBAHAK = MELIHAT : ...</b>', prompt: 'Coba jawab dulu: apakah ini sinonim? Kalau bukan, hubungan apa sebenarnya antara tersenyum dan terbahak? Lalu padanannya untuk melihat?', jawaban: 'Ini bukan sinonim. <b>Terbahak</b> adalah bentuk yang lebih kuat/intens daripada <b>tersenyum</b>. Maka padanan melihat adalah <b>MELOTOT</b> (melihat yang lebih intens). Polanya <b>ekspresi intensitas rendah → ekspresi intensitas lebih tinggi</b>. Banyak peserta menjawab salah karena menganggap keduanya "sama-sama ekspresi" — padahal soal menginginkan peningkatan intensitas.' },
+      { situasi: '<b>SALJU : DINGIN</b>', prompt: 'Coba jawab dulu: masuk keluarga hubungan yang mana — dan pasangan lain apa yang pola-nya sama?', jawaban: 'Pola <b>objek → sifat khas/karakteristik</b>: salju memiliki karakteristik dingin. Maka pasangan lain yang setara harus berbentuk objek → sifat yang memang khas dari objek itu, misalnya <b>GULA : MANIS</b>. Pastikan sifatnya melekat dan khas, bukan sekadar asosiasi.' },
+      { situasi: '<b>KEKECEWAAN : KESEDIHAN</b>', prompt: 'Coba jawab dulu: pola sebab-akibat, atau sekadar asosiasi? Lalu apa bedanya dengan "hujan : payung"?', jawaban: 'Pola <b>sebab → akibat</b>: kekecewaan dapat menyebabkan kesedihan. Bandingkan dengan "hujan : payung" — benar keduanya berhubungan, tapi hujan tidak menyebabkan payung. Analogi menuntut hubungan yang <b>spesifik dan nyata</b>, bukan sekadar sering muncul bersama.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Keluarga hubungan</th><th>Contoh</th></tr><tr><td>Sinonim</td><td>FIT : KETAT</td></tr><tr><td>Antonim</td><td>KECIL : BESAR</td></tr><tr><td>Bagian – keseluruhan</td><td>RODA : MOBIL</td></tr><tr><td>Bahan – produk</td><td>KEDELAI HITAM : KECAP</td></tr><tr><td>Alat / objek – fungsi</td><td>SAPU : MEMBERSIHKAN</td></tr><tr><td>Profesi – tindakan – objek – tempat</td><td>DOKTER : MENGOBATI : PASIEN : RUMAH SAKIT</td></tr><tr><td>Sebab – akibat</td><td>KEKECEWAAN : KESEDIHAN</td></tr><tr><td>Tingkatan / intensitas</td><td>TERSENYUM : TERBAHAK</td></tr><tr><td>Karakteristik</td><td>SALJU : DINGIN</td></tr><tr><td>Perbandingan</td><td>PESAWAT : KERETA (lebih cepat)</td></tr></table>`,
+    questions: [
+      { q: 'KEDELAI HITAM : KECAP = TEBU : ...', options: ['Gula', 'Sirup', 'Nira', 'Es tebu'], correct: 0, explain: 'Bahan → produk: tebu adalah bahan dasar gula, sebagaimana kedelai hitam bahan dasar kecap.' },
+      { q: 'TERSENYUM : TERBAHAK. Hubungan yang tepat adalah...', options: ['Sinonim', 'Intensitas yang meningkat', 'Antonim', 'Sebab akibat'], correct: 1, explain: 'Terbahak lebih intens dari tersenyum — pola ekspresi intensitas rendah → tinggi.' },
+      { q: 'SALJU : DINGIN termasuk pola...', options: ['Bahan – produk', 'Karakteristik (objek → sifat khas)', 'Bagian – keseluruhan', 'Alat – fungsi'], correct: 1, explain: 'Dingin adalah karakteristik khas salju.' },
+      { q: 'RODA : MOBIL termasuk pola...', options: ['Karakteristik', 'Bagian – keseluruhan', 'Alat – fungsi', 'Sinonim'], correct: 1, explain: 'Roda adalah bagian dari mobil.' },
+      { q: 'SAPU : MEMBERSIHKAN menunjukkan pola...', options: ['Alat → fungsi', 'Bahan → produk', 'Sebab → akibat', 'Profesi → tempat'], correct: 0, explain: 'Sapu digunakan untuk membersihkan — alat → fungsi.' }
+    ]
+  },
+  {
+    id: 'arah-ketepatan',
+    title: 'Arah Hubungan & Tingkat Ketepatan',
+    chip: 'jangan dibalik, jangan kelebaran',
+    penjelasan: `<p>Inilah yang membedakan peserta yang sekadar mengetahui relasi dengan peserta yang benar-benar bisa memilih jawaban: <b>arah hubungan</b> dan <b>tingkat ketepatannya</b>.</p>`,
+    materi: [
+      { situasi: '<b>TELUR : UNGGAS</b> — dengan asumsi hubungan yang dimaksud adalah perkembangan.', prompt: 'Coba jawab dulu: mana arah yang benar — telur → unggas, atau unggas → telur? Kenapa arah ini penting?', jawaban: 'Arah yang benar: <b>telur → unggas</b> (telur berkembang menjadi unggas). Kamu tidak boleh membaliknya menjadi "unggas → telur" karena arah perkembangan jadi terbalik. Banyak jebakan soal disusun dari pilihan yang arahnya dibalik — murid yang lupa mengecek arah akan terkecoh.' },
+      { situasi: '<b>DOKTER : RUMAH SAKIT</b> — lalu kamu berkata, "keduanya berhubungan dengan kesehatan."', prompt: 'Coba jawab dulu: apakah rumusan itu benar? Kalau benar, apa kekurangannya?', jawaban: 'Benar, tapi <b>tidak berguna</b> — hubungan itu terlalu luas. Cukup banyak pasangan yang "berhubungan dengan kesehatan", jadi rumusan ini tidak bisa menyaring jawaban. Rumusan yang diperlukan: <b>dokter bekerja di rumah sakit</b>. Semakin tepat kalimat hubungannya, semakin mudah menentukan jawaban.' },
+      { situasi: '<b>PENA : TINTA</b>', prompt: 'Coba jawab dulu: mana yang lebih baik dipertahankan — "pena dan tinta sama-sama berkaitan dengan menulis", atau "pena menggunakan tinta"?', jawaban: '<b>Pena menggunakan tinta</b> — lebih spesifik dan lebih berguna untuk menyaring pilihan. Kalau kamu berhenti di "sama-sama berkaitan dengan menulis", terlalu banyak pasangan yang lolos. Prinsipnya: <b>jangan mencari hubungan yang sekadar benar; cari yang paling tepat</b>.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Hubungan umum (kurang berguna)</th><th>Hubungan tepat (harus dipertahankan)</th></tr><tr><td>DOKTER dan RUMAH SAKIT sama-sama berhubungan dengan kesehatan</td><td>Dokter bekerja di rumah sakit</td></tr><tr><td>PENA dan TINTA berkaitan dengan menulis</td><td>Pena menggunakan tinta</td></tr></table>`,
+    questions: [
+      { q: 'TELUR : UNGGAS dengan hubungan "perkembangan". Arah yang benar adalah...', options: ['Unggas → telur', 'Telur → unggas', 'Kedua arah sama saja', 'Hubungan tidak punya arah'], correct: 1, explain: 'Telur berkembang menjadi unggas — arah perkembangan, jangan dibalik.' },
+      { q: 'DOKTER : RUMAH SAKIT. Rumusan hubungan yang PALING tepat adalah...', options: ['Keduanya berhubungan dengan kesehatan', 'Dokter bekerja di rumah sakit', 'Dokter dan rumah sakit sama-sama di dunia medis', 'Rumah sakit mempekerjakan dokter'], correct: 1, explain: 'Rumusan paling spesifik dan berguna untuk menyaring pilihan.' },
+      { q: 'PENA : TINTA. Hubungan yang harus dipertahankan adalah...', options: ['Pena dan tinta sama-sama alat menulis', 'Pena menggunakan tinta', 'Keduanya bisa dibeli di toko', 'Pena bagian dari alat tulis'], correct: 1, explain: 'Hubungan yang paling spesifik: pena menggunakan tinta.' },
+      { q: 'Mengapa hubungan yang terlalu umum berbahaya?', options: ['Karena membuat banyak pilihan terlihat cocok', 'Karena sulit ditebak', 'Karena membuat pilihan terlalu panjang', 'Karena tidak berpengaruh apa-apa'], correct: 0, explain: 'Hubungan yang lebar menyaring terlalu sedikit pilihan, jadi semua tampak benar.' }
+    ]
+  },
+  {
+    id: 'analogi-kalimat',
+    title: 'Analogi Kalimat: Bedah Peran, Bukan Cerita',
+    chip: 'baca sebagai struktur',
+    penjelasan: `<p>Analogi kalimat terasa jauh lebih sulit karena Anda tidak lagi membandingkan dua kata, melainkan <b>struktur hubungan dalam sebuah pernyataan</b>.</p><p>Kuncinya: <b>jangan baca kalimat sebagai cerita — baca sebagai struktur</b>. Yang sama adalah <b>peran semantik setiap unsur</b>, bukan kata-katanya.</p>`,
+    materi: [
+      { situasi: 'Soal FR: <b>"Nasi dimasak menggunakan beras."</b> Salah satu pilihan: <b>"Kopi dibuat dari biji kopi."</b>', prompt: 'Coba jawab dulu sebelum membaca jawaban: bongkar struktur kalimat pertama — objek utamanya apa, bahan asalnya apa, dan hubungannya apa? Lalu cocokkan ke pilihan kopi.', jawaban: '<b>Langkah 1:</b> objek utama = <i>nasi</i>. <b>Langkah 2:</b> bahan asal = <i>beras</i>. <b>Langkah 3:</b> hubungan = <i>nasi merupakan hasil pengolahan beras</i>. Pada pilihan kopi: <i>kopi merupakan hasil pengolahan biji kopi</i>. Keduanya punya struktur sama: <b>HASIL → dibuat/diolah dari → BAHAN DASAR</b>. Jawaban ini tepat bukan karena nasi dan kopi sama-sama makanan, tapi karena hubungan produk → bahan dasarnya sama.' },
+      { situasi: 'Soal FR: <b>"Dokter mengobati pasien di rumah sakit."</b> Pilihan: <b>A.</b> Guru mengajar murid di sekolah. <b>B.</b> Petani menanam padi di sawah. <b>C.</b> Koki memasak makanan di dapur. <b>D.</b> Burung mencari makanan di hutan. <b>E.</b> Nelayan menangkap ikan di laut.', prompt: 'Coba jawab dulu: B, C, dan E juga terlihat mirip secara susunan kata. Apa yang membuat pilihan A paling tepat?', jawaban: 'B, C, dan E memang mirip secara gramatikal, tapi <b>peran objeknya berbeda</b>. Kalimat pertama polanya: <b>profesi memberikan tindakan kepada MANUSIA (objek) di tempat kerja</b> — dokter mengobati <b>pasien</b> (manusia) di rumah sakit. Pilihan A: guru mengajar <b>murid</b> (manusia) di sekolah — sama persis. Petani menanam <b>padi</b> dan koki memasak <b>makanan</b> adalah benda, bukan manusia yang dilayani. Dalam analogi kalimat, <b>kesamaan susunan kata belum cukup — yang harus sama adalah peran setiap unsur</b>.' },
+      { situasi: 'Soal FR: <b>"Pada sepatu terdapat lubang tali dan sol."</b> Pilihan yang tepat: <b>"Pada lagu terdapat intro dan outro."</b>', prompt: 'Coba jawab dulu: kalau kamu paksa membayangkan "sepatu ↔ lagu", tidak masuk akal kan secara tema? Lalu kenapa pasangan itu benar?', jawaban: 'Karena jangan membandingkan sepatu dengan lagu — bandingkan <b>strukturnya</b>. Kedua kalimat sama-sama menyatakan <b>suatu objek mempunyai dua komponen tertentu</b>: SEPATU (lubang tali + sol) dan LAGU (intro + outro). Ini pola <b>keseluruhan → dua bagian/komponen</b>, kunci untuk analogi kalimat multi-komponen.' },
+      { situasi: 'Soal FR: <b>"Tenda dan api unggun berada di tempat perkemahan."</b> Pilihan yang tepat: <b>"Buku dan kamus berada di dalam perpustakaan."</b>', prompt: 'Coba jawab dulu: hubungan apa yang dibandingkan di sini — fungsi tenda, fungsi buku, atau yang lain?', jawaban: 'Yang dibandingkan adalah <b>hubungan lokasi</b>: objek A + objek B → berada di → TEMPAT. Tenda + api unggun → tempat perkemahan; buku + kamus → perpustakaan. Bukan fungsi tenda, bukan fungsi buku, bukan jenis bendanya — semuanya soal lokasi.' },
+      { situasi: 'Cara memecah kalimat panjang: pakai <b>peran semantik</b>. Tandai: <b>Siapa?</b> (pelaku) · <b>Melakukan apa?</b> (tindakan) · <b>Kepada siapa/apa?</b> (objek) · <b>Di mana?</b> (tempat) · <b>Menghasilkan apa?</b> (hasil) · <b>Terdiri dari apa?</b> (komponen) · <b>Bagaimana dibandingkan?</b> (sifat/perbandingan).', prompt: 'Ini bukan latihan jawab — coba baca ulang empat skenario di atas sambil menandai unsur-unsurnya pakai tujuh pertanyaan ini.', jawaban: 'Bagus. Begitu kamu terbiasa menandai peran, analogi "Pesawat terbang lebih cepat daripada kereta api" seketika berubah menjadi struktur: OBJEK A → memiliki tingkat X → LEBIH TINGGI → daripada OBJEK B. Maka <b>cheetah lebih cepat daripada singa</b> jadi padanan yang sah, walau objeknya beda dunia sama sekali.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Pertanyaan bedah peran</th><th>Unsur</th></tr><tr><td>Siapa?</td><td>Pelaku / subjek</td></tr><tr><td>Melakukan apa?</td><td>Tindakan / predikat</td></tr><tr><td>Kepada siapa / apa?</td><td>Objek</td></tr><tr><td>Di mana?</td><td>Tempat</td></tr><tr><td>Menghasilkan apa?</td><td>Hasil</td></tr><tr><td>Terdiri dari apa?</td><td>Komponen</td></tr><tr><td>Bagaimana dibandingkan?</td><td>Sifat / perbandingan</td></tr></table>`,
+    questions: [
+      { q: '"Pesawat terbang lebih cepat daripada kereta api." Padanan yang paling tepat adalah...', options: ['Cheetah berlari lebih cepat daripada singa', 'Pesawat memiliki mesin jet', 'Kereta api berjalan di atas rel', 'Singa adalah hewan yang sangat cepat'], correct: 0, explain: 'Yang dipertahankan adalah relasi perbandingan "A lebih X daripada B", bukan objek atau aktivitasnya.' },
+      { q: '"Pada sepatu terdapat lubang tali dan sol." Padanan yang tepat adalah...', options: ['Pada lagu terdapat intro dan outro', 'Sepatu dibuat dari kulit', 'Lagu dinyanyikan oleh penyanyi', 'Sol terbuat dari karet'], correct: 0, explain: 'Pola keseluruhan → dua bagian: sepatu (lubang tali + sol), lagu (intro + outro).' },
+      { q: '"Dokter mengobati pasien di rumah sakit." Padanan terbaik adalah...', options: ['Guru mengajar murid di sekolah', 'Petani menanam padi di sawah', 'Koki memasak makanan di dapur', 'Nelayan menangkap ikan di laut'], correct: 0, explain: 'Guru → murid mempertahankan peran objek sebagai manusia yang dilayani; petani/koki/nelayan objeknya benda.' },
+      { q: '"Tenda dan api unggun berada di tempat perkemahan." Padanan yang tepat adalah...', options: ['Buku dan kamus berada di perpustakaan', 'Tenda terbuat dari kain', 'Api unggun digunakan untuk menghangatkan', 'Perkemahan diadakan di akhir pekan'], correct: 0, explain: 'Yang dibandingkan adalah hubungan lokasi: objek A + objek B → berada di → tempat.' }
+    ]
+  },
+  {
+    id: 'pilihan-sulit',
+    title: 'Pilihan yang Sama-Sama Terlihat Benar',
+    chip: 'tema → relasi → struktur',
+    penjelasan: `<p>Bagian paling menentukan pada soal analogi. Sering kali masalahnya bukan "saya tidak tahu jawabannya", melainkan <b>"ada dua atau tiga pilihan yang tampaknya cocok"</b>.</p><p>Gunakan tiga tahap: <b>Tahap 1 — Tema</b> (apakah masih satu bidang? penyaringan awal), <b>Tahap 2 — Relasi</b> (apakah hubungannya benar-benar sama?), <b>Tahap 3 — Struktur</b> (apakah <b>arah dan peran</b> setiap unsur sama?). Pilihan yang lolos ketiganya paling kuat.</p>`,
+    materi: [
+      { situasi: 'Soal: <b>GURU : SEKOLAH</b>. Pilihan: <b>A.</b> Dokter : Pasien · <b>B.</b> Polisi : Kantor · <b>C.</b> Hakim : Pengadilan · <b>D.</b> Murid : Buku · <b>E.</b> Petani : Sawah.', prompt: 'Coba jawab dulu: apa hubungan stimulus (GURU : SEKOLAH)? Lalu opsi mana yang paling sejajar — dan kenapa "Dokter : Pasien" itu salah walau sama-sama dunia kerja?', jawaban: 'Hubungan stimulus: <b>profesi → tempat kerja/bertugas</b>. Maka <b>Hakim : Pengadilan (C)</b> paling tepat. Sedangkan <b>Dokter : Pasien</b> menyatakan <b>profesi → objek yang dilayani</b> — relasinya beda, bukan tempat bekerja. Catatan jujur: <b>Petani : Sawah</b> dan <b>Polisi : Kantor</b> juga bisa dibaca "profesi → tempat", makanya di FR pilihan memang bisa memiliki beberapa kandidat — tugas kita memilih yang paling sejajar dengan stimulus dan menyingkirkan yang relasinya PALING jelas berbeda (dokter : pasien).' },
+      { situasi: 'Ingat prinsip penting dari contoh di atas: <b>"Benar secara dunia nyata belum tentu benar secara analogi."</b>', prompt: 'Coba jawab dulu: dokter memang berhubungan dengan pasien di dunia nyata. Kalau begitu kenapa pilihan itu kalah oleh hakim : pengadilan?', jawaban: 'Karena analogi membandingkan <b>relasi</b>, bukan kenyataan tematik bahwa dua hal sering bersama. Dokter : pasien benar di dunia nyata, tapi relasinya (profesi → objek yang dilayani) tidak menyamai relasi stimulus (profesi → tempat kerja). Ini kunci menghindari pilihan yang "kedengarannya benar".' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Tahap</th><th>Pertanyaan</th><th>Fungsi</th></tr><tr><td>1 · Tema</td><td>Apakah masih satu bidang?</td><td>Penyaringan awal</td></tr><tr><td>2 · Relasi</td><td>Apakah hubungannya benar-benar sama?</td><td>Saring pilihan yang beda relasi</td></tr><tr><td>3 · Struktur</td><td>Apakah arah dan peran unsur sama?</td><td>Menentukan jawaban akhir</td></tr></table>`,
+    questions: [
+      { q: 'GURU : SEKOLAH. Pilihan yang paling sejajar adalah...', options: ['Dokter : Pasien', 'Polisi : Kantor', 'Hakim : Pengadilan', 'Murid : Buku'], correct: 2, explain: 'Stimulus: profesi → tempat kerja. Hakim : pengadilan paling sejajar; dokter : pasien relasinya profesi → objek yang dilayani.' },
+      { q: 'Dokter : Pasien sebenarnya menyatakan hubungan...', options: ['Profesi → objek yang dilayani', 'Profesi → tempat kerja', 'Bahan → produk', 'Intensitas'], correct: 0, explain: 'Dokter melayani pasien — objek yang dilayani, bukan tempat bekerja.' },
+      { q: 'Pernyataan yang paling tepat tentang analogi adalah...', options: ['Benar secara dunia nyata berarti pasti benar secara analogi', 'Benar secara dunia nyata belum tentu benar secara analogi', 'Yang penting temanya sama', 'Pilihan terpanjang biasanya benar'], correct: 1, explain: 'Analogi menuntut relasi yang sama, bukan sekadar hal yang sering muncul bersama di dunia nyata.' },
+      { q: 'Urutan tiga tahap menyaring pilihan yang sama-sama tampak benar adalah...', options: ['Struktur, tema, relasi', 'Tema, relasi, struktur', 'Relasi, tema, struktur', 'Tema, struktur, relasi'], correct: 1, explain: 'Mulai dari tema (bidang), lalu relasi (hubungan), lalu struktur (arah dan peran unsur).' }
+    ]
+  },
+  {
+    id: 'prosedur',
+    title: 'Prosedur Sistematis & Checklist Ujian',
+    chip: '7 langkah + 6 pertanyaan',
+    penjelasan: `<p>Setelah semua konsep dikuasai, gunakan prosedur tetap berikut supaya tidak ada langkah yang terlewat — apalagi di bawah tekanan waktu.</p><p><b>Langkah 1</b> — Baca pasangan pertama (jangan langsung lihat semua pilihan).<br><b>Langkah 2</b> — Jelaskan hubungan dengan kalimat ("A merupakan bagian dari B", "A digunakan untuk B", "A dapat menyebabkan B", "A adalah bahan dasar B", "A merupakan tahap sebelum B").<br><b>Langkah 3</b> — Tentukan arah: A → B atau B → A?<br><b>Langkah 4</b> — Tentukan tingkat kekhususan: bagian → keseluruhan, bukan sekadar "berhubungan dengan"?<br><b>Langkah 5</b> — Terapkan hubungan yang sama ke pasangan baru.<br><b>Langkah 6</b> — Bandingkan <b>semua</b> opsi; jangan berhenti di pilihan pertama yang tampak benar. Kalau ada dua yang tampak benar, cari yang lebih identik secara struktur.<br><b>Langkah 7</b> — Untuk analogi kalimat, bedah peran (pelaku → tindakan → objek → tempat, atau keseluruhan → bagian 1 + bagian 2, atau bahan → proses → hasil, atau A → lebih X → daripada B).</p>`,
+    materi: [
+      { situasi: 'Terapkan 7 langkah pada contoh: <b>SUTRA : KAIN</b>.', prompt: 'Coba jawab dulu langkah demi langkah: rumuskan kalimat hubungan, tentukan arah, lalu tentukan tingkat kekhususannya.', jawaban: 'Langkah 2: <b>"Sutra adalah bahan pembuat kain."</b> Langkah 3: arah <b>sutra → kain</b> (bahan → produk, bukan kain → sutra). Langkah 4: jangan berhenti di "sutra berhubungan dengan kain". Langkah 5–6: terapkan bahan → produk ke calon jawaban — misal <b>getah → karet</b> — dan bandingkan semua opsi sebelum memutuskan. Langkah 7 tidak dipakai karena ini soal kata.' },
+      { situasi: 'Ringkasan inti: <b>NEKTAR → MADU</b> (bahan → produk), <b>TEBU → GULA</b> (bahan → produk); <b>DOKTER → RUMAH SAKIT</b> (profesi → tempat kerja), <b>GURU → SEKOLAH</b> (profesi → tempat kerja); <b>RODA → MOBIL</b> (bagian → keseluruhan); <b>TERSENYUM → TERBAHAK</b> (intensitas rendah → tinggi); <b>DOKTER → MENGOBATI → PASIEN → RUMAH SAKIT</b> = <b>GURU → MENGAJAR → MURID → SEKOLAH</b>.', prompt: 'Ini bukan soal untuk dijawab — baca pola-pola ini dan perhatikan: yang harus diingat adalah POLA di belakangnya, bukan pasangan katanya.', jawaban: 'Bagus. Yang kamu kenali saat bertemu pasangan baru adalah <b>struktur hubungannya</b>, bukan memori bahwa "nektar–madu pernah keluar". Dengan begitu pasangan baru seaneh apa pun tetap bisa dihadapi.' },
+      { situasi: 'Dokter mengobati pasien di rumah sakit → jangan cari kalimat tentang kesehatan. Yang dicari: <b>pelaku profesi → melakukan tindakan → kepada objek yang dilayani → di tempat terkait</b>.', prompt: 'Coba jawab dulu: apa prinsip terpenting untuk analogi kalimat — mencocokkan kata, atau mencocokkan peran dan hubungan?', jawaban: '<b>Cocokkan peran dan hubungan, bukan kata.</b> Begitu cara berpikir ini terbentuk, kamu tidak lagi bergantung pada pasangan yang pernah dipelajari — yang dikenali adalah struktur hubungannya.' }
+    ],
+    notes: `<table class="notes-table"><tr><th>Checklist cepat saat ujian</th><th>Pertanyaan</th></tr><tr><td>1</td><td>Apa arti kedua kata di stimulus?</td></tr><tr><td>2</td><td>Apa hubungan A dengan B?</td></tr><tr><td>3</td><td>Apa arah hubungannya?</td></tr><tr><td>4</td><td>Seberapa spesifik hubungan tersebut?</td></tr><tr><td>5</td><td>Apakah pilihan punya hubungan yang sama persis?</td></tr><tr><td>6</td><td>Kalau analogi kalimat: siapa melakukan apa kepada siapa, di mana, dan dalam hubungan apa?</td></tr></table>`,
+    questions: [
+      { q: 'Langkah pertama mengerjakan soal analogi adalah...', options: ['Langsung melihat semua pilihan', 'Membaca pasangan pertama dan merumuskan hubungannya', 'Mencari kata yang paling mirip', 'Memilih kata yang paling panjang'], correct: 1, explain: 'Rumuskan hubungan stimulus dulu, baru lihat pilihan.' },
+      { q: '"A merupakan bagian dari B" adalah contoh...', options: ['Kalimat hubungan yang menjelaskan relasi antar kata', 'Sebuah pertanyaan ujian', 'Aturan main resmi ujian', 'Kesimpulan terbaik yang tidak perlu dicek'], correct: 0, explain: 'Langkah 2: mengubah pasangan menjadi kalimat yang jelas dan spesifik.' },
+      { q: 'Yang BUKAN termasuk checklist enam pertanyaan saat ujian adalah...', options: ['Apa arti kedua kata di stimulus?', 'Apa hubungan A dengan B?', 'Berapa panjang kata tersebut?', 'Apakah pilihan punya hubungan yang sama persis?'], correct: 2, explain: 'Panjang kata tidak pernah relevan dalam analogi.' },
+      { q: 'Dari pasangan NEKTAR : MADU, yang sebaiknya diingat adalah...', options: ['Pasangan katanya', 'Polanya: bahan → produk', 'Bunyi katanya', 'Temanya yang sama-sama makanan'], correct: 1, explain: 'Yang diingat adalah pola di belakangnya, bukan pasangan spesifiknya.' }
+    ]
+  }
+];
+
+
+/**
+ * SYSTEM VARIABLES
+ */
+const letters = ['A','B','C','D','E'];
+let materiAnswered = 0, materiCorrect = 0;
+let tryoutAnswered = 0, tryoutCorrect = 0;
+
+// Quiz state
+let currentPacket = null;
+let userAnswers = [];      // array of selected index (null = unanswered)
+let quizSubmitted = false;
+let currentQuestionIndex = 0;
+
+/**
+ * TAB SWITCHER
+ */
+function switchTab(tabName, event) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + tabName).classList.add('active');
+  event.target.classList.add('active');
+}
+
+/**
+ * SCOREBOARD UPDATERS
+ */
+function updateMateriScore(){ 
+  document.getElementById('materi-score').textContent = materiCorrect + ' / ' + materiAnswered; 
+}
+function updateTryoutScore(){ 
+  document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered; 
+}
+
+/**
+ * RENDER FUNCTIONS (MATERI) - UNCHANGED
+ */
+function buildMateri(section){
+  const wrap = document.createElement('div'); wrap.className = 'materi-block';
+  if (section.penjelasan){
+    const pj = document.createElement('div'); pj.className = 'penjelasan'; pj.innerHTML = section.penjelasan;
+    wrap.appendChild(pj);
+  }
+  if (section.materi && section.materi.length){
+    section.materi.forEach(sc => {
+      const block = document.createElement('div'); block.className = 'scenario';
+      const sit = document.createElement('p'); sit.className = 'situasi'; sit.innerHTML = '<b>Situasi:</b> ' + sc.situasi;
+      const prm = document.createElement('p'); prm.className = 'prompt'; prm.textContent = sc.prompt;
+      const btn = document.createElement('button'); btn.className = 'reveal-btn'; btn.textContent = 'Lihat jawaban';
+      const ans = document.createElement('div'); ans.className = 'answer'; ans.innerHTML = '<b>Jawaban:</b> ' + sc.jawaban;
+      btn.addEventListener('click', () => {
+        ans.classList.toggle('show');
+        btn.textContent = ans.classList.contains('show') ? 'Sembunyikan jawaban' : 'Lihat jawaban';
+      });
+      block.appendChild(sit); block.appendChild(prm); block.appendChild(btn); block.appendChild(ans);
+      wrap.appendChild(block);
+    });
+  } else if (section.introText){
+    const p = document.createElement('p'); p.className = 'intro-text'; p.textContent = section.introText;
+    wrap.appendChild(p);
+  }
+  if (section.notes){ const notes = document.createElement('div'); notes.innerHTML = section.notes; wrap.appendChild(notes); }
+  return wrap;
+}
+
+function renderQuestions(container, questions, dotsContainer) {
+  questions.forEach((item, qi) => {
+    const qBlock = document.createElement('div'); qBlock.className = 'question';
+    const qText = document.createElement('p'); qText.className = 'q-text'; qText.textContent = (qi + 1) + '. ' + item.q;
+    qBlock.appendChild(qText);
+    const opts = document.createElement('div'); opts.className = 'options';
+    const explainBox = document.createElement('div'); explainBox.className = 'explain';
+    
+    item.options.forEach((optText, oi) => {
+      const opt = document.createElement('div'); opt.className = 'option';
+      opt.innerHTML = `<span class="bubble">${letters[oi]}</span><span>${optText}</span>`;
+      opt.addEventListener('click', () => {
+        if (opts.dataset.locked) return;
+        opts.dataset.locked = '1'; 
+        materiAnswered++;
+        const isCorrect = oi === item.correct;
+        if (isCorrect) materiCorrect++;
+        
+        [...opts.children].forEach((el, i) => {
+          el.classList.add('locked');
+          if (i === item.correct) el.classList.add('reveal-correct');
+          if (i === oi && !isCorrect) el.classList.add('chosen-wrong');
+          if (i === oi && isCorrect) el.classList.add('chosen-correct');
+        });
+        
+        explainBox.className = 'explain show ' + (isCorrect ? 'good' : 'bad');
+        explainBox.innerHTML = '<b>' + (isCorrect ? 'Benar. ' : 'Kurang tepat. ') + '</b>' + item.explain;
+        
+        if(dotsContainer && dotsContainer.children[qi]) {
+          dotsContainer.children[qi].classList.add(isCorrect ? 'correct' : 'wrong');
+        }
+        updateMateriScore();
+      });
+      opts.appendChild(opt);
+    });
+    qBlock.appendChild(opts); qBlock.appendChild(explainBox);
+    container.appendChild(qBlock);
+  });
+}
+
+function buildTopic(section, idx){
+  const topic = document.createElement('section');
+  topic.className = 'topic' + (idx === 0 ? ' open' : '');
+  topic.id = section.id;
+  const head = document.createElement('button'); head.className = 'topic-head';
+  head.innerHTML = `<span class="th-left"><h2>${section.title}</h2><span class="chip">${section.chip}</span></span>`;
+  const dots = document.createElement('span'); dots.className = 'topic-dots';
+  section.questions.forEach(() => { const d = document.createElement('span'); d.className = 'dot'; dots.appendChild(d); });
+  const chevron = document.createElement('span'); chevron.className = 'chevron'; chevron.innerHTML = '&#9662;';
+  const rightWrap = document.createElement('span');
+  rightWrap.style.display = 'flex'; rightWrap.style.alignItems = 'center'; rightWrap.style.gap = '10px';
+  rightWrap.appendChild(dots); rightWrap.appendChild(chevron);
+  head.appendChild(rightWrap);
+  head.addEventListener('click', () => { topic.classList.toggle('open'); });
+
+  const body = document.createElement('div'); body.className = 'topic-body';
+  const inner = document.createElement('div'); inner.className = 'topic-inner';
+
+  const materiLabel = document.createElement('div'); materiLabel.className = 'section-label'; materiLabel.textContent = 'Materi';
+  inner.appendChild(materiLabel);
+  inner.appendChild(buildMateri(section));
+
+  const latihanLabel = document.createElement('div'); latihanLabel.className = 'section-label second';
+  latihanLabel.textContent = 'Latihan · ' + section.questions.length + ' soal';
+  inner.appendChild(latihanLabel);
+
+  renderQuestions(inner, section.questions, dots);
+
+  body.appendChild(inner); topic.appendChild(head); topic.appendChild(body);
+  return topic;
+}
+
+// Initialize Materi
+const materiContainer = document.getElementById('topics');
+MATERI_DATA.forEach((section, idx) => { materiContainer.appendChild(buildTopic(section, idx)); });
+
+/**
+ * PACKET LOADER
+ */
+async function loadPackets() {
+  const container = document.getElementById('packet-container');
+  const titleEl = document.getElementById('packet-title');
+  const descEl = document.getElementById('packet-desc');
+  
+  try {
+    const response = await fetch('manifest.json');
+    if (!response.ok) throw new Error('Manifest not found');
+    const manifest = await response.json();
+    
+    titleEl.textContent = manifest.judul || 'Bank Soal';
+    descEl.textContent = manifest.deskripsi || '';
+    
+    container.innerHTML = '';
+    if (!manifest.paket || manifest.paket.length === 0) {
+      container.innerHTML = '<div class="empty-state">Belum ada paket soal yang tersedia.</div>';
+      return;
+    }
+
+    manifest.paket.forEach((pkt, idx) => {
+      const card = document.createElement('div');
+      card.className = 'packet-card';
+      card.innerHTML = `
+        <div class="packet-title">${pkt.nama}</div>
+        <div class="packet-desc">${pkt.deskripsi || 'Paket latihan analogi TIU'}</div>
+        <div class="packet-meta">
+          <span class="packet-badge">${pkt.file}</span>
+          <span>Paket ${idx + 1}</span>
+        </div>
+      `;
+      card.addEventListener('click', () => startPacket(pkt));
+      container.appendChild(card);
+    });
+
+  } catch (err) {
+    titleEl.textContent = 'Bank Soal Analogi TIU CPNS';
+    descEl.textContent = 'Pastikan file manifest.json tersedia di folder yang sama.';
+    container.innerHTML = `
+      <div class="empty-state">
+        <strong>manifest.json belum ditemukan</strong><br>
+        Buat file manifest.json di folder yang sama agar paket soal bisa dimuat.<br>
+        <small style="opacity:0.7">Error: ${err.message}</small>
+      </div>
+    `;
+  }
+}
+
+loadPackets();
+
+/**
+ * ========== QUIZ ENGINE - ONE QUESTION PER SCREEN ==========
+ */
+function esc(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+async function startPacket(pkt) {
+  document.getElementById('packet-list-view').classList.add('hidden');
+  document.getElementById('quiz-view').classList.add('active');
+  document.getElementById('quiz-packet-name').textContent = pkt.nama;
+  
+  // Show loading
+  document.getElementById('quiz-body').innerHTML = `
+    <div class="loading-state">
+      <div class="loading-spinner"></div>
+      <div>Memuat soal dari <b>${pkt.file}</b>...</div>
+    </div>
+  `;
+  document.getElementById('quiz-footer').style.display = 'none';
+  
+  try {
+    const response = await fetch(pkt.file);
+    if (!response.ok) throw new Error('File tidak ditemukan');
+    const data = await response.json();
+    
+    if (!data.soal || data.soal.length === 0) {
+      document.getElementById('quiz-body').innerHTML = `
+        <div class="empty-state">
+          <strong>${esc(pkt.nama)} masih kosong</strong><br>
+          Belum ada soal pada file <b>${esc(pkt.file)}</b>.<br>
+          <small>Tambahkan soal pada array "soal", lalu klik paket ini lagi.</small>
+        </div>
+      `;
+      return;
+    }
+    
+    currentPacket = data;
+    userAnswers = new Array(data.soal.length).fill(null);
+    quizSubmitted = false;
+    currentQuestionIndex = 0;
+    
+    document.getElementById('quiz-total-num').textContent = data.soal.length;
+    document.getElementById('quiz-answered-count').textContent = '0';
+    document.getElementById('quiz-progress-fill').style.width = '0%';
+    
+    renderQuestion();
+    document.getElementById('quiz-body').scrollTop = 0;
+  } catch (err) {
+    document.getElementById('quiz-body').innerHTML = `
+      <div class="empty-state">
+        <strong>Gagal memuat ${esc(pkt.file)}</strong><br>
+        Pastikan file JSON paket soal tersedia.<br>
+        <small style="opacity:0.7">Error: ${esc(err.message)}</small>
+      </div>
+    `;
+    setTimeout(() => exitQuiz(), 2000);
+  }
+}
+
+function resetQuizFooter() {
+  document.getElementById('quiz-footer').innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()" disabled>← Kembali</button>
+      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+      <button class="quiz-btn quiz-btn-primary" onclick="nextQuestion()">Selanjutnya →</button>
+    </div>
+  `;
+  document.getElementById('quiz-footer').style.display = 'none';
+}
+
+function exitQuiz() {
+  document.getElementById('packet-list-view').classList.remove('hidden');
+  document.getElementById('quiz-view').classList.remove('active');
+  currentPacket = null;
+  userAnswers = [];
+  quizSubmitted = false;
+  currentQuestionIndex = 0;
+  resetQuizFooter();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderQuestion() {
+  const body = document.getElementById('quiz-body');
+  const total = currentPacket.soal.length;
+  if (total === 0) { body.innerHTML = ''; return; }
+  currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
+  const qi = currentQuestionIndex;
+
+  body.innerHTML = '';
+
+  // Question Navigator (mini map)
+  const nav = document.createElement('div');
+  nav.className = 'quiz-nav';
+  const navTitle = document.createElement('div');
+  navTitle.className = 'quiz-nav-title';
+  navTitle.textContent = 'Navigasi Soal';
+  nav.appendChild(navTitle);
+
+  const navDots = document.createElement('div');
+  navDots.className = 'quiz-nav-dots';
+
+  currentPacket.soal.forEach((s, i) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '') + (userAnswers[i] !== null ? ' answered' : '');
+    dot.textContent = i + 1;
+    dot.addEventListener('click', () => {
+      if (i !== currentQuestionIndex) goToQuestion(i);
+    });
+    navDots.appendChild(dot);
+  });
+  nav.appendChild(navDots);
+  body.appendChild(nav);
+
+  const currentDot = navDots.querySelector('.quiz-nav-dot.current');
+  if (currentDot && currentDot.scrollIntoView) {
+    currentDot.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }
+
+  const soal = currentPacket.soal[qi];
+
+  const card = document.createElement('div');
+  card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
+  card.id = 'q-' + qi;
+
+  const numBadge = document.createElement('div');
+  numBadge.className = 'quiz-q-num';
+  numBadge.textContent = `SOAL ${qi + 1}`;
+  card.appendChild(numBadge);
+
+  // Question text ONLY (no premis, no tipe during answering)
+  const qText = document.createElement('p');
+  qText.className = 'quiz-q-text';
+  qText.textContent = soal.pertanyaan;
+  card.appendChild(qText);
+
+  // Options
+  const optsWrap = document.createElement('div');
+  optsWrap.className = 'quiz-opts';
+  optsWrap.id = 'opts-' + qi;
+
+  soal.opsi.forEach((optText, oi) => {
+    const opt = document.createElement('div');
+    opt.className = 'quiz-opt';
+
+    const match = String(optText).match(/^([A-E])\.\s*(.+)$/s);
+    const letter = match ? match[1] : letters[oi];
+    const text = match ? match[2] : optText;
+
+    opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
+
+    if (userAnswers[qi] === oi) {
+      opt.classList.add('selected');
+    }
+
+    opt.addEventListener('click', () => handleOptionSelect(qi, oi));
+    optsWrap.appendChild(opt);
+  });
+
+  card.appendChild(optsWrap);
+  body.appendChild(card);
+
+  document.getElementById('quiz-current-num').textContent = qi + 1;
+  renderAnswerFooter();
+  updateProgress();
+  requestAnimationFrame(fitQuestionCard);
+}
+
+function goToQuestion(qi) {
+  if (!currentPacket) return;
+  currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
+  renderQuestion();
+  const body = document.getElementById('quiz-body');
+  if (body && body.scrollTo) body.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function prevQuestion() {
+  goToQuestion(currentQuestionIndex - 1);
+}
+
+function nextQuestion() {
+  if (!currentPacket) return;
+  if (currentQuestionIndex >= currentPacket.soal.length - 1) {
+    submitQuiz();
+    return;
+  }
+  goToQuestion(currentQuestionIndex + 1);
+}
+
+function renderAnswerFooter() {
+  const isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
+  document.getElementById('quiz-footer').innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-secondary" onclick="prevQuestion()"${currentQuestionIndex === 0 ? ' disabled' : ''}>← Kembali</button>
+      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+      <button class="quiz-btn quiz-btn-primary" onclick="${isLast ? 'submitQuiz()' : 'nextQuestion()'}">${isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →'}</button>
+    </div>
+  `;
+  document.getElementById('quiz-footer').style.display = 'block';
+}
+
+function fitQuestionCard() {
+  if (quizSubmitted) return;
+  const body = document.getElementById('quiz-body');
+  const card = document.querySelector('.quiz-q-card');
+  if (!body || !card) return;
+  if (typeof body.clientHeight !== 'number' || body.clientHeight <= 0) return;
+
+  card.style.zoom = '';
+
+  const bodyTop = body.getBoundingClientRect().top;
+  const availH = body.clientHeight - (card.getBoundingClientRect().top - bodyTop) - 20;
+  let availW = body.clientWidth;
+  if (window.matchMedia && window.matchMedia('(min-width:1024px)').matches) {
+    const navElWide = body.querySelector('.quiz-nav');
+    if (navElWide) {
+      const padLW = parseFloat(getComputedStyle(body).paddingLeft) || 0;
+      const padRW = parseFloat(getComputedStyle(body).paddingRight) || 0;
+      availW = body.clientWidth - padLW - padRW - navElWide.getBoundingClientRect().width - 14;
+    }
+  }
+  availW = Math.min(availW, 800);
+
+  const cardH = card.getBoundingClientRect().height;
+  const cardW = card.getBoundingClientRect().width;
+  if (cardH <= 0 || cardW <= 0) return;
+
+  const needed = Math.min(availH / cardH, availW / cardW);
+  card.style.zoom = Math.max(0.8, Math.min(1.5, needed));
+}
+
+function handleOptionSelect(qi, oi) {
+  if (quizSubmitted) return;
+
+  // Toggle: if clicking same option, deselect
+  if (userAnswers[qi] === oi) {
+    userAnswers[qi] = null;
+  } else {
+    userAnswers[qi] = oi;
+  }
+
+  // Update visual state for this question's options
+  const optsContainer = document.getElementById('opts-' + qi);
+  if (optsContainer) {
+    [...optsContainer.children].forEach((opt, i) => {
+      opt.classList.toggle('selected', i === userAnswers[qi]);
+    });
+  }
+
+  // Update card border
+  const card = document.getElementById('q-' + qi);
+  if (card) card.classList.toggle('answered', userAnswers[qi] !== null);
+
+  // Update nav dots (current + answered states)
+  document.querySelectorAll('.quiz-nav-dot').forEach((dot, i) => {
+    dot.classList.toggle('answered', userAnswers[i] !== null);
+  });
+
+  updateProgress();
+}
+
+function updateProgress() {
+  const answered = userAnswers.filter(a => a !== null).length;
+  const total = currentPacket.soal.length;
+
+  document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
+  document.getElementById('quiz-answered-count').textContent = answered;
+  document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
+}
+
+function submitQuiz() {
+  if (!currentPacket) return;
+  
+  const answered = userAnswers.filter(a => a !== null).length;
+  const total = currentPacket.soal.length;
+  
+  if (answered < total) {
+    const skipped = total - answered;
+    if (!confirm(`Masih ada ${skipped} soal yang belum dijawab.\nSoal yang tidak dijawab akan dianggap salah.\n\nLanjutkan ke pembahasan?`)) {
+      return;
+    }
+  }
+  
+  // Calculate and update global tryout score
+  let correct = 0;
+  currentPacket.soal.forEach((soal, qi) => {
+    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+    if (userAnswers[qi] === correctIdx) {
+      correct++;
+    }
+  });
+  
+  tryoutAnswered += total;
+  tryoutCorrect += correct;
+  updateTryoutScore();
+  
+  quizSubmitted = true;
+  renderReviewMode();
+  const qb = document.getElementById('quiz-body');
+  if (qb) qb.scrollTop = 0;
+}
+
+function skipToReview() {
+  if (!currentPacket) return;
+  if (!confirm('Lewati semua soal dan langsung lihat pembahasan?\nSemua soal yang belum dijawab akan dianggap salah.')) {
+    return;
+  }
+  submitQuiz();
+}
+
+function renderReviewMode() {
+  const body = document.getElementById('quiz-body');
+  body.innerHTML = '';
+  
+  // Hide the answer-mode footer, show review footer
+  document.getElementById('quiz-footer').style.display = 'none';
+  
+  // Calculate stats
+  let correct = 0, wrong = 0, skipped = 0;
+  currentPacket.soal.forEach((soal, qi) => {
+    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+    if (userAnswers[qi] === null) {
+      skipped++;
+    } else if (userAnswers[qi] === correctIdx) {
+      correct++;
+    } else {
+      wrong++;
+    }
+  });
+  
+  const total = currentPacket.soal.length;
+  const percent = Math.round((correct / total) * 100);
+  
+  // Summary card
+  const summary = document.createElement('div');
+  summary.className = 'review-summary';
+  summary.innerHTML = `
+    <div class="review-stat">
+      <div class="review-stat-num">${percent}%</div>
+      <div class="review-stat-label">Skor</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num good">${correct}</div>
+      <div class="review-stat-label">Benar</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num bad">${wrong}</div>
+      <div class="review-stat-label">Salah</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num skip">${skipped}</div>
+      <div class="review-stat-label">Dilewati</div>
+    </div>
+    <div class="review-stat">
+      <div class="review-stat-num">${total}</div>
+      <div class="review-stat-label">Total</div>
+    </div>
+  `;
+  body.appendChild(summary);
+  
+  // Render each question in review mode
+  currentPacket.soal.forEach((soal, qi) => {
+    const userAns = userAnswers[qi];
+    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+    const isSkipped = userAns === null;
+    const isCorrect = !isSkipped && userAns === correctIdx;
+    
+    const card = document.createElement('div');
+    card.className = 'review-q-card';
+    card.id = 'review-q-' + qi;
+    
+    // Header with status badge
+    const headRow = document.createElement('div');
+    headRow.className = 'review-q-head';
+    
+    const numBadge = document.createElement('span');
+    if (isSkipped) {
+      numBadge.className = 'review-q-badge skipped';
+      numBadge.textContent = `#${qi + 1} · ⊘ Dilewati`;
+    } else if (isCorrect) {
+      numBadge.className = 'review-q-badge correct';
+      numBadge.textContent = `#${qi + 1} · ✓ Benar`;
+    } else {
+      numBadge.className = 'review-q-badge wrong';
+      numBadge.textContent = `#${qi + 1} · ✗ Salah`;
+    }
+    headRow.appendChild(numBadge);
+    
+    // Show tipe in review (helpful for learning)
+    if (soal.tipe) {
+      const typeBadge = document.createElement('span');
+      typeBadge.className = 'review-q-type';
+      typeBadge.textContent = soal.tipe;
+      headRow.appendChild(typeBadge);
+    }
+    
+    card.appendChild(headRow);
+    
+    // Question text
+    const qText = document.createElement('p');
+    qText.className = 'quiz-q-text';
+    qText.textContent = soal.pertanyaan;
+    card.appendChild(qText);
+    
+    // PREMIS shown in review (hidden during answering)
+    if (soal.premis && soal.premis.length > 0) {
+      const premisBox = document.createElement('div');
+      premisBox.className = 'review-premis';
+      const premisLabel = document.createElement('div');
+      premisLabel.className = 'review-premis-label';
+      premisLabel.textContent = 'Premis';
+      premisBox.appendChild(premisLabel);
+      const premisList = document.createElement('ol');
+      premisList.className = 'review-premis-list';
+      soal.premis.forEach(p => {
+        const li = document.createElement('li');
+        li.textContent = p;
+        premisList.appendChild(li);
+      });
+      premisBox.appendChild(premisList);
+      card.appendChild(premisBox);
+    }
+    
+    // Options with review highlighting
+    const optsWrap = document.createElement('div');
+    optsWrap.className = 'quiz-opts';
+    
+    soal.opsi.forEach((optText, oi) => {
+      const opt = document.createElement('div');
+      opt.className = 'quiz-opt locked';
+      
+      const match = optText.match(/^([A-E])\.\s*(.+)$/s);
+      const letter = match ? match[1] : letters[oi];
+      const text = match ? match[2] : optText;
+      
+      opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
+      
+      // Apply review classes
+      if (oi === correctIdx) {
+        if (isCorrect || isSkipped) {
+          opt.classList.add('review-correct');
+        } else {
+          opt.classList.add('review-reveal');
+        }
+      }
+      if (!isSkipped && oi === userAns && !isCorrect) {
+        opt.classList.add('review-wrong');
+      }
+      
+      optsWrap.appendChild(opt);
+    });
+    
+    card.appendChild(optsWrap);
+    
+    // Pembahasan is Markdown (biasanya berisi **tebal** dan baris baru).
+    // Konversi ringan ke HTML supaya ** ** tidak tampil mentah.
+    const renderMarkdown = (src) => {
+      return String(src)
+        .replace(/^\s*>\s?/gm, '')
+        .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+        .replace(/\n{2,}/g, '</p><p>')
+        .replace(/\n/g, '<br>');
+    };
+
+    // PEMBAHASAN shown in review
+    if (soal.pembahasan) {
+      const explain = document.createElement('div');
+      let explainClass = 'review-explain ';
+      let prefix = '';
+      if (isSkipped) {
+        explainClass += 'skip';
+        prefix = '<span class="status">⊘ Dilewati.</span> ';
+      } else if (isCorrect) {
+        explainClass += 'good';
+        prefix = '<span class="status">✓ Benar.</span> ';
+      } else {
+        explainClass += 'bad';
+        prefix = '<span class="status">✗ Kurang tepat.</span> ';
+      }
+      explain.className = explainClass;
+      explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
+      card.appendChild(explain);
+    }
+    
+    body.appendChild(card);
+  });
+  
+  // Create review footer
+  const footer = document.getElementById('quiz-footer');
+  footer.innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>
+      <button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>
+    </div>
+  `;
+  footer.style.display = 'block';
+}
+
+function retryPacket() {
+  if (!currentPacket) return;
+  currentQuestionIndex = 0;
+  userAnswers = new Array(currentPacket.soal.length).fill(null);
+  quizSubmitted = false;
+  
+  renderQuestion();
+  const qb = document.getElementById('quiz-body');
+  if (qb) qb.scrollTop = 0;
+}
+
+/* Re-fit card on resize/orientation */
+let fitTimer = null;
+function refitOnResize() {
+  const qv = document.getElementById('quiz-view');
+  if (!qv.classList.contains('active')) return;
+  fitQuestionCard();
+}
+window.addEventListener('resize', () => {
+  clearTimeout(fitTimer);
+  fitTimer = setTimeout(refitOnResize, 150);
+});
+window.addEventListener('orientationchange', () => {
+  clearTimeout(fitTimer);
+  fitTimer = setTimeout(refitOnResize, 250);
+});
+
+</script>
+</body>
+</html>

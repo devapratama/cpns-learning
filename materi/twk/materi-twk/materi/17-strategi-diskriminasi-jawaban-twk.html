@@ -1,0 +1,746 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modul 17 — Strategi Diskriminasi Jawaban TWK | Materi TWK | CPNS Learning</title><meta name="description" content="Ultimate TWK Knowledge System — Modul 17">
+<style>
+:root{--n:#14283f;--i:#1e2936;--m:#64748b;--l:#dfe6ee;--bg:#f6f8fb;--g:#116b51;--gb:#edf8f3;--r:#a63c34;--b:#245da8;--bb:#edf4ff;--a:#8a6100;--ab:#fff7e2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--i);font:16px/1.72 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{width:min(1100px,calc(100% - 36px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--l)}.topin{max-width:1100px;margin:auto;padding:10px 18px;display:flex;justify-content:space-between}.brand{font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--n)}.small{font-size:12px;color:var(--m)}.progress{height:3px;background:#e8edf3}.bar{height:100%;background:var(--n);width:0}
+.hero{background:linear-gradient(135deg,#13273e,#2b5273);color:#fff;padding:72px 0 62px}.kicker,.eyebrow{font-size:11px;letter-spacing:.13em;font-weight:900}.kicker{opacity:.82;margin-bottom:12px}.eyebrow{color:var(--b);margin-bottom:7px}h1{font-size:clamp(42px,6vw,68px);line-height:1.03;letter-spacing:-.04em;margin:0 0 18px;max-width:900px}h2{font-size:34px;line-height:1.2;color:var(--n);margin:0 0 16px}h3{font-size:23px;line-height:1.25;color:var(--n);margin:0 0 10px}.hero p{font-size:18px;color:#e9f0f7;max-width:920px}.quote{padding:18px 20px;margin-top:22px;border-left:4px solid #fff;background:rgba(255,255,255,.10);font-weight:800;max-width:900px}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding:18px 0}nav a{text-decoration:none;color:var(--n);background:#fff;border:1px solid var(--l);border-radius:999px;padding:8px 12px;font-size:13px}section{padding:58px 0;border-bottom:1px solid var(--l)}.lead{font-size:18px;color:#4a5b6d;max-width:920px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--l);border-radius:14px;overflow:hidden}th,td{padding:13px;border-bottom:1px solid var(--l);text-align:left;vertical-align:top}th{background:#f2f6fa;color:var(--n);font-size:13px}
+.callout{background:#fff;border:1px solid var(--l);border-radius:14px;padding:17px 19px;margin:18px 0}.goodcall{background:var(--gb);border-left:5px solid var(--g)}.bluecall{background:var(--bb);border-left:5px solid var(--b)}.warn{background:var(--ab);border-left:5px solid #d1a021}
+.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:20px 0}.flow div{background:var(--n);color:white;border-radius:9px;padding:10px 6px;text-align:center;font-size:11px;font-weight:900}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:#fff;border:1px solid var(--l);border-radius:15px;padding:19px}.card b{color:var(--n)}.chips{display:flex;flex-wrap:wrap;gap:7px}.chips span{background:#fff;border:1px solid var(--l);padding:7px 10px;border-radius:999px;font-size:12px}
+.case{background:#fff;border:1px solid var(--l);border-radius:18px;overflow:hidden;margin:22px 0}.casehead{display:flex;gap:14px;padding:22px;border-bottom:1px solid var(--l)}.num{width:42px;height:42px;border-radius:11px;background:var(--n);color:#fff;display:grid;place-items:center;font-weight:900;flex:0 0 auto}.tag{font-size:11px;color:var(--b);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}.question{padding:20px 22px;background:#fbfcfd}.options{display:grid;gap:9px;padding:17px 22px}.option{display:grid;grid-template-columns:31px 1fr;gap:10px;border:1px solid var(--l);border-radius:11px;padding:11px}.letter{width:28px;height:28px;border-radius:7px;background:#edf2f6;color:var(--n);display:grid;place-items:center;font-weight:900}
+details{border-top:1px solid var(--l)}summary{cursor:pointer;padding:15px 22px;background:#f5f8fb;color:var(--n);font-weight:900}.analysis{padding:22px}.snapshot{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:16px 0}.snap{background:#fff;border:1px solid var(--l);border-radius:11px;padding:12px}.snap b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--n);margin-bottom:4px}.snap span{font-size:14px}
+.elim{border:1px solid var(--l);border-left:5px solid #c6ced8;border-radius:11px;padding:14px 15px;margin:9px 0}.elim.good{border-left-color:var(--g);background:var(--gb)}.elim-top{display:flex;align-items:center;gap:8px}.elim-top>b{width:28px;height:28px;background:var(--n);color:#fff;border-radius:7px;display:grid;place-items:center}.elim-top span{font-size:11px;font-weight:900;border-radius:999px;padding:4px 7px;background:#eef2f6}.elim.good .elim-top span{background:#d7eee4;color:var(--g)}.elim-top small{font-size:11px;color:var(--m);text-transform:uppercase;font-weight:800}.elim-opt{margin:8px 0 5px}.elim-why{font-size:14px;color:#445568}
+.trail{margin-top:18px;padding:15px 17px;background:var(--bb);border-left:5px solid var(--b);border-radius:10px;font-weight:800}.answer{margin-top:18px;padding:17px;background:var(--gb);border:1px solid #b8dccd;border-radius:12px}.answer strong{font-size:20px;color:var(--g)}
+.proto{display:grid;grid-template-columns:41px 1fr;gap:12px;border-bottom:1px solid var(--l);padding:14px 0}.pn{width:37px;height:37px;border-radius:9px;background:var(--n);color:#fff;display:grid;place-items:center;font-weight:900}footer{background:#10243a;color:#e9eff6;padding:48px 0 70px}.src{font-size:13px;color:#becbdd}.src a{color:#dbe8fa}
+@media(max-width:900px){.flow{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}.snapshot{grid-template-columns:1fr 1fr}}@media(max-width:600px){.wrap{width:min(100% - 24px,1100px)}.small{display:none}h1{font-size:42px}.snapshot{grid-template-columns:1fr}.question,.options,.analysis{padding-left:18px;padding-right:18px}}
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
+  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
+  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
+  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
+  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
+  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
+  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
+  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
+  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
+  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
+}
+
+/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
+.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
+.cpns-crumb a{color:var(--accent);text-decoration:none;}
+.cpns-crumb a:hover{text-decoration:underline;}
+.cpns-crumb .sep{color:var(--line);}
+.cpns-crumb .cur{color:var(--muted);}
+.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
+.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
+.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
+.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
+.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
+.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
+.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
+.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
+.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
+.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
+body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
+img{max-width:100%;height:auto;border-radius:8px;}
+table{max-width:100%;}
+@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
+
+</style>
+</head><body>
+<nav class="cpns-crumb" aria-label="Breadcrumb">
+  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+  <a href="../../index.html">TWK</a><span class="sep">/</span>
+  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+  <span class="cur">Modul 17</span>
+</nav>
+
+
+<div class="top"><div class="topin"><div class="brand">ULTIMATE TWK KNOWLEDGE SYSTEM · MODUL 17</div><div class="small">Strategi Diskriminasi Jawaban</div></div><div class="progress"><div id="bar" class="bar"></div></div></div>
+<header class="hero"><div class="wrap"><div class="kicker">MODUL 17 · SEMUA OPSI TERLIHAT BENAR</div><h1>Strategi Diskriminasi Jawaban TWK</h1>
+<p>Ketika banyak opsi sama-sama terdengar baik, peserta tidak cukup hanya mengenali materi. Ia harus membedakan target, aktor, scope, relasi, level, dan tingkat kedekatan semantik setiap opsi.</p>
+<div class="quote">“Benar secara umum” bukan otomatis “jawaban paling tepat”. Cari hubungan yang paling presisi dengan pertanyaan.</div></div></header>
+<main class="wrap"><nav><a href="#inti">Masalah inti</a><a href="#mesin">Mesin tes</a><a href="#distraktor">Distraktor</a><a href="#lab">Laboratorium</a><a href="#protocol">Master Protocol</a></nav>
+<section id="inti"><div class="eyebrow">1 · MASALAH INTI</div><h2>Lima opsi dapat sama-sama benar</h2>
+<p class="lead">Pola soal yang dianalisis dalam corpus memperlihatkan distractor yang sering merupakan jawaban baik tetapi tidak tepat untuk target: konsep tetangga, aktor berbeda, scope berbeda, relasi yang tertukar, level yang salah, atau efek sekunder.</p>
+<table><thead><tr><th>Lapisan</th><th>Pertanyaan</th><th>Kesalahan khas</th></tr></thead><tbody>
+<tr><td>Factuality</td><td>Benar tidak isi opsinya?</td><td>Fakta hukum/sejarah salah.</td></tr>
+<tr><td>Target</td><td>Menjawab apa yang ditanya?</td><td>Tujuan dijawab dampak.</td></tr>
+<tr><td>Actor</td><td>Siapa yang bertindak?</td><td>Warga diganti pemerintah.</td></tr>
+<tr><td>Scope</td><td>Level mana?</td><td>Lokal digeser ke internasional.</td></tr>
+<tr><td>Relation</td><td>Hubungan apa?</td><td>Sebab/akibat dibalik.</td></tr>
+<tr><td>Level</td><td>Prinsip, tindakan, proses, hasil?</td><td>Implementasi diganti outcome.</td></tr>
+<tr><td>Directness</td><td>Mana paling dekat dengan gravity center?</td><td>Opsi benar tetapi kalah presisi.</td></tr>
+</tbody></table>
+<div class="callout goodcall"><b>Eliminasi</b> = opsi gagal memenuhi syarat. <b>Ranking</b> = beberapa opsi masih benar, tetapi satu lebih direct dan unik terhadap stem.</div>
+</section>
+
+<section id="mesin"><div class="eyebrow">2 · MESIN DISKRIMINASI</div><h2>Factuality → target → actor → scope → relation → level → directness</h2>
+<div class="flow"><div>FACTUALITY</div><div>TARGET</div><div>ACTOR</div><div>SCOPE</div><div>RELATION</div><div>LEVEL</div><div>DIRECTNESS</div></div>
+<div class="grid2">
+<div class="card"><b>Factuality Test</b><p>Benarkah isi opsi?</p></div>
+<div class="card"><b>Uniqueness Test</b><p>Setelah penyaringan, apakah hanya satu kandidat yang memenuhi semua syarat?</p></div>
+<div class="card"><b>Actor Test</b><p>Siapa bertindak, menerima, atau memiliki kewenangan?</p></div>
+<div class="card"><b>Scope Test</b><p>Individu, kelompok, daerah, nasional, internasional?</p></div>
+<div class="card"><b>Relation Test</b><p>Definisi, makna, tujuan, sebab, akibat, proses, hasil, prinsip, implementasi?</p></div>
+<div class="card"><b>Level Test</b><p>Apakah opsi berada pada level yang diminta?</p></div>
+<div class="card"><b>Directness Test</b><p>Di antara yang bertahan, mana yang paling langsung?</p></div>
+<div class="card"><b>Neighbor Check</b><p>Apakah opsi benar tetapi berasal dari konsep tetangga?</p></div>
+</div>
+<div class="callout bluecall"><b>Prosedur sebelum melihat jawaban:</b> “Soal ini meminta ___.” → fakta kunci → actor → scope → relation → level.</div>
+</section>
+
+<section id="distraktor"><div class="eyebrow">3 · ANATOMI DISTRAKTOR</div><h2>Jangan hafalkan trik; diagnosis mismatch</h2>
+<div class="chips"><span>wrong concept</span><span>neighboring concept</span><span>wrong actor</span><span>wrong scope</span><span>wrong relation</span><span>secondary effect</span><span>cause/effect reversal</span><span>process/outcome</span><span>principle/application</span><span>too broad</span><span>too narrow</span></div>
+<div class="grid2" style="margin-top:16px">
+<div class="card"><h3>Neighboring concept</h3><p>Topiknya sama, tetapi pusat konsep berbeda.</p></div>
+<div class="card"><h3>Wrong actor</h3><p>Tindakan masuk akal, tetapi pelaku atau pemegang kewenangannya salah.</p></div>
+<div class="card"><h3>Wrong relation</h3><p>Fakta dapat benar, tetapi hubungan sebab/tujuan/proses/hasilnya salah.</p></div>
+<div class="card"><h3>Too broad / too narrow</h3><p>Cakupan opsi terlalu lebar atau terlalu sempit dibanding target.</p></div>
+</div>
+<div class="callout warn"><b>Jangan gunakan aturan palsu:</b> pilihan paling panjang, paling positif, paling spesifik, atau yang paling banyak mengulang kata soal tidak otomatis benar.</div>
+</section>
+
+<section id="lab"><div class="eyebrow">4 · LABORATORIUM</div><h2>30 contoh pembongkaran</h2>
+<p class="lead">Setiap kasus menampilkan opsi A–E terlebih dahulu. Bagian pembahasan dapat dibuka kemudian. Pada <b>setiap eliminasi</b>, teks opsi A–E diulang lengkap agar proses berpikir dapat diikuti tanpa bolak-balik.</p>
+
+<article class="case"><div class="casehead"><div class="num">1</div><div><div class="tag">Benar umum ≠ paling tepat</div><h3>Lima tindakan positif, tetapi pertanyaan meminta sasaran langsung</h3></div></div>
+<div class="question">Sebuah pemerintah kabupaten mempertemukan tokoh dari beberapa agama setelah muncul ketegangan antarwarga. Dalam forum itu, pemerintah memfasilitasi dialog, meminta setiap pihak menghormati keyakinan pihak lain, dan mendorong penyelesaian perbedaan secara damai. Sasaran yang <b>paling langsung</b> tercermin dari tindakan tersebut adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Meningkatkan kepercayaan masyarakat kepada pemerintah daerah.</span></div><div class="option"><span class="letter">B</span><span>Mengurangi seluruh bentuk konflik sosial di daerah tersebut.</span></div><div class="option"><span class="letter">C</span><span>Mendorong toleransi antarkelompok yang berbeda keyakinan.</span></div><div class="option"><span class="letter">D</span><span>Mewujudkan kesejahteraan sosial masyarakat secara menyeluruh.</span></div><div class="option"><span class="letter">E</span><span>Memperkuat persatuan nasional dalam jangka panjang.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> sasaran langsung dari tindakan pemerintah</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>sasaran langsung dari tindakan pemerintah</span></div>
+<div class="snap"><b>Fakta</b><span>Pemerintah mempertemukan kelompok berbeda agama, memfasilitasi dialog, dan menekankan penghormatan terhadap perbedaan.</span></div>
+<div class="snap"><b>Actor</b><span>pemerintah daerah sebagai fasilitator</span></div>
+<div class="snap"><b>Scope</b><span>hubungan sosial antarwarga dalam satu daerah</span></div>
+<div class="snap"><b>Relation</b><span>tindakan → sasaran langsung</span></div>
+<div class="snap"><b>Level</b><span>tujuan langsung, bukan dampak lanjutan</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>A. Meningkatkan kepercayaan masyarakat kepada pemerintah daerah.</b></div><div class="elim-why">Kepercayaan publik dapat meningkat, tetapi itu merupakan dampak yang mungkin muncul setelah proses fasilitasi. Bukan sasaran langsung yang paling dekat dengan tindakan dalam stimulus.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>B. Mengurangi seluruh bentuk konflik sosial di daerah tersebut.</b></div><div class="elim-why">Pengurangan konflik masih relevan, tetapi kata <i>seluruh</i> terlalu luas. Dialog yang diceritakan tidak dapat ditafsirkan sebagai upaya menghapus semua konflik sosial.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct / target match</small></div><div class="elim-opt"><b>C. Mendorong toleransi antarkelompok yang berbeda keyakinan.</b></div><div class="elim-why">Ini langsung menjelaskan apa yang sedang dilakukan: mempertemukan pihak berbeda, membuka dialog, dan membangun penghormatan terhadap perbedaan keyakinan.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>D. Mewujudkan kesejahteraan sosial masyarakat secara menyeluruh.</b></div><div class="elim-why">Kesejahteraan sosial adalah payung yang jauh lebih luas dan tidak menjadi pusat hubungan dalam stimulus.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>E. Memperkuat persatuan nasional dalam jangka panjang.</b></div><div class="elim-why">Persatuan nasional dapat menjadi efek makro, tetapi stimulus berada pada level hubungan antarwarga di daerah.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Target Test: C paling tepat; A/E secondary effect; B/D terlalu luas → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">2</div><div><div class="tag">Actor + scope</div><h3>Aktor benar, tindakan benar, tetapi scope salah</h3></div></div>
+<div class="question">Seorang mahasiswa menemukan unggahan yang menghina kelompok agama tertentu. Ia tidak ikut menyebarkan unggahan tersebut, melaporkannya melalui mekanisme yang tersedia, dan mengajak teman-temannya berdiskusi secara tenang agar tidak terprovokasi. Perilaku tersebut paling tepat menunjukkan...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Pelaksanaan kebijakan pemerintah dalam menjaga ketertiban digital.</span></div><div class="option"><span class="letter">B</span><span>Sikap warga yang membantu menjaga toleransi dan kerukunan dalam kehidupan sosial.</span></div><div class="option"><span class="letter">C</span><span>Kewenangan negara untuk menentukan kebenaran setiap pendapat di media sosial.</span></div><div class="option"><span class="letter">D</span><span>Penegakan hukum pidana oleh aparat terhadap pelaku.</span></div><div class="option"><span class="letter">E</span><span>Pelaksanaan diplomasi Indonesia di tingkat internasional.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> nilai yang tercermin dari perilaku mahasiswa</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>nilai yang tercermin dari perilaku mahasiswa</span></div>
+<div class="snap"><b>Fakta</b><span>Subjek adalah mahasiswa; ia tidak menyebarkan konten, melapor, dan mengajak diskusi damai.</span></div>
+<div class="snap"><b>Actor</b><span>individu/warga</span></div>
+<div class="snap"><b>Scope</b><span>kehidupan sosial dan ruang digital sehari-hari</span></div>
+<div class="snap"><b>Relation</b><span>perilaku → nilai/sikap</span></div>
+<div class="snap"><b>Level</b><span>implementasi perilaku</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>A. Pelaksanaan kebijakan pemerintah dalam menjaga ketertiban digital.</b></div><div class="elim-why">Yang melakukan tindakan dalam stimulus adalah mahasiswa, bukan pemerintah. Opsi memindahkan pelaku ke level kebijakan.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct / actor-scope match</small></div><div class="elim-opt"><b>B. Sikap warga yang membantu menjaga toleransi dan kerukunan dalam kehidupan sosial.</b></div><div class="elim-why">Tepat. Perilaku konkret mahasiswa diarahkan pada tidak memperluas kebencian, menjaga kerukunan, dan mencegah provokasi.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>C. Kewenangan negara untuk menentukan kebenaran setiap pendapat di media sosial.</b></div><div class="elim-why">Mahasiswa tidak memiliki kewenangan negara untuk menentukan benar-salah setiap pendapat.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>D. Penegakan hukum pidana oleh aparat terhadap pelaku.</b></div><div class="elim-why">Mahasiswa tidak sedang melakukan penegakan hukum pidana; ia melapor dan bersikap preventif.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong scope</small></div><div class="elim-opt"><b>E. Pelaksanaan diplomasi Indonesia di tingkat internasional.</b></div><div class="elim-why">Diplomasi internasional berada di scope yang sama sekali berbeda dari perilaku warga di media sosial.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Actor Test menggugurkan A/C/D; Scope Test menggugurkan E → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">3</div><div><div class="tag">Neighboring concept</div><h3>Pilih sila: semua pernyataan bernuansa positif</h3></div></div>
+<div class="question">Perhatikan tindakan berikut: (1) menghormati orang lain sebagai manusia yang bermartabat, (2) membantu korban bencana tanpa membedakan latar belakang, (3) mengutamakan musyawarah untuk mencapai kesepakatan, (4) menjaga persatuan di tengah perbedaan. Tindakan yang paling langsung mencerminkan <b>Sila Kedua</b> adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Menghormati orang lain sebagai manusia yang bermartabat.</span></div><div class="option"><span class="letter">B</span><span>Membantu korban bencana tanpa membedakan latar belakang.</span></div><div class="option"><span class="letter">C</span><span>Mengutamakan musyawarah untuk mencapai kesepakatan.</span></div><div class="option"><span class="letter">D</span><span>Menjaga persatuan di tengah perbedaan.</span></div><div class="option"><span class="letter">E</span><span>Mendahulukan kepentingan bangsa di atas kepentingan pribadi.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> sila kedua</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>sila kedua</span></div>
+<div class="snap"><b>Fakta</b><span>Fokus soal adalah manusia, martabat, dan perlakuan yang adil/manusiawi.</span></div>
+<div class="snap"><b>Actor</b><span>individu</span></div>
+<div class="snap"><b>Scope</b><span>hubungan antarmanusia</span></div>
+<div class="snap"><b>Relation</b><span>tindakan → nilai sila</span></div>
+<div class="snap"><b>Level</b><span>nilai/prinsip</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim good"><div class="elim-top"><b>A</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>A. Menghormati orang lain sebagai manusia yang bermartabat.</b></div><div class="elim-why">Paling langsung. Kata kuncinya adalah <i>manusia</i> dan <i>martabat</i>, yang tepat berada pada pusat Sila Kedua: Kemanusiaan yang Adil dan Beradab.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>B. Membantu korban bencana tanpa membedakan latar belakang.</b></div><div class="elim-why">Positif dan dapat berkaitan dengan kemanusiaan, tetapi dalam soal klasifikasi sila, tindakan ini masih merupakan contoh yang dapat dijelaskan melalui beberapa nilai lain; A memiliki hubungan konseptual yang lebih langsung.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>C. Mengutamakan musyawarah untuk mencapai kesepakatan.</b></div><div class="elim-why">Musyawarah merupakan ciri utama Sila Keempat, bukan pusat Sila Kedua.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>D. Menjaga persatuan di tengah perbedaan.</b></div><div class="elim-why">Persatuan langsung mengarah ke Sila Ketiga.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>E. Mendahulukan kepentingan bangsa di atas kepentingan pribadi.</b></div><div class="elim-why">Kepentingan bangsa dan persatuan lebih dekat dengan Sila Ketiga daripada pusat Sila Kedua.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Neighbor Check: C/D/E bergerak ke sila lain; B relevan tetapi kurang unik → A</div>
+<div class="answer"><strong>Jawaban paling tepat: A</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">4</div><div><div class="tag">Norm → meaning</div><h3>Norma konstitusi: makna, bukan dampak</h3></div></div>
+<div class="question">Pasal 29 ayat (2) UUD NRI Tahun 1945 menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya masing-masing dan untuk beribadat menurut agama dan kepercayaannya itu. Bila soal meminta <b>makna paling langsung</b> dari ketentuan tersebut, pilihan yang paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Negara menjamin terciptanya masyarakat yang sepenuhnya bebas dari konflik agama.</span></div><div class="option"><span class="letter">B</span><span>Setiap penduduk bebas memeluk agama dan menjalankan ibadah menurut agama dan kepercayaannya.</span></div><div class="option"><span class="letter">C</span><span>Negara wajib membuat seluruh pemeluk agama memperoleh perlakuan sosial yang identik dalam setiap keadaan.</span></div><div class="option"><span class="letter">D</span><span>Perbedaan keyakinan harus dihapus agar tercipta persatuan nasional.</span></div><div class="option"><span class="letter">E</span><span>Pemerintah harus memastikan semua penduduk memiliki tingkat keberagamaan yang sama.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> makna langsung Pasal 29 ayat (2)</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>makna langsung Pasal 29 ayat (2)</span></div>
+<div class="snap"><b>Fakta</b><span>Pasal menyebut kemerdekaan memeluk agama dan beribadat menurut agama/kepercayaan.</span></div>
+<div class="snap"><b>Actor</b><span>tiap-tiap penduduk; negara menjamin</span></div>
+<div class="snap"><b>Scope</b><span>kebebasan beragama dan beribadah</span></div>
+<div class="snap"><b>Relation</b><span>norma → makna</span></div>
+<div class="snap"><b>Level</b><span>isi norma</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>A. Negara menjamin terciptanya masyarakat yang sepenuhnya bebas dari konflik agama.</b></div><div class="elim-why">Masyarakat bebas konflik adalah tujuan/keadaan sosial yang mungkin diharapkan, bukan isi langsung norma.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct paraphrase</small></div><div class="elim-opt"><b>B. Setiap penduduk bebas memeluk agama dan menjalankan ibadah menurut agama dan kepercayaannya.</b></div><div class="elim-why">Ini merupakan parafrasa paling dekat dengan bunyi normatif: memeluk agama dan beribadat menurut agama/kepercayaan.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>too broad / added claim</small></div><div class="elim-opt"><b>C. Negara wajib membuat seluruh pemeluk agama memperoleh perlakuan sosial yang identik dalam setiap keadaan.</b></div><div class="elim-why">Opsi menambahkan tuntutan 'identik dalam setiap keadaan' yang tidak disebutkan dalam norma.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Perbedaan keyakinan harus dihapus agar tercipta persatuan nasional.</b></div><div class="elim-why">Menghapus perbedaan keyakinan justru bertentangan dengan pengakuan atas kebebasan memeluk agama yang berbeda.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>E. Pemerintah harus memastikan semua penduduk memiliki tingkat keberagamaan yang sama.</b></div><div class="elim-why">Norma tidak menuntut semua penduduk memiliki tingkat keberagamaan yang sama.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Relation Test: hanya B menjawab norma → makna tanpa lompatan tambahan → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">5</div><div><div class="tag">Implementation ≠ outcome</div><h3>Norma → implementasi: bedakan tindakan dari hasil</h3></div></div>
+<div class="question">Contoh yang paling tepat sebagai <b>implementasi</b> prinsip keadilan sosial dalam pelayanan publik adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Meningkatnya kepuasan masyarakat setelah pelayanan diperbaiki.</span></div><div class="option"><span class="letter">B</span><span>Masyarakat merasa lebih sejahtera setelah pembangunan merata.</span></div><div class="option"><span class="letter">C</span><span>Pemerintah memprioritaskan pembangunan puskesmas di wilayah yang selama ini kekurangan akses layanan.</span></div><div class="option"><span class="letter">D</span><span>Terciptanya pemerataan kesejahteraan antardaerah.</span></div><div class="option"><span class="letter">E</span><span>Kesenjangan sosial berkurang secara bertahap.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> bentuk implementasi konkret</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>bentuk implementasi konkret</span></div>
+<div class="snap"><b>Fakta</b><span>Kata kunci stem adalah <i>implementasi</i>; opsi perlu berupa tindakan yang dilakukan.</span></div>
+<div class="snap"><b>Actor</b><span>pemerintah</span></div>
+<div class="snap"><b>Scope</b><span>pelayanan publik dan distribusi akses</span></div>
+<div class="snap"><b>Relation</b><span>prinsip → tindakan penerapan</span></div>
+<div class="snap"><b>Level</b><span>implementasi</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>A. Meningkatnya kepuasan masyarakat setelah pelayanan diperbaiki.</b></div><div class="elim-why">Kepuasan adalah hasil yang mungkin muncul setelah kebijakan dijalankan.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>B. Masyarakat merasa lebih sejahtera setelah pembangunan merata.</b></div><div class="elim-why">Kesejahteraan yang meningkat adalah outcome, bukan tindakan implementatif.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct implementation</small></div><div class="elim-opt"><b>C. Pemerintah memprioritaskan pembangunan puskesmas di wilayah yang selama ini kekurangan akses layanan.</b></div><div class="elim-why">Ini tindakan konkret: pemerintah memilih mengalokasikan pembangunan pada wilayah yang kekurangan akses. Hubungan prinsip → tindakan terlihat langsung.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>D. Terciptanya pemerataan kesejahteraan antardaerah.</b></div><div class="elim-why">Pemerataan kesejahteraan adalah keadaan/hasil yang ingin dicapai.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>E. Kesenjangan sosial berkurang secara bertahap.</b></div><div class="elim-why">Berkurangnya kesenjangan juga merupakan akibat.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Level Test: A/B/D/E = outcome; C = action/implementation → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">6</div><div><div class="tag">Goal vs effect</div><h3>Tujuan vs akibat: satu stimulus, dua level waktu</h3></div></div>
+<div class="question">Pemerintah melaksanakan program dialog lintas kelompok untuk mencegah ketegangan sosial berkembang menjadi konflik. Dalam soal yang menanyakan <b>tujuan langsung</b> program tersebut, jawaban paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Masyarakat akhirnya menjadi lebih percaya kepada pemerintah.</span></div><div class="option"><span class="letter">B</span><span>Konflik sosial berpotensi menurun.</span></div><div class="option"><span class="letter">C</span><span>Mencegah perbedaan berkembang menjadi pertentangan yang lebih tajam.</span></div><div class="option"><span class="letter">D</span><span>Perekonomian daerah menjadi lebih stabil.</span></div><div class="option"><span class="letter">E</span><span>Persatuan nasional semakin kokoh dalam jangka panjang.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> tujuan langsung program</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>tujuan langsung program</span></div>
+<div class="snap"><b>Fakta</b><span>Program sengaja dibuat untuk mencegah ketegangan menjadi konflik.</span></div>
+<div class="snap"><b>Actor</b><span>pemerintah sebagai pelaksana</span></div>
+<div class="snap"><b>Scope</b><span>konflik sosial</span></div>
+<div class="snap"><b>Relation</b><span>program → tujuan</span></div>
+<div class="snap"><b>Level</b><span>tujuan langsung</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>A. Masyarakat akhirnya menjadi lebih percaya kepada pemerintah.</b></div><div class="elim-why">Bisa terjadi, tetapi bukan tujuan yang disebut atau yang paling dekat dengan intervensi.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>effect</small></div><div class="elim-opt"><b>B. Konflik sosial berpotensi menurun.</b></div><div class="elim-why">Ini konsekuensi yang diharapkan, tetapi masih satu langkah setelah tujuan pencegahan.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct goal</small></div><div class="elim-opt"><b>C. Mencegah perbedaan berkembang menjadi pertentangan yang lebih tajam.</b></div><div class="elim-why">Langsung sesuai dengan frasa 'untuk mencegah'. Ini menjelaskan apa yang hendak dicegah oleh tindakan tersebut.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>D. Perekonomian daerah menjadi lebih stabil.</b></div><div class="elim-why">Tidak didukung stimulus.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>E. Persatuan nasional semakin kokoh dalam jangka panjang.</b></div><div class="elim-why">Merupakan dampak makro dan jangka panjang.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Relation Test memisahkan goal dari effect → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">7</div><div><div class="tag">Cause → response</div><h3>Akar masalah harus bertemu dengan solusi</h3></div></div>
+<div class="question">Di sebuah daerah, muncul ketegangan karena sebagian warga merasa akses pelayanan dasar sangat tidak merata. Pemerintah ingin mencegah ketegangan berkembang menjadi konflik. Upaya yang paling tepat berdasarkan akar masalah tersebut adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Meningkatkan patroli bersenjata di seluruh wilayah.</span></div><div class="option"><span class="letter">B</span><span>Menyelenggarakan kampanye nasional tentang semangat patriotisme.</span></div><div class="option"><span class="letter">C</span><span>Memperbaiki pemerataan akses pelayanan dasar pada wilayah yang tertinggal.</span></div><div class="option"><span class="letter">D</span><span>Menambah hukuman bagi semua warga yang menyampaikan keluhan.</span></div><div class="option"><span class="letter">E</span><span>Mengalihkan persoalan ke agenda hubungan luar negeri.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> respons yang paling tepat terhadap sebab masalah</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>respons yang paling tepat terhadap sebab masalah</span></div>
+<div class="snap"><b>Fakta</b><span>Akar masalah yang disebut adalah ketidakmerataan pelayanan dasar.</span></div>
+<div class="snap"><b>Actor</b><span>pemerintah</span></div>
+<div class="snap"><b>Scope</b><span>kebijakan domestik daerah</span></div>
+<div class="snap"><b>Relation</b><span>cause → appropriate response</span></div>
+<div class="snap"><b>Level</b><span>solusi</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong relation</small></div><div class="elim-opt"><b>A. Meningkatkan patroli bersenjata di seluruh wilayah.</b></div><div class="elim-why">Patroli dapat berkaitan dengan keamanan, tetapi tidak menyentuh penyebab yang dinyatakan.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>B. Menyelenggarakan kampanye nasional tentang semangat patriotisme.</b></div><div class="elim-why">Patriotisme adalah nilai kebangsaan yang baik, tetapi tidak menjawab sebab spesifik berupa ketimpangan akses layanan.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>cause-response match</small></div><div class="elim-opt"><b>C. Memperbaiki pemerataan akses pelayanan dasar pada wilayah yang tertinggal.</b></div><div class="elim-why">Langsung menyasar penyebab: akses pelayanan dasar yang tidak merata diperbaiki.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong relation</small></div><div class="elim-opt"><b>D. Menambah hukuman bagi semua warga yang menyampaikan keluhan.</b></div><div class="elim-why">Keluhan tentang layanan justru tidak identik dengan pelanggaran hukum; hukuman tidak memperbaiki akar masalah.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong scope</small></div><div class="elim-opt"><b>E. Mengalihkan persoalan ke agenda hubungan luar negeri.</b></div><div class="elim-why">Scope salah karena masalahnya kebijakan domestik daerah, bukan hubungan internasional.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Cause Test: hanya C bekerja pada akar masalah → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">8</div><div><div class="tag">Institution + authority</div><h3>Aktor kelembagaan: Presiden, DPR, dan pengusulan RUU</h3></div></div>
+<div class="question">Dalam sistem ketatanegaraan Indonesia, tindakan yang paling tepat menggambarkan kewenangan Presiden terkait pembentukan undang-undang adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Presiden memiliki kekuasaan membentuk undang-undang seorang diri.</span></div><div class="option"><span class="letter">B</span><span>Presiden dapat mengusulkan rancangan undang-undang kepada DPR.</span></div><div class="option"><span class="letter">C</span><span>Presiden menetapkan undang-undang tanpa persetujuan DPR.</span></div><div class="option"><span class="letter">D</span><span>Presiden menjadi satu-satunya lembaga yang menjalankan fungsi legislasi.</span></div><div class="option"><span class="letter">E</span><span>Presiden mengadili perselisihan mengenai hasil pembentukan undang-undang.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> kewenangan Presiden dalam pembentukan UU</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>kewenangan Presiden dalam pembentukan UU</span></div>
+<div class="snap"><b>Fakta</b><span>UUD memberi Presiden hak mengajukan RUU; kekuasaan membentuk UU berada pada DPR dan pembahasan RUU dilakukan bersama DPR dan Presiden.</span></div>
+<div class="snap"><b>Actor</b><span>Presiden</span></div>
+<div class="snap"><b>Scope</b><span>fungsi legislasi</span></div>
+<div class="snap"><b>Relation</b><span>actor → authority</span></div>
+<div class="snap"><b>Level</b><span>kewenangan</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>A. Presiden memiliki kekuasaan membentuk undang-undang seorang diri.</b></div><div class="elim-why">Terlalu luas. Presiden tidak membentuk undang-undang seorang diri.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct authority</small></div><div class="elim-opt"><b>B. Presiden dapat mengusulkan rancangan undang-undang kepada DPR.</b></div><div class="elim-why">Tepat dan spesifik: Presiden berhak mengajukan rancangan undang-undang kepada DPR.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong authority</small></div><div class="elim-opt"><b>C. Presiden menetapkan undang-undang tanpa persetujuan DPR.</b></div><div class="elim-why">Tidak sesuai dengan mekanisme pembentukan UU yang memerlukan pembahasan/ persetujuan bersama sesuai UUD.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>D. Presiden menjadi satu-satunya lembaga yang menjalankan fungsi legislasi.</b></div><div class="elim-why">Mengubah peran Presiden menjadi satu-satunya pelaksana fungsi legislasi; itu tidak tepat.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong institution</small></div><div class="elim-opt"><b>E. Presiden mengadili perselisihan mengenai hasil pembentukan undang-undang.</b></div><div class="elim-why">Perselisihan yudisial bukan kewenangan Presiden dalam fungsi legislasi.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Actor/Authority Test → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">9</div><div><div class="tag">Process ≠ outcome</div><h3>Proses vs hasil: jangan menjawab tahap dengan akibat</h3></div></div>
+<div class="question">Sebuah sekolah mengadakan musyawarah antara siswa, guru, dan orang tua sebelum menetapkan aturan baru. Jika soal menanyakan <b>proses</b> yang digunakan sekolah, jawaban paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Terbentuknya aturan baru yang diterima seluruh pihak.</span></div><div class="option"><span class="letter">B</span><span>Meningkatnya rasa memiliki terhadap aturan sekolah.</span></div><div class="option"><span class="letter">C</span><span>Musyawarah untuk memperoleh kesepakatan melalui pertukaran pendapat.</span></div><div class="option"><span class="letter">D</span><span>Meningkatnya kedisiplinan siswa setelah aturan diterapkan.</span></div><div class="option"><span class="letter">E</span><span>Terciptanya suasana sekolah yang lebih harmonis.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> proses pengambilan keputusan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>proses pengambilan keputusan</span></div>
+<div class="snap"><b>Fakta</b><span>Stimulus menyebut musyawarah sebelum aturan ditetapkan.</span></div>
+<div class="snap"><b>Actor</b><span>sekolah dan pihak terkait</span></div>
+<div class="snap"><b>Scope</b><span>pengambilan keputusan di sekolah</span></div>
+<div class="snap"><b>Relation</b><span>tindakan/proses</span></div>
+<div class="snap"><b>Level</b><span>process</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>A. Terbentuknya aturan baru yang diterima seluruh pihak.</b></div><div class="elim-why">Aturan baru adalah hasil keputusan.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>B. Meningkatnya rasa memiliki terhadap aturan sekolah.</b></div><div class="elim-why">Rasa memiliki adalah dampak psikologis/sosial yang mungkin muncul.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>process</small></div><div class="elim-opt"><b>C. Musyawarah untuk memperoleh kesepakatan melalui pertukaran pendapat.</b></div><div class="elim-why">Tepat karena yang ditanya proses, dan stimulus secara langsung menggambarkan musyawarah.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>D. Meningkatnya kedisiplinan siswa setelah aturan diterapkan.</b></div><div class="elim-why">Kedisiplinan adalah hasil lanjutan.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>process/outcome</small></div><div class="elim-opt"><b>E. Terciptanya suasana sekolah yang lebih harmonis.</b></div><div class="elim-why">Harmoni adalah dampak yang lebih luas.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Level Test: hanya C berada pada level proses → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">10</div><div><div class="tag">Principle → application</div><h3>Prinsip vs implementasi pada demokrasi</h3></div></div>
+<div class="question">Salah satu prinsip demokrasi adalah partisipasi rakyat dalam proses politik. Manakah tindakan yang paling tepat sebagai <b>implementasi</b> prinsip tersebut?</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Kedaulatan berada di tangan rakyat.</span></div><div class="option"><span class="letter">B</span><span>Pemilu merupakan sarana pelaksanaan kedaulatan rakyat.</span></div><div class="option"><span class="letter">C</span><span>Warga menggunakan hak pilih secara sadar dalam pemilu.</span></div><div class="option"><span class="letter">D</span><span>Demokrasi bertujuan menghasilkan pemerintahan yang baik.</span></div><div class="option"><span class="letter">E</span><span>Masyarakat berharap kebijakan pemerintah semakin efektif.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> contoh implementasi partisipasi rakyat</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>contoh implementasi partisipasi rakyat</span></div>
+<div class="snap"><b>Fakta</b><span>Implementasi harus berupa tindakan nyata; bukan definisi, prinsip, atau hasil.</span></div>
+<div class="snap"><b>Actor</b><span>warga</span></div>
+<div class="snap"><b>Scope</b><span>partisipasi politik</span></div>
+<div class="snap"><b>Relation</b><span>principle → concrete behavior</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>A. Kedaulatan berada di tangan rakyat.</b></div><div class="elim-why">Ini pernyataan prinsip, bukan perilaku warga.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>mechanism vs application</small></div><div class="elim-opt"><b>B. Pemilu merupakan sarana pelaksanaan kedaulatan rakyat.</b></div><div class="elim-why">Pemilu adalah sarana kelembagaan yang lebih dekat dengan mekanisme demokrasi daripada tindakan individu yang ditanyakan.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>principle/application</small></div><div class="elim-opt"><b>C. Warga menggunakan hak pilih secara sadar dalam pemilu.</b></div><div class="elim-why">Warga menggunakan hak pilih secara sadar adalah tindakan konkret yang mewujudkan partisipasi.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>D. Demokrasi bertujuan menghasilkan pemerintahan yang baik.</b></div><div class="elim-why">Tujuan tidak sama dengan implementasi.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>E. Masyarakat berharap kebijakan pemerintah semakin efektif.</b></div><div class="elim-why">Harapan akan efektivitas adalah outcome/expectation.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Level Test: hanya C berupa tindakan warga → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">11</div><div><div class="tag">Historical transfer</div><h3>Sejarah: fakta benar, tetapi periodisasi harus tepat</h3></div></div>
+<div class="question">Dalam pembelajaran sejarah perumusan dasar negara, suatu soal meminta pelajaran yang dapat <b>ditransfer ke konteks masa kini</b> dari proses perumusan yang mengutamakan pencarian titik temu antarkelompok. Pilihan paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Menghapus seluruh perbedaan pendapat agar keputusan cepat diambil.</span></div><div class="option"><span class="letter">B</span><span>Mendahulukan kepentingan kelompok sendiri selama argumennya kuat.</span></div><div class="option"><span class="letter">C</span><span>Mencari titik temu melalui dialog ketika terdapat perbedaan kepentingan.</span></div><div class="option"><span class="letter">D</span><span>Menyerahkan seluruh keputusan kepada kelompok dengan jumlah anggota terbesar.</span></div><div class="option"><span class="letter">E</span><span>Menghindari pembahasan agar konflik tidak pernah terlihat.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> historical transfer: mekanisme pelajaran</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>historical transfer: mekanisme pelajaran</span></div>
+<div class="snap"><b>Fakta</b><span>Yang ditekankan adalah pencarian titik temu dalam perbedaan.</span></div>
+<div class="snap"><b>Actor</b><span>para pihak dalam proses bersama</span></div>
+<div class="snap"><b>Scope</b><span>pengambilan keputusan kolektif</span></div>
+<div class="snap"><b>Relation</b><span>historical lesson → modern application</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>A. Menghapus seluruh perbedaan pendapat agar keputusan cepat diambil.</b></div><div class="elim-why">Menghapus perbedaan bukan pelajaran dari pencarian titik temu.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>B. Mendahulukan kepentingan kelompok sendiri selama argumennya kuat.</b></div><div class="elim-why">Kepentingan kelompok sendiri justru mempersempit proses kolektif.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct transfer</small></div><div class="elim-opt"><b>C. Mencari titik temu melalui dialog ketika terdapat perbedaan kepentingan.</b></div><div class="elim-why">Ini mentransfer mekanisme, bukan menyalin bentuk sejarah secara literal: perbedaan dihadapi melalui dialog dan pencarian titik temu.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>majority shortcut</small></div><div class="elim-opt"><b>D. Menyerahkan seluruh keputusan kepada kelompok dengan jumlah anggota terbesar.</b></div><div class="elim-why">Mayoritas tidak otomatis sama dengan proses mencari titik temu.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong process</small></div><div class="elim-opt"><b>E. Menghindari pembahasan agar konflik tidak pernah terlihat.</b></div><div class="elim-why">Menghindari pembahasan justru menghilangkan proses yang sedang dipelajari.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Historical Transfer + Relation Test → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">12</div><div><div class="tag">Concept boundary</div><h3>Bela negara: profesi sebagai bentuk pengabdian</h3></div></div>
+<div class="question">Seorang tenaga kesehatan yang bekerja dalam layanan publik tetap menjalankan tugas profesionalnya secara disiplin ketika terjadi keadaan darurat. Dalam kerangka bela negara, contoh tersebut paling tepat dipahami sebagai...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Pengabdian sesuai profesi.</span></div><div class="option"><span class="letter">B</span><span>Mobilisasi militer.</span></div><div class="option"><span class="letter">C</span><span>Diplomasi internasional.</span></div><div class="option"><span class="letter">D</span><span>Pemberontakan terhadap negara.</span></div><div class="option"><span class="letter">E</span><span>Penghapusan kewajiban profesi.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> bentuk bela negara berdasarkan profesi</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>bentuk bela negara berdasarkan profesi</span></div>
+<div class="snap"><b>Fakta</b><span>Subjek menjalankan profesinya dengan baik untuk kepentingan pelayanan publik.</span></div>
+<div class="snap"><b>Actor</b><span>tenaga kesehatan</span></div>
+<div class="snap"><b>Scope</b><span>profesi/pengabdian dalam negeri</span></div>
+<div class="snap"><b>Relation</b><span>profession → service/contribution</span></div>
+<div class="snap"><b>Level</b><span>concept application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim good"><div class="elim-top"><b>A</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>A. Pengabdian sesuai profesi.</b></div><div class="elim-why">Tepat. Yang menjadi pusat adalah kontribusi melalui profesi, bukan perubahan menjadi peran militer.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>B. Mobilisasi militer.</b></div><div class="elim-why">Tidak ada fakta tentang mobilisasi militer.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong scope</small></div><div class="elim-opt"><b>C. Diplomasi internasional.</b></div><div class="elim-why">Tidak ada konteks hubungan antarnegara.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Pemberontakan terhadap negara.</b></div><div class="elim-why">Tidak ada tindakan yang menunjukkan penentangan terhadap negara.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>E. Penghapusan kewajiban profesi.</b></div><div class="elim-why">Justru profesinya sedang dijalankan, bukan dihapus.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Concept Boundary → A</div>
+<div class="answer"><strong>Jawaban paling tepat: A</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">13</div><div><div class="tag">Neighboring concept</div><h3>Nasionalisme: cinta tanah air tanpa anti-asing</h3></div></div>
+<div class="question">Sikap yang paling tepat menggambarkan nasionalisme dalam konteks global adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Menolak seluruh budaya asing tanpa membedakan dampaknya.</span></div><div class="option"><span class="letter">B</span><span>Menganggap produk dalam negeri pasti lebih baik daripada semua produk asing.</span></div><div class="option"><span class="letter">C</span><span>Mempelajari budaya bangsa lain sambil tetap menjaga identitas dan kepentingan nasional.</span></div><div class="option"><span class="letter">D</span><span>Mengutamakan negara sendiri dengan merendahkan bangsa lain.</span></div><div class="option"><span class="letter">E</span><span>Menghindari kerja sama internasional agar Indonesia sepenuhnya mandiri.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> bentuk nasionalisme dalam globalisasi</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>bentuk nasionalisme dalam globalisasi</span></div>
+<div class="snap"><b>Fakta</b><span>Nasionalisme tidak identik dengan penolakan total terhadap dunia luar.</span></div>
+<div class="snap"><b>Actor</b><span>warga negara</span></div>
+<div class="snap"><b>Scope</b><span>interaksi global dan identitas nasional</span></div>
+<div class="snap"><b>Relation</b><span>nationalism → balanced application</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>A. Menolak seluruh budaya asing tanpa membedakan dampaknya.</b></div><div class="elim-why">Kata <i>seluruh</i> membuatnya absolut dan tidak membedakan budaya asing yang positif dan negatif.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>absolute claim</small></div><div class="elim-opt"><b>B. Menganggap produk dalam negeri pasti lebih baik daripada semua produk asing.</b></div><div class="elim-why">Nasionalisme tidak membuktikan semua produk domestik selalu lebih baik.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>C. Mempelajari budaya bangsa lain sambil tetap menjaga identitas dan kepentingan nasional.</b></div><div class="elim-why">Menjaga identitas nasional sambil terbuka mempelajari budaya lain lebih tepat menggambarkan nasionalisme yang tidak eksklusif.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Mengutamakan negara sendiri dengan merendahkan bangsa lain.</b></div><div class="elim-why">Merendahkan bangsa lain tidak diperlukan untuk mencintai bangsa sendiri.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>E. Menghindari kerja sama internasional agar Indonesia sepenuhnya mandiri.</b></div><div class="elim-why">Kerja sama internasional tidak otomatis bertentangan dengan nasionalisme.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Factuality + Directness → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">14</div><div><div class="tag">Actor + legal relation</div><h3>UUD: subjek hak berbeda dari subjek kewajiban</h3></div></div>
+<div class="question">Sebuah ketentuan konstitusional menjamin hak warga negara untuk memperoleh pekerjaan dan penghidupan yang layak bagi kemanusiaan. Jika pertanyaan meminta <b>pihak yang menjadi pemegang hak</b>, jawaban paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Warga negara.</span></div><div class="option"><span class="letter">B</span><span>Presiden.</span></div><div class="option"><span class="letter">C</span><span>DPR.</span></div><div class="option"><span class="letter">D</span><span>Mahkamah Konstitusi.</span></div><div class="option"><span class="letter">E</span><span>Pemerintah daerah sebagai pemegang tunggal hak.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> subjek pemegang hak</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>subjek pemegang hak</span></div>
+<div class="snap"><b>Fakta</b><span>Stem meminta pemegang hak, bukan lembaga pelaksana kebijakan.</span></div>
+<div class="snap"><b>Actor</b><span>warga negara</span></div>
+<div class="snap"><b>Scope</b><span>hak konstitusional</span></div>
+<div class="snap"><b>Relation</b><span>norma → subject/right-holder</span></div>
+<div class="snap"><b>Level</b><span>legal subject</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim good"><div class="elim-top"><b>A</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>A. Warga negara.</b></div><div class="elim-why">Tepat karena warga negara adalah pihak yang haknya disebut dalam ketentuan tersebut.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>B. Presiden.</b></div><div class="elim-why">Presiden merupakan organ negara, bukan pemegang hak yang dimaksud.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>C. DPR.</b></div><div class="elim-why">DPR adalah lembaga negara; opsi menggeser pemegang hak ke institusi.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>D. Mahkamah Konstitusi.</b></div><div class="elim-why">MK bukan subjek hak dalam ketentuan ini.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong actor / too narrow</small></div><div class="elim-opt"><b>E. Pemerintah daerah sebagai pemegang tunggal hak.</b></div><div class="elim-why">Selain salah aktor, kata <i>tunggal</i> mempersempit secara tidak berdasar.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Actor Test → A</div>
+<div class="answer"><strong>Jawaban paling tepat: A</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">15</div><div><div class="tag">Reversed relation</div><h3>Cause/effect reversal pada konflik sosial</h3></div></div>
+<div class="question">Sebuah berita palsu tentang kelompok etnis tertentu memicu saling curiga di media sosial. Dalam hubungan sebab-akibat pada kasus tersebut, pernyataan yang paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Saling curiga menjadi penyebab utama munculnya berita palsu.</span></div><div class="option"><span class="letter">B</span><span>Berita palsu menjadi salah satu pemicu meningkatnya saling curiga.</span></div><div class="option"><span class="letter">C</span><span>Musyawarah masyarakat menjadi penyebab munculnya berita palsu.</span></div><div class="option"><span class="letter">D</span><span>Persatuan nasional menjadi penyebab utama penyebaran hoaks.</span></div><div class="option"><span class="letter">E</span><span>Toleransi merupakan akibat langsung dari provokasi.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> hubungan sebab-akibat yang diberikan stimulus</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>hubungan sebab-akibat yang diberikan stimulus</span></div>
+<div class="snap"><b>Fakta</b><span>Stimulus menyatakan hoaks memicu saling curiga.</span></div>
+<div class="snap"><b>Actor</b><span>pelaku penyebar hoaks dan pengguna media sosial</span></div>
+<div class="snap"><b>Scope</b><span>media sosial dan relasi sosial</span></div>
+<div class="snap"><b>Relation</b><span>cause → effect</span></div>
+<div class="snap"><b>Level</b><span>causal</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>cause/effect reversal</small></div><div class="elim-opt"><b>A. Saling curiga menjadi penyebab utama munculnya berita palsu.</b></div><div class="elim-why">Arah kausal dibalik. Stimulus menyatakan berita palsu memicu saling curiga.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct causal relation</small></div><div class="elim-opt"><b>B. Berita palsu menjadi salah satu pemicu meningkatnya saling curiga.</b></div><div class="elim-why">Tepat dan paling dekat dengan kalimat sebab-akibat dalam stimulus.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>unsupported</small></div><div class="elim-opt"><b>C. Musyawarah masyarakat menjadi penyebab munculnya berita palsu.</b></div><div class="elim-why">Tidak ada fakta bahwa musyawarah menyebabkan berita palsu.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong relation</small></div><div class="elim-opt"><b>D. Persatuan nasional menjadi penyebab utama penyebaran hoaks.</b></div><div class="elim-why">Persatuan bukan penyebab hoaks dalam cerita.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>cause/effect reversal</small></div><div class="elim-opt"><b>E. Toleransi merupakan akibat langsung dari provokasi.</b></div><div class="elim-why">Provokasi justru berkaitan dengan meningkatnya konflik, bukan toleransi.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Relation Test → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">16</div><div><div class="tag">State ≠ government</div><h3>Negara vs pemerintah: scope kelembagaan</h3></div></div>
+<div class="question">Dalam konteks ketatanegaraan, pernyataan yang paling tepat mengenai fungsi konstitusi terhadap kekuasaan adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Konstitusi hanya menjadi pedoman administratif bagi pegawai pemerintah.</span></div><div class="option"><span class="letter">B</span><span>Konstitusi dapat menjadi landasan untuk membatasi dan mengatur penggunaan kekuasaan negara.</span></div><div class="option"><span class="letter">C</span><span>Konstitusi hanya mengatur hubungan antarwarga tanpa menyentuh organ negara.</span></div><div class="option"><span class="letter">D</span><span>Konstitusi memberi pemerintah kebebasan tanpa batas untuk mencapai tujuan negara.</span></div><div class="option"><span class="letter">E</span><span>Konstitusi hanya relevan pada saat pergantian pemerintahan.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> fungsi konstitusi terhadap kekuasaan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>fungsi konstitusi terhadap kekuasaan</span></div>
+<div class="snap"><b>Fakta</b><span>Konstitusionalisme berkaitan dengan pembatasan dan pengaturan kekuasaan.</span></div>
+<div class="snap"><b>Actor</b><span>negara/organ negara</span></div>
+<div class="snap"><b>Scope</b><span>kekuasaan publik</span></div>
+<div class="snap"><b>Relation</b><span>constitution → control/regulation</span></div>
+<div class="snap"><b>Level</b><span>principle</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>A. Konstitusi hanya menjadi pedoman administratif bagi pegawai pemerintah.</b></div><div class="elim-why">Menyempitkan fungsi konstitusi menjadi urusan administrasi pegawai.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct principle</small></div><div class="elim-opt"><b>B. Konstitusi dapat menjadi landasan untuk membatasi dan mengatur penggunaan kekuasaan negara.</b></div><div class="elim-why">Tepat: konstitusi menjadi kerangka hukum yang mengatur sekaligus membatasi kekuasaan publik.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>C. Konstitusi hanya mengatur hubungan antarwarga tanpa menyentuh organ negara.</b></div><div class="elim-why">Mengabaikan pengaturan organ negara dan kekuasaan.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Konstitusi memberi pemerintah kebebasan tanpa batas untuk mencapai tujuan negara.</b></div><div class="elim-why">Bertentangan dengan gagasan pembatasan kekuasaan.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong scope</small></div><div class="elim-opt"><b>E. Konstitusi hanya relevan pada saat pergantian pemerintahan.</b></div><div class="elim-why">Konstitusi tidak hanya berlaku pada masa pergantian pemerintahan.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Scope + Concept Boundary → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">17</div><div><div class="tag">Scope / level</div><h3>Kepentingan nasional vs kepentingan sektoral</h3></div></div>
+<div class="question">Dalam memilih kebijakan ekonomi, sebuah pemerintah daerah mempertimbangkan kepentingan pelaku usaha lokal sekaligus dampaknya terhadap kesejahteraan masyarakat yang lebih luas. Bila pertanyaan menanyakan pendekatan yang paling mencerminkan <b>kepentingan nasional</b>, pilihan paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Mengutamakan keuntungan satu kelompok usaha meskipun merugikan masyarakat.</span></div><div class="option"><span class="letter">B</span><span>Mengutamakan kepentingan daerah sendiri tanpa mempertimbangkan daerah lain.</span></div><div class="option"><span class="letter">C</span><span>Menyelaraskan kepentingan ekonomi daerah dengan kepentingan masyarakat dan tujuan nasional yang lebih luas.</span></div><div class="option"><span class="letter">D</span><span>Menolak semua kerja sama antardaerah agar kebijakan lebih sederhana.</span></div><div class="option"><span class="letter">E</span><span>Memberi keuntungan permanen kepada satu kelompok karena dianggap paling berjasa.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> level kepentingan nasional</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>level kepentingan nasional</span></div>
+<div class="snap"><b>Fakta</b><span>Kepentingan nasional merupakan payung yang tidak identik dengan satu kelompok atau satu daerah.</span></div>
+<div class="snap"><b>Actor</b><span>pemerintah daerah sebagai pengambil kebijakan</span></div>
+<div class="snap"><b>Scope</b><span>daerah → kepentingan nasional</span></div>
+<div class="snap"><b>Relation</b><span>local interest → broader national interest</span></div>
+<div class="snap"><b>Level</b><span>macro / integrative</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>A. Mengutamakan keuntungan satu kelompok usaha meskipun merugikan masyarakat.</b></div><div class="elim-why">Mengunci kebijakan pada satu kelompok; terlalu sempit untuk target kepentingan nasional.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>scope mismatch</small></div><div class="elim-opt"><b>B. Mengutamakan kepentingan daerah sendiri tanpa mempertimbangkan daerah lain.</b></div><div class="elim-why">Scope berhenti pada daerah sendiri sehingga tidak menguji kepentingan yang lebih luas.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>integrative/direct</small></div><div class="elim-opt"><b>C. Menyelaraskan kepentingan ekonomi daerah dengan kepentingan masyarakat dan tujuan nasional yang lebih luas.</b></div><div class="elim-why">Ini mengintegrasikan kepentingan daerah dengan kepentingan masyarakat dan tujuan nasional.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>D. Menolak semua kerja sama antardaerah agar kebijakan lebih sederhana.</b></div><div class="elim-why">Menolak kerja sama bukan syarat kepentingan nasional dan justru mempersempit hubungan antardaerah.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>E. Memberi keuntungan permanen kepada satu kelompok karena dianggap paling berjasa.</b></div><div class="elim-why">Kepentingan satu kelompok tidak boleh diperlakukan sebagai kepentingan nasional secara otomatis.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Scope Test + Level Test → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">18</div><div><div class="tag">Integrity</div><h3>Integritas: tindakan konkret, bukan citra</h3></div></div>
+<div class="question">Seorang pegawai menemukan kesalahan dalam laporan yang menguntungkan unitnya. Ia menyampaikan kesalahan tersebut kepada atasannya dan meminta data diperbaiki meskipun tindakan itu dapat membuat kinerja unit terlihat menurun. Nilai yang paling langsung tercermin adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Pencitraan organisasi.</span></div><div class="option"><span class="letter">B</span><span>Integritas melalui kejujuran dan konsistensi terhadap fakta.</span></div><div class="option"><span class="letter">C</span><span>Keberanian fisik menghadapi ancaman.</span></div><div class="option"><span class="letter">D</span><span>Loyalitas kelompok yang menutupi kelemahan internal.</span></div><div class="option"><span class="letter">E</span><span>Keberhasilan organisasi menjaga reputasi.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> nilai utama dalam tindakan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>nilai utama dalam tindakan</span></div>
+<div class="snap"><b>Fakta</b><span>Pegawai mengungkap kesalahan meskipun merugikan citra unit.</span></div>
+<div class="snap"><b>Actor</b><span>pegawai</span></div>
+<div class="snap"><b>Scope</b><span>pelaporan pekerjaan</span></div>
+<div class="snap"><b>Relation</b><span>action → core value</span></div>
+<div class="snap"><b>Level</b><span>value</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>neighboring concept</small></div><div class="elim-opt"><b>A. Pencitraan organisasi.</b></div><div class="elim-why">Citra organisasi justru berpotensi turun; ini bukan nilai yang ditunjukkan oleh tindakan tersebut.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>B. Integritas melalui kejujuran dan konsistensi terhadap fakta.</b></div><div class="elim-why">Pusat tindakan adalah menyampaikan fakta dan memperbaiki laporan walaupun ada biaya pribadi/kelompok.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>C. Keberanian fisik menghadapi ancaman.</b></div><div class="elim-why">Tidak ada ancaman fisik dalam stimulus.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>opposite concept</small></div><div class="elim-opt"><b>D. Loyalitas kelompok yang menutupi kelemahan internal.</b></div><div class="elim-why">Menutupi kesalahan justru berlawanan dengan tindakan pegawai.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>secondary effect</small></div><div class="elim-opt"><b>E. Keberhasilan organisasi menjaga reputasi.</b></div><div class="elim-why">Reputasi bukan tujuan langsung; tindakan tersebut malah berpotensi menurunkannya.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Target + Relation → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">19</div><div><div class="tag">Legal relation</div><h3>Hak vs kewajiban: jangan menukar arah normatif</h3></div></div>
+<div class="question">Dalam kehidupan bermasyarakat, seseorang menggunakan hak kebebasan berpendapat tetapi tetap menghormati hak orang lain dan batasan yang ditentukan hukum. Prinsip yang paling tepat untuk menjelaskan perilaku tersebut adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Kebebasan berarti tidak ada tanggung jawab apa pun.</span></div><div class="option"><span class="letter">B</span><span>Penggunaan hak harus tetap menghormati hak orang lain dan kewajiban yang berlaku.</span></div><div class="option"><span class="letter">C</span><span>Semua bentuk perbedaan pendapat harus dilarang untuk menjaga ketertiban.</span></div><div class="option"><span class="letter">D</span><span>Pemerintah berhak menentukan semua isi pendapat warga.</span></div><div class="option"><span class="letter">E</span><span>Kewajiban warga selalu menghapus hak warga.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> relasi hak dengan kewajiban/batasan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>relasi hak dengan kewajiban/batasan</span></div>
+<div class="snap"><b>Fakta</b><span>Hak digunakan sambil menghormati hak orang lain dan hukum.</span></div>
+<div class="snap"><b>Actor</b><span>warga</span></div>
+<div class="snap"><b>Scope</b><span>kebebasan berpendapat dalam kehidupan sosial</span></div>
+<div class="snap"><b>Relation</b><span>right ↔ responsibility</span></div>
+<div class="snap"><b>Level</b><span>principle/application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>A. Kebebasan berarti tidak ada tanggung jawab apa pun.</b></div><div class="elim-why">Kebebasan tidak berarti ketiadaan tanggung jawab.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>B. Penggunaan hak harus tetap menghormati hak orang lain dan kewajiban yang berlaku.</b></div><div class="elim-why">Paling tepat karena menjelaskan keseimbangan penggunaan hak dengan penghormatan terhadap hak orang lain dan ketentuan yang berlaku.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>C. Semua bentuk perbedaan pendapat harus dilarang untuk menjaga ketertiban.</b></div><div class="elim-why">Terlalu luas dan meniadakan kebebasan berpendapat.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>D. Pemerintah berhak menentukan semua isi pendapat warga.</b></div><div class="elim-why">Memindahkan subjek dari warga ke pemerintah dan memberi kewenangan yang tidak dinyatakan.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>E. Kewajiban warga selalu menghapus hak warga.</b></div><div class="elim-why">Hak dan kewajiban tidak bekerja dengan logika saling menghapus.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Relation + Actor Test → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">20</div><div><div class="tag">Institutional role</div><h3>BPK: lembaga pemeriksa, bukan pengelola</h3></div></div>
+<div class="question">Jika sebuah soal menanyakan peran BPK dalam sistem ketatanegaraan, pilihan yang paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Mengelola seluruh penerimaan negara sehari-hari.</span></div><div class="option"><span class="letter">B</span><span>Memeriksa pengelolaan dan tanggung jawab keuangan negara.</span></div><div class="option"><span class="letter">C</span><span>Membentuk semua undang-undang mengenai keuangan negara.</span></div><div class="option"><span class="letter">D</span><span>Menjatuhkan putusan pidana kepada setiap pejabat yang diperiksa.</span></div><div class="option"><span class="letter">E</span><span>Menetapkan APBN secara sepihak.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> fungsi BPK</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>fungsi BPK</span></div>
+<div class="snap"><b>Fakta</b><span>BPK adalah lembaga pemeriksa keuangan negara.</span></div>
+<div class="snap"><b>Actor</b><span>BPK</span></div>
+<div class="snap"><b>Scope</b><span>pemeriksaan keuangan negara</span></div>
+<div class="snap"><b>Relation</b><span>institution → function</span></div>
+<div class="snap"><b>Level</b><span>authority</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong role</small></div><div class="elim-opt"><b>A. Mengelola seluruh penerimaan negara sehari-hari.</b></div><div class="elim-why">Pengelolaan penerimaan harian bukan fungsi utama BPK.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct role</small></div><div class="elim-opt"><b>B. Memeriksa pengelolaan dan tanggung jawab keuangan negara.</b></div><div class="elim-why">Tepat dan langsung: pemeriksaan pengelolaan dan tanggung jawab keuangan negara.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong role</small></div><div class="elim-opt"><b>C. Membentuk semua undang-undang mengenai keuangan negara.</b></div><div class="elim-why">Pembentukan UU adalah fungsi legislasi, bukan fungsi BPK.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong authority</small></div><div class="elim-opt"><b>D. Menjatuhkan putusan pidana kepada setiap pejabat yang diperiksa.</b></div><div class="elim-why">Pemeriksaan tidak identik dengan menjatuhkan putusan pidana.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong authority</small></div><div class="elim-opt"><b>E. Menetapkan APBN secara sepihak.</b></div><div class="elim-why">BPK bukan lembaga yang menetapkan APBN secara sepihak.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Actor/Authority Test → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">21</div><div><div class="tag">Concept boundary</div><h3>Bhinneka Tunggal Ika: menghargai perbedaan, bukan menghapusnya</h3></div></div>
+<div class="question">Di sebuah kelas yang berisi siswa dari latar belakang budaya berbeda, tindakan yang paling sesuai dengan semangat Bhinneka Tunggal Ika adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Meminta semua siswa meninggalkan kebiasaan budayanya agar tidak ada perbedaan.</span></div><div class="option"><span class="letter">B</span><span>Mendorong setiap kelompok hanya bergaul dengan anggota budayanya sendiri.</span></div><div class="option"><span class="letter">C</span><span>Memberi ruang setiap siswa mempertahankan identitas budayanya sambil membangun kebersamaan sebagai satu komunitas.</span></div><div class="option"><span class="letter">D</span><span>Menentukan satu budaya sebagai standar perilaku seluruh kelas.</span></div><div class="option"><span class="letter">E</span><span>Membatasi kegiatan bersama agar perbedaan tidak terlihat.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> implementasi Bhinneka Tunggal Ika</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>implementasi Bhinneka Tunggal Ika</span></div>
+<div class="snap"><b>Fakta</b><span>Bhinneka menekankan persatuan tanpa menghapus keberagaman.</span></div>
+<div class="snap"><b>Actor</b><span>warga kelas</span></div>
+<div class="snap"><b>Scope</b><span>kemajemukan sosial</span></div>
+<div class="snap"><b>Relation</b><span>plurality → integration</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>A. Meminta semua siswa meninggalkan kebiasaan budayanya agar tidak ada perbedaan.</b></div><div class="elim-why">Menghapus identitas bertentangan dengan gagasan persatuan dalam keberagaman.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>primordialism</small></div><div class="elim-opt"><b>B. Mendorong setiap kelompok hanya bergaul dengan anggota budayanya sendiri.</b></div><div class="elim-why">Memperkuat sekat kelompok, bukan integrasi.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>C. Memberi ruang setiap siswa mempertahankan identitas budayanya sambil membangun kebersamaan sebagai satu komunitas.</b></div><div class="elim-why">Menjaga identitas sekaligus membangun kebersamaan; ini paling dekat dengan konsep yang diuji.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Menentukan satu budaya sebagai standar perilaku seluruh kelas.</b></div><div class="elim-why">Penyeragaman budaya bukan inti Bhinneka Tunggal Ika.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>E. Membatasi kegiatan bersama agar perbedaan tidak terlihat.</b></div><div class="elim-why">Perbedaan tidak perlu disembunyikan agar persatuan terbentuk.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Neighbor/Concept Boundary → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">22</div><div><div class="tag">Negative stem</div><h3>Kecuali: ubah arah pencarian sebelum menilai opsi</h3></div></div>
+<div class="question">Dalam upaya menjaga keutuhan NKRI, tindakan berikut merupakan sikap yang sesuai, <b>kecuali</b>...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Membangun kerja sama antarkelompok.</span></div><div class="option"><span class="letter">B</span><span>Menaati hukum yang berlaku.</span></div><div class="option"><span class="letter">C</span><span>Menjaga persatuan dalam kehidupan sehari-hari.</span></div><div class="option"><span class="letter">D</span><span>Menganggap daerah sendiri memiliki kedaulatan yang terpisah dari Indonesia.</span></div><div class="option"><span class="letter">E</span><span>Menolak tindakan yang sengaja memecah persatuan.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> satu tindakan yang tidak sesuai</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>satu tindakan yang tidak sesuai</span></div>
+<div class="snap"><b>Fakta</b><span>Kata pengunci adalah <i>kecuali</i>; empat opsi harus dieliminasi sebagai sesuai.</span></div>
+<div class="snap"><b>Actor</b><span>warga negara</span></div>
+<div class="snap"><b>Scope</b><span>keutuhan NKRI</span></div>
+<div class="snap"><b>Relation</b><span>behavior → compatibility</span></div>
+<div class="snap"><b>Level</b><span>classification</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>fits</small></div><div class="elim-opt"><b>A. Membangun kerja sama antarkelompok.</b></div><div class="elim-why">Sesuai karena kerja sama antarkelompok mendukung integrasi.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>fits</small></div><div class="elim-opt"><b>B. Menaati hukum yang berlaku.</b></div><div class="elim-why">Sesuai dengan kehidupan bernegara dalam kerangka hukum.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>fits</small></div><div class="elim-opt"><b>C. Menjaga persatuan dalam kehidupan sehari-hari.</b></div><div class="elim-why">Sesuai dengan menjaga persatuan.</div></div><div class="elim good"><div class="elim-top"><b>D</b><span>LOLOS</span><small>contradiction</small></div><div class="elim-opt"><b>D. Menganggap daerah sendiri memiliki kedaulatan yang terpisah dari Indonesia.</b></div><div class="elim-why">Gugur karena bertentangan langsung dengan konsep Negara Kesatuan Republik Indonesia.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>fits</small></div><div class="elim-opt"><b>E. Menolak tindakan yang sengaja memecah persatuan.</b></div><div class="elim-why">Sesuai karena menolak tindakan pemecah persatuan.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> Cari yang TIDAK sesuai → A ✅ B ✅ C ✅ D ❌ E ✅ → D</div>
+<div class="answer"><strong>Jawaban paling tepat: D</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">23</div><div><div class="tag">Keyword trap</div><h3>Terkejut oleh kata kunci: jangan pilih hanya karena istilahnya muncul</h3></div></div>
+<div class="question">Sebuah kebijakan disebut menggunakan asas kekeluargaan dalam pengelolaan kegiatan ekonomi masyarakat. Pilihan yang paling tepat sebagai contoh yang sejalan dengan prinsip tersebut adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Semua keputusan ekonomi diserahkan kepada satu perusahaan terbesar.</span></div><div class="option"><span class="letter">B</span><span>Keuntungan harus selalu dinikmati kelompok pemilik modal saja.</span></div><div class="option"><span class="letter">C</span><span>Warga membangun koperasi untuk memenuhi kebutuhan bersama dan membagi manfaat secara adil.</span></div><div class="option"><span class="letter">D</span><span>Setiap pelaku usaha dilarang bekerja sama dengan pelaku usaha lain.</span></div><div class="option"><span class="letter">E</span><span>Pemerintah menentukan seluruh harga tanpa mempertimbangkan kondisi masyarakat.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> implementasi asas kekeluargaan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>implementasi asas kekeluargaan</span></div>
+<div class="snap"><b>Fakta</b><span>Asas kekeluargaan berhubungan dengan kerja sama dan orientasi kepentingan bersama.</span></div>
+<div class="snap"><b>Actor</b><span>warga/pelaku ekonomi</span></div>
+<div class="snap"><b>Scope</b><span>kehidupan ekonomi masyarakat</span></div>
+<div class="snap"><b>Relation</b><span>principle → application</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>A. Semua keputusan ekonomi diserahkan kepada satu perusahaan terbesar.</b></div><div class="elim-why">Dominasi satu perusahaan berlawanan dengan semangat kekeluargaan.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>B. Keuntungan harus selalu dinikmati kelompok pemilik modal saja.</b></div><div class="elim-why">Menempatkan manfaat pada satu kelompok modal saja.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>C. Warga membangun koperasi untuk memenuhi kebutuhan bersama dan membagi manfaat secara adil.</b></div><div class="elim-why">Koperasi menyediakan contoh konkret kerja sama ekonomi berorientasi kepentingan bersama.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Setiap pelaku usaha dilarang bekerja sama dengan pelaku usaha lain.</b></div><div class="elim-why">Larangan kerja sama justru berlawanan dengan unsur kebersamaan.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>too broad/wrong mechanism</small></div><div class="elim-opt"><b>E. Pemerintah menentukan seluruh harga tanpa mempertimbangkan kondisi masyarakat.</b></div><div class="elim-why">Kendali total pemerintah bukan makna otomatis dari asas kekeluargaan.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Principle/Application Test → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">24</div><div><div class="tag">Scope</div><h3>Scope lokal vs nasional dalam isu keamanan</h3></div></div>
+<div class="question">Sebuah kabupaten menemukan jaringan penyebaran propaganda kekerasan yang berusaha memengaruhi warga setempat. Bila pertanyaan meminta <b>level kebijakan</b> yang paling sesuai untuk menangani ancaman tersebut, jawaban yang paling tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Hanya mengandalkan tindakan pribadi warga tanpa koordinasi apa pun.</span></div><div class="option"><span class="letter">B</span><span>Menanganinya sebagai persoalan nasional melalui koordinasi antarlembaga sesuai kewenangan.</span></div><div class="option"><span class="letter">C</span><span>Menganggapnya semata-mata sebagai persoalan budaya lokal.</span></div><div class="option"><span class="letter">D</span><span>Menyerahkannya kepada lembaga internasional untuk menentukan seluruh tindakan.</span></div><div class="option"><span class="letter">E</span><span>Membatasi masalah hanya pada hubungan antar tetangga.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> level penanganan ancaman</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>level penanganan ancaman</span></div>
+<div class="snap"><b>Fakta</b><span>Propaganda kekerasan diarahkan untuk memengaruhi warga dan memiliki dimensi ancaman yang melampaui relasi individual.</span></div>
+<div class="snap"><b>Actor</b><span>negara/lembaga terkait</span></div>
+<div class="snap"><b>Scope</b><span>kabupaten dengan implikasi nasional</span></div>
+<div class="snap"><b>Relation</b><span>threat → policy level</span></div>
+<div class="snap"><b>Level</b><span>national</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>A. Hanya mengandalkan tindakan pribadi warga tanpa koordinasi apa pun.</b></div><div class="elim-why">Terlalu sempit untuk ancaman yang memerlukan koordinasi kelembagaan.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct scope</small></div><div class="elim-opt"><b>B. Menanganinya sebagai persoalan nasional melalui koordinasi antarlembaga sesuai kewenangan.</b></div><div class="elim-why">Paling tepat karena masalah lokal dapat ditangani pada kerangka nasional ketika substansinya menyangkut ancaman yang lebih luas dan koordinasi antarinstansi.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong scope</small></div><div class="elim-opt"><b>C. Menganggapnya semata-mata sebagai persoalan budaya lokal.</b></div><div class="elim-why">Menyederhanakan ancaman menjadi persoalan budaya lokal.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong actor/scope</small></div><div class="elim-opt"><b>D. Menyerahkannya kepada lembaga internasional untuk menentukan seluruh tindakan.</b></div><div class="elim-why">Menyerahkan kedaulatan penanganan utama kepada lembaga internasional tidak sesuai konteks.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>E. Membatasi masalah hanya pada hubungan antar tetangga.</b></div><div class="elim-why">Relasi tetangga terlalu sempit dibanding cakupan ancaman.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Scope/Actor Test → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">25</div><div><div class="tag">Definition</div><h3>Direct recall tetap perlu diskriminasi saat opsi mirip</h3></div></div>
+<div class="question">Pernyataan yang paling tepat menggambarkan <b>Negara Kesatuan Republik Indonesia</b> adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Indonesia merupakan negara yang tersusun dari negara-negara bagian berdaulat.</span></div><div class="option"><span class="letter">B</span><span>Indonesia merupakan negara kesatuan berbentuk republik.</span></div><div class="option"><span class="letter">C</span><span>Indonesia merupakan konfederasi yang memberikan kedaulatan utama kepada daerah.</span></div><div class="option"><span class="letter">D</span><span>Indonesia merupakan negara kerajaan dengan pemerintah daerah sebagai negara bagian.</span></div><div class="option"><span class="letter">E</span><span>Indonesia merupakan kumpulan daerah otonom yang masing-masing memiliki kedaulatan.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> definisi status negara</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>definisi status negara</span></div>
+<div class="snap"><b>Fakta</b><span>Konstitusi menyatakan Indonesia adalah Negara Kesatuan yang berbentuk Republik.</span></div>
+<div class="snap"><b>Actor</b><span>negara Indonesia</span></div>
+<div class="snap"><b>Scope</b><span>status ketatanegaraan</span></div>
+<div class="snap"><b>Relation</b><span>concept → definition</span></div>
+<div class="snap"><b>Level</b><span>definition</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>A. Indonesia merupakan negara yang tersusun dari negara-negara bagian berdaulat.</b></div><div class="elim-why">Menggunakan konsep negara federal.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct definition</small></div><div class="elim-opt"><b>B. Indonesia merupakan negara kesatuan berbentuk republik.</b></div><div class="elim-why">Tepat dan paling langsung: negara kesatuan berbentuk republik.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>C. Indonesia merupakan konfederasi yang memberikan kedaulatan utama kepada daerah.</b></div><div class="elim-why">Konfederasi berbeda secara konseptual dari negara kesatuan.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>D. Indonesia merupakan negara kerajaan dengan pemerintah daerah sebagai negara bagian.</b></div><div class="elim-why">Indonesia bukan negara kerajaan maupun kumpulan negara bagian.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>E. Indonesia merupakan kumpulan daerah otonom yang masing-masing memiliki kedaulatan.</b></div><div class="elim-why">Otonomi daerah tidak berarti daerah memiliki kedaulatan sendiri.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> Definition Test → B satu-satunya yang tepat → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">26</div><div><div class="tag">Too narrow</div><h3>Ketika opsi benar tetapi terlalu sempit</h3></div></div>
+<div class="question">Makna Pancasila sebagai pandangan hidup bangsa paling tepat ditunjukkan oleh pernyataan bahwa Pancasila...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Hanya digunakan sebagai simbol pada upacara kenegaraan.</span></div><div class="option"><span class="letter">B</span><span>Memberikan arah nilai bagi bangsa dalam bersikap, bertindak, dan mengambil keputusan.</span></div><div class="option"><span class="letter">C</span><span>Hanya berlaku bagi pejabat pemerintah ketika membuat kebijakan.</span></div><div class="option"><span class="letter">D</span><span>Hanya digunakan untuk menentukan bentuk lembaga negara.</span></div><div class="option"><span class="letter">E</span><span>Hanya menjadi slogan untuk memperkuat citra nasional.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> fungsi sebagai pandangan hidup</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>fungsi sebagai pandangan hidup</span></div>
+<div class="snap"><b>Fakta</b><span>Pandangan hidup berkaitan dengan pedoman nilai dalam kehidupan bangsa.</span></div>
+<div class="snap"><b>Actor</b><span>bangsa/individu dalam kehidupan</span></div>
+<div class="snap"><b>Scope</b><span>kehidupan sosial dan kebangsaan</span></div>
+<div class="snap"><b>Relation</b><span>concept → function</span></div>
+<div class="snap"><b>Level</b><span>meaning/function</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>A. Hanya digunakan sebagai simbol pada upacara kenegaraan.</b></div><div class="elim-why">Menyempitkan Pancasila menjadi simbol seremonial.</div></div><div class="elim good"><div class="elim-top"><b>B</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>B. Memberikan arah nilai bagi bangsa dalam bersikap, bertindak, dan mengambil keputusan.</b></div><div class="elim-why">Paling tepat karena mencakup fungsi sebagai pedoman nilai dalam bersikap, bertindak, dan mengambil keputusan.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>C. Hanya berlaku bagi pejabat pemerintah ketika membuat kebijakan.</b></div><div class="elim-why">Terlalu sempit pada pejabat.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>too narrow</small></div><div class="elim-opt"><b>D. Hanya digunakan untuk menentukan bentuk lembaga negara.</b></div><div class="elim-why">Menyempitkan fungsi ke struktur lembaga.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>E. Hanya menjadi slogan untuk memperkuat citra nasional.</b></div><div class="elim-why">Mengubah fungsi normatif menjadi slogan pencitraan.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> Scope Test: A/C/D terlalu sempit; E salah konsep → B</div>
+<div class="answer"><strong>Jawaban paling tepat: B</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">27</div><div><div class="tag">Anti-heuristic</div><h3>Pilihan panjang bukan otomatis benar</h3></div></div>
+<div class="question">Manakah tindakan yang paling tepat sebagai bentuk toleransi antarumat beragama dalam kehidupan sehari-hari?</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Menghormati tetangga menjalankan ibadah menurut keyakinannya tanpa memaksakan keyakinan sendiri.</span></div><div class="option"><span class="letter">B</span><span>Menghormati tetangga menjalankan ibadah karena pada akhirnya semua agama pasti mempunyai ajaran yang persis sama.</span></div><div class="option"><span class="letter">C</span><span>Mendorong semua tetangga mengikuti kegiatan keagamaan yang sama agar hubungan sosial menjadi seragam dan tidak menimbulkan perbedaan.</span></div><div class="option"><span class="letter">D</span><span>Menghindari semua pembicaraan tentang agama dengan siapa pun supaya tidak pernah terjadi perbedaan pendapat.</span></div><div class="option"><span class="letter">E</span><span>Menerima keberadaan tetangga yang berbeda agama hanya selama ia tidak menjalankan kegiatan ibadah yang menurut kita terlalu terlihat.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> contoh toleransi</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>contoh toleransi</span></div>
+<div class="snap"><b>Fakta</b><span>Toleransi menghormati perbedaan tanpa memaksakan keseragaman.</span></div>
+<div class="snap"><b>Actor</b><span>individu/tetangga</span></div>
+<div class="snap"><b>Scope</b><span>relasi antarumat beragama</span></div>
+<div class="snap"><b>Relation</b><span>value → behavior</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim good"><div class="elim-top"><b>A</b><span>LOLOS</span><small>direct</small></div><div class="elim-opt"><b>A. Menghormati tetangga menjalankan ibadah menurut keyakinannya tanpa memaksakan keyakinan sendiri.</b></div><div class="elim-why">Tepat. Menghormati pelaksanaan ibadah pihak lain tanpa memaksakan keyakinan sendiri merupakan bentuk konkret toleransi.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>false premise</small></div><div class="elim-opt"><b>B. Menghormati tetangga menjalankan ibadah karena pada akhirnya semua agama pasti mempunyai ajaran yang persis sama.</b></div><div class="elim-why">Kesamaan ajaran bukan syarat toleransi dan klaim <i>persis sama</i> tidak diperlukan.</div></div><div class="elim bad"><div class="elim-top"><b>C</b><span>GUGUR</span><small>wrong concept</small></div><div class="elim-opt"><b>C. Mendorong semua tetangga mengikuti kegiatan keagamaan yang sama agar hubungan sosial menjadi seragam dan tidak menimbulkan perbedaan.</b></div><div class="elim-why">Toleransi bukan penyeragaman kegiatan keagamaan.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>D. Menghindari semua pembicaraan tentang agama dengan siapa pun supaya tidak pernah terjadi perbedaan pendapat.</b></div><div class="elim-why">Menghindari seluruh pembicaraan terlalu ekstrem; toleransi bukan menghapus interaksi.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>conditional rejection</small></div><div class="elim-opt"><b>E. Menerima keberadaan tetangga yang berbeda agama hanya selama ia tidak menjalankan kegiatan ibadah yang menurut kita terlalu terlihat.</b></div><div class="elim-why">Toleransi tidak bersifat menerima hanya selama pihak lain mengurangi hak beribadahnya.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> Factuality + Concept Boundary → A</div>
+<div class="answer"><strong>Jawaban paling tepat: A</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">28</div><div><div class="tag">Uniqueness</div><h3>Dua opsi sama-sama benar: uniqueness baru muncul setelah target dikunci</h3></div></div>
+<div class="question">Sebuah soal meminta contoh perilaku yang <b>paling langsung</b> menunjukkan kewajiban menaati hukum. Manakah yang paling tepat?</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Membantu tetangga yang mengalami kesulitan.</span></div><div class="option"><span class="letter">B</span><span>Mengikuti kegiatan sosial di lingkungan.</span></div><div class="option"><span class="letter">C</span><span>Menaati peraturan lalu lintas meskipun tidak ada petugas yang mengawasi.</span></div><div class="option"><span class="letter">D</span><span>Menghormati perbedaan pendapat dalam keluarga.</span></div><div class="option"><span class="letter">E</span><span>Menjaga hubungan baik dengan masyarakat.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> behavior → legal compliance</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>behavior → legal compliance</span></div>
+<div class="snap"><b>Fakta</b><span>Targetnya sangat spesifik: menaati hukum.</span></div>
+<div class="snap"><b>Actor</b><span>individu</span></div>
+<div class="snap"><b>Scope</b><span>kepatuhan hukum sehari-hari</span></div>
+<div class="snap"><b>Relation</b><span>value/duty → behavior</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>neighboring value</small></div><div class="elim-opt"><b>A. Membantu tetangga yang mengalami kesulitan.</b></div><div class="elim-why">Baik secara sosial, tetapi tidak secara langsung menunjukkan kepatuhan hukum.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>neighboring value</small></div><div class="elim-opt"><b>B. Mengikuti kegiatan sosial di lingkungan.</b></div><div class="elim-why">Merupakan partisipasi sosial, bukan contoh paling direct untuk kewajiban menaati hukum.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>unique direct</small></div><div class="elim-opt"><b>C. Menaati peraturan lalu lintas meskipun tidak ada petugas yang mengawasi.</b></div><div class="elim-why">Menaati peraturan lalu lintas adalah contoh langsung kepatuhan hukum, bahkan saat tidak ada pengawasan.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>neighboring value</small></div><div class="elim-opt"><b>D. Menghormati perbedaan pendapat dalam keluarga.</b></div><div class="elim-why">Menghormati pendapat berkaitan dengan etika dan relasi sosial.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>too broad</small></div><div class="elim-opt"><b>E. Menjaga hubungan baik dengan masyarakat.</b></div><div class="elim-why">Terlalu umum dan tidak menunjukkan perilaku hukum secara spesifik.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Target/Uniqueness Test → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">29</div><div><div class="tag">Gravity center</div><h3>Multi-konsep dalam satu stimulus, tetapi satu gravity center</h3></div></div>
+<div class="question">Dalam satu kota terjadi ketegangan antarwarga karena unggahan provokatif berbasis identitas. Pemerintah membuka forum dialog, aparat menjaga keamanan, tokoh masyarakat menenangkan warga, dan sekolah melakukan literasi digital. Bila pertanyaan meminta <b>tindakan pemerintah yang paling langsung untuk mengelola perbedaan</b>, pilihan yang tepat adalah...</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Aparat melakukan patroli keamanan.</span></div><div class="option"><span class="letter">B</span><span>Sekolah mengajarkan literasi digital.</span></div><div class="option"><span class="letter">C</span><span>Pemerintah memfasilitasi forum dialog antarkelompok.</span></div><div class="option"><span class="letter">D</span><span>Tokoh masyarakat menenangkan warga melalui pertemuan lingkungan.</span></div><div class="option"><span class="letter">E</span><span>Kota meningkatkan citra sebagai wilayah yang toleran.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> tindakan pemerintah untuk mengelola perbedaan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>tindakan pemerintah untuk mengelola perbedaan</span></div>
+<div class="snap"><b>Fakta</b><span>Stimulus sengaja memuat banyak aktor dan konsep.</span></div>
+<div class="snap"><b>Actor</b><span>pemerintah</span></div>
+<div class="snap"><b>Scope</b><span>pengelolaan perbedaan sosial</span></div>
+<div class="snap"><b>Relation</b><span>actor + action → target</span></div>
+<div class="snap"><b>Level</b><span>implementation</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>wrong action/neighbor</small></div><div class="elim-opt"><b>A. Aparat melakukan patroli keamanan.</b></div><div class="elim-why">Aparat memang aktor negara, tetapi tindakan patroli menjawab aspek keamanan, bukan pengelolaan perbedaan melalui dialog.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>B. Sekolah mengajarkan literasi digital.</b></div><div class="elim-why">Aktor salah: sekolah, bukan pemerintah dalam target yang diminta.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct actor-target match</small></div><div class="elim-opt"><b>C. Pemerintah memfasilitasi forum dialog antarkelompok.</b></div><div class="elim-why">Tepat pada dua dimensi sekaligus: aktornya pemerintah dan tindakannya mengelola perbedaan melalui dialog.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>wrong actor</small></div><div class="elim-opt"><b>D. Tokoh masyarakat menenangkan warga melalui pertemuan lingkungan.</b></div><div class="elim-why">Tokoh masyarakat adalah aktor berbeda.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>outcome</small></div><div class="elim-opt"><b>E. Kota meningkatkan citra sebagai wilayah yang toleran.</b></div><div class="elim-why">Citra kota adalah outcome, bukan tindakan.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> B/D gugur karena Actor; E karena Level; A kalah Relation; C tersisa → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+<article class="case"><div class="casehead"><div class="num">30</div><div><div class="tag">Principle vs application</div><h3>Prinsip yang benar tidak sama dengan tindakan yang menerapkannya</h3></div></div>
+<div class="question">Suatu modul menjelaskan bahwa persatuan berarti menempatkan kepentingan bersama di atas kepentingan kelompok yang dapat memecah masyarakat. Manakah yang paling tepat sebagai <b>penerapan konkret</b> prinsip tersebut?</div>
+<div class="options"><div class="option"><span class="letter">A</span><span>Persatuan Indonesia merupakan salah satu dasar penting kehidupan berbangsa.</span></div><div class="option"><span class="letter">B</span><span>Setiap warga berkewajiban menjaga persatuan dalam kehidupan berbangsa.</span></div><div class="option"><span class="letter">C</span><span>Warga dari beberapa kelompok menyepakati kegiatan bersama dan membagi tugas tanpa membedakan asal kelompok.</span></div><div class="option"><span class="letter">D</span><span>Persatuan menjadi nilai yang harus dijaga oleh seluruh bangsa.</span></div><div class="option"><span class="letter">E</span><span>Masyarakat membutuhkan persatuan agar kehidupan nasional berjalan baik.</span></div></div>
+<details><summary>Buka pembahasan dan lihat eliminasi A–E</summary><div class="analysis">
+<div class="callout bluecall"><b>Lock target:</b> contoh penerapan konkret prinsip persatuan</div>
+<div class="snapshot">
+<div class="snap"><b>Target</b><span>contoh penerapan konkret prinsip persatuan</span></div>
+<div class="snap"><b>Fakta</b><span>Stem membedakan prinsip umum dari perilaku konkret.</span></div>
+<div class="snap"><b>Actor</b><span>warga/kelompok masyarakat</span></div>
+<div class="snap"><b>Scope</b><span>kehidupan sosial</span></div>
+<div class="snap"><b>Relation</b><span>principle → concrete application</span></div>
+<div class="snap"><b>Level</b><span>application</span></div>
+</div>
+<h3>Eliminasi satu per satu</h3>
+<div class="elim bad"><div class="elim-top"><b>A</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>A. Persatuan Indonesia merupakan salah satu dasar penting kehidupan berbangsa.</b></div><div class="elim-why">A menyatakan prinsip/posisi umum, bukan tindakan yang dilakukan.</div></div><div class="elim bad"><div class="elim-top"><b>B</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>B. Setiap warga berkewajiban menjaga persatuan dalam kehidupan berbangsa.</b></div><div class="elim-why">B menyatakan kewajiban normatif, tetapi belum memberikan contoh tindakan konkret.</div></div><div class="elim good"><div class="elim-top"><b>C</b><span>LOLOS</span><small>direct application</small></div><div class="elim-opt"><b>C. Warga dari beberapa kelompok menyepakati kegiatan bersama dan membagi tugas tanpa membedakan asal kelompok.</b></div><div class="elim-why">C menggambarkan perilaku nyata: bekerja bersama, membagi tugas, dan tidak membedakan asal kelompok.</div></div><div class="elim bad"><div class="elim-top"><b>D</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>D. Persatuan menjadi nilai yang harus dijaga oleh seluruh bangsa.</b></div><div class="elim-why">D masih berupa pernyataan normatif mengenai nilai persatuan.</div></div><div class="elim bad"><div class="elim-top"><b>E</b><span>GUGUR</span><small>principle/application</small></div><div class="elim-opt"><b>E. Masyarakat membutuhkan persatuan agar kehidupan nasional berjalan baik.</b></div><div class="elim-why">E menyatakan alasan/manfaat persatuan, bukan implementasinya.</div></div>
+<div class="trail"><b>Jejak keputusan:</b> A B C D E → Level Test: A/B/D/E berhenti pada prinsip/norma/manfaat; C menjadi tindakan nyata → C</div>
+<div class="answer"><strong>Jawaban paling tepat: C</strong><p>Opsi ini menang setelah target, actor, scope, relation, level, dan directness diperiksa.</p></div>
+</div></details></article>
+
+</section>
+<section><div class="eyebrow">5 · ELIMINASI VS RANKING</div><h2>“Salah” tidak sama dengan “kalah”</h2>
+<div class="grid2"><div class="card"><h3>Eliminasi</h3><p>Opsi gagal karena fakta, konsep, actor, scope, relation, atau level tidak cocok.</p></div>
+<div class="card"><h3>Ranking</h3><p>Opsi masih benar dan relevan, tetapi kalah karena kandidat lain lebih direct, lebih unik, atau lebih presisi terhadap target.</p></div></div>
+<div class="callout goodcall"><b>Kalimat kerja:</b> “Opsi ini benar secara umum, tetapi kalah karena ______.” Isi dengan alasan yang dapat diuji, bukan perasaan.</div>
+</section>
+
+<section><div class="eyebrow">6 · TRANSFER</div><h2>Satu stimulus dapat memuat banyak konsep; stem menentukan gravity center</h2>
+<table><thead><tr><th>Stem</th><th>Fokus</th><th>Jangan tertukar</th></tr></thead><tbody>
+<tr><td>Makna norma</td><td>Parafrasa isi norma</td><td>Dampak sosial</td></tr>
+<tr><td>Tujuan</td><td>Sasaran tindakan</td><td>Outcome lanjutan</td></tr>
+<tr><td>Implementasi</td><td>Tindakan konkret</td><td>Prinsip/hasil</td></tr>
+<tr><td>Dampak</td><td>Akibat</td><td>Proses</td></tr>
+<tr><td>Aktor/kewenangan</td><td>Subjek + fungsi</td><td>Manfaat</td></tr>
+<tr><td>Nilai</td><td>Core value</td><td>Emosi/efek samping</td></tr>
+</tbody></table>
+</section>
+
+<section id="protocol"><div class="eyebrow">7 · MASTER DECISION PROTOCOL</div><h2>Protokol yang dibawa ke soal berikutnya</h2>
+<div class="proto"><div class="pn">1</div><div><b>Baca stem sebelum opsi.</b> Tandai kata operasional: makna, tujuan, implementasi, dampak, kecuali, aktor, kewenangan, paling tepat.</div></div>
+<div class="proto"><div class="pn">2</div><div><b>Lock target.</b> Tulis satu kalimat: “Soal ini meminta ____.”</div></div>
+<div class="proto"><div class="pn">3</div><div><b>Lock facts.</b> Ambil fakta yang menjadi bukti; singkirkan noise.</div></div>
+<div class="proto"><div class="pn">4</div><div><b>Lock actor + scope.</b> Siapa melakukan apa, pada level mana, kepada siapa?</div></div>
+<div class="proto"><div class="pn">5</div><div><b>Lock relation + level.</b> Definisi, makna, tujuan, sebab, akibat, proses, hasil, prinsip, implementasi?</div></div>
+<div class="proto"><div class="pn">6</div><div><b>Eliminasi.</b> Beri alasan spesifik untuk setiap opsi yang gagal.</div></div>
+<div class="proto"><div class="pn">7</div><div><b>Ranking.</b> Bila dua atau lebih opsi bertahan, bandingkan directness dan uniqueness.</div></div>
+<div class="proto"><div class="pn">8</div><div><b>Verifikasi.</b> Pastikan jawaban dapat dibaca sebagai respons langsung terhadap stem tanpa lompatan tambahan.</div></div>
+<div class="callout warn"><b>Master rule:</b> menangkan opsi karena hubungan semantik paling presisi terhadap pertanyaan, bukan karena kalimatnya paling baik.</div>
+</section></main>
+<footer><div class="wrap grid2"><div><h3 style="color:#fff">Modul 17 — Strategi Diskriminasi Jawaban TWK</h3>
+<p>Laboratorium reasoning yang menekankan actor, scope, relation, level, directness, elimination, dan ranking. Contoh dibuat sebagai latihan; pola konstruksinya mengikuti analisis corpus.</p></div>
+<div class="src"><p><b>Rujukan:</b> pola soal TWK dan materi Ultimate TWK Knowledge System.</p>
+<p><a href="https://jdih.dpr.go.id/setjen/detail-dokumen/tipe/uu/id/1756" target="_blank" rel="noopener">JDIH Setjen DPR RI — UUD NRI Tahun 1945</a></p>
+<p><a href="https://www.mkri.id/public/content/infoumum/naskahkomprehensif/pdf/Naskah%20Komprehensif%20Perubahan%20UUD%201945%20BUKU%20VI.pdf" target="_blank" rel="noopener">Mahkamah Konstitusi — Naskah Komprehensif Perubahan UUD 1945</a></p></div></div></footer>
+<script>(()=>{const b=document.getElementById('bar');const u=()=>{const h=document.documentElement.scrollHeight-innerHeight;b.style.width=(h?scrollY/h*100:0)+'%'};addEventListener('scroll',u,{passive:true});u()})();</script>
+
+<nav class="cpns-modnav" aria-label="Navigasi modul">
+  <a class="cpns-navbtn" href="16-berbagai-bentuk-pembentukan-soal-twk.html">← Modul 16</a>
+  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m17" type="button">Tandai selesai</button>
+  <a class="cpns-navbtn" href="18-integrasi-semua-konsep-dan-reasoning-twk.html">Modul 18 →</a>
+</nav>
+
+<script>
+(function(){
+  var bar=document.getElementById('cpns-progress-bar');
+  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+  var done=document.getElementById('cpns-done');
+  if(done){var key=done.getAttribute('data-key');
+    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+    refresh();
+  }
+})();
+</script>
+
+</body></html>

@@ -1,524 +1,427 @@
-[
-  {
-    "id": 121,
-    "level": "Mahir",
-    "soal": "DIAGNOSIS : PENYAKIT = ... : ...",
-    "pilihan": [
-      "Autopsi : Jenazah",
-      "Investigasi : Kasus",
-      "Resep : Dokter",
-      "Gejala : Sakit",
-      "Vonis : Hakim"
-    ],
-    "kunci": "B",
-    "pola": "Proses identifikasi/penyelidikan dan objek yang diselidiki",
-    "pembahasan": "Diagnosis adalah proses identifikasi untuk menentukan penyakit. Investigasi adalah proses penyelidikan untuk mengungkap kasus. Keduanya adalah proses aktif pencarian kebenaran terhadap suatu objek masalah.",
-    "analisis_opsi": {
-      "A": "JEBAKAN HALUS. Autopsi adalah pemeriksaan POST-MORTEM (setelah kematian), bukan identifikasi awal untuk menentukan penyebab.",
-      "B": "Benar. Investigasi adalah proses penyelidikan kasus.",
-      "C": "JEBAKAN TERBALIK. Resep adalah DOKUMEN yang dikeluarkan dokter, bukan proses identifikasi.",
-      "D": "JEBAKAN GEJALA. Gejala adalah indikasi awal, bukan proses identifikasi.",
-      "E": "JEBAKAN HASIL. Vonis adalah hasil akhir, bukan proses penyelidikan."
+{
+  "nama": "Paket 5",
+  "deskripsi": "30 soal analogi",
+  "totalSoal": 30,
+  "soal": [
+    {
+      "id": "P5-Q01",
+      "pertanyaan": "KERETA : REL = KAPAL : ...",
+      "opsi": [
+        "A. Pelabuhan",
+        "B. Laut",
+        "C. Nahkoda",
+        "D. Mesin",
+        "E. Penumpang"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah sarana transportasi → jalur atau media tempat sarana tersebut bergerak. Kereta menggunakan rel, sedangkan kapal bergerak di laut.\n\n**Evaluasi opsi:**\n- A. Pelabuhan — Pelabuhan merupakan tempat kapal berhenti atau bersandar, bukan media perjalanan.\n- **B. Laut — (KUNCI)** — Benar. Kereta bergerak di atas rel; kapal bergerak di laut.\n- C. Nahkoda — Nahkoda adalah pengendali kapal.\n- D. Mesin — Mesin adalah komponen penggerak.\n- E. Penumpang — Penumpang adalah pengguna jasa.\n\nJadi, jawaban yang paling tepat adalah **B. LAUT**."
+    },
+    {
+      "id": "P5-Q02",
+      "pertanyaan": "GUNUNG : TINGGI = LAUT : ...",
+      "opsi": [
+        "A. Asin",
+        "B. Dalam",
+        "C. Luas",
+        "D. Biru",
+        "E. Tenang"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah objek geografis → karakteristik ukuran yang dominan.\n\n**Evaluasi opsi:**\n- A. Asin — Asin merupakan karakteristik rasa air laut.\n- B. Dalam — Dalam merupakan dimensi kedalaman.\n- **C. Luas — (KUNCI)** — Benar. Tinggi merupakan ukuran atau karakteristik utama gunung; luas merupakan ukuran bentang laut.\n- D. Biru — Biru merupakan warna.\n- E. Tenang — Tenang merupakan kondisi permukaan.\n\nJadi, jawaban yang paling tepat adalah **C. LUAS**."
+    },
+    {
+      "id": "P5-Q03",
+      "pertanyaan": "SUSU : YOGURT = KEDELAI : ...",
+      "opsi": [
+        "A. Kecap",
+        "B. Tempe",
+        "C. Minyak",
+        "D. Santan",
+        "E. Tepung"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah bahan → produk yang dihasilkan melalui fermentasi. A tetap berkaitan kuat dengan kedelai, tetapi tempe menjadi pasangan paling paralel dengan yogurt sebagai hasil fermentasi bahan makanan.\n\n**Evaluasi opsi:**\n- A. Kecap — Kecap juga berasal dari kedelai yang difermentasi, sehingga sangat kompetitif, tetapi produknya berbeda proses dan karakter.\n- **B. Tempe — (KUNCI)** — Benar. Susu dapat difermentasi menjadi yogurt; kedelai dapat difermentasi menjadi tempe.\n- C. Minyak — Minyak merupakan produk dari bahan tertentu tetapi bukan hasil fermentasi kedelai yang paralel.\n- D. Santan — Santan berasal dari kelapa.\n- E. Tepung — Tepung merupakan hasil penggilingan.\n\nJadi, jawaban yang paling tepat adalah **B. TEMPE**."
+    },
+    {
+      "id": "P5-Q04",
+      "pertanyaan": "SABIT : PETANI = GUNTING : ...",
+      "opsi": [
+        "A. Pelukis",
+        "B. Penjahit",
+        "C. Peternak",
+        "D. Koki",
+        "E. Nelayan"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah alat kerja → profesi pengguna utamanya. Sabit berhubungan dengan pekerjaan petani, sedangkan gunting berhubungan dengan pekerjaan penjahit.\n\n**Evaluasi opsi:**\n- A. Pelukis — Pelukis lebih identik dengan kuas.\n- **B. Penjahit — (KUNCI)** — Benar. Sabit merupakan alat yang lazim digunakan petani; gunting merupakan alat yang lazim digunakan penjahit.\n- C. Peternak — Peternak bukan pengguna utama sabit dalam pola profesi-alat ini.\n- D. Koki — Koki menggunakan alat dapur.\n- E. Nelayan — Nelayan menggunakan alat tangkap atau peralatan melaut.\n\nJadi, jawaban yang paling tepat adalah **B. PENJAHIT**."
+    },
+    {
+      "id": "P5-Q05",
+      "pertanyaan": "PELABUHAN : KAPAL = BANDARA : ...",
+      "opsi": [
+        "A. Pesawat",
+        "B. Pilot",
+        "C. Landasan",
+        "D. Penumpang",
+        "E. Terminal"
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah fasilitas transportasi → sarana transportasi utama yang dilayani.\n\n**Evaluasi opsi:**\n- **A. Pesawat — (KUNCI)** — Benar. Pelabuhan merupakan fasilitas tempat kapal datang, berangkat, atau bersandar; bandara merupakan fasilitas tempat pesawat datang, berangkat, atau beroperasi.\n- B. Pilot — Pilot adalah pengendali pesawat.\n- C. Landasan — Landasan adalah bagian fasilitas bandara.\n- D. Penumpang — Penumpang adalah pengguna layanan.\n- E. Terminal — Terminal adalah bagian fasilitas.\n\nJadi, jawaban yang paling tepat adalah **A. PESAWAT**."
+    },
+    {
+      "id": "P5-Q06",
+      "pertanyaan": "KULIT : SEPATU = KAYU : ...",
+      "opsi": [
+        "A. Pohon",
+        "B. Meja",
+        "C. Papan",
+        "D. Serat",
+        "E. Hutan"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah bahan → produk jadi.\n\n**Evaluasi opsi:**\n- A. Pohon — Pohon merupakan sumber kayu.\n- **B. Meja — (KUNCI)** — Benar. Kulit dapat menjadi bahan sepatu; kayu dapat menjadi bahan meja.\n- C. Papan — Papan lebih dekat sebagai hasil pengolahan antara.\n- D. Serat — Serat merupakan unsur material.\n- E. Hutan — Hutan merupakan sumber bahan.\n\nJadi, jawaban yang paling tepat adalah **B. MEJA**."
+    },
+    {
+      "id": "P5-Q07",
+      "pertanyaan": "BUNYI : TELINGA = BAU : ...",
+      "opsi": [
+        "A. Lidah",
+        "B. Kulit",
+        "C. Hidung",
+        "D. Mata",
+        "E. Tangan"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah rangsang inderawi → organ penerima.\n\n**Evaluasi opsi:**\n- A. Lidah — Lidah menangkap rasa.\n- B. Kulit — Kulit terutama berfungsi sebagai indera peraba.\n- **C. Hidung — (KUNCI)** — Benar. Bunyi ditangkap telinga; bau ditangkap hidung.\n- D. Mata — Mata menangkap rangsang visual.\n- E. Tangan — Tangan bukan organ indera penciuman.\n\nJadi, jawaban yang paling tepat adalah **C. HIDUNG**."
+    },
+    {
+      "id": "P5-Q08",
+      "pertanyaan": "HELM : KEPALA = SEPATU : ...",
+      "opsi": [
+        "A. Tangan",
+        "B. Kaki",
+        "C. Lutut",
+        "D. Pinggang",
+        "E. Jari"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah benda yang dikenakan → bagian tubuh tempat benda digunakan.\n\n**Evaluasi opsi:**\n- A. Tangan — Tangan menggunakan sarung tangan.\n- **B. Kaki — (KUNCI)** — Benar. Helm dikenakan pada kepala; sepatu dikenakan pada kaki.\n- C. Lutut — Lutut bukan lokasi utama penggunaan sepatu.\n- D. Pinggang — Pinggang merupakan lokasi penggunaan sabuk.\n- E. Jari — Jari adalah bagian kaki, bukan keseluruhan bagian tubuh.\n\nJadi, jawaban yang paling tepat adalah **B. KAKI**."
+    },
+    {
+      "id": "P5-Q09",
+      "pertanyaan": "BUNGKUS : BARANG = AMPLOP : ...",
+      "opsi": [
+        "A. Kertas",
+        "B. Pena",
+        "C. Surat",
+        "D. Alamat",
+        "E. Prangko"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah wadah atau pembungkus → isi utama. A, D, dan E mewakili bahan atau atribut, bukan isi.\n\n**Evaluasi opsi:**\n- A. Kertas — Kertas merupakan bahan.\n- B. Pena — Pena dapat disimpan dalam bungkus, tetapi bukan isi khas amplop.\n- **C. Surat — (KUNCI)** — Benar. Bungkus menampung barang; amplop menampung surat.\n- D. Alamat — Alamat merupakan informasi yang ditulis pada amplop.\n- E. Prangko — Prangko ditempel pada amplop.\n\nJadi, jawaban yang paling tepat adalah **C. SURAT**."
+    },
+    {
+      "id": "P5-Q10",
+      "pertanyaan": "MADU : MANIS = CABAI : ...",
+      "opsi": [
+        "A. Asam",
+        "B. Pahit",
+        "C. Pedas",
+        "D. Merah",
+        "E. Segar"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah benda → karakteristik rasa utama.\n\n**Evaluasi opsi:**\n- A. Asam — Asam bukan rasa utama cabai.\n- B. Pahit — Pahit bukan rasa utama cabai.\n- **C. Pedas — (KUNCI)** — Benar. Madu manis; cabai pedas.\n- D. Merah — Merah adalah warna, bukan rasa.\n- E. Segar — Segar merupakan kesan umum.\n\nJadi, jawaban yang paling tepat adalah **C. PEDAS**."
+    },
+    {
+      "id": "P5-Q11",
+      "pertanyaan": "LIPAT : KERTAS = UKIR : ...",
+      "opsi": [
+        "A. Pahat",
+        "B. Kayu",
+        "C. Patung",
+        "D. Serpih",
+        "E. Batu"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah tindakan → material yang dikenai tindakan.\n\n**Evaluasi opsi:**\n- A. Pahat — Pahat merupakan alat mengukir.\n- **B. Kayu — (KUNCI)** — Benar. Melipat diterapkan pada kertas; mengukir diterapkan pada kayu.\n- C. Patung — Patung merupakan hasil yang dapat dibuat melalui ukiran.\n- D. Serpih — Serpih adalah sisa atau hasil.\n- E. Batu — Batu juga dapat diukir, tetapi kayu lebih prototipikal.\n\nJadi, jawaban yang paling tepat adalah **B. KAYU**."
+    },
+    {
+      "id": "P5-Q12",
+      "pertanyaan": "TEMPA : BESI = ANYAM : ...",
+      "opsi": [
+        "A. Tali",
+        "B. Rotan",
+        "C. Keranjang",
+        "D. Pola",
+        "E. Benang"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah proses kerajinan → bahan yang dikenai proses.\n\n**Evaluasi opsi:**\n- A. Tali — Tali dapat menjadi bahan dalam beberapa kerajinan, tetapi bukan objek anyaman paling khas.\n- **B. Rotan — (KUNCI)** — Benar. Menempa dilakukan pada besi; menganyam dilakukan pada bahan seperti rotan.\n- C. Keranjang — Keranjang merupakan produk hasil anyaman.\n- D. Pola — Pola adalah rancangan.\n- E. Benang — Benang dapat dianyam atau dirajut, tetapi tidak seprototipikal rotan.\n\nJadi, jawaban yang paling tepat adalah **B. ROTAN**."
+    },
+    {
+      "id": "P5-Q13",
+      "pertanyaan": "JAHIT : KAIN = LAS : ...",
+      "opsi": [
+        "A. Paku",
+        "B. Besi",
+        "C. Asap",
+        "D. Api",
+        "E. Baut"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah tindakan teknis → material objek.\n\n**Evaluasi opsi:**\n- A. Paku — Paku adalah komponen sambungan.\n- **B. Besi — (KUNCI)** — Benar. Menjahit diterapkan pada kain; mengelas diterapkan pada besi.\n- C. Asap — Asap adalah efek samping.\n- D. Api — Api adalah sumber panas pada beberapa teknik.\n- E. Baut — Baut adalah komponen penyambung.\n\nJadi, jawaban yang paling tepat adalah **B. BESI**."
+    },
+    {
+      "id": "P5-Q14",
+      "pertanyaan": "BENIH : TANAMAN = TELUR : ...",
+      "opsi": [
+        "A. Sarang",
+        "B. Burung",
+        "C. Cangkang",
+        "D. Ayam",
+        "E. Anak"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah bentuk awal perkembangan → organisme yang berkembang darinya.\n\n**Evaluasi opsi:**\n- A. Sarang — Sarang adalah tempat telur berada.\n- **B. Burung — (KUNCI)** — Benar. Benih merupakan tahap awal yang berkembang menjadi tanaman; telur merupakan tahap awal yang berkembang menjadi burung.\n- C. Cangkang — Cangkang adalah bagian telur.\n- D. Ayam — Ayam terlalu spesifik.\n- E. Anak — Anak menggambarkan keturunan, bukan kategori organisme sejajar.\n\nJadi, jawaban yang paling tepat adalah **B. BURUNG**."
+    },
+    {
+      "id": "P5-Q15",
+      "pertanyaan": "JADWAL : WAKTU = DENAH : ...",
+      "opsi": [
+        "A. Arah",
+        "B. Ruang",
+        "C. Warna",
+        "D. Ukuran",
+        "E. Bahan"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah media informasi → informasi yang disajikan. Jadwal menyajikan informasi waktu, sedangkan denah menyajikan informasi mengenai susunan atau posisi ruang.\n\n**Evaluasi opsi:**\n- A. Arah — Arah dapat ditunjukkan oleh denah tertentu, tetapi bukan informasi utama yang paling tepat.\n- **B. Ruang — (KUNCI)** — Benar. Jadwal memberikan informasi mengenai waktu; denah memberikan informasi mengenai susunan atau posisi ruang.\n- C. Warna — Warna hanya merupakan unsur visual.\n- D. Ukuran — Ukuran bukan informasi utama yang secara inheren diberikan denah.\n- E. Bahan — Bahan bukan informasi utama denah.\n\nJadi, jawaban yang paling tepat adalah **B. RUANG**."
+    },
+    {
+      "id": "P5-Q16",
+      "pertanyaan": "KAMERA : FOTO = PRINTER : ...",
+      "opsi": [
+        "A. Tinta",
+        "B. Kertas",
+        "C. Dokumen",
+        "D. Listrik",
+        "E. Mesin"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah perangkat → keluaran yang dihasilkan.\n\n**Evaluasi opsi:**\n- A. Tinta — Tinta merupakan bahan.\n- B. Kertas — Kertas merupakan media.\n- **C. Dokumen — (KUNCI)** — Benar. Kamera menghasilkan foto; printer menghasilkan dokumen cetak.\n- D. Listrik — Listrik merupakan sumber energi.\n- E. Mesin — Mesin merupakan bagian perangkat.\n\nJadi, jawaban yang paling tepat adalah **C. DOKUMEN**."
+    },
+    {
+      "id": "P5-Q17",
+      "pertanyaan": "PULPEN : TINTA = KOMPOR : ...",
+      "opsi": [
+        "A. Api",
+        "B. Gas",
+        "C. Panas",
+        "D. Asap",
+        "E. Besi"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah alat → bahan operasional yang dikonsumsi untuk menjalankan fungsi.\n\n**Evaluasi opsi:**\n- A. Api — Api merupakan hasil pembakaran.\n- **B. Gas — (KUNCI)** — Benar. Pulpen menggunakan tinta sebagai bahan habis pakai; kompor gas menggunakan gas sebagai bahan bakar.\n- C. Panas — Panas merupakan hasil energi.\n- D. Asap — Asap adalah hasil samping.\n- E. Besi — Besi adalah bahan konstruksi.\n\nJadi, jawaban yang paling tepat adalah **B. GAS**."
+    },
+    {
+      "id": "P5-Q18",
+      "pertanyaan": "KIPAS : ANGIN = LAMPU : ...",
+      "opsi": [
+        "A. Panas",
+        "B. Cahaya",
+        "C. Listrik",
+        "D. Kabel",
+        "E. Bohlam"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah perangkat → keluaran atau efek utama.\n\n**Evaluasi opsi:**\n- A. Panas — Panas bukan keluaran utama.\n- **B. Cahaya — (KUNCI)** — Benar. Kipas menghasilkan aliran angin; lampu menghasilkan cahaya.\n- C. Listrik — Listrik merupakan sumber energi.\n- D. Kabel — Kabel merupakan bagian.\n- E. Bohlam — Bohlam merupakan komponen.\n\nJadi, jawaban yang paling tepat adalah **B. CAHAYA**."
+    },
+    {
+      "id": "P5-Q19",
+      "pertanyaan": "LAPAR : MAKAN = HAUS : ...",
+      "opsi": [
+        "A. Tidur",
+        "B. Minum",
+        "C. Muntah",
+        "D. Duduk",
+        "E. Diam"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah keadaan kebutuhan fisiologis → tindakan pemenuhannya.\n\n**Evaluasi opsi:**\n- A. Tidur — Tidur merupakan respons terhadap lelah atau kebutuhan istirahat.\n- **B. Minum — (KUNCI)** — Benar. Lapar mendorong makan; haus mendorong minum.\n- C. Muntah — Muntah bukan respons normal terhadap rasa haus.\n- D. Duduk — Duduk bukan respons khusus.\n- E. Diam — Diam tidak berkaitan.\n\nJadi, jawaban yang paling tepat adalah **B. MINUM**."
+    },
+    {
+      "id": "P5-Q20",
+      "pertanyaan": "GAGAL : BERHASIL = RUGI : ...",
+      "opsi": [
+        "A. Habis",
+        "B. Besar",
+        "C. Untung",
+        "D. Laku",
+        "E. Modal"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah antonim langsung.\n\n**Evaluasi opsi:**\n- A. Habis — Habis menunjukkan keadaan berkurang atau tidak tersisa.\n- B. Besar — Besar merupakan ukuran.\n- **C. Untung — (KUNCI)** — Benar. Gagal berlawanan dengan berhasil; rugi berlawanan dengan untung.\n- D. Laku — Laku berkaitan dengan keberhasilan penjualan.\n- E. Modal — Modal adalah sumber dana.\n\nJadi, jawaban yang paling tepat adalah **C. UNTUNG**."
+    },
+    {
+      "id": "P5-Q21",
+      "pertanyaan": "SURUT : PASANG = REDUP : ...",
+      "opsi": [
+        "A. Padam",
+        "B. Terang",
+        "C. Gelap",
+        "D. Silau",
+        "E. Nyala"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah dua keadaan yang berlawanan pada satu dimensi.\n\n**Evaluasi opsi:**\n- A. Padam — Padam lebih ekstrem daripada redup.\n- **B. Terang — (KUNCI)** — Benar. Surut dan pasang merupakan keadaan berlawanan; redup dan terang juga berlawanan.\n- C. Gelap — Gelap merupakan keadaan kekurangan cahaya.\n- D. Silau — Silau menunjukkan cahaya sangat kuat.\n- E. Nyala — Nyala merupakan keadaan sumber cahaya.\n\nJadi, jawaban yang paling tepat adalah **B. TERANG**."
+    },
+    {
+      "id": "P5-Q22",
+      "pertanyaan": "SAPI : SUSU = AYAM : ...",
+      "opsi": [
+        "A. Daging",
+        "B. Bulu",
+        "C. Telur",
+        "D. Kandang",
+        "E. Anak"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah hewan → hasil yang diperoleh atau dihasilkan secara khas.\n\n**Evaluasi opsi:**\n- A. Daging — Daging merupakan produk dari sapi tetapi bukan hasil utama yang menjadi pasangan stimulus.\n- B. Bulu — Bulu merupakan bagian tubuh atau produk sampingan.\n- **C. Telur — (KUNCI)** — Benar. Sapi menghasilkan susu; ayam menghasilkan telur.\n- D. Kandang — Kandang adalah tempat pemeliharaan.\n- E. Anak — Anak merupakan keturunan.\n\nJadi, jawaban yang paling tepat adalah **C. TELUR**."
+    },
+    {
+      "id": "P5-Q23",
+      "pertanyaan": "BANK : UANG = KANDANG : ...",
+      "opsi": [
+        "A. Pakan",
+        "B. Hewan",
+        "C. Peternak",
+        "D. Rumput",
+        "E. Pagar"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah tempat atau wadah → isi utama yang ditampung.\n\n**Evaluasi opsi:**\n- A. Pakan — Pakan merupakan benda yang dapat disimpan atau diberikan di kandang.\n- **B. Hewan — (KUNCI)** — Benar. Bank merupakan tempat penyimpanan uang; kandang merupakan tempat penampungan hewan.\n- C. Peternak — Peternak adalah pengelola.\n- D. Rumput — Rumput adalah pakan atau lingkungan.\n- E. Pagar — Pagar adalah bagian atau pembatas.\n\nJadi, jawaban yang paling tepat adalah **B. HEWAN**."
+    },
+    {
+      "id": "P5-Q24",
+      "pertanyaan": "HAKIM : SENGKETA = MEDIATOR : ...",
+      "opsi": [
+        "A. Putusan",
+        "B. Konflik",
+        "C. Pihak",
+        "D. Sidang",
+        "E. Kesepakatan"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah peran atau profesi → persoalan yang menjadi objek penanganan.\n\n**Evaluasi opsi:**\n- A. Putusan — Putusan adalah keluaran hakim.\n- **B. Konflik — (KUNCI)** — Benar. Hakim menangani sengketa; mediator menangani konflik.\n- C. Pihak — Pihak adalah pihak yang terlibat.\n- D. Sidang — Sidang adalah forum kerja hakim.\n- E. Kesepakatan — Kesepakatan adalah hasil yang mungkin dicapai mediator.\n\nJadi, jawaban yang paling tepat adalah **B. KONFLIK**."
+    },
+    {
+      "id": "P5-Q25",
+      "pertanyaan": "RAK : BUKU = GARASI : ...",
+      "opsi": [
+        "A. Kunci",
+        "B. Mobil",
+        "C. Bensin",
+        "D. Montir",
+        "E. Jalan"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah tempat penyimpanan → objek utama yang ditempatkan di dalamnya.\n\n**Evaluasi opsi:**\n- A. Kunci — Kunci adalah alat akses.\n- **B. Mobil — (KUNCI)** — Benar. Rak merupakan tempat menyimpan buku; garasi merupakan tempat menyimpan atau melindungi mobil.\n- C. Bensin — Bensin adalah bahan bakar.\n- D. Montir — Montir adalah pelaku pekerjaan.\n- E. Jalan — Jalan merupakan lingkungan penggunaan.\n\nJadi, jawaban yang paling tepat adalah **B. MOBIL**."
+    },
+    {
+      "id": "P5-Q26",
+      "pertanyaan": "KOMPOR : MATANG = KULKAS : ...",
+      "opsi": [
+        "A. Dingin",
+        "B. Beku",
+        "C. Awet",
+        "D. Segar",
+        "E. Es"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah alat → perubahan atau kondisi yang menjadi tujuan utama penggunaannya terhadap bahan atau makanan.\n\n**Evaluasi opsi:**\n- A. Dingin — Dingin merupakan kondisi, bukan efek fungsional pada makanan yang setara dengan matang.\n- B. Beku — Beku terjadi pada sebagian makanan, bukan fungsi umum kulkas.\n- **C. Awet — (KUNCI)** — Benar. Kompor membuat makanan menjadi matang; kulkas membantu makanan tetap awet.\n- D. Segar — Segar merupakan kondisi yang dapat dipertahankan, tetapi tidak sepadan dengan perubahan keadaan matang.\n- E. Es — Es adalah benda atau hasil pendinginan.\n\nJadi, jawaban yang paling tepat adalah **C. AWET**."
+    },
+    {
+      "id": "P5-Q27",
+      "pertanyaan": "Dokter memeriksa pasien sebelum memberi obat. Hubungan kalimat tersebut sama dengan ...",
+      "opsi": [
+        "A. Teknisi memeriksa mesin sebelum melakukan perbaikan.",
+        "B. Kasir memeriksa barang sebelum menerima pembayaran.",
+        "C. Guru memeriksa buku sebelum mengajar di kelas.",
+        "D. Petugas memeriksa kartu sebelum membuka pintu.",
+        "E. Juru masak memeriksa bahan sebelum menghidangkan makanan."
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kalimat",
+      "pembahasan": "**Analisis hubungan:**\nStrukturnya adalah profesi → pemeriksaan objek kerja → tindakan profesional lanjutan.\n\n**Evaluasi opsi:**\n- **A. Teknisi memeriksa mesin sebelum melakukan perbaikan. — (KUNCI)** — Benar. Keduanya memiliki struktur profesi → pemeriksaan terhadap objek kerja → tindakan profesional lanjutan.\n- B. Kasir memeriksa barang sebelum menerima pembayaran. — Pembayaran merupakan transaksi, bukan tindakan profesional lanjutan.\n- C. Guru memeriksa buku sebelum mengajar di kelas. — Mengajar tidak merupakan penanganan langsung terhadap objek yang diperiksa.\n- D. Petugas memeriksa kartu sebelum membuka pintu. — Kontrol kartu adalah tindakan administratif.\n- E. Juru masak memeriksa bahan sebelum menghidangkan makanan. — Menghidangkan adalah tahap penyajian setelah pengolahan.\n\nJadi, jawaban yang paling tepat adalah **A. TEKNISI MEMERIKSA MESIN SEBELUM MELAKUKAN PERBAIKAN.**."
+    },
+    {
+      "id": "P5-Q28",
+      "pertanyaan": "Juri memilih pemenang berdasarkan nilai. Hubungan kalimat tersebut sama dengan ...",
+      "opsi": [
+        "A. Wasit menentukan pelanggaran berdasarkan aturan.",
+        "B. Kasir menetapkan harga berdasarkan jumlah.",
+        "C. Guru memberi nilai berdasarkan jawaban.",
+        "D. Hakim memberi putusan berdasarkan bukti.",
+        "E. Petugas memberi izin berdasarkan berkas."
+      ],
+      "jawaban": "D",
+      "tipe": "Analogi Kalimat",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah pihak penentu keputusan → keputusan substantif → dasar evaluasi yang relevan.\n\n**Evaluasi opsi:**\n- A. Wasit menentukan pelanggaran berdasarkan aturan. — Wasit menentukan pelanggaran berdasarkan aturan, tetapi objek keputusan berbeda.\n- B. Kasir menetapkan harga berdasarkan jumlah. — Kasir melakukan proses transaksi.\n- C. Guru memberi nilai berdasarkan jawaban. — Guru melakukan evaluasi untuk menghasilkan skor.\n- **D. Hakim memberi putusan berdasarkan bukti. — (KUNCI)** — Benar. Juri memilih pemenang berdasarkan nilai; hakim memberi putusan berdasarkan bukti.\n- E. Petugas memberi izin berdasarkan berkas. — Petugas membuat keputusan administratif.\n\nJadi, jawaban yang paling tepat adalah **D. HAKIM MEMBERI PUTUSAN BERDASARKAN BUKTI.**."
+    },
+    {
+      "id": "P5-Q29",
+      "pertanyaan": "Petani memisahkan gabah sebelum menggilingnya menjadi beras. Hubungan kalimat tersebut sama dengan ...",
+      "opsi": [
+        "A. Penjahit memotong kain sebelum menjahitnya menjadi baju.",
+        "B. Koki mencuci sayur sebelum menyajikannya menjadi makanan.",
+        "C. Pengrajin memilih kayu sebelum membentuknya menjadi meja.",
+        "D. Pedagang menimbang barang sebelum menjualnya menjadi keuntungan.",
+        "E. Teknisi memeriksa mesin sebelum memakai mesin untuk bekerja."
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kalimat",
+      "pembahasan": "**Analisis hubungan:**\nStrukturnya adalah pelaku pengolah → tindakan persiapan terhadap bahan → tindakan pengolahan → produk.\n\n**Evaluasi opsi:**\n- A. Penjahit memotong kain sebelum menjahitnya menjadi baju. — Memotong kain merupakan bagian dari pembentukan, bukan seleksi bahan.\n- B. Koki mencuci sayur sebelum menyajikannya menjadi makanan. — Mencuci sayur adalah pembersihan sebelum penyajian.\n- **C. Pengrajin memilih kayu sebelum membentuknya menjadi meja. — (KUNCI)** — Benar. Pengrajin memilih kayu sebelum membentuknya menjadi meja.\n- D. Pedagang menimbang barang sebelum menjualnya menjadi keuntungan. — Menjual merupakan transaksi ekonomi, bukan transformasi bahan.\n- E. Teknisi memeriksa mesin sebelum memakai mesin untuk bekerja. — Memakai mesin bukan transformasi bahan menjadi produk.\n\nJadi, jawaban yang paling tepat adalah **C. PENGRAJIN MEMILIH KAYU SEBELUM MEMBENTUKNYA MENJADI MEJA.**."
+    },
+    {
+      "id": "P5-Q30",
+      "pertanyaan": "Pengrajin menganyam rotan menjadi keranjang. Hubungan kalimat tersebut sama dengan ...",
+      "opsi": [
+        "A. Penjahit menjahit kain menjadi baju.",
+        "B. Petani menanam benih menjadi tanaman.",
+        "C. Koki memasak bahan menjadi makanan.",
+        "D. Montir memperbaiki mesin menjadi kendaraan.",
+        "E. Pencetak mencetak kertas menjadi tinta."
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kalimat",
+      "pembahasan": "**Analisis hubungan:**\nStruktur paling ketat adalah pelaku → teknik transformasi material → bahan → produk.\n\n**Evaluasi opsi:**\n- **A. Penjahit menjahit kain menjadi baju. — (KUNCI)** — Benar. Keduanya memiliki struktur pelaku → proses pengolahan → bahan → produk.\n- B. Petani menanam benih menjadi tanaman. — Menanam merupakan proses perkembangan, bukan manufaktur material.\n- C. Koki memasak bahan menjadi makanan. — Memasak juga transformasi bahan, tetapi berbeda domain dari kerajinan material.\n- D. Montir memperbaiki mesin menjadi kendaraan. — Memperbaiki mesin tidak menghasilkan kendaraan baru.\n- E. Pencetak mencetak kertas menjadi tinta. — Tinta bukan hasil dari kertas dalam proses pencetakan.\n\nJadi, jawaban yang paling tepat adalah **A. PENJAHIT MENJAHIT KAIN MENJADI BAJU.**."
     }
-  },
-  {
-    "id": 122,
-    "level": "Mahir",
-    "soal": "GEJALA : DIAGNOSIS = BUKTI : ...",
-    "pilihan": ["Sidang", "Vonis", "Pengadilan", "Hukum", "Saksi"],
-    "kunci": "B",
-    "pola": "Petunjuk awal dan kesimpulan/verifikasi akhir",
-    "pembahasan": "Gejala adalah petunjuk awal yang mengarah pada diagnosis. Bukti adalah petunjuk awal yang mengarah pada vonis. Keduanya adalah elemen pendukung yang menghasilkan kesimpulan formal.",
-    "analisis_opsi": {
-      "A": "JEBAKAN PROSES. Sidang adalah proses, bukan kesimpulan yang dihasilkan dari bukti.",
-      "B": "Benar. Bukti menghasilkan/mendukung vonis.",
-      "C": "JEBAKAN TEMPAT. Pengadilan adalah tempat, bukan hasil.",
-      "D": "Salah. Hukum adalah sistem, bukan hasil dari bukti.",
-      "E": "JEBAKAN ELEMEN. Saksi adalah sumber bukti, bukan hasil dari bukti."
-    }
-  },
-  {
-    "id": 123,
-    "level": "Mahir",
-    "soal": "RESEP : APOTEKER = VONIS : ...",
-    "pilihan": ["Jaksa", "Hakim", "Pengadilan", "Terdakwa", "Undang-undang"],
-    "kunci": "B",
-    "pola": "Dokumen keputusan formal dan profesi/otoritas yang mengeluarkannya",
-    "pembahasan": "Resep adalah dokumen resmi yang dikeluarkan oleh apoteker (berdasarkan resep dokter). Vonis adalah dokumen keputusan resmi yang dikeluarkan oleh hakim. Keduanya adalah produk formal dari otoritas spesifik.",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI. Jaksa mengeluarkan DAKWAAN, bukan vonis.",
-      "B": "Benar. Hakim mengeluarkan vonis.",
-      "C": "JEBAKAN TEMPAT. Pengadilan adalah tempat, bukan subjek yang mengeluarkan.",
-      "D": "Salah. Terdakwa adalah penerima vonis.",
-      "E": "Salah. Undang-undang adalah dasar hukum, bukan produk vonis."
-    }
-  },
-  {
-    "id": 124,
-    "level": "Mahir",
-    "soal": "KATALIS : REAKSI KIMIA = ENZIM : ...",
-    "pilihan": ["Pencernaan", "Metabolisme", "Fermentasi", "Respirasi", "Fotosintesis"],
-    "kunci": "B",
-    "pola": "Pemercepat proses dan sistem proses yang dipercepat",
-    "pembahasan": "Katalis adalah zat yang mempercepat reaksi kimia secara umum. Enzim adalah katalis biologis yang mempercepat metabolisme (keseluruhan proses biokimia dalam sel). Keduanya adalah pemercepat proses.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SPESIFIK. Pencernaan hanyalah SALAH SATU bagian metabolisme.",
-      "B": "Benar. Metabolisme adalah keseluruhan proses yang dipercepat enzim.",
-      "C": "JEBAKAN SPESIFIK. Fermentasi hanyalah salah satu jenis proses.",
-      "D": "JEBAKAN SPESIFIK. Respirasi hanyalah salah satu proses metabolisme.",
-      "E": "JEBAKAN SPESIFIK. Fotosintesis hanya terjadi pada tumbuhan."
-    }
-  },
-  {
-    "id": 125,
-    "level": "Mahir",
-    "soal": "HIPOTESIS : PENELITIAN = DAKWAAN : ...",
-    "pilihan": ["Vonis", "Sidang", "Hukuman", "Bukti", "Terdakwa"],
-    "kunci": "B",
-    "pola": "Dugaan/tuntutan awal dan proses pembuktiannya",
-    "pembahasan": "Hipotesis adalah dugaan awal yang harus diuji melalui penelitian. Dakwaan adalah tuntutan awal yang harus dibuktikan melalui sidang pengadilan. Keduanya adalah pernyataan awal yang memerlukan proses verifikasi.",
-    "analisis_opsi": {
-      "A": "JEBAKAN HASIL. Vonis adalah HASIL akhir sidang, bukan proses pembuktian.",
-      "B": "Benar. Sidang adalah proses pembuktian dakwaan.",
-      "C": "JEBAKAN HASIL. Hukuman adalah hasil akhir.",
-      "D": "JEBAKAN ELEMEN. Bukti adalah pendukung, bukan proses.",
-      "E": "JEBAKAN OBJEK. Terdakwa adalah subjek yang didakwa."
-    }
-  },
-  {
-    "id": 126,
-    "level": "Menengah",
-    "soal": "TERMOMETER : SUHU = BAROMETER : ...",
-    "pilihan": ["Kelembaban", "Tekanan udara", "Kecepatan angin", "Curah hujan", "Suhu"],
-    "kunci": "B",
-    "pola": "Alat ukur dan besaran spesifik yang diukur",
-    "pembahasan": "Termometer adalah alat untuk mengukur suhu. Barometer adalah alat untuk mengukur tekanan udara. Keduanya adalah instrumen pengukuran dengan besaran spesifik.",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI. Kelembaban diukur dengan HIGROMETER, bukan barometer.",
-      "B": "Benar. Barometer mengukur tekanan udara.",
-      "C": "JEBAKAN MATI. Kecepatan angin diukur dengan ANEMOMETER.",
-      "D": "JEBAKAN MATI. Curah hujan diukur dengan OMBROMETER.",
-      "E": "JEBAKAN ALAT. Suhu diukur dengan termometer, bukan barometer."
-    }
-  },
-  {
-    "id": 127,
-    "level": "Mahir",
-    "soal": "FOTOSINTESIS : KARBOHIDRAT = RESPIRASI : ...",
-    "pilihan": ["Oksigen", "Energi", "Karbon dioksida", "Air", "Glukosa"],
-    "kunci": "B",
-    "pola": "Proses biologi dan produk utama yang dihasilkan",
-    "pembahasan": "Fotosintesis adalah proses yang MENGHASILKAN karbohidrat. Respirasi seluler adalah proses yang MENGHASILKAN energi (ATP). Keduanya adalah proses metabolisme dan produk utamanya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN TERBALIK. Oksigen adalah INPUT fotosintesis, bukan produk respirasi.",
-      "B": "Benar. Respirasi menghasilkan energi (ATP).",
-      "C": "JEBAKAN PRODUK SAMPING. CO2 adalah produk samping respirasi, bukan produk utama yang diinginkan sel.",
-      "D": "Salah. Air adalah produk samping.",
-      "E": "JEBAKAN INPUT. Glukosa adalah INPUT respirasi, bukan produk."
-    }
-  },
-  {
-    "id": 128,
-    "level": "Mahir",
-    "soal": "MUTASI : VARIASI GENETIK = EROSI : ...",
-    "pilihan": ["Banjir", "Perubahan bentuk lahan", "Longsor", "Sedimentasi", "Abrasi"],
-    "kunci": "B",
-    "pola": "Proses alami dan dampak langsung pada objek",
-    "pembahasan": "Mutasi adalah proses yang menghasilkan variasi genetik pada DNA. Erosi adalah proses yang menghasilkan perubahan bentuk lahan pada permukaan bumi. Keduanya adalah proses dan dampak langsungnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SEKUNDER. Banjir adalah akibat TIDAK LANGSUNG dari erosi.",
-      "B": "Benar. Erosi secara langsung mengubah bentuk lahan.",
-      "C": "JEBAKAN SEKUNDER. Longsor adalah jenis erosi, bukan dampaknya.",
-      "D": "JEBAKAN PROSES LAIN. Sedimentasi adalah proses pengendapan, kebalikan erosi.",
-      "E": "JEBAKAN JENIS. Abrasi adalah jenis erosi oleh air laut."
-    }
-  },
-  {
-    "id": 129,
-    "level": "Menengah",
-    "soal": "STIMULUS : RESPON = RANGSANGAN : ...",
-    "pilihan": ["Indikator", "Reaksi", "Gejala", "Efek", "Sinyal"],
-    "kunci": "B",
-    "pola": "Sinonim kontekstual (stimulus = rangsangan, respon = reaksi)",
-    "pembahasan": "Stimulus bersinonim dengan rangsangan. Respon bersinonim dengan reaksi. Keduanya adalah pasangan sinonim dalam konteks biologi/psikologi.",
-    "analisis_opsi": {
-      "A": "JEBAKAN HALUS. Indikator adalah penanda, bukan respons.",
-      "B": "Benar. Reaksi adalah sinonim respon.",
-      "C": "JEBAKAN GEJALA. Gejala adalah manifestasi, bukan respons langsung.",
-      "D": "JEBAKAN HASIL. Efek adalah hasil akhir, bukan respons langsung.",
-      "E": "JEBAKAN INPUT. Sinyal mirip stimulus, bukan respon."
-    }
-  },
-  {
-    "id": 130,
-    "level": "Mahir",
-    "soal": "SIMBIOSIS : EKOSISTEM = KONTRAK : ...",
-    "pilihan": ["Bisnis", "Hukum", "Perusahaan", "Negara", "Masyarakat"],
-    "kunci": "B",
-    "pola": "Hubungan/kesepakatan dan sistem formal yang mengaturnya",
-    "pembahasan": "Simbiosis adalah hubungan antar organisme yang diatur oleh ekosistem. Kontrak adalah kesepakatan antar pihak yang diatur oleh sistem hukum. Keduanya adalah hubungan dan sistem pengaturnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN TERLALU UMUM. Bisnis adalah aktivitas, bukan sistem pengatur.",
-      "B": "Benar. Hukum adalah sistem yang mengatur kontrak.",
-      "C": "JEBAKAN ENTITAS. Perusahaan adalah subjek, bukan sistem pengatur.",
-      "D": "JEBAKAN TERLALU LUAS. Negara adalah entitas politik.",
-      "E": "JEBAKAN TERLALU UMUM. Masyarakat adalah kelompok sosial."
-    }
-  },
-  {
-    "id": 131,
-    "level": "Menengah",
-    "soal": "DRAFT : FINAL = SKETSA : ...",
-    "pilihan": ["Gambar", "Lukisan", "Kanvas", "Cat", "Pensil"],
-    "kunci": "B",
-    "pola": "Tahap awal perancangan dan hasil akhir karya",
-    "pembahasan": "Draft adalah rancangan awal yang akan disempurnakan menjadi versi final. Sketsa adalah rancangan awal yang akan disempurnakan menjadi lukisan. Keduanya adalah tahap awal dan hasil akhir.",
-    "analisis_opsi": {
-      "A": "JEBAKAN TERLALU UMUM. Gambar adalah hasil umum, sketsa bisa menjadi gambar tapi lukisan lebih spesifik sebagai karya seni.",
-      "B": "Benar. Lukisan adalah hasil akhir dari sketsa.",
-      "C": "JEBAKAN MEDIA. Kanvas adalah media, bukan hasil.",
-      "D": "Salah. Cat adalah bahan.",
-      "E": "Salah. Pensil adalah alat."
-    }
-  },
-  {
-    "id": 132,
-    "level": "Mahir",
-    "soal": "ANESTESI : RASA SAKIT = ANTIHISTAMIN : ...",
-    "pilihan": ["Inflamasi", "Alergi", "Demam", "Batuk", "Infeksi"],
-    "kunci": "B",
-    "pola": "Zat penghambat dan respons biologis yang dihambat",
-    "pembahasan": "Anestesi adalah zat yang menghambat rasa sakit. Antihistamin adalah zat yang menghambat reaksi alergi. Keduanya adalah zat dan respons yang diblokir.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SEKUNDER. Inflamasi bisa dihambat antihistamin tapi BUKAN target utama.",
-      "B": "Benar. Antihistamin secara spesifik menghambat alergi.",
-      "C": "JEBAKAN GEJALA. Demam bukan target antihistamin.",
-      "D": "JEBAKAN GEJALA. Batuk bukan target antihistamin.",
-      "E": "JEBAKAN PENYEBAB. Infeksi disebabkan bakteri/virus, bukan histamin."
-    }
-  },
-  {
-    "id": 133,
-    "level": "Mahir",
-    "soal": "KROMOSOM : DNA = NEURON : ...",
-    "pilihan": ["Otak", "Akson", "Sinapsis", "Sistem saraf", "Sel"],
-    "kunci": "B",
-    "pola": "Struktur biologis dan komponen utamanya",
-    "pembahasan": "Kromosom adalah struktur sel yang mengandung DNA sebagai komponen utamanya. Neuron adalah sel saraf yang memiliki akson sebagai komponen utamanya (penghantar impuls). Keduanya adalah struktur dan komponen esensialnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN ORGAN. Otak adalah organ yang tersusun dari neuron, bukan komponen neuron.",
-      "B": "Benar. Akson adalah komponen utama neuron.",
-      "C": "JEBAKAN PENGHUBUNG. Sinapsis adalah celah antar neuron.",
-      "D": "JEBAKAN SISTEM. Sistem saraf adalah sistem yang tersusun dari neuron.",
-      "E": "JEBAKAN KATEGORI. Sel adalah kategori neuron."
-    }
-  },
-  {
-    "id": 134,
-    "level": "Mahir",
-    "soal": "FASE PADAT : SUBLIMASI = FASE CAIR : ...",
-    "pilihan": ["Kondensasi", "Penguapan", "Pembekuan", "Pencairan", "Deposisi"],
-    "kunci": "B",
-    "pola": "Fase materi dan proses perubahan fase dari fase tersebut",
-    "pembahasan": "Sublimasi adalah perubahan dari fase PADAT langsung ke gas. Penguapan adalah perubahan dari fase CAIR ke gas. Keduanya adalah fase awal dan proses perubahan fasenya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN ARAH TERBALIK. Kondensasi adalah perubahan GAS ke CAIR.",
-      "B": "Benar. Penguapan adalah perubahan CAIR ke GAS.",
-      "C": "JEBAKAN ARAH TERBALIK. Pembekuan adalah perubahan CAIR ke PADAT.",
-      "D": "JEBAKAN ARAH TERBALIK. Pencairan adalah perubahan PADAT ke CAIR.",
-      "E": "JEBAKAN ARAH TERBALIK. Deposisi adalah perubahan GAS ke PADAT."
-    }
-  },
-  {
-    "id": 135,
-    "level": "Menengah",
-    "soal": "EKSPERIMEN : DATA = SURVEI : ...",
-    "pilihan": ["Sampel", "Kuesioner", "Informasi", "Statistik", "Penelitian"],
-    "kunci": "C",
-    "pola": "Metode pengumpulan dan output yang dihasilkan",
-    "pembahasan": "Eksperimen menghasilkan DATA sebagai output utamanya. Survei menghasilkan INFORMASI sebagai output utamanya. Keduanya adalah metode dan outputnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SUBJEK. Sampel adalah subjek survei, bukan output.",
-      "B": "JEBAKAN ALAT. Kuesioner adalah alat survei.",
-      "C": "Benar. Informasi adalah output survei.",
-      "D": "JEBAKAN PROSES. Statistik adalah pengolahan data.",
-      "E": "JEBAKAN KATEGORI. Penelitian adalah kategori umum."
-    }
-  },
-  {
-    "id": 136,
-    "level": "Mahir",
-    "soal": "VAKSIN : IMUNITAS = ANTIBIOTIK : ...",
-    "pilihan": ["Bakteri", "Infeksi", "Kekebalan", "Sembuh", "Obat"],
-    "kunci": "B",
-    "pola": "Zat medis dan efek protektif yang dihasilkan",
-    "pembahasan": "Vaksin menghasilkan IMUNITAS (kekebalan) sebagai efek protektif. Antibiotik menghasilkan kemampuan tubuh melawan INFEKSI sebagai efek protektif. Keduanya adalah zat dan efek protektifnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN TARGET. Bakteri adalah TARGET antibiotik, bukan efek protektif.",
-      "B": "Benar. Antibiotik melindungi tubuh dari infeksi.",
-      "C": "JEBAKAN SINONIM. Kekebalan mirip imunitas, tapi antibiotik tidak menghasilkan kekebalan.",
-      "D": "JEBAKAN HASIL AKHIR. Sembuh adalah hasil akhir, bukan efek protektif spesifik.",
-      "E": "Salah. Obat adalah kategori umum."
-    }
-  },
-  {
-    "id": 137,
-    "level": "Mahir",
-    "soal": "KODE ETIK : PROFESI = KONSTITUSI : ...",
-    "pilihan": ["Hukum", "Negara", "Rakyat", "Presiden", "Mahkamah Konstitusi"],
-    "kunci": "B",
-    "pola": "Aturan dasar tertinggi dan sistem/entitas yang diaturnya",
-    "pembahasan": "Kode etik adalah aturan dasar tertinggi bagi suatu profesi. Konstitusi adalah aturan dasar tertinggi bagi suatu negara. Keduanya adalah dokumen fundamental dan entitas yang diaturnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN TERLALU UMUM. Hukum adalah sistem, konstitusi adalah bagian darinya.",
-      "B": "Benar. Konstitusi mengatur negara.",
-      "C": "JEBAKAN SUBJEK. Rakyat adalah warga negara.",
-      "D": "JEBAKAN PEMIMPIN. Presiden adalah kepala negara.",
-      "E": "JEBAKAN PENJAGA. MK adalah lembaga pengawal konstitusi."
-    }
-  },
-  {
-    "id": 138,
-    "level": "Mahir",
-    "soal": "HORMON : KELENJAR = ENZIM : ...",
-    "pilihan": ["Lambung", "Sel", "Hati", "Pankreas", "Darah"],
-    "kunci": "B",
-    "pola": "Zat aktif biologis dan unit produksi terkecilnya",
-    "pembahasan": "Hormon diproduksi oleh KELENJAR (organ spesifik). Enzim diproduksi oleh SEL (unit terkecil). Keduanya adalah zat aktif dan unit yang memproduksinya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN ORGAN SPESIFIK. Lambung hanya memproduksi beberapa enzim.",
-      "B": "Benar. Enzim diproduksi oleh sel (semua sel hidup memproduksi enzim).",
-      "C": "JEBAKAN ORGAN SPESIFIK. Hati memproduksi beberapa enzim.",
-      "D": "JEBAKAN ORGAN SPESIFIK. Pankreas memproduksi beberapa enzim.",
-      "E": "JEBAKAN MEDIUM. Darah adalah medium pengangkut."
-    }
-  },
-  {
-    "id": 139,
-    "level": "Mahir",
-    "soal": "GELOMBANG : FREKUENSI = CAHAYA : ...",
-    "pilihan": ["Kecepatan", "Panjang gelombang", "Intensitas", "Warna", "Bayangan"],
-    "kunci": "B",
-    "pola": "Fenomena fisika dan parameter pengukurnya",
-    "pembahasan": "Frekuensi adalah parameter utama untuk mengukur/mendeskripsikan gelombang. Panjang gelombang adalah parameter utama untuk mendeskripsikan cahaya (selain frekuensi). Keduanya adalah fenomena dan parameter karakteristiknya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN KONSTAN. Kecepatan cahaya konstan di vakum, bukan parameter variabel.",
-      "B": "Benar. Panjang gelombang adalah parameter cahaya.",
-      "C": "JEBAKAN HALUS. Intensitas bisa parameter, tapi panjang gelombang lebih fundamental.",
-      "D": "JEBAKAN HASIL. Warna adalah hasil persepsi panjang gelombang.",
-      "E": "Salah. Bayangan adalah efek."
-    }
-  },
-  {
-    "id": 140,
-    "level": "Menengah",
-    "soal": "EMBRI0 : JANIN = BERUDU : ...",
-    "pilihan": ["Telur", "Katak", "Katak muda", "Dewasa", "Amfibi"],
-    "kunci": "C",
-    "pola": "Tahap perkembangan dan tahap selanjutnya yang lebih spesifik",
-    "pembahasan": "Embrio berkembang menjadi janin (tahap selanjutnya dalam rahim). Berudu berkembang menjadi katak muda (tahap selanjutnya dengan kaki mulai tumbuh). Keduanya adalah tahap awal dan tahap transisi selanjutnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN ARAH TERBALIK. Telur adalah tahap SEBELUM berudu.",
-      "B": "JEBAKAN TERLALU JAUH. Katak adalah tahap akhir, bukan tahap transisi.",
-      "C": "Benar. Katak muda adalah tahap transisi berudu.",
-      "D": "JEBAKAN TERLALU JAUH. Dewasa terlalu umum.",
-      "E": "Salah. Amfibi adalah kategori."
-    }
-  },
-  {
-    "id": 141,
-    "level": "Mahir",
-    "soal": "STERIL : BAKTERI = KERING : ...",
-    "pilihan": ["Panas", "Air", "Api", "Matahari", "Angin"],
-    "kunci": "B",
-    "pola": "Kondisi dan ketiadaan sesuatu yang seharusnya ada",
-    "pembahasan": "Steril adalah kondisi TIDAK ADA bakteri. Kering adalah kondisi TIDAK ADA air. Keduanya adalah kondisi ketiadaan sesuatu yang biasanya ada.",
-    "analisis_opsi": {
-      "A": "JEBAKAN PENYEBAB. Panas adalah penyebab kering, bukan yang tidak ada.",
-      "B": "Benar. Kering berarti tidak ada air.",
-      "C": "JEBAKAN PENYEBAB. Api bisa menyebabkan kering.",
-      "D": "JEBAKAN PENYEBAB. Matahari bisa menyebabkan kering.",
-      "E": "JEBAKAN PENYEBAB. Angin bisa menyebabkan kering."
-    }
-  },
-  {
-    "id": 142,
-    "level": "Mahir",
-    "soal": "PRESKRIPSI : DOKTER = FATWA : ...",
-    "pilihan": ["Hakim", "Ulama", "Jaksa", "Presiden", "Mahkamah"],
-    "kunci": "B",
-    "pola": "Keputusan/anjuran resmi dan otoritas keagamaan/profesional yang mengeluarkannya",
-    "pembahasan": "Preskripsi adalah anjuran resmi dari dokter. Fatwa adalah anjuran/keputusan resmi dari ulama (otoritas keagamaan). Keduanya adalah produk otoritas dan pemberi otoritasnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI. Hakim mengeluarkan VONIS, bukan fatwa.",
-      "B": "Benar. Ulama mengeluarkan fatwa.",
-      "C": "JEBAKAN MATI. Jaksa mengeluarkan DAKWAAN.",
-      "D": "JEBAKAN POLITIK. Presiden mengeluarkan KEPUTUSAN PRESIDEN.",
-      "E": "JEBAKAN LEMBAGA. Mahkamah adalah lembaga, bukan individu."
-    }
-  },
-  {
-    "id": 143,
-    "level": "Mahir",
-    "soal": "SINTESIS : ANALISIS = PENYATUAN : ...",
-    "pilihan": ["Penguraian", "Pemisahan", "Penghancuran", "Peleburan", "Penggabungan"],
-    "kunci": "B",
-    "pola": "Proses dan lawannya (sinonim dari antonim)",
-    "pembahasan": "Sintesis (penggabungan) berlawanan dengan analisis (penguraian). Penyatuan berlawanan dengan pemisahan. Keduanya adalah pasangan antonim.",
-    "analisis_opsi": {
-      "A": "JEBAKAN HALUS. Penguraian mirip analisis tapi lebih ke kimia/fisika.",
-      "B": "Benar. Pemisahan adalah lawan penyatuan.",
-      "C": "JEBAKAN EKSTREM. Penghancuran terlalu destruktif.",
-      "D": "JEBAKAN SINONIM. Peleburan mirip penyatuan.",
-      "E": "JEBAKAN SINONIM. Penggabungan adalah sinonim penyatuan."
-    }
-  },
-  {
-    "id": 144,
-    "level": "Mahir",
-    "soal": "ADAPTASI : LINGKUNGAN = AKOMODASI : ...",
-    "pilihan": ["Mata", "Budaya", "Situasi", "Perubahan", "Kebutuhan"],
-    "kunci": "B",
-    "pola": "Penyesuaian dan sistem/konteks yang disesuaikan",
-    "pembahasan": "Adaptasi adalah penyesuaian terhadap lingkungan (biologis). Akomodasi adalah penyesuaian terhadap budaya/situasi sosial. Keduanya adalah proses penyesuaian dan konteksnya.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SPESIFIK. Akomodasi mata adalah adaptasi lensa, terlalu spesifik.",
-      "B": "Benar. Akomodasi budaya adalah penyesuaian sosial.",
-      "C": "JEBAKAN HALUS. Situasi terlalu umum.",
-      "D": "JEBAKAN ABSTRAK. Perubahan adalah hasil, bukan konteks.",
-      "E": "JEBAKAN ABSTRAK. Kebutuhan adalah pemicu, bukan konteks."
-    }
-  },
-  {
-    "id": 145,
-    "level": "Mahir",
-    "soal": "DOKTER : RESEP : APOTEK = ... : ... : ...",
-    "pilihan": [
-      "Guru : Ijazah : Sekolah",
-      "Hakim : Vonis : Pengadilan",
-      "Koki : Resep : Restoran",
-      "Polisi : Tilang : Kantor polisi",
-      "Arsitek : Denah : Kontraktor"
-    ],
-    "kunci": "B",
-    "pola": "Analogi 3 kata: Profesi : Dokumen keputusan : Tempat eksekusi dokumen",
-    "pembahasan": "Dokter mengeluarkan RESEP (dokumen keputusan) yang dieksekusi di APOTEK. Hakim mengeluarkan VONIS (dokumen keputusan) yang dieksekusi di PENGADILAN. Keduanya adalah profesional, dokumen keputusan, dan tempat eksekusi.",
-    "analisis_opsi": {
-      "A": "JEBAKAN HALUS. Ijazah bukan dokumen keputusan yang langsung dieksekusi.",
-      "B": "Benar. Hakim : Vonis : Pengadilan.",
-      "C": "JEBAKAN HALUS. Resep koki bukan dokumen keputusan formal.",
-      "D": "JEBAKAN HALUS. Tilang dieksekusi di tempat kejadian, bukan kantor polisi.",
-      "E": "JEBAKAN HALUS. Kontraktor bukan tempat eksekusi."
-    }
-  },
-  {
-    "id": 146,
-    "level": "Mahir",
-    "soal": "AIR : BEKU : ES = ... : ... : ...",
-    "pilihan": [
-      "Susu : Fermentasi : Keju",
-      "Uap : Kondensasi : Air",
-      "Kayu : Pembakaran : Abu",
-      "Besi : Pemanasan : Cair",
-      "Awan : Pendinginan : Hujan"
-    ],
-    "kunci": "B",
-    "pola": "Analogi 3 kata: Zat : Proses perubahan : Hasil perubahan",
-    "pembahasan": "AIR (zat) mengalami BEKU (proses) menjadi ES (hasil). UAP (zat) mengalami KONDENSASI (proses) menjadi AIR (hasil). Keduanya adalah zat, proses perubahan fase, dan hasil perubahan.",
-    "analisis_opsi": {
-      "A": "JEBAKAN KIMIA. Fermentasi adalah proses kimia/biologi, bukan perubahan fase fisika.",
-      "B": "Benar. Uap : Kondensasi : Air (perubahan fase fisika).",
-      "C": "JEBAKAN KIMIA. Pembakaran adalah reaksi kimia.",
-      "D": "JEBAKAN ARAH. Pemanasan besi menghasilkan cair, tapi ini perubahan PADAT ke CAIR (kebalikan arah dari AIR:BEKU:ES).",
-      "E": "JEBAKAN METEOROLOGI. Awan bukan zat murni."
-    }
-  },
-  {
-    "id": 147,
-    "level": "Mahir",
-    "soal": "Resep dokter hanya dapat ditebus di apotek yang memiliki izin resmi. Hubungan objek yang setara dengan kalimat di atas adalah...",
-    "pilihan": [
-      "KTP hanya dapat dibuat di kantor kelurahan",
-      "Ijazah hanya dapat dikeluarkan oleh lembaga pendidikan yang terakreditasi",
-      "SIM hanya dapat diperoleh di kantor polisi",
-      "Paspor hanya dapat dibuat di kantor imigrasi",
-      "Sertifikat tanah hanya dapat diterbitkan oleh BPN"
-    ],
-    "kunci": "B",
-    "pola": "Analogi kalimat: Dokumen : Tempat : Syarat legalitas ganda",
-    "pembahasan": "Resep dokter hanya dapat ditebus di apotek yang memiliki izin resmi (syarat legalitas ganda: dokumen dari dokter + tempat berizin). Ijazah hanya dapat dikeluarkan oleh lembaga pendidikan yang terakreditasi (syarat legalitas ganda: proses pendidikan + lembaga terakreditasi).",
-    "analisis_opsi": {
-      "A": "JEBAKAN HALUS. KTP hanya memerlukan satu syarat (tempat pembuatan), tidak ada syarat legalitas ganda.",
-      "B": "Benar. Ijazah memerlukan lembaga terakreditasi (syarat ganda).",
-      "C": "JEBAKAN HALUS. SIM hanya memerlukan satu tempat.",
-      "D": "JEBAKAN HALUS. Paspor hanya memerlukan satu tempat.",
-      "E": "JEBAKAN HALUS. Sertifikat tanah hanya memerlukan satu lembaga."
-    }
-  },
-  {
-    "id": 148,
-    "level": "Mahir",
-    "soal": "Enzim amilase mengubah amilum menjadi glukosa dalam proses pencernaan. Hubungan objek yang setara dengan kalimat di atas adalah...",
-    "pilihan": [
-      "Insulin menurunkan gula darah dalam proses metabolisme",
-      "Enzim lipase mengubah lemak menjadi asam lemak dalam proses pencernaan",
-      "Hormon adrenalin meningkatkan detak jantung dalam kondisi darurat",
-      "Antibodi mengikat antigen dalam proses imunitas",
-      "Klorofil menyerap cahaya dalam proses fotosintesis"
-    ],
-    "kunci": "B",
-    "pola": "Analogi kalimat: Enzim : Substrat : Produk : Konteks proses",
-    "pembahasan": "Enzim amilase (enzim spesifik) mengubah amilum (substrat) menjadi glukosa (produk) dalam pencernaan (konteks). Enzim lipase (enzim spesifik) mengubah lemak (substrat) menjadi asam lemak (produk) dalam pencernaan (konteks).",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI. Insulin adalah HORMON, bukan enzim.",
-      "B": "Benar. Enzim lipase : Lemak : Asam lemak : Pencernaan.",
-      "C": "JEBAKAN MATI. Adrenalin adalah HORMON.",
-      "D": "JEBAKAN PROTEIN. Antibodi adalah protein imun, bukan enzim pencernaan.",
-      "E": "JEBAKAN PIGMEN. Klorofil adalah pigmen, bukan enzim."
-    }
-  },
-  {
-    "id": 149,
-    "level": "Mahir",
-    "soal": "Sidang paripurna menghasilkan keputusan yang mengikat seluruh anggota dewan. Hubungan objek yang setara dengan kalimat di atas adalah...",
-    "pilihan": [
-      "Rapat kerja menghasilkan laporan yang disampaikan kepada pimpinan",
-      "Musyawarah nasional menghasilkan ketetapan yang mengikat seluruh kader",
-      "Diskusi panel menghasilkan rekomendasi yang disampaikan kepada pemerintah",
-      "Seminar menghasilkan sertifikat yang diberikan kepada peserta",
-      "Lokakarya menghasilkan draf yang akan dibahas kemudian"
-    ],
-    "kunci": "B",
-    "pola": "Analogi kalimat: Forum : Hasil : Cakupan daya ikat",
-    "pembahasan": "Sidang paripurna (forum tertinggi) menghasilkan keputusan yang MENGIKAT SELURUH anggota dewan. Musyawarah nasional (forum tertinggi) menghasilkan ketetapan yang MENGIKAT SELURUH kader. Keduanya adalah forum tertinggi dan hasil yang mengikat seluruh anggota.",
-    "analisis_opsi": {
-      "A": "JEBAKAN TIDAK MENGIKAT. Laporan tidak mengikat seluruh anggota.",
-      "B": "Benar. Musyawarah nasional menghasilkan ketetapan yang mengikat seluruh kader.",
-      "C": "JEBAKAN TIDAK MENGIKAT. Rekomendasi tidak mengikat.",
-      "D": "JEBAKAN TIDAK MENGIKAT. Sertifikat tidak mengikat.",
-      "E": "JEBAKAN TIDAK FINAL. Draf belum final dan tidak mengikat."
-    }
-  },
-  {
-    "id": 150,
-    "level": "Mahir",
-    "soal": "Vaksin diberikan dalam dosis bertahap agar sistem imun membentuk antibodi secara optimal. Hubungan objek yang setara dengan kalimat di atas adalah...",
-    "pilihan": [
-      "Pupuk diberikan dalam jumlah banyak agar tanaman tumbuh cepat",
-      "Obat diberikan dalam dosis teratur agar kadar terapeutik dalam darah tercapai",
-      "Air diberikan dalam jumlah banyak agar tubuh terhidrasi",
-      "Suplemen diminum sekali sehari agar praktis",
-      "Antibiotik dihabiskan dalam satu kali minum agar efektif"
-    ],
-    "kunci": "B",
-    "pola": "Analogi kalimat: Intervensi : Metode pemberian : Tujuan biologis/farmakologis",
-    "pembahasan": "Vaksin (intervensi) diberikan dalam dosis BERTAHAP (metode) agar sistem imun membentuk antibodi OPTIMAL (tujuan). Obat (intervensi) diberikan dalam dosis TERATUR (metode) agar kadar terapeutik TERCAPAI (tujuan). Keduanya adalah intervensi medis dengan metode pemberian terkontrol dan tujuan spesifik.",
-    "analisis_opsi": {
-      "A": "JEBAKAN JUMLAH BANYAK. Jumlah banyak BUKAN dosis bertahap.",
-      "B": "Benar. Obat : Dosis teratur : Kadar terapeutik tercapai.",
-      "C": "JEBAKAN JUMLAH BANYAK. Jumlah banyak bukan dosis terkontrol.",
-      "D": "JEBAKAN SEKALI. Sekali sehari bukan bertahap.",
-      "E": "JEBAKAN SALAH MEDIS. Antibiotik harus dihabiskan tapi bukan sekali minum."
-    }
-  }
-]
+  ]
+}

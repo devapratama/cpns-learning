@@ -43,10 +43,10 @@
         "Buka materi " + (cat.fullName || cat.name)
       );
       card.innerHTML = [
-        '<span class="card-icon" style="background:' +
-          (cat.color || "#4f6d8c") + '">' + (cat.icon || "•") + "</span>",
-        "<h3 class=\"card-title\">" + escapeHtml(cat.name) + " — " +
-          escapeHtml(cat.fullName || "") + "</h3>",
+        '<span class="card-icon">' + escapeHtml(cat.icon || "•") + "</span>",
+        "<h3 class=\"card-title\">" + escapeHtml(cat.name) +
+          '<span class="card-title-aux">' + escapeHtml(cat.fullName || "") +
+          "</span></h3>",
         '<p class="card-desc">' + escapeHtml(cat.short || "") + "</p>",
         '<span class="card-link">Mulai belajar →</span>',
       ].join("");

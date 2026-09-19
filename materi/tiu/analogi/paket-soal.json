@@ -1,0 +1,3027 @@
+{
+  "paket_1": {
+    "nama_paket": "Paket 1",
+    "soal": [
+      {
+        "id": "P1-Q01",
+        "soal": "MENDUNG : HUJAN = ASAP : ...",
+        "opsi": {
+          "A": "Panas",
+          "B": "Api",
+          "C": "Kebakaran",
+          "D": "Abu",
+          "E": "Asap"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Panas merupakan kondisi yang dapat menyertai kebakaran, tetapi bukan peristiwa yang ditandai secara langsung oleh asap.",
+          "B": "Api merupakan unsur atau sumber pembentuk asap, sehingga arah hubungannya berbeda dari mendung sebagai tanda yang mengindikasikan hujan.",
+          "C": "Benar. Mendung menjadi tanda yang mengindikasikan kemungkinan hujan; asap merupakan tanda yang mengindikasikan adanya kebakaran.",
+          "D": "Abu merupakan salah satu hasil pembakaran, bukan peristiwa yang diindikasikan oleh asap.",
+          "E": "Asap tidak dapat menjadi jawaban karena hanya mengulang kata pada soal dan tidak membentuk hubungan baru."
+        },
+        "penjelasan_utama": "Hubungan yang dicari bukan sekadar hubungan sebab-akibat, melainkan hubungan tanda atau indikator terhadap peristiwa yang mungkin ditunjukkannya. Mendung bukan penyebab langsung hujan dalam konstruksi soal, tetapi merupakan tanda bahwa hujan berpotensi terjadi. Dengan struktur yang sama, asap merupakan tanda yang mengindikasikan adanya kebakaran. Opsi B sangat dekat secara semantik karena api memang berkaitan erat dengan asap, tetapi hubungan itu lebih tepat sebagai sumber atau pemicu terhadap hasil, bukan indikator terhadap peristiwa. Cara menerapkan pola ini pada soal lain adalah tanyakan apakah kata pertama merupakan kondisi yang memberi petunjuk terhadap kejadian pada kata kedua, atau justru merupakan penyebab, bagian, atau hasil dari kejadian tersebut."
+      },
+      {
+        "id": "P1-Q02",
+        "soal": "RAPI : BERANTAKAN = RAMAH : ...",
+        "opsi": {
+          "A": "Sopan",
+          "B": "Dingin",
+          "C": "Keras",
+          "D": "Kasar",
+          "E": "Santun"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Sopan berhubungan positif dengan ramah dan bukan lawan makna.",
+          "B": "Dingin kadang dapat berlawanan secara pragmatis dengan ramah, tetapi bukan antonim yang paling tepat.",
+          "C": "Keras berkaitan dengan sifat atau cara bertindak, tetapi bukan lawan makna langsung dari ramah.",
+          "D": "Benar. Rapi berlawanan makna dengan berantakan, sebagaimana ramah berlawanan makna dengan kasar.",
+          "E": "Santun memiliki arah makna yang sama dengan ramah, bukan berlawanan."
+        },
+        "penjelasan_utama": "Relasinya adalah antonim langsung. Rapi dan berantakan berada pada dua keadaan yang berlawanan. Pada pasangan kedua, ramah berlawanan secara leksikal dengan kasar. Distraktor B sengaja dibuat kompetitif karena sikap dingin dapat terasa tidak ramah dalam konteks tertentu, tetapi itu merupakan oposisi kontekstual, bukan pasangan antonim yang sejelas ramah-kasar. Dalam analogi, perbedaan antara antonim leksikal dan lawan sifat secara kontekstual penting untuk diperhatikan."
+      },
+      {
+        "id": "P1-Q03",
+        "soal": "SUTRA : KAIN = GETAH : ...",
+        "opsi": {
+          "A": "Daun",
+          "B": "Pohon",
+          "C": "Karet",
+          "D": "Serat",
+          "E": "Batang"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Daun merupakan bagian tumbuhan dan bukan hasil utama pengolahan getah.",
+          "B": "Pohon merupakan sumber tempat getah diperoleh, bukan produk hasil pengolahannya.",
+          "C": "Benar. Sutra dapat diolah menjadi kain, sedangkan getah karet dapat diolah menjadi karet.",
+          "D": "Serat berkaitan dengan bahan tertentu, tetapi bukan hasil yang paling tepat dari pengolahan getah dalam pasangan ini.",
+          "E": "Batang merupakan bagian tumbuhan, bukan produk hasil pengolahan getah."
+        },
+        "penjelasan_utama": "Hubungan dasarnya adalah bahan baku atau bahan awal yang diproses menjadi produk. Sutra merupakan bahan yang dapat dijadikan kain. Dengan pola yang sama, getah merupakan bahan awal yang dapat diolah menjadi karet. Distraktor B hanya menggambarkan sumber bahan, sedangkan A, D, dan E berada pada kategori bahan atau bagian yang terkait tetapi tidak memenuhi arah transformasi bahan menjadi hasil. Pada soal sejenis, tentukan dahulu apakah kata kedua merupakan sumber, bahan, proses, atau produk dari kata pertama."
+      },
+      {
+        "id": "P1-Q04",
+        "soal": "SUSU : KEJU = GANDUM : ...",
+        "opsi": {
+          "A": "Roti",
+          "B": "Tepung",
+          "C": "Mie",
+          "D": "Dedak",
+          "E": "Adonan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Roti merupakan produk lanjutan yang dapat dibuat dari tepung gandum; relasinya satu tahap lebih jauh.",
+          "B": "Benar. Susu merupakan bahan yang diolah menjadi keju, sedangkan gandum dapat diolah menjadi tepung.",
+          "C": "Mie dapat dibuat dari tepung, sehingga kembali merupakan hasil lanjutan, bukan hasil pengolahan utama yang setara.",
+          "D": "Dedak lebih erat dengan hasil penggilingan padi, bukan hasil analog dari gandum dalam pasangan ini.",
+          "E": "Adonan merupakan tahap antara sebelum menjadi produk akhir, bukan padanan paling tepat."
+        },
+        "penjelasan_utama": "Soal ini menguji ketepatan tahap transformasi. Susu menjadi keju adalah bahan menjadi produk olahan. Gandum menjadi tepung mempunyai tingkat transformasi yang sejajar. Roti dan mie memang berkaitan dengan gandum, tetapi hubungan yang dibangun sudah melewati tahap tepung. Ini membuat item lebih menuntut daripada sekadar mencari kata yang masih satu tema."
+      },
+      {
+        "id": "P1-Q05",
+        "soal": "PEWARNAAN : KAIN = PENYAMAKAN : ...",
+        "opsi": {
+          "A": "Kain",
+          "B": "Kayu",
+          "C": "Besi",
+          "D": "Kulit",
+          "E": "Kertas"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Pewarnaan memang dilakukan pada kain, tetapi tidak berkaitan dengan proses penyamakan.",
+          "B": "Kayu bukan bahan utama yang mengalami proses penyamakan.",
+          "C": "Besi tidak merupakan objek proses penyamakan.",
+          "D": "Benar. Penyamakan merupakan proses pengolahan kulit.",
+          "E": "Kertas tidak menjadi objek utama proses penyamakan."
+        },
+        "penjelasan_utama": "Hubungannya adalah proses yang diterapkan pada bahan tertentu. Pewarnaan diterapkan pada kain; penyamakan diterapkan pada kulit. Distraktor dibuat seluruhnya sebagai bahan yang mungkin muncul dalam proses lain agar peserta tidak cukup hanya mengenali kata kerja, tetapi harus menghubungkan proses dengan objek material yang tepat."
+      },
+      {
+        "id": "P1-Q06",
+        "soal": "PENGUAPAN : UAP = PEMBEKUAN : ...",
+        "opsi": {
+          "A": "Air",
+          "B": "Salju",
+          "C": "Es",
+          "D": "Dingin",
+          "E": "Kristal"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Air merupakan keadaan awal yang dapat mengalami pembekuan, bukan hasil prosesnya.",
+          "B": "Salju merupakan bentuk air beku tertentu, tetapi bukan padanan umum hasil pembekuan.",
+          "C": "Benar. Penguapan menghasilkan uap, sedangkan pembekuan menghasilkan es.",
+          "D": "Dingin merupakan kondisi, bukan hasil benda dari proses pembekuan.",
+          "E": "Kristal dapat terbentuk pada proses pembekuan, tetapi terlalu spesifik dibanding hasil langsung yang diharapkan."
+        },
+        "penjelasan_utama": "Kuncinya adalah proses menjadi hasil akhir. Penguapan mengubah cairan menjadi uap; pembekuan mengubah cairan menjadi es. Opsi A salah arah karena merupakan bahan awal, sedangkan D adalah kondisi. E menjadi distraktor yang cukup dekat karena pembekuan dapat menghasilkan struktur kristal, tetapi hubungan FR menekankan hasil transformasi yang paling langsung dan umum, sehingga es paling tepat."
+      },
+      {
+        "id": "P1-Q07",
+        "soal": "PERACIKAN : OBAT = PEMASAKAN : ...",
+        "opsi": {
+          "A": "Bahan",
+          "B": "Dapur",
+          "C": "Resep",
+          "D": "Masakan",
+          "E": "Kompor"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Bahan merupakan input dari proses peracikan atau memasak, bukan hasilnya.",
+          "B": "Dapur adalah tempat berlangsungnya kegiatan, bukan hasil kegiatan.",
+          "C": "Resep merupakan pedoman proses, bukan hasil.",
+          "D": "Benar. Peracikan menghasilkan obat, sedangkan pemasakanan menghasilkan masakan.",
+          "E": "Kompor merupakan alat yang digunakan dalam proses, bukan hasil."
+        },
+        "penjelasan_utama": "Relasinya adalah aktivitas atau proses → hasil. Peracikan merupakan tindakan yang menghasilkan obat, sedangkan pemasakanan menghasilkan masakan. Distraktor B dan E menargetkan hubungan tempat dan alat yang sering muncul dalam analogi FR, sehingga peserta perlu memastikan bahwa yang dicari adalah hasil kegiatan, bukan unsur pendukungnya."
+      },
+      {
+        "id": "P1-Q08",
+        "soal": "BENGKEL : MEMPERBAIKI = PABRIK : ...",
+        "opsi": {
+          "A": "Merakit",
+          "B": "Mengangkut",
+          "C": "Menjual",
+          "D": "Memproduksi",
+          "E": "Menyimpan"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Merakit merupakan salah satu kegiatan yang dapat dilakukan di pabrik, tetapi lebih sempit daripada fungsi umum yang diminta.",
+          "B": "Mengangkut merupakan aktivitas distribusi, bukan fungsi utama pabrik.",
+          "C": "Menjual lebih berkaitan dengan kegiatan perdagangan.",
+          "D": "Benar. Bengkel secara umum berfungsi memperbaiki, sedangkan pabrik secara umum berfungsi memproduksi.",
+          "E": "Menyimpan merupakan fungsi pendukung, bukan fungsi utama."
+        },
+        "penjelasan_utama": "Soal ini menguji tingkat generalitas fungsi. Memperbaiki adalah fungsi utama sebuah bengkel, sedangkan untuk pabrik fungsi analog yang paling setara tingkat cakupannya adalah memproduksi. Merakit tampak sangat dekat karena memang merupakan kegiatan pabrik, tetapi merakit hanya salah satu bentuk aktivitas produksi. Peserta perlu menyamakan level fungsi, bukan sekadar mencari tindakan yang mungkin dilakukan di tempat tersebut."
+      },
+      {
+        "id": "P1-Q09",
+        "soal": "PUSTAKAWAN : BUKU = ARSIPARIS : ...",
+        "opsi": {
+          "A": "Perpustakaan",
+          "B": "Dokumen",
+          "C": "Museum",
+          "D": "Pena",
+          "E": "Komputer"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Perpustakaan merupakan tempat kerja pustakawan, bukan objek utama yang ditangani.",
+          "B": "Benar. Pustakawan berkaitan langsung dengan buku, sedangkan arsiparis berkaitan langsung dengan dokumen atau arsip.",
+          "C": "Museum adalah tempat penyimpanan koleksi, bukan objek utama pekerjaan arsiparis.",
+          "D": "Pena adalah alat, bukan objek utama profesi.",
+          "E": "Komputer merupakan alat yang dapat digunakan dalam pekerjaan, bukan objek utama analogi."
+        },
+        "penjelasan_utama": "Hubungannya adalah profesi → objek utama yang dikelola. Pustakawan bekerja dengan buku; arsiparis bekerja dengan dokumen atau arsip. Distraktor mencampurkan tempat kerja dan alat kerja agar peserta tidak berhenti pada hubungan profesi → sesuatu yang berkaitan, tetapi memilih objek yang menjalankan fungsi inti profesinya."
+      },
+      {
+        "id": "P1-Q10",
+        "soal": "JURI : LOMBA = HAKIM : ...",
+        "opsi": {
+          "A": "Putusan",
+          "B": "Saksi",
+          "C": "Terdakwa",
+          "D": "Sidang",
+          "E": "Aturan"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Putusan merupakan salah satu keluaran atau hasil kerja hakim, bukan forum tempat hakim menjalankan perannya.",
+          "B": "Saksi merupakan pihak yang hadir dalam proses persidangan, bukan kegiatan atau forum yang dipimpin hakim.",
+          "C": "Terdakwa merupakan pihak dalam perkara, bukan kegiatan tempat hakim menjalankan fungsi.",
+          "D": "Benar. Juri menjalankan perannya dalam lomba, sedangkan hakim menjalankan perannya dalam sidang.",
+          "E": "Aturan merupakan pedoman yang digunakan dalam menjalankan tugas, bukan konteks kegiatan."
+        },
+        "penjelasan_utama": "Hubungan yang dipertahankan adalah peran → arena atau kegiatan tempat peran tersebut dijalankan. Juri berfungsi dalam lomba; hakim berfungsi dalam sidang. Opsi A sangat kompetitif karena putusan memang sangat erat dengan hakim, tetapi relasinya berubah menjadi profesi → produk atau hasil. Opsi C juga dekat secara konteks tetapi hanya menunjukkan salah satu pihak dalam sidang."
+      },
+      {
+        "id": "P1-Q11",
+        "soal": "CANGKUL : TANAH = JALA : ...",
+        "opsi": {
+          "A": "Air",
+          "B": "Ikan",
+          "C": "Perahu",
+          "D": "Nelayan",
+          "E": "Pantai"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Air merupakan media tempat jala digunakan, tetapi bukan objek yang ditangkap.",
+          "B": "Benar. Cangkul digunakan untuk mengolah tanah, sedangkan jala digunakan untuk menangkap ikan.",
+          "C": "Perahu adalah alat atau sarana yang dapat digunakan bersama jala, bukan objek utama jala.",
+          "D": "Nelayan adalah pengguna jala, sehingga arah relasinya berbeda.",
+          "E": "Pantai merupakan lokasi yang mungkin berkaitan, bukan objek penggunaan alat."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → objek yang dikerjakan atau diperoleh dengan alat tersebut. Cangkul bekerja pada tanah; jala digunakan untuk memperoleh ikan. Distraktor A, D, dan E sengaja mewakili media, pelaku, dan tempat sehingga peserta harus mengidentifikasi objek, bukan sekadar sesuatu yang berkaitan dengan alat."
+      },
+      {
+        "id": "P1-Q12",
+        "soal": "KOMPAS : ARAH = TERMOMETER : ...",
+        "opsi": {
+          "A": "Panas",
+          "B": "Dingin",
+          "C": "Udara",
+          "D": "Tekanan",
+          "E": "Suhu"
+        },
+        "kunci_jawaban": "E",
+        "penjelasan_opsi": {
+          "A": "Panas adalah kondisi, bukan parameter yang secara tepat menjadi objek ukur termometer.",
+          "B": "Dingin juga hanya keadaan, bukan nama besaran yang diukur.",
+          "C": "Udara dapat menjadi medium yang suhunya diukur, tetapi bukan besaran yang menjadi target pengukuran.",
+          "D": "Tekanan merupakan besaran yang diukur dengan instrumen lain seperti barometer.",
+          "E": "Benar. Kompas menentukan arah, sedangkan termometer mengukur suhu."
+        },
+        "penjelasan_utama": "Kata kedua menunjukkan informasi atau besaran yang diperoleh dari alat pada kata pertama. Kompas digunakan untuk menentukan arah; termometer digunakan untuk mengukur suhu. Distraktor A dan B dekat karena suhu sehari-hari dideskripsikan sebagai panas atau dingin, tetapi itu bukan nama besaran yang menjadi objek pengukuran."
+      },
+      {
+        "id": "P1-Q13",
+        "soal": "PROSESOR : KOMPUTER = MESIN : ...",
+        "opsi": {
+          "A": "Bengkel",
+          "B": "Mobil",
+          "C": "Bensin",
+          "D": "Roda",
+          "E": "Jalan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Bengkel merupakan tempat perawatan kendaraan, bukan keseluruhan sistem yang mengandung mesin.",
+          "B": "Benar. Prosesor merupakan komponen penting dalam komputer, sedangkan mesin merupakan komponen penting dalam mobil.",
+          "C": "Bensin merupakan bahan bakar mesin, bukan keseluruhan benda tempat mesin menjadi komponen.",
+          "D": "Roda juga merupakan komponen mobil, tetapi mesin tidak berfungsi sebagai roda dan relasi yang diuji adalah komponen → keseluruhan.",
+          "E": "Jalan merupakan lingkungan penggunaan mobil, bukan keseluruhan yang memiliki mesin sebagai komponennya."
+        },
+        "penjelasan_utama": "Relasi utamanya adalah komponen → keseluruhan sistem atau benda. Prosesor merupakan salah satu komponen utama komputer; mesin merupakan salah satu komponen utama mobil. Opsi D sangat kompetitif karena roda juga merupakan komponen mobil, tetapi yang dicari adalah keseluruhan yang memiliki mesin sebagai komponen, bukan komponen lain dari keseluruhan tersebut."
+      },
+      {
+        "id": "P1-Q14",
+        "soal": "TOMBOL : KEMEJA = GAGANG : ...",
+        "opsi": {
+          "A": "Rumah",
+          "B": "Kunci",
+          "C": "Jendela",
+          "D": "Pintu",
+          "E": "Dinding"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Rumah merupakan keseluruhan yang dapat memiliki pintu, tetapi gagang bukan bagian yang secara spesifik identik dengan seluruh rumah.",
+          "B": "Kunci digunakan bersama gagang pintu, tetapi bukan bagian yang menjadi tempat melekatnya gagang.",
+          "C": "Jendela dapat memiliki pegangan, tetapi gagang dalam pemakaian umum lebih langsung terkait dengan pintu pada konstruksi soal.",
+          "D": "Benar. Tombol merupakan bagian dari kemeja, sedangkan gagang merupakan bagian dari pintu.",
+          "E": "Dinding adalah bagian bangunan, bukan objek yang secara langsung memiliki gagang."
+        },
+        "penjelasan_utama": "Hubungan yang dipakai adalah bagian → keseluruhan. Tombol merupakan bagian kemeja; gagang merupakan bagian pintu. Opsi C perlu dipertimbangkan karena beberapa jendela memang memiliki gagang, tetapi pasangan tersebut kurang prototipikal dibanding gagang-pintu."
+      },
+      {
+        "id": "P1-Q15",
+        "soal": "ATAP : RUMAH = SAMPUL : ...",
+        "opsi": {
+          "A": "Halaman",
+          "B": "Rak",
+          "C": "Perpustakaan",
+          "D": "Kertas",
+          "E": "Buku"
+        },
+        "kunci_jawaban": "E",
+        "penjelasan_opsi": {
+          "A": "Halaman adalah bagian dari buku yang dilindungi oleh sampul, bukan keseluruhan objek.",
+          "B": "Rak adalah tempat buku disimpan, bukan keseluruhan yang memiliki sampul.",
+          "C": "Perpustakaan merupakan tempat buku berada, bukan objek yang memiliki sampul.",
+          "D": "Kertas dapat menjadi bahan sampul, tetapi bukan keseluruhan objeknya.",
+          "E": "Benar. Atap merupakan bagian pelindung rumah, sedangkan sampul merupakan bagian pelindung buku."
+        },
+        "penjelasan_utama": "Soal ini tidak sekadar menguji bagian-keseluruhan, tetapi fungsi bagian tersebut. Atap adalah bagian rumah yang berfungsi sebagai pelindung utama dari atas; sampul adalah bagian buku yang melindungi bagian dalam buku. Opsi D cukup kompetitif karena sampul dapat dibuat dari kertas, tetapi hubungan berubah menjadi bahan-produk."
+      },
+      {
+        "id": "P1-Q16",
+        "soal": "MAMALIA : LUMBA-LUMBA = REPTIL : ...",
+        "opsi": {
+          "A": "Katak",
+          "B": "Hiu",
+          "C": "Komodo",
+          "D": "Merpati",
+          "E": "Lebah"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Katak termasuk amfibi, bukan reptil.",
+          "B": "Hiu termasuk ikan.",
+          "C": "Benar. Lumba-lumba merupakan anggota kelompok mamalia, sedangkan komodo merupakan anggota kelompok reptil.",
+          "D": "Merpati termasuk burung.",
+          "E": "Lebah termasuk serangga."
+        },
+        "penjelasan_utama": "Relasinya adalah kategori → anggota kategori. Lumba-lumba merupakan mamalia; komodo merupakan reptil. Soal menguji klasifikasi, bukan habitat atau ciri permukaan."
+      },
+      {
+        "id": "P1-Q17",
+        "soal": "GAJAH : MAMALIA = BUAYA : ...",
+        "opsi": {
+          "A": "Amfibi",
+          "B": "Ikan",
+          "C": "Burung",
+          "D": "Reptil",
+          "E": "Serangga"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Amfibi bukan klasifikasi buaya.",
+          "B": "Ikan bukan kelompok buaya.",
+          "C": "Buaya bukan burung.",
+          "D": "Benar. Gajah termasuk mamalia, sedangkan buaya termasuk reptil.",
+          "E": "Serangga merupakan kelompok yang berbeda."
+        },
+        "penjelasan_utama": "Hubungannya adalah anggota → kategori. Gajah merupakan anggota kelompok mamalia, sedangkan buaya merupakan anggota kelompok reptil. Arah hubungan harus diperhatikan."
+      },
+      {
+        "id": "P1-Q18",
+        "soal": "HENDAK : INGIN = CEMAS : ...",
+        "opsi": {
+          "A": "Takut",
+          "B": "Sedih",
+          "C": "Ragu",
+          "D": "Marah",
+          "E": "Khawatir"
+        },
+        "kunci_jawaban": "E",
+        "penjelasan_opsi": {
+          "A": "Takut berkaitan dengan kecemasan, tetapi tidak selalu bersinonim penuh dengan cemas.",
+          "B": "Sedih adalah emosi berbeda.",
+          "C": "Ragu berkaitan dengan ketidakpastian, bukan sinonim utama cemas.",
+          "D": "Marah adalah emosi berbeda.",
+          "E": "Benar. Hendak dan ingin memiliki makna yang sangat dekat, sebagaimana cemas dan khawatir."
+        },
+        "penjelasan_utama": "Relasinya adalah sinonim atau kemiripan makna yang sangat dekat. Hendak dapat dipertukarkan dengan ingin dalam banyak konteks; demikian juga cemas dengan khawatir."
+      },
+      {
+        "id": "P1-Q19",
+        "soal": "PUNCAK : DASAR = AWAL : ...",
+        "opsi": {
+          "A": "Tengah",
+          "B": "Akhir",
+          "C": "Mula",
+          "D": "Tujuan",
+          "E": "Proses"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Tengah berada di antara dua titik ekstrem.",
+          "B": "Benar. Puncak dan dasar menandai dua ujung posisi, sebagaimana awal dan akhir menandai dua ujung urutan.",
+          "C": "Mula memiliki makna dekat dengan awal.",
+          "D": "Tujuan dapat menjadi hasil akhir, tetapi tidak selalu merupakan pasangan struktural langsung dari awal.",
+          "E": "Proses adalah rangkaian kejadian, bukan titik ekstrem."
+        },
+        "penjelasan_utama": "Relasinya bersifat struktural: puncak dan dasar adalah dua titik ekstrem dalam struktur vertikal; awal dan akhir adalah dua titik ekstrem dalam urutan temporal. Tujuan tampak dekat, tetapi tujuan merupakan sasaran, bukan sekadar ujung urutan."
+      },
+      {
+        "id": "P1-Q20",
+        "soal": "HANGAT : PANAS = BASAH : ...",
+        "opsi": {
+          "A": "Lembap",
+          "B": "Kering",
+          "C": "Licin",
+          "D": "Kuyup",
+          "E": "Dingin"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Lembap memiliki tingkat kebasahan yang lebih rendah.",
+          "B": "Kering merupakan lawan dari basah.",
+          "C": "Licin dapat menjadi akibat permukaan yang basah, tetapi bukan tingkat intensitas basah.",
+          "D": "Benar. Hangat menuju panas menunjukkan peningkatan intensitas, sebagaimana basah menuju kuyup.",
+          "E": "Dingin berada pada dimensi suhu yang berbeda."
+        },
+        "penjelasan_utama": "Hubungannya adalah peningkatan derajat atau intensitas sifat. Hangat lebih rendah daripada panas; basah lebih rendah daripada kuyup. Dalam pola jenjang, perhatikan arah kekuatan sifat."
+      },
+      {
+        "id": "P1-Q21",
+        "soal": "TELUR : ULAT : KEPOMPONG = BIJI : TUNAS : ...",
+        "opsi": {
+          "A": "Akar",
+          "B": "Batang",
+          "C": "Bunga",
+          "D": "Tanaman",
+          "E": "Daun"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Akar merupakan salah satu bagian tanaman, bukan tahap akhir pertumbuhan yang setara.",
+          "B": "Batang juga merupakan bagian tanaman, bukan keseluruhan tahap perkembangan.",
+          "C": "Bunga merupakan tahap atau bagian tertentu pada sebagian tumbuhan, tetapi bukan tujuan umum dari biji → tunas.",
+          "D": "Benar. Kedua rangkaian menunjukkan perkembangan bertahap menuju bentuk organisme yang lebih lanjut.",
+          "E": "Daun merupakan bagian tanaman, bukan keseluruhan tahap perkembangan."
+        },
+        "penjelasan_utama": "Yang diuji bukan sekadar tahap perkembangan, tetapi struktur urutan tiga tahap. Telur berkembang menjadi ulat lalu kepompong; biji berkembang menjadi tunas lalu tanaman. Distraktor lain adalah bagian tanaman, bukan tahap akhir pada posisi yang sama."
+      },
+      {
+        "id": "P1-Q22",
+        "soal": "PADI : BERAS : NASI = GANDUM : TEPUNG : ...",
+        "opsi": {
+          "A": "Mie",
+          "B": "Roti",
+          "C": "Adonan",
+          "D": "Biskuit",
+          "E": "Kue"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mie dapat dibuat dari tepung, tetapi merupakan salah satu cabang produk.",
+          "B": "Benar. Padi diolah menjadi beras lalu nasi; gandum diolah menjadi tepung lalu roti.",
+          "C": "Adonan merupakan tahap sebelum produk akhir.",
+          "D": "Biskuit juga dapat dibuat dari tepung, tetapi merupakan produk lebih spesifik.",
+          "E": "Kue juga dapat dibuat dari tepung, tetapi merupakan cabang produk lain."
+        },
+        "penjelasan_utama": "Strukturnya adalah bahan awal → hasil pengolahan pertama → makanan jadi yang lazim. Distraktor A, D, dan E benar secara asosiasi, tetapi tidak menjadi hasil paling prototipikal yang mempertahankan struktur pasangan."
+      },
+      {
+        "id": "P1-Q23",
+        "soal": "PANAS : BERKERINGAT = DINGIN : ...",
+        "opsi": {
+          "A": "Pucat",
+          "B": "Menggigil",
+          "C": "Demam",
+          "D": "Haus",
+          "E": "Lemas"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pucat dapat muncul pada berbagai keadaan.",
+          "B": "Benar. Panas dapat memicu berkeringat; dingin dapat memicu menggigil.",
+          "C": "Demam bukan respons normal terhadap udara dingin.",
+          "D": "Haus lebih lazim berkaitan dengan kehilangan cairan.",
+          "E": "Lemas terlalu umum."
+        },
+        "penjelasan_utama": "Hubungannya adalah kondisi fisik → respons tubuh yang khas. Panas dapat memicu keringat; dingin memicu menggigil sebagai respons pembentukan panas."
+      },
+      {
+        "id": "P1-Q24",
+        "soal": "KELAPARAN : LEMAS = DEHIDRASI : ...",
+        "opsi": {
+          "A": "Haus",
+          "B": "Lemas",
+          "C": "Mual",
+          "D": "Pusing",
+          "E": "Demam"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Haus sangat berkaitan dengan dehidrasi, tetapi pada pasangan pertama yang diuji adalah dampak fisik, bukan sensasi kebutuhan.",
+          "B": "Lemas dapat terjadi pada dehidrasi, tetapi terlalu umum.",
+          "C": "Mual dapat muncul pada banyak kondisi.",
+          "D": "Benar. Kelaparan dapat menyebabkan lemas, sedangkan dehidrasi dapat menyebabkan pusing.",
+          "E": "Demam bukan akibat langsung yang paling khas."
+        },
+        "penjelasan_utama": "Pasangan pertama menunjukkan kondisi kekurangan tertentu → dampak tubuh. Kelaparan dapat menyebabkan lemas; dehidrasi dapat memunculkan pusing. Haus merupakan sinyal kebutuhan, bukan dampak fisik yang paling paralel."
+      },
+      {
+        "id": "P1-Q25",
+        "soal": "PASAR : RAMAI = PERPUSTAKAAN : ...",
+        "opsi": {
+          "A": "Teratur",
+          "B": "Tenang",
+          "C": "Penuh",
+          "D": "Terang",
+          "E": "Mahal"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Teratur dapat menggambarkan perpustakaan, tetapi bukan karakteristik suasana yang paling paralel.",
+          "B": "Benar. Pasar secara tipikal ramai, sedangkan perpustakaan secara tipikal tenang.",
+          "C": "Penuh menggambarkan kapasitas, bukan suasana khas.",
+          "D": "Terang merupakan kondisi pencahayaan.",
+          "E": "Mahal berkaitan dengan harga."
+        },
+        "penjelasan_utama": "Relasinya adalah tempat → karakteristik suasana yang khas. Pasar identik dengan suasana ramai; perpustakaan cenderung tenang."
+      },
+      {
+        "id": "P1-Q26",
+        "soal": "KACAMATA : MATA = SARUNG TANGAN : ...",
+        "opsi": {
+          "A": "Kaki",
+          "B": "Kepala",
+          "C": "Tangan",
+          "D": "Bahu",
+          "E": "Pinggang"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Kaki merupakan bagian tubuh yang menggunakan alas kaki.",
+          "B": "Kepala merupakan bagian tubuh yang menjadi tempat benda seperti topi atau helm.",
+          "C": "Benar. Kacamata digunakan pada mata; sarung tangan digunakan pada tangan.",
+          "D": "Bahu bukan bagian tubuh yang menjadi tempat penggunaan sarung tangan.",
+          "E": "Pinggang merupakan lokasi penggunaan benda seperti sabuk."
+        },
+        "penjelasan_utama": "Relasinya adalah benda yang dikenakan → bagian tubuh tempat benda tersebut digunakan. Distraktor dipilih dari benda lain yang juga dikenakan pada bagian tubuh tertentu."
+      },
+      {
+        "id": "P1-Q27",
+        "soal": "NOVEL : PENULIS = PATUNG : ...",
+        "opsi": {
+          "A": "Pelukis",
+          "B": "Pemahat",
+          "C": "Editor",
+          "D": "Kurator",
+          "E": "Kolektor"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pelukis menghasilkan karya visual berupa lukisan, bukan patung.",
+          "B": "Benar. Novel merupakan karya yang dibuat penulis; patung merupakan karya yang dibuat pemahat.",
+          "C": "Editor mengolah atau menyunting naskah, bukan pencipta utama patung.",
+          "D": "Kurator mengelola atau menata koleksi.",
+          "E": "Kolektor mengumpulkan karya, bukan membuatnya."
+        },
+        "penjelasan_utama": "Hubungannya adalah karya → pembuatnya. Novel dibuat oleh penulis, sedangkan patung dibuat oleh pemahat. Relasi ini berbeda dari profesi → objek kerja karena yang ditekankan adalah asal atau pencipta produk."
+      },
+      {
+        "id": "P1-Q28",
+        "soal": "Sebuah sepeda memiliki pedal dan sadel. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Sebuah piano memiliki tuts dan pedal.",
+          "B": "Sebuah gitar memiliki pemain dan lagu.",
+          "C": "Sebuah rumah memiliki penghuni dan alamat.",
+          "D": "Sebuah kapal memiliki nahkoda dan pelabuhan.",
+          "E": "Sebuah mobil memiliki pengemudi dan jalan."
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Pedal dan sadel merupakan dua komponen sepeda; tuts dan pedal merupakan dua komponen piano.",
+          "B": "Pemain dan lagu bukan komponen fisik gitar.",
+          "C": "Penghuni dan alamat bukan komponen fisik rumah.",
+          "D": "Nahkoda dan pelabuhan bukan komponen fisik kapal.",
+          "E": "Pengemudi dan jalan bukan komponen fisik mobil."
+        },
+        "penjelasan_utama": "Hubungan kalimat sumber adalah keseluruhan benda → dua bagian atau komponen yang melekat pada benda tersebut. Jawaban A mempertahankan struktur tersebut."
+      },
+      {
+        "id": "P1-Q29",
+        "soal": "PALU : PAKU = OBENG : ...",
+        "opsi": {
+          "A": "Baut",
+          "B": "Sekrup",
+          "C": "Kayu",
+          "D": "Mur",
+          "E": "Bor"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Baut biasanya dikencangkan dengan kunci atau alat sejenis, bukan menjadi objek penggunaan utama obeng.",
+          "B": "Benar. Palu digunakan untuk memasang atau memukul paku; obeng digunakan untuk memasang atau memutar sekrup.",
+          "C": "Kayu merupakan material yang dapat menjadi tempat paku digunakan, tetapi bukan objek mekanis utama seperti paku.",
+          "D": "Mur biasanya diputar menggunakan kunci, bukan obeng.",
+          "E": "Bor merupakan alat lain, bukan objek penggunaan obeng."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → objek kerja yang digunakan bersama alat tersebut dalam pekerjaan mekanis. Palu digunakan terhadap paku; obeng digunakan terhadap sekrup. Jawaban tidak bergantung pada pengulangan frasa atau shortcut leksikal."
+      },
+      {
+        "id": "P1-Q30",
+        "soal": "Banjir menghambat distribusi barang. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Kemacetan memperlambat perjalanan.",
+          "B": "Hujan membasahi jalan.",
+          "C": "Angin menggoyangkan pohon.",
+          "D": "Gudang menyimpan barang.",
+          "E": "Petugas memeriksa kendaraan."
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Banjir menghambat distribusi barang; kemacetan memperlambat perjalanan. Keduanya merupakan kondisi yang mengganggu proses mobilitas.",
+          "B": "Hubungannya berupa kondisi → akibat fisik langsung, bukan hambatan terhadap suatu proses.",
+          "C": "Ini berupa sebab → efek fisik pada objek.",
+          "D": "Gudang melakukan fungsi penyimpanan.",
+          "E": "Petugas melakukan tindakan terhadap objek, bukan kondisi yang menghambat kegiatan."
+        },
+        "penjelasan_utama": "Hubungan sumber adalah gangguan atau hambatan operasional → proses yang terdampak. Banjir menghambat distribusi barang; kemacetan memperlambat perjalanan. A mempertahankan aspek bahwa kondisi eksternal menyebabkan proses utama menjadi lebih lambat atau terhambat."
+      }
+    ]
+  },
+  "paket_2": {
+    "nama_paket": "Paket 2",
+    "soal": [
+      {
+        "id": "P2-Q01",
+        "soal": "LUKA : NYERI = INFEKSI : ...",
+        "opsi": {
+          "A": "Pusing",
+          "B": "Demam",
+          "C": "Bengkak",
+          "D": "Lemas",
+          "E": "Gatal"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pusing dapat muncul pada banyak kondisi, tetapi bukan manifestasi yang paling khas untuk infeksi secara umum.",
+          "B": "Benar. Luka dapat menimbulkan nyeri sebagai manifestasi langsung; infeksi dapat menimbulkan demam sebagai respons tubuh.",
+          "C": "Bengkak lebih merupakan respons lokal yang sering muncul pada luka atau peradangan.",
+          "D": "Lemas terlalu umum dan dapat muncul pada berbagai keadaan.",
+          "E": "Gatal dapat muncul pada sebagian infeksi, tetapi tidak cukup umum."
+        },
+        "penjelasan_utama": "Relasinya adalah kondisi atau proses patologis → manifestasi tubuh yang relatif khas. Luka lazim memunculkan nyeri; infeksi secara umum dapat memicu demam. Distraktor lain tetap masuk akal sebagai gejala, tetapi tidak memiliki kekhasan yang sama."
+      },
+      {
+        "id": "P2-Q02",
+        "soal": "PERANG : PERDAMAIAN = KONFLIK : ...",
+        "opsi": {
+          "A": "Ketegangan",
+          "B": "Perselisihan",
+          "C": "Mediasi",
+          "D": "Pertengkaran",
+          "E": "Perpecahan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Ketegangan masih berada pada sisi masalah konflik.",
+          "B": "Perselisihan merupakan bentuk konflik.",
+          "C": "Benar. Perdamaian mengakhiri perang; mediasi merupakan upaya penyelesaian konflik.",
+          "D": "Pertengkaran merupakan salah satu bentuk konflik.",
+          "E": "Perpecahan merupakan kemungkinan akibat konflik."
+        },
+        "penjelasan_utama": "Hubungannya adalah keadaan negatif → penyelesaian. Distraktor B, D, dan E tetap berada dalam medan konflik, tetapi tidak berpindah ke sisi penyelesaian seperti C."
+      },
+      {
+        "id": "P2-Q03",
+        "soal": "BERBUNGA : BERBUAH = BERTELUR : ...",
+        "opsi": {
+          "A": "Mengeram",
+          "B": "Menetas",
+          "C": "Bertumbuh",
+          "D": "Berkembang",
+          "E": "Menyusui"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mengeram adalah tahap atau tindakan sebelum telur menetas.",
+          "B": "Benar. Berbunga dapat berlanjut menjadi berbuah; telur dapat berlanjut menjadi menetas.",
+          "C": "Bertumbuh terlalu umum.",
+          "D": "Berkembang terlalu umum.",
+          "E": "Menyusui berkaitan dengan tahap setelah kelahiran pada mamalia."
+        },
+        "penjelasan_utama": "Relasinya adalah satu tahap proses biologis → tahap berikutnya yang lebih maju. A menarik karena erat dengan telur, tetapi berada sebelum hasil yang diminta."
+      },
+      {
+        "id": "P2-Q04",
+        "soal": "ROTAN : KERANJANG = TANAH LIAT : ...",
+        "opsi": {
+          "A": "Semen",
+          "B": "Gerabah",
+          "C": "Tungku",
+          "D": "Tanah",
+          "E": "Bata"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Semen merupakan bahan bangunan lain.",
+          "B": "Benar. Rotan dapat diolah menjadi keranjang; tanah liat dapat dibentuk dan dibakar menjadi gerabah.",
+          "C": "Tungku merupakan alat atau tempat pembakaran.",
+          "D": "Tanah adalah bahan asal, bukan produk.",
+          "E": "Bata juga dapat dibuat dari tanah liat, tetapi hubungan produk kerajinan lebih paralel dengan keranjang."
+        },
+        "penjelasan_utama": "Hubungannya adalah bahan → produk. Bata merupakan distractor kuat karena benar secara faktual, tetapi gerabah mempertahankan struktur produk yang paling sebanding dengan keranjang."
+      },
+      {
+        "id": "P2-Q05",
+        "soal": "KONSULTASI : SARAN = MUSYAWARAH : ...",
+        "opsi": {
+          "A": "Pendapat",
+          "B": "Peserta",
+          "C": "Kesepakatan",
+          "D": "Perdebatan",
+          "E": "Persoalan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Pendapat merupakan bahan yang muncul selama proses.",
+          "B": "Peserta adalah pelaku proses.",
+          "C": "Benar. Konsultasi dapat menghasilkan saran; musyawarah dapat menghasilkan kesepakatan.",
+          "D": "Perdebatan dapat terjadi selama musyawarah, tetapi bukan hasil yang diharapkan.",
+          "E": "Persoalan merupakan objek yang dibahas."
+        },
+        "penjelasan_utama": "Strukturnya adalah aktivitas deliberatif → keluaran. Pendapat merupakan input atau isi pembahasan, sedangkan kesepakatan merupakan hasil."
+      },
+      {
+        "id": "P2-Q06",
+        "soal": "NAHKODA : KAPAL = MASINIS : ...",
+        "opsi": {
+          "A": "Rel",
+          "B": "Stasiun",
+          "C": "Gerbong",
+          "D": "Kereta",
+          "E": "Tiket"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Rel adalah infrastruktur.",
+          "B": "Stasiun adalah tempat kegiatan.",
+          "C": "Gerbong merupakan bagian kereta.",
+          "D": "Benar. Nahkoda mengendalikan kapal; masinis mengendalikan kereta.",
+          "E": "Tiket merupakan sarana perjalanan penumpang."
+        },
+        "penjelasan_utama": "Relasinya adalah profesi pengendali → kendaraan yang dikendalikan."
+      },
+      {
+        "id": "P2-Q07",
+        "soal": "PANGGUNG : BERAKTING = LABORATORIUM : ...",
+        "opsi": {
+          "A": "Mengamati",
+          "B": "Bereksperimen",
+          "C": "Menganalisis",
+          "D": "Meneliti",
+          "E": "Menguji"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mengamati adalah salah satu kegiatan laboratorium, tetapi bukan aktivitas paling khas.",
+          "B": "Benar. Panggung merupakan tempat kegiatan berakting; laboratorium merupakan tempat kegiatan bereksperimen.",
+          "C": "Menganalisis terlalu luas.",
+          "D": "Meneliti terlalu luas.",
+          "E": "Menguji terlalu spesifik pada salah satu jenis kegiatan."
+        },
+        "penjelasan_utama": "Hubungannya adalah tempat → aktivitas khas. B memiliki tingkat generalitas yang paling sebanding dengan berakting."
+      },
+      {
+        "id": "P2-Q08",
+        "soal": "LANTAI : GEDUNG = GELADAK : ...",
+        "opsi": {
+          "A": "Pelabuhan",
+          "B": "Kapal",
+          "C": "Laut",
+          "D": "Nahkoda",
+          "E": "Kabut"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pelabuhan merupakan tempat kapal berada.",
+          "B": "Benar. Lantai merupakan bagian gedung; geladak merupakan bagian kapal.",
+          "C": "Laut adalah lingkungan tempat kapal bergerak.",
+          "D": "Nahkoda adalah orang yang mengendalikan kapal.",
+          "E": "Kabut merupakan kondisi lingkungan."
+        },
+        "penjelasan_utama": "Relasinya adalah bagian → keseluruhan."
+      },
+      {
+        "id": "P2-Q09",
+        "soal": "REM : PENGHENTIAN = KLAKSON : ...",
+        "opsi": {
+          "A": "Kebisingan",
+          "B": "Peringatan",
+          "C": "Kecepatan",
+          "D": "Perjalanan",
+          "E": "Kendaraan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Kebisingan merupakan efek suara.",
+          "B": "Benar. Rem berfungsi menghasilkan penghentian atau perlambatan kendaraan; klakson berfungsi memberikan peringatan.",
+          "C": "Kecepatan adalah kondisi yang dikendalikan oleh rem.",
+          "D": "Perjalanan adalah konteks penggunaan kendaraan.",
+          "E": "Kendaraan adalah benda tempat alat digunakan."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat atau komponen → fungsi utama. A merupakan efek, bukan fungsi."
+      },
+      {
+        "id": "P2-Q10",
+        "soal": "ODOMETER : JARAK = SPEEDOMETER : ...",
+        "opsi": {
+          "A": "Waktu",
+          "B": "Bahan bakar",
+          "C": "Kecepatan",
+          "D": "Putaran",
+          "E": "Arah"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Waktu diukur oleh jam atau stopwatch.",
+          "B": "Bahan bakar berkaitan dengan indikator bahan bakar.",
+          "C": "Benar. Odometer menunjukkan jarak tempuh; speedometer menunjukkan kecepatan.",
+          "D": "Putaran mesin dapat diketahui melalui tachometer.",
+          "E": "Arah berkaitan dengan kompas atau sistem navigasi."
+        },
+        "penjelasan_utama": "Relasinya adalah instrumen → besaran yang diukur atau ditunjukkan."
+      },
+      {
+        "id": "P2-Q11",
+        "soal": "BERBISIK : BERJERIT = BERJALAN : ...",
+        "opsi": {
+          "A": "Duduk",
+          "B": "Melompat",
+          "C": "Berlari",
+          "D": "Berhenti",
+          "E": "Berdiri"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Duduk bukan tingkat gerak yang lebih tinggi.",
+          "B": "Melompat adalah gerak berbeda.",
+          "C": "Benar. Berbisik → berjerit menunjukkan peningkatan intensitas suara; berjalan → berlari menunjukkan peningkatan kecepatan gerak.",
+          "D": "Berhenti berlawanan dengan bergerak.",
+          "E": "Berdiri merupakan keadaan diam."
+        },
+        "penjelasan_utama": "Kedua pasangan membentuk jenjang dalam satu dimensi aktivitas."
+      },
+      {
+        "id": "P2-Q12",
+        "soal": "LENTUR : KAKU = RAMAI : ...",
+        "opsi": {
+          "A": "Sepi",
+          "B": "Hening",
+          "C": "Tenang",
+          "D": "Sunyi",
+          "E": "Diam"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Lentur berlawanan dengan kaku; ramai berlawanan dengan sepi.",
+          "B": "Hening berkaitan dengan keadaan tanpa suara, bukan antonim langsung ramai.",
+          "C": "Tenang menggambarkan suasana.",
+          "D": "Sunyi sangat dekat dengan sepi tetapi nuansanya berbeda.",
+          "E": "Diam menggambarkan ketiadaan tindakan atau suara."
+        },
+        "penjelasan_utama": "Relasinya adalah antonim langsung. Distraktor lain merupakan lawan atau pasangan kontekstual yang tidak setepat sepi."
+      },
+      {
+        "id": "P2-Q13",
+        "soal": "ABADI : KEKAL = GIGIH : ...",
+        "opsi": {
+          "A": "Kuat",
+          "B": "Tekun",
+          "C": "Berani",
+          "D": "Keras",
+          "E": "Tangguh"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Kuat berhubungan dengan daya.",
+          "B": "Benar. Abadi dan kekal memiliki makna dekat; gigih dan tekun juga sepadan.",
+          "C": "Berani berkaitan dengan keberanian.",
+          "D": "Keras bukan sinonim tepat gigih.",
+          "E": "Tangguh berarti kuat menghadapi kesulitan, tetapi tidak identik dengan ketekunan."
+        },
+        "penjelasan_utama": "Relasinya adalah sinonim dengan tingkat kesepadanan tinggi."
+      },
+      {
+        "id": "P2-Q14",
+        "soal": "SERANGGA : KUPU = BUAH : ...",
+        "opsi": {
+          "A": "Daun",
+          "B": "Mangga",
+          "C": "Pohon",
+          "D": "Biji",
+          "E": "Bunga"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Daun merupakan bagian tumbuhan.",
+          "B": "Benar. Kupu merupakan anggota kelompok serangga; mangga merupakan anggota kelompok buah.",
+          "C": "Pohon adalah keseluruhan tumbuhan.",
+          "D": "Biji merupakan bagian yang dapat berada di dalam buah.",
+          "E": "Bunga merupakan bagian atau struktur lain pada tumbuhan."
+        },
+        "penjelasan_utama": "Relasinya adalah kategori → anggota kategori."
+      },
+      {
+        "id": "P2-Q15",
+        "soal": "ELANG : BURUNG = KOMODO : ...",
+        "opsi": {
+          "A": "Dinosaurus",
+          "B": "Karnivora",
+          "C": "Reptil",
+          "D": "Predator",
+          "E": "Hewan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Komodo bukan dinosaurus.",
+          "B": "Karnivora adalah pola makan.",
+          "C": "Benar. Elang merupakan burung; komodo merupakan reptil.",
+          "D": "Predator merupakan peran ekologis.",
+          "E": "Hewan terlalu umum."
+        },
+        "penjelasan_utama": "Kunci item ini adalah tingkat spesifisitas kategori. E benar secara umum tetapi terlalu luas."
+      },
+      {
+        "id": "P2-Q16",
+        "soal": "JARING : IKAN = PERANGKAP : ...",
+        "opsi": {
+          "A": "Hutan",
+          "B": "Tali",
+          "C": "Tikus",
+          "D": "Pemburu",
+          "E": "Umpan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Hutan adalah lokasi penggunaan perangkap.",
+          "B": "Tali dapat menjadi bagian dari perangkap.",
+          "C": "Benar. Jaring digunakan untuk menangkap ikan; perangkap dapat digunakan untuk menangkap tikus.",
+          "D": "Pemburu merupakan pengguna alat.",
+          "E": "Umpan digunakan untuk menarik target."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → objek sasaran."
+      },
+      {
+        "id": "P2-Q17",
+        "soal": "KUNCI : PINTU = PASSWORD : ...",
+        "opsi": {
+          "A": "Komputer",
+          "B": "Pengguna",
+          "C": "Akun",
+          "D": "Jaringan",
+          "E": "Server"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Komputer dapat menjadi perangkat tempat password dimasukkan.",
+          "B": "Pengguna adalah pihak yang menggunakan password.",
+          "C": "Benar. Kunci membuka pintu; password memberikan akses ke akun.",
+          "D": "Jaringan merupakan konteks penggunaan.",
+          "E": "Server dapat dilindungi password, tetapi bukan objek akses paling langsung."
+        },
+        "penjelasan_utama": "Relasinya adalah sarana autentikasi atau akses → objek yang diakses."
+      },
+      {
+        "id": "P2-Q18",
+        "soal": "KAPUR : PUTIH = ARANG : ...",
+        "opsi": {
+          "A": "Panas",
+          "B": "Keras",
+          "C": "Hitam",
+          "D": "Ringan",
+          "E": "Kasar"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Panas dapat berkaitan dengan proses pembuatan arang.",
+          "B": "Keras bukan karakteristik utama arang.",
+          "C": "Benar. Putih merupakan karakteristik warna kapur; hitam merupakan karakteristik warna arang.",
+          "D": "Ringan bukan ciri utama.",
+          "E": "Kasar dapat menjadi tekstur tertentu, tetapi bukan karakteristik utama."
+        },
+        "penjelasan_utama": "Relasinya adalah benda → karakteristik yang menonjol."
+      },
+      {
+        "id": "P2-Q19",
+        "soal": "UTUH : PECAH = TERBUKA : ...",
+        "opsi": {
+          "A": "Tertutup",
+          "B": "Terisi",
+          "C": "Kosong",
+          "D": "Longgar",
+          "E": "Sempit"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Utuh berlawanan dengan pecah; terbuka berlawanan dengan tertutup.",
+          "B": "Terisi berlawanan dengan kosong, bukan terbuka.",
+          "C": "Kosong adalah lawan terisi.",
+          "D": "Longgar berada pada dimensi kekencangan.",
+          "E": "Sempit berada pada dimensi ukuran."
+        },
+        "penjelasan_utama": "Relasinya adalah antonim langsung. Distraktor dipilih dari kata yang juga dapat membentuk pasangan berlawanan tetapi pada dimensi berbeda."
+      },
+      {
+        "id": "P2-Q20",
+        "soal": "PENGAMATAN : DATA = ANALISIS : ...",
+        "opsi": {
+          "A": "Masalah",
+          "B": "Metode",
+          "C": "Kesimpulan",
+          "D": "Data",
+          "E": "Pengamatan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Masalah merupakan objek yang dianalisis.",
+          "B": "Metode merupakan cara melakukan analisis.",
+          "C": "Benar. Pengamatan menghasilkan data; analisis menghasilkan kesimpulan.",
+          "D": "Data merupakan bahan yang dianalisis.",
+          "E": "Pengamatan merupakan proses."
+        },
+        "penjelasan_utama": "Hubungannya adalah proses intelektual → keluaran. Data merupakan input analisis, bukan output."
+      },
+      {
+        "id": "P2-Q21",
+        "soal": "GEMPA : KERUSAKAN = BANJIR : ...",
+        "opsi": {
+          "A": "Hujan",
+          "B": "Sungai",
+          "C": "Evakuasi",
+          "D": "Genangan",
+          "E": "Kekeringan"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Hujan dapat menjadi penyebab banjir.",
+          "B": "Sungai dapat menjadi lokasi atau saluran air.",
+          "C": "Evakuasi merupakan respons manusia.",
+          "D": "Benar. Gempa dapat menyebabkan kerusakan; banjir dapat menyebabkan genangan.",
+          "E": "Kekeringan merupakan kondisi berlawanan."
+        },
+        "penjelasan_utama": "Relasinya adalah bencana atau peristiwa → konsekuensi langsung."
+      },
+      {
+        "id": "P2-Q22",
+        "soal": "MEDAN : CURAM = JALAN : ...",
+        "opsi": {
+          "A": "Macet",
+          "B": "Rusak",
+          "C": "Panjang",
+          "D": "Licin",
+          "E": "Menanjak"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Macet merupakan kondisi lalu lintas.",
+          "B": "Rusak merupakan kondisi jalan, tetapi bukan atribut fisik yang sejenis.",
+          "C": "Panjang berkaitan dengan ukuran.",
+          "D": "Benar. Curam merupakan karakteristik medan yang memengaruhi perjalanan; licin merupakan karakteristik jalan yang memengaruhi perjalanan.",
+          "E": "Menanjak menggambarkan arah lintasan."
+        },
+        "penjelasan_utama": "Relasinya adalah objek atau lintasan → karakteristik fisik yang memengaruhi cara melaluinya."
+      },
+      {
+        "id": "P2-Q23",
+        "soal": "Petugas laboratorium memeriksa sampel di ruang uji. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Pustakawan menata buku di perpustakaan.",
+          "B": "Pengunjung membaca buku di perpustakaan.",
+          "C": "Teknisi membeli alat di toko.",
+          "D": "Mahasiswa membawa buku ke kelas.",
+          "E": "Pasien menunggu dokter di rumah sakit."
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Keduanya memiliki struktur pekerja atau profesi → tindakan utama → objek kerja → tempat kerja.",
+          "B": "Pengunjung bukan petugas profesional yang menangani objek kerja.",
+          "C": "Membeli alat merupakan transaksi.",
+          "D": "Membawa buku tidak menunjukkan pekerjaan terhadap objek.",
+          "E": "Pasien merupakan penerima layanan."
+        },
+        "penjelasan_utama": "Struktur sumber adalah pelaku profesional → tindakan profesional → objek kerja → tempat kerja. Jawaban A mempertahankan keempat posisi semantik."
+      },
+      {
+        "id": "P2-Q24",
+        "soal": "KAMAR : RANJANG = DAPUR : ...",
+        "opsi": {
+          "A": "Piring",
+          "B": "Kompor",
+          "C": "Makanan",
+          "D": "Koki",
+          "E": "Sabun"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Piring merupakan benda yang digunakan atau disimpan di dapur, tetapi bukan peralatan utama yang menjadi padanan ranjang.",
+          "B": "Benar. Kamar merupakan ruang yang secara khas memiliki ranjang; dapur merupakan ruang yang secara khas memiliki kompor.",
+          "C": "Makanan merupakan hasil atau isi aktivitas dapur.",
+          "D": "Koki merupakan pengguna dapur.",
+          "E": "Sabun dapat berada di dapur pada kondisi tertentu, tetapi bukan perlengkapan utama."
+        },
+        "penjelasan_utama": "Relasinya adalah ruang → perabot atau peralatan utama yang secara khas terdapat di ruang tersebut. Item ini menggantikan analogi kalimat komparatif yang sebelumnya memiliki shortcut leksikal."
+      },
+      {
+        "id": "P2-Q25",
+        "soal": "TELUR : MENETAS = KUNCUP : ...",
+        "opsi": {
+          "A": "Layu",
+          "B": "Mekar",
+          "C": "Gugur",
+          "D": "Berbuah",
+          "E": "Berkayu"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Layu merupakan perubahan menuju penurunan kondisi.",
+          "B": "Benar. Telur mengalami proses menetas; kuncup mengalami proses mekar.",
+          "C": "Gugur terjadi pada tahap setelah bunga atau bagian tumbuhan tertentu.",
+          "D": "Berbuah merupakan tahap lanjutan setelah bunga berkembang.",
+          "E": "Berkayu merupakan proses atau sifat jaringan."
+        },
+        "penjelasan_utama": "Relasinya adalah bentuk atau tahap awal → proses perubahan menuju bentuk berikutnya. D berada satu tahap setelah bunga sehingga tidak sejajar dengan menetas."
+      },
+      {
+        "id": "P2-Q26",
+        "soal": "BENIH : KECAMBAH : TANAMAN = TELUR : LARVA : PUPA",
+        "opsi": {
+          "A": "BENIH",
+          "B": "TANAMAN",
+          "C": "PUPA",
+          "D": "TELUR",
+          "E": "KECAMBAH"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Benih berada pada tahap awal rangkaian.",
+          "B": "Tanaman merupakan tahap akhir rangkaian pertama.",
+          "C": "Benar. Pupa merupakan tahap ketiga pada perkembangan metamorfosis.",
+          "D": "Telur merupakan tahap pertama.",
+          "E": "Kecambah merupakan tahap kedua."
+        },
+        "penjelasan_utama": "Struktur yang diuji adalah posisi tahap ketiga dalam dua rangkaian perkembangan."
+      },
+      {
+        "id": "P2-Q27",
+        "soal": "SENTER : GELAP = PAYUNG : ...",
+        "opsi": {
+          "A": "Panas",
+          "B": "Hujan",
+          "C": "Angin",
+          "D": "Debu",
+          "E": "Asap"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Senter tidak digunakan untuk mengatasi panas.",
+          "B": "Benar. Senter digunakan untuk mengatasi kondisi gelap; payung digunakan untuk melindungi dari hujan.",
+          "C": "Angin bukan kondisi utama yang ditangani payung.",
+          "D": "Debu bukan fungsi utama perlindungan payung.",
+          "E": "Asap bukan kondisi yang menjadi sasaran penggunaan payung."
+        },
+        "penjelasan_utama": "Relasinya adalah alat atau sarana → kondisi eksternal yang diatasi atau dilindungi darinya. Senter membantu menghadapi kegelapan, sedangkan payung melindungi dari hujan."
+      },
+      {
+        "id": "P2-Q28",
+        "soal": "BEL : JEDA = SIREN : BAHAYA",
+        "opsi": {
+          "A": "Suara",
+          "B": "Bahaya",
+          "C": "Mobil",
+          "D": "Petugas",
+          "E": "Panik"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Suara adalah bentuk sinyal.",
+          "B": "Benar. Bel dapat menandai jeda; siren menandai bahaya atau keadaan darurat.",
+          "C": "Mobil merupakan sumber atau pengguna siren.",
+          "D": "Petugas dapat merespons siren.",
+          "E": "Panik merupakan respons, bukan keadaan yang ditandai."
+        },
+        "penjelasan_utama": "Hubungannya adalah sinyal → keadaan yang ditandai."
+      },
+      {
+        "id": "P2-Q29",
+        "soal": "TELESKOP : JAUH = MIKROSKOP : ...",
+        "opsi": {
+          "A": "Dekat",
+          "B": "Kecil",
+          "C": "Halus",
+          "D": "Sel",
+          "E": "Detail"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Dekat merupakan lawan skala observasi teleskop, bukan karakteristik objek yang menjadi fokus mikroskop.",
+          "B": "Benar. Teleskop digunakan untuk mengamati objek yang jauh; mikroskop digunakan untuk mengamati objek yang berukuran sangat kecil.",
+          "C": "Halus dapat berkaitan dengan objek kecil, tetapi bukan karakteristik utama yang dipetakan.",
+          "D": "Sel merupakan salah satu objek yang dapat diamati dengan mikroskop, tetapi terlalu spesifik.",
+          "E": "Detail merupakan hasil atau tingkat pengamatan, bukan skala objek."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat pengamatan → skala objek yang menjadi sasaran. Teleskop digunakan untuk objek jauh, sedangkan mikroskop untuk objek kecil. Distraktor D merupakan contoh objek, bukan dimensi yang sebanding dengan 'jauh'."
+      },
+      {
+        "id": "P2-Q30",
+        "soal": "TERIK : KERING = HUJAN : ...",
+        "opsi": {
+          "A": "Basah",
+          "B": "Dingin",
+          "C": "Licin",
+          "D": "Mendung",
+          "E": "Banjir"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Kondisi terik dapat menyebabkan keadaan kering; hujan dapat menyebabkan keadaan basah.",
+          "B": "Dingin merupakan kondisi suhu, bukan akibat utama yang dipetakan.",
+          "C": "Licin dapat menjadi akibat tertentu dari hujan, tetapi lebih tidak langsung.",
+          "D": "Mendung lebih merupakan kondisi yang mendahului hujan.",
+          "E": "Banjir merupakan akibat yang lebih lanjut dan bersyarat."
+        },
+        "penjelasan_utama": "Hubungannya adalah kondisi alam → akibat fisik yang langsung dan umum. Terik berkaitan dengan kekeringan, sedangkan hujan berkaitan langsung dengan kebasahan."
+      }
+    ]
+  },
+  "paket_3": {
+    "nama_paket": "Paket 3",
+    "soal": [
+      {
+        "id": "P3-Q01",
+        "soal": "BEL : ISTIRAHAT = SIRENE : ...",
+        "opsi": {
+          "A": "Suara",
+          "B": "Bahaya",
+          "C": "Kebisingan",
+          "D": "Petugas",
+          "E": "Kendaraan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Suara merupakan bentuk fisik yang dihasilkan oleh bel maupun sirene, bukan makna atau situasi yang ditandai.",
+          "B": "Benar. Bel dapat menjadi tanda dimulainya waktu istirahat; sirene dapat menjadi tanda adanya keadaan bahaya atau darurat.",
+          "C": "Kebisingan merupakan efek suara.",
+          "D": "Petugas dapat merespons sirene, tetapi bukan keadaan yang ditandai.",
+          "E": "Kendaraan dapat menggunakan sirene, bukan makna sinyalnya."
+        },
+        "penjelasan_utama": "Hubungannya adalah sinyal → keadaan atau peristiwa yang diinformasikan oleh sinyal. Jangan berhenti pada benda atau efeknya; identifikasi apa yang dikomunikasikan oleh sinyal tersebut."
+      },
+      {
+        "id": "P3-Q02",
+        "soal": "BERPUASA : LAPAR = BERLARI : ...",
+        "opsi": {
+          "A": "Cepat",
+          "B": "Bugar",
+          "C": "Terengah",
+          "D": "Menang",
+          "E": "Bergerak"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Cepat menggambarkan tingkat kecepatan.",
+          "B": "Bugar merupakan manfaat, bukan efek langsung.",
+          "C": "Benar. Berpuasa dapat menyebabkan lapar; berlari dapat menyebabkan terengah-engah.",
+          "D": "Menang merupakan hasil kompetisi.",
+          "E": "Bergerak merupakan tindakan dasar, bukan akibat."
+        },
+        "penjelasan_utama": "Relasinya adalah aktivitas atau keadaan → efek yang dapat muncul langsung."
+      },
+      {
+        "id": "P3-Q03",
+        "soal": "ABAI : LALAI = CERMAT : ...",
+        "opsi": {
+          "A": "Teliti",
+          "B": "Cepat",
+          "C": "Tegas",
+          "D": "Hati-hati",
+          "E": "Rajin"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Abai dan lalai memiliki makna dekat; cermat dan teliti juga sepadan.",
+          "B": "Cepat berkaitan dengan kecepatan.",
+          "C": "Tegas merupakan sifat berbeda.",
+          "D": "Hati-hati dekat secara makna tetapi tidak identik.",
+          "E": "Rajin berkaitan dengan ketekunan."
+        },
+        "penjelasan_utama": "Relasinya adalah sinonim. Pilih kata yang dapat menggantikan kata pertama tanpa mengubah makna pokok."
+      },
+      {
+        "id": "P3-Q04",
+        "soal": "AKTIF : PASIF = TERATUR : ...",
+        "opsi": {
+          "A": "Rapi",
+          "B": "Acak",
+          "C": "Lambat",
+          "D": "Bebas",
+          "E": "Berubah"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Rapi berkaitan dengan keteraturan.",
+          "B": "Benar. Aktif berlawanan dengan pasif; teratur berlawanan dengan acak.",
+          "C": "Lambat merupakan dimensi kecepatan.",
+          "D": "Bebas tidak otomatis berarti tidak teratur.",
+          "E": "Berubah bukan antonim teratur."
+        },
+        "penjelasan_utama": "Relasinya adalah oposisi makna."
+      },
+      {
+        "id": "P3-Q05",
+        "soal": "MENYENTUH : MENEKAN = MENARIK : ...",
+        "opsi": {
+          "A": "Mengangkat",
+          "B": "Menyentak",
+          "C": "Memegang",
+          "D": "Mendorong",
+          "E": "Melepaskan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mengangkat merupakan jenis tindakan berbeda.",
+          "B": "Benar. Menekan merupakan bentuk kontak yang lebih kuat daripada menyentuh; menyentak merupakan bentuk menarik yang lebih kuat atau tiba-tiba.",
+          "C": "Memegang berarti mempertahankan kontak.",
+          "D": "Mendorong merupakan arah gaya yang berlawanan.",
+          "E": "Melepaskan merupakan tindakan yang berbeda."
+        },
+        "penjelasan_utama": "Hubungan yang dicari adalah peningkatan intensitas dalam keluarga tindakan yang sama."
+      },
+      {
+        "id": "P3-Q06",
+        "soal": "LARVA : PUPA = KUNCUP : ...",
+        "opsi": {
+          "A": "Akar",
+          "B": "Bunga",
+          "C": "Buah",
+          "D": "Daun",
+          "E": "Biji"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Akar bukan tahap perkembangan langsung setelah kuncup.",
+          "B": "Benar. Larva menuju tahap pupa; kuncup berkembang menjadi bunga.",
+          "C": "Buah merupakan tahap lanjutan setelah bunga.",
+          "D": "Daun merupakan organ, bukan tahap langsung.",
+          "E": "Biji bukan kelanjutan langsung."
+        },
+        "penjelasan_utama": "Relasinya adalah tahap perkembangan → tahap berikutnya. C sangat kompetitif karena bunga kemudian dapat berkembang menjadi buah, tetapi ada satu tahap antara."
+      },
+      {
+        "id": "P3-Q07",
+        "soal": "KAKAO : COKELAT = TOMAT : ...",
+        "opsi": {
+          "A": "Cabai",
+          "B": "Saus",
+          "C": "Biji",
+          "D": "Salad",
+          "E": "Sayur"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Cabai bukan produk utama pengolahan tomat.",
+          "B": "Benar. Kakao merupakan bahan dasar produk cokelat; tomat dapat diolah menjadi saus.",
+          "C": "Biji merupakan bagian bahan.",
+          "D": "Salad merupakan penggunaan tomat lain, bukan hasil transformasi yang paling langsung.",
+          "E": "Sayur merupakan kategori umum."
+        },
+        "penjelasan_utama": "Hubungannya adalah bahan → produk olahan. Distraktor D tetap berada pada domain tomat tetapi tidak merupakan hasil transformasi paling paralel."
+      },
+      {
+        "id": "P3-Q08",
+        "soal": "PENYAMAKAN : KULIT = PENGGILINGAN : ...",
+        "opsi": {
+          "A": "Beras",
+          "B": "Gandum",
+          "C": "Tepung",
+          "D": "Mesin",
+          "E": "Pabrik"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Beras dapat digiling, tetapi dalam konteks pembuatan tepung gandum menjadi objek yang lebih paralel.",
+          "B": "Benar. Penyamakan diterapkan pada kulit; penggilingan diterapkan pada gandum.",
+          "C": "Tepung merupakan hasil penggilingan.",
+          "D": "Mesin merupakan alat.",
+          "E": "Pabrik merupakan tempat."
+        },
+        "penjelasan_utama": "Relasinya adalah proses → bahan yang dikenai proses. C salah karena merupakan output."
+      },
+      {
+        "id": "P3-Q09",
+        "soal": "PEMBAKARAN : ABU = PEMBUSUKAN : ...",
+        "opsi": {
+          "A": "Tanah",
+          "B": "Limbah",
+          "C": "Hancur",
+          "D": "Bau",
+          "E": "Sisa"
+        },
+        "kunci_jawaban": "E",
+        "penjelasan_opsi": {
+          "A": "Tanah dapat menjadi media pembusukan.",
+          "B": "Limbah merupakan bahan yang dapat membusuk.",
+          "C": "Hancur merupakan keadaan atau proses.",
+          "D": "Bau adalah efek sensorik.",
+          "E": "Benar. Pembakaran dapat meninggalkan abu; pembusukan dapat meninggalkan sisa material."
+        },
+        "penjelasan_utama": "Relasinya adalah proses perubahan → residu atau hasil yang tersisa."
+      },
+      {
+        "id": "P3-Q10",
+        "soal": "LUKA : PERBAN = DEMAM : ...",
+        "opsi": {
+          "A": "Obat",
+          "B": "Kompres",
+          "C": "Dokter",
+          "D": "Istirahat",
+          "E": "Termometer"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Obat merupakan kategori penanganan yang luas.",
+          "B": "Benar. Perban merupakan sarana penanganan langsung luka; kompres merupakan sarana penanganan langsung demam.",
+          "C": "Dokter adalah pelaku layanan.",
+          "D": "Istirahat adalah tindakan pendukung.",
+          "E": "Termometer digunakan untuk mengukur suhu."
+        },
+        "penjelasan_utama": "Hubungannya adalah kondisi → sarana penanganan langsung."
+      },
+      {
+        "id": "P3-Q11",
+        "soal": "KUNCI INGGRIS : MENGENCANGKAN = PISAU : ...",
+        "opsi": {
+          "A": "Mengasah",
+          "B": "Memotong",
+          "C": "Menusuk",
+          "D": "Menggores",
+          "E": "Memegang"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mengasah merupakan tindakan terhadap pisau.",
+          "B": "Benar. Kunci Inggris digunakan untuk pekerjaan mekanis pada mur atau baut; pisau digunakan untuk memotong.",
+          "C": "Menusuk merupakan penggunaan tertentu.",
+          "D": "Menggores bukan fungsi utama.",
+          "E": "Memegang merupakan tindakan pengguna."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → fungsi utama."
+      },
+      {
+        "id": "P3-Q12",
+        "soal": "JAM : WAKTU = KALENDER : ...",
+        "opsi": {
+          "A": "Bulan",
+          "B": "Hari",
+          "C": "Tanggal",
+          "D": "Tahun",
+          "E": "Jadwal"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Bulan merupakan salah satu informasi yang terdapat dalam kalender, tetapi terlalu umum.",
+          "B": "Hari juga merupakan informasi kalender, tetapi bukan padanan paling spesifik.",
+          "C": "Benar. Jam memberikan informasi waktu; kalender memberikan informasi tanggal.",
+          "D": "Tahun juga terdapat dalam kalender, tetapi tingkat spesifikasinya berbeda.",
+          "E": "Jadwal merupakan susunan kegiatan, bukan informasi waktu dasar."
+        },
+        "penjelasan_utama": "Relasinya adalah alat atau media informasi → informasi utama yang diperoleh. Jam memberikan informasi mengenai waktu, sedangkan kalender memberikan informasi mengenai tanggal."
+      },
+      {
+        "id": "P3-Q13",
+        "soal": "KOREKTOR : NASKAH = TEKNISI : ...",
+        "opsi": {
+          "A": "Mesin",
+          "B": "Bengkel",
+          "C": "Peralatan",
+          "D": "Kerusakan",
+          "E": "Perbaikan"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Korektor menangani naskah; teknisi menangani mesin.",
+          "B": "Bengkel merupakan tempat kerja.",
+          "C": "Peralatan dapat menjadi alat kerja.",
+          "D": "Kerusakan merupakan masalah yang ditangani.",
+          "E": "Perbaikan merupakan tindakan atau hasil."
+        },
+        "penjelasan_utama": "Hubungannya adalah profesi → objek kerja utama."
+      },
+      {
+        "id": "P3-Q14",
+        "soal": "STUDIO : MEREKAM = DAPUR : ...",
+        "opsi": {
+          "A": "Memasak",
+          "B": "Makan",
+          "C": "Mencuci",
+          "D": "Melayani",
+          "E": "Menyimpan"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Studio digunakan untuk merekam; dapur digunakan untuk memasak.",
+          "B": "Makan bukan fungsi utama dapur.",
+          "C": "Mencuci merupakan aktivitas pendukung.",
+          "D": "Melayani bukan fungsi inti dapur.",
+          "E": "Menyimpan merupakan fungsi pendukung."
+        },
+        "penjelasan_utama": "Hubungannya adalah tempat → aktivitas utama."
+      },
+      {
+        "id": "P3-Q15",
+        "soal": "LAUT : ASIN = SALJU : ...",
+        "opsi": {
+          "A": "Dingin",
+          "B": "Putih",
+          "C": "Basah",
+          "D": "Lembut",
+          "E": "Licin"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Dingin merupakan karakteristik termal.",
+          "B": "Benar. Laut secara khas diasosiasikan dengan rasa asin; salju dengan warna putih.",
+          "C": "Basah dapat terjadi saat salju mencair.",
+          "D": "Lembut hanya berlaku pada kondisi tertentu.",
+          "E": "Licin merupakan efek permukaan."
+        },
+        "penjelasan_utama": "Relasinya adalah objek → karakteristik yang menonjol dan prototipikal."
+      },
+      {
+        "id": "P3-Q16",
+        "soal": "MUSIK : JAZZ = LUKISAN : ...",
+        "opsi": {
+          "A": "Abstrak",
+          "B": "Cat",
+          "C": "Kanvas",
+          "D": "Pelukis",
+          "E": "Galeri"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Jazz merupakan salah satu jenis atau aliran musik; abstrak merupakan salah satu jenis atau gaya lukisan.",
+          "B": "Cat merupakan bahan.",
+          "C": "Kanvas merupakan media.",
+          "D": "Pelukis adalah pembuat.",
+          "E": "Galeri adalah tempat pameran."
+        },
+        "penjelasan_utama": "Hubungannya adalah kategori atau karya umum → jenis atau gaya spesifiknya. Jazz merupakan salah satu jenis musik, sementara abstrak merupakan salah satu gaya lukisan."
+      },
+      {
+        "id": "P3-Q17",
+        "soal": "JAZZ : MUSIK = SEDAN : ...",
+        "opsi": {
+          "A": "Roda",
+          "B": "Mobil",
+          "C": "Jalan",
+          "D": "Transportasi",
+          "E": "Mesin"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Roda merupakan bagian sedan.",
+          "B": "Benar. Jazz merupakan jenis musik; sedan merupakan jenis mobil.",
+          "C": "Jalan merupakan lingkungan penggunaan.",
+          "D": "Transportasi terlalu luas.",
+          "E": "Mesin merupakan komponen."
+        },
+        "penjelasan_utama": "Relasinya adalah anggota → kategori yang tepat. D benar secara umum tetapi terlalu luas."
+      },
+      {
+        "id": "P3-Q18",
+        "soal": "HULU : HILIR = UTARA : ...",
+        "opsi": {
+          "A": "Timur",
+          "B": "Barat",
+          "C": "Selatan",
+          "D": "Tengah",
+          "E": "Pesisir"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Timur berada pada sumbu lain.",
+          "B": "Barat merupakan lawan timur.",
+          "C": "Benar. Hulu dan hilir menunjukkan dua arah berlawanan dalam aliran; utara dan selatan merupakan dua arah berlawanan secara geografis.",
+          "D": "Tengah bukan arah berlawanan.",
+          "E": "Pesisir adalah lokasi."
+        },
+        "penjelasan_utama": "Relasinya adalah dua arah yang saling berlawanan pada satu sumbu."
+      },
+      {
+        "id": "P3-Q19",
+        "soal": "KEKERINGAN : GAGAL PANEN = KEKURANGAN OKSIGEN : ...",
+        "opsi": {
+          "A": "Sesak",
+          "B": "Pusing",
+          "C": "Kelelahan",
+          "D": "Demam",
+          "E": "Lapar"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Kekeringan dapat menyebabkan gagal panen; kekurangan oksigen dapat menyebabkan sesak.",
+          "B": "Pusing dapat muncul karena banyak kondisi.",
+          "C": "Kelelahan terlalu umum.",
+          "D": "Demam bukan akibat utama kekurangan oksigen.",
+          "E": "Lapar berkaitan dengan kebutuhan energi."
+        },
+        "penjelasan_utama": "Relasinya adalah kondisi kekurangan → akibat yang relatif langsung dan spesifik."
+      },
+      {
+        "id": "P3-Q20",
+        "soal": "RAMBU : BERHENTI = PELUIT : ...",
+        "opsi": {
+          "A": "Suara",
+          "B": "Lomba",
+          "C": "Mulai",
+          "D": "Penonton",
+          "E": "Pelari"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Suara merupakan bentuk sinyal.",
+          "B": "Lomba merupakan konteks.",
+          "C": "Benar. Rambu tertentu menandai berhenti; peluit pada perlombaan dapat menandai mulai.",
+          "D": "Penonton merupakan penerima.",
+          "E": "Pelari merupakan pelaku yang merespons."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat atau sarana sinyal → instruksi atau tindakan yang ditandai."
+      },
+      {
+        "id": "P3-Q21",
+        "soal": "PENGUJI : PESERTA = WASIT : ...",
+        "opsi": {
+          "A": "Penonton",
+          "B": "Pelatih",
+          "C": "Pemain",
+          "D": "Pertandingan",
+          "E": "Aturan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Penonton bukan sasaran fungsi wasit.",
+          "B": "Pelatih bukan pihak yang berhadapan langsung dalam fungsi regulatif.",
+          "C": "Benar. Penguji berinteraksi evaluatif dengan peserta; wasit berinteraksi regulatif dengan pemain.",
+          "D": "Pertandingan adalah arena.",
+          "E": "Aturan adalah pedoman."
+        },
+        "penjelasan_utama": "Relasinya adalah pihak yang menjalankan fungsi evaluasi atau pengawasan → pihak yang menjadi sasaran fungsi tersebut."
+      },
+      {
+        "id": "P3-Q22",
+        "soal": "PAGI : SIANG = SENJA : ...",
+        "opsi": {
+          "A": "Malam",
+          "B": "Subuh",
+          "C": "Fajar",
+          "D": "Petang",
+          "E": "Hari"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Pagi berlanjut menuju siang; senja berlanjut menuju malam.",
+          "B": "Subuh berada sebelum pagi.",
+          "C": "Fajar berada pada bagian awal hari.",
+          "D": "Petang dekat dengan senja secara makna.",
+          "E": "Hari adalah keseluruhan periode."
+        },
+        "penjelasan_utama": "Relasinya adalah tahap waktu → tahap waktu berikutnya."
+      },
+      {
+        "id": "P3-Q23",
+        "soal": "PEMASOK : BAHAN : PABRIK = DISTRIBUTOR : BARANG : ...",
+        "opsi": {
+          "A": "Toko",
+          "B": "Gudang",
+          "C": "Pabrik",
+          "D": "Agen",
+          "E": "Pasar"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Pemasok menyediakan bahan untuk pabrik; distributor menyalurkan barang ke toko.",
+          "B": "Gudang merupakan tempat penyimpanan, bukan tujuan distribusi yang paling sejajar.",
+          "C": "Pabrik merupakan pihak yang dapat menerima bahan dari pemasok.",
+          "D": "Agen merupakan perantara atau penyalur lain.",
+          "E": "Pasar merupakan lingkungan perdagangan yang lebih luas."
+        },
+        "penjelasan_utama": "Strukturnya adalah pelaku distribusi → barang yang disalurkan → pihak tujuan. Pemasok menyalurkan bahan kepada pabrik; distributor menyalurkan barang kepada toko."
+      },
+      {
+        "id": "P3-Q24",
+        "soal": "MASALAH : ANALISIS : SOLUSI = GEJALA : PEMERIKSAAN : ...",
+        "opsi": {
+          "A": "Penyebab",
+          "B": "Dokter",
+          "C": "Obat",
+          "D": "Pasien",
+          "E": "Keluhan"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Masalah dianalisis untuk memperoleh solusi; gejala diperiksa untuk menemukan penyebab.",
+          "B": "Dokter adalah pelaku.",
+          "C": "Obat adalah penanganan setelah pemeriksaan.",
+          "D": "Pasien adalah pihak yang mengalami gejala.",
+          "E": "Keluhan adalah informasi awal."
+        },
+        "penjelasan_utama": "Struktur keduanya adalah persoalan atau indikasi → proses investigasi → hasil yang menjelaskan atau menyelesaikan persoalan."
+      },
+      {
+        "id": "P3-Q25",
+        "soal": "BIJI : TEPUNG : ROTI = BUAH : SARI : ...",
+        "opsi": {
+          "A": "Minuman",
+          "B": "Kulit",
+          "C": "Pohon",
+          "D": "Biji",
+          "E": "Rasa"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Buah dapat diolah menjadi sari lalu menjadi minuman.",
+          "B": "Kulit adalah bagian buah.",
+          "C": "Pohon merupakan sumber buah.",
+          "D": "Biji merupakan bagian bahan.",
+          "E": "Rasa adalah karakteristik produk."
+        },
+        "penjelasan_utama": "Strukturnya adalah bahan awal → hasil antara → produk konsumsi akhir."
+      },
+      {
+        "id": "P3-Q26",
+        "soal": "KAIN : BAJU : PEMAKAI = KERTAS : BUKU : ...",
+        "opsi": {
+          "A": "Penulis",
+          "B": "Penerbit",
+          "C": "Pembaca",
+          "D": "Percetakan",
+          "E": "Rak"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Penulis membuat atau menulis buku, bukan pihak yang menggunakan buku.",
+          "B": "Penerbit memproduksi atau menerbitkan buku.",
+          "C": "Benar. Kain menjadi baju yang digunakan pemakai; kertas menjadi buku yang digunakan pembaca.",
+          "D": "Percetakan merupakan tempat atau pihak produksi.",
+          "E": "Rak merupakan tempat penyimpanan buku."
+        },
+        "penjelasan_utama": "Rangkaian tersebut memiliki struktur material → produk → pengguna. Kain menjadi baju yang digunakan pemakai; kertas menjadi buku yang digunakan pembaca."
+      },
+      {
+        "id": "P3-Q27",
+        "soal": "BELAJAR : UJIAN : LULUS = BERLATIH : PERTANDINGAN : ...",
+        "opsi": {
+          "A": "Kalah",
+          "B": "Menang",
+          "C": "Peserta",
+          "D": "Pelatih",
+          "E": "Kelelahan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Kalah merupakan hasil yang mungkin tetapi bertentangan dengan orientasi hasil pada pasangan pertama.",
+          "B": "Benar. Belajar merupakan persiapan sebelum ujian yang diarahkan pada kelulusan; berlatih merupakan persiapan sebelum pertandingan yang diarahkan pada kemenangan.",
+          "C": "Peserta adalah pelaku.",
+          "D": "Pelatih adalah pembimbing.",
+          "E": "Kelelahan merupakan efek latihan."
+        },
+        "penjelasan_utama": "Struktur tiga tahapnya adalah kegiatan persiapan → tahap evaluasi → hasil yang diharapkan."
+      },
+      {
+        "id": "P3-Q28",
+        "soal": "MAWAR : BUNGA : TUMBUHAN = PAUS : MAMALIA : ...",
+        "opsi": {
+          "A": "Organisme",
+          "B": "Hewan",
+          "C": "Laut",
+          "D": "Ikan",
+          "E": "Mamalia"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Organisme merupakan kategori yang lebih luas daripada tumbuhan maupun hewan.",
+          "B": "Benar. Mawar termasuk bunga, bunga termasuk tumbuhan; paus termasuk mamalia, mamalia termasuk hewan.",
+          "C": "Laut merupakan habitat paus, bukan kategori biologis.",
+          "D": "Paus bukan ikan.",
+          "E": "Mamalia berada pada posisi tengah rangkaian kedua."
+        },
+        "penjelasan_utama": "Strukturnya adalah anggota → kategori antara → kategori yang lebih luas. Mawar termasuk bunga yang termasuk tumbuhan; paus termasuk mamalia yang termasuk hewan."
+      },
+      {
+        "id": "P3-Q29",
+        "soal": "LEBAR : SEMPIT = DALAM : ...",
+        "opsi": {
+          "A": "Jauh",
+          "B": "Dangkal",
+          "C": "Panjang",
+          "D": "Rendah",
+          "E": "Kecil"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Jauh merupakan dimensi jarak.",
+          "B": "Benar. Lebar berlawanan dengan sempit; dalam berlawanan dengan dangkal.",
+          "C": "Panjang berada pada dimensi ukuran lain.",
+          "D": "Rendah merupakan lawan tinggi.",
+          "E": "Kecil merupakan ukuran umum."
+        },
+        "penjelasan_utama": "Relasinya adalah antonim pada dimensi ukuran atau kedalaman."
+      },
+      {
+        "id": "P3-Q30",
+        "soal": "HIGROMETER : KELEMBAPAN = BAROMETER : ...",
+        "opsi": {
+          "A": "Suhu",
+          "B": "Angin",
+          "C": "Tekanan",
+          "D": "Arah",
+          "E": "Curah hujan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Suhu diukur menggunakan termometer.",
+          "B": "Angin merupakan fenomena atmosfer, bukan besaran yang diukur barometer.",
+          "C": "Benar. Higrometer digunakan untuk mengukur kelembapan; barometer digunakan untuk mengukur tekanan.",
+          "D": "Arah berkaitan dengan kompas.",
+          "E": "Curah hujan diukur dengan alat lain seperti penakar hujan."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat ukur → besaran yang diukur. Higrometer mengukur kelembapan, sedangkan barometer mengukur tekanan."
+      }
+    ]
+  },
+  "paket_4": {
+    "nama_paket": "Paket 4",
+    "soal": [
+      {
+        "id": "P4-Q01",
+        "soal": "PENYARINGAN : AIR = PENGAYAKAN : ...",
+        "opsi": {
+          "A": "Adonan",
+          "B": "Tepung",
+          "C": "Minyak",
+          "D": "Garam",
+          "E": "Saus"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Adonan bukan objek pengayakan yang paling prototipikal dalam pola ini.",
+          "B": "Benar. Penyaringan digunakan untuk memisahkan kotoran dari air; pengayakan digunakan untuk memisahkan partikel pada tepung.",
+          "C": "Minyak lebih lazim dipisahkan dengan teknik lain.",
+          "D": "Garam bukan objek utama dalam konteks pengayakan ini.",
+          "E": "Saus tidak merupakan bahan yang paling sesuai dengan proses pengayakan."
+        },
+        "penjelasan_utama": "Relasinya adalah proses pemisahan → bahan yang dikenai proses. Penyaringan lazim diterapkan pada air, sedangkan pengayakan sangat lazim diterapkan pada tepung untuk memisahkan atau meratakan ukuran partikelnya."
+      },
+      {
+        "id": "P4-Q02",
+        "soal": "TERMOMETER : SUHU = TIMBANGAN : ...",
+        "opsi": {
+          "A": "Benda",
+          "B": "Massa",
+          "C": "Berat",
+          "D": "Ukuran",
+          "E": "Beban"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Benda adalah objek yang ditimbang.",
+          "B": "Massa secara fisika berkaitan dengan timbangan, tetapi pasangan bahasa sehari-hari menggunakan berat.",
+          "C": "Benar. Termometer mengetahui suhu; timbangan mengetahui berat.",
+          "D": "Ukuran terlalu umum.",
+          "E": "Beban bukan hasil pengukuran yang paling tepat."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → besaran yang diketahui atau diukur. Item ini tetap L3 karena penalarannya relatif langsung."
+      },
+      {
+        "id": "P4-Q03",
+        "soal": "KAWANAN : GAJAH = KOLONI : ...",
+        "opsi": {
+          "A": "Sarang",
+          "B": "Lebah",
+          "C": "Semut",
+          "D": "Hutan",
+          "E": "Serangga"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Sarang merupakan tempat atau struktur tempat koloni berada.",
+          "B": "Lebah memang dapat hidup berkoloni, tetapi koloni tidak secara khusus menunjuk lebah.",
+          "C": "Benar. Kumpulan gajah dapat disebut kawanan; kumpulan semut dapat disebut koloni.",
+          "D": "Hutan merupakan habitat.",
+          "E": "Serangga merupakan kategori luas."
+        },
+        "penjelasan_utama": "Hubungannya adalah istilah kelompok → anggota yang menjadi contoh kelompok tersebut. Revisi ini menghilangkan kedekatan berlebihan dengan pola referensi-kamus pada versi sebelumnya."
+      },
+      {
+        "id": "P4-Q04",
+        "soal": "RUTE : PERJALANAN = RESEP : ...",
+        "opsi": {
+          "A": "Dapur",
+          "B": "Masakan",
+          "C": "Bahan",
+          "D": "Makan",
+          "E": "Koki"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Dapur adalah tempat pelaksanaan.",
+          "B": "Benar. Rute menjadi panduan perjalanan; resep menjadi panduan pembuatan masakan.",
+          "C": "Bahan merupakan input.",
+          "D": "Makan adalah kegiatan setelah masakan dibuat.",
+          "E": "Koki adalah pelaksana."
+        },
+        "penjelasan_utama": "Relasinya adalah pedoman → aktivitas yang diarahkan menuju hasil."
+      },
+      {
+        "id": "P4-Q05",
+        "soal": "PAGI : CERAH = MALAM : ...",
+        "opsi": {
+          "A": "Gelap",
+          "B": "Sepi",
+          "C": "Dingin",
+          "D": "Lelap",
+          "E": "Lembap"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Cerah merupakan karakteristik pencahayaan yang lazim pada pagi; gelap merupakan karakteristik pencahayaan malam.",
+          "B": "Sepi merupakan karakteristik suasana sosial.",
+          "C": "Dingin berada pada dimensi suhu.",
+          "D": "Lelap menggambarkan keadaan tidur.",
+          "E": "Lembap menggambarkan kondisi udara."
+        },
+        "penjelasan_utama": "Hubungannya adalah waktu → karakteristik kondisi yang khas pada waktu tersebut. Revisi menghapus duplikasi langsung dengan pola urutan pagi-siang-senja-malam."
+      },
+      {
+        "id": "P4-Q06",
+        "soal": "PUPUK : SUBUR = OBAT : ...",
+        "opsi": {
+          "A": "Sakit",
+          "B": "Sembuh",
+          "C": "Dokter",
+          "D": "Pasien",
+          "E": "Dosis"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Sakit adalah kondisi awal yang ditangani.",
+          "B": "Benar. Pupuk membantu tanaman menjadi subur; obat membantu orang sakit menjadi sembuh.",
+          "C": "Dokter merupakan pelaku.",
+          "D": "Pasien adalah pihak penerima.",
+          "E": "Dosis merupakan ukuran penggunaan."
+        },
+        "penjelasan_utama": "Relasinya adalah intervensi → perubahan keadaan yang diharapkan."
+      },
+      {
+        "id": "P4-Q07",
+        "soal": "GARAM : ASIN = GULA : ...",
+        "opsi": {
+          "A": "Putih",
+          "B": "Manis",
+          "C": "Kristal",
+          "D": "Larut",
+          "E": "Pasir"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Putih merupakan karakteristik fisik.",
+          "B": "Benar. Asin merupakan karakteristik rasa garam; manis merupakan karakteristik rasa gula.",
+          "C": "Kristal adalah bentuk fisik.",
+          "D": "Larut merupakan perilaku zat.",
+          "E": "Pasir bukan karakteristik rasa."
+        },
+        "penjelasan_utama": "Relasinya adalah benda → karakteristik rasa utama."
+      },
+      {
+        "id": "P4-Q08",
+        "soal": "KLINIK : PASIEN = BENGKEL : ...",
+        "opsi": {
+          "A": "Montir",
+          "B": "Mesin",
+          "C": "Kendaraan",
+          "D": "Peralatan",
+          "E": "Perbaikan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Montir adalah pelaku layanan.",
+          "B": "Mesin merupakan salah satu objek yang dapat diperbaiki.",
+          "C": "Benar. Klinik memberikan layanan kepada pasien; bengkel memberikan layanan terhadap kendaraan.",
+          "D": "Peralatan terlalu umum.",
+          "E": "Perbaikan adalah jenis layanan."
+        },
+        "penjelasan_utama": "Relasinya adalah tempat pelayanan → pihak atau objek penerima layanan."
+      },
+      {
+        "id": "P4-Q09",
+        "soal": "JURNAL : PENELITIAN = ALBUM : ...",
+        "opsi": {
+          "A": "Kamera",
+          "B": "Foto",
+          "C": "Kenangan",
+          "D": "Fotografer",
+          "E": "Gambar"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Kamera adalah alat.",
+          "B": "Benar. Jurnal memuat catatan penelitian; album memuat kumpulan foto.",
+          "C": "Kenangan adalah tujuan atau makna.",
+          "D": "Fotografer adalah pembuat.",
+          "E": "Gambar lebih luas; foto lebih spesifik."
+        },
+        "penjelasan_utama": "Hubungannya adalah media dokumentasi → isi yang didokumentasikan."
+      },
+      {
+        "id": "P4-Q10",
+        "soal": "KAPTEN : TIM = DIRIGEN : ...",
+        "opsi": {
+          "A": "Lagu",
+          "B": "Orkestra",
+          "C": "Penonton",
+          "D": "Panggung",
+          "E": "Alat musik"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Lagu adalah karya yang dibawakan.",
+          "B": "Benar. Kapten memimpin tim; dirigen memimpin orkestra.",
+          "C": "Penonton adalah penerima pertunjukan.",
+          "D": "Panggung adalah tempat.",
+          "E": "Alat musik adalah sarana yang dimainkan."
+        },
+        "penjelasan_utama": "Relasinya adalah pemimpin → kelompok yang dipimpin."
+      },
+      {
+        "id": "P4-Q11",
+        "soal": "BATTERY : ENERGI = TANGKI : ...",
+        "opsi": {
+          "A": "Mesin",
+          "B": "Bensin",
+          "C": "Kendaraan",
+          "D": "Pompa",
+          "E": "Bahan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mesin adalah pengguna energi.",
+          "B": "Benar. Baterai menyimpan energi; tangki menyimpan bensin.",
+          "C": "Kendaraan adalah keseluruhan sistem.",
+          "D": "Pompa adalah alat pengisian.",
+          "E": "Bahan terlalu umum."
+        },
+        "penjelasan_utama": "Relasinya adalah wadah atau penyimpan → sumber energi yang disimpan."
+      },
+      {
+        "id": "P4-Q12",
+        "soal": "PENYULUH : PETANI = DOKTER : ...",
+        "opsi": {
+          "A": "Rumah sakit",
+          "B": "Resep",
+          "C": "Pasien",
+          "D": "Obat",
+          "E": "Perawat"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Rumah sakit adalah tempat praktik.",
+          "B": "Resep adalah produk atau instruksi.",
+          "C": "Benar. Penyuluh memberikan bimbingan kepada petani; dokter memberikan pelayanan kepada pasien.",
+          "D": "Obat adalah sarana penanganan.",
+          "E": "Perawat adalah rekan kerja."
+        },
+        "penjelasan_utama": "Relasinya adalah profesi pemberi layanan → penerima layanan."
+      },
+      {
+        "id": "P4-Q13",
+        "soal": "KOREKSI : KESALAHAN = PEMERIKSAAN : ...",
+        "opsi": {
+          "A": "Dokumen",
+          "B": "Bukti",
+          "C": "Temuan",
+          "D": "Petugas",
+          "E": "Perbaikan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Dokumen merupakan objek.",
+          "B": "Bukti merupakan bahan pendukung.",
+          "C": "Benar. Koreksi mengidentifikasi kesalahan; pemeriksaan menghasilkan temuan.",
+          "D": "Petugas adalah pelaku.",
+          "E": "Perbaikan merupakan tindakan lanjutan."
+        },
+        "penjelasan_utama": "Relasinya adalah proses evaluatif → hasil yang diperoleh."
+      },
+      {
+        "id": "P4-Q14",
+        "soal": "NODA : SABUN = KARAT : ...",
+        "opsi": {
+          "A": "Cat",
+          "B": "Air",
+          "C": "Amplas",
+          "D": "Kain",
+          "E": "Sikat"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Cat digunakan setelah permukaan dipersiapkan.",
+          "B": "Air dapat membantu membersihkan, tetapi bukan sarana pengikis karat.",
+          "C": "Benar. Sabun digunakan untuk membantu menghilangkan noda; amplas digunakan untuk mengikis karat.",
+          "D": "Kain digunakan untuk mengusap atau membersihkan.",
+          "E": "Sikat dapat digunakan pada beberapa jenis karat, tetapi tidak seprototipikal amplas."
+        },
+        "penjelasan_utama": "Relasinya adalah kondisi atau masalah → sarana penanganan yang ditujukan untuk menghilangkannya."
+      },
+      {
+        "id": "P4-Q15",
+        "soal": "KEMACETAN : KETERLAMBATAN = GANGGUAN JARINGAN : ...",
+        "opsi": {
+          "A": "Komputer",
+          "B": "Kegagalan",
+          "C": "Terputus",
+          "D": "Komunikasi",
+          "E": "Teknologi"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Komputer merupakan perangkat yang terdampak.",
+          "B": "Benar. Kemacetan dapat menyebabkan keterlambatan; gangguan jaringan dapat menyebabkan kegagalan layanan atau akses.",
+          "C": "Terputus dapat menjadi bentuk gangguan jaringan.",
+          "D": "Komunikasi merupakan proses terdampak.",
+          "E": "Teknologi terlalu luas."
+        },
+        "penjelasan_utama": "Relasinya adalah gangguan operasional → konsekuensi terhadap aktivitas atau layanan."
+      },
+      {
+        "id": "P4-Q16",
+        "soal": "KELALAIAN : KECELAKAAN = KEHATI-HATIAN : ...",
+        "opsi": {
+          "A": "Keterlambatan",
+          "B": "Keselamatan",
+          "C": "Kerusakan",
+          "D": "Kelelahan",
+          "E": "Kepanikan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Keterlambatan tidak merupakan akibat utama yang paling langsung dari kehati-hatian.",
+          "B": "Benar. Kelalaian dapat menyebabkan kecelakaan; kehati-hatian dapat meningkatkan keselamatan.",
+          "C": "Kerusakan dapat terjadi akibat kelalaian, tetapi bukan pasangan yang berlawanan secara fungsional.",
+          "D": "Kelelahan tidak berkaitan secara langsung.",
+          "E": "Kepanikan bukan hasil utama kehati-hatian."
+        },
+        "penjelasan_utama": "Hubungannya adalah perilaku atau kondisi → konsekuensi. Kelalaian dapat menghasilkan kecelakaan, sedangkan kehati-hatian berkontribusi terhadap keselamatan. Kedua pasangan mempertahankan hubungan tindakan atau keadaan dengan konsekuensinya."
+      },
+      {
+        "id": "P4-Q17",
+        "soal": "JEMBATAN : SUNGAI = TEROWONGAN : ...",
+        "opsi": {
+          "A": "Jalan",
+          "B": "Gunung",
+          "C": "Kendaraan",
+          "D": "Tanah",
+          "E": "Perjalanan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Jalan adalah prasarana.",
+          "B": "Benar. Jembatan dibangun untuk melintasi sungai; terowongan dibangun untuk menembus gunung atau rintangan medan.",
+          "C": "Kendaraan adalah pengguna.",
+          "D": "Tanah adalah material yang ditembus.",
+          "E": "Perjalanan adalah tujuan penggunaan."
+        },
+        "penjelasan_utama": "Relasinya adalah struktur infrastruktur → rintangan atau medan yang diatasi."
+      },
+      {
+        "id": "P4-Q18",
+        "soal": "PENGIRIMAN : PENERIMA = PEMBELAJARAN : ...",
+        "opsi": {
+          "A": "Materi",
+          "B": "Guru",
+          "C": "Siswa",
+          "D": "Sekolah",
+          "E": "Pengetahuan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Materi adalah isi pembelajaran.",
+          "B": "Guru adalah pemberi pembelajaran.",
+          "C": "Benar. Pengiriman ditujukan kepada penerima; pembelajaran ditujukan kepada siswa.",
+          "D": "Sekolah adalah institusi atau tempat.",
+          "E": "Pengetahuan adalah hasil."
+        },
+        "penjelasan_utama": "Relasinya adalah proses atau layanan → pihak yang menerima proses tersebut."
+      },
+      {
+        "id": "P4-Q19",
+        "soal": "SEKOP : MENGGALI = JARING : ...",
+        "opsi": {
+          "A": "Ikan",
+          "B": "Menangkap",
+          "C": "Nelayan",
+          "D": "Laut",
+          "E": "Menjerat"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Ikan adalah objek sasaran.",
+          "B": "Benar. Sekop digunakan untuk menggali; jaring digunakan untuk menangkap.",
+          "C": "Nelayan adalah pengguna.",
+          "D": "Laut merupakan media atau tempat.",
+          "E": "Menjerat adalah salah satu cara kerja tertentu, bukan fungsi umum."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat → fungsi utama."
+      },
+      {
+        "id": "P4-Q20",
+        "soal": "KOMPOR : MEMASAK = MESIN CUCI : ...",
+        "opsi": {
+          "A": "Air",
+          "B": "Sabun",
+          "C": "Mencuci",
+          "D": "Pakaian",
+          "E": "Mengeringkan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Air adalah bahan.",
+          "B": "Sabun adalah bahan pendukung.",
+          "C": "Benar. Kompor digunakan untuk memasak; mesin cuci digunakan untuk mencuci.",
+          "D": "Pakaian adalah objek.",
+          "E": "Mengeringkan merupakan fungsi lanjutan pada sebagian mesin."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat → fungsi utama."
+      },
+      {
+        "id": "P4-Q21",
+        "soal": "KONTRAK : KESEPAKATAN = PUTUSAN : ...",
+        "opsi": {
+          "A": "Hakim",
+          "B": "Sidang",
+          "C": "Keputusan",
+          "D": "Perkara",
+          "E": "Saksi"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Hakim adalah pembuat putusan.",
+          "B": "Sidang adalah proses atau forum.",
+          "C": "Benar. Kontrak memformalkan kesepakatan; putusan memformalkan keputusan hakim terhadap perkara.",
+          "D": "Perkara adalah persoalan yang diputuskan.",
+          "E": "Saksi memberikan keterangan."
+        },
+        "penjelasan_utama": "Relasinya adalah produk formal → keputusan substantif yang dituangkan."
+      },
+      {
+        "id": "P4-Q22",
+        "soal": "MENGERING : MENGERUT = MEMBEKU : ...",
+        "opsi": {
+          "A": "Mencair",
+          "B": "Mengeras",
+          "C": "Membesar",
+          "D": "Mendingin",
+          "E": "Berkristal"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Mencair berlawanan dengan membeku.",
+          "B": "Benar. Mengering dapat menyebabkan bahan mengerut; membeku dapat membuat bahan mengeras.",
+          "C": "Membesar bukan konsekuensi umum.",
+          "D": "Mendingin mendahului pembekuan.",
+          "E": "Berkristal terlalu spesifik."
+        },
+        "penjelasan_utama": "Hubungannya adalah proses perubahan keadaan → perubahan sifat atau bentuk yang ditimbulkan."
+      },
+      {
+        "id": "P4-Q23",
+        "soal": "PENGHITUNGAN : TOTAL = PENGUKURAN : ...",
+        "opsi": {
+          "A": "Panjang",
+          "B": "Alat",
+          "C": "Petugas",
+          "D": "Prosedur",
+          "E": "Objek"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Penghitungan menghasilkan total; pengukuran dapat menghasilkan nilai panjang.",
+          "B": "Alat merupakan sarana proses.",
+          "C": "Petugas merupakan pelaksana.",
+          "D": "Prosedur merupakan tata cara.",
+          "E": "Objek merupakan sesuatu yang diukur."
+        },
+        "penjelasan_utama": "Hubungannya adalah proses pengolahan informasi → hasil atau besaran yang diperoleh. Penghitungan menghasilkan total, sedangkan pengukuran menghasilkan besaran seperti panjang."
+      },
+      {
+        "id": "P4-Q24",
+        "soal": "GUNTING : MEMOTONG = KUAS : ...",
+        "opsi": {
+          "A": "Menggambar",
+          "B": "Melukis",
+          "C": "Mencoret",
+          "D": "Menghapus",
+          "E": "Menulis"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Menggambar dapat dilakukan dengan kuas pada konteks tertentu, tetapi melukis merupakan fungsi yang lebih prototipikal.",
+          "B": "Benar. Gunting digunakan untuk memotong; kuas digunakan untuk melukis.",
+          "C": "Mencoret bukan fungsi utama.",
+          "D": "Menghapus bukan fungsi kuas.",
+          "E": "Menulis lebih lazim menggunakan pena atau pensil."
+        },
+        "penjelasan_utama": "Hubungannya adalah alat → fungsi utama."
+      },
+      {
+        "id": "P4-Q25",
+        "soal": "SUSU : KEJU : MAKAN = BUAH : SARI : ...",
+        "opsi": {
+          "A": "Minum",
+          "B": "Manis",
+          "C": "Pohon",
+          "D": "Jus",
+          "E": "Segar"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Susu diolah menjadi keju yang kemudian dimakan; buah dapat diolah menjadi sari yang kemudian diminum.",
+          "B": "Manis adalah karakteristik rasa.",
+          "C": "Pohon merupakan sumber buah.",
+          "D": "Jus merupakan produk, bukan tindakan penggunaan.",
+          "E": "Segar merupakan karakteristik."
+        },
+        "penjelasan_utama": "Strukturnya adalah bahan awal → hasil olahan → tindakan penggunaan atau konsumsi."
+      },
+      {
+        "id": "P4-Q26",
+        "soal": "KERUSAKAN : PERBAIKAN = PENYAKIT : ...",
+        "opsi": {
+          "A": "Diagnosis",
+          "B": "Dokter",
+          "C": "Obat",
+          "D": "Pengobatan",
+          "E": "Gejala"
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Diagnosis adalah proses identifikasi sebelum atau sebagai bagian dari pengobatan.",
+          "B": "Dokter adalah pelaku penanganan.",
+          "C": "Obat adalah sarana atau produk.",
+          "D": "Benar. Kerusakan ditangani melalui perbaikan; penyakit ditangani melalui pengobatan.",
+          "E": "Gejala adalah tanda penyakit."
+        },
+        "penjelasan_utama": "Hubungannya adalah kondisi atau masalah → proses penanganannya."
+      },
+      {
+        "id": "P4-Q27",
+        "soal": "Petani menanam benih di sawah. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Dokter memberi resep di apotek.",
+          "B": "Nelayan menangkap ikan di laut.",
+          "C": "Guru membaca buku di kelas.",
+          "D": "Montir memperbaiki mobil di garasi.",
+          "E": "Koki membeli bahan di pasar."
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Profesi, tindakan, objek, dan tempat tidak sepenuhnya paralel.",
+          "B": "Benar. Petani → menanam → benih → sawah; nelayan → menangkap → ikan → laut.",
+          "C": "Membaca merupakan aktivitas umum, bukan fungsi profesional utama guru.",
+          "D": "Garasi bukan tempat kerja prototipikal montir.",
+          "E": "Membeli bahan merupakan transaksi."
+        },
+        "penjelasan_utama": "Struktur sumber terdiri dari pelaku → tindakan terhadap objek → lokasi khas tindakan."
+      },
+      {
+        "id": "P4-Q28",
+        "soal": "Rem mengurangi kecepatan kendaraan. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Setir mengubah arah kendaraan.",
+          "B": "Klakson memberi suara kendaraan.",
+          "C": "Lampu menerangi jalan.",
+          "D": "Mesin menggerakkan kendaraan.",
+          "E": "Ban menopang kendaraan."
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Rem mengendalikan laju dengan menguranginya; setir mengendalikan arah dengan mengubahnya.",
+          "B": "Klakson memberi peringatan atau suara.",
+          "C": "Lampu memberikan penerangan.",
+          "D": "Mesin menghasilkan tenaga atau gerak, bukan pengendalian variabel.",
+          "E": "Ban menopang kendaraan."
+        },
+        "penjelasan_utama": "Hubungannya adalah komponen kendaraan → tindakan pengendalian terhadap variabel gerak."
+      },
+      {
+        "id": "P4-Q29",
+        "soal": "LAPANGAN : PEMAIN = PANGGUNG : ...",
+        "opsi": {
+          "A": "Penonton",
+          "B": "Aktor",
+          "C": "Lampu",
+          "D": "Tirai",
+          "E": "Kursi"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Penonton hadir sebagai penerima pertunjukan.",
+          "B": "Benar. Lapangan merupakan tempat utama pemain melakukan pertandingan; panggung merupakan tempat utama aktor melakukan pertunjukan.",
+          "C": "Lampu merupakan perlengkapan.",
+          "D": "Tirai merupakan perlengkapan.",
+          "E": "Kursi adalah fasilitas penonton."
+        },
+        "penjelasan_utama": "Relasinya adalah tempat kegiatan → pelaku utama kegiatan."
+      },
+      {
+        "id": "P4-Q30",
+        "soal": "LATIHAN : KETERAMPILAN = BELAJAR : ...",
+        "opsi": {
+          "A": "Sekolah",
+          "B": "Guru",
+          "C": "Pengetahuan",
+          "D": "Ujian",
+          "E": "Buku"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Sekolah merupakan tempat belajar.",
+          "B": "Guru merupakan pengajar.",
+          "C": "Benar. Latihan meningkatkan keterampilan; belajar meningkatkan pengetahuan.",
+          "D": "Ujian merupakan bentuk evaluasi.",
+          "E": "Buku merupakan sumber atau media belajar."
+        },
+        "penjelasan_utama": "Hubungannya adalah aktivitas → kemampuan atau hasil yang dikembangkan melalui aktivitas tersebut. Latihan mengembangkan keterampilan, sedangkan belajar mengembangkan pengetahuan."
+      }
+    ]
+  },
+  "paket_5": {
+    "nama_paket": "Paket 5",
+    "soal": [
+      {
+        "id": "P5-Q01",
+        "soal": "KERETA : REL = KAPAL : ...",
+        "opsi": {
+          "A": "Pelabuhan",
+          "B": "Laut",
+          "C": "Nahkoda",
+          "D": "Mesin",
+          "E": "Penumpang"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pelabuhan merupakan tempat kapal berhenti atau bersandar, bukan media perjalanan.",
+          "B": "Benar. Kereta bergerak di atas rel; kapal bergerak di laut.",
+          "C": "Nahkoda adalah pengendali kapal.",
+          "D": "Mesin adalah komponen penggerak.",
+          "E": "Penumpang adalah pengguna jasa."
+        },
+        "penjelasan_utama": "Relasinya adalah sarana transportasi → jalur atau media tempat sarana tersebut bergerak. Kereta menggunakan rel, sedangkan kapal bergerak di laut."
+      },
+      {
+        "id": "P5-Q02",
+        "soal": "GUNUNG : TINGGI = LAUT : ...",
+        "opsi": {
+          "A": "Asin",
+          "B": "Dalam",
+          "C": "Luas",
+          "D": "Biru",
+          "E": "Tenang"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Asin merupakan karakteristik rasa air laut.",
+          "B": "Dalam merupakan dimensi kedalaman.",
+          "C": "Benar. Tinggi merupakan ukuran atau karakteristik utama gunung; luas merupakan ukuran bentang laut.",
+          "D": "Biru merupakan warna.",
+          "E": "Tenang merupakan kondisi permukaan."
+        },
+        "penjelasan_utama": "Hubungannya adalah objek geografis → karakteristik ukuran yang dominan."
+      },
+      {
+        "id": "P5-Q03",
+        "soal": "SUSU : YOGURT = KEDELAI : ...",
+        "opsi": {
+          "A": "Kecap",
+          "B": "Tempe",
+          "C": "Minyak",
+          "D": "Santan",
+          "E": "Tepung"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Kecap juga berasal dari kedelai yang difermentasi, sehingga sangat kompetitif, tetapi produknya berbeda proses dan karakter.",
+          "B": "Benar. Susu dapat difermentasi menjadi yogurt; kedelai dapat difermentasi menjadi tempe.",
+          "C": "Minyak merupakan produk dari bahan tertentu tetapi bukan hasil fermentasi kedelai yang paralel.",
+          "D": "Santan berasal dari kelapa.",
+          "E": "Tepung merupakan hasil penggilingan."
+        },
+        "penjelasan_utama": "Relasinya adalah bahan → produk yang dihasilkan melalui fermentasi. A tetap berkaitan kuat dengan kedelai, tetapi tempe menjadi pasangan paling paralel dengan yogurt sebagai hasil fermentasi bahan makanan."
+      },
+      {
+        "id": "P5-Q04",
+        "soal": "SABIT : PETANI = GUNTING : ...",
+        "opsi": {
+          "A": "Pelukis",
+          "B": "Penjahit",
+          "C": "Peternak",
+          "D": "Koki",
+          "E": "Nelayan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pelukis lebih identik dengan kuas.",
+          "B": "Benar. Sabit merupakan alat yang lazim digunakan petani; gunting merupakan alat yang lazim digunakan penjahit.",
+          "C": "Peternak bukan pengguna utama sabit dalam pola profesi-alat ini.",
+          "D": "Koki menggunakan alat dapur.",
+          "E": "Nelayan menggunakan alat tangkap atau peralatan melaut."
+        },
+        "penjelasan_utama": "Relasinya adalah alat kerja → profesi pengguna utamanya. Sabit berhubungan dengan pekerjaan petani, sedangkan gunting berhubungan dengan pekerjaan penjahit."
+      },
+      {
+        "id": "P5-Q05",
+        "soal": "PELABUHAN : KAPAL = BANDARA : ...",
+        "opsi": {
+          "A": "Pesawat",
+          "B": "Pilot",
+          "C": "Landasan",
+          "D": "Penumpang",
+          "E": "Terminal"
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Pelabuhan merupakan fasilitas tempat kapal datang, berangkat, atau bersandar; bandara merupakan fasilitas tempat pesawat datang, berangkat, atau beroperasi.",
+          "B": "Pilot adalah pengendali pesawat.",
+          "C": "Landasan adalah bagian fasilitas bandara.",
+          "D": "Penumpang adalah pengguna layanan.",
+          "E": "Terminal adalah bagian fasilitas."
+        },
+        "penjelasan_utama": "Relasinya adalah fasilitas transportasi → sarana transportasi utama yang dilayani."
+      },
+      {
+        "id": "P5-Q06",
+        "soal": "KULIT : SEPATU = KAYU : ...",
+        "opsi": {
+          "A": "Pohon",
+          "B": "Meja",
+          "C": "Papan",
+          "D": "Serat",
+          "E": "Hutan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pohon merupakan sumber kayu.",
+          "B": "Benar. Kulit dapat menjadi bahan sepatu; kayu dapat menjadi bahan meja.",
+          "C": "Papan lebih dekat sebagai hasil pengolahan antara.",
+          "D": "Serat merupakan unsur material.",
+          "E": "Hutan merupakan sumber bahan."
+        },
+        "penjelasan_utama": "Relasinya adalah bahan → produk jadi."
+      },
+      {
+        "id": "P5-Q07",
+        "soal": "BUNYI : TELINGA = BAU : ...",
+        "opsi": {
+          "A": "Lidah",
+          "B": "Kulit",
+          "C": "Hidung",
+          "D": "Mata",
+          "E": "Tangan"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Lidah menangkap rasa.",
+          "B": "Kulit terutama berfungsi sebagai indera peraba.",
+          "C": "Benar. Bunyi ditangkap telinga; bau ditangkap hidung.",
+          "D": "Mata menangkap rangsang visual.",
+          "E": "Tangan bukan organ indera penciuman."
+        },
+        "penjelasan_utama": "Relasinya adalah rangsang inderawi → organ penerima."
+      },
+      {
+        "id": "P5-Q08",
+        "soal": "HELM : KEPALA = SEPATU : ...",
+        "opsi": {
+          "A": "Tangan",
+          "B": "Kaki",
+          "C": "Lutut",
+          "D": "Pinggang",
+          "E": "Jari"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Tangan menggunakan sarung tangan.",
+          "B": "Benar. Helm dikenakan pada kepala; sepatu dikenakan pada kaki.",
+          "C": "Lutut bukan lokasi utama penggunaan sepatu.",
+          "D": "Pinggang merupakan lokasi penggunaan sabuk.",
+          "E": "Jari adalah bagian kaki, bukan keseluruhan bagian tubuh."
+        },
+        "penjelasan_utama": "Relasinya adalah benda yang dikenakan → bagian tubuh tempat benda digunakan."
+      },
+      {
+        "id": "P5-Q09",
+        "soal": "BUNGKUS : BARANG = AMPLOP : ...",
+        "opsi": {
+          "A": "Kertas",
+          "B": "Pena",
+          "C": "Surat",
+          "D": "Alamat",
+          "E": "Prangko"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Kertas merupakan bahan.",
+          "B": "Pena dapat disimpan dalam bungkus, tetapi bukan isi khas amplop.",
+          "C": "Benar. Bungkus menampung barang; amplop menampung surat.",
+          "D": "Alamat merupakan informasi yang ditulis pada amplop.",
+          "E": "Prangko ditempel pada amplop."
+        },
+        "penjelasan_utama": "Relasinya adalah wadah atau pembungkus → isi utama. A, D, dan E mewakili bahan atau atribut, bukan isi."
+      },
+      {
+        "id": "P5-Q10",
+        "soal": "MADU : MANIS = CABAI : ...",
+        "opsi": {
+          "A": "Asam",
+          "B": "Pahit",
+          "C": "Pedas",
+          "D": "Merah",
+          "E": "Segar"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Asam bukan rasa utama cabai.",
+          "B": "Pahit bukan rasa utama cabai.",
+          "C": "Benar. Madu manis; cabai pedas.",
+          "D": "Merah adalah warna, bukan rasa.",
+          "E": "Segar merupakan kesan umum."
+        },
+        "penjelasan_utama": "Relasinya adalah benda → karakteristik rasa utama."
+      },
+      {
+        "id": "P5-Q11",
+        "soal": "LIPAT : KERTAS = UKIR : ...",
+        "opsi": {
+          "A": "Pahat",
+          "B": "Kayu",
+          "C": "Patung",
+          "D": "Serpih",
+          "E": "Batu"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pahat merupakan alat mengukir.",
+          "B": "Benar. Melipat diterapkan pada kertas; mengukir diterapkan pada kayu.",
+          "C": "Patung merupakan hasil yang dapat dibuat melalui ukiran.",
+          "D": "Serpih adalah sisa atau hasil.",
+          "E": "Batu juga dapat diukir, tetapi kayu lebih prototipikal."
+        },
+        "penjelasan_utama": "Relasinya adalah tindakan → material yang dikenai tindakan."
+      },
+      {
+        "id": "P5-Q12",
+        "soal": "TEMPA : BESI = ANYAM : ...",
+        "opsi": {
+          "A": "Tali",
+          "B": "Rotan",
+          "C": "Keranjang",
+          "D": "Pola",
+          "E": "Benang"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Tali dapat menjadi bahan dalam beberapa kerajinan, tetapi bukan objek anyaman paling khas.",
+          "B": "Benar. Menempa dilakukan pada besi; menganyam dilakukan pada bahan seperti rotan.",
+          "C": "Keranjang merupakan produk hasil anyaman.",
+          "D": "Pola adalah rancangan.",
+          "E": "Benang dapat dianyam atau dirajut, tetapi tidak seprototipikal rotan."
+        },
+        "penjelasan_utama": "Relasinya adalah proses kerajinan → bahan yang dikenai proses."
+      },
+      {
+        "id": "P5-Q13",
+        "soal": "JAHIT : KAIN = LAS : ...",
+        "opsi": {
+          "A": "Paku",
+          "B": "Besi",
+          "C": "Asap",
+          "D": "Api",
+          "E": "Baut"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Paku adalah komponen sambungan.",
+          "B": "Benar. Menjahit diterapkan pada kain; mengelas diterapkan pada besi.",
+          "C": "Asap adalah efek samping.",
+          "D": "Api adalah sumber panas pada beberapa teknik.",
+          "E": "Baut adalah komponen penyambung."
+        },
+        "penjelasan_utama": "Relasinya adalah tindakan teknis → material objek."
+      },
+      {
+        "id": "P5-Q14",
+        "soal": "BENIH : TANAMAN = TELUR : ...",
+        "opsi": {
+          "A": "Sarang",
+          "B": "Burung",
+          "C": "Cangkang",
+          "D": "Ayam",
+          "E": "Anak"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Sarang adalah tempat telur berada.",
+          "B": "Benar. Benih merupakan tahap awal yang berkembang menjadi tanaman; telur merupakan tahap awal yang berkembang menjadi burung.",
+          "C": "Cangkang adalah bagian telur.",
+          "D": "Ayam terlalu spesifik.",
+          "E": "Anak menggambarkan keturunan, bukan kategori organisme sejajar."
+        },
+        "penjelasan_utama": "Relasinya adalah bentuk awal perkembangan → organisme yang berkembang darinya."
+      },
+      {
+        "id": "P5-Q15",
+        "soal": "JADWAL : WAKTU = DENAH : ...",
+        "opsi": {
+          "A": "Arah",
+          "B": "Ruang",
+          "C": "Warna",
+          "D": "Ukuran",
+          "E": "Bahan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Arah dapat ditunjukkan oleh denah tertentu, tetapi bukan informasi utama yang paling tepat.",
+          "B": "Benar. Jadwal memberikan informasi mengenai waktu; denah memberikan informasi mengenai susunan atau posisi ruang.",
+          "C": "Warna hanya merupakan unsur visual.",
+          "D": "Ukuran bukan informasi utama yang secara inheren diberikan denah.",
+          "E": "Bahan bukan informasi utama denah."
+        },
+        "penjelasan_utama": "Relasinya adalah media informasi → informasi yang disajikan. Jadwal menyajikan informasi waktu, sedangkan denah menyajikan informasi mengenai susunan atau posisi ruang."
+      },
+      {
+        "id": "P5-Q16",
+        "soal": "KAMERA : FOTO = PRINTER : ...",
+        "opsi": {
+          "A": "Tinta",
+          "B": "Kertas",
+          "C": "Dokumen",
+          "D": "Listrik",
+          "E": "Mesin"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Tinta merupakan bahan.",
+          "B": "Kertas merupakan media.",
+          "C": "Benar. Kamera menghasilkan foto; printer menghasilkan dokumen cetak.",
+          "D": "Listrik merupakan sumber energi.",
+          "E": "Mesin merupakan bagian perangkat."
+        },
+        "penjelasan_utama": "Relasinya adalah perangkat → keluaran yang dihasilkan."
+      },
+      {
+        "id": "P5-Q17",
+        "soal": "PULPEN : TINTA = KOMPOR : ...",
+        "opsi": {
+          "A": "Api",
+          "B": "Gas",
+          "C": "Panas",
+          "D": "Asap",
+          "E": "Besi"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Api merupakan hasil pembakaran.",
+          "B": "Benar. Pulpen menggunakan tinta sebagai bahan habis pakai; kompor gas menggunakan gas sebagai bahan bakar.",
+          "C": "Panas merupakan hasil energi.",
+          "D": "Asap adalah hasil samping.",
+          "E": "Besi adalah bahan konstruksi."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → bahan operasional yang dikonsumsi untuk menjalankan fungsi."
+      },
+      {
+        "id": "P5-Q18",
+        "soal": "KIPAS : ANGIN = LAMPU : ...",
+        "opsi": {
+          "A": "Panas",
+          "B": "Cahaya",
+          "C": "Listrik",
+          "D": "Kabel",
+          "E": "Bohlam"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Panas bukan keluaran utama.",
+          "B": "Benar. Kipas menghasilkan aliran angin; lampu menghasilkan cahaya.",
+          "C": "Listrik merupakan sumber energi.",
+          "D": "Kabel merupakan bagian.",
+          "E": "Bohlam merupakan komponen."
+        },
+        "penjelasan_utama": "Relasinya adalah perangkat → keluaran atau efek utama."
+      },
+      {
+        "id": "P5-Q19",
+        "soal": "LAPAR : MAKAN = HAUS : ...",
+        "opsi": {
+          "A": "Tidur",
+          "B": "Minum",
+          "C": "Muntah",
+          "D": "Duduk",
+          "E": "Diam"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Tidur merupakan respons terhadap lelah atau kebutuhan istirahat.",
+          "B": "Benar. Lapar mendorong makan; haus mendorong minum.",
+          "C": "Muntah bukan respons normal terhadap rasa haus.",
+          "D": "Duduk bukan respons khusus.",
+          "E": "Diam tidak berkaitan."
+        },
+        "penjelasan_utama": "Relasinya adalah keadaan kebutuhan fisiologis → tindakan pemenuhannya."
+      },
+      {
+        "id": "P5-Q20",
+        "soal": "GAGAL : BERHASIL = RUGI : ...",
+        "opsi": {
+          "A": "Habis",
+          "B": "Besar",
+          "C": "Untung",
+          "D": "Laku",
+          "E": "Modal"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Habis menunjukkan keadaan berkurang atau tidak tersisa.",
+          "B": "Besar merupakan ukuran.",
+          "C": "Benar. Gagal berlawanan dengan berhasil; rugi berlawanan dengan untung.",
+          "D": "Laku berkaitan dengan keberhasilan penjualan.",
+          "E": "Modal adalah sumber dana."
+        },
+        "penjelasan_utama": "Relasinya adalah antonim langsung."
+      },
+      {
+        "id": "P5-Q21",
+        "soal": "SURUT : PASANG = REDUP : ...",
+        "opsi": {
+          "A": "Padam",
+          "B": "Terang",
+          "C": "Gelap",
+          "D": "Silau",
+          "E": "Nyala"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Padam lebih ekstrem daripada redup.",
+          "B": "Benar. Surut dan pasang merupakan keadaan berlawanan; redup dan terang juga berlawanan.",
+          "C": "Gelap merupakan keadaan kekurangan cahaya.",
+          "D": "Silau menunjukkan cahaya sangat kuat.",
+          "E": "Nyala merupakan keadaan sumber cahaya."
+        },
+        "penjelasan_utama": "Relasinya adalah dua keadaan yang berlawanan pada satu dimensi."
+      },
+      {
+        "id": "P5-Q22",
+        "soal": "SAPI : SUSU = AYAM : ...",
+        "opsi": {
+          "A": "Daging",
+          "B": "Bulu",
+          "C": "Telur",
+          "D": "Kandang",
+          "E": "Anak"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Daging merupakan produk dari sapi tetapi bukan hasil utama yang menjadi pasangan stimulus.",
+          "B": "Bulu merupakan bagian tubuh atau produk sampingan.",
+          "C": "Benar. Sapi menghasilkan susu; ayam menghasilkan telur.",
+          "D": "Kandang adalah tempat pemeliharaan.",
+          "E": "Anak merupakan keturunan."
+        },
+        "penjelasan_utama": "Relasinya adalah hewan → hasil yang diperoleh atau dihasilkan secara khas."
+      },
+      {
+        "id": "P5-Q23",
+        "soal": "BANK : UANG = KANDANG : ...",
+        "opsi": {
+          "A": "Pakan",
+          "B": "Hewan",
+          "C": "Peternak",
+          "D": "Rumput",
+          "E": "Pagar"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Pakan merupakan benda yang dapat disimpan atau diberikan di kandang.",
+          "B": "Benar. Bank merupakan tempat penyimpanan uang; kandang merupakan tempat penampungan hewan.",
+          "C": "Peternak adalah pengelola.",
+          "D": "Rumput adalah pakan atau lingkungan.",
+          "E": "Pagar adalah bagian atau pembatas."
+        },
+        "penjelasan_utama": "Relasinya adalah tempat atau wadah → isi utama yang ditampung."
+      },
+      {
+        "id": "P5-Q24",
+        "soal": "HAKIM : SENGKETA = MEDIATOR : ...",
+        "opsi": {
+          "A": "Putusan",
+          "B": "Konflik",
+          "C": "Pihak",
+          "D": "Sidang",
+          "E": "Kesepakatan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Putusan adalah keluaran hakim.",
+          "B": "Benar. Hakim menangani sengketa; mediator menangani konflik.",
+          "C": "Pihak adalah pihak yang terlibat.",
+          "D": "Sidang adalah forum kerja hakim.",
+          "E": "Kesepakatan adalah hasil yang mungkin dicapai mediator."
+        },
+        "penjelasan_utama": "Relasinya adalah peran atau profesi → persoalan yang menjadi objek penanganan."
+      },
+      {
+        "id": "P5-Q25",
+        "soal": "RAK : BUKU = GARASI : ...",
+        "opsi": {
+          "A": "Kunci",
+          "B": "Mobil",
+          "C": "Bensin",
+          "D": "Montir",
+          "E": "Jalan"
+        },
+        "kunci_jawaban": "B",
+        "penjelasan_opsi": {
+          "A": "Kunci adalah alat akses.",
+          "B": "Benar. Rak merupakan tempat menyimpan buku; garasi merupakan tempat menyimpan atau melindungi mobil.",
+          "C": "Bensin adalah bahan bakar.",
+          "D": "Montir adalah pelaku pekerjaan.",
+          "E": "Jalan merupakan lingkungan penggunaan."
+        },
+        "penjelasan_utama": "Relasinya adalah tempat penyimpanan → objek utama yang ditempatkan di dalamnya."
+      },
+      {
+        "id": "P5-Q26",
+        "soal": "KOMPOR : MATANG = KULKAS : ...",
+        "opsi": {
+          "A": "Dingin",
+          "B": "Beku",
+          "C": "Awet",
+          "D": "Segar",
+          "E": "Es"
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Dingin merupakan kondisi, bukan efek fungsional pada makanan yang setara dengan matang.",
+          "B": "Beku terjadi pada sebagian makanan, bukan fungsi umum kulkas.",
+          "C": "Benar. Kompor membuat makanan menjadi matang; kulkas membantu makanan tetap awet.",
+          "D": "Segar merupakan kondisi yang dapat dipertahankan, tetapi tidak sepadan dengan perubahan keadaan matang.",
+          "E": "Es adalah benda atau hasil pendinginan."
+        },
+        "penjelasan_utama": "Relasinya adalah alat → perubahan atau kondisi yang menjadi tujuan utama penggunaannya terhadap bahan atau makanan."
+      },
+      {
+        "id": "P5-Q27",
+        "soal": "Dokter memeriksa pasien sebelum memberi obat. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Teknisi memeriksa mesin sebelum melakukan perbaikan.",
+          "B": "Kasir memeriksa barang sebelum menerima pembayaran.",
+          "C": "Guru memeriksa buku sebelum mengajar di kelas.",
+          "D": "Petugas memeriksa kartu sebelum membuka pintu.",
+          "E": "Juru masak memeriksa bahan sebelum menghidangkan makanan."
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Keduanya memiliki struktur profesi → pemeriksaan terhadap objek kerja → tindakan profesional lanjutan.",
+          "B": "Pembayaran merupakan transaksi, bukan tindakan profesional lanjutan.",
+          "C": "Mengajar tidak merupakan penanganan langsung terhadap objek yang diperiksa.",
+          "D": "Kontrol kartu adalah tindakan administratif.",
+          "E": "Menghidangkan adalah tahap penyajian setelah pengolahan."
+        },
+        "penjelasan_utama": "Strukturnya adalah profesi → pemeriksaan objek kerja → tindakan profesional lanjutan."
+      },
+      {
+        "id": "P5-Q28",
+        "soal": "Juri memilih pemenang berdasarkan nilai. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Wasit menentukan pelanggaran berdasarkan aturan.",
+          "B": "Kasir menetapkan harga berdasarkan jumlah.",
+          "C": "Guru memberi nilai berdasarkan jawaban.",
+          "D": "Hakim memberi putusan berdasarkan bukti.",
+          "E": "Petugas memberi izin berdasarkan berkas."
+        },
+        "kunci_jawaban": "D",
+        "penjelasan_opsi": {
+          "A": "Wasit menentukan pelanggaran berdasarkan aturan, tetapi objek keputusan berbeda.",
+          "B": "Kasir melakukan proses transaksi.",
+          "C": "Guru melakukan evaluasi untuk menghasilkan skor.",
+          "D": "Benar. Juri memilih pemenang berdasarkan nilai; hakim memberi putusan berdasarkan bukti.",
+          "E": "Petugas membuat keputusan administratif."
+        },
+        "penjelasan_utama": "Hubungannya adalah pihak penentu keputusan → keputusan substantif → dasar evaluasi yang relevan."
+      },
+      {
+        "id": "P5-Q29",
+        "soal": "Petani memisahkan gabah sebelum menggilingnya menjadi beras. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Penjahit memotong kain sebelum menjahitnya menjadi baju.",
+          "B": "Koki mencuci sayur sebelum menyajikannya menjadi makanan.",
+          "C": "Pengrajin memilih kayu sebelum membentuknya menjadi meja.",
+          "D": "Pedagang menimbang barang sebelum menjualnya menjadi keuntungan.",
+          "E": "Teknisi memeriksa mesin sebelum memakai mesin untuk bekerja."
+        },
+        "kunci_jawaban": "C",
+        "penjelasan_opsi": {
+          "A": "Memotong kain merupakan bagian dari pembentukan, bukan seleksi bahan.",
+          "B": "Mencuci sayur adalah pembersihan sebelum penyajian.",
+          "C": "Benar. Pengrajin memilih kayu sebelum membentuknya menjadi meja.",
+          "D": "Menjual merupakan transaksi ekonomi, bukan transformasi bahan.",
+          "E": "Memakai mesin bukan transformasi bahan menjadi produk."
+        },
+        "penjelasan_utama": "Strukturnya adalah pelaku pengolah → tindakan persiapan terhadap bahan → tindakan pengolahan → produk."
+      },
+      {
+        "id": "P5-Q30",
+        "soal": "Pengrajin menganyam rotan menjadi keranjang. Hubungan kalimat tersebut sama dengan ...",
+        "opsi": {
+          "A": "Penjahit menjahit kain menjadi baju.",
+          "B": "Petani menanam benih menjadi tanaman.",
+          "C": "Koki memasak bahan menjadi makanan.",
+          "D": "Montir memperbaiki mesin menjadi kendaraan.",
+          "E": "Pencetak mencetak kertas menjadi tinta."
+        },
+        "kunci_jawaban": "A",
+        "penjelasan_opsi": {
+          "A": "Benar. Keduanya memiliki struktur pelaku → proses pengolahan → bahan → produk.",
+          "B": "Menanam merupakan proses perkembangan, bukan manufaktur material.",
+          "C": "Memasak juga transformasi bahan, tetapi berbeda domain dari kerajinan material.",
+          "D": "Memperbaiki mesin tidak menghasilkan kendaraan baru.",
+          "E": "Tinta bukan hasil dari kertas dalam proses pencetakan."
+        },
+        "penjelasan_utama": "Struktur paling ketat adalah pelaku → teknik transformasi material → bahan → produk."
+      }
+    ]
+  }
+}

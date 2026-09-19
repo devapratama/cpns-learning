@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul 07 — Demokrasi, Hak, Kewajiban, dan Kehidupan Konstitusional | Materi TWK | CPNS Learning</title>
+<meta name="description" content="Modul naratif untuk memahami demokrasi, kedaulatan rakyat, partisipasi, representasi, musyawarah, voting, hak, kewajiban, kebebasan, dan pembatasan hak dalam kerangka kehidupan konstitusional Indonesia.">
+<style>
+:root{
+  --ink:#1d2933; --muted:#65737d; --paper:#f5f2ea; --card:#fffdf9;
+  --navy:#183548; --blue:#356b82; --gold:#b28735; --green:#2d6a58;
+  --red:#8c443c; --line:#ddd7cb; --soft:#edf3f5; --softgold:#f5eddd;
+  --softgreen:#edf4ef; --softr:#f8ece9; --shadow:0 16px 42px rgba(27,43,54,.07);
+  --r:21px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.82}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:auto;padding:0 24px}
+.hero{background:linear-gradient(135deg,#142d40 0%,#355d70 58%,#827149 100%);color:#fff;padding:78px 0 64px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-230px;bottom:-330px;width:720px;height:720px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 52px rgba(255,255,255,.03),0 0 0 104px rgba(255,255,255,.02)}
+.hero-grid{display:grid;grid-template-columns:1.55fr .65fr;gap:38px;align-items:end;position:relative;z-index:1}
+.eyebrow,.kicker{font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem}
+.eyebrow{opacity:.77}
+.hero h1{font:800 clamp(2.25rem,5.2vw,4.7rem)/1.04 Georgia,serif;margin:15px 0 18px;max-width:900px}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,.91);max-width:850px}
+.hero-note{padding:23px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:20px;backdrop-filter:blur(7px)}
+.sticky{position:sticky;top:0;z-index:30;background:rgba(245,242,234,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{max-width:1180px;margin:auto;display:flex;gap:8px;overflow:auto;padding:10px 24px}
+.nav a{white-space:nowrap;color:var(--muted);font-size:.82rem;padding:8px 11px;border-radius:999px}
+.nav a:hover{background:var(--soft);color:var(--ink);text-decoration:none}
+main{padding:24px 0 90px}
+.section{padding:68px 0}
+.section.alt{background:rgba(255,253,249,.56);border-top:1px solid rgba(221,215,203,.65);border-bottom:1px solid rgba(221,215,203,.65)}
+.section h2{font:800 clamp(1.8rem,3vw,3rem)/1.1 Georgia,serif;color:var(--navy);margin:8px 0 17px}
+.section h3{font-size:1.35rem;color:var(--navy);margin:30px 0 10px}
+.lead{font-size:1.08rem;color:#3c4e5a;max-width:930px}
+.story,.card,.callout,.reason,.checkpoint,.sourcebox,.case{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.story{padding:31px;max-width:980px}
+.story p{margin:15px 0}
+.callout{padding:21px 24px;margin:22px 0}
+.callout.gold{border-left:5px solid var(--gold)}
+.callout.blue{border-left:5px solid var(--blue)}
+.callout.green{border-left:5px solid var(--green)}
+.callout.red{border-left:5px solid var(--red)}
+.callout strong{color:var(--navy)}
+.tag{display:inline-block;padding:6px 10px;background:var(--softgold);border-radius:999px;color:#6e5829;font-weight:900;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:19px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:23px}
+.card h4{margin:0 0 9px;color:var(--navy);font-size:1.12rem}
+.tiny{font-size:.84rem;color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:24px 0}
+.pill{padding:10px 13px;background:var(--soft);border:1px solid #d5e0e4;border-radius:999px;font-weight:850;font-size:.86rem}
+.arrow{font-weight:900;color:var(--gold)}
+.big-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:28px 0}
+.big-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 15px;text-align:center}
+.big-step .n{font:800 1.75rem Georgia;color:var(--gold)}
+.big-step strong{display:block;margin:7px 0}
+.big-step span{font-size:.78rem;color:var(--muted)}
+.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;margin:20px 0}
+.compare>div{padding:24px}
+.compare .a{background:#f1f6f7;border-right:1px solid var(--line)}
+.compare .b{background:#fbf5e7}
+.signal{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted)}
+.reason{padding:24px}
+.rline{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.rline:last-child{border-bottom:none}
+.rkey{font-weight:900;color:var(--navy)}
+.badge{display:inline-block;border:1px solid #d5d0c7;padding:4px 8px;border-radius:8px;background:#fbfaf6;font-size:.73rem;font-weight:850;color:#656960}
+.timeline{position:relative;margin:30px 0}
+.timeline:before{content:"";position:absolute;left:23px;top:0;bottom:0;width:2px;background:#d6cec0}
+.titem{display:grid;grid-template-columns:50px 1fr;gap:18px;margin-bottom:20px}
+.dot{width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;position:relative;z-index:1;border:4px solid var(--paper)}
+.timeline-card{padding:21px;background:#fffdf9;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.timeline-card .date{font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:900}
+.contrast-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+.contrast{padding:21px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.contrast .label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted);margin-bottom:6px}
+.contrast.good{background:var(--softgreen)}
+.contrast.near{background:#faf5e9}
+.contrast.bad{background:#fbefed}
+.matrix-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);background:#fff}
+.matrix{width:100%;border-collapse:separate;border-spacing:0;min-width:840px}
+.matrix th,.matrix td{padding:14px 15px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.matrix th{background:var(--soft);color:var(--navy)}
+.matrix td:last-child,.matrix th:last-child{border-right:none}
+.matrix tr:last-child td{border-bottom:none}
+.mental{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:13px;align-items:center;margin:26px 0}
+.mental .box{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.mental .center{background:var(--navy);color:#fff;text-align:center}
+.mental .center strong{font-size:1.2rem}
+.check{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #e4ded4;background:#faf9f5;border-radius:14px;margin:11px 0}
+.check b{color:var(--gold)}
+.case{padding:27px;margin:20px 0}
+.case-head{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.case-no{font:800 1.5rem Georgia;color:var(--gold)}
+.role-map{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:20px 0}
+.role{padding:18px 14px;border:1px solid var(--line);border-radius:17px;background:#fff;text-align:center}
+.role strong{display:block;color:var(--navy);margin-bottom:7px}
+footer{background:#132b3e;color:#fff;padding:35px 0}
+.footer-text{color:rgba(255,255,255,.75)}
+details{background:#fffdf9;border:1px solid var(--line);border-radius:15px;padding:14px 17px;margin:13px 0}
+summary{cursor:pointer;font-weight:900;color:var(--navy)}
+@media(max-width:900px){
+ .hero-grid,.grid2,.grid3,.mental,.contrast-grid{grid-template-columns:1fr}
+ .big-flow{grid-template-columns:1fr 1fr}
+ .compare{grid-template-columns:1fr}
+ .compare .a{border-right:none;border-bottom:1px solid var(--line)}
+ .role-map{grid-template-columns:1fr 1fr}
+ .rline{grid-template-columns:1fr;gap:4px}
+ .nav{padding-left:14px;padding-right:14px}
+ .section{padding:52px 0}
+ .hero{padding-top:55px}
+}
+@media(max-width:560px){
+ .wrap{padding:0 17px}
+ .story,.card,.callout,.reason,.checkpoint,.sourcebox,.case,.timeline-card{padding:19px}
+ .big-flow{grid-template-columns:1fr}
+ .role-map{grid-template-columns:1fr}
+ .titem{grid-template-columns:40px 1fr}
+ .dot{width:38px;height:38px}
+ .timeline:before{left:19px}
+}
+</style>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
+  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
+  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
+  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
+  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
+  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
+  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
+  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
+  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
+  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
+}
+
+/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
+.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
+.cpns-crumb a{color:var(--accent);text-decoration:none;}
+.cpns-crumb a:hover{text-decoration:underline;}
+.cpns-crumb .sep{color:var(--line);}
+.cpns-crumb .cur{color:var(--muted);}
+.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
+.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
+.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
+.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
+.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
+.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
+.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
+.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
+.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
+.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
+body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
+img{max-width:100%;height:auto;border-radius:8px;}
+table{max-width:100%;}
+@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
+
+</style>
+</head>
+<body>
+<nav class="cpns-crumb" aria-label="Breadcrumb">
+  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+  <a href="../../index.html">TWK</a><span class="sep">/</span>
+  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+  <span class="cur">Modul 07</span>
+</nav>
+<div class="cpns-progress"><span id="cpns-progress-bar"></span></div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Ultimate TWK Knowledge System · Modul 07</div>
+      <h1>Demokrasi, Hak, Kewajiban, dan Kehidupan Konstitusional</h1>
+      <p>Sebelum menghafal istilah demokrasi, musyawarah, voting, hak, kewajiban, atau Pasal 28J, kita mulai dari satu masalah yang jauh lebih sederhana: <strong>sebuah komunitas harus mengambil keputusan, tetapi setiap orang juga mempunyai kepentingan, suara, dan batas.</strong></p>
+    </div>
+    <div class="hero-note">
+      <strong>Target modul</strong><br>
+      Setelah selesai, Anda diharapkan dapat melihat sebuah kasus dan menjawab secara sistematis: siapa yang menentukan, siapa yang berhak bicara, proses apa yang dipakai, hak apa yang terlibat, kewajiban apa yang muncul, batas apa yang berlaku, dan tujuan konstitusional apa yang hendak dijaga.
+    </div>
+  </div>
+</header>
+
+<div class="sticky">
+<nav class="nav">
+  <a href="#komunitas">Mulai dari komunitas</a>
+  <a href="#lima-proses">Lima proses</a>
+  <a href="#demokrasi">Demokrasi</a>
+  <a href="#kedaulatan">Kedaulatan rakyat</a>
+  <a href="#partisipasi">Partisipasi &amp; representasi</a>
+  <a href="#hak">Hak &amp; kewajiban</a>
+  <a href="#batas">Batas kebebasan</a>
+  <a href="#transfer">Transfer konteks</a>
+  <a href="#twk">TWK</a>
+  <a href="#map">Concept map</a>
+  <a href="#check">Checkpoint</a>
+</nav>
+</div>
+
+<main>
+
+<section class="section" id="komunitas">
+<div class="wrap">
+  <div class="kicker">Kita mulai dari sesuatu yang mudah dibayangkan</div>
+  <h2>Bayangkan satu komunitas yang harus memilih arah</h2>
+  <p class="lead">Jangan bayangkan negara dulu. Bayangkan sebuah komunitas belajar yang mempunyai 40 anggota dan harus menentukan penggunaan dana bersama.</p>
+
+  <div class="story">
+    <span class="tag">Cerita utama</span>
+    <p>Komunitas itu mempunyai uang kas yang dikumpulkan dari iuran. Tahun ini ada lima usulan: membeli perangkat bersama, memperbaiki ruang, mengadakan kegiatan sosial, menyimpan uang untuk kebutuhan darurat, atau membiayai pelatihan anggota.</p>
+    <p>Masalah pertama muncul bahkan sebelum memilih. <strong>Siapa yang boleh menentukan?</strong> Ketua? Pengurus? Semua anggota? Perwakilan? Kalau semua diberi kesempatan berbicara, bagaimana suara yang berbeda diperlakukan? Kalau 25 orang setuju dan 15 orang tidak setuju, apakah kelompok 25 selalu boleh melakukan apa saja? Dan bagaimana jika keputusan yang menang justru merampas hak 15 orang?</p>
+    <p>Perhatikan: masalah sebenarnya bukan “cara menghitung suara”. Masalahnya lebih luas. Kita sedang mencari <strong>cara membuat keputusan bersama yang mengakui manusia sebagai pihak yang mempunyai suara, tetapi tetap menempatkan keputusan di dalam aturan dan batas</strong>.</p>
+  </div>
+
+  <div class="flow">
+    <span class="pill">siapa boleh menentukan?</span><span class="arrow">→</span>
+    <span class="pill">bagaimana suara diperlakukan?</span><span class="arrow">→</span>
+    <span class="pill">apa prosesnya?</span><span class="arrow">→</span>
+    <span class="pill">apa batasnya?</span><span class="arrow">→</span>
+    <span class="pill">apa akibat bagi orang lain?</span>
+  </div>
+
+  <div class="callout gold">
+    <strong>Baru setelah masalahnya terasa, nama konsep dibutuhkan.</strong>
+    Demokrasi, kedaulatan rakyat, partisipasi, representasi, musyawarah, voting, hak, kewajiban, dan pembatasan hak sebenarnya adalah jawaban untuk bagian-bagian berbeda dari masalah kehidupan bersama.
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="lima-proses">
+<div class="wrap">
+  <div class="kicker">Satu cerita, lima proses</div>
+  <h2>Peristiwanya sama. Cara mengambil keputusan berubah.</h2>
+  <p class="lead">Bagian ini sangat penting untuk TWK. Jangan menghafal bahwa “demokrasi = voting” atau “musyawarah = mufakat”. Lihat apa yang berubah ketika prosesnya diubah.</p>
+
+  <div class="case">
+    <div class="case-head">
+      <div>
+        <div class="case-no">01 · Keputusan sepihak</div>
+        <h3 style="margin-top:4px">Ketua langsung memutuskan</h3>
+      </div>
+      <span class="tag">pusat analisis: kewenangan</span>
+    </div>
+    <p>Ketua mengatakan, “Karena saya dipercaya memimpin, saya putuskan uang kas dipakai untuk membeli perangkat.” Anggota lain tidak diajak membahas.</p>
+    <p><strong>Apa yang terjadi?</strong> Ada keputusan, tetapi sumber legitimasi keputusannya perlu dipertanyakan. Keputusan dapat saja kebetulan benar atau bermanfaat, namun cara pengambilannya tidak otomatis demokratis.</p>
+    <div class="contrast-grid">
+      <div class="contrast good"><div class="label">Yang mungkin benar</div>Ketua memang bisa saja mempunyai kewenangan tertentu berdasarkan aturan organisasi.</div>
+      <div class="contrast near"><div class="label">Yang belum otomatis ada</div>Partisipasi anggota dan pengakuan atas suara mereka.</div>
+      <div class="contrast bad"><div class="label">Jebakan</div>Mengira hasil yang baik selalu membuat prosesnya demokratis.</div>
+    </div>
+    <p><strong>Mengapa ini berguna bagi TWK?</strong> Karena soal dapat menyodorkan hasil yang tampak baik, tetapi pertanyaan sebenarnya meminta <em>proses pengambilan keputusan</em>. Fokus harus pindah dari “hasilnya bagus” ke “siapa dan bagaimana menentukan”.</p>
+  </div>
+
+  <div class="case">
+    <div class="case-head">
+      <div>
+        <div class="case-no">02 · Voting</div>
+        <h3 style="margin-top:4px">Semua anggota memilih, suara terbanyak menang</h3>
+      </div>
+      <span class="tag">pusat analisis: keputusan berbasis suara</span>
+    </div>
+    <p>Semua anggota diberi kesempatan memilih. Dua puluh lima memilih perangkat, lima belas memilih pelatihan. Pilihan perangkat menjadi keputusan.</p>
+    <p><strong>Apa yang berubah?</strong> Sekarang ada mekanisme partisipasi dan keputusan berdasarkan jumlah suara. Ini dapat menjadi <strong>mekanisme demokratis</strong>. Tetapi voting sendiri bukan keseluruhan makna demokrasi.</p>
+    <div class="compare">
+      <div class="a"><div class="signal">Voting</div><h4>Alat pengambilan keputusan</h4><p>Suara dihitung menurut aturan yang disepakati. Fokusnya adalah bagaimana preferensi menghasilkan keputusan.</p></div>
+      <div class="b"><div class="signal">Demokrasi</div><h4>Kerangka kehidupan politik</h4><p>Lebih luas: rakyat menjadi sumber kedaulatan, ada partisipasi, aturan, perlindungan hak, serta pembatasan kekuasaan.</p></div>
+    </div>
+    <p><strong>Near miss:</strong> “Ada voting, berarti semuanya demokratis.” Kalimat ini terlalu luas. Voting dapat dijalankan dalam proses yang tetap manipulatif apabila pemilih dipaksa, pilihan tidak bebas, suara tidak jujur, atau hak sebagian orang sengaja dihapus. Dalam konteks Indonesia, UUD menetapkan pemilu dengan asas langsung, umum, bebas, rahasia, jujur, dan adil.</p>
+  </div>
+
+  <div class="case">
+    <div class="case-head">
+      <div>
+        <div class="case-no">03 · Musyawarah</div>
+        <h3 style="margin-top:4px">Semua pihak diberi ruang untuk membahas alasan</h3>
+      </div>
+      <span class="tag">pusat analisis: proses dialog</span>
+    </div>
+    <p>Sebelum memilih, anggota menjelaskan kebutuhan masing-masing. Kelompok perangkat menjelaskan alasan pemeliharaan sistem. Kelompok pelatihan menjelaskan kebutuhan peningkatan kemampuan. Setelah beberapa putaran pembicaraan, muncul alternatif: membeli perangkat dengan anggaran lebih kecil dan mengalihkan sebagian dana untuk pelatihan.</p>
+    <p><strong>Apa yang terjadi?</strong> Keputusan tidak hanya dipandang sebagai angka suara. Ada proses pertukaran alasan, mendengar pihak lain, dan mencari keputusan yang dapat diterima bersama.</p>
+    <p>Di sinilah istilah <strong>musyawarah</strong> menjadi masuk akal. Musyawarah adalah proses membicarakan persoalan bersama untuk menemukan keputusan yang tepat. <strong>Mufakat</strong> lebih tepat dipahami sebagai tercapainya kesepakatan. Jadi keduanya berhubungan, tetapi tidak identik.</p>
+    <div class="callout blue">
+      <strong>Urutan logis:</strong> musyawarah adalah prosesnya; mufakat adalah bentuk hasil yang ingin dicapai dari proses tersebut. Karena itu “musyawarah” tidak sama dengan “sudah terjadi mufakat”.
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-head">
+      <div>
+        <div class="case-no">04 · Perwakilan</div>
+        <h3 style="margin-top:4px">Tidak semua keputusan dibicarakan oleh semua orang setiap saat</h3>
+      </div>
+      <span class="tag">pusat analisis: representasi</span>
+    </div>
+    <p>Komunitas berkembang menjadi 4.000 anggota. Tidak realistis apabila setiap keputusan teknis harus dibahas oleh 4.000 orang sekaligus. Anggota kemudian memilih beberapa orang untuk mewakili kepentingan mereka dalam organisasi.</p>
+    <p><strong>Apa yang berubah?</strong> Partisipasi tidak hilang; bentuknya berubah. Anggota berpartisipasi antara lain dengan memilih wakil dan mengawasi mereka. Wakil bukan pemilik suara rakyat. Mereka memperoleh legitimasi untuk menjalankan fungsi perwakilan di dalam aturan yang berlaku.</p>
+    <div class="callout gold"><strong>Jebakan konsep:</strong> “Demokrasi berarti setiap orang harus memutuskan semuanya secara langsung.” Itu menyempitkan demokrasi menjadi satu bentuk saja. Sistem perwakilan justru merupakan salah satu cara kedaulatan rakyat dijalankan dalam skala besar.</div>
+  </div>
+
+  <div class="case">
+    <div class="case-head">
+      <div>
+        <div class="case-no">05 · Kompromi</div>
+        <h3 style="margin-top:4px">Kelompok yang berbeda mengubah sebagian tuntutannya</h3>
+      </div>
+      <span class="tag">pusat analisis: mencari titik temu</span>
+    </div>
+    <p>Kelompok A ingin seluruh dana untuk perangkat. Kelompok B ingin seluruh dana untuk pelatihan. Setelah dibahas, keduanya menerima bahwa dana dapat dibagi dengan prioritas tertentu sehingga kebutuhan utama dua kelompok tetap terlayani.</p>
+    <p><strong>Kompromi</strong> bukan istilah yang berarti “semua orang kalah”. Kompromi adalah kesediaan mengubah sebagian tuntutan untuk memperoleh titik temu yang masih dapat diterima pihak-pihak yang berkonflik. Dalam proses demokratis, kompromi dapat menjadi hasil dari dialog dan negosiasi.</p>
+    <p><strong>Near miss:</strong> kompromi tidak sama dengan mengorbankan hak dasar seseorang. Hak yang dijamin konstitusi tidak boleh dianggap sebagai “barang tawar-menawar” hanya karena mayoritas menginginkannya.</p>
+  </div>
+
+  <div class="callout red">
+    <strong>Pelajaran dari lima versi:</strong> jangan bertanya “ini demokrasi atau bukan?” sebelum memastikan <em>apa yang sebenarnya sedang diuji oleh pertanyaan</em>. Pertanyaan bisa mengarah pada sumber kekuasaan, mekanisme suara, proses musyawarah, representasi, atau perlindungan hak. Peristiwa yang sama dapat memiliki beberapa konsep sekaligus, tetapi satu pertanyaan harus mempunyai satu pusat analisis.
+  </div>
+</div>
+</section>
+
+<section class="section" id="demokrasi">
+<div class="wrap">
+  <div class="kicker">Nama konsep: demokrasi</div>
+  <h2>Demokrasi bukan sekadar “banyak orang memilih”</h2>
+  <p class="lead">Istilah ini paling mudah dipahami jika kita kembali ke masalah awal: siapa yang mempunyai kedudukan untuk ikut menentukan urusan bersama, dan bagaimana kekuasaan itu dibatasi agar tidak berubah menjadi kesewenang-wenangan.</p>
+
+  <div class="story">
+    <p><strong>Bahasa sederhana:</strong> demokrasi adalah tata kehidupan politik yang menempatkan rakyat sebagai sumber kedaulatan dan memungkinkan rakyat berpartisipasi dalam penentuan pemerintahan, dengan penyelenggaraan kekuasaan yang tetap tunduk pada konstitusi dan hukum.</p>
+    <p><strong>Makna formal dalam kerangka Indonesia:</strong> Pasal 1 ayat (2) UUD NRI 1945 menyatakan bahwa kedaulatan berada di tangan rakyat dan dilaksanakan menurut Undang-Undang Dasar. Ayat berikutnya menegaskan Indonesia sebagai negara hukum. Jadi dalam kehidupan konstitusional Indonesia, demokrasi tidak berdiri sendirian; kedaulatan rakyat berjalan bersama konstitusi dan hukum.</p>
+  </div>
+
+  <div class="big-flow">
+    <div class="big-step"><div class="n">01</div><strong>Rakyat</strong><span>sumber kedaulatan</span></div>
+    <div class="big-step"><div class="n">02</div><strong>Partisipasi</strong><span>rakyat ikut dalam proses</span></div>
+    <div class="big-step"><div class="n">03</div><strong>Representasi</strong><span>suara disalurkan melalui wakil</span></div>
+    <div class="big-step"><div class="n">04</div><strong>Aturan</strong><span>proses dibingkai konstitusi</span></div>
+    <div class="big-step"><div class="n">05</div><strong>Batas</strong><span>hak &amp; kekuasaan tidak tanpa batas</span></div>
+  </div>
+
+  <h3>Demokrasi vs voting vs mayoritas — tiga hal yang sering dicampur</h3>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead><tr><th>Konsep</th><th>Yang dijawab</th><th>Contoh</th><th>Kesalahan umum</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Demokrasi</strong></td><td>Bagaimana kekuasaan politik ditempatkan pada rakyat dan dijalankan melalui institusi serta aturan yang menjamin proses dan hak?</td><td>Pemilu, partisipasi, perwakilan, kontrol terhadap kekuasaan.</td><td>Menyempitkan demokrasi menjadi “siapa yang menang suara”.</td></tr>
+        <tr><td><strong>Voting</strong></td><td>Bagaimana pilihan individu diterjemahkan menjadi keputusan menurut hitungan suara?</td><td>Anggota memilih opsi A/B dan suara terbanyak menang.</td><td>Menganggap setiap voting otomatis adil atau otomatis demokratis.</td></tr>
+        <tr><td><strong>Mayoritas</strong></td><td>Kelompok mana yang memiliki jumlah suara lebih banyak?</td><td>25 dari 40 anggota memilih A.</td><td>Menganggap mayoritas otomatis boleh melanggar hak minoritas.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="contrast-grid">
+    <div class="contrast good">
+      <div class="label">Contoh tepat</div>
+      Pemilu berlangsung bebas dan jujur, warga dapat memilih, calon bersaing menurut aturan, dan hasil diterima melalui mekanisme konstitusional.
+    </div>
+    <div class="contrast near">
+      <div class="label">Near miss</div>
+      Sebuah kelompok melakukan voting, tetapi sebagian peserta dipaksa memilih satu pilihan.
+    </div>
+    <div class="contrast bad">
+      <div class="label">Bukan kesimpulan aman</div>
+      “Mayoritas menang, jadi semua yang dilakukan mayoritas pasti demokratis.”
+    </div>
+  </div>
+
+  <div class="callout gold">
+    <strong>Jebakan “mayoritas = demokrasi” mengapa bekerja?</strong>
+    Karena demokrasi memang sering terlihat melalui keputusan mayoritas. Pembuat soal memanfaatkan asosiasi yang benar tetapi tidak lengkap. Mayoritas adalah salah satu mekanisme keputusan; demokrasi juga membutuhkan kebebasan, partisipasi, aturan, representasi, dan penghormatan terhadap hak. Jadi sebuah opsi dapat “benar secara umum” tetapi tetap terlalu sempit untuk menjadi jawaban paling tepat.
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="kedaulatan">
+<div class="wrap">
+  <div class="kicker">Dari demokrasi ke kedaulatan rakyat</div>
+  <h2>Siapa sebenarnya yang menjadi sumber kekuasaan?</h2>
+
+  <div class="story">
+    <p>Bayangkan ada dua model. Pada model pertama, pemerintah berkata: “Kami berkuasa, rakyat tinggal mengikuti.” Pada model kedua, rakyat mempunyai posisi sebagai sumber kedaulatan dan pemerintahan memperoleh legitimasi melalui mekanisme konstitusional.</p>
+    <p>Perbedaan itu membawa kita kepada <strong>kedaulatan rakyat</strong>. Dalam bahasa sederhana, rakyat adalah pemegang kedaulatan. Dalam sistem Indonesia setelah perubahan UUD, pelaksanaan kedaulatan itu tidak dilakukan sesuka hati oleh siapa pun, melainkan <strong>menurut UUD</strong>. Karena itulah kedaulatan rakyat dan konstitusionalisme harus dibaca bersama.</p>
+  </div>
+
+  <div class="compare">
+    <div class="a">
+      <div class="signal">Kedaulatan rakyat</div>
+      <h4>Rakyat menentukan arah kekuasaan</h4>
+      <p>Pemilu, partisipasi politik, perwakilan, dan kesempatan ikut dalam pemerintahan merupakan saluran penting.</p>
+    </div>
+    <div class="b">
+      <div class="signal">Konstitusionalisme</div>
+      <h4>Kekuasaan rakyat pun berjalan menurut aturan dasar</h4>
+      <p>Tidak semua kehendak mayoritas menjadi sah hanya karena jumlahnya besar. Kekuasaan dibatasi dan diatur oleh konstitusi.</p>
+    </div>
+  </div>
+
+  <p>Ini menjelaskan mengapa dalam soal TWK, jawaban seperti <strong>“rakyat menentukan nasib bangsa melalui pemilu”</strong> dapat tepat ketika pusat soalnya adalah kedaulatan rakyat. Namun jika pertanyaannya berubah menjadi <strong>“mengapa kekuasaan presiden dibatasi?”</strong>, pusat analisisnya dapat berubah menjadi pembatasan kekuasaan dan akuntabilitas demokratis. Corpus Anda menunjukkan pola seperti ini: konsep yang tampak berdekatan dapat dipisahkan dengan melihat apa yang sebenarnya ditanyakan.</p>
+
+  <div class="callout blue">
+    <strong>Catatan penting:</strong> frasa “kedaulatan berada di tangan rakyat” bukan berarti “setiap keputusan pemerintah harus mengikuti polling publik setiap hari”. Kedaulatan dijalankan melalui desain konstitusional dan lembaga yang diberikan kewenangan oleh UUD. Jadi demokrasi bukan pemerintahan berdasarkan keinginan sesaat yang tidak dibatasi hukum.
+  </div>
+</div>
+</section>
+
+<section class="section" id="partisipasi">
+<div class="wrap">
+  <div class="kicker">Partisipasi dan representasi</div>
+  <h2>Hadir tidak sama dengan berpartisipasi</h2>
+  <p class="lead">Salah satu jebakan yang sering luput adalah menganggap partisipasi sebagai sekadar kehadiran fisik. Padahal pertanyaan pentingnya: apakah seseorang mempunyai kesempatan, menggunakan kesempatan itu, dan benar-benar ikut dalam proses yang relevan?</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>Partisipasi</h4>
+      <p><strong>Bahasa sederhana:</strong> keterlibatan nyata dalam proses pengambilan keputusan atau kehidupan publik.</p>
+      <p><strong>Contoh dasar:</strong> warga menggunakan hak pilihnya dan membaca informasi kandidat sebelum menentukan pilihan.</p>
+      <p><strong>Contoh kedua:</strong> anggota organisasi memberi masukan, menghadiri pembahasan, lalu ikut menyetujui keputusan yang menjadi tanggung jawab bersama.</p>
+      <p><strong>Near miss:</strong> datang ke rapat tetapi diam, tidak membaca bahan, dan tidak memberi suara ketika memang diberi kesempatan. Kehadiran ada; partisipasi bermakna belum tentu ada.</p>
+    </div>
+    <div class="card">
+      <h4>Representasi</h4>
+      <p><strong>Bahasa sederhana:</strong> kepentingan rakyat disalurkan melalui orang atau lembaga yang diberi mandat untuk mewakili.</p>
+      <p><strong>Contoh dasar:</strong> warga memilih wakil untuk duduk di lembaga perwakilan.</p>
+      <p><strong>Contoh kedua:</strong> wakil menyampaikan aspirasi konstituennya dalam proses kebijakan.</p>
+      <p><strong>Near miss:</strong> wakil bertindak tanpa batas dan mengklaim “karena saya dipilih, saya boleh melakukan apa saja”. Mandat perwakilan tidak menghapus konstitusi dan aturan.</p>
+    </div>
+  </div>
+
+  <div class="callout gold">
+    <strong>Jebakan “hadir = partisipasi” mengapa masuk akal?</strong> Dalam bahasa sehari-hari, orang yang datang memang terlihat “ikut”. Soal dapat memakai kondisi lahiriah ini untuk menguji kedalaman konsep. Fokus partisipasi adalah keterlibatan dalam proses, bukan sekadar keberadaan di tempat.
+  </div>
+
+  <h3>Empat contoh contrastive</h3>
+  <div class="contrast-grid">
+    <div class="contrast good"><div class="label">01 · Memilih</div>Warga menggunakan hak pilih secara bebas setelah mempertimbangkan pilihan. <strong>Partisipasi.</strong></div>
+    <div class="contrast near"><div class="label">02 · Hadir</div>Datang ke forum tetapi tidak mengikuti pembahasan dan tidak menjalankan peran yang tersedia. <strong>Belum cukup untuk disebut partisipasi bermakna.</strong></div>
+    <div class="contrast good"><div class="label">03 · Menyampaikan aspirasi</div>Warga menyampaikan pandangan melalui kanal yang tersedia dan mengikuti proses tindak lanjutnya. <strong>Partisipasi.</strong></div>
+  </div>
+  <div class="contrast bad">
+    <div class="label">04 · Manipulasi</div>
+    Warga diarahkan dengan ancaman agar memilih pilihan tertentu. Secara fisik mereka “ikut memilih”, tetapi kebebasan prosesnya rusak. Ini near miss penting: <strong>partisipasi demokratis membutuhkan kualitas proses, bukan sekadar jumlah orang yang hadir.</strong>
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="hak">
+<div class="wrap">
+  <div class="kicker">Hak, kewajiban, dan kebebasan</div>
+  <h2>Hak bukan izin untuk melakukan apa saja</h2>
+
+  <div class="story">
+    <p>Bayangkan seorang siswa berkata, “Saya punya hak menyampaikan pendapat.” Pernyataan itu dapat benar. Lalu ia mengunggah tuduhan palsu yang merusak reputasi temannya dan berkata, “Ini hak saya, jadi tidak boleh dibatasi.” Di sinilah konsep hak harus diperdalam.</p>
+    <p><strong>Hak</strong> adalah kepentingan atau kebebasan yang diakui dan dilindungi oleh hukum. <strong>Kewajiban</strong> adalah sesuatu yang harus dilakukan atau dipenuhi karena adanya tuntutan hukum, kehidupan bersama, atau tanggung jawab tertentu. <strong>Kebebasan</strong> bukan ruang tanpa batas; dalam sistem konstitusional, pelaksanaan kebebasan berjalan bersama tanggung jawab terhadap hak orang lain dan aturan yang sah.</p>
+    <p>UUD NRI 1945 menjamin berbagai hak dalam Pasal 28A sampai 28I, termasuk hak hidup, kebebasan beragama, menyampaikan pikiran, berserikat, berkumpul, memperoleh informasi, rasa aman, kesejahteraan, serta perlindungan dari diskriminasi. Pasal 28J kemudian menegaskan bahwa setiap orang wajib menghormati HAM orang lain dan bahwa pelaksanaan hak serta kebebasan dapat tunduk pada pembatasan yang ditetapkan dengan undang-undang untuk tujuan konstitusional tertentu.</p>
+  </div>
+
+  <div class="big-flow">
+    <div class="big-step"><div class="n">01</div><strong>Hak</strong><span>apa yang dilindungi?</span></div>
+    <div class="big-step"><div class="n">02</div><strong>Subjek</strong><span>siapa pemegang hak?</span></div>
+    <div class="big-step"><div class="n">03</div><strong>Kewajiban</strong><span>apa yang harus dihormati?</span></div>
+    <div class="big-step"><div class="n">04</div><strong>Batas</strong><span>apa pembatasannya?</span></div>
+    <div class="big-step"><div class="n">05</div><strong>Tujuan</strong><span>hak siapa yang dilindungi?</span></div>
+  </div>
+
+  <h3>Hak vs kewajiban: jangan hanya lihat kata “warga negara”</h3>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead><tr><th>Situasi</th><th>Yang sedang ditanyakan</th><th>Konsep utama</th><th>Mengapa bukan tetangga?</th></tr></thead>
+      <tbody>
+        <tr><td>Warga memperoleh kesempatan yang sama dalam pemerintahan.</td><td>Apa yang dimiliki warga?</td><td><strong>Hak</strong></td><td>Karena fokusnya kesempatan yang dijamin, bukan tindakan yang diwajibkan.</td></tr>
+        <tr><td>Setiap orang harus menghormati HAM orang lain.</td><td>Apa yang harus dilakukan?</td><td><strong>Kewajiban</strong></td><td>Pasal 28J ayat (1) menggunakan struktur “wajib”; pusat analisisnya bukan kebebasan.</td></tr>
+        <tr><td>Warga bebas menyampaikan pendapat tetapi tidak boleh menggunakan kebebasan itu untuk melanggar hak orang lain.</td><td>Bagaimana hak dijalankan?</td><td><strong>Hak + batas + tanggung jawab</strong></td><td>Hanya mengatakan “bebas berpendapat” menghilangkan bagian penting dari konteks.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout blue">
+    <strong>Corpus dan pelajaran reasoning:</strong> salah satu pola yang muncul adalah soal yang memasangkan sebuah pasal dengan perilaku. Misalnya, ketika pusat soal adalah kewajiban menghormati hak orang lain, opsi yang hanya berbicara tentang kebebasan pribadi bisa benar secara umum tetapi kurang tepat karena salah sasaran. Jadi pertama tentukan <strong>hak atau kewajiban apa yang sedang menjadi pusat</strong>.
+  </div>
+</div>
+</section>
+
+<section class="section" id="batas">
+<div class="wrap">
+  <div class="kicker">Bagian paling penting: batas hak</div>
+  <h2>Bagaimana mungkin hak dijamin tetapi juga dibatasi?</h2>
+
+  <div class="story">
+    <p>Pemula sering menganggap ada kontradiksi: “Kalau hak itu dijamin, mengapa negara boleh membatasi?” Kuncinya adalah membedakan <strong>meniadakan hak</strong> dengan <strong>mengatur cara menggunakan hak agar hak orang lain dan kepentingan konstitusional tetap terlindungi</strong>.</p>
+    <p>Pasal 28J menyediakan dasar konstitusional bahwa dalam menjalankan hak dan kebebasan, setiap orang wajib tunduk pada pembatasan yang ditetapkan dengan undang-undang. Tujuannya tidak boleh sembarangan. UUD menyebut antara lain pengakuan dan penghormatan hak serta kebebasan orang lain dan pemenuhan tuntutan yang adil dengan pertimbangan moral, nilai agama, keamanan, serta ketertiban umum dalam masyarakat demokratis.</p>
+  </div>
+
+  <div class="compare">
+    <div class="a">
+      <div class="signal">Salah memahami pembatasan</div>
+      <h4>“Negara boleh membatasi apa saja demi ketertiban.”</h4>
+      <p>Terlalu luas. Pembatasan harus mempunyai dasar dan tujuan konstitusional. Kata “demi ketertiban” bukan cek kosong.</p>
+    </div>
+    <div class="b">
+      <div class="signal">Cara berpikir yang aman</div>
+      <h4>“Hak → kewajiban menghormati orang lain → pembatasan menurut UU → tujuan yang dibenarkan konstitusi.”</h4>
+      <p>Ini menjaga keseimbangan antara kebebasan individu dan kehidupan bersama.</p>
+    </div>
+  </div>
+
+  <h3>Lima contoh: hak, kebebasan, dan penyalahgunaan hak</h3>
+  <div class="contrast-grid">
+    <div class="contrast good"><div class="label">Sekolah</div>Siswa menyampaikan kritik kepada sekolah melalui forum yang disediakan. <strong>Hak berpendapat dijalankan.</strong></div>
+    <div class="contrast near"><div class="label">Sekolah</div>Siswa menyampaikan kritik dengan menghina dan menyebarkan data pribadi temannya. <strong>Bukan otomatis terlindungi hanya karena diberi label “pendapat”.</strong></div>
+    <div class="contrast good"><div class="label">Organisasi</div>Anggota berbeda pendapat dalam rapat dan diberi kesempatan menjelaskan alasan. <strong>Kebebasan berpendapat berjalan.</strong></div>
+  </div>
+  <div class="contrast-grid">
+    <div class="contrast bad"><div class="label">Media sosial</div>Pengguna mengatakan, “Akun saya milik saya, jadi saya bebas merendahkan siapa pun.” Ini menyisihkan kewajiban menghormati hak orang lain.</div>
+    <div class="contrast good"><div class="label">Masyarakat</div>Warga menyampaikan keberatan terhadap kebijakan publik secara damai dan berdasarkan informasi yang dapat dipertanggungjawabkan.</div>
+    <div class="contrast near"><div class="label">Negara</div>Pembatasan diumumkan secara tiba-tiba oleh pejabat tanpa dasar aturan. Kata “demi keamanan” saja belum menjelaskan legitimasi pembatasannya.</div>
+  </div>
+
+  <div class="callout red">
+    <strong>Inilah jebakan klasik HAM.</strong> Opsi “kebebasan tanpa batas” terlihat pro-HAM karena menggunakan bahasa kebebasan. Justru di sinilah jebakannya: HAM dalam negara hukum demokratis mencakup perlindungan terhadap manusia lain juga. Kebebasan satu orang tidak otomatis menghapus hak orang lain. Karena itu jawaban yang paling tepat sering bukan yang paling “bebas”, melainkan yang <strong>menyeimbangkan hak, tanggung jawab, dasar hukum, dan perlindungan terhadap orang lain</strong>.
+  </div>
+
+  <h3>Hak yang secara eksplisit tidak dapat dikurangi dalam keadaan apa pun</h3>
+  <p>UUD 1945 Pasal 28I ayat (1) menyebut sejumlah hak yang tidak dapat dikurangi dalam keadaan apa pun, termasuk hak hidup, hak untuk tidak disiksa, kemerdekaan pikiran dan hati nurani, hak beragama, hak untuk tidak diperbudak, pengakuan sebagai pribadi di hadapan hukum, dan hak untuk tidak dituntut berdasarkan hukum yang berlaku surut. Ini penting sebagai konsep batas: <strong>tidak semua hak diperlakukan dengan cara yang identik</strong>.</p>
+  <p class="tiny">Untuk pembelajaran TWK, jangan menghafal daftar tersebut sebagai satu kalimat kosong. Pahami bahwa konstitusi sendiri membedakan antara hak-hak tertentu yang dinyatakan tidak dapat dikurangi dan pelaksanaan hak/kebebasan lain yang dapat tunduk pada pembatasan sesuai Pasal 28J.</p>
+</div>
+</section>
+
+<section class="section alt" id="transfer">
+<div class="wrap">
+  <div class="kicker">Transfer: konteks berubah, konsep tetap bisa dikenali</div>
+  <h2>Konsep yang sama muncul di sekolah, organisasi, masyarakat, negara, dan media sosial</h2>
+  <p class="lead">Inilah kemampuan yang dibutuhkan untuk soal TWK: bukan hanya mengenali kata “demokrasi”, tetapi mengenali struktur konsep ketika nama istilahnya tidak disebut.</p>
+
+  <div class="timeline">
+    <div class="titem">
+      <div class="dot">S</div>
+      <div class="timeline-card">
+        <div class="date">Sekolah</div>
+        <h3 style="margin-top:6px">Pemilihan ketua kelas</h3>
+        <p>Siswa diberi kesempatan memilih tanpa paksaan. Konsep yang mungkin muncul: <strong>partisipasi, voting, demokrasi, kebebasan memilih</strong>. Pertanyaan yang meminta “cara keputusan ditentukan dengan suara terbanyak” mengarah ke voting; pertanyaan yang menyoroti kebebasan dan kesempatan siswa mengarah ke kualitas partisipasi.</p>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="dot">O</div>
+      <div class="timeline-card">
+        <div class="date">Organisasi</div>
+        <h3 style="margin-top:6px">Pengurus menyusun program</h3>
+        <p>Semua pihak menyampaikan alasan sebelum keputusan dibuat. Konsep utama dapat berupa <strong>musyawarah</strong>. Bila pertanyaan menyoroti hasil yang disepakati bersama, fokusnya dapat bergeser ke <strong>mufakat</strong>.</p>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="dot">M</div>
+      <div class="timeline-card">
+        <div class="date">Masyarakat</div>
+        <h3 style="margin-top:6px">Warga memperdebatkan penggunaan lahan bersama</h3>
+        <p>Kelompok warga berbeda kepentingan. Konsep yang relevan: partisipasi, musyawarah, kompromi, penghormatan hak, serta kepatuhan pada aturan yang mengatur keputusan.</p>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="dot">N</div>
+      <div class="timeline-card">
+        <div class="date">Negara</div>
+        <h3 style="margin-top:6px">Pemilu</h3>
+        <p>Warga memilih wakil dan pemimpin menurut mekanisme konstitusional. Fokus dapat berupa <strong>kedaulatan rakyat, partisipasi, representasi, dan asas pemilu</strong>.</p>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="dot">D</div>
+      <div class="timeline-card">
+        <div class="date">Media sosial</div>
+        <h3 style="margin-top:6px">Pendapat bertemu pendapat lain</h3>
+        <p>Orang bebas menyampaikan pikiran, tetapi juga wajib menghormati hak orang lain. Ketika soal menanyakan batas kebebasan, pusat analisis pindah ke <strong>Pasal 28J: hak + tanggung jawab + pembatasan yang sah</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout gold">
+    <strong>Transfer rule:</strong> ganti konteksnya, jangan ganti struktur berpikirnya. Anda tetap mencari: <strong>siapa → hak apa → kewajiban apa → proses apa → batas apa → tujuan apa</strong>.
+  </div>
+</div>
+</section>
+
+<section class="section" id="twk">
+<div class="wrap">
+  <div class="kicker">Dari konsep menjadi kemampuan mengerjakan TWK</div>
+  <h2>Bagaimana corpus 600 membentuk cara membaca soal?</h2>
+  <p class="lead">Corpus sebaiknya dipakai sebagai peta bagaimana konsep diuji, bukan sebagai pengganti sumber hukum. Pada tema ini, pola yang terlihat antara lain adalah konsep → implementasi, pasal → perilaku, konflik konsep tetangga, cause/effect, dan pergeseran pusat analisis akibat perubahan kata dalam pertanyaan.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <h4>1. Pasal → perilaku</h4>
+      <p>Stimulus memberi norma, lalu pembaca diminta mencari perilaku yang paling tepat sebagai implementasi. Fokusnya bukan “semua perilaku baik”, melainkan perilaku yang paling dekat dengan norma yang disebut.</p>
+    </div>
+    <div class="card">
+      <h4>2. Konsep → pembeda</h4>
+      <p>Soal dapat menempatkan demokrasi, voting, musyawarah, toleransi, atau hak/kewajiban dalam satu ruang sehingga semua tampak masuk akal. Kuncinya adalah mencari ciri yang paling langsung.</p>
+    </div>
+    <div class="card">
+      <h4>3. Kasus → konsekuensi</h4>
+      <p>Misalnya kekuasaan tidak dibatasi. Pertanyaannya dapat mengarah pada konsentrasi kekuasaan, melemahnya kontrol, atau ancaman otoritarianisme. Cari akibat yang paling dekat dengan mekanisme yang dirusak.</p>
+    </div>
+    <div class="card">
+      <h4>4. Hak → batas</h4>
+      <p>Stimulus menyebut kebebasan. Distraktor lalu menawarkan kebebasan tanpa batas. Pembaca harus menangkap bahwa hak selalu dibaca bersama kewajiban menghormati orang lain dan batas konstitusional.</p>
+    </div>
+    <div class="card">
+      <h4>5. Partisipasi → kualitas proses</h4>
+      <p>“Hadir”, “ikut”, dan “terlibat” terdengar mirip. Soal dapat menguji apakah individu benar-benar mempunyai kesempatan dan menggunakan perannya dalam proses.</p>
+    </div>
+    <div class="card">
+      <h4>6. Mayoritas → jebakan</h4>
+      <p>Mayoritas sering benar sebagai mekanisme keputusan, tetapi jawaban “mayoritas selalu benar” terlalu jauh karena demokrasi tetap dibatasi konstitusi dan hak.</p>
+    </div>
+  </div>
+
+  <h3>Worked reasoning 1 — voting atau demokrasi?</h3>
+  <div class="reason">
+    <div class="rline"><div class="rkey">Stimulus</div><div>Sebuah organisasi meminta seluruh anggota memilih antara dua program. Program A memperoleh suara lebih banyak.</div></div>
+    <div class="rline"><div class="rkey">Fakta penting</div><div>Keputusan dibuat melalui suara anggota dan ukuran menangnya adalah jumlah suara.</div></div>
+    <div class="rline"><div class="rkey">Aktor</div><div>Anggota organisasi sebagai pihak yang memberikan suara.</div></div>
+    <div class="rline"><div class="rkey">Masalah</div><div>Bagaimana preferensi anggota diterjemahkan menjadi keputusan?</div></div>
+    <div class="rline"><div class="rkey">Konsep kandidat</div><div><span class="badge">voting</span> dan <span class="badge">demokrasi</span>.</div></div>
+    <div class="rline"><div class="rkey">Konsep tetangga</div><div>Demokrasi lebih luas daripada voting. Voting adalah mekanisme keputusan berbasis suara; demokrasi mencakup kerangka partisipasi dan penggunaan kekuasaan yang dibatasi aturan.</div></div>
+    <div class="rline"><div class="rkey">Eliminasi</div><div>Jika pertanyaannya berbunyi “mekanisme pengambilan keputusan berdasarkan suara terbanyak”, pusat analisis adalah voting. Jika pertanyaannya berbunyi “sistem yang menempatkan rakyat sebagai sumber kedaulatan”, pusat analisisnya adalah demokrasi/kedaulatan rakyat.</div></div>
+    <div class="rline"><div class="rkey">Kesimpulan</div><div><strong>Jangan memilih konsep yang lebih besar jika pertanyaan meminta alat yang lebih spesifik.</strong></div></div>
+  </div>
+
+  <h3>Worked reasoning 2 — hak atau kewajiban?</h3>
+  <div class="reason">
+    <div class="rline"><div class="rkey">Stimulus</div><div>Setiap orang wajib menghormati HAM orang lain dalam kehidupan bermasyarakat, berbangsa, dan bernegara.</div></div>
+    <div class="rline"><div class="rkey">Fakta penting</div><div>Kata operasionalnya adalah <strong>wajib</strong>, dan objek penghormatannya adalah hak orang lain.</div></div>
+    <div class="rline"><div class="rkey">Aktor</div><div>Setiap orang.</div></div>
+    <div class="rline"><div class="rkey">Masalah</div><div>Apa tanggung jawab seseorang ketika menjalankan kehidupan bersama?</div></div>
+    <div class="rline"><div class="rkey">Konsep kandidat</div><div>Kewajiban menghormati HAM orang lain.</div></div>
+    <div class="rline"><div class="rkey">Tetangga</div><div>Kebebasan berpendapat, toleransi, kepatuhan hukum, dan partisipasi sosial semuanya dapat muncul dalam cerita, tetapi bukan semuanya menjawab pusat norma.</div></div>
+    <div class="rline"><div class="rkey">Eliminasi</div><div>Opsi yang hanya mengatakan “saya bebas melakukan sesuatu” gagal karena tidak menjawab bagian “wajib menghormati hak orang lain”.</div></div>
+    <div class="rline"><div class="rkey">Kesimpulan</div><div>Ketika soal menanyakan <strong>kewajiban</strong>, jangan tertipu oleh opsi yang hanya menyebut <strong>hak</strong> meskipun hak tersebut benar secara umum.</div></div>
+  </div>
+
+  <h3>Worked reasoning 3 — apakah mayoritas boleh melakukan apa saja?</h3>
+  <div class="reason">
+    <div class="rline"><div class="rkey">Stimulus</div><div>Kelompok mayoritas ingin melarang kelompok minoritas menyampaikan pendapat karena tidak setuju dengan pandangan mereka.</div></div>
+    <div class="rline"><div class="rkey">Fakta penting</div><div>Masalah bukan lagi sekadar siapa yang jumlahnya lebih banyak. Ada hak untuk menyatakan pikiran dan ada pihak lain yang terdampak.</div></div>
+    <div class="rline"><div class="rkey">Aktor</div><div>Kelompok mayoritas dan kelompok minoritas.</div></div>
+    <div class="rline"><div class="rkey">Relasi</div><div>Keputusan mayoritas ↔ kebebasan berpendapat ↔ hak orang lain.</div></div>
+    <div class="rline"><div class="rkey">Konsep kandidat</div><div>Demokrasi, mayoritas, kebebasan, hak, pembatasan.</div></div>
+    <div class="rline"><div class="rkey">Eliminasi</div><div>“Karena mayoritas, maka boleh melarang” salah secara konsep. Mayoritas adalah mekanisme jumlah, bukan izin tanpa batas untuk meniadakan hak.</div></div>
+    <div class="rline"><div class="rkey">Pusat analisis</div><div>Jika pertanyaannya menyoroti perlindungan kebebasan dalam kondisi mayoritas–minoritas, pusatnya adalah <strong>demokrasi konstitusional dan penghormatan hak</strong>, bukan sekadar voting.</div></div>
+  </div>
+
+  <div class="callout blue">
+    <strong>Formula reasoning yang dapat Anda gunakan saat melihat soal:</strong><br>
+    stimulus → fakta penting → siapa yang bertindak → masalah utama → hak/kewajiban yang terlibat → proses yang dipakai → batas yang berlaku → konsep kandidat → konsep tetangga → eliminasi → tujuan yang hendak dijaga → konsep paling tepat.
+  </div>
+
+  <h3>Grammar TWK: satu kata dapat mengubah gravity center</h3>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead><tr><th>Bila pertanyaan berbunyi...</th><th>Fokus yang dicari</th><th>Jebakan yang mungkin</th></tr></thead>
+      <tbody>
+        <tr><td>“Apa mekanisme pengambilan keputusan berdasarkan suara terbanyak?”</td><td><strong>Voting</strong></td><td>Memilih “demokrasi” karena terdengar lebih besar.</td></tr>
+        <tr><td>“Apa makna kedaulatan berada di tangan rakyat?”</td><td><strong>Kedaulatan rakyat / demokrasi</strong></td><td>Menjawab sekadar “musyawarah”.</td></tr>
+        <tr><td>“Apa proses membahas persoalan bersama untuk mencari keputusan?”</td><td><strong>Musyawarah</strong></td><td>Menjawab “mufakat”, padahal yang ditanya proses.</td></tr>
+        <tr><td>“Apa hasil ketika semua pihak mencapai kesepakatan?”</td><td><strong>Mufakat</strong></td><td>Menjawab “musyawarah”, padahal yang ditanya hasil.</td></tr>
+        <tr><td>“Apa yang harus dilakukan seseorang terhadap hak orang lain?”</td><td><strong>Kewajiban menghormati HAM</strong></td><td>Menjawab hak/kebebasan diri sendiri.</td></tr>
+        <tr><td>“Apa batas pelaksanaan hak dan kebebasan?”</td><td><strong>Pasal 28J: pembatasan menurut UU dan tujuan konstitusional</strong></td><td>Menjawab “kebebasan adalah mutlak”.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details>
+    <summary>Bagaimana membedakan “benar secara umum” dengan “paling tepat”?</summary>
+    <p>Bayangkan pertanyaan sedang meminta sebuah alamat, bukan sekadar kota. “Jakarta” mungkin benar secara umum, tetapi jika yang dicari adalah kecamatan atau gedung tertentu, jawabannya belum paling tepat. Hal yang sama terjadi pada TWK. “Partisipasi” bisa benar ketika membahas pemilu, tetapi bila stimulus secara spesifik membahas proses pertukaran pandangan sebelum keputusan, <strong>musyawarah</strong> lebih langsung.</p>
+  </details>
+  <details>
+    <summary>Mengapa distractor yang benar tetapi tidak tepat sangat berbahaya?</summary>
+    <p>Karena ia membuat peserta merasa sudah mengenali topik. Pembuat soal mengambil konsep yang memang masih berhubungan, lalu meletakkannya satu tingkat lebih jauh dari pusat masalah. Solusinya bukan mencari kata yang paling sering muncul, tetapi memeriksa hubungan paling langsung antara stimulus dan konsep.</p>
+  </details>
+</div>
+</section>
+
+<section class="section alt" id="map">
+<div class="wrap">
+  <div class="kicker">Peta konsep</div>
+  <h2>Melihat keseluruhan sistem sekaligus</h2>
+
+  <div class="mental">
+    <div class="box">
+      <strong>RAKYAT</strong>
+      <p>Memegang kedaulatan dan mempunyai berbagai hak serta kewajiban dalam kehidupan bernegara.</p>
+    </div>
+    <div class="box center">
+      <strong>KEHIDUPAN DEMOKRATIS KONSTITUSIONAL</strong>
+      <p>Kedaulatan rakyat + partisipasi + perwakilan + proses pengambilan keputusan + perlindungan hak + pembatasan kekuasaan.</p>
+    </div>
+    <div class="box">
+      <strong>KONSTITUSI &amp; HUKUM</strong>
+      <p>Menentukan bagaimana kekuasaan dijalankan dan bagaimana hak serta kebebasan dihormati dan dibatasi secara sah.</p>
+    </div>
+  </div>
+
+  <div class="role-map">
+    <div class="role"><strong>Kedaulatan</strong><span>siapa sumber kekuasaan?</span></div>
+    <div class="role"><strong>Partisipasi</strong><span>bagaimana rakyat ikut?</span></div>
+    <div class="role"><strong>Representasi</strong><span>siapa mewakili?</span></div>
+    <div class="role"><strong>Musyawarah / Voting</strong><span>bagaimana keputusan diambil?</span></div>
+    <div class="role"><strong>Hak / Batas</strong><span>sejauh mana kebebasan?</span></div>
+  </div>
+
+  <div class="flow">
+    <span class="pill">rakyat</span><span class="arrow">→</span>
+    <span class="pill">partisipasi</span><span class="arrow">→</span>
+    <span class="pill">representasi / proses keputusan</span><span class="arrow">→</span>
+    <span class="pill">keputusan</span><span class="arrow">→</span>
+    <span class="pill">hak orang lain</span><span class="arrow">→</span>
+    <span class="pill">batas konstitusional</span>
+  </div>
+
+  <div class="callout green">
+    <strong>Kalimat inti modul:</strong> demokrasi menjawab bagaimana rakyat menjadi sumber kedaulatan dan ikut menentukan arah kekuasaan; musyawarah dan voting adalah cara mengambil keputusan; representasi adalah cara menyalurkan suara dalam skala besar; hak dan kebebasan memberi ruang kepada manusia; kewajiban dan pembatasan memastikan ruang itu tidak menghapus hak orang lain atau berjalan di luar konstitusi.
+  </div>
+</div>
+</section>
+
+<section class="section" id="check">
+<div class="wrap">
+  <div class="kicker">Checkpoint konseptual</div>
+  <h2>Jangan uji diri Anda dengan hafalan</h2>
+  <p class="lead">Tutup sementara materi. Coba jelaskan dengan bahasa sendiri. Bila Anda tidak bisa menjelaskan “mengapa”, berarti konsepnya belum benar-benar berpindah dari hafalan menjadi pemahaman.</p>
+
+  <div class="checkpoint">
+    <div class="check"><b>01</b><div>Jika sebuah ketua mengambil keputusan sendiri dan kebetulan hasilnya sangat baik, mengapa Anda tidak otomatis menyebut proses tersebut demokratis?</div></div>
+    <div class="check"><b>02</b><div>Jelaskan dengan contoh mengapa <strong>voting</strong> dapat menjadi mekanisme demokratis tetapi tidak sama dengan <strong>demokrasi</strong>.</div></div>
+    <div class="check"><b>03</b><div>Gunakan contoh sendiri untuk membedakan <strong>musyawarah</strong> sebagai proses dengan <strong>mufakat</strong> sebagai hasil.</div></div>
+    <div class="check"><b>04</b><div>Mengapa “mayoritas menang” tidak berarti mayoritas boleh menghapus semua hak kelompok minoritas?</div></div>
+    <div class="check"><b>05</b><div>Apa perbedaan antara seseorang <strong>hadir</strong> dalam rapat dan benar-benar <strong>berpartisipasi</strong>?</div></div>
+    <div class="check"><b>06</b><div>Ambil satu contoh dari sekolah. Tunjukkan siapa aktornya, apa keputusan yang dibuat, proses apa yang digunakan, dan hak siapa yang mungkin terdampak.</div></div>
+    <div class="check"><b>07</b><div>Seseorang berkata, “Saya bebas berpendapat, jadi saya bebas melakukan apa saja terhadap orang lain.” Di bagian mana logika ini gagal?</div></div>
+    <div class="check"><b>08</b><div>Mengapa pembatasan hak tidak boleh dipahami sebagai “negara boleh membatasi apa saja demi ketertiban”?</div></div>
+    <div class="check"><b>09</b><div>Ketika sebuah norma mengatakan “wajib”, mengapa pilihan jawaban yang hanya menjelaskan “hak” dapat menjadi distractor meskipun hak tersebut benar secara umum?</div></div>
+    <div class="check"><b>10</b><div>Bayangkan satu demonstrasi. Sebutkan minimal lima konsep yang mungkin terkait, kemudian pilih satu pertanyaan yang membuat hanya satu konsep menjadi gravity center.</div></div>
+    <div class="check"><b>11</b><div>Jelaskan hubungan antara kedaulatan rakyat dan konstitusi. Mengapa “rakyat berdaulat” bukan berarti “keinginan mayoritas tidak memiliki batas”?</div></div>
+    <div class="check"><b>12</b><div>Jika pertanyaan berubah dari “bagaimana keputusan dibuat?” menjadi “apa hasil kesepakatannya?”, konsep apa yang mungkin berubah dan mengapa?</div></div>
+  </div>
+
+  <div class="callout gold">
+    <strong>Standar lulus:</strong> Anda tidak harus mampu mengutip definisi panjang. Anda dinilai memahami konsep ketika dapat mengambil satu kasus baru, mengubah konteksnya dari sekolah ke negara atau media sosial, lalu tetap mampu menemukan <strong>siapa → hak apa → kewajiban apa → proses apa → batas apa → tujuan apa</strong>.
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="wrap">
+  <div class="kicker">Sumber &amp; catatan metodologis</div>
+  <h2>Bagaimana materi ini dibentuk</h2>
+  <div class="sourcebox" style="padding:27px">
+    <p><strong>Corpus 600 soal + pembahasan:</strong> digunakan sebagai sumber utama untuk melihat <em>bagaimana</em> konsep diuji: pemetaan indikator, gravity center, konsep tetangga, aktor, hubungan, implementasi, cause/effect, pembeda hak–kewajiban, serta distractor yang benar secara umum tetapi kurang tepat terhadap pusat pertanyaan. Analisis corpus yang tersimpan dalam proyek juga menegaskan bahwa satu situasi dapat mengandung banyak konsep, tetapi satu pertanyaan harus mempunyai satu pusat analisis.</p>
+    <p><strong>Contoh pola corpus:</strong> terdapat pembahasan yang menempatkan musyawarah sebagai mekanisme yang mendorong kebebasan berpendapat, pembahasan tentang voting sebagai keputusan suara terbanyak, serta pembahasan Pasal 28J yang menekankan kewajiban menghormati hak orang lain. Materi di sini mempertahankan pola pedagogis tersebut, tetapi istilah dan fakta hukum disusun agar lebih presisi.</p>
+    <p><strong>Verifikasi hukum:</strong> gunakan <a href="https://jdih.dpr.go.id/index/uu1945" target="_blank" rel="noopener">JDIH Sekretariat Jenderal DPR RI — UUD NRI 1945</a>, khususnya Pasal 1 ayat (2)–(3), Pasal 22E, Pasal 27, Pasal 28A–28J, dan ketentuan terkait pemerintahan demokratis. UUD menyatakan kedaulatan berada di tangan rakyat dan dilaksanakan menurut UUD; menjamin berbagai HAM; serta dalam Pasal 28J menetapkan kewajiban menghormati HAM orang lain dan pembatasan hak/kebebasan menurut undang-undang untuk tujuan yang ditentukan konstitusi.</p>
+    <p><strong>Verifikasi tambahan:</strong> publikasi dan putusan Mahkamah Konstitusi digunakan sebagai bahan penjelas mengenai hubungan kedaulatan rakyat, demokrasi konstitusional, partisipasi, dan pembatasan hak. Misalnya, MK menjelaskan perubahan rumusan Pasal 1 ayat (2) dan pentingnya pembatasan kekuasaan dalam kerangka konstitusional.</p>
+    <p class="tiny"><strong>Catatan penting tentang corpus:</strong> corpus bukan otoritas hukum. Ketika corpus menggunakan formulasi yang terlalu sederhana, formulasi tersebut tidak otomatis diperlakukan sebagai fakta konstitusional. Kerangka pembelajarannya dipertahankan; fakta normatifnya diverifikasi pada sumber resmi.</p>
+    <p class="tiny"><strong>Catatan istilah:</strong> “gravity center”, “concept neighborhood”, dan “directness” adalah istilah alat bantu reasoning dalam proyek Ultimate TWK Knowledge System, bukan istilah resmi UUD NRI 1945.</p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+  <strong>Ultimate TWK Knowledge System · 07 Demokrasi, Hak, Kewajiban, dan Kehidupan Konstitusional</strong>
+  <p class="footer-text">Tujuan akhirnya bukan menghafal kata demokrasi, voting, musyawarah, hak, atau kewajiban. Tujuannya adalah memahami hubungan di antara semuanya, lalu menemukan konsep yang paling tepat ketika konteks dan bahasa soal berubah.</p>
+</div>
+</footer>
+
+<nav class="cpns-modnav" aria-label="Navigasi modul">
+  <a class="cpns-navbtn" href="06-lembaga-negara-dan-sistem-ketatanegaraan.html">← Modul 06</a>
+  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m07" type="button">Tandai selesai</button>
+  <a class="cpns-navbtn" href="08-nkri-bhinneka-integrasi-dan-wawasan-nusantara.html">Modul 08 →</a>
+</nav>
+
+<script>
+(function(){
+  var bar=document.getElementById('cpns-progress-bar');
+  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+  var done=document.getElementById('cpns-done');
+  if(done){var key=done.getAttribute('data-key');
+    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+    refresh();
+  }
+})();
+</script>
+
+</body>
+</html>

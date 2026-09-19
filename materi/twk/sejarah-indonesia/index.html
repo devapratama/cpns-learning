@@ -3,238 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Materi TWK CPNS Sejarah Indonesia yang kronologis, interaktif, dan nyaman dibaca — dari perlawanan daerah hingga Reformasi.">
 <title>Materi TWK CPNS — Sejarah Indonesia Kronologis Lengkap</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --merah:#b3132b;
-    --merah-tua:#7a0d1e;
-    --emas:#c99a3c;
-    --krem:#faf6ee;
-    --teks:#2a2420;
-    --teks-lembut:#5a5048;
-    --garis:#e5dcc9;
+    --ink:#26201A; --ink-soft:#6E6557; --paper:#F4EFE3; --surface:#FDFAF2; --line:#E2D9C2;
+    --accent:#8C1F28; --accent-soft:#F6E4E0; --good:#2F6F4F; --good-soft:#E2EFE7; --bad:#A23B32; --bad-soft:#F6E6E3;
+    --gold:#B9881F; --gold-soft:#F4EBCB; --radius:14px;
+    --era-a:#A9502E; --era-a-soft:#F8E9DC; --era-a-ink:#7A3418;
+    --era-b:#9E2B25; --era-b-soft:#F9E4E0; --era-b-ink:#77160F;
+    --era-c:#2B4A7C; --era-c-soft:#E4EAF5; --era-c-ink:#16335C;
+    --era-d:#6B6A2C; --era-d-soft:#F0EDD6; --era-d-ink:#4C4B14;
+    --era-e:#2F6B67; --era-e-soft:#DFEFEC; --era-e-ink:#174440;
   }
+  .bagian[data-era="a"]{--era:var(--era-a);--era-soft:var(--era-a-soft);--era-ink:var(--era-a-ink)}
+  .bagian[data-era="b"]{--era:var(--era-b);--era-soft:var(--era-b-soft);--era-ink:var(--era-b-ink)}
+  .bagian[data-era="c"]{--era:var(--era-c);--era-soft:var(--era-c-soft);--era-ink:var(--era-c-ink)}
+  .bagian[data-era="d"]{--era:var(--era-d);--era-soft:var(--era-d-soft);--era-ink:var(--era-d-ink)}
+  .bagian[data-era="e"]{--era:var(--era-e);--era-soft:var(--era-e-soft);--era-ink:var(--era-e-ink)}
+  .nav-chip[data-era="a"]{--era:var(--era-a);--era-soft:var(--era-a-soft)}
+  .nav-chip[data-era="b"]{--era:var(--era-b);--era-soft:var(--era-b-soft)}
+  .nav-chip[data-era="c"]{--era:var(--era-c);--era-soft:var(--era-c-soft)}
+  .nav-chip[data-era="d"]{--era:var(--era-d);--era-soft:var(--era-d-soft)}
+  .nav-chip[data-era="e"]{--era:var(--era-e);--era-soft:var(--era-e-soft)}
+  .nav-era[data-era="a"]{--era:var(--era-a)}
+  .nav-era[data-era="b"]{--era:var(--era-b)}
+  .nav-era[data-era="c"]{--era:var(--era-c)}
+  .nav-era[data-era="d"]{--era:var(--era-d)}
+  .nav-era[data-era="e"]{--era:var(--era-e)}
+  .toc-group[data-era="a"]{--era:var(--era-a)}
+  .toc-group[data-era="b"]{--era:var(--era-b)}
+  .toc-group[data-era="c"]{--era:var(--era-c)}
+  .toc-group[data-era="d"]{--era:var(--era-d)}
+  .toc-group[data-era="e"]{--era:var(--era-e)}
   *{box-sizing:border-box;}
-  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth; }
   body{
-    margin:0;
-    font-family:'Georgia','Segoe UI',serif;
-    background:var(--krem);
-    color:var(--teks);
+    margin:0; position:relative;
+    font-family:'IBM Plex Sans', sans-serif;
+    background:var(--paper);
+    color:var(--ink);
     line-height:1.75;
-    font-size:clamp(16px, 1.06rem + 0.2vw, 18px);
+    font-size:clamp(16px, 1.02rem + 0.1vw, 17.5px);
+    -webkit-font-smoothing:antialiased;
   }
-  header.hero{
-    background:linear-gradient(135deg,var(--merah-tua),var(--merah));
-    color:#fff;
-    padding:clamp(32px, 6vw, 56px) clamp(16px, 4vw, 24px) clamp(28px, 5vw, 40px);
-    text-align:center;
+  body::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:5px;
+    background:linear-gradient(90deg, var(--gold), var(--accent), var(--era-c), var(--era-e));
   }
+  .wrap{max-width:800px; margin:0 auto; padding:6px clamp(14px, 3vw, 24px) 80px;}
+
+  /* ---------- Breadcrumb ---------- */
+  .breadcrumb{
+    display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+    max-width:800px; margin:0 auto; padding:24px clamp(14px, 3vw, 24px) 0;
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft);
+  }
+  .breadcrumb a{color:var(--accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-current{color:var(--ink-soft); font-weight:500;}
+
+  /* ---------- Hero ---------- */
+  header.hero{padding:30px clamp(0px, 2vw, 2px) 24px; max-width:800px; margin:0 auto; position:relative;}
   header.hero h1{
-    margin:0 0 8px;
-    font-size:clamp(1.4rem, 2.1rem - 1vw, 2.1rem);
-    letter-spacing:0.5px;
+    font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em;
+    margin:0 0 10px; font-size:clamp(26px, 5vw, 38px); text-align:left;
   }
   header.hero p{
-    margin:0 auto;
-    font-size:clamp(0.95rem, 1.05rem - 0.5vw, 1.05rem);
-    color:#f4dcc0;
-    font-family:'Segoe UI',sans-serif;
-    max-width:60ch;
+    margin:0; color:var(--ink-soft); font-size:1.02rem; max-width:62ch; text-align:left;
+    font-family:'IBM Plex Sans', sans-serif;
   }
-  .wrap{
-    max-width:920px;
-    margin:0 auto;
-    padding:0 clamp(14px, 3vw, 24px) 80px;
+  header.hero::after{
+    content:''; display:block; margin-top:22px; height:12px; border-radius:3px;
+    background:repeating-linear-gradient(90deg, var(--gold) 0 3px, transparent 3px 16px),
+               repeating-linear-gradient(90deg, var(--era-c) 0 1px, transparent 1px 8px);
+    opacity:.5;
   }
+  .hero-stats{ display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+  .hs-chip{
+    display:inline-flex; align-items:baseline; gap:5px;
+    font-family:'IBM Plex Mono', monospace; font-size:.72rem; color:var(--ink-soft);
+    background:var(--surface); border:1px solid var(--line); border-radius:999px;
+    padding:6px 12px; box-shadow:0 1px 2px rgba(38,32,26,.05); white-space:nowrap;
+  }
+  .hs-chip b{ color:var(--accent); font-weight:600; font-size:.9rem; }
+
+  /* ---------- Toc ---------- */
   nav.toc{
-    background:#fff;
-    border:1px solid var(--garis);
-    border-left:6px solid var(--emas);
-    border-radius:6px;
-    padding:20px 26px;
-    margin:-24px 0 40px;
-    box-shadow:0 4px 14px rgba(0,0,0,0.06);
-    font-family:'Segoe UI',sans-serif;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:22px 26px; margin:10px 0 40px; box-shadow:0 1px 2px rgba(38,32,26,.06), 0 6px 18px rgba(38,32,26,.08);
+    font-family:'IBM Plex Sans', sans-serif;
   }
   nav.toc h2{
-    margin-top:0;
-    font-size:1.1rem;
-    color:var(--merah-tua);
+    margin:0 0 14px; font-family:'IBM Plex Mono', monospace; font-size:0.72rem;
+    letter-spacing:0.08em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px;
   }
-  nav.toc ol{
-    columns:2;
-    -webkit-columns:2;
-    padding-left:20px;
-    margin:0;
-    font-size:0.95rem;
+  nav.toc h2::after{content:''; flex:1; height:1px; background:var(--line);}
+  nav.toc ol{ columns:2; -webkit-columns:2; padding-left:20px; margin:0; font-size:0.92rem; }
+  nav.toc ol.cpns-tocgrid{
+    columns:auto; -webkit-columns:auto; display:grid; grid-template-columns:1fr 1fr;
+    column-gap:2em; padding-left:0; list-style:none; margin:0; font-size:0.92rem;
   }
-  nav.toc a{
-    color:var(--teks);
-    text-decoration:none;
-    display:inline-block;
-    padding:3px 0;
-    break-inside:avoid;
+  nav.toc ol.cpns-tocgrid li{ list-style:none; }
+  nav.toc a{ color:var(--ink); text-decoration:none; display:inline-block; padding:3px 0; break-inside:avoid; }
+  nav.toc a:hover{ color:var(--accent); text-decoration:underline; }
+  .toc-group{
+    grid-column:1 / -1; font-family:'IBM Plex Mono', monospace; font-size:.68rem;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--era, var(--accent));
+    border-bottom:1px dashed var(--line); margin:12px 0 6px; padding-bottom:5px;
   }
-  nav.toc a:hover{ color:var(--merah); text-decoration:underline; }
+  .toc-group.first{ margin-top:0; }
 
+  /* ---------- Sticky top nav antar materi ---------- */
+  .sticky-nav{
+    position:sticky; top:0; z-index:9;
+    display:flex; gap:6px; overflow-x:auto;
+    padding:10px clamp(14px, 3vw, 24px) 12px;
+    margin:0 calc(clamp(14px, 3vw, 24px) * -1) 6px;
+    background:rgba(244,239,227,0.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:thin;
+  }
+  .sticky-nav::-webkit-scrollbar{height:4px;}
+  .sticky-nav::-webkit-scrollbar-thumb{background:var(--line); border-radius:2px;}
+  .sticky-nav .nav-top{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    color:var(--accent); background:none; border:1px dashed var(--accent); border-radius:999px;
+    padding:5px 11px; cursor:pointer; white-space:nowrap; transition:all .15s;
+  }
+  .sticky-nav .nav-top:hover{background:var(--accent); color:#fff;}
+  .sticky-nav .nav-chip{
+    flex:0 0 auto; font-family:'IBM Plex Mono', monospace; font-size:11px;
+    padding:6px 12px; border-radius:999px; border:1px solid var(--line);
+    background:var(--paper); color:var(--ink-soft); cursor:pointer; white-space:nowrap;
+    transition:all .15s; user-select:none; -webkit-tap-highlight-color:transparent;
+  }
+  .sticky-nav .nav-chip:hover{border-color:var(--accent); color:var(--accent);}
+  .sticky-nav .nav-chip.active{background:var(--era, var(--accent)); color:#fff; border-color:var(--era, var(--accent));}
+  .sticky-nav .nav-era{
+    flex:0 0 auto; display:inline-flex; align-items:center; gap:4px;
+    font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--era, var(--ink-soft));
+    border-left:2px solid var(--era, var(--line)); padding:2px 4px 2px 10px; margin-left:4px; white-space:nowrap;
+  }
+
+  /* ---------- Flow ---------- */
   .flow{
-    background:#fff;
-    border:1px solid var(--garis);
-    border-radius:8px;
-    padding:clamp(18px, 3.5vw, 26px);
-    margin-bottom:44px;
-    font-family:'Segoe UI',sans-serif;
+    background:var(--surface); border:1px solid var(--gold); border-radius:var(--radius);
+    padding:clamp(18px, 3.5vw, 26px); margin-bottom:44px; font-family:'IBM Plex Sans', sans-serif;
+    box-shadow:0 1px 2px rgba(38,32,26,.06), 0 6px 18px rgba(38,32,26,.08);
   }
-  .flow h2{ color:var(--merah-tua); margin-top:0;}
-  .flow-chain{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-    align-items:center;
-    font-size:0.88rem;
-  }
-  .flow-chain span.node{
-    background:var(--krem);
-    border:1px solid var(--emas);
-    border-radius:20px;
-    padding:6px 14px;
-    white-space:nowrap;
-  }
-  .flow-chain span.arrow{
-    color:var(--merah);
-    font-weight:bold;
-  }
+  .flow h2{ font-family:'Fraunces', serif; font-weight:600; font-size:clamp(18px, 3vw, 22px); color:var(--ink); margin-top:0; margin-bottom:14px; }
 
-  section.bagian{
-    margin-bottom:56px;
+  .flow-chain{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:0.84rem; }
+  .flow-chain span.node{
+    font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--accent);
+    background:linear-gradient(180deg, var(--surface), var(--accent-soft));
+    border:1px solid var(--gold); border-radius:7px;
+    padding:5px 12px; white-space:nowrap; transform:rotate(-1deg);
+  }
+  .flow-chain span.arrow{ color:var(--gold); font-weight:600; font-family:'IBM Plex Mono', monospace; }
+
+  /* ---------- Bagian ---------- */
+  section.bagian{ position:relative; margin-bottom:60px; scroll-margin-top:76px; overflow:hidden; }
+  section.bagian::before{
+    content:attr(data-era); position:absolute; top:-16px; right:clamp(2px, 2vw, 22px);
+    font-family:'Fraunces', serif; font-weight:700; line-height:1; text-transform:uppercase;
+    font-size:clamp(88px, 16vw, 168px); color:var(--era, var(--accent)); opacity:.08;
+    pointer-events:none; user-select:none;
+  }
+  .bagian-kicker{
+    display:block; font-family:'IBM Plex Mono', monospace; font-size:.7rem;
+    letter-spacing:.18em; text-transform:uppercase; color:var(--era, var(--accent)); margin-bottom:2px;
   }
   section.bagian > h2{
-    font-size:clamp(1.25rem, 1.5rem - 0.5vw, 1.5rem);
-    color:#fff;
-    background:var(--merah);
-    padding:12px clamp(16px, 3vw, 20px);
-    border-radius:6px 6px 0 0;
-    margin:0;
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.3rem, 1.6rem - 0.5vw, 1.6rem);
+    color:var(--ink); margin:0 0 16px; letter-spacing:-0.01em;
+    display:flex; align-items:center; gap:12px;
   }
+  section.bagian > h2::after{content:''; flex:1; height:1px; background:var(--line);}
   .bagian-isi{
-    background:#fff;
-    border:1px solid var(--garis);
-    border-top:none;
-    border-radius:0 0 6px 6px;
+    position:relative;
+    background:var(--surface); border:1px solid var(--line); border-top:5px solid var(--era, var(--accent));
+    border-radius:var(--radius);
     padding:8px clamp(16px, 3.5vw, 26px) 20px;
+    box-shadow:0 1px 2px rgba(38,32,26,.06), 0 6px 18px rgba(38,32,26,.08);
   }
-  article.topik{
-    border-bottom:1px dashed var(--garis);
-    padding:26px 0;
-  }
+
+  article.topik{ border-bottom:1px dashed var(--line); padding:26px 0; scroll-margin-top:64px; }
   article.topik:last-child{ border-bottom:none; }
   article.topik h3{
-    color:var(--merah-tua);
-    font-size:clamp(1.15rem, 1.3rem - 0.4vw, 1.3rem);
-    margin-bottom:4px;
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(1.15rem, 1.3rem - 0.4vw, 1.3rem);
+    color:var(--ink); margin:0 0 6px; line-height:1.35;
   }
   .tahun{
-    display:inline-block;
-    font-family:'Segoe UI',sans-serif;
-    font-size:0.78rem;
-    background:var(--emas);
-    color:#3a2a08;
-    padding:2px 10px;
-    border-radius:12px;
-    margin-bottom:12px;
-    font-weight:600;
+    display:inline-block; font-family:'IBM Plex Mono', monospace; font-size:0.68rem;
+    color:var(--era-ink, var(--accent)); background:var(--era-soft, var(--accent-soft));
+    border:1px solid transparent; border-radius:999px;
+    padding:3px 10px; margin-bottom:12px; font-weight:500;
   }
   article.topik h4{
-    color:var(--merah);
-    font-size:1.05rem;
-    margin:20px 0 6px;
-    font-family:'Segoe UI',sans-serif;
+    color:var(--ink); font-family:'IBM Plex Sans', sans-serif; font-weight:600;
+    font-size:1.03rem; margin:20px 0 6px; padding-left:10px;
+    border-left:3px solid var(--era, var(--accent));
   }
   article.topik p{ margin:12px 0; }
   article.topik ul, article.topik ol{ margin:10px 0; padding-left:22px; }
   article.topik li{ margin-bottom:8px; }
-  .tokoh-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px 20px;
-    font-size:0.98rem;
-    margin:12px 0;
-  }
-  .tokoh-grid div{
-    background:var(--krem);
-    border-left:3px solid var(--merah);
-    padding:12px 16px;
-    border-radius:4px;
-  }
-  .tokoh-grid b{ color:var(--merah-tua); }
-  table.perjanjian{
-    width:100%;
-    border-collapse:collapse;
-    margin:16px 0;
-    font-size:0.95rem;
-  }
-  .table-scroll{
-    display:block;
-    width:100%;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    margin:16px 0;
-  }
-  .table-scroll table{ margin:0; }
-  table.perjanjian th, table.perjanjian td{
-    border:1px solid var(--garis);
-    padding:10px 12px;
-    text-align:left;
-    vertical-align:top;
-  }
-  table.perjanjian th{
-    background:var(--merah-tua);
-    color:#fff;
-    font-family:'Segoe UI',sans-serif;
-    font-weight:600;
-  }
-  table.perjanjian tr:nth-child(even) td{ background:var(--krem); }
 
-  footer{
-    text-align:center;
-    font-family:'Segoe UI',sans-serif;
-    font-size:0.85rem;
-    color:var(--teks-lembut);
-    padding:30px 20px;
+  .tokoh-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; font-size:0.97rem; margin:12px 0; }
+  .tokoh-grid div{
+    background:linear-gradient(180deg, var(--surface), var(--accent-soft));
+    border:1px solid var(--line); border-left:4px solid var(--gold);
+    padding:12px 16px; border-radius:10px;
   }
-  a.top{
-    font-family:'Segoe UI',sans-serif;
-    font-size:0.8rem;
-    color:var(--merah);
-    text-decoration:none;
-    float:right;
+  .tokoh-grid b{ color:var(--accent); }
+
+  table.perjanjian{ width:100%; border-collapse:collapse; margin:16px 0; font-size:0.95rem; }
+  .table-scroll{ display:block; width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:16px 0; }
+  .table-scroll table{ margin:0; }
+  table.perjanjian th, table.perjanjian td{ border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+  table.perjanjian th{ background:var(--era, var(--accent)); color:#fff; font-family:'IBM Plex Mono', monospace; font-weight:500; }
+  table.perjanjian tr:nth-child(even) td{ background:var(--paper); }
+
+  /* ---------- Figure / gambar terverifikasi ---------- */
+  figure.materi-figure{
+    margin:22px auto 24px; max-width:560px; text-align:center;
+    background:var(--surface); border:1px solid var(--gold); border-radius:var(--radius);
+    padding:10px 10px 8px;
+    box-shadow:0 1px 2px rgba(38,32,26,.06);
   }
-  .breadcrumb{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:6px;
-    background:var(--merah-tua);
-    color:#f4dcc0;
-    padding:10px 24px;
-    font-family:'Segoe UI',sans-serif;
-    font-size:0.85rem;
+  figure.materi-figure.narrow{ max-width:340px; }
+  figure.materi-figure img{
+    display:block; width:100%; height:auto; margin:0 auto;
+    border-radius:8px; border:1px solid var(--line); cursor:zoom-in;
   }
-  .breadcrumb a{
-    color:#f4dcc0;
-    text-decoration:none;
-    display:inline-flex;
-    align-items:center;
-    gap:5px;
+  figure.materi-figure img:hover{ border-color:var(--gold); }
+  figure.materi-figure figcaption{
+    font-family:'IBM Plex Mono', monospace; font-size:0.72rem; line-height:1.55;
+    color:var(--ink-soft); margin-top:9px; padding:0 4px;
   }
-  .breadcrumb a:hover{ color:#fff; text-decoration:underline; }
-  .breadcrumb .crumb-sep{ color:rgba(244,220,192,0.5); }
-  .breadcrumb .crumb-current{ color:#fff; font-weight:600; }
+  figure.materi-figure figcaption .fig-title{ display:block; color:var(--accent); font-weight:500; }
+  figure.materi-figure figcaption .fig-src{ display:block; margin-top:3px; opacity:0.8; }
+  @media (max-width:400px){
+    figure.materi-figure{ padding:8px 8px 6px; }
+  }
+
+  footer{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-soft); padding:30px 20px; }
+  a.top{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; color:var(--accent); text-decoration:none; float:right; }
+  a.top:hover{ text-decoration:underline; }
+
   @media (max-width:820px){
     nav.toc ol{ columns:2; font-size:0.9rem; }
-    .breadcrumb{ padding:10px 16px; font-size:0.8rem; }
-    .breadcrumb a{ gap:3px; }
+    nav.toc ol.cpns-tocgrid{ grid-template-columns:1fr; }
+    .breadcrumb{ padding:18px 16px 0; }
   }
   @media (max-width:600px){
     nav.toc ol{ columns:1; }
@@ -246,12 +273,30 @@
     a.top{ display:block; float:none; margin-top:14px; }
     .tahun{ margin-bottom:10px; }
     section.bagian > h2{ font-size:1.25rem; }
+    section.bagian::before{ font-size:72px; top:-8px; }
+    .hero-stats{ gap:6px; }
+    .hs-chip{ font-size:.66rem; padding:5px 10px; }
   }
   @media (max-width:400px){
     body{ font-size:16px; }
     nav.toc{ padding:16px 14px; }
-    .flow{padding:16px 14px;}
-    .flow-chain span.node{ padding:5px 11px; font-size:0.8rem; }
+    .flow{ padding:16px 14px; }
+    .flow-chain span.node{ padding:5px 11px; font-size:0.7rem; }
+  }
+  @media print{
+    .sticky-nav, #cpns-progress, #cpns-pill, #cpns-controls, #cpns-resume,
+    #cpns-gloss-tip, #cpns-cat, #cpns-cat-bubble, #cpns-cat-menu,
+    #cpns-hlbar, #cpns-notes-btn, #cpns-notes, #cpns-rail,
+    .cpns-pager, .cpns-tebak-body, .cpns-fk-back{ display:none !important; }
+    .wrap{ padding-bottom:0; }
+    section.bagian{ overflow:visible; margin-bottom:24px; }
+    section.bagian::before{ display:none; }
+    .bagian-isi{ border-top-width:3px; }
+    figure.materi-figure{ break-inside:avoid; }
+    .cpns-fk-face{ position:relative !important; }
+    .cpns-fk.is-flipped .cpns-fk-front{ transform:none !important; }
+    .cpns-fk.is-flipped .cpns-fk-back{ display:none; }
+    a.top{ display:none; }
   }
 </style>
 </head>
@@ -268,9 +313,12 @@
 <header class="hero">
   <h1>🇮🇩 Sejarah Indonesia untuk TWK CPNS</h1>
   <p>Materi belajar lengkap dan kronologis — dari perlawanan daerah hingga Reformasi</p>
+  <div class="hero-stats" id="hero-stats" aria-label="Statistik materi"></div>
 </header>
 
 <div class="wrap">
+
+  <nav class="sticky-nav" id="sticky-nav" aria-label="Navigasi antar materi"></nav>
 
   <nav class="toc" id="daftar-isi">
     <h2>📑 Daftar Isi</h2>
@@ -330,7 +378,7 @@
   </div>
 
   <!-- ============ BAGIAN A ============ -->
-  <section class="bagian" id="bagian-a">
+  <section class="bagian" id="bagian-a" data-era="a">
     <h2>A. Sebelum Kemerdekaan</h2>
     <div class="bagian-isi">
 
@@ -341,6 +389,14 @@
         <p>Kedatangan bangsa Eropa ke Nusantara bermula dari perburuan rempah-rempah. Portugis tiba lebih dahulu di awal abad ke-16 dan menguasai Malaka (1511), disusul Spanyol, lalu Belanda melalui VOC (Vereenigde Oostindische Compagnie) yang didirikan tahun 1602 sebagai kongsi dagang dengan hak istimewa dari pemerintah Belanda: hak memonopoli perdagangan, hak mencetak uang, hak mengangkat pegawai, bahkan hak menyatakan perang dan membuat perjanjian dengan penguasa lokal (hak oktroi). VOC inilah yang secara bertahap mengubah dirinya dari kongsi dagang menjadi kekuatan kolonial yang menguasai wilayah demi wilayah di Nusantara, sering dengan politik <i>devide et impera</i> (memecah belah dan menguasai) — mengadu domba kerajaan-kerajaan lokal, memanfaatkan konflik suksesi, dan mengikat penguasa setempat lewat perjanjian yang timpang.</p>
         <p>Perlawanan terhadap kekuasaan asing ini muncul di hampir seluruh penjuru Nusantara, namun sifatnya masih <b>lokal dan kedaerahan</b>: masing-masing dipimpin oleh raja, sultan, atau bangsawan setempat, mengandalkan pasukan dan senjata tradisional, dan umumnya dipicu oleh sebab-sebab yang bersifat langsung — monopoli dagang yang merugikan, campur tangan dalam suksesi kerajaan, pemungutan pajak yang memberatkan, atau pelanggaran terhadap adat dan agama setempat. Karena tidak terkoordinasi antarwilayah dan tidak memiliki visi persatuan sebagai satu bangsa, perlawanan-perlawanan ini pada akhirnya dapat dipatahkan Belanda satu per satu, meski sering setelah pertempuran yang berlangsung sangat lama dan menelan biaya besar bagi pihak kolonial.</p>
         <p>Berikut tokoh-tokoh perlawanan kedaerahan yang paling sering muncul dalam materi sejarah nasional, lengkap dengan konteks perjuangannya masing-masing:</p>
+        <figure class="materi-figure">
+          <img src="assets/penangkapan-diponegoro.jpg" alt="Lukisan penangkapan Pangeran Diponegoro oleh Jenderal De Kock, karya Raden Saleh (1857)" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Penangkapan Pangeran Diponegoro, 1830</span>
+            Lukisan karya Raden Saleh (1857) — menggambarkan perundingan di Magelang yang berujung pada penangkapan Diponegoro.
+            <span class="fig-src">Sumber: Wikimedia Commons · domain publik (karya seni lama)</span>
+          </figcaption>
+        </figure>
         <div class="tokoh-grid">
           <div><b>Pattimura (Thomas Matulessy)</b><br>Memimpin perlawanan rakyat Maluku pada tahun 1817, dipicu oleh kembalinya kekuasaan Belanda atas Maluku setelah sebelumnya dikuasai Inggris (1811–1816) dengan sistem yang lebih longgar. Rakyat Maluku yang sudah merasakan kebijakan Inggris yang lebih ringan, menolak kembalinya monopoli dan kerja paksa Belanda. Pattimura berhasil merebut benteng Duurstede di Saparua, namun akhirnya ditangkap dan dihukum gantung di Ambon.</div>
           <div><b>Sultan Hasanuddin</b><br>Penguasa Kesultanan Gowa (Makassar) yang menentang keras upaya VOC memonopoli perdagangan rempah di kawasan timur Nusantara. Perlawanannya berakhir dengan Perjanjian Bongaya (1667) yang sangat merugikan Gowa, memaksa Hasanuddin menyerahkan wilayah dan hak dagangnya. Karena keberaniannya, Belanda menjulukinya "De Haantjes van het Oosten" (Ayam Jantan dari Timur).</div>
@@ -384,6 +440,14 @@
         <p>Berakar dari <b>Sarekat Dagang Islam</b> yang didirikan H. Samanhudi pada 1911 di Surakarta, awalnya bertujuan melindungi kepentingan ekonomi pedagang batik pribumi Muslim dari persaingan pedagang Tionghoa. Di bawah kepemimpinan <b>HOS Tjokroaminoto</b>, organisasi ini diperluas ruang lingkupnya menjadi Sarekat Islam yang tidak lagi hanya soal dagang, melainkan juga isu-isu sosial-politik yang lebih luas, dan berkembang pesat menjadi organisasi massa terbesar pada masanya dengan basis anggota hingga jutaan orang di seluruh Nusantara.</p>
         <h4>Indische Partij (1912)</h4>
         <p>Didirikan oleh tiga tokoh yang dikenal sebagai <b>Tiga Serangkai</b>: <b>Douwes Dekker (Ernest Francois Eugene Douwes Dekker, bergelar Danudirja Setiabudi)</b>, <b>dr. Cipto Mangunkusumo</b>, dan <b>Ki Hajar Dewantara (Raden Mas Soewardi Soerjaningrat)</b>. Indische Partij menjadi organisasi politik pertama di Hindia Belanda yang secara terang-terangan dan tegas menuntut <b>kemerdekaan Indonesia</b> sebagai tujuan perjuangannya, sesuatu yang belum berani dilakukan organisasi-organisasi sebelumnya. Akibat sikap radikalnya — termasuk tulisan kritis Ki Hajar Dewantara berjudul <i>"Als ik eens Nederlander was"</i> (Andaikan Aku Seorang Belanda) yang menyindir perayaan 100 tahun kemerdekaan Belanda dari Prancis di tengah penjajahan atas Indonesia — organisasi ini dibubarkan pemerintah kolonial dan ketiga pendirinya diasingkan ke Belanda.</p>
+        <figure class="materi-figure narrow">
+          <img src="assets/ki-hajar-dewantara.jpg" alt="Potret Ki Hajar Dewantara, salah satu tokoh Tiga Serangkai pendiri Indische Partij" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Ki Hajar Dewantara</span>
+            Anggota Tiga Serangkai pendiri Indische Partij; kelak pendiri Perguruan Taman Siswa dan Bapak Pendidikan Nasional.
+            <span class="fig-src">Sumber: Wikimedia Commons · domain publik (foto lama Indonesia)</span>
+          </figcaption>
+        </figure>
         <h4>Perhimpunan Indonesia</h4>
         <p>Semula bernama <b>Indische Vereeniging</b>, didirikan oleh para pelajar dan mahasiswa Indonesia yang menempuh pendidikan di Belanda. Seiring waktu, organisasi ini berkembang menjadi wadah pemikiran nasionalis yang semakin radikal, berganti nama menjadi Perhimpunan Indonesia, dan menerbitkan majalah <i>Indonesia Merdeka</i> sebagai media penyebaran gagasan kemerdekaan. Banyak tokoh pergerakan nasional kemudian hari, termasuk Mohammad Hatta, aktif dan menjadi pemimpin dalam organisasi ini selama masa studi mereka di Belanda.</p>
         <h4>PNI — Partai Nasional Indonesia (1927)</h4>
@@ -406,6 +470,14 @@
           <li><b>Kedua:</b> Kami putra dan putri Indonesia mengaku berbangsa yang satu, bangsa Indonesia.</li>
           <li><b>Ketiga:</b> Kami putra dan putri Indonesia menjunjung bahasa persatuan, bahasa Indonesia.</li>
         </ol>
+        <figure class="materi-figure narrow">
+          <img src="assets/sumpah-pemuda.jpg" alt="Naskah ikrar Sumpah Pemuda hasil Kongres Pemuda II, 28 Oktober 1928" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Naskah Sumpah Pemuda, 28 Oktober 1928</span>
+            Keputusan Kongres Pemuda II yang diikrarkan di Batavia; kini menjadi koleksi Museum Sumpah Pemuda.
+            <span class="fig-src">Sumber: Wikimedia Commons (foto Edogang1) · lisensi CC BY 4.0</span>
+          </figcaption>
+        </figure>
         <p>Makna historis Sumpah Pemuda sangat mendasar: inilah titik ketika kesadaran kedaerahan (Jawa, Sumatra, Ambon, Sulawesi, dan seterusnya) secara resmi melebur menjadi satu <b>identitas kebangsaan tunggal</b> — satu tanah air, satu bangsa, dan satu bahasa persatuan, yaitu Indonesia. Perlu dipahami bahwa Sumpah Pemuda bukanlah proklamasi atau pernyataan kemerdekaan; ia adalah <b>ikrar persatuan</b> yang menegaskan cita-cita bersama sebagai satu bangsa, yang kelak menjadi fondasi mental dan ideologis bagi perjuangan kemerdekaan pada dekade-dekade berikutnya. Sejak peristiwa ini pula istilah "Indonesia" semakin mengakar sebagai nama identitas politik bangsa, menggantikan sebutan-sebutan lama seperti Hindia atau Nusantara dalam wacana pergerakan.</p>
       </article>
 
@@ -446,6 +518,14 @@
           <li><b>Seinendan</b> — barisan pemuda (usia sekitar 14–22 tahun) yang dilatih semi-militer untuk mempertahankan tanah air dari serangan Sekutu.</li>
           <li><b>Keibodan</b> — barisan pembantu polisi di tingkat lokal, bertugas menjaga keamanan dan ketertiban di desa-desa dan kota-kota kecil.</li>
         </ul>
+        <figure class="materi-figure">
+          <img src="assets/peta-tentara.jpg" alt="Pasukan PETA (Pembela Tanah Air) berbaris dengan bendera pada tahun 1944" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Pasukan PETA, 1944</span>
+            Tentara sukarela pribumi bentukan Jepang yang menjadi cikal bakal utama TNI setelah kemerdekaan.
+            <span class="fig-src">Sumber: Wikimedia Commons · domain publik (rekaman Jepang 1944)</span>
+          </figcaption>
+        </figure>
         <h4>Dampak Pendudukan Jepang</h4>
         <p>Dampak pendudukan Jepang bersifat ganda (ambivalen). Di satu sisi, rakyat mengalami penderitaan luar biasa: kelaparan meluas akibat penyerahan wajib hasil panen kepada Jepang, romusha yang merenggut ratusan ribu nyawa, serta pembatasan kebebasan yang ketat dan represi terhadap perlawanan. Namun di sisi lain, secara tidak langsung pendudukan Jepang justru <b>mempercepat proses menuju kemerdekaan Indonesia</b> melalui beberapa jalur: pertama, rakyat pribumi—untuk pertama kalinya dalam sejarah kolonial—mendapatkan <b>pelatihan dan pengalaman militer yang nyata</b> lewat PETA, Heiho, dan Seinendan, yang kelak menjadi modal perjuangan bersenjata mempertahankan kemerdekaan; kedua, Jepang memberi ruang lebih besar bagi penggunaan <b>bahasa Indonesia</b> dan organisasi-organisasi pribumi (untuk kepentingan propaganda perang mereka sendiri), yang tanpa disadari memperkuat rasa persatuan dan kesiapan berorganisasi bangsa Indonesia; dan ketiga, kekalahan Jepang dalam Perang Pasifik pada pertengahan 1945 menciptakan situasi kekosongan kekuasaan yang dimanfaatkan para pemimpin nasional untuk segera memproklamasikan kemerdekaan.</p>
       </article>
@@ -454,7 +534,7 @@
   </section>
 
   <!-- ============ BAGIAN B ============ -->
-  <section class="bagian" id="bagian-b">
+  <section class="bagian" id="bagian-b" data-era="b">
     <h2>B. Menjelang Kemerdekaan</h2>
     <div class="bagian-isi">
 
@@ -529,13 +609,21 @@
         <p>Karena perbedaan pandangan tersebut tidak kunjung menemui titik temu, pada dini hari <b>16 Agustus 1945</b>, sekelompok pemuda membawa Soekarno dan Hatta beserta istri dan putra Soekarno ke <b>Rengasdengklok</b>, sebuah kota kecil di Karawang, Jawa Barat, yang dipilih karena jauh dari pengaruh dan pengawasan militer Jepang di Jakarta. Tujuannya adalah mendesak keduanya agar segera memproklamasikan kemerdekaan tanpa keterlibatan Jepang. Di Jakarta, terjadi negosiasi antara golongan muda dan golongan tua yang dijembatani oleh <b>Ahmad Soebardjo</b>, yang memberikan jaminan pribadi bahwa proklamasi kemerdekaan akan tetap dilaksanakan keesokan harinya. Berbekal jaminan tersebut, Soekarno dan Hatta akhirnya dibawa kembali ke Jakarta pada malam harinya.</p>
         <h4>Penyusunan Teks Proklamasi</h4>
         <p>Sekembalinya di Jakarta pada malam 16 menuju dini hari 17 Agustus 1945, perumusan naskah proklamasi dilakukan di rumah <b>Laksamana Tadashi Maeda</b>, seorang perwira Angkatan Laut Jepang yang bersimpati terhadap perjuangan Indonesia dan bersedia menjamin keamanan pertemuan tersebut dari campur tangan militer Jepang lainnya. Tiga tokoh utama yang merumuskan naskah adalah <b>Soekarno, Mohammad Hatta, dan Ahmad Soebardjo</b>. Soekarno menuliskan konsep naskah proklamasi dengan tangannya sendiri berdasarkan gagasan yang didiskusikan bersama. Setelah disepakati, naskah tersebut diketik oleh <b>Sayuti Melik</b>, dengan beberapa perubahan kecil dari naskah tulisan tangan aslinya — misalnya kata "tempoh" diubah menjadi "tempo", kata "Wakil-wakil bangsa Indonesia" diubah, dan naskah akhirnya ditandatangani atas nama <b>"Soekarno-Hatta"</b> sebagai representasi seluruh bangsa Indonesia, bukan ditandatangani oleh seluruh peserta rapat.</p>
+        <figure class="materi-figure narrow">
+          <img src="assets/proklamasi-klad.jpg" alt="Naskah Proklamasi tulisan tangan Soekarno yang disimpan di Arsip Nasional RI" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Naskah Proklamasi (Klad)</span>
+            Konsep tulisan tangan Soekarno pada dini hari 17 Agustus 1945; kini tersimpan di Arsip Nasional RI.
+            <span class="fig-src">Sumber: Wikimedia Commons (Kemdikbud RI) · domain publik</span>
+          </figcaption>
+        </figure>
       </article>
 
     </div>
   </section>
 
   <!-- ============ BAGIAN C ============ -->
-  <section class="bagian" id="bagian-c">
+  <section class="bagian" id="bagian-c" data-era="c">
     <h2>C. Kemerdekaan & Pembentukan Negara</h2>
     <div class="bagian-isi">
 
@@ -544,8 +632,24 @@
         <h3>11. Proklamasi Kemerdekaan</h3>
         <span class="tahun">17 Agustus 1945</span>
         <p>Pada pagi hari <b>17 Agustus 1945</b>, tepatnya pukul 10.00 WIB, teks Proklamasi Kemerdekaan Indonesia dibacakan oleh <b>Soekarno</b> didampingi <b>Mohammad Hatta</b> di kediaman Soekarno, <b>Jalan Pegangsaan Timur Nomor 56, Jakarta</b>. Peristiwa ini berlangsung sederhana dan relatif singkat dari segi seremoni — bukan di lapangan besar dengan massa dalam jumlah sangat banyak — mengingat situasi keamanan yang masih rawan dengan keberadaan pasukan Jepang bersenjata lengkap di sekitar kota. Setelah pembacaan teks proklamasi, dilanjutkan dengan pengibaran <b>bendera Merah Putih</b> yang telah dijahit oleh Fatmawati (istri Soekarno), diiringi lagu kebangsaan <i>Indonesia Raya</i> yang dinyanyikan hadirin yang ada di lokasi.</p>
+        <figure class="materi-figure">
+          <img src="assets/proklamasi-1945.jpg" alt="Soekarno membacakan teks Proklamasi didampingi Mohammad Hatta di Jalan Pegangsaan Timur 56, 17 Agustus 1945" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Pembacaan Proklamasi, 17 Agustus 1945</span>
+            Soekarno didampingi Mohammad Hatta membacakan teks Proklamasi di Pegangsaan Timur 56, Jakarta (foto Frans Mendur).
+            <span class="fig-src">Sumber: Wikimedia Commons · domain publik (foto IPPHOS 1945)</span>
+          </figcaption>
+        </figure>
         <p>Berita proklamasi kemudian disebarluaskan ke seluruh penjuru Nusantara melalui berbagai saluran — radio, surat kabar, dan penyampaian dari mulut ke mulut oleh para pemuda dan kurir pergerakan — meski pemerintah militer Jepang berupaya membatasi penyebarannya karena secara teknis Jepang masih memiliki kewajiban menjaga status quo wilayah pendudukan sesuai kesepakatan penyerahan kepada Sekutu.</p>
         <p><b>Makna Proklamasi Kemerdekaan</b> memiliki dua dimensi penting yang sering ditekankan dalam materi kewarganegaraan: pertama, secara politis dan hukum, Proklamasi menandai lahirnya negara Indonesia yang merdeka dan berdaulat penuh, lepas dari segala bentuk penjajahan asing; kedua, secara ketatanegaraan, Proklamasi menjadi <b>titik tolak (awal mula)</b> berlakunya seluruh tatanan hukum nasional Indonesia — sejak momen itulah Pancasila, UUD 1945, dan seluruh sistem pemerintahan Republik Indonesia mulai berlaku dan mengikat, menggantikan seluruh sistem hukum kolonial yang berlaku sebelumnya.</p>
+        <figure class="materi-figure narrow">
+          <img src="assets/teks-proklamasi.png" alt="Teks Proklamasi ketikan yang ditandatangani Soekarno dan Mohammad Hatta" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Teks Proklamasi</span>
+            Naskah ketikan Sayuti Melik yang ditandatangani Soekarno-Hatta; disimpan di Monumen Nasional, Jakarta.
+            <span class="fig-src">Sumber: Wikimedia Commons · domain publik (dokumen pemerintah RI)</span>
+          </figcaption>
+        </figure>
       </article>
 
       <article class="topik" id="t12">
@@ -580,7 +684,7 @@
   </section>
 
   <!-- ============ BAGIAN D ============ -->
-  <section class="bagian" id="bagian-d">
+  <section class="bagian" id="bagian-d" data-era="d">
     <h2>D. Mempertahankan Kemerdekaan</h2>
     <div class="bagian-isi">
 
@@ -679,6 +783,14 @@
         </ul>
         <p>Dengan demikian, terdapat tiga konstitusi berbeda yang pernah berlaku dalam lima tahun pertama kemerdekaan Indonesia: UUD 1945 (periode 1945–1949), Konstitusi RIS (periode 1949–1950), dan UUDS 1950 (periode 1950–1959), sebelum akhirnya Indonesia kembali menggunakan UUD 1945 melalui Dekrit Presiden 1959 yang akan dibahas pada bagian berikutnya.</p>
         <p>Perlu dicatat pula momen resmi penyerahan kedaulatan: pada <b>27 Desember 1949</b>, upacara pengakuan dan penyerahan kedaulatan dari Kerajaan Belanda kepada Republik Indonesia Serikat dilangsungkan secara serentak di dua tempat, yaitu di Amsterdam (Belanda), ditandatangani oleh Ratu Juliana dan Perdana Menteri Mohammad Hatta, serta di Jakarta, antara Wakil Tinggi Mahkota Belanda A.H.J. Lovink dan Sultan Hamengkubuwono IX. Tanggal inilah yang secara formal mengakhiri seluruh proses perjuangan kemerdekaan fisik dan diplomasi Indonesia melawan Belanda.</p>
+        <figure class="materi-figure">
+          <img src="assets/penyerahan-kedaulatan.jpg" alt="Penyerahan kedaulatan dari Kerajaan Belanda kepada Indonesia di Istana Kerajaan Amsterdam, 27 Desember 1949" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Penyerahan Kedaulatan, 27 Desember 1949</span>
+            Delegasi Indonesia di bawah M. Hatta menerima penyerahan kedaulatan dari Ratu Juliana di Amsterdam, menandai berakhirnya kekuasaan Belanda atas Indonesia dan terbentuknya Republik Indonesia Serikat (RIS).
+            <span class="fig-src">Sumber: Nationaal Archief (foto Joop van Bilsen/Anefo) · domain publik</span>
+          </figcaption>
+        </figure>
       </article>
 
       <article class="topik" id="t16b">
@@ -698,7 +810,7 @@
   </section>
 
   <!-- ============ BAGIAN E ============ -->
-  <section class="bagian" id="bagian-e">
+  <section class="bagian" id="bagian-e" data-era="e">
     <h2>E. Perkembangan Sistem Pemerintahan</h2>
     <div class="bagian-isi">
 
@@ -721,6 +833,14 @@
         <p>Berlangsung di tengah masa Demokrasi Parlementer, Indonesia sekaligus menunjukkan peran aktifnya di kancah politik internasional. Dunia pada dekade 1950-an sedang terbelah dalam suasana <b>Perang Dingin</b> antara dua blok besar: blok Barat (dipimpin Amerika Serikat, berhaluan kapitalis-liberal) dan blok Timur (dipimpin Uni Soviet, berhaluan komunis). Negara-negara di kawasan Asia dan Afrika yang baru saja merdeka dari penjajahan mencari jalan untuk tidak terseret dan diadu domba oleh persaingan kedua blok tersebut.</p>
         <h4>Konferensi Asia-Afrika (18–24 April 1955, Bandung)</h4>
         <p>Digagas bersama oleh Indonesia, India, Pakistan, Sri Lanka (Ceylon), dan Myanmar (Burma) — dikenal sebagai <b>Panca Negara Sponsor</b> — konferensi ini diselenggarakan di Gedung Merdeka, Bandung, dan menjadi pertemuan bersejarah karena untuk pertama kalinya negara-negara Asia dan Afrika, yang sebagian besar baru merdeka dan pernah dijajah, berkumpul secara setara untuk membahas kepentingan bersama tanpa campur tangan negara-negara Barat maupun Timur. Konferensi ini dibuka oleh Presiden Soekarno dan diketuai oleh Perdana Menteri <b>Ali Sastroamidjojo</b>. Hasil terpenting dari konferensi ini adalah dirumuskannya <b>Dasasila Bandung</b>, yaitu sepuluh prinsip yang menjadi pedoman hubungan antarbangsa, mencakup penghormatan terhadap kedaulatan dan integritas wilayah, penyelesaian sengketa secara damai, penghormatan terhadap hukum internasional, serta penolakan terhadap segala bentuk kolonialisme dan penggunaan kekerasan. KAA Bandung dianggap sebagai cikal bakal semangat solidaritas negara-negara berkembang yang kelak melahirkan Gerakan Non-Blok.</p>
+        <figure class="materi-figure">
+          <img src="assets/kaa-1955.jpg" alt="Delegasi negara-negara Asia-Afrika dalam sidang pleno Konferensi Asia-Afrika di Gedung Merdeka, Bandung, 20 April 1955" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Konferensi Asia-Afrika, 1955</span>
+            Sidang pleno di Gedung Merdeka, Bandung, 18–24 April 1955 — pertemuan pertama negara-negara Asia-Afrika secara setara.
+            <span class="fig-src">Sumber: Arsip KAA via UNESCO/Wikimedia Commons · domain publik</span>
+          </figcaption>
+        </figure>
         <h4>Politik Luar Negeri Bebas Aktif</h4>
         <p>Sikap Indonesia dalam KAA mencerminkan prinsip <b>politik luar negeri bebas aktif</b> yang dianut Indonesia sejak awal kemerdekaan (dirumuskan Mohammad Hatta dalam pidato "Mendayung Antara Dua Karang" tahun 1948): <i>bebas</i> berarti Indonesia tidak memihak atau terikat pada salah satu blok kekuatan dunia mana pun, dan <i>aktif</i> berarti Indonesia tetap berperan aktif dalam mengupayakan perdamaian dunia dan menyelesaikan berbagai persoalan internasional, bukan bersikap pasif atau netral secara pasif.</p>
         <h4>Gerakan Non-Blok / GNB (Konferensi Beograd, 1961)</h4>
@@ -753,6 +873,14 @@
         <h3>19. Orde Baru</h3>
         <span class="tahun">1966–1998</span>
         <p>Pasca-gejolak politik akibat peristiwa G30S 1965, situasi keamanan dan stabilitas nasional sangat terganggu. Untuk memulihkan keadaan, Presiden Soekarno mengeluarkan sebuah surat perintah kepada Letnan Jenderal <b>Soeharto</b>, yang dikenal dengan sebutan <b>Supersemar (Surat Perintah Sebelas Maret)</b>, tertanggal 11 Maret 1966. Secara formal, surat ini memberi wewenang kepada Soeharto untuk mengambil segala tindakan yang dianggap perlu guna memulihkan keamanan dan ketertiban negara. Dalam perkembangannya, Supersemar dimanfaatkan sebagai landasan legal-politik bagi proses transisi kekuasaan secara bertahap dari Soekarno kepada Soeharto, hingga akhirnya Soeharto resmi dilantik sebagai <b>Presiden Republik Indonesia kedua</b> pada tahun 1967 (sebagai pejabat presiden) dan dikukuhkan penuh pada 1968, menandai dimulainya era yang dikenal sebagai <b>Orde Baru</b>.</p>
+        <figure class="materi-figure narrow">
+          <img src="assets/soeharto.jpg" alt="Potret resmi Presiden Soeharto, presiden kedua Republik Indonesia" loading="lazy">
+          <figcaption>
+            <span class="fig-title">Presiden Soeharto</span>
+            Presiden RI kedua (1967–1998) sekaligus tokoh sentral era Orde Baru.
+            <span class="fig-src">Sumber: Wikimedia Commons · domain publik (potret resmi pemerintah RI)</span>
+          </figcaption>
+        </figure>
         <h4>Ciri-Ciri Utama Orde Baru</h4>
         <ul>
           <li><b>Stabilitas politik sebagai prioritas utama</b> — pemerintahan Orde Baru sangat menekankan pentingnya stabilitas keamanan dan politik sebagai prasyarat mutlak bagi pembangunan ekonomi, dengan gaya kepemimpinan yang cenderung sentralistik, kuat, dan dalam banyak hal bersifat otoriter, membatasi ruang kritik dan oposisi politik secara signifikan.</li>
@@ -796,6 +924,94 @@
 <footer>
   📚 Materi belajar mandiri untuk persiapan TWK CPNS — pelajari secara berulang dan kaitkan setiap tokoh serta peristiwa dengan urutan kronologisnya agar lebih mudah diingat.
 </footer>
+
+<script>
+(function () {
+  var topics = Array.prototype.slice.call(document.querySelectorAll('article.topik'));
+  var nav = document.getElementById('sticky-nav');
+  if (!topics.length || !nav) return;
+
+  var chips = [];
+  var lastEra = null;
+  var upBtn = document.createElement('button');
+  upBtn.type = 'button';
+  upBtn.className = 'nav-top';
+  upBtn.textContent = '↑ Atas';
+  upBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  nav.appendChild(upBtn);
+
+  topics.forEach(function (tp) {
+    var h = tp.querySelector('h3');
+    if (!h) return;
+    var raw = h.textContent.trim();
+    var m = raw.match(/^(\d+[ab]?)\s*[.)\u2013-]\s*(.*)$/);
+    var num = m ? m[1] : '';
+    var label = (m && m[2]) ? m[2] : raw;
+    if (label.length > 26) {
+      var cut = label.slice(0, 26);
+      var sp = cut.lastIndexOf(' ');
+      if (sp > 12) cut = cut.slice(0, sp);
+      label = cut + '…';
+    }
+    var bag = tp.closest ? tp.closest('[data-era]') : null;
+    var era = bag ? (bag.getAttribute('data-era') || '') : '';
+    if (era && era !== lastEra) {
+      if (lastEra !== null) {
+        var sep = document.createElement('span');
+        sep.className = 'nav-era';
+        sep.setAttribute('data-era', era);
+        var erNum = { a: 'I', b: 'II', c: 'III', d: 'IV', e: 'V' }[era] || era;
+        sep.textContent = 'Bab ' + erNum;
+        nav.appendChild(sep);
+      }
+      lastEra = era;
+    }
+    var chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'nav-chip';
+    if (era) chip.setAttribute('data-era', era);
+    chip.textContent = num ? (num + ' · ' + label) : label;
+    chip.addEventListener('click', function () {
+      var top = tp.getBoundingClientRect().top + window.pageYOffset - 72;
+      window.scrollTo({ top: top < 0 ? 0 : top, behavior: 'smooth' });
+    });
+    nav.appendChild(chip);
+    chips.push(chip);
+  });
+
+  var raf = 0;
+  function update() {
+    if (raf) return;
+    raf = window.requestAnimationFrame(function () {
+      raf = 0;
+      var active = -1;
+      for (var i = 0; i < topics.length; i++) {
+        if (topics[i].getBoundingClientRect().top <= 140) active = i;
+        else break;
+      }
+      if (active === -1) active = 0;
+      chips.forEach(function (c, idx) { c.classList.toggle('active', idx === active); });
+      var chip = chips[active];
+      var nRect = nav.getBoundingClientRect();
+      if (nRect.top <= 0) {
+        var cRect = chip.getBoundingClientRect();
+        var target = nav.scrollLeft + (cRect.left + cRect.width / 2) - (nRect.left + nRect.width / 2);
+        var max = nav.scrollWidth - nav.clientWidth;
+        if (target < 0) target = 0;
+        if (target > max) target = max;
+        if (Math.abs(target - nav.scrollLeft) > 1) nav.scrollLeft = target;
+      }
+    });
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+
+<script defer src="../../../assets/js/sejarah.js"></script>
 
 </body>
 </html>

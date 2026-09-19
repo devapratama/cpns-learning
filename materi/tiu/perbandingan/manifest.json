@@ -1,0 +1,31 @@
+{
+  "judul": "Bank Soal Perbandingan TIU CPNS",
+  "deskripsi": "Kumpulan 100 soal perbandingan (senilai, berbalik nilai, majemuk, bertahap, dan gabungan) untuk latihan TIU SKD CPNS. Setiap paket berisi 20 soal campuran dengan tingkat kesulitan bervariasi beserta pembahasan.",
+  "paket": [
+    {
+      "nama": "Paket 1",
+      "file": "paket-1.json",
+      "deskripsi": "20 soal perbandingan"
+    },
+    {
+      "nama": "Paket 2",
+      "file": "paket-2.json",
+      "deskripsi": "20 soal perbandingan"
+    },
+    {
+      "nama": "Paket 3",
+      "file": "paket-3.json",
+      "deskripsi": "20 soal perbandingan"
+    },
+    {
+      "nama": "Paket 4",
+      "file": "paket-4.json",
+      "deskripsi": "20 soal perbandingan"
+    },
+    {
+      "nama": "Paket 5",
+      "file": "paket-5.json",
+      "deskripsi": "20 soal perbandingan"
+    }
+  ]
+}

@@ -260,7 +260,7 @@
   function getChoice(idx) {
     var radios = document.querySelectorAll('.quiz-options input[name="q' + idx + '"]');
     for (var i = 0; i < radios.length; i++) {
-      if (radios.checked) return i;
+      if (radios[i].checked) return i;
     }
     return null;
   }

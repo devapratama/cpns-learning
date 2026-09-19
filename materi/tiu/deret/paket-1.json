@@ -1,0 +1,803 @@
+{
+  "title": "Bank Soal Deret TIU — Paket 1",
+  "version": "20 soal",
+  "total_questions": 20,
+  "questions": [
+    {
+      "id": 4,
+      "difficulty": "mudah",
+      "pattern_family": "Selisih tetap",
+      "pattern_type": "Pengurangan tetap",
+      "generating_rule": "Setiap suku dikurangi 6.",
+      "parameter_rule": "Perubahan tetap -6.",
+      "sequence": "80, 74, 68, 62, ..., 50, 44",
+      "options": {
+        "A": "56",
+        "B": "57",
+        "C": "54",
+        "D": "55",
+        "E": "58"
+      },
+      "answer": "A",
+      "explanation": "Perubahannya selalu -6. Jadi angka yang hilang adalah 56.",
+      "reasoning": {
+        "rule": "Setiap suku dikurangi 6.",
+        "steps": [
+          "Selisih tetap -6.",
+          "Angka yang dicari = 56."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 5,
+      "difficulty": "mudah",
+      "pattern_family": "Selisih tetap",
+      "pattern_type": "Penambahan tetap",
+      "generating_rule": "Setiap suku ditambah 8.",
+      "parameter_rule": "Perubahan tetap +8.",
+      "sequence": "12, 20, ..., 36, 44, 52, 60",
+      "options": {
+        "A": "28",
+        "B": "29",
+        "C": "27",
+        "D": "26",
+        "E": "30"
+      },
+      "answer": "A",
+      "explanation": "Perubahannya selalu +8. Jadi angka yang hilang adalah 28.",
+      "reasoning": {
+        "rule": "Setiap suku ditambah 8.",
+        "steps": [
+          "Selisih tetap +8.",
+          "Angka yang dicari = 28."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 6,
+      "difficulty": "mudah",
+      "pattern_family": "Selisih tetap",
+      "pattern_type": "Pengurangan tetap",
+      "generating_rule": "Setiap suku dikurangi 9.",
+      "parameter_rule": "Perubahan tetap -9.",
+      "sequence": "101, 92, 83, 74, 65, 56, ...",
+      "options": {
+        "A": "45",
+        "B": "46",
+        "C": "47",
+        "D": "49",
+        "E": "48"
+      },
+      "answer": "C",
+      "explanation": "Perubahannya selalu -9. Jadi angka yang hilang adalah 47.",
+      "reasoning": {
+        "rule": "Setiap suku dikurangi 9.",
+        "steps": [
+          "Selisih tetap -9.",
+          "Angka yang dicari = 47."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 19,
+      "difficulty": "mudah",
+      "pattern_family": "Perkalian tetap",
+      "pattern_type": "Perkalian tetap ×5",
+      "generating_rule": "Setiap suku dikalikan 5.",
+      "parameter_rule": "Pengali tetap 5.",
+      "sequence": "7, 35, 175, 875, 4375, ..., 109375",
+      "options": {
+        "A": "21876",
+        "B": "109375",
+        "C": "21875",
+        "D": "21877",
+        "E": "21874"
+      },
+      "answer": "C",
+      "explanation": "Setiap angka dikalikan 5. Jadi angka yang hilang adalah 21875.",
+      "reasoning": {
+        "rule": "Setiap suku dikalikan 5.",
+        "steps": [
+          "Operasi tetap ×5.",
+          "Nilai yang hilang = 21875."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 21,
+      "difficulty": "mudah",
+      "pattern_family": "Pembagian tetap",
+      "pattern_type": "Pembagian tetap ÷2",
+      "generating_rule": "Setiap suku dibagi 2.",
+      "parameter_rule": "Pembagi tetap 2.",
+      "sequence": "640, 320, ..., 80, 40, 20, 10",
+      "options": {
+        "A": "159",
+        "B": "162",
+        "C": "161",
+        "D": "320",
+        "E": "160"
+      },
+      "answer": "E",
+      "explanation": "Setiap angka dibagi 2. Jadi angka yang hilang adalah 160.",
+      "reasoning": {
+        "rule": "Setiap suku dibagi 2.",
+        "steps": [
+          "Operasi tetap ÷2.",
+          "Nilai yang hilang = 160."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 28,
+      "difficulty": "menengah",
+      "pattern_family": "Selisih bertingkat",
+      "pattern_type": "Selisih kedua tetap",
+      "generating_rule": "Selisih kedua tetap -1.",
+      "parameter_rule": "Selisih berturut-turut: 3, 2, 1, 0, -1, -2.",
+      "sequence": "10, 13, 15, 16, 16, 15, ...",
+      "options": {
+        "A": "14",
+        "B": "12",
+        "C": "15",
+        "D": "11",
+        "E": "13"
+      },
+      "answer": "E",
+      "explanation": "Selisihnya 3, 2, 1, 0, -1, -2. Selisih berikutnya mengikuti perubahan -1, sehingga angka berikutnya adalah 13.",
+      "reasoning": {
+        "rule": "Selisih kedua tetap -1.",
+        "steps": [
+          "Selisih: 3, 2, 1, 0, -1, -2.",
+          "Angka ke-7 = 13."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 31,
+      "difficulty": "menengah",
+      "pattern_family": "Selisih bertingkat",
+      "pattern_type": "Selisih kedua tetap",
+      "generating_rule": "Selisih kedua tetap -2.",
+      "parameter_rule": "Selisih berturut-turut: 3, 1, -1, -3, -5, -7.",
+      "sequence": "30, 33, 34, 33, 30, 25, ...",
+      "options": {
+        "A": "20",
+        "B": "17",
+        "C": "18",
+        "D": "16",
+        "E": "19"
+      },
+      "answer": "C",
+      "explanation": "Selisihnya 3, 1, -1, -3, -5, -7. Selisih berikutnya mengikuti perubahan -2, sehingga angka berikutnya adalah 18.",
+      "reasoning": {
+        "rule": "Selisih kedua tetap -2.",
+        "steps": [
+          "Selisih: 3, 1, -1, -3, -5, -7.",
+          "Angka ke-7 = 18."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 34,
+      "difficulty": "menengah",
+      "pattern_family": "Selisih bertingkat",
+      "pattern_type": "Selisih kedua tetap",
+      "generating_rule": "Selisih kedua tetap +4.",
+      "parameter_rule": "Selisih berturut-turut: 3, 7, 11, 15, 19, 23.",
+      "sequence": "8, 11, 18, 29, 44, 63, ...",
+      "options": {
+        "A": "88",
+        "B": "87",
+        "C": "86",
+        "D": "84",
+        "E": "85"
+      },
+      "answer": "C",
+      "explanation": "Selisihnya 3, 7, 11, 15, 19, 23. Selisih berikutnya mengikuti perubahan +4, sehingga angka berikutnya adalah 86.",
+      "reasoning": {
+        "rule": "Selisih kedua tetap +4.",
+        "steps": [
+          "Selisih: 3, 7, 11, 15, 19, 23.",
+          "Angka ke-7 = 86."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 41,
+      "difficulty": "menengah",
+      "pattern_family": "Operasi campuran",
+      "pattern_type": "Operasi bergantian",
+      "generating_rule": "Operasi bergantian −3, lalu ×2.",
+      "parameter_rule": "Urutan operator berulang: −3, ×2.",
+      "sequence": "20, 17, 34, 31, 62, 59, ...",
+      "options": {
+        "A": "117",
+        "B": "118",
+        "C": "120",
+        "D": "53",
+        "E": "119"
+      },
+      "answer": "B",
+      "explanation": "Operasinya bergantian. Setelah 59, kembali ke −3 sehingga diperoleh 118.",
+      "reasoning": {
+        "rule": "Operasi bergantian −3, lalu ×2.",
+        "steps": [
+          "Urutan operator: −3, ×2.",
+          "59 − 3 = 118."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 49,
+      "difficulty": "sulit",
+      "pattern_family": "Multi-layer",
+      "pattern_type": "Operator periodik dengan parameter berlipat dua",
+      "generating_rule": "Operasi bergantian ×2 dan pengurangan.",
+      "parameter_rule": "Parameter: 4, 8, 16, ...; setiap parameter dikali 2.",
+      "sequence": "12, 24, 20, ..., 32, 64, 48",
+      "options": {
+        "A": "48",
+        "B": "42",
+        "C": "36",
+        "D": "44",
+        "E": "40"
+      },
+      "answer": "E",
+      "explanation": "Ada dua pola. Operator berganti ×2 dan pengurangan. Parameternya 4, 8, 16, ... . Jadi tanda ? adalah 40.",
+      "reasoning": {
+        "rule": "Operasi bergantian ×2 dan pengurangan.",
+        "steps": [
+          "Parameter: 4, 8, 16.",
+          "Nilai yang hilang = 40."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 54,
+      "difficulty": "menengah",
+      "pattern_family": "Subderet",
+      "pattern_type": "Ganjil-genap",
+      "generating_rule": "Posisi ganjil berubah -7; posisi genap berubah -8.",
+      "parameter_rule": "Ganjil: [150, 143, 136, 129]; genap: [260, 252, 244, 236].",
+      "sequence": "150, 260, 143, 252, 136, 244, ..., 236",
+      "options": {
+        "A": "121",
+        "B": "229",
+        "C": "130",
+        "D": "129",
+        "E": "128"
+      },
+      "answer": "D",
+      "explanation": "Pisahkan posisi ganjil: [150, 143, 136, 129]. Semuanya berubah -7. Suku berikutnya termasuk kelompok ganjil, jadi jawabannya 129.",
+      "reasoning": {
+        "rule": "Posisi ganjil berubah -7; posisi genap berubah -8.",
+        "steps": [
+          "Subderet ganjil berubah -7.",
+          "Suku ke-7 = 129."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 57,
+      "difficulty": "menengah",
+      "pattern_family": "Subderet",
+      "pattern_type": "Ganjil-genap",
+      "generating_rule": "Posisi ganjil berubah -9; posisi genap berubah -8.",
+      "parameter_rule": "Ganjil: [300, 291, 282, 273]; genap: [500, 492, 484, 476].",
+      "sequence": "300, 500, 291, 492, 282, 484, ..., 476",
+      "options": {
+        "A": "467",
+        "B": "265",
+        "C": "272",
+        "D": "273",
+        "E": "274"
+      },
+      "answer": "D",
+      "explanation": "Pisahkan posisi ganjil: [300, 291, 282, 273]. Semuanya berubah -9. Suku berikutnya termasuk kelompok ganjil, jadi jawabannya 273.",
+      "reasoning": {
+        "rule": "Posisi ganjil berubah -9; posisi genap berubah -8.",
+        "steps": [
+          "Subderet ganjil berubah -9.",
+          "Suku ke-7 = 273."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 71,
+      "difficulty": "menengah",
+      "pattern_family": "Perkalian tetap",
+      "pattern_type": "Perkalian tetap ×3",
+      "generating_rule": "Setiap suku dikali 3.",
+      "parameter_rule": "Pengali tetap 3.",
+      "sequence": "1, 3, 9, 27, 81, ...",
+      "options": {
+        "A": "162",
+        "B": "216",
+        "C": "243",
+        "D": "324",
+        "E": "729"
+      },
+      "answer": "C",
+      "explanation": "81 × 3 = 243, sehingga suku yang hilang adalah 243.",
+      "reasoning": {
+        "rule": "Setiap suku dikali 3.",
+        "steps": [
+          "1 × 3 = 3.",
+          "3 × 3 = 9.",
+          "9 × 3 = 27.",
+          "27 × 3 = 81.",
+          "81 × 3 = 243."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 72,
+      "difficulty": "menengah",
+      "pattern_family": "Operasi campuran",
+      "pattern_type": "+5 lalu ×4 secara bergantian",
+      "generating_rule": "Operasi bergantian +5 dan ×4.",
+      "parameter_rule": "Urutan operasi tetap: +5, ×4, +5, ×4, ... .",
+      "sequence": "2, 7, 28, 33, 132, 137, ...",
+      "options": {
+        "A": "536",
+        "B": "548",
+        "C": "552",
+        "D": "558",
+        "E": "562"
+      },
+      "answer": "B",
+      "explanation": "Operasinya bergantian +5 lalu ×4. Jadi 2+5=7, 7×4=28, 28+5=33, 33×4=132, 132+5=137. Maka 137×4=548.",
+      "reasoning": {
+        "rule": "+5 lalu ×4 secara bergantian.",
+        "steps": [
+          "2 + 5 = 7.",
+          "7 × 4 = 28.",
+          "28 + 5 = 33.",
+          "33 × 4 = 132.",
+          "132 + 5 = 137.",
+          "137 × 4 = 548."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 74,
+      "difficulty": "menengah",
+      "pattern_family": "Pola tanda",
+      "pattern_type": "Pola tanda dan nilai mutlak menurun",
+      "generating_rule": "Nilai mutlak berkurang 3 setiap langkah dan tanda berganti.",
+      "parameter_rule": "Nilai mutlak: 18, 15, 12, 9, 6, 3; tanda berganti.",
+      "sequence": "-18, 15, -12, 9, -6, ...",
+      "options": {
+        "A": "-3",
+        "B": "3",
+        "C": "0",
+        "D": "6",
+        "E": "-9"
+      },
+      "answer": "B",
+      "explanation": "Nilai mutlak turun 3 setiap langkah. Karena setelah −6 tanda berikutnya positif, suku berikutnya adalah +3.",
+      "reasoning": {
+        "rule": "Nilai mutlak berkurang 3 setiap langkah dan tanda berganti.",
+        "steps": [
+          "|-18| = 18.",
+          "18, 15, 12, 9, 6, 3 berkurang 3.",
+          "Tanda berganti −, +, −, +, −, +."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 81,
+      "difficulty": "menengah",
+      "pattern_family": "Pecahan",
+      "pattern_type": "Pembilang −1, penyebut −1",
+      "generating_rule": "Pembilang turun 1 dan penyebut turun 1 setiap langkah.",
+      "parameter_rule": "Perubahan tetap −1 pada pembilang dan −1 pada penyebut.",
+      "sequence": "6/13, 5/12, 4/11, 3/10, 2/9, ...",
+      "options": {
+        "A": "1/8",
+        "B": "1/7",
+        "C": "0/8",
+        "D": "2/8",
+        "E": "1/9"
+      },
+      "answer": "A",
+      "explanation": "Pembilang 6, 5, 4, 3, 2, lalu 1. Penyebut 13, 12, 11, 10, 9, lalu 8. Jadi 1/8.",
+      "reasoning": {
+        "rule": "Pembilang turun 1 dan penyebut turun 1 setiap langkah.",
+        "steps": [
+          "6/13 → 5/12.",
+          "5/12 → 4/11.",
+          "4/11 → 3/10.",
+          "3/10 → 2/9.",
+          "2/9 → 1/8."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 83,
+      "difficulty": "mudah",
+      "pattern_family": "Desimal",
+      "pattern_type": "Selisih desimal tetap",
+      "generating_rule": "Setiap suku bertambah 0.5.",
+      "parameter_rule": "Selisih desimal tetap 0.5.",
+      "sequence": "1.5, 2, 2.5, 3, 3.5, ...",
+      "options": {
+        "A": "3.9",
+        "B": "4.5",
+        "C": "4.1",
+        "D": "3.5",
+        "E": "4"
+      },
+      "answer": "E",
+      "explanation": "Perubahannya selalu 0.5. Jadi 3.5 + 0.5 = 4.",
+      "reasoning": {
+        "rule": "Setiap suku bertambah 0.5.",
+        "steps": [
+          "Selisih tetap 0.5.",
+          "Hasil = 4."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 88,
+      "difficulty": "menengah",
+      "pattern_family": "Bilangan khusus",
+      "pattern_type": "Bilangan prima menurun",
+      "generating_rule": "Setiap suku adalah bilangan prima sebelumnya dalam urutan menurun.",
+      "parameter_rule": "Ambil bilangan prima secara berurutan dari besar ke kecil.",
+      "sequence": "31, 29, 23, 19, 17, ...",
+      "options": {
+        "A": "15",
+        "B": "13",
+        "C": "11",
+        "D": "12",
+        "E": "7"
+      },
+      "answer": "B",
+      "explanation": "Setelah 17, bilangan prima sebelumnya adalah 13. Jadi suku yang hilang adalah 13.",
+      "reasoning": {
+        "rule": "Setiap suku adalah bilangan prima sebelumnya dalam urutan menurun.",
+        "steps": [
+          "31, 29, 23, 19, 17 adalah bilangan prima.",
+          "Bilangan prima sebelum 17 adalah 13."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 97,
+      "difficulty": "sulit",
+      "pattern_family": "Operasi campuran",
+      "pattern_type": "+2 lalu ×2 berulang",
+      "generating_rule": "Operasi bergantian +2 dan ×2.",
+      "parameter_rule": "Urutan tetap +2, ×2, +2, ×2, ... .",
+      "sequence": "3, 5, ..., 12, 24, ..., 52",
+      "options": {
+        "A": "10, 24",
+        "B": "10, 28",
+        "C": "8, 26",
+        "D": "10, 26",
+        "E": "12, 26"
+      },
+      "answer": "D",
+      "explanation": "Pola +2 lalu ×2. Jadi 3 + 2 = 5, 5 × 2 = 10, 10 + 2 = 12, 12 × 2 = 24, 24 + 2 = 26, 26 × 2 = 52. Jawabannya 10, 26.",
+      "reasoning": {
+        "rule": "Operasi bergantian +2 dan ×2.",
+        "steps": [
+          "3 + 2 = 5.",
+          "5 × 2 = 10.",
+          "10 + 2 = 12.",
+          "12 × 2 = 24.",
+          "24 + 2 = 26.",
+          "26 × 2 = 52."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    },
+    {
+      "id": 98,
+      "difficulty": "sulit",
+      "pattern_family": "Rekursif",
+      "pattern_type": "Jumlah dua suku sebelumnya",
+      "generating_rule": "Setiap suku adalah jumlah dua suku sebelumnya.",
+      "parameter_rule": "Selalu gunakan dua suku terakhir.",
+      "sequence": "2, 3, ..., 8, 13, 21, ...",
+      "options": {
+        "A": "6, 34",
+        "B": "6, 35",
+        "C": "5, 29",
+        "D": "5, 34",
+        "E": "5, 35"
+      },
+      "answer": "D",
+      "explanation": "3 + 2 = 5, lalu 3 + 5 = 8. Di bagian akhir, 13 + 21 = 34. Jadi jawabannya 5, 34.",
+      "reasoning": {
+        "rule": "Setiap suku adalah jumlah dua suku sebelumnya.",
+        "steps": [
+          "2 + 3 = 5.",
+          "3 + 5 = 8.",
+          "13 + 21 = 34."
+        ]
+      },
+      "audit": {
+        "mathematically_correct": true,
+        "pattern_consistent": true,
+        "unique_answer": true,
+        "alternative_pattern_checked": true,
+        "distractors_plausible": true,
+        "difficulty_appropriate": true,
+        "explanation_clear_for_beginner": true,
+        "grammar_identified": true,
+        "generating_rule_verified": true,
+        "parameter_rule_verified": true,
+        "ambiguity_checked": true,
+        "status": "PASS"
+      }
+    }
+  ]
+}

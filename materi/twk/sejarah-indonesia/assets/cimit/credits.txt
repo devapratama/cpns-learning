@@ -1,0 +1,24 @@
+Kredit aset Cimit (kucing perpustakaan)
+
+Kucing (artwork inline SVG di sejarah.js)
+- Sumber: OpenClipart (openclipart.org), "Orange cat" oleh MissKaLem
+  https://openclipart.org/detail/353864/orange-cat
+- Berbasis remix dari: https://openclipart.org/detail/353825/
+- Hak cipta: Public Domain (Openclipart)
+- Perubahan: artwork disisipkan (inline) ke dalam sejarah.js sebagai
+  maskot Cimit, diberi lapisan mata terpisah agar bisa dianimasikan
+  (kedip), plus selendang warna era sebagai overlay.
+
+Mainan (toy-*.svg)
+- Sumber: OpenMoji (openmoji.org), emoji Open 2-collection
+- Unduhan: CDN jsDelivr, repo hfg-gmuend/openmoji (color, SVG)
+- Lisensi: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+- Kode emoji yang dipakai:
+  toy-yarn.svg   = Ball of Yarn     U+1F9F6
+  toy-fish.svg   = Fish             U+1F41F
+  toy-crown.svg  = Crown            U+1F451
+  toy-trophy.svg = Trophy           U+1F3C6
+  toy-star.svg   = White Medium Star U+2B50
+- Atribusi: OpenMoji project — https://openmoji.org/
+- OpenMoji dirilis dengan lisensi CC BY-SA 4.0. Artwork bebas digunakan
+  untuk proyek non-komersial dan komersial selama atribusi diberikan.

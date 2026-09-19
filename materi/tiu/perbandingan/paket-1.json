@@ -1,0 +1,327 @@
+{
+  "paket": 1,
+  "jenis": "perbandingan",
+  "jumlah_soal": 20,
+  "soal": [
+    {
+      "id": "P1-01",
+      "family": "RASIO DASAR",
+      "subpattern": "rasio setelah penambahan",
+      "difficulty": "sedang",
+      "soal": "Di sebuah bengkel, perbandingan jumlah teknisi junior dan senior adalah 3:2. Jika teknisi junior berjumlah 12 orang dan kemudian 4 teknisi senior bergabung, berapa rasio junior : senior sekarang?",
+      "opsi": {
+        "A": "1:1",
+        "B": "12:8",
+        "C": "8:12",
+        "D": "16:8",
+        "E": "12:4"
+      },
+      "jawaban": "A",
+      "pembahasan": "Dari rasio 3:2, jika kelompok pertama berjumlah 12, kelompok kedua mula-mula = 12×2/3 = 8. Setelah bertambah 4, menjadi 12. Jadi rasio baru = 12:12 = 1:1."
+    },
+    {
+      "id": "P1-02",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "harga satuan / jumlah barang",
+      "difficulty": "mudah",
+      "soal": "Untuk kegiatan sekolah, 4 map berharga Rp28.000. Harga tiap map sama. Berapa harga 7 map?",
+      "opsi": {
+        "A": "Rp29.000",
+        "B": "Rp56.000",
+        "C": "Rp49.000",
+        "D": "Rp16.000",
+        "E": "Rp54.000"
+      },
+      "jawaban": "C",
+      "pembahasan": "Harga 1 map = Rp28.000 ÷ 4 = Rp7.000. Jadi harga 7 map = 7 × Rp7.000 = Rp49.000."
+    },
+    {
+      "id": "P1-03",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "perubahan satuan",
+      "difficulty": "mudah",
+      "soal": "Harga 2 kg jeruk adalah Rp36.000. Jika harga per kilogram tetap, berapa harga 750 gram jeruk?",
+      "opsi": {
+        "A": "Rp12.000",
+        "B": "Rp13.500",
+        "C": "Rp14.000",
+        "D": "Rp15.000",
+        "E": "Rp16.000"
+      },
+      "jawaban": "B",
+      "pembahasan": "2 kg = 2.000 gram. Harga 2.000 gram = Rp36.000, jadi 750 gram berharga Rp36.000×750/2.000 = Rp13.500."
+    },
+    {
+      "id": "P1-04",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "berbalik nilai dengan kondisi tambahan",
+      "difficulty": "sedang-tinggi",
+      "soal": "Empat siswa dapat menyelesaikan satu pekerjaan dalam 15 jam dengan kemampuan per siswa sama. Jika yang mengerjakan menjadi 5 siswa, berapa jam diperlukan untuk pekerjaan yang sama?",
+      "opsi": {
+        "A": "12",
+        "B": "10",
+        "C": "4/3",
+        "D": "11",
+        "E": "13"
+      },
+      "jawaban": "A",
+      "pembahasan": "Pekerja bertambah berarti waktu yang dibutuhkan berkurang. Maka kita kalikan jumlah dan waktunya: 4×15 = 5×t. Maka t = 4×15/5 = 12."
+    },
+    {
+      "id": "P1-05",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "jam kerja per hari",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah mesin dapat menyelesaikan satu pesanan dalam 3 hari jika bekerja 4 jam efektif per hari. Jika mesin kemudian bekerja 6 jam efektif per hari, berapa hari yang diperlukan untuk pesanan yang sama?",
+      "opsi": {
+        "A": "1 hari",
+        "B": "4 hari",
+        "C": "2 hari",
+        "D": "6 hari",
+        "E": "3 hari"
+      },
+      "jawaban": "C",
+      "pembahasan": "Total waktu kerja = 3×4 = 12 jam. Jika setiap hari mesin bekerja 6 jam, maka waktu yang diperlukan = 12÷6 = 2 hari."
+    },
+    {
+      "id": "P1-06",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "bahan × porsi × hasil",
+      "difficulty": "sedang",
+      "soal": "Sebuah kantin memakai 4 kg beras untuk membuat 80 porsi. Pada hari berikutnya jumlah porsi menjadi 120 dan takaran beras untuk setiap porsi naik 25%. Berapa kg beras yang diperlukan?",
+      "opsi": {
+        "A": "6 kg",
+        "B": "7,5 kg",
+        "C": "8 kg",
+        "D": "9 kg",
+        "E": "10 kg"
+      },
+      "jawaban": "B",
+      "pembahasan": "Jumlah porsi naik dari 80 menjadi 120, yaitu 3/2 kali. Takaran beras tiap porsi naik 25%, jadi menjadi 5/4 kali. Maka kebutuhan beras = 4 × 3/2 × 5/4 = 7,5 kg."
+    },
+    {
+      "id": "P1-07",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "campuran senilai dan berbalik nilai",
+      "difficulty": "sulit",
+      "soal": "Sebuah tim dapat menyelesaikan satu pekerjaan dalam 10 jam dengan 6 pekerja. Pada jadwal berikutnya, kemampuan tiap pekerja meningkat 25% dan jumlah pekerja menjadi 8 orang. Berapa jam diperlukan untuk pekerjaan yang sama?",
+      "opsi": {
+        "A": "6 jam",
+        "B": "5 jam",
+        "C": "8 jam",
+        "D": "7 jam",
+        "E": "9 jam"
+      },
+      "jawaban": "A",
+      "pembahasan": "Kemampuan per pekerja menjadi 1,25 kali. Jumlah pekerja menjadi 8. Jadi kemampuan total baru dibanding lama = (8×1,25)/6 = 5/3 kali. Waktu baru = 10÷(5/3) = 6 jam."
+    },
+    {
+      "id": "P1-08",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "fase dengan produktivitas sama",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah percetakan harus membuat 300 buku. Pada tahap pertama, mesin mencetak 24 buku per jam selama 5 jam. Pada tahap kedua, kecepatan mesin tetap 24 buku per jam selama 3 jam. Berapa buku yang masih harus dicetak?",
+      "opsi": {
+        "A": "144",
+        "B": "108",
+        "C": "132",
+        "D": "120",
+        "E": "96"
+      },
+      "jawaban": "B",
+      "pembahasan": "Tahap pertama: 24×5 = 120 buku. Tahap kedua: 24×3 = 72 buku. Jadi sudah tercetak 120+72 = 192 buku. Sisa = 300−192 = 108 buku."
+    },
+    {
+      "id": "P1-09",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "sebagian pekerjaan sudah selesai",
+      "difficulty": "sedang",
+      "soal": "Sebuah mesin menghasilkan 30 komponen per jam. Dalam 4 jam pertama telah dihasilkan sebagian pesanan sebanyak 120 komponen. Jika total pesanan 300 komponen dan laju berikutnya tetap 20 komponen per jam, berapa jam lagi diperlukan?",
+      "opsi": {
+        "A": "10",
+        "B": "11",
+        "C": "8",
+        "D": "6",
+        "E": "9"
+      },
+      "jawaban": "E",
+      "pembahasan": "Fase 1 menyelesaikan 30×4 = 120 unit pekerjaan. Sisa = 300-120 = 180. Pada fase 2, laju 20 unit per jam; waktu untuk sisa = 180/20 = 9 jam."
+    },
+    {
+      "id": "P1-10",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "gabungan dengan normalisasi",
+      "difficulty": "sulit",
+      "soal": "Sebuah tim A mengemas 24 paket per jam. Tim B mengemas 1 paket setiap 2 menit. Sebanyak 60 paket sudah selesai dari target 330 paket. Jika kedua tim bekerja bersama, berapa jam lagi diperlukan?",
+      "opsi": {
+        "A": "4 jam",
+        "B": "5 jam",
+        "C": "6 jam",
+        "D": "7 jam",
+        "E": "8 jam"
+      },
+      "jawaban": "B",
+      "pembahasan": "Ubah laju Tim B ke paket per jam. Dalam 1 jam ada 60 menit, jadi Tim B mengemas 60 ÷ 2 = 30 paket per jam. Laju bersama = 24 + 30 = 54 paket per jam. Sisa pekerjaan = 330 − 60 = 270 paket. Waktu tambahan = 270 ÷ 54 = 5 jam."
+    },
+    {
+      "id": "P1-11",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi satuan campuran",
+      "difficulty": "sedang",
+      "soal": "Sebuah toko memiliki gula sebanyak 2,5 kg dengan harga Rp37.500. Jika harga gula tetap berdasarkan beratnya, berapa harga untuk 500 gram?",
+      "opsi": {
+        "A": "Rp5.000",
+        "B": "Rp6.000",
+        "C": "Rp7.500",
+        "D": "Rp8.500",
+        "E": "Rp9.000"
+      },
+      "jawaban": "C",
+      "pembahasan": "2,5 kg = 2.500 gram. Harga per 500 gram = Rp37.500 ÷ 5 = Rp7.500. Jadi jawabannya Rp7.500."
+    },
+    {
+      "id": "P1-12",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel senilai",
+      "difficulty": "mudah",
+      "soal": "Perhatikan tabel berikut. Sebuah toko buku menata buku dengan jumlah yang sama pada setiap rak. Jika 15 rak digunakan, berapa buku yang dapat ditata?\nTabel:\n| Rak | Buku |\n|---:|---:|\n| 6 | 18 |\n| 15 | ? |",
+      "opsi": {
+        "A": "42",
+        "B": "54",
+        "C": "45",
+        "D": "36",
+        "E": "48"
+      },
+      "jawaban": "C",
+      "pembahasan": "6 rak berisi 18 buku, jadi 1 rak berisi 18÷6 = 3 buku. Untuk 15 rak, jumlah buku = 15×3 = 45 buku."
+    },
+    {
+      "id": "P1-13",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel multi-variabel",
+      "difficulty": "sulit",
+      "soal": "Sebuah mesin bekerja dengan jumlah operator dan waktu kerja yang sama-sama memengaruhi output. Diketahui 3 operator menghasilkan 72 unit dalam 4 jam. Jika digunakan 5 operator selama 6 jam dengan produktivitas per operator per jam tetap, berapa unit yang dihasilkan?\nTabel: (operator × waktu × output)\n| Kondisi | Operator | Jam | Output |\n|---|---:|---:|---:|\n| Awal | 3 | 4 | 72 |\n| Baru | 5 | 6 | ? |",
+      "opsi": {
+        "A": "170",
+        "B": "190",
+        "C": "144",
+        "D": "144/5",
+        "E": "180"
+      },
+      "jawaban": "E",
+      "pembahasan": "Cari hasil untuk 1 operator selama 1 jam: 72÷(3×4)=6 unit. Pada kondisi baru ada 5 operator selama 6 jam, jadi hasil = 5×6×6 = 180 unit."
+    },
+    {
+      "id": "P1-14",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "kombinasi ekspresi dan kondisi",
+      "difficulty": "sulit",
+      "soal": "Dalam kegiatan sekolah, diketahui X = 5(n + 2) dan Y = 4n + 14, dengan n > 4. Manakah hubungan yang benar antara X dan Y?",
+      "opsi": {
+        "A": "X > Y",
+        "B": "X = Y",
+        "C": "X < Y",
+        "D": "2X > 3Y",
+        "E": "Hubungan tidak dapat ditentukan"
+      },
+      "jawaban": "A",
+      "pembahasan": "X−Y = 5n+10−(4n+14) = n−4. Karena n > 4, nilai n−4 positif. Jadi X lebih besar daripada Y."
+    },
+    {
+      "id": "P1-15",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "rasio langsung",
+      "difficulty": "sedang",
+      "soal": "Di sebuah gudang terdapat 84 barang jenis X dan 60 barang jenis Y. Sebanyak 12 barang X dipindahkan ke kelompok Y. Manakah hubungan yang benar setelah pemindahan?",
+      "opsi": {
+        "A": "X > Y",
+        "B": "X < Y",
+        "C": "X = Y",
+        "D": "2X > 3Y",
+        "E": "Hubungan tidak dapat ditentukan"
+      },
+      "jawaban": "C",
+      "pembahasan": "Setelah 12 barang X dipindahkan, X menjadi 84−12 = 72. Y menjadi 60+12 = 72. Jadi X dan Y sama besar, sehingga X = Y."
+    },
+    {
+      "id": "P1-16",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "skala",
+      "difficulty": "sedang",
+      "soal": "Sebuah gambar pada buku menggunakan skala 1:50. Jika suatu ruas pada gambar panjangnya 8 cm, berapa panjang sebenarnya?",
+      "opsi": {
+        "A": "4",
+        "B": "401",
+        "C": "390",
+        "D": "410",
+        "E": "400"
+      },
+      "jawaban": "E",
+      "pembahasan": "Skala 1:50. Panjang sebenarnya = panjang pada gambar × 50. Untuk 8 cm pada gambar, panjang sebenarnya = 8×50 = 400 cm."
+    },
+    {
+      "id": "P1-17",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "jumlah pompa dan waktu pengosongan",
+      "difficulty": "sedang",
+      "soal": "Sebuah kolam dapat dikuras dalam 24 menit menggunakan 4 pompa identik. Jika digunakan 6 pompa dengan kapasitas sama, berapa menit waktu yang diperlukan?",
+      "opsi": {
+        "A": "16",
+        "B": "96/7",
+        "C": "18",
+        "D": "24",
+        "E": "14"
+      },
+      "jawaban": "A",
+      "pembahasan": "Volume yang dipindahkan sama, sehingga pompa dan waktu berbalik nilai. 4×24 = 6×t. Jadi t = 4×24/6 = 16 menit."
+    },
+    {
+      "id": "P1-18",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "multi-variabel dengan satuan berbeda",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah sekolah menyediakan 16 liter minuman untuk 80 siswa selama 4 jam. Jika jumlah siswa menjadi 100 dan lama kegiatan bertambah menjadi 5 jam, dengan konsumsi per siswa per jam tetap, berapa liter minuman diperlukan?",
+      "opsi": {
+        "A": "20",
+        "B": "24",
+        "C": "25",
+        "D": "26",
+        "E": "30"
+      },
+      "jawaban": "C",
+      "pembahasan": "Awalnya 80 siswa selama 4 jam membutuhkan 16 liter. Jumlah siswa naik dari 80 menjadi 100, jadi kebutuhan dikali 100/80 = 5/4. Waktu juga naik dari 4 menjadi 5 jam, jadi dikali 5/4. Maka kebutuhan baru = 16 × 5/4 × 5/4 = 25 liter."
+    },
+    {
+      "id": "P1-19",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "mesin berkurang/bertambah",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah gudang harus memindahkan 220 kotak. Empat mesin memindahkan 25 kotak per jam secara bersama-sama. Setelah 4 jam, dua mesin berhenti sehingga dua mesin yang tersisa memindahkan 12 kotak per jam secara bersama-sama. Berapa jam tambahan diperlukan?",
+      "opsi": {
+        "A": "8 jam",
+        "B": "10 jam",
+        "C": "12 jam",
+        "D": "14 jam",
+        "E": "16 jam"
+      },
+      "jawaban": "B",
+      "pembahasan": "Dalam 4 jam pertama, 25 × 4 = 100 kotak sudah dipindahkan. Sisa = 220 − 100 = 120 kotak. Dua mesin yang tersisa memindahkan 12 kotak per jam, jadi waktu tambahan = 120 ÷ 12 = 10 jam."
+    },
+    {
+      "id": "P1-20",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi rasio tengah",
+      "difficulty": "sedang-tinggi",
+      "soal": "Dalam sebuah proyek, A:B = 3:4 dan C:B = 5:6. Tentukan perbandingan A:C.",
+      "opsi": {
+        "A": "3:5",
+        "B": "9:10",
+        "C": "10:9",
+        "D": "4:7",
+        "E": "15:16"
+      },
+      "jawaban": "B",
+      "pembahasan": "Samakan nilai B menjadi 12. Dari A:B = 3:4, nilai A menjadi 9. Dari C:B = 5:6, nilai C menjadi 10. Jadi A:C = 9:10."
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silogisme TIU CPNS — Materi & Bank Soal</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -110,13 +111,24 @@
   .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
   .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
 
-  /* ========== QUIZ MODE - ALL QUESTIONS LIST ========== */
+  /* ========== QUIZ MODE - ONE QUESTION PER SCREEN ========== */
   .quiz-view{display:none;}
-  .quiz-view.active{display:block;}
+  .quiz-view.active{
+    position:fixed; inset:0; z-index:100; background:var(--paper);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
   .packet-list.hidden{display:none;}
 
-  .quiz-header{position:sticky; top:0; z-index:6; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); margin:0 -20px 20px; padding:14px 20px;}
-  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px;}
+  .quiz-view.active .quiz-top-row,
+  .quiz-view.active .quiz-packet-name,
+  .quiz-view.active .progress-bar,
+  .quiz-view.active .quiz-body > *,
+  .quiz-view.active .quiz-footer-inner{width:100%; max-width:760px; margin-left:auto; margin-right:auto;}
+  .quiz-view.active .quiz-body .quiz-q-card{order:0;}
+  .quiz-view.active .quiz-body .quiz-nav{order:1;}
+
+  .quiz-header{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px 20px;}
+  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; flex-wrap:wrap; row-gap:6px;}
   .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
   .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
   .quiz-progress-text{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
@@ -125,10 +137,10 @@
   .progress-bar{height:6px; background:var(--line); border-radius:3px; overflow:hidden;}
   .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
 
-  .quiz-body{padding-bottom:80px;}
+  .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
 
   /* Question Card in List Mode */
-  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px; transition:border-color .2s;}
+  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px; transition:border-color .2s; scroll-margin-top:124px;}
   .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
   .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
   .quiz-q-text{font-size:15px; margin:0 0 14px; font-weight:500; line-height:1.6;}
@@ -150,8 +162,8 @@
   .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
   .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
 
-  /* Sticky Footer */
-  .quiz-footer{position:fixed; bottom:0; left:0; right:0; z-index:10; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+  /* Footer */
+  .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
   .quiz-footer-inner{max-width:760px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto;}
   .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 18px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px;}
   .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
@@ -208,6 +220,8 @@
   .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:8px; width:100%;}
   .quiz-nav-dot{width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
   .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+  .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
+  .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
   .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
 
   footer{text-align:center; color:var(--ink-soft); font-size:13px; margin-top:36px;}
@@ -235,7 +249,7 @@
     .venn-item{max-width:150px;}
     
     /* Mobile quiz */
-    .quiz-header{margin:0 -16px 16px; padding:12px 16px;}
+    .quiz-header{padding:12px 16px;}
     .quiz-q-card{padding:16px;}
     .quiz-q-text{font-size:14.5px;}
     .quiz-opt{font-size:13.5px; padding:10px 11px;}
@@ -245,6 +259,28 @@
     .quiz-footer{padding:10px 16px;}
     .quiz-btn{font-size:12.5px; padding:9px 14px;}
     .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+  }
+
+  @media (min-width:1024px){
+    .quiz-view.active .quiz-top-row,
+    .quiz-view.active .quiz-packet-name,
+    .quiz-view.active .progress-bar,
+    .quiz-view.active .quiz-body > *,
+    .quiz-view.active .quiz-footer-inner{max-width:800px;}
+    .quiz-footer-inner{max-width:800px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
+    .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
+    .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
+    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+    .quiz-opts{gap:9px;}
+    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+    .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
+    .quiz-btn{font-size:14px; padding:11px 16px;}
+    .quiz-progress-text{font-size:13px;}
+    .quiz-packet-name{font-size:16px;}
   }
 </style>
 </head>
@@ -302,13 +338,13 @@
       </div>
     </div>
 
-    <!-- Quiz View (All questions at once) -->
+    <!-- Quiz View (satu soal per layar) -->
     <div id="quiz-view" class="quiz-view">
       <div class="quiz-header">
         <div class="quiz-top-row">
           <button class="quiz-back-btn" onclick="exitQuiz()">← Keluar</button>
           <div class="quiz-progress-text">
-            Dijawab: <b id="quiz-answered-count">0</b> / <b id="quiz-total-num">0</b>
+            Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> &nbsp;·&nbsp; Dijawab <b id="quiz-answered-count">0</b>
           </div>
         </div>
         <div class="quiz-packet-name" id="quiz-packet-name">Paket 1</div>
@@ -321,8 +357,9 @@
 
       <div class="quiz-footer" id="quiz-footer" style="display:none;">
         <div class="quiz-footer-inner">
+          <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
           <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
-          <button class="quiz-btn quiz-btn-finish" id="quiz-submit-btn" onclick="submitQuiz()" disabled>✓ Selesai & Lihat Pembahasan</button>
+          <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
         </div>
       </div>
     </div>
@@ -777,6 +814,7 @@ let tryoutAnswered = 0, tryoutCorrect = 0;
 let currentPacket = null;
 let userAnswers = [];      // array of selected index (null = unanswered)
 let quizSubmitted = false;
+let currentQuestionIndex = 0;
 
 /**
  * TAB SWITCHER
@@ -958,7 +996,7 @@ async function loadPackets() {
 loadPackets();
 
 /**
- * ========== QUIZ ENGINE - ALL QUESTIONS AT ONCE ==========
+ * ========== QUIZ ENGINE - SATU SOAL PER LAYAR ==========
  */
 async function startPacket(pkt) {
   document.getElementById('packet-list-view').classList.add('hidden');
@@ -982,12 +1020,11 @@ async function startPacket(pkt) {
     currentPacket = data;
     userAnswers = new Array(data.soal.length).fill(null);
     quizSubmitted = false;
+    currentQuestionIndex = 0;
     
     document.getElementById('quiz-total-num').textContent = data.soal.length;
-    document.getElementById('quiz-footer').style.display = 'block';
     
-    renderAllQuestions();
-    updateProgress();
+    renderQuestion();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } catch (err) {
     document.getElementById('quiz-body').innerHTML = `
@@ -1004,8 +1041,9 @@ async function startPacket(pkt) {
 function resetQuizFooter() {
   document.getElementById('quiz-footer').innerHTML = `
     <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
       <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
-      <button class="quiz-btn quiz-btn-finish" id="quiz-submit-btn" onclick="submitQuiz()" disabled>✓ Selesai & Lihat Pembahasan</button>
+      <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
     </div>
   `;
   document.getElementById('quiz-footer').style.display = 'none';
@@ -1017,15 +1055,53 @@ function exitQuiz() {
   currentPacket = null;
   userAnswers = [];
   quizSubmitted = false;
+  currentQuestionIndex = 0;
   resetQuizFooter();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function renderAllQuestions() {
+function renderAnswerFooter() {
+  const isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
+  document.getElementById('quiz-footer').innerHTML = `
+    <div class="quiz-footer-inner">
+      <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()"${currentQuestionIndex === 0 ? ' disabled' : ''}>← Kembali</button>
+      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+      <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="${isLast ? 'submitQuiz()' : 'nextQuestion()'}">${isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →'}</button>
+    </div>
+  `;
+  document.getElementById('quiz-footer').style.display = 'flex';
+}
+
+function goToQuestion(qi) {
+  if (!currentPacket) return;
+  currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
+  renderQuestion();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function prevQuestion() {
+  goToQuestion(currentQuestionIndex - 1);
+}
+
+function nextQuestion() {
+  if (!currentPacket) return;
+  if (currentQuestionIndex >= currentPacket.soal.length - 1) {
+    submitQuiz();
+    return;
+  }
+  goToQuestion(currentQuestionIndex + 1);
+}
+
+function renderQuestion() {
   const body = document.getElementById('quiz-body');
+  const total = currentPacket.soal.length;
+  if (total === 0) { body.innerHTML = ''; return; }
+  currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
+  const qi = currentQuestionIndex;
+  
   body.innerHTML = '';
   
-  // Question Navigator (mini map for quick jump)
+  // Question Navigator (mini map untuk lompat cepat)
   const nav = document.createElement('div');
   nav.className = 'quiz-nav';
   nav.id = 'quiz-nav';
@@ -1034,69 +1110,100 @@ function renderAllQuestions() {
   navTitle.textContent = 'Navigasi Soal';
   nav.appendChild(navTitle);
   
-  currentPacket.soal.forEach((soal, qi) => {
+  currentPacket.soal.forEach((soal, i) => {
     const dot = document.createElement('a');
-    dot.className = 'quiz-nav-dot';
-    dot.textContent = qi + 1;
-    dot.href = '#q-' + qi;
-    dot.id = 'nav-dot-' + qi;
+    dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '');
+    dot.textContent = i + 1;
+    dot.href = '#q-' + i;
+    dot.id = 'nav-dot-' + i;
     dot.addEventListener('click', (e) => {
       e.preventDefault();
-      const target = document.getElementById('q-' + qi);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (i !== currentQuestionIndex) goToQuestion(i);
     });
     nav.appendChild(dot);
   });
   body.appendChild(nav);
   
-  // Render each question card
-  currentPacket.soal.forEach((soal, qi) => {
-    const card = document.createElement('div');
-    card.className = 'quiz-q-card';
-    card.id = 'q-' + qi;
+  // Render satu kartu soal aktif
+  const soal = currentPacket.soal[qi];
+  const card = document.createElement('div');
+  card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
+  card.id = 'q-' + qi;
+  
+  // Question number badge
+  const numBadge = document.createElement('div');
+  numBadge.className = 'quiz-q-num';
+  numBadge.textContent = `SOAL ${qi + 1}`;
+  card.appendChild(numBadge);
+  
+  // Question text ONLY (no premis, no tipe during answering)
+  const qText = document.createElement('p');
+  qText.className = 'quiz-q-text';
+  qText.textContent = soal.pertanyaan;
+  card.appendChild(qText);
+  
+  // Options
+  const optsWrap = document.createElement('div');
+  optsWrap.className = 'quiz-opts';
+  optsWrap.id = 'opts-' + qi;
+  
+  soal.opsi.forEach((optText, oi) => {
+    const opt = document.createElement('div');
+    opt.className = 'quiz-opt';
+    opt.id = `opt-${qi}-${oi}`;
     
-    // Question number badge
-    const numBadge = document.createElement('div');
-    numBadge.className = 'quiz-q-num';
-    numBadge.textContent = `SOAL ${qi + 1}`;
-    card.appendChild(numBadge);
+    const match = optText.match(/^([A-E])\.\s*(.+)$/s);
+    const letter = match ? match[1] : letters[oi];
+    const text = match ? match[2] : optText;
     
-    // Question text ONLY (no premis, no tipe during answering)
-    const qText = document.createElement('p');
-    qText.className = 'quiz-q-text';
-    qText.textContent = soal.pertanyaan;
-    card.appendChild(qText);
+    opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
     
-    // Options
-    const optsWrap = document.createElement('div');
-    optsWrap.className = 'quiz-opts';
-    optsWrap.id = 'opts-' + qi;
+    // Restore previous selection if any
+    if (userAnswers[qi] === oi) {
+      opt.classList.add('selected');
+    }
     
-    soal.opsi.forEach((optText, oi) => {
-      const opt = document.createElement('div');
-      opt.className = 'quiz-opt';
-      opt.id = `opt-${qi}-${oi}`;
-      
-      const match = optText.match(/^([A-E])\.\s*(.+)$/s);
-      const letter = match ? match[1] : letters[oi];
-      const text = match ? match[2] : optText;
-      
-      opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
-      
-      // Restore previous selection if any
-      if (userAnswers[qi] === oi) {
-        opt.classList.add('selected');
-      }
-      
-      opt.addEventListener('click', () => handleOptionSelect(qi, oi));
-      optsWrap.appendChild(opt);
-    });
-    
-    card.appendChild(optsWrap);
-    body.appendChild(card);
+    opt.addEventListener('click', () => handleOptionSelect(qi, oi));
+    optsWrap.appendChild(opt);
   });
+  
+  card.appendChild(optsWrap);
+  body.appendChild(card);
+  
+  document.getElementById('quiz-current-num').textContent = qi + 1;
+  renderAnswerFooter();
+  updateProgress();
+  requestAnimationFrame(fitQuestionCard);
+}
+
+function fitQuestionCard() {
+  if (quizSubmitted) return;
+  const body = document.getElementById('quiz-body');
+  const card = document.querySelector('.quiz-q-card');
+  if (!body || !card) return;
+  if (typeof body.clientHeight !== 'number' || body.clientHeight <= 0) return;
+
+  card.style.zoom = '';
+
+  const bodyTop = body.getBoundingClientRect().top;
+  const availH = body.clientHeight - (card.getBoundingClientRect().top - bodyTop) - 20;
+  let availW = body.clientWidth;
+  if (window.matchMedia && window.matchMedia('(min-width:1024px)').matches) {
+    const navElWide = body.querySelector('.quiz-nav');
+    if (navElWide) {
+      const padLW = parseFloat(getComputedStyle(body).paddingLeft) || 0;
+      const padRW = parseFloat(getComputedStyle(body).paddingRight) || 0;
+      availW = body.clientWidth - padLW - padRW - navElWide.getBoundingClientRect().width - 14;
+    }
+  }
+  availW = Math.min(availW, 800);
+
+  const cardH = card.getBoundingClientRect().height;
+  const cardW = card.getBoundingClientRect().width;
+  if (cardH <= 0 || cardW <= 0) return;
+
+  const needed = Math.min(availH / cardH, availW / cardW);
+  card.style.zoom = Math.max(0.8, Math.min(1.5, needed));
 }
 
 function handleOptionSelect(qi, oi) {
@@ -1130,18 +1237,17 @@ function handleOptionSelect(qi, oi) {
 
 function updateProgress() {
   const answered = userAnswers.filter(a => a !== null).length;
-  const total = currentPacket.soal.length;
+  const total = currentPacket ? currentPacket.soal.length : 0;
   
+  document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
   document.getElementById('quiz-answered-count').textContent = answered;
-  document.getElementById('quiz-progress-fill').style.width = (answered / total * 100) + '%';
+  if (total > 0) {
+    document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
+  }
   
-  const submitBtn = document.getElementById('quiz-submit-btn');
-  submitBtn.disabled = answered === 0;
-  
-  if (answered === total) {
-    submitBtn.textContent = '✓ Selesai & Lihat Pembahasan';
-  } else {
-    submitBtn.textContent = `✓ Selesai (${answered}/${total}) & Lihat Pembahasan`;
+  const prevBtn = document.getElementById('quiz-prev-btn');
+  if (prevBtn) {
+    prevBtn.disabled = currentQuestionIndex === 0;
   }
 }
 
@@ -1369,22 +1475,21 @@ function renderReviewMode() {
       <button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>
     </div>
   `;
-  footer.style.display = 'block';
+  footer.style.display = 'flex';
 }
 
 function retryPacket() {
   if (!currentPacket) return;
+  currentQuestionIndex = 0;
   userAnswers = new Array(currentPacket.soal.length).fill(null);
   quizSubmitted = false;
   
-  resetQuizFooter();
-  
-  renderAllQuestions();
-  updateProgress();
-  document.getElementById('quiz-footer').style.display = 'block';
+  renderQuestion();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+window.addEventListener('resize', () => { fitQuestionCard(); });
+window.addEventListener('orientationchange', () => { requestAnimationFrame(fitQuestionCard); });
 </script>
 </body>
 </html>

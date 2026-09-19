@@ -1,0 +1,327 @@
+{
+  "paket": 5,
+  "jenis": "perbandingan",
+  "jumlah_soal": 20,
+  "soal": [
+    {
+      "id": "P5-01",
+      "family": "RASIO DASAR",
+      "subpattern": "rasio setelah pengurangan",
+      "difficulty": "sedang",
+      "soal": "Dalam sebuah perjalanan, perbandingan tiket reguler dan VIP mula-mula 7:3. Setelah 20 tiket reguler terjual, jumlah tiket reguler menjadi sama dengan 3/2 kali tiket VIP yang masih tersisa. Berapa banyak tiket VIP mula-mula?",
+      "opsi": {
+        "A": "20",
+        "B": "24",
+        "C": "32",
+        "D": "16",
+        "E": "28"
+      },
+      "jawaban": "B",
+      "pembahasan": "Rasio awal reguler:VIP = 7:3. Anggap masing-masing bagian bernilai x, sehingga reguler = 7x dan VIP = 3x. Setelah 20 tiket reguler terjual, jumlah reguler menjadi 7x − 20. Kondisi soal memberi 7x − 20 = 1,5 × 3x = 4,5x. Jadi 2,5x = 20, sehingga x = 8. VIP mula-mula = 3 × 8 = 24 tiket."
+    },
+    {
+      "id": "P5-02",
+      "family": "RASIO DASAR",
+      "subpattern": "perbandingan dua tahap",
+      "difficulty": "sedang",
+      "soal": "Dalam suatu proyek, A:B = 5:6 dan B:C = 8:7. Tentukan perbandingan A:C.",
+      "opsi": {
+        "A": "16:15",
+        "B": "20:22",
+        "C": "5:7",
+        "D": "20:21",
+        "E": "35:48"
+      },
+      "jawaban": "D",
+      "pembahasan": "Samakan B. Samakan nilai B menjadi 24. Maka A=5×4=20 dan C=7×3=21. Jadi A:C = 20:21."
+    },
+    {
+      "id": "P5-03",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "kapasitas / volume",
+      "difficulty": "mudah",
+      "soal": "Sebuah kendaraan dapat membawa 240 liter cairan dalam 6 wadah identik. Jika digunakan 9 wadah dengan kapasitas per wadah sama, berapa liter cairan dapat dibawa?",
+      "opsi": {
+        "A": "350",
+        "B": "370",
+        "C": "240",
+        "D": "360",
+        "E": "160"
+      },
+      "jawaban": "D",
+      "pembahasan": "Total volume tetap per wadah, sehingga total volume sebanding dengan jumlah wadah. Untuk 9 wadah, volume = 240×9/6 = 360 liter."
+    },
+    {
+      "id": "P5-04",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "produktivitas satu mesin",
+      "difficulty": "sedang",
+      "soal": "Sebuah alat menghasilkan 150 unit dalam 5 jam. Berapa unit dihasilkan dalam 8 jam jika produktivitas tetap?",
+      "opsi": {
+        "A": "245",
+        "B": "240",
+        "C": "375/4",
+        "D": "300",
+        "E": "235"
+      },
+      "jawaban": "B",
+      "pembahasan": "Karena kondisi lain tetap, jumlah berubah dengan perbandingan yang sama. Hasil baru = 150×8/5 = 240 unit."
+    },
+    {
+      "id": "P5-05",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "perubahan dua kali",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah perjalanan berjarak tetap. Pada kecepatan 60 km/jam, waktu tempuhnya 4 jam. Jika kecepatan dinaikkan 25%, lalu diturunkan 20% dari kecepatan baru, berapa waktu tempuh akhirnya?",
+      "opsi": {
+        "A": "4,2 jam",
+        "B": "4 jam",
+        "C": "3,2 jam",
+        "D": "4,5 jam",
+        "E": "3,5 jam"
+      },
+      "jawaban": "B",
+      "pembahasan": "Kecepatan awal 60 km/jam. Naik 25% menjadi 75 km/jam. Lalu turun 20% dari 75 menjadi 60 km/jam. Jadi kecepatan kembali 60 km/jam. Karena jaraknya sama, waktu akhirnya tetap 4 jam."
+    },
+    {
+      "id": "P5-06",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "jumlah orang dan bagian yang diterima",
+      "difficulty": "sedang",
+      "soal": "Hadiah Rp1.200.000 dibagi rata kepada 8 peserta. Jika dibagikan kepada 12 peserta, berapa bagian per peserta?",
+      "opsi": {
+        "A": "100.001",
+        "B": "99998",
+        "C": "100000",
+        "D": "100002",
+        "E": "150000"
+      },
+      "jawaban": "C",
+      "pembahasan": "Jumlah uang tetap Rp1.200.000. Untuk 8 peserta, bagian per orang = 1.200.000÷8 = 150.000. Jika menjadi 12 peserta, bagian per orang = 1.200.000÷12 = Rp100.000."
+    },
+    {
+      "id": "P5-07",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "mesin × waktu × produksi",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah kendaraan pengangkut memindahkan 720 kotak dengan 4 kendaraan selama 6 jam. Berapa kotak dapat dipindahkan jika kendaraan menjadi 5 dan waktu menjadi 8 jam, dengan produktivitas per kendaraan per jam tetap?",
+      "opsi": {
+        "A": "720",
+        "B": "1160",
+        "C": "1280",
+        "D": "1200",
+        "E": "1240"
+      },
+      "jawaban": "D",
+      "pembahasan": "Jumlah kendaraan berubah dari 4 menjadi 5, jadi dikali 5/4. Waktu berubah dari 6 menjadi 8 jam, jadi dikali 8/6 = 4/3. Maka hasil baru = 720 × 5/4 × 4/3 = 1.200 kotak."
+    },
+    {
+      "id": "P5-08",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "pekerja × waktu × hasil",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah tim layanan memproses 300 permintaan dengan 5 petugas selama 6 jam. Jika petugas menjadi 6 tetapi waktu kerja turun menjadi 5 jam, berapa permintaan dapat diproses?",
+      "opsi": {
+        "A": "340",
+        "B": "303",
+        "C": "320",
+        "D": "280",
+        "E": "300"
+      },
+      "jawaban": "E",
+      "pembahasan": "Jumlah petugas berubah dari 5 menjadi 6, jadi dikali 6/5. Waktu berubah dari 6 menjadi 5 jam, jadi dikali 5/6. Kedua perubahan saling meniadakan. Jadi hasilnya tetap 300 permintaan."
+    },
+    {
+      "id": "P5-09",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "fase dengan penghentian sementara",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah mesin harus menghasilkan 390 unit. Mesin bekerja 3 jam dengan laju 30 unit per jam, lalu berhenti 2 jam untuk perawatan. Setelah itu mesin bekerja lagi dengan laju 30 unit per jam. Berapa lama waktu yang berlalu sejak mesin mulai sampai target selesai?",
+      "opsi": {
+        "A": "13 jam",
+        "B": "14 jam",
+        "C": "15 jam",
+        "D": "16 jam",
+        "E": "17 jam"
+      },
+      "jawaban": "C",
+      "pembahasan": "Dalam 3 jam pertama dihasilkan 30×3 = 90 unit. Sisa = 390−90 = 300 unit. Setelah perawatan 2 jam, mesin menyelesaikan sisa 300÷30 = 10 jam. Total waktu = 3+2+10 = 15 jam."
+    },
+    {
+      "id": "P5-10",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "pekerja masuk/keluar tiga fase",
+      "difficulty": "sulit",
+      "soal": "Sebuah proyek membutuhkan 480 satuan pekerjaan. Fase pertama dikerjakan 6 pekerja selama 4 jam dan menghasilkan 120 satuan. Fase kedua dikerjakan 4 pekerja selama 8 jam dan menghasilkan 160 satuan. Pada fase ketiga tersedia 5 pekerja dengan kemampuan sama seperti pekerja pada fase kedua. Berapa jam fase ketiga diperlukan?",
+      "opsi": {
+        "A": "6 jam",
+        "B": "7 jam",
+        "C": "8 jam",
+        "D": "9 jam",
+        "E": "10 jam"
+      },
+      "jawaban": "C",
+      "pembahasan": "Pekerjaan yang sudah selesai = 120+160 = 280 satuan. Sisa = 480−280 = 200 satuan. Pada fase kedua, 4 pekerja selama 8 jam menghasilkan 160, jadi 1 pekerja dalam 1 jam menghasilkan 160÷32 = 5 satuan. Lima pekerja menghasilkan 25 satuan per jam. Waktu fase ketiga = 200÷25 = 8 jam."
+    },
+    {
+      "id": "P5-11",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "gabungan berbentuk verbal",
+      "difficulty": "sedang-tinggi",
+      "soal": "Kelompok A menyelesaikan 90 formulir dalam 6 jam, sedangkan kelompok B menyelesaikan 80 formulir dalam 8 jam. Jika keduanya bekerja bersama pada laju masing-masing, berapa jam diperlukan untuk menyelesaikan 200 formulir?",
+      "opsi": {
+        "A": "6 jam",
+        "B": "8 jam",
+        "C": "9 jam",
+        "D": "10 jam",
+        "E": "12 jam"
+      },
+      "jawaban": "B",
+      "pembahasan": "Kelompok A: 90 ÷ 6 = 15 formulir per jam. Kelompok B: 80 ÷ 8 = 10 formulir per jam. Bersama-sama = 25 formulir per jam. Jadi waktu untuk 200 formulir = 200 ÷ 25 = 8 jam."
+    },
+    {
+      "id": "P5-12",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "kemampuan berbeda",
+      "difficulty": "sedang-tinggi",
+      "soal": "Tim A menyelesaikan 120 paket dalam 5 jam. Tim B menyelesaikan 150 paket dalam 10 jam. Jika keduanya bekerja bersama untuk menyelesaikan 195 paket, berapa jam diperlukan?",
+      "opsi": {
+        "A": "8 jam",
+        "B": "7 jam",
+        "C": "6 jam",
+        "D": "4 jam",
+        "E": "5 jam"
+      },
+      "jawaban": "E",
+      "pembahasan": "Tim A bekerja dengan laju 120÷5 = 24 paket per jam. Tim B 150÷10 = 15 paket per jam. Bersama-sama 39 paket per jam. Waktu = 195÷39 = 5 jam."
+    },
+    {
+      "id": "P5-13",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi satuan campuran",
+      "difficulty": "sedang",
+      "soal": "Sebuah kendaraan menempuh jarak 1 km 250 m dan menghabiskan 5 liter bahan bakar. Jika pemakaian tetap, berapa liter bahan bakar yang diperlukan untuk setiap 1 km?",
+      "opsi": {
+        "A": "3 liter",
+        "B": "4 liter",
+        "C": "4,5 liter",
+        "D": "5 liter",
+        "E": "6 liter"
+      },
+      "jawaban": "B",
+      "pembahasan": "1 km 250 m = 1,25 km. Untuk 1 km, bahan bakar = 5 ÷ 1,25 = 4 liter. Jadi pemakaiannya 4 liter per km."
+    },
+    {
+      "id": "P5-14",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi rasio tengah",
+      "difficulty": "sedang-tinggi",
+      "soal": "Diketahui P:Q = 5:7 dan R:Q = 9:8. Tentukan perbandingan P:R.",
+      "opsi": {
+        "A": "35:72",
+        "B": "63:40",
+        "C": "5:9",
+        "D": "40:63",
+        "E": "45:56"
+      },
+      "jawaban": "D",
+      "pembahasan": "Samakan Q. Samakan nilai Q menjadi 56. Maka P=5×8=40 dan R=9×7=63. Jadi P:R = 40:63."
+    },
+    {
+      "id": "P5-15",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel senilai",
+      "difficulty": "mudah",
+      "soal": "Berapa bahan yang diperlukan pada kondisi 14 unit jika 5 unit membutuhkan 35 kg?\nTabel:\n| Jumlah | Hasil |\n|---:|---:|\n| 5 | 35 |\n| 14 | ? |",
+      "opsi": {
+        "A": "103",
+        "B": "35",
+        "C": "98",
+        "D": "25/2",
+        "E": "93"
+      },
+      "jawaban": "C",
+      "pembahasan": "Nilai untuk 1 unit adalah: 35/5. Untuk 14, hasil = 35×14/5 = 98."
+    },
+    {
+      "id": "P5-16",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "normalisasi X dan Y",
+      "difficulty": "sedang",
+      "soal": "X menunjukkan 2,4 km ditempuh dalam 8 menit. Y menunjukkan 0,25 km per menit. Manakah hubungan X dan Y setelah satuan disamakan?",
+      "opsi": {
+        "A": "X > Y",
+        "B": "X = Y",
+        "C": "Hubungan tidak dapat ditentukan",
+        "D": "2X > 3Y",
+        "E": "X < Y"
+      },
+      "jawaban": "A",
+      "pembahasan": "Ubah keduanya ke satuan yang sama: X=24/80=3/10 dan Y=1/4=1/4. Karena 3/10 > 1/4, maka X > Y."
+    },
+    {
+      "id": "P5-17",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "data cukup/tidak cukup",
+      "difficulty": "sulit",
+      "soal": "Diketahui X dan Y positif serta 1/2 < X/Y < 3/2. Manakah hubungan yang pasti benar?",
+      "opsi": {
+        "A": "X > Y",
+        "B": "X = Y",
+        "C": "X < Y",
+        "D": "2X > 3Y",
+        "E": "Tidak ada satu hubungan X dan Y yang selalu benar"
+      },
+      "jawaban": "E",
+      "pembahasan": "Rasio X/Y berada di antara 1/2 dan 3/2. Jadi X bisa lebih kecil dari Y, bisa sama, atau bisa lebih besar dari Y. Tidak ada satu hubungan dari pilihan lain yang selalu benar."
+    },
+    {
+      "id": "P5-18",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "rasio dengan data tersisip",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah pabrik menggunakan 6 liter bahan untuk menghasilkan 90 komponen. Dengan kebutuhan bahan per komponen tetap, berapa liter bahan diperlukan untuk menghasilkan 135 komponen?",
+      "opsi": {
+        "A": "10 liter",
+        "B": "8 liter",
+        "C": "9 liter",
+        "D": "7 liter",
+        "E": "12 liter"
+      },
+      "jawaban": "C",
+      "pembahasan": "Kebutuhan bahan sebanding dengan jumlah komponen. Jumlah komponen naik dari 90 menjadi 135, yaitu 3/2 kali. Jadi bahan yang diperlukan = 6×3/2 = 9 liter."
+    },
+    {
+      "id": "P5-19",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "jarak × kecepatan × waktu",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah kendaraan bergerak dengan kecepatan 60 km/jam selama 4 jam. Jika kecepatannya menjadi 75 km/jam dan waktu perjalanan menjadi 6 jam, berapa jarak yang ditempuh sekarang?",
+      "opsi": {
+        "A": "360 km",
+        "B": "400 km",
+        "C": "420 km",
+        "D": "450 km",
+        "E": "480 km"
+      },
+      "jawaban": "D",
+      "pembahasan": "Jarak = kecepatan × waktu. Jadi jarak baru = 75 × 6 = 450 km."
+    },
+    {
+      "id": "P5-20",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "multi-stage dengan tabel kondisi",
+      "difficulty": "sedang-tinggi",
+      "soal": "Perhatikan tabel kegiatan berikut. Berapa formulir yang dapat diselesaikan pada fase kedua jika produktivitas per petugas per jam tetap?\n| Fase | Petugas | Waktu (jam) | Formulir |\n|---|---:|---:|---:|\n| 1 | 4 | 2 | 80 |\n| 2 | 6 | 3 | ? |",
+      "opsi": {
+        "A": "160",
+        "B": "360",
+        "C": "200",
+        "D": "240",
+        "E": "180"
+      },
+      "jawaban": "E",
+      "pembahasan": "Pada fase 1, 4 petugas menyelesaikan 80 formulir dalam 2 jam. Jadi 1 petugas dalam 1 jam menyelesaikan 80 ÷ (4 × 2) = 10 formulir. Pada fase 2 ada 6 petugas selama 3 jam, sehingga hasilnya 6 × 3 × 10 = 180 formulir."
+    }
+  ]
+}

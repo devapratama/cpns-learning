@@ -1,0 +1,1642 @@
+{
+  "nama": "TKP-REMEDIAL-GAP-38",
+  "jenis": "remedial berbasis gap",
+  "total_soal": 38,
+  "tujuan": "Menutup blind spot dan menguji transfer decision engine, bukan menambah volume latihan generik.",
+  "soal": [
+    {
+      "nomor": 1,
+      "target_gap": "kepemimpinan",
+      "subtes": "jejaring_kerja",
+      "indikator": "memimpin_dan_menggerakkan",
+      "kesulitan": "sulit",
+      "stimulus": "Anda ditunjuk sebagai ketua tim untuk menyelesaikan laporan lintas unit yang tertunda. Dua anggota berpengalaman cenderung mengambil keputusan sendiri, sedangkan dua anggota baru menunggu arahan karena takut salah. Tenggat tinggal tiga hari.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Membiarkan anggota berpengalaman menentukan cara kerja agar laporan cepat selesai, sementara anggota baru mengikuti saja.",
+          "skor": 2,
+          "explanation": "Membiarkan anggota berpengalaman memutuskan sendiri membuat struktur kerja tak jelas; anggota baru hanya mengikuti dan tidak diberi ruang berkontribusi."
+        },
+        {
+          "label": "B",
+          "teks": "Membagi tugas secara rinci, menentukan batas kewenangan, membuka ruang pertanyaan, dan menetapkan titik pemeriksaan kemajuan.",
+          "skor": 5,
+          "explanation": "Membagi tugas secara rinci, menentukan batas kewenangan, membuka ruang pertanyaan, dan menetapkan titik pemeriksaan menciptakan struktur yang membuat seluruh anggota dapat berkontribusi optimal."
+        },
+        {
+          "label": "C",
+          "teks": "Mengambil keputusan utama sendiri agar perbedaan cara kerja tidak menghambat tim.",
+          "skor": 3,
+          "explanation": "Mengambil keputusan utama sendiri memang cepat, tetapi melewatkan masukan tim dan membangun ketergantungan anggota pada ketua."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta semua anggota bekerja sesuai pengalaman masing-masing lalu mengevaluasi hasilnya menjelang tenggat.",
+          "skor": 4,
+          "explanation": "Memberi ruang tiap anggota bekerja sesuai pengalaman lalu mengevaluasi menjelang tenggat cukup baik, tetapi koordinasi sejak awal kurang ditata sehingga risiko keterlambatan baru masih terbuka."
+        },
+        {
+          "label": "E",
+          "teks": "Mengumpulkan seluruh anggota untuk menyepakati setiap detail pekerjaan sebelum tugas mulai dijalankan.",
+          "skor": 1,
+          "explanation": "Menyepakati setiap detail sebelum mulai terlalu lambat dan kaku untuk tenggat yang hanya tersisa tiga hari."
+        }
+      ],
+      "kunci": "B",
+      "microRule": "Pemimpin tidak mengambil alih; ia menciptakan struktur kerja yang membuat anggota dapat berkontribusi optimal."
+    },
+    {
+      "nomor": 2,
+      "target_gap": "kepemimpinan",
+      "subtes": "jejaring_kerja",
+      "indikator": "memimpin_dan_menggerakkan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dalam rapat evaluasi, target unit Anda belum tercapai. Seorang anggota mengusulkan menghapus salah satu indikator agar capaian terlihat lebih baik. Anggota lain menolak, tetapi tidak menawarkan alternatif penyelesaian.",
+      "pertanyaan": "Sebagai ketua tim, Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menolak usulan tersebut dan meminta seluruh anggota bekerja lebih keras hingga target tercapai.",
+          "skor": 3,
+          "explanation": "Menolak usulan tanpa langkah perbaikan memang menjaga indikator, tetapi sekadar meminta bekerja lebih keras tidak menyelesaikan akar kegagalan."
+        },
+        {
+          "label": "B",
+          "teks": "Menunda pembahasan indikator sampai target membaik agar tim tidak kehilangan semangat.",
+          "skor": 2,
+          "explanation": "Menunda pembahasan menghindari masalah; target tetap belum tercapai dan tim tidak mendapat arahan pemulihan."
+        },
+        {
+          "label": "C",
+          "teks": "Membatalkan usulan tersebut, meminta data penyebab kegagalan, lalu mengarahkan tim menyusun langkah perbaikan yang tetap menggunakan indikator yang sah.",
+          "skor": 5,
+          "explanation": "Membatalkan usulan yang menyimpang, meminta data penyebab kegagalan, lalu mengarahkan tim menyusun langkah perbaikan yang tetap memakai indikator sah mengubah penolakan menjadi rencana tindakan."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta anggota yang menolak usulan menyusun sendiri solusi agar perdebatan segera berhenti.",
+          "skor": 1,
+          "explanation": "Meminta anggota penolak menyusun solusi sendiri melempar tanggung jawab dan menghentikan perdebatan secara defensif tanpa pengelolaan tim."
+        },
+        {
+          "label": "E",
+          "teks": "Membahas kembali indikator bersama tim dan mengubahnya apabila sebagian besar anggota menyetujui.",
+          "skor": 4,
+          "explanation": "Membahas ulang indikator dan mengubahnya bila mayoritas setuju terbuka pada masukan, tetapi berisiko mengubah indikator yang seharusnya dijaga demi capaian."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Kepemimpinan bukan sekadar menolak penyimpangan; pemimpin mengubah penolakan menjadi rencana perbaikan."
+    },
+    {
+      "nomor": 3,
+      "target_gap": "kepemimpinan",
+      "subtes": "jejaring_kerja",
+      "indikator": "memimpin_dan_menggerakkan",
+      "kesulitan": "sulit",
+      "stimulus": "Anda memimpin tim kecil. Salah satu anggota sangat ahli tetapi sering mendominasi diskusi. Anggota lain memiliki pengalaman lapangan yang relevan tetapi mulai enggan menyampaikan pendapat.",
+      "pertanyaan": "Sikap Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Meminta anggota ahli mengurangi bicara agar anggota lain memiliki kesempatan.",
+          "skor": 4,
+          "explanation": "Meminta anggota ahli mengurangi bicara memberi ruang yang lain, tetapi pendekatan langsung tanpa struktur bisa menyurutkan kontribusi positif sang ahli."
+        },
+        {
+          "label": "B",
+          "teks": "Membiarkan diskusi berjalan karena kualitas anggota ahli dapat membantu tim mengambil keputusan lebih cepat.",
+          "skor": 2,
+          "explanation": "Membiarkan diskusi berjalan mengabaikan anggota lain yang mulai enggan; keputusan cepat tetapi partisipasi tim menurun."
+        },
+        {
+          "label": "C",
+          "teks": "Memindahkan sebagian pembahasan kepada anggota yang lebih pendiam agar keseimbangan segera tercapai.",
+          "skor": 3,
+          "explanation": "Memindahkan sebagian pembahasan hanya menggeser masalah; belum mengelola bagaimana setiap orang berkontribusi."
+        },
+        {
+          "label": "D",
+          "teks": "Mengatur giliran kontribusi berdasarkan isu, meminta data lapangan dari anggota terkait, dan tetap memanfaatkan keahlian anggota ahli sebagai bahan keputusan.",
+          "skor": 5,
+          "explanation": "Mengatur giliran kontribusi berdasarkan isu, meminta data lapangan dari anggota terkait, dan tetap memanfaatkan keahlian anggota ahli mengoptimalkan kontribusi semua anggota."
+        },
+        {
+          "label": "E",
+          "teks": "Mengurangi peran anggota ahli dalam rapat berikutnya agar anggota lain lebih percaya diri.",
+          "skor": 1,
+          "explanation": "Mengurangi peran anggota ahli dalam rapat berikutnya membuang sumber daya terbaik tim secara drastis."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Memimpin berarti mengoptimalkan kontribusi, bukan meratakan kontribusi secara mekanis."
+    },
+    {
+      "nomor": 4,
+      "target_gap": "kepemimpinan",
+      "subtes": "jejaring_kerja",
+      "indikator": "memimpin_dan_menggerakkan",
+      "kesulitan": "sulit",
+      "stimulus": "Sebuah proyek harus segera dimulai. Anda mengetahui dua anggota memiliki kompetensi yang sesuai, tetapi keduanya sama-sama sedang menangani tugas rutin yang tidak dapat ditinggalkan sepenuhnya.",
+      "pertanyaan": "Sebagai koordinator, tindakan terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menetapkan kedua anggota tersebut mengerjakan proyek karena kompetensinya paling sesuai.",
+          "skor": 2,
+          "explanation": "Menetapkan kedua anggota mengerjakan proyek mengabaikan tugas rutin yang tak bisa ditinggalkan, memicu kegagalan kerja paralel."
+        },
+        {
+          "label": "B",
+          "teks": "Mengerjakan bagian proyek yang paling sulit sendiri agar anggota tidak terganggu.",
+          "skor": 3,
+          "explanation": "Mengerjakan sendiri bagian tersulit meringankan tim, tetapi menumpuk beban koordinator dan tidak menata kapasitas anggota."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta seluruh anggota bekerja lebih cepat agar kedua tugas dapat selesai bersamaan.",
+          "skor": 1,
+          "explanation": "Meminta semua bekerja lebih cepat tidak menyelesaikan konflik kapasitas dan tidak realistis terhadap beban yang ada."
+        },
+        {
+          "label": "D",
+          "teks": "Memetakan bagian proyek yang benar-benar membutuhkan kedua kompetensi tersebut, menyesuaikan pembagian waktu, lalu mengunci prioritas tugas yang harus tetap berjalan.",
+          "skor": 5,
+          "explanation": "Memetakan bagian yang benar-benar butuh kedua kompetensi, menyesuaikan pembagian waktu, dan mengunci prioritas tugas rutin mengalokasikan kapasitas secara cermat."
+        },
+        {
+          "label": "E",
+          "teks": "Menunjuk salah satu dari dua anggota berdasarkan siapa yang lebih dahulu tersedia.",
+          "skor": 4,
+          "explanation": "Menunjuk salah satu anggota berdasarkan siapa lebih dahulu tersedia memilih berdasarkan waktu, bukan kesesuaian kompetensi terhadap tugas."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Kepemimpinan harus mengalokasikan kapasitas, bukan sekadar memilih orang paling kompeten."
+    },
+    {
+      "nomor": 5,
+      "target_gap": "kepemimpinan",
+      "subtes": "jejaring_kerja",
+      "indikator": "memimpin_dan_menggerakkan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Tim Anda menerima tugas baru dengan prosedur yang belum familier. Sebagian anggota ingin langsung mencoba, sedangkan sebagian lain ingin menunggu pelatihan resmi yang baru tersedia minggu depan.",
+      "pertanyaan": "Sebagai ketua tim, Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menunggu pelatihan agar semua anggota memiliki pemahaman yang sama sebelum memulai.",
+          "skor": 3,
+          "explanation": "Menunggu pelatihan resmi menyamakan pemahaman, tetapi menunda tugas padahal bagian berisiko rendah bisa mulai dikerjakan."
+        },
+        {
+          "label": "B",
+          "teks": "Memulai seluruh proses sekarang agar tim terbiasa sejak awal.",
+          "skor": 2,
+          "explanation": "Memulai seluruh proses sekarang berisiko tinggi karena prosedur belum familier bagi tim."
+        },
+        {
+          "label": "C",
+          "teks": "Menentukan bagian yang risikonya rendah untuk dipelajari dan diuji, sambil memastikan bagian kritis tetap mengikuti arahan resmi.",
+          "skor": 5,
+          "explanation": "Menentukan bagian berisiko rendah untuk dipelajari dan diuji sambil memastikan bagian kritis mengikuti arahan resmi memecah risiko dan menciptakan ruang belajar yang aman."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta anggota yang paling cepat belajar mengambil alih seluruh proses sampai pelatihan selesai.",
+          "skor": 1,
+          "explanation": "Minta semua membaca panduan lalu mencoba bersama lebih baik daripada menunggu, tetapi belum memisahkan risiko pada bagian kritis."
+        },
+        {
+          "label": "E",
+          "teks": "Meminta semua anggota membaca panduan dan kemudian mencoba prosedur baru secara bersamaan.",
+          "skor": 4,
+          "explanation": "Meminta anggota tercepat belajar mengambil alih seluruh proses menumpuk beban satu orang dan tidak membangun kapasitas tim."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Pemimpin tidak memilih antara 'menunggu' dan 'nekat'; ia memecah risiko dan mengatur ruang belajar yang aman."
+    },
+    {
+      "nomor": 6,
+      "target_gap": "kepemimpinan",
+      "subtes": "jejaring_kerja",
+      "indikator": "menggerakkan_sumber_daya",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Unit Anda menghadapi lonjakan permintaan. Ada pegawai yang sedang longgar di unit lain, tetapi mereka belum memahami detail pekerjaan unit Anda. Anda mempunyai satu hari untuk mengantisipasi antrean.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Meminta bantuan pegawai dari unit lain untuk langsung menangani seluruh pekerjaan yang menumpuk.",
+          "skor": 2,
+          "explanation": "Meminta bantuan pegawai luar menangani seluruh pekerjaan tanpa panduan dan penetapan batas berisiko tinggi terjadi kesalahan proses."
+        },
+        {
+          "label": "B",
+          "teks": "Mempertahankan pekerjaan pada tim sendiri karena pegawai luar belum memahami proses kerja.",
+          "skor": 3,
+          "explanation": "Menolak bantuan luar mempertahankan standar tim sendiri, tetapi membiarkan antrean membengkak ketika kapasitas jelas kurang."
+        },
+        {
+          "label": "C",
+          "teks": "Menyerahkan pekerjaan sederhana kepada unit lain agar tim utama fokus pada pekerjaan inti.",
+          "skor": 4,
+          "explanation": "Menyerahkan pekerjaan sederhana ke unit lain mengurangi beban, tetapi belum cukup menata panduan dan pengawasan hasil."
+        },
+        {
+          "label": "D",
+          "teks": "Mengidentifikasi pekerjaan yang dapat dialihkan, memberi panduan singkat, menetapkan batas tugas, dan menjaga pemeriksaan hasil tetap pada tim Anda.",
+          "skor": 5,
+          "explanation": "Mengidentifikasi pekerjaan yang dapat dialihkan, memberi panduan singkat, menetapkan batas tugas, dan menjaga pemeriksaan hasil di tim memobilisasi bantuan secara terukur."
+        },
+        {
+          "label": "E",
+          "teks": "Mengajukan penambahan pegawai permanen karena lonjakan menunjukkan kapasitas unit sudah tidak memadai.",
+          "skor": 1,
+          "explanation": "Mengajukan penambahan pegawai permanen reaktif dan tidak menyelesaikan kebutuhan untuk lonjakan yang hanya satu hari."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Menggerakkan sumber daya berarti memobilisasi bantuan secara terukur, bukan melempar pekerjaan."
+    },
+    {
+      "nomor": 7,
+      "target_gap": "delegasi_dan_coaching",
+      "subtes": "jejaring_kerja",
+      "indikator": "pembagian_peran_dan_pengembangan_anggota",
+      "kesulitan": "sulit",
+      "stimulus": "Seorang anggota junior mendapat tugas analisis yang belum pernah dikerjakannya. Tenggat masih empat hari dan Anda sendiri sedang menangani pekerjaan penting.",
+      "pertanyaan": "Tindakan terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Mengambil alih tugas tersebut karena hasil harus tetap berkualitas.",
+          "skor": 2,
+          "explanation": "Mengambil alih tugas memastikan kualitas, tetapi mengabaikan pengembangan anggota dan menambah beban kerja Anda sendiri."
+        },
+        {
+          "label": "B",
+          "teks": "Membiarkan anggota belajar sendiri agar kemandiriannya berkembang.",
+          "skor": 3,
+          "explanation": "Membiarkan anggota belajar sendiri berisiko tugas tidak kelar tepat waktu tanpa contoh standar hasil."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta anggota mengerjakan bagian dasar terlebih dahulu, memberi contoh standar hasil, lalu meninjau kemajuannya pada titik tertentu.",
+          "skor": 5,
+          "explanation": "Meminta anggota mengerjakan bagian dasar, memberi contoh standar hasil, lalu meninjau kemajuan pada titik tertentu menjaga kualitas sekaligus membangun kapasitasnya."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta anggota yang lebih senior mendampingi junior tersebut sampai tugas selesai.",
+          "skor": 4,
+          "explanation": "Meminta anggota senior mendampingi junior membantu, tetapi pendampingan penuh sampai selesai dapat mengurangi tanggung jawab junior dan membebani senior."
+        },
+        {
+          "label": "E",
+          "teks": "Menunda tugas tersebut sampai Anda memiliki waktu untuk mendampinginya secara penuh.",
+          "skor": 1,
+          "explanation": "Menunda tugas sampai Anda punya waktu mengorbankan tenggat dan menunda pekerjaan yang seharusnya dijalankan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Delegasi yang baik menjaga kualitas sekaligus membangun kapasitas anggota."
+    },
+    {
+      "nomor": 8,
+      "target_gap": "delegasi_dan_coaching",
+      "subtes": "profesionalisme",
+      "indikator": "pengembangan_kompetensi",
+      "kesulitan": "sulit",
+      "stimulus": "Hasil kerja seorang anggota baru masih mengandung kesalahan berulang. Kesalahan tersebut tidak fatal, tetapi membuat Anda harus melakukan koreksi berkali-kali.",
+      "pertanyaan": "Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Mengoreksi hasil kerjanya setiap kali kesalahan muncul agar pekerjaan tetap selesai.",
+          "skor": 4,
+          "explanation": "Mengoreksi hasil setiap kali kesalahan muncul menjaga produk akhir, tetapi tidak memperbaiki akar kesalahan sehingga Anda terus bekerja ulang."
+        },
+        {
+          "label": "B",
+          "teks": "Menjelaskan pola kesalahannya, meminta ia menemukan penyebabnya, lalu menyepakati cara pemeriksaan mandiri sebelum hasil dikumpulkan.",
+          "skor": 5,
+          "explanation": "Menjelaskan pola kesalahan, meminta ia menemukan penyebabnya, dan menyepakati pemeriksaan mandiri memperbaiki cara kerja, bukan hanya produk akhir."
+        },
+        {
+          "label": "C",
+          "teks": "Memindahkan tugas tersebut kepada pegawai yang lebih berpengalaman.",
+          "skor": 2,
+          "explanation": "Memindahkan tugas ke pegawai berpengalaman menghindari masalah dan tidak membangun kompetensi anggota baru."
+        },
+        {
+          "label": "D",
+          "teks": "Mengingatkan agar ia lebih teliti karena kesalahan yang sama tidak seharusnya terjadi.",
+          "skor": 3,
+          "explanation": "Sekadar mengingatkan agar lebih teliti berniat baik, tetapi tidak memberi mekanisme pemeriksaan sehingga kesalahan mudah terulang."
+        },
+        {
+          "label": "E",
+          "teks": "Membiarkan beberapa kesalahan terjadi sebagai bagian dari proses belajar.",
+          "skor": 1,
+          "explanation": "Membiarkan kesalahan berulang sebagai bagian dari proses belajar membiarkan kualitas kerja menurun tanpa kendali."
+        }
+      ],
+      "kunci": "B",
+      "microRule": "Coaching memperbaiki cara kerja, bukan hanya memperbaiki produk akhir."
+    },
+    {
+      "nomor": 9,
+      "target_gap": "delegasi_dan_coaching",
+      "subtes": "jejaring_kerja",
+      "indikator": "kemampuan_berperan_sebagai_anggota_tim",
+      "kesulitan": "sulit",
+      "stimulus": "Atasan meminta Anda membantu anggota junior menyiapkan bahan presentasi. Anda memiliki pengalaman lebih besar, tetapi hasil presentasi tersebut akan menjadi tanggung jawab junior.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menyiapkan seluruh presentasi agar kualitasnya terjamin.",
+          "skor": 2,
+          "explanation": "Menyiapkan seluruh presentasi menjamin kualitas, tetapi merebut kepemilikan tugas yang seharusnya menjadi tanggung jawab junior."
+        },
+        {
+          "label": "B",
+          "teks": "Memberikan template lama dan meminta junior menyesuaikannya sendiri.",
+          "skor": 3,
+          "explanation": "Memberikan template lama tanpa umpan balik membantu sedikit, tetapi tidak memastikan kualitas dan pemahaman junior."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta junior menyerahkan bahan mentah, lalu Anda mengubahnya menjadi versi final.",
+          "skor": 4,
+          "explanation": "Meminta bahan mentah lalu mengubahnya jadi versi final masih menjadikan Anda pemilik akhir tugas yang bukan tanggung jawab Anda."
+        },
+        {
+          "label": "D",
+          "teks": "Menanyakan tujuan presentasi, memberi umpan balik pada struktur dan bagian kritis, serta membiarkan junior tetap menyusun dan menjelaskan hasilnya.",
+          "skor": 5,
+          "explanation": "Menanyakan tujuan, memberi umpan balik pada struktur dan bagian kritis, lalu membiarkan junior menyusun dan menjelaskan sendiri membantu tanpa mengambil alih kepemilikan."
+        },
+        {
+          "label": "E",
+          "teks": "Menyarankan junior meminta bantuan anggota lain karena Anda sedang memiliki tugas sendiri.",
+          "skor": 1,
+          "explanation": "Menyuruh junior meminta bantuan anggota lain menolak permintaan atasan dan tidak peduli pada kebutuhan yang seharusnya dibantu."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Membantu anggota bukan berarti mengambil kepemilikan tugasnya."
+    },
+    {
+      "nomor": 10,
+      "target_gap": "delegasi_dan_coaching",
+      "subtes": "jejaring_kerja",
+      "indikator": "pembagian_peran",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Sebuah pekerjaan terdiri atas analisis data, komunikasi dengan pihak luar, dan penyusunan laporan. Anda ditunjuk menjadi koordinator, tetapi tidak semua anggota memiliki kemampuan komunikasi eksternal.",
+      "pertanyaan": "Pembagian tugas paling tepat adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Memberikan komunikasi eksternal kepada anggota yang paling senior agar risiko salah bicara kecil.",
+          "skor": 4,
+          "explanation": "Memberikan komunikasi eksternal ke anggota paling senior mengurangi risiko salah bicara, tetapi belum mempertimbangkan pengembangan anggota lain."
+        },
+        {
+          "label": "B",
+          "teks": "Membagi seluruh bagian secara merata agar tidak muncul kesan pilih kasih.",
+          "skor": 2,
+          "explanation": "Membagi seluruh bagian secara merata terlihat adil, tetapi mengabaikan kompetensi dan menurunkan hasil kerja."
+        },
+        {
+          "label": "C",
+          "teks": "Menempatkan tugas sesuai kompetensi, memberi pendampingan pada anggota yang belum siap, dan menentukan titik koordinasi antartugas.",
+          "skor": 5,
+          "explanation": "Menempatkan tugas sesuai kompetensi, memberi pendampingan yang belum siap, dan menentukan titik koordinasi adalah delegasi berbasis kapasitas."
+        },
+        {
+          "label": "D",
+          "teks": "Mengerjakan komunikasi eksternal sendiri dan membagi dua pekerjaan lainnya kepada anggota.",
+          "skor": 3,
+          "explanation": "Mengerjakan komunikasi eksternal sendiri masuk akal untuk mengurangi risiko, tetapi beban koordinator menumpuk dan pembagian tidak optimal."
+        },
+        {
+          "label": "E",
+          "teks": "Memberikan komunikasi eksternal kepada anggota yang bersedia agar pembagian tugas terasa lebih sukarela.",
+          "skor": 1,
+          "explanation": "Memberikan tugas berdasarkan kesediaan bersifat sukarela, bukan kapasitas, sehingga berisiko hasil tidak sesuai."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Delegasi berbasis kapasitas, bukan kesamaan beban secara nominal."
+    },
+    {
+      "nomor": 11,
+      "target_gap": "competing_legitimate_stakeholders",
+      "subtes": "pelayanan_publik",
+      "indikator": "keadilan_dan_prioritas",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Pada loket pelayanan, kapasitas petugas terbatas. Antrean sudah panjang. Seorang warga lanjut usia baru datang dan kesulitan memahami formulir, tetapi dokumennya tidak memiliki batas waktu khusus hari itu. Di sisi lain, beberapa warga dalam antrean memiliki urusan yang harus selesai sebelum kantor tujuan mereka tutup sore ini.",
+      "pertanyaan": "Sebagai petugas loket, Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Meminta warga lanjut usia menunggu sesuai urutan karena warga lain memiliki kepentingan waktu yang lebih mendesak.",
+          "skor": 3,
+          "explanation": "Meminta lansia menunggu sesuai urutan konsisten pada aturan antrean, tetapi mengabaikan hambatan pemahaman formulir yang sebenarnya bisa dibantu."
+        },
+        {
+          "label": "B",
+          "teks": "Mendahulukan warga lanjut usia karena kebutuhan bantuannya lebih besar dibanding warga lain.",
+          "skor": 2,
+          "explanation": "Mendahulukan lansia mengabaikan urgensi waktu warga lain yang sah dan mengubah prioritas tanpa dasar."
+        },
+        {
+          "label": "C",
+          "teks": "Membantu warga lanjut usia memahami bagian formulir yang diperlukan tanpa mengambil alih seluruh proses, lalu mengembalikannya ke alur pelayanan sesuai ketentuan.",
+          "skor": 5,
+          "explanation": "Membantu memahami bagian formulir yang diperlukan tanpa mengambil alih proses, lalu mengembalikannya ke alur pelayanan, mengakomodasi kebutuhan khusus tanpa mengubah prioritas."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta warga lain yang antre membantu warga lanjut usia agar petugas dapat mempertahankan kecepatan pelayanan.",
+          "skor": 1,
+          "explanation": "Meminta warga antre membantu lansia melepas tanggung jawab petugas dan mengganggu ketertiban antrean."
+        },
+        {
+          "label": "E",
+          "teks": "Membuat antrean khusus untuk warga lanjut usia agar kebutuhan mereka dapat dilayani lebih cepat.",
+          "skor": 4,
+          "explanation": "Membuat antrean khusus lansia responsif pada kebutuhan khusus, tetapi tetap mengubah struktur antrean dan berpotensi tidak adil tanpa ketentuan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Kebutuhan khusus dapat diakomodasi tanpa otomatis mengubah prioritas layanan; bantu hambatan yang relevan, lalu kembalikan proses ke aturan."
+    },
+    {
+      "nomor": 12,
+      "target_gap": "competing_legitimate_stakeholders",
+      "subtes": "jejaring_kerja",
+      "indikator": "kepentingan_organisasi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dua unit memiliki kepentingan berbeda terhadap penggunaan ruang rapat. Unit A memiliki kegiatan yang sudah dijadwalkan, sedangkan Unit B membutuhkan ruang tersebut untuk rapat mendesak dengan pihak eksternal yang hanya tersedia hari itu.",
+      "pertanyaan": "Tindakan Anda sebagai koordinator fasilitas adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Memberikan ruang kepada Unit B karena rapat dengan pihak eksternal lebih penting.",
+          "skor": 3,
+          "explanation": "Memberikan ruang kepada Unit B karena pihak eksternal lebih penting memihak pada urgensi dan mengabaikan kepastian jadwal Unit A."
+        },
+        {
+          "label": "B",
+          "teks": "Mempertahankan jadwal Unit A sepenuhnya karena reservasi harus dihormati.",
+          "skor": 3,
+          "explanation": "Mempertahankan jadwal Unit A sepenuhnya menghormati reservasi, tetapi menutup kemungkinan solusi bagi rapat mendesak."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta pimpinan memilih salah satu unit agar Anda tidak dianggap berpihak.",
+          "skor": 2,
+          "explanation": "Meminta pimpinan memilih menghindari risiko dinilai berpihak, tetapi gagal melakukan tugas koordinasi fasilitas."
+        },
+        {
+          "label": "D",
+          "teks": "Mengecek kebutuhan minimum kedua kegiatan dan mencari penyesuaian waktu atau ruang yang memungkinkan keduanya tetap berjalan.",
+          "skor": 5,
+          "explanation": "Mengecek kebutuhan minimum kedua kegiatan lalu mencari penyesuaian waktu atau ruang mengoptimalkan keduanya tetap berjalan."
+        },
+        {
+          "label": "E",
+          "teks": "Membatalkan reservasi Unit A dan memberikan ruang kepada Unit B demi kepentingan organisasi.",
+          "skor": 4,
+          "explanation": "Membatalkan reservasi Unit A demi Unit B menciptakan korban pada pihak yang sudah terjadwal; bukan keputusan optimal."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Konflik dua kepentingan sah diselesaikan dengan optimasi keseluruhan, bukan memenangkan pihak yang tampak paling mendesak."
+    },
+    {
+      "nomor": 13,
+      "target_gap": "competing_legitimate_stakeholders",
+      "subtes": "sosial_budaya",
+      "indikator": "akomodasi_perbedaan_dan_tujuan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dalam forum penyusunan program desa, kelompok pemuda menginginkan kegiatan dilakukan pada akhir pekan, sedangkan beberapa tokoh masyarakat memiliki kegiatan komunitas pada waktu tersebut. Keduanya sama-sama memiliki alasan yang masuk akal.",
+      "pertanyaan": "Sikap Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Mengikuti pilihan mayoritas agar keputusan dapat segera dibuat.",
+          "skor": 2,
+          "explanation": "Mengikuti pilihan mayoritas cepat, tetapi mengabaikan kepentingan kelompok minoritas yang juga sah."
+        },
+        {
+          "label": "B",
+          "teks": "Menggunakan jadwal yang paling umum digunakan agar tidak ada kelompok yang merasa diistimewakan.",
+          "skor": 3,
+          "explanation": "Menggunakan jadwal paling umum menghindari kesan diistimewakan, tetapi tidak menyentuh akar konflik kepentingan."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta tokoh masyarakat menentukan jadwal karena mereka lebih memahami kondisi lokal.",
+          "skor": 4,
+          "explanation": "Menyerahkan keputusan jadwal ke tokoh masyarakat memanfaatkan kearifan lokal, tetapi menutup partisipasi kelompok pemuda."
+        },
+        {
+          "label": "D",
+          "teks": "Menggali bagian kegiatan yang benar-benar membutuhkan kehadiran tiap kelompok, lalu menyusun jadwal yang memungkinkan kontribusi keduanya tetap terakomodasi.",
+          "skor": 5,
+          "explanation": "Menggali bagian kegiatan yang benar-benar butuh kehadiran tiap kelompok lalu menyusun jadwal yang mengakomodasi keduanya mendesain ulang kegiatan untuk meminimalkan konflik."
+        },
+        {
+          "label": "E",
+          "teks": "Membagi kegiatan menjadi dua acara agar setiap kelompok mendapatkan waktu sendiri.",
+          "skor": 1,
+          "explanation": "Membagi kegiatan menjadi dua acara menggandakan beban dan memecah kegiatan yang seharusnya berlangsung satu."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Akomodasi tidak harus berarti memilih salah satu; desain ulang kegiatan dapat mengurangi konflik kepentingan."
+    },
+    {
+      "nomor": 14,
+      "target_gap": "competing_legitimate_stakeholders",
+      "subtes": "profesionalisme",
+      "indikator": "kepentingan_umum_vs_kepentingan_individu",
+      "kesulitan": "sulit",
+      "stimulus": "Anda menilai usulan dari dua vendor. Vendor pertama memiliki proposal teknis lebih baik tetapi membutuhkan waktu implementasi lebih lama. Vendor kedua lebih cepat tetapi kapasitas sistemnya lebih terbatas.",
+      "pertanyaan": "Tindakan terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Memilih vendor kedua karena kecepatan implementasi paling mudah dilihat hasilnya.",
+          "skor": 2,
+          "explanation": "Memilih vendor kedua karena kecepatan mudah terlihat mengabaikan kualitas teknis dan kapasitas sistem."
+        },
+        {
+          "label": "B",
+          "teks": "Memilih vendor pertama karena kualitas teknis harus selalu diutamakan.",
+          "skor": 3,
+          "explanation": "Memilih vendor pertama karena kualitas teknis selalu diutamakan mengabaikan kebutuhan waktu implementasi."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta kedua vendor menyamakan spesifikasi sebelum penilaian dilanjutkan.",
+          "skor": 4,
+          "explanation": "Meminta kedua vendor menyamakan spesifikasi membantu perbandingan adil, tetapi belum menyelesaikan keputusan dan bisa tidak realistis."
+        },
+        {
+          "label": "D",
+          "teks": "Membandingkan manfaat, risiko kapasitas, kebutuhan waktu, dan dampak jangka lanjut berdasarkan kriteria pengadaan yang berlaku.",
+          "skor": 5,
+          "explanation": "Membandingkan manfaat, risiko kapasitas, kebutuhan waktu, dan dampak jangka lanjut berdasarkan kriteria pengadaan adalah keputusan berdasar kriteria relevan."
+        },
+        {
+          "label": "E",
+          "teks": "Meminta pimpinan memilih karena kedua proposal sama-sama memiliki kelebihan.",
+          "skor": 1,
+          "explanation": "Meminta pimpinan memilih melempar tanggung jawab analisis yang justru menjadi tugas evaluator."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Dilema legitimate stakeholder harus diputuskan dengan kriteria relevan, bukan satu nilai absolut."
+    },
+    {
+      "nomor": 15,
+      "target_gap": "competing_legitimate_stakeholders",
+      "subtes": "pelayanan_publik",
+      "indikator": "solusi_dan_transparansi",
+      "kesulitan": "sulit",
+      "stimulus": "Sebanyak 20 warga meminta layanan selesai pada hari yang sama. Kapasitas normal hanya mampu menyelesaikan 12 permohonan. Sebagian permohonan berdampak pada tenggat administratif yang lebih dekat, sementara sebagian lainnya sudah menunggu lebih lama.",
+      "pertanyaan": "Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menggunakan urutan kedatangan agar keputusan tetap objektif.",
+          "skor": 4,
+          "explanation": "Menggunakan urutan kedatangan objektif dan mudah dijelaskan, tetapi mengabaikan perbedaan tenggat dan lama menunggu."
+        },
+        {
+          "label": "B",
+          "teks": "Mendahulukan semua permohonan yang tenggatnya paling dekat.",
+          "skor": 3,
+          "explanation": "Mendahulukan semua permohonan dengan tenggat terdekat memakai satu kriteria urgensi dan mengabaikan lama menunggu."
+        },
+        {
+          "label": "C",
+          "teks": "Memproses permohonan secara acak agar tidak dianggap memihak.",
+          "skor": 1,
+          "explanation": "Memproses secara acak terlihat tidak memihak, tetapi tidak profesional dan tidak menghormati pemohon."
+        },
+        {
+          "label": "D",
+          "teks": "Menetapkan kriteria prioritas yang relevan, menjelaskan kepada pemohon, dan mengupayakan kapasitas tambahan untuk mengurangi sisa antrean.",
+          "skor": 5,
+          "explanation": "Menetapkan kriteria prioritas relevan, menjelaskan kepada pemohon, dan mengupayakan kapasitas tambahan menyelesaikan masalah sekaligus menjaga transparansi."
+        },
+        {
+          "label": "E",
+          "teks": "Meminta warga yang sudah lama menunggu mengalah demi warga dengan tenggat yang lebih dekat.",
+          "skor": 2,
+          "explanation": "Meminta warga yang lama menunggu mengalah menimbulkan ketidakadilan tanpa dasar prioritas yang jelas."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Saat kapasitas tidak cukup, prioritas harus berbasis kriteria yang relevan dan dikomunikasikan, bukan sekadar antrean atau urgensi tunggal."
+    },
+    {
+      "nomor": 16,
+      "target_gap": "heuristic_reversal",
+      "subtes": "pelayanan_publik",
+      "indikator": "responsivitas_dan_ketelitian",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Sistem pelayanan menunjukkan data pemohon sudah lengkap, tetapi ada satu informasi yang secara statistik sering menjadi sumber kesalahan. Pemohon sudah menunggu cukup lama dan loket hampir tutup.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Segera menyelesaikan layanan karena sistem sudah menyatakan data lengkap.",
+          "skor": 2,
+          "explanation": "Menyelesaikan layanan karena sistem menyatakan lengkap mengabaikan informasi yang secara statistik sering menjadi sumber kesalahan."
+        },
+        {
+          "label": "B",
+          "teks": "Menunda semua proses sampai pemeriksaan menyeluruh selesai.",
+          "skor": 3,
+          "explanation": "Menunda semua proses sampai pemeriksaan menyeluruh selesai tidak realistis ketika loket hampir tutup."
+        },
+        {
+          "label": "C",
+          "teks": "Memeriksa hanya informasi yang berisiko memengaruhi hasil akhir, lalu menyelesaikan layanan apabila bagian kritis tersebut sesuai.",
+          "skor": 5,
+          "explanation": "Memeriksa hanya informasi berisiko yang memengaruhi hasil akhir lalu menyelesaikan layanan memadukan ketelitian dengan kebutuhan waktu."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta pemohon datang kembali karena waktu pelayanan hampir berakhir.",
+          "skor": 1,
+          "explanation": "Meminta pemohon datang kembali karena waktu hampir habis menelantarkan pemohon tanpa pemeriksaan apa pun."
+        },
+        {
+          "label": "E",
+          "teks": "Melakukan pemeriksaan lengkap tetapi memprioritaskan pemeriksaan yang biasanya paling sering bermasalah.",
+          "skor": 4,
+          "explanation": "Pemeriksaan lengkap dengan prioritas pada bagian yang paling sering bermasalah mendekati ideal, tetapi masih lebih lambat dari yang dibutuhkan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Ketika waktu sempit, prinsip 'verifikasi dahulu' tidak hilang; yang berubah adalah kedalaman verifikasi berdasarkan risiko."
+    },
+    {
+      "nomor": 17,
+      "target_gap": "heuristic_reversal",
+      "subtes": "jejaring_kerja",
+      "indikator": "koordinasi_dan_kewenangan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Sebuah pekerjaan Anda bergantung pada unit lain. Biasanya Anda melakukan koordinasi langsung dengan pejabat teknis unit tersebut. Kali ini informasi yang dibutuhkan sudah tersedia di sistem bersama dan masih valid.",
+      "pertanyaan": "Tindakan yang paling tepat adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Tetap menghubungi pejabat teknis agar koordinasi formal selalu dilakukan.",
+          "skor": 3,
+          "explanation": "Tetap menghubungi pejabat teknis menjaga formalitas koordinasi, tetapi menambah komunikasi yang sebenarnya sudah terpenuhi oleh sistem."
+        },
+        {
+          "label": "B",
+          "teks": "Menggunakan data yang sudah tersedia dan hanya menghubungi unit tersebut bila ada informasi yang belum jelas atau berubah.",
+          "skor": 5,
+          "explanation": "Menggunakan data yang sudah valid dan menghubungi unit hanya bila ada yang belum jelas mempertahankan efisiensi kolaborasi."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta unit lain mengonfirmasi ulang seluruh data sebelum Anda memprosesnya.",
+          "skor": 2,
+          "explanation": "Meminta unit lain mengonfirmasi ulang seluruh data mubazir karena data yang tersedia sudah sah dan valid."
+        },
+        {
+          "label": "D",
+          "teks": "Mengandalkan sistem sepenuhnya karena koordinasi langsung tidak lagi diperlukan.",
+          "skor": 4,
+          "explanation": "Mengandalkan sistem sepenuhnya mengabaikan kemungkinan interpretasi atau perubahan informasi yang masih butuh konfirmasi manusia."
+        },
+        {
+          "label": "E",
+          "teks": "Menunggu pembaruan berikutnya agar data yang digunakan benar-benar terbaru.",
+          "skor": 1,
+          "explanation": "Menunggu pembaruan berikutnya menunda pekerjaan tanpa dasar kebutuhan."
+        }
+      ],
+      "kunci": "B",
+      "microRule": "Kolaborasi tidak identik dengan selalu menambah komunikasi; gunakan informasi yang sudah sah dan relevan secara efisien."
+    },
+    {
+      "nomor": 18,
+      "target_gap": "heuristic_reversal",
+      "subtes": "anti_radikalisme",
+      "indikator": "membina_vs_melapor",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Seorang rekan baru membuat komentar stereotip tentang kelompok tertentu dalam percakapan internal. Ia belum pernah melakukan hal serupa, tidak mengarah pada ancaman, dan langsung menunjukkan bahwa ia bersedia menerima koreksi.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Langsung melaporkan rekan tersebut agar tidak terjadi toleransi terhadap diskriminasi.",
+          "skor": 2,
+          "explanation": "Langsung melapor adalah eskalasi formal berlebihan untuk komentar sekali, tanpa ancaman, dan yang bersangkutan bersedia dikoreksi."
+        },
+        {
+          "label": "B",
+          "teks": "Mengabaikannya karena komentar tersebut tidak disampaikan secara terbuka.",
+          "skor": 1,
+          "explanation": "Mengabaikan komentar stereotip meski tertutup memberi toleransi diam pada sikap yang merendahkan kelompok."
+        },
+        {
+          "label": "C",
+          "teks": "Mengingatkannya secara privat, menjelaskan dampaknya, dan memastikan ia memahami batas perilaku yang dapat diterima.",
+          "skor": 5,
+          "explanation": "Mengingatkan secara privat, menjelaskan dampak, dan memastikan pemahaman batas perilaku menegakkan prinsip secara proporsional."
+        },
+        {
+          "label": "D",
+          "teks": "Menegur di depan anggota lain agar menjadi pembelajaran bersama.",
+          "skor": 3,
+          "explanation": "Menegur di depan umum menjadikan pembelajaran bersama tetapi mempermalukan dan kurang proporsional pada kesalahan pertama."
+        },
+        {
+          "label": "E",
+          "teks": "Meminta atasan memberikan pembinaan umum kepada seluruh anggota tanpa menyebut kejadian tersebut.",
+          "skor": 4,
+          "explanation": "Meminta atasan memberi pembinaan umum hati-hati, tetapi melewatkan dialog langsung dengan rekan yang bersangkutan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Ketegasan terhadap prinsip tidak selalu berarti eskalasi formal; respons harus proporsional terhadap tingkat risiko dan keterbukaan untuk memperbaiki."
+    },
+    {
+      "nomor": 19,
+      "target_gap": "heuristic_reversal",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "keterampilan_teknis_relevan",
+      "kesulitan": "sulit",
+      "stimulus": "Unit Anda mengalami keterlambatan input data. Seorang pegawai mengusulkan aplikasi baru yang dapat mengotomatisasi seluruh proses, tetapi tim sebenarnya sudah memiliki spreadsheet terstruktur yang dapat diperbaiki dengan validasi sederhana.",
+      "pertanyaan": "Sikap Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menyetujui aplikasi baru karena otomatisasi akan membuat unit lebih modern.",
+          "skor": 2,
+          "explanation": "Menyetujui aplikasi baru karena otomatisasi terlihat modern mengabaikan masalah nyata dan biaya perubahan."
+        },
+        {
+          "label": "B",
+          "teks": "Tetap menggunakan spreadsheet tanpa perubahan karena masalah tidak memerlukan teknologi baru.",
+          "skor": 3,
+          "explanation": "Tetap memakai spreadsheet tanpa perubahan menolak perbaikan yang sebenarnya murah dan mungkin dilakukan."
+        },
+        {
+          "label": "C",
+          "teks": "Menguji perbaikan validasi pada sistem yang sudah ada dan membandingkan hasilnya dengan kebutuhan nyata sebelum mengganti alat.",
+          "skor": 5,
+          "explanation": "Menguji perbaikan validasi pada sistem yang ada lalu membandingkan dengan kebutuhan nyata memastikan alat yang dipilih cocok dengan masalah."
+        },
+        {
+          "label": "D",
+          "teks": "Menggunakan aplikasi baru untuk sebagian proses sebagai langkah awal modernisasi.",
+          "skor": 4,
+          "explanation": "Menggunakan aplikasi baru untuk sebagian proses merupakan langkah maju yang hati-hati, tetapi prematur sebelum ada bukti kecocokan."
+        },
+        {
+          "label": "E",
+          "teks": "Menunggu arahan pimpinan karena pemilihan aplikasi merupakan keputusan strategis.",
+          "skor": 1,
+          "explanation": "Menunggu arahan pimpinan untuk keputusan operasional pasif dan melempar tanggung jawab yang bisa ditangani."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Adaptif bukan berarti memilih teknologi baru; yang dinilai adalah kecocokan alat terhadap masalah."
+    },
+    {
+      "nomor": 20,
+      "target_gap": "heuristic_reversal",
+      "subtes": "profesionalisme",
+      "indikator": "kualitas_vs_kecepatan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Anda diminta menyelesaikan laporan sore ini. Sebagian besar data sudah diverifikasi, tetapi dua angka bernilai material masih berbeda antara dua sumber resmi. Laporan akan digunakan untuk keputusan anggaran besok pagi.",
+      "pertanyaan": "Tindakan terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menggunakan salah satu angka sementara agar laporan selesai tepat waktu.",
+          "skor": 2,
+          "explanation": "Memakai salah satu angka sementara berisiko keputusan anggaran berdasar angka material yang belum pasti benar."
+        },
+        {
+          "label": "B",
+          "teks": "Menunda seluruh laporan sampai semua data benar-benar tidak memiliki perbedaan.",
+          "skor": 3,
+          "explanation": "Menunda seluruh laporan sampai semua data identik tidak realistis terhadap deadline sore ini."
+        },
+        {
+          "label": "C",
+          "teks": "Menyelesaikan bagian yang sudah valid, menandai dua angka material tersebut, dan melakukan verifikasi terarah sebelum bagian itu digunakan sebagai dasar keputusan.",
+          "skor": 5,
+          "explanation": "Menyelesaikan bagian valid, menandai dua angka material, lalu melakukan verifikasi terarah memfokuskan upaya pada titik yang benar-benar berisiko."
+        },
+        {
+          "label": "D",
+          "teks": "Menyampaikan laporan dengan catatan bahwa terdapat perbedaan data agar atasan dapat memutuskan.",
+          "skor": 4,
+          "explanation": "Menyampaikan laporan dengan catatan perbedaan data transparan, tetapi meninggalkan angka material belum pasti untuk keputusan besok pagi."
+        },
+        {
+          "label": "E",
+          "teks": "Meminta atasan menunda keputusan anggaran karena data belum sepenuhnya sama.",
+          "skor": 1,
+          "explanation": "Meminta atasan menunda keputusan anggaran mengalihkan masalah tanpa menyelesaikan perbedaan data."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Saat risiko terkonsentrasi pada bagian tertentu, verifikasi dapat dipersempit pada titik material tanpa mengorbankan keseluruhan pekerjaan."
+    },
+    {
+      "nomor": 21,
+      "target_gap": "policy_side_effects",
+      "subtes": "pelayanan_publik",
+      "indikator": "perbaikan_layanan",
+      "kesulitan": "sulit",
+      "stimulus": "Unit Anda memperketat pemeriksaan dokumen untuk menurunkan kesalahan layanan. Setelah satu bulan, kesalahan memang turun, tetapi waktu tunggu warga meningkat tajam karena dokumen yang sebenarnya sederhana ikut diperiksa dengan cara yang sama.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Membatalkan pemeriksaan tambahan karena waktu tunggu telah meningkat.",
+          "skor": 2,
+          "explanation": "Membatalkan pemeriksaan tambahan membuang kontrol yang justru berhasil menurunkan kesalahan."
+        },
+        {
+          "label": "B",
+          "teks": "Mempertahankan prosedur sepenuhnya karena penurunan kesalahan menunjukkan kebijakan berhasil.",
+          "skor": 3,
+          "explanation": "Mempertahankan prosedur sepenuhnya mengabaikan efek samping waktu tunggu yang meningkat."
+        },
+        {
+          "label": "C",
+          "teks": "Mengurangi pemeriksaan tambahan agar waktu tunggu kembali normal.",
+          "skor": 4,
+          "explanation": "Mengurangi pemeriksaan tambahan menormalkan waktu tunggu, tetapi bisa membuka kembali kesalahan yang sudah ditekan tanpa analisis risiko."
+        },
+        {
+          "label": "D",
+          "teks": "Menganalisis jenis kesalahan yang paling berisiko, lalu menyesuaikan tingkat pemeriksaan agar kontrol tetap kuat pada kasus kritis tanpa membebani kasus sederhana.",
+          "skor": 5,
+          "explanation": "Menganalisis jenis kesalahan paling berisiko lalu menyesuaikan tingkat pemeriksaan menjaga kontrol pada kasus kritis tanpa membebani kasus sederhana."
+        },
+        {
+          "label": "E",
+          "teks": "Menambah petugas pemeriksa agar semua pemeriksaan tambahan tetap dilakukan.",
+          "skor": 1,
+          "explanation": "Menambah petugas pemeriksa menaikkan biaya dan tetap membebani kasus sederhana secara berlebihan."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Kebijakan yang berhasil pada indikator utama belum tentu optimal secara keseluruhan; periksa efek samping dan kalibrasi ulang."
+    },
+    {
+      "nomor": 22,
+      "target_gap": "policy_side_effects",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "adaptasi_dan_efektivitas_teknologi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Instansi menerapkan notifikasi otomatis setiap kali status permohonan berubah. Setelah berjalan, pegawai menerima sangat banyak notifikasi dan mulai mengabaikan beberapa pesan penting.",
+      "pertanyaan": "Tindakan Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menonaktifkan semua notifikasi agar pegawai tidak terganggu.",
+          "skor": 2,
+          "explanation": "Menonaktifkan semua notifikasi membuang manfaat informasi perubahan status yang seharusnya membantu."
+        },
+        {
+          "label": "B",
+          "teks": "Mengingatkan pegawai agar lebih disiplin membaca semua notifikasi.",
+          "skor": 3,
+          "explanation": "Mengingatkan pegawai lebih disiplin menyalahkan perilaku tanpa memperbaiki kebisingan notifikasi yang berlebihan."
+        },
+        {
+          "label": "C",
+          "teks": "Membatasi notifikasi hanya pada perubahan status yang berpengaruh langsung pada tindakan pegawai.",
+          "skor": 5,
+          "explanation": "Membatasi notifikasi hanya pada perubahan yang berpengaruh langsung pada tindakan pegawai mempertahankan informasi yang benar-benar berguna."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta setiap pegawai membuat aturan notifikasi sendiri sesuai kebutuhannya.",
+          "skor": 4,
+          "explanation": "Meminta tiap pegawai mengatur notifikasi sendiri tidak menjamin informasi penting tetap tertangkap secara konsisten."
+        },
+        {
+          "label": "E",
+          "teks": "Mengembalikan proses ke pencatatan manual agar informasi penting tidak terlewat.",
+          "skor": 1,
+          "explanation": "Kembali ke pencatatan manual mundur jauh dari solusi digital yang sudah berjalan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Otomatisasi harus mempertahankan signal-to-noise yang berguna; lebih banyak notifikasi bukan berarti lebih banyak kontrol."
+    },
+    {
+      "nomor": 23,
+      "target_gap": "policy_side_effects",
+      "subtes": "profesionalisme",
+      "indikator": "evaluasi_dan_perbaikan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Target penyelesaian tugas berhasil naik setelah pimpinan menetapkan batas waktu yang lebih ketat. Namun, mulai muncul peningkatan koreksi ulang dan pekerjaan lembur.",
+      "pertanyaan": "Sebagai anggota tim evaluasi, Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Mendukung kebijakan sepenuhnya karena target utama sudah meningkat.",
+          "skor": 2,
+          "explanation": "Mendukung kebijakan penuh karena target naik mengabaikan peningkatan koreksi ulang dan lembur."
+        },
+        {
+          "label": "B",
+          "teks": "Mengusulkan target diturunkan agar kualitas kerja kembali stabil.",
+          "skor": 3,
+          "explanation": "Mengusulkan target diturunkan menormalkan kualitas, tetapi melemahkan produktivitas yang sudah tercapai."
+        },
+        {
+          "label": "C",
+          "teks": "Menyampaikan data koreksi dan lembur, lalu mengusulkan evaluasi proses untuk menemukan bagian yang menyebabkan percepatan mengorbankan kualitas.",
+          "skor": 5,
+          "explanation": "Menyampaikan data koreksi dan lembur lalu mengusulkan evaluasi proses membaca indikator bersama dampak kualitas dan keberlanjutan."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta pegawai bekerja lebih teliti meskipun target tetap sama.",
+          "skor": 4,
+          "explanation": "Meminta pegawai lebih teliti dengan target tetap menyerahkan beban pada individu tanpa memperbaiki proses."
+        },
+        {
+          "label": "E",
+          "teks": "Menganggap koreksi ulang sebagai konsekuensi wajar dari tuntutan kinerja.",
+          "skor": 1,
+          "explanation": "Menganggap koreksi ulang sebagai konsekuensi wajar menormalisasi inefisiensi yang bisa diperbaiki."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Indikator kinerja bukan tujuan tunggal; perubahan indikator harus dibaca bersama dampak terhadap kualitas dan keberlanjutan."
+    },
+    {
+      "nomor": 24,
+      "target_gap": "TIK_non_security",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "keterampilan_teknis_relevan",
+      "kesulitan": "sulit",
+      "stimulus": "Anda harus mengolah 3.000 baris data sederhana. Seorang rekan menyarankan membuat aplikasi khusus, sementara fitur pengolahan pada perangkat lunak kantor yang sudah dikuasai tim sebenarnya cukup untuk kebutuhan tersebut.",
+      "pertanyaan": "Pilihan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Membuat aplikasi khusus agar proses terlihat lebih profesional.",
+          "skor": 2,
+          "explanation": "Membuat aplikasi khusus untuk menangani 3.000 baris berlebihan; kecanggihan alat tanpa kebutuhan jelas."
+        },
+        {
+          "label": "B",
+          "teks": "Menggunakan fitur yang sudah tersedia dan membuat prosedur pengolahan yang terstandar untuk tim.",
+          "skor": 5,
+          "explanation": "Menggunakan fitur yang sudah tersedia dan membuat prosedur pengolahan terstandar efektif, efisien, dan bisa dipertanggungjawabkan."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta konsultan teknologi menilai opsi terbaik sebelum pekerjaan dimulai.",
+          "skor": 3,
+          "explanation": "Meminta konsultan menilai menambah biaya untuk masalah yang bisa diselesaikan dengan alat yang sudah dikuasai."
+        },
+        {
+          "label": "D",
+          "teks": "Menggunakan alat baru hanya untuk sebagian data sebagai percobaan.",
+          "skor": 4,
+          "explanation": "Menggunakan alat baru untuk sebagian data sebagai percobaan hati-hati, tetapi belum jelas kebutuhan dan standar hasilnya."
+        },
+        {
+          "label": "E",
+          "teks": "Mengerjakan data satu per satu agar tidak terjadi kesalahan akibat alat otomatis.",
+          "skor": 1,
+          "explanation": "Mengerjakan 3.000 baris satu per satu lambat, rawan salah, dan menolak bantuan alat yang tersedia."
+        }
+      ],
+      "kunci": "B",
+      "microRule": "Keterampilan TIK dinilai dari relevansi dan efektivitas penggunaan alat, bukan kecanggihan alat."
+    },
+    {
+      "nomor": 25,
+      "target_gap": "TIK_non_security",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "kolaborasi_digital",
+      "kesulitan": "sulit",
+      "stimulus": "Tim Anda bekerja dari tiga lokasi. Selama ini setiap anggota mengirim versi dokumen melalui email sehingga sering muncul beberapa file berbeda.",
+      "pertanyaan": "Perbaikan yang paling tepat adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menetapkan satu orang sebagai satu-satunya pengirim dokumen agar versi tidak bertambah.",
+          "skor": 3,
+          "explanation": "Menetapkan satu pengirim dokumen mengendalikan versi, tetapi menciptakan kemacetan dan membatasi kontribusi langsung anggota."
+        },
+        {
+          "label": "B",
+          "teks": "Meminta setiap anggota memberi nama file dengan format tanggal dan inisial masing-masing.",
+          "skor": 2,
+          "explanation": "Format nama file dengan tanggal dan inisial membantu identifikasi versi, tetapi tidak membuka kolaborasi bersama."
+        },
+        {
+          "label": "C",
+          "teks": "Menggunakan dokumen bersama dengan aturan pengeditan, penamaan bagian, dan titik finalisasi yang jelas.",
+          "skor": 5,
+          "explanation": "Dokumen bersama dengan aturan pengeditan, penamaan bagian, dan titik finalisasi memberi mekanisme kerja bersama yang mencegah versi ganda."
+        },
+        {
+          "label": "D",
+          "teks": "Mengurangi jumlah anggota yang boleh mengedit agar dokumen lebih mudah dikendalikan.",
+          "skor": 4,
+          "explanation": "Mengurangi jumlah anggota yang boleh mengedit mengendalikan dokumen, tetapi mengekang kolaborasi antarlokasi."
+        },
+        {
+          "label": "E",
+          "teks": "Mengirim versi final setiap sore melalui email untuk memastikan semua anggota mempunyai salinan terbaru.",
+          "skor": 1,
+          "explanation": "Mengirim versi final setiap sore via email mengulang masalah versi dan duplikasi file yang sama."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Kolaborasi digital membutuhkan mekanisme kerja bersama, bukan sekadar berpindah dari komunikasi luring ke daring."
+    },
+    {
+      "nomor": 26,
+      "target_gap": "TIK_non_security",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "adaptasi_teknologi",
+      "kesulitan": "sulit",
+      "stimulus": "Unit Anda mulai menggunakan aplikasi baru. Beberapa fungsi berbeda dari aplikasi lama, tetapi panduan resmi sudah tersedia. Sebagian anggota langsung menolak karena merasa cara lama lebih cepat.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Tetap memakai cara lama untuk pekerjaan yang dianggap lebih cepat sampai aplikasi baru benar-benar terbukti.",
+          "skor": 2,
+          "explanation": "Tetap memakai cara lama untuk pekerjaan yang dianggap cepat menolak perubahan resmi dan menciptakan dua proses paralel."
+        },
+        {
+          "label": "B",
+          "teks": "Meminta semua anggota langsung menggunakan aplikasi baru tanpa tahap penyesuaian.",
+          "skor": 3,
+          "explanation": "Meminta semua anggota langsung menggunakan aplikasi baru tanpa penyesuaian memaksa pengguna dan rawan kesalahan."
+        },
+        {
+          "label": "C",
+          "teks": "Mempelajari fungsi utama, mencoba pada pekerjaan yang sesuai, mencatat kendala, dan menggunakan kanal resmi untuk masalah yang belum jelas.",
+          "skor": 5,
+          "explanation": "Mempelajari fungsi utama, mencoba pada pekerjaan sesuai, mencatat kendala, lalu memakai kanal resmi adalah adaptasi yang terukur."
+        },
+        {
+          "label": "D",
+          "teks": "Menunjuk seorang pegawai yang sudah memahami aplikasi untuk mengerjakan bagian anggota lain sementara waktu.",
+          "skor": 4,
+          "explanation": "Menunjuk satu pegawai yang sudah paham mengerjakan bagian anggota lain memusatkan pekerjaan dan tidak membangun kemampuan semua."
+        },
+        {
+          "label": "E",
+          "teks": "Menunggu sampai semua anggota merasa nyaman sebelum aplikasi digunakan.",
+          "skor": 1,
+          "explanation": "Menunggu sampai semua anggota nyaman menunda penggunaan aplikasi tanpa batas waktu."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Adaptasi = belajar, mencoba secara terukur, dan memperbaiki hambatan; bukan menolak perubahan atau memaksakan perubahan secara buta."
+    },
+    {
+      "nomor": 27,
+      "target_gap": "TIK_non_security",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "keterampilan_teknis_dan_kolaborasi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Pimpinan meminta dashboard untuk memantau pekerjaan harian. Tim sudah memiliki data yang cukup, tetapi setiap anggota menafsirkan indikator secara berbeda sehingga angka pada dashboard sering diperdebatkan.",
+      "pertanyaan": "Langkah Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Membangun dashboard terlebih dahulu agar perbedaan definisi dapat terlihat.",
+          "skor": 2,
+          "explanation": "Membangun dashboard lebih dulu membuat perbedaan definisi terlihat, tetapi justru menunda penuntasan konflik makna data."
+        },
+        {
+          "label": "B",
+          "teks": "Memilih definisi yang paling banyak digunakan lalu menerapkannya pada dashboard.",
+          "skor": 3,
+          "explanation": "Memilih definisi yang paling banyak digunakan cepat, tetapi mengabaikan suara berbeda dan berpotensi salah interpretasi."
+        },
+        {
+          "label": "C",
+          "teks": "Menyepakati definisi indikator dan sumber data terlebih dahulu, kemudian membangun dashboard sesuai kebutuhan keputusan.",
+          "skor": 5,
+          "explanation": "Menyepakati definisi indikator dan sumber data terlebih dahulu lalu membangun dashboard sesuai kebutuhan keputusan menempatkan teknologi mengikuti kebutuhan."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta tim teknis menentukan definisi karena mereka yang membuat dashboard.",
+          "skor": 1,
+          "explanation": "Meminta tim teknis menentukan definisi melempar keputusan bisnis kepada pihak teknis."
+        },
+        {
+          "label": "E",
+          "teks": "Membuat beberapa versi indikator agar tiap unit dapat menggunakan definisinya sendiri.",
+          "skor": 4,
+          "explanation": "Membuat beberapa versi indikator membuat dashboard tidak konsisten dan menghidupkan kembali perdebatan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Teknologi tidak memperbaiki definisi kerja yang belum disepakati; kualitas alat bergantung pada kualitas kebutuhan dan makna data."
+    },
+    {
+      "nomor": 28,
+      "target_gap": "AR_offline_dan_democratic_dissent",
+      "subtes": "anti_radikalisme",
+      "indikator": "menghargai_demokrasi_dan_kebebasan_berpendapat",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dalam forum warga, seorang peserta secara terbuka menyatakan bahwa ia tidak setuju dengan kebijakan pemerintah daerah. Kritiknya tajam, tetapi disertai alasan, tidak mengandung ancaman, dan tidak menghina kelompok tertentu.",
+      "pertanyaan": "Sikap Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Meminta moderator menghentikan peserta tersebut karena kritik dapat melemahkan kepercayaan terhadap pemerintah.",
+          "skor": 1,
+          "explanation": "Meminta moderator menghentikan peserta membungkam kritik yang sah dan melemahkan ruang demokratis."
+        },
+        {
+          "label": "B",
+          "teks": "Mengingatkan bahwa kritik sebaiknya tidak disampaikan di ruang publik agar suasana tetap kondusif.",
+          "skor": 2,
+          "explanation": "Mengingatkan kritik tidak disampaikan di ruang publik membatasi kebebasan berpendapat yang dijamin."
+        },
+        {
+          "label": "C",
+          "teks": "Membiarkan forum berjalan tanpa perlu menanggapi karena setiap orang bebas berpendapat.",
+          "skor": 3,
+          "explanation": "Membiarkan forum berjalan apa adanya menghormati kebebasan berpendapat, tetapi melewatkan kesempatan membahas substansi."
+        },
+        {
+          "label": "D",
+          "teks": "Mengakui kritik sebagai bagian dari ruang demokratis dan mengarahkan pembahasan pada data serta substansi kebijakan.",
+          "skor": 5,
+          "explanation": "Mengakui kritik sebagai bagian ruang demokratis dan mengarahkan pembahasan pada data serta substansi membedakan kritik sah dari intoleransi."
+        },
+        {
+          "label": "E",
+          "teks": "Mendorong peserta menyampaikan kritik melalui jalur tertulis agar diskusi lisan tidak berkembang menjadi perdebatan.",
+          "skor": 4,
+          "explanation": "Mendorong kritik lewat jalur tertulis menyalurkan kritik secara terstruktur, tetapi membatasi ruang terbuka secara berlebihan."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Anti-radikalisme tidak identik dengan membungkam oposisi; kritik yang sah harus dibedakan dari intoleransi atau ancaman."
+    },
+    {
+      "nomor": 29,
+      "target_gap": "AR_offline_dan_democratic_dissent",
+      "subtes": "anti_radikalisme",
+      "indikator": "netral_dan_tidak_sektarian",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dua kelompok warga berbeda pandangan mengenai penggunaan fasilitas umum. Masing-masing menganggap kepentingannya lebih penting. Belum ada ancaman, tetapi percakapan mulai dipenuhi tuduhan bahwa kelompok lain tidak nasionalis.",
+      "pertanyaan": "Sebagai petugas yang hadir dalam pertemuan, Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Mendukung kelompok yang menurut Anda lebih sesuai dengan kepentingan umum.",
+          "skor": 2,
+          "explanation": "Mendukung kelompok yang dianggap sesuai kepentingan umum menyeret petugas ke dalam keberpihakan."
+        },
+        {
+          "label": "B",
+          "teks": "Meminta kedua kelompok tidak membicarakan isu tersebut agar hubungan tidak semakin buruk.",
+          "skor": 3,
+          "explanation": "Meminta kedua kelompok tidak membicarakan isu menutup masalah, bukan menyelesaikan perbedaan."
+        },
+        {
+          "label": "C",
+          "teks": "Menjaga forum tetap netral, meminta kedua pihak menyampaikan kebutuhan konkret, dan mengarahkan pembahasan kembali pada aturan penggunaan fasilitas.",
+          "skor": 5,
+          "explanation": "Menjaga forum netral, meminta kebutuhan konkret, dan mengarahkan kembali ke aturan penggunaan fasilitas menjalankan kenetralan secara aktif."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta pimpinan langsung menentukan kelompok mana yang lebih nasionalis agar konflik berhenti.",
+          "skor": 1,
+          "explanation": "Meminta pimpinan menentukan siapa lebih nasionalis mengubah konflik kepentingan menjadi penilaian identitas."
+        },
+        {
+          "label": "E",
+          "teks": "Mengingatkan bahwa setiap kelompok berhak menyampaikan pandangan selama tidak terjadi kekerasan.",
+          "skor": 4,
+          "explanation": "Mengingatkan hak berpendapat selama tidak ada kekerasan benar, tetapi belum mengelola substansi konflik."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Netral bukan pasif; petugas harus menahan keberpihakan emosional sambil mengembalikan konflik pada aturan dan kepentingan bersama."
+    },
+    {
+      "nomor": 30,
+      "target_gap": "AR_offline_dan_democratic_dissent",
+      "subtes": "anti_radikalisme",
+      "indikator": "membina_vs_melapor",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dalam kegiatan kantor, seorang pegawai berulang kali mengajak rekan memilih hanya orang dari kelompok identitas tertentu untuk menjadi panitia. Saat ditegur, ia mengatakan itu hanya preferensi dan tidak bermaksud menyerang kelompok lain.",
+      "pertanyaan": "Tindakan terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Mengabaikannya karena keputusan panitia merupakan urusan internal.",
+          "skor": 1,
+          "explanation": "Mengabaikan preferensi identitas dalam keputusan internal membiarkan praktik eksklusif terus berjalan."
+        },
+        {
+          "label": "B",
+          "teks": "Langsung melaporkannya sebagai tindakan radikal agar tidak berkembang.",
+          "skor": 2,
+          "explanation": "Langsung melaporkan sebagai tindakan radikal berlebihan untuk preferensi yang belum berkembang menjadi ancaman."
+        },
+        {
+          "label": "C",
+          "teks": "Menegaskan pentingnya kriteria objektif, membahas dampak eksklusivitas tersebut, dan mengambil jalur formal bila perilaku terus berulang atau meningkat.",
+          "skor": 5,
+          "explanation": "Menegaskan kriteria objektif, membahas dampak eksklusivitas, lalu mengambil jalur formal bila berulang atau meningkat menangani dengan tegas dan proporsional."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta panitia mengabaikan pendapat pegawai tersebut agar tidak terjadi konflik.",
+          "skor": 3,
+          "explanation": "Meminta panitia mengabaikan pendapat pegawai tersebut menghindari konflik, tetapi tidak menangani pola yang ada."
+        },
+        {
+          "label": "E",
+          "teks": "Mengingatkan bahwa semua identitas sama dan meminta pegawai tersebut tidak menyampaikan pendapat serupa lagi.",
+          "skor": 4,
+          "explanation": "Mengingatkan semua identitas sama dan minta tidak berpendapat lagi menegaskan nilai, tetapi tanpa pembahasan dampak dan konsekuensi."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Eksklusivitas harus ditangani, tetapi tingkat respons mengikuti risiko, pengulangan, dan perkembangan perilaku."
+    },
+    {
+      "nomor": 31,
+      "target_gap": "social_cultural_genuine_dilemma",
+      "subtes": "sosial_budaya",
+      "indikator": "adaptasi_komunikasi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Anda memimpin diskusi teknis di wilayah yang sebagian peserta lebih nyaman menggunakan bahasa lokal. Penerjemah tersedia, tetapi hanya dapat membantu pada bagian tertentu karena harus berpindah ke kegiatan lain setelah satu jam. Materi teknis juga mengandung beberapa istilah yang tidak memiliki padanan langsung dalam bahasa lokal.",
+      "pertanyaan": "Tindakan yang paling tepat adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menggunakan bahasa resmi sepenuhnya agar istilah teknis tidak berubah makna meskipun sebagian peserta mungkin kurang memahami pembahasan.",
+          "skor": 2,
+          "explanation": "Menggunakan bahasa resmi sepenuhnya menjaga presisi istilah, tetapi menyebabkan sebagian peserta kurang memahami pembahasan."
+        },
+        {
+          "label": "B",
+          "teks": "Memakai penerjemah selama tersedia, kemudian melanjutkan seluruh pembahasan dengan bahasa lokal agar peserta tetap nyaman.",
+          "skor": 3,
+          "explanation": "Memakai penerjemah lalu melanjutkan penuh dengan bahasa lokal mengabaikan istilah yang tidak punya padanan dan bisa mengubah makna."
+        },
+        {
+          "label": "C",
+          "teks": "Menentukan istilah teknis yang tidak boleh berubah, meminta penerjemah membantu bagian yang paling berisiko salah dipahami, dan menggunakan bahasa yang lebih familiar untuk penjelasan lainnya.",
+          "skor": 5,
+          "explanation": "Menentukan istilah yang tidak boleh berubah, meminta penerjemah di bagian paling berisiko salah paham, dan memakai bahasa familiar untuk lainnya menjaga aksesibilitas sekaligus presisi."
+        },
+        {
+          "label": "D",
+          "teks": "Membagikan glosarium istilah teknis sebelum diskusi agar penerjemahan selama forum dapat dikurangi.",
+          "skor": 4,
+          "explanation": "Membagikan glosarium membantu memahami istilah, tetapi belum memastikan penjelasan lisan tetap dapat diakses semua peserta."
+        },
+        {
+          "label": "E",
+          "teks": "Menunda diskusi teknis sampai tersedia penerjemah yang dapat mendampingi seluruh kegiatan.",
+          "skor": 1,
+          "explanation": "Menunda diskusi sampai penerjemah penuh tersedia menunda kebutuhan yang sudah mendesak."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Adaptasi komunikasi harus menjaga aksesibilitas sekaligus mempertahankan presisi pada bagian substansi yang kritis."
+    },
+    {
+      "nomor": 32,
+      "target_gap": "social_cultural_genuine_dilemma",
+      "subtes": "sosial_budaya",
+      "indikator": "inklusi_dan_partisipasi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dalam rapat komunitas, beberapa peserta yang lebih senior selalu berbicara lebih dulu dan panjang. Anggota muda serta beberapa perempuan jarang menyampaikan pandangan, meskipun ketika ditanya secara pribadi mereka memiliki informasi penting.",
+      "pertanyaan": "Sebagai fasilitator, Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Membiarkan pola tersebut karena peserta senior memiliki pengalaman lebih banyak.",
+          "skor": 1,
+          "explanation": "Membiarkan peserta senior mendominasi mengabaikan informasi penting dari anggota muda dan perempuan."
+        },
+        {
+          "label": "B",
+          "teks": "Membatasi waktu bicara semua peserta secara ketat tanpa mempertimbangkan substansi.",
+          "skor": 3,
+          "explanation": "Membatasi waktu bicara semua secara ketat tanpa mempertimbangkan substansi menyamakan kontribusi secara mekanis."
+        },
+        {
+          "label": "C",
+          "teks": "Memberi kesempatan bicara yang lebih seimbang dan secara aktif meminta informasi dari peserta yang selama ini kurang terdengar.",
+          "skor": 5,
+          "explanation": "Memberi kesempatan bicara seimbang dan aktif meminta informasi dari peserta yang kurang terdengar memastikan informasi relevan benar-benar masuk keputusan."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta peserta senior tidak berbicara pada awal rapat agar peserta lain lebih percaya diri.",
+          "skor": 2,
+          "explanation": "Meminta peserta senior tidak berbicara di awal menekan peserta tertentu dan bisa kontraproduktif."
+        },
+        {
+          "label": "E",
+          "teks": "Membuka sesi khusus setelah rapat bagi peserta yang belum sempat berbicara.",
+          "skor": 4,
+          "explanation": "Membuka sesi khusus pasca rapat memberi ruang ekstra, tetapi informasi penting sudah terlambat untuk keputusan rapat."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Inklusi bukan sekadar mengundang semua orang; fasilitator perlu memastikan informasi relevan benar-benar masuk ke proses keputusan."
+    },
+    {
+      "nomor": 33,
+      "target_gap": "social_cultural_genuine_dilemma",
+      "subtes": "sosial_budaya",
+      "indikator": "menghormati_perbedaan_dan_objektivitas",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Salah satu anggota tim memiliki kebiasaan komunikasi yang sangat ekspresif. Anggota lain merasa terganggu, tetapi Anda mengetahui bahwa cara tersebut merupakan kebiasaan komunikasi yang lazim di lingkungan asalnya.",
+      "pertanyaan": "Tindakan Anda adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Meminta anggota tersebut menyesuaikan diri sepenuhnya dengan gaya komunikasi mayoritas.",
+          "skor": 2,
+          "explanation": "Meminta anggota menyesuaikan penuh dengan gaya mayoritas membatasi keunikan dan membingkai latar belakangnya sebagai masalah."
+        },
+        {
+          "label": "B",
+          "teks": "Membiarkan perbedaan gaya komunikasi karena keragaman harus dihormati.",
+          "skor": 3,
+          "explanation": "Membiarkan semua perbedaan gaya komunikasi menghormati keragaman, tetapi mengabaikan gangguan yang berdampak pada pekerjaan."
+        },
+        {
+          "label": "C",
+          "teks": "Menilai dampaknya terhadap pekerjaan, menjelaskan batas perilaku yang mengganggu, dan mencari cara berkomunikasi yang tetap menghormati kebiasaannya.",
+          "skor": 5,
+          "explanation": "Menilai dampak terhadap pekerjaan, menjelaskan batas perilaku yang mengganggu, dan mencari cara komunikasi yang tetap menghormati kebiasaan bersikap objektif pada perilaku."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta anggota lain lebih toleran agar konflik tidak berkembang.",
+          "skor": 4,
+          "explanation": "Meminta anggota lain lebih toleran meredakan konflik, tetapi tidak menangani gangguan yang sah dirasakan."
+        },
+        {
+          "label": "E",
+          "teks": "Memindahkan anggota tersebut ke tim lain yang dianggap lebih cocok dengan gaya komunikasinya.",
+          "skor": 1,
+          "explanation": "Memindahkan anggota ke tim lain adalah solusi menghindar dan menghakimi latar belakang alih-alih menangani perilaku."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Menghormati perbedaan tidak berarti membiarkan dampak buruk; objektivitas menilai perilaku dan konsekuensinya, bukan latar belakang orangnya."
+    },
+    {
+      "nomor": 34,
+      "target_gap": "resource_politics",
+      "subtes": "jejaring_kerja",
+      "indikator": "kepentingan_organisasi_dan_negosiasi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Dua program prioritas bersaing mendapatkan kendaraan dinas. Program pertama memiliki jadwal pasti besok dan membutuhkan kendaraan untuk distribusi. Program kedua memiliki agenda lapangan yang penting tetapi masih dapat digeser dua hari.",
+      "pertanyaan": "Tindakan Anda sebagai pengelola sumber daya adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Memberikan kendaraan kepada program pertama karena jadwalnya lebih dekat.",
+          "skor": 4,
+          "explanation": "Memberikan kendaraan ke program pertama memperhitungkan tenggat yang dekat, tetapi belum mengeksplorasi penyesuaian jadwal program kedua."
+        },
+        {
+          "label": "B",
+          "teks": "Membagi waktu kendaraan secara sama rata agar kedua program memperoleh hak yang sama.",
+          "skor": 2,
+          "explanation": "Membagi waktu kendaraan sama rata mengabaikan kebutuhan dan jadwal masing-masing program."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta kedua unit bernegosiasi sendiri dan mengikuti hasil kesepakatan mereka.",
+          "skor": 3,
+          "explanation": "Meminta kedua unit bernegosiasi sendiri melepas peran pengelola sumber daya; hasil tidak dijamin adil."
+        },
+        {
+          "label": "D",
+          "teks": "Menetapkan kendaraan untuk kebutuhan yang paling sulit ditunda, membantu unit kedua menyesuaikan jadwal, dan mendokumentasikan dasar pembagiannya.",
+          "skor": 5,
+          "explanation": "Menetapkan kendaraan untuk kebutuhan paling sulit ditunda, membantu unit kedua menyesuaikan jadwal, dan mendokumentasikan dasar pembagian memperhitungkan opportunity cost dan transparansi."
+        },
+        {
+          "label": "E",
+          "teks": "Meminta pimpinan tertinggi memilih agar keputusan tidak menjadi tanggung jawab Anda.",
+          "skor": 1,
+          "explanation": "Meminta pimpinan tertinggi memilih melempar tanggung jawab pengelolaan sumber daya."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Distribusi sumber daya harus memperhitungkan opportunity cost dan reversibility, bukan sekadar membagi sama rata."
+    },
+    {
+      "nomor": 35,
+      "target_gap": "resource_politics",
+      "subtes": "profesionalisme",
+      "indikator": "prioritas_dan_kepentingan_organisasi",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Anda harus memilih lokasi pelatihan. Lokasi A lebih murah tetapi akses transportasinya sulit. Lokasi B lebih mahal tetapi mengurangi waktu perjalanan peserta secara signifikan. Anggaran masih memungkinkan keduanya.",
+      "pertanyaan": "Anda sebaiknya...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Memilih lokasi A karena penggunaan anggaran harus selalu ditekan serendah mungkin.",
+          "skor": 2,
+          "explanation": "Memilih lokasi A karena biaya terendah mengabaikan biaya transportasi dan kualitas pelatihan secara keseluruhan."
+        },
+        {
+          "label": "B",
+          "teks": "Memilih lokasi B karena kenyamanan peserta akan membuat pelatihan lebih baik.",
+          "skor": 3,
+          "explanation": "Memilih lokasi B karena kenyamanan peserta mengabaikan biaya; hanya melihat satu indikator."
+        },
+        {
+          "label": "C",
+          "teks": "Meminta peserta memilih lokasi yang mereka sukai.",
+          "skor": 1,
+          "explanation": "Meminta peserta memilih lokasi subjektif dan tidak berdasar analisis biaya maupun manfaat."
+        },
+        {
+          "label": "D",
+          "teks": "Membandingkan biaya total, waktu perjalanan, jumlah peserta terdampak, dan manfaat pelatihan sebelum menentukan pilihan.",
+          "skor": 5,
+          "explanation": "Membandingkan biaya total, waktu perjalanan, jumlah terdampak, dan manfaat pelatihan adalah total-cost thinking yang menyeluruh."
+        },
+        {
+          "label": "E",
+          "teks": "Memilih lokasi yang berada di tengah agar kompromi antarkepentingan mudah diterima.",
+          "skor": 4,
+          "explanation": "Memilih lokasi di tengah merupakan kompromi formal, tetapi belum tentu optimal secara biaya maupun waktu."
+        }
+      ],
+      "kunci": "D",
+      "microRule": "Pengelolaan sumber daya menuntut total-cost thinking, bukan satu indikator biaya atau kenyamanan."
+    },
+    {
+      "nomor": 36,
+      "target_gap": "second_order_consequences",
+      "subtes": "pelayanan_publik",
+      "indikator": "problem_solving_dan_perbaikan",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Untuk mengurangi antrean, unit Anda mengizinkan warga mengirim dokumen lebih awal melalui kanal daring. Antrean turun, tetapi setelah dua minggu banyak dokumen masuk terlalu dini dan harus diproses ulang ketika persyaratan berubah.",
+      "pertanyaan": "Langkah terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menghentikan kanal daring agar dokumen tidak lagi masuk terlalu awal.",
+          "skor": 2,
+          "explanation": "Menghentikan kanal daring membuang solusi pengurangan antrean hanya karena timing dokumen bermasalah."
+        },
+        {
+          "label": "B",
+          "teks": "Tetap membuka kanal daring karena tujuan mengurangi antrean sudah tercapai.",
+          "skor": 3,
+          "explanation": "Membiarkan kanal berjalan karena antrean turun mengabaikan backlog dokumen yang kadaluarsa saat persyaratan berubah."
+        },
+        {
+          "label": "C",
+          "teks": "Membatasi periode pengiriman dan memberi informasi mengenai masa berlaku persyaratan agar dokumen yang masuk lebih tepat waktu.",
+          "skor": 5,
+          "explanation": "Membatasi periode pengiriman dan memberi informasi masa berlaku persyaratan menjaga manfaat kanal sekaligus mengendalikan waktu masuk dokumen."
+        },
+        {
+          "label": "D",
+          "teks": "Meminta petugas memilah ulang seluruh dokumen masuk sebelum diproses.",
+          "skor": 4,
+          "explanation": "Meminta petugas memilah ulang seluruh dokumen menambah beban tanpa mencegah dokumen terlalu dini terulang."
+        },
+        {
+          "label": "E",
+          "teks": "Mewajibkan warga menunggu sampai semua persyaratan dipastikan tidak berubah.",
+          "skor": 1,
+          "explanation": "Mewajibkan warga menunggu sampai semua persyaratan pasti menunda layanan dan membebani warga tanpa dasar."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Perbaikan proses harus dievaluasi sampai efek tahap keduanya; mengurangi antrean dapat menciptakan backlog baru jika timing tidak dikendalikan."
+    },
+    {
+      "nomor": 37,
+      "target_gap": "second_order_consequences",
+      "subtes": "teknologi_informasi_dan_komunikasi",
+      "indikator": "kolaborasi_digital_dan_efektivitas",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Unit Anda membuat grup pesan instan untuk mempercepat koordinasi. Komunikasi memang lebih cepat, tetapi beberapa keputusan penting kini hanya tersimpan di percakapan yang sulit dilacak ketika anggota tim berganti.",
+      "pertanyaan": "Perbaikan yang paling tepat adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Menghentikan grup pesan instan dan kembali sepenuhnya ke email.",
+          "skor": 2,
+          "explanation": "Menghentikan grup pesan dan kembali penuh ke email menghilangkan kecepatan koordinasi yang sudah tercapai."
+        },
+        {
+          "label": "B",
+          "teks": "Mengingatkan anggota agar menyimpan percakapan penting masing-masing.",
+          "skor": 3,
+          "explanation": "Mengingatkan anggota menyimpan percakapan penting masing-masing tidak terstandar dan mudah hilang saat tim berganti."
+        },
+        {
+          "label": "C",
+          "teks": "Tetap menggunakan grup untuk koordinasi cepat, tetapi mewajibkan keputusan penting dicatat pada media kerja resmi yang mudah ditelusuri.",
+          "skor": 5,
+          "explanation": "Tetap memakai grup untuk koordinasi cepat tetapi mewajibkan keputusan penting dicatat di media kerja resmi melestarikan kecepatan sekaligus jejak yang mudah ditelusuri."
+        },
+        {
+          "label": "D",
+          "teks": "Menunjuk satu orang untuk merangkum seluruh percakapan setiap akhir hari.",
+          "skor": 4,
+          "explanation": "Menunjuk satu orang merangkum seluruh percakapan bergantung pada satu orang dan rawan tidak lengkap."
+        },
+        {
+          "label": "E",
+          "teks": "Membatasi grup hanya untuk anggota senior agar informasi lebih terkontrol.",
+          "skor": 1,
+          "explanation": "Membatasi grup untuk anggota senior mengabaikan anggota lain dan tidak menyelesaikan masalah jejak keputusan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Efisiensi komunikasi jangka pendek tidak boleh menciptakan kehilangan institutional memory dan traceability."
+    },
+    {
+      "nomor": 38,
+      "target_gap": "second_order_consequences",
+      "subtes": "profesionalisme",
+      "indikator": "akuntabilitas_dan_pembelajaran",
+      "kesulitan": "sangat_sulit",
+      "stimulus": "Anda menemukan kesalahan kecil dalam laporan yang sudah dikirim. Kesalahan tersebut tidak memengaruhi keputusan utama kali ini, tetapi pola yang sama dapat berdampak besar pada laporan berikutnya jika tidak diperbaiki.",
+      "pertanyaan": "Tindakan terbaik adalah...",
+      "pilihan": [
+        {
+          "label": "A",
+          "teks": "Membiarkannya karena dampaknya pada keputusan saat ini tidak signifikan.",
+          "skor": 1,
+          "explanation": "Membiarkan kesalahan tak berdampak signifikan mengabaikan pola yang bisa berdampak besar pada laporan berikutnya."
+        },
+        {
+          "label": "B",
+          "teks": "Memperbaiki file internal tanpa perlu memberi tahu pihak lain karena kesalahan sudah diketahui.",
+          "skor": 2,
+          "explanation": "Memperbaiki file internal tanpa konfirmasi pihak lain mengabaikan akuntabilitas atas laporan yang sudah dikirim."
+        },
+        {
+          "label": "C",
+          "teks": "Mencatat kesalahan, memperbaiki sumbernya, dan menilai apakah diperlukan koreksi resmi terhadap laporan yang telah dikirim.",
+          "skor": 5,
+          "explanation": "Mencatat kesalahan, memperbaiki sumbernya, dan menilai kebutuhan koreksi resmi mencegah pola kesalahan terulang sekaligus menjaga akuntabilitas."
+        },
+        {
+          "label": "D",
+          "teks": "Memberi tahu atasan bahwa ada kesalahan kecil dan menunggu instruksi berikutnya.",
+          "skor": 3,
+          "explanation": "Memberi tahu atasan lalu menunggu instruksi sebagian transparan, tetapi tanpa inisiatif penyelesaian masalah."
+        },
+        {
+          "label": "E",
+          "teks": "Mengoreksi laporan yang sudah dikirim agar semua dokumen memiliki angka yang sama.",
+          "skor": 4,
+          "explanation": "Mengoreksi laporan yang sudah dikirim segera menyelesaikan dokumen kini, tetapi belum memperbaiki sumber pola kesalahan."
+        }
+      ],
+      "kunci": "C",
+      "microRule": "Akuntabilitas bukan hanya memperbaiki output sekarang; ia mencegah pola kesalahan berulang dan menilai kebutuhan koreksi terhadap output yang sudah beredar."
+    }
+  ]
+}

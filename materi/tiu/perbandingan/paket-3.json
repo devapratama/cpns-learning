@@ -1,0 +1,327 @@
+{
+  "paket": 3,
+  "jenis": "perbandingan",
+  "jumlah_soal": 20,
+  "soal": [
+    {
+      "id": "P3-01",
+      "family": "RASIO DASAR",
+      "subpattern": "rasio dengan selisih diketahui",
+      "difficulty": "sedang-tinggi",
+      "soal": "Di sebuah toko, perbandingan jumlah buku A dan B adalah 5:3. Selisih jumlah keduanya 18 buku. Berapa jumlah buku A?",
+      "opsi": {
+        "A": "36",
+        "B": "54",
+        "C": "18",
+        "D": "27",
+        "E": "45"
+      },
+      "jawaban": "E",
+      "pembahasan": "Selisih bagian rasio = |5-3| = 2 bagian. Karena selisih nyata 18, satu bagian = 18/2 = 9. Maka A = 5×9 = 45."
+    },
+    {
+      "id": "P3-02",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "produksi sebanding",
+      "difficulty": "mudah",
+      "soal": "Sebuah lini produksi menghasilkan 240 botol dari 12 batch dengan kondisi tetap. Jika dijalankan 15 batch, berapa botol diperkirakan dihasilkan?",
+      "opsi": {
+        "A": "305",
+        "B": "480",
+        "C": "192",
+        "D": "300",
+        "E": "295"
+      },
+      "jawaban": "D",
+      "pembahasan": "Karena kondisi lain tetap, jumlah berubah dengan perbandingan yang sama. Hasil baru = 240×15/12 = 300 unit."
+    },
+    {
+      "id": "P3-03",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "resep / komposisi",
+      "difficulty": "mudah",
+      "soal": "Sebuah resep membutuhkan 6 butir telur untuk 24 porsi. Berapa telur yang diperlukan untuk 40 porsi dengan takaran sama?",
+      "opsi": {
+        "A": "9",
+        "B": "12",
+        "C": "18/5",
+        "D": "11",
+        "E": "10"
+      },
+      "jawaban": "E",
+      "pembahasan": "Semakin banyak porsi, bahan yang dibutuhkan bertambah dengan perbandingan yang sama. Untuk 40 porsi diperlukan 6×40/24 = 10 butir telur."
+    },
+    {
+      "id": "P3-04",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "jarak dan waktu pada kecepatan tetap",
+      "difficulty": "sedang",
+      "soal": "Sebuah bus menempuh 180 km dalam 3 jam dengan kecepatan tetap. Berapa jarak yang ditempuh dalam 4,5 jam?",
+      "opsi": {
+        "A": "268",
+        "B": "272",
+        "C": "270",
+        "D": "120",
+        "E": "183"
+      },
+      "jawaban": "C",
+      "pembahasan": "Kecepatan tetap, sehingga jarak sebanding dengan waktu. Jika 180 km ditempuh dalam 3 jam, untuk 9/2 jam jaraknya = 180 × 4,5 ÷ 3 = 270 km."
+    },
+    {
+      "id": "P3-05",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "pekerja dan waktu",
+      "difficulty": "mudah",
+      "soal": "Sebuah toko dapat menata seluruh stok dalam 12 jam dengan 5 petugas. Jika petugas menjadi 6 orang dengan kemampuan sama, berapa jam diperlukan?",
+      "opsi": {
+        "A": "11",
+        "B": "9",
+        "C": "60/7",
+        "D": "5/2",
+        "E": "10"
+      },
+      "jawaban": "E",
+      "pembahasan": "Pekerja bertambah berarti waktu yang dibutuhkan berkurang. Maka kita kalikan jumlah dan waktunya: 5×12 = 6×t. Maka t = 5×12/6 = 10."
+    },
+    {
+      "id": "P3-06",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "laju dan durasi",
+      "difficulty": "sedang",
+      "soal": "Sebuah mesin menghasilkan 480 unit dalam 16 jam. Jika laju mesin dinaikkan dari 30 unit/jam menjadi 40 unit/jam, berapa jam diperlukan untuk menghasilkan 480 unit yang sama?",
+      "opsi": {
+        "A": "11",
+        "B": "480/41",
+        "C": "75",
+        "D": "13",
+        "E": "12"
+      },
+      "jawaban": "E",
+      "pembahasan": "Beban pekerjaan sama, tetapi laju mesin naik dari 30 menjadi 40 unit per jam. Jadi 30×16 = 40×t. Maka t = 480÷40 = 12 jam."
+    },
+    {
+      "id": "P3-07",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "harga × jumlah × kualitas/ukuran",
+      "difficulty": "sulit",
+      "soal": "Sebuah katering mengeluarkan biaya Rp240.000 untuk 12 paket berukuran standar. Jika jumlah paket naik menjadi 15 dan ukuran tiap paket menjadi 20% lebih besar, dengan harga per ukuran dan paket sebanding, berapa biaya baru?",
+      "opsi": {
+        "A": "Rp480.000",
+        "B": "Rp720.000",
+        "C": "Rp360.000",
+        "D": "Rp241.000",
+        "E": "Rp240.000"
+      },
+      "jawaban": "C",
+      "pembahasan": "Jumlah paket naik dari 12 menjadi 15, jadi biaya dikali 15/12 = 5/4. Ukuran tiap paket naik 20%, jadi dikali 120/100 = 6/5. Maka biaya baru = Rp240.000 × 5/4 × 6/5 = Rp360.000."
+    },
+    {
+      "id": "P3-08",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "multi-variabel berbentuk verbal",
+      "difficulty": "sulit",
+      "soal": "Dua mobil menghabiskan 8 liter bahan bakar untuk perjalanan selama 4 jam. Jika jumlah mobil menjadi 3 dan lama perjalanan menjadi 6 jam, dengan konsumsi setiap mobil per jam tetap, berapa liter bahan bakar yang diperlukan?",
+      "opsi": {
+        "A": "20 liter",
+        "B": "18 liter",
+        "C": "16 liter",
+        "D": "24 liter",
+        "E": "12 liter"
+      },
+      "jawaban": "B",
+      "pembahasan": "Jumlah mobil berubah dari 2 menjadi 3, jadi kebutuhan dikali 3/2. Lama perjalanan berubah dari 4 menjadi 6 jam, juga dikali 3/2. Kebutuhan baru = 8×3/2×3/2 = 18 liter."
+    },
+    {
+      "id": "P3-09",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "dua kondisi multi-variabel",
+      "difficulty": "sulit",
+      "soal": "Sebuah toko menjual 120 paket dengan 4 kasir selama 6 jam. Jika jumlah kasir menjadi 5 dan jam layanan menjadi 8, dengan produktivitas per kasir per jam tetap, berapa banyak paket dapat dilayani?",
+      "opsi": {
+        "A": "190",
+        "B": "120",
+        "C": "220",
+        "D": "200",
+        "E": "210"
+      },
+      "jawaban": "D",
+      "pembahasan": "Jumlah kasir berubah dari 4 menjadi 5, jadi dikali 5/4. Waktu berubah dari 6 menjadi 8 jam, jadi dikali 8/6 = 4/3. Maka hasil baru = 120 × 5/4 × 4/3 = 200."
+    },
+    {
+      "id": "P3-10",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "fase dengan perubahan jumlah pekerja dan jam kerja",
+      "difficulty": "sulit",
+      "soal": "Sebuah produksi membutuhkan 520 unit pekerjaan. Pada fase pertama, 5 pekerja bekerja 6 jam dan menghasilkan 150 unit. Pada fase kedua, 4 pekerja bekerja 5 jam dan menghasilkan 100 unit. Jika sisa pekerjaan dikerjakan oleh 6 pekerja dengan kemampuan sama seperti pekerja pada fase kedua, berapa jam yang diperlukan?",
+      "opsi": {
+        "A": "7 jam",
+        "B": "8 jam",
+        "C": "9 jam",
+        "D": "10 jam",
+        "E": "11 jam"
+      },
+      "jawaban": "C",
+      "pembahasan": "Sudah selesai 150+100 = 250 unit. Sisa = 520−250 = 270 unit. Pada fase kedua, 4 pekerja selama 5 jam menghasilkan 100 unit, jadi 1 pekerja dalam 1 jam menghasilkan 100÷20 = 5 unit. Enam pekerja menghasilkan 30 unit per jam. Waktu yang diperlukan = 270÷30 = 9 jam."
+    },
+    {
+      "id": "P3-11",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "fase dengan produktivitas berbeda",
+      "difficulty": "sulit",
+      "soal": "Sebuah dapur produksi harus membuat 300 kotak makanan. Fase pertama menghasilkan 30 kotak/jam selama 4 jam, fase kedua 40 kotak/jam selama 3 jam, lalu fase ketiga berjalan 50 kotak/jam. Berapa jam fase ketiga diperlukan?",
+      "opsi": {
+        "A": "60 menit",
+        "B": "72 menit",
+        "C": "1 jam 12 menit",
+        "D": "90 menit",
+        "E": "2 jam"
+      },
+      "jawaban": "C",
+      "pembahasan": "Fase 1 menghasilkan 30 × 4 = 120 kotak. Fase 2 menghasilkan 40 × 3 = 120 kotak. Jadi sudah selesai 240 kotak dan tersisa 60 kotak. Dengan laju 50 kotak per jam, waktu yang diperlukan = 60 ÷ 50 = 1,2 jam = 1 jam 12 menit."
+    },
+    {
+      "id": "P3-12",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "laju gabungan dengan target parsial",
+      "difficulty": "sulit",
+      "soal": "Sebuah tim pengisian memiliki dua jalur yang masing-masing mampu mengisi 24 dan 16 botol per menit. Jika 200 botol sudah terisi dan target 800 botol, berapa menit lagi?",
+      "opsi": {
+        "A": "20",
+        "B": "15",
+        "C": "14",
+        "D": "25",
+        "E": "16"
+      },
+      "jawaban": "B",
+      "pembahasan": "Sisa botol = 800−200 = 600 botol. Kedua jalur bersama-sama mengisi 24+16 = 40 botol per menit. Jadi waktu tambahan = 600÷40 = 15 menit."
+    },
+    {
+      "id": "P3-13",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi harga",
+      "difficulty": "mudah",
+      "soal": "Sebanyak 8 buku berharga Rp96.000. Berapa harga rata-rata satu buku?",
+      "opsi": {
+        "A": "Rp11.000",
+        "B": "Rp13.000",
+        "C": "Rp8",
+        "D": "Rp96.000",
+        "E": "Rp12.000"
+      },
+      "jawaban": "E",
+      "pembahasan": "Harga satuan = Rp96.000/8 = Rp12.000 per unit."
+    },
+    {
+      "id": "P3-14",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel cukup/tidak cukup",
+      "difficulty": "sulit",
+      "soal": "Perhatikan tabel berikut. Sebuah sekolah menggunakan printer untuk mencetak lembar kerja. Berdasarkan data yang tersedia saja, apakah waktu pada kondisi II dapat ditentukan?\nTabel:\n| Kondisi | Printer | Hasil | Waktu (jam) |\n|---|---:|---:|---:|\n| I | 4 | 80 lembar | 5 |\n| II | 6 | 120 lembar | ? |",
+      "opsi": {
+        "A": "Hubungan tidak dapat ditentukan",
+        "B": "t₂ = 2t₁",
+        "C": "t₂ = t₁",
+        "D": "t₂ = 3/2 t₁",
+        "E": "t₂ = 2/3 t₁"
+      },
+      "jawaban": "A",
+      "pembahasan": "Kondisi I memberi data lengkap. Namun, soal tidak mengatakan bahwa kemampuan setiap printer pada kondisi II tetap sama. Jadi waktu kondisi II belum dapat ditentukan dengan pasti."
+    },
+    {
+      "id": "P3-15",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel rasio berantai",
+      "difficulty": "sedang-tinggi",
+      "soal": "Diketahui A:B = 3:5 dan B:C = 4:7. Tentukan perbandingan A:C.",
+      "opsi": {
+        "A": "12:35",
+        "B": "20:21",
+        "C": "7:12",
+        "D": "3:7",
+        "E": "15:28"
+      },
+      "jawaban": "A",
+      "pembahasan": "Samakan B. Samakan nilai B menjadi 20. Maka A=3×4=12 dan C=7×5=35. Jadi A:C = 12:35."
+    },
+    {
+      "id": "P3-16",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "hubungan tidak dapat ditentukan",
+      "difficulty": "sulit",
+      "soal": "X dan Y adalah jumlah dua persediaan positif. Diketahui X + Y = 20, tetapi tidak ada informasi lain tentang besar masing-masing. Manakah hubungan yang benar antara X dan Y?",
+      "opsi": {
+        "A": "2X > 3Y",
+        "B": "X = Y",
+        "C": "X > Y",
+        "D": "X < Y",
+        "E": "Hubungan tidak dapat ditentukan"
+      },
+      "jawaban": "E",
+      "pembahasan": "Data yang ada belum cukup. Ada beberapa kemungkinan nilai X dan Y, dan hubungannya bisa berbeda. Jadi hubungan X dan Y tidak dapat ditentukan."
+    },
+    {
+      "id": "P3-17",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "bentuk berbeda tetapi nilainya sama",
+      "difficulty": "sedang",
+      "soal": "Di sebuah toko, diketahui X = (m + 4) + (m + 6) dan Y = 2m + 10, dengan m bilangan positif. Manakah hubungan yang benar?",
+      "opsi": {
+        "A": "X < Y",
+        "B": "2X > 3Y",
+        "C": "Hubungan tidak dapat ditentukan",
+        "D": "X > Y",
+        "E": "X = Y"
+      },
+      "jawaban": "E",
+      "pembahasan": "Hitung X: (m+4)+(m+6) = 2m+10. Nilai ini sama dengan Y. Jadi X = Y."
+    },
+    {
+      "id": "P3-18",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "jumlah hewan dan persediaan waktu",
+      "difficulty": "sedang",
+      "soal": "Sebanyak 72 kg pakan cukup untuk 8 hewan selama 6 hari. Jika jumlah hewan menjadi 12 dan jumlah pakan tetap 72 kg, berapa hari pakan itu akan cukup?",
+      "opsi": {
+        "A": "9 hari",
+        "B": "4 hari",
+        "C": "3 hari",
+        "D": "6 hari",
+        "E": "5 hari"
+      },
+      "jawaban": "B",
+      "pembahasan": "Jumlah pakan tetap. Semula 8 hewan memerlukan 6 hari, sehingga pekerjaan konsumsi setara 8×6=48 hewan-hari. Untuk 12 hewan, lama = 48÷12 = 4 hari."
+    },
+    {
+      "id": "P3-19",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "target waktu diperpanjang",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah pekerjaan diperkirakan selesai oleh 8 pekerja dalam 15 jam. Setelah 5 jam bekerja, batas waktu total diperpanjang menjadi 21 jam sejak awal. Jika kemampuan setiap pekerja sama, berapa pekerja yang diperlukan untuk menyelesaikan sisanya tepat waktu?",
+      "opsi": {
+        "A": "4 pekerja",
+        "B": "8 pekerja",
+        "C": "7 pekerja",
+        "D": "5 pekerja",
+        "E": "6 pekerja"
+      },
+      "jawaban": "D",
+      "pembahasan": "Dalam 15 jam, 8 pekerja menyelesaikan seluruh pekerjaan. Jadi seluruh pekerjaan setara dengan 8 × 15 = 120 bagian kerja. Lima jam pertama selesai 8 × 5 = 40 bagian kerja. Sisa = 80 bagian kerja. Waktu yang tersedia sampai jam ke-21 adalah 16 jam. Jadi pekerja yang diperlukan = 80 ÷ 16 = 5 orang."
+    },
+    {
+      "id": "P3-20",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi konsumsi",
+      "difficulty": "sedang",
+      "soal": "Sebuah armada yang terdiri dari 5 mobil menggunakan 90 liter bahan bakar selama 3 hari. Jika pemakaian setiap mobil dan setiap hari sama, berapa liter bahan bakar yang digunakan per mobil per hari?",
+      "opsi": {
+        "A": "30",
+        "B": "5",
+        "C": "7",
+        "D": "18",
+        "E": "6"
+      },
+      "jawaban": "E",
+      "pembahasan": "Ada 5 mobil dan masing-masing digunakan selama 3 hari, sehingga ada 5×3 = 15 bagian pemakaian. Jadi pemakaian per mobil per hari = 90÷15 = 6 liter."
+    }
+  ]
+}

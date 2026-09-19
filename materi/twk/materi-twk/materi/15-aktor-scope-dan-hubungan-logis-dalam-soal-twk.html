@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul 15 — Aktor, Scope, dan Hubungan Logis dalam Soal TWK | Materi TWK | CPNS Learning</title>
+<meta name="description" content="Modul praktik membaca aktor, scope, level, objek, tujuan, relasi, sebab-akibat, proses-hasil, prinsip-implementasi dalam soal TWK dengan worked examples dan bedah opsi.">
+<style>
+:root{--ink:#17212b;--muted:#63717d;--line:#dfe5ea;--paper:#fff;--bg:#f4f6f8;--accent:#174a7a;--accent2:#2f709f;--soft:#edf4fa;--warm:#fff8e8;--good:#edf8f2;--bad:#fff1ef;--dark:#0f1923;--max:1120px;--shadow:0 10px 28px rgba(22,40,58,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.8}a{color:var(--accent)}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+.top{background:linear-gradient(135deg,#123b60,#2f709f);color:#fff;padding:64px 0 54px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.77rem;font-weight:800;opacity:.82}.top h1{font-size:clamp(2rem,4vw,3.25rem);line-height:1.1;margin:.35em 0 .3em;max-width:960px}.lead{font-size:1.1rem;max-width:900px;opacity:.95}.quote{margin-top:28px;padding:22px 24px;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.08);border-radius:16px;font-size:1.16rem;font-weight:800}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.nav .wrap{display:flex;gap:16px;overflow:auto;padding-top:10px;padding-bottom:10px}.nav a{white-space:nowrap;text-decoration:none;font-size:.86rem;color:#3d4a56}
+main{padding:36px 0 72px}section{background:var(--paper);border:1px solid var(--line);border-radius:18px;margin-bottom:24px;padding:35px 36px;box-shadow:var(--shadow)}section h2{font-size:1.7rem;line-height:1.25;margin:0 0 16px}section h3{font-size:1.15rem;line-height:1.35;margin:28px 0 10px}.intro{font-size:1.06rem}.story{border-left:4px solid var(--accent);padding:5px 0 5px 20px;margin:22px 0}.note{padding:18px 20px;border-radius:14px;background:var(--soft);margin:22px 0}.note.warm{background:var(--warm)}.note.good{background:var(--good)}.note.bad{background:var(--bad)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:24px 0}.flow .box{background:var(--soft);border:1px solid #cfe0ef;border-radius:13px;padding:15px;text-align:center;font-weight:850;position:relative}.flow .box:not(:last-child)::after{content:'→';position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:900}.grid2,.grid3{display:grid;gap:16px}.grid2{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}.card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}.label{display:inline-block;padding:4px 9px;background:var(--soft);border-radius:99px;color:var(--accent);font-size:.73rem;letter-spacing:.08em;text-transform:uppercase;font-weight:900}.card strong{color:var(--accent)}.term{font-weight:850;color:var(--accent)}
+.case{border:1px solid #cfd9e2;border-radius:16px;overflow:hidden;margin:22px 0;background:#fff}.case-head{background:#f4f7fa;padding:17px 19px;border-bottom:1px solid var(--line)}.case-head strong{color:var(--accent)}.case-body{padding:20px}.stem{font-size:1.06rem;background:#fbfcfd;border-left:4px solid #8aa8c1;padding:17px 18px;border-radius:10px;margin:14px 0}.question{font-weight:800;margin:16px 0}.option{padding:13px 14px;border:1px solid var(--line);border-radius:11px;margin:9px 0}.option .tag{font-size:.74rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:999px;margin-right:7px}.ok{background:var(--good);border-color:#b9dfca}.ok .tag{background:#cdebd8;color:#21643e}.no{background:#fff}.no .tag{background:#f2d6d0;color:#8c3428}.explain{padding:14px 15px;background:#f8fafc;border-radius:10px;margin:10px 0}.verdict{padding:15px 16px;border-radius:11px;background:var(--dark);color:#eef5fb;margin-top:14px}.verdict b{color:#bfe0ff}
+.matrix{display:grid;grid-template-columns:180px 1fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:22px 0}.matrix>div{padding:13px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.matrix .head{background:#f7f9fb;font-weight:900}.matrix>div:nth-last-child(-n+3){border-bottom:0}.matrix>div:nth-child(3n){border-right:0}
+.reason{background:var(--dark);color:#eef4f9;border-radius:16px;padding:22px;margin:22px 0}.reason .step{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}.reason .step:last-child{border-bottom:0}.reason b{color:#bfe0ff}.map{display:grid;gap:10px}.maprow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.mapbox{background:#f7f9fb;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-weight:850}.arrow{color:var(--accent);font-weight:900}
+.checkpoint{list-style:none;padding:0;counter-reset:item}.checkpoint li{counter-increment:item;margin:10px 0;padding:14px 16px 14px 54px;border:1px solid var(--line);border-radius:12px;position:relative}.checkpoint li:before{content:counter(item);position:absolute;left:16px;top:13px;width:27px;height:27px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:27px;font-size:.8rem;font-weight:900}.fine{font-size:.9rem;color:var(--muted)}.mini{font-size:.93rem;color:var(--muted)}
+@media(max-width:820px){section{padding:26px 21px}.grid2,.grid3{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.flow .box:not(:last-child)::after{content:'↓';right:auto;left:50%;top:auto;bottom:-20px;transform:translateX(-50%)}.matrix{grid-template-columns:1fr}.matrix>div{border-right:0}.matrix .head{margin-top:6px}.top{padding:48px 0 38px}}
+</style>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
+  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
+  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
+  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
+  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
+  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
+  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
+  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
+  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
+  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
+}
+
+/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
+.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
+.cpns-crumb a{color:var(--accent);text-decoration:none;}
+.cpns-crumb a:hover{text-decoration:underline;}
+.cpns-crumb .sep{color:var(--line);}
+.cpns-crumb .cur{color:var(--muted);}
+.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
+.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
+.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
+.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
+.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
+.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
+.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
+.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
+.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
+.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
+body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
+img{max-width:100%;height:auto;border-radius:8px;}
+table{max-width:100%;}
+@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
+
+</style>
+</head>
+<body>
+<nav class="cpns-crumb" aria-label="Breadcrumb">
+  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+  <a href="../../index.html">TWK</a><span class="sep">/</span>
+  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+  <span class="cur">Modul 15</span>
+</nav>
+<div class="cpns-progress"><span id="cpns-progress-bar"></span></div>
+
+<header class="top"><div class="wrap">
+<div class="eyebrow">Ultimate TWK Knowledge System · Modul 15 · Edisi Praktik</div>
+<h1>Aktor, Scope, dan Hubungan Logis dalam Soal TWK</h1>
+<p class="lead">Modul ini dibuat ulang setelah audit: fokusnya bukan lagi sekadar menjelaskan istilah, tetapi melatih Anda <strong>membongkar soal dan membandingkan opsi</strong>. Anda akan melihat kasus, membaca target pertanyaan, mengunci aktor dan cakupan, lalu menilai satu per satu mengapa sebuah opsi menang dan opsi lain kalah.</p>
+<div class="quote">“Kebijakan yang sama dapat terlihat benar jika aktornya benar, tetapi salah jika aktornya ditukar.”</div>
+</div></header>
+<nav class="nav"><div class="wrap">
+<a href="#awal">Masalah</a><a href="#mesin">Mesin baca</a><a href="#aktor">Aktor</a><a href="#scope">Scope</a><a href="#otoritas">Kewenangan</a><a href="#kasus1">Kasus 1</a><a href="#kasus2">Kasus 2</a><a href="#kasus3">Kasus 3</a><a href="#relasi">Relasi</a><a href="#kasus4">Kasus 4</a><a href="#twk">Corpus</a><a href="#protocol">Protocol</a><a href="#check">Checkpoint</a>
+</div></nav>
+<main class="wrap">
+<section id="awal">
+<h2>1. Mengapa konsep ini perlu dipraktikkan, bukan hanya didefinisikan?</h2>
+<p class="intro">Bayangkan sebuah pemerintah ingin memperbaiki layanan kesehatan. Banyak kalimat yang bisa terdengar benar: “masyarakat harus ikut”, “pemerintah memperbaiki layanan”, “negara menjamin kesehatan”, “petugas melayani warga”, “kebijakan meningkatkan kesejahteraan”. Semua dapat benar pada situasi tertentu. Masalah TWK muncul ketika pertanyaan hanya meminta <em>satu hubungan tertentu</em>.</p>
+<div class="story"><p>Misalnya stem sebenarnya berbicara tentang <strong>siapa yang memiliki kewenangan mengambil keputusan</strong>. Peserta yang hanya menangkap topik “kesehatan” dapat memilih jawaban yang terdengar paling baik. Peserta yang membaca struktur akan bertanya: <strong>siapa aktornya, apa tindakan yang dilakukan, siapa sasarannya, pada level apa, dan apakah aktor itu memang berwenang?</strong></p></div>
+<div class="flow"><div class="box">WHO<br><span class="mini">siapa?</span></div><div class="box">DOES WHAT<br><span class="mini">melakukan apa?</span></div><div class="box">TO WHOM<br><span class="mini">kepada siapa?</span></div><div class="box">FOR WHAT<br><span class="mini">untuk apa?</span></div><div class="box">AUTHORITY<br><span class="mini">berdasarkan apa?</span></div></div>
+<p>Inilah inti <span class="term">actor/scope lock</span>: sebelum menilai opsi, Anda mengunci struktur cerita. Istilah tersebut adalah istilah kerja dalam sistem belajar ini, bukan istilah resmi dalam peraturan.</p>
+<div class="note good"><strong>Perubahan utama dari modul lama:</strong> konsep akan segera dipakai untuk membedah kasus. Bukan “Aktor adalah…”, berhenti, lalu pindah topik. Polanya menjadi <strong>cerita → identifikasi → opsi → bedah → variasi kasus → transfer</strong>.</div>
+</section>
+
+<section id="mesin">
+<h2>2. Mesin baca yang akan kita gunakan sepanjang modul</h2>
+<p>Ketika Anda membuka soal, jangan langsung bertanya “topiknya apa?”. Anda perlu menemukan <strong>apa hubungan yang diminta</strong>. Gunakan urutan berikut:</p>
+<div class="matrix">
+<div class="head">Yang dicari</div><div class="head">Pertanyaan di kepala</div><div class="head">Kesalahan yang sering terjadi</div>
+<div><strong>Target</strong></div><div>Apa sebenarnya yang diminta?</div><div>Mengira kata topik otomatis merupakan jawaban.</div>
+<div><strong>Aktor</strong></div><div>Siapa pelaku tindakan utama?</div><div>Menukar pelaku dengan pihak yang terdampak.</div>
+<div><strong>Scope</strong></div><div>Seberapa luas dan pada level apa?</div><div>Jawaban terlalu luas atau terlalu sempit.</div>
+<div><strong>Objek</strong></div><div>Siapa/apa yang dikenai tindakan?</div><div>Objek diganti dengan tujuan.</div>
+<div><strong>Tujuan</strong></div><div>Apa yang hendak dicapai?</div><div>Tujuan disamakan dengan dampak yang benar-benar terjadi.</div>
+<div><strong>Relasi</strong></div><div>Sebab? akibat? proses? hasil? prinsip? penerapan?</div><div>Menjawab jenis hubungan yang berbeda.</div>
+<div><strong>Otoritas</strong></div><div>Apakah aktor punya kewenangan?</div><div>Mengira mampu = berwenang.</div>
+</div>
+<p class="note">Rumus ini sengaja dibuat sederhana. Anda tidak perlu menggunakan istilah teknis saat mengerjakan. Yang penting Anda dapat menunjuk <strong>variabel mana yang membuat opsi cocok atau tidak cocok</strong>.</p>
+</section>
+
+<section id="aktor">
+<h2>3. Aktor: bukan “siapa yang disebut”, tetapi “siapa yang melakukan tindakan utama”</h2>
+<p>Kata “pemerintah”, “DPR”, “Presiden”, “masyarakat”, “warga”, “negara”, atau “individu” mungkin muncul bersamaan. Tidak semuanya merupakan aktor utama. Aktor adalah pihak yang menjalankan tindakan yang menjadi pusat kalimat.</p>
+<div class="grid2">
+<div class="card"><span class="label">Contoh mudah</span><p><strong>“Warga mengajukan keberatan atas layanan.”</strong></p><p>Aktor = warga. Pemerintah bisa menjadi pihak yang dikritik, tetapi bukan pelaku tindakan dalam kalimat itu.</p></div>
+<div class="card"><span class="label">Contoh mudah</span><p><strong>“Dinas memperbaiki prosedur pelayanan.”</strong></p><p>Aktor = dinas. Warga adalah pihak yang terdampak atau dilayani.</p></div>
+</div>
+<h3>Pemerintah ≠ negara secara otomatis</h3>
+<p>Dalam percakapan sehari-hari kedua kata dapat saling menggantikan. Dalam soal ketatanegaraan, levelnya dapat berbeda. UUD NRI 1945 menempatkan Presiden sebagai pemegang kekuasaan pemerintahan menurut UUD; sementara istilah “negara” dapat menunjuk entitas kenegaraan yang lebih luas. citeturn572876search0</p>
+<div class="note warm"><strong>Jangan membuat shortcut:</strong> kalau stem menyebut “negara”, jangan otomatis mengubahnya menjadi “Presiden”. Kalau stem menyebut “pemerintah”, jangan otomatis menjadikannya seluruh unsur negara. Pertanyaan yang tepat adalah: <strong>aktor mana yang sedang menjalankan tindakan atau memegang kewajiban dalam konteks itu?</strong></div>
+</section>
+
+<section id="scope">
+<h2>4. Scope dan level: satu masalah bisa sama, tetapi cakupannya berubah</h2>
+<p><span class="term">Scope</span> adalah jangkauan pernyataan: siapa yang termasuk, wilayah mana, atau seberapa luas kesimpulan berlaku. <span class="term">Level</span> adalah tingkat pembacaan: individu, kelompok, masyarakat, daerah, nasional, atau antarnegara.</p>
+<div class="flow"><div class="box">INDIVIDU</div><div class="box">KELOMPOK</div><div class="box">MASYARAKAT</div><div class="box">DAERAH</div><div class="box">NASIONAL</div></div>
+<p>Contoh penting: “Puskesmas Kecamatan A meningkatkan layanan ibu dan anak.” Jawaban “meningkatkan layanan kesehatan nasional” tidak harus salah sebagai gagasan umum, tetapi dapat <strong>terlalu luas</strong> untuk stimulus yang hanya berbicara pada tingkat kecamatan. Inilah contoh “benar secara umum” tetapi bukan “paling tepat”.</p>
+<div class="grid2">
+<div class="card"><strong>Scope tepat</strong><p>“Kecamatan A memperbaiki akses layanan di wilayahnya.”</p><p class="mini">Cakupan mengikuti cerita.</p></div>
+<div class="card"><strong>Scope bergeser</strong><p>“Indonesia menyelesaikan seluruh persoalan kesehatan masyarakat dunia.”</p><p class="mini">Masalahnya bukan kalimat itu mustahil secara bahasa; masalahnya adalah ia keluar dari cakupan stimulus.</p></div>
+</div>
+</section>
+
+<section id="otoritas">
+<h2>5. Kewenangan: jawaban baik bisa tetap salah bila aktornya tidak punya otoritas</h2>
+<p><span class="term">Kewenangan</span> di sini berarti ruang tindakan atau keputusan yang secara sah dimiliki suatu aktor berdasarkan hukum atau kedudukannya. Ini berbeda dari <span class="term">kemampuan</span>: seseorang mungkin mampu melakukan sesuatu secara teknis, tetapi tidak berwenang melakukannya.</p>
+<div class="grid3">
+<div class="card"><strong>Hak</strong><p>Sesuatu yang dimiliki seseorang/kelompok menurut hukum atau konstitusi.</p></div>
+<div class="card"><strong>Kewenangan</strong><p>Ruang legal/institusional untuk bertindak atau memutus.</p></div>
+<div class="card"><strong>Kemampuan</strong><p>Kecakapan faktual untuk melakukan sesuatu.</p></div>
+</div>
+<p>Contoh sederhana: seorang siswa mungkin mampu membuat rancangan tata tertib sekolah, tetapi tidak berarti ia berwenang menetapkannya sebagai aturan resmi. Dalam soal, pergeseran seperti ini dapat menjadi inti distraktor.</p>
+</section>
+
+<section id="kasus1">
+<h2>6. Worked case 1 — Individu vs kelompok: topiknya sama, aktornya berbeda</h2>
+<p class="intro">Sekarang kita berhenti sejenak dari definisi. Kita bekerja seperti sedang mengerjakan soal.</p>
+<div class="case"><div class="case-head"><span class="label">Kasus latihan non-MCQ</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Setelah banjir, Sinta menyumbangkan sebagian uang tabungannya untuk membantu warga terdampak. Di sisi lain, karang taruna di lingkungan Sinta mengumpulkan pakaian layak pakai dari warga untuk dibagikan kepada korban.</div>
+<div class="question">Pertanyaan: bila yang dicari adalah <strong>aktor utama pada tindakan pertama</strong>, bagaimana Anda memetakannya?</div>
+<div class="option ok"><span class="tag">Cocok</span><strong>Individu.</strong> Sinta adalah pelaku tindakan pertama.</div>
+<div class="option no"><span class="tag">Tidak tepat</span><strong>Kelompok masyarakat.</strong> Ini bisa cocok untuk tindakan kedua, tetapi bukan tindakan pertama.</div>
+<div class="option no"><span class="tag">Tidak tepat</span><strong>Pemerintah.</strong> Pemerintah tidak menjadi pelaku tindakan dalam bagian pertama stimulus.</div>
+<div class="explain"><strong>Kenapa?</strong> Perhatikan kata kerja: “Sinta menyumbangkan”. Pelaku langsungnya adalah Sinta. Fakta bahwa penerima adalah warga terdampak tidak mengubah aktornya.</div>
+<div class="verdict"><b>Pelajaran:</b> jangan memilih aktor berdasarkan siapa yang dianggap paling penting dalam cerita. Pilih berdasarkan <strong>siapa yang melakukan tindakan yang sedang ditanyakan</strong>.</div>
+</div></div>
+<h3>Ubah satu bagian cerita</h3>
+<div class="stem"><strong>Versi B:</strong> “Karang taruna menyumbangkan dana yang dikumpulkan dari warga untuk korban banjir.”</div>
+<p>Sekarang aktornya menjadi <strong>kelompok</strong>. Tindakan terlihat mirip: sama-sama memberi bantuan. Hanya satu variabel yang berubah: subjek tindakan.</p>
+<div class="note good"><strong>Kesimpulan:</strong> topik “bantuan bencana” tidak menentukan aktor. <strong>Subjek + kata kerja tindakan</strong> yang menentukannya.</div>
+</section>
+
+<section id="kasus2">
+<h2>7. Worked case 2 — Masyarakat vs pemerintah: jangan menukar pelaku dengan penyelenggara</h2>
+<div class="case"><div class="case-head"><span class="label">Kasus latihan non-MCQ</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Kelompok warga mengumpulkan keluhan tentang lamanya pelayanan administrasi dan menyampaikannya dalam forum musyawarah. Setelah menerima keluhan itu, pemerintah daerah memperbaiki alur pelayanan dan menambah petugas pada jam padat.</div>
+<div class="question">Pertanyaan: bila pertanyaan menanyakan <strong>tindakan pemerintah daerah</strong>, bagian mana yang menjadi pusat?</div>
+<div class="option ok"><span class="tag">Cocok</span><strong>Memperbaiki alur pelayanan dan menambah petugas.</strong></div>
+<div class="option no"><span class="tag">Near miss</span><strong>Menyampaikan keluhan dalam forum.</strong> Tindakan ini benar terjadi, tetapi dilakukan warga.</div>
+<div class="option no"><span class="tag">Near miss</span><strong>Mengawasi pemerintah.</strong> Ini bisa menggambarkan fungsi kontrol warga secara umum, tetapi bukan tindakan pemerintah yang disebut stimulus.</div>
+<div class="option no"><span class="tag">Salah relasi</span><strong>Meningkatkan partisipasi masyarakat.</strong> Itu mungkin tujuan/dampak tertentu, bukan tindakan konkret pemerintah yang ditanyakan.</div>
+<div class="explain"><strong>Bedahnya:</strong> ada banyak konsep dalam satu cerita: partisipasi warga, pelayanan publik, respons pemerintah, dan perubahan prosedur. Tetapi pertanyaan mengunci aktor pada <strong>pemerintah daerah</strong> dan meminta tindakannya.</div>
+</div></div>
+<div class="reason"><div class="step"><b>Stimulus</b> → ada keluhan dan respons.</div><div class="step"><b>Aktor yang dikunci</b> → pemerintah daerah.</div><div class="step"><b>Does what?</b> → memperbaiki alur + menambah petugas.</div><div class="step"><b>Near miss</b> → keluhan warga; benar tetapi aktornya salah untuk target.</div><div class="step"><b>Kesimpulan</b> → pilih relasi aktor → tindakan yang paling langsung.</div></div>
+</section>
+
+<section id="kasus3">
+<h2>8. Worked case 3 — Pemerintah vs negara: satu kalimat dapat memindahkan level aktor</h2>
+<div class="case"><div class="case-head"><span class="label">Kasus latihan non-MCQ</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Berdasarkan UUD NRI 1945, Presiden memegang kekuasaan pemerintahan menurut UUD. Pada konteks lain, konstitusi menyatakan bahwa negara bertanggung jawab atas perlindungan, pemajuan, penegakan, dan pemenuhan HAM, terutama pemerintah.</div>
+<div class="question">Pertanyaan: apa yang harus diperhatikan sebelum memilih opsi?</div>
+<div class="option ok"><span class="tag">Langkah</span><strong>Identifikasi subjek kalimat normatif.</strong> Apakah norma berbicara tentang Presiden sebagai pemegang kekuasaan pemerintahan, atau tentang negara sebagai subjek kewajiban yang lebih luas?</div>
+<div class="option no"><span class="tag">Jebakan</span><strong>Menganggap “negara” selalu berarti Presiden.</strong> Ini menghapus perbedaan level aktor.</div>
+<div class="option no"><span class="tag">Jebakan</span><strong>Menganggap “pemerintah” selalu mencakup semua lembaga negara.</strong> Ini terlalu luas.</div>
+<div class="explain">UUD NRI 1945 menyebut Presiden sebagai pemegang kekuasaan pemerintahan pada Pasal 4 ayat (1). Pada Pasal 28I ayat (4), perlindungan, pemajuan, penegakan, dan pemenuhan HAM adalah tanggung jawab negara, terutama pemerintah. Jadi, kata subjek dalam norma perlu dibaca apa adanya. citeturn572876search0</div>
+</div></div>
+<div class="note warm"><strong>Inti:</strong> dalam soal berbasis pasal, jangan hanya mencari kata yang mirip dengan opsi. Cari <strong>subjek normanya</strong> dan jangan memperluas atau mempersempit aktor tanpa dasar.</div>
+</section>
+
+<section id="kasus4">
+<h2>9. Worked case 4 — DPR vs Presiden: topiknya sama, fungsinya tidak sama</h2>
+<p>Kasus ketatanegaraan adalah tempat actor lock menjadi sangat berguna karena dua aktor bisa muncul dalam satu proses.</p>
+<div class="case"><div class="case-head"><span class="label">Kasus latihan non-MCQ</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Sebuah rancangan undang-undang dibahas oleh DPR dan Presiden untuk memperoleh persetujuan bersama. DPR memiliki fungsi legislasi, anggaran, dan pengawasan.</div>
+<div class="question">Pertanyaan: bila targetnya adalah <strong>fungsi DPR yang menjadi pusat pembahasan</strong>, mana yang paling langsung?</div>
+<div class="option ok"><span class="tag">Cocok</span><strong>Fungsi legislasi.</strong> Pembentukan undang-undang dan pembahasan RUU adalah relasi yang langsung dengan stimulus.</div>
+<div class="option no"><span class="tag">Benar tetapi bukan pusat</span><strong>Fungsi pengawasan.</strong> Ini memang fungsi DPR, tetapi tidak menjadi tindakan yang sedang disorot dalam stimulus.</div>
+<div class="option no"><span class="tag">Benar tetapi aktor berbeda</span><strong>Presiden memegang kekuasaan pemerintahan.</strong> Benar secara konstitusional, tetapi bukan fungsi DPR yang ditanyakan.</div>
+<div class="option no"><span class="tag">Level bergeser</span><strong>DPR mewakili seluruh negara dalam semua urusan pemerintahan.</strong> Terlalu luas dan menghapus pembagian fungsi.</div>
+<div class="explain">Pasal 20 menyatakan DPR memegang kekuasaan membentuk undang-undang dan RUU dibahas oleh DPR dan Presiden untuk persetujuan bersama. Pasal 20A menyebut fungsi legislasi, anggaran, dan pengawasan. Karena target soal adalah <strong>fungsi DPR yang terkait dengan proses RUU</strong>, fungsi legislasi memiliki hubungan paling langsung. citeturn572876search0</div>
+<div class="verdict"><b>Pelajaran:</b> satu aktor dapat memiliki beberapa fungsi. “Benar tentang DPR” belum cukup. Kita harus menanyakan: <strong>fungsi DPR yang mana, dalam relasi yang mana?</strong></div>
+</div></div>
+</section>
+
+<section id="daerah">
+<h2>10. Worked case 5 — Daerah vs nasional: jangan kalah oleh jawaban yang terlalu besar</h2>
+<div class="case"><div class="case-head"><span class="label">Kasus latihan non-MCQ</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Pemerintah Kabupaten Z memperbaiki sistem antrean di rumah sakit milik daerah agar pasien tidak menunggu terlalu lama.</div>
+<div class="question">Pertanyaan: bila ditanya <strong>level kebijakan yang sedang digambarkan</strong>, bagaimana Anda memetakannya?</div>
+<div class="option ok"><span class="tag">Cocok</span><strong>Daerah.</strong> Aktor dan objek kebijakan berada pada lingkungan pemerintah daerah dan layanan daerah.</div>
+<div class="option no"><span class="tag">Terlalu luas</span><strong>Kebijakan kesehatan nasional.</strong> Dapat relevan sebagai konteks besar, tetapi bukan level yang langsung digambarkan stimulus.</div>
+<div class="option no"><span class="tag">Terlalu sempit</span><strong>Keputusan pribadi satu pasien.</strong> Stimulus membahas kebijakan penyelenggaraan layanan.</div>
+<div class="explain"><strong>Kenapa “nasional” tidak otomatis lebih baik?</strong> Karena soal bukan sedang menilai seberapa mulia atau luas jawaban. Ia sedang menilai kecocokan scope.</div>
+</div></div>
+</section>
+
+<section id="hak">
+<h2>11. Worked case 6 — Hak individu vs kepentingan umum: jangan berhenti pada slogan</h2>
+<div class="case"><div class="case-head"><span class="label">Kasus latihan non-MCQ</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Sebuah pemerintah menerapkan pembatasan tertentu pada penggunaan ruang publik berdasarkan aturan yang ditetapkan dengan undang-undang untuk menjaga ketertiban umum dan hak orang lain.</div>
+<div class="question">Pertanyaan: apa hubungan logis yang harus dibaca?</div>
+<div class="option ok"><span class="tag">Cocok</span><strong>Pelaksanaan hak memiliki batas yang ditetapkan hukum dalam kondisi yang dibenarkan Pasal 28J.</strong></div>
+<div class="option no"><span class="tag">Terlalu absolut</span><strong>Kepentingan umum selalu mengalahkan hak individu.</strong> Tidak tepat karena pembatasan hak memiliki dasar dan tujuan yang ditentukan.</div>
+<div class="option no"><span class="tag">Terlalu absolut</span><strong>Hak individu tidak boleh dibatasi dalam keadaan apa pun.</strong> Juga terlalu luas; Pasal 28J justru mengatur pembatasan tertentu.</div>
+<div class="explain">Pasal 28J menyatakan setiap orang wajib menghormati HAM orang lain dan pelaksanaan hak/kebebasan tunduk pada pembatasan yang ditetapkan dengan undang-undang untuk tujuan yang ditentukan. citeturn572876search0</div>
+</div></div>
+<div class="note good"><strong>Pola yang dicari:</strong> jangan memilih slogan “hak” atau “kepentingan umum” secara otomatis. Identifikasi <strong>aktor → hak yang digunakan → pembatasan → dasar hukum → tujuan pembatasan</strong>.</div>
+</section>
+
+<section id="relasi">
+<h2>12. Sekarang bedakan hubungan: sebab, akibat, proses, hasil, tujuan, dampak, prinsip, implementasi</h2>
+<p>Setelah aktor dan scope terkunci, masih ada sumber kesalahan lain: Anda mungkin memilih <em>jenis jawaban yang benar tetapi menjawab pertanyaan yang berbeda</em>.</p>
+<div class="grid2">
+<div class="card"><strong>Sebab</strong><p>Apa yang memicu atau menjelaskan terjadinya sesuatu?</p><p><strong>Contoh:</strong> data penerima bantuan tidak akurat → perlu verifikasi.</p></div>
+<div class="card"><strong>Akibat</strong><p>Apa yang terjadi sebagai konsekuensi?</p><p><strong>Contoh:</strong> data tidak akurat → penyaluran bantuan dapat salah sasaran.</p></div>
+<div class="card"><strong>Proses</strong><p>Langkah/rangkaian tindakan menuju tujuan.</p><p><strong>Contoh:</strong> verifikasi → pembaruan data → pengecekan ulang.</p></div>
+<div class="card"><strong>Hasil/outcome</strong><p>Keadaan yang tercapai setelah proses.</p><p><strong>Contoh:</strong> data lebih sesuai dengan kondisi penerima.</p></div>
+<div class="card"><strong>Tujuan</strong><p>Apa yang hendak dicapai.</p><p><strong>Contoh:</strong> bantuan menjadi tepat sasaran.</p></div>
+<div class="card"><strong>Dampak</strong><p>Apa yang benar-benar muncul setelah tindakan; dapat sesuai atau tidak sesuai tujuan.</p><p><strong>Contoh:</strong> waktu pelayanan turun setelah digitalisasi.</p></div>
+<div class="card"><strong>Prinsip</strong><p>Gagasan dasar yang menjadi arah normatif.</p><p><strong>Contoh:</strong> perlakuan setara.</p></div>
+<div class="card"><strong>Implementasi</strong><p>Penerapan prinsip dalam tindakan konkret.</p><p><strong>Contoh:</strong> petugas menerapkan prosedur yang sama kepada warga tanpa diskriminasi yang tidak sah.</p></div>
+</div>
+<h3>Satu cerita, delapan target</h3>
+<div class="stem"><strong>Cerita:</strong> Pemerintah daerah menemukan proses perizinan terlalu lama. Sistem dibuat digital. Petugas dilatih. Waktu pengurusan kemudian turun dari beberapa hari menjadi lebih singkat.</div>
+<div class="matrix">
+<div class="head">Kalau ditanya…</div><div class="head">Pusat jawaban</div><div class="head">Bukan pusatnya</div>
+<div><strong>Sebab</strong></div><div>Proses lama/masalah yang memicu perubahan.</div><div>Waktu pengurusan yang turun.</div>
+<div><strong>Proses</strong></div><div>Digitalisasi + pelatihan petugas.</div><div>Waktu pengurusan turun.</div>
+<div><strong>Tujuan</strong></div><div>Mempercepat/meningkatkan pelayanan.</div><div>Fakta bahwa waktu benar-benar turun.</div>
+<div><strong>Dampak</strong></div><div>Waktu pengurusan menjadi lebih singkat.</div><div>Tujuan sebelum pelaksanaan.</div>
+<div><strong>Prinsip</strong></div><div>Gagasan pelayanan yang efektif/efisien sesuai konteks.</div><div>Langkah teknis digitalisasi.</div>
+<div><strong>Implementasi</strong></div><div>Menerapkan sistem digital.</div><div>“Pelayanan menjadi lebih baik” yang masih terlalu umum.</div>
+</div>
+</section>
+
+<section id="reasoning">
+<h2>13. Worked reasoning penuh: dari stimulus sampai eliminasi opsi</h2>
+<div class="case"><div class="case-head"><span class="label">Kasus utama</span></div><div class="case-body">
+<div class="stem"><strong>Stimulus:</strong> Pemerintah daerah menerima laporan bahwa sebagian penerima bantuan sosial sudah tidak memenuhi kriteria. Dinas terkait melakukan verifikasi lapangan, memperbarui basis data, membuka kanal pengaduan, lalu menyalurkan bantuan berdasarkan data yang telah diperbaiki.</div>
+<div class="question">Pertanyaan non-MCQ: “Bagaimana Anda memetakan kasus ini jika pertanyaannya meminta <strong>proses yang dilakukan pemerintah daerah</strong>?”</div>
+</div></div>
+<div class="reason">
+<div class="step"><b>1 · Stimulus</b><br>Ada masalah ketepatan penerima bantuan.</div>
+<div class="step"><b>2 · Fakta penting</b><br>Ada laporan, verifikasi, pembaruan data, kanal pengaduan, lalu penyaluran.</div>
+<div class="step"><b>3 · Aktor</b><br>Pemerintah daerah/dinas terkait.</div>
+<div class="step"><b>4 · Scope</b><br>Program bantuan sosial daerah yang sedang dibahas, bukan seluruh kebijakan kesejahteraan nasional.</div>
+<div class="step"><b>5 · Objek</b><br>Data dan penyaluran bantuan.</div>
+<div class="step"><b>6 · Tujuan</b><br>Menyalurkan bantuan berdasarkan data yang lebih tepat.</div>
+<div class="step"><b>7 · Relasi</b><br>Masalah data → verifikasi/pembaruan → penyaluran.</div>
+<div class="step"><b>8 · Konsep kandidat</b><br>Proses administratif, akuntabilitas pelayanan, ketepatan sasaran.</div>
+<div class="step"><b>9 · Konsep tetangga</b><br>Tujuan, hasil, dampak, prinsip.</div>
+<div class="step"><b>10 · Jika opsi A berkata “verifikasi dan pembaruan data”</b><br>Relasinya cocok dengan <strong>proses</strong>.</div>
+<div class="step"><b>11 · Jika opsi B berkata “bantuan menjadi tepat sasaran”</b><br>Ini lebih dekat ke <strong>hasil/tujuan</strong>, bukan proses.</div>
+<div class="step"><b>12 · Jika opsi C berkata “pemerintah menunjukkan tanggung jawab”</b><br>Masuk akal sebagai penilaian normatif, tetapi terlalu abstrak untuk target proses.</div>
+<div class="step"><b>13 · Jika opsi D berkata “masyarakat mengawasi pemerintah”</b><br>Konsep partisipasi/akuntabilitas bisa relevan, tetapi aktor dan tindakan bergeser.</div>
+<div class="step"><b>14 · Kesimpulan</b><br>Jawaban paling tepat adalah yang mempertahankan <strong>aktor + scope + relasi proses</strong> sekaligus.</div>
+</div>
+<div class="note good"><strong>Inilah yang harus mulai otomatis:</strong> Anda tidak lagi bertanya “opsi mana yang paling bagus?”. Anda bertanya “opsi mana yang memenuhi struktur yang diminta?”</div>
+</section>
+
+<section id="corpus">
+<h2>14. Mengapa cara ini sesuai dengan pola corpus 600?</h2>
+<p>Analisis corpus yang menjadi peta pembangunan modul menunjukkan pola penting: topik yang benar belum tentu menghasilkan jawaban yang benar karena <strong>aktor, scope, atau relasi</strong> dapat bergeser. Corpus juga secara eksplisit memetakan <strong>actor/entity → function</strong>, <strong>wrong actor</strong>, <strong>wrong scope</strong>, dan <strong>process/result</strong> sebagai mekanisme pembeda. fileciteturn19file6L613-L615 fileciteturn19file6L877-L904</p>
+<p>Pada soal kelembagaan, misalnya, peserta diarahkan untuk menghubungkan lembaga dengan fungsi yang memang dimiliki. Pada soal bela negara, corpus memperlihatkan bahwa tindakan yang benar secara umum dapat kalah ketika stem menuntut domain yang lebih spesifik. fileciteturn20file1L330-L370 fileciteturn18file4L430-L448</p>
+<div class="note warm"><strong>Catatan penting:</strong> corpus adalah peta konstruksi dan pembeda jawaban, bukan sumber hukum. Karena itu, contoh kelembagaan di modul ini diperiksa terhadap UUD NRI 1945 resmi. citeturn572876search0</div>
+</section>
+
+<section id="protocol">
+<h2>15. Actor/Scope Lock Protocol — lakukan sebelum menilai opsi</h2>
+<p>Setelah berlatih, protokol ini harus terasa seperti kebiasaan, bukan hafalan.</p>
+<div class="flow"><div class="box">TARGET</div><div class="box">WHO</div><div class="box">DOES WHAT</div><div class="box">SCOPE</div><div class="box">RELATION</div></div>
+<div class="grid3">
+<div class="card"><strong>Langkah 1 — Target</strong><p>Apakah soal meminta aktor, fungsi, proses, hasil, tujuan, dampak, prinsip, atau implementasi?</p></div>
+<div class="card"><strong>Langkah 2 — WHO</strong><p>Tuliskan pelaku utama dengan satu kata/frasa.</p></div>
+<div class="card"><strong>Langkah 3 — DOES WHAT</strong><p>Ambil kata kerja utamanya.</p></div>
+<div class="card"><strong>Langkah 4 — Scope</strong><p>Individu, kelompok, daerah, nasional, atau lainnya?</p></div>
+<div class="card"><strong>Langkah 5 — Relation</strong><p>Hubungan apa yang diminta dan arahnya ke mana?</p></div>
+<div class="card"><strong>Langkah 6 — Authority</strong><p>Bila aktor institusional, periksa apakah tindakan tersebut memang berada dalam kewenangannya.</p></div>
+</div>
+<div class="note good"><strong>Baru setelah itu buka opsi.</strong> Dengan urutan ini, opsi tidak “mengajari” Anda bagaimana membaca stem. Anda sudah menentukan struktur stem lebih dahulu.</div>
+<h3>Uji tiga detik saat dua opsi sama-sama terlihat benar</h3>
+<p>Tanyakan berurutan:</p>
+<p><span class="label">AKTOR?</span> <span class="label">SCOPE?</span> <span class="label">RELASI?</span> <span class="label">LEVEL JAWABAN?</span> <span class="label">LANGSUNG?</span></p>
+<p>Hampir selalu pertanyaan terakhir bukan “mana yang paling bagus?”, tetapi <strong>“mana yang paling langsung memenuhi target?”</strong></p>
+</section>
+
+<section id="misconception">
+<h2>16. Kesalahan yang sekarang harus bisa Anda lihat sendiri</h2>
+<div class="grid2">
+<div class="card"><strong>“Ada kata DPR, berarti jawaban tentang DPR pasti benar.”</strong><p>Tidak. DPR bisa hanya disebut sebagai bagian dari konteks. Anda harus memastikan fungsi dan relasinya.</p></div>
+<div class="card"><strong>“Jawaban paling luas pasti paling lengkap.”</strong><p>Tidak. Jawaban dapat keluar dari scope stimulus.</p></div>
+<div class="card"><strong>“Tujuan dan dampak sama.”</strong><p>Tidak. Tujuan adalah yang hendak dicapai; dampak adalah yang terjadi akibat tindakan.</p></div>
+<div class="card"><strong>“Proses dan hasil sama saja.”</strong><p>Tidak. Proses adalah perjalanan/tahapan; hasil adalah keadaan yang dicapai.</p></div>
+<div class="card"><strong>“Kalau moralnya bagus, aktor dan kewenangan tidak penting.”</strong><p>Untuk soal kelembagaan justru aktor dan kewenangan dapat menjadi titik pembeda.</p></div>
+<div class="card"><strong>“Kata kunci sudah cukup.”</strong><p>Tidak. Kata kunci dapat menunjukkan topik, tetapi belum tentu menunjukkan gravity center. Sistem ini memang menghindari shortcut berbasis satu kata. fileciteturn19file5L549-L588</p></div>
+</div>
+</section>
+
+<section id="map">
+<h2>17. Peta konsep: apa yang sebenarnya Anda lakukan ketika mengerjakan soal?</h2>
+<div class="map">
+<div class="maprow"><div class="mapbox">STIMULUS</div><div class="arrow">→</div><div class="mapbox">TARGET</div><div class="arrow">→</div><div class="mapbox">AKTOR</div></div>
+<div class="maprow"><div class="mapbox">AKTOR</div><div class="arrow">→</div><div class="mapbox">TINDAKAN</div><div class="arrow">→</div><div class="mapbox">OBJEK</div></div>
+<div class="maprow"><div class="mapbox">SCOPE / LEVEL</div><div class="arrow">→</div><div class="mapbox">BATAS CERITA</div></div>
+<div class="maprow"><div class="mapbox">TUJUAN</div><span>+</span><div class="mapbox">SEBAB</div><span>+</span><div class="mapbox">AKIBAT</div></div>
+<div class="maprow"><div class="mapbox">PROSES</div><div class="arrow">→</div><div class="mapbox">HASIL</div></div>
+<div class="maprow"><div class="mapbox">PRINSIP</div><div class="arrow">→</div><div class="mapbox">IMPLEMENTASI</div></div>
+<div class="maprow"><div class="mapbox">CEK OTORITAS</div><div class="arrow">→</div><div class="mapbox">BANDINGKAN OPSI</div><div class="arrow">→</div><div class="mapbox">PALING TEPAT</div></div>
+</div>
+<div class="note"><strong>Definisi praktis “paling tepat”:</strong> jawaban yang paling sesuai dengan target pertanyaan sekaligus cocok pada aktor, scope, dan hubungan yang sedang diminta. Bukan otomatis yang paling panjang, paling umum, atau paling indah.</div>
+</section>
+
+<section id="check">
+<h2>18. Checkpoint — apakah Anda sekarang bisa menjalankan mesinnya?</h2>
+<p>Jangan jawab dengan definisi. Jawab dengan kasus.</p>
+<ol class="checkpoint">
+<li>Dalam sebuah cerita, pemerintah daerah memperbaiki layanan setelah menerima aduan warga. Tunjukkan mana aktor warga dan mana aktor pemerintah.</li>
+<li>Ambil satu kasus yang sama, lalu ubah hanya aktornya dari pemerintah menjadi individu. Jelaskan apa yang berubah secara hukum/logis.</li>
+<li>Berikan contoh jawaban yang <strong>benar secara umum</strong> tetapi terlalu luas untuk scope stimulus.</li>
+<li>Ambil satu cerita yang memiliki tujuan baik. Tunjukkan perbedaan antara tujuan dan dampaknya.</li>
+<li>Ambil satu proses kebijakan. Pisahkan tahapan proses dari hasil akhirnya.</li>
+<li>Buat contoh sederhana di mana aktor mampu melakukan sesuatu tetapi tidak otomatis berwenang.</li>
+<li>Pada kasus DPR dan Presiden, jelaskan mengapa keberadaan dua aktor tidak berarti fungsi keduanya sama.</li>
+<li>Pada kasus hak individu dan kepentingan umum, jelaskan mengapa slogan “kepentingan umum harus menang” terlalu sederhana.</li>
+<li>Ambil satu soal TWK yang pernah Anda kerjakan. Sebelum melihat opsi, tuliskan: <strong>target → aktor → tindakan → scope → relasi</strong>.</li>
+<li>Setelah melihat opsi, jangan hanya tandai benar/salah. Sebutkan <strong>mengapa</strong> opsi yang salah gagal: aktor? scope? relasi? level? proses/hasil? prinsip/implementasi?</li>
+</ol>
+<div class="quote" style="background:var(--soft);color:var(--ink);border:1px solid var(--line)">Uji terakhir: ketika lima opsi semuanya terdengar baik, Anda seharusnya tidak panik. Anda cukup mencari <strong>variabel yang berbeda</strong> dan mengunci variabel itu satu per satu.</div>
+</section>
+
+<section id="sources">
+<h2>19. Sumber dan catatan metodologis</h2>
+<p>Modul ini dibangun ulang berdasarkan audit terhadap corpus 600 dan desain pedagogis Ultimate TWK. Corpus dipakai terutama untuk menemukan pola <strong>relation over topic, actor/entity → function, wrong actor, wrong scope, process/result, principle/application</strong>, serta kecenderungan distractor yang tetap relevan secara topik tetapi bergeser secara relasi. fileciteturn19file6L613-L615 fileciteturn19file7L627-L703</p>
+<p>Fakta kelembagaan yang digunakan sebagai contoh diperiksa terhadap UUD NRI 1945 pada JDIH DPR RI, termasuk Pasal 1, Pasal 4, Pasal 18, Pasal 20, Pasal 20A, Pasal 28J, dan Pasal 30. citeturn572876search0</p>
+<div class="note warm"><strong>Catatan:</strong> istilah seperti <em>actor/scope lock</em>, <em>gravity center</em>, dan “directness” adalah istilah operasional dalam sistem belajar ini. Jangan menghafalnya sebagai terminologi hukum. Yang perlu Anda kuasai adalah cara menemukan <strong>siapa → melakukan apa → pada scope apa → untuk tujuan apa → dengan hubungan apa</strong>.</div>
+</section>
+</main>
+<footer style="color:#68747f;font-size:.88rem;padding:8px 0 38px"><div class="wrap">Ultimate TWK Knowledge System · Modul 15 — Edisi Praktik</div></footer>
+
+<nav class="cpns-modnav" aria-label="Navigasi modul">
+  <a class="cpns-navbtn" href="14-semantik-bahasa-dan-cara-membaca-soal-twk.html">← Modul 14</a>
+  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m15" type="button">Tandai selesai</button>
+  <a class="cpns-navbtn" href="16-berbagai-bentuk-pembentukan-soal-twk.html">Modul 16 →</a>
+</nav>
+
+<script>
+(function(){
+  var bar=document.getElementById('cpns-progress-bar');
+  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+  var done=document.getElementById('cpns-done');
+  if(done){var key=done.getAttribute('data-key');
+    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+    refresh();
+  }
+})();
+</script>
+
+</body>
+</html>

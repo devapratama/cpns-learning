@@ -9,24 +9,19 @@
       "subtitle": "Menarik kesimpulan dan hubungan makna antar kata."
     },
     {
-      "folder": "perbandingan",
-      "title": "Perbandingan",
-      "subtitle": "Soal matematika dasar tentang rasio dan perbandingan."
-    },
-    {
-      "folder": "aritmatika-sosial",
-      "title": "Aritmatika Sosial",
-      "subtitle": "Aplikasi aritmatika pada jual beli, bunga, dan laba rugi."
-    },
-    {
-      "folder": "pecahan",
-      "title": "Pecahan",
-      "subtitle": "Operasi hitung bilangan pecahan, desimal, dan persen."
-    },
-    {
       "folder": "silogisme",
       "title": "Silogisme",
       "subtitle": "Penalaran deduktif: premis mayor-minor, modus ponens, dan modus tollens."
+    },
+    {
+      "folder": "deret",
+      "title": "Deret",
+      "subtitle": "Pola barisan bilangan: beda tetap, kelipatan, fibonacci, campuran, dan bangun."
+    },
+    {
+      "folder": "perbandingan",
+      "title": "Perbandingan",
+      "subtitle": "Soal matematika dasar tentang rasio dan perbandingan."
     }
   ]
 }

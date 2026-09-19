@@ -1,518 +1,427 @@
-[
-  {
-    "id": 31,
-    "level": "Mahir",
-    "soal": "UBUR-UBUR : TULANG = GURUN : ...",
-    "pilihan": ["Pasir", "Air", "Kaktus", "Panas", "Unta"],
-    "kunci": "B",
-    "pola": "Logika Ketiadaan (Negasi)",
-    "pembahasan": "Ubur-ubur adalah hewan yang TIDAK memiliki tulang (invertebrata). Gurun adalah wilayah yang TIDAK memiliki air (atau sungai). Keduanya menunjukkan hubungan ketiadaan atau ketidakpemilikan sifat/benda yang umum.",
-    "analisis_opsi": {
-      "A": "JEBAKAN ASOSIASI. Pasir adalah benda yang ADA di gurun, bukan yang tidak ada.",
-      "B": "Benar. Gurun secara definisi geografis minim/tidak memiliki air.",
-      "C": "JEBAKAN ASOSIASI. Kaktus ada di gurun.",
-      "D": "JEBAKAN SIFAT. Panas adalah sifat yang ADA di gurun.",
-      "E": "JEBAKAN ASOSIASI. Unta ada di gurun."
+{
+  "nama": "Paket 2",
+  "deskripsi": "30 soal analogi",
+  "totalSoal": 30,
+  "soal": [
+    {
+      "id": "P2-Q01",
+      "pertanyaan": "LUKA : NYERI = INFEKSI : ...",
+      "opsi": [
+        "A. Pusing",
+        "B. Demam",
+        "C. Bengkak",
+        "D. Lemas",
+        "E. Gatal"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah kondisi atau proses patologis → manifestasi tubuh yang relatif khas. Luka lazim memunculkan nyeri; infeksi secara umum dapat memicu demam. Distraktor lain tetap masuk akal sebagai gejala, tetapi tidak memiliki kekhasan yang sama.\n\n**Evaluasi opsi:**\n- A. Pusing — Pusing dapat muncul pada banyak kondisi, tetapi bukan manifestasi yang paling khas untuk infeksi secara umum.\n- **B. Demam — (KUNCI)** — Benar. Luka dapat menimbulkan nyeri sebagai manifestasi langsung; infeksi dapat menimbulkan demam sebagai respons tubuh.\n- C. Bengkak — Bengkak lebih merupakan respons lokal yang sering muncul pada luka atau peradangan.\n- D. Lemas — Lemas terlalu umum dan dapat muncul pada berbagai keadaan.\n- E. Gatal — Gatal dapat muncul pada sebagian infeksi, tetapi tidak cukup umum.\n\nJadi, jawaban yang paling tepat adalah **B. DEMAM**."
+    },
+    {
+      "id": "P2-Q02",
+      "pertanyaan": "PERANG : PERDAMAIAN = KONFLIK : ...",
+      "opsi": [
+        "A. Ketegangan",
+        "B. Perselisihan",
+        "C. Mediasi",
+        "D. Pertengkaran",
+        "E. Perpecahan"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah keadaan negatif → penyelesaian. Distraktor B, D, dan E tetap berada dalam medan konflik, tetapi tidak berpindah ke sisi penyelesaian seperti C.\n\n**Evaluasi opsi:**\n- A. Ketegangan — Ketegangan masih berada pada sisi masalah konflik.\n- B. Perselisihan — Perselisihan merupakan bentuk konflik.\n- **C. Mediasi — (KUNCI)** — Benar. Perdamaian mengakhiri perang; mediasi merupakan upaya penyelesaian konflik.\n- D. Pertengkaran — Pertengkaran merupakan salah satu bentuk konflik.\n- E. Perpecahan — Perpecahan merupakan kemungkinan akibat konflik.\n\nJadi, jawaban yang paling tepat adalah **C. MEDIASI**."
+    },
+    {
+      "id": "P2-Q03",
+      "pertanyaan": "BERBUNGA : BERBUAH = BERTELUR : ...",
+      "opsi": [
+        "A. Mengeram",
+        "B. Menetas",
+        "C. Bertumbuh",
+        "D. Berkembang",
+        "E. Menyusui"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah satu tahap proses biologis → tahap berikutnya yang lebih maju. A menarik karena erat dengan telur, tetapi berada sebelum hasil yang diminta.\n\n**Evaluasi opsi:**\n- A. Mengeram — Mengeram adalah tahap atau tindakan sebelum telur menetas.\n- **B. Menetas — (KUNCI)** — Benar. Berbunga dapat berlanjut menjadi berbuah; telur dapat berlanjut menjadi menetas.\n- C. Bertumbuh — Bertumbuh terlalu umum.\n- D. Berkembang — Berkembang terlalu umum.\n- E. Menyusui — Menyusui berkaitan dengan tahap setelah kelahiran pada mamalia.\n\nJadi, jawaban yang paling tepat adalah **B. MENETAS**."
+    },
+    {
+      "id": "P2-Q04",
+      "pertanyaan": "ROTAN : KERANJANG = TANAH LIAT : ...",
+      "opsi": [
+        "A. Semen",
+        "B. Gerabah",
+        "C. Tungku",
+        "D. Tanah",
+        "E. Bata"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah bahan → produk. Bata merupakan distractor kuat karena benar secara faktual, tetapi gerabah mempertahankan struktur produk yang paling sebanding dengan keranjang.\n\n**Evaluasi opsi:**\n- A. Semen — Semen merupakan bahan bangunan lain.\n- **B. Gerabah — (KUNCI)** — Benar. Rotan dapat diolah menjadi keranjang; tanah liat dapat dibentuk dan dibakar menjadi gerabah.\n- C. Tungku — Tungku merupakan alat atau tempat pembakaran.\n- D. Tanah — Tanah adalah bahan asal, bukan produk.\n- E. Bata — Bata juga dapat dibuat dari tanah liat, tetapi hubungan produk kerajinan lebih paralel dengan keranjang.\n\nJadi, jawaban yang paling tepat adalah **B. GERABAH**."
+    },
+    {
+      "id": "P2-Q05",
+      "pertanyaan": "KONSULTASI : SARAN = MUSYAWARAH : ...",
+      "opsi": [
+        "A. Pendapat",
+        "B. Peserta",
+        "C. Kesepakatan",
+        "D. Perdebatan",
+        "E. Persoalan"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nStrukturnya adalah aktivitas deliberatif → keluaran. Pendapat merupakan input atau isi pembahasan, sedangkan kesepakatan merupakan hasil.\n\n**Evaluasi opsi:**\n- A. Pendapat — Pendapat merupakan bahan yang muncul selama proses.\n- B. Peserta — Peserta adalah pelaku proses.\n- **C. Kesepakatan — (KUNCI)** — Benar. Konsultasi dapat menghasilkan saran; musyawarah dapat menghasilkan kesepakatan.\n- D. Perdebatan — Perdebatan dapat terjadi selama musyawarah, tetapi bukan hasil yang diharapkan.\n- E. Persoalan — Persoalan merupakan objek yang dibahas.\n\nJadi, jawaban yang paling tepat adalah **C. KESEPAKATAN**."
+    },
+    {
+      "id": "P2-Q06",
+      "pertanyaan": "NAHKODA : KAPAL = MASINIS : ...",
+      "opsi": [
+        "A. Rel",
+        "B. Stasiun",
+        "C. Gerbong",
+        "D. Kereta",
+        "E. Tiket"
+      ],
+      "jawaban": "D",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah profesi pengendali → kendaraan yang dikendalikan.\n\n**Evaluasi opsi:**\n- A. Rel — Rel adalah infrastruktur.\n- B. Stasiun — Stasiun adalah tempat kegiatan.\n- C. Gerbong — Gerbong merupakan bagian kereta.\n- **D. Kereta — (KUNCI)** — Benar. Nahkoda mengendalikan kapal; masinis mengendalikan kereta.\n- E. Tiket — Tiket merupakan sarana perjalanan penumpang.\n\nJadi, jawaban yang paling tepat adalah **D. KERETA**."
+    },
+    {
+      "id": "P2-Q07",
+      "pertanyaan": "PANGGUNG : BERAKTING = LABORATORIUM : ...",
+      "opsi": [
+        "A. Mengamati",
+        "B. Bereksperimen",
+        "C. Menganalisis",
+        "D. Meneliti",
+        "E. Menguji"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah tempat → aktivitas khas. B memiliki tingkat generalitas yang paling sebanding dengan berakting.\n\n**Evaluasi opsi:**\n- A. Mengamati — Mengamati adalah salah satu kegiatan laboratorium, tetapi bukan aktivitas paling khas.\n- **B. Bereksperimen — (KUNCI)** — Benar. Panggung merupakan tempat kegiatan berakting; laboratorium merupakan tempat kegiatan bereksperimen.\n- C. Menganalisis — Menganalisis terlalu luas.\n- D. Meneliti — Meneliti terlalu luas.\n- E. Menguji — Menguji terlalu spesifik pada salah satu jenis kegiatan.\n\nJadi, jawaban yang paling tepat adalah **B. BEREKSPERIMEN**."
+    },
+    {
+      "id": "P2-Q08",
+      "pertanyaan": "LANTAI : GEDUNG = GELADAK : ...",
+      "opsi": [
+        "A. Pelabuhan",
+        "B. Kapal",
+        "C. Laut",
+        "D. Nahkoda",
+        "E. Kabut"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah bagian → keseluruhan.\n\n**Evaluasi opsi:**\n- A. Pelabuhan — Pelabuhan merupakan tempat kapal berada.\n- **B. Kapal — (KUNCI)** — Benar. Lantai merupakan bagian gedung; geladak merupakan bagian kapal.\n- C. Laut — Laut adalah lingkungan tempat kapal bergerak.\n- D. Nahkoda — Nahkoda adalah orang yang mengendalikan kapal.\n- E. Kabut — Kabut merupakan kondisi lingkungan.\n\nJadi, jawaban yang paling tepat adalah **B. KAPAL**."
+    },
+    {
+      "id": "P2-Q09",
+      "pertanyaan": "REM : PENGHENTIAN = KLAKSON : ...",
+      "opsi": [
+        "A. Kebisingan",
+        "B. Peringatan",
+        "C. Kecepatan",
+        "D. Perjalanan",
+        "E. Kendaraan"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah alat atau komponen → fungsi utama. A merupakan efek, bukan fungsi.\n\n**Evaluasi opsi:**\n- A. Kebisingan — Kebisingan merupakan efek suara.\n- **B. Peringatan — (KUNCI)** — Benar. Rem berfungsi menghasilkan penghentian atau perlambatan kendaraan; klakson berfungsi memberikan peringatan.\n- C. Kecepatan — Kecepatan adalah kondisi yang dikendalikan oleh rem.\n- D. Perjalanan — Perjalanan adalah konteks penggunaan kendaraan.\n- E. Kendaraan — Kendaraan adalah benda tempat alat digunakan.\n\nJadi, jawaban yang paling tepat adalah **B. PERINGATAN**."
+    },
+    {
+      "id": "P2-Q10",
+      "pertanyaan": "ODOMETER : JARAK = SPEEDOMETER : ...",
+      "opsi": [
+        "A. Waktu",
+        "B. Bahan bakar",
+        "C. Kecepatan",
+        "D. Putaran",
+        "E. Arah"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah instrumen → besaran yang diukur atau ditunjukkan.\n\n**Evaluasi opsi:**\n- A. Waktu — Waktu diukur oleh jam atau stopwatch.\n- B. Bahan bakar — Bahan bakar berkaitan dengan indikator bahan bakar.\n- **C. Kecepatan — (KUNCI)** — Benar. Odometer menunjukkan jarak tempuh; speedometer menunjukkan kecepatan.\n- D. Putaran — Putaran mesin dapat diketahui melalui tachometer.\n- E. Arah — Arah berkaitan dengan kompas atau sistem navigasi.\n\nJadi, jawaban yang paling tepat adalah **C. KECEPATAN**."
+    },
+    {
+      "id": "P2-Q11",
+      "pertanyaan": "BERBISIK : BERJERIT = BERJALAN : ...",
+      "opsi": [
+        "A. Duduk",
+        "B. Melompat",
+        "C. Berlari",
+        "D. Berhenti",
+        "E. Berdiri"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nKedua pasangan membentuk jenjang dalam satu dimensi aktivitas.\n\n**Evaluasi opsi:**\n- A. Duduk — Duduk bukan tingkat gerak yang lebih tinggi.\n- B. Melompat — Melompat adalah gerak berbeda.\n- **C. Berlari — (KUNCI)** — Benar. Berbisik → berjerit menunjukkan peningkatan intensitas suara; berjalan → berlari menunjukkan peningkatan kecepatan gerak.\n- D. Berhenti — Berhenti berlawanan dengan bergerak.\n- E. Berdiri — Berdiri merupakan keadaan diam.\n\nJadi, jawaban yang paling tepat adalah **C. BERLARI**."
+    },
+    {
+      "id": "P2-Q12",
+      "pertanyaan": "LENTUR : KAKU = RAMAI : ...",
+      "opsi": [
+        "A. Sepi",
+        "B. Hening",
+        "C. Tenang",
+        "D. Sunyi",
+        "E. Diam"
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah antonim langsung. Distraktor lain merupakan lawan atau pasangan kontekstual yang tidak setepat sepi.\n\n**Evaluasi opsi:**\n- **A. Sepi — (KUNCI)** — Benar. Lentur berlawanan dengan kaku; ramai berlawanan dengan sepi.\n- B. Hening — Hening berkaitan dengan keadaan tanpa suara, bukan antonim langsung ramai.\n- C. Tenang — Tenang menggambarkan suasana.\n- D. Sunyi — Sunyi sangat dekat dengan sepi tetapi nuansanya berbeda.\n- E. Diam — Diam menggambarkan ketiadaan tindakan atau suara.\n\nJadi, jawaban yang paling tepat adalah **A. SEPI**."
+    },
+    {
+      "id": "P2-Q13",
+      "pertanyaan": "ABADI : KEKAL = GIGIH : ...",
+      "opsi": [
+        "A. Kuat",
+        "B. Tekun",
+        "C. Berani",
+        "D. Keras",
+        "E. Tangguh"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah sinonim dengan tingkat kesepadanan tinggi.\n\n**Evaluasi opsi:**\n- A. Kuat — Kuat berhubungan dengan daya.\n- **B. Tekun — (KUNCI)** — Benar. Abadi dan kekal memiliki makna dekat; gigih dan tekun juga sepadan.\n- C. Berani — Berani berkaitan dengan keberanian.\n- D. Keras — Keras bukan sinonim tepat gigih.\n- E. Tangguh — Tangguh berarti kuat menghadapi kesulitan, tetapi tidak identik dengan ketekunan.\n\nJadi, jawaban yang paling tepat adalah **B. TEKUN**."
+    },
+    {
+      "id": "P2-Q14",
+      "pertanyaan": "SERANGGA : KUPU = BUAH : ...",
+      "opsi": [
+        "A. Daun",
+        "B. Mangga",
+        "C. Pohon",
+        "D. Biji",
+        "E. Bunga"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah kategori → anggota kategori.\n\n**Evaluasi opsi:**\n- A. Daun — Daun merupakan bagian tumbuhan.\n- **B. Mangga — (KUNCI)** — Benar. Kupu merupakan anggota kelompok serangga; mangga merupakan anggota kelompok buah.\n- C. Pohon — Pohon adalah keseluruhan tumbuhan.\n- D. Biji — Biji merupakan bagian yang dapat berada di dalam buah.\n- E. Bunga — Bunga merupakan bagian atau struktur lain pada tumbuhan.\n\nJadi, jawaban yang paling tepat adalah **B. MANGGA**."
+    },
+    {
+      "id": "P2-Q15",
+      "pertanyaan": "ELANG : BURUNG = KOMODO : ...",
+      "opsi": [
+        "A. Dinosaurus",
+        "B. Karnivora",
+        "C. Reptil",
+        "D. Predator",
+        "E. Hewan"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nKunci item ini adalah tingkat spesifisitas kategori. E benar secara umum tetapi terlalu luas.\n\n**Evaluasi opsi:**\n- A. Dinosaurus — Komodo bukan dinosaurus.\n- B. Karnivora — Karnivora adalah pola makan.\n- **C. Reptil — (KUNCI)** — Benar. Elang merupakan burung; komodo merupakan reptil.\n- D. Predator — Predator merupakan peran ekologis.\n- E. Hewan — Hewan terlalu umum.\n\nJadi, jawaban yang paling tepat adalah **C. REPTIL**."
+    },
+    {
+      "id": "P2-Q16",
+      "pertanyaan": "JARING : IKAN = PERANGKAP : ...",
+      "opsi": [
+        "A. Hutan",
+        "B. Tali",
+        "C. Tikus",
+        "D. Pemburu",
+        "E. Umpan"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah alat → objek sasaran.\n\n**Evaluasi opsi:**\n- A. Hutan — Hutan adalah lokasi penggunaan perangkap.\n- B. Tali — Tali dapat menjadi bagian dari perangkap.\n- **C. Tikus — (KUNCI)** — Benar. Jaring digunakan untuk menangkap ikan; perangkap dapat digunakan untuk menangkap tikus.\n- D. Pemburu — Pemburu merupakan pengguna alat.\n- E. Umpan — Umpan digunakan untuk menarik target.\n\nJadi, jawaban yang paling tepat adalah **C. TIKUS**."
+    },
+    {
+      "id": "P2-Q17",
+      "pertanyaan": "KUNCI : PINTU = PASSWORD : ...",
+      "opsi": [
+        "A. Komputer",
+        "B. Pengguna",
+        "C. Akun",
+        "D. Jaringan",
+        "E. Server"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah sarana autentikasi atau akses → objek yang diakses.\n\n**Evaluasi opsi:**\n- A. Komputer — Komputer dapat menjadi perangkat tempat password dimasukkan.\n- B. Pengguna — Pengguna adalah pihak yang menggunakan password.\n- **C. Akun — (KUNCI)** — Benar. Kunci membuka pintu; password memberikan akses ke akun.\n- D. Jaringan — Jaringan merupakan konteks penggunaan.\n- E. Server — Server dapat dilindungi password, tetapi bukan objek akses paling langsung.\n\nJadi, jawaban yang paling tepat adalah **C. AKUN**."
+    },
+    {
+      "id": "P2-Q18",
+      "pertanyaan": "KAPUR : PUTIH = ARANG : ...",
+      "opsi": [
+        "A. Panas",
+        "B. Keras",
+        "C. Hitam",
+        "D. Ringan",
+        "E. Kasar"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah benda → karakteristik yang menonjol.\n\n**Evaluasi opsi:**\n- A. Panas — Panas dapat berkaitan dengan proses pembuatan arang.\n- B. Keras — Keras bukan karakteristik utama arang.\n- **C. Hitam — (KUNCI)** — Benar. Putih merupakan karakteristik warna kapur; hitam merupakan karakteristik warna arang.\n- D. Ringan — Ringan bukan ciri utama.\n- E. Kasar — Kasar dapat menjadi tekstur tertentu, tetapi bukan karakteristik utama.\n\nJadi, jawaban yang paling tepat adalah **C. HITAM**."
+    },
+    {
+      "id": "P2-Q19",
+      "pertanyaan": "UTUH : PECAH = TERBUKA : ...",
+      "opsi": [
+        "A. Tertutup",
+        "B. Terisi",
+        "C. Kosong",
+        "D. Longgar",
+        "E. Sempit"
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah antonim langsung. Distraktor dipilih dari kata yang juga dapat membentuk pasangan berlawanan tetapi pada dimensi berbeda.\n\n**Evaluasi opsi:**\n- **A. Tertutup — (KUNCI)** — Benar. Utuh berlawanan dengan pecah; terbuka berlawanan dengan tertutup.\n- B. Terisi — Terisi berlawanan dengan kosong, bukan terbuka.\n- C. Kosong — Kosong adalah lawan terisi.\n- D. Longgar — Longgar berada pada dimensi kekencangan.\n- E. Sempit — Sempit berada pada dimensi ukuran.\n\nJadi, jawaban yang paling tepat adalah **A. TERTUTUP**."
+    },
+    {
+      "id": "P2-Q20",
+      "pertanyaan": "PENGAMATAN : DATA = ANALISIS : ...",
+      "opsi": [
+        "A. Masalah",
+        "B. Metode",
+        "C. Kesimpulan",
+        "D. Data",
+        "E. Pengamatan"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah proses intelektual → keluaran. Data merupakan input analisis, bukan output.\n\n**Evaluasi opsi:**\n- A. Masalah — Masalah merupakan objek yang dianalisis.\n- B. Metode — Metode merupakan cara melakukan analisis.\n- **C. Kesimpulan — (KUNCI)** — Benar. Pengamatan menghasilkan data; analisis menghasilkan kesimpulan.\n- D. Data — Data merupakan bahan yang dianalisis.\n- E. Pengamatan — Pengamatan merupakan proses.\n\nJadi, jawaban yang paling tepat adalah **C. KESIMPULAN**."
+    },
+    {
+      "id": "P2-Q21",
+      "pertanyaan": "GEMPA : KERUSAKAN = BANJIR : ...",
+      "opsi": [
+        "A. Hujan",
+        "B. Sungai",
+        "C. Evakuasi",
+        "D. Genangan",
+        "E. Kekeringan"
+      ],
+      "jawaban": "D",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah bencana atau peristiwa → konsekuensi langsung.\n\n**Evaluasi opsi:**\n- A. Hujan — Hujan dapat menjadi penyebab banjir.\n- B. Sungai — Sungai dapat menjadi lokasi atau saluran air.\n- C. Evakuasi — Evakuasi merupakan respons manusia.\n- **D. Genangan — (KUNCI)** — Benar. Gempa dapat menyebabkan kerusakan; banjir dapat menyebabkan genangan.\n- E. Kekeringan — Kekeringan merupakan kondisi berlawanan.\n\nJadi, jawaban yang paling tepat adalah **D. GENANGAN**."
+    },
+    {
+      "id": "P2-Q22",
+      "pertanyaan": "MEDAN : CURAM = JALAN : ...",
+      "opsi": [
+        "A. Macet",
+        "B. Rusak",
+        "C. Panjang",
+        "D. Licin",
+        "E. Menanjak"
+      ],
+      "jawaban": "D",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah objek atau lintasan → karakteristik fisik yang memengaruhi cara melaluinya.\n\n**Evaluasi opsi:**\n- A. Macet — Macet merupakan kondisi lalu lintas.\n- B. Rusak — Rusak merupakan kondisi jalan, tetapi bukan atribut fisik yang sejenis.\n- C. Panjang — Panjang berkaitan dengan ukuran.\n- **D. Licin — (KUNCI)** — Benar. Curam merupakan karakteristik medan yang memengaruhi perjalanan; licin merupakan karakteristik jalan yang memengaruhi perjalanan.\n- E. Menanjak — Menanjak menggambarkan arah lintasan.\n\nJadi, jawaban yang paling tepat adalah **D. LICIN**."
+    },
+    {
+      "id": "P2-Q23",
+      "pertanyaan": "Petugas laboratorium memeriksa sampel di ruang uji. Hubungan kalimat tersebut sama dengan ...",
+      "opsi": [
+        "A. Pustakawan menata buku di perpustakaan.",
+        "B. Pengunjung membaca buku di perpustakaan.",
+        "C. Teknisi membeli alat di toko.",
+        "D. Mahasiswa membawa buku ke kelas.",
+        "E. Pasien menunggu dokter di rumah sakit."
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kalimat",
+      "pembahasan": "**Analisis hubungan:**\nStruktur sumber adalah pelaku profesional → tindakan profesional → objek kerja → tempat kerja. Jawaban A mempertahankan keempat posisi semantik.\n\n**Evaluasi opsi:**\n- **A. Pustakawan menata buku di perpustakaan. — (KUNCI)** — Benar. Keduanya memiliki struktur pekerja atau profesi → tindakan utama → objek kerja → tempat kerja.\n- B. Pengunjung membaca buku di perpustakaan. — Pengunjung bukan petugas profesional yang menangani objek kerja.\n- C. Teknisi membeli alat di toko. — Membeli alat merupakan transaksi.\n- D. Mahasiswa membawa buku ke kelas. — Membawa buku tidak menunjukkan pekerjaan terhadap objek.\n- E. Pasien menunggu dokter di rumah sakit. — Pasien merupakan penerima layanan.\n\nJadi, jawaban yang paling tepat adalah **A. PUSTAKAWAN MENATA BUKU DI PERPUSTAKAAN.**."
+    },
+    {
+      "id": "P2-Q24",
+      "pertanyaan": "KAMAR : RANJANG = DAPUR : ...",
+      "opsi": [
+        "A. Piring",
+        "B. Kompor",
+        "C. Makanan",
+        "D. Koki",
+        "E. Sabun"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah ruang → perabot atau peralatan utama yang secara khas terdapat di ruang tersebut. Item ini menggantikan analogi kalimat komparatif yang sebelumnya memiliki shortcut leksikal.\n\n**Evaluasi opsi:**\n- A. Piring — Piring merupakan benda yang digunakan atau disimpan di dapur, tetapi bukan peralatan utama yang menjadi padanan ranjang.\n- **B. Kompor — (KUNCI)** — Benar. Kamar merupakan ruang yang secara khas memiliki ranjang; dapur merupakan ruang yang secara khas memiliki kompor.\n- C. Makanan — Makanan merupakan hasil atau isi aktivitas dapur.\n- D. Koki — Koki merupakan pengguna dapur.\n- E. Sabun — Sabun dapat berada di dapur pada kondisi tertentu, tetapi bukan perlengkapan utama.\n\nJadi, jawaban yang paling tepat adalah **B. KOMPOR**."
+    },
+    {
+      "id": "P2-Q25",
+      "pertanyaan": "TELUR : MENETAS = KUNCUP : ...",
+      "opsi": [
+        "A. Layu",
+        "B. Mekar",
+        "C. Gugur",
+        "D. Berbuah",
+        "E. Berkayu"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah bentuk atau tahap awal → proses perubahan menuju bentuk berikutnya. D berada satu tahap setelah bunga sehingga tidak sejajar dengan menetas.\n\n**Evaluasi opsi:**\n- A. Layu — Layu merupakan perubahan menuju penurunan kondisi.\n- **B. Mekar — (KUNCI)** — Benar. Telur mengalami proses menetas; kuncup mengalami proses mekar.\n- C. Gugur — Gugur terjadi pada tahap setelah bunga atau bagian tumbuhan tertentu.\n- D. Berbuah — Berbuah merupakan tahap lanjutan setelah bunga berkembang.\n- E. Berkayu — Berkayu merupakan proses atau sifat jaringan.\n\nJadi, jawaban yang paling tepat adalah **B. MEKAR**."
+    },
+    {
+      "id": "P2-Q26",
+      "pertanyaan": "BENIH : KECAMBAH : TANAMAN = TELUR : LARVA : PUPA",
+      "opsi": [
+        "A. BENIH",
+        "B. TANAMAN",
+        "C. PUPA",
+        "D. TELUR",
+        "E. KECAMBAH"
+      ],
+      "jawaban": "C",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nStruktur yang diuji adalah posisi tahap ketiga dalam dua rangkaian perkembangan.\n\n**Evaluasi opsi:**\n- A. BENIH — Benih berada pada tahap awal rangkaian.\n- B. TANAMAN — Tanaman merupakan tahap akhir rangkaian pertama.\n- **C. PUPA — (KUNCI)** — Benar. Pupa merupakan tahap ketiga pada perkembangan metamorfosis.\n- D. TELUR — Telur merupakan tahap pertama.\n- E. KECAMBAH — Kecambah merupakan tahap kedua.\n\nJadi, jawaban yang paling tepat adalah **C. PUPA**."
+    },
+    {
+      "id": "P2-Q27",
+      "pertanyaan": "SENTER : GELAP = PAYUNG : ...",
+      "opsi": [
+        "A. Panas",
+        "B. Hujan",
+        "C. Angin",
+        "D. Debu",
+        "E. Asap"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nRelasinya adalah alat atau sarana → kondisi eksternal yang diatasi atau dilindungi darinya. Senter membantu menghadapi kegelapan, sedangkan payung melindungi dari hujan.\n\n**Evaluasi opsi:**\n- A. Panas — Senter tidak digunakan untuk mengatasi panas.\n- **B. Hujan — (KUNCI)** — Benar. Senter digunakan untuk mengatasi kondisi gelap; payung digunakan untuk melindungi dari hujan.\n- C. Angin — Angin bukan kondisi utama yang ditangani payung.\n- D. Debu — Debu bukan fungsi utama perlindungan payung.\n- E. Asap — Asap bukan kondisi yang menjadi sasaran penggunaan payung.\n\nJadi, jawaban yang paling tepat adalah **B. HUJAN**."
+    },
+    {
+      "id": "P2-Q28",
+      "pertanyaan": "BEL : JEDA = SIREN : BAHAYA",
+      "opsi": [
+        "A. Suara",
+        "B. Bahaya",
+        "C. Mobil",
+        "D. Petugas",
+        "E. Panik"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah sinyal → keadaan yang ditandai.\n\n**Evaluasi opsi:**\n- A. Suara — Suara adalah bentuk sinyal.\n- **B. Bahaya — (KUNCI)** — Benar. Bel dapat menandai jeda; siren menandai bahaya atau keadaan darurat.\n- C. Mobil — Mobil merupakan sumber atau pengguna siren.\n- D. Petugas — Petugas dapat merespons siren.\n- E. Panik — Panik merupakan respons, bukan keadaan yang ditandai.\n\nJadi, jawaban yang paling tepat adalah **B. BAHAYA**."
+    },
+    {
+      "id": "P2-Q29",
+      "pertanyaan": "TELESKOP : JAUH = MIKROSKOP : ...",
+      "opsi": [
+        "A. Dekat",
+        "B. Kecil",
+        "C. Halus",
+        "D. Sel",
+        "E. Detail"
+      ],
+      "jawaban": "B",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah alat pengamatan → skala objek yang menjadi sasaran. Teleskop digunakan untuk objek jauh, sedangkan mikroskop untuk objek kecil. Distraktor D merupakan contoh objek, bukan dimensi yang sebanding dengan 'jauh'.\n\n**Evaluasi opsi:**\n- A. Dekat — Dekat merupakan lawan skala observasi teleskop, bukan karakteristik objek yang menjadi fokus mikroskop.\n- **B. Kecil — (KUNCI)** — Benar. Teleskop digunakan untuk mengamati objek yang jauh; mikroskop digunakan untuk mengamati objek yang berukuran sangat kecil.\n- C. Halus — Halus dapat berkaitan dengan objek kecil, tetapi bukan karakteristik utama yang dipetakan.\n- D. Sel — Sel merupakan salah satu objek yang dapat diamati dengan mikroskop, tetapi terlalu spesifik.\n- E. Detail — Detail merupakan hasil atau tingkat pengamatan, bukan skala objek.\n\nJadi, jawaban yang paling tepat adalah **B. KECIL**."
+    },
+    {
+      "id": "P2-Q30",
+      "pertanyaan": "TERIK : KERING = HUJAN : ...",
+      "opsi": [
+        "A. Basah",
+        "B. Dingin",
+        "C. Licin",
+        "D. Mendung",
+        "E. Banjir"
+      ],
+      "jawaban": "A",
+      "tipe": "Analogi Kata",
+      "pembahasan": "**Analisis hubungan:**\nHubungannya adalah kondisi alam → akibat fisik yang langsung dan umum. Terik berkaitan dengan kekeringan, sedangkan hujan berkaitan langsung dengan kebasahan.\n\n**Evaluasi opsi:**\n- **A. Basah — (KUNCI)** — Benar. Kondisi terik dapat menyebabkan keadaan kering; hujan dapat menyebabkan keadaan basah.\n- B. Dingin — Dingin merupakan kondisi suhu, bukan akibat utama yang dipetakan.\n- C. Licin — Licin dapat menjadi akibat tertentu dari hujan, tetapi lebih tidak langsung.\n- D. Mendung — Mendung lebih merupakan kondisi yang mendahului hujan.\n- E. Banjir — Banjir merupakan akibat yang lebih lanjut dan bersyarat.\n\nJadi, jawaban yang paling tepat adalah **A. BASAH**."
     }
-  },
-  {
-    "id": 32,
-    "level": "Menengah",
-    "soal": "KARAT : KEROP0S = RAYAP : ...",
-    "pilihan": ["Kayu", "Hancur", "Rumah", "Gelap", "Patah"],
-    "kunci": "B",
-    "pola": "Kausalitas Kumulatif (Proses terus-menerus dan akibat ekstremnya)",
-    "pembahasan": "Karat yang dibiarkan terus-menerus akan menyebabkan benda menjadi keropos. Rayap yang dibiarkan terus-menerus akan menyebabkan struktur (kayu/rumah) menjadi hancur.",
-    "analisis_opsi": {
-      "A": "JEBAKAN OBJEK. Kayu adalah material yang dimakan rayap, bukan akibat kondisi ekstremnya.",
-      "B": "Benar. Hancur adalah akibat ekstrem dari serangan rayap berkelanjutan.",
-      "C": "JEBAKAN OBJEK. Rumah adalah tempat, bukan kondisi material.",
-      "D": "Salah. Gelap tidak relevan.",
-      "E": "JEBAKAN HALUS. Patah adalah akibat fisik mendadak, sedangkan hancur lebih mewakili proses pengeroposan oleh rayap."
-    }
-  },
-  {
-    "id": 33,
-    "level": "Mahir",
-    "soal": "MENYENTUH : MENCENGKERAM = MENATAP : ...",
-    "pilihan": ["Melirik", "Melotot", "Memejamkan", "Mengedip", "Menangis"],
-    "kunci": "B",
-    "pola": "Tingkatan Intensitas (Normal ke Ekstrem/Paksa)",
-    "pembahasan": "Mencengkeram adalah bentuk memegang/menyentuh yang sangat kuat, erat, dan intens. Melotot adalah bentuk menatap yang sangat kuat, tajam, dan intens.",
-    "analisis_opsi": {
-      "A": "JEBAKAN INTENSITAS RENDAH. Melirik adalah kebalikannya (melihat sekilas/ringan).",
-      "B": "Benar. Melotot adalah intensitas ekstrem dari menatap.",
-      "C": "Salah. Memejamkan adalah tindakan menutup.",
-      "D": "Salah. Mengedip adalah gerakan refleks.",
-      "E": "Salah. Menangis adalah ekspresi emosi."
-    }
-  },
-  {
-    "id": 34,
-    "level": "Menengah",
-    "soal": "PENCERNAAN : LAMBUNG = FILTRASI : ...",
-    "pilihan": ["Hati", "Ginjal", "Jantung", "Paru-paru", "Kulit"],
-    "kunci": "B",
-    "pola": "Proses Biologis dan Organ/Tempat Spesifik Terjadinya",
-    "pembahasan": "Pencernaan (khususnya kimia) terjadi secara utama di lambung. Filtrasi (penyaringan darah dari racun/zat sisa) terjadi secara utama di ginjal.",
-    "analisis_opsi": {
-      "A": "JEBAKAN ORGAN. Hati berfungsi untuk detoksifikasi dan produksi empedu, bukan filtrasi darah utama.",
-      "B": "Benar. Ginjal adalah organ filtrasi.",
-      "C": "Salah. Jantung untuk memompa.",
-      "D": "Salah. Paru-paru untuk respirasi.",
-      "E": "Salah. Kulit untuk ekskresi keringat/perlindungan."
-    }
-  },
-  {
-    "id": 35,
-    "level": "Mahir",
-    "soal": "SINGKONG : TAPIOKA = KELAPA : ...",
-    "pilihan": ["Minyak", "Santan", "Batok", "Daun", "Kopra"],
-    "kunci": "B",
-    "pola": "Bahan Baku dan Hasil Ekstraksi Zat Antaranya",
-    "pembahasan": "Singkong diekstrak patinya menjadi tapioka. Kelapa diekstrak cairannya/lemaknya menjadi santan. Keduanya adalah proses ekstraksi zat dari bahan baku mentah.",
-    "analisis_opsi": {
-      "A": "JEBAKAN PROSES LANJUTAN. Minyak adalah hasil olahan lanjut dari santan/kopra, bukan ekstraksi langsung setara tapioka.",
-      "B": "Benar. Santan adalah hasil ekstraksi langsung dari daging kelapa.",
-      "C": "Salah. Batok adalah limbah/cangkang.",
-      "D": "Salah. Daun adalah bagian pohon.",
-      "E": "JEBAKAN PROSES LANJUTAN. Kopra adalah daging kelapa yang dikeringkan, bukan zat ekstrak."
-    }
-  },
-  {
-    "id": 36,
-    "level": "Mahir",
-    "soal": "KABUT : JARAK PANDANG = INFLASI : ...",
-    "pilihan": ["Harga", "Uang", "Daya Beli", "Kemiskinan", "Pajak"],
-    "kunci": "C",
-    "pola": "Fenomena dan Objek yang Dikurangi/Dihambat",
-    "pembahasan": "Kabut adalah fenomena yang mengurangi jarak pandang. Inflasi adalah fenomena ekonomi yang mengurangi daya beli masyarakat.",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI. Inflasi justru MENAIKKAN harga, bukan menguranginya.",
-      "B": "JEBAKAN HALUS. Inflasi menurunkan nilai uang, tetapi 'daya beli' adalah padanan fungsional yang lebih tepat untuk 'jarak pandang' (kapasitas).",
-      "C": "Benar. Inflasi mengurangi daya beli.",
-      "D": "Salah. Kemiskinan adalah dampak jangka panjang.",
-      "E": "Salah. Pajak adalah instrumen negara."
-    }
-  },
-  {
-    "id": 37,
-    "level": "Pemula",
-    "soal": "MESIN JAHIT : BENANG = PRINTER : ...",
-    "pilihan": ["Kertas", "Tinta", "Layar", "Listrik", "Cartridge"],
-    "kunci": "B",
-    "pola": "Alat dan Komponen Habis Pakai Esensialnya",
-    "pembahasan": "Mesin jahit memerlukan benang (komponen habis pakai) untuk menghasilkan jahitan. Printer memerlukan tinta (komponen habis pakai) untuk menghasilkan cetakan.",
-    "analisis_opsi": {
-      "A": "JEBAKAN MEDIA. Kertas adalah media cetak, bukan komponen yang dikeluarkan oleh alat (benang keluar dari mesin membentuk pola, tinta keluar membentuk gambar).",
-      "B": "Benar. Tinta adalah komponen esensial habis pakai.",
-      "C": "Salah. Layar bukan komponen printer.",
-      "D": "Salah. Listrik adalah sumber energi.",
-      "E": "JEBAKAN WADAH. Cartridge adalah wadah tinta, bukan zatnya."
-    }
-  },
-  {
-    "id": 38,
-    "level": "Mahir",
-    "soal": "FANA : ABADI = ANARKI : ...",
-    "pilihan": ["Kekacauan", "Hukum", "Demonstrasi", "Pemerintah", "Damai"],
-    "kunci": "B",
-    "pola": "Antonim Kontekstual (Ketiadaan vs Keberadaan Sistem)",
-    "pembahasan": "Fana bermakna tidak abadi (bisa hancur). Anarki bermakna tidak adanya hukum/pemerintahan (ketiadaan sistem). Lawan dari anarki (ketiadaan hukum) adalah adanya hukum.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SINONIM. Kekacauan adalah sinonim/dampak anarki.",
-      "B": "Benar. Hukum adalah lawan dari anarki (ketiadaan aturan vs adanya aturan).",
-      "C": "Salah. Demonstrasi adalah aktivitas.",
-      "D": "JEBAKAN HALUS. Pemerintah adalah subjek, hukum adalah sistem/aturannya (lebih setara dengan abadi).",
-      "E": "JEBAKAN HALUS. Damai adalah kondisi emosional/sosial, hukum adalah struktur sistem."
-    }
-  },
-  {
-    "id": 39,
-    "level": "Mahir",
-    "soal": "KAPAS : HALUS = INTAN : ...",
-    "pilihan": ["Mahal", "Bening", "Keras", "Tajam", "Indah"],
-    "kunci": "C",
-    "pola": "Benda dan Properti Alami/Fisik Utamanya",
-    "pembahasan": "Halus adalah properti fisik alami dari kapas. Keras adalah properti fisik alami dari intan (skala Mohs tertinggi).",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI (SUBJEKTIF). Mahal adalah nilai pasar, bukan properti fisik alami.",
-      "B": "JEBAKAN SIFAT OPTIK. Bening adalah sifat optik, tapi 'keras' adalah sifat mekanik utama intan yang membedakannya dari batu lain.",
-      "C": "Benar. Keras adalah properti fisik alami intan.",
-      "D": "Salah. Tajam adalah bentuk olahan intan, bukan sifat bawaan materialnya.",
-      "E": "JEBAKAN MATI (SUBJEKTIF). Indah adalah penilaian estetika."
-    }
-  },
-  {
-    "id": 40,
-    "level": "Menengah",
-    "soal": "EMBRIO : JANIN = TUNAS : ...",
-    "pilihan": ["Biji", "Daun", "Akar", "Batang", "Pohon"],
-    "kunci": "E",
-    "pola": "Urutan Perkembangan Biologis (Tahap Awal ke Tahap Dewasa)",
-    "pembahasan": "Embrio berkembang menjadi janin (tahap dalam kandungan). Tunas berkembang menjadi pohon (tahap dewasa tanaman).",
-    "analisis_opsi": {
-      "A": "JEBAKAN ARAH TERBALIK. Biji adalah tahap sebelum tunas.",
-      "B": "Salah. Daun adalah bagian pohon.",
-      "C": "Salah. Akar adalah bagian pohon.",
-      "D": "Salah. Batang adalah bagian pohon.",
-      "E": "Benar. Pohon adalah wujud dewasa dari tunas."
-    }
-  },
-  {
-    "id": 41,
-    "level": "Pemula",
-    "soal": "VAKSIN : IMUN = ANTIBIOTIK : ...",
-    "pilihan": ["Sakit", "Bakteri", "Sembuh", "Infeksi", "Virus"],
-    "kunci": "C",
-    "pola": "Zat Medis dan Kondisi Hasil yang Diharapkan",
-    "pembahasan": "Vaksin diberikan agar tubuh menjadi imun (kebal). Antibiotik diberikan agar tubuh menjadi sembuh (dari infeksi bakteri).",
-    "analisis_opsi": {
-      "A": "Salah. Sakit adalah kondisi awal.",
-      "B": "JEBAKAN TARGET. Bakteri adalah target antibiotik, bukan kondisi hasil pada tubuh.",
-      "C": "Benar. Sembuh adalah kondisi hasil.",
-      "D": "JEBAKAN TARGET. Infeksi adalah target.",
-      "E": "Salah. Antibiotik tidak mempan untuk virus."
-    }
-  },
-  {
-    "id": 42,
-    "level": "Menengah",
-    "soal": "TERTAWA : TERBAHAK = MENANGIS : ...",
-    "pilihan": ["Sedih", "Tersedu", "Merintih", "Meraung", "Berteriak"],
-    "kunci": "D",
-    "pola": "Tingkatan Intensitas Ekspresi (Normal ke Sangat Kuat)",
-    "pembahasan": "Terbahak adalah tertawa yang sangat keras/intens. Meraung adalah menangis yang sangat keras/intens dan penuh emosi.",
-    "analisis_opsi": {
-      "A": "Salah. Sedih adalah emosi pemicu.",
-      "B": "JEBAKAN INTENSITAS RENDAH. Tersedu adalah menangis tertahan/pelan.",
-      "C": "JEBAKAN INTENSITAS RENDAH. Merintih lebih ke kesakitan.",
-      "D": "Benar. Meraung adalah intensitas tinggi menangis.",
-      "E": "Salah. Berteriak tidak spesifik untuk menangis."
-    }
-  },
-  {
-    "id": 43,
-    "level": "Pemula",
-    "soal": "GADING : GAJAH = CULA : ...",
-    "pilihan": ["Badak", "Kuda", "Sapi", "Kambing", "Rusa"],
-    "kunci": "A",
-    "pola": "Bagian Tubuh Khas/Ikonik dan Hewannya",
-    "pembahasan": "Gading adalah bagian tubuh yang sangat khas dan ikonik dari gajah. Cula adalah bagian tubuh yang sangat khas dan ikonik dari badak.",
-    "analisis_opsi": {
-      "A": "Benar. Cula milik badak.",
-      "B": "Salah. Kuda tidak bercula.",
-      "C": "Salah. Sapi bertanduk, bukan cula.",
-      "D": "Salah. Kambing bertanduk.",
-      "E": "JEBAKAN HALUS. Rusa memiliki tanduk (ranggah), bukan cula."
-    }
-  },
-  {
-    "id": 44,
-    "level": "Menengah",
-    "soal": "KLAUSTROFOBIA : SEMPIT = AKROFOBIA : ...",
-    "pilihan": ["Tinggi", "Gelap", "Air", "Ramai", "Luar"],
-    "kunci": "A",
-    "pola": "Istilah Psikologi (Fobia) dan Objek Ketakutannya",
-    "pembahasan": "Klaustrofobia adalah ketakutan pada ruang sempit. Akrofobia adalah ketakutan pada ketinggian.",
-    "analisis_opsi": {
-      "A": "Benar. Akrofobia = takut tinggi.",
-      "B": "Salah. Takut gelap = Niktofobia.",
-      "C": "Salah. Takut air = Hidrofobia.",
-      "D": "Salah. Takut ramai = Agorafobia/Enoklofobia.",
-      "E": "Salah. Takut luar/ruang terbuka = Agorafobia."
-    }
-  },
-  {
-    "id": 45,
-    "level": "Mahir",
-    "soal": "DEFORESTASI : LONGSOR = KORUPSI : ...",
-    "pilihan": ["Penjara", "Kemisikinan", "Uang", "Hukuman", "KPK"],
-    "kunci": "B",
-    "pola": "Tindakan Merusak dan Dampak Sistemik Jangka Panjangnya",
-    "pembahasan": "Deforestasi (penggundulan hutan) menyebabkan dampak sistemik berupa longsor. Korupsi (penyalahgunaan dana) menyebabkan dampak sistemik berupa kemiskinan (negara/masyarakat).",
-    "analisis_opsi": {
-      "A": "JEBAKAN KONSEKUENSI HUKUM. Penjara adalah hukuman bagi pelaku, bukan dampak sistemik pada lingkungan/negara.",
-      "B": "Benar. Kemiskinan adalah dampak sistemik korupsi pada negara.",
-      "C": "JEBAKAN OBJEK. Uang adalah objek korupsi.",
-      "D": "JEBAKAN KONSEKUENSI HUKUM. Hukuman untuk pelaku.",
-      "E": "Salah. KPK adalah lembaga pemberantas."
-    }
-  },
-  {
-    "id": 46,
-    "level": "Pemula",
-    "soal": "AIR : CAIR = NITROGEN : ...",
-    "pilihan": ["Padat", "Gas", "Beku", "Uap", "Dingin"],
-    "kunci": "B",
-    "pola": "Zat dan Wujud Alaminya pada Suhu Ruang",
-    "pembahasan": "Air pada suhu ruang berwujud cair. Nitrogen pada suhu ruang berwujud gas.",
-    "analisis_opsi": {
-      "A": "Salah. Padat bukan wujud alami nitrogen di suhu ruang.",
-      "B": "Benar. Nitrogen berwujud gas.",
-      "C": "Salah. Beku adalah proses.",
-      "D": "Salah. Uap adalah wujud gas air.",
-      "E": "Salah. Dingin adalah suhu."
-    }
-  },
-  {
-    "id": 47,
-    "level": "Pemula",
-    "soal": "BENUA : ASIA = SAMUDRA : ...",
-    "pilihan": ["Pasifik", "Jawa", "Bumi", "Air", "Atlantik"],
-    "kunci": "A",
-    "pola": "Kategori Umum dan Contoh Spesifiknya",
-    "pembahasan": "Asia adalah salah satu nama benua. Pasifik adalah salah satu nama samudra.",
-    "analisis_opsi": {
-      "A": "Benar. Pasifik adalah samudra.",
-      "B": "Salah. Jawa adalah pulau/laut.",
-      "C": "Salah. Bumi adalah planet.",
-      "D": "Salah. Air adalah zat.",
-      "E": "Benar secara teknis (Atlantik samudra), namun Pasifik lebih umum dipasangkan dengan Asia dalam konteks geografi regional/global di soal TIU."
-    }
-  },
-  {
-    "id": 48,
-    "level": "Menengah",
-    "soal": "STETOSKOP : DOKTER = THEODOLIT : ...",
-    "pilihan": ["Arsitek", "Surveyor", "Tukang", "Ahli Bumi", "Meteorolog"],
-    "kunci": "B",
-    "pola": "Alat Khusus dan Profesi yang Menggunakannya",
-    "pembahasan": "Stetoskop adalah alat khusus yang identik dengan profesi dokter. Theodolit adalah alat khusus ukur tanah yang identik dengan profesi surveyor.",
-    "analisis_opsi": {
-      "A": "Salah. Arsitek menggunakan alat gambar/CAD.",
-      "B": "Benar. Surveyor menggunakan theodolit.",
-      "C": "Salah. Tukang terlalu umum.",
-      "D": "Salah. Ahli bumi (geolog) menggunakan palu geologi/kompas.",
-      "E": "Salah. Meteorolog menggunakan barometer/anemometer."
-    }
-  },
-  {
-    "id": 49,
-    "level": "Mahir",
-    "soal": "MEMAHAT : BATU = MELUKIS : ...",
-    "pilihan": ["Kuas", "Cat", "Kanvas", "Gambar", "Pensil"],
-    "kunci": "C",
-    "pola": "Aktivitas Seni dan Medium/Tempat Kerjanya",
-    "pembahasan": "Memahat dilakukan PADA batu (sebagai medium). Melukis dilakukan PADA kanvas (sebagai medium).",
-    "analisis_opsi": {
-      "A": "JEBAKAN ALAT. Kuas adalah alat, bukan medium.",
-      "B": "JEBAKAN BAHAN. Cat adalah bahan, bukan medium.",
-      "C": "Benar. Kanvas adalah medium tempat melukis.",
-      "D": "Salah. Gambar adalah hasil.",
-      "E": "JEBAKAN ALAT. Pensil adalah alat."
-    }
-  },
-  {
-    "id": 50,
-    "level": "Menengah",
-    "soal": "BASAH : KUYUP = KERING : ...",
-    "pilihan": ["Panas", "Kontang", "Gersang", "Haus", "Kerontang"],
-    "kunci": "E",
-    "pola": "Tingkatan Kondisi (Normal ke Ekstrem)",
-    "pembahasan": "Kuyup adalah kondisi basah yang sangat ekstrem. Kerontang adalah kondisi kering yang sangat ekstrem.",
-    "analisis_opsi": {
-      "A": "Salah. Panas adalah suhu.",
-      "B": "JEBAKAN HALUS. Kontang biasanya untuk sungai/kolam.",
-      "C": "JEBAKAN HALUS. Gersang biasanya untuk tanah/lahan.",
-      "D": "Salah. Haus adalah kondisi biologis.",
-      "E": "Benar. Kerontang adalah kondisi kering ekstrem (misal: kerontang kerontang)."
-    }
-  },
-  {
-    "id": 51,
-    "level": "Mahir",
-    "soal": "FOTOSINTESIS : OKSIGEN = RESPIRASI : ...",
-    "pilihan": ["Oksigen", "Karbon Dioksida", "Energi", "Air", "Glukosa"],
-    "kunci": "B",
-    "pola": "Proses Biologis dan Produk Sampingan (Byproduct) yang Dilepaskan",
-    "pembahasan": "Fotosintesis melepaskan oksigen sebagai produk sampingan ke lingkungan. Respirasi seluler melepaskan karbon dioksida sebagai produk sampingan ke lingkungan.",
-    "analisis_opsi": {
-      "A": "Salah. Oksigen adalah bahan baku respirasi.",
-      "B": "Benar. Karbon dioksida adalah produk buangan respirasi.",
-      "C": "JEBAKAN TUJUAN UTAMA. Energi (ATP) adalah tujuan utama respirasi, bukan produk sampingan yang dilepaskan ke lingkungan seperti oksigen pada fotosintesis.",
-      "D": "Salah. Air juga dihasilkan, tapi CO2 lebih ikonik sebagai gas buangan.",
-      "E": "Salah. Glukosa adalah bahan baku."
-    }
-  },
-  {
-    "id": 52,
-    "level": "Menengah",
-    "soal": "HANGAT : MENDIDIH = DINGIN : ...",
-    "pilihan": ["Sejuk", "Beku", "Salju", "Es", "Nol"],
-    "kunci": "B",
-    "pola": "Tingkatan Suhu (Normal ke Ekstrem/Perubahan Wujud)",
-    "pembahasan": "Mendidih adalah kondisi panas ekstrem hingga air berubah wujud menjadi gas. Beku adalah kondisi dingin ekstrem hingga air berubah wujud menjadi padat.",
-    "analisis_opsi": {
-      "A": "Salah. Sejuk adalah tingkatan di atas dingin, bukan ekstrem.",
-      "B": "Benar. Beku adalah kondisi dingin ekstrem.",
-      "C": "Salah. Salju adalah benda.",
-      "D": "JEBAKAN BENDA. Es adalah benda hasil pembekuan, 'beku' adalah kata sifat/kondisi yang setara dengan 'mendidih'.",
-      "E": "Salah. Nol adalah angka."
-    }
-  },
-  {
-    "id": 53,
-    "level": "Mahir",
-    "soal": "ULAR : KAKI = IKAN : ...",
-    "pilihan": ["Sirip", "Insang", "Paru-paru", "Sisik", "Ekor"],
-    "kunci": "C",
-    "pola": "Logika Ketiadaan (Hewan dan Organ yang TIDAK Dimilikinya)",
-    "pembahasan": "Ular adalah reptil yang TIDAK memiliki kaki. Ikan adalah vertebrata air yang TIDAK memiliki paru-paru (mereka bernapas dengan insang).",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI. Ikan MEMILIKI sirip.",
-      "B": "JEBAKAN MATI. Ikan MEMILIKI insang.",
-      "C": "Benar. Ikan TIDAK memiliki paru-paru.",
-      "D": "JEBAKAN MATI. Ikan MEMILIKI sisik.",
-      "E": "JEBAKAN MATI. Ikan MEMILIKI ekor."
-    }
-  },
-  {
-    "id": 54,
-    "level": "Pemula",
-    "soal": "WAKTU : DETIK = ARUS : ...",
-    "pilihan": ["Volt", "Ohm", "Ampere", "Watt", "Joule"],
-    "kunci": "C",
-    "pola": "Besaran Fisika dan Satuan Ukurnya",
-    "pembahasan": "Detik adalah satuan ukur untuk waktu. Ampere adalah satuan ukur untuk arus listrik.",
-    "analisis_opsi": {
-      "A": "Salah. Volt adalah satuan tegangan.",
-      "B": "Salah. Ohm adalah satuan hambatan.",
-      "C": "Benar. Ampere adalah satuan arus.",
-      "D": "Salah. Watt adalah satuan daya.",
-      "E": "Salah. Joule adalah satuan energi."
-    }
-  },
-  {
-    "id": 55,
-    "level": "Mahir",
-    "soal": "KANGGURU : MELOMPAT : PADANG RUMPUT = ... : ... : ...",
-    "pilihan": [
-      "Paus : Berenang : Samudra",
-      "Elang : Terbang : Sarang",
-      "Ular : Melata : Pohon",
-      "Katak : Melompat : Darat",
-      "Ikan : Berenang : Akuarium"
-    ],
-    "kunci": "A",
-    "pola": "Analogi 3 Kata: Subjek : Aksi Khas : Habitat Alami Luas",
-    "pembahasan": "Kanguru bergerak khas dengan melompat di habitat alaminya yang luas (padang rumput). Paus bergerak khas dengan berenang di habitat alaminya yang luas (samudra).",
-    "analisis_opsi": {
-      "A": "Benar. Paus berenang di samudra (habitat alami luas).",
-      "B": "JEBAKAN TEMPAT. Sarang adalah tempat tinggal spesifik, bukan habitat luas.",
-      "C": "Salah. Ular melata di tanah, bukan khusus pohon.",
-      "D": "Salah. Katak hidup di amfibi (air dan darat).",
-      "E": "JEBAKAN BUATAN. Akuarium adalah habitat buatan, bukan alami."
-    }
-  },
-  {
-    "id": 56,
-    "level": "Mahir",
-    "soal": "MENILAI : MENCACI : MEMUJI = ... : ... : ...",
-    "pilihan": [
-      "Bekerja : Malas : Rajin",
-      "Mengemudi : Ugal-ugalan : Tertib",
-      "Berbicara : Membisu : Berteriak",
-      "Merespons : Marah : Senang",
-      "Menghukum : Denda : Penjara"
-    ],
-    "kunci": "B",
-    "pola": "Analogi 3 Kata: Tindakan Umum : Bentuk Negatif Ekstrem : Bentuk Positif Ekstrem",
-    "pembahasan": "Menilai adalah tindakan umum. Mencaci adalah bentuk menilai yang negatif/ekstrem. Memuji adalah bentuk menilai yang positif/ekstrem. Mengemudi adalah tindakan umum. Ugal-ugalan adalah bentuk negatif. Tertib adalah bentuk positif.",
-    "analisis_opsi": {
-      "A": "Salah. Malas dan rajin adalah sifat, bukan bentuk tindakan menilai.",
-      "B": "Benar. Mengemudi (umum), ugal-ugalan (negatif), tertib (positif).",
-      "C": "Salah. Membisu adalah ketiadaan tindakan (negasi), bukan bentuk negatif dari berbicara.",
-      "D": "Salah. Marah dan senang adalah emosi.",
-      "E": "Salah. Denda dan penjara sama-sama bentuk hukuman (bukan positif vs negatif)."
-    }
-  },
-  {
-    "id": 57,
-    "level": "Mahir",
-    "soal": "Kita mengetahui bahwa pada tubuh kucing terdapat cakar dan kumis. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Pada mobil terdapat setir dan kaca film",
-      "Pada burung terdapat paruh dan bulu",
-      "Pada sepeda terdapat pedal dan bel",
-      "Pada rumah terdapat pintu dan pot bunga",
-      "Pada laptop terdapat keyboard dan stiker"
-    ],
-    "kunci": "B",
-    "pola": "Analogi Kalimat: Bagian Inheren (Bawaan Alami) yang Menyatu",
-    "pembahasan": "Cakar dan kumis adalah bagian INHEREN (bawaan alami) yang menyatu pada tubuh kucing sejak lahir. Paruh dan bulu adalah bagian INHEREN yang menyatu pada tubuh burung.",
-    "analisis_opsi": {
-      "A": "JEBAKAN AKSESORI. Kaca film adalah aksesori tambahan, bukan bawaan pabrik.",
-      "B": "Benar. Paruh dan bulu adalah bagian bawaan alami burung.",
-      "C": "JEBAKAN AKSESORI. Bel adalah aksesori tambahan pada sepeda.",
-      "D": "JEBAKAN AKSESORI. Pot bunga adalah benda luar/aksesori rumah.",
-      "E": "JEBAKAN AKSESORI. Stiker adalah aksesori tambahan."
-    }
-  },
-  {
-    "id": 58,
-    "level": "Mahir",
-    "soal": "Semut tentara memiliki rahang dan antena di bagian kepalanya. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Harimau memiliki kuku dan taring",
-      "Kupu-kupu memiliki sayap dan antena",
-      "Burung hantu memiliki mata besar dan paruh di bagian kepalanya",
-      "Ikan piranha memiliki gigi runcing dan ekor",
-      "Beruang memiliki bulu tebal dan cakar"
-    ],
-    "kunci": "C",
-    "pola": "Analogi Kalimat: Presisi Spasial (Lokasi Anatomi yang Sama)",
-    "pembahasan": "Rahang dan antena pada semut tentara secara SPASIAL terletak di bagian yang sama, yaitu KEPALA. Mata besar dan paruh pada burung hantu juga secara spasial terletak di bagian KEPALA.",
-    "analisis_opsi": {
-      "A": "JEBAKAN SPASIAL. Kuku ada di kaki, taring ada di mulut (lokasi berbeda).",
-      "B": "JEBAKAN SPASIAL. Sayap ada di punggung/dada, antena di kepala (lokasi berbeda).",
-      "C": "Benar. Mata dan paruh sama-sama berada di kepala.",
-      "D": "JEBAKAN SPASIAL. Gigi di kepala, ekor di belakang (lokasi berbeda).",
-      "E": "JEBAKAN SPASIAL. Bulu di seluruh tubuh, cakar di kaki (lokasi berbeda)."
-    }
-  },
-  {
-    "id": 59,
-    "level": "Mahir",
-    "soal": "Piston bergerak naik-turun agar mesin dapat menghasilkan tenaga. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Paru-paru mengembang agar oksigen dapat diserap",
-      "Jantung berdetak agar darah dapat beredar",
-      "Akar menyerap air agar tumbuhan dapat tumbuh",
-      "Layar menyala agar gambar dapat terlihat",
-      "Roda berputar agar mobil dapat berjalan"
-    ],
-    "kunci": "B",
-    "pola": "Analogi Kalimat: Komponen : Gerakan Mekanis/Siklik : Fungsi Sistem Besar",
-    "pembahasan": "Piston (komponen) melakukan gerakan mekanis siklik (naik-turun) agar sistem besar (mesin) berfungsi. Jantung (komponen) melakukan gerakan mekanis siklik (berdetak) agar sistem besar (peredaran darah) berfungsi.",
-    "analisis_opsi": {
-      "A": "JEBAKAN HALUS. Mengembang adalah perubahan volume, bukan gerakan mekanis siklik pemicu sistem.",
-      "B": "Benar. Jantung berdetak (siklik) agar darah beredar.",
-      "C": "Salah. Menyerap bukan gerakan mekanis.",
-      "D": "Salah. Menyala adalah kondisi elektronik.",
-      "E": "JEBAKAN HALUS. Roda berputar agar mobil berjalan adalah contoh benar, tetapi dalam konteks sistem internal (seperti piston di dalam mesin), jantung di dalam tubuh lebih setara secara presisi anatomi/mekanik."
-    }
-  },
-  {
-    "id": 60,
-    "level": "Mahir",
-    "soal": "Baja lebih kuat daripada besi. Hubungan ini sama dengan ...",
-    "pilihan": [
-      "Emas lebih mahal daripada perak",
-      "Berlian lebih keras daripada kaca",
-      "Mobil sport lebih cepat daripada sepeda motor",
-      "Lukisan asli lebih indah daripada duplikat",
-      "Kain sutra lebih mewah daripada katun"
-    ],
-    "kunci": "B",
-    "pola": "Analogi Kalimat: Perbandingan Properti Fisik Alami (Objektif)",
-    "pembahasan": "Baja dan besi dibandingkan berdasarkan KEKUATAN (properti fisik alami yang terukur). Berlian dan kaca dibandingkan berdasarkan KEKERASAN (properti fisik alami yang terukur).",
-    "analisis_opsi": {
-      "A": "JEBAKAN MATI (SUBJEKTIF). 'Mahal' adalah nilai pasar.",
-      "B": "Benar. 'Keras' adalah properti fisik alami (skala Mohs).",
-      "C": "JEBAKAN HALUS. 'Cepat' memang terukur, tetapi membandingkan mesin buatan manusia, bukan material dasar seperti baja/besi.",
-      "D": "JEBAKAN MATI (SUBJEKTIF). 'Indah' adalah estetika.",
-      "E": "JEBAKAN MATI (SUBJEKTIF). 'Mewah' adalah nilai sosial."
-    }
-  }
-]
+  ]
+}

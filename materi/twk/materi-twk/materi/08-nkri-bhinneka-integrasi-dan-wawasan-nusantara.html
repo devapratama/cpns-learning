@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul 08 — NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara | Materi TWK | CPNS Learning</title>
+<meta name="description" content="Modul naratif untuk memahami keberagaman, Bhinneka Tunggal Ika, persatuan, kesatuan, integrasi, keutuhan, NKRI, pusat-daerah, dan Wawasan Nusantara.">
+<style>
+:root{
+--ink:#1d2932;--muted:#687780;--paper:#f5f2ea;--card:#fffdf9;
+--navy:#18384b;--blue:#376b80;--gold:#b48a39;--green:#2f6a58;--red:#8c453e;
+--line:#ddd7cb;--soft:#edf3f5;--softgold:#f6edda;--softgreen:#edf4ef;
+--shadow:0 16px 42px rgba(27,43,54,.075);--r:21px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.82}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:auto;padding:0 24px}
+.hero{background:linear-gradient(135deg,#142d40 0%,#355f72 58%,#827149 100%);color:#fff;padding:78px 0 64px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-230px;bottom:-330px;width:720px;height:720px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 52px rgba(255,255,255,.03),0 0 0 104px rgba(255,255,255,.02)}
+.hero-grid{display:grid;grid-template-columns:1.5fr .7fr;gap:38px;align-items:end;position:relative;z-index:1}
+.eyebrow,.kicker{font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem}.eyebrow{opacity:.78}
+.hero h1{font:800 clamp(2.25rem,5.1vw,4.7rem)/1.04 Georgia,serif;margin:15px 0 18px;max-width:900px}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,.91);max-width:850px}
+.hero-note{padding:23px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:20px;backdrop-filter:blur(7px)}
+.sticky{position:sticky;top:0;z-index:30;background:rgba(245,242,234,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{max-width:1180px;margin:auto;display:flex;gap:8px;overflow:auto;padding:10px 24px}
+.nav a{white-space:nowrap;color:var(--muted);font-size:.82rem;padding:8px 11px;border-radius:999px}
+.nav a:hover{background:var(--soft);color:var(--ink);text-decoration:none}
+main{padding:24px 0 90px}.section{padding:68px 0}
+.section.alt{background:rgba(255,253,249,.56);border-top:1px solid rgba(221,215,203,.65);border-bottom:1px solid rgba(221,215,203,.65)}
+.section h2{font:800 clamp(1.8rem,3vw,3rem)/1.1 Georgia,serif;color:var(--navy);margin:8px 0 17px}
+.section h3{font-size:1.34rem;color:var(--navy);margin:30px 0 10px}.lead{font-size:1.08rem;color:#3c4e5a;max-width:930px}
+.story,.card,.callout,.reason,.checkpoint,.sourcebox,.case{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.story{padding:31px;max-width:980px}.story p{margin:15px 0}
+.callout{padding:21px 24px;margin:22px 0}.callout.gold{border-left:5px solid var(--gold)}.callout.blue{border-left:5px solid var(--blue)}
+.callout.green{border-left:5px solid var(--green)}.callout.red{border-left:5px solid var(--red)}.callout strong{color:var(--navy)}
+.tag{display:inline-block;padding:6px 10px;background:var(--softgold);border-radius:999px;color:#6f5829;font-weight:900;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:19px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:23px}.card h4{margin:0 0 9px;color:var(--navy);font-size:1.12rem}.tiny{font-size:.84rem;color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:24px 0}.pill{padding:10px 13px;background:var(--soft);border:1px solid #d5e0e4;border-radius:999px;font-weight:850;font-size:.86rem}.arrow{font-weight:900;color:var(--gold)}
+.big-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:28px 0}
+.big-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 15px;text-align:center}
+.big-step .n{font:800 1.75rem Georgia;color:var(--gold)}.big-step strong{display:block;margin:7px 0}.big-step span{font-size:.78rem;color:var(--muted)}
+.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;margin:20px 0}
+.compare>div{padding:24px}.compare .a{background:#f1f6f7;border-right:1px solid var(--line)}.compare .b{background:#fbf5e7}
+.signal{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted)}
+.contrast-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+.contrast{padding:21px;border:1px solid var(--line);border-radius:18px;background:#fff}.contrast .label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted);margin-bottom:6px}
+.contrast.good{background:var(--softgreen)}.contrast.near{background:#faf5e9}.contrast.bad{background:#fbefed}
+.timeline{position:relative;margin:30px 0}.timeline:before{content:"";position:absolute;left:23px;top:0;bottom:0;width:2px;background:#d6cec0}
+.titem{display:grid;grid-template-columns:50px 1fr;gap:18px;margin-bottom:20px}.dot{width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;position:relative;z-index:1;border:4px solid var(--paper)}
+.timeline-card{padding:21px;background:#fffdf9;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.timeline-card .date{font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:900}
+.reason{padding:24px}.rline{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:12px 0;border-bottom:1px dashed var(--line)}.rline:last-child{border-bottom:none}.rkey{font-weight:900;color:var(--navy)}
+.matrix-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);background:#fff}
+.matrix{width:100%;border-collapse:separate;border-spacing:0;min-width:850px}.matrix th,.matrix td{padding:14px 15px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.matrix th{background:var(--soft);color:var(--navy)}.matrix td:last-child,.matrix th:last-child{border-right:none}.matrix tr:last-child td{border-bottom:none}
+.node-map{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:27px 0;align-items:stretch}
+.node{padding:21px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:center}.node strong{display:block;color:var(--navy);margin-bottom:8px}.node.core{background:var(--softgold)}
+.mental{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:13px;align-items:center;margin:26px 0}.mental .box{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff}.mental .center{background:var(--navy);color:#fff;text-align:center}.mental .center strong{font-size:1.2rem}
+.checkpoint{padding:23px}.check{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #e4ded4;background:#faf9f5;border-radius:14px;margin:11px 0}.check b{color:var(--gold)}
+details{background:#fffdf9;border:1px solid var(--line);border-radius:15px;padding:14px 17px;margin:13px 0}summary{cursor:pointer;font-weight:900;color:var(--navy)}
+footer{background:#132b3e;color:#fff;padding:35px 0}.footer-text{color:rgba(255,255,255,.75)}
+@media(max-width:900px){
+.hero-grid,.grid2,.grid3,.mental,.contrast-grid{grid-template-columns:1fr}.big-flow{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}.compare .a{border-right:none;border-bottom:1px solid var(--line)}
+.node-map{grid-template-columns:1fr 1fr}.rline{grid-template-columns:1fr;gap:4px}.nav{padding-left:14px;padding-right:14px}.section{padding:52px 0}.hero{padding-top:55px}
+}
+@media(max-width:560px){
+.wrap{padding:0 17px}.story,.card,.callout,.reason,.checkpoint,.sourcebox,.case,.timeline-card{padding:19px}.big-flow{grid-template-columns:1fr}.node-map{grid-template-columns:1fr}
+.titem{grid-template-columns:40px 1fr}.dot{width:38px;height:38px}.timeline:before{left:19px}
+}
+</style>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
+  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
+  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
+  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
+  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
+  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
+  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
+  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
+  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
+  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
+}
+
+/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
+.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
+.cpns-crumb a{color:var(--accent);text-decoration:none;}
+.cpns-crumb a:hover{text-decoration:underline;}
+.cpns-crumb .sep{color:var(--line);}
+.cpns-crumb .cur{color:var(--muted);}
+.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
+.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
+.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
+.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
+.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
+.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
+.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
+.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
+.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
+.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
+body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
+img{max-width:100%;height:auto;border-radius:8px;}
+table{max-width:100%;}
+@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
+
+</style>
+</head>
+<body>
+<nav class="cpns-crumb" aria-label="Breadcrumb">
+  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+  <a href="../../index.html">TWK</a><span class="sep">/</span>
+  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+  <span class="cur">Modul 08</span>
+</nav>
+<div class="cpns-progress"><span id="cpns-progress-bar"></span></div>
+
+
+<header class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">Ultimate TWK Knowledge System · Modul 08</div>
+<h1>NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara</h1>
+<p>Indonesia tidak dibangun dari manusia yang semuanya sama. Kita justru menghadapi pertanyaan yang lebih sulit: <strong>bagaimana sesuatu yang sangat berbeda dapat tetap menjadi satu?</strong></p>
+</div>
+<div class="hero-note">
+<strong>Target modul</strong><br>
+Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kesatuan”, atau “Wawasan Nusantara = cara pandang”. Anda akan belajar melihat hubungan antarkonsep dan mengenalinya ketika konteks soal berubah.
+</div>
+</div>
+</header>
+
+<div class="sticky"><nav class="nav">
+<a href="#masalah">Masalah keberagaman</a><a href="#satu-cerita">Satu cerita</a><a href="#bhinneka">Bhinneka</a><a href="#persatuan">Persatuan &amp; kesatuan</a>
+<a href="#integrasi">Integrasi &amp; keutuhan</a><a href="#proses">Akomodasi &amp; asimilasi</a><a href="#nkri">NKRI</a><a href="#wawasan">Wawasan Nusantara</a>
+<a href="#pusatdaerah">Pusat–daerah</a><a href="#twk">TWK</a><a href="#map">Peta</a><a href="#check">Checkpoint</a>
+</nav></div>
+
+<main>
+
+<section class="section" id="masalah">
+<div class="wrap">
+<div class="kicker">Sebelum mengenal istilah</div>
+<h2>Indonesia sangat beragam. Itu fakta awalnya.</h2>
+<p class="lead">Ada perbedaan suku, bahasa, agama, adat, daerah, pengalaman sejarah, kondisi geografis, dan kepentingan ekonomi. Masalahnya bukan bagaimana membuat semua perbedaan hilang. Masalahnya adalah bagaimana perbedaan itu hidup di dalam satu kehidupan bersama.</p>
+
+<div class="story">
+<span class="tag">Pertanyaan pembuka</span>
+<p>Bayangkan sebuah kampung dihuni lima kelompok dengan bahasa keluarga, makanan, tradisi, dan kebiasaan yang berbeda. Pada awalnya perbedaan tidak menjadi masalah. Mereka bekerja, berdagang, belajar, dan saling mengunjungi.</p>
+<p>Kemudian muncul pembangunan bendungan. Sebagian warga ingin lahan segera digunakan. Kelompok lain khawatir tempat bersejarah mereka hilang. Ada yang meminta keputusan berada di pemerintah desa. Ada yang ingin semua warga ikut bicara. Ada yang takut kelompok terbanyak selalu menang.</p>
+<p>Perhatikan jumlah masalah yang muncul sekaligus: <strong>perbedaan</strong>, <strong>kepentingan</strong>, <strong>identitas</strong>, <strong>keputusan bersama</strong>, dan <strong>kesatuan wilayah</strong>. Satu kejadian nyata dapat menyentuh banyak konsep. Namun untuk belajar, kita pecah berdasarkan pertanyaan yang sedang dijawab.</p>
+</div>
+
+<div class="flow">
+<span class="pill">kita berbeda</span><span class="arrow">→</span>
+<span class="pill">kita perlu hidup bersama</span><span class="arrow">→</span>
+<span class="pill">perbedaan harus dikelola</span><span class="arrow">→</span>
+<span class="pill">lahir persatuan</span><span class="arrow">→</span>
+<span class="pill">terbentuk integrasi</span><span class="arrow">→</span>
+<span class="pill">dipertahankan sebagai satu negara</span>
+</div>
+
+<div class="callout gold">
+<strong>Istilah baru nanti mengikuti masalah.</strong> Bhinneka Tunggal Ika menjawab hubungan keberagaman dan kesatuan. Persatuan berbicara tentang proses atau semangat menyatukan. Kesatuan berbicara tentang keadaan menjadi satu. Integrasi menjelaskan bagaimana unsur-unsur yang berbeda terhubung menjadi satu sistem sosial/nasional yang berfungsi. NKRI adalah bentuk negara Indonesia yang kesatuannya mempunyai konsekuensi politik-teritorial. Wawasan Nusantara memberi cara pandang terhadap diri dan wilayah Indonesia sebagai satu kesatuan dengan keberagaman.
+</div>
+</div>
+</section>
+
+<section class="section alt" id="satu-cerita">
+<div class="wrap">
+<div class="kicker">Satu cerita, satu variabel berubah</div>
+<h2>Inilah cara membedakan konsep yang tampak hampir sama</h2>
+<p class="lead">Gunakan situasi yang identik. Kita hanya mengubah tindakan atau tujuan. Perubahan kecil itulah yang membuat pusat konsep berpindah.</p>
+
+<div class="case">
+<h3 style="margin-top:0">Kasus dasar: sekolah dengan murid yang beragam</h3>
+<p>Sebuah sekolah memiliki murid dari berbagai daerah. Mereka memiliki bahasa keluarga, adat, kebiasaan, dan latar belakang yang berbeda. Ada kegiatan peringatan hari sekolah yang harus dirancang bersama.</p>
+
+<div class="timeline">
+<div class="titem"><div class="dot">A</div><div class="timeline-card"><div class="date">Variabel 1 · mengakui perbedaan</div><p>Sekolah memberi ruang agar setiap kelompok memperkenalkan budayanya tanpa menganggap satu budaya harus dihapus. <strong>Pusatnya: Bhinneka Tunggal Ika.</strong></p><p class="tiny">Mengapa? Karena masalah utamanya adalah bagaimana keberagaman tetap berada dalam satu komunitas. Bukan karena semua orang harus menjadi sama.</p></div></div>
+<div class="titem"><div class="dot">B</div><div class="timeline-card"><div class="date">Variabel 2 · mempererat kebersamaan</div><p>Semua kelompok bekerja sama menyiapkan acara sekolah, saling membantu, dan menempatkan kepentingan sekolah di atas kepentingan kelompok. <strong>Pusatnya: persatuan.</strong></p><p class="tiny">Mengapa? Fokus bergeser dari “ada perbedaan” menjadi “bagaimana kita menyatukan langkah”.</p></div></div>
+<div class="titem"><div class="dot">C</div><div class="timeline-card"><div class="date">Variabel 3 · sistem sudah menyatu</div><p>Setelah proses berlangsung, semua kelas dapat menjalankan agenda sekolah sebagai satu komunitas tanpa menghapus ciri masing-masing. <strong>Pusatnya: kesatuan.</strong></p><p class="tiny">Mengapa? “Kesatuan” menunjuk keadaan yang telah terwujud, sedangkan persatuan lebih mudah dipahami sebagai proses/semangat menuju keterhubungan tersebut.</p></div></div>
+<div class="titem"><div class="dot">D</div><div class="timeline-card"><div class="date">Variabel 4 · hubungan antarbagian menguat</div><p>Jadwal, aturan, komunikasi, dan kerja sama antar-kelas dibuat sehingga perbedaan tidak lagi menghasilkan pemisahan, melainkan menjadi bagian dari satu sistem sekolah. <strong>Pusatnya: integrasi.</strong></p><p class="tiny">Mengapa? Integrasi menekankan keterhubungan bagian-bagian yang berbeda sehingga berfungsi sebagai satu kesatuan.</p></div></div>
+<div class="titem"><div class="dot">E</div><div class="timeline-card"><div class="date">Variabel 5 · semua harus identik</div><p>Sekolah memaksa semua murid memakai bahasa keluarga yang sama, menghapus pertunjukan budaya daerah, dan melarang identitas kelompok. <strong>Ini bukan otomatis persatuan atau integrasi.</strong></p><p class="tiny">Mengapa? Kesamaan dipaksakan dengan menghilangkan perbedaan. Itu contoh penting dari salah tafsir bahwa “satu” berarti “seragam”.</p></div></div>
+</div>
+</div>
+
+<div class="callout blue">
+<strong>Pelajaran TWK:</strong> ketika soal memakai kata “perbedaan”, “menyatukan”, “menjadi satu”, atau “menghilangkan perbedaan”, jangan langsung memilih istilah yang paling familiar. Tanyakan: <em>apakah soal sedang membahas kenyataan keberagaman, proses menyatukan, keadaan kesatuan, atau mekanisme yang membuat unsur berbeda benar-benar terhubung?</em>
+</div>
+</div>
+</section>
+
+<section class="section" id="bhinneka">
+<div class="wrap">
+<div class="kicker">Konsep pertama</div>
+<h2>Bhinneka Tunggal Ika: berbeda tanpa kehilangan kebersamaan</h2>
+
+<div class="story">
+<p><strong>Bahasa sederhana:</strong> Bhinneka Tunggal Ika berarti keberagaman tidak meniadakan kesatuan. Bangsa Indonesia dapat memiliki identitas budaya dan kelompok yang berbeda, tetapi tetap berada dalam satu bangsa dan negara.</p>
+<p>Secara umum, makna tersebut sejalan dengan bahan pendidikan resmi yang menjelaskan dua unsur sekaligus: <strong>keberagaman sebagai kenyataan</strong> dan <strong>kesatuan sebagai cita-cita</strong>. Bukan satu unsur saja. citeturn891323search34</p>
+<p>Semboyan ini berasal dari Kakawin Sutasoma karya Mpu Tantular. BPIP menjelaskan bahwa gagasan tersebut kemudian menjadi pijakan dalam menjaga persatuan bangsa di tengah kemajemukan. citeturn891323search3</p>
+</div>
+
+<h3>Contoh bertingkat</h3>
+<div class="grid2">
+<div class="card">
+<h4>Contoh 1 — identitas lokal dipertahankan</h4>
+<p>Warga tetap menggunakan bahasa daerah di lingkungan keluarganya sekaligus menggunakan Bahasa Indonesia sebagai bahasa bersama dalam kehidupan nasional.</p>
+<p><strong>Mengapa?</strong> Ada dua lapisan: identitas lokal tetap hidup, identitas kebangsaan tetap menjadi titik temu.</p>
+<p><strong>Kenapa bukan keseragaman?</strong> Karena bahasa lokal tidak dihapus.</p>
+</div>
+<div class="card">
+<h4>Contoh 2 — perayaan berbeda dalam satu tujuan</h4>
+<p>Warga dari latar berbeda menjalankan tradisi masing-masing, tetapi bersama-sama menjaga lingkungan kampung.</p>
+<p><strong>Mengapa?</strong> Perbedaan tidak dianggap sebagai alasan untuk memutus kerja sama.</p>
+<p><strong>Kenapa bukan asimilasi?</strong> Tidak ada tuntutan agar tradisi yang berbeda melebur menjadi satu tradisi baru.</p>
+</div>
+</div>
+
+<div class="contrast-grid">
+<div class="contrast good"><div class="label">Bhinneka</div>Perbedaan diakui sebagai kenyataan dan kebersamaan tetap dibangun.</div>
+<div class="contrast near"><div class="label">Keseragaman</div>Perbedaan dikurangi atau dihapus agar semua tampak sama. “Sama” bukan otomatis “bersatu”.</div>
+<div class="contrast bad"><div class="label">Salah tafsir</div>“Demi persatuan, budaya lokal harus ditinggalkan.” Ini justru mengubah persatuan menjadi penghapusan identitas.</div>
+</div>
+
+<div class="callout gold">
+<strong>Jebakan mengapa bekerja:</strong> dalam bahasa sehari-hari, “satu” sering diasosiasikan dengan “sama”. Pembuat soal dapat memanfaatkan asosiasi tersebut. Namun dalam Bhinneka Tunggal Ika, justru dua unsur harus dipertahankan sekaligus: <strong>berbeda</strong> dan <strong>tetap satu</strong>. Menghilangkan salah satunya merusak konsep.
+</div>
+</div>
+</section>
+
+<section class="section alt" id="persatuan">
+<div class="wrap">
+<div class="kicker">Dari keberagaman menuju hubungan</div>
+<h2>Persatuan dan kesatuan: dekat, tetapi bukan kata yang sama</h2>
+
+<div class="story">
+<p>Bayangkan dua foto. Foto pertama menunjukkan warga dari berbagai kelompok sedang bekerja bersama memperbaiki jembatan. Foto kedua menunjukkan jembatan itu sudah selesai dan seluruh kampung dapat menggunakannya.</p>
+<p>Foto pertama membantu kita memahami <strong>persatuan</strong>: ada proses menyatukan langkah, mengatasi kepentingan yang berbeda, dan bekerja menuju kepentingan bersama. Foto kedua membantu memahami <strong>kesatuan</strong>: kondisi terwujudnya satu komunitas yang terhubung.</p>
+<p>Ini bukan perbedaan kaku seperti “persatuan selalu proses” dan “kesatuan selalu hasil” dalam setiap penggunaan bahasa. Namun sebagai alat belajar TWK, pembedaan tersebut sangat membantu membaca arah pertanyaan.</p>
+</div>
+
+<div class="compare">
+<div class="a"><div class="signal">Persatuan</div><h4>Gerak menuju kebersamaan</h4><p>Tekanannya pada menyatukan tenaga, membangun rasa satu kepentingan, dan mengatasi perpecahan.</p><p><strong>Contoh:</strong> kelompok pemuda dari desa berbeda bekerja sama menghadapi masalah lingkungan.</p></div>
+<div class="b"><div class="signal">Kesatuan</div><h4>Keadaan menjadi satu</h4><p>Tekanannya pada keterhubungan sebagai satu keseluruhan.</p><p><strong>Contoh:</strong> wilayah Indonesia dipandang sebagai satu kesatuan wilayah, bukan kumpulan pulau yang berdiri sendiri.</p></div>
+</div>
+
+<h3>Empat contrastive examples</h3>
+<div class="grid2">
+<div class="card"><strong>1 · Persatuan jelas</strong><p>Kelompok masyarakat yang berbeda menyisihkan kepentingan sempit dan menyusun kerja bersama untuk kepentingan kampung.</p><p class="tiny">Pusat: tindakan menyatukan.</p></div>
+<div class="card"><strong>2 · Kesatuan jelas</strong><p>Daratan, laut, dan berbagai daerah dipahami sebagai bagian dari keseluruhan wilayah Indonesia.</p><p class="tiny">Pusat: keadaan sebagai satu wilayah.</p></div>
+<div class="card"><strong>3 · Bhinneka lebih kuat</strong><p>Soal menyoroti bahwa adat berbeda tetapi bangsa tetap satu.</p><p class="tiny">Pusat: keberagaman + kesatuan.</p></div>
+<div class="card"><strong>4 · Integrasi lebih kuat</strong><p>Soal menyoroti proses membuat daerah, kelompok, lembaga, dan kepentingan yang berbeda terhubung dalam satu sistem nasional.</p><p class="tiny">Pusat: hubungan antarbagiannya.</p></div>
+</div>
+
+<div class="callout red">
+<strong>Common misconception:</strong> “Persatuan berarti semua orang harus punya pendapat yang sama.” Tidak. Persatuan diuji ketika ada perbedaan yang nyata tetapi orang tetap mampu menemukan kepentingan bersama. Kalau semua orang sudah identik, justru tantangan persatuannya jauh lebih kecil.
+</div>
+</div>
+</section>
+
+<section class="section" id="integrasi">
+<div class="wrap">
+<div class="kicker">Saat perbedaan menjadi sistem</div>
+<h2>Integrasi nasional: bukan menghapus perbedaan, tetapi menghubungkan bagian-bagian</h2>
+
+<div class="story">
+<p>Pikirkan sebuah negara dengan ribuan pulau. Ada daerah penghasil pangan, daerah industri, daerah pariwisata, daerah kepulauan kecil, daerah perbatasan, dan daerah dengan tradisi budaya yang berbeda. Kalau semuanya berjalan sendiri tanpa hubungan, negara secara administratif mungkin masih bernama satu, tetapi kehidupan nasionalnya lemah.</p>
+<p>Integrasi membantu menjelaskan kebutuhan untuk membuat berbagai unsur yang berbeda <strong>saling terhubung</strong>: manusia, wilayah, ekonomi, sosial budaya, politik, dan lembaga.</p>
+<p><strong>Bahasa sederhana:</strong> integrasi nasional adalah proses atau keadaan ketika unsur-unsur yang beragam dalam suatu bangsa terhubung dan berfungsi dalam satu kehidupan nasional sehingga perbedaan tidak berubah menjadi perpecahan.</p>
+<p><strong>Batas konsep:</strong> integrasi bukan sinonim “semua menjadi sama”. Sistem yang terintegrasi dapat tetap memiliki bagian yang berbeda, selama terdapat hubungan, aturan, komunikasi, rasa memiliki, dan kerja sama yang membuat keseluruhan tetap berfungsi.</p>
+</div>
+
+<div class="node-map">
+<div class="node core"><strong>Manusia</strong><span>beragam identitas</span></div>
+<div class="node"><strong>Wilayah</strong><span>berbeda geografis</span></div>
+<div class="node"><strong>Ekonomi</strong><span>saling membutuhkan</span></div>
+<div class="node"><strong>Sosial budaya</strong><span>beragam kebiasaan</span></div>
+<div class="node"><strong>Politik</strong><span>satu kehidupan negara</span></div>
+</div>
+
+<div class="callout blue">
+<strong>Jebakan “integrasi = penghapusan budaya lokal” mengapa bekerja?</strong> Karena jika seseorang mendengar “mengintegrasikan”, ia dapat membayangkan semua bagian harus dilebur menjadi satu bentuk. Padahal integrasi justru penting karena bagian-bagiannya <em>berbeda</em>. Yang dibangun adalah hubungan dan fungsi bersama, bukan penghapusan identitas.
+</div>
+
+<h3>Integrasi vs keutuhan</h3>
+<div class="compare">
+<div class="a"><div class="signal">Integrasi</div><h4>Proses / keterhubungan</h4><p>Bagaimana berbagai bagian masuk ke dalam satu sistem dan saling menguatkan.</p><p><strong>Contoh:</strong> konektivitas antardaerah memudahkan arus manusia, barang, informasi, dan pelayanan.</p></div>
+<div class="b"><div class="signal">Keutuhan</div><h4>Kondisi keseluruhan tetap tidak terpecah</h4><p>Tekanannya pada keseluruhan yang tetap utuh, baik sebagai bangsa maupun wilayah negara.</p><p><strong>Contoh:</strong> menjaga agar konflik atau separatisme tidak memecah wilayah atau identitas kebangsaan.</p></div>
+</div>
+
+<div class="contrast-grid">
+<div class="contrast good"><div class="label">Integrasi</div>Jalan, komunikasi, perdagangan, pendidikan, dan institusi membuat daerah yang berbeda semakin terhubung.</div>
+<div class="contrast good"><div class="label">Keutuhan</div>Seluruh bagian tetap dipandang sebagai bagian dari satu keseluruhan nasional yang harus dipertahankan.</div>
+<div class="contrast near"><div class="label">Keseragaman</div>Memaksa seluruh daerah memiliki kebudayaan, kebiasaan, dan bentuk kehidupan yang identik. Ini bukan syarat integrasi.</div>
+</div>
+</div>
+</section>
+
+<section class="section alt" id="proses">
+<div class="wrap">
+<div class="kicker">Dua proses yang sering menjadi distractor</div>
+<h2>Akomodasi dan asimilasi: dua cara mengelola perbedaan</h2>
+<p class="lead">Keduanya dapat membantu hubungan antarkelompok, tetapi mekanismenya berbeda. Memahami perbedaan ini membuat Anda lebih tahan terhadap pilihan yang tampak mirip.</p>
+
+<div class="grid2">
+<div class="card">
+<h4>Akomodasi — berdampingan tanpa harus melebur</h4>
+<p><strong>Bahasa sederhana:</strong> penyesuaian atau pengaturan hubungan antarpihak yang berbeda agar konflik dapat dikelola dan kehidupan bersama tetap berjalan.</p>
+<p><strong>Contoh:</strong> dua kelompok warga memiliki tradisi berbeda tentang penggunaan balai desa. Mereka menyusun jadwal agar keduanya memperoleh ruang yang adil.</p>
+<p><strong>Bukan contoh:</strong> salah satu kelompok dipaksa meninggalkan identitasnya agar menyerupai kelompok lain.</p>
+<p><strong>Inti:</strong> perbedaan dapat tetap ada, tetapi konflik diatur sehingga hidup bersama menjadi mungkin.</p>
+</div>
+<div class="card">
+<h4>Asimilasi — perbedaan budaya makin melebur</h4>
+<p><strong>Bahasa sederhana:</strong> proses pembauran kelompok yang dapat membuat perbedaan kebudayaan semakin berkurang atau melebur sehingga terbentuk pola budaya bersama.</p>
+<p><strong>Contoh:</strong> dua komunitas yang lama hidup berdampingan mengalami perkawinan antarkelompok, interaksi intensif, dan kebiasaan bersama sehingga sebagian unsur budaya mereka menyatu.</p>
+<p><strong>Bukan contoh:</strong> dua kelompok hanya sepakat menggunakan lapangan bersama pada hari berbeda. Itu lebih dekat dengan akomodasi.</p>
+<p><strong>Inti:</strong> fokusnya bukan sekadar konflik selesai, tetapi perubahan atau pembauran unsur kebudayaan.</p>
+</div>
+</div>
+
+<div class="callout gold">
+<strong>Mengapa distractor ini berfungsi?</strong> Akomodasi dan asimilasi sama-sama dapat muncul dalam cerita tentang “hidup berdampingan”. Namun “berdampingan tanpa harus menjadi sama” berbeda dari “pembauran yang mengurangi perbedaan”. Jadi jangan memilih berdasarkan tema umum. Cari <strong>perubahan apa yang sebenarnya terjadi pada hubungan atau identitas kelompok</strong>.
+</div>
+
+<h3>Satu cerita, dua jalur</h3>
+<div class="contrast-grid">
+<div class="contrast good"><div class="label">Akomodasi</div>Dua kelompok tetap menjalankan ibadah menurut keyakinannya masing-masing, lalu menyepakati pengaturan penggunaan fasilitas bersama.</div>
+<div class="contrast good"><div class="label">Asimilasi</div>Dalam jangka panjang, interaksi antarkelompok sangat intensif hingga sebagian kebiasaan budaya saling melebur dan muncul pola budaya bersama.</div>
+<div class="contrast near"><div class="label">Bhinneka</div>Soal hanya menanyakan makna tetap satu di tengah adanya perbedaan. Jangan memaksakan istilah proses sosial bila pusat soal hanya semboyan.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="nkri">
+<div class="wrap">
+<div class="kicker">Sekarang masuk ke bentuk negaranya</div>
+<h2>NKRI bukan sekadar slogan persatuan</h2>
+
+<div class="story">
+<p>Kita sudah punya masalah sosial: bagaimana orang yang berbeda tetap menjadi satu. Sekarang naik satu tingkat: <strong>dalam bentuk negara apa kesatuan itu diwujudkan?</strong></p>
+<p>Pasal 1 ayat (1) UUD NRI 1945 menyatakan bahwa Indonesia ialah <strong>Negara Kesatuan</strong> yang berbentuk <strong>Republik</strong>. Jadi “NKRI” bukan hanya ungkapan moral tentang kerukunan. Ia menyebut bentuk negara dan susunan kenegaraan yang mempunyai konsekuensi politik.</p>
+<p>Pasal 25A UUD menyatakan NKRI adalah sebuah <strong>negara kepulauan yang berciri Nusantara</strong> dengan wilayah dan batas-batas serta hak-haknya ditetapkan dengan undang-undang. Dengan demikian, kesatuan Indonesia juga berkaitan erat dengan kesatuan wilayah. citeturn788325search0</p>
+</div>
+
+<div class="big-flow">
+<div class="big-step"><div class="n">01</div><strong>Negara</strong><span>organisasi politik</span></div>
+<div class="big-step"><div class="n">02</div><strong>Kesatuan</strong><span>bukan federasi</span></div>
+<div class="big-step"><div class="n">03</div><strong>Republik</strong><span>bentuk pemerintahan</span></div>
+<div class="big-step"><div class="n">04</div><strong>Kepulauan</strong><span>daratan + laut</span></div>
+<div class="big-step"><div class="n">05</div><strong>Konstitusi</strong><span>menentukan kerangka negara</span></div>
+</div>
+
+<div class="compare">
+<div class="a"><div class="signal">Salah memahami NKRI</div><h4>“NKRI berarti semua keputusan pasti harus dibuat pusat.”</h4><p>Ini terlalu luas. Negara kesatuan tidak berarti tidak ada pembagian urusan atau otonomi daerah. Yang penting, keseluruhan kewenangan berjalan dalam kerangka negara kesatuan menurut konstitusi dan hukum.</p></div>
+<div class="b"><div class="signal">Cara berpikir yang lebih aman</div><h4>“NKRI adalah bentuk negara kesatuan; pusat dan daerah bekerja dalam satu kerangka negara.”</h4><p>Perbedaan daerah dan pembagian urusan tidak otomatis mengubah Indonesia menjadi negara federal.</p></div>
+</div>
+
+<h3>Near miss: negara kesatuan ≠ daerah tidak boleh berbeda</h3>
+<div class="grid2">
+<div class="card"><h4>Contoh tepat</h4><p>Daerah memiliki karakter budaya dan kebutuhan pembangunan berbeda. Pemerintahan daerah menjalankan urusan tertentu sesuai aturan, sementara keseluruhan tetap berada dalam NKRI.</p><p><strong>Mengapa?</strong> Perbedaan daerah berada di dalam satu kerangka negara.</p></div>
+<div class="card"><h4>Contoh bukan otomatis ancaman terhadap kesatuan</h4><p>Daerah mengusulkan kebijakan yang menyesuaikan kondisi lokal melalui mekanisme yang sah.</p><p><strong>Mengapa?</strong> Perbedaan kebijakan lokal tidak dengan sendirinya berarti pemisahan dari negara.</p></div>
+</div>
+
+<div class="callout red">
+<strong>Jebakan “kesatuan = semua harus dari pusat” mengapa bekerja?</strong> Karena kata “satu” mudah diterjemahkan menjadi satu pengambil keputusan. Padahal yang disebut satu dalam Negara Kesatuan adalah <strong>bentuk negara dan kedaulatannya</strong>, bukan bahwa seluruh urusan harus dikerjakan sendiri oleh pemerintah pusat.
+</div>
+</div>
+</section>
+
+<section class="section alt" id="wawasan">
+<div class="wrap">
+<div class="kicker">Indonesia sebagai negara kepulauan</div>
+<h2>Wawasan Nusantara: ketika laut bukan pemisah, tetapi bagian dari kesatuan</h2>
+
+<div class="story">
+<p>Bayangkan peta Indonesia dari sudut pandang orang yang hanya melihat daratan. Pulau Jawa terlihat jauh dari Sulawesi, Sulawesi jauh dari Papua, dan ribuan pulau tampak seperti titik-titik yang terpisah oleh laut.</p>
+<p>Sekarang ubah cara melihatnya. Indonesia bukan “sekumpulan pulau yang kebetulan memiliki satu nama”, melainkan negara kepulauan yang wilayahnya harus dipahami sebagai satu kesatuan. Laut di antara pulau-pulau bukan semata ruang kosong yang memisahkan; dalam perspektif Nusantara, laut ikut menjadi bagian penting dari kehidupan dan kesatuan nasional.</p>
+<p>Di sinilah <strong>Wawasan Nusantara</strong> muncul sebagai cara pandang. Lemhannas menjelaskan Wawasan Nusantara sebagai cara pandang dan sikap bangsa Indonesia mengenai diri dan lingkungannya yang mengutamakan persatuan dan kesatuan bangsa serta kesatuan wilayah untuk mendukung pencapaian kepentingan nasional. citeturn788325search38</p>
+<p>Karena itu Wawasan Nusantara tidak boleh direduksi menjadi “hafalan letak Indonesia”. Unsur geografis adalah titik awal, lalu cara pandang tersebut diterjemahkan ke bidang politik, ekonomi, sosial budaya, dan pertahanan-keamanan.</p>
+</div>
+
+<div class="node-map">
+<div class="node core"><strong>Wilayah</strong><span>daratan + perairan sebagai satu kesatuan</span></div>
+<div class="node"><strong>Politik</strong><span>kehidupan nasional satu</span></div>
+<div class="node"><strong>Ekonomi</strong><span>keterhubungan antardaerah</span></div>
+<div class="node"><strong>Sosial budaya</strong><span>beragam tetapi satu bangsa</span></div>
+<div class="node"><strong>Pertahanan</strong><span>keutuhan wilayah dijaga bersama</span></div>
+</div>
+
+<div class="callout blue">
+<strong>Hubungan dengan negara kepulauan:</strong> Pasal 25A memberi dasar konstitusional bahwa NKRI adalah negara kepulauan berciri Nusantara. Wawasan Nusantara kemudian membantu menerjemahkan kondisi geografis itu menjadi cara pandang kebangsaan yang menekankan kesatuan wilayah dan bangsa. citeturn788325search0turn788325search39
+</div>
+
+<h3>Contoh konkret</h3>
+<div class="grid2">
+<div class="card"><h4>Contoh 1 — konektivitas</h4><p>Pembangunan transportasi dan komunikasi menghubungkan pulau-pulau sehingga manusia, barang, layanan, dan informasi tidak terjebak sebagai dunia yang terpisah.</p><p><strong>Pusat konsep:</strong> kesatuan wilayah dan keterhubungan nasional.</p></div>
+<div class="card"><h4>Contoh 2 — daerah perbatasan</h4><p>Wilayah perbatasan dipandang bukan sebagai “daerah jauh yang urusannya sendiri”, tetapi bagian dari keseluruhan wilayah dan kepentingan nasional.</p><p><strong>Pusat konsep:</strong> keutuhan wilayah dan kepentingan nasional.</p></div>
+<div class="card"><h4>Near miss — hanya geografi</h4><p>“Indonesia berada di antara dua benua dan dua samudra.” Fakta ini benar, tetapi bila pertanyaannya menanyakan Wawasan Nusantara, lokasi saja belum menjelaskan cara pandang kesatuan.</p></div>
+<div class="card"><h4>Near miss — hanya nasionalisme</h4><p>“Saya mencintai Indonesia.” Ini nilai positif, tetapi belum spesifik menunjukkan Wawasan Nusantara jika tidak ada hubungan dengan kesatuan wilayah, bangsa, atau cara pandang Nusantara.</p></div>
+</div>
+
+<div class="callout gold">
+<strong>Jebakan mengapa bekerja?</strong> Karena soal dapat menaruh fakta geografis yang benar sebagai opsi. Peserta mengenali fakta itu lalu memilihnya, padahal pertanyaan mungkin meminta <em>makna konseptual</em> Wawasan Nusantara. Jadi selalu bedakan “fakta yang menjadi latar” dari “konsep yang diminta”.
+</div>
+</div>
+</section>
+
+<section class="section" id="pusatdaerah">
+<div class="wrap">
+<div class="kicker">Pusat, daerah, dan kepentingan nasional</div>
+<h2>Satu negara tidak berarti satu pengalaman daerah</h2>
+
+<div class="story">
+<p>Daerah Indonesia memiliki kondisi yang berbeda. Ada yang berbentuk kepulauan kecil, ada yang luas daratan, ada yang memiliki kekayaan alam besar, ada yang menghadapi persoalan akses transportasi, dan ada yang berada di perbatasan. Jika semua daerah diperlakukan seolah-olah identik, kebijakan dapat gagal membaca kenyataan.</p>
+<p>Sebaliknya, bila setiap daerah bergerak seolah tidak memiliki hubungan dengan daerah lain dan kepentingan nasional, integrasi dapat melemah. Karena itu pusat dan daerah harus dibaca sebagai bagian dari satu sistem: ada kepentingan lokal/daerah, ada kepentingan nasional, dan ada pembagian kewenangan yang diatur oleh konstitusi serta hukum.</p>
+</div>
+
+<div class="compare">
+<div class="a"><div class="signal">Kesatuan yang benar</div><h4>Perbedaan daerah berada di dalam satu negara</h4><p>Otonomi dan pengelolaan urusan daerah tidak otomatis berarti pemisahan. Yang dicari adalah hubungan antara kebutuhan lokal dan kepentingan nasional.</p></div>
+<div class="b"><div class="signal">Salah tafsir</div><h4>Kesatuan = semua daerah diperlakukan persis sama</h4><p>Kesatuan tidak memerlukan penghapusan konteks lokal. Justru kebijakan nasional sering perlu memperhitungkan kondisi daerah agar tujuan bersama tercapai secara adil.</p></div>
+</div>
+
+<h3>Tiga contoh yang kelihatannya mirip</h3>
+<div class="contrast-grid">
+<div class="contrast good"><div class="label">Daerah berbeda</div>Pemerintah daerah mengembangkan kebijakan yang menyesuaikan kondisi geografis lokal sesuai kewenangan yang sah.</div>
+<div class="contrast good"><div class="label">Kepentingan nasional</div>Pembangunan konektivitas antarpulau diprioritaskan karena dampaknya terhadap keterhubungan nasional.</div>
+<div class="contrast near"><div class="label">Ego daerah</div>Kelompok menolak kerja sama nasional semata-mata karena menganggap kepentingan daerah tidak boleh dipengaruhi kepentingan bangsa. Ini dapat bertentangan dengan logika integrasi nasional.</div>
+</div>
+
+<div class="callout green">
+<strong>Transfer konsep:</strong> “kepentingan nasional” bukan berarti semua kepentingan lokal tidak penting. Justru kepentingan nasional adalah cara melihat keseluruhan bangsa dan negara. Konflik pusat–daerah harus dianalisis berdasarkan kewenangan, tujuan kebijakan, dampak terhadap wilayah lain, dan kerangka konstitusional — bukan berdasarkan asumsi bahwa salah satu pihak selalu benar.
+</div>
+</div>
+</section>
+
+<section class="section alt" id="twk">
+<div class="wrap">
+<div class="kicker">Dari materi ke pola soal</div>
+<h2>Bagaimana corpus 600 mengubah konsep ini menjadi TWK?</h2>
+<p class="lead">Corpus digunakan di sini sebagai peta cara materi diuji. Pola utamanya bukan hafalan istilah, tetapi hubungan antara stimulus, konsep, dan konteks.</p>
+
+<div class="grid3">
+<div class="card"><h4>Keberagaman → nilai</h4><p>Stimulus menggambarkan suku, agama, budaya, atau kebiasaan yang berbeda. Pertanyaan dapat meminta sikap yang menjaga kebersamaan.</p></div>
+<div class="card"><h4>Fenomena → konsep</h4><p>Stimulus tidak menyebut “Bhinneka” atau “integrasi”. Pembaca harus melihat struktur peristiwanya.</p></div>
+<div class="card"><h4>Konsep → implementasi</h4><p>Soal menanyakan perilaku yang paling mencerminkan persatuan, toleransi, atau integrasi.</p></div>
+<div class="card"><h4>Cause → effect</h4><p>Soal memberi tindakan pemecah persatuan lalu meminta akibatnya: konflik, fragmentasi, atau melemahnya integrasi.</p></div>
+<div class="card"><h4>Konsep tetangga</h4><p>Opsi dapat berisi persatuan, toleransi, Bhinneka, nasionalisme, atau integrasi sekaligus. Semua tampak baik; hanya satu paling langsung.</p></div>
+<div class="card"><h4>Historical transfer</h4><p>Konsep persatuan dapat dipindahkan dari sejarah pergerakan ke masalah modern seperti media sosial, pembangunan wilayah, atau konflik antarkelompok.</p></div>
+</div>
+
+<div class="callout gold">
+<strong>Gravity center.</strong> Satu kasus dapat menyentuh Bhinneka, persatuan, toleransi, integrasi, nasionalisme, dan NKRI sekaligus. Itu normal. Tetapi ketika pertanyaan meminta “bagaimana keberagaman tetap dipertahankan dalam satu bangsa”, gravity center lebih dekat ke <strong>Bhinneka Tunggal Ika</strong>. Bila meminta “bagaimana bagian berbeda dihubungkan dalam satu sistem”, <strong>integrasi</strong> lebih kuat. Bila meminta “bentuk negara Indonesia”, pusatnya <strong>NKRI/Negara Kesatuan</strong>.
+</div>
+
+<h3>Worked reasoning 1 — Bhinneka atau integrasi?</h3>
+<div class="reason">
+<div class="rline"><div class="rkey">Stimulus</div><div>Sebuah sekolah memiliki murid dari lima daerah. Mereka tetap menggunakan sebagian tradisi masing-masing, tetapi bekerja sama sebagai satu sekolah.</div></div>
+<div class="rline"><div class="rkey">Fakta penting</div><div>Yang paling menonjol adalah <strong>perbedaan tetap ada</strong> sementara <strong>kesatuan tetap dijaga</strong>.</div></div>
+<div class="rline"><div class="rkey">Aktor</div><div>Kelompok murid dengan identitas berbeda.</div></div>
+<div class="rline"><div class="rkey">Masalah</div><div>Bagaimana perbedaan hidup bersama tanpa memecah komunitas?</div></div>
+<div class="rline"><div class="rkey">Konsep kandidat</div><div>Bhinneka Tunggal Ika, persatuan, integrasi.</div></div>
+<div class="rline"><div class="rkey">Tetangga</div><div>Integrasi masuk akal karena ada keterhubungan. Persatuan juga masuk akal karena ada kerja sama.</div></div>
+<div class="rline"><div class="rkey">Eliminasi</div><div>Jika pertanyaannya menekankan <strong>“tetap berbeda tetapi satu”</strong>, Bhinneka lebih langsung. Jika pertanyaannya menekankan <strong>“mekanisme yang membuat lima kelompok menjadi satu sistem sekolah yang saling terhubung”</strong>, integrasi lebih langsung.</div></div>
+<div class="rline"><div class="rkey">Kesimpulan</div><div>Jawaban tidak hanya ditentukan oleh cerita; <strong>kata-kata pertanyaannya menentukan gravity center</strong>.</div></div>
+</div>
+
+<h3>Worked reasoning 2 — Wawasan Nusantara atau fakta geografis?</h3>
+<div class="reason">
+<div class="rline"><div class="rkey">Stimulus</div><div>Sebuah kebijakan menghubungkan pulau-pulau terpencil dengan sistem transportasi nasional karena seluruh wilayah dipandang sebagai satu kesatuan.</div></div>
+<div class="rline"><div class="rkey">Fakta penting</div><div>Ada unsur geografi, tetapi pertanyaannya berbicara tentang <strong>cara pandang kesatuan wilayah</strong>.</div></div>
+<div class="rline"><div class="rkey">Konsep kandidat</div><div>Negara kepulauan, Wawasan Nusantara, integrasi wilayah.</div></div>
+<div class="rline"><div class="rkey">Tetangga</div><div>“Negara kepulauan” menjelaskan bentuk/geografi negara. “Integrasi wilayah” menjelaskan keterhubungan. Wawasan Nusantara menjelaskan cara pandang yang mengutamakan kesatuan wilayah dan bangsa.</div></div>
+<div class="rline"><div class="rkey">Eliminasi</div><div>Jika soal meminta lokasi Indonesia, geografi dapat menjadi pusat. Jika meminta cara pandang terhadap kesatuan wilayah, Wawasan Nusantara menjadi lebih tepat.</div></div>
+</div>
+
+<h3>Worked reasoning 3 — integrasi bukan penyeragaman</h3>
+<div class="reason">
+<div class="rline"><div class="rkey">Stimulus</div><div>Sebuah kebijakan nasional memastikan pelayanan publik terhubung di seluruh daerah, tetapi memberi ruang bagi setiap daerah untuk mempertahankan budaya lokal.</div></div>
+<div class="rline"><div class="rkey">Fakta penting</div><div>Hubungan nasional diperkuat tanpa menghapus identitas lokal.</div></div>
+<div class="rline"><div class="rkey">Konsep kandidat</div><div>Integrasi, Bhinneka, persatuan, keseragaman.</div></div>
+<div class="rline"><div class="rkey">Konsep tetangga</div><div>Bhinneka menjelaskan kombinasi keberagaman dan kesatuan; integrasi menjelaskan keterhubungan dalam satu sistem.</div></div>
+<div class="rline"><div class="rkey">Eliminasi</div><div>Keseragaman tidak cocok karena identitas lokal tetap hidup. Justru fakta bahwa identitas berbeda tetap ada menunjukkan mengapa “integrasi = menjadi sama” adalah model berpikir yang keliru.</div></div>
+<div class="rline"><div class="rkey">Kesimpulan</div><div><strong>Yang diintegrasikan adalah hubungan dan fungsi nasional, bukan manusia dipaksa menjadi identik.</strong></div></div>
+</div>
+
+<details><summary>Mengapa opsi “semua budaya harus sama” sering terasa benar?</summary>
+<p>Karena peserta menghubungkan “kesatuan” dengan “kesamaan”. Padahal Bhinneka Tunggal Ika justru menyandingkan perbedaan dengan kesatuan. Opsi penyeragaman memanfaatkan satu bagian konsep dan menghapus bagian lainnya. Itulah mengapa ia menjadi distractor yang efektif.</p>
+</details>
+<details><summary>Mengapa kata “persatuan” tidak selalu menjadi jawaban paling tepat?</summary>
+<p>Karena persatuan adalah konsep luas. Ketika stimulus secara spesifik membahas perbedaan budaya, Bhinneka dapat lebih presisi. Ketika membahas keterhubungan bagian dalam satu sistem, integrasi lebih presisi. Ketika membahas bentuk negara, NKRI lebih presisi. Konsep yang paling umum bukan selalu konsep yang paling tepat.</p>
+</details>
+</div>
+</section>
+
+<section class="section" id="map">
+<div class="wrap">
+<div class="kicker">Concept map</div>
+<h2>Jangan menyimpan konsep sebagai kotak terpisah</h2>
+
+<div class="mental">
+<div class="box"><strong>KENYATAAN</strong><p>Indonesia berbeda-beda: manusia, budaya, daerah, kondisi geografis, kepentingan.</p></div>
+<div class="box center"><strong>SISTEM KEBERSAMAAN</strong><p>Bhinneka → Persatuan → Integrasi → Keutuhan → NKRI</p></div>
+<div class="box"><strong>CARA PANDANG</strong><p>Wawasan Nusantara melihat bangsa dan wilayah Indonesia sebagai satu kesatuan dengan keberagaman untuk mendukung kepentingan nasional.</p></div>
+</div>
+
+<div class="node-map">
+<div class="node core"><strong>BHINNEKA</strong><span>berbeda tetap satu</span></div>
+<div class="node"><strong>PERSATUAN</strong><span>menyatukan langkah</span></div>
+<div class="node"><strong>INTEGRASI</strong><span>menghubungkan bagian</span></div>
+<div class="node"><strong>KEUTUHAN</strong><span>keseluruhan tetap tidak terpecah</span></div>
+<div class="node core"><strong>NKRI</strong><span>negara kesatuan</span></div>
+</div>
+
+<div class="flow">
+<span class="pill">Bhinneka</span><span class="arrow">→</span>
+<span class="pill">Persatuan</span><span class="arrow">→</span>
+<span class="pill">Integrasi</span><span class="arrow">→</span>
+<span class="pill">Keutuhan</span><span class="arrow">→</span>
+<span class="pill">NKRI</span>
+</div>
+
+<div class="callout blue">
+<strong>Wawasan Nusantara melingkupi cara pandangnya:</strong> kondisi Indonesia sebagai kepulauan menuntut bangsa melihat darat dan laut, pusat dan daerah, kelompok yang beragam, serta bidang kehidupan nasional sebagai bagian yang saling terkait. Lemhannas menekankan kesatuan wilayah dan bangsa untuk mendukung pencapaian kepentingan nasional. citeturn788325search38turn788325search39
+</div>
+
+<div class="callout green">
+<strong>Kalimat pengaman:</strong> <em>“Satu” tidak berarti “seragam”.</em> Indonesia menjadi satu justru karena unsur-unsur yang berbeda dapat hidup dalam satu bangsa, saling terhubung, dan tetap berada dalam satu kerangka negara.
+</div>
+</div>
+</section>
+
+<section class="section alt" id="check">
+<div class="wrap">
+<div class="kicker">Checkpoint konseptual</div>
+<h2>Apakah Anda benar-benar memahami perbedaannya?</h2>
+<p class="lead">Jangan jawab dengan definisi yang dihafal. Gunakan contoh sendiri dan jelaskan mengapa konsep tetangganya tidak paling tepat.</p>
+
+<div class="checkpoint">
+<div class="check"><b>01</b><div>Sebuah sekolah memiliki murid dari berbagai daerah, tetapi semua tetap bekerja sebagai satu komunitas. Apa yang membedakan kasus tersebut dari “semua murid harus memiliki budaya yang sama”?</div></div>
+<div class="check"><b>02</b><div>Jelaskan dengan contoh sendiri perbedaan antara <strong>persatuan</strong> dan <strong>kesatuan</strong>.</div></div>
+<div class="check"><b>03</b><div>Mengapa keberagaman yang tetap hidup dapat menjadi bagian dari integrasi, bukan tanda kegagalan integrasi?</div></div>
+<div class="check"><b>04</b><div>Apa yang sebenarnya “diintegrasikan” dalam integrasi nasional: budaya manusia, identitas, wilayah, hubungan, atau semuanya dalam arti yang sama?</div></div>
+<div class="check"><b>05</b><div>Mengapa “integrasi = penghapusan budaya lokal” adalah salah tafsir? Jelaskan bagaimana Anda membuktikannya dari struktur konsep.</div></div>
+<div class="check"><b>06</b><div>Dua kelompok tidak melebur budaya, tetapi menyusun aturan agar dapat menggunakan fasilitas bersama. Mengapa ini lebih dekat ke akomodasi?</div></div>
+<div class="check"><b>07</b><div>Dua kelompok mengalami perkawinan dan interaksi panjang hingga sebagian kebiasaan mereka menyatu. Mengapa ini lebih dekat ke asimilasi?</div></div>
+<div class="check"><b>08</b><div>Mengapa Negara Kesatuan Republik Indonesia tidak berarti seluruh keputusan harus diambil oleh pemerintah pusat?</div></div>
+<div class="check"><b>09</b><div>Jelaskan perbedaan antara fakta “Indonesia adalah negara kepulauan” dan konsep “Wawasan Nusantara”.</div></div>
+<div class="check"><b>10</b><div>Ambil satu masalah pembangunan di daerah. Tunjukkan bagaimana Anda dapat melihatnya dari sudut kepentingan lokal sekaligus kepentingan nasional.</div></div>
+<div class="check"><b>11</b><div>Sebuah stimulus menyebut suku, agama, dan budaya berbeda. Apa fakta tambahan yang Anda butuhkan sebelum menentukan apakah gravity center-nya Bhinneka, persatuan, integrasi, atau toleransi?</div></div>
+<div class="check"><b>12</b><div>Jelaskan dengan satu rangkaian kalimat mengapa peta konseptualnya dapat dibaca sebagai: <strong>Bhinneka → Persatuan → Integrasi → Keutuhan → NKRI</strong>.</div></div>
+</div>
+
+<div class="callout gold">
+<strong>Standar lulus:</strong> Anda telah memahami modul ketika mampu mengganti konteks dari sekolah ke masyarakat, pusat–daerah, pembangunan wilayah, media sosial, atau negara kepulauan dan tetap dapat menjawab pertanyaan: <strong>apa perbedaannya, apa yang harus disatukan, bagaimana bagian-bagiannya terhubung, apa yang harus tetap utuh, dan dalam bentuk negara apa keseluruhan itu berdiri?</strong>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="kicker">Catatan sumber dan metodologi</div>
+<h2>Mengapa materi ini disusun seperti ini?</h2>
+<div class="sourcebox" style="padding:27px">
+<p><strong>Corpus 600 soal + pembahasan</strong> digunakan sebagai sumber utama untuk melihat bagaimana topik ini diuji: keberagaman → persatuan, stimulus → konsep, konsep → implementasi, cause/effect, konsep tetangga, serta perbedaan antara jawaban yang benar secara umum dan jawaban yang paling langsung menjawab pusat pertanyaan. Corpus juga menunjukkan pentingnya membaca konteks dan bukan sekadar mencari satu kata kunci. fileciteturn9file0L10-L35 fileciteturn9file5L333-L360</p>
+
+<p><strong>Verifikasi konstitusional:</strong> UUD NRI 1945 Pasal 1 ayat (1) menetapkan Indonesia sebagai Negara Kesatuan berbentuk Republik; Pasal 25A menyatakan NKRI sebagai negara kepulauan berciri Nusantara. Sumber resmi JDIH DPR juga memuat Pembukaan yang menegaskan tujuan membentuk Pemerintah Negara Indonesia dan menyebut “Negara Indonesia” dalam susunan republik berkedaulatan rakyat. citeturn788325search0</p>
+
+<p><strong>Verifikasi Bhinneka Tunggal Ika:</strong> bahan pendidikan Pancasila yang diterbitkan melalui ekosistem BPIP menjelaskan makna Bhinneka Tunggal Ika sebagai keberagaman yang tetap merupakan kesatuan bangsa; BPIP juga mengaitkannya dengan Kakawin Sutasoma karya Mpu Tantular. citeturn891323search34turn891323search3</p>
+
+<p><strong>Verifikasi Wawasan Nusantara:</strong> publikasi Lemhannas menjelaskan Wawasan Nusantara sebagai cara pandang dan sikap bangsa Indonesia yang mengutamakan persatuan dan kesatuan bangsa serta kesatuan wilayah untuk mendukung pencapaian kepentingan nasional. Publikasi Lemhannas juga menghubungkannya dengan Pancasila, UUD 1945, kondisi negara kepulauan, dan berbagai bidang kehidupan nasional. citeturn788325search38turn788325search39</p>
+
+<p><strong>Verifikasi konteks kepulauan:</strong> dokumen Kemhan menjelaskan Wawasan Nusantara sebagai konsepsi kesatuan wilayah, bangsa, dan negara, serta membedakan konsepsi kewilayahan Nusantara dari Wawasan Nusantara sebagai cara pandang kesatuan bangsa dan negara. citeturn891323search33</p>
+
+<p class="tiny"><strong>Catatan akurasi dan istilah:</strong> “integrasi”, “persatuan”, “kesatuan”, “harmoni”, “akomodasi”, dan “asimilasi” dalam modul dipakai sebagai perangkat pembelajaran yang membantu membedakan pusat makna dalam soal. Tidak setiap batas istilah merupakan rumusan normatif tunggal dalam UUD. Karena itu, jangan mengubah alat bantu pedagogis menjadi seolah-olah definisi resmi konstitusi.</p>
+<p class="tiny"><strong>Catatan tentang harmoni:</strong> harmoni dipakai di sini sebagai keadaan hubungan sosial yang relatif serasi dan mampu mengelola perbedaan. Harmoni bukan berarti tidak ada konflik sama sekali. Konflik dapat tetap ada; yang penting konflik tidak otomatis berubah menjadi perpecahan dan masih dapat dikelola melalui mekanisme yang sah.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<strong>Ultimate TWK Knowledge System · 08 NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara</strong>
+<p class="footer-text">Indonesia tidak menjadi satu karena semua unsur dibuat identik. Indonesia menjadi satu ketika keberagaman dapat hidup dalam kebersamaan, kepentingan dapat dihubungkan, wilayah dipandang sebagai satu kesatuan, dan keseluruhan dijaga tetap utuh dalam kerangka NKRI.</p>
+</div>
+</footer>
+
+
+<nav class="cpns-modnav" aria-label="Navigasi modul">
+  <a class="cpns-navbtn" href="07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html">← Modul 07</a>
+  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m08" type="button">Tandai selesai</button>
+  <a class="cpns-navbtn" href="09-nasionalisme-dan-kepentingan-nasional.html">Modul 09 →</a>
+</nav>
+
+<script>
+(function(){
+  var bar=document.getElementById('cpns-progress-bar');
+  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+  var done=document.getElementById('cpns-done');
+  if(done){var key=done.getAttribute('data-key');
+    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+    refresh();
+  }
+})();
+</script>
+
+</body>
+</html>

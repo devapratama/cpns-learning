@@ -1,0 +1,327 @@
+{
+  "paket": 2,
+  "jenis": "perbandingan",
+  "jumlah_soal": 20,
+  "soal": [
+    {
+      "id": "P2-01",
+      "family": "RASIO DASAR",
+      "subpattern": "rasio dengan total diketahui",
+      "difficulty": "mudah",
+      "soal": "Dalam sebuah proyek, rasio meja kayu dan meja logam adalah 3:2. Jika jumlah seluruh meja 45, berapa meja kayu?",
+      "opsi": {
+        "A": "9",
+        "B": "25",
+        "C": "27",
+        "D": "18",
+        "E": "29"
+      },
+      "jawaban": "C",
+      "pembahasan": "Jumlah seluruh bagian = 5. Bagian yang dicari adalah 3 bagian, sehingga nilainya = 3/5×45 = 27."
+    },
+    {
+      "id": "P2-02",
+      "family": "RASIO DASAR",
+      "subpattern": "barang dipindahkan antar kelompok",
+      "difficulty": "sedang-tinggi",
+      "soal": "Di sebuah parkir, area A berisi 26 kendaraan dan area B berisi 18 kendaraan. Enam kendaraan dipindahkan dari A ke B. Berapa rasio kendaraan A:B setelah perpindahan?",
+      "opsi": {
+        "A": "5:6",
+        "B": "20:25",
+        "C": "26:18",
+        "D": "21:24",
+        "E": "6:5"
+      },
+      "jawaban": "A",
+      "pembahasan": "Setelah perpindahan, jumlah masing-masing kelompok menjadi 20 dan 24. 20 dan 24 sama-sama bisa dibagi 4. Jadi 20:24 = 5:6."
+    },
+    {
+      "id": "P2-03",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "jarak dan bahan bakar",
+      "difficulty": "sedang",
+      "soal": "Sebuah mobil menghabiskan 12 liter bahan bakar untuk menempuh 180 km. Jika tangki berisi 20 liter dan mobil menempuh 210 km dengan konsumsi per km sama, berapa liter bahan bakar tersisa?",
+      "opsi": {
+        "A": "6",
+        "B": "12",
+        "C": "16",
+        "D": "14",
+        "E": "72/7"
+      },
+      "jawaban": "A",
+      "pembahasan": "Konsumsi sebanding dengan jarak. Untuk 210 km, kebutuhan = 12×210/180 = 14 liter. Dari persediaan 20 liter, sisa = 20-14 = 6 liter."
+    },
+    {
+      "id": "P2-04",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "upah dan jam kerja pada tarif tetap",
+      "difficulty": "sedang",
+      "soal": "Dalam sebuah perjalanan dinas, seorang sopir dibayar Rp90.000 untuk 6 jam kerja. Jika tarif per jam tetap dan ia bekerja 9 jam, berapa upah yang diterima?",
+      "opsi": {
+        "A": "Rp120.000",
+        "B": "Rp125.000",
+        "C": "Rp130.000",
+        "D": "Rp135.000",
+        "E": "Rp145.000"
+      },
+      "jawaban": "D",
+      "pembahasan": "Upah 1 jam = Rp90.000 ÷ 6 = Rp15.000. Untuk 9 jam, upah = 9×Rp15.000 = Rp135.000."
+    },
+    {
+      "id": "P2-05",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "arah hubungan tersamar",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah pekerjaan membutuhkan 8 orang selama 15 hari. Agar selesai lebih cepat dengan kemampuan per orang tetap, jika pekerja menjadi 10 orang, berapa hari diperlukan?",
+      "opsi": {
+        "A": "12",
+        "B": "13",
+        "C": "11",
+        "D": "120/11",
+        "E": "16/3"
+      },
+      "jawaban": "A",
+      "pembahasan": "Pekerja bertambah berarti waktu yang dibutuhkan berkurang. Maka kita kalikan jumlah dan waktunya: 8×15 = 10×t. Maka t = 8×15/10 = 12."
+    },
+    {
+      "id": "P2-06",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "mesin dan waktu",
+      "difficulty": "sedang",
+      "soal": "Sebuah pekerjaan dapat diselesaikan oleh 6 mesin dalam 18 jam. Jika digunakan 8 mesin dengan kemampuan setiap mesin tetap, berapa perbandingan waktu baru : waktu lama?",
+      "opsi": {
+        "A": "3:4",
+        "B": "4:3",
+        "C": "2:3",
+        "D": "3:2",
+        "E": "9:8"
+      },
+      "jawaban": "A",
+      "pembahasan": "Untuk pekerjaan yang sama, jumlah mesin dan waktu berbanding terbalik. Jadi waktu baru : waktu lama = 6 : 8 = 3 : 4."
+    },
+    {
+      "id": "P2-07",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "faktor tetap tersembunyi",
+      "difficulty": "sedang-tinggi",
+      "soal": "Sebuah perjalanan membutuhkan 16 liter bahan bakar untuk 4 kendaraan selama 2 hari dengan jarak harian sama. Jika kendaraan menjadi 6 dan perjalanan berlangsung 3 hari, berapa kebutuhan bahan bakar?",
+      "opsi": {
+        "A": "16",
+        "B": "36",
+        "C": "34",
+        "D": "38",
+        "E": "40"
+      },
+      "jawaban": "B",
+      "pembahasan": "Jumlah kendaraan berubah dari 4 menjadi 6, jadi kebutuhan dikali 6/4 = 3/2. Lama perjalanan berubah dari 2 menjadi 3 hari, jadi dikali 3/2 lagi. Maka kebutuhan baru = 16 × 3/2 × 3/2 = 36 liter."
+    },
+    {
+      "id": "P2-08",
+      "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+      "subpattern": "konsumsi × jumlah pemakai × waktu",
+      "difficulty": "sedang-tinggi",
+      "soal": "Satu dispenser menghabiskan 18 liter air untuk 6 orang selama 3 jam. Jika dipakai 10 orang selama 5 jam pada laju konsumsi yang sama, berapa liter air dibutuhkan?",
+      "opsi": {
+        "A": "50",
+        "B": "56",
+        "C": "47",
+        "D": "18",
+        "E": "53"
+      },
+      "jawaban": "A",
+      "pembahasan": "Jumlah orang berubah dari 6 menjadi 10, jadi dikali 10/6 = 5/3. Waktu berubah dari 3 menjadi 5 jam, jadi dikali 5/3. Maka kebutuhan baru = 18 × 5/3 × 5/3 = 50 liter."
+    },
+    {
+      "id": "P2-09",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "multi-stage tersamar dalam narasi",
+      "difficulty": "sulit",
+      "soal": "Sebuah proyek membutuhkan 390 satuan pekerjaan. Tim pertama beranggotakan 6 orang dan menyelesaikan 30 satuan per jam selama 4 jam. Setelah itu jumlah anggota berubah sehingga laju tim menjadi 18 satuan per jam. Berapa jam tambahan diperlukan?",
+      "opsi": {
+        "A": "12 jam",
+        "B": "14 jam",
+        "C": "15 jam",
+        "D": "16 jam",
+        "E": "18 jam"
+      },
+      "jawaban": "C",
+      "pembahasan": "Tahap pertama menghasilkan 30 × 4 = 120 satuan. Sisa pekerjaan = 390 − 120 = 270 satuan. Dengan laju 18 satuan per jam, waktu tambahan = 270 ÷ 18 = 15 jam."
+    },
+    {
+      "id": "P2-10",
+      "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+      "subpattern": "multi-stage dengan rasio perubahan",
+      "difficulty": "sulit",
+      "soal": "Sebuah gudang harus memproses 360 paket. Pada fase awal, tim memproses 24 paket per jam selama 5 jam. Setelah target diperbarui, laju menjadi 30 paket per jam. Berapa jam lagi yang dibutuhkan?",
+      "opsi": {
+        "A": "7",
+        "B": "8",
+        "C": "4",
+        "D": "12",
+        "E": "9"
+      },
+      "jawaban": "B",
+      "pembahasan": "Tahap pertama menghasilkan 24×5 = 120 paket. Sisa = 360−120 = 240 paket. Dengan laju 30 paket per jam, waktu tambahan = 240÷30 = 8 jam."
+    },
+    {
+      "id": "P2-11",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "kelompok bergabung bertahap",
+      "difficulty": "sulit",
+      "soal": "Sebuah kelompok menyelesaikan 252 dokumen. Pada 4 jam pertama satu tim bekerja dengan laju 18 dokumen per jam. Setelah itu tim kedua bergabung dengan laju 12 dokumen per jam. Berapa jam total sejak pekerjaan dimulai hingga selesai?",
+      "opsi": {
+        "A": "7 jam",
+        "B": "8 jam",
+        "C": "9 jam",
+        "D": "11 jam",
+        "E": "10 jam"
+      },
+      "jawaban": "E",
+      "pembahasan": "Empat jam pertama menghasilkan 18 × 4 = 72 dokumen. Sisa = 252 − 72 = 180 dokumen. Setelah tim kedua bergabung, laju bersama = 18 + 12 = 30 dokumen per jam. Waktu berikutnya = 180 ÷ 30 = 6 jam. Jadi waktu total = 4 + 6 = 10 jam."
+    },
+    {
+      "id": "P2-12",
+      "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+      "subpattern": "satu kelompok berhenti",
+      "difficulty": "sulit",
+      "soal": "Sebuah pusat distribusi harus mengirim 180 paket. Tim A mengirim 15 paket per jam dan Tim B 10 paket per jam. Keduanya bekerja bersama selama 4 jam. Setelah itu Tim A berhenti dan Tim B melanjutkan sendiri sampai semua paket terkirim. Berapa jam waktu kerja seluruhnya sejak pekerjaan dimulai?",
+      "opsi": {
+        "A": "8 jam",
+        "B": "10 jam",
+        "C": "11 jam",
+        "D": "12 jam",
+        "E": "14 jam"
+      },
+      "jawaban": "D",
+      "pembahasan": "Selama 4 jam pertama, dua tim mengirim 15+10=25 paket per jam. Jadi terkirim 25×4=100 paket. Sisa 180−100=80 paket. Setelah Tim A berhenti, Tim B mengirim 10 paket per jam, sehingga perlu 80÷10=8 jam. Total waktu = 4+8=12 jam."
+    },
+    {
+      "id": "P2-13",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi produktivitas",
+      "difficulty": "sedang",
+      "soal": "Sebuah tim menghasilkan 360 barang dengan 6 pekerja selama 5 jam. Berapa rata-rata produktivitas per pekerja per jam?",
+      "opsi": {
+        "A": "11",
+        "B": "60",
+        "C": "72",
+        "D": "13",
+        "E": "12"
+      },
+      "jawaban": "E",
+      "pembahasan": "Enam pekerja bekerja 5 jam, jadi totalnya 6 × 5 = 30 jam kerja. Dari 360 barang, tiap 1 jam kerja menghasilkan 360 ÷ 30 = 12 barang."
+    },
+    {
+      "id": "P2-14",
+      "family": "NORMALISASI",
+      "subpattern": "normalisasi jarak/waktu",
+      "difficulty": "sedang",
+      "soal": "Sebuah kendaraan menempuh 280 km dalam 4 jam. Berapa kecepatan rata-rata kendaraan tersebut?",
+      "opsi": {
+        "A": "1/70",
+        "B": "70",
+        "C": "71",
+        "D": "69",
+        "E": "639/2"
+      },
+      "jawaban": "B",
+      "pembahasan": "Kecepatan = jarak ÷ waktu = 280 ÷ 4 = 70 km per jam."
+    },
+    {
+      "id": "P2-15",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel data hilang",
+      "difficulty": "sedang",
+      "soal": "Perhatikan tabel berikut. Di sebuah sekolah, setiap siswa mendapat jumlah buku yang sama. Berapa buku yang diberikan kepada 7 siswa?\nTabel:\n| Kondisi | Siswa | Buku |\n|---|---:|---:|\n| A | 4 | 28 |\n| B | 7 | ? |\n| C | 10 | 70 |",
+      "opsi": {
+        "A": "47",
+        "B": "49",
+        "C": "52",
+        "D": "56",
+        "E": "63"
+      },
+      "jawaban": "B",
+      "pembahasan": "4 siswa mendapat 28 buku, jadi setiap siswa mendapat 28÷4 = 7 buku. Untuk 7 siswa, jumlah buku = 7×7 = 49 buku."
+    },
+    {
+      "id": "P2-16",
+      "family": "TABEL / REPRESENTASI HUBUNGAN",
+      "subpattern": "tabel tersamar",
+      "difficulty": "sedang-tinggi",
+      "soal": "Lengkapi nilai waktu saat 8 mesin digunakan.\nTabel:\n| Mesin | Waktu (jam) |\n|---:|---:|\n| 4 | 18 |\n| 8 | ? |",
+      "opsi": {
+        "A": "10",
+        "B": "8",
+        "C": "18",
+        "D": "9",
+        "E": "16/9"
+      },
+      "jawaban": "D",
+      "pembahasan": "Jumlah mesin dan waktu saling berlawanan. Jadi, hasil kali jumlah mesin dan waktu tetap: 4×18 = 72. Maka waktu saat mesin 8 = 72/8 = 9 jam."
+    },
+    {
+      "id": "P2-17",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "penyederhanaan aljabar",
+      "difficulty": "sedang",
+      "soal": "Diberikan X = 4a − 7 dan Y = 2(2a + 5) − 17, dengan a bilangan positif. Manakah hubungan yang benar antara X dan Y?",
+      "opsi": {
+        "A": "X > Y",
+        "B": "X < Y",
+        "C": "X = Y",
+        "D": "Hubungan tidak dapat ditentukan",
+        "E": "X = 2Y"
+      },
+      "jawaban": "C",
+      "pembahasan": "Sederhanakan Y: 2(2a+5)−17 = 4a+10−17 = 4a−7. Bentuk Y sama dengan X. Jadi X=Y."
+    },
+    {
+      "id": "P2-18",
+      "family": "KUANTITATIF X VS Y",
+      "subpattern": "rasio berbalik",
+      "difficulty": "sedang-tinggi",
+      "soal": "Dalam satu pekerjaan, hasil kali banyak mesin X dan waktu Y selalu 24. Jika X = 6, manakah hubungan yang benar antara X dan Y?",
+      "opsi": {
+        "A": "X = Y",
+        "B": "2X > 3Y",
+        "C": "X > Y",
+        "D": "Hubungan tidak dapat ditentukan",
+        "E": "X < Y"
+      },
+      "jawaban": "C",
+      "pembahasan": "Karena XY=24 dan X=6, maka Y=24/6=4. Jadi X=6 lebih besar daripada Y=4, sehingga X>Y."
+    },
+    {
+      "id": "P2-19",
+      "family": "PERBANDINGAN SENILAI",
+      "subpattern": "harga dan berat",
+      "difficulty": "mudah",
+      "soal": "Harga 3 kg buah adalah Rp54.000. Dengan harga per kilogram tetap, berapa harga 7 kg?",
+      "opsi": {
+        "A": "Rp23.142",
+        "B": "Rp131.000",
+        "C": "Rp108.000",
+        "D": "Rp126.000",
+        "E": "Rp55.000"
+      },
+      "jawaban": "D",
+      "pembahasan": "Harga 1 kg buah = Rp54.000 ÷ 3 = Rp18.000. Jadi harga 7 kg = 7 × Rp18.000 = Rp126.000."
+    },
+    {
+      "id": "P2-20",
+      "family": "PERBANDINGAN BERBALIK NILAI",
+      "subpattern": "kecepatan dan waktu",
+      "difficulty": "mudah",
+      "soal": "Dalam sebuah perjalanan, jarak yang ditempuh tetap. Pada kecepatan 60 km/jam, waktu tempuh 5 jam. Jika perjalanan yang sama harus selesai dalam 4 jam, berapa kecepatan yang diperlukan?",
+      "opsi": {
+        "A": "65 km/jam",
+        "B": "70 km/jam",
+        "C": "75 km/jam",
+        "D": "80 km/jam",
+        "E": "90 km/jam"
+      },
+      "jawaban": "C",
+      "pembahasan": "Jarak = 60×5 = 300 km. Untuk menempuh 300 km dalam 4 jam, kecepatan = 300÷4 = 75 km/jam."
+    }
+  ]
+}

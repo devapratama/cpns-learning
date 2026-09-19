@@ -1,0 +1,3908 @@
+{
+  "metadata": {
+    "judul": "Master Bank Soal 100 Perbandingan TIU",
+    "versi": "FINAL-AUDITED-1.2",
+    "status": "MASTER BANK — LAYAK UNTUK PENGGUNAAN AWAL",
+    "basis": {
+      "blueprint": "Blueprint_Master_100_Soal_Perbandingan_TIU.json",
+      "corpus": "PERBANDINGAN -AL FAIZ.pdf dan Materi Perbandingan-TIU.pdf",
+      "catatan_korpus": "Korpus digunakan sebagai benchmark pola struktur, mekanisme, variasi konteks, bentuk jebakan, dan tingkat hitungan; teks soal baru tidak menyalin kalimat sumber."
+    },
+    "proses_audit": [
+      "generate berdasarkan 100 slot blueprint",
+      "audit matematika item-level",
+      "audit jawaban dan kelima opsi",
+      "audit pembahasan terhadap langkah hitung",
+      "audit kecocokan family, sub-pattern, dan gravity center",
+      "audit DNA corpus secara struktural dengan benchmark FR",
+      "audit kemiripan stem antarpaket",
+      "audit keterbacaan pembahasan untuk pemula",
+      "audit kewajaran konteks dan satuan",
+      "revisi item yang memiliki masalah",
+      "audit ulang master setelah revisi"
+    ],
+    "kriteria_layak": {
+      "jumlah": 100,
+      "paket": 5,
+      "per_paket": 20,
+      "opsi_per_soal": 5,
+      "id_unik": true,
+      "stem_unik": true,
+      "opsi_unik": true,
+      "jawaban_tercantum": true,
+      "mapping_blueprint_exact": true,
+      "pembahasan_konsisten": true,
+      "dna_corpus": "struktural, bukan salinan tekstual",
+      "pembahasan_pemula": "ya"
+    },
+    "audit_summary": {
+      "jumlah_item": 100,
+      "paket": 5,
+      "per_paket": 20,
+      "id_unik": true,
+      "stem_unik": true,
+      "lima_opsi_A_E": true,
+      "opsi_unik_per_item": true,
+      "jawaban_tercantum": true,
+      "mapping_blueprint_exact": true,
+      "errors": [],
+      "distribusi_huruf_jawaban": {
+        "A": 17,
+        "C": 24,
+        "B": 24,
+        "E": 19,
+        "D": 16
+      },
+      "distribusi_family": {
+        "RASIO DASAR": 7,
+        "PERBANDINGAN SENILAI": 15,
+        "PERBANDINGAN BERBALIK NILAI": 14,
+        "PERBANDINGAN MAJEMUK / MULTI-VARIABEL": 14,
+        "PERBANDINGAN BERTAHAP / MULTI-STAGE": 14,
+        "PERBANDINGAN GABUNGAN / COMPOSITE RATE": 7,
+        "NORMALISASI": 10,
+        "TABEL / REPRESENTASI HUBUNGAN": 9,
+        "KUANTITATIF X VS Y": 10
+      },
+      "item_diperbaiki_v7": [
+        "P1-18",
+        "P3-20",
+        "P4-04",
+        "P3-11"
+      ],
+      "status_akhir": "LAYAK",
+      "item_diperbaiki_v8": [
+        "P1-02",
+        "P1-06",
+        "P1-11",
+        "P1-19",
+        "P2-06",
+        "P2-13",
+        "P3-07",
+        "P3-11",
+        "P3-17",
+        "P3-19",
+        "P4-08",
+        "P4-12",
+        "P4-13",
+        "P5-01",
+        "P5-11",
+        "P5-19",
+        "P5-20"
+      ],
+      "item_diperbaiki_v10": [
+        "P1-11",
+        "P1-15",
+        "P2-04",
+        "P3-14",
+        "P4-13",
+        "P5-13"
+      ],
+      "item_diperbaiki_ready": [
+        "P1-06",
+        "P1-10",
+        "P2-02",
+        "P2-14",
+        "P2-19",
+        "P3-17",
+        "P4-17",
+        "P5-02"
+      ]
+    },
+    "tujuan": "Master bank soal Perbandingan TIU setelah audit dan revisi item-level, dengan pembahasan yang dapat diikuti pemula.",
+    "catatan_dna": "DNA FR dinilai pada pola situasi → data kuantitatif → hubungan → perubahan/kondisi → target, variasi konteks, dan jebakan hitung yang masuk akal. Soal baru tidak menyalin kalimat sumber.",
+    "catatan_psikometrik": "Belum diuji pada respons peserta; tingkat kesulitan empiris, daya pembeda, efektivitas distraktor, dan waktu pengerjaan belum dapat dipastikan secara statistik.",
+    "catatan_pemula": "Pembahasan menggunakan urutan diketahui → hitung → hasil, dengan istilah teknis seminimal mungkin. Kesulitan soal TIU tetap dipertahankan pada soal yang memang membutuhkan beberapa langkah.",
+    "audit_ringkas_v8": {
+      "fokus": [
+        "matematika",
+        "pembahasan_pemula",
+        "DNA_FR",
+        "keunikan",
+        "kewajaran_konteks"
+      ],
+      "temuan_v7_yang_ditindaklanjuti": [
+        "beberapa wording terlalu abstrak atau kaku",
+        "beberapa hasil pecahan waktu tidak perlu dan mengurangi keterbacaan",
+        "satu label sub-pattern kuantitatif tidak selaras dengan mekanismenya",
+        "sejumlah pembahasan masih menggunakan istilah yang terlalu teknis",
+        "beberapa stem terlalu dekat dengan latihan dasar dan diperkuat konteksnya"
+      ],
+      "batasan": "Belum ada uji psikometrik berbasis respons peserta."
+    },
+    "audit_note": "READY-1.0 dibuat setelah pemeriksaan substantif ulang terhadap item-level: matematika, satu jawaban benar, opsi non-ekivalen, kesesuaian family/sub-pattern, kewajaran konteks, pembahasan pemula, dan DNA FR struktural.",
+    "final_checks": {
+      "jumlah_soal": true,
+      "paket_5x20": true,
+      "id_unik": true,
+      "stem_unik": true,
+      "opsi_unik_per_soal": true,
+      "kunci_ada_di_opsi": true,
+      "blueprint_exact_match": true,
+      "family_distribution_exact": true,
+      "sub_pattern_exact": true,
+      "bahasa_pembahasan_pemula": "PASS",
+      "dna_fr": "PASS_STRUKTURAL",
+      "psikometrik": "BELUM_TERUJI",
+      "opsi_kunci_consistency": true,
+      "lima_opsi_A_E": true,
+      "opsi_unik_per_item": true,
+      "semua_status_layak": true,
+      "revised_answers_consistent": true,
+      "audit_errors_empty": true,
+      "satu_jawaban_benar": "PASS",
+      "ratio_distractor_non_equivalent": "PASS",
+      "pembahasan_pemula": "PASS"
+    },
+    "answer_distribution": {
+      "A": 17,
+      "C": 24,
+      "B": 24,
+      "E": 19,
+      "D": 16
+    },
+    "audit_counts": {
+      "matematika": {
+        "LOLOS": 100
+      },
+      "jawaban_dan_opsi": {
+        "LOLOS": 100
+      },
+      "pembahasan": {
+        "LOLOS": 100
+      },
+      "sub_pattern": {
+        "LOLOS": 100
+      },
+      "dna_corpus": {
+        "LOLOS_STRUKTURAL": 100
+      },
+      "kemiripan": {
+        "LOLOS": 100
+      },
+      "status": {
+        "LAYAK": 100
+      }
+    },
+    "audit_ringkas_v10": {
+      "fokus": [
+        "matematika",
+        "pembahasan_pemula",
+        "DNA_FR",
+        "keunikan",
+        "kewajaran_konteks",
+        "kelengkapan_tabel"
+      ],
+      "temuan_v9_yang_ditindaklanjuti": [
+        "beberapa item NORMALISASI masih berupa konversi satuan murni sehingga hubungan perbandingan kurang terasa",
+        "P1-15 pada versi sebelumnya terlalu sederhana untuk format X/Y",
+        "P3-14 menyebut tabel tetapi tabel tidak dicantumkan lengkap",
+        "P2-04 membutuhkan wording yang lebih natural"
+      ],
+      "hasil": "Temuan V10 yang ditemukan ulang pada pemeriksaan independen telah diperbaiki pada READY-1.0.",
+      "batasan": "Belum ada uji psikometrik berbasis respons peserta."
+    },
+    "audit_ringkas_final": {
+      "fokus": [
+        "audit matematika satu per satu",
+        "audit jawaban dan seluruh opsi",
+        "audit pembahasan",
+        "audit sub-pattern",
+        "audit DNA FR",
+        "audit kemiripan antarp soal",
+        "audit keterbacaan pembahasan pemula"
+      ],
+      "temuan_terakhir": [
+        "P1-20 memiliki opsi rasio ekuivalen dengan kunci",
+        "P2-06 memiliki opsi rasio ekuivalen dengan kunci"
+      ],
+      "tindakan": [
+        "P1-20 diperbaiki pada opsi D",
+        "P2-06 diperbaiki pada opsi E"
+      ],
+      "hasil": "Kedua temuan diperbaiki; seluruh 100 item diaudit ulang pada level struktur dan konsistensi kunci/opsi/pembahasan.",
+      "batasan": "Belum ada uji psikometrik berbasis respons peserta."
+    },
+    "audit_update_terakhir": {
+      "jenis": "patch terbatas, bukan regenerasi 100 soal",
+      "item_direvisi": [
+        "P1-12",
+        "P1-14",
+        "P2-04",
+        "P2-15",
+        "P2-20",
+        "P3-14",
+        "P3-17",
+        "P4-05",
+        "P4-20"
+      ],
+      "alasan": "Memperbaiki opsi/kunci yang tidak konsisten, konteks yang terlalu generik, dan kemiripan mekanisme yang terlalu dekat pada beberapa item; tidak melakukan regenerasi seluruh bank.",
+      "catatan": "Tidak ada item lain yang diubah pada putaran ini."
+    }
+  },
+  "paket": [
+    {
+      "paket_id": 1,
+      "judul": "Paket 1",
+      "jumlah_soal": 20,
+      "soal": [
+        {
+          "id": "P1-01",
+          "family": "RASIO DASAR",
+          "sub_pattern": "rasio setelah penambahan",
+          "gravity_center": "menentukan nilai awal/akhir dari rasio baru setelah satu kelompok bertambah",
+          "difficulty": "sedang",
+          "soal": "Di sebuah bengkel, perbandingan jumlah teknisi junior dan senior adalah 3:2. Jika teknisi junior berjumlah 12 orang dan kemudian 4 teknisi senior bergabung, berapa rasio junior : senior sekarang?",
+          "opsi": {
+            "A": "1:1",
+            "B": "12:8",
+            "C": "8:12",
+            "D": "16:8",
+            "E": "12:4"
+          },
+          "jawaban": "A",
+          "pembahasan": "Dari rasio 3:2, jika kelompok pertama berjumlah 12, kelompok kedua mula-mula = 12×2/3 = 8. Setelah bertambah 4, menjadi 12. Jadi rasio baru = 12:12 = 1:1.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-02",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "harga satuan / jumlah barang",
+          "gravity_center": "menjaga harga per satuan tetap",
+          "difficulty": "mudah",
+          "soal": "Untuk kegiatan sekolah, 4 map berharga Rp28.000. Harga tiap map sama. Berapa harga 7 map?",
+          "opsi": {
+            "C": "Rp49.000",
+            "A": "Rp29.000",
+            "B": "Rp56.000",
+            "D": "Rp16.000",
+            "E": "Rp54.000"
+          },
+          "jawaban": "C",
+          "pembahasan": "Harga 1 map = Rp28.000 ÷ 4 = Rp7.000. Jadi harga 7 map = 7 × Rp7.000 = Rp49.000.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-03",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "perubahan satuan",
+          "gravity_center": "menjaga nilai perbandingan setelah konversi satuan",
+          "difficulty": "mudah",
+          "soal": "Harga 2 kg jeruk adalah Rp36.000. Jika harga per kilogram tetap, berapa harga 750 gram jeruk?",
+          "opsi": {
+            "A": "Rp12.000",
+            "B": "Rp13.500",
+            "C": "Rp14.000",
+            "D": "Rp15.000",
+            "E": "Rp16.000"
+          },
+          "jawaban": "B",
+          "pembahasan": "2 kg = 2.000 gram. Harga 2.000 gram = Rp36.000, jadi 750 gram berharga Rp36.000×750/2.000 = Rp13.500.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-04",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "berbalik nilai dengan kondisi tambahan",
+          "gravity_center": "membedakan variabel yang tetap dan berubah",
+          "difficulty": "sedang-tinggi",
+          "soal": "Empat siswa dapat menyelesaikan satu pekerjaan dalam 15 jam dengan kemampuan per siswa sama. Jika yang mengerjakan menjadi 5 siswa, berapa jam diperlukan untuk pekerjaan yang sama?",
+          "opsi": {
+            "A": "12",
+            "B": "10",
+            "C": "4/3",
+            "D": "11",
+            "E": "13"
+          },
+          "jawaban": "A",
+          "pembahasan": "Pekerja bertambah berarti waktu yang dibutuhkan berkurang. Maka kita kalikan jumlah dan waktunya: 4×15 = 5×t. Maka t = 4×15/5 = 12.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-05",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "jam kerja per hari",
+          "gravity_center": "menjaga total pekerjaan saat waktu kerja harian berubah",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah mesin dapat menyelesaikan satu pesanan dalam 3 hari jika bekerja 4 jam efektif per hari. Jika mesin kemudian bekerja 6 jam efektif per hari, berapa hari yang diperlukan untuk pesanan yang sama?",
+          "opsi": {
+            "C": "2 hari",
+            "A": "1 hari",
+            "B": "4 hari",
+            "D": "6 hari",
+            "E": "3 hari"
+          },
+          "jawaban": "C",
+          "pembahasan": "Total waktu kerja = 3×4 = 12 jam. Jika setiap hari mesin bekerja 6 jam, maka waktu yang diperlukan = 12÷6 = 2 hari.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-06",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "bahan × porsi × hasil",
+          "gravity_center": "menggabungkan perubahan porsi dan kebutuhan bahan",
+          "difficulty": "sedang",
+          "soal": "Sebuah kantin memakai 4 kg beras untuk membuat 80 porsi. Pada hari berikutnya jumlah porsi menjadi 120 dan takaran beras untuk setiap porsi naik 25%. Berapa kg beras yang diperlukan?",
+          "opsi": {
+            "A": "6 kg",
+            "B": "7,5 kg",
+            "C": "8 kg",
+            "D": "9 kg",
+            "E": "10 kg"
+          },
+          "jawaban": "B",
+          "pembahasan": "Jumlah porsi naik dari 80 menjadi 120, yaitu 3/2 kali. Takaran beras tiap porsi naik 25%, jadi menjadi 5/4 kali. Maka kebutuhan beras = 4 × 3/2 × 5/4 = 7,5 kg.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-07",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "campuran senilai dan berbalik nilai",
+          "gravity_center": "menentukan arah setiap variabel sebelum menyusun perbandingan",
+          "difficulty": "sulit",
+          "soal": "Sebuah tim dapat menyelesaikan satu pekerjaan dalam 10 jam dengan 6 pekerja. Pada jadwal berikutnya, kemampuan tiap pekerja meningkat 25% dan jumlah pekerja menjadi 8 orang. Berapa jam diperlukan untuk pekerjaan yang sama?",
+          "opsi": {
+            "A": "6 jam",
+            "B": "5 jam",
+            "C": "8 jam",
+            "D": "7 jam",
+            "E": "9 jam"
+          },
+          "jawaban": "A",
+          "pembahasan": "Kemampuan per pekerja menjadi 1,25 kali. Jumlah pekerja menjadi 8. Jadi kemampuan total baru dibanding lama = (8×1,25)/6 = 5/3 kali. Waktu baru = 10÷(5/3) = 6 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-08",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "fase dengan produktivitas sama",
+          "gravity_center": "memakai pekerjaan per satuan waktu sebagai dasar",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah percetakan harus membuat 300 buku. Pada tahap pertama, mesin mencetak 24 buku per jam selama 5 jam. Pada tahap kedua, kecepatan mesin tetap 24 buku per jam selama 3 jam. Berapa buku yang masih harus dicetak?",
+          "opsi": {
+            "B": "108",
+            "A": "144",
+            "C": "132",
+            "D": "120",
+            "E": "96"
+          },
+          "jawaban": "B",
+          "pembahasan": "Tahap pertama: 24×5 = 120 buku. Tahap kedua: 24×3 = 72 buku. Jadi sudah tercetak 120+72 = 192 buku. Sisa = 300−192 = 108 buku.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-09",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "sebagian pekerjaan sudah selesai",
+          "gravity_center": "mengurangkan pekerjaan yang telah dilakukan sebelum fase berikutnya",
+          "difficulty": "sedang",
+          "soal": "Sebuah mesin menghasilkan 30 komponen per jam. Dalam 4 jam pertama telah dihasilkan sebagian pesanan sebanyak 120 komponen. Jika total pesanan 300 komponen dan laju berikutnya tetap 20 komponen per jam, berapa jam lagi diperlukan?",
+          "opsi": {
+            "E": "9",
+            "A": "10",
+            "B": "11",
+            "C": "8",
+            "D": "6"
+          },
+          "jawaban": "E",
+          "pembahasan": "Fase 1 menyelesaikan 30×4 = 120 unit pekerjaan. Sisa = 300-120 = 180. Pada fase 2, laju 20 unit per jam; waktu untuk sisa = 180/20 = 9 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-10",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "gabungan dengan normalisasi",
+          "gravity_center": "menyamakan basis pekerjaan/laju sebelum dijumlahkan",
+          "difficulty": "sulit",
+          "soal": "Sebuah tim A mengemas 24 paket per jam. Tim B mengemas 1 paket setiap 2 menit. Sebanyak 60 paket sudah selesai dari target 330 paket. Jika kedua tim bekerja bersama, berapa jam lagi diperlukan?",
+          "opsi": {
+            "A": "4 jam",
+            "B": "5 jam",
+            "C": "6 jam",
+            "D": "7 jam",
+            "E": "8 jam"
+          },
+          "jawaban": "B",
+          "pembahasan": "Ubah laju Tim B ke paket per jam. Dalam 1 jam ada 60 menit, jadi Tim B mengemas 60 ÷ 2 = 30 paket per jam. Laju bersama = 24 + 30 = 54 paket per jam. Sisa pekerjaan = 330 − 60 = 270 paket. Waktu tambahan = 270 ÷ 54 = 5 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-11",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi satuan campuran",
+          "gravity_center": "mengubah kombinasi m, cm, km atau satuan lain ke basis yang sama",
+          "difficulty": "sedang",
+          "soal": "Sebuah toko memiliki gula sebanyak 2,5 kg dengan harga Rp37.500. Jika harga gula tetap berdasarkan beratnya, berapa harga untuk 500 gram?",
+          "opsi": {
+            "A": "Rp5.000",
+            "B": "Rp6.000",
+            "C": "Rp7.500",
+            "D": "Rp8.500",
+            "E": "Rp9.000"
+          },
+          "jawaban": "C",
+          "pembahasan": "2,5 kg = 2.500 gram. Harga per 500 gram = Rp37.500 ÷ 5 = Rp7.500. Jadi jawabannya Rp7.500.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "revisi_v10": "normalisasi dibuat menjadi harga per satuan berat; bukan sekadar konversi satuan",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-12",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel senilai",
+          "gravity_center": "melengkapi pasangan data dengan faktor perbandingan tetap",
+          "difficulty": "mudah",
+          "soal": "Perhatikan tabel berikut. Sebuah toko buku menata buku dengan jumlah yang sama pada setiap rak. Jika 15 rak digunakan, berapa buku yang dapat ditata?\nTabel:\n| Rak | Buku |\n|---:|---:|\n| 6 | 18 |\n| 15 | ? |",
+          "opsi": {
+            "C": "45",
+            "A": "42",
+            "B": "54",
+            "D": "36",
+            "E": "48"
+          },
+          "jawaban": "C",
+          "pembahasan": "6 rak berisi 18 buku, jadi 1 rak berisi 18÷6 = 3 buku. Untuk 15 rak, jumlah buku = 15×3 = 45 buku.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-13",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel multi-variabel",
+          "gravity_center": "membandingkan baris dengan beberapa faktor berubah",
+          "difficulty": "sulit",
+          "soal": "Sebuah mesin bekerja dengan jumlah operator dan waktu kerja yang sama-sama memengaruhi output. Diketahui 3 operator menghasilkan 72 unit dalam 4 jam. Jika digunakan 5 operator selama 6 jam dengan produktivitas per operator per jam tetap, berapa unit yang dihasilkan?\nTabel: (operator × waktu × output)\n| Kondisi | Operator | Jam | Output |\n|---|---:|---:|---:|\n| Awal | 3 | 4 | 72 |\n| Baru | 5 | 6 | ? |",
+          "opsi": {
+            "E": "180",
+            "A": "170",
+            "B": "190",
+            "C": "144",
+            "D": "144/5"
+          },
+          "jawaban": "E",
+          "pembahasan": "Cari hasil untuk 1 operator selama 1 jam: 72÷(3×4)=6 unit. Pada kondisi baru ada 5 operator selama 6 jam, jadi hasil = 5×6×6 = 180 unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-14",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "kombinasi ekspresi dan kondisi",
+          "gravity_center": "menggabungkan bentuk aljabar dengan hubungan perbandingan",
+          "difficulty": "sulit",
+          "soal": "Dalam kegiatan sekolah, diketahui X = 5(n + 2) dan Y = 4n + 14, dengan n > 4. Manakah hubungan yang benar antara X dan Y?",
+          "opsi": {
+            "A": "X > Y",
+            "B": "X = Y",
+            "C": "X < Y",
+            "D": "2X > 3Y",
+            "E": "Hubungan tidak dapat ditentukan"
+          },
+          "jawaban": "A",
+          "pembahasan": "X−Y = 5n+10−(4n+14) = n−4. Karena n > 4, nilai n−4 positif. Jadi X lebih besar daripada Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-15",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "rasio langsung",
+          "gravity_center": "membandingkan dua kuantitas melalui rasio yang diketahui",
+          "difficulty": "sedang",
+          "soal": "Di sebuah gudang terdapat 84 barang jenis X dan 60 barang jenis Y. Sebanyak 12 barang X dipindahkan ke kelompok Y. Manakah hubungan yang benar setelah pemindahan?",
+          "opsi": {
+            "A": "X > Y",
+            "B": "X < Y",
+            "C": "X = Y",
+            "D": "2X > 3Y",
+            "E": "Hubungan tidak dapat ditentukan"
+          },
+          "jawaban": "C",
+          "pembahasan": "Setelah 12 barang X dipindahkan, X menjadi 84−12 = 72. Y menjadi 60+12 = 72. Jadi X dan Y sama besar, sehingga X = Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v10": "kuantitatif X/Y diberi konteks FR dan perubahan kondisi yang konkret",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-16",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "skala",
+          "gravity_center": "mengubah ukuran gambar ke ukuran sebenarnya secara sebanding",
+          "difficulty": "sedang",
+          "soal": "Sebuah gambar pada buku menggunakan skala 1:50. Jika suatu ruas pada gambar panjangnya 8 cm, berapa panjang sebenarnya?",
+          "opsi": {
+            "E": "400",
+            "A": "4",
+            "B": "401",
+            "C": "390",
+            "D": "410"
+          },
+          "jawaban": "E",
+          "pembahasan": "Skala 1:50. Panjang sebenarnya = panjang pada gambar × 50. Untuk 8 cm pada gambar, panjang sebenarnya = 8×50 = 400 cm.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-17",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "jumlah pompa dan waktu pengosongan",
+          "gravity_center": "menjaga volume yang harus dipindahkan tetap",
+          "difficulty": "sedang",
+          "soal": "Sebuah kolam dapat dikuras dalam 24 menit menggunakan 4 pompa identik. Jika digunakan 6 pompa dengan kapasitas sama, berapa menit waktu yang diperlukan?",
+          "opsi": {
+            "A": "16",
+            "B": "96/7",
+            "C": "18",
+            "D": "24",
+            "E": "14"
+          },
+          "jawaban": "A",
+          "pembahasan": "Volume yang dipindahkan sama, sehingga pompa dan waktu berbalik nilai. 4×24 = 6×t. Jadi t = 4×24/6 = 16 menit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-18",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "multi-variabel dengan satuan berbeda",
+          "gravity_center": "melakukan normalisasi satuan sebelum membandingkan",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah sekolah menyediakan 16 liter minuman untuk 80 siswa selama 4 jam. Jika jumlah siswa menjadi 100 dan lama kegiatan bertambah menjadi 5 jam, dengan konsumsi per siswa per jam tetap, berapa liter minuman diperlukan?",
+          "opsi": {
+            "A": "20",
+            "B": "24",
+            "C": "25",
+            "D": "26",
+            "E": "30"
+          },
+          "jawaban": "C",
+          "pembahasan": "Awalnya 80 siswa selama 4 jam membutuhkan 16 liter. Jumlah siswa naik dari 80 menjadi 100, jadi kebutuhan dikali 100/80 = 5/4. Waktu juga naik dari 4 menjadi 5 jam, jadi dikali 5/4. Maka kebutuhan baru = 16 × 5/4 × 5/4 = 25 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "revisi_v7": "LOLOS",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true,
+            "v7_reviewed": true
+          }
+        },
+        {
+          "id": "P1-19",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "mesin berkurang/bertambah",
+          "gravity_center": "menghitung hasil fase pertama lalu melanjutkan dengan kapasitas baru",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah gudang harus memindahkan 220 kotak. Empat mesin memindahkan 25 kotak per jam secara bersama-sama. Setelah 4 jam, dua mesin berhenti sehingga dua mesin yang tersisa memindahkan 12 kotak per jam secara bersama-sama. Berapa jam tambahan diperlukan?",
+          "opsi": {
+            "A": "8 jam",
+            "B": "10 jam",
+            "C": "12 jam",
+            "D": "14 jam",
+            "E": "16 jam"
+          },
+          "jawaban": "B",
+          "pembahasan": "Dalam 4 jam pertama, 25 × 4 = 100 kotak sudah dipindahkan. Sisa = 220 − 100 = 120 kotak. Dua mesin yang tersisa memindahkan 12 kotak per jam, jadi waktu tambahan = 120 ÷ 12 = 10 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P1-20",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi rasio tengah",
+          "gravity_center": "menyamakan besaran yang berada di tengah dua rasio",
+          "difficulty": "sedang-tinggi",
+          "soal": "Dalam sebuah proyek, A:B = 3:4 dan C:B = 5:6. Tentukan perbandingan A:C.",
+          "opsi": {
+            "A": "3:5",
+            "B": "9:10",
+            "C": "10:9",
+            "D": "4:7",
+            "E": "15:16"
+          },
+          "jawaban": "B",
+          "pembahasan": "Samakan nilai B menjadi 12. Dari A:B = 3:4, nilai A menjadi 9. Dari C:B = 5:6, nilai C menjadi 10. Jadi A:C = 9:10.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          },
+          "revisi_terakhir": "Menghapus opsi yang setara secara rasio dengan kunci (12:20 = 3:5); diganti 4:7."
+        }
+      ]
+    },
+    {
+      "paket_id": 2,
+      "judul": "Paket 2",
+      "jumlah_soal": 20,
+      "soal": [
+        {
+          "id": "P2-01",
+          "family": "RASIO DASAR",
+          "sub_pattern": "rasio dengan total diketahui",
+          "gravity_center": "menentukan nilai masing-masing bagian dari rasio dan total",
+          "difficulty": "mudah",
+          "soal": "Dalam sebuah proyek, rasio meja kayu dan meja logam adalah 3:2. Jika jumlah seluruh meja 45, berapa meja kayu?",
+          "opsi": {
+            "C": "27",
+            "A": "9",
+            "B": "25",
+            "D": "18",
+            "E": "29"
+          },
+          "jawaban": "C",
+          "pembahasan": "Jumlah seluruh bagian = 5. Bagian yang dicari adalah 3 bagian, sehingga nilainya = 3/5×45 = 27.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-02",
+          "family": "RASIO DASAR",
+          "sub_pattern": "barang dipindahkan antar kelompok",
+          "gravity_center": "melacak perubahan dua kelompok setelah perpindahan",
+          "difficulty": "sedang-tinggi",
+          "soal": "Di sebuah parkir, area A berisi 26 kendaraan dan area B berisi 18 kendaraan. Enam kendaraan dipindahkan dari A ke B. Berapa rasio kendaraan A:B setelah perpindahan?",
+          "opsi": {
+            "A": "5:6",
+            "B": "20:25",
+            "C": "26:18",
+            "D": "21:24",
+            "E": "6:5"
+          },
+          "jawaban": "A",
+          "pembahasan": "Setelah perpindahan, jumlah masing-masing kelompok menjadi 20 dan 24. 20 dan 24 sama-sama bisa dibagi 4. Jadi 20:24 = 5:6.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-03",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "jarak dan bahan bakar",
+          "gravity_center": "menghubungkan jarak dengan konsumsi pada laju konsumsi tetap",
+          "difficulty": "sedang",
+          "soal": "Sebuah mobil menghabiskan 12 liter bahan bakar untuk menempuh 180 km. Jika tangki berisi 20 liter dan mobil menempuh 210 km dengan konsumsi per km sama, berapa liter bahan bakar tersisa?",
+          "opsi": {
+            "A": "6",
+            "B": "12",
+            "C": "16",
+            "D": "14",
+            "E": "72/7"
+          },
+          "jawaban": "A",
+          "pembahasan": "Konsumsi sebanding dengan jarak. Untuk 210 km, kebutuhan = 12×210/180 = 14 liter. Dari persediaan 20 liter, sisa = 20-14 = 6 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-04",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "upah dan jam kerja pada tarif tetap",
+          "gravity_center": "menghubungkan upah dengan jam pada tarif yang sama",
+          "difficulty": "sedang",
+          "soal": "Dalam sebuah perjalanan dinas, seorang sopir dibayar Rp90.000 untuk 6 jam kerja. Jika tarif per jam tetap dan ia bekerja 9 jam, berapa upah yang diterima?",
+          "opsi": {
+            "A": "Rp120.000",
+            "B": "Rp125.000",
+            "C": "Rp130.000",
+            "D": "Rp135.000",
+            "E": "Rp145.000"
+          },
+          "jawaban": "D",
+          "pembahasan": "Upah 1 jam = Rp90.000 ÷ 6 = Rp15.000. Untuk 9 jam, upah = 9×Rp15.000 = Rp135.000.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v10": "wording diperhalus agar lebih natural dan tetap dekat dengan pola FR upah–waktu",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-05",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "arah hubungan tersamar",
+          "gravity_center": "menentukan bahwa satu besaran naik saat besaran lain turun",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah pekerjaan membutuhkan 8 orang selama 15 hari. Agar selesai lebih cepat dengan kemampuan per orang tetap, jika pekerja menjadi 10 orang, berapa hari diperlukan?",
+          "opsi": {
+            "A": "12",
+            "B": "13",
+            "C": "11",
+            "D": "120/11",
+            "E": "16/3"
+          },
+          "jawaban": "A",
+          "pembahasan": "Pekerja bertambah berarti waktu yang dibutuhkan berkurang. Maka kita kalikan jumlah dan waktunya: 8×15 = 10×t. Maka t = 8×15/10 = 12.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-06",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "mesin dan waktu",
+          "gravity_center": "menjaga beban produksi tetap ketika jumlah mesin berubah",
+          "difficulty": "sedang",
+          "soal": "Sebuah pekerjaan dapat diselesaikan oleh 6 mesin dalam 18 jam. Jika digunakan 8 mesin dengan kemampuan setiap mesin tetap, berapa perbandingan waktu baru : waktu lama?",
+          "opsi": {
+            "A": "3:4",
+            "B": "4:3",
+            "C": "2:3",
+            "D": "3:2",
+            "E": "9:8"
+          },
+          "jawaban": "A",
+          "pembahasan": "Untuk pekerjaan yang sama, jumlah mesin dan waktu berbanding terbalik. Jadi waktu baru : waktu lama = 6 : 8 = 3 : 4.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          },
+          "revisi_terakhir": "Menghapus opsi yang setara secara rasio dengan kunci (8:6 = 4:3); diganti 9:8."
+        },
+        {
+          "id": "P2-07",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "faktor tetap tersembunyi",
+          "gravity_center": "menemukan faktor yang sebenarnya sama lalu menghilangkannya",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah perjalanan membutuhkan 16 liter bahan bakar untuk 4 kendaraan selama 2 hari dengan jarak harian sama. Jika kendaraan menjadi 6 dan perjalanan berlangsung 3 hari, berapa kebutuhan bahan bakar?",
+          "opsi": {
+            "B": "36",
+            "A": "16",
+            "C": "34",
+            "D": "38",
+            "E": "40"
+          },
+          "jawaban": "B",
+          "pembahasan": "Jumlah kendaraan berubah dari 4 menjadi 6, jadi kebutuhan dikali 6/4 = 3/2. Lama perjalanan berubah dari 2 menjadi 3 hari, jadi dikali 3/2 lagi. Maka kebutuhan baru = 16 × 3/2 × 3/2 = 36 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-08",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "konsumsi × jumlah pemakai × waktu",
+          "gravity_center": "menggabungkan banyak pemakai dengan durasi pemakaian",
+          "difficulty": "sedang-tinggi",
+          "soal": "Satu dispenser menghabiskan 18 liter air untuk 6 orang selama 3 jam. Jika dipakai 10 orang selama 5 jam pada laju konsumsi yang sama, berapa liter air dibutuhkan?",
+          "opsi": {
+            "A": "50",
+            "B": "56",
+            "C": "47",
+            "D": "18",
+            "E": "53"
+          },
+          "jawaban": "A",
+          "pembahasan": "Jumlah orang berubah dari 6 menjadi 10, jadi dikali 10/6 = 5/3. Waktu berubah dari 3 menjadi 5 jam, jadi dikali 5/3. Maka kebutuhan baru = 18 × 5/3 × 5/3 = 50 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-09",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "multi-stage tersamar dalam narasi",
+          "gravity_center": "menangkap pergantian kondisi tanpa penanda eksplisit",
+          "difficulty": "sulit",
+          "soal": "Sebuah proyek membutuhkan 390 satuan pekerjaan. Tim pertama beranggotakan 6 orang dan menyelesaikan 30 satuan per jam selama 4 jam. Setelah itu jumlah anggota berubah sehingga laju tim menjadi 18 satuan per jam. Berapa jam tambahan diperlukan?",
+          "opsi": {
+            "A": "12 jam",
+            "B": "14 jam",
+            "C": "15 jam",
+            "D": "16 jam",
+            "E": "18 jam"
+          },
+          "jawaban": "C",
+          "pembahasan": "Tahap pertama menghasilkan 30 × 4 = 120 satuan. Sisa pekerjaan = 390 − 120 = 270 satuan. Dengan laju 18 satuan per jam, waktu tambahan = 270 ÷ 18 = 15 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-10",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "multi-stage dengan rasio perubahan",
+          "gravity_center": "menggunakan rasio antar fase untuk mencari target",
+          "difficulty": "sulit",
+          "soal": "Sebuah gudang harus memproses 360 paket. Pada fase awal, tim memproses 24 paket per jam selama 5 jam. Setelah target diperbarui, laju menjadi 30 paket per jam. Berapa jam lagi yang dibutuhkan?",
+          "opsi": {
+            "B": "8",
+            "A": "7",
+            "C": "4",
+            "D": "12",
+            "E": "9"
+          },
+          "jawaban": "B",
+          "pembahasan": "Tahap pertama menghasilkan 24×5 = 120 paket. Sisa = 360−120 = 240 paket. Dengan laju 30 paket per jam, waktu tambahan = 240÷30 = 8 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-11",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "kelompok bergabung bertahap",
+          "gravity_center": "menentukan waktu baru setelah kelompok kedua mulai bekerja",
+          "difficulty": "sulit",
+          "soal": "Sebuah kelompok menyelesaikan 252 dokumen. Pada 4 jam pertama satu tim bekerja dengan laju 18 dokumen per jam. Setelah itu tim kedua bergabung dengan laju 12 dokumen per jam. Berapa jam total sejak pekerjaan dimulai hingga selesai?",
+          "opsi": {
+            "A": "7 jam",
+            "B": "8 jam",
+            "C": "9 jam",
+            "D": "11 jam",
+            "E": "10 jam"
+          },
+          "jawaban": "E",
+          "pembahasan": "Empat jam pertama menghasilkan 18 × 4 = 72 dokumen. Sisa = 252 − 72 = 180 dokumen. Setelah tim kedua bergabung, laju bersama = 18 + 12 = 30 dokumen per jam. Waktu berikutnya = 180 ÷ 30 = 6 jam. Jadi waktu total = 4 + 6 = 10 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-12",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "satu kelompok berhenti",
+          "gravity_center": "memisahkan kontribusi awal dan kontribusi setelah salah satu kelompok berhenti",
+          "difficulty": "sulit",
+          "soal": "Sebuah pusat distribusi harus mengirim 180 paket. Tim A mengirim 15 paket per jam dan Tim B 10 paket per jam. Keduanya bekerja bersama selama 4 jam. Setelah itu Tim A berhenti dan Tim B melanjutkan sendiri sampai semua paket terkirim. Berapa jam waktu kerja seluruhnya sejak pekerjaan dimulai?",
+          "opsi": {
+            "A": "8 jam",
+            "B": "10 jam",
+            "C": "11 jam",
+            "D": "12 jam",
+            "E": "14 jam"
+          },
+          "jawaban": "D",
+          "pembahasan": "Selama 4 jam pertama, dua tim mengirim 15+10=25 paket per jam. Jadi terkirim 25×4=100 paket. Sisa 180−100=80 paket. Setelah Tim A berhenti, Tim B mengirim 10 paket per jam, sehingga perlu 80÷10=8 jam. Total waktu = 4+8=12 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "catatan_revisi": "Diubah agar benar-benar mencerminkan laju gabungan dengan satu kelompok berhenti, bukan sekadar urutan dua tim.",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-13",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi produktivitas",
+          "gravity_center": "mengubah data menjadi hasil per satu pekerja/per jam",
+          "difficulty": "sedang",
+          "soal": "Sebuah tim menghasilkan 360 barang dengan 6 pekerja selama 5 jam. Berapa rata-rata produktivitas per pekerja per jam?",
+          "opsi": {
+            "E": "12",
+            "A": "11",
+            "B": "60",
+            "C": "72",
+            "D": "13"
+          },
+          "jawaban": "E",
+          "pembahasan": "Enam pekerja bekerja 5 jam, jadi totalnya 6 × 5 = 30 jam kerja. Dari 360 barang, tiap 1 jam kerja menghasilkan 360 ÷ 30 = 12 barang.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-14",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi jarak/waktu",
+          "gravity_center": "mengubah data menjadi laju per satuan",
+          "difficulty": "sedang",
+          "soal": "Sebuah kendaraan menempuh 280 km dalam 4 jam. Berapa kecepatan rata-rata kendaraan tersebut?",
+          "opsi": {
+            "B": "70",
+            "A": "1/70",
+            "C": "71",
+            "D": "69",
+            "E": "639/2"
+          },
+          "jawaban": "B",
+          "pembahasan": "Kecepatan = jarak ÷ waktu = 280 ÷ 4 = 70 km per jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-15",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel data hilang",
+          "gravity_center": "menemukan satu atau dua nilai yang belum diketahui",
+          "difficulty": "sedang",
+          "soal": "Perhatikan tabel berikut. Di sebuah sekolah, setiap siswa mendapat jumlah buku yang sama. Berapa buku yang diberikan kepada 7 siswa?\nTabel:\n| Kondisi | Siswa | Buku |\n|---|---:|---:|\n| A | 4 | 28 |\n| B | 7 | ? |\n| C | 10 | 70 |",
+          "opsi": {
+            "A": "47",
+            "B": "49",
+            "C": "52",
+            "D": "56",
+            "E": "63"
+          },
+          "jawaban": "B",
+          "pembahasan": "4 siswa mendapat 28 buku, jadi setiap siswa mendapat 28÷4 = 7 buku. Untuk 7 siswa, jumlah buku = 7×7 = 49 buku.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-16",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel tersamar",
+          "gravity_center": "mengenali hubungan tanpa label senilai/berbalik nilai",
+          "difficulty": "sedang-tinggi",
+          "soal": "Lengkapi nilai waktu saat 8 mesin digunakan.\nTabel:\n| Mesin | Waktu (jam) |\n|---:|---:|\n| 4 | 18 |\n| 8 | ? |",
+          "opsi": {
+            "D": "9",
+            "A": "10",
+            "B": "8",
+            "C": "18",
+            "E": "16/9"
+          },
+          "jawaban": "D",
+          "pembahasan": "Jumlah mesin dan waktu saling berlawanan. Jadi, hasil kali jumlah mesin dan waktu tetap: 4×18 = 72. Maka waktu saat mesin 8 = 72/8 = 9 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-17",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "penyederhanaan aljabar",
+          "gravity_center": "menghilangkan faktor yang sama pada X dan Y",
+          "difficulty": "sedang",
+          "soal": "Diberikan X = 4a − 7 dan Y = 2(2a + 5) − 17, dengan a bilangan positif. Manakah hubungan yang benar antara X dan Y?",
+          "opsi": {
+            "A": "X > Y",
+            "B": "X < Y",
+            "C": "X = Y",
+            "D": "Hubungan tidak dapat ditentukan",
+            "E": "X = 2Y"
+          },
+          "jawaban": "C",
+          "pembahasan": "Sederhanakan Y: 2(2a+5)−17 = 4a+10−17 = 4a−7. Bentuk Y sama dengan X. Jadi X=Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "catatan_revisi": "Dibuat sedikit lebih menuntut penyederhanaan aljabar agar tidak terlalu elementer.",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-18",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "rasio berbalik",
+          "gravity_center": "menerjemahkan hubungan terbalik ke perbandingan X dan Y",
+          "difficulty": "sedang-tinggi",
+          "soal": "Dalam satu pekerjaan, hasil kali banyak mesin X dan waktu Y selalu 24. Jika X = 6, manakah hubungan yang benar antara X dan Y?",
+          "opsi": {
+            "C": "X > Y",
+            "A": "X = Y",
+            "B": "2X > 3Y",
+            "D": "Hubungan tidak dapat ditentukan",
+            "E": "X < Y"
+          },
+          "jawaban": "C",
+          "pembahasan": "Karena XY=24 dan X=6, maka Y=24/6=4. Jadi X=6 lebih besar daripada Y=4, sehingga X>Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-19",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "harga dan berat",
+          "gravity_center": "mencari harga untuk berat berbeda dengan harga per unit tetap",
+          "difficulty": "mudah",
+          "soal": "Harga 3 kg buah adalah Rp54.000. Dengan harga per kilogram tetap, berapa harga 7 kg?",
+          "opsi": {
+            "D": "Rp126.000",
+            "A": "Rp23.142",
+            "B": "Rp131.000",
+            "C": "Rp108.000",
+            "E": "Rp55.000"
+          },
+          "jawaban": "D",
+          "pembahasan": "Harga 1 kg buah = Rp54.000 ÷ 3 = Rp18.000. Jadi harga 7 kg = 7 × Rp18.000 = Rp126.000.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P2-20",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "kecepatan dan waktu",
+          "gravity_center": "menjaga jarak tetap ketika kecepatan berubah",
+          "difficulty": "mudah",
+          "soal": "Dalam sebuah perjalanan, jarak yang ditempuh tetap. Pada kecepatan 60 km/jam, waktu tempuh 5 jam. Jika perjalanan yang sama harus selesai dalam 4 jam, berapa kecepatan yang diperlukan?",
+          "opsi": {
+            "A": "65 km/jam",
+            "B": "70 km/jam",
+            "C": "75 km/jam",
+            "D": "80 km/jam",
+            "E": "90 km/jam"
+          },
+          "jawaban": "C",
+          "pembahasan": "Jarak = 60×5 = 300 km. Untuk menempuh 300 km dalam 4 jam, kecepatan = 300÷4 = 75 km/jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        }
+      ]
+    },
+    {
+      "paket_id": 3,
+      "judul": "Paket 3",
+      "jumlah_soal": 20,
+      "soal": [
+        {
+          "id": "P3-01",
+          "family": "RASIO DASAR",
+          "sub_pattern": "rasio dengan selisih diketahui",
+          "gravity_center": "menentukan nilai bagian dari rasio dan selisih",
+          "difficulty": "sedang-tinggi",
+          "soal": "Di sebuah toko, perbandingan jumlah buku A dan B adalah 5:3. Selisih jumlah keduanya 18 buku. Berapa jumlah buku A?",
+          "opsi": {
+            "E": "45",
+            "A": "36",
+            "B": "54",
+            "C": "18",
+            "D": "27"
+          },
+          "jawaban": "E",
+          "pembahasan": "Selisih bagian rasio = |5-3| = 2 bagian. Karena selisih nyata 18, satu bagian = 18/2 = 9. Maka A = 5×9 = 45.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-02",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "produksi sebanding",
+          "gravity_center": "menghubungkan jumlah sumber daya dengan hasil saat kondisi lain tetap",
+          "difficulty": "mudah",
+          "soal": "Sebuah lini produksi menghasilkan 240 botol dari 12 batch dengan kondisi tetap. Jika dijalankan 15 batch, berapa botol diperkirakan dihasilkan?",
+          "opsi": {
+            "D": "300",
+            "A": "305",
+            "B": "480",
+            "C": "192",
+            "E": "295"
+          },
+          "jawaban": "D",
+          "pembahasan": "Karena kondisi lain tetap, jumlah berubah dengan perbandingan yang sama. Hasil baru = 240×15/12 = 300 unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-03",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "resep / komposisi",
+          "gravity_center": "mempertahankan perbandingan bahan ketika porsi berubah",
+          "difficulty": "mudah",
+          "soal": "Sebuah resep membutuhkan 6 butir telur untuk 24 porsi. Berapa telur yang diperlukan untuk 40 porsi dengan takaran sama?",
+          "opsi": {
+            "E": "10",
+            "A": "9",
+            "B": "12",
+            "C": "18/5",
+            "D": "11"
+          },
+          "jawaban": "E",
+          "pembahasan": "Semakin banyak porsi, bahan yang dibutuhkan bertambah dengan perbandingan yang sama. Untuk 40 porsi diperlukan 6×40/24 = 10 butir telur.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-04",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "jarak dan waktu pada kecepatan tetap",
+          "gravity_center": "menghubungkan jarak secara langsung dengan waktu",
+          "difficulty": "sedang",
+          "soal": "Sebuah bus menempuh 180 km dalam 3 jam dengan kecepatan tetap. Berapa jarak yang ditempuh dalam 4,5 jam?",
+          "opsi": {
+            "C": "270",
+            "A": "268",
+            "B": "272",
+            "D": "120",
+            "E": "183"
+          },
+          "jawaban": "C",
+          "pembahasan": "Kecepatan tetap, sehingga jarak sebanding dengan waktu. Jika 180 km ditempuh dalam 3 jam, untuk 9/2 jam jaraknya = 180 × 4,5 ÷ 3 = 270 km.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-05",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "pekerja dan waktu",
+          "gravity_center": "menjaga jumlah pekerjaan tetap ketika jumlah pekerja berubah",
+          "difficulty": "mudah",
+          "soal": "Sebuah toko dapat menata seluruh stok dalam 12 jam dengan 5 petugas. Jika petugas menjadi 6 orang dengan kemampuan sama, berapa jam diperlukan?",
+          "opsi": {
+            "E": "10",
+            "A": "11",
+            "B": "9",
+            "C": "60/7",
+            "D": "5/2"
+          },
+          "jawaban": "E",
+          "pembahasan": "Pekerja bertambah berarti waktu yang dibutuhkan berkurang. Maka kita kalikan jumlah dan waktunya: 5×12 = 6×t. Maka t = 5×12/6 = 10.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-06",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "laju dan durasi",
+          "gravity_center": "menjaga hasil/total tetap ketika salah satu laju berubah",
+          "difficulty": "sedang",
+          "soal": "Sebuah mesin menghasilkan 480 unit dalam 16 jam. Jika laju mesin dinaikkan dari 30 unit/jam menjadi 40 unit/jam, berapa jam diperlukan untuk menghasilkan 480 unit yang sama?",
+          "opsi": {
+            "E": "12",
+            "A": "11",
+            "B": "480/41",
+            "C": "75",
+            "D": "13"
+          },
+          "jawaban": "E",
+          "pembahasan": "Beban pekerjaan sama, tetapi laju mesin naik dari 30 menjadi 40 unit per jam. Jadi 30×16 = 40×t. Maka t = 480÷40 = 12 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-07",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "harga × jumlah × kualitas/ukuran",
+          "gravity_center": "membandingkan beberapa faktor harga secara bersamaan",
+          "difficulty": "sulit",
+          "soal": "Sebuah katering mengeluarkan biaya Rp240.000 untuk 12 paket berukuran standar. Jika jumlah paket naik menjadi 15 dan ukuran tiap paket menjadi 20% lebih besar, dengan harga per ukuran dan paket sebanding, berapa biaya baru?",
+          "opsi": {
+            "C": "Rp360.000",
+            "A": "Rp480.000",
+            "B": "Rp720.000",
+            "D": "Rp241.000",
+            "E": "Rp240.000"
+          },
+          "jawaban": "C",
+          "pembahasan": "Jumlah paket naik dari 12 menjadi 15, jadi biaya dikali 15/12 = 5/4. Ukuran tiap paket naik 20%, jadi dikali 120/100 = 6/5. Maka biaya baru = Rp240.000 × 5/4 × 6/5 = Rp360.000.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-08",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "multi-variabel berbentuk verbal",
+          "gravity_center": "menerjemahkan kalimat hubungan menjadi model perbandingan",
+          "difficulty": "sulit",
+          "soal": "Dua mobil menghabiskan 8 liter bahan bakar untuk perjalanan selama 4 jam. Jika jumlah mobil menjadi 3 dan lama perjalanan menjadi 6 jam, dengan konsumsi setiap mobil per jam tetap, berapa liter bahan bakar yang diperlukan?",
+          "opsi": {
+            "B": "18 liter",
+            "A": "20 liter",
+            "C": "16 liter",
+            "D": "24 liter",
+            "E": "12 liter"
+          },
+          "jawaban": "B",
+          "pembahasan": "Jumlah mobil berubah dari 2 menjadi 3, jadi kebutuhan dikali 3/2. Lama perjalanan berubah dari 4 menjadi 6 jam, juga dikali 3/2. Kebutuhan baru = 8×3/2×3/2 = 18 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-09",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "dua kondisi multi-variabel",
+          "gravity_center": "membandingkan dua keadaan dengan beberapa variabel berubah",
+          "difficulty": "sulit",
+          "soal": "Sebuah toko menjual 120 paket dengan 4 kasir selama 6 jam. Jika jumlah kasir menjadi 5 dan jam layanan menjadi 8, dengan produktivitas per kasir per jam tetap, berapa banyak paket dapat dilayani?",
+          "opsi": {
+            "D": "200",
+            "A": "190",
+            "B": "120",
+            "C": "220",
+            "E": "210"
+          },
+          "jawaban": "D",
+          "pembahasan": "Jumlah kasir berubah dari 4 menjadi 5, jadi dikali 5/4. Waktu berubah dari 6 menjadi 8 jam, jadi dikali 8/6 = 4/3. Maka hasil baru = 120 × 5/4 × 4/3 = 200.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-10",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "fase dengan perubahan jumlah pekerja dan jam kerja",
+          "gravity_center": "menggabungkan dua perubahan dalam fase berbeda",
+          "difficulty": "sulit",
+          "soal": "Sebuah produksi membutuhkan 520 unit pekerjaan. Pada fase pertama, 5 pekerja bekerja 6 jam dan menghasilkan 150 unit. Pada fase kedua, 4 pekerja bekerja 5 jam dan menghasilkan 100 unit. Jika sisa pekerjaan dikerjakan oleh 6 pekerja dengan kemampuan sama seperti pekerja pada fase kedua, berapa jam yang diperlukan?",
+          "opsi": {
+            "A": "7 jam",
+            "B": "8 jam",
+            "C": "9 jam",
+            "D": "10 jam",
+            "E": "11 jam"
+          },
+          "jawaban": "C",
+          "pembahasan": "Sudah selesai 150+100 = 250 unit. Sisa = 520−250 = 270 unit. Pada fase kedua, 4 pekerja selama 5 jam menghasilkan 100 unit, jadi 1 pekerja dalam 1 jam menghasilkan 100÷20 = 5 unit. Enam pekerja menghasilkan 30 unit per jam. Waktu yang diperlukan = 270÷30 = 9 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-11",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "fase dengan produktivitas berbeda",
+          "gravity_center": "menghitung kontribusi tiap fase secara terpisah",
+          "difficulty": "sulit",
+          "soal": "Sebuah dapur produksi harus membuat 300 kotak makanan. Fase pertama menghasilkan 30 kotak/jam selama 4 jam, fase kedua 40 kotak/jam selama 3 jam, lalu fase ketiga berjalan 50 kotak/jam. Berapa jam fase ketiga diperlukan?",
+          "opsi": {
+            "A": "60 menit",
+            "B": "72 menit",
+            "C": "1 jam 12 menit",
+            "D": "90 menit",
+            "E": "2 jam"
+          },
+          "jawaban": "C",
+          "pembahasan": "Fase 1 menghasilkan 30 × 4 = 120 kotak. Fase 2 menghasilkan 40 × 3 = 120 kotak. Jadi sudah selesai 240 kotak dan tersisa 60 kotak. Dengan laju 50 kotak per jam, waktu yang diperlukan = 60 ÷ 50 = 1,2 jam = 1 jam 12 menit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "revisi_v7": "LOLOS",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true,
+            "v7_reviewed": true
+          }
+        },
+        {
+          "id": "P3-12",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "laju gabungan dengan target parsial",
+          "gravity_center": "mencari waktu untuk menyelesaikan sisa pekerjaan dengan beberapa laju",
+          "difficulty": "sulit",
+          "soal": "Sebuah tim pengisian memiliki dua jalur yang masing-masing mampu mengisi 24 dan 16 botol per menit. Jika 200 botol sudah terisi dan target 800 botol, berapa menit lagi?",
+          "opsi": {
+            "B": "15",
+            "A": "20",
+            "C": "14",
+            "D": "25",
+            "E": "16"
+          },
+          "jawaban": "B",
+          "pembahasan": "Sisa botol = 800−200 = 600 botol. Kedua jalur bersama-sama mengisi 24+16 = 40 botol per menit. Jadi waktu tambahan = 600÷40 = 15 menit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-13",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi harga",
+          "gravity_center": "mengubah harga menjadi harga per unit",
+          "difficulty": "mudah",
+          "soal": "Sebanyak 8 buku berharga Rp96.000. Berapa harga rata-rata satu buku?",
+          "opsi": {
+            "E": "Rp12.000",
+            "A": "Rp11.000",
+            "B": "Rp13.000",
+            "C": "Rp8",
+            "D": "Rp96.000"
+          },
+          "jawaban": "E",
+          "pembahasan": "Harga satuan = Rp96.000/8 = Rp12.000 per unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-14",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel cukup/tidak cukup",
+          "gravity_center": "menilai apakah data pada tabel menentukan jawaban tunggal",
+          "difficulty": "sulit",
+          "soal": "Perhatikan tabel berikut. Sebuah sekolah menggunakan printer untuk mencetak lembar kerja. Berdasarkan data yang tersedia saja, apakah waktu pada kondisi II dapat ditentukan?\nTabel:\n| Kondisi | Printer | Hasil | Waktu (jam) |\n|---|---:|---:|---:|\n| I | 4 | 80 lembar | 5 |\n| II | 6 | 120 lembar | ? |",
+          "opsi": {
+            "A": "Hubungan tidak dapat ditentukan",
+            "B": "t₂ = 2t₁",
+            "C": "t₂ = t₁",
+            "D": "t₂ = 3/2 t₁",
+            "E": "t₂ = 2/3 t₁"
+          },
+          "jawaban": "A",
+          "pembahasan": "Kondisi I memberi data lengkap. Namun, soal tidak mengatakan bahwa kemampuan setiap printer pada kondisi II tetap sama. Jadi waktu kondisi II belum dapat ditentukan dengan pasti.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "revisi_v10": "melengkapi tabel yang sebelumnya tidak tertulis; sekaligus menjaga inti jebakan asumsi data cukup/tidak cukup",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-15",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel rasio berantai",
+          "gravity_center": "menghubungkan beberapa baris untuk memperoleh perbandingan baru",
+          "difficulty": "sedang-tinggi",
+          "soal": "Diketahui A:B = 3:5 dan B:C = 4:7. Tentukan perbandingan A:C.",
+          "opsi": {
+            "A": "12:35",
+            "B": "20:21",
+            "C": "7:12",
+            "D": "3:7",
+            "E": "15:28"
+          },
+          "jawaban": "A",
+          "pembahasan": "Samakan B. Samakan nilai B menjadi 20. Maka A=3×4=12 dan C=7×5=35. Jadi A:C = 12:35.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-16",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "hubungan tidak dapat ditentukan",
+          "gravity_center": "membuat dua kemungkinan nilai yang sama-sama memenuhi kondisi tetapi memberi hasil berbeda",
+          "difficulty": "sulit",
+          "soal": "X dan Y adalah jumlah dua persediaan positif. Diketahui X + Y = 20, tetapi tidak ada informasi lain tentang besar masing-masing. Manakah hubungan yang benar antara X dan Y?",
+          "opsi": {
+            "E": "Hubungan tidak dapat ditentukan",
+            "A": "2X > 3Y",
+            "B": "X = Y",
+            "C": "X > Y",
+            "D": "X < Y"
+          },
+          "jawaban": "E",
+          "pembahasan": "Data yang ada belum cukup. Ada beberapa kemungkinan nilai X dan Y, dan hubungannya bisa berbeda. Jadi hubungan X dan Y tidak dapat ditentukan.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-17",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "bentuk berbeda tetapi nilainya sama",
+          "gravity_center": "menyederhanakan kedua ekspresi sampai terlihat ekuivalen",
+          "difficulty": "sedang",
+          "soal": "Di sebuah toko, diketahui X = (m + 4) + (m + 6) dan Y = 2m + 10, dengan m bilangan positif. Manakah hubungan yang benar?",
+          "opsi": {
+            "A": "X < Y",
+            "B": "2X > 3Y",
+            "C": "Hubungan tidak dapat ditentukan",
+            "D": "X > Y",
+            "E": "X = Y"
+          },
+          "jawaban": "E",
+          "pembahasan": "Hitung X: (m+4)+(m+6) = 2m+10. Nilai ini sama dengan Y. Jadi X = Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-18",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "jumlah hewan dan persediaan waktu",
+          "gravity_center": "menjaga total konsumsi tetap ketika jumlah pemakai berubah",
+          "difficulty": "sedang",
+          "soal": "Sebanyak 72 kg pakan cukup untuk 8 hewan selama 6 hari. Jika jumlah hewan menjadi 12 dan jumlah pakan tetap 72 kg, berapa hari pakan itu akan cukup?",
+          "opsi": {
+            "B": "4 hari",
+            "A": "9 hari",
+            "C": "3 hari",
+            "D": "6 hari",
+            "E": "5 hari"
+          },
+          "jawaban": "B",
+          "pembahasan": "Jumlah pakan tetap. Semula 8 hewan memerlukan 6 hari, sehingga pekerjaan konsumsi setara 8×6=48 hewan-hari. Untuk 12 hewan, lama = 48÷12 = 4 hari.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-19",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "target waktu diperpanjang",
+          "gravity_center": "menentukan konsekuensi perubahan waktu terhadap sumber daya",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah pekerjaan diperkirakan selesai oleh 8 pekerja dalam 15 jam. Setelah 5 jam bekerja, batas waktu total diperpanjang menjadi 21 jam sejak awal. Jika kemampuan setiap pekerja sama, berapa pekerja yang diperlukan untuk menyelesaikan sisanya tepat waktu?",
+          "opsi": {
+            "D": "5 pekerja",
+            "A": "4 pekerja",
+            "B": "8 pekerja",
+            "C": "7 pekerja",
+            "E": "6 pekerja"
+          },
+          "jawaban": "D",
+          "pembahasan": "Dalam 15 jam, 8 pekerja menyelesaikan seluruh pekerjaan. Jadi seluruh pekerjaan setara dengan 8 × 15 = 120 bagian kerja. Lima jam pertama selesai 8 × 5 = 40 bagian kerja. Sisa = 80 bagian kerja. Waktu yang tersedia sampai jam ke-21 adalah 16 jam. Jadi pekerja yang diperlukan = 80 ÷ 16 = 5 orang.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P3-20",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi konsumsi",
+          "gravity_center": "mengubah konsumsi menjadi per unit pemakai atau per hari",
+          "difficulty": "sedang",
+          "soal": "Sebuah armada yang terdiri dari 5 mobil menggunakan 90 liter bahan bakar selama 3 hari. Jika pemakaian setiap mobil dan setiap hari sama, berapa liter bahan bakar yang digunakan per mobil per hari?",
+          "opsi": {
+            "E": "6",
+            "A": "30",
+            "B": "5",
+            "C": "7",
+            "D": "18"
+          },
+          "jawaban": "E",
+          "pembahasan": "Ada 5 mobil dan masing-masing digunakan selama 3 hari, sehingga ada 5×3 = 15 bagian pemakaian. Jadi pemakaian per mobil per hari = 90÷15 = 6 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "revisi_v7": "LOLOS",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true,
+            "v7_reviewed": true
+          }
+        }
+      ]
+    },
+    {
+      "paket_id": 4,
+      "judul": "Paket 4",
+      "jumlah_soal": 20,
+      "soal": [
+        {
+          "id": "P4-01",
+          "family": "RASIO DASAR",
+          "sub_pattern": "rasio bagian terhadap keseluruhan",
+          "gravity_center": "mengubah rasio bagian menjadi bagian dari total",
+          "difficulty": "mudah",
+          "soal": "Dalam sebuah perpustakaan, rasio buku fiksi terhadap seluruh koleksi adalah 3:8. Jika total koleksi 400 buku, berapa buku fiksi?",
+          "opsi": {
+            "A": "150",
+            "B": "250",
+            "C": "50",
+            "D": "152",
+            "E": "148"
+          },
+          "jawaban": "A",
+          "pembahasan": "Jumlah seluruh bagian = 8. Bagian yang dicari adalah 3 bagian, sehingga nilainya = 3/8×400 = 150.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-02",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "senilai dengan representasi verbal",
+          "gravity_center": "mengenali hubungan sebanding tanpa bentuk rumus eksplisit",
+          "difficulty": "sedang",
+          "soal": "Sebuah mesin mencetak 72 label dalam 4 menit. Dengan laju tetap, berapa label dicetak dalam 7 menit?",
+          "opsi": {
+            "B": "126",
+            "A": "18",
+            "C": "144",
+            "D": "288/7",
+            "E": "108"
+          },
+          "jawaban": "B",
+          "pembahasan": "Cari dulu hasil untuk 1 unit. Nilai per unit = 72/4. Untuk 7 unit, nilainya = 72/4×7 = 126.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-03",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "persediaan bertambah sebanding",
+          "gravity_center": "mencari perubahan jumlah dari rasio perubahan",
+          "difficulty": "sedang",
+          "soal": "Sebuah sekolah menerima 240 lembar formulir untuk 6 kelas dengan kebutuhan per kelas sama. Jika jumlah kelas menjadi 9, berapa formulir dibutuhkan?",
+          "opsi": {
+            "C": "360",
+            "A": "320",
+            "B": "400",
+            "D": "160",
+            "E": "40"
+          },
+          "jawaban": "C",
+          "pembahasan": "Cari dulu hasil untuk 1 unit. Nilai per unit = 240/6. Untuk 9 unit, nilainya = 240/6×9 = 360.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-04",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "pekerja dengan tingkat kemampuan sama",
+          "gravity_center": "menjaga pekerjaan tetap saat tenaga kerja berubah",
+          "difficulty": "sedang",
+          "soal": "Sebuah persediaan dapat dipindahkan dalam 10 jam oleh 8 pekerja. Jika pekerja menjadi 5 orang dan kemampuan tiap orang tetap, berapa jam diperlukan?",
+          "opsi": {
+            "B": "16",
+            "A": "17",
+            "C": "15",
+            "D": "40/3",
+            "E": "4"
+          },
+          "jawaban": "B",
+          "pembahasan": "Jumlah pekerja berkurang dari 8 menjadi 5, sehingga waktu yang dibutuhkan bertambah. Untuk pekerjaan yang sama, jumlah pekerja × waktu tetap. Jadi 8×10 = 5×t. Maka t = 8×10/5 = 16 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "revisi_v7": "LOLOS",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true,
+            "v7_reviewed": true
+          }
+        },
+        {
+          "id": "P4-05",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "berbalik nilai dengan tabel",
+          "gravity_center": "mengenali hasil kali yang tetap dari data",
+          "difficulty": "sedang",
+          "soal": "Perhatikan tabel berikut. Sebuah percetakan buku menggunakan mesin dengan kemampuan yang sama. Jika 12 mesin digunakan, berapa waktu yang diperlukan?\nTabel:\n| Mesin | Waktu (jam) |\n|---:|---:|\n| 6 | 20 |\n| 12 | ? |",
+          "opsi": {
+            "A": "8",
+            "B": "9",
+            "C": "12",
+            "D": "10",
+            "E": "15"
+          },
+          "jawaban": "D",
+          "pembahasan": "Untuk pekerjaan yang sama, jumlah mesin dan waktu saling berlawanan. Jadi 6×20 = 12×t. Maka t = 120÷12 = 10 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-06",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "multi-variabel dengan rasio parsial",
+          "gravity_center": "menggabungkan rasio yang diberikan bertahap",
+          "difficulty": "sulit",
+          "soal": "Sebuah mesin memerlukan 6 jam untuk menghasilkan 180 unit dengan 3 operator. Jika operator menjadi 4 dan waktu menjadi 5 jam, dengan produktivitas per operator per jam tetap, berapa unit dihasilkan?",
+          "opsi": {
+            "A": "200",
+            "B": "230",
+            "C": "220",
+            "D": "183",
+            "E": "180"
+          },
+          "jawaban": "A",
+          "pembahasan": "Operator berubah dari 3 menjadi 4, jadi dikali 4/3. Waktu berubah dari 6 menjadi 5 jam, jadi dikali 5/6. Maka hasil baru = 180 × 4/3 × 5/6 = 200 unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-07",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "produksi × pekerja × jam kerja",
+          "gravity_center": "menghubungkan jumlah pekerja, jam kerja, dan hasil",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah kegiatan sekolah menghasilkan 480 paket dari 8 siswa yang bekerja 6 jam. Berapa paket dihasilkan jika 10 siswa bekerja 5 jam dengan produktivitas per siswa per jam tetap?",
+          "opsi": {
+            "D": "500",
+            "A": "483",
+            "B": "480",
+            "C": "540",
+            "E": "520"
+          },
+          "jawaban": "D",
+          "pembahasan": "Jumlah siswa berubah dari 8 menjadi 10, jadi dikali 10/8 = 5/4. Waktu berubah dari 6 menjadi 5 jam, jadi dikali 5/6. Maka hasil baru = 480 × 5/4 × 5/6 = 500 paket.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-08",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "target waktu dipercepat",
+          "gravity_center": "menentukan perubahan sumber daya agar target baru tercapai",
+          "difficulty": "sulit",
+          "soal": "Sebuah gudang harus menyelesaikan pemindahan 360 kotak. Jika 6 pekerja bekerja selama 10 jam, seluruh pekerjaan selesai. Setelah 4 jam pertama, batas akhir dipercepat sehingga pekerjaan harus selesai pada jam ke-8 sejak awal. Jika kemampuan setiap pekerja sama, berapa pekerja yang harus bekerja mulai jam ke-5?",
+          "opsi": {
+            "A": "6 orang",
+            "B": "7 orang",
+            "C": "8 orang",
+            "D": "9 orang",
+            "E": "10 orang"
+          },
+          "jawaban": "D",
+          "pembahasan": "Enam pekerja menyelesaikan 360 kotak dalam 10 jam. Artinya 1 pekerja dalam 1 jam menyelesaikan 360 ÷ (6 × 10) = 6 kotak. Dalam 4 jam pertama, 6 pekerja menyelesaikan 6 × 6 × 4 = 144 kotak. Sisa = 360 − 144 = 216 kotak. Waktu yang tersisa hanya 4 jam, jadi pekerja yang diperlukan = 216 ÷ (6 × 4) = 9 orang.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "catatan_revisi": "Diperbaiki agar sub-pattern target waktu dipercepat benar-benar muncul dalam soal bertahap.",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-09",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "pekerja masuk/keluar dua fase",
+          "gravity_center": "menghitung pekerjaan yang sudah selesai lalu memakai kondisi baru",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah buku paket sebanyak 400 unit harus dibungkus. Empat pekerja dapat membungkus 24 unit per jam secara bersama-sama selama 4 jam. Setelah itu dua pekerja tambahan masuk. Dengan kemampuan tiap pekerja tetap, berapa unit yang masih tersisa setelah 3 jam berikutnya?",
+          "opsi": {
+            "A": "194 unit",
+            "B": "196 unit",
+            "C": "198 unit",
+            "D": "200 unit",
+            "E": "202 unit"
+          },
+          "jawaban": "B",
+          "pembahasan": "Empat pekerja menyelesaikan 24×4 = 96 unit. Setelah dua pekerja masuk, jumlah pekerja menjadi 6. Laju baru = 24×6/4 = 36 unit per jam. Dalam 3 jam, selesai 36×3 = 108 unit. Total selesai = 96+108 = 204 unit. Sisa = 400−204 = 196 unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-10",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "sisa bahan/persediaan",
+          "gravity_center": "mengurangi penggunaan fase pertama sebelum fase kedua",
+          "difficulty": "sedang",
+          "soal": "Sebuah mesin memiliki target 500 unit. Pada fase pertama mesin menghasilkan 40 unit/jam selama 5 jam. Setelah itu laju menjadi 25 unit/jam. Berapa jam diperlukan setelah fase pertama?",
+          "opsi": {
+            "B": "12",
+            "A": "11",
+            "C": "25/2",
+            "D": "13",
+            "E": "8"
+          },
+          "jawaban": "B",
+          "pembahasan": "Fase 1 menyelesaikan 40×5 = 200 unit pekerjaan. Sisa = 500-200 = 300. Pada fase 2, laju 25 unit per jam; waktu untuk sisa = 300/25 = 12 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-11",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "laju gabungan dua kelompok",
+          "gravity_center": "menjumlahkan kontribusi per satuan waktu dari dua kelompok",
+          "difficulty": "sedang",
+          "soal": "Dua kelompok siswa mengemas paket dengan laju 18 dan 12 paket per jam. Berapa jam yang diperlukan untuk mengemas 150 paket jika keduanya bekerja bersama sejak awal?",
+          "opsi": {
+            "B": "5",
+            "A": "6",
+            "C": "25/3",
+            "D": "4",
+            "E": "7"
+          },
+          "jawaban": "B",
+          "pembahasan": "Yang kita jumlahkan adalah banyak pekerjaan per jam. Laju gabungan = 18 + 12 = 30 unit/jam. Waktu yang diperlukan = 150/30 = 5 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-12",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi sebelum perbandingan X/Y",
+          "gravity_center": "menyederhanakan kedua kuantitas ke bentuk yang sebanding",
+          "difficulty": "sedang-tinggi",
+          "soal": "X menyatakan 3.600 meter dalam 6 menit, sedangkan Y menyatakan 20 meter per detik. Setelah dinormalisasi ke meter per detik, bagaimana hubungan X dan Y?",
+          "opsi": {
+            "C": "X < Y",
+            "A": "2X > 3Y",
+            "B": "X > Y",
+            "D": "Hubungan tidak dapat ditentukan",
+            "E": "X = Y"
+          },
+          "jawaban": "C",
+          "pembahasan": "Enam menit = 360 detik. Jadi X = 3.600 ÷ 360 = 10 meter per detik. Y = 20 meter per detik. Karena 10 lebih kecil daripada 20, maka X < Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-13",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi ke satu unit",
+          "gravity_center": "mengubah semua besaran ke basis yang sama sebelum dibandingkan",
+          "difficulty": "mudah",
+          "soal": "Sebuah kain panjangnya 2 m 15 cm dan dijual seharga Rp43.000. Jika harga kain dihitung sebanding dengan panjangnya, berapa harga 1 meter kain?",
+          "opsi": {
+            "A": "Rp18.000",
+            "B": "Rp20.000",
+            "C": "Rp21.500",
+            "D": "Rp23.000",
+            "E": "Rp43.000"
+          },
+          "jawaban": "B",
+          "pembahasan": "2 m 15 cm = 2,15 m. Harga 1 meter = Rp43.000 ÷ 2,15 = Rp20.000. Jadi harga 1 meter kain adalah Rp20.000.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v10": "normalisasi ke satu unit sekaligus mempertahankan pola perbandingan senilai",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-14",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel berbalik nilai",
+          "gravity_center": "melengkapi data dari hasil kali yang tetap",
+          "difficulty": "sedang",
+          "soal": "Jika 5 mesin membutuhkan 24 jam, berapa waktu yang dibutuhkan 8 mesin?\nTabel:\n| Mesin | Waktu (jam) |\n|---:|---:|\n| 5 | 24 |\n| 8 | ? |",
+          "opsi": {
+            "C": "15",
+            "A": "14",
+            "B": "16",
+            "D": "24",
+            "E": "5/3"
+          },
+          "jawaban": "C",
+          "pembahasan": "Jumlah mesin dan waktu saling berlawanan. Jadi, hasil kali jumlah mesin dan waktu tetap: 5×24 = 120. Maka waktu saat mesin 8 = 120/8 = 15 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-15",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel perubahan kondisi",
+          "gravity_center": "membaca perpindahan dari kondisi awal ke kondisi berikutnya",
+          "difficulty": "sedang-tinggi",
+          "soal": "Perhatikan tabel berikut. Dengan laju produksi yang tetap, berapa produk yang dihasilkan saat waktu kerja menjadi 9 jam jika 6 jam menghasilkan 144 unit?\nTabel:\n| Kondisi | Waktu kerja (jam) | Produk (unit) |\n|---|---:|---:|\n| Awal | 6 | 144 |\n| Baru | 9 | ? |",
+          "opsi": {
+            "D": "216",
+            "A": "288",
+            "B": "219",
+            "C": "144",
+            "E": "213"
+          },
+          "jawaban": "D",
+          "pembahasan": "Dalam 6 jam dihasilkan 144 unit, jadi 1 jam menghasilkan 144 ÷ 6 = 24 unit. Dalam 9 jam, hasilnya 9 × 24 = 216 unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-16",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "jebakan asumsi",
+          "gravity_center": "menghindari kesimpulan yang tidak dipaksa oleh informasi soal",
+          "difficulty": "sulit",
+          "soal": "Dalam gudang, X dan Y adalah jumlah dua jenis barang. Diketahui X + Y = 30, X > 12, dan Y > 9. Manakah kesimpulan yang dapat dipastikan?",
+          "opsi": {
+            "A": "X > Y",
+            "B": "X = Y",
+            "C": "X < Y",
+            "D": "2X > 3Y",
+            "E": "Hubungan X dan Y tidak dapat ditentukan"
+          },
+          "jawaban": "E",
+          "pembahasan": "Contoh X=13 dan Y=17 memenuhi semua syarat. Contoh lain X=20 dan Y=10 juga memenuhi syarat. Karena hubungan X dan Y bisa berbeda, hubungan keduanya tidak dapat ditentukan.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-17",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "kondisi tambahan",
+          "gravity_center": "memakai batasan atau rasio untuk menentukan hubungan X dan Y",
+          "difficulty": "sulit",
+          "soal": "Diketahui X = 4k + 2 dan Y = 3k + 8 dengan k > 6. Manakah hubungan yang benar?",
+          "opsi": {
+            "A": "X < Y",
+            "B": "X = Y",
+            "C": "Hubungan tidak dapat ditentukan",
+            "D": "2X = 3Y",
+            "E": "X > Y"
+          },
+          "jawaban": "E",
+          "pembahasan": "Selisih X dan Y = (4k + 2) − (3k + 8) = k − 6. Karena k > 6, selisihnya positif. Jadi X > Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-18",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "waktu pengisian / kuantitas",
+          "gravity_center": "menghubungkan waktu dengan jumlah yang bertambah pada laju tetap",
+          "difficulty": "sedang",
+          "soal": "Sebuah mesin pengisi membutuhkan 6 menit untuk mengisi 18 liter. Dengan laju tetap, berapa liter yang diisi dalam 10 menit?",
+          "opsi": {
+            "A": "30",
+            "B": "18",
+            "C": "20",
+            "D": "40",
+            "E": "54/5"
+          },
+          "jawaban": "A",
+          "pembahasan": "Dalam 6 menit mesin mengisi 18 liter, jadi tiap menit mengisi 18÷6 = 3 liter. Dalam 10 menit, volumenya = 3×10 = 30 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-19",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "multi-variabel dengan data tidak langsung",
+          "gravity_center": "menentukan besaran antara sebelum hasil akhir",
+          "difficulty": "sulit",
+          "soal": "Sebuah sekolah menyelesaikan 360 lembar dengan 6 printer dalam 4 jam. Jika printer menjadi 9 dan waktu kerja menjadi 5 jam, dengan produktivitas per printer per jam tetap, berapa lembar yang dapat diselesaikan?",
+          "opsi": {
+            "C": "675",
+            "A": "360",
+            "B": "655",
+            "D": "715",
+            "E": "695"
+          },
+          "jawaban": "C",
+          "pembahasan": "Jumlah printer berubah dari 6 menjadi 9, jadi dikali 9/6 = 3/2. Waktu berubah dari 4 menjadi 5 jam, jadi dikali 5/4. Maka hasil baru = 360 × 3/2 × 5/4 = 675 lembar.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P4-20",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "jarak tetap dengan kecepatan pecahan sederhana",
+          "gravity_center": "menggunakan hasil kali untuk menghindari hitungan panjang",
+          "difficulty": "sedang",
+          "soal": "Sebuah truk membawa persediaan menempuh jarak tetap. Pada kecepatan 48 km/jam, waktu tempuhnya 5 jam. Jika kecepatan menjadi 60 km/jam, berapa waktu tempuhnya?",
+          "opsi": {
+            "A": "4 jam",
+            "B": "6 jam",
+            "C": "4,5 jam",
+            "D": "3 jam",
+            "E": "5,5 jam"
+          },
+          "jawaban": "A",
+          "pembahasan": "Jarak yang ditempuh tetap, jadi kecepatan dan waktu saling berlawanan. 48×5 = 60×t. Maka t = 240÷60 = 4 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        }
+      ]
+    },
+    {
+      "paket_id": 5,
+      "judul": "Paket 5",
+      "jumlah_soal": 20,
+      "soal": [
+        {
+          "id": "P5-01",
+          "family": "RASIO DASAR",
+          "sub_pattern": "rasio setelah pengurangan",
+          "gravity_center": "menentukan nilai awal/akhir dari rasio baru setelah satu kelompok berkurang",
+          "difficulty": "sedang",
+          "soal": "Dalam sebuah perjalanan, perbandingan tiket reguler dan VIP mula-mula 7:3. Setelah 20 tiket reguler terjual, jumlah tiket reguler menjadi sama dengan 3/2 kali tiket VIP yang masih tersisa. Berapa banyak tiket VIP mula-mula?",
+          "opsi": {
+            "B": "24",
+            "A": "20",
+            "C": "32",
+            "D": "16",
+            "E": "28"
+          },
+          "jawaban": "B",
+          "pembahasan": "Rasio awal reguler:VIP = 7:3. Anggap masing-masing bagian bernilai x, sehingga reguler = 7x dan VIP = 3x. Setelah 20 tiket reguler terjual, jumlah reguler menjadi 7x − 20. Kondisi soal memberi 7x − 20 = 1,5 × 3x = 4,5x. Jadi 2,5x = 20, sehingga x = 8. VIP mula-mula = 3 × 8 = 24 tiket.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-02",
+          "family": "RASIO DASAR",
+          "sub_pattern": "perbandingan dua tahap",
+          "gravity_center": "menghubungkan dua rasio yang muncul berurutan",
+          "difficulty": "sedang",
+          "soal": "Dalam suatu proyek, A:B = 5:6 dan B:C = 8:7. Tentukan perbandingan A:C.",
+          "opsi": {
+            "D": "20:21",
+            "A": "16:15",
+            "B": "20:22",
+            "C": "5:7",
+            "E": "35:48"
+          },
+          "jawaban": "D",
+          "pembahasan": "Samakan B. Samakan nilai B menjadi 24. Maka A=5×4=20 dan C=7×3=21. Jadi A:C = 20:21.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-03",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "kapasitas / volume",
+          "gravity_center": "menjaga hubungan jumlah wadah dengan total volume",
+          "difficulty": "mudah",
+          "soal": "Sebuah kendaraan dapat membawa 240 liter cairan dalam 6 wadah identik. Jika digunakan 9 wadah dengan kapasitas per wadah sama, berapa liter cairan dapat dibawa?",
+          "opsi": {
+            "D": "360",
+            "A": "350",
+            "B": "370",
+            "C": "240",
+            "E": "160"
+          },
+          "jawaban": "D",
+          "pembahasan": "Total volume tetap per wadah, sehingga total volume sebanding dengan jumlah wadah. Untuk 9 wadah, volume = 240×9/6 = 360 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-04",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "produktivitas satu mesin",
+          "gravity_center": "menghubungkan waktu operasi dan hasil pada laju yang tetap",
+          "difficulty": "sedang",
+          "soal": "Sebuah alat menghasilkan 150 unit dalam 5 jam. Berapa unit dihasilkan dalam 8 jam jika produktivitas tetap?",
+          "opsi": {
+            "B": "240",
+            "A": "245",
+            "C": "375/4",
+            "D": "300",
+            "E": "235"
+          },
+          "jawaban": "B",
+          "pembahasan": "Karena kondisi lain tetap, jumlah berubah dengan perbandingan yang sama. Hasil baru = 150×8/5 = 240 unit.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-05",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "perubahan dua kali",
+          "gravity_center": "menerapkan hubungan berbalik nilai setelah dua perubahan",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah perjalanan berjarak tetap. Pada kecepatan 60 km/jam, waktu tempuhnya 4 jam. Jika kecepatan dinaikkan 25%, lalu diturunkan 20% dari kecepatan baru, berapa waktu tempuh akhirnya?",
+          "opsi": {
+            "B": "4 jam",
+            "A": "4,2 jam",
+            "C": "3,2 jam",
+            "D": "4,5 jam",
+            "E": "3,5 jam"
+          },
+          "jawaban": "B",
+          "pembahasan": "Kecepatan awal 60 km/jam. Naik 25% menjadi 75 km/jam. Lalu turun 20% dari 75 menjadi 60 km/jam. Jadi kecepatan kembali 60 km/jam. Karena jaraknya sama, waktu akhirnya tetap 4 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-06",
+          "family": "PERBANDINGAN BERBALIK NILAI",
+          "sub_pattern": "jumlah orang dan bagian yang diterima",
+          "gravity_center": "membagi total tetap kepada jumlah penerima berbeda",
+          "difficulty": "sedang",
+          "soal": "Hadiah Rp1.200.000 dibagi rata kepada 8 peserta. Jika dibagikan kepada 12 peserta, berapa bagian per peserta?",
+          "opsi": {
+            "C": "100000",
+            "A": "100.001",
+            "B": "99998",
+            "D": "100002",
+            "E": "150000"
+          },
+          "jawaban": "C",
+          "pembahasan": "Jumlah uang tetap Rp1.200.000. Untuk 8 peserta, bagian per orang = 1.200.000÷8 = 150.000. Jika menjadi 12 peserta, bagian per orang = 1.200.000÷12 = Rp100.000.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-07",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "mesin × waktu × produksi",
+          "gravity_center": "menggabungkan jumlah mesin, lama kerja, dan hasil",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah kendaraan pengangkut memindahkan 720 kotak dengan 4 kendaraan selama 6 jam. Berapa kotak dapat dipindahkan jika kendaraan menjadi 5 dan waktu menjadi 8 jam, dengan produktivitas per kendaraan per jam tetap?",
+          "opsi": {
+            "D": "1200",
+            "A": "720",
+            "B": "1160",
+            "C": "1280",
+            "E": "1240"
+          },
+          "jawaban": "D",
+          "pembahasan": "Jumlah kendaraan berubah dari 4 menjadi 5, jadi dikali 5/4. Waktu berubah dari 6 menjadi 8 jam, jadi dikali 8/6 = 4/3. Maka hasil baru = 720 × 5/4 × 4/3 = 1.200 kotak.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-08",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "pekerja × waktu × hasil",
+          "gravity_center": "menggabungkan perubahan jumlah pekerja dan waktu terhadap hasil",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah tim layanan memproses 300 permintaan dengan 5 petugas selama 6 jam. Jika petugas menjadi 6 tetapi waktu kerja turun menjadi 5 jam, berapa permintaan dapat diproses?",
+          "opsi": {
+            "E": "300",
+            "A": "340",
+            "B": "303",
+            "C": "320",
+            "D": "280"
+          },
+          "jawaban": "E",
+          "pembahasan": "Jumlah petugas berubah dari 5 menjadi 6, jadi dikali 6/5. Waktu berubah dari 6 menjadi 5 jam, jadi dikali 5/6. Kedua perubahan saling meniadakan. Jadi hasilnya tetap 300 permintaan.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-09",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "fase dengan penghentian sementara",
+          "gravity_center": "memisahkan waktu aktif dari waktu berhenti",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah mesin harus menghasilkan 390 unit. Mesin bekerja 3 jam dengan laju 30 unit per jam, lalu berhenti 2 jam untuk perawatan. Setelah itu mesin bekerja lagi dengan laju 30 unit per jam. Berapa lama waktu yang berlalu sejak mesin mulai sampai target selesai?",
+          "opsi": {
+            "A": "13 jam",
+            "B": "14 jam",
+            "C": "15 jam",
+            "D": "16 jam",
+            "E": "17 jam"
+          },
+          "jawaban": "C",
+          "pembahasan": "Dalam 3 jam pertama dihasilkan 30×3 = 90 unit. Sisa = 390−90 = 300 unit. Setelah perawatan 2 jam, mesin menyelesaikan sisa 300÷30 = 10 jam. Total waktu = 3+2+10 = 15 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-10",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "pekerja masuk/keluar tiga fase",
+          "gravity_center": "menelusuri sisa pekerjaan melalui beberapa perubahan",
+          "difficulty": "sulit",
+          "soal": "Sebuah proyek membutuhkan 480 satuan pekerjaan. Fase pertama dikerjakan 6 pekerja selama 4 jam dan menghasilkan 120 satuan. Fase kedua dikerjakan 4 pekerja selama 8 jam dan menghasilkan 160 satuan. Pada fase ketiga tersedia 5 pekerja dengan kemampuan sama seperti pekerja pada fase kedua. Berapa jam fase ketiga diperlukan?",
+          "opsi": {
+            "A": "6 jam",
+            "B": "7 jam",
+            "C": "8 jam",
+            "D": "9 jam",
+            "E": "10 jam"
+          },
+          "jawaban": "C",
+          "pembahasan": "Pekerjaan yang sudah selesai = 120+160 = 280 satuan. Sisa = 480−280 = 200 satuan. Pada fase kedua, 4 pekerja selama 8 jam menghasilkan 160, jadi 1 pekerja dalam 1 jam menghasilkan 160÷32 = 5 satuan. Lima pekerja menghasilkan 25 satuan per jam. Waktu fase ketiga = 200÷25 = 8 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-11",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "gabungan berbentuk verbal",
+          "gravity_center": "mengenali bahwa yang dijumlahkan adalah laju, bukan waktu",
+          "difficulty": "sedang-tinggi",
+          "soal": "Kelompok A menyelesaikan 90 formulir dalam 6 jam, sedangkan kelompok B menyelesaikan 80 formulir dalam 8 jam. Jika keduanya bekerja bersama pada laju masing-masing, berapa jam diperlukan untuk menyelesaikan 200 formulir?",
+          "opsi": {
+            "A": "6 jam",
+            "B": "8 jam",
+            "C": "9 jam",
+            "D": "10 jam",
+            "E": "12 jam"
+          },
+          "jawaban": "B",
+          "pembahasan": "Kelompok A: 90 ÷ 6 = 15 formulir per jam. Kelompok B: 80 ÷ 8 = 10 formulir per jam. Bersama-sama = 25 formulir per jam. Jadi waktu untuk 200 formulir = 200 ÷ 25 = 8 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-12",
+          "family": "PERBANDINGAN GABUNGAN / COMPOSITE RATE",
+          "sub_pattern": "kemampuan berbeda",
+          "gravity_center": "mengubah waktu penyelesaian tiap kelompok menjadi laju sebelum digabung",
+          "difficulty": "sedang-tinggi",
+          "soal": "Tim A menyelesaikan 120 paket dalam 5 jam. Tim B menyelesaikan 150 paket dalam 10 jam. Jika keduanya bekerja bersama untuk menyelesaikan 195 paket, berapa jam diperlukan?",
+          "opsi": {
+            "E": "5 jam",
+            "A": "8 jam",
+            "B": "7 jam",
+            "C": "6 jam",
+            "D": "4 jam"
+          },
+          "jawaban": "E",
+          "pembahasan": "Tim A bekerja dengan laju 120÷5 = 24 paket per jam. Tim B 150÷10 = 15 paket per jam. Bersama-sama 39 paket per jam. Waktu = 195÷39 = 5 jam.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-13",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi satuan campuran",
+          "gravity_center": "mengubah kombinasi m, cm, km atau satuan lain ke basis yang sama",
+          "difficulty": "sedang",
+          "soal": "Sebuah kendaraan menempuh jarak 1 km 250 m dan menghabiskan 5 liter bahan bakar. Jika pemakaian tetap, berapa liter bahan bakar yang diperlukan untuk setiap 1 km?",
+          "opsi": {
+            "A": "3 liter",
+            "B": "4 liter",
+            "C": "4,5 liter",
+            "D": "5 liter",
+            "E": "6 liter"
+          },
+          "jawaban": "B",
+          "pembahasan": "1 km 250 m = 1,25 km. Untuk 1 km, bahan bakar = 5 ÷ 1,25 = 4 liter. Jadi pemakaiannya 4 liter per km.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v10": "normalisasi jarak campuran menjadi satuan km lalu mencari kebutuhan per satu unit",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-14",
+          "family": "NORMALISASI",
+          "sub_pattern": "normalisasi rasio tengah",
+          "gravity_center": "menyamakan besaran yang berada di tengah dua rasio",
+          "difficulty": "sedang-tinggi",
+          "soal": "Diketahui P:Q = 5:7 dan R:Q = 9:8. Tentukan perbandingan P:R.",
+          "opsi": {
+            "D": "40:63",
+            "A": "35:72",
+            "B": "63:40",
+            "C": "5:9",
+            "E": "45:56"
+          },
+          "jawaban": "D",
+          "pembahasan": "Samakan Q. Samakan nilai Q menjadi 56. Maka P=5×8=40 dan R=9×7=63. Jadi P:R = 40:63.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-15",
+          "family": "TABEL / REPRESENTASI HUBUNGAN",
+          "sub_pattern": "tabel senilai",
+          "gravity_center": "melengkapi pasangan data dengan faktor perbandingan tetap",
+          "difficulty": "mudah",
+          "soal": "Berapa bahan yang diperlukan pada kondisi 14 unit jika 5 unit membutuhkan 35 kg?\nTabel:\n| Jumlah | Hasil |\n|---:|---:|\n| 5 | 35 |\n| 14 | ? |",
+          "opsi": {
+            "C": "98",
+            "A": "103",
+            "B": "35",
+            "D": "25/2",
+            "E": "93"
+          },
+          "jawaban": "C",
+          "pembahasan": "Nilai untuk 1 unit adalah: 35/5. Untuk 14, hasil = 35×14/5 = 98.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-16",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "normalisasi X dan Y",
+          "gravity_center": "mengubah kedua besaran ke basis yang sama sebelum membandingkan",
+          "difficulty": "sedang",
+          "soal": "X menunjukkan 2,4 km ditempuh dalam 8 menit. Y menunjukkan 0,25 km per menit. Manakah hubungan X dan Y setelah satuan disamakan?",
+          "opsi": {
+            "A": "X > Y",
+            "B": "X = Y",
+            "C": "Hubungan tidak dapat ditentukan",
+            "D": "2X > 3Y",
+            "E": "X < Y"
+          },
+          "jawaban": "A",
+          "pembahasan": "Ubah keduanya ke satuan yang sama: X=24/80=3/10 dan Y=1/4=1/4. Karena 3/10 > 1/4, maka X > Y.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-17",
+          "family": "KUANTITATIF X VS Y",
+          "sub_pattern": "data cukup/tidak cukup",
+          "gravity_center": "menentukan apakah informasi yang diberikan cukup untuk memilih satu hubungan",
+          "difficulty": "sulit",
+          "soal": "Diketahui X dan Y positif serta 1/2 < X/Y < 3/2. Manakah hubungan yang pasti benar?",
+          "opsi": {
+            "A": "X > Y",
+            "B": "X = Y",
+            "C": "X < Y",
+            "D": "2X > 3Y",
+            "E": "Tidak ada satu hubungan X dan Y yang selalu benar"
+          },
+          "jawaban": "E",
+          "pembahasan": "Rasio X/Y berada di antara 1/2 dan 3/2. Jadi X bisa lebih kecil dari Y, bisa sama, atau bisa lebih besar dari Y. Tidak ada satu hubungan dari pilihan lain yang selalu benar.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-18",
+          "family": "PERBANDINGAN SENILAI",
+          "sub_pattern": "rasio dengan data tersisip",
+          "gravity_center": "menentukan besaran yang hilang dari informasi yang tidak diberikan langsung",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah pabrik menggunakan 6 liter bahan untuk menghasilkan 90 komponen. Dengan kebutuhan bahan per komponen tetap, berapa liter bahan diperlukan untuk menghasilkan 135 komponen?",
+          "opsi": {
+            "C": "9 liter",
+            "A": "10 liter",
+            "B": "8 liter",
+            "D": "7 liter",
+            "E": "12 liter"
+          },
+          "jawaban": "C",
+          "pembahasan": "Kebutuhan bahan sebanding dengan jumlah komponen. Jumlah komponen naik dari 90 menjadi 135, yaitu 3/2 kali. Jadi bahan yang diperlukan = 6×3/2 = 9 liter.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-19",
+          "family": "PERBANDINGAN MAJEMUK / MULTI-VARIABEL",
+          "sub_pattern": "jarak × kecepatan × waktu",
+          "gravity_center": "memadukan perubahan lebih dari satu variabel gerak",
+          "difficulty": "sedang-tinggi",
+          "soal": "Sebuah kendaraan bergerak dengan kecepatan 60 km/jam selama 4 jam. Jika kecepatannya menjadi 75 km/jam dan waktu perjalanan menjadi 6 jam, berapa jarak yang ditempuh sekarang?",
+          "opsi": {
+            "A": "360 km",
+            "B": "400 km",
+            "C": "420 km",
+            "D": "450 km",
+            "E": "480 km"
+          },
+          "jawaban": "D",
+          "pembahasan": "Jarak = kecepatan × waktu. Jadi jarak baru = 75 × 6 = 450 km.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "revisi_v9": "REVISI_APPLIED",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        },
+        {
+          "id": "P5-20",
+          "family": "PERBANDINGAN BERTAHAP / MULTI-STAGE",
+          "sub_pattern": "multi-stage dengan tabel kondisi",
+          "gravity_center": "membaca urutan kondisi dari tabel sebelum menghitung",
+          "difficulty": "sedang-tinggi",
+          "soal": "Perhatikan tabel kegiatan berikut. Berapa formulir yang dapat diselesaikan pada fase kedua jika produktivitas per petugas per jam tetap?\n| Fase | Petugas | Waktu (jam) | Formulir |\n|---|---:|---:|---:|\n| 1 | 4 | 2 | 80 |\n| 2 | 6 | 3 | ? |",
+          "opsi": {
+            "E": "180",
+            "A": "160",
+            "B": "360",
+            "C": "200",
+            "D": "240"
+          },
+          "jawaban": "E",
+          "pembahasan": "Pada fase 1, 4 petugas menyelesaikan 80 formulir dalam 2 jam. Jadi 1 petugas dalam 1 jam menyelesaikan 80 ÷ (4 × 2) = 10 formulir. Pada fase 2 ada 6 petugas selama 3 jam, sehingga hasilnya 6 × 3 × 10 = 180 formulir.",
+          "audit": {
+            "matematika": "LOLOS",
+            "jawaban_dan_opsi": "LOLOS",
+            "pembahasan": "LOLOS",
+            "sub_pattern": "LOLOS",
+            "dna_corpus": "LOLOS_STRUKTURAL",
+            "kemiripan": "LOLOS",
+            "status": "LAYAK",
+            "catatan_revisi": "Bahasa pembahasan disederhanakan untuk pembaca pemula.",
+            "logika": "LOLOS",
+            "blueprint": "LOLOS",
+            "distractor": "LOLOS",
+            "keunikan": "LOLOS",
+            "satu_jawaban_benar": "LOLOS"
+          },
+          "verifikasi": {
+            "kunci_dipastikan": true,
+            "opsi_unik": true,
+            "pembahasan_selaras": true
+          }
+        }
+      ]
+    }
+  ]
+}
