@@ -1,0 +1,552 @@
+/* ==========================================================================
+   CPNS Learning — Tema Modul TWK (IDENTIK dengan "Materi TKP")
+   Acuan visual: materi/tkp/index.html (kertas + navy + Fraunces/IBM Plex).
+   Nilai warna/font/radius/padding/margin diturunkan langsung dari <style>
+   halaman materi/tkp/index.html. Komponen kaya TWK (story, timeline, flow,
+   matrix, checks, dst.) dipetakan ke primitif TKP (box, rule, latihan,
+   res-table, mod-nav, mod-toc, materi-footer, mod-cta) sehingga 18 modul
+   tampil seragam persis seperti halaman materi TKP.
+   ========================================================================== */
+
+/* ---------- 1. TOKEN (identik dengan materi TKP) ---------- */
+:root{
+  --ink:#1F2430; --ink-soft:#3C4253; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+  --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#1B4F33; --good-soft:#E4EFE8; --bad:#80211A; --bad-soft:#F5E7E4;
+  --skip:#5C420C; --skip-soft:#F5EFD8;
+  --radius:14px;
+  --wrap:760px;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  /* alias kompatibilitas: var() lama di markup cukup diberi nilai */
+  --bg:var(--paper); --paper2:#FAFAF6; --panel:var(--surface); --panel2:#FAFAF6; --card:var(--surface);
+  --soft:#EDEEE6; --soft2:#F1F2EA; --softr:var(--bad-soft); --softred:var(--bad-soft);
+  --softgreen:var(--good-soft); --softgold:var(--skip-soft);
+  --text:var(--ink); --i:var(--ink); --dark:var(--ink); --m:var(--ink-soft); --muted:var(--ink-soft);
+  --l:var(--line); --n:var(--accent); --n2:#3D4E86; --navy:var(--accent); --navy2:#3D4E86;
+  --blue:var(--accent); --blueSoft:var(--accent-soft); --bb:var(--accent-soft);
+  --accent2:var(--good); --mint:var(--good); --g:var(--good); --green:var(--good); --gb:var(--good-soft);
+  --greenSoft:var(--good-soft); --r:var(--bad); --red:var(--bad); --red2:var(--bad);
+  --danger:var(--bad); --redSoft:var(--bad-soft); --gold:var(--skip); --goldSoft:var(--skip-soft);
+  --amber:var(--skip); --a:var(--skip); --ab:var(--skip-soft); --warn:var(--skip); --warm:var(--skip-soft);
+  --rust:#62301F; --max:var(--wrap); --r21:var(--radius); --r22:var(--radius);
+  --shadow:none;
+}
+
+/* ---------- 2. BASE (identik materi TKP) ---------- */
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:84px;}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);
+  letter-spacing:-.01em;line-height:1.35;text-wrap:balance;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);}
+strong,b{color:var(--ink);font-weight:600;}
+em{color:var(--ink-soft);}
+small,.small,.tiny,.fine{font-size:13px;line-height:1.7;color:var(--ink-soft);}
+.muted{color:var(--ink-soft);}
+blockquote{margin:16px 0;padding:14px 18px;border-left:4px solid var(--accent);
+  background:var(--accent-soft);border-radius:0 10px 10px 0;font-style:italic;color:var(--ink);}
+blockquote p:last-child{margin-bottom:0;}
+hr{border:none;border-top:1px solid var(--line);margin:26px 0;}
+code,kbd,samp,pre{font-family:var(--mono);font-size:.9em;}
+code,kbd,samp{background:var(--accent-soft);border-radius:4px;padding:2px 5px;}
+pre{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow:auto;}
+::selection{background:var(--accent-soft);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+
+/* ---------- 3. BREADCRUMB (pola .breadcrumb materi TKP) ---------- */
+.cpns-crumb, .breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;
+  max-width:var(--wrap);margin:0 auto;padding:20px 20px 0;
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);}
+.cpns-crumb a,.breadcrumb a{color:var(--accent);}
+.cpns-crumb a:hover,.breadcrumb a:hover{text-decoration:underline;}
+.cpns-crumb .sep,.cpns-crumb .crumb-sep{color:var(--line);}
+.cpns-crumb .cur{color:var(--ink-soft);}
+
+/* ---------- 4. HEADER (pola header.top materi TKP) ---------- */
+header.hero, header.top, section.hero{
+  max-width:var(--wrap);margin:0 auto;padding:22px 20px 8px;}
+:is(header.hero,header.top,section.hero) .wrap,
+:is(header.hero,header.top,section.hero) .container{max-width:100%;padding:0;margin:0;}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+:is(header.hero,header.top,section.hero) h1{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:clamp(24px,5vw,36px);letter-spacing:-.01em;margin:0 0 10px;line-height:1.2;}
+:is(header.hero,header.top,section.hero) .eyebrow,
+:is(header.hero,header.top,section.hero) .kicker{
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);display:block;margin:0 0 8px;}
+:is(header.hero,header.top,section.hero) p,
+:is(header.hero,header.top,section.hero) p.lead,
+:is(header.hero,header.top,section.hero) .lead{
+  color:var(--ink-soft);font-size:15.5px;line-height:1.7;max-width:62ch;margin:0 0 12px;}
+:is(header.hero,header.top,section.hero) .quote,
+:is(header.hero,header.top,section.hero) .hero-quote{
+  padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);
+  border-radius:0 10px 10px 0;margin:14px 0 2px;font-size:15px;line-height:1.85;color:var(--ink);}
+:is(header.hero,header.top,section.hero) .quote p{color:var(--ink);}
+
+/* kartu samping hero -> pola .box pada materi TKP ("Tujuan modul") */
+.hero-card, .hero-box, .hero-note{
+  background:var(--paper);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:2px 0 0;box-shadow:none;font-size:15px;line-height:1.85;}
+.hero-card > *:last-child{margin-bottom:0;}
+.hero-card p{margin:8px 0 0;font-size:14.5px;line-height:1.75;color:var(--ink-soft);}
+.hero-card .big{font-family:'Fraunces',Georgia,serif;font-size:19px;line-height:1.5;color:var(--ink);margin:6px 0 8px;}
+.hero-card .pillrow{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;}
+
+/* ---------- 5. CHIP BAR (> MATERI TKP: .mod-nav + .mod-chip) ---------- */
+.mod-nav{position:sticky;top:0;z-index:8;flex-shrink:0;
+  background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);scrollbar-width:thin;
+  margin:14px 0 20px;}
+.mod-nav::-webkit-scrollbar{height:4px;}
+.mod-nav::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px;}
+.mod-nav-inner{max-width:var(--wrap);margin:0 auto;padding:10px 20px 12px;
+  display:flex;gap:6px;overflow-x:auto;}
+.mod-chip{flex:0 0 auto;font-family:var(--mono);font-size:11px;padding:6px 12px;
+  border-radius:999px;border:1px solid var(--line);background:var(--paper);
+  color:var(--ink-soft);cursor:pointer;white-space:nowrap;transition:all .15s;text-decoration:none;}
+.mod-chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.mod-chip.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.mod-chip.all{border-style:dashed;}
+
+/* ---------- 6. TOC MODUL (> materi TKP: .mod-toc) ---------- */
+.mod-toc{background:var(--paper);border:1px solid var(--line);border-radius:10px;
+  max-width:var(--wrap);margin:0 auto 20px;overflow:hidden;}
+.mod-toc summary{list-style:none;cursor:pointer;padding:10px 14px;user-select:none;
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);
+  letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;gap:8px;}
+.mod-toc summary::-webkit-details-marker{display:none;}
+.mod-toc summary::before{content:'\25B8';font-size:10px;transition:transform .2s;color:var(--accent);}
+.mod-toc[open] summary::before{transform:rotate(90deg);}
+.mod-toc[open] summary{border-bottom:1px solid var(--line);}
+.mod-toc summary:hover{color:var(--accent);}
+.mod-toc-list{display:flex;flex-direction:column;max-height:48vh;overflow:auto;padding:8px 6px;}
+.mod-toc-link{padding:6px 12px;border-radius:6px;font-size:13.5px;line-height:1.5;
+  color:var(--ink-soft);text-decoration:none;}
+.mod-toc-link:hover{background:var(--accent-soft);color:var(--accent);text-decoration:none;}
+.mod-toc-sub{padding-left:26px;font-size:13px;}
+
+/* ---------- 7. KARTU BACA (~ .module pada materi TKP) ---------- */
+main{display:block;}
+main.wrap{max-width:none;padding:0;}
+:is(.section, main > section):not(.hero):not(.mod-nav){
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  max-width:var(--wrap);margin:0 auto 22px;padding:26px 28px 16px;box-shadow:none;}
+:is(.section, main > section):last-of-type{margin-bottom:0;}
+:is(.section, main > section) > .container,
+:is(.section, main > section) > .wrap{max-width:100%;margin:0 auto;padding:0;}
+.section-head{display:grid;grid-template-columns:1fr;gap:8px;margin:0 0 20px;}
+.section-head p{margin:0;color:var(--ink-soft);font-size:15px;max-width:68ch;}
+.kicker,.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block;margin:0 0 8px;}
+
+:is(.section, main > section) h2{font-size:clamp(21px,4vw,27px);font-weight:600;
+  margin:0 0 14px;letter-spacing:-.01em;line-height:1.35;
+  padding-bottom:12px;border-bottom:2px solid var(--accent-soft);}
+:is(.section, main > section) h3{font-size:18px;margin:30px 0 12px;padding-bottom:7px;
+  border-bottom:1px solid var(--line);line-height:1.4;}
+:is(.section, main > section) h4{font-size:15px;font-family:'IBM Plex Sans',sans-serif;
+  font-weight:600;margin:22px 0 8px;letter-spacing:0;text-transform:none;}
+:is(.section, main > section) p{font-size:15.5px;line-height:1.9;margin:0 0 16px;overflow-wrap:break-word;}
+:is(.section, main > section) ul,:is(.section, main > section) ol{margin:0 0 16px;padding-left:26px;}
+:is(.section, main > section) li{margin:8px 0;font-size:15.5px;line-height:1.85;}
+:is(.section, main > section) li ul,:is(.section, main > section) li ol{margin:8px 0 4px;}
+:is(.section, main > section) ul li::marker{color:var(--accent);}
+:is(.section, main > section) ol li::marker{color:var(--accent);font-weight:600;}
+.lead{font-size:17px;line-height:1.8;color:var(--ink-soft);}
+.intro{font-size:16.5px;line-height:1.9;color:var(--ink-soft);}
+
+/* ---------- 8. TABEL (~ .res-table pada materi TKP) ---------- */
+.table-wrap,.tablewrap,.matrix-wrap,.res-table-wrap,.table{overflow-x:auto;margin:0 0 18px;}
+table{border-collapse:collapse;width:100%;background:var(--surface);font-size:13px;min-width:480px;}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top;
+  line-height:1.7;font-size:13px;}
+th{background:var(--paper);font-family:var(--mono);font-size:11px;letter-spacing:.03em;
+  text-transform:uppercase;color:var(--ink-soft);font-weight:500;}
+td b,td strong{color:var(--accent);}
+td .focus,td.focus,td[class*="focus"]{background:var(--skip-soft);}
+tbody tr:nth-child(even) td{background:var(--paper);}
+table.matrix{display:table;border-radius:8px;overflow:hidden;margin:16px 0;}
+.matrix{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;background:var(--surface);margin:16px 0;}
+.matrix:has(> table){display:block;overflow-x:auto;padding:0;}
+.matrix:has(> table) table{margin:0;min-width:0;}
+.matrix > div{padding:9px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);
+  font-size:13px;line-height:1.7;min-width:0;}
+.matrix > div:nth-child(3n){border-right:none;}
+.matrix > .head{background:var(--paper);font-family:var(--mono);font-size:11px;font-weight:500;
+  letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft);}
+.matrix > .focus{background:var(--skip-soft);font-weight:600;}
+
+/* ---------- 9. BOX / RULE / CALLOUT / NOTE (primitif materi TKP) ---------- */
+.box{padding:16px 18px;border:1px solid var(--line);border-radius:10px;margin:18px 0;
+  background:var(--paper);font-size:15px;line-height:1.85;}
+.box p:last-child,.box > *:last-child{margin-bottom:0;}
+.box b,.box strong{color:var(--accent);}
+
+.rule,.callout,.note,.anchor,.memory,.keyline,.mark,.definition,.discover,.lesson,
+.verdict,.quote,.quote2,.situation,.reasoning-box,.source-note,.misconception,.praxis{
+  padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);
+  border-radius:0 10px 10px 0;margin:16px 0;font-size:15px;line-height:1.85;color:var(--ink);}
+.rule p:last-child,.callout p:last-child,.note p:last-child,.anchor p:last-child,
+.quote p:last-child,.memory p:last-child{color:var(--ink);margin-bottom:0;}
+.callout-title,.callout .meta,.rule .meta,.meta,.term{font-family:var(--mono);font-size:11px;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--accent);
+  display:block;margin:0 0 6px;}
+.rule b,.rule strong,.callout b,.callout strong,.quote b,.quote strong{color:var(--accent);}
+.rule.green,.callout.green,.callout.good,.callout.goodcall,.goodcall,.note.good,.note.green,
+.memory.good{background:var(--good-soft);border-left-color:var(--good);}
+.rule.green b,.rule.green strong,.callout.green strong,.callout.good strong,
+.note.good strong,.memory.good strong{color:var(--good);}
+.note.warn,.note.warm,.note.amber,.callout.warm,.callout.amber,.callout.gold,.callout.warn,
+.rule.gold,.praxis{background:var(--skip-soft);border-left-color:var(--skip);}
+.note.warn strong,.callout.amber strong,.callout.gold strong,.callout.warn strong,
+.praxis strong,.praxis b{color:var(--skip);}
+.callout.red,.callout.danger,.callout.bad,.note.bad,.note.red,.rule.red{background:var(--bad-soft);
+  border-left-color:var(--bad);}
+.callout.red strong,.callout.danger strong,.callout.bad strong,.note.bad strong,
+.rule.red strong{color:var(--bad);}
+.callout.blue,.callout.bluecall,.bluecall{background:var(--accent-soft);border-left-color:var(--accent);}
+.callout.blue strong{color:var(--accent);}
+.hint{font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--ink-soft);
+  margin:10px 0 0;}
+
+/* ---------- 10. LATIHAN / CHECKPOINT (> materi TKP: .latihan) ---------- */
+.checks,.checklist,.checkgrid{background:var(--paper);border:1px solid var(--line);
+  border-left:4px solid var(--accent);border-radius:var(--radius);
+  padding:20px 24px 18px;margin:26px 0 20px;display:grid;gap:10px;}
+.check{background:var(--paper);border:1px solid var(--line);border-radius:10px;
+  padding:12px 14px;position:relative;display:flex;gap:10px;
+  font-size:15px;line-height:1.8;}
+.check > div:last-child{flex:1;min-width:0;}
+.check:not(:has(> .sq)):not(:has(> .tick)){padding-left:38px;}
+.check:not(:has(> .sq)):not(:has(> .tick))::before{content:'\2713';position:absolute;left:14px;
+  top:10px;color:var(--good);font-weight:600;}
+.sq,.check > .tick{flex:0 0 auto;width:16px;height:16px;margin-top:5px;
+  border:1.5px solid var(--accent);border-radius:4px;}
+.check > .tick{background:var(--good-soft);border-color:var(--good);}
+.checkpoint{display:grid;gap:10px;}
+
+/* ---------- 11. DETAILS / PEMBAHASAN (pola details.pembahasan TKP) ---------- */
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);
+  overflow:hidden;margin:14px 0 0;}
+details:first-child{border-top:none;}
+summary{cursor:pointer;list-style:none;padding:11px 14px;user-select:none;
+  font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);
+  display:flex;align-items:center;gap:8px;transition:background .15s;}
+summary::-webkit-details-marker{display:none;}
+summary::before{content:'\25B8';font-size:10px;transition:transform .2s;}
+summary:hover{background:var(--accent-soft);}
+details[open] > summary{border-bottom:1px solid var(--line);}
+details[open] > summary::before{transform:rotate(90deg);}
+.inside,.analysis,.reason{padding:16px 18px;font-size:15px;}
+.inside > *:last-child,.analysis > *:last-child,.reason > *:last-child{margin-bottom:0;}
+.reveal-wrap{margin:14px 0;}
+.reveal{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface);}
+.reveal > summary{background:var(--paper);}
+.reveal[open] > summary{border-bottom:1px solid var(--line);}
+
+/* ---------- 12. KARTU & PANEL (di-align ke bahasa TKP) ---------- */
+.card,.story,.worked,.mini-card,.tcard,.timeline-card,.value-card,.institution,.role,
+.node,.mapbox,.case,.qcase,.question-card,.sourcebox,.concept,.sila,.pasal,.py,
+.person,.event,.type-card,.item,.side,.trail,.branch,.syntax,.contrast,.compare-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px;box-shadow:none;}
+.story{margin:16px 0;}
+.story p{font-size:15px;line-height:1.85;}
+.worked{background:var(--paper);margin:16px 0;}
+.mini-card{padding:12px 14px;}
+.mini-card h4{font-size:14px;font-family:'IBM Plex Sans',sans-serif;}
+.tcard,.timeline-card{padding:12px 14px;}
+.institution{padding:18px 20px;}
+.sila{margin:16px 0;}
+.card > *:last-child,.story > *:last-child,.worked > *:last-child,.box > *:last-child,
+.mini-card > *:last-child,.node > *:last-child,.value-card > *:last-child,
+.qcase > *:last-child,.question-card > *:last-child{margin-bottom:0;}
+.card h2,.card h3,.card h4,.story h3,.story h4,.box h3,.mini-card h3,.mini-card h4,
+.value-card h3,.institution h3,.qcase h3,.qcase h4,.tcard h3,.timeline-card h3,
+.sila h3,.contrast h3,.compare-card h3{border-bottom:none;padding-bottom:0;margin-top:0;}
+.card p:last-child,.story p:last-child,.box p:last-child,.mini-card p:last-child{margin-bottom:0;}
+
+/* status benar/salah (.good/.bad) */
+.good{background:var(--good-soft);border:1px solid #C9E0D0;border-radius:10px;}
+.bad{background:var(--bad-soft);border:1px solid #E7C9C5;border-radius:10px;}
+[class="good"],[class="bad"]{padding:12px 14px;}
+.card.good,.story.good,.mini-card.good,.value-card.good,.compare-card.good,
+.contrast.good,.person.good,.event.good{border-left:4px solid var(--good);}
+.card.bad,.story.bad,.mini-card.bad,.compare-card.bad,.contrast.bad,.person.bad,
+.event.bad{border-left:4px solid var(--bad);}
+.good b,.good strong{border-color:var(--good);}
+
+/* ---------- 13. TAG / CHIP / LABEL / NOMOR ---------- */
+.tag,.badge,.pill,.sourcepill,.source-tag,.type,.source{display:inline-block;
+  font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;
+  background:var(--accent-soft);border:1px solid var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:3px 10px;}
+.pill,.sourcepill,.source-tag,.type,.source{background:var(--paper);border-color:var(--line);
+  color:var(--ink-soft);}
+.pills,.pillrow,.chips,.qmeta,.strip{display:flex;flex-wrap:wrap;gap:6px;
+  align-items:center;margin:12px 0;}
+.qmeta{margin:0;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--paper);}
+.label,.smallhead{font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--ink-soft);display:block;margin:0 0 4px;}
+.anchorline,.signal,.casehead,.case-head,.rhead,.inst-head,.sila-no,.pasal-head,
+.case-no,.date,.tdate,.rkey,.rk{font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 6px;}
+.instance{font-family:var(--mono);}
+.num,.dot,.pn,.qn,.check-num{display:inline-flex;align-items:center;justify-content:center;
+  min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:var(--accent-soft);
+  color:var(--accent);font-family:var(--mono);font-size:11.5px;font-weight:500;
+  border:1px solid transparent;text-transform:none;letter-spacing:0;flex:0 0 auto;}
+.qhead{display:flex;gap:13px;align-items:flex-start;padding:16px 18px;
+  border-bottom:1px solid var(--line);background:var(--paper);}
+.qhead h3,.qhead h4{margin:0;border-bottom:none;padding-bottom:0;}
+.qbody{padding:16px 18px;}
+.qbody > *:last-child{margin-bottom:0;}
+.qcase{overflow:hidden;padding:0;margin:18px 0;}
+
+/* ---------- 14. OPSI JAWABAN & BLOK SOAL (~ runtunan TKP) ---------- */
+.options{display:flex;flex-direction:column;gap:9px;margin:14px 0;}
+.opt,.option{display:flex;gap:12px;align-items:flex-start;background:var(--surface);
+  border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-size:15px;line-height:1.7;}
+.opt .letter,.option .letter{flex:0 0 auto;width:26px;height:26px;border-radius:50%;
+  border:1.5px solid var(--ink-soft);display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-soft);
+  letter-spacing:0;text-transform:none;}
+.opt > span:nth-of-type(2),.option > span:nth-of-type(2){flex:1;min-width:0;}
+.opt.ok,.option.ok,.opt.correct,.option.correct{border-color:var(--good);background:var(--good-soft);}
+.opt.ok .letter,.option.ok .letter{border-color:var(--good);background:var(--good);color:#fff;}
+.opt.hot,.option.hot{border-color:var(--skip);background:var(--skip-soft);}
+.opt.bad,.option.bad{border-color:var(--bad);background:var(--bad-soft);}
+.opt.bad .letter,.option.bad .letter{border-color:var(--bad);background:var(--bad);color:#fff;}
+.question-card{overflow:hidden;padding:0;}
+.question-card > .qtext,.qcase > .qbody,.qbody,.stem{padding:16px 18px;}
+.stem{font-size:15.5px;line-height:1.9;margin:0 0 12px;}
+.questions{display:flex;flex-direction:column;gap:18px;margin:14px 0;}
+.question{background:var(--accent-soft);border-left:4px solid var(--accent);
+  border-radius:0 10px 10px 0;padding:12px 16px;font-size:15px;margin:12px 0;}
+.case-body > *:last-child{margin-bottom:0;}
+.answer{display:flex;gap:12px;align-items:center;background:var(--good-soft);
+  border:1px solid #C9E0D0;border-radius:10px;padding:11px 14px;margin:10px 0;}
+.answer span{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--good);}
+.answer strong{font-family:'Fraunces',Georgia,serif;font-size:20px;color:var(--good);}
+.target{background:var(--skip-soft);border-left:4px solid var(--skip);border-radius:0 10px 10px 0;
+  padding:12px 14px;font-size:14.5px;margin:10px 0;}
+.final{background:var(--good-soft);border:1px solid #C9E0D0;border-left:4px solid var(--good);
+  border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0;font-size:15px;}
+.final strong{color:var(--good);}
+
+/* elim / review */
+.elims{display:grid;gap:10px;margin:14px 0;}
+.elim{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--bad);
+  border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 12px;}
+.elim.good,.elim.ok{border-left-color:var(--good);background:var(--good-soft);}
+.elim-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:var(--mono);
+  font-size:11.5px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--bad);margin:0 0 8px;}
+.elim.good .elim-top{color:var(--good);}
+.elim-top b{background:var(--bad);color:#fff;border-radius:6px;padding:2px 8px;}
+.elim.good .elim-top b{background:var(--good);}
+.elim-why,.explain{font-size:14.5px;line-height:1.75;color:var(--ink-soft);margin:8px 0 0;}
+.status{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--bad);margin:0 0 6px;}
+.good .status{color:var(--good);}
+
+/* ---------- 15. STRUKTUR / ALUR / DIAGRAM ---------- */
+.steps,.step-list,.checkgrid,.checklist,.map,.mental{display:grid;gap:10px;margin:16px 0;}
+.checkgrid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.flow,.big-flow,.mini-diagram,.maprow,.protocol,.proto,.role-map,.mini-map,.node-map{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:16px 0;}
+.step,.pitem,.proto > div,.protocol > div,.flow > div,.big-step,.stage > div,.mental > .box,
+.mini-diagram > div{display:flex;gap:12px;align-items:flex-start;background:var(--surface);
+  border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14.5px;
+  line-height:1.75;margin:0;}
+.step > div:last-child,.pitem > div:last-child{flex:1;min-width:0;}
+.step strong,.pitem b,.proto b,.protocol b{color:var(--accent);}
+.flow > div,.big-step,.stage > div,.mental > .box{display:block;}
+.flow b,.big-step b,.stage b,.mini-diagram b{display:block;font-family:var(--mono);
+  font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+  font-size:14.5px;line-height:1.7;min-width:0;}
+.node.core{border-color:var(--accent);background:var(--accent-soft);}
+.node.control{border-color:var(--good);background:var(--good-soft);}
+.node.limit,.node.justice{border-color:var(--skip);background:var(--skip-soft);}
+.arrow{display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:var(--mono);}
+.mid{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);}
+
+.timeline{display:flex;flex-direction:column;gap:10px;margin:16px 0;padding-left:14px;
+  border-left:2px solid var(--accent-soft);}
+.tstep,.titem{display:flex;gap:12px;align-items:flex-start;}
+.timeline .titem{background:transparent;border:none;padding:0;box-shadow:none;}
+.tcard,.timeline-card{flex:1;min-width:0;}
+.timeline-card h3,.tcard h3{border-bottom:none;padding-bottom:0;margin:0 0 4px;font-size:16px;}
+
+.chain{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0;}
+.step-list .step-row,.step-row{display:flex;gap:12px;align-items:flex-start;
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:12px 14px;font-size:14.5px;line-height:1.75;}
+.step-row strong{color:var(--accent);}
+.reason .rline,.reason .r{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:start;
+  padding:10px 0;border-top:1px solid var(--line);}
+.reason .rline:first-child,.reason .r:first-child{border-top:none;padding-top:0;}
+.rkey,.rk{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--accent);}
+.rline strong,.r strong{color:var(--ink);}
+.trail{background:var(--paper);border:1px dashed var(--line);border-radius:10px;
+  padding:12px 14px;font-size:14.5px;line-height:1.8;margin:14px 0;}
+.trail b{color:var(--accent);}
+.mini{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:16px 0;}
+.mini > div{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:12px 14px;font-size:14.5px;line-height:1.75;}
+.mini b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+
+/* grid */
+.grid2,.grid3,.grid4,.grid5,.columns,.compare,.storyboard,.contrast-grid,.triple,
+.mini-grid,.value-grid,.type-grid,.event-grid,.people,.pair,.map,.branches,.concepts,
+.inst-grid,.role-map{display:grid;gap:12px;margin:16px 0;}
+.grid2,.columns,.compare,.people,.pair,.event-grid,.value-grid{
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.grid3,.storyboard,.contrast-grid,.triple,.mini-grid,.type-grid{
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+.grid4,.grid5{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));}
+.branches,.concepts,.inst-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));}
+.grid2 > *,.grid3 > *,.grid4 > *,.grid5 > *,.columns > *,.storyboard > *,.triple > *{margin:0;}
+.compare > *,.compare-card,.contrast,.columns > *,.side{background:var(--surface);
+  border:1px solid var(--line);border-radius:12px;padding:16px 18px;}
+.compare > .a,.compare > .left{border-top:3px solid var(--accent);}
+.compare > .b,.compare > .right{border-top:3px solid var(--good);}
+.contrast.near{background:var(--skip-soft);border-color:var(--line);}
+.contrast.near .tag{background:var(--skip-soft);border-color:var(--skip);color:var(--skip);}
+.pair > *,.side{background:var(--surface);}
+.side strong,.pair strong{display:block;font-family:var(--mono);font-size:11px;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+
+/* vs / pemisah */
+.versus,.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch;margin:16px 0;}
+.versus > .mid{display:flex;align-items:center;}
+.sep{color:var(--line);}
+.tick{color:var(--good);font-weight:600;}
+.no{color:var(--bad);font-weight:600;}
+.off{opacity:.5;}
+.center{text-align:center;}
+.year{font-family:var(--mono);font-size:11px;color:var(--accent);}
+.src,.source,.source-note,.sources,.source-list{font-family:var(--mono);font-size:11.5px;
+  color:var(--ink-soft);}
+.hot{background:var(--skip-soft);border-radius:4px;padding:0 4px;font-weight:600;color:var(--skip);}
+.big{font-family:'Fraunces',Georgia,serif;font-size:19px;line-height:1.5;color:var(--ink);margin:6px 0 8px;}
+
+/* blok pendukung lain */
+.pyramid{display:flex;flex-direction:column;gap:8px;margin:16px 0;}
+.py.p1{background:var(--accent-soft);border:1px solid var(--accent-soft);}
+.py.p2{background:var(--good-soft);border:1px solid #C9E0D0;}
+.py.p3{background:var(--skip-soft);border:1px solid var(--skip-soft);}
+.py{padding:14px 18px;border-radius:10px;}
+.py .small{font-size:12.5px;}
+.pyramid .note{background:var(--bad-soft);border-left-color:var(--bad);}
+.inst-code{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--accent);}
+.inst-title{font-family:'Fraunces',Georgia,serif;font-size:18px;margin:4px 0 8px;}
+.praxis{background:var(--skip-soft);border-left-color:var(--skip);}
+.problem{border-left:4px solid var(--accent);}
+.modern{border-left:4px solid var(--good);}
+.inst{border-left:4px solid var(--accent);}
+.inst-head{border:none;padding:0;margin:0 0 6px;}
+.syntax{font-family:var(--mono);font-size:13px;letter-spacing:.02em;color:var(--accent);}
+.syntax,.concepts > div,.branch,.branches > div{background:var(--paper);border:1px solid var(--line);
+  border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.8;}
+.branch strong,.branches strong{display:block;font-family:var(--mono);font-size:11px;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.mini-card.soft{background:var(--paper);}
+.card.org{border-left:4px solid var(--accent);}
+.value-card.base{border-left:4px solid var(--accent);}
+.original{background:var(--paper);}
+.n{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+  min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:var(--accent);color:#fff;
+  font-family:var(--mono);font-size:11.5px;font-weight:500;}
+.big-step .n{margin-bottom:6px;}
+.flow-item strong,.flow-item b{display:block;font-family:var(--mono);font-size:11px;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.timeline .tl{display:flex;flex-direction:column;gap:4px;}
+.timeline .tl h4{margin:0;}
+.tl .date{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--accent);}
+.tbody{flex:1;min-width:0;}
+.tbody h3,.timeline .tbody h3{border-bottom:none;padding-bottom:0;margin:0 0 4px;font-size:16px;}
+.people .person{display:flex;gap:12px;align-items:flex-start;}
+
+/* ---------- 16. FOOTER CTA (~ .mod-cta pada materi TKP) ---------- */
+.footer, body > footer:not(.cpns-footer){
+  background:var(--accent-soft);border:1px solid var(--line);border-radius:var(--radius);
+  max-width:var(--wrap);margin:22px auto 16px;padding:22px 26px;text-align:center;box-shadow:none;}
+.footer h2, body > footer h2, body > footer h3{
+  font-family:'Fraunces',Georgia,serif;font-size:20px;margin:0 0 8px;padding-bottom:0;
+  border-bottom:none;color:var(--ink);line-height:1.4;}
+.footer p, body > footer p{font-size:14.5px;line-height:1.8;color:var(--ink-soft);}
+.footer .container,.footer .wrap,body > footer .wrap{max-width:100%;margin:0;padding:0;}
+
+/* ---------- 17. NAV BAWAH MODUL (~ .materi-footer pada materi TKP) ---------- */
+.cpns-modnav{position:sticky;bottom:0;z-index:9;max-width:var(--wrap);margin:14px auto 18px;
+  background:rgba(243,245,239,0.98);backdrop-filter:blur(8px);
+  border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;}
+.cpns-modnav .materi-pos{font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  white-space:nowrap;order:-1;width:100%;}
+.cpns-navbtn,.cpns-index,.cpns-done{font-family:var(--mono);font-size:13px;padding:10px 16px;
+  border-radius:8px;border:1px solid var(--line);background:none;color:var(--ink-soft);
+  text-decoration:none;white-space:nowrap;cursor:pointer;transition:all .15s;
+  min-height:40px;display:inline-flex;align-items:center;gap:6px;}
+.cpns-navbtn:hover,.cpns-index:hover{color:var(--accent);border-color:var(--accent);}
+.cpns-index{border-style:dashed;}
+.cpns-navbtn.off{opacity:.45;pointer-events:none;}
+.cpns-index{color:var(--accent);}
+.cpns-done{background:var(--accent);color:#fff;border-color:var(--accent);}
+.cpns-done:hover{opacity:.9;}
+.cpns-done.on{background:var(--good);border-color:var(--good);}
+
+/* ---------- 18. NEUTRALISASI SISA TEMA LAMA ---------- */
+[style*="color:#fff"]{color:var(--ink)!important;}
+[style*="rgba(255,255,255"]{color:var(--ink-soft)!important;}
+[style*="#25374a"]{background:var(--accent-soft)!important;color:var(--accent)!important;
+  border:1px solid var(--line)!important;border-radius:12px!important;font-size:1rem!important;}
+
+/* ---------- 19. RESPONSIF ---------- */
+@media (max-width:760px){
+  :is(.section, main > section):not(.hero){padding:20px 18px 12px;border-radius:12px;}
+  .checks,.checklist,.checkgrid{padding:16px 16px 14px;}
+  .card,.story,.worked,.box,.qcase,.question-card,.side{padding:14px;}
+  .chain,.checkgrid,.trail{grid-template-columns:1fr;}
+  .matrix{grid-template-columns:1fr;}
+  .matrix > div{border-right:none;}
+  .snap{grid-template-columns:1fr;}
+  .grid4,.grid5{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));}
+}
+@media (max-width:620px){
+  .cpns-modnav{gap:6px;padding:8px 10px;}
+  .cpns-navbtn,.cpns-index,.cpns-done{padding:8px 12px;font-size:12px;}
+  :is(.section, main > section) p,:is(.section, main > section) li{font-size:15px;}
+  .module .res-table thead{display:none;}
+  .res-table-wrap{overflow:visible;}
+  table, .res-table, .res-table tbody, .res-table tr, .res-table td{display:block;width:auto;min-width:0;}
+  .res-table tr{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:10px;}
+  .res-table td{border:none;border-bottom:1px solid var(--line);padding:9px 12px;}
+  .res-table td:last-child{border-bottom:none;}
+  .res-table td:first-child{font-weight:600;color:var(--accent);background:var(--accent-soft);}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+}
+@media print{
+  .mod-nav,.mod-toc,.cpns-modnav,.cpns-crumb{display:none!important;}
+  body{background:#fff;}
+  :is(.section, main > section){box-shadow:none;border:none;padding:0;margin:0 0 18px;}
+  .card,.story,.worked,.box,.qcase,.question-card{break-inside:avoid;}
+}

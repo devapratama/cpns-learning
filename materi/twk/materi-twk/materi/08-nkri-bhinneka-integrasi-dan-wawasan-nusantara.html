@@ -5,125 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Modul 08 — NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara | Materi TWK | CPNS Learning</title>
 <meta name="description" content="Modul naratif untuk memahami keberagaman, Bhinneka Tunggal Ika, persatuan, kesatuan, integrasi, keutuhan, NKRI, pusat-daerah, dan Wawasan Nusantara.">
-<style>
-:root{
---ink:#1d2932;--muted:#687780;--paper:#f5f2ea;--card:#fffdf9;
---navy:#18384b;--blue:#376b80;--gold:#b48a39;--green:#2f6a58;--red:#8c453e;
---line:#ddd7cb;--soft:#edf3f5;--softgold:#f6edda;--softgreen:#edf4ef;
---shadow:0 16px 42px rgba(27,43,54,.075);--r:21px
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.82}
-a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:1180px;margin:auto;padding:0 24px}
-.hero{background:linear-gradient(135deg,#142d40 0%,#355f72 58%,#827149 100%);color:#fff;padding:78px 0 64px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;right:-230px;bottom:-330px;width:720px;height:720px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 52px rgba(255,255,255,.03),0 0 0 104px rgba(255,255,255,.02)}
-.hero-grid{display:grid;grid-template-columns:1.5fr .7fr;gap:38px;align-items:end;position:relative;z-index:1}
-.eyebrow,.kicker{font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem}.eyebrow{opacity:.78}
-.hero h1{font:800 clamp(2.25rem,5.1vw,4.7rem)/1.04 Georgia,serif;margin:15px 0 18px;max-width:900px}
-.hero p{font-size:1.1rem;color:rgba(255,255,255,.91);max-width:850px}
-.hero-note{padding:23px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:20px;backdrop-filter:blur(7px)}
-.sticky{position:sticky;top:0;z-index:30;background:rgba(245,242,234,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav{max-width:1180px;margin:auto;display:flex;gap:8px;overflow:auto;padding:10px 24px}
-.nav a{white-space:nowrap;color:var(--muted);font-size:.82rem;padding:8px 11px;border-radius:999px}
-.nav a:hover{background:var(--soft);color:var(--ink);text-decoration:none}
-main{padding:24px 0 90px}.section{padding:68px 0}
-.section.alt{background:rgba(255,253,249,.56);border-top:1px solid rgba(221,215,203,.65);border-bottom:1px solid rgba(221,215,203,.65)}
-.section h2{font:800 clamp(1.8rem,3vw,3rem)/1.1 Georgia,serif;color:var(--navy);margin:8px 0 17px}
-.section h3{font-size:1.34rem;color:var(--navy);margin:30px 0 10px}.lead{font-size:1.08rem;color:#3c4e5a;max-width:930px}
-.story,.card,.callout,.reason,.checkpoint,.sourcebox,.case{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
-.story{padding:31px;max-width:980px}.story p{margin:15px 0}
-.callout{padding:21px 24px;margin:22px 0}.callout.gold{border-left:5px solid var(--gold)}.callout.blue{border-left:5px solid var(--blue)}
-.callout.green{border-left:5px solid var(--green)}.callout.red{border-left:5px solid var(--red)}.callout strong{color:var(--navy)}
-.tag{display:inline-block;padding:6px 10px;background:var(--softgold);border-radius:999px;color:#6f5829;font-weight:900;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:19px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{padding:23px}.card h4{margin:0 0 9px;color:var(--navy);font-size:1.12rem}.tiny{font-size:.84rem;color:var(--muted)}
-.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:24px 0}.pill{padding:10px 13px;background:var(--soft);border:1px solid #d5e0e4;border-radius:999px;font-weight:850;font-size:.86rem}.arrow{font-weight:900;color:var(--gold)}
-.big-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:28px 0}
-.big-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 15px;text-align:center}
-.big-step .n{font:800 1.75rem Georgia;color:var(--gold)}.big-step strong{display:block;margin:7px 0}.big-step span{font-size:.78rem;color:var(--muted)}
-.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;margin:20px 0}
-.compare>div{padding:24px}.compare .a{background:#f1f6f7;border-right:1px solid var(--line)}.compare .b{background:#fbf5e7}
-.signal{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted)}
-.contrast-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
-.contrast{padding:21px;border:1px solid var(--line);border-radius:18px;background:#fff}.contrast .label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--muted);margin-bottom:6px}
-.contrast.good{background:var(--softgreen)}.contrast.near{background:#faf5e9}.contrast.bad{background:#fbefed}
-.timeline{position:relative;margin:30px 0}.timeline:before{content:"";position:absolute;left:23px;top:0;bottom:0;width:2px;background:#d6cec0}
-.titem{display:grid;grid-template-columns:50px 1fr;gap:18px;margin-bottom:20px}.dot{width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;position:relative;z-index:1;border:4px solid var(--paper)}
-.timeline-card{padding:21px;background:#fffdf9;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
-.timeline-card .date{font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:900}
-.reason{padding:24px}.rline{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:12px 0;border-bottom:1px dashed var(--line)}.rline:last-child{border-bottom:none}.rkey{font-weight:900;color:var(--navy)}
-.matrix-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);background:#fff}
-.matrix{width:100%;border-collapse:separate;border-spacing:0;min-width:850px}.matrix th,.matrix td{padding:14px 15px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.matrix th{background:var(--soft);color:var(--navy)}.matrix td:last-child,.matrix th:last-child{border-right:none}.matrix tr:last-child td{border-bottom:none}
-.node-map{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:27px 0;align-items:stretch}
-.node{padding:21px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:center}.node strong{display:block;color:var(--navy);margin-bottom:8px}.node.core{background:var(--softgold)}
-.mental{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:13px;align-items:center;margin:26px 0}.mental .box{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff}.mental .center{background:var(--navy);color:#fff;text-align:center}.mental .center strong{font-size:1.2rem}
-.checkpoint{padding:23px}.check{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #e4ded4;background:#faf9f5;border-radius:14px;margin:11px 0}.check b{color:var(--gold)}
-details{background:#fffdf9;border:1px solid var(--line);border-radius:15px;padding:14px 17px;margin:13px 0}summary{cursor:pointer;font-weight:900;color:var(--navy)}
-footer{background:#132b3e;color:#fff;padding:35px 0}.footer-text{color:rgba(255,255,255,.75)}
-@media(max-width:900px){
-.hero-grid,.grid2,.grid3,.mental,.contrast-grid{grid-template-columns:1fr}.big-flow{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}.compare .a{border-right:none;border-bottom:1px solid var(--line)}
-.node-map{grid-template-columns:1fr 1fr}.rline{grid-template-columns:1fr;gap:4px}.nav{padding-left:14px;padding-right:14px}.section{padding:52px 0}.hero{padding-top:55px}
-}
-@media(max-width:560px){
-.wrap{padding:0 17px}.story,.card,.callout,.reason,.checkpoint,.sourcebox,.case,.timeline-card{padding:19px}.big-flow{grid-template-columns:1fr}.node-map{grid-template-columns:1fr}
-.titem{grid-template-columns:40px 1fr}.dot{width:38px;height:38px}.timeline:before{left:19px}
-}
-</style>
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
+<link rel="stylesheet" href="../assets/modul-twk.css">
+<script src="../assets/modul-twk.js" defer></script>
 
-:root{
-  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
-  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
-  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
-  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
-  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
-  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
-  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
-  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
-  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
-  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
-}
-
-/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
-.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
-.cpns-crumb a{color:var(--accent);text-decoration:none;}
-.cpns-crumb a:hover{text-decoration:underline;}
-.cpns-crumb .sep{color:var(--line);}
-.cpns-crumb .cur{color:var(--muted);}
-.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
-.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
-.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
-.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
-.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
-.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
-.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
-.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
-.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
-.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
-body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
-h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
-img{max-width:100%;height:auto;border-radius:8px;}
-table{max-width:100%;}
-@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
-
-</style>
 </head>
 <body>
 <nav class="cpns-crumb" aria-label="Breadcrumb">
-  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
-  <a href="../../index.html">TWK</a><span class="sep">/</span>
-  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
-  <span class="cur">Modul 08</span>
+ <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+ <a href="../../index.html">TWK</a><span class="sep">/</span>
+ <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+ <span class="cur">Modul 08</span>
 </nav>
-<div class="cpns-progress"><span id="cpns-progress-bar"></span></div>
 
 
 <header class="hero">
@@ -139,12 +36,6 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 </div>
 </div>
 </header>
-
-<div class="sticky"><nav class="nav">
-<a href="#masalah">Masalah keberagaman</a><a href="#satu-cerita">Satu cerita</a><a href="#bhinneka">Bhinneka</a><a href="#persatuan">Persatuan &amp; kesatuan</a>
-<a href="#integrasi">Integrasi &amp; keutuhan</a><a href="#proses">Akomodasi &amp; asimilasi</a><a href="#nkri">NKRI</a><a href="#wawasan">Wawasan Nusantara</a>
-<a href="#pusatdaerah">Pusat–daerah</a><a href="#twk">TWK</a><a href="#map">Peta</a><a href="#check">Checkpoint</a>
-</nav></div>
 
 <main>
 
@@ -208,8 +99,8 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 
 <div class="story">
 <p><strong>Bahasa sederhana:</strong> Bhinneka Tunggal Ika berarti keberagaman tidak meniadakan kesatuan. Bangsa Indonesia dapat memiliki identitas budaya dan kelompok yang berbeda, tetapi tetap berada dalam satu bangsa dan negara.</p>
-<p>Secara umum, makna tersebut sejalan dengan bahan pendidikan resmi yang menjelaskan dua unsur sekaligus: <strong>keberagaman sebagai kenyataan</strong> dan <strong>kesatuan sebagai cita-cita</strong>. Bukan satu unsur saja. citeturn891323search34</p>
-<p>Semboyan ini berasal dari Kakawin Sutasoma karya Mpu Tantular. BPIP menjelaskan bahwa gagasan tersebut kemudian menjadi pijakan dalam menjaga persatuan bangsa di tengah kemajemukan. citeturn891323search3</p>
+<p>Secara umum, makna tersebut sejalan dengan bahan pendidikan resmi yang menjelaskan dua unsur sekaligus: <strong>keberagaman sebagai kenyataan</strong> dan <strong>kesatuan sebagai cita-cita</strong>. Bukan satu unsur saja. </p>
+<p>Semboyan ini berasal dari Kakawin Sutasoma karya Mpu Tantular. BPIP menjelaskan bahwa gagasan tersebut kemudian menjadi pijakan dalam menjaga persatuan bangsa di tengah kemajemukan. </p>
 </div>
 
 <h3>Contoh bertingkat</h3>
@@ -352,7 +243,7 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 <div class="story">
 <p>Kita sudah punya masalah sosial: bagaimana orang yang berbeda tetap menjadi satu. Sekarang naik satu tingkat: <strong>dalam bentuk negara apa kesatuan itu diwujudkan?</strong></p>
 <p>Pasal 1 ayat (1) UUD NRI 1945 menyatakan bahwa Indonesia ialah <strong>Negara Kesatuan</strong> yang berbentuk <strong>Republik</strong>. Jadi “NKRI” bukan hanya ungkapan moral tentang kerukunan. Ia menyebut bentuk negara dan susunan kenegaraan yang mempunyai konsekuensi politik.</p>
-<p>Pasal 25A UUD menyatakan NKRI adalah sebuah <strong>negara kepulauan yang berciri Nusantara</strong> dengan wilayah dan batas-batas serta hak-haknya ditetapkan dengan undang-undang. Dengan demikian, kesatuan Indonesia juga berkaitan erat dengan kesatuan wilayah. citeturn788325search0</p>
+<p>Pasal 25A UUD menyatakan NKRI adalah sebuah <strong>negara kepulauan yang berciri Nusantara</strong> dengan wilayah dan batas-batas serta hak-haknya ditetapkan dengan undang-undang. Dengan demikian, kesatuan Indonesia juga berkaitan erat dengan kesatuan wilayah. </p>
 </div>
 
 <div class="big-flow">
@@ -388,7 +279,7 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 <div class="story">
 <p>Bayangkan peta Indonesia dari sudut pandang orang yang hanya melihat daratan. Pulau Jawa terlihat jauh dari Sulawesi, Sulawesi jauh dari Papua, dan ribuan pulau tampak seperti titik-titik yang terpisah oleh laut.</p>
 <p>Sekarang ubah cara melihatnya. Indonesia bukan “sekumpulan pulau yang kebetulan memiliki satu nama”, melainkan negara kepulauan yang wilayahnya harus dipahami sebagai satu kesatuan. Laut di antara pulau-pulau bukan semata ruang kosong yang memisahkan; dalam perspektif Nusantara, laut ikut menjadi bagian penting dari kehidupan dan kesatuan nasional.</p>
-<p>Di sinilah <strong>Wawasan Nusantara</strong> muncul sebagai cara pandang. Lemhannas menjelaskan Wawasan Nusantara sebagai cara pandang dan sikap bangsa Indonesia mengenai diri dan lingkungannya yang mengutamakan persatuan dan kesatuan bangsa serta kesatuan wilayah untuk mendukung pencapaian kepentingan nasional. citeturn788325search38</p>
+<p>Di sinilah <strong>Wawasan Nusantara</strong> muncul sebagai cara pandang. Lemhannas menjelaskan Wawasan Nusantara sebagai cara pandang dan sikap bangsa Indonesia mengenai diri dan lingkungannya yang mengutamakan persatuan dan kesatuan bangsa serta kesatuan wilayah untuk mendukung pencapaian kepentingan nasional. </p>
 <p>Karena itu Wawasan Nusantara tidak boleh direduksi menjadi “hafalan letak Indonesia”. Unsur geografis adalah titik awal, lalu cara pandang tersebut diterjemahkan ke bidang politik, ekonomi, sosial budaya, dan pertahanan-keamanan.</p>
 </div>
 
@@ -401,7 +292,7 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 </div>
 
 <div class="callout blue">
-<strong>Hubungan dengan negara kepulauan:</strong> Pasal 25A memberi dasar konstitusional bahwa NKRI adalah negara kepulauan berciri Nusantara. Wawasan Nusantara kemudian membantu menerjemahkan kondisi geografis itu menjadi cara pandang kebangsaan yang menekankan kesatuan wilayah dan bangsa. citeturn788325search0turn788325search39
+<strong>Hubungan dengan negara kepulauan:</strong> Pasal 25A memberi dasar konstitusional bahwa NKRI adalah negara kepulauan berciri Nusantara. Wawasan Nusantara kemudian membantu menerjemahkan kondisi geografis itu menjadi cara pandang kebangsaan yang menekankan kesatuan wilayah dan bangsa. 
 </div>
 
 <h3>Contoh konkret</h3>
@@ -533,7 +424,7 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 </div>
 
 <div class="callout blue">
-<strong>Wawasan Nusantara melingkupi cara pandangnya:</strong> kondisi Indonesia sebagai kepulauan menuntut bangsa melihat darat dan laut, pusat dan daerah, kelompok yang beragam, serta bidang kehidupan nasional sebagai bagian yang saling terkait. Lemhannas menekankan kesatuan wilayah dan bangsa untuk mendukung pencapaian kepentingan nasional. citeturn788325search38turn788325search39
+<strong>Wawasan Nusantara melingkupi cara pandangnya:</strong> kondisi Indonesia sebagai kepulauan menuntut bangsa melihat darat dan laut, pusat dan daerah, kelompok yang beragam, serta bidang kehidupan nasional sebagai bagian yang saling terkait. Lemhannas menekankan kesatuan wilayah dan bangsa untuk mendukung pencapaian kepentingan nasional. 
 </div>
 
 <div class="callout green">
@@ -574,15 +465,15 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 <div class="kicker">Catatan sumber dan metodologi</div>
 <h2>Mengapa materi ini disusun seperti ini?</h2>
 <div class="sourcebox" style="padding:27px">
-<p><strong>Corpus 600 soal + pembahasan</strong> digunakan sebagai sumber utama untuk melihat bagaimana topik ini diuji: keberagaman → persatuan, stimulus → konsep, konsep → implementasi, cause/effect, konsep tetangga, serta perbedaan antara jawaban yang benar secara umum dan jawaban yang paling langsung menjawab pusat pertanyaan. Corpus juga menunjukkan pentingnya membaca konteks dan bukan sekadar mencari satu kata kunci. fileciteturn9file0L10-L35 fileciteturn9file5L333-L360</p>
+<p><strong>Corpus 600 soal + pembahasan</strong> digunakan sebagai sumber utama untuk melihat bagaimana topik ini diuji: keberagaman → persatuan, stimulus → konsep, konsep → implementasi, cause/effect, konsep tetangga, serta perbedaan antara jawaban yang benar secara umum dan jawaban yang paling langsung menjawab pusat pertanyaan. Corpus juga menunjukkan pentingnya membaca konteks dan bukan sekadar mencari satu kata kunci. </p>
 
-<p><strong>Verifikasi konstitusional:</strong> UUD NRI 1945 Pasal 1 ayat (1) menetapkan Indonesia sebagai Negara Kesatuan berbentuk Republik; Pasal 25A menyatakan NKRI sebagai negara kepulauan berciri Nusantara. Sumber resmi JDIH DPR juga memuat Pembukaan yang menegaskan tujuan membentuk Pemerintah Negara Indonesia dan menyebut “Negara Indonesia” dalam susunan republik berkedaulatan rakyat. citeturn788325search0</p>
+<p><strong>Verifikasi konstitusional:</strong> UUD NRI 1945 Pasal 1 ayat (1) menetapkan Indonesia sebagai Negara Kesatuan berbentuk Republik; Pasal 25A menyatakan NKRI sebagai negara kepulauan berciri Nusantara. Sumber resmi JDIH DPR juga memuat Pembukaan yang menegaskan tujuan membentuk Pemerintah Negara Indonesia dan menyebut “Negara Indonesia” dalam susunan republik berkedaulatan rakyat. </p>
 
-<p><strong>Verifikasi Bhinneka Tunggal Ika:</strong> bahan pendidikan Pancasila yang diterbitkan melalui ekosistem BPIP menjelaskan makna Bhinneka Tunggal Ika sebagai keberagaman yang tetap merupakan kesatuan bangsa; BPIP juga mengaitkannya dengan Kakawin Sutasoma karya Mpu Tantular. citeturn891323search34turn891323search3</p>
+<p><strong>Verifikasi Bhinneka Tunggal Ika:</strong> bahan pendidikan Pancasila yang diterbitkan melalui ekosistem BPIP menjelaskan makna Bhinneka Tunggal Ika sebagai keberagaman yang tetap merupakan kesatuan bangsa; BPIP juga mengaitkannya dengan Kakawin Sutasoma karya Mpu Tantular. </p>
 
-<p><strong>Verifikasi Wawasan Nusantara:</strong> publikasi Lemhannas menjelaskan Wawasan Nusantara sebagai cara pandang dan sikap bangsa Indonesia yang mengutamakan persatuan dan kesatuan bangsa serta kesatuan wilayah untuk mendukung pencapaian kepentingan nasional. Publikasi Lemhannas juga menghubungkannya dengan Pancasila, UUD 1945, kondisi negara kepulauan, dan berbagai bidang kehidupan nasional. citeturn788325search38turn788325search39</p>
+<p><strong>Verifikasi Wawasan Nusantara:</strong> publikasi Lemhannas menjelaskan Wawasan Nusantara sebagai cara pandang dan sikap bangsa Indonesia yang mengutamakan persatuan dan kesatuan bangsa serta kesatuan wilayah untuk mendukung pencapaian kepentingan nasional. Publikasi Lemhannas juga menghubungkannya dengan Pancasila, UUD 1945, kondisi negara kepulauan, dan berbagai bidang kehidupan nasional. </p>
 
-<p><strong>Verifikasi konteks kepulauan:</strong> dokumen Kemhan menjelaskan Wawasan Nusantara sebagai konsepsi kesatuan wilayah, bangsa, dan negara, serta membedakan konsepsi kewilayahan Nusantara dari Wawasan Nusantara sebagai cara pandang kesatuan bangsa dan negara. citeturn891323search33</p>
+<p><strong>Verifikasi konteks kepulauan:</strong> dokumen Kemhan menjelaskan Wawasan Nusantara sebagai konsepsi kesatuan wilayah, bangsa, dan negara, serta membedakan konsepsi kewilayahan Nusantara dari Wawasan Nusantara sebagai cara pandang kesatuan bangsa dan negara. </p>
 
 <p class="tiny"><strong>Catatan akurasi dan istilah:</strong> “integrasi”, “persatuan”, “kesatuan”, “harmoni”, “akomodasi”, dan “asimilasi” dalam modul dipakai sebagai perangkat pembelajaran yang membantu membedakan pusat makna dalam soal. Tidak setiap batas istilah merupakan rumusan normatif tunggal dalam UUD. Karena itu, jangan mengubah alat bantu pedagogis menjadi seolah-olah definisi resmi konstitusi.</p>
 <p class="tiny"><strong>Catatan tentang harmoni:</strong> harmoni dipakai di sini sebagai keadaan hubungan sosial yang relatif serasi dan mampu mengelola perbedaan. Harmoni bukan berarti tidak ada konflik sama sekali. Konflik dapat tetap ada; yang penting konflik tidak otomatis berubah menjadi perpecahan dan masih dapat dikelola melalui mekanisme yang sah.</p>
@@ -601,23 +492,23 @@ Anda tidak sekadar menghafal “Bhinneka = berbeda-beda”, “NKRI = negara kes
 
 
 <nav class="cpns-modnav" aria-label="Navigasi modul">
-  <a class="cpns-navbtn" href="07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html">← Modul 07</a>
-  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
-  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m08" type="button">Tandai selesai</button>
-  <a class="cpns-navbtn" href="09-nasionalisme-dan-kepentingan-nasional.html">Modul 09 →</a>
+ <a class="cpns-navbtn" href="07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html">← Modul 07</a>
+ <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+ <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m08" type="button">Tandai selesai</button>
+ <a class="cpns-navbtn" href="09-nasionalisme-dan-kepentingan-nasional.html">Modul 09 →</a>
 </nav>
 
 <script>
 (function(){
-  var bar=document.getElementById('cpns-progress-bar');
-  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
-  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
-  var done=document.getElementById('cpns-done');
-  if(done){var key=done.getAttribute('data-key');
-    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
-    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
-    refresh();
-  }
+ var bar=document.getElementById('cpns-progress-bar');
+ function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+ if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+ var done=document.getElementById('cpns-done');
+ if(done){var key=done.getAttribute('data-key');
+ function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+ done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+ refresh();
+ }
 })();
 </script>
 

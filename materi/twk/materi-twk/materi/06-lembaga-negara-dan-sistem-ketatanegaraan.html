@@ -5,516 +5,428 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Modul 06 — Lembaga Negara dan Sistem Ketatanegaraan | Materi TWK | CPNS Learning</title>
 <meta name="description" content="Modul pembelajaran naratif untuk memahami lembaga negara Indonesia melalui fungsi, kewenangan, objek, batas, hubungan antarlembaga, dan reasoning TWK.">
-<style>
-:root{
-  --ink:#1b2730;--muted:#667682;--paper:#f5f2eb;--paper2:#fbfaf6;--card:#fffdf9;
-  --navy:#173449;--blue:#3a7087;--gold:#b68a34;--green:#2e6b57;--red:#91483f;
-  --line:#ded8cd;--soft:#edf3f4;--softgold:#f6eedf;--softgreen:#edf4ef;--softred:#f7ece9;
-  --shadow:0 16px 42px rgba(25,40,52,.07);--r:22px
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.78}
-a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:1180px;margin:auto;padding:0 24px}
-.hero{color:#fff;background:linear-gradient(135deg,#10293b 0%,#2b566b 62%,#7a6b49 100%);padding:76px 0 64px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-180px;top:-180px;width:620px;height:620px;border:1px solid rgba(255,255,255,.12);border-radius:50%;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.018)}
-.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:38px;align-items:end;position:relative;z-index:1}
-.eyebrow,.kicker{font-size:.72rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.eyebrow{opacity:.78}
-.hero h1{font:800 clamp(2.4rem,5vw,4.9rem)/1.02 Georgia,serif;margin:14px 0 18px;max-width:920px}
-.hero p{font-size:1.1rem;max-width:860px;color:rgba(255,255,255,.92)}
-.hero-note{padding:24px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:20px;backdrop-filter:blur(8px)}
-.hero-note strong{font-size:1.1rem}
-.sticky{position:sticky;top:0;z-index:30;background:rgba(245,242,235,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav{max-width:1180px;margin:auto;display:flex;gap:8px;overflow:auto;padding:10px 24px}.nav a{white-space:nowrap;color:var(--muted);font-size:.81rem;padding:8px 11px;border-radius:999px}.nav a:hover{background:var(--soft);color:var(--ink);text-decoration:none}
-main{padding:22px 0 96px}.section{padding:66px 0}.section.alt{background:rgba(255,253,249,.62);border-top:1px solid rgba(222,216,205,.7);border-bottom:1px solid rgba(222,216,205,.7)}
-.section h2{font:800 clamp(1.9rem,3vw,3rem)/1.1 Georgia,serif;color:var(--navy);margin:8px 0 15px}.section h3{color:var(--navy);font-size:1.35rem;margin:32px 0 11px}
-.lead{font-size:1.07rem;color:#3d4e59;max-width:930px}.story,.card,.callout,.reason,.checkpoint,.sourcebox,.timeline-card,.mini-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
-.story{padding:31px;max-width:960px}.story p{margin:14px 0}
-.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--softgold);color:#6b5525;font-size:.7rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
-.callout{padding:22px 24px;margin:21px 0}.callout.gold{border-left:5px solid var(--gold)}.callout.blue{border-left:5px solid var(--blue)}.callout.green{border-left:5px solid var(--green)}.callout.red{border-left:5px solid var(--red)}.callout strong{color:var(--navy)}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.card{padding:24px}.card h4,.mini-card h4{margin:0 0 9px;color:var(--navy)}.tiny{font-size:.84rem;color:var(--muted)}
-.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:24px 0}.pill{padding:10px 13px;background:var(--soft);border:1px solid #d6e0e4;border-radius:999px;font-weight:850;font-size:.84rem}.arrow{font-weight:900;color:var(--gold)}
-.big-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:27px 0}.big-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 15px;text-align:center}.big-step .n{font:800 1.6rem Georgia;color:var(--gold)}.big-step strong{display:block;margin:7px 0}.big-step span{font-size:.78rem;color:var(--muted)}
-.timeline{position:relative;margin:26px 0}.timeline:before{content:"";position:absolute;left:24px;top:0;bottom:0;width:2px;background:#d6cec0}.titem{display:grid;grid-template-columns:52px 1fr;gap:17px;margin-bottom:20px}.dot{width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;position:relative;z-index:1;border:4px solid var(--paper)}.timeline-card{padding:21px}.timeline-card .date{font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:900}
-.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;margin:21px 0}.compare>div{padding:25px}.compare .a{background:#f1f6f7;border-right:1px solid var(--line)}.compare .b{background:#fbf4e4}.signal{font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--muted)}
-.reason{padding:24px}.rline{display:grid;grid-template-columns:180px 1fr;gap:18px;padding:12px 0;border-bottom:1px dashed var(--line)}.rline:last-child{border-bottom:none}.rkey{font-weight:900;color:var(--navy)}
-.matrix-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);background:#fff}.matrix{width:100%;border-collapse:separate;border-spacing:0;min-width:940px}.matrix th,.matrix td{padding:14px 15px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.matrix th{background:var(--soft);color:var(--navy)}.matrix td:last-child,.matrix th:last-child{border-right:none}.matrix tr:last-child td{border-bottom:none}.focus{font-weight:900;color:var(--navy)}
-.mini-map{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:22px 0}.node{padding:18px;border-radius:17px;border:1px solid var(--line);background:#fff}.node strong{display:block;color:var(--navy);margin-bottom:6px}.node.core{background:#eef3f5;border-color:#d1dfe4}.node.control{background:#fbf4e4;border-color:#e5d6b7}.node.justice{background:#eff4f0;border-color:#d5e0d8}.node.limit{background:#f8ecea;border-color:#e5cfcb}
-.institution{margin-top:22px}.inst-head{display:flex;gap:15px;justify-content:space-between;align-items:flex-start}.inst-code{font:800 1rem Georgia;color:var(--gold)}.inst-title{font:800 1.55rem/1.2 Georgia;color:var(--navy);margin-top:3px}
-.inst-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:21px 0}.mini-card{padding:19px;box-shadow:none}.mini-card.soft{background:var(--soft)}.mini-card.warn{background:var(--softred);border-color:#e5cfcb}.mini-card.good{background:var(--softgreen);border-color:#d5e0d8}.mini-card.gold{background:var(--softgold);border-color:#e5d6b7}
-.badge{display:inline-block;padding:4px 8px;border-radius:8px;background:#fbfaf6;border:1px solid #d8d1c5;font-size:.72rem;font-weight:850;color:#62675f}
-.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:24px 0}.case{padding:21px;border:1px solid var(--line);border-radius:18px;background:#fff}.case .num{font:800 1.5rem Georgia;color:var(--gold)}.case strong{display:block;color:var(--navy);margin:6px 0}
-.mental{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:13px;align-items:stretch;margin:25px 0}.mental .box{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff}.mental .center{background:var(--navy);color:#fff;text-align:center}.mental .center strong{font-size:1.3rem}
-.checklist{counter-reset:check}.check{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #e6dfd3;background:#faf9f5;border-radius:14px;margin:11px 0}.check b{color:var(--gold)}
-details{background:#fffdf9;border:1px solid var(--line);border-radius:15px;padding:14px 17px;margin:13px 0}summary{cursor:pointer;font-weight:900;color:var(--navy)}
-footer{background:#122c3e;color:#fff;padding:38px 0}.footer-text{color:rgba(255,255,255,.75)}
-@media(max-width:940px){.hero-grid,.grid2,.grid3,.grid4,.inst-grid,.mental,.case-grid,.mini-map{grid-template-columns:1fr}.big-flow{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}.compare .a{border-right:none;border-bottom:1px solid var(--line)}.rline{grid-template-columns:1fr;gap:4px}.section{padding:54px 0}.hero{padding-top:55px}}
-@media(max-width:560px){.wrap{padding:0 17px}.story,.card,.callout,.reason,.checkpoint,.sourcebox,.timeline-card,.mini-card{padding:19px}.big-flow{grid-template-columns:1fr}.titem{grid-template-columns:40px 1fr}.dot{width:38px;height:38px}.timeline:before{left:19px}.inst-head{display:block}}
-</style>
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
+<link rel="stylesheet" href="../assets/modul-twk.css">
+<script src="../assets/modul-twk.js" defer></script>
 
-:root{
-  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
-  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
-  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
-  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
-  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
-  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
-  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
-  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
-  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
-  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
-}
-
-/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
-.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
-.cpns-crumb a{color:var(--accent);text-decoration:none;}
-.cpns-crumb a:hover{text-decoration:underline;}
-.cpns-crumb .sep{color:var(--line);}
-.cpns-crumb .cur{color:var(--muted);}
-.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
-.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
-.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
-.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
-.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
-.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
-.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
-.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
-.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
-.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
-body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
-h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
-img{max-width:100%;height:auto;border-radius:8px;}
-table{max-width:100%;}
-@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
-
-</style>
 </head>
 <body>
 <nav class="cpns-crumb" aria-label="Breadcrumb">
-  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
-  <a href="../../index.html">TWK</a><span class="sep">/</span>
-  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
-  <span class="cur">Modul 06</span>
+ <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+ <a href="../../index.html">TWK</a><span class="sep">/</span>
+ <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+ <span class="cur">Modul 06</span>
 </nav>
-<div class="cpns-progress"><span id="cpns-progress-bar"></span></div>
 
 <header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Ultimate TWK Knowledge System · Modul 06</div>
-      <h1>Lembaga Negara &amp; Sistem Ketatanegaraan</h1>
-      <p>Sebelum menghafal MPR, DPR, DPD, Presiden, MA, MK, KY, dan BPK, kita jawab pertanyaan yang lebih dasar: <strong>kalau sebuah negara harus mengambil keputusan, siapa yang melakukan apa?</strong></p>
-    </div>
-    <div class="hero-note">
-      <strong>Target akhir</strong><br>
-      Anda dapat membaca suatu kasus, menemukan aktornya, menentukan kewenangan yang sedang dipakai, mengunci objeknya, melihat batasnya, lalu menjelaskan akibatnya. Nama lembaga datang <em>setelah</em> logika itu jelas.
-    </div>
-  </div>
+ <div class="wrap hero-grid">
+ <div>
+ <div class="eyebrow">Ultimate TWK Knowledge System · Modul 06</div>
+ <h1>Lembaga Negara &amp; Sistem Ketatanegaraan</h1>
+ <p>Sebelum menghafal MPR, DPR, DPD, Presiden, MA, MK, KY, dan BPK, kita jawab pertanyaan yang lebih dasar: <strong>kalau sebuah negara harus mengambil keputusan, siapa yang melakukan apa?</strong></p>
+ </div>
+ <div class="hero-note">
+ <strong>Target akhir</strong><br>
+ Anda dapat membaca suatu kasus, menemukan aktornya, menentukan kewenangan yang sedang dipakai, mengunci objeknya, melihat batasnya, lalu menjelaskan akibatnya. Nama lembaga datang <em>setelah</em> logika itu jelas.
+ </div>
+ </div>
 </header>
-
-<div class="sticky"><nav class="nav">
-  <a href="#masalah">Masalah negara</a><a href="#fungsi">Fungsi</a><a href="#trias">Pembagian kekuasaan</a><a href="#kerangka">Cara membaca kewenangan</a><a href="#negara-kecil">Negara kecil</a><a href="#lembaga">Lembaga</a><a href="#kontras">Kontras</a><a href="#twk">TWK</a><a href="#peta">Peta sistem</a><a href="#check">Checkpoint</a>
-</nav></div>
 
 <main>
 <section class="section" id="masalah"><div class="wrap">
-  <div class="kicker">01 · Mulai dari masalah</div>
-  <h2>Negara sebenarnya sedang mencoba menyelesaikan apa?</h2>
-  <p class="lead">Bayangkan Anda membangun sebuah negara dari nol. Penduduknya sudah ada, tetapi sistemnya belum tertata. Banyak orang tahu apa yang harus dilakukan, tetapi belum jelas siapa yang diberi wewenang untuk melakukannya.</p>
-  <div class="story">
-    <span class="tag">Cerita pembuka</span>
-    <p>Negara kecil bernama <strong>Nusantara Baru</strong> mempunyai 10 juta penduduk. Negara ini harus membangun sekolah, mengatur pajak, menetapkan anggaran, menjaga keamanan, menyelesaikan sengketa, dan memastikan uang negara benar-benar digunakan sebagaimana mestinya.</p>
-    <p>Lalu muncul pertanyaan yang tampak sederhana. <em>Siapa membuat aturan?</em> <em>Siapa menjalankannya?</em> <em>Siapa memeriksa pemerintah?</em> <em>Siapa mengadili sengketa?</em> <em>Siapa memastikan hakim tetap berintegritas?</em> <em>Siapa memeriksa pengelolaan uang negara?</em> Dan ketika dua lembaga sama-sama merasa memiliki kewenangan, siapa yang menentukan batas di antara mereka?</p>
-    <p>Masalahnya bukan sekadar bahwa negara membutuhkan banyak orang. Masalah utamanya adalah <strong>kewenangan harus diberikan kepada aktor yang tepat dan tidak boleh menjadi kewenangan tanpa batas</strong>.</p>
-  </div>
-  <div class="flow"><span class="pill">membentuk aturan</span><span class="arrow">→</span><span class="pill">menjalankan pemerintahan</span><span class="arrow">→</span><span class="pill">mewakili rakyat &amp; daerah</span><span class="arrow">→</span><span class="pill">mengadili</span><span class="arrow">→</span><span class="pill">memeriksa</span><span class="arrow">→</span><span class="pill">mengimbangi kekuasaan</span></div>
-  <div class="callout gold"><strong>Baru di sini nama lembaga menjadi masuk akal.</strong> MPR, DPR, DPD, Presiden, MA, MK, KY, dan BPK bukan kumpulan nama yang harus dihafal secara acak. Masing-masing menjawab kebutuhan tertentu dalam desain ketatanegaraan.</div>
+ <div class="kicker">01 · Mulai dari masalah</div>
+ <h2>Negara sebenarnya sedang mencoba menyelesaikan apa?</h2>
+ <p class="lead">Bayangkan Anda membangun sebuah negara dari nol. Penduduknya sudah ada, tetapi sistemnya belum tertata. Banyak orang tahu apa yang harus dilakukan, tetapi belum jelas siapa yang diberi wewenang untuk melakukannya.</p>
+ <div class="story">
+ <span class="tag">Cerita pembuka</span>
+ <p>Negara kecil bernama <strong>Nusantara Baru</strong> mempunyai 10 juta penduduk. Negara ini harus membangun sekolah, mengatur pajak, menetapkan anggaran, menjaga keamanan, menyelesaikan sengketa, dan memastikan uang negara benar-benar digunakan sebagaimana mestinya.</p>
+ <p>Lalu muncul pertanyaan yang tampak sederhana. <em>Siapa membuat aturan?</em> <em>Siapa menjalankannya?</em> <em>Siapa memeriksa pemerintah?</em> <em>Siapa mengadili sengketa?</em> <em>Siapa memastikan hakim tetap berintegritas?</em> <em>Siapa memeriksa pengelolaan uang negara?</em> Dan ketika dua lembaga sama-sama merasa memiliki kewenangan, siapa yang menentukan batas di antara mereka?</p>
+ <p>Masalahnya bukan sekadar bahwa negara membutuhkan banyak orang. Masalah utamanya adalah <strong>kewenangan harus diberikan kepada aktor yang tepat dan tidak boleh menjadi kewenangan tanpa batas</strong>.</p>
+ </div>
+ <div class="flow"><span class="pill">membentuk aturan</span><span class="arrow">→</span><span class="pill">menjalankan pemerintahan</span><span class="arrow">→</span><span class="pill">mewakili rakyat &amp; daerah</span><span class="arrow">→</span><span class="pill">mengadili</span><span class="arrow">→</span><span class="pill">memeriksa</span><span class="arrow">→</span><span class="pill">mengimbangi kekuasaan</span></div>
+ <div class="callout gold"><strong>Baru di sini nama lembaga menjadi masuk akal.</strong> MPR, DPR, DPD, Presiden, MA, MK, KY, dan BPK bukan kumpulan nama yang harus dihafal secara acak. Masing-masing menjawab kebutuhan tertentu dalam desain ketatanegaraan.</div>
 </div></section>
 
 <section class="section alt" id="fungsi"><div class="wrap">
-  <div class="kicker">02 · Dari kebutuhan ke fungsi</div>
-  <h2>Enam pekerjaan besar yang harus berjalan</h2>
-  <p class="lead">Mulailah dari pekerjaan, bukan dari nama. Satu fungsi dapat melibatkan lebih dari satu lembaga karena negara tidak dirancang sebagai satu kantor yang melakukan semuanya sendiri.</p>
-  <div class="grid3">
-    <article class="card"><h4>1. Membuat aturan</h4><p>Negara membutuhkan aturan yang berlaku umum. Dalam pembentukan undang-undang, DPR dan Presiden mempunyai peran konstitusional masing-masing; DPD mempunyai ruang tertentu untuk RUU yang berkaitan dengan daerah dan bidang yang disebut UUD.</p></article>
-    <article class="card"><h4>2. Menjalankan pemerintahan</h4><p>Aturan saja tidak membuat sekolah dibangun, pajak dipungut, atau pelayanan publik berjalan. Presiden memegang kekuasaan pemerintahan menurut UUD dan dibantu menteri-menteri negara.</p></article>
-    <article class="card"><h4>3. Mewakili</h4><p>Rakyat dan daerah perlu masuk ke proses pengambilan keputusan. DPR membawa representasi politik rakyat; DPD menghadirkan representasi daerah dengan ruang kewenangan yang berbeda.</p></article>
-    <article class="card"><h4>4. Mengadili</h4><p>Sengketa hukum membutuhkan kekuasaan kehakiman yang merdeka. Di sini muncul MA dan MK dengan wilayah kewenangan yang berbeda berdasarkan objek dan jenis perkara.</p></article>
-    <article class="card"><h4>5. Memeriksa</h4><p>Keuangan negara perlu diperiksa secara bebas dan mandiri. BPK mengemban fungsi konstitusional tersebut dan hasil pemeriksaannya diserahkan kepada lembaga perwakilan sesuai kewenangan.</p></article>
-    <article class="card"><h4>6. Menjaga keseimbangan</h4><p>Karena setiap pemegang kekuasaan dapat melakukan kesalahan, desain ketatanegaraan memasukkan hubungan saling mengawasi dan mengimbangi. Tetapi kontrol selalu tetap dibatasi oleh kewenangan hukumnya.</p></article>
-  </div>
-  <div class="callout blue"><strong>Kata “mengawasi” masih terlalu kabur.</strong> DPR dapat mengawasi pelaksanaan UU dan APBN; DPD mempunyai pengawasan pada bidang tertentu; BPK memeriksa pengelolaan dan tanggung jawab keuangan negara; KY mempunyai kewenangan terkait kehormatan, keluhuran martabat, dan perilaku hakim. Jadi ketika soal hanya mengatakan “pengawasan”, pekerjaan yang dimaksud harus dipecahkan lagi.</div>
+ <div class="kicker">02 · Dari kebutuhan ke fungsi</div>
+ <h2>Enam pekerjaan besar yang harus berjalan</h2>
+ <p class="lead">Mulailah dari pekerjaan, bukan dari nama. Satu fungsi dapat melibatkan lebih dari satu lembaga karena negara tidak dirancang sebagai satu kantor yang melakukan semuanya sendiri.</p>
+ <div class="grid3">
+ <article class="card"><h4>1. Membuat aturan</h4><p>Negara membutuhkan aturan yang berlaku umum. Dalam pembentukan undang-undang, DPR dan Presiden mempunyai peran konstitusional masing-masing; DPD mempunyai ruang tertentu untuk RUU yang berkaitan dengan daerah dan bidang yang disebut UUD.</p></article>
+ <article class="card"><h4>2. Menjalankan pemerintahan</h4><p>Aturan saja tidak membuat sekolah dibangun, pajak dipungut, atau pelayanan publik berjalan. Presiden memegang kekuasaan pemerintahan menurut UUD dan dibantu menteri-menteri negara.</p></article>
+ <article class="card"><h4>3. Mewakili</h4><p>Rakyat dan daerah perlu masuk ke proses pengambilan keputusan. DPR membawa representasi politik rakyat; DPD menghadirkan representasi daerah dengan ruang kewenangan yang berbeda.</p></article>
+ <article class="card"><h4>4. Mengadili</h4><p>Sengketa hukum membutuhkan kekuasaan kehakiman yang merdeka. Di sini muncul MA dan MK dengan wilayah kewenangan yang berbeda berdasarkan objek dan jenis perkara.</p></article>
+ <article class="card"><h4>5. Memeriksa</h4><p>Keuangan negara perlu diperiksa secara bebas dan mandiri. BPK mengemban fungsi konstitusional tersebut dan hasil pemeriksaannya diserahkan kepada lembaga perwakilan sesuai kewenangan.</p></article>
+ <article class="card"><h4>6. Menjaga keseimbangan</h4><p>Karena setiap pemegang kekuasaan dapat melakukan kesalahan, desain ketatanegaraan memasukkan hubungan saling mengawasi dan mengimbangi. Tetapi kontrol selalu tetap dibatasi oleh kewenangan hukumnya.</p></article>
+ </div>
+ <div class="callout blue"><strong>Kata “mengawasi” masih terlalu kabur.</strong> DPR dapat mengawasi pelaksanaan UU dan APBN; DPD mempunyai pengawasan pada bidang tertentu; BPK memeriksa pengelolaan dan tanggung jawab keuangan negara; KY mempunyai kewenangan terkait kehormatan, keluhuran martabat, dan perilaku hakim. Jadi ketika soal hanya mengatakan “pengawasan”, pekerjaan yang dimaksud harus dipecahkan lagi.</div>
 </div></section>
 
 <section class="section" id="trias"><div class="wrap">
-  <div class="kicker">03 · Mengapa pekerjaan dibedakan?</div>
-  <h2>Pembagian kekuasaan: jangan mengubah Trias Politica menjadi tiga kotak kaku</h2>
-  <div class="story">
-    <p>Bayangkan seorang penguasa dapat membuat aturan, menjalankannya, lalu memutus sendiri apakah tindakannya melanggar aturan. Masalahnya jelas: ia terlalu mudah menjadi hakim atas tindakannya sendiri.</p>
-    <p>Dari masalah semacam itu, muncul gagasan pembagian kekuasaan. Istilah <strong>Trias Politica</strong> lazim digunakan untuk menjelaskan pembagian fungsi legislatif, eksekutif, dan yudikatif. Bahasa sederhananya: pekerjaan membentuk aturan, menjalankan pemerintahan, dan mengadili tidak seharusnya dipusatkan begitu saja pada satu tangan.</p>
-    <p>Namun sistem Indonesia bukan salinan mekanis “satu cabang = satu lembaga”. Konstitusi Indonesia membentuk hubungan antarlembaga dengan kewenangan yang saling berkaitan dan mekanisme <strong>checks and balances</strong>. Artinya, ada mekanisme saling mengawasi dan mengimbangi, tanpa berarti semua lembaga boleh mencampuri semua urusan.</p>
-  </div>
-  <div class="big-flow">
-    <div class="big-step"><div class="n">01</div><strong>Legislatif</strong><span>membentuk undang-undang dalam kewenangan konstitusionalnya</span></div>
-    <div class="big-step"><div class="n">02</div><strong>Eksekutif</strong><span>menjalankan pemerintahan</span></div>
-    <div class="big-step"><div class="n">03</div><strong>Yudikatif</strong><span>menyelenggarakan kekuasaan kehakiman</span></div>
-    <div class="big-step"><div class="n">04</div><strong>Kontrol</strong><span>menguji, mengawasi, memeriksa, dan menyeimbangkan sesuai kewenangan</span></div>
-    <div class="big-step"><div class="n">05</div><strong>Konstitusi</strong><span>menentukan batas dan hubungan masing-masing</span></div>
-  </div>
-  <div class="compare">
-    <div class="a"><div class="signal">Kesalahpahaman</div><h3>“Trias Politica = tiga lembaga”</h3><p>Ini terlalu kasar. Begitu pembaca memakai rumus itu, ia akan cenderung mencari “satu lembaga legislatif”, “satu lembaga eksekutif”, dan “satu lembaga yudikatif”. Padahal satu lembaga dapat menjalankan beberapa fungsi yang tidak pas dimasukkan ke satu kotak sempit.</p></div>
-    <div class="b"><div class="signal">Model berpikir yang lebih aman</div><h3>“Mulai dari fungsi dan kewenangan”</h3><p>Ketika sebuah soal muncul, cari pekerjaan spesifik yang sedang dilakukan, objeknya, dan dasar kewenangannya. Itulah yang membuat kita tidak tertipu oleh dua lembaga yang sama-sama tampak “berhubungan”.</p></div>
-  </div>
-  <div class="callout green"><strong>Checks and balances bukan izin untuk ikut campur tanpa batas.</strong> Jika DPR mengawasi pemerintah, itu tidak berarti DPR dapat membatalkan putusan pengadilan. Jika BPK memeriksa keuangan negara, itu tidak berarti BPK menggantikan DPR dalam fungsi anggaran. Jika KY menjaga integritas hakim, itu tidak berarti KY menjadi pengadilan banding.</div>
+ <div class="kicker">03 · Mengapa pekerjaan dibedakan?</div>
+ <h2>Pembagian kekuasaan: jangan mengubah Trias Politica menjadi tiga kotak kaku</h2>
+ <div class="story">
+ <p>Bayangkan seorang penguasa dapat membuat aturan, menjalankannya, lalu memutus sendiri apakah tindakannya melanggar aturan. Masalahnya jelas: ia terlalu mudah menjadi hakim atas tindakannya sendiri.</p>
+ <p>Dari masalah semacam itu, muncul gagasan pembagian kekuasaan. Istilah <strong>Trias Politica</strong> lazim digunakan untuk menjelaskan pembagian fungsi legislatif, eksekutif, dan yudikatif. Bahasa sederhananya: pekerjaan membentuk aturan, menjalankan pemerintahan, dan mengadili tidak seharusnya dipusatkan begitu saja pada satu tangan.</p>
+ <p>Namun sistem Indonesia bukan salinan mekanis “satu cabang = satu lembaga”. Konstitusi Indonesia membentuk hubungan antarlembaga dengan kewenangan yang saling berkaitan dan mekanisme <strong>checks and balances</strong>. Artinya, ada mekanisme saling mengawasi dan mengimbangi, tanpa berarti semua lembaga boleh mencampuri semua urusan.</p>
+ </div>
+ <div class="big-flow">
+ <div class="big-step"><div class="n">01</div><strong>Legislatif</strong><span>membentuk undang-undang dalam kewenangan konstitusionalnya</span></div>
+ <div class="big-step"><div class="n">02</div><strong>Eksekutif</strong><span>menjalankan pemerintahan</span></div>
+ <div class="big-step"><div class="n">03</div><strong>Yudikatif</strong><span>menyelenggarakan kekuasaan kehakiman</span></div>
+ <div class="big-step"><div class="n">04</div><strong>Kontrol</strong><span>menguji, mengawasi, memeriksa, dan menyeimbangkan sesuai kewenangan</span></div>
+ <div class="big-step"><div class="n">05</div><strong>Konstitusi</strong><span>menentukan batas dan hubungan masing-masing</span></div>
+ </div>
+ <div class="compare">
+ <div class="a"><div class="signal">Kesalahpahaman</div><h3>“Trias Politica = tiga lembaga”</h3><p>Ini terlalu kasar. Begitu pembaca memakai rumus itu, ia akan cenderung mencari “satu lembaga legislatif”, “satu lembaga eksekutif”, dan “satu lembaga yudikatif”. Padahal satu lembaga dapat menjalankan beberapa fungsi yang tidak pas dimasukkan ke satu kotak sempit.</p></div>
+ <div class="b"><div class="signal">Model berpikir yang lebih aman</div><h3>“Mulai dari fungsi dan kewenangan”</h3><p>Ketika sebuah soal muncul, cari pekerjaan spesifik yang sedang dilakukan, objeknya, dan dasar kewenangannya. Itulah yang membuat kita tidak tertipu oleh dua lembaga yang sama-sama tampak “berhubungan”.</p></div>
+ </div>
+ <div class="callout green"><strong>Checks and balances bukan izin untuk ikut campur tanpa batas.</strong> Jika DPR mengawasi pemerintah, itu tidak berarti DPR dapat membatalkan putusan pengadilan. Jika BPK memeriksa keuangan negara, itu tidak berarti BPK menggantikan DPR dalam fungsi anggaran. Jika KY menjaga integritas hakim, itu tidak berarti KY menjadi pengadilan banding.</div>
 </div></section>
 
 <section class="section alt" id="kerangka"><div class="wrap">
-  <div class="kicker">04 · Kerangka inti TWK</div>
-  <h2>Actor → authority → object → limitation → consequence</h2>
-  <p class="lead">Inilah alat baca utama modul. Istilahnya sengaja sederhana. Jangan tertipu oleh satu kata kunci; cari hubungan lengkapnya.</p>
-  <div class="big-flow">
-    <div class="big-step"><div class="n">A</div><strong>Actor</strong><span>siapa yang bertindak?</span></div>
-    <div class="big-step"><div class="n">B</div><strong>Authority</strong><span>kewenangan apa yang dipakai?</span></div>
-    <div class="big-step"><div class="n">C</div><strong>Object</strong><span>apa yang ditangani / diuji?</span></div>
-    <div class="big-step"><div class="n">D</div><strong>Limitation</strong><span>sejauh mana kewenangan itu berlaku?</span></div>
-    <div class="big-step"><div class="n">E</div><strong>Consequence</strong><span>apa akibat jika tindakan tepat / keliru?</span></div>
-  </div>
-  <div class="story">
-    <p><strong>Kewenangan</strong> berarti kemampuan bertindak yang diberikan oleh hukum kepada pejabat atau lembaga dalam ruang yang ditentukan. Kata “bisa” dalam percakapan sehari-hari tidak sama dengan “berwenang” dalam ketatanegaraan.</p>
-    <p>Misalnya, DPR sangat berhubungan dengan undang-undang. Namun saat pertanyaannya berubah menjadi “siapa menguji undang-undang terhadap UUD?”, kita tidak lagi berada pada tahap pembentukan undang-undang. Objeknya berubah. Karena objek berubah, lembaga yang paling tepat juga berubah.</p>
-  </div>
-  <div class="mini-map">
-    <div class="node core"><strong>Actor</strong> DPR, DPD, Presiden, MPR, MA, MK, KY, BPK, KPU, pemerintah daerah, warga, dan pihak lain.</div>
-    <div class="node control"><strong>Authority</strong> dasar kewenangan hukum. “Punya kepentingan” tidak sama dengan “punya kewenangan memutus”.</div>
-    <div class="node justice"><strong>Object</strong> UU, peraturan di bawah UU, APBN, hasil pemilu, hakim, UUD, atau kewenangan lembaga.</div>
-    <div class="node limit"><strong>Limitation</strong> jenis tindakan, objek, prosedur, syarat, dan hubungan dengan lembaga lain.</div>
-  </div>
-  <div class="callout gold"><strong>Kalimat pengaman untuk soal lembaga:</strong> <em>lembaga yang hadir di dalam cerita belum tentu lembaga yang paling berwenang atas pertanyaan yang diajukan.</em></div>
+ <div class="kicker">04 · Kerangka inti TWK</div>
+ <h2>Actor → authority → object → limitation → consequence</h2>
+ <p class="lead">Inilah alat baca utama modul. Istilahnya sengaja sederhana. Jangan tertipu oleh satu kata kunci; cari hubungan lengkapnya.</p>
+ <div class="big-flow">
+ <div class="big-step"><div class="n">A</div><strong>Actor</strong><span>siapa yang bertindak?</span></div>
+ <div class="big-step"><div class="n">B</div><strong>Authority</strong><span>kewenangan apa yang dipakai?</span></div>
+ <div class="big-step"><div class="n">C</div><strong>Object</strong><span>apa yang ditangani / diuji?</span></div>
+ <div class="big-step"><div class="n">D</div><strong>Limitation</strong><span>sejauh mana kewenangan itu berlaku?</span></div>
+ <div class="big-step"><div class="n">E</div><strong>Consequence</strong><span>apa akibat jika tindakan tepat / keliru?</span></div>
+ </div>
+ <div class="story">
+ <p><strong>Kewenangan</strong> berarti kemampuan bertindak yang diberikan oleh hukum kepada pejabat atau lembaga dalam ruang yang ditentukan. Kata “bisa” dalam percakapan sehari-hari tidak sama dengan “berwenang” dalam ketatanegaraan.</p>
+ <p>Misalnya, DPR sangat berhubungan dengan undang-undang. Namun saat pertanyaannya berubah menjadi “siapa menguji undang-undang terhadap UUD?”, kita tidak lagi berada pada tahap pembentukan undang-undang. Objeknya berubah. Karena objek berubah, lembaga yang paling tepat juga berubah.</p>
+ </div>
+ <div class="mini-map">
+ <div class="node core"><strong>Actor</strong> DPR, DPD, Presiden, MPR, MA, MK, KY, BPK, KPU, pemerintah daerah, warga, dan pihak lain.</div>
+ <div class="node control"><strong>Authority</strong> dasar kewenangan hukum. “Punya kepentingan” tidak sama dengan “punya kewenangan memutus”.</div>
+ <div class="node justice"><strong>Object</strong> UU, peraturan di bawah UU, APBN, hasil pemilu, hakim, UUD, atau kewenangan lembaga.</div>
+ <div class="node limit"><strong>Limitation</strong> jenis tindakan, objek, prosedur, syarat, dan hubungan dengan lembaga lain.</div>
+ </div>
+ <div class="callout gold"><strong>Kalimat pengaman untuk soal lembaga:</strong> <em>lembaga yang hadir di dalam cerita belum tentu lembaga yang paling berwenang atas pertanyaan yang diajukan.</em></div>
 </div></section>
 
 <section class="section" id="negara-kecil"><div class="wrap">
-  <div class="kicker">05 · Satu cerita, seluruh sistem</div>
-  <h2>Negara kecil Nusantara Baru: mari lihat sistem bergerak</h2>
-  <p class="lead">Bagian ini sengaja memakai satu negara fiktif. Tujuannya bukan menghafalkan cerita, melainkan melihat bagaimana satu persoalan berpindah dari satu fungsi ke fungsi lain.</p>
-  <div class="timeline">
-    <div class="titem"><div class="dot">1</div><div class="timeline-card"><div class="date">Rencana</div><h3>Pemerintah ingin membangun rumah sakit</h3><p>Program membutuhkan kebijakan, anggaran, dan bila perlu dasar undang-undang. Presiden berada pada sisi pemerintahan; DPR terlibat dalam fungsi legislasi dan anggaran.</p></div></div>
-    <div class="titem"><div class="dot">2</div><div class="timeline-card"><div class="date">Daerah</div><h3>Isi RUU menyentuh hubungan pusat dan daerah</h3><p>Karena objeknya masuk bidang tertentu yang disebut UUD, DPD menjadi relevan dalam pengajuan, pembahasan, pertimbangan, dan pengawasan sesuai ruang kewenangannya.</p></div></div>
-    <div class="titem"><div class="dot">3</div><div class="timeline-card"><div class="date">Anggaran</div><h3>APBN dibahas</h3><p>Presiden mengajukan RUU APBN untuk dibahas bersama DPR dengan memperhatikan pertimbangan DPD. Ini belum merupakan pemeriksaan keuangan oleh BPK.</p></div></div>
-    <div class="titem"><div class="dot">4</div><div class="timeline-card"><div class="date">Uji</div><h3>UU sudah berlaku dan dipersoalkan</h3><p>Sejumlah warga menilai suatu ketentuan bertentangan dengan UUD. Sekarang gravity center berpindah dari pembentuk UU ke pengujian konstitusional oleh MK.</p></div></div>
-    <div class="titem"><div class="dot">5</div><div class="timeline-card"><div class="date">Aturan bawah UU</div><h3>Peraturan pelaksana dipersoalkan</h3><p>Sebuah peraturan di bawah UU dianggap bertentangan dengan UU. Ini mengarahkan analisis pada kewenangan MA untuk pengujian peraturan di bawah UU terhadap UU.</p></div></div>
-    <div class="titem"><div class="dot">6</div><div class="timeline-card"><div class="date">Pemilu</div><h3>Hasil pemilu disengketakan</h3><p>KPU menyelenggarakan pemilu, tetapi penyelenggara bukan otomatis lembaga pemutus semua sengketa yang berkaitan dengan pemilu. Untuk perselisihan hasil pemilu dalam kewenangan konstitusionalnya, pusat analisisnya adalah MK.</p></div></div>
-    <div class="titem"><div class="dot">7</div><div class="timeline-card"><div class="date">Hakim</div><h3>Masalah bergeser ke perilaku hakim</h3><p>Jika yang dipersoalkan adalah kehormatan, keluhuran martabat, atau perilaku hakim, KY menjadi relevan. Ini berbeda dari meminta MA memutus perkara.</p></div></div>
-    <div class="titem"><div class="dot">8</div><div class="timeline-card"><div class="date">Keuangan</div><h3>Publik meminta pemeriksaan pengelolaan uang negara</h3><p>Objeknya kini pengelolaan dan tanggung jawab keuangan negara. BPK menjalankan pemeriksaan secara bebas dan mandiri; hasilnya diserahkan sesuai kewenangan kepada lembaga perwakilan/badan yang relevan.</p></div></div>
-  </div>
-  <div class="callout blue"><strong>Yang berubah bukan selalu ceritanya, melainkan pertanyaannya.</strong> Satu rangkaian peristiwa dapat menghasilkan jawaban lembaga yang berbeda ketika objek atau tindakan yang ditanyakan berubah. Inilah sumber banyak soal “menipu tetapi sah”.</div>
+ <div class="kicker">05 · Satu cerita, seluruh sistem</div>
+ <h2>Negara kecil Nusantara Baru: mari lihat sistem bergerak</h2>
+ <p class="lead">Bagian ini sengaja memakai satu negara fiktif. Tujuannya bukan menghafalkan cerita, melainkan melihat bagaimana satu persoalan berpindah dari satu fungsi ke fungsi lain.</p>
+ <div class="timeline">
+ <div class="titem"><div class="dot">1</div><div class="timeline-card"><div class="date">Rencana</div><h3>Pemerintah ingin membangun rumah sakit</h3><p>Program membutuhkan kebijakan, anggaran, dan bila perlu dasar undang-undang. Presiden berada pada sisi pemerintahan; DPR terlibat dalam fungsi legislasi dan anggaran.</p></div></div>
+ <div class="titem"><div class="dot">2</div><div class="timeline-card"><div class="date">Daerah</div><h3>Isi RUU menyentuh hubungan pusat dan daerah</h3><p>Karena objeknya masuk bidang tertentu yang disebut UUD, DPD menjadi relevan dalam pengajuan, pembahasan, pertimbangan, dan pengawasan sesuai ruang kewenangannya.</p></div></div>
+ <div class="titem"><div class="dot">3</div><div class="timeline-card"><div class="date">Anggaran</div><h3>APBN dibahas</h3><p>Presiden mengajukan RUU APBN untuk dibahas bersama DPR dengan memperhatikan pertimbangan DPD. Ini belum merupakan pemeriksaan keuangan oleh BPK.</p></div></div>
+ <div class="titem"><div class="dot">4</div><div class="timeline-card"><div class="date">Uji</div><h3>UU sudah berlaku dan dipersoalkan</h3><p>Sejumlah warga menilai suatu ketentuan bertentangan dengan UUD. Sekarang gravity center berpindah dari pembentuk UU ke pengujian konstitusional oleh MK.</p></div></div>
+ <div class="titem"><div class="dot">5</div><div class="timeline-card"><div class="date">Aturan bawah UU</div><h3>Peraturan pelaksana dipersoalkan</h3><p>Sebuah peraturan di bawah UU dianggap bertentangan dengan UU. Ini mengarahkan analisis pada kewenangan MA untuk pengujian peraturan di bawah UU terhadap UU.</p></div></div>
+ <div class="titem"><div class="dot">6</div><div class="timeline-card"><div class="date">Pemilu</div><h3>Hasil pemilu disengketakan</h3><p>KPU menyelenggarakan pemilu, tetapi penyelenggara bukan otomatis lembaga pemutus semua sengketa yang berkaitan dengan pemilu. Untuk perselisihan hasil pemilu dalam kewenangan konstitusionalnya, pusat analisisnya adalah MK.</p></div></div>
+ <div class="titem"><div class="dot">7</div><div class="timeline-card"><div class="date">Hakim</div><h3>Masalah bergeser ke perilaku hakim</h3><p>Jika yang dipersoalkan adalah kehormatan, keluhuran martabat, atau perilaku hakim, KY menjadi relevan. Ini berbeda dari meminta MA memutus perkara.</p></div></div>
+ <div class="titem"><div class="dot">8</div><div class="timeline-card"><div class="date">Keuangan</div><h3>Publik meminta pemeriksaan pengelolaan uang negara</h3><p>Objeknya kini pengelolaan dan tanggung jawab keuangan negara. BPK menjalankan pemeriksaan secara bebas dan mandiri; hasilnya diserahkan sesuai kewenangan kepada lembaga perwakilan/badan yang relevan.</p></div></div>
+ </div>
+ <div class="callout blue"><strong>Yang berubah bukan selalu ceritanya, melainkan pertanyaannya.</strong> Satu rangkaian peristiwa dapat menghasilkan jawaban lembaga yang berbeda ketika objek atau tindakan yang ditanyakan berubah. Inilah sumber banyak soal “menipu tetapi sah”.</div>
 </div></section>
 
 <section class="section alt" id="lembaga"><div class="wrap">
-  <div class="kicker">06 · Baru sekarang kita kenalkan lembaganya</div>
-  <h2>Siapa melakukan apa?</h2>
-  <p class="lead">Setiap bagian mengikuti urutan: masalah → mengapa diperlukan → kewenangan → objek → batas → hubungan → contoh → near miss → pola soal.</p>
+ <div class="kicker">06 · Baru sekarang kita kenalkan lembaganya</div>
+ <h2>Siapa melakukan apa?</h2>
+ <p class="lead">Setiap bagian mengikuti urutan: masalah → mengapa diperlukan → kewenangan → objek → batas → hubungan → contoh → near miss → pola soal.</p>
 
-  <article class="card institution" id="mpr">
-    <div class="inst-head"><div><div class="inst-code">MPR · Majelis Permusyawaratan Rakyat</div><div class="inst-title">Masalah: siapa menjalankan fungsi konstitusional tertentu terkait UUD dan pelantikan Presiden/Wakil Presiden?</div></div><span class="badge">Pasal 2–3, 7B, 8, 37 UUD</span></div>
-    <p>MPR terdiri atas anggota DPR dan anggota DPD yang dipilih melalui pemilihan umum. Sesudah perubahan UUD, MPR tetap penting, tetapi posisinya tidak lagi sebagai “lembaga tertinggi negara”. Kedaulatan berada di tangan rakyat dan dilaksanakan menurut UUD.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Kewenangan utama</h4><p>Mengubah dan menetapkan UUD serta melantik Presiden dan/atau Wakil Presiden. MPR juga mempunyai kewenangan tertentu dalam proses pemberhentian Presiden/Wakil Presiden dan situasi kekosongan jabatan sebagaimana diatur UUD.</p></div>
-      <div class="mini-card gold"><h4>Objek</h4><p>UUD, pelantikan Presiden/Wapres, serta keputusan konstitusional tertentu mengenai Presiden/Wapres dan kekosongan jabatan.</p></div>
-      <div class="mini-card warn"><h4>Batas</h4><p>MPR tidak dapat diperlakukan sebagai “atasan” semua lembaga negara. Ia tidak memegang semua kedaulatan secara langsung dan tidak dapat mengambil alih pekerjaan DPR, MA, MK, atau BPK di luar kewenangannya.</p></div>
-      <div class="mini-card good"><h4>Hubungan</h4><p>MPR beranggotakan DPR + DPD; pada proses tertentu MPR berhubungan dengan DPR dan MK. Hubungannya bersifat fungsional, bukan hubungan atasan-bawahan terhadap semua lembaga negara.</p></div>
-    </div>
-    <h3>Contoh dan near miss</h3>
-    <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>Konstitusi perlu diubah melalui mekanisme perubahan UUD → <strong>MPR</strong> menjadi aktor yang dicari.</p></div><div class="b"><div class="signal">Near miss</div><p>“MPR dapat membatalkan putusan MK karena MPR lebih tinggi.” <strong>Salah.</strong> Kenapa? Karena premis “lebih tinggi” membawa struktur lama ke sistem pasca-perubahan UUD. Jebakan ini bekerja karena pembaca mengingat sejarah kedudukan MPR, bukan kedudukan MPR sekarang.</p></div></div>
-    <div class="callout gold"><strong>Pola soal:</strong> “siapa mengubah dan menetapkan UUD?”, “siapa melantik?”, atau “apa posisi MPR setelah perubahan UUD?”. Jika opsi menjadikan MPR sebagai lembaga tertinggi negara saat ini, periksa konteks waktunya.</div>
-  </article>
+ <article class="card institution" id="mpr">
+ <div class="inst-head"><div><div class="inst-code">MPR · Majelis Permusyawaratan Rakyat</div><div class="inst-title">Masalah: siapa menjalankan fungsi konstitusional tertentu terkait UUD dan pelantikan Presiden/Wakil Presiden?</div></div><span class="badge">Pasal 2–3, 7B, 8, 37 UUD</span></div>
+ <p>MPR terdiri atas anggota DPR dan anggota DPD yang dipilih melalui pemilihan umum. Sesudah perubahan UUD, MPR tetap penting, tetapi posisinya tidak lagi sebagai “lembaga tertinggi negara”. Kedaulatan berada di tangan rakyat dan dilaksanakan menurut UUD.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Kewenangan utama</h4><p>Mengubah dan menetapkan UUD serta melantik Presiden dan/atau Wakil Presiden. MPR juga mempunyai kewenangan tertentu dalam proses pemberhentian Presiden/Wakil Presiden dan situasi kekosongan jabatan sebagaimana diatur UUD.</p></div>
+ <div class="mini-card gold"><h4>Objek</h4><p>UUD, pelantikan Presiden/Wapres, serta keputusan konstitusional tertentu mengenai Presiden/Wapres dan kekosongan jabatan.</p></div>
+ <div class="mini-card warn"><h4>Batas</h4><p>MPR tidak dapat diperlakukan sebagai “atasan” semua lembaga negara. Ia tidak memegang semua kedaulatan secara langsung dan tidak dapat mengambil alih pekerjaan DPR, MA, MK, atau BPK di luar kewenangannya.</p></div>
+ <div class="mini-card good"><h4>Hubungan</h4><p>MPR beranggotakan DPR + DPD; pada proses tertentu MPR berhubungan dengan DPR dan MK. Hubungannya bersifat fungsional, bukan hubungan atasan-bawahan terhadap semua lembaga negara.</p></div>
+ </div>
+ <h3>Contoh dan near miss</h3>
+ <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>Konstitusi perlu diubah melalui mekanisme perubahan UUD → <strong>MPR</strong> menjadi aktor yang dicari.</p></div><div class="b"><div class="signal">Near miss</div><p>“MPR dapat membatalkan putusan MK karena MPR lebih tinggi.” <strong>Salah.</strong> Kenapa? Karena premis “lebih tinggi” membawa struktur lama ke sistem pasca-perubahan UUD. Jebakan ini bekerja karena pembaca mengingat sejarah kedudukan MPR, bukan kedudukan MPR sekarang.</p></div></div>
+ <div class="callout gold"><strong>Pola soal:</strong> “siapa mengubah dan menetapkan UUD?”, “siapa melantik?”, atau “apa posisi MPR setelah perubahan UUD?”. Jika opsi menjadikan MPR sebagai lembaga tertinggi negara saat ini, periksa konteks waktunya.</div>
+ </article>
 
-  <article class="card institution" id="dpr">
-    <div class="inst-head"><div><div class="inst-code">DPR · Dewan Perwakilan Rakyat</div><div class="inst-title">Masalah: siapa mewakili rakyat dalam fungsi legislasi, anggaran, dan pengawasan?</div></div><span class="badge">Pasal 19–22B, 20–20A</span></div>
-    <p>DPR adalah lembaga perwakilan yang anggotanya dipilih melalui pemilu. Dalam sistem sekarang, fungsi utamanya dapat dipahami sebagai tiga pekerjaan besar: <strong>legislasi, anggaran, dan pengawasan</strong>.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Legislasi</h4><p>DPR memegang kekuasaan membentuk undang-undang. Pembentukan UU melibatkan DPR dan Presiden dalam mekanisme persetujuan bersama; Presiden juga berhak mengajukan RUU.</p></div>
-      <div class="mini-card gold"><h4>Anggaran</h4><p>DPR membahas dan memberikan persetujuan atau tidak memberikan persetujuan terhadap RUU APBN yang diajukan Presiden, dengan memperhatikan pertimbangan DPD sesuai UUD.</p></div>
-      <div class="mini-card good"><h4>Pengawasan</h4><p>DPR melakukan pengawasan terhadap pelaksanaan undang-undang dan APBN, termasuk melalui hak-hak yang diberikan konstitusi dan UU.</p></div>
-      <div class="mini-card warn"><h4>Batas</h4><p>DPR bukan pengadilan. DPR tidak menjadi lembaga yang menguji UU terhadap UUD, dan tidak menjadi pemeriksa eksternal keuangan negara seperti BPK.</p></div>
-    </div>
-    <h3>Contoh dan near miss</h3>
-    <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>DPR membahas RUU APBN bersama Presiden → pusat masalah adalah <strong>fungsi anggaran</strong>.</p></div><div class="b"><div class="signal">Near miss</div><p>“Karena DPR membentuk UU, DPR juga berwenang menyatakan UU tersebut inkonstitusional.” <strong>Jebakannya:</strong> pembentukan dan pengujian adalah dua pekerjaan berbeda. DPR terlibat dalam produksi norma; MK mempunyai kewenangan pengujian UU terhadap UUD.</p></div></div>
-    <div class="callout blue"><strong>Pola soal:</strong> bila stem memuat kata <em>legislasi</em>, <em>anggaran</em>, <em>pengawasan</em>, atau <em>hak interpelasi/angket/menyatakan pendapat</em>, DPR sangat mungkin menjadi pusat. Tetapi cek lagi objek dan tindakan yang diminta.</div>
-  </article>
+ <article class="card institution" id="dpr">
+ <div class="inst-head"><div><div class="inst-code">DPR · Dewan Perwakilan Rakyat</div><div class="inst-title">Masalah: siapa mewakili rakyat dalam fungsi legislasi, anggaran, dan pengawasan?</div></div><span class="badge">Pasal 19–22B, 20–20A</span></div>
+ <p>DPR adalah lembaga perwakilan yang anggotanya dipilih melalui pemilu. Dalam sistem sekarang, fungsi utamanya dapat dipahami sebagai tiga pekerjaan besar: <strong>legislasi, anggaran, dan pengawasan</strong>.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Legislasi</h4><p>DPR memegang kekuasaan membentuk undang-undang. Pembentukan UU melibatkan DPR dan Presiden dalam mekanisme persetujuan bersama; Presiden juga berhak mengajukan RUU.</p></div>
+ <div class="mini-card gold"><h4>Anggaran</h4><p>DPR membahas dan memberikan persetujuan atau tidak memberikan persetujuan terhadap RUU APBN yang diajukan Presiden, dengan memperhatikan pertimbangan DPD sesuai UUD.</p></div>
+ <div class="mini-card good"><h4>Pengawasan</h4><p>DPR melakukan pengawasan terhadap pelaksanaan undang-undang dan APBN, termasuk melalui hak-hak yang diberikan konstitusi dan UU.</p></div>
+ <div class="mini-card warn"><h4>Batas</h4><p>DPR bukan pengadilan. DPR tidak menjadi lembaga yang menguji UU terhadap UUD, dan tidak menjadi pemeriksa eksternal keuangan negara seperti BPK.</p></div>
+ </div>
+ <h3>Contoh dan near miss</h3>
+ <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>DPR membahas RUU APBN bersama Presiden → pusat masalah adalah <strong>fungsi anggaran</strong>.</p></div><div class="b"><div class="signal">Near miss</div><p>“Karena DPR membentuk UU, DPR juga berwenang menyatakan UU tersebut inkonstitusional.” <strong>Jebakannya:</strong> pembentukan dan pengujian adalah dua pekerjaan berbeda. DPR terlibat dalam produksi norma; MK mempunyai kewenangan pengujian UU terhadap UUD.</p></div></div>
+ <div class="callout blue"><strong>Pola soal:</strong> bila stem memuat kata <em>legislasi</em>, <em>anggaran</em>, <em>pengawasan</em>, atau <em>hak interpelasi/angket/menyatakan pendapat</em>, DPR sangat mungkin menjadi pusat. Tetapi cek lagi objek dan tindakan yang diminta.</div>
+ </article>
 
-  <article class="card institution" id="dpd">
-    <div class="inst-head"><div><div class="inst-code">DPD · Dewan Perwakilan Daerah</div><div class="inst-title">Masalah: bagaimana kepentingan daerah masuk ke proses nasional?</div></div><span class="badge">Pasal 22C–22D</span></div>
-    <p>DPD adalah perwakilan daerah. Anggotanya dipilih dari setiap provinsi. Keberadaannya membuat representasi nasional tidak hanya dibaca melalui partai politik, tetapi juga melalui dimensi kewilayahan.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Objek khas</h4><p>Otonomi daerah; hubungan pusat dan daerah; pembentukan, pemekaran, dan penggabungan daerah; pengelolaan sumber daya alam dan sumber daya ekonomi lainnya; serta perimbangan keuangan pusat dan daerah.</p></div>
-      <div class="mini-card gold"><h4>Bentuk kewenangan</h4><p>DPD dapat mengajukan RUU tertentu kepada DPR, ikut membahas RUU tertentu, memberi pertimbangan pada APBN serta RUU tentang pajak, pendidikan, dan agama, dan melakukan pengawasan pada bidang yang ditentukan UUD.</p></div>
-      <div class="mini-card good"><h4>Hubungan</h4><p>DPD tidak bekerja sebagai “DPR kedua”. Dalam pembentukan UU, DPD memiliki ruang kewenangan tertentu yang terutama ditentukan oleh objek yang berkaitan dengan daerah.</p></div>
-      <div class="mini-card warn"><h4>Batas</h4><p>Jangan memperluas peran DPD menjadi seluruh fungsi legislasi DPR. Ungkapan “DPD membuat semua UU yang berkaitan dengan daerah” terlalu luas; lihat lagi bentuk kewenangannya: mengajukan, ikut membahas, memberi pertimbangan, dan mengawasi pada lingkup tertentu.</p></div>
-    </div>
-    <h3>Contoh dan near miss</h3>
-    <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>Sebuah RUU mengatur hubungan keuangan pusat-daerah → <strong>DPD relevan</strong> karena objeknya masuk bidang yang disebut UUD.</p></div><div class="b"><div class="signal">Near miss</div><p>“Semua RUU wajib disetujui DPD agar menjadi UU.” <strong>Jebakan:</strong> pembaca melihat DPD sebagai cabang legislatif yang identik dengan DPR. Padahal konstitusi memberi DPD kewenangan terbatas menurut objek tertentu.</p></div></div>
-    <div class="callout gold"><strong>Pola soal:</strong> cari kata yang menunjuk <em>daerah</em>. Tetapi jangan berhenti di kata itu. Tanyakan: daerah dalam konteks apa? Jika objeknya tidak masuk bidang yang ditentukan UUD, jangan memaksa DPD menjadi jawaban.</div>
-  </article>
+ <article class="card institution" id="dpd">
+ <div class="inst-head"><div><div class="inst-code">DPD · Dewan Perwakilan Daerah</div><div class="inst-title">Masalah: bagaimana kepentingan daerah masuk ke proses nasional?</div></div><span class="badge">Pasal 22C–22D</span></div>
+ <p>DPD adalah perwakilan daerah. Anggotanya dipilih dari setiap provinsi. Keberadaannya membuat representasi nasional tidak hanya dibaca melalui partai politik, tetapi juga melalui dimensi kewilayahan.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Objek khas</h4><p>Otonomi daerah; hubungan pusat dan daerah; pembentukan, pemekaran, dan penggabungan daerah; pengelolaan sumber daya alam dan sumber daya ekonomi lainnya; serta perimbangan keuangan pusat dan daerah.</p></div>
+ <div class="mini-card gold"><h4>Bentuk kewenangan</h4><p>DPD dapat mengajukan RUU tertentu kepada DPR, ikut membahas RUU tertentu, memberi pertimbangan pada APBN serta RUU tentang pajak, pendidikan, dan agama, dan melakukan pengawasan pada bidang yang ditentukan UUD.</p></div>
+ <div class="mini-card good"><h4>Hubungan</h4><p>DPD tidak bekerja sebagai “DPR kedua”. Dalam pembentukan UU, DPD memiliki ruang kewenangan tertentu yang terutama ditentukan oleh objek yang berkaitan dengan daerah.</p></div>
+ <div class="mini-card warn"><h4>Batas</h4><p>Jangan memperluas peran DPD menjadi seluruh fungsi legislasi DPR. Ungkapan “DPD membuat semua UU yang berkaitan dengan daerah” terlalu luas; lihat lagi bentuk kewenangannya: mengajukan, ikut membahas, memberi pertimbangan, dan mengawasi pada lingkup tertentu.</p></div>
+ </div>
+ <h3>Contoh dan near miss</h3>
+ <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>Sebuah RUU mengatur hubungan keuangan pusat-daerah → <strong>DPD relevan</strong> karena objeknya masuk bidang yang disebut UUD.</p></div><div class="b"><div class="signal">Near miss</div><p>“Semua RUU wajib disetujui DPD agar menjadi UU.” <strong>Jebakan:</strong> pembaca melihat DPD sebagai cabang legislatif yang identik dengan DPR. Padahal konstitusi memberi DPD kewenangan terbatas menurut objek tertentu.</p></div></div>
+ <div class="callout gold"><strong>Pola soal:</strong> cari kata yang menunjuk <em>daerah</em>. Tetapi jangan berhenti di kata itu. Tanyakan: daerah dalam konteks apa? Jika objeknya tidak masuk bidang yang ditentukan UUD, jangan memaksa DPD menjadi jawaban.</div>
+ </article>
 
-  <article class="card institution" id="presiden">
-    <div class="inst-head"><div><div class="inst-code">Presiden · Kepala pemerintahan sekaligus kepala negara dalam sistem presidensial Indonesia</div><div class="inst-title">Masalah: siapa menjalankan pemerintahan dan menggunakan kewenangan eksekutif yang diberikan UUD?</div></div><span class="badge">Pasal 4–18, 10–16, 17</span></div>
-    <p>Presiden memegang kekuasaan pemerintahan menurut UUD. Presiden dibantu oleh Wakil Presiden dan menteri-menteri negara. Ini adalah pusat kerja pemerintahan sehari-hari, tetapi bukan kekuasaan tanpa batas.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Sisi pemerintahan</h4><p>Presiden menjalankan pemerintahan, mengangkat dan memberhentikan menteri menurut UUD, mengajukan RUU, serta menetapkan Peraturan Pemerintah untuk menjalankan UU sebagaimana mestinya.</p></div>
-      <div class="mini-card gold"><h4>Sisi kepala negara</h4><p>Konstitusi memberi Presiden kewenangan tertentu mengenai hubungan luar negeri, keadaan bahaya, pertahanan, gelar/tanda kehormatan, dan kewenangan lain dengan syarat atau pertimbangan yang ditentukan UUD.</p></div>
-      <div class="mini-card good"><h4>Batas</h4><p>Presiden dipilih rakyat tidak berarti semua keputusan Presiden otomatis sah. Banyak kewenangan Presiden berhubungan dengan DPR, MA, atau mekanisme konstitusional lain.</p></div>
-      <div class="mini-card warn"><h4>Presiden vs pemerintah</h4><p>“Presiden” menunjuk pemegang jabatan konstitusional tertentu. “Pemerintah” lebih luas sebagai istilah untuk penyelenggaraan pemerintahan dan perangkat yang menjalankannya. Dalam soal, lihat apakah yang ditanya adalah kewenangan Presiden atau tindakan aparatur/organ pemerintah yang lebih luas.</p></div>
-    </div>
-    <h3>Contoh dan near miss</h3>
-    <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>Presiden menetapkan Peraturan Pemerintah untuk menjalankan UU sebagaimana mestinya → tindakan ini berada pada kewenangan Presiden.</p></div><div class="b"><div class="signal">Near miss</div><p>“Karena Presiden dipilih rakyat, Presiden dapat membatalkan putusan pengadilan.” <strong>Jebakannya:</strong> mengubah legitimasi demokratis menjadi kekuasaan tanpa batas. Dalam negara hukum, legitimasi pemilihan tidak menghapus batas konstitusional.</p></div></div>
-    <div class="callout blue"><strong>Pola soal:</strong> kata <em>menjalankan pemerintahan</em> menunjuk pusat yang berbeda dari <em>membentuk UU</em>, <em>menguji UU</em>, atau <em>memeriksa keuangan negara</em>. Untuk kewenangan Presiden yang mensyaratkan persetujuan/pertimbangan lembaga lain, syarat itu sendiri adalah bagian dari jawaban.</div>
-  </article>
+ <article class="card institution" id="presiden">
+ <div class="inst-head"><div><div class="inst-code">Presiden · Kepala pemerintahan sekaligus kepala negara dalam sistem presidensial Indonesia</div><div class="inst-title">Masalah: siapa menjalankan pemerintahan dan menggunakan kewenangan eksekutif yang diberikan UUD?</div></div><span class="badge">Pasal 4–18, 10–16, 17</span></div>
+ <p>Presiden memegang kekuasaan pemerintahan menurut UUD. Presiden dibantu oleh Wakil Presiden dan menteri-menteri negara. Ini adalah pusat kerja pemerintahan sehari-hari, tetapi bukan kekuasaan tanpa batas.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Sisi pemerintahan</h4><p>Presiden menjalankan pemerintahan, mengangkat dan memberhentikan menteri menurut UUD, mengajukan RUU, serta menetapkan Peraturan Pemerintah untuk menjalankan UU sebagaimana mestinya.</p></div>
+ <div class="mini-card gold"><h4>Sisi kepala negara</h4><p>Konstitusi memberi Presiden kewenangan tertentu mengenai hubungan luar negeri, keadaan bahaya, pertahanan, gelar/tanda kehormatan, dan kewenangan lain dengan syarat atau pertimbangan yang ditentukan UUD.</p></div>
+ <div class="mini-card good"><h4>Batas</h4><p>Presiden dipilih rakyat tidak berarti semua keputusan Presiden otomatis sah. Banyak kewenangan Presiden berhubungan dengan DPR, MA, atau mekanisme konstitusional lain.</p></div>
+ <div class="mini-card warn"><h4>Presiden vs pemerintah</h4><p>“Presiden” menunjuk pemegang jabatan konstitusional tertentu. “Pemerintah” lebih luas sebagai istilah untuk penyelenggaraan pemerintahan dan perangkat yang menjalankannya. Dalam soal, lihat apakah yang ditanya adalah kewenangan Presiden atau tindakan aparatur/organ pemerintah yang lebih luas.</p></div>
+ </div>
+ <h3>Contoh dan near miss</h3>
+ <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>Presiden menetapkan Peraturan Pemerintah untuk menjalankan UU sebagaimana mestinya → tindakan ini berada pada kewenangan Presiden.</p></div><div class="b"><div class="signal">Near miss</div><p>“Karena Presiden dipilih rakyat, Presiden dapat membatalkan putusan pengadilan.” <strong>Jebakannya:</strong> mengubah legitimasi demokratis menjadi kekuasaan tanpa batas. Dalam negara hukum, legitimasi pemilihan tidak menghapus batas konstitusional.</p></div></div>
+ <div class="callout blue"><strong>Pola soal:</strong> kata <em>menjalankan pemerintahan</em> menunjuk pusat yang berbeda dari <em>membentuk UU</em>, <em>menguji UU</em>, atau <em>memeriksa keuangan negara</em>. Untuk kewenangan Presiden yang mensyaratkan persetujuan/pertimbangan lembaga lain, syarat itu sendiri adalah bagian dari jawaban.</div>
+ </article>
 
-  <article class="card institution" id="ma">
-    <div class="inst-head"><div><div class="inst-code">MA · Mahkamah Agung</div><div class="inst-title">Masalah: bagaimana kekuasaan kehakiman menangani puncak peradilan dan aturan di bawah undang-undang?</div></div><span class="badge">Pasal 24A</span></div>
-    <p>MA adalah salah satu pelaku kekuasaan kehakiman. Untuk TWK, dua jalur MA sangat penting: <strong>kasasi</strong> dan <strong>pengujian peraturan perundang-undangan di bawah UU terhadap UU</strong>. MA juga mempunyai kewenangan lain menurut UUD dan undang-undang, termasuk pertimbangan tertentu kepada Presiden.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Kasasi</h4><p>Objeknya putusan dari lingkungan peradilan sebagaimana mekanismenya diatur hukum acara. Ini adalah jalur perkara, bukan pengujian norma terhadap UUD.</p></div>
-      <div class="mini-card gold"><h4>Uji materiil</h4><p>Objeknya peraturan perundang-undangan <strong>di bawah undang-undang</strong>; alat ukurnya undang-undang.</p></div>
-      <div class="mini-card good"><h4>Hubungan dengan KY</h4><p>KY berhubungan dengan pengusulan hakim agung dan integritas/perilaku hakim. MA menjalankan kekuasaan kehakiman dalam ranahnya. Keduanya dapat muncul dalam satu cerita tetapi bukan pekerjaan yang sama.</p></div>
-      <div class="mini-card warn"><h4>Batas yang paling penting</h4><p>Kalau objek yang diuji adalah <strong>undang-undang terhadap UUD</strong>, jangan memilih MA. Itulah ranah MK.</p></div>
-    </div>
-    <div class="compare"><div class="a"><div class="signal">MA</div><h3>Peraturan di bawah UU → diuji terhadap UU</h3><p>Yang menentukan bukan sekadar kata “uji”, tetapi tingkat objek dan norma pembandingnya.</p></div><div class="b"><div class="signal">Bukan MA</div><h3>UU → diuji terhadap UUD</h3><p>Ini adalah pola MK. Jebakan bekerja dengan memanfaatkan fakta bahwa MA dan MK sama-sama merupakan pelaku kekuasaan kehakiman.</p></div></div>
-    <div class="callout gold"><strong>Pola soal:</strong> ketika membaca “uji”, segera cari dua hal: <em>apa objeknya?</em> dan <em>dibandingkan dengan aturan apa?</em> Jangan memilih hanya karena melihat kata “pengujian”.</div>
-  </article>
+ <article class="card institution" id="ma">
+ <div class="inst-head"><div><div class="inst-code">MA · Mahkamah Agung</div><div class="inst-title">Masalah: bagaimana kekuasaan kehakiman menangani puncak peradilan dan aturan di bawah undang-undang?</div></div><span class="badge">Pasal 24A</span></div>
+ <p>MA adalah salah satu pelaku kekuasaan kehakiman. Untuk TWK, dua jalur MA sangat penting: <strong>kasasi</strong> dan <strong>pengujian peraturan perundang-undangan di bawah UU terhadap UU</strong>. MA juga mempunyai kewenangan lain menurut UUD dan undang-undang, termasuk pertimbangan tertentu kepada Presiden.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Kasasi</h4><p>Objeknya putusan dari lingkungan peradilan sebagaimana mekanismenya diatur hukum acara. Ini adalah jalur perkara, bukan pengujian norma terhadap UUD.</p></div>
+ <div class="mini-card gold"><h4>Uji materiil</h4><p>Objeknya peraturan perundang-undangan <strong>di bawah undang-undang</strong>; alat ukurnya undang-undang.</p></div>
+ <div class="mini-card good"><h4>Hubungan dengan KY</h4><p>KY berhubungan dengan pengusulan hakim agung dan integritas/perilaku hakim. MA menjalankan kekuasaan kehakiman dalam ranahnya. Keduanya dapat muncul dalam satu cerita tetapi bukan pekerjaan yang sama.</p></div>
+ <div class="mini-card warn"><h4>Batas yang paling penting</h4><p>Kalau objek yang diuji adalah <strong>undang-undang terhadap UUD</strong>, jangan memilih MA. Itulah ranah MK.</p></div>
+ </div>
+ <div class="compare"><div class="a"><div class="signal">MA</div><h3>Peraturan di bawah UU → diuji terhadap UU</h3><p>Yang menentukan bukan sekadar kata “uji”, tetapi tingkat objek dan norma pembandingnya.</p></div><div class="b"><div class="signal">Bukan MA</div><h3>UU → diuji terhadap UUD</h3><p>Ini adalah pola MK. Jebakan bekerja dengan memanfaatkan fakta bahwa MA dan MK sama-sama merupakan pelaku kekuasaan kehakiman.</p></div></div>
+ <div class="callout gold"><strong>Pola soal:</strong> ketika membaca “uji”, segera cari dua hal: <em>apa objeknya?</em> dan <em>dibandingkan dengan aturan apa?</em> Jangan memilih hanya karena melihat kata “pengujian”.</div>
+ </article>
 
-  <article class="card institution" id="mk">
-    <div class="inst-head"><div><div class="inst-code">MK · Mahkamah Konstitusi</div><div class="inst-title">Masalah: bagaimana konstitusi dijaga ketika sengketa menyentuh UU atau kewenangan konstitusional tertentu?</div></div><span class="badge">Pasal 24C</span></div>
-    <p>MK adalah pelaku kekuasaan kehakiman yang menangani perkara konstitusional tertentu. Untuk pemula, lebih aman memahami MK melalui objek-objek khas daripada melalui slogan “pengadilan konstitusi”.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Objek 1 · UU</h4><p>Menguji undang-undang terhadap UUD.</p></div>
-      <div class="mini-card soft"><h4>Objek 2 · Kewenangan</h4><p>Memutus sengketa kewenangan lembaga negara yang kewenangannya diberikan oleh UUD.</p></div>
-      <div class="mini-card gold"><h4>Objek 3 · Demokrasi</h4><p>Memutus pembubaran partai politik dan perselisihan hasil pemilihan umum.</p></div>
-      <div class="mini-card good"><h4>Objek 4 · Presiden/Wapres</h4><p>Memberi putusan atas pendapat DPR mengenai dugaan pelanggaran Presiden/Wapres sesuai mekanisme UUD.</p></div>
-    </div>
-    <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>UU dianggap bertentangan dengan UUD → <strong>MK</strong>. Sengketa kewenangan dua lembaga negara yang memang masuk lingkup kewenangan konstitusional MK → <strong>MK</strong>.</p></div><div class="b"><div class="signal">Near miss</div><p>“Semua peraturan dapat diuji MK karena MK adalah penjaga konstitusi.” <strong>Terlalu luas.</strong> Jebakannya adalah mengubah fungsi umum menjadi yurisdiksi tanpa batas. Konstitusi memberi MK kewenangan berdasarkan objek tertentu.</p></div></div>
-    <div class="callout blue"><strong>Pola soal:</strong> empat pusat memori yang paling stabil adalah <em>UU ↔ UUD</em>, <em>sengketa kewenangan lembaga negara</em>, <em>pembubaran parpol</em>, dan <em>perselisihan hasil pemilu</em>, ditambah kewajiban memutus pendapat DPR tentang dugaan pelanggaran Presiden/Wapres.</div>
-  </article>
+ <article class="card institution" id="mk">
+ <div class="inst-head"><div><div class="inst-code">MK · Mahkamah Konstitusi</div><div class="inst-title">Masalah: bagaimana konstitusi dijaga ketika sengketa menyentuh UU atau kewenangan konstitusional tertentu?</div></div><span class="badge">Pasal 24C</span></div>
+ <p>MK adalah pelaku kekuasaan kehakiman yang menangani perkara konstitusional tertentu. Untuk pemula, lebih aman memahami MK melalui objek-objek khas daripada melalui slogan “pengadilan konstitusi”.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Objek 1 · UU</h4><p>Menguji undang-undang terhadap UUD.</p></div>
+ <div class="mini-card soft"><h4>Objek 2 · Kewenangan</h4><p>Memutus sengketa kewenangan lembaga negara yang kewenangannya diberikan oleh UUD.</p></div>
+ <div class="mini-card gold"><h4>Objek 3 · Demokrasi</h4><p>Memutus pembubaran partai politik dan perselisihan hasil pemilihan umum.</p></div>
+ <div class="mini-card good"><h4>Objek 4 · Presiden/Wapres</h4><p>Memberi putusan atas pendapat DPR mengenai dugaan pelanggaran Presiden/Wapres sesuai mekanisme UUD.</p></div>
+ </div>
+ <div class="compare"><div class="a"><div class="signal">Contoh tepat</div><p>UU dianggap bertentangan dengan UUD → <strong>MK</strong>. Sengketa kewenangan dua lembaga negara yang memang masuk lingkup kewenangan konstitusional MK → <strong>MK</strong>.</p></div><div class="b"><div class="signal">Near miss</div><p>“Semua peraturan dapat diuji MK karena MK adalah penjaga konstitusi.” <strong>Terlalu luas.</strong> Jebakannya adalah mengubah fungsi umum menjadi yurisdiksi tanpa batas. Konstitusi memberi MK kewenangan berdasarkan objek tertentu.</p></div></div>
+ <div class="callout blue"><strong>Pola soal:</strong> empat pusat memori yang paling stabil adalah <em>UU ↔ UUD</em>, <em>sengketa kewenangan lembaga negara</em>, <em>pembubaran parpol</em>, dan <em>perselisihan hasil pemilu</em>, ditambah kewajiban memutus pendapat DPR tentang dugaan pelanggaran Presiden/Wapres.</div>
+ </article>
 
-  <article class="card institution" id="ky">
-    <div class="inst-head"><div><div class="inst-code">KY · Komisi Yudisial</div><div class="inst-title">Masalah: siapa menjaga integritas dan perilaku hakim, sekaligus mengusulkan hakim agung?</div></div><span class="badge">Pasal 24B</span></div>
-    <p>KY bersifat mandiri. Konstitusi memberinya kewenangan mengusulkan pengangkatan hakim agung dan kewenangan lain dalam rangka menjaga serta menegakkan kehormatan, keluhuran martabat, dan perilaku hakim.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Objek utama</h4><p>Hakim dan integritas perilakunya; khususnya proses pengusulan hakim agung dan penegakan standar etik/perilaku sesuai kewenangan.</p></div>
-      <div class="mini-card gold"><h4>Hubungan</h4><p>Dalam pengusulan hakim agung, KY berhubungan dengan DPR dan Presiden sesuai mekanisme yang ditentukan. KY juga bekerja bersama MA dalam aspek kode etik/pedoman perilaku hakim menurut UU.</p></div>
-      <div class="mini-card good"><h4>Batas</h4><p>KY bukan pengadilan, bukan pengadilan banding, dan bukan lembaga yang mengambil alih putusan hakim mengenai pokok perkara.</p></div>
-      <div class="mini-card warn"><h4>Jebakan khas</h4><p>Karena KY “mengawasi hakim”, pembaca bisa salah mengira KY dapat membatalkan putusan. Pengawasan etik dan kewenangan mengadili perkara adalah dua pekerjaan berbeda.</p></div>
-    </div>
-    <div class="compare"><div class="a"><div class="signal">Tepat</div><p>Masalahnya adalah dugaan pelanggaran perilaku hakim → KY relevan dalam ruang kewenangannya.</p></div><div class="b"><div class="signal">Near miss</div><p>Masalahnya adalah putusan pengadilan yang ingin diperiksa pada tingkat kasasi → bukan KY; fokusnya bergeser ke MA. Jebakan memanfaatkan kata “hakim” yang muncul pada kedua situasi.</p></div></div>
-    <div class="callout green"><strong>Pola soal:</strong> jangan berhenti pada kata <em>hakim</em>. Tambahkan pertanyaan kedua: <em>yang dipersoalkan putusannya atau perilakunya?</em> Bila perilaku/integritas, KY menjadi jauh lebih dekat.</div>
-  </article>
+ <article class="card institution" id="ky">
+ <div class="inst-head"><div><div class="inst-code">KY · Komisi Yudisial</div><div class="inst-title">Masalah: siapa menjaga integritas dan perilaku hakim, sekaligus mengusulkan hakim agung?</div></div><span class="badge">Pasal 24B</span></div>
+ <p>KY bersifat mandiri. Konstitusi memberinya kewenangan mengusulkan pengangkatan hakim agung dan kewenangan lain dalam rangka menjaga serta menegakkan kehormatan, keluhuran martabat, dan perilaku hakim.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Objek utama</h4><p>Hakim dan integritas perilakunya; khususnya proses pengusulan hakim agung dan penegakan standar etik/perilaku sesuai kewenangan.</p></div>
+ <div class="mini-card gold"><h4>Hubungan</h4><p>Dalam pengusulan hakim agung, KY berhubungan dengan DPR dan Presiden sesuai mekanisme yang ditentukan. KY juga bekerja bersama MA dalam aspek kode etik/pedoman perilaku hakim menurut UU.</p></div>
+ <div class="mini-card good"><h4>Batas</h4><p>KY bukan pengadilan, bukan pengadilan banding, dan bukan lembaga yang mengambil alih putusan hakim mengenai pokok perkara.</p></div>
+ <div class="mini-card warn"><h4>Jebakan khas</h4><p>Karena KY “mengawasi hakim”, pembaca bisa salah mengira KY dapat membatalkan putusan. Pengawasan etik dan kewenangan mengadili perkara adalah dua pekerjaan berbeda.</p></div>
+ </div>
+ <div class="compare"><div class="a"><div class="signal">Tepat</div><p>Masalahnya adalah dugaan pelanggaran perilaku hakim → KY relevan dalam ruang kewenangannya.</p></div><div class="b"><div class="signal">Near miss</div><p>Masalahnya adalah putusan pengadilan yang ingin diperiksa pada tingkat kasasi → bukan KY; fokusnya bergeser ke MA. Jebakan memanfaatkan kata “hakim” yang muncul pada kedua situasi.</p></div></div>
+ <div class="callout green"><strong>Pola soal:</strong> jangan berhenti pada kata <em>hakim</em>. Tambahkan pertanyaan kedua: <em>yang dipersoalkan putusannya atau perilakunya?</em> Bila perilaku/integritas, KY menjadi jauh lebih dekat.</div>
+ </article>
 
-  <article class="card institution" id="bpk">
-    <div class="inst-head"><div><div class="inst-code">BPK · Badan Pemeriksa Keuangan</div><div class="inst-title">Masalah: bagaimana pengelolaan dan tanggung jawab keuangan negara diperiksa secara bebas dan mandiri?</div></div><span class="badge">Pasal 23E–23G</span></div>
-    <p>BPK adalah lembaga negara yang bebas dan mandiri untuk memeriksa pengelolaan dan tanggung jawab keuangan negara. Hasil pemeriksaan diserahkan kepada DPR, DPD, dan DPRD sesuai kewenangannya, lalu ditindaklanjuti oleh lembaga perwakilan dan/atau badan sesuai undang-undang.</p>
-    <div class="inst-grid">
-      <div class="mini-card soft"><h4>Objek</h4><p>Pengelolaan dan tanggung jawab keuangan negara. Inilah kata yang harus dikunci.</p></div>
-      <div class="mini-card gold"><h4>Hubungan</h4><p>Hasil pemeriksaan disampaikan kepada lembaga perwakilan sesuai kewenangannya. Karena itu BPK dan DPR dapat muncul dalam cerita yang sama tanpa menjalankan pekerjaan yang sama.</p></div>
-      <div class="mini-card good"><h4>Batas</h4><p>BPK bukan DPR, bukan pengadilan, dan bukan pengelola anggaran. Pemeriksaan tidak sama dengan membuat APBN atau memutus perkara pidana.</p></div>
-      <div class="mini-card warn"><h4>Catatan corpus</h4><p>Bahan belajar corpus lama memakai istilah seperti fungsi “auditif, operatif, rekomendasi, judikatif”. Untuk ketepatan TWK, jangan menjadikan label itu sebagai pusat hafalan. UUD memberi jangkar yang jauh lebih aman: <strong>memeriksa pengelolaan dan tanggung jawab keuangan negara secara bebas dan mandiri</strong>.</p></div>
-    </div>
-    <div class="compare"><div class="a"><div class="signal">Tepat</div><p>BPK memeriksa pengelolaan dan tanggung jawab keuangan negara.</p></div><div class="b"><div class="signal">Near miss</div><p>“Karena BPK menemukan masalah keuangan, BPK otomatis menghukum pelakunya.” <strong>Terlalu luas.</strong> Jebakannya mencampur fungsi pemeriksaan dengan fungsi pemutusan atau penjatuhan sanksi di forum lain.</p></div></div>
-    <div class="callout gold"><strong>Pola soal:</strong> “anggaran” tidak otomatis berarti BPK. “APBN dibahas dan disetujui” mengarah ke fungsi anggaran DPR; “pengelolaan dan tanggung jawab keuangan diperiksa” mengarah ke BPK.</div>
-  </article>
+ <article class="card institution" id="bpk">
+ <div class="inst-head"><div><div class="inst-code">BPK · Badan Pemeriksa Keuangan</div><div class="inst-title">Masalah: bagaimana pengelolaan dan tanggung jawab keuangan negara diperiksa secara bebas dan mandiri?</div></div><span class="badge">Pasal 23E–23G</span></div>
+ <p>BPK adalah lembaga negara yang bebas dan mandiri untuk memeriksa pengelolaan dan tanggung jawab keuangan negara. Hasil pemeriksaan diserahkan kepada DPR, DPD, dan DPRD sesuai kewenangannya, lalu ditindaklanjuti oleh lembaga perwakilan dan/atau badan sesuai undang-undang.</p>
+ <div class="inst-grid">
+ <div class="mini-card soft"><h4>Objek</h4><p>Pengelolaan dan tanggung jawab keuangan negara. Inilah kata yang harus dikunci.</p></div>
+ <div class="mini-card gold"><h4>Hubungan</h4><p>Hasil pemeriksaan disampaikan kepada lembaga perwakilan sesuai kewenangannya. Karena itu BPK dan DPR dapat muncul dalam cerita yang sama tanpa menjalankan pekerjaan yang sama.</p></div>
+ <div class="mini-card good"><h4>Batas</h4><p>BPK bukan DPR, bukan pengadilan, dan bukan pengelola anggaran. Pemeriksaan tidak sama dengan membuat APBN atau memutus perkara pidana.</p></div>
+ <div class="mini-card warn"><h4>Catatan corpus</h4><p>Bahan belajar corpus lama memakai istilah seperti fungsi “auditif, operatif, rekomendasi, judikatif”. Untuk ketepatan TWK, jangan menjadikan label itu sebagai pusat hafalan. UUD memberi jangkar yang jauh lebih aman: <strong>memeriksa pengelolaan dan tanggung jawab keuangan negara secara bebas dan mandiri</strong>.</p></div>
+ </div>
+ <div class="compare"><div class="a"><div class="signal">Tepat</div><p>BPK memeriksa pengelolaan dan tanggung jawab keuangan negara.</p></div><div class="b"><div class="signal">Near miss</div><p>“Karena BPK menemukan masalah keuangan, BPK otomatis menghukum pelakunya.” <strong>Terlalu luas.</strong> Jebakannya mencampur fungsi pemeriksaan dengan fungsi pemutusan atau penjatuhan sanksi di forum lain.</p></div></div>
+ <div class="callout gold"><strong>Pola soal:</strong> “anggaran” tidak otomatis berarti BPK. “APBN dibahas dan disetujui” mengarah ke fungsi anggaran DPR; “pengelolaan dan tanggung jawab keuangan diperiksa” mengarah ke BPK.</div>
+ </article>
 </div></section>
 
 <section class="section" id="kontras"><div class="wrap">
-  <div class="kicker">07 · Konsep tetangga yang paling sering tertukar</div>
-  <h2>Bedakan berdasarkan objek, bukan berdasarkan nama yang terasa mirip</h2>
-  <p class="lead">Bagian ini penting karena distractor yang baik biasanya tidak memakai jawaban yang benar-benar ngawur. Ia memakai jawaban yang <strong>benar untuk pekerjaan lain</strong>.</p>
-  <div class="matrix-wrap">
-  <table class="matrix">
-    <thead><tr><th>Pasangan</th><th>Yang sama</th><th>Pembeda utama</th><th>Jebakan</th></tr></thead>
-    <tbody>
-      <tr><td class="focus">DPR vs DPD</td><td>Sama-sama lembaga perwakilan dan dipilih melalui pemilu.</td><td>DPR punya fungsi legislasi, anggaran, pengawasan; DPD mewakili daerah dengan kewenangan konstitusional tertentu pada bidang yang ditentukan UUD.</td><td>Menjadikan DPD sebagai “DPR kedua” dengan semua kewenangan DPR.</td></tr>
-      <tr><td class="focus">MA vs MK</td><td>Sama-sama pelaku kekuasaan kehakiman.</td><td>MA: antara lain kasasi dan uji peraturan di bawah UU terhadap UU. MK: antara lain uji UU terhadap UUD dan perkara konstitusional tertentu.</td><td>Memilih “mahkamah” mana pun karena stem hanya menyebut kata <em>pengujian</em>.</td></tr>
-      <tr><td class="focus">KY vs MA</td><td>Sama-sama terkait dunia hakim.</td><td>KY berfokus pada pengusulan hakim agung dan integritas/kehormatan/perilaku hakim; MA menjalankan kekuasaan kehakiman dan kewenangan peradilan tertentu.</td><td>Menganggap KY dapat membatalkan putusan karena “mengawasi hakim”.</td></tr>
-      <tr><td class="focus">MPR vs DPR</td><td>Keduanya merupakan lembaga negara; anggota MPR berasal dari DPR dan DPD.</td><td>MPR mempunyai kewenangan konstitusional tertentu terkait UUD dan Presiden/Wapres; DPR menjalankan fungsi legislasi, anggaran, pengawasan.</td><td>Menganggap semua kewenangan DPR otomatis milik MPR atau sebaliknya.</td></tr>
-      <tr><td class="focus">Presiden vs pemerintah</td><td>Keduanya berada dalam ranah eksekutif/pemerintahan.</td><td>Presiden adalah jabatan konstitusional pemegang kekuasaan pemerintahan; “pemerintah” adalah istilah yang lebih luas untuk penyelenggaraan dan aparatur pemerintahan.</td><td>Memakai “pemerintah” saat stem sebenarnya meminta kewenangan Presiden yang spesifik, atau sebaliknya.</td></tr>
-      <tr><td class="focus">BPK vs DPR</td><td>Keduanya dapat muncul dalam cerita keuangan negara.</td><td>DPR: fungsi anggaran dan pengawasan; BPK: pemeriksaan pengelolaan dan tanggung jawab keuangan negara.</td><td>“Ada APBN” lalu memilih BPK, tanpa melihat apakah yang ditanya membahas/menyetujui atau memeriksa.</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="grid3" style="margin-top:22px">
-    <article class="card"><h4>Satu kata “hakim”</h4><p><strong>Perilaku hakim</strong> → KY menjadi relevan. <strong>Kasasi</strong> → MA. <strong>UU diuji terhadap UUD</strong> → MK. Kata benda sama; relasinya berbeda.</p></article>
-    <article class="card"><h4>Satu kata “anggaran”</h4><p><strong>RAPBN dibahas</strong> → DPR dan Presiden. <strong>Keuangan negara diperiksa</strong> → BPK. <strong>Bidang daerah tertentu</strong> dapat membawa DPD masuk sesuai objek.</p></article>
-    <article class="card"><h4>Satu kata “pemilu”</h4><p><strong>Menyelenggarakan</strong> → KPU. <strong>Perselisihan hasil</strong> dalam ranah konstitusional → MK. Penyelenggara dan pemutus sengketa bukan hal yang sama.</p></article>
-  </div>
+ <div class="kicker">07 · Konsep tetangga yang paling sering tertukar</div>
+ <h2>Bedakan berdasarkan objek, bukan berdasarkan nama yang terasa mirip</h2>
+ <p class="lead">Bagian ini penting karena distractor yang baik biasanya tidak memakai jawaban yang benar-benar ngawur. Ia memakai jawaban yang <strong>benar untuk pekerjaan lain</strong>.</p>
+ <div class="matrix-wrap">
+ <table class="matrix">
+ <thead><tr><th>Pasangan</th><th>Yang sama</th><th>Pembeda utama</th><th>Jebakan</th></tr></thead>
+ <tbody>
+ <tr><td class="focus">DPR vs DPD</td><td>Sama-sama lembaga perwakilan dan dipilih melalui pemilu.</td><td>DPR punya fungsi legislasi, anggaran, pengawasan; DPD mewakili daerah dengan kewenangan konstitusional tertentu pada bidang yang ditentukan UUD.</td><td>Menjadikan DPD sebagai “DPR kedua” dengan semua kewenangan DPR.</td></tr>
+ <tr><td class="focus">MA vs MK</td><td>Sama-sama pelaku kekuasaan kehakiman.</td><td>MA: antara lain kasasi dan uji peraturan di bawah UU terhadap UU. MK: antara lain uji UU terhadap UUD dan perkara konstitusional tertentu.</td><td>Memilih “mahkamah” mana pun karena stem hanya menyebut kata <em>pengujian</em>.</td></tr>
+ <tr><td class="focus">KY vs MA</td><td>Sama-sama terkait dunia hakim.</td><td>KY berfokus pada pengusulan hakim agung dan integritas/kehormatan/perilaku hakim; MA menjalankan kekuasaan kehakiman dan kewenangan peradilan tertentu.</td><td>Menganggap KY dapat membatalkan putusan karena “mengawasi hakim”.</td></tr>
+ <tr><td class="focus">MPR vs DPR</td><td>Keduanya merupakan lembaga negara; anggota MPR berasal dari DPR dan DPD.</td><td>MPR mempunyai kewenangan konstitusional tertentu terkait UUD dan Presiden/Wapres; DPR menjalankan fungsi legislasi, anggaran, pengawasan.</td><td>Menganggap semua kewenangan DPR otomatis milik MPR atau sebaliknya.</td></tr>
+ <tr><td class="focus">Presiden vs pemerintah</td><td>Keduanya berada dalam ranah eksekutif/pemerintahan.</td><td>Presiden adalah jabatan konstitusional pemegang kekuasaan pemerintahan; “pemerintah” adalah istilah yang lebih luas untuk penyelenggaraan dan aparatur pemerintahan.</td><td>Memakai “pemerintah” saat stem sebenarnya meminta kewenangan Presiden yang spesifik, atau sebaliknya.</td></tr>
+ <tr><td class="focus">BPK vs DPR</td><td>Keduanya dapat muncul dalam cerita keuangan negara.</td><td>DPR: fungsi anggaran dan pengawasan; BPK: pemeriksaan pengelolaan dan tanggung jawab keuangan negara.</td><td>“Ada APBN” lalu memilih BPK, tanpa melihat apakah yang ditanya membahas/menyetujui atau memeriksa.</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="grid3" style="margin-top:22px">
+ <article class="card"><h4>Satu kata “hakim”</h4><p><strong>Perilaku hakim</strong> → KY menjadi relevan. <strong>Kasasi</strong> → MA. <strong>UU diuji terhadap UUD</strong> → MK. Kata benda sama; relasinya berbeda.</p></article>
+ <article class="card"><h4>Satu kata “anggaran”</h4><p><strong>RAPBN dibahas</strong> → DPR dan Presiden. <strong>Keuangan negara diperiksa</strong> → BPK. <strong>Bidang daerah tertentu</strong> dapat membawa DPD masuk sesuai objek.</p></article>
+ <article class="card"><h4>Satu kata “pemilu”</h4><p><strong>Menyelenggarakan</strong> → KPU. <strong>Perselisihan hasil</strong> dalam ranah konstitusional → MK. Penyelenggara dan pemutus sengketa bukan hal yang sama.</p></article>
+ </div>
 </div></section>
 
 <section class="section alt"><div class="wrap">
-  <div class="kicker">08 · Mengapa near miss bisa terlihat “benar”?</div>
-  <h2>Jawaban salah yang paling berbahaya adalah jawaban yang benar untuk pertanyaan lain</h2>
-  <div class="story">
-    <p>Misalnya sebuah stem menyebut <strong>undang-undang</strong>, <strong>DPR</strong>, dan <strong>UUD</strong>. Banyak opsi bisa terasa benar. DPR memang berhubungan dengan UU. UUD memang menjadi standar konstitusional. MK memang menguji UU terhadap UUD. Namun soal tidak bertanya “siapa yang pernah terlibat?”</p>
-    <p>Soal bertanya <em>siapa melakukan apa terhadap objek apa</em>. Inilah yang disebut dalam pembelajaran ini sebagai <strong>directness</strong>: seberapa langsung sebuah opsi menjawab pekerjaan yang sebenarnya ditanyakan.</p>
-    <p>Distractor semacam ini bekerja karena otak memakai jalan pintas. Ia melihat satu kata terkenal lalu menghubungkannya ke lembaga terkenal. Penyusun soal yang baik justru memanfaatkan jalan pintas itu.</p>
-  </div>
-  <div class="grid3">
-    <div class="card"><h4>Jebakan 1 · Aktor benar, pekerjaan salah</h4><p>DPR benar-benar terkait UU. Tetapi jika yang ditanya adalah pengujian UU terhadap UUD, DPR bukan pusat kewenangannya.</p></div>
-    <div class="card"><h4>Jebakan 2 · Pekerjaan benar, objek salah</h4><p>“Pengujian peraturan” bisa benar untuk MA maupun MK secara umum. Yang membedakan adalah tingkat objek dan norma pembandingnya.</p></div>
-    <div class="card"><h4>Jebakan 3 · Semua terasa relevan</h4><p>Presiden, DPR, DPD, BPK dapat muncul dalam cerita APBN. Hanya pertanyaan spesifik yang menentukan mana yang paling tepat.</p></div>
-    <div class="card"><h4>Jebakan 4 · Fungsi diperluas</h4><p>“KY mengawasi hakim” lalu diubah menjadi “KY dapat membatalkan putusan”. Ini lompatan dari pengawasan etik ke fungsi mengadili.</p></div>
-    <div class="card"><h4>Jebakan 5 · Struktur lama dibawa ke sekarang</h4><p>“MPR lembaga tertinggi” tampak familiar karena sejarah pendidikan kewarganegaraan. Tetapi untuk struktur pasca-perubahan UUD, kedudukannya berbeda.</p></div>
-    <div class="card"><h4>Jebakan 6 · Sebab-akibat dibalik</h4><p>BPK menyerahkan hasil pemeriksaan kepada lembaga perwakilan. Itu tidak berarti BPK berada di bawah DPR dalam arti hubungan atasan-bawahan.</p></div>
-  </div>
+ <div class="kicker">08 · Mengapa near miss bisa terlihat “benar”?</div>
+ <h2>Jawaban salah yang paling berbahaya adalah jawaban yang benar untuk pertanyaan lain</h2>
+ <div class="story">
+ <p>Misalnya sebuah stem menyebut <strong>undang-undang</strong>, <strong>DPR</strong>, dan <strong>UUD</strong>. Banyak opsi bisa terasa benar. DPR memang berhubungan dengan UU. UUD memang menjadi standar konstitusional. MK memang menguji UU terhadap UUD. Namun soal tidak bertanya “siapa yang pernah terlibat?”</p>
+ <p>Soal bertanya <em>siapa melakukan apa terhadap objek apa</em>. Inilah yang disebut dalam pembelajaran ini sebagai <strong>directness</strong>: seberapa langsung sebuah opsi menjawab pekerjaan yang sebenarnya ditanyakan.</p>
+ <p>Distractor semacam ini bekerja karena otak memakai jalan pintas. Ia melihat satu kata terkenal lalu menghubungkannya ke lembaga terkenal. Penyusun soal yang baik justru memanfaatkan jalan pintas itu.</p>
+ </div>
+ <div class="grid3">
+ <div class="card"><h4>Jebakan 1 · Aktor benar, pekerjaan salah</h4><p>DPR benar-benar terkait UU. Tetapi jika yang ditanya adalah pengujian UU terhadap UUD, DPR bukan pusat kewenangannya.</p></div>
+ <div class="card"><h4>Jebakan 2 · Pekerjaan benar, objek salah</h4><p>“Pengujian peraturan” bisa benar untuk MA maupun MK secara umum. Yang membedakan adalah tingkat objek dan norma pembandingnya.</p></div>
+ <div class="card"><h4>Jebakan 3 · Semua terasa relevan</h4><p>Presiden, DPR, DPD, BPK dapat muncul dalam cerita APBN. Hanya pertanyaan spesifik yang menentukan mana yang paling tepat.</p></div>
+ <div class="card"><h4>Jebakan 4 · Fungsi diperluas</h4><p>“KY mengawasi hakim” lalu diubah menjadi “KY dapat membatalkan putusan”. Ini lompatan dari pengawasan etik ke fungsi mengadili.</p></div>
+ <div class="card"><h4>Jebakan 5 · Struktur lama dibawa ke sekarang</h4><p>“MPR lembaga tertinggi” tampak familiar karena sejarah pendidikan kewarganegaraan. Tetapi untuk struktur pasca-perubahan UUD, kedudukannya berbeda.</p></div>
+ <div class="card"><h4>Jebakan 6 · Sebab-akibat dibalik</h4><p>BPK menyerahkan hasil pemeriksaan kepada lembaga perwakilan. Itu tidak berarti BPK berada di bawah DPR dalam arti hubungan atasan-bawahan.</p></div>
+ </div>
 </div></section>
 
 <section class="section" id="twk"><div class="wrap">
-  <div class="kicker">09 · Dari konsep menjadi reasoning TWK</div>
-  <h2>Jangan mulai dari “saya ingat jawabannya”</h2>
-  <p class="lead">Mulailah dari fakta paling penting. Setelah itu baru hubungkan dengan konsep. Berikut pola reasoning yang harus terasa otomatis.</p>
+ <div class="kicker">09 · Dari konsep menjadi reasoning TWK</div>
+ <h2>Jangan mulai dari “saya ingat jawabannya”</h2>
+ <p class="lead">Mulailah dari fakta paling penting. Setelah itu baru hubungkan dengan konsep. Berikut pola reasoning yang harus terasa otomatis.</p>
 
-  <h3>Worked reasoning 1 — MA atau MK?</h3>
-  <div class="reason">
-    <div class="rline"><div class="rkey">Stimulus</div><div>Sebuah undang-undang dinilai bertentangan dengan UUD.</div></div>
-    <div class="rline"><div class="rkey">Fakta penting</div><div>UU sudah ada; yang dipersoalkan adalah kesesuaiannya terhadap UUD.</div></div>
-    <div class="rline"><div class="rkey">Aktor</div><div>Lembaga pemutus yang dicari, bukan pembentuk UU.</div></div>
-    <div class="rline"><div class="rkey">Objek</div><div><strong>Undang-undang.</strong></div></div>
-    <div class="rline"><div class="rkey">Relasi</div><div><strong>UU → diuji terhadap → UUD.</strong></div></div>
-    <div class="rline"><div class="rkey">Kandidat</div><div>MK karena memiliki kewenangan pengujian UU terhadap UUD.</div></div>
-    <div class="rline"><div class="rkey">Tetangga</div><div>MA juga punya kewenangan pengujian, tetapi untuk peraturan di bawah UU terhadap UU.</div></div>
-    <div class="rline"><div class="rkey">Eliminasi</div><div>MA gugur karena objeknya salah tingkat; DPR gugur karena pembentuk UU bukan berarti pemutus uji konstitusional.</div></div>
-    <div class="rline"><div class="rkey">Paling tepat</div><div><strong>MK.</strong> Jawaban ini bukan sekadar “benar”, tetapi paling langsung cocok dengan objek dan standar pengujiannya.</div></div>
-  </div>
+ <h3>Worked reasoning 1 — MA atau MK?</h3>
+ <div class="reason">
+ <div class="rline"><div class="rkey">Stimulus</div><div>Sebuah undang-undang dinilai bertentangan dengan UUD.</div></div>
+ <div class="rline"><div class="rkey">Fakta penting</div><div>UU sudah ada; yang dipersoalkan adalah kesesuaiannya terhadap UUD.</div></div>
+ <div class="rline"><div class="rkey">Aktor</div><div>Lembaga pemutus yang dicari, bukan pembentuk UU.</div></div>
+ <div class="rline"><div class="rkey">Objek</div><div><strong>Undang-undang.</strong></div></div>
+ <div class="rline"><div class="rkey">Relasi</div><div><strong>UU → diuji terhadap → UUD.</strong></div></div>
+ <div class="rline"><div class="rkey">Kandidat</div><div>MK karena memiliki kewenangan pengujian UU terhadap UUD.</div></div>
+ <div class="rline"><div class="rkey">Tetangga</div><div>MA juga punya kewenangan pengujian, tetapi untuk peraturan di bawah UU terhadap UU.</div></div>
+ <div class="rline"><div class="rkey">Eliminasi</div><div>MA gugur karena objeknya salah tingkat; DPR gugur karena pembentuk UU bukan berarti pemutus uji konstitusional.</div></div>
+ <div class="rline"><div class="rkey">Paling tepat</div><div><strong>MK.</strong> Jawaban ini bukan sekadar “benar”, tetapi paling langsung cocok dengan objek dan standar pengujiannya.</div></div>
+ </div>
 
-  <h3>Worked reasoning 2 — DPR atau BPK?</h3>
-  <div class="reason">
-    <div class="rline"><div class="rkey">Stimulus</div><div>Pemerintah mengajukan RUU APBN untuk dibahas bersama DPR.</div></div>
-    <div class="rline"><div class="rkey">Fakta penting</div><div>Yang terjadi adalah proses pembahasan/persetujuan APBN, bukan pemeriksaan setelah uang dikelola.</div></div>
-    <div class="rline"><div class="rkey">Aktor</div><div>DPR dan Presiden.</div></div>
-    <div class="rline"><div class="rkey">Konsep kandidat</div><div>Fungsi anggaran DPR.</div></div>
-    <div class="rline"><div class="rkey">Tetangga</div><div>BPK juga berhubungan dengan keuangan negara, tetapi pusatnya pemeriksaan pengelolaan dan tanggung jawab keuangan.</div></div>
-    <div class="rline"><div class="rkey">Eliminasi</div><div>BPK tidak menjadi pusat jawaban karena pekerjaan yang sedang dilakukan belum merupakan pemeriksaan.</div></div>
-    <div class="rline"><div class="rkey">Paling tepat</div><div><strong>DPR dan Presiden dalam proses APBN</strong>, dengan peran DPD sesuai pertimbangan yang ditentukan UUD.</div></div>
-  </div>
+ <h3>Worked reasoning 2 — DPR atau BPK?</h3>
+ <div class="reason">
+ <div class="rline"><div class="rkey">Stimulus</div><div>Pemerintah mengajukan RUU APBN untuk dibahas bersama DPR.</div></div>
+ <div class="rline"><div class="rkey">Fakta penting</div><div>Yang terjadi adalah proses pembahasan/persetujuan APBN, bukan pemeriksaan setelah uang dikelola.</div></div>
+ <div class="rline"><div class="rkey">Aktor</div><div>DPR dan Presiden.</div></div>
+ <div class="rline"><div class="rkey">Konsep kandidat</div><div>Fungsi anggaran DPR.</div></div>
+ <div class="rline"><div class="rkey">Tetangga</div><div>BPK juga berhubungan dengan keuangan negara, tetapi pusatnya pemeriksaan pengelolaan dan tanggung jawab keuangan.</div></div>
+ <div class="rline"><div class="rkey">Eliminasi</div><div>BPK tidak menjadi pusat jawaban karena pekerjaan yang sedang dilakukan belum merupakan pemeriksaan.</div></div>
+ <div class="rline"><div class="rkey">Paling tepat</div><div><strong>DPR dan Presiden dalam proses APBN</strong>, dengan peran DPD sesuai pertimbangan yang ditentukan UUD.</div></div>
+ </div>
 
-  <h3>Worked reasoning 3 — KY atau MA?</h3>
-  <div class="reason">
-    <div class="rline"><div class="rkey">Stimulus</div><div>Publik mempersoalkan dugaan perilaku tidak patut seorang hakim.</div></div>
-    <div class="rline"><div class="rkey">Fakta penting</div><div>Yang disorot adalah <strong>perilaku hakim</strong>, bukan permintaan agar putusan perkaranya diperiksa melalui jalur kasasi.</div></div>
-    <div class="rline"><div class="rkey">Kandidat</div><div>KY menjadi pusat analisis karena kewenangan konstitusionalnya berkaitan dengan kehormatan, keluhuran martabat, dan perilaku hakim.</div></div>
-    <div class="rline"><div class="rkey">Tetangga</div><div>MA benar-benar lembaga kehakiman, tetapi jalur pekerjaannya berbeda.</div></div>
-    <div class="rline"><div class="rkey">Paling tepat</div><div><strong>KY.</strong> Jebakan “MA” bekerja karena pembaca mengira semua persoalan tentang hakim pasti masuk ke pengadilan.</div></div>
-  </div>
+ <h3>Worked reasoning 3 — KY atau MA?</h3>
+ <div class="reason">
+ <div class="rline"><div class="rkey">Stimulus</div><div>Publik mempersoalkan dugaan perilaku tidak patut seorang hakim.</div></div>
+ <div class="rline"><div class="rkey">Fakta penting</div><div>Yang disorot adalah <strong>perilaku hakim</strong>, bukan permintaan agar putusan perkaranya diperiksa melalui jalur kasasi.</div></div>
+ <div class="rline"><div class="rkey">Kandidat</div><div>KY menjadi pusat analisis karena kewenangan konstitusionalnya berkaitan dengan kehormatan, keluhuran martabat, dan perilaku hakim.</div></div>
+ <div class="rline"><div class="rkey">Tetangga</div><div>MA benar-benar lembaga kehakiman, tetapi jalur pekerjaannya berbeda.</div></div>
+ <div class="rline"><div class="rkey">Paling tepat</div><div><strong>KY.</strong> Jebakan “MA” bekerja karena pembaca mengira semua persoalan tentang hakim pasti masuk ke pengadilan.</div></div>
+ </div>
 
-  <div class="callout gold"><strong>Benar secara umum vs paling tepat dalam konteks soal.</strong> “DPR berhubungan dengan undang-undang” adalah benar secara umum. Tetapi bila soal meminta lembaga yang menguji UU terhadap UUD, jawaban yang paling tepat adalah MK. “BPK berhubungan dengan anggaran” juga benar secara umum, tetapi bila yang ditanya pembahasan APBN, pusatnya bukan BPK. Dalam TWK, presisi konteks mengalahkan asosiasi umum.</div>
+ <div class="callout gold"><strong>Benar secara umum vs paling tepat dalam konteks soal.</strong> “DPR berhubungan dengan undang-undang” adalah benar secara umum. Tetapi bila soal meminta lembaga yang menguji UU terhadap UUD, jawaban yang paling tepat adalah MK. “BPK berhubungan dengan anggaran” juga benar secara umum, tetapi bila yang ditanya pembahasan APBN, pusatnya bukan BPK. Dalam TWK, presisi konteks mengalahkan asosiasi umum.</div>
 
-  <h3>Latihan pemetaan non-MCQ</h3>
-  <div class="grid2">
-    <div class="card"><span class="tag">Kasus A</span><p>Sebuah peraturan daerah dianggap bertentangan dengan undang-undang. <strong>Bagaimana Anda memetakan actor → authority → object → limitation → consequence?</strong></p></div>
-    <div class="card"><span class="tag">Kasus B</span><p>Dua lembaga negara sama-sama mengklaim mempunyai kewenangan yang diberikan UUD. <strong>Apa objek sengketanya, dan apa lembaga yang perlu Anda cek?</strong></p></div>
-    <div class="card"><span class="tag">Kasus C</span><p>Hasil pemeriksaan keuangan negara menemukan masalah. <strong>Apa yang dapat Anda simpulkan dari fungsi pemeriksaan, dan apa yang tidak boleh otomatis Anda simpulkan?</strong></p></div>
-    <div class="card"><span class="tag">Kasus D</span><p>Sebuah berita menyebut “pemerintah membuat aturan baru”. <strong>Bagaimana Anda memastikan apakah stem sedang menunjuk Presiden, kementerian, pemerintah daerah, atau pembentuk peraturan lain?</strong></p></div>
-  </div>
+ <h3>Latihan pemetaan non-MCQ</h3>
+ <div class="grid2">
+ <div class="card"><span class="tag">Kasus A</span><p>Sebuah peraturan daerah dianggap bertentangan dengan undang-undang. <strong>Bagaimana Anda memetakan actor → authority → object → limitation → consequence?</strong></p></div>
+ <div class="card"><span class="tag">Kasus B</span><p>Dua lembaga negara sama-sama mengklaim mempunyai kewenangan yang diberikan UUD. <strong>Apa objek sengketanya, dan apa lembaga yang perlu Anda cek?</strong></p></div>
+ <div class="card"><span class="tag">Kasus C</span><p>Hasil pemeriksaan keuangan negara menemukan masalah. <strong>Apa yang dapat Anda simpulkan dari fungsi pemeriksaan, dan apa yang tidak boleh otomatis Anda simpulkan?</strong></p></div>
+ <div class="card"><span class="tag">Kasus D</span><p>Sebuah berita menyebut “pemerintah membuat aturan baru”. <strong>Bagaimana Anda memastikan apakah stem sedang menunjuk Presiden, kementerian, pemerintah daerah, atau pembentuk peraturan lain?</strong></p></div>
+ </div>
 </div></section>
 
 <section class="section alt"><div class="wrap">
-  <div class="kicker">10 · Lembaga lain yang relevan</div>
-  <h2>Jangan memperluas semua soal menjadi delapan lembaga saja</h2>
-  <p class="lead">Delapan lembaga utama di modul ini adalah pusat pembelajaran. Namun dalam soal, lembaga lain bisa muncul sebagai aktor, objek, atau distractor. Yang penting adalah memahami perbedaan jenis pekerjaannya.</p>
-  <div class="grid3">
-    <article class="card"><h4>KPU</h4><p>KPU adalah penyelenggara pemilu. Untuk reasoning TWK, bedakan <strong>menyelenggarakan pemilu</strong> dengan <strong>memutus perselisihan hasil pemilu</strong> dalam lingkup kewenangan MK.</p></article>
-    <article class="card"><h4>Kementerian</h4><p>Kementerian membantu Presiden dalam penyelenggaraan pemerintahan. Jangan otomatis menyamakan setiap tindakan kementerian dengan “kewenangan Presiden secara pribadi”; baca aktornya secara tepat.</p></article>
-    <article class="card"><h4>Pemerintah daerah / DPRD</h4><p>Dalam soal yang berpindah ke provinsi/kabupaten/kota, jangan membawa seluruh kewenangan lembaga pusat begitu saja. Kunci actor dan scope wilayah lebih dahulu.</p></article>
-  </div>
-  <div class="callout blue"><strong>Aturan praktis:</strong> semakin spesifik aktornya, semakin spesifik pula kewenangan yang harus Anda cek. “Pemerintah” adalah istilah lebih lebar daripada “Presiden”. “Pemilu” lebih lebar daripada “perselisihan hasil pemilu”. “Hakim” lebih lebar daripada “perilaku hakim”.</div>
+ <div class="kicker">10 · Lembaga lain yang relevan</div>
+ <h2>Jangan memperluas semua soal menjadi delapan lembaga saja</h2>
+ <p class="lead">Delapan lembaga utama di modul ini adalah pusat pembelajaran. Namun dalam soal, lembaga lain bisa muncul sebagai aktor, objek, atau distractor. Yang penting adalah memahami perbedaan jenis pekerjaannya.</p>
+ <div class="grid3">
+ <article class="card"><h4>KPU</h4><p>KPU adalah penyelenggara pemilu. Untuk reasoning TWK, bedakan <strong>menyelenggarakan pemilu</strong> dengan <strong>memutus perselisihan hasil pemilu</strong> dalam lingkup kewenangan MK.</p></article>
+ <article class="card"><h4>Kementerian</h4><p>Kementerian membantu Presiden dalam penyelenggaraan pemerintahan. Jangan otomatis menyamakan setiap tindakan kementerian dengan “kewenangan Presiden secara pribadi”; baca aktornya secara tepat.</p></article>
+ <article class="card"><h4>Pemerintah daerah / DPRD</h4><p>Dalam soal yang berpindah ke provinsi/kabupaten/kota, jangan membawa seluruh kewenangan lembaga pusat begitu saja. Kunci actor dan scope wilayah lebih dahulu.</p></article>
+ </div>
+ <div class="callout blue"><strong>Aturan praktis:</strong> semakin spesifik aktornya, semakin spesifik pula kewenangan yang harus Anda cek. “Pemerintah” adalah istilah lebih lebar daripada “Presiden”. “Pemilu” lebih lebar daripada “perselisihan hasil pemilu”. “Hakim” lebih lebar daripada “perilaku hakim”.</div>
 </div></section>
 
 <section class="section" id="peta"><div class="wrap">
-  <div class="kicker">11 · Concept map</div>
-  <h2>Sistem ketatanegaraan sebagai jaringan hubungan</h2>
-  <p class="lead">Baca dari tengah ke luar. Tujuannya bukan menghafal bagan, tetapi melihat bahwa kewenangan selalu memiliki pasangan: objek, batas, dan hubungan.</p>
-  <div class="mental">
-    <div class="box"><strong>REPRESENTASI</strong><p>DPR → rakyat secara politik<br>DPD → daerah dalam kewenangan tertentu<br>MPR → DPR + DPD dengan fungsi konstitusional tertentu</p></div>
-    <div class="box center"><strong>UUD NRI 1945</strong><p>Menentukan siapa mempunyai kewenangan apa, melalui prosedur apa, dan dengan batas apa.</p></div>
-    <div class="box"><strong>PEMERINTAHAN</strong><p>Presiden → menjalankan pemerintahan<br>Menteri → membantu Presiden<br>Pemerintah daerah → urusan pemerintahan daerah menurut kewenangannya</p></div>
-  </div>
-  <div class="grid3">
-    <div class="card"><h4>Jalur kehakiman</h4><p><strong>MA</strong> → kekuasaan kehakiman, termasuk kasasi dan uji peraturan di bawah UU terhadap UU.<br><strong>MK</strong> → pengujian UU terhadap UUD dan perkara konstitusional tertentu.<br><strong>KY</strong> → pengusulan hakim agung dan integritas/perilaku hakim.</p></div>
-    <div class="card"><h4>Jalur keuangan</h4><p><strong>Presiden</strong> mengajukan RUU APBN → <strong>DPR</strong> membahas dan memberi persetujuan/tidak → <strong>DPD</strong> memberi pertimbangan sesuai UUD → <strong>BPK</strong> memeriksa pengelolaan dan tanggung jawab keuangan negara.</p></div>
-    <div class="card"><h4>Jalur kontrol konstitusional</h4><p>Legislasi menghasilkan UU → warga/lembaga berkepentingan dapat mempersoalkan konstitusionalitas → <strong>MK</strong> menguji dalam kewenangannya. Struktur ini menunjukkan bahwa pembentuk norma dan penguji norma tidak identik.</p></div>
-  </div>
-  <div class="flow"><span class="pill">Rakyat</span><span class="arrow">→</span><span class="pill">UUD</span><span class="arrow">→</span><span class="pill">pembagian kewenangan</span><span class="arrow">→</span><span class="pill">lembaga/pejabat</span><span class="arrow">→</span><span class="pill">tindakan</span><span class="arrow">→</span><span class="pill">kontrol/koreksi</span></div>
-  <div class="callout green"><strong>Mental model paling ringkas:</strong> <em>siapa → berwenang melakukan apa → terhadap apa → dengan batas apa → lalu bagaimana sistem mengoreksinya bila terjadi masalah.</em></div>
+ <div class="kicker">11 · Concept map</div>
+ <h2>Sistem ketatanegaraan sebagai jaringan hubungan</h2>
+ <p class="lead">Baca dari tengah ke luar. Tujuannya bukan menghafal bagan, tetapi melihat bahwa kewenangan selalu memiliki pasangan: objek, batas, dan hubungan.</p>
+ <div class="mental">
+ <div class="box"><strong>REPRESENTASI</strong><p>DPR → rakyat secara politik<br>DPD → daerah dalam kewenangan tertentu<br>MPR → DPR + DPD dengan fungsi konstitusional tertentu</p></div>
+ <div class="box center"><strong>UUD NRI 1945</strong><p>Menentukan siapa mempunyai kewenangan apa, melalui prosedur apa, dan dengan batas apa.</p></div>
+ <div class="box"><strong>PEMERINTAHAN</strong><p>Presiden → menjalankan pemerintahan<br>Menteri → membantu Presiden<br>Pemerintah daerah → urusan pemerintahan daerah menurut kewenangannya</p></div>
+ </div>
+ <div class="grid3">
+ <div class="card"><h4>Jalur kehakiman</h4><p><strong>MA</strong> → kekuasaan kehakiman, termasuk kasasi dan uji peraturan di bawah UU terhadap UU.<br><strong>MK</strong> → pengujian UU terhadap UUD dan perkara konstitusional tertentu.<br><strong>KY</strong> → pengusulan hakim agung dan integritas/perilaku hakim.</p></div>
+ <div class="card"><h4>Jalur keuangan</h4><p><strong>Presiden</strong> mengajukan RUU APBN → <strong>DPR</strong> membahas dan memberi persetujuan/tidak → <strong>DPD</strong> memberi pertimbangan sesuai UUD → <strong>BPK</strong> memeriksa pengelolaan dan tanggung jawab keuangan negara.</p></div>
+ <div class="card"><h4>Jalur kontrol konstitusional</h4><p>Legislasi menghasilkan UU → warga/lembaga berkepentingan dapat mempersoalkan konstitusionalitas → <strong>MK</strong> menguji dalam kewenangannya. Struktur ini menunjukkan bahwa pembentuk norma dan penguji norma tidak identik.</p></div>
+ </div>
+ <div class="flow"><span class="pill">Rakyat</span><span class="arrow">→</span><span class="pill">UUD</span><span class="arrow">→</span><span class="pill">pembagian kewenangan</span><span class="arrow">→</span><span class="pill">lembaga/pejabat</span><span class="arrow">→</span><span class="pill">tindakan</span><span class="arrow">→</span><span class="pill">kontrol/koreksi</span></div>
+ <div class="callout green"><strong>Mental model paling ringkas:</strong> <em>siapa → berwenang melakukan apa → terhadap apa → dengan batas apa → lalu bagaimana sistem mengoreksinya bila terjadi masalah.</em></div>
 </div></section>
 
 <section class="section alt" id="check"><div class="wrap">
-  <div class="kicker">12 · Checkpoint pemahaman</div>
-  <h2>Jangan cek apakah Anda hafal. Cek apakah Anda bisa menjelaskan.</h2>
-  <div class="checkpoint" style="padding:24px">
-    <div class="check"><b>01</b><div>Bayangkan negara tanpa daftar lembaga. Jelaskan enam pekerjaan yang tetap harus dilakukan negara agar sistem berjalan.</div></div>
-    <div class="check"><b>02</b><div>Dalam kata-kata sendiri, jelaskan mengapa “lembaga yang terlibat” tidak selalu sama dengan “lembaga yang berwenang memutus”. Beri satu contoh.</div></div>
-    <div class="check"><b>03</b><div>Apa perbedaan mendasar antara <strong>UU → UUD → MK</strong> dan <strong>peraturan di bawah UU → UU → MA</strong>? Jangan jawab hanya dengan nama lembaga.</div></div>
-    <div class="check"><b>04</b><div>Mengapa DPD tidak tepat dipahami sebagai “DPR kedua”? Gunakan objek kewenangan untuk menjelaskannya.</div></div>
-    <div class="check"><b>05</b><div>Mengapa “MPR adalah lembaga tertinggi negara” menjadi jebakan bila stem berbicara tentang sistem pasca-perubahan UUD?</div></div>
-    <div class="check"><b>06</b><div>Presiden dipilih langsung rakyat. Mengapa fakta itu tidak berarti Presiden dapat membatalkan putusan pengadilan?</div></div>
-    <div class="check"><b>07</b><div>Sebuah masalah menyangkut hakim. Bagaimana Anda menentukan apakah pusat jawabannya MA atau KY?</div></div>
-    <div class="check"><b>08</b><div>Sebuah berita menyebut “anggaran negara”. Bagaimana Anda membedakan kapan fokusnya DPR, Presiden, DPD, atau BPK?</div></div>
-    <div class="check"><b>09</b><div>Jelaskan checks and balances tanpa mengatakan “semua lembaga saling mengawasi”. Apa yang hilang dari kalimat tersebut?</div></div>
-    <div class="check"><b>10</b><div>Ambil satu peristiwa fiktif tentang sebuah UU. Ubah hanya pertanyaannya tiga kali sehingga jawaban lembaganya berpindah. Jelaskan apa yang berubah: tindakan, objek, atau batas.</div></div>
-  </div>
-  <div class="callout gold"><strong>Standar lulus konseptual:</strong> Anda dapat melihat sebuah kasus baru dan belum tahu jawabannya, tetapi tahu pertanyaan apa yang harus diajukan kepada kasus itu: <em>siapa aktornya, kewenangan apa yang dipakai, objeknya apa, batasnya di mana, dan konsekuensi apa yang mengikuti.</em> Jika lima pertanyaan itu sudah otomatis muncul di kepala, hafalan lembaga mulai berubah menjadi pemahaman sistem.</div>
+ <div class="kicker">12 · Checkpoint pemahaman</div>
+ <h2>Jangan cek apakah Anda hafal. Cek apakah Anda bisa menjelaskan.</h2>
+ <div class="checkpoint" style="padding:24px">
+ <div class="check"><b>01</b><div>Bayangkan negara tanpa daftar lembaga. Jelaskan enam pekerjaan yang tetap harus dilakukan negara agar sistem berjalan.</div></div>
+ <div class="check"><b>02</b><div>Dalam kata-kata sendiri, jelaskan mengapa “lembaga yang terlibat” tidak selalu sama dengan “lembaga yang berwenang memutus”. Beri satu contoh.</div></div>
+ <div class="check"><b>03</b><div>Apa perbedaan mendasar antara <strong>UU → UUD → MK</strong> dan <strong>peraturan di bawah UU → UU → MA</strong>? Jangan jawab hanya dengan nama lembaga.</div></div>
+ <div class="check"><b>04</b><div>Mengapa DPD tidak tepat dipahami sebagai “DPR kedua”? Gunakan objek kewenangan untuk menjelaskannya.</div></div>
+ <div class="check"><b>05</b><div>Mengapa “MPR adalah lembaga tertinggi negara” menjadi jebakan bila stem berbicara tentang sistem pasca-perubahan UUD?</div></div>
+ <div class="check"><b>06</b><div>Presiden dipilih langsung rakyat. Mengapa fakta itu tidak berarti Presiden dapat membatalkan putusan pengadilan?</div></div>
+ <div class="check"><b>07</b><div>Sebuah masalah menyangkut hakim. Bagaimana Anda menentukan apakah pusat jawabannya MA atau KY?</div></div>
+ <div class="check"><b>08</b><div>Sebuah berita menyebut “anggaran negara”. Bagaimana Anda membedakan kapan fokusnya DPR, Presiden, DPD, atau BPK?</div></div>
+ <div class="check"><b>09</b><div>Jelaskan checks and balances tanpa mengatakan “semua lembaga saling mengawasi”. Apa yang hilang dari kalimat tersebut?</div></div>
+ <div class="check"><b>10</b><div>Ambil satu peristiwa fiktif tentang sebuah UU. Ubah hanya pertanyaannya tiga kali sehingga jawaban lembaganya berpindah. Jelaskan apa yang berubah: tindakan, objek, atau batas.</div></div>
+ </div>
+ <div class="callout gold"><strong>Standar lulus konseptual:</strong> Anda dapat melihat sebuah kasus baru dan belum tahu jawabannya, tetapi tahu pertanyaan apa yang harus diajukan kepada kasus itu: <em>siapa aktornya, kewenangan apa yang dipakai, objeknya apa, batasnya di mana, dan konsekuensi apa yang mengikuti.</em> Jika lima pertanyaan itu sudah otomatis muncul di kepala, hafalan lembaga mulai berubah menjadi pemahaman sistem.</div>
 </div></section>
 
 <section class="section" id="sumber"><div class="wrap">
-  <div class="kicker">13 · Sumber &amp; catatan akurasi</div>
-  <h2>Bagaimana modul ini disusun?</h2>
-  <div class="sourcebox" style="padding:27px">
-    <p><strong>Corpus 600 soal + pembahasan</strong> digunakan terutama sebagai peta <em>bagaimana materi diuji</em>: gravity center, perbedaan concept neighborhood, aktor vs kewenangan, objek kewenangan, directness, klasifikasi, hubungan sebab-akibat, pola “lembaga → kewenangan”, dan distractor yang memakai lembaga benar tetapi untuk objek yang salah.</p>
-    <p>Materi corpus tidak diperlakukan sebagai sumber hukum final. Salah satu contoh yang perlu diwaspadai adalah bahan belajar lama yang menyebut istilah atau susunan kewenangan secara terlalu luas. Karena itu, jangkar faktual modul ini adalah UUD NRI Tahun 1945 dan laman resmi lembaga terkait.</p>
-    <h3>Rujukan resmi utama</h3>
-    <p><strong>UUD NRI 1945 — JDIH Sekretariat Jenderal DPR RI:</strong><br><a href="https://jdih.dpr.go.id/index/uu1945" target="_blank" rel="noopener">https://jdih.dpr.go.id/index/uu1945</a></p>
-    <p><strong>MPR RI — Kedudukan, Tugas, dan Wewenang:</strong><br><a href="https://www.mpr.go.id/tentang-mpr/Kedudukan%2C-Tugas%2C-dan-Wewenang" target="_blank" rel="noopener">https://www.mpr.go.id/tentang-mpr/Kedudukan,-Tugas,-dan-Wewenang</a></p>
-    <p><strong>DPD RI — Fungsi, Tugas dan Wewenang:</strong><br><a href="https://orchard.dpd.go.id/profile/fungsi-tugas-wewenang" target="_blank" rel="noopener">https://orchard.dpd.go.id/profile/fungsi-tugas-wewenang</a></p>
-    <p><strong>Mahkamah Agung RI — Tugas Pokok dan Fungsi:</strong><br><a href="https://www.mahkamahagung.go.id/id/tugas-pokok-dan-fungsi" target="_blank" rel="noopener">https://www.mahkamahagung.go.id/id/tugas-pokok-dan-fungsi</a></p>
-    <p><strong>Komisi Yudisial RI — Wewenang dan Tugas:</strong><br><a href="https://karakterisasi.komisiyudisial.go.id/frontend/static_content/authority_and_duties/about_ky" target="_blank" rel="noopener">https://karakterisasi.komisiyudisial.go.id/frontend/static_content/authority_and_duties/about_ky</a></p>
-    <p><strong>BPK RI — Dasar Hukum / Tugas:</strong><br><a href="https://ntt.bpk.go.id/dasar-hukum-bpk-ri/" target="_blank" rel="noopener">https://ntt.bpk.go.id/dasar-hukum-bpk-ri/</a></p>
-    <p><strong>Mahkamah Konstitusi RI:</strong><br><a href="https://www.mkri.id/" target="_blank" rel="noopener">https://www.mkri.id/</a></p>
-    <div class="callout red"><strong>Catatan penting tentang corpus:</strong> bahan corpus yang dipakai dalam proyek ini sangat berguna untuk memetakan gaya dan pola pengujian, tetapi beberapa materi lama memakai istilah yang dapat menimbulkan generalisasi berlebihan. Contohnya, bahan tersebut menaruh perhatian besar pada daftar “tugas dan wewenang” sehingga mudah dibaca sebagai hafalan. Modul ini sengaja mengubahnya menjadi hubungan <strong>masalah → fungsi → kewenangan → objek → batas → hubungan → reasoning</strong>. Jadi yang dipertahankan adalah nilai diagnostiknya, bukan setiap formulasi corpus sebagai hukum positif.</div>
-    <p class="tiny">Catatan: istilah “actor”, “authority”, “object”, “limitation”, “consequence”, “gravity center”, “concept neighborhood”, dan “directness” pada modul ini adalah perangkat pembelajaran/reasoning yang dibuat agar pembaca dapat menganalisis soal. Istilah-istilah tersebut bukan istilah resmi yang harus dianggap sebagai istilah konstitusional.</p>
-  </div>
+ <div class="kicker">13 · Sumber &amp; catatan akurasi</div>
+ <h2>Bagaimana modul ini disusun?</h2>
+ <div class="sourcebox" style="padding:27px">
+ <p><strong>Corpus 600 soal + pembahasan</strong> digunakan terutama sebagai peta <em>bagaimana materi diuji</em>: gravity center, perbedaan concept neighborhood, aktor vs kewenangan, objek kewenangan, directness, klasifikasi, hubungan sebab-akibat, pola “lembaga → kewenangan”, dan distractor yang memakai lembaga benar tetapi untuk objek yang salah.</p>
+ <p>Materi corpus tidak diperlakukan sebagai sumber hukum final. Salah satu contoh yang perlu diwaspadai adalah bahan belajar lama yang menyebut istilah atau susunan kewenangan secara terlalu luas. Karena itu, jangkar faktual modul ini adalah UUD NRI Tahun 1945 dan laman resmi lembaga terkait.</p>
+ <h3>Rujukan resmi utama</h3>
+ <p><strong>UUD NRI 1945 — JDIH Sekretariat Jenderal DPR RI:</strong><br><a href="https://jdih.dpr.go.id/index/uu1945" target="_blank" rel="noopener">https://jdih.dpr.go.id/index/uu1945</a></p>
+ <p><strong>MPR RI — Kedudukan, Tugas, dan Wewenang:</strong><br><a href="https://www.mpr.go.id/tentang-mpr/Kedudukan%2C-Tugas%2C-dan-Wewenang" target="_blank" rel="noopener">https://www.mpr.go.id/tentang-mpr/Kedudukan,-Tugas,-dan-Wewenang</a></p>
+ <p><strong>DPD RI — Fungsi, Tugas dan Wewenang:</strong><br><a href="https://orchard.dpd.go.id/profile/fungsi-tugas-wewenang" target="_blank" rel="noopener">https://orchard.dpd.go.id/profile/fungsi-tugas-wewenang</a></p>
+ <p><strong>Mahkamah Agung RI — Tugas Pokok dan Fungsi:</strong><br><a href="https://www.mahkamahagung.go.id/id/tugas-pokok-dan-fungsi" target="_blank" rel="noopener">https://www.mahkamahagung.go.id/id/tugas-pokok-dan-fungsi</a></p>
+ <p><strong>Komisi Yudisial RI — Wewenang dan Tugas:</strong><br><a href="https://karakterisasi.komisiyudisial.go.id/frontend/static_content/authority_and_duties/about_ky" target="_blank" rel="noopener">https://karakterisasi.komisiyudisial.go.id/frontend/static_content/authority_and_duties/about_ky</a></p>
+ <p><strong>BPK RI — Dasar Hukum / Tugas:</strong><br><a href="https://ntt.bpk.go.id/dasar-hukum-bpk-ri/" target="_blank" rel="noopener">https://ntt.bpk.go.id/dasar-hukum-bpk-ri/</a></p>
+ <p><strong>Mahkamah Konstitusi RI:</strong><br><a href="https://www.mkri.id/" target="_blank" rel="noopener">https://www.mkri.id/</a></p>
+ <div class="callout red"><strong>Catatan penting tentang corpus:</strong> bahan corpus yang dipakai dalam proyek ini sangat berguna untuk memetakan gaya dan pola pengujian, tetapi beberapa materi lama memakai istilah yang dapat menimbulkan generalisasi berlebihan. Contohnya, bahan tersebut menaruh perhatian besar pada daftar “tugas dan wewenang” sehingga mudah dibaca sebagai hafalan. Modul ini sengaja mengubahnya menjadi hubungan <strong>masalah → fungsi → kewenangan → objek → batas → hubungan → reasoning</strong>. Jadi yang dipertahankan adalah nilai diagnostiknya, bukan setiap formulasi corpus sebagai hukum positif.</div>
+ <p class="tiny">Catatan: istilah “actor”, “authority”, “object”, “limitation”, “consequence”, “gravity center”, “concept neighborhood”, dan “directness” pada modul ini adalah perangkat pembelajaran/reasoning yang dibuat agar pembaca dapat menganalisis soal. Istilah-istilah tersebut bukan istilah resmi yang harus dianggap sebagai istilah konstitusional.</p>
+ </div>
 </div></section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <strong>Ultimate TWK Knowledge System · Modul 06</strong>
-    <p class="footer-text">Tujuan modul ini bukan membuat Anda mampu menyebut daftar lembaga, melainkan mampu membaca sistem: siapa berwenang melakukan apa, terhadap objek apa, dengan batas apa, dan bagaimana lembaga lain mengimbangi atau mengoreksinya. Setelah logika itu dikuasai, hafalan nama lembaga menjadi jauh lebih ringan.</p>
-  </div>
+ <div class="wrap">
+ <strong>Ultimate TWK Knowledge System · Modul 06</strong>
+ <p class="footer-text">Tujuan modul ini bukan membuat Anda mampu menyebut daftar lembaga, melainkan mampu membaca sistem: siapa berwenang melakukan apa, terhadap objek apa, dengan batas apa, dan bagaimana lembaga lain mengimbangi atau mengoreksinya. Setelah logika itu dikuasai, hafalan nama lembaga menjadi jauh lebih ringan.</p>
+ </div>
 </footer>
 
 <nav class="cpns-modnav" aria-label="Navigasi modul">
-  <a class="cpns-navbtn" href="05-uud-nri-1945-dan-konstitusionalisme.html">← Modul 05</a>
-  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
-  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m06" type="button">Tandai selesai</button>
-  <a class="cpns-navbtn" href="07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html">Modul 07 →</a>
+ <a class="cpns-navbtn" href="05-uud-nri-1945-dan-konstitusionalisme.html">← Modul 05</a>
+ <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+ <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m06" type="button">Tandai selesai</button>
+ <a class="cpns-navbtn" href="07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html">Modul 07 →</a>
 </nav>
 
 <script>
 (function(){
-  var bar=document.getElementById('cpns-progress-bar');
-  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
-  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
-  var done=document.getElementById('cpns-done');
-  if(done){var key=done.getAttribute('data-key');
-    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
-    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
-    refresh();
-  }
+ var bar=document.getElementById('cpns-progress-bar');
+ function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+ if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+ var done=document.getElementById('cpns-done');
+ if(done){var key=done.getAttribute('data-key');
+ function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+ done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+ refresh();
+ }
 })();
 </script>
 

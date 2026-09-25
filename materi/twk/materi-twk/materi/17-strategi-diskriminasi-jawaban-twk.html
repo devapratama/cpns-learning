@@ -1,78 +1,26 @@
 <!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Modul 17 — Strategi Diskriminasi Jawaban TWK | Materi TWK | CPNS Learning</title><meta name="description" content="Ultimate TWK Knowledge System — Modul 17">
-<style>
-:root{--n:#14283f;--i:#1e2936;--m:#64748b;--l:#dfe6ee;--bg:#f6f8fb;--g:#116b51;--gb:#edf8f3;--r:#a63c34;--b:#245da8;--bb:#edf4ff;--a:#8a6100;--ab:#fff7e2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--i);font:16px/1.72 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-.wrap{width:min(1100px,calc(100% - 36px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--l)}.topin{max-width:1100px;margin:auto;padding:10px 18px;display:flex;justify-content:space-between}.brand{font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--n)}.small{font-size:12px;color:var(--m)}.progress{height:3px;background:#e8edf3}.bar{height:100%;background:var(--n);width:0}
-.hero{background:linear-gradient(135deg,#13273e,#2b5273);color:#fff;padding:72px 0 62px}.kicker,.eyebrow{font-size:11px;letter-spacing:.13em;font-weight:900}.kicker{opacity:.82;margin-bottom:12px}.eyebrow{color:var(--b);margin-bottom:7px}h1{font-size:clamp(42px,6vw,68px);line-height:1.03;letter-spacing:-.04em;margin:0 0 18px;max-width:900px}h2{font-size:34px;line-height:1.2;color:var(--n);margin:0 0 16px}h3{font-size:23px;line-height:1.25;color:var(--n);margin:0 0 10px}.hero p{font-size:18px;color:#e9f0f7;max-width:920px}.quote{padding:18px 20px;margin-top:22px;border-left:4px solid #fff;background:rgba(255,255,255,.10);font-weight:800;max-width:900px}
-nav{display:flex;gap:8px;flex-wrap:wrap;padding:18px 0}nav a{text-decoration:none;color:var(--n);background:#fff;border:1px solid var(--l);border-radius:999px;padding:8px 12px;font-size:13px}section{padding:58px 0;border-bottom:1px solid var(--l)}.lead{font-size:18px;color:#4a5b6d;max-width:920px}
-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--l);border-radius:14px;overflow:hidden}th,td{padding:13px;border-bottom:1px solid var(--l);text-align:left;vertical-align:top}th{background:#f2f6fa;color:var(--n);font-size:13px}
-.callout{background:#fff;border:1px solid var(--l);border-radius:14px;padding:17px 19px;margin:18px 0}.goodcall{background:var(--gb);border-left:5px solid var(--g)}.bluecall{background:var(--bb);border-left:5px solid var(--b)}.warn{background:var(--ab);border-left:5px solid #d1a021}
-.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:20px 0}.flow div{background:var(--n);color:white;border-radius:9px;padding:10px 6px;text-align:center;font-size:11px;font-weight:900}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:#fff;border:1px solid var(--l);border-radius:15px;padding:19px}.card b{color:var(--n)}.chips{display:flex;flex-wrap:wrap;gap:7px}.chips span{background:#fff;border:1px solid var(--l);padding:7px 10px;border-radius:999px;font-size:12px}
-.case{background:#fff;border:1px solid var(--l);border-radius:18px;overflow:hidden;margin:22px 0}.casehead{display:flex;gap:14px;padding:22px;border-bottom:1px solid var(--l)}.num{width:42px;height:42px;border-radius:11px;background:var(--n);color:#fff;display:grid;place-items:center;font-weight:900;flex:0 0 auto}.tag{font-size:11px;color:var(--b);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}.question{padding:20px 22px;background:#fbfcfd}.options{display:grid;gap:9px;padding:17px 22px}.option{display:grid;grid-template-columns:31px 1fr;gap:10px;border:1px solid var(--l);border-radius:11px;padding:11px}.letter{width:28px;height:28px;border-radius:7px;background:#edf2f6;color:var(--n);display:grid;place-items:center;font-weight:900}
-details{border-top:1px solid var(--l)}summary{cursor:pointer;padding:15px 22px;background:#f5f8fb;color:var(--n);font-weight:900}.analysis{padding:22px}.snapshot{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:16px 0}.snap{background:#fff;border:1px solid var(--l);border-radius:11px;padding:12px}.snap b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--n);margin-bottom:4px}.snap span{font-size:14px}
-.elim{border:1px solid var(--l);border-left:5px solid #c6ced8;border-radius:11px;padding:14px 15px;margin:9px 0}.elim.good{border-left-color:var(--g);background:var(--gb)}.elim-top{display:flex;align-items:center;gap:8px}.elim-top>b{width:28px;height:28px;background:var(--n);color:#fff;border-radius:7px;display:grid;place-items:center}.elim-top span{font-size:11px;font-weight:900;border-radius:999px;padding:4px 7px;background:#eef2f6}.elim.good .elim-top span{background:#d7eee4;color:var(--g)}.elim-top small{font-size:11px;color:var(--m);text-transform:uppercase;font-weight:800}.elim-opt{margin:8px 0 5px}.elim-why{font-size:14px;color:#445568}
-.trail{margin-top:18px;padding:15px 17px;background:var(--bb);border-left:5px solid var(--b);border-radius:10px;font-weight:800}.answer{margin-top:18px;padding:17px;background:var(--gb);border:1px solid #b8dccd;border-radius:12px}.answer strong{font-size:20px;color:var(--g)}
-.proto{display:grid;grid-template-columns:41px 1fr;gap:12px;border-bottom:1px solid var(--l);padding:14px 0}.pn{width:37px;height:37px;border-radius:9px;background:var(--n);color:#fff;display:grid;place-items:center;font-weight:900}footer{background:#10243a;color:#e9eff6;padding:48px 0 70px}.src{font-size:13px;color:#becbdd}.src a{color:#dbe8fa}
-@media(max-width:900px){.flow{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}.snapshot{grid-template-columns:1fr 1fr}}@media(max-width:600px){.wrap{width:min(100% - 24px,1100px)}.small{display:none}h1{font-size:42px}.snapshot{grid-template-columns:1fr}.question,.options,.analysis{padding-left:18px;padding-right:18px}}
-</style>
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
+<link rel="stylesheet" href="../assets/modul-twk.css">
+<script src="../assets/modul-twk.js" defer></script>
 
-:root{
-  --a:#9B7C2C; --ab:#F5EED7; --accent:#2B3A67; --accent2:#2F6F4F; --amber:#9B7C2C;
-  --b:#2B3A67; --bad:#A23B32; --bb:#E6E9F2; --bg:#F3F5EF; --blue:#2B3A67; --blueSoft:#E6E9F2;
-  --card:#FFFFFF; --dark:#1F2430; --danger:#A23B32; --g:#2F6F4F; --gb:#E4EFE8; --gold:#9B7C2C;
-  --goldSoft:#F5EED7; --good:#2F6F4F; --green:#2F6F4F; --greenSoft:#E4EFE8; --i:#1F2430;
-  --ink:#1F2430; --l:#DBDCD2; --line:#DBDCD2; --m:#565C6C; --max:1180px; --mint:#2F6F4F;
-  --muted:#565C6C; --n:#2B3A67; --n2:#3D4E86; --navy:#2B3A67; --navy2:#3D4E86; --panel:#FFFFFF;
-  --panel2:#F7F8F3; --paper:#F3F5EF; --paper2:#FAFAF6; --r:#A23B32; --r21:16px; --r22:18px;
-  --radius:14px; --red:#A23B32; --red2:#B4513F; --redSoft:#F5E7E4; --rust:#8E4C37; --shadow:0 16px 42px rgba(31,43,58,.08);
-  --soft:#EDEEE6; --soft2:#F1F2EA; --softgold:#F5EED7; --softgreen:#E4EFE8; --softr:#F5E7E4;
-  --softred:#F5E7E4; --text:#1F2430; --warm:#F5EBCE; --warn:#9B7C2C;
-}
-
-/* ===== chrome CPNS Learning (disuntik otomatis) ===== */
-.cpns-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 auto;padding:14px 20px 0;max-width:var(--max,1180px);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);box-sizing:border-box;}
-.cpns-crumb a{color:var(--accent);text-decoration:none;}
-.cpns-crumb a:hover{text-decoration:underline;}
-.cpns-crumb .sep{color:var(--line);}
-.cpns-crumb .cur{color:var(--muted);}
-.cpns-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:200;background:transparent;}
-.cpns-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent,#2B3A67),var(--accent2,#2F6F4F));}
-.cpns-modnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0 auto;padding:26px 0 30px;max-width:var(--max,1180px);box-sizing:border-box;}
-.cpns-navbtn{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel,#fff);color:var(--accent);text-decoration:none;transition:all .18s;white-space:nowrap;}
-.cpns-navbtn:hover{border-color:var(--accent);background:var(--blueSoft,#E6E9F2);}
-.cpns-navbtn.off{opacity:.45;pointer-events:none;background:var(--panel,#fff);}
-.cpns-index{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px dashed var(--accent);background:var(--blueSoft,#E6E9F2);color:var(--accent);text-decoration:none;white-space:nowrap;}
-.cpns-done{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 14px;border-radius:10px;border:1px solid var(--good,#2F6F4F);background:var(--greenSoft,#E4EFE8);color:var(--good,#2F6F4F);cursor:pointer;white-space:nowrap;transition:all .18s;}
-.cpns-done:hover{background:var(--good,#2F6F4F);color:#fff;}
-.cpns-done.on{background:var(--good,#2F6F4F);color:#fff;}
-body{font-family:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif!important;background:var(--paper,#F3F5EF);color:var(--ink,#1F2430);-webkit-font-smoothing:antialiased;}
-h1,h2,h3,h4,h5,h6{font-family:'Fraunces',Georgia,serif!important;}
-img{max-width:100%;height:auto;border-radius:8px;}
-table{max-width:100%;}
-@media(max-width:620px){.cpns-modnav{gap:6px;padding:20px 12px 26px;}.cpns-navbtn,.cpns-done,.cpns-index{padding:8px 10px;font-size:11.5px;}}
-
-</style>
 </head><body>
 <nav class="cpns-crumb" aria-label="Breadcrumb">
-  <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
-  <a href="../../index.html">TWK</a><span class="sep">/</span>
-  <a href="../index.html">Materi TWK</a><span class="sep">/</span>
-  <span class="cur">Modul 17</span>
+ <a href="../../../../index.html">← Beranda</a><span class="sep">/</span>
+ <a href="../../index.html">TWK</a><span class="sep">/</span>
+ <a href="../index.html">Materi TWK</a><span class="sep">/</span>
+ <span class="cur">Modul 17</span>
 </nav>
 
 
-<div class="top"><div class="topin"><div class="brand">ULTIMATE TWK KNOWLEDGE SYSTEM · MODUL 17</div><div class="small">Strategi Diskriminasi Jawaban</div></div><div class="progress"><div id="bar" class="bar"></div></div></div>
 <header class="hero"><div class="wrap"><div class="kicker">MODUL 17 · SEMUA OPSI TERLIHAT BENAR</div><h1>Strategi Diskriminasi Jawaban TWK</h1>
 <p>Ketika banyak opsi sama-sama terdengar baik, peserta tidak cukup hanya mengenali materi. Ia harus membedakan target, aktor, scope, relasi, level, dan tingkat kedekatan semantik setiap opsi.</p>
 <div class="quote">“Benar secara umum” bukan otomatis “jawaban paling tepat”. Cari hubungan yang paling presisi dengan pertanyaan.</div></div></header>
-<main class="wrap"><nav><a href="#inti">Masalah inti</a><a href="#mesin">Mesin tes</a><a href="#distraktor">Distraktor</a><a href="#lab">Laboratorium</a><a href="#protocol">Master Protocol</a></nav>
+<main class="wrap">
 <section id="inti"><div class="eyebrow">1 · MASALAH INTI</div><h2>Lima opsi dapat sama-sama benar</h2>
 <p class="lead">Pola soal yang dianalisis dalam corpus memperlihatkan distractor yang sering merupakan jawaban baik tetapi tidak tepat untuk target: konsep tetangga, aktor berbeda, scope berbeda, relasi yang tertukar, level yang salah, atau efek sekunder.</p>
 <table><thead><tr><th>Lapisan</th><th>Pertanyaan</th><th>Kesalahan khas</th></tr></thead><tbody>
@@ -720,26 +668,25 @@ table{max-width:100%;}
 <div class="src"><p><b>Rujukan:</b> pola soal TWK dan materi Ultimate TWK Knowledge System.</p>
 <p><a href="https://jdih.dpr.go.id/setjen/detail-dokumen/tipe/uu/id/1756" target="_blank" rel="noopener">JDIH Setjen DPR RI — UUD NRI Tahun 1945</a></p>
 <p><a href="https://www.mkri.id/public/content/infoumum/naskahkomprehensif/pdf/Naskah%20Komprehensif%20Perubahan%20UUD%201945%20BUKU%20VI.pdf" target="_blank" rel="noopener">Mahkamah Konstitusi — Naskah Komprehensif Perubahan UUD 1945</a></p></div></div></footer>
-<script>(()=>{const b=document.getElementById('bar');const u=()=>{const h=document.documentElement.scrollHeight-innerHeight;b.style.width=(h?scrollY/h*100:0)+'%'};addEventListener('scroll',u,{passive:true});u()})();</script>
 
 <nav class="cpns-modnav" aria-label="Navigasi modul">
-  <a class="cpns-navbtn" href="16-berbagai-bentuk-pembentukan-soal-twk.html">← Modul 16</a>
-  <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
-  <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m17" type="button">Tandai selesai</button>
-  <a class="cpns-navbtn" href="18-integrasi-semua-konsep-dan-reasoning-twk.html">Modul 18 →</a>
+ <a class="cpns-navbtn" href="16-berbagai-bentuk-pembentukan-soal-twk.html">← Modul 16</a>
+ <a class="cpns-index" href="../index.html">☰ Semua Modul</a>
+ <button class="cpns-done" id="cpns-done" data-key="cpns_twk_m17" type="button">Tandai selesai</button>
+ <a class="cpns-navbtn" href="18-integrasi-semua-konsep-dan-reasoning-twk.html">Modul 18 →</a>
 </nav>
 
 <script>
 (function(){
-  var bar=document.getElementById('cpns-progress-bar');
-  function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
-  if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
-  var done=document.getElementById('cpns-done');
-  if(done){var key=done.getAttribute('data-key');
-    function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
-    done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
-    refresh();
-  }
+ var bar=document.getElementById('cpns-progress-bar');
+ function upd(){var d=document.documentElement;var s=d.scrollHeight-d.clientHeight;var p=s?d.scrollTop/s*100:0;bar.style.width=Math.max(0,Math.min(100,p))+'%';}
+ if(bar){document.addEventListener('scroll',upd,{passive:true});upd();}
+ var done=document.getElementById('cpns-done');
+ if(done){var key=done.getAttribute('data-key');
+ function refresh(){var on=localStorage.getItem(key)==='1';done.classList.toggle('on',on);done.textContent=on?'✓ Selesai':'Tandai selesai';}
+ done.addEventListener('click',function(){localStorage.setItem(key,localStorage.getItem(key)==='1'?'0':'1');refresh();});
+ refresh();
+ }
 })();
 </script>
 

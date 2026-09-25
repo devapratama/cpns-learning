@@ -1,98 +1,42 @@
 ﻿{
   "judul": "Bank Soal TKP CPNS",
   "deskripsi": "Simulasi CAT TKP dengan penilaian 1-5 per pilihan. Setiap paket berisi 45 soal dalam satu file dan dapat dikerjakan sebagai bank soal. Passing grade TKP: 166 dari 225.",
-  "versiManifest": 2,
-  "catatan": "Setiap paket memuat satu file JSON berisi seluruh soal (45 butir). Edit file ini setiap menambah paket soal baru, lalu jalankan formatter JSON.",
+  "versiManifest": 3,
+  "catatan": "Paket aktif bersumber dari paket-soal-tkp-1.json s.d. paket-soal-tkp-5.json (format CORE 225). Folder paket soal lama (paket-lama) dinonaktifkan. Edit file ini setiap menambah paket soal baru.",
   "paket": [
     {
       "id": "paket-1",
-      "nama": "Paket 1 — Simulasi HOTS TKP CPNS (Masterclass)",
-      "keterangan": "45 soal: Pelayanan Publik, Jejaring Kerja, Sosial Budaya, TIK, Profesionalisme, dan Anti Radikalisme.",
-      "file": ["paket-soal/paket-1.json"],
+      "nama": "Paket 1 — Deep Learning TKP (CORE)",
+      "keterangan": "45 soal paling representatif untuk membangun pola berpikir TKP secara mendalam: dilema kaya, keputusan kontekstual, pasangan 5-vs-4.",
+      "file": ["paket-soal-tkp-1.json"],
       "tersedia": true
     },
     {
       "id": "paket-2",
-      "nama": "Paket 2 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: campuran materi TKP tingkat sedang hingga sulit.",
-      "file": ["paket-soal/paket-2.json"],
+      "nama": "Paket 2 — Transfer TKP (CORE)",
+      "keterangan": "45 soal transfer: menguji pola keputusan pada konteks, aktor, dan situasi berbeda.",
+      "file": ["paket-soal-tkp-2.json"],
       "tersedia": true
     },
     {
       "id": "paket-3",
-      "nama": "Paket 3 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: fokus pelayanan publik dan jejaring kerja.",
-      "file": ["paket-soal/paket-3.json"],
+      "nama": "Paket 3 — Transfer TKP (CORE)",
+      "keterangan": "45 soal transfer: menguji pola keputusan pada konteks, aktor, dan situasi berbeda.",
+      "file": ["paket-soal-tkp-3.json"],
       "tersedia": true
     },
     {
       "id": "paket-4",
-      "nama": "Paket 4 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: fokus sosial budaya dan TIK.",
-      "file": ["paket-soal/paket-4.json"],
+      "nama": "Paket 4 — Transfer TKP (CORE)",
+      "keterangan": "45 soal transfer: menguji pola keputusan pada konteks, aktor, dan situasi berbeda.",
+      "file": ["paket-soal-tkp-4.json"],
       "tersedia": true
     },
     {
       "id": "paket-5",
-      "nama": "Paket 5 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: fokus profesionalisme dan anti radikalisme.",
-      "file": ["paket-soal/paket-5.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-6",
-      "nama": "Paket 6 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: campuran materi TKP tingkat mudah hingga sedang.",
-      "file": ["paket-soal/paket-6.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-7",
-      "nama": "Paket 7 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: fokus pengambilan keputusan dan benturan nilai.",
-      "file": ["paket-soal/paket-7.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-8",
-      "nama": "Paket 8 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: campuran materi TKP tingkat sulit.",
-      "file": ["paket-soal/paket-8.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-9",
-      "nama": "Paket 9 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: fokus pelayanan publik dan profesionalisme.",
-      "file": ["paket-soal/paket-9.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-10",
-      "nama": "Paket 10 — Simulasi HOTS TKP CPNS",
-      "keterangan": "45 soal: rangkuman campuran seluruh materi TKP.",
-      "file": ["paket-soal/paket-10.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-11",
-      "nama": "Paket 11 — Pemantapan Gap TKP (Remedial Spesial)",
-      "keterangan": "38 soal remedial berbasis gap hasil audit: menutup blind spot dan menguji transfer decision engine.",
-      "file": ["paket-soal/paket-11.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-12",
-      "nama": "Paket 12 — Counterfactual Berpasangan (TKP)",
-      "keterangan": "20 pasang (40 soal) A/B: menguji sensitivitas keputusan terhadap perubahan satu fakta pembeda. Dinilai per pasangan — bukan tryout biasa.",
-      "file": ["paket-soal/paket-12.json"],
-      "tersedia": true
-    },
-    {
-      "id": "paket-13",
-      "nama": "Paket 13 — Uji Transfer Campuran TKP (Analisis Kesalahan per Tipe)",
-      "keterangan": "50 soal transfer campuran: menerapkan prinsip TKP pada konteks baru. Pembahasan dilengkapi analisis kesalahan per tipe keputusan (gap).",
-      "file": ["paket-soal/paket-13.json"],
+      "nama": "Paket 5 — Transfer TKP (CORE)",
+      "keterangan": "45 soal transfer: menguji pola keputusan pada konteks, aktor, dan situasi berbeda.",
+      "file": ["paket-soal-tkp-5.json"],
       "tersedia": true
     }
   ]

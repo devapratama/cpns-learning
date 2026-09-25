@@ -14,9 +14,9 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <style>
   :root{
-    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
-    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
-    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+--ink:#1F2430; --ink-soft:#3C4253; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+--accent:#2B3A67; --accent-soft:#E6E9F2; --good:#1B4F33; --good-soft:#E4EFE8; --bad:#80211A; --bad-soft:#F5E7E4;
+--skip:#5C420C; --skip-soft:#F5EFD8;
     --radius:14px;
   }
   *{box-sizing:border-box;}
@@ -34,7 +34,7 @@
   .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:8px; max-width:800px; margin:0 auto; padding:24px clamp(14px, 3vw, 24px) 0; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft);}
   .breadcrumb a{color:var(--accent); text-decoration:none;}
   .breadcrumb a:hover{text-decoration:underline;}
-  .breadcrumb .crumb-sep{color:var(--line);}
+  .breadcrumb .crumb-sep{color:var(--ink-soft);}
   .breadcrumb .crumb-current{color:var(--ink-soft); font-weight:500;}
 
   header.top{padding:24px 0 22px; max-width:800px; margin:0 auto;}
@@ -95,8 +95,8 @@
 
   /* ---------- jawaban / peringatan ---------- */
   .answer, .warn, .danger{ margin-top:14px; padding:13px 15px; border-radius:11px; font-size:1rem; }
-  .answer{ background:var(--good-soft); border:1px solid #bfe0cc; color:#1f5c3d; font-weight:600; }
-  .warn{ background:var(--skip-soft); border:1px solid #e8d9a8; color:#6b5213; }
+.answer{ background:var(--good-soft); border:1px solid #bfe0cc; color:#144A2E; font-weight:600; }
+.warn{ background:var(--skip-soft); border:1px solid #e8d9a8; color:#4C3A08; }
   .danger{ background:var(--bad-soft); border:1px solid #eccbc6; color:#7d2c25; }
 
   /* ---------- Visual / scene ---------- */

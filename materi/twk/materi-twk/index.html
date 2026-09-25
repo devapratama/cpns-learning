@@ -4,297 +4,297 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Materi TWK — 18 Modul &amp; Bank Soal | CPNS Learning</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
+ <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
-    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
-    --skip:#9C7B2C; --skip-soft:#F5EFD8;
-    --radius:14px;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
-  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 80px;}
-  
-  header.top{padding:8px 0 20px;}
-  header.top h1{font-family:'Fraunces', serif;font-weight:600;font-size:clamp(24px,5vw,36px);letter-spacing:-0.01em;margin:0 0 10px;}
-  header.top p{color:var(--ink-soft); margin:0; font-size:15.5px; max-width:60ch;}
+ :root{
+ --ink:#1F2430; --ink-soft:#3C4253; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+ --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#1B4F33; --good-soft:#E4EFE8; --bad:#80211A; --bad-soft:#F5E7E4;
+ --skip:#5C420C; --skip-soft:#F5EFD8;
+ --radius:14px;
+ }
+ *{box-sizing:border-box;}
+ body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+ .wrap{max-width:760px;margin:0 auto;padding:28px 20px 80px;}
+ 
+ header.top{padding:8px 0 20px;}
+ header.top h1{font-family:'Fraunces', serif;font-weight:600;font-size:clamp(24px,5vw,36px);letter-spacing:-0.01em;margin:0 0 10px;}
+ header.top p{color:var(--ink-soft); margin:0; font-size:15.5px; max-width:60ch;}
 
-  .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-bottom:14px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
-  .breadcrumb a{color:var(--accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;}
-  .breadcrumb a:hover{text-decoration:underline;}
-  .breadcrumb .crumb-sep{color:var(--line);}
-  .breadcrumb .crumb-current{color:var(--ink-soft);}
+ .breadcrumb{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-bottom:14px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
+ .breadcrumb a{color:var(--accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;}
+ .breadcrumb a:hover{text-decoration:underline;}
+ .breadcrumb .crumb-sep{color:var(--line);}
+ .breadcrumb .crumb-current{color:var(--ink-soft);}
 
-  .tab-nav{display:flex; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px; flex-wrap:wrap;}
-  .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
-  .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
-  .tab-content{display:none;} .tab-content.active{display:block;}
+ .tab-nav{display:flex; gap:8px; margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:12px; flex-wrap:wrap;}
+ .tab-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:8px 16px; border-radius:8px; border:1px solid transparent; background:none; cursor:pointer; color:var(--ink-soft); transition:all .2s;}
+ .tab-btn.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+ .tab-content{display:none;} .tab-content.active{display:block;}
 
-  .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 -20px 26px; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
-  .scoreboard .label{color:var(--ink-soft);}
-  .scoreboard .num{color:var(--accent); font-weight:500;}
+ .scoreboard{position:sticky; top:0; z-index:5; background:rgba(243,245,239,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); margin:0 -20px 26px; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+ .scoreboard .label{color:var(--ink-soft);}
+ .scoreboard .num{color:var(--accent); font-weight:500;}
 
-  /* ===== TAB MATERI: progress-map + modul grid ===== */
-  .progress-map{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:22px;}
-  .progress-map a{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); background:var(--accent-soft); border:1px dashed var(--accent); border-radius:6px; padding:3px 7px; text-decoration:none;}
-  .progress-map a.done{border-style:solid; background:var(--good-soft); border-color:var(--good); color:var(--good);}
-  .progress-map a:hover{opacity:.85;}
-  .modul-intro{font-size:14.5px; color:var(--ink-soft); margin:0 0 20px;}
+ /* ===== TAB MATERI: progress-map + modul grid ===== */
+ .progress-map{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:22px;}
+ .progress-map a{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); background:var(--accent-soft); border:1px dashed var(--accent); border-radius:6px; padding:3px 7px; text-decoration:none;}
+ .progress-map a.done{border-style:solid; background:var(--good-soft); border-color:var(--good); color:var(--good);}
+ .progress-map a:hover{opacity:.85;}
+ .modul-intro{font-size:14.5px; color:var(--ink-soft); margin:0 0 20px;}
 
-  .modul-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:14px;}
-  .modul-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px; text-decoration:none; color:inherit; transition:transform .2s, border-color .2s, box-shadow .2s; position:relative; overflow:hidden;}
-  .modul-card:hover{transform:translateY(-2px); border-color:var(--accent); box-shadow:0 8px 24px rgba(31,43,58,.08);}
-  .modul-card .modul-chip{font-family:'IBM Plex Mono', monospace; font-size:11px; background:var(--accent-soft); color:var(--accent); border-radius:4px; padding:2px 7px; display:inline-block; margin-bottom:9px;}
-  .modul-card.done .modul-chip{background:var(--good-soft); color:var(--good);}
-  .modul-card h3{font-family:'Fraunces', serif; font-weight:600; font-size:16px; margin:0 0 5px; line-height:1.3;}
-  .modul-card p{font-size:13px; color:var(--ink-soft); margin:0;}
-  .modul-card .modul-state{position:absolute; top:14px; right:14px; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft);}
+ .modul-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:14px;}
+ .modul-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px; text-decoration:none; color:inherit; transition:transform .2s, border-color .2s, box-shadow .2s; position:relative; overflow:hidden;}
+ .modul-card:hover{transform:translateY(-2px); border-color:var(--accent); box-shadow:0 8px 24px rgba(31,43,58,.08);}
+ .modul-card .modul-chip{font-family:'IBM Plex Mono', monospace; font-size:11px; background:var(--accent-soft); color:var(--accent); border-radius:4px; padding:2px 7px; display:inline-block; margin-bottom:9px;}
+ .modul-card.done .modul-chip{background:var(--good-soft); color:var(--good);}
+ .modul-card h3{font-family:'Fraunces', serif; font-weight:600; font-size:16px; margin:0 0 5px; line-height:1.3;}
+ .modul-card p{font-size:13px; color:var(--ink-soft); margin:0;}
+ .modul-card .modul-state{position:absolute; top:14px; right:14px; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft);}
 
-  /* ===== TAB PAKET ===== */
-  .packet-header{margin-bottom:24px;}
-  .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
-  .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
-  .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:14px;}
-  .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
-  .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
-  .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:17px; margin:0 0 6px;}
-  .packet-desc{font-size:13px; color:var(--ink-soft); margin:0 0 12px; line-height:1.6;}
-  .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); flex-wrap:wrap; gap:6px;}
-  .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
-  .packet-best{background:var(--good-soft); color:var(--good); padding:3px 8px; border-radius:4px;}
-  .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
+ /* ===== TAB PAKET ===== */
+ .packet-header{margin-bottom:24px;}
+ .packet-header h2{font-family:'Fraunces', serif; font-weight:600; font-size:clamp(20px,4vw,28px); margin:0 0 8px;}
+ .packet-header p{color:var(--ink-soft); font-size:14.5px; margin:0; max-width:60ch;}
+ .packet-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:14px;}
+ .packet-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px; cursor:pointer; transition:transform .2s, border-color .2s; position:relative; overflow:hidden;}
+ .packet-card:hover{transform:translateY(-2px); border-color:var(--accent);}
+ .packet-title{font-family:'Fraunces', serif; font-weight:600; font-size:17px; margin:0 0 6px;}
+ .packet-desc{font-size:13px; color:var(--ink-soft); margin:0 0 12px; line-height:1.6;}
+ .packet-meta{display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); flex-wrap:wrap; gap:6px;}
+ .packet-badge{background:var(--accent-soft); padding:3px 8px; border-radius:4px;}
+ .packet-best{background:var(--good-soft); color:var(--good); padding:3px 8px; border-radius:4px;}
+ .empty-state{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:14px; border:1px dashed var(--line); border-radius:var(--radius);}
 
-  /* ========== QUIZ MODE - ONE QUESTION PER SCREEN ========== */
-  .quiz-view{display:none;}
-  .quiz-view.active{
-    position:fixed; inset:0; z-index:100; background:var(--paper);
-    display:flex; flex-direction:column; overflow:hidden;
-  }
-  .packet-list.hidden{display:none;}
+ /* ========== QUIZ MODE - ONE QUESTION PER SCREEN ========== */
+ .quiz-view{display:none;}
+ .quiz-view.active{
+ position:fixed; inset:0; z-index:100; background:var(--paper);
+ display:flex; flex-direction:column; overflow:hidden;
+ }
+ .packet-list.hidden{display:none;}
 
-  .quiz-view.active .quiz-top-row,
-  .quiz-view.active .quiz-packet-name,
-  .quiz-view.active .progress-bar,
-  .quiz-view.active .quiz-body > *,
-  .quiz-view.active .quiz-footer-inner{width:100%; max-width:760px; margin-left:auto; margin-right:auto;}
-  .quiz-view.active .quiz-body .quiz-q-card{order:0;}
-  .quiz-view.active .quiz-body .quiz-nav{order:1;}
+ .quiz-view.active .quiz-top-row,
+ .quiz-view.active .quiz-packet-name,
+ .quiz-view.active .progress-bar,
+ .quiz-view.active .quiz-body > *,
+ .quiz-view.active .quiz-footer-inner{width:100%; max-width:760px; margin-left:auto; margin-right:auto;}
+ .quiz-view.active .quiz-body .quiz-q-card{order:0;}
+ .quiz-view.active .quiz-body .quiz-nav{order:1;}
 
-  .quiz-header{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px 20px;}
-  .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; flex-wrap:wrap; row-gap:6px;}
-  .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
-  .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
-  .quiz-progress-text{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
-  .quiz-progress-text b{color:var(--accent); font-weight:600;}
-  .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:16px; margin:0 0 8px;}
-  .progress-bar{height:6px; background:var(--line); border-radius:3px; overflow:hidden;}
-  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
+ .quiz-header{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px 20px;}
+ .quiz-top-row{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; flex-wrap:wrap; row-gap:6px;}
+ .quiz-back-btn{font-family:'IBM Plex Mono', monospace; font-size:12.5px; background:none; border:1px solid var(--line); color:var(--ink-soft); padding:6px 12px; border-radius:6px; cursor:pointer; transition:all .15s;}
+ .quiz-back-btn:hover{border-color:var(--accent); color:var(--accent);}
+ .quiz-progress-text{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);}
+ .quiz-progress-text b{color:var(--accent); font-weight:600;}
+ .quiz-packet-name{font-family:'Fraunces', serif; font-weight:600; font-size:16px; margin:0 0 8px;}
+ .progress-bar{height:6px; background:var(--line); border-radius:3px; overflow:hidden;}
+ .progress-fill{height:100%; background:var(--accent); transition:width .3s ease; width:0%;}
 
-  .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
+ .quiz-body{flex:1 1 auto; min-height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:14px clamp(14px,3vw,24px) 10px; display:flex; flex-direction:column;}
 
-  .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px; transition:border-color .2s; scroll-margin-top:124px;}
-  .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
-  .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
-  .quiz-q-text{font-size:15px; margin:0 0 14px; font-weight:500; line-height:1.6; white-space:pre-wrap;}
-  .quiz-opts{display:flex; flex-direction:column; gap:8px;}
-  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
-  .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
-  .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
-  .quiz-opt.locked{cursor:default; pointer-events:none;}
-  .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
-  .quiz-opt .bubble{flex-shrink:0; width:26px; height:26px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
-  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
-  .quiz-opt > span:last-child{flex:1; min-width:0;}
+ .quiz-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px; transition:border-color .2s; scroll-margin-top:124px;}
+ .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
+ .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
+ .quiz-q-text{font-size:15px; margin:0 0 14px; font-weight:500; line-height:1.6; white-space:pre-wrap;}
+ .quiz-opts{display:flex; flex-direction:column; gap:8px;}
+ .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+ .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
+ .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+ .quiz-opt.locked{cursor:default; pointer-events:none;}
+ .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
+ .quiz-opt .bubble{flex-shrink:0; width:26px; height:26px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
+ .quiz-opt.selected .bubble{background:var(--accent);color:#fff;border-color:#fff; border-color:var(--accent); color:#fff;}
+ .quiz-opt > span:last-child{flex:1; min-width:0;}
 
-  .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
-  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
-  .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
-  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
-  .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
-  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+ .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
+ .quiz-opt.review-correct .bubble{background:var(--good);color:#fff;border-color:#fff; border-color:var(--good); color:#fff;}
+ .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
+ .quiz-opt.review-wrong .bubble{background:var(--bad);color:#fff;border-color:#fff; border-color:var(--bad); color:#fff;}
+ .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
+ .quiz-opt.review-reveal .bubble{background:var(--good);color:#fff;border-color:#fff; border-color:var(--good); color:#fff;}
 
-  .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
-  .quiz-footer-inner{max-width:760px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto;}
-  .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 18px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px;}
-  .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
-  .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
-  .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
-  .quiz-btn-primary{background:var(--accent); color:#fff;}
-  .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
-  .quiz-btn-finish{background:var(--good); color:#fff;}
-  .quiz-btn-finish:hover:not(:disabled){opacity:.9;}
-  .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
-  .quiz-btn-skip:hover{background:var(--skip-soft);}
+ .quiz-footer{flex:0 0 auto; background:rgba(243,245,239,0.98); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 20px; display:flex; gap:10px; justify-content:center; align-items:center;}
+ .quiz-footer-inner{max-width:760px; width:100%; display:flex; gap:10px; justify-content:space-between; align-items:center; margin:0 auto;}
+ .quiz-btn{font-family:'IBM Plex Mono', monospace; font-size:13px; padding:10px 18px; border-radius:8px; border:none; cursor:pointer; transition:all .15s; font-weight:500; min-height:44px;}
+ .quiz-btn:disabled{opacity:0.4; cursor:not-allowed;}
+ .quiz-btn-secondary{background:none; border:1px solid var(--line); color:var(--ink-soft);}
+ .quiz-btn-secondary:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
+ .quiz-btn-primary{background:var(--accent); color:#fff;}
+ .quiz-btn-primary:hover:not(:disabled){opacity:.9;}
+ .quiz-btn-finish{background:var(--good); color:#fff;}
+ .quiz-btn-finish:hover:not(:disabled){opacity:.9;}
+ .quiz-btn-skip{background:none; border:1px solid var(--skip); color:var(--skip); font-size:12px; padding:8px 14px;}
+ .quiz-btn-skip:hover{background:var(--skip-soft);}
 
-  .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
-  .review-stat{text-align:center;}
-  .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
-  .review-stat-num.good{color:var(--good);}
-  .review-stat-num.bad{color:var(--bad);}
-  .review-stat-num.skip{color:var(--skip);}
-  .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
+ .review-summary{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:20px; display:flex; gap:16px; flex-wrap:wrap; justify-content:space-around; align-items:center;}
+ .review-stat{text-align:center;}
+ .review-stat-num{font-family:'Fraunces', serif; font-size:28px; font-weight:700; color:var(--accent); line-height:1;}
+ .review-stat-num.good{color:var(--good);}
+ .review-stat-num.bad{color:var(--bad);}
+ .review-stat-num.skip{color:var(--skip);}
+ .review-stat-label{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-top:4px;}
 
-  .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
-  .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
-  .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
-  .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
-  .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
-  .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
-  .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
-  .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
-  .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
-  .review-premis-list{margin:0; padding-left:18px;}
-  .review-premis-list li{margin-bottom:4px;}
+ .review-q-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
+ .review-q-head{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+ .review-q-badge{font-family:'IBM Plex Mono', monospace; font-size:11px; padding:3px 8px; border-radius:4px; background:var(--paper); color:var(--ink-soft);}
+ .review-q-badge.correct{background:var(--good-soft); color:var(--good);}
+ .review-q-badge.wrong{background:var(--bad-soft); color:var(--bad);}
+ .review-q-badge.skipped{background:var(--skip-soft); color:var(--skip);}
+ .review-q-type{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-soft); background:var(--paper); padding:2px 6px; border-radius:3px;}
+ .review-premis{margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; font-size:13.5px;}
+ .review-premis-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+ .review-premis-list{margin:0; padding-left:18px;}
+ .review-premis-list li{margin-bottom:4px;}
 
-  .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
-  .review-explain.good{border-left:4px solid var(--good);}
-  .review-explain.bad{border-left:4px solid var(--bad);}
-  .review-explain.skip{border-left:4px solid var(--skip);}
-  .review-explain .status{font-weight:600;}
-  .review-explain.good .status{color:var(--good);}
-  .review-explain.bad .status{color:var(--bad);}
-  .review-explain.skip .status{color:var(--skip);}
-  .review-explain b{font-weight:600; color:var(--accent);}
-  .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
+ .review-explain{margin-top:14px; padding:14px 16px; border-radius:8px; font-size:14.5px; line-height:1.75; color:var(--ink); background:var(--surface); border:1px solid var(--line);}
+ .review-explain.good{border-left:4px solid var(--good);}
+ .review-explain.bad{border-left:4px solid var(--bad);}
+ .review-explain.skip{border-left:4px solid var(--skip);}
+ .review-explain .status{font-weight:600;}
+ .review-explain.good .status{color:var(--good);}
+ .review-explain.bad .status{color:var(--bad);}
+ .review-explain.skip .status{color:var(--skip);}
+ .review-explain b{font-weight:600; color:var(--accent);}
+ .review-explain p{margin:0 0 10px;} .review-explain p:last-child{margin-bottom:0;}
 
-  .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
-  .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
-  @keyframes spin { to { transform:rotate(360deg); } }
+ .loading-state{text-align:center; padding:60px 20px; color:var(--ink-soft);}
+ .loading-spinner{display:inline-block; width:28px; height:28px; border:3px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:12px;}
+ @keyframes spin { to { transform:rotate(360deg); } }
 
-  .quiz-nav{display:flex; flex-wrap:wrap; gap:4px; margin-bottom:16px; padding:12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
-  .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:8px; width:100%;}
-  .quiz-nav-dot{width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
-  .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
-  .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
-  .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
-  .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
+ .quiz-nav{display:flex; flex-wrap:wrap; gap:4px; margin-bottom:16px; padding:12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);}
+ .quiz-nav-title{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase; margin-bottom:8px; width:100%;}
+ .quiz-nav-dot{width:28px; height:28px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none;}
+ .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
+ .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); background:var(--accent-soft); font-weight:500;}
+ .quiz-nav-dot.current.answered{border-color:var(--accent); background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--accent-soft);}
+ .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
 
-  footer{text-align:center; color:var(--ink-soft); font-size:13px; margin-top:36px;}
+ footer{text-align:center; color:var(--ink-soft); font-size:13px; margin-top:36px;}
 
-  @media (max-width:520px){
-    .wrap{padding:20px 16px 100px;}
-    .scoreboard{margin:0 -16px 22px; padding:10px 16px;}
-    .modul-grid{grid-template-columns:1fr;}
-    .packet-grid{grid-template-columns:1fr;}
-    .quiz-header{padding:12px 16px;}
-    .quiz-q-card{padding:16px;}
-    .quiz-q-text{font-size:14.5px;}
-    .quiz-opt{font-size:13.5px; padding:10px 11px;}
-    .quiz-opt .bubble{width:24px; height:24px; font-size:11px;}
-    .quiz-packet-name{font-size:14.5px;}
-    .review-q-card{padding:16px;}
-    .quiz-footer{padding:10px 16px;}
-    .quiz-btn{font-size:12.5px; padding:9px 14px;}
-    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
-  }
+ @media (max-width:520px){
+ .wrap{padding:20px 16px 100px;}
+ .scoreboard{margin:0 -16px 22px; padding:10px 16px;}
+ .modul-grid{grid-template-columns:1fr;}
+ .packet-grid{grid-template-columns:1fr;}
+ .quiz-header{padding:12px 16px;}
+ .quiz-q-card{padding:16px;}
+ .quiz-q-text{font-size:14.5px;}
+ .quiz-opt{font-size:13.5px; padding:10px 11px;}
+ .quiz-opt .bubble{width:24px; height:24px; font-size:11px;}
+ .quiz-packet-name{font-size:14.5px;}
+ .review-q-card{padding:16px;}
+ .quiz-footer{padding:10px 16px;}
+ .quiz-btn{font-size:12.5px; padding:9px 14px;}
+ .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+ }
 
-  @media (min-width:1024px){
-    .quiz-view.active .quiz-top-row,
-    .quiz-view.active .quiz-packet-name,
-    .quiz-view.active .progress-bar,
-    .quiz-view.active .quiz-body > *,
-    .quiz-view.active .quiz-footer-inner{max-width:800px;}
-    .quiz-footer-inner{max-width:800px;}
-    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
-    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
-    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
-    .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
-    .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
-    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
-    .quiz-opts{gap:9px;}
-    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
-    .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
-    .quiz-btn{font-size:14px; padding:11px 16px;}
-    .quiz-progress-text{font-size:13px;}
-    .quiz-packet-name{font-size:16px;}
-  }
+ @media (min-width:1024px){
+ .quiz-view.active .quiz-top-row,
+ .quiz-view.active .quiz-packet-name,
+ .quiz-view.active .progress-bar,
+ .quiz-view.active .quiz-body > *,
+ .quiz-view.active .quiz-footer-inner{max-width:800px;}
+ .quiz-footer-inner{max-width:800px;}
+ .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+ .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
+ .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:800px; margin:0 0 10px;}
+ .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
+ .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
+ .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+ .quiz-opts{gap:9px;}
+ .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+ .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
+ .quiz-btn{font-size:14px; padding:11px 16px;}
+ .quiz-progress-text{font-size:13px;}
+ .quiz-packet-name{font-size:16px;}
+ }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="../../../index.html">← Beranda</a>
-    <span class="crumb-sep">/</span>
-    <a href="../index.html">TWK</a>
-    <span class="crumb-sep">/</span>
-    <span class="crumb-current">Materi TWK</span>
-  </nav>
+ <nav class="breadcrumb" aria-label="Breadcrumb">
+ <a href="../../../index.html">← Beranda</a>
+ <span class="crumb-sep">/</span>
+ <a href="../index.html">TWK</a>
+ <span class="crumb-sep">/</span>
+ <span class="crumb-current">Materi TWK</span>
+ </nav>
 
-  <header class="top">
-    <h1>Materi TWK</h1>
-    <p>18 modul end-to-end — dari peta besar wawasan kebangsaan sampai cara membedakan jawaban dalam soal — plus 5 paket soal tryout (150 soal) dengan pembahasan tiap opsi.</p>
-  </header>
+ <header class="top">
+ <h1>Materi TWK</h1>
+ <p>18 modul end-to-end — dari peta besar wawasan kebangsaan sampai cara membedakan jawaban dalam soal — plus 5 paket soal tryout (150 soal) dengan pembahasan tiap opsi.</p>
+ </header>
 
-  <div class="tab-nav">
-    <button class="tab-btn active" onclick="switchTab('materi', event)">📖 Materi</button>
-    <button class="tab-btn" onclick="switchTab('paket', event)">🎯 Paket Soal Tryout</button>
-  </div>
+ <div class="tab-nav">
+ <button class="tab-btn active" onclick="switchTab('materi', event)">📖 Materi</button>
+ <button class="tab-btn" onclick="switchTab('paket', event)">🎯 Paket Soal Tryout</button>
+ </div>
 
-  <!-- TAB 1: MATERI -->
-  <div id="tab-materi" class="tab-content active">
-    <div class="progress-map" id="modul-map"></div>
-    <p class="modul-intro">Baca berurutan mulai Modul 01, atau lompat ke topik yang sedang Anda butuhkan. Tombol <b>Tandai selesai</b> di tiap modul akan mencentang peta di sini secara otomatis.</p>
-    <div class="modul-grid" id="modul-grid"></div>
-  </div>
+ <!-- TAB 1: MATERI -->
+ <div id="tab-materi" class="tab-content active">
+ <div class="progress-map" id="modul-map"></div>
+ <p class="modul-intro">Baca berurutan mulai Modul 01, atau lompat ke topik yang sedang Anda butuhkan. Tombol <b>Tandai selesai</b> di tiap modul akan mencentang peta di sini secara otomatis.</p>
+ <div class="modul-grid" id="modul-grid"></div>
+ </div>
 
-  <!-- TAB 2: PAKET SOAL -->
-  <div id="tab-paket" class="tab-content">
-    <div class="scoreboard">
-      <span class="label">Skor Tryout</span>
-      <span class="num" id="tryout-score">0 / 0</span>
-    </div>
+ <!-- TAB 2: PAKET SOAL -->
+ <div id="tab-paket" class="tab-content">
+ <div class="scoreboard">
+ <span class="label">Skor Tryout</span>
+ <span class="num" id="tryout-score">0 / 0</span>
+ </div>
 
-    <div class="packet-list" id="packet-list-view">
-      <div class="packet-header">
-        <h2 id="packet-title">Bank Soal TWK</h2>
-        <p id="packet-desc">Memuat manifesto paket…</p>
-      </div>
-      <div class="packet-grid" id="packet-container"></div>
-    </div>
-  </div>
+ <div class="packet-list" id="packet-list-view">
+ <div class="packet-header">
+ <h2 id="packet-title">Bank Soal TWK</h2>
+ <p id="packet-desc">Memuat manifesto paket…</p>
+ </div>
+ <div class="packet-grid" id="packet-container"></div>
+ </div>
+ </div>
 
-  <!-- QUIZ VIEW -->
-  <div id="quiz-view" class="quiz-view">
-    <div class="quiz-header">
-      <div class="quiz-top-row">
-        <button class="quiz-back-btn" onclick="exitQuiz()">← Daftar Paket</button>
-        <span class="quiz-progress-text">Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> · Terjawab <b id="quiz-answered-count">0</b></span>
-      </div>
-      <div class="quiz-packet-name" id="quiz-packet-name">Paket Soal</div>
-      <div class="progress-bar"><div class="progress-fill" id="quiz-progress-fill"></div></div>
-    </div>
-    <div class="quiz-body" id="quiz-body"></div>
-    <div class="quiz-footer" id="quiz-footer"></div>
-  </div>
+ <!-- QUIZ VIEW -->
+ <div id="quiz-view" class="quiz-view">
+ <div class="quiz-header">
+ <div class="quiz-top-row">
+ <button class="quiz-back-btn" onclick="exitQuiz()">← Daftar Paket</button>
+ <span class="quiz-progress-text">Soal <b id="quiz-current-num">1</b> / <b id="quiz-total-num">0</b> · Terjawab <b id="quiz-answered-count">0</b></span>
+ </div>
+ <div class="quiz-packet-name" id="quiz-packet-name">Paket Soal</div>
+ <div class="progress-bar"><div class="progress-fill" id="quiz-progress-fill"></div></div>
+ </div>
+ <div class="quiz-body" id="quiz-body"></div>
+ <div class="quiz-footer" id="quiz-footer"></div>
+ </div>
 
-  <footer>CPNS Learning · Materi TWK — 18 modul &amp; bank soal</footer>
+ <footer>CPNS Learning · Materi TWK — 18 modul &amp; bank soal</footer>
 </div>
 
 <script>
 /* ========== DATA MODUL ========== */
 const MODULS = [
-  {nn:'01', title:'Peta Besar TWK', desc:'Cara memandang seluruh materi TWK: konsep, bukti, dan opsi.', file:'materi/01-peta-besar-twk.html'},
-  {nn:'02', title:'Fondasi Bangsa dan Negara', desc:'Unsur berdirinya bangsa: wilayah, rakyat, pemerintah, kedaulatan.', file:'materi/02-fondasi-bangsa-dan-negara.html'},
-  {nn:'03', title:'Sejarah Kebangsaan dan Pembentukan Indonesia', desc:'Kebangkitan nasional hingga proklamasi sebagai fakta historis.', file:'materi/03-sejarah-kebangsaan-dan-pembentukan-indonesia.html'},
-  {nn:'04', title:'Pancasila sebagai Sistem Nilai', desc:'Sila sebagai nilai, prinsip, norma, dan tindakan.', file:'materi/04-pancasila-sebagai-sistem-nilai.html'},
-  {nn:'05', title:'UUD NRI 1945 dan Konstitusionalisme', desc:'Konstitusi, perubahannya, dan habitat pasal yang sering diuji.', file:'materi/05-uud-nri-1945-dan-konstitusionalisme.html'},
-  {nn:'06', title:'Lembaga Negara dan Sistem Ketatanegaraan', desc:'Peta lembaga, distribusi kekuasaan, dan kewenangan unik.', file:'materi/06-lembaga-negara-dan-sistem-ketatanegaraan.html'},
-  {nn:'07', title:'Demokrasi, Hak, Kewajiban, dan Kehidupan Konstitusional', desc:'Demokrasi, HAM dalam UUD, dan perilaku warga negara.', file:'materi/07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html'},
-  {nn:'08', title:'NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara', desc:'Keberagaman, integrasi nasional, dan geopolitik Nusantara.', file:'materi/08-nkri-bhinneka-integrasi-dan-wawasan-nusantara.html'},
-  {nn:'09', title:'Nasionalisme dan Kepentingan Nasional', desc:'Nasionalisme, patriotisme, dan kepentingan nasional.', file:'materi/09-nasionalisme-dan-kepentingan-nasional.html'},
-  {nn:'10', title:'Bela Negara dan Ketahanan Nasional', desc:'Ancaman, yang dilindungi, dan siapa yang relevan bertindak.', file:'materi/10-bela-negara-dan-ketahanan-nasional.html'},
-  {nn:'11', title:'Integritas dan Karakter Kebangsaan', desc:'Integritas saat tak ada yang melihat: korupsi, nepotisme, diskresi.', file:'materi/11-integritas-dan-karakter-kebangsaan.html'},
-  {nn:'12', title:'Hubungan Indonesia dengan Dunia', desc:'Politik luar negeri bebas-aktif, kerja sama internasional.', file:'materi/12-hubungan-indonesia-dengan-dunia.html'},
-  {nn:'13', title:'Tantangan Kebangsaan Kontemporer', desc:'Radikalisme, hoaks, polarisasi, dan ancaman nonkonvensional.', file:'materi/13-tantangan-kebangsaan-kontemporer.html'},
-  {nn:'14', title:'Semantik, Bahasa, dan Cara Membaca Soal TWK', desc:'Kata kunci, nuansa makna, dan jebakan kalimat.', file:'materi/14-semantik-bahasa-dan-cara-membaca-soal-twk.html'},
-  {nn:'15', title:'Aktor, Scope, dan Hubungan Logis dalam Soal TWK', desc:'Siapa berwenang, sejauh apa, dan bagaimana relasi logis.', file:'materi/15-aktor-scope-dan-hubungan-logis-dalam-soal-twk.html'},
-  {nn:'16', title:'Berbagai Bentuk Pembentukan Soal TWK', desc:'Laboratorium: dari stimulus, opsi, sampai penjelasan benar/salah.', file:'materi/16-berbagai-bentuk-pembentukan-soal-twk.html'},
-  {nn:'17', title:'Strategi Diskriminasi Jawaban TWK', desc:'Ranking opsi: actor, scope, relation, level, directness.', file:'materi/17-strategi-diskriminasi-jawaban-twk.html'},
-  {nn:'18', title:'Integrasi Semua Konsep dan Reasoning TWK', desc:'Master workflow membedah soal dari modul 01 sampai 17.', file:'materi/18-integrasi-semua-konsep-dan-reasoning-twk.html'}
+ {nn:'01', title:'Peta Besar TWK', desc:'Cara memandang seluruh materi TWK: konsep, bukti, dan opsi.', file:'materi/01-peta-besar-twk.html'},
+ {nn:'02', title:'Fondasi Bangsa dan Negara', desc:'Unsur berdirinya bangsa: wilayah, rakyat, pemerintah, kedaulatan.', file:'materi/02-fondasi-bangsa-dan-negara.html'},
+ {nn:'03', title:'Sejarah Kebangsaan dan Pembentukan Indonesia', desc:'Kebangkitan nasional hingga proklamasi sebagai fakta historis.', file:'materi/03-sejarah-kebangsaan-dan-pembentukan-indonesia.html'},
+ {nn:'04', title:'Pancasila sebagai Sistem Nilai', desc:'Sila sebagai nilai, prinsip, norma, dan tindakan.', file:'materi/04-pancasila-sebagai-sistem-nilai.html'},
+ {nn:'05', title:'UUD NRI 1945 dan Konstitusionalisme', desc:'Konstitusi, perubahannya, dan habitat pasal yang sering diuji.', file:'materi/05-uud-nri-1945-dan-konstitusionalisme.html'},
+ {nn:'06', title:'Lembaga Negara dan Sistem Ketatanegaraan', desc:'Peta lembaga, distribusi kekuasaan, dan kewenangan unik.', file:'materi/06-lembaga-negara-dan-sistem-ketatanegaraan.html'},
+ {nn:'07', title:'Demokrasi, Hak, Kewajiban, dan Kehidupan Konstitusional', desc:'Demokrasi, HAM dalam UUD, dan perilaku warga negara.', file:'materi/07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html'},
+ {nn:'08', title:'NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara', desc:'Keberagaman, integrasi nasional, dan geopolitik Nusantara.', file:'materi/08-nkri-bhinneka-integrasi-dan-wawasan-nusantara.html'},
+ {nn:'09', title:'Nasionalisme dan Kepentingan Nasional', desc:'Nasionalisme, patriotisme, dan kepentingan nasional.', file:'materi/09-nasionalisme-dan-kepentingan-nasional.html'},
+ {nn:'10', title:'Bela Negara dan Ketahanan Nasional', desc:'Ancaman, yang dilindungi, dan siapa yang relevan bertindak.', file:'materi/10-bela-negara-dan-ketahanan-nasional.html'},
+ {nn:'11', title:'Integritas dan Karakter Kebangsaan', desc:'Integritas saat tak ada yang melihat: korupsi, nepotisme, diskresi.', file:'materi/11-integritas-dan-karakter-kebangsaan.html'},
+ {nn:'12', title:'Hubungan Indonesia dengan Dunia', desc:'Politik luar negeri bebas-aktif, kerja sama internasional.', file:'materi/12-hubungan-indonesia-dengan-dunia.html'},
+ {nn:'13', title:'Tantangan Kebangsaan Kontemporer', desc:'Radikalisme, hoaks, polarisasi, dan ancaman nonkonvensional.', file:'materi/13-tantangan-kebangsaan-kontemporer.html'},
+ {nn:'14', title:'Semantik, Bahasa, dan Cara Membaca Soal TWK', desc:'Kata kunci, nuansa makna, dan jebakan kalimat.', file:'materi/14-semantik-bahasa-dan-cara-membaca-soal-twk.html'},
+ {nn:'15', title:'Aktor, Scope, dan Hubungan Logis dalam Soal TWK', desc:'Siapa berwenang, sejauh apa, dan bagaimana relasi logis.', file:'materi/15-aktor-scope-dan-hubungan-logis-dalam-soal-twk.html'},
+ {nn:'16', title:'Berbagai Bentuk Pembentukan Soal TWK', desc:'Laboratorium: dari stimulus, opsi, sampai penjelasan benar/salah.', file:'materi/16-berbagai-bentuk-pembentukan-soal-twk.html'},
+ {nn:'17', title:'Strategi Diskriminasi Jawaban TWK', desc:'Ranking opsi: actor, scope, relation, level, directness.', file:'materi/17-strategi-diskriminasi-jawaban-twk.html'},
+ {nn:'18', title:'Integrasi Semua Konsep dan Reasoning TWK', desc:'Master workflow membedah soal dari modul 01 sampai 17.', file:'materi/18-integrasi-semua-konsep-dan-reasoning-twk.html'}
 ];
 const DONE_PREFIX = 'cpns_twk_m';
 
@@ -302,48 +302,48 @@ function isDone(nn){ return localStorage.getItem(DONE_PREFIX + nn) === '1'; }
 function markDone(nn, val){ localStorage.setItem(DONE_PREFIX + nn, val ? '1' : '0'); renderModuls(); }
 
 function renderModuls(){
-  const grid = document.getElementById('modul-grid');
-  const map = document.getElementById('modul-map');
-  let doneCount = 0;
-  grid.innerHTML = '';
-  MODULS.forEach(m => {
-    const done = isDone(m.nn);
-    if (done) doneCount++;
-    const card = document.createElement('a');
-    card.className = 'modul-card' + (done ? ' done' : '');
-    card.href = m.file;
-    card.innerHTML =
-      '<span class="modul-chip">Modul ' + m.nn + '</span>' +
-      '<span class="modul-state">' + (done ? '✓' : '•') + '</span>' +
-      '<h3>' + m.title + '</h3><p>' + m.desc + '</p>';
-    grid.appendChild(card);
-  });
-  map.innerHTML = '';
-  const total = MODULS.length;
-  const pct = Math.round(doneCount / total * 100);
-  const summary = document.createElement('a');
-  summary.href = '#modul-grid';
-  summary.textContent = 'Selesai ' + doneCount + '/' + total + ' (' + pct + '%)';
-  summary.style.cssText = 'border-style:solid;background:var(--ink-soft);border-color:var(--ink-soft);color:#fff;';
-  map.appendChild(summary);
-  MODULS.forEach(m => {
-    const a = document.createElement('a');
-    a.href = '#modul-' + m.nn;
-    a.textContent = m.nn;
-    if (isDone(m.nn)) a.classList.add('done');
-    map.appendChild(a);
-  });
+ const grid = document.getElementById('modul-grid');
+ const map = document.getElementById('modul-map');
+ let doneCount = 0;
+ grid.innerHTML = '';
+ MODULS.forEach(m => {
+ const done = isDone(m.nn);
+ if (done) doneCount++;
+ const card = document.createElement('a');
+ card.className = 'modul-card' + (done ? ' done' : '');
+ card.href = m.file;
+ card.innerHTML =
+ '<span class="modul-chip">Modul ' + m.nn + '</span>' +
+ '<span class="modul-state">' + (done ? '✓' : '•') + '</span>' +
+ '<h3>' + m.title + '</h3><p>' + m.desc + '</p>';
+ grid.appendChild(card);
+ });
+ map.innerHTML = '';
+ const total = MODULS.length;
+ const pct = Math.round(doneCount / total * 100);
+ const summary = document.createElement('a');
+ summary.href = '#modul-grid';
+ summary.textContent = 'Selesai ' + doneCount + '/' + total + ' (' + pct + '%)';
+ summary.style.cssText = 'border-style:solid;background:var(--ink-soft);border-color:var(--ink-soft);color:#fff;';
+ map.appendChild(summary);
+ MODULS.forEach(m => {
+ const a = document.createElement('a');
+ a.href = m.file;
+ a.textContent = m.nn;
+ if (isDone(m.nn)) a.classList.add('done');
+ map.appendChild(a);
+ });
 }
 
 /* ========== TAB SWITCHER ========== */
 function switchTab(tabName, event) {
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-  const target = event && event.target ? event.target : document.querySelector('.tab-btn');
-  const btn = document.querySelector('.tab-btn[data-tab="' + tabName + '"]') ||
-              (['materi','paket'].includes(tabName) ? document.querySelectorAll('.tab-btn')[tabName === 'materi' ? 0 : 1] : null);
-  document.getElementById('tab-' + tabName).classList.add('active');
-  if (btn) btn.classList.add('active');
+ document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+ document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+ const target = event && event.target ? event.target : document.querySelector('.tab-btn');
+ const btn = document.querySelector('.tab-btn[data-tab="' + tabName + '"]') ||
+ (['materi','paket'].includes(tabName) ? document.querySelectorAll('.tab-btn')[tabName === 'materi' ? 0 : 1] : null);
+ document.getElementById('tab-' + tabName).classList.add('active');
+ if (btn) btn.classList.add('active');
 }
 
 /* ========== QUIZ ENGINE (pola silogisme) ========== */
@@ -355,382 +355,382 @@ let quizSubmitted = false;
 let currentQuestionIndex = 0;
 
 function updateTryoutScore(){
-  document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered;
+ document.getElementById('tryout-score').textContent = tryoutCorrect + ' / ' + tryoutAnswered;
 }
 
 /* ========== PACKET LOADER ========== */
 async function loadPackets() {
-  const container = document.getElementById('packet-container');
-  const titleEl = document.getElementById('packet-title');
-  const descEl = document.getElementById('packet-desc');
-  try {
-    const response = await fetch('paket-soal/manifest.json');
-    if (!response.ok) throw new Error('Manifest not found');
-    const manifest = await response.json();
-    titleEl.textContent = manifest.judul || 'Bank Soal TWK';
-    descEl.textContent = manifest.deskripsi || '';
-    container.innerHTML = '';
-    if (!manifest.paket || manifest.paket.length === 0) {
-      container.innerHTML = '<div class="empty-state">Belum ada paket soal.</div>';
-      return;
-    }
-    manifest.paket.forEach((pkt, idx) => {
-      const card = document.createElement('div');
-      const best = localStorage.getItem('cpns_twk_best_' + (idx + 1)) || '';
-      card.className = 'packet-card';
-      card.innerHTML = `
-        <div class="packet-title">${pkt.nama}</div>
-        <div class="packet-desc">${pkt.deskripsi || 'Paket latihan TWK'}</div>
-        <div class="packet-meta">
-          <span class="packet-badge">${pkt.file}</span>
-          ${best ? '<span class="packet-best">Terbaik: ' + best + '</span>' : ''}
-        </div>
-      `;
-      card.addEventListener('click', () => startPacket(pkt, idx + 1));
-      container.appendChild(card);
-    });
-  } catch (err) {
-    titleEl.textContent = 'Bank Soal TWK';
-    descEl.textContent = 'Pastikan paket-soal/manifest.json tersedia.';
-    container.innerHTML = `<div class="empty-state"><strong>manifest.json belum ditemukan</strong><br>${err.message}</div>`;
-  }
+ const container = document.getElementById('packet-container');
+ const titleEl = document.getElementById('packet-title');
+ const descEl = document.getElementById('packet-desc');
+ try {
+ const response = await fetch('paket-soal/manifest.json');
+ if (!response.ok) throw new Error('Manifest not found');
+ const manifest = await response.json();
+ titleEl.textContent = manifest.judul || 'Bank Soal TWK';
+ descEl.textContent = manifest.deskripsi || '';
+ container.innerHTML = '';
+ if (!manifest.paket || manifest.paket.length === 0) {
+ container.innerHTML = '<div class="empty-state">Belum ada paket soal.</div>';
+ return;
+ }
+ manifest.paket.forEach((pkt, idx) => {
+ const card = document.createElement('div');
+ const best = localStorage.getItem('cpns_twk_best_' + (idx + 1)) || '';
+ card.className = 'packet-card';
+ card.innerHTML = `
+ <div class="packet-title">${pkt.nama}</div>
+ <div class="packet-desc">${pkt.deskripsi || 'Paket latihan TWK'}</div>
+ <div class="packet-meta">
+ <span class="packet-badge">${pkt.file}</span>
+ ${best ? '<span class="packet-best">Terbaik: ' + best + '</span>' : ''}
+ </div>
+ `;
+ card.addEventListener('click', () => startPacket(pkt, idx + 1));
+ container.appendChild(card);
+ });
+ } catch (err) {
+ titleEl.textContent = 'Bank Soal TWK';
+ descEl.textContent = 'Pastikan paket-soal/manifest.json tersedia.';
+ container.innerHTML = `<div class="empty-state"><strong>manifest.json belum ditemukan</strong><br>${err.message}</div>`;
+ }
 }
 
 /* ===== NORMALISASI SOAL TWK → bentuk quiz ===== */
 function normalizeSoal(src) {
-  return src.map((q, i) => {
-    const opts = [];
-    letters.forEach(l => {
-      if (q.options && q.options[l] !== undefined) opts.push(l + '. ' + q.options[l]);
-    });
-    let jawaban = (q.final_key || q.source_key || '').trim().toUpperCase();
-    if (!letters.includes(jawaban)) jawaban = '';
-    let pembahasan = q.learner_friendly_explanation || q.source_explanation || '';
-    if (q.detailed_option_explanations) {
-      const bits = [];
-      letters.forEach(l => {
-        if (q.detailed_option_explanations[l]) {
-          bits.push('**Opsi ' + l + ':** ' + q.detailed_option_explanations[l]);
-        }
-      });
-      if (bits.length) pembahasan += '\n\n' + bits.join('\n');
-    }
-    const tipeParts = [q.category, q.concept, q.difficulty].filter(Boolean);
-    return {
-      id: q.id || i + 1,
-      pertanyaan: q.question || '',
-      opsi: opts,
-      jawaban: jawaban,
-      pembahasan: pembahasan,
-      tipe: tipeParts.join(' · ')
-    };
-  });
+ return src.map((q, i) => {
+ const opts = [];
+ letters.forEach(l => {
+ if (q.options && q.options[l] !== undefined) opts.push(l + '. ' + q.options[l]);
+ });
+ let jawaban = (q.final_key || q.source_key || '').trim().toUpperCase();
+ if (!letters.includes(jawaban)) jawaban = '';
+ let pembahasan = q.learner_friendly_explanation || q.source_explanation || '';
+ if (q.detailed_option_explanations) {
+ const bits = [];
+ letters.forEach(l => {
+ if (q.detailed_option_explanations[l]) {
+ bits.push('**Opsi ' + l + ':** ' + q.detailed_option_explanations[l]);
+ }
+ });
+ if (bits.length) pembahasan += '\n\n' + bits.join('\n');
+ }
+ const tipeParts = [q.category, q.concept, q.difficulty].filter(Boolean);
+ return {
+ id: q.id || i + 1,
+ pertanyaan: q.question || '',
+ opsi: opts,
+ jawaban: jawaban,
+ pembahasan: pembahasan,
+ tipe: tipeParts.join(' · ')
+ };
+ });
 }
 
 async function startPacket(pkt, idx) {
-  document.getElementById('packet-list-view').classList.add('hidden');
-  document.getElementById('quiz-view').classList.add('active');
-  document.getElementById('quiz-packet-name').textContent = pkt.nama;
-  document.getElementById('quiz-body').innerHTML = `
-    <div class="loading-state">
-      <div class="loading-spinner"></div>
-      <div>Memuat soal dari <b>${pkt.file}</b>…</div>
-    </div>
-  `;
-  document.getElementById('quiz-footer').style.display = 'none';
-  try {
-    const response = await fetch('paket-soal/' + pkt.file);
-    if (!response.ok) throw new Error('File tidak ditemukan');
-    const raw = await response.json();
-    const soal = normalizeSoal(raw);
-    currentPacket = { paketIdx: idx, nama: pkt.nama, soal: soal };
-    userAnswers = new Array(soal.length).fill(null);
-    quizSubmitted = false;
-    currentQuestionIndex = 0;
-    document.getElementById('quiz-total-num').textContent = soal.length;
-    renderQuestion();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  } catch (err) {
-    document.getElementById('quiz-body').innerHTML = `
-      <div class="empty-state"><strong>Gagal memuat ${pkt.file}</strong><br>${err.message}</div>
-    `;
-    setTimeout(() => exitQuiz(), 2000);
-  }
+ document.getElementById('packet-list-view').classList.add('hidden');
+ document.getElementById('quiz-view').classList.add('active');
+ document.getElementById('quiz-packet-name').textContent = pkt.nama;
+ document.getElementById('quiz-body').innerHTML = `
+ <div class="loading-state">
+ <div class="loading-spinner"></div>
+ <div>Memuat soal dari <b>${pkt.file}</b>…</div>
+ </div>
+ `;
+ document.getElementById('quiz-footer').style.display = 'none';
+ try {
+ const response = await fetch('paket-soal/' + pkt.file);
+ if (!response.ok) throw new Error('File tidak ditemukan');
+ const raw = await response.json();
+ const soal = normalizeSoal(raw);
+ currentPacket = { paketIdx: idx, nama: pkt.nama, soal: soal };
+ userAnswers = new Array(soal.length).fill(null);
+ quizSubmitted = false;
+ currentQuestionIndex = 0;
+ document.getElementById('quiz-total-num').textContent = soal.length;
+ renderQuestion();
+ window.scrollTo({ top: 0, behavior: 'smooth' });
+ } catch (err) {
+ document.getElementById('quiz-body').innerHTML = `
+ <div class="empty-state"><strong>Gagal memuat ${pkt.file}</strong><br>${err.message}</div>
+ `;
+ setTimeout(() => exitQuiz(), 2000);
+ }
 }
 
 function resetQuizFooter() {
-  document.getElementById('quiz-footer').innerHTML = `
-    <div class="quiz-footer-inner">
-      <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
-      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
-      <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
-    </div>
-  `;
-  document.getElementById('quiz-footer').style.display = 'none';
+ document.getElementById('quiz-footer').innerHTML = `
+ <div class="quiz-footer-inner">
+ <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()" disabled>← Kembali</button>
+ <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+ <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="nextQuestion()">Selanjutnya →</button>
+ </div>
+ `;
+ document.getElementById('quiz-footer').style.display = 'none';
 }
 
 function exitQuiz() {
-  document.getElementById('packet-list-view').classList.remove('hidden');
-  document.getElementById('quiz-view').classList.remove('active');
-  currentPacket = null; userAnswers = []; quizSubmitted = false; currentQuestionIndex = 0;
-  resetQuizFooter();
-  loadPackets();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+ document.getElementById('packet-list-view').classList.remove('hidden');
+ document.getElementById('quiz-view').classList.remove('active');
+ currentPacket = null; userAnswers = []; quizSubmitted = false; currentQuestionIndex = 0;
+ resetQuizFooter();
+ loadPackets();
+ window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderAnswerFooter() {
-  const isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
-  document.getElementById('quiz-footer').innerHTML = `
-    <div class="quiz-footer-inner">
-      <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()"${currentQuestionIndex === 0 ? ' disabled' : ''}>← Kembali</button>
-      <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
-      <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="${isLast ? 'submitQuiz()' : 'nextQuestion()'}">${isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →'}</button>
-    </div>
-  `;
-  document.getElementById('quiz-footer').style.display = 'flex';
+ const isLast = currentQuestionIndex >= currentPacket.soal.length - 1;
+ document.getElementById('quiz-footer').innerHTML = `
+ <div class="quiz-footer-inner">
+ <button class="quiz-btn quiz-btn-secondary" id="quiz-prev-btn" onclick="prevQuestion()"${currentQuestionIndex === 0 ? ' disabled' : ''}>← Kembali</button>
+ <button class="quiz-btn quiz-btn-skip" onclick="skipToReview()">Lewati →</button>
+ <button class="quiz-btn quiz-btn-primary" id="quiz-submit-btn" onclick="${isLast ? 'submitQuiz()' : 'nextQuestion()'}">${isLast ? '✓ Selesai & Lihat Pembahasan' : 'Selanjutnya →'}</button>
+ </div>
+ `;
+ document.getElementById('quiz-footer').style.display = 'flex';
 }
 
 function goToQuestion(qi) {
-  if (!currentPacket) return;
-  currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
-  renderQuestion();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+ if (!currentPacket) return;
+ currentQuestionIndex = Math.min(Math.max(0, qi), currentPacket.soal.length - 1);
+ renderQuestion();
+ window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function prevQuestion() { goToQuestion(currentQuestionIndex - 1); }
 function nextQuestion() {
-  if (!currentPacket) return;
-  if (currentQuestionIndex >= currentPacket.soal.length - 1) { submitQuiz(); return; }
-  goToQuestion(currentQuestionIndex + 1);
+ if (!currentPacket) return;
+ if (currentQuestionIndex >= currentPacket.soal.length - 1) { submitQuiz(); return; }
+ goToQuestion(currentQuestionIndex + 1);
 }
 
 function renderQuestion() {
-  const body = document.getElementById('quiz-body');
-  const total = currentPacket.soal.length;
-  if (total === 0) { body.innerHTML = ''; return; }
-  currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
-  const qi = currentQuestionIndex;
-  body.innerHTML = '';
+ const body = document.getElementById('quiz-body');
+ const total = currentPacket.soal.length;
+ if (total === 0) { body.innerHTML = ''; return; }
+ currentQuestionIndex = Math.min(Math.max(0, currentQuestionIndex), total - 1);
+ const qi = currentQuestionIndex;
+ body.innerHTML = '';
 
-  const nav = document.createElement('div');
-  nav.className = 'quiz-nav';
-  const navTitle = document.createElement('div');
-  navTitle.className = 'quiz-nav-title';
-  navTitle.textContent = 'Navigasi Soal';
-  nav.appendChild(navTitle);
-  currentPacket.soal.forEach((soal, i) => {
-    const dot = document.createElement('a');
-    dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '') + (userAnswers[i] !== null ? ' answered' : '');
-    dot.textContent = i + 1;
-    dot.href = '#q-' + i;
-    dot.id = 'nav-dot-' + i;
-    dot.addEventListener('click', (e) => { e.preventDefault(); if (i !== currentQuestionIndex) goToQuestion(i); });
-    nav.appendChild(dot);
-  });
-  body.appendChild(nav);
+ const nav = document.createElement('div');
+ nav.className = 'quiz-nav';
+ const navTitle = document.createElement('div');
+ navTitle.className = 'quiz-nav-title';
+ navTitle.textContent = 'Navigasi Soal';
+ nav.appendChild(navTitle);
+ currentPacket.soal.forEach((soal, i) => {
+ const dot = document.createElement('a');
+ dot.className = 'quiz-nav-dot' + (i === qi ? ' current' : '') + (userAnswers[i] !== null ? ' answered' : '');
+ dot.textContent = i + 1;
+ dot.href = '#q-' + i;
+ dot.id = 'nav-dot-' + i;
+ dot.addEventListener('click', (e) => { e.preventDefault(); if (i !== currentQuestionIndex) goToQuestion(i); });
+ nav.appendChild(dot);
+ });
+ body.appendChild(nav);
 
-  const soal = currentPacket.soal[qi];
-  const card = document.createElement('div');
-  card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
-  card.id = 'q-' + qi;
-  const numBadge = document.createElement('div');
-  numBadge.className = 'quiz-q-num';
-  numBadge.textContent = 'SOAL ' + (qi + 1);
-  card.appendChild(numBadge);
-  const qText = document.createElement('p');
-  qText.className = 'quiz-q-text';
-  qText.textContent = soal.pertanyaan;
-  card.appendChild(qText);
-  const optsWrap = document.createElement('div');
-  optsWrap.className = 'quiz-opts';
-  optsWrap.id = 'opts-' + qi;
-  soal.opsi.forEach((optText, oi) => {
-    const opt = document.createElement('div');
-    opt.className = 'quiz-opt';
-    opt.id = 'opt-' + qi + '-' + oi;
-    const match = optText.match(/^([A-E])\.\s*(.+)$/s);
-    const letter = match ? match[1] : letters[oi];
-    const text = match ? match[2] : optText;
-    opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
-    if (userAnswers[qi] === oi) opt.classList.add('selected');
-    opt.addEventListener('click', () => handleOptionSelect(qi, oi));
-    optsWrap.appendChild(opt);
-  });
-  card.appendChild(optsWrap);
-  body.appendChild(card);
-  document.getElementById('quiz-current-num').textContent = qi + 1;
-  renderAnswerFooter();
-  updateProgress();
+ const soal = currentPacket.soal[qi];
+ const card = document.createElement('div');
+ card.className = 'quiz-q-card' + (userAnswers[qi] !== null ? ' answered' : '');
+ card.id = 'q-' + qi;
+ const numBadge = document.createElement('div');
+ numBadge.className = 'quiz-q-num';
+ numBadge.textContent = 'SOAL ' + (qi + 1);
+ card.appendChild(numBadge);
+ const qText = document.createElement('p');
+ qText.className = 'quiz-q-text';
+ qText.textContent = soal.pertanyaan;
+ card.appendChild(qText);
+ const optsWrap = document.createElement('div');
+ optsWrap.className = 'quiz-opts';
+ optsWrap.id = 'opts-' + qi;
+ soal.opsi.forEach((optText, oi) => {
+ const opt = document.createElement('div');
+ opt.className = 'quiz-opt';
+ opt.id = 'opt-' + qi + '-' + oi;
+ const match = optText.match(/^([A-E])\.\s*(.+)$/s);
+ const letter = match ? match[1] : letters[oi];
+ const text = match ? match[2] : optText;
+ opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
+ if (userAnswers[qi] === oi) opt.classList.add('selected');
+ opt.addEventListener('click', () => handleOptionSelect(qi, oi));
+ optsWrap.appendChild(opt);
+ });
+ card.appendChild(optsWrap);
+ body.appendChild(card);
+ document.getElementById('quiz-current-num').textContent = qi + 1;
+ renderAnswerFooter();
+ updateProgress();
 }
 
 function handleOptionSelect(qi, oi) {
-  if (quizSubmitted) return;
-  if (userAnswers[qi] === oi) { userAnswers[qi] = null; } else { userAnswers[qi] = oi; }
-  const optsContainer = document.getElementById('opts-' + qi);
-  [...optsContainer.children].forEach((opt, i) => {
-    opt.classList.toggle('selected', i === userAnswers[qi]);
-  });
-  const card = document.getElementById('q-' + qi);
-  card.classList.toggle('answered', userAnswers[qi] !== null);
-  const navDot = document.getElementById('nav-dot-' + qi);
-  if (navDot) navDot.classList.toggle('answered', userAnswers[qi] !== null);
-  updateProgress();
+ if (quizSubmitted) return;
+ if (userAnswers[qi] === oi) { userAnswers[qi] = null; } else { userAnswers[qi] = oi; }
+ const optsContainer = document.getElementById('opts-' + qi);
+ [...optsContainer.children].forEach((opt, i) => {
+ opt.classList.toggle('selected', i === userAnswers[qi]);
+ });
+ const card = document.getElementById('q-' + qi);
+ card.classList.toggle('answered', userAnswers[qi] !== null);
+ const navDot = document.getElementById('nav-dot-' + qi);
+ if (navDot) navDot.classList.toggle('answered', userAnswers[qi] !== null);
+ updateProgress();
 }
 
 function updateProgress() {
-  const answered = userAnswers.filter(a => a !== null).length;
-  const total = currentPacket ? currentPacket.soal.length : 0;
-  document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
-  document.getElementById('quiz-answered-count').textContent = answered;
-  if (total > 0) {
-    document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
-  }
-  const prevBtn = document.getElementById('quiz-prev-btn');
-  if (prevBtn) prevBtn.disabled = currentQuestionIndex === 0;
+ const answered = userAnswers.filter(a => a !== null).length;
+ const total = currentPacket ? currentPacket.soal.length : 0;
+ document.getElementById('quiz-current-num').textContent = (currentQuestionIndex + 1) || 1;
+ document.getElementById('quiz-answered-count').textContent = answered;
+ if (total > 0) {
+ document.getElementById('quiz-progress-fill').style.width = Math.round(answered / total * 100) + '%';
+ }
+ const prevBtn = document.getElementById('quiz-prev-btn');
+ if (prevBtn) prevBtn.disabled = currentQuestionIndex === 0;
 }
 
 function submitQuiz(_auto) {
-  if (!currentPacket) return;
-  const answered = userAnswers.filter(a => a !== null).length;
-  const total = currentPacket.soal.length;
-  if (!_auto && answered < total) {
-    if (!confirm(`Masih ada ${total - answered} soal belum dijawab. Lanjut ke pembahasan?`)) return;
-  }
-  let correct = 0;
-  currentPacket.soal.forEach((soal, qi) => {
-    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
-    if (userAnswers[qi] === correctIdx) correct++;
-  });
-  tryoutAnswered += total;
-  tryoutCorrect += correct;
-  updateTryoutScore();
-  const pct = Math.round(correct / total * 100);
-  const bestKey = 'cpns_twk_best_' + currentPacket.paketIdx;
-  const prevBest = parseInt(localStorage.getItem(bestKey) || '0', 10);
-  if (pct > prevBest) localStorage.setItem(bestKey, String(pct));
-  quizSubmitted = true;
-  renderReviewMode();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+ if (!currentPacket) return;
+ const answered = userAnswers.filter(a => a !== null).length;
+ const total = currentPacket.soal.length;
+ if (!_auto && answered < total) {
+ if (!confirm(`Masih ada ${total - answered} soal belum dijawab. Lanjut ke pembahasan?`)) return;
+ }
+ let correct = 0;
+ currentPacket.soal.forEach((soal, qi) => {
+ const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+ if (userAnswers[qi] === correctIdx) correct++;
+ });
+ tryoutAnswered += total;
+ tryoutCorrect += correct;
+ updateTryoutScore();
+ const pct = Math.round(correct / total * 100);
+ const bestKey = 'cpns_twk_best_' + currentPacket.paketIdx;
+ const prevBest = parseInt(localStorage.getItem(bestKey) || '0', 10);
+ if (pct > prevBest) localStorage.setItem(bestKey, String(pct));
+ quizSubmitted = true;
+ renderReviewMode();
+ window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function skipToReview() {
-  if (!currentPacket) return;
-  if (!confirm('Lewati semua soal dan langsung lihat pembahasan? Soal kosong dihitung salah.')) return;
-  submitQuiz(true);
+ if (!currentPacket) return;
+ if (!confirm('Lewati semua soal dan langsung lihat pembahasan? Soal kosong dihitung salah.')) return;
+ submitQuiz(true);
 }
 
 function renderReviewMode() {
-  const body = document.getElementById('quiz-body');
-  body.innerHTML = '';
-  document.getElementById('quiz-footer').style.display = 'none';
+ const body = document.getElementById('quiz-body');
+ body.innerHTML = '';
+ document.getElementById('quiz-footer').style.display = 'none';
 
-  let correct = 0, wrong = 0, skipped = 0;
-  currentPacket.soal.forEach((soal, qi) => {
-    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
-    if (userAnswers[qi] === null) skipped++;
-    else if (userAnswers[qi] === correctIdx) correct++;
-    else wrong++;
-  });
-  const total = currentPacket.soal.length;
-  const percent = Math.round((correct / total) * 100);
+ let correct = 0, wrong = 0, skipped = 0;
+ currentPacket.soal.forEach((soal, qi) => {
+ const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+ if (userAnswers[qi] === null) skipped++;
+ else if (userAnswers[qi] === correctIdx) correct++;
+ else wrong++;
+ });
+ const total = currentPacket.soal.length;
+ const percent = Math.round((correct / total) * 100);
 
-  const summary = document.createElement('div');
-  summary.className = 'review-summary';
-  summary.innerHTML = `
-    <div class="review-stat"><div class="review-stat-num">${percent}%</div><div class="review-stat-label">Skor</div></div>
-    <div class="review-stat"><div class="review-stat-num good">${correct}</div><div class="review-stat-label">Benar</div></div>
-    <div class="review-stat"><div class="review-stat-num bad">${wrong}</div><div class="review-stat-label">Salah</div></div>
-    <div class="review-stat"><div class="review-stat-num skip">${skipped}</div><div class="review-stat-label">Dilewati</div></div>
-    <div class="review-stat"><div class="review-stat-num">${total}</div><div class="review-stat-label">Total</div></div>
-  `;
-  body.appendChild(summary);
+ const summary = document.createElement('div');
+ summary.className = 'review-summary';
+ summary.innerHTML = `
+ <div class="review-stat"><div class="review-stat-num">${percent}%</div><div class="review-stat-label">Skor</div></div>
+ <div class="review-stat"><div class="review-stat-num good">${correct}</div><div class="review-stat-label">Benar</div></div>
+ <div class="review-stat"><div class="review-stat-num bad">${wrong}</div><div class="review-stat-label">Salah</div></div>
+ <div class="review-stat"><div class="review-stat-num skip">${skipped}</div><div class="review-stat-label">Dilewati</div></div>
+ <div class="review-stat"><div class="review-stat-num">${total}</div><div class="review-stat-label">Total</div></div>
+ `;
+ body.appendChild(summary);
 
-  const renderMarkdown = (src) => {
-    return String(src)
-      .replace(/^\s*>\s?/gm, '')
-      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
-      .replace(/\n{2,}/g, '</p><p>')
-      .replace(/\n/g, '<br>');
-  };
+ const renderMarkdown = (src) => {
+ return String(src)
+ .replace(/^\s*>\s?/gm, '')
+ .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+ .replace(/\n{2,}/g, '</p><p>')
+ .replace(/\n/g, '<br>');
+ };
 
-  currentPacket.soal.forEach((soal, qi) => {
-    const userAns = userAnswers[qi];
-    const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
-    const isSkipped = userAns === null;
-    const isCorrect = !isSkipped && userAns === correctIdx;
+ currentPacket.soal.forEach((soal, qi) => {
+ const userAns = userAnswers[qi];
+ const correctIdx = soal.jawaban.charCodeAt(0) - 'A'.charCodeAt(0);
+ const isSkipped = userAns === null;
+ const isCorrect = !isSkipped && userAns === correctIdx;
 
-    const card = document.createElement('div');
-    card.className = 'review-q-card';
-    card.id = 'review-q-' + qi;
-    const headRow = document.createElement('div');
-    headRow.className = 'review-q-head';
-    const numBadge = document.createElement('span');
-    if (isSkipped) { numBadge.className = 'review-q-badge skipped'; numBadge.textContent = `#${qi + 1} · ⊘ Dilewati`; }
-    else if (isCorrect) { numBadge.className = 'review-q-badge correct'; numBadge.textContent = `#${qi + 1} · ✓ Benar`; }
-    else { numBadge.className = 'review-q-badge wrong'; numBadge.textContent = `#${qi + 1} · ✗ Salah`; }
-    headRow.appendChild(numBadge);
-    if (soal.tipe) {
-      const typeBadge = document.createElement('span');
-      typeBadge.className = 'review-q-type';
-      typeBadge.textContent = soal.tipe;
-      headRow.appendChild(typeBadge);
-    }
-    card.appendChild(headRow);
+ const card = document.createElement('div');
+ card.className = 'review-q-card';
+ card.id = 'review-q-' + qi;
+ const headRow = document.createElement('div');
+ headRow.className = 'review-q-head';
+ const numBadge = document.createElement('span');
+ if (isSkipped) { numBadge.className = 'review-q-badge skipped'; numBadge.textContent = `#${qi + 1} · ⊘ Dilewati`; }
+ else if (isCorrect) { numBadge.className = 'review-q-badge correct'; numBadge.textContent = `#${qi + 1} · ✓ Benar`; }
+ else { numBadge.className = 'review-q-badge wrong'; numBadge.textContent = `#${qi + 1} · ✗ Salah`; }
+ headRow.appendChild(numBadge);
+ if (soal.tipe) {
+ const typeBadge = document.createElement('span');
+ typeBadge.className = 'review-q-type';
+ typeBadge.textContent = soal.tipe;
+ headRow.appendChild(typeBadge);
+ }
+ card.appendChild(headRow);
 
-    const qText = document.createElement('p');
-    qText.className = 'quiz-q-text';
-    qText.textContent = soal.pertanyaan;
-    card.appendChild(qText);
+ const qText = document.createElement('p');
+ qText.className = 'quiz-q-text';
+ qText.textContent = soal.pertanyaan;
+ card.appendChild(qText);
 
-    const optsWrap = document.createElement('div');
-    optsWrap.className = 'quiz-opts';
-    soal.opsi.forEach((optText, oi) => {
-      const opt = document.createElement('div');
-      opt.className = 'quiz-opt locked';
-      const match = optText.match(/^([A-E])\.\s*(.+)$/s);
-      const letter = match ? match[1] : letters[oi];
-      const text = match ? match[2] : optText;
-      opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
-      if (oi === correctIdx) {
-        opt.classList.add(isCorrect || isSkipped ? 'review-correct' : 'review-reveal');
-      }
-      if (!isSkipped && oi === userAns && !isCorrect) {
-        opt.classList.add('review-wrong');
-      }
-      optsWrap.appendChild(opt);
-    });
-    card.appendChild(optsWrap);
+ const optsWrap = document.createElement('div');
+ optsWrap.className = 'quiz-opts';
+ soal.opsi.forEach((optText, oi) => {
+ const opt = document.createElement('div');
+ opt.className = 'quiz-opt locked';
+ const match = optText.match(/^([A-E])\.\s*(.+)$/s);
+ const letter = match ? match[1] : letters[oi];
+ const text = match ? match[2] : optText;
+ opt.innerHTML = `<span class="bubble">${letter}</span><span>${text}</span>`;
+ if (oi === correctIdx) {
+ opt.classList.add(isCorrect || isSkipped ? 'review-correct' : 'review-reveal');
+ }
+ if (!isSkipped && oi === userAns && !isCorrect) {
+ opt.classList.add('review-wrong');
+ }
+ optsWrap.appendChild(opt);
+ });
+ card.appendChild(optsWrap);
 
-    if (soal.pembahasan) {
-      const explain = document.createElement('div');
-      let explainClass = 'review-explain ';
-      let prefix = '';
-      if (isSkipped) { explainClass += 'skip'; prefix = '<span class="status">⊘ Dilewati.</span> '; }
-      else if (isCorrect) { explainClass += 'good'; prefix = '<span class="status">✓ Benar.</span> '; }
-      else { explainClass += 'bad'; prefix = '<span class="status">✗ Kurang tepat.</span> '; }
-      explain.className = explainClass;
-      explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
-      card.appendChild(explain);
-    }
-    body.appendChild(card);
-  });
+ if (soal.pembahasan) {
+ const explain = document.createElement('div');
+ let explainClass = 'review-explain ';
+ let prefix = '';
+ if (isSkipped) { explainClass += 'skip'; prefix = '<span class="status">⊘ Dilewati.</span> '; }
+ else if (isCorrect) { explainClass += 'good'; prefix = '<span class="status">✓ Benar.</span> '; }
+ else { explainClass += 'bad'; prefix = '<span class="status">✗ Kurang tepat.</span> '; }
+ explain.className = explainClass;
+ explain.innerHTML = prefix + '<p>' + renderMarkdown(soal.pembahasan) + '</p>';
+ card.appendChild(explain);
+ }
+ body.appendChild(card);
+ });
 
-  const footer = document.getElementById('quiz-footer');
-  footer.innerHTML = `
-    <div class="quiz-footer-inner">
-      <button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>
-      <button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>
-    </div>
-  `;
-  footer.style.display = 'flex';
+ const footer = document.getElementById('quiz-footer');
+ footer.innerHTML = `
+ <div class="quiz-footer-inner">
+ <button class="quiz-btn quiz-btn-secondary" onclick="exitQuiz()">← Daftar Paket</button>
+ <button class="quiz-btn quiz-btn-primary" onclick="retryPacket()">🔁 Ulangi Paket Ini</button>
+ </div>
+ `;
+ footer.style.display = 'flex';
 }
 
 function retryPacket() {
-  if (!currentPacket) return;
-  currentQuestionIndex = 0;
-  userAnswers = new Array(currentPacket.soal.length).fill(null);
-  quizSubmitted = false;
-  renderQuestion();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+ if (!currentPacket) return;
+ currentQuestionIndex = 0;
+ userAnswers = new Array(currentPacket.soal.length).fill(null);
+ quizSubmitted = false;
+ renderQuestion();
+ window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /* ========== INIT ========== */

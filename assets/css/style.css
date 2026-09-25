@@ -15,15 +15,15 @@
 
   /* Palet materi */
   --ink: #1f2430;
-  --ink-soft: #565c6c;
+  --ink-soft: #3c4253;
   --paper: #f3f5ef;
   --surface: #ffffff;
   --line: #dbdcd2;
   --accent: #2b3a67;
   --accent-soft: #e6e9f2;
-  --good: #2f6f4f;
+  --good: #1b4f33;
   --good-soft: #e4efe8;
-  --bad: #a23b32;
+  --bad: #80211a;
   --bad-soft: #f5e7e4;
 
   /* Layout */
@@ -476,7 +476,7 @@ img {
 }
 
 .breadcrumb .crumb-sep {
-  color: var(--line);
+  color: var(--ink-soft);
 }
 
 .breadcrumb .crumb-current {

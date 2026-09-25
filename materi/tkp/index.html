@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -10,15 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1F2430; --ink-soft:#565C6C; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
-    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#2F6F4F; --good-soft:#E4EFE8; --bad:#A23B32; --bad-soft:#F5E7E4;
-    --skip:#9C7B2C; --skip-soft:#F5EFD8;
+    --ink:#1F2430; --ink-soft:#3C4253; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+    --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#1B4F33; --good-soft:#E4EFE8; --bad:#80211A; --bad-soft:#F5E7E4;
+    --skip:#5C420C; --skip-soft:#F5EFD8;
     --radius:14px;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
-  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 80px;}
+  .wrap{max-width:800px;margin:0 auto;padding:28px 20px 80px;}
 
   header.top{padding:8px 0 20px;}
   header.top h1{font-family:'Fraunces', serif;font-weight:600;font-size:clamp(24px,5vw,36px);letter-spacing:-0.01em;margin:0 0 10px;}
@@ -171,23 +171,23 @@
   .quiz-q-card.answered{border-color:var(--accent); border-width:1.5px;}
   .quiz-q-num{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px; letter-spacing:.05em;}
   .quiz-q-sub{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); background:var(--paper); border:1px solid var(--line); padding:3px 8px; border-radius:4px; margin-left:6px;}
-  .quiz-q-text{font-size:15px; margin:0 0 14px; font-weight:500; line-height:1.65;}
+  .quiz-q-text{font-size:15.5px; margin:0 0 14px; font-weight:500; line-height:1.65;}
   .quiz-opts{display:flex; flex-direction:column; gap:8px;}
-  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:14px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
+  .quiz-opt{display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border:1.5px solid var(--line); border-radius:10px; cursor:pointer; font-size:15.5px; transition:all .15s ease; background:var(--surface); word-break:break-word; user-select:none; -webkit-tap-highlight-color:transparent;}
   .quiz-opt:hover{border-color:var(--accent); background:var(--accent-soft);}
   .quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
   .quiz-opt.locked{cursor:default; pointer-events:none;}
   .quiz-opt.locked:hover{border-color:var(--line); background:var(--surface);}
   .quiz-opt .bubble{flex-shrink:0; width:26px; height:26px; border-radius:50%; border:1.5px solid var(--ink-soft); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:500; color:var(--ink-soft); transition:all .15s;}
-  .quiz-opt.selected .bubble{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .quiz-opt.selected .bubble{background:var(--accent);color:#fff;border-color:#fff; border-color:var(--accent); color:#fff;}
   .quiz-opt > span:nth-of-type(2){flex:1; min-width:0;}
 
   .quiz-opt.review-correct{border-color:var(--good); background:var(--good-soft);}
-  .quiz-opt.review-correct .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-correct .bubble{background:var(--good);color:#fff;border-color:#fff; border-color:var(--good); color:#fff;}
   .quiz-opt.review-wrong{border-color:var(--bad); background:var(--bad-soft);}
-  .quiz-opt.review-wrong .bubble{background:var(--bad); border-color:var(--bad); color:#fff;}
+  .quiz-opt.review-wrong .bubble{background:var(--bad);color:#fff;border-color:#fff; border-color:var(--bad); color:#fff;}
   .quiz-opt.review-reveal{border-color:var(--good); background:var(--good-soft);}
-  .quiz-opt.review-reveal .bubble{background:var(--good); border-color:var(--good); color:#fff;}
+  .quiz-opt.review-reveal .bubble{background:var(--good);color:#fff;border-color:#fff; border-color:var(--good); color:#fff;}
   .quiz-opt .opt-score{flex-shrink:0; align-self:center; font-family:'IBM Plex Mono', monospace; font-size:11px; font-weight:600; padding:2px 7px; border-radius:5px;}
   .quiz-opt .opt-score.s5{background:var(--good-soft); color:var(--good);}
   .quiz-opt .opt-score.s4{background:var(--accent-soft); color:var(--accent);}
@@ -315,7 +315,7 @@
   .quiz-nav summary .nav-count{color:var(--accent); font-weight:600;}
   .quiz-nav[open] summary{border-bottom:1px solid var(--line);}
   .quiz-nav-dots{display:flex; flex-wrap:wrap; gap:4px; padding:12px;}
-  .quiz-nav-dot{width:30px; height:30px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none; padding:0;}
+  .quiz-nav-dot{width:32px; height:32px; border-radius:6px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--ink-soft); cursor:pointer; transition:all .15s; text-decoration:none; padding:0;}
   .quiz-nav-dot:hover{border-color:var(--accent); color:var(--accent);}
   .quiz-nav-dot.answered{background:var(--accent); color:#fff; border-color:var(--accent);}
   .quiz-nav-dot.current{border-color:var(--accent); color:var(--accent); font-weight:600; box-shadow:0 0 0 2px var(--accent-soft);}
@@ -353,7 +353,7 @@
     .quiz-opt .opt-ex{font-size:12px; line-height:1.55;}
     .quiz-footer{padding:10px 16px;}
     .quiz-btn{font-size:12.5px; padding:9px 14px;}
-    .quiz-nav-dot{width:26px; height:26px; font-size:10px;}
+    .quiz-nav-dot{width:28px; height:28px; font-size:10px;}
   }
 
   @media (min-width:1024px){
@@ -363,24 +363,35 @@
     .quiz-view.active .quiz-body > *,
     .quiz-view.active .quiz-footer-inner{max-width:760px;}
 .quiz-footer-inner{max-width:760px;}
-    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:240px minmax(0,1fr) 240px; align-items:start; gap:18px;}
     .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
     .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
     .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:760px; margin:0 0 10px;}
-    .quiz-view.active .quiz-body:has(.quiz-review-main){display:grid; grid-template-columns:200px minmax(0,1fr) 200px; align-items:start; gap:14px;}
+    .quiz-view.active .quiz-body:has(.quiz-review-main){display:grid; grid-template-columns:240px minmax(0,1fr) 240px; align-items:start; gap:18px;}
     .quiz-view.active .quiz-body:has(.quiz-review-main) .quiz-nav{grid-row:1; grid-column:1; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; width:100%; margin:0;}
     .quiz-view.active .quiz-body:has(.quiz-review-main) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
     .quiz-view.active .quiz-body:has(.quiz-review-main) .quiz-review-main{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:760px; margin:0;}
     .quiz-q-card{padding:22px 26px; margin-bottom:10px;}
     .quiz-q-num{font-size:12.5px; margin-bottom:12px;}
-    .quiz-q-text{font-size:18.5px; line-height:1.6; margin-bottom:16px;}
+    .quiz-q-text{font-size:15.5px; line-height:1.85; margin-bottom:16px;}
     .quiz-opts{gap:9px;}
-    .quiz-opt{font-size:16.5px; line-height:1.55; padding:11px 14px;}
+    .quiz-opt{font-size:15.5px; line-height:1.85; padding:11px 14px;}
     .quiz-opt .bubble{width:28px; height:28px; font-size:13px;}
     .quiz-opt .opt-ex{font-size:13.5px;}
     .quiz-btn{font-size:14px; padding:11px 16px;}
     .quiz-progress-text{font-size:13px;}
     .quiz-packet-name{font-size:16px;}
+  }
+
+  @media (min-width:1280px){
+    .quiz-view.active .quiz-body:has(.quiz-q-card){display:grid; grid-template-columns:minmax(0,1fr) minmax(0,760px) minmax(0,1fr); align-items:start; gap:24px;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav{grid-row:1; grid-column:1; justify-self:center; width:240px; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-q-card) .quiz-q-card{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:760px; margin:0 0 10px;}
+    .quiz-view.active .quiz-body:has(.quiz-review-main){display:grid; grid-template-columns:minmax(0,1fr) minmax(0,760px) minmax(0,1fr); align-items:start; gap:24px;}
+    .quiz-view.active .quiz-body:has(.quiz-review-main) .quiz-nav{grid-row:1; grid-column:1; justify-self:center; width:240px; position:sticky; top:0; max-height:calc(100dvh - 190px); overflow-y:auto; align-self:start; margin:0;}
+    .quiz-view.active .quiz-body:has(.quiz-review-main) .quiz-nav-dots{flex-wrap:wrap; overflow-x:visible;}
+    .quiz-view.active .quiz-body:has(.quiz-review-main) .quiz-review-main{grid-row:1; grid-column:2; justify-self:center; width:100%; max-width:760px; margin:0;}
   }
 </style>
 </head>
@@ -748,7 +759,9 @@ function prettyType(s) {
 function normalizeSoal(item) {
   if (!item || typeof item !== 'object') return item;
 
-  const rawSubtes = item.subtes != null ? item.subtes : item.subtest;
+  const rawSubtes = item.subtes != null ? item.subtes
+    : item.subtest != null ? item.subtest
+    : item.subkategori;
 
   const q = {
     subtes: labelSubtes(rawSubtes),
@@ -761,6 +774,7 @@ function normalizeSoal(item) {
       : '',
     pembahasan: item.pembahasan != null ? item.pembahasan
       : item.pembelajaran != null ? item.pembelajaran
+      : item.pembahasan_spesifik != null ? item.pembahasan_spesifik
       : item.overall_explanation != null ? item.overall_explanation
       : item.penjelasan != null ? item.penjelasan
       : item.explanation != null ? item.explanation
@@ -776,6 +790,7 @@ function normalizeSoal(item) {
     indikator: item.indikator != null ? item.indikator : '',
     difficulty: item.difficulty != null ? item.difficulty
       : item.kesulitan != null ? item.kesulitan
+      : item.tingkat_kesulitan != null ? item.tingkat_kesulitan
       : ''
   };
 
@@ -797,8 +812,8 @@ function normalizeSoal(item) {
       return {
         label: key,
         teks: o.teks != null ? o.teks : (o.soal != null ? o.soal : (o.text != null ? o.text : '')),
-        skor: Number(o.skor) || Number(o.score) || Number(skorMap[key]) || Number(o.bobot) || 0,
-        otopsi: o.otopsi || o.explanation || otopsiMap[key] || ''
+        skor: Number(o.skor) || Number(o.poin) || Number(o.score) || Number(skorMap[key]) || Number(o.bobot) || 0,
+        otopsi: o.otopsi || o.alasan || o.explanation || otopsiMap[key] || ''
       };
     }).filter(function (x) { return x !== null; });
   };
@@ -819,8 +834,8 @@ function normalizeSoal(item) {
       return {
         label: lb,
         teks: o.teks != null ? o.teks : (o.soal != null ? o.soal : (o.text != null ? o.text : '')),
-        skor: Number(o.skor) || Number(o.score) || Number(skorMap[lb]) || Number(skorMap[letters[i]]) || Number(o.bobot) || 0,
-        otopsi: o.otopsi || o.explanation || otopsiMap[lb] || otopsiMap[letters[i]] || ''
+        skor: Number(o.skor) || Number(o.poin) || Number(o.score) || Number(skorMap[lb]) || Number(skorMap[letters[i]]) || Number(o.bobot) || 0,
+        otopsi: o.otopsi || o.alasan || o.explanation || otopsiMap[lb] || otopsiMap[letters[i]] || ''
       };
     }).filter(function (x) { return x !== null; });
   };
@@ -913,6 +928,7 @@ async function startPacket(pkt) {
           : Array.isArray(data.daftar_soal) ? data.daftar_soal
           : Array.isArray(data.pertanyaan) ? data.pertanyaan
           : Array.isArray(data.questions) ? data.questions
+          : Array.isArray(data.paket) ? data.paket.reduce((acc, p) => acc.concat(Array.isArray(p.soal) ? p.soal : []), [])
           : [];
         allSoal = allSoal.concat(rawSoal.map(normalizeSoal));
       }
@@ -1031,32 +1047,8 @@ function renderQuestion(qi) {
 
 function fitQuestionCard() {
   if (quizSubmitted) return;
-  const body = document.getElementById('quiz-body');
   const card = document.querySelector('.quiz-q-card');
-  if (!body || !card) return;
-  if (typeof body.clientHeight !== 'number' || body.clientHeight <= 0) return;
-
-  card.style.zoom = '';
-
-  const bodyTop = body.getBoundingClientRect().top;
-  const availH = body.clientHeight - (card.getBoundingClientRect().top - bodyTop) - 30;
-  let availW = body.clientWidth;
-  if (window.matchMedia && window.matchMedia('(min-width:1024px)').matches) {
-    const navElWide = body.querySelector('.quiz-nav');
-    if (navElWide) {
-      const padLW = parseFloat(getComputedStyle(body).paddingLeft) || 0;
-      const padRW = parseFloat(getComputedStyle(body).paddingRight) || 0;
-      availW = body.clientWidth - padLW - padRW - navElWide.getBoundingClientRect().width - 14;
-    }
-  }
-  availW = Math.min(availW, 760);
-
-  const cardH = card.getBoundingClientRect().height;
-  const cardW = card.getBoundingClientRect().width;
-  if (cardH <= 0 || cardW <= 0) return;
-
-  const needed = Math.min(availH / cardH, availW / cardW);
-  card.style.zoom = Math.max(0.8, Math.min(1.5, needed));
+  if (card) card.style.zoom = '';
 }
 
 function handleOptionSelect(qi, oi) {
