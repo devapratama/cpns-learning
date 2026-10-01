@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPNS Learning — Style Kit (di-ekstrak dari Materi TKP)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!--
+================================================================================
+  CPNS LEARNING — MATERI STYLE KIT  v1.0
+  Di-ekstrak dari: materi/tkp/index.html:11-397  (TKP Masterclass)
+  Berlaku untuk  : TKP, TWK, Bahasa Indonesia, TIU, Numerik, subjek baru.
+
+  STRUKTUR FILE INI (3 bagian, berurutan):
+    1. Blok JSON di elemen SCRIPT dengan id="style-spec"   -> KONTRAK. Baca ini dulu.
+    2. Blok STYLE dengan id="materi-theme"                 -> CSS kanonik, siap pakai.
+    3. BODY                                                  -> Galeri hidup + skeleton.
+
+  CARA PAKAI UNTUK AI:
+    - Kirim seluruh file ini. Katakan: "Baca blok JSON ber-id style-spec, lalu
+      tulis materi baru untuk subjek X mengikuti kontraknya."
+    - Class yang terdaftar di "primitives" itu WAJIB. Nama di luar daftar itu
+      TIDAK BOLEH, kecuali sudah ada di blok "legacy_aliases" (khusus materi
+      yang terlanjur ditulis sebelum style kit ini dibuat).
+    - Angka pada "prose_rules" adalah hasil pengukuran 299.198 karakter materi
+      TKP asli (modul-0..7). Jangan diubah; itulah yang membuat hasilnya
+      tidak dapat dibedakan dari materi aslinya.
+================================================================================
+-->
+
+<script type="application/json" id="style-spec">
+{
+  "meta": {
+    "name": "CPNS Learning Materi Style Kit",
+    "version": "1.0",
+    "derived_from": "materi/tkp/index.html:11-397",
+    "language": "id",
+    "scope": "subject-agnostic; berlaku untuk semua subjek CPNS",
+    "how_to_consume": "Baca objek 'style-spec' ini secara berurutan: tokens -> typography -> primitives -> module_anatomy -> prose_rules -> skeletons. Tulis markup hanya memakai class dari 'primitives'. Rujuk 'skeletons' untuk template siap pakai.",
+    "non_negotiable": [
+      "Jangan membuat nama class baru di luar 'primitives'.",
+      "Jangan menulis emoji.",
+      "Jangan menulis code block / backtick di dalam materi.",
+      "Jangan memakai kutip ASCII \" — wajib kutip tipografis \u201c \u201d.",
+      "Blockquote dipakai untuk PERNYATAAN (96.8% kasus pada materi asli), bukan untuk bertanya."
+    ]
+  },
+
+  "tokens": {
+    "_source": "Diverifikasi terhadap 4 lokasi di repo ini. 12 dari 14 token kanonik ada identik di keempatnya (assets/css/style.css menulis hex huruf kecil, nilainya sama). PENTING: --skip dan --skip-soft TIDAK ADA di assets/css/style.css, padahal dipakai TKP, TWK, dan style kit ini. --wrap tidak ada di TKP maupun style.css (keduanya masih menulis max-width langsung di kelas .wrap).",
+    "ink": "#1F2430",
+    "ink-soft": "#3C4253",
+    "paper": "#F3F5EF",
+    "surface": "#FFFFFF",
+    "line": "#DBDCD2",
+    "accent": "#2B3A67",
+    "accent-soft": "#E6E9F2",
+    "good": "#1B4F33",
+    "good-soft": "#E4EFE8",
+    "bad": "#80211A",
+    "bad-soft": "#F5E7E4",
+    "skip": "#5C420C",
+    "skip-soft": "#F5EFD8",
+    "radius": "14px",
+    "wrap": "800px",
+    "wrap_note": "--wrap adalah tambahan style kit ini, SALAH SATU-SATUNYA token yang boleh berbeda per subjek. TKP = 800px (masih hardcode di kelas .wrap), modul-twk.css = 760px (sudah token), assets/css/style.css memakai nama lain --container: 1080px. Pilih SATU nilai, konsisten di seluruh subjek yang kamu buat."
+  },
+
+  "typography": {
+    "font_display": "Fraunces, serif",
+    "font_body": "IBM Plex Sans, sans-serif",
+    "font_mono": "IBM Plex Mono, monospace",
+    "font_load": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+    "rule": "heading SELALU Fraunces. Body SELALU IBM Plex Sans. Label/metadata/angka SELALU IBM Plex Mono + uppercase + letter-spacing.",
+    "h1_module": "clamp(21px,4vw,27px) / 600 / -0.01em / border-bottom 2px accent-soft",
+    "h2_section": "18px / 600 / border-bottom 1px line / line-height 1.4",
+    "h3_slot": "15px / 600 / tanpa border / tanpa uppercase",
+    "body_text": "15.5px / line-height 1.9",
+    "list_item": "15.5px / line-height 1.85",
+    "lead": "17px / 1.8",
+    "small": "13px",
+    "mono_label": "11px / uppercase / letter-spacing .05em",
+    "mono_micro": "11.5px / uppercase / letter-spacing .04em",
+    "card_body_max": "15.5px, 800px wrap, line-height 1.7 pada body"
+  },
+
+  "primitives": {
+    "_note": "Ini daftar TUTUP, sekitar 40 primitif. Nama di luar daftar ini tidak diterima. Alias legacy ada di blok 'legacy_aliases' dan HANYA untuk materi yang sudah terlanjur ditulis sebelum style kit ini dibuat.",
+
+    "structure": [
+      {"class": ".wrap", "role": "Wadah halaman", "when": "wrapper terluar, max-width var(--wrap)"},
+      {"class": ".card", "role": "Permukaan baca", "when": "satu modul / satu bab. Berisi heading + prose + callout. Jarak antar card 22px."},
+      {"class": "header.top", "role": "Header halaman", "when": "kicker/eyebrow + judul besar + deskripsi singkat (max 60ch)"},
+      {"class": ".breadcrumb", "role": "Remah roti", "when": "selalu di atas halaman materi"},
+      {"class": ".divider", "role": "Pemisah", "when": "pemisah bab. Didokumentasikan sebagai <hr class=divider> (atau '---' di markdown)"},
+      {"class": ".lead", "role": "Paragraf pembuka", "when": "1-2 di awal card. 17px."}
+    ],
+
+    "headings": [
+      {"level": "h1", "role": "Judul modul", "when": "satu kali per modul. Judul bab juga h1."},
+      {"level": "h2", "role": "Nomor sub-bab", "when": "penomoran wajib: 'BAB n — Judul' (h1) lalu 'n.1 Judul' (h2)"},
+      {"level": "h3", "role": "Slot semantik", "when": "hanya 3 slot: 'Apa yang sebenarnya diuji?' / 'Contoh nyata: X' / 'Prinsip yang dapat dibawa ke kasus lain'. JANGAN dipakai untuk topik bebas."}
+    ],
+
+    "callout_contract": {
+      "_critical": "INI 4 PERAN YANG NON-AMBIGU. Setiap callout wajib punya tepat satu peran. Jangan pakai yang sama untuk dua tujuan berbeda.",
+      "roles": [
+        {
+          "class": "blockquote",
+          "role": "INSIGHT / KUTIPAN PRINSIP",
+          "look": "border-kiri 4px accent, background accent-soft, italic",
+          "use_when": [
+            "kutipan nazdar/falsafah/referensi",
+            "prinsip kunci yang harus diingat",
+            "pertanyaan kunci yang mengarahkan langkah berikutnya",
+            "PENUTUP: sintesis 1 blok di akhir modul"
+          ],
+          "measured": "844 blok total. 96.8% pernyataan, 3.2% pertanyaan. 44.4% ditulis dengan **tebal**. Pola khas materi TKP: '> **pernyataan satu baris yang padat**'."
+        },
+        {
+          "class": ".box",
+          "role": "KONTEKS / DEFINISI",
+          "look": "background paper, border 1px line, radius 10px, TIDAK italic",
+          "use_when": [
+            "'Tujuan modul:'",
+            "definisi istilah kunci",
+            "kerangka/tabel ringkas berbentuk kartu",
+            "instruksi atau catatan pembantu"
+          ]
+        },
+        {
+          "class": ".rule",
+          "role": "PERINGATAN / ANTI-POLA",
+          "look": "border-kiri 4px accent, background accent-soft, TIDAK italic (pembeda dari blockquote)",
+          "use_when": [
+            "'Jangan bertanya hanya: ...'",
+            "jebakan keyword yang sering dikira benar",
+            "prinsip yang paling sering dilanggar",
+            "pesan sendirian yang harus dibaca"
+          ]
+        },
+        {
+          "class": ".note",
+          "role": "VERDICT / STATUS",
+          "look": "background soft + border-kiri 4px",
+          "modifiers": [
+            {"cls": ".note--good", "warna": "good-soft / good", "use": "jawaban benar, tindakan berhasil, disetujui"},
+            {"cls": ".note--warn", "warna": "skip-soft / skip", "use": "perhatian, diabaikan, atau belum optimal"},
+            {"cls": ".note--bad", "warna": "bad-soft / bad", "use": "jawaban salah, konsekuensi negatif, keliru"}
+          ],
+          "use_when": "berita benar/salah/skip, kunci jawaban, status. JANGAN dipakai untuk prinsip umum."
+        }
+      ]
+    },
+
+    "emphasis": [
+      {"token": "**teks**", "role": "stress", "when": "kunci jawaban, nilai, istilah baru. SANGAT sering dipakai (3.2 per 1.000 karakter). Maksimal 1-2 per paragraf."},
+      {"token": "*teks*", "role": "subtle", "when": "1.06 per 1.000 karakter. Untuk kutipan orang lain, istilah asing, penekanan ringan."}
+    ],
+
+    "data": [
+      {"class": ".table-wrap", "role": "Wrapper tabel", "when": "WAJIB membungkus setiap tabel (overflow-x)."},
+      {"class": ".table", "role": "Tabel data", "when": "tabel 2+ kolom. th = IBM Plex Mono 11px uppercase accent-soft. td 13px. mobile: berubah jadi kartu (label = kolom pertama, accent-soft)."},
+      {"class": ".tag", "role": "Label kecil", "when": "kategori, sumber, tipe. Mono 11px uppercase, pill. Nada: .tag--muted untuk yang netral."},
+      {"class": ".tags", "role": "Baris tag", "when": "wrapper flex gap 6px"},
+      {"class": ".num", "role": "Nomor urut", "when": "lingkaran 26px accent-soft. Untuk urutan langkah."}
+    ],
+
+    "layout": {
+      "_rationale": "INI PENGGANTI 40+ NAMA CLASS YANG PERNAH DIKarang PER SUBJEK. Cukup pakai 7 layout primitive ini plus komponen data, jangan karang nama baru untuk tata letak. Bukti: fragmen modul TKP hanya memakai 11 nama class, sedangkan 18 modul TWK memakai 249.",
+      "primitives": [
+        {"class": ".stack", "role": "Ritme vertikal", "when": "default. Jarak antar blok diatur oleh tema. Pakai ini kalau ragu."},
+        {"class": ".grid .grid--2 / --3 / --4", "role": "Grid responsif auto-fit", "when": "kartu sejajar. minmax 250px/200px/150px."},
+        {"class": ".split", "role": "Dua kolom membandingkan", "when": "A vs B. Kolom kiri accent-soft, kanan good-soft (atau .split--vs untuk 'X'-'Y')."},
+        {"class": ".steps .step", "role": "Langkah bernomor", "when": "proses berurutan. step__n untuk nomor, step__body untuk isi."},
+        {"class": ".flow .flow__item", "role": "Rantai horizontal", "when": "alur A → B → C. Tambahkan .flow__sep (→) di antara item."},
+        {"class": ".timeline .timeline__item", "role": "Linimasa vertikal", "when": "urutan waktu. Garis accent-soft di kiri."},
+        {"class": ".matrix .matrix__cell", "role": "Sel matriks", "when": "tabel/grid padat. .matrix--3 untuk 3 kolom. .matrix__cell--head untuk header."}
+      ]
+    },
+
+    "labels": [
+      {"class": ".kicker", "role": "Label modul", "when": "di header: 'MODUL 5 — PROFESIONALISME'. Mono 11px, uppercase, .1em, accent."},
+      {"class": ".eyebrow", "role": "Nomor bagian", "when": "di dalam card: '1 — MASALAH INTI'. Format sama dengan .kicker."}
+    ],
+
+    "nav": [
+      {"class": ".scorebar", "role": "Bilah status sticky", "when": "informasi berjalan: posisi modul, skor, progres. Mono 13px, backdrop-blur."},
+      {"class": ".pagemap", "role": "Peta modul", "when": "deretan tombol modul di atas. Mono 11px, accent-soft bg, border dashed."},
+      {"class": ".mod-nav .chip", "role": "Chip bab sticky", "when": "Navigasi bab yang menempel di atas card. Mono 11px, pill. Butuh JS untuk auto-TOC."},
+      {"class": ".mod-toc", "role": "Daftar isi", "when": "<details> berisi daftar link ke sub-bab. Butuh JS untuk isi otomatis."},
+      {"class": ".foot-nav", "role": "Nav bawah sticky", "when": "prev/next + posisi modul. Mono, sticky bottom."},
+      {"class": ".cta", "role": "Ajakan akhir modul", "when": "1x di akhir, accent-soft, center. untuk navigasi ke modul berikutnya."}
+    ],
+
+    "exercise": [
+      {"class": ".exercise", "role": "Blok latihan", "when": "kumpulan soal latihan di dalam materi. h4 uppercase accent sebagai judul blok."},
+      {"class": ".check-list .check", "role": "Daftar centang", "when": "checklist kriteria. Ticks hijau otomatis (::before) atau .check__box untuk manual."},
+      {"class": ".reveal", "role": "Pembahasan lipat", "when": "<details> pembahasan. summary mono 12px accent dengan chevron segitiga."},
+      {"class": ".answer", "role": "Kunci jawaban", "when": "good-soft + border. Tulis 'Jawaban: <strong>B</strong>'."},
+      {"class": ".takeaway", "role": "Pelajaran penting", "when": "skip-soft + border-kiri. 1 kalimat penutup."}
+    ],
+
+    "question_bank": {
+      "_when": "HANYA jika subjek punya bank soal. Semua class WAJIB berasal dari .opt / .opt__* / .stat / .stat__*.",
+      "opt": [
+        {"class": ".opt", "role": "Satu opsi jawaban", "when": "wrapper. Mengandung .opt__letter (huruf dalam lingkaran), .opt__body (isi), .opt__text, .opt__ex (penjelasan opsional)"},
+        {"class": ".opt.is-selected", "role": "Dipilih user", "when": "accent-soft + border accent"},
+        {"class": ".opt.is-correct", "role": "Jawaban benar (review)", "when": "good-soft + border good. .opt__letter jadi hijau."},
+        {"class": ".opt.is-wrong", "role": "Jawaban salah (review)", "when": "bad-soft + border bad"}
+      ],
+      "score_ladder": {
+        "_canonical": ".score-5 s/d .score-0 (generalisasi dari TKP .s5..s0) — PAKAI NAMA INI, jangan s5..s0.",
+        "5": "good-soft / good — terbaik",
+        "4": "accent-soft / accent — baik, kurang lengkap",
+        "3": "skip-soft / skip — sebagian benar",
+        "2": "bad-soft / bad — keliru arah",
+        "1": "bad-soft / bad — lemah",
+        "0": "bad-soft / bad — tidak menjawab",
+        "usage": "Untuk TWK/TIU yang TIDAK memakai 5-4-3-2-1: gunakan .score-high (good), .score-mid (skip), .score-low (bad). Jangan memaksakan ladder 5-0."
+      },
+      "stat": [
+        {"class": ".stat .stat__num .stat__label", "role": "Angka ringkasan", "when": "num Fraunces 28px accent; label mono 11px uppercase. Varian .stat__num--good/--bad/--skip/--warn."}
+      ]
+    }
+  },
+
+  "legacy_aliases": {
+    "_purpose": "Nama lama yang sudah terpakai di materi TKP/TWK yang ada. BUKAN untuk ditulis di materi baru. Gunanya hanya supaya kamu mengenali sinkronisme saat membaca atau memperbaiki halaman lama. Untuk materi baru, selalu pakai nama kanonik di 'primitives'.",
+    "_source": "11 nama class di fragmen modul TKP: box, divider, lead, mod-cta, module, quiz-btn, quiz-btn-primary, res-table, res-table-wrap, rule, small.",
+    "box": ".box",
+    "divider": "hr.divider",
+    "lead": "p.lead",
+    "mod-cta": ".callout-cta",
+    "module": ".card",
+    "quiz-btn": ".btn",
+    "quiz-btn-primary": ".btn--primary",
+    "res-table": "table.table",
+    "res-table-wrap": ".table-wrap",
+    "rule": ".rule",
+    "small": ".small",
+    "_note_twk": "TWK punya 249 nama class berbeda (card, step, letter, opt, elim, snap, ...). Semuanya TIDAK punya padanan di style kit ini. Bila kamu diminta menyunting halaman TWK, pertahankan class yang sudah ada di halaman itu - jangan mengganti seluruhnya sekaligus."
+  },
+
+  "module_anatomy": {
+    "_measured": "Pola di bawah diikuti 7 dari 8 modul TKP (modul-1 sampai modul-7; modul-0 berbeda karena sifatnya pengantar, modul-7 integrasi).",
+    "recipe": [
+      {"n": 1, "level": "h1", "content": "Modul N — <Judul>", "note": "Konsisten. Sebagian modul memakai huruf kapital."},
+      {"n": 2, "level": "h2", "content": "<Subjudul deskriptif>", "note": "1 baris, menjelaskan sudut pandang modul."},
+      {"n": 3, "level": "h2", "content": "Pendahuluan", "note": "atau 'Pengantar: <apa yang sebenarnya diukur>'"},
+      {"n": 4, "level": "h1", "content": "BAB n — <Judul Bab>", "note": "13-16 bab per modul. Ganti 'Bab'/'BAB' konsisten dalam satu materi."},
+      {"n": 5, "level": "h2", "content": "n.1 <sub-bab>", "note": "WAJIB bernomor. 31-60 per modul."},
+      {"n": 6, "level": "h3", "content": "Apa yang sebenarnya diuji?", "note": "slot semantik 1 — penanda konstruk yang diuji"},
+      {"n": 7, "level": "h3", "content": "Contoh nyata: <situasi konkret>", "note": "slot semantik 2 — SKENARIO, bukan definisi"},
+      {"n": 8, "level": "h3", "content": "Prinsip yang dapat dibawa ke kasus lain", "note": "slot semantik 3 — generalisasi, kunci transfer"},
+      {"n": 9, "level": "h1", "content": "Formula Cepat Modul N", "note": "cheatsheet. Hadir di modul 5,6,7. Sebaiknya tabel/check-list."},
+      {"n": 10, "level": "h1", "content": "Integrasi / Ringkasan Modul N", "note": "hubungan ke modul lain. Boleh h2 per pasangan."},
+      {"n": 11, "level": "h1", "content": "Penutup Modul N", "note": "Tutup dengan 1 blockquote '> **sintesis satu kalimat**'. Tepat 1×."}
+    ],
+    "size_target": {
+      "chars_per_module": "32000-40000",
+      "measured_avg": 37400,
+      "h1_per_module": "13-16",
+      "h2_per_module": "31-60",
+      "h3_per_module": "14-41",
+      "bab_count": "4-6 bab per modul"
+    }
+  },
+
+  "prose_rules": {
+    "_measured": "Seluruh angka di bawah = hasil hitung atas 299.198 karakter (modul-0..7, ~9.652 baris). Ini DATUM hasil pengukuran, bukan preferensi pribadi. Ikuti agar hasilnya tidak dapat dibedakan dari materi asli.",
+    "sentence": {
+      "median_words": 13,
+      "mean_words": 17.3,
+      "max_words_observed": 178,
+      "rule": "Kalimat PENDEK-menengah. Boleh satu kalimat panjang untuk penekanan, TAPI median kalimat secara keseluruhan harus sekitar 13 kata. Jangan dibuat panjang-panjang."
+    },
+    "paragraph": {
+      "median_words": 7,
+      "mean_words": 9.3,
+      "note": "Paragraf sangat pendek! 1-3 kalimat. Density tinggi. Ini gaya retoris, bukan gaya naratif panjang."
+    },
+    "density_per_1000_chars": {
+      "bold": 3.2,
+      "italic": 1.06,
+      "blockquote_line": 2.79,
+      "bold_blockquote": 1.24,
+      "divider": 1.32,
+      "bullet_item": 2.17,
+      "h1": 0.45,
+      "h2": 1.02,
+      "h3": 0.86,
+      "numbered_item": 0.13,
+      "table": 0.21
+    },
+    "punctuation": {
+      "typographic_quotes": "WAJIB \u201c \u201d (490 pemakaian). JANGAN ASCII \".",
+      "em_dash": "WAJIB \u2014 untuk memecah klausa (183).",
+      "en_dash": "\u2013 untuk rentang angka (24).",
+      "ellipsis": "\u2026 (11).",
+      "question_mark": "Hanya 3.2% dari blockquote. Jarang."
+    },
+    "person": {
+      "Anda": 105,
+      "kita": 62,
+      "ratio": "Formal 'Anda' 63% / inklusif 'kita' 37%",
+      "rule": "Pakai 'Anda' saat menyapa pembaca secara langsung (sering di blockquote). Pakai 'kita' saat menjelaskan sesuatu secara bersama. Jangan campur dalam satu paragraf."
+    },
+    "vocabulary_register": {
+      "formal_avoid": ["gue", "gua", "kamu", "bang", "dsb", "yaitu", "dan lain-lain", "ok", "gitu", "lah", "sih"],
+      "high_frequency": {"tidak": 468, "dapat": 290, "bukan": 292, "harus": 246, "lebih": 241, "penting": 121, "Contoh": 125, "sangat": 75},
+      "rule": "Bahasa Indonesia baku dan tegas. Kata kerja 'dapat/harus/bisa' mendominasi. Hindari kata nonbaku dan istilah Inggris yang belum baku, kecuali istilah baku seperti TKP, SOP, atau BerAKHLAK."
+    },
+    "forbidden": [
+      "emoji",
+      "code block / backtick (0 di 300k karakter)",
+      "ASCII double quote",
+      "bullet bertingkat lebih dari 2",
+      "paragraf lebih dari 4 kalimat",
+      "markdown table di dalam callout",
+      "nama class di luar 'primitives'",
+      "istilah Inggris yang bukan baku (pakai 'sistem' bukan 'system', 'tujuan' bukan 'purpose')"
+    ],
+    "rhetorical_pattern": {
+      "_note": "Ini pola retoris berulang yang membuat modul TKP terasa 'berlogika', bukan sekadar daftar fakta. Terapkan per sub-bab.",
+      "flow": [
+        "1. KLAIM — pernyataan singkat yang menegasikan ide utama (1 kalimat pendek)",
+        "2. PENYAKIT KEBIASAAN — 'Kesalahan yang paling sering adalah menganggap kata positif = jawaban benar' / 'Mitos yang perlu dibongkar'",
+        "3. KONTRAS — 'tapi bukan berarti…' / 'yang lebih penting adalah…' — bangunkan opsi yang terlihat sama-sama benar",
+        "4. CONTOH NYATA — 'Contoh nyata: <situasi konkret dengan nama peran nyata>'",
+        "5. URUTAN BERPIKIR — 'Perhatikan logikanya: A + B + C lebih kuat daripada D'",
+        "6. PRINSIP — blockquote 1 kalimat padat, diarahkan ke kasus lain"
+      ],
+      "signature_technique": "Pola 'X + Y + Z lebih kuat daripada sekadar W' — menjumlahkan kualitas. Contoh dari modul-0: 'membantu + menyesuaikan pelayanan + membangun kemandirian lebih kuat daripada sekadar membantu sampai selesai.'"
+    }
+  },
+
+  "skeletons": {
+    "_note": "Template siap pakai. Ganti isi dalam tanda kurung siku. Hanya boleh memakai class dari 'primitives'.",
+
+    "module_fragment": "<!-- satu file per modul, di-fetch lalu di-concatenate -->\n<section class=\"card\" id=\"modul-N\">\n  <h1>Modul N — [Judul Modul]</h1>\n  <p class=\"lead\">[Deskripsi sudut pandang modul, 1-2 kalimat.]</p>\n\n  <h2>Pendahuluan</h2>\n  <p>[Paragraf pembuka. Pendek.]</p>\n  <p>[Paragraf kedua.]</p>\n  <blockquote><p><strong>[Pertanyaan kunci modul ini.]</strong></p></blockquote>\n\n  <h1>BAB 1 — [Judul Bab]</h1>\n\n  <h2>1.1 [Sub-bab]</h2>\n  <p>[Klaim. 1 kalimat.]</p>\n  <p>Kesalahan yang sering adalah [misalnya].</p>\n  <p>Tapi bukan berarti [kontras].</p>\n\n  <h3>Contoh nyata: [situasi]</h3>\n  <p>[Skenario konkret 3-4 kalimat dengan peran nyata.]</p>\n  <p>Perhatikan logikanya: <strong>a + b + c</strong> lebih kuat daripada sekadar <strong>d</strong>.</p>\n\n  <h3>Prinsip yang dapat dibawa ke kasus lain</h3>\n  <p>Transfer ke konteks lain.</p>\n  <blockquote><p><strong>[Prinsip 1 kalimat yang bisa dipindah.]</strong></p></blockquote>\n\n  <h1>Formula Cepat Modul N</h1>\n  <div class=\"table-wrap\">\n    <table class=\"table\">\n      <thead><tr><th>Poin</th><th>Contoh</th></tr></thead>\n      <tbody>\n        <tr><td>[poin]</td><td>[contoh]</td></tr>\n      </tbody>\n    </table>\n  </div>\n\n  <h1>Penutup Modul N</h1>\n  <p>[Sintesis 1-2 kalimat.]</p>\n  <blockquote><p><strong>[Satu kalimat penutup yang merangkum modul.]</strong></p></blockquote>\n</section>",
+
+    "new_subject_page": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n  <title>[Subjek] — [Judul] | CPNS Learning</title>\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link href=\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap\" rel=\"stylesheet\">\n  <style>\n    /* TEMPEL SELURUH BLOK <style id=\"materi-theme\"> DARI materi-style-kit.html DI SINI */\n  </style>\n</head>\n<body>\n  <div class=\"wrap\">\n    <nav class=\"breadcrumb\" aria-label=\"Breadcrumb\">\n      <a href=\"../../index.html\">Beranda</a><span class=\"crumb-sep\">/</span>\n      <a href=\"../index.html\">[Subjek]</a><span class=\"crumb-sep\">/</span>\n      <span class=\"crumb-current\">Materi</span>\n    </nav>\n    <header class=\"top\">\n      <p class=\"kicker\">[SUBJEK]</p>\n      <h1>[Judul Halaman]</h1>\n      <p>[Deskripsi 1 kalimat.]</p>\n    </header>\n    <div class=\"pagemap\">\n      <button type=\"button\">Modul 1</button>\n    </div>\n    <div class=\"scorebar\"><span class=\"label\">Modul</span><span class=\"num\">1 / 8</span></div>\n    <main id=\"modul-container\"><!-- fragmen modul di-inject di sini --></main>\n  </div>\n</body>\n</html>"
+  },
+
+  "register_new_subject": {
+    "_measured": "Arsitektur repo: ada 2 generasi halaman. Lihat data/categories.json.",
+    "steps": [
+      "1. Tambah entry di data/categories.json: { folder, name, fullName, short, icon, color }",
+      "2. Buat folder materi/<folder>/",
+      "3. Buat shell index.html (pola 'new_subject_page' di atas, atau salin materi/twk/index.html:1-52 yang pakai assets/css/style.css + assets/js/category.js)",
+      "4. Kalau pakai masterclass (bukan shell): salin skeleton 'new_subject_page'. File ini adalah satu-satunya sumber tema - tempel blok <style id=\"materi-theme\"> ke dalam <head> halamanmu, jangan mengimpor file CSS yang tidak ikut terkirim.",
+      "5. Tulis fragmen modul (pola 'module_fragment'), satu file per modul, ekstensi .html",
+      "6. Fetch + concatenate fragmen (pola loadMateriModules di materi/tkp/index.html:549-569)"
+    ],
+    "gen1_shell": "Shell + data.json (sections[], soal[]), dirender assets/js/materi.js. Untuk topik pendek. TWK & Bahasa pakai ini.",
+    "gen2_masterclass": "HTML mandiri, banyak modul, CSS sendiri. Untuk materi panjang seperti TKP."
+  },
+
+  "antipatterns": [
+    {"wrong": "Mengekstrak 40+ nama class untuk satu subjek", "evidence": "18 modul TWK memakai 249 nama class berbeda (card 547x, step 451x, elim 210x, snap 180x), sedangkan seluruh fragmen modul TKP hanya memakai 11 nama class.", "fix": "Pakai 7 layout primitive (.stack/.grid/.split/.steps/.flow/.timeline/.matrix) + 4 peran callout. Jangan karang nama per subjek."},
+    {"wrong": "!important untuk 'netralisasi sisa tema lama'", "evidence": "modul-twk.css:515-518 memakai !important pada selector atribut [style*=...]", "fix": "Pakai token var(--...) sejak awal. Kalau perlu override, perbaiki sumbernya."},
+    {"wrong": "Alias token berlimpah", "evidence": "modul-twk.css:21-32 mendeklarasikan 43 alias token (--bg, --panel, --soft, --m, --n2, ...) berbanding 14 token kanonik. Sebagian besar tidak pernah dipakai markup.", "fix": "14 token kanonik saja. Warna baru -> tambahkan ke :root dengan nama semantik, jangan menambah alias."},
+    {"wrong": "Blockquote dipakai untuk bertanya", "evidence": "96.8% blockquote TKP adalah pernyataan", "fix": "Blockquote = prinsip/insight. Kalau ingin menulis pertanyaan kunci, tulis ulang sebagai pernyataan yang menuntut jawaban (reader), misalnya '> **Yang menentukan di sini adalah &lt;apa&gt;?**'."},
+    {"wrong": "Emoji sebagai heading", "evidence": "0 emoji di 8 modul TKP", "fix": "Pakai .kicker / .eyebrow (mono uppercase) atau heading numbered."},
+    {"wrong": "Tabel tanpa .table-wrap", "evidence": "semua tabel TKP dibungkus .res-table-wrap", "fix": "Selalu bungkus; mobile transformasi kartu bergantung pada wrapper."}
+  ],
+
+  "provenance": {
+    "extracted_from": [
+      "materi/tkp/index.html:11-397 (CSS kanonik, 14 token)",
+      "materi/tkp/modul-0 .. modul-7 (prose: 299.198 karakter diukur)",
+      "materi/tkp/paket-soal-tkp-1.json:2-120 (skema bank soal)",
+      "materi/twk/materi-twk/assets/modul-twk.css (anti-pola: 249 nama class, 43 alias token)"
+    ],
+    "consistency_check": "Diverifikasi: 12 dari 14 token kanonik ada identik di 4 lokasi (materi/tkp/index.html, modul-twk.css, materi/twk/materi-twk/index.html, assets/css/style.css; yang terakhir menulis hex huruf kecil). --skip dan --skip-soft tidak ada di assets/css/style.css. --wrap hanya ada di modul-twk.css (760px); TKP masih hardcode max-width di kelas .wrap."
+  }
+}
+</script>
+
+<style id="materi-theme">
+/* =============================================================================
+   CPNS LEARNING — MATERI THEME  v1.0
+   Kanonik, subject-agnostic. Di-ekstrak dari materi/tkp/index.html:11-397.
+   Baca <script id="style-spec"> sebelum pakai.
+   14 token di bawah adalah sumber kebenaran bersama (lihat style-spec.tokens).
+   ============================================================================= */
+:root{
+  --ink:#1F2430; --ink-soft:#3C4253; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+  --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#1B4F33; --good-soft:#E4EFE8; --bad:#80211A; --bad-soft:#F5E7E4;
+  --skip:#5C420C; --skip-soft:#F5EFD8;
+  --radius:14px;
+  --wrap:800px;
+  --display:'Fraunces',Georgia,serif;
+  --sans:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+
+/* ============ 1. FOUNDATION ============ */
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:84px;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:28px 20px 80px;}
+img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+::selection{background:var(--accent-soft);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+
+/* ============ 2. TIPOGRAFI ============ */
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.35;text-wrap:balance;}
+strong,b{color:var(--ink);font-weight:600;}
+em{color:var(--ink-soft);}
+small,.small,.tiny,.fine{font-size:13px;line-height:1.7;color:var(--ink-soft);}
+.muted{color:var(--ink-soft);}
+code,kbd,samp{font-family:var(--mono);font-size:.9em;background:var(--accent-soft);border-radius:4px;padding:2px 5px;}
+pre{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow:auto;font-family:var(--mono);}
+hr,.divider{border:none;border-top:1px solid var(--line);margin:26px 0;}
+
+/* ============ 3. HEADER HALAMAN ============ */
+header.top{padding:8px 0 20px;}
+header.top h1{font-size:clamp(24px,5vw,36px);letter-spacing:-.01em;margin:0 0 10px;}
+header.top p{color:var(--ink-soft);margin:0;font-size:15.5px;max-width:60ch;}
+.kicker,.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block;margin:0 0 8px;}
+
+/* ============ 4. CALLOUT — 4 PERAN (lihat style-spec.callout_contract) ============ */
+/* (a) blockquote = INSIGHT / KUTIPAN PRINSIP — italic */
+blockquote{margin:16px 0;padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;color:var(--ink);font-style:italic;}
+blockquote p:last-child{margin-bottom:0;}
+/* (b) .box = KONTEKS / DEFINISI — paper, tidak italic */
+.box{padding:16px 18px;border:1px solid var(--line);border-radius:10px;margin:18px 0;background:var(--paper);font-size:15px;line-height:1.85;}
+.box p:last-child,.box>*:last-child{margin-bottom:0;}
+.box b,.box strong{color:var(--accent);}
+/* (c) .rule = PERINGATAN / ANTI-POLA — accent-soft, tidak italic */
+.rule{padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;margin:16px 0;font-size:15px;line-height:1.85;color:var(--ink);}
+.rule p:last-child{margin-bottom:0;}
+.rule b,.rule strong{color:var(--accent);}
+/* (d) .note = VERDICT / STATUS */
+.note{padding:13px 16px;border-left:4px solid var(--line);border-radius:0 10px 10px 0;margin:14px 0;font-size:15px;line-height:1.8;background:var(--paper);}
+.note p:last-child{margin-bottom:0;}
+.note b,.note strong{color:inherit;}
+.note--good{background:var(--good-soft);border-left-color:var(--good);color:var(--good);}
+.note--warn{background:var(--skip-soft);border-left-color:var(--skip);color:var(--skip);}
+.note--bad{background:var(--bad-soft);border-left-color:var(--bad);color:var(--bad);}
+
+/* ============ 5. KARTU BACA ============ */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:22px;padding:26px 28px 16px;scroll-margin-top:70px;}
+.card h1{font-size:clamp(21px,4vw,27px);margin:0 0 14px;letter-spacing:-.01em;line-height:1.35;padding-bottom:12px;border-bottom:2px solid var(--accent-soft);}
+.card h2{font-size:18px;margin:32px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:.01em;line-height:1.4;}
+.card h3{font-size:15px;font-family:var(--sans);font-weight:600;letter-spacing:0;text-transform:none;margin:24px 0 8px;}
+.card h1,.card h2,.card h3{text-wrap:balance;}
+.card p,.card li{overflow-wrap:break-word;}
+.card p{font-size:15.5px;line-height:1.9;margin:0 0 16px;}
+.card ul,.card ol{margin:0 0 16px;padding-left:26px;}
+.card li{margin:8px 0;font-size:15.5px;line-height:1.85;}
+.card li ul,.card li ol{margin:8px 0 4px;}
+.card ul li::marker{color:var(--accent);}
+.card ol li::marker{color:var(--accent);font-weight:600;}
+.card .lead{font-size:17px;line-height:1.8;color:var(--ink-soft);}
+.card .divider{margin:26px 0;}
+
+/* ============ 6. TABEL ============ */
+.table-wrap{overflow-x:auto;margin:0 0 18px;-webkit-overflow-scrolling:touch;}
+.table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);min-width:480px;}
+.table th,.table td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top;line-height:1.7;font-size:13px;}
+.table th{background:var(--paper);font-family:var(--mono);font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;}
+.table td b,.table td strong{color:var(--accent);}
+
+/* ============ 7. LABEL & META ============ */
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;background:var(--accent-soft);border:1px solid var(--accent-soft);color:var(--accent);border-radius:999px;padding:3px 10px;}
+.tag--muted{background:var(--paper);border-color:var(--line);color:var(--ink-soft);}
+.tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;}
+.num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-size:11.5px;font-weight:500;flex:0 0 auto;}
+
+/* ============ 8. LAYOUT — 9 PRIMITIF (pengganti 40+ nama karangan) ============ */
+.stack>*+*{margin-top:16px;}
+.grid{display:grid;gap:12px;margin:16px 0;}
+.grid--2{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.grid--3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+.grid--4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+.split>*{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;}
+.split--vs>*:first-child{border-top:3px solid var(--accent);}
+.split--vs>*:last-child{border-top:3px solid var(--good);}
+.split__label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.steps{display:grid;gap:10px;margin:16px 0;}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px;line-height:1.75;}
+.step__body{flex:1;min-width:0;}
+.step strong,.step b{color:var(--accent);}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:16px 0;}
+.flow__item{flex:1 1 160px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.75;}
+.flow__item b,.flow__item strong{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.flow__sep{display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:var(--mono);}
+.timeline{display:flex;flex-direction:column;gap:10px;margin:16px 0;padding-left:14px;border-left:2px solid var(--accent-soft);}
+.timeline__item{padding-left:0;}
+.timeline__item b,.timeline__item strong{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.matrix{display:grid;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);margin:16px 0;}
+.matrix--2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.matrix--3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.matrix__cell{padding:9px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);font-size:13px;line-height:1.7;min-width:0;}
+.matrix__cell--head{background:var(--paper);font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft);}
+
+/* ============ 9. NAVIGASI HALAMAN ============ */
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:14px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);}
+.breadcrumb a{color:var(--accent);display:inline-flex;align-items:center;gap:4px;}
+.crumb-sep{color:var(--line);}
+.crumb-current{color:var(--ink-soft);}
+.scorebar{position:sticky;top:0;z-index:5;background:rgba(243,245,239,0.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin:0 -20px 26px;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:13px;}
+.scorebar .label{color:var(--ink-soft);}
+.scorebar .num{background:none;border:none;color:var(--accent);font-weight:500;padding:0;min-width:0;height:auto;}
+.pagemap{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px;}
+.pagemap button{font-family:var(--mono);font-size:11px;color:var(--accent);background:var(--accent-soft);border:1px dashed var(--accent);border-radius:6px;padding:4px 8px;cursor:pointer;transition:all .15s;}
+.pagemap button:hover{background:var(--accent);color:#fff;}
+.pagemap button.is-active{background:var(--accent);color:#fff;border-style:solid;}
+.mod-nav{position:sticky;top:0;z-index:8;display:flex;gap:6px;overflow-x:auto;padding:10px 20px 12px;margin:0 -20px 18px;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);scrollbar-width:thin;}
+.mod-nav::-webkit-scrollbar{height:4px;}
+.chip{flex:0 0 auto;font-family:var(--mono);font-size:11px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink-soft);cursor:pointer;white-space:nowrap;transition:all .15s;text-decoration:none;}
+.chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.chip.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.mod-toc{background:var(--paper);border:1px solid var(--line);border-radius:10px;margin:0 0 20px;overflow:hidden;}
+.mod-toc summary{cursor:pointer;list-style:none;padding:10px 14px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);letter-spacing:.05em;text-transform:uppercase;user-select:none;display:flex;align-items:center;gap:8px;}
+.mod-toc summary::-webkit-details-marker{display:none;}
+.mod-toc summary::before{content:'\25B8';font-size:10px;color:var(--accent);transition:transform .2s;}
+.mod-toc[open] summary{border-bottom:1px solid var(--line);}
+.mod-toc[open] summary::before{transform:rotate(90deg);}
+.mod-toc summary:hover{color:var(--accent);}
+.mod-toc-list{display:flex;flex-direction:column;max-height:48vh;overflow:auto;padding:8px 6px;}
+.mod-toc-link{padding:6px 12px;border-radius:6px;font-size:13.5px;line-height:1.5;color:var(--ink-soft);text-decoration:none;}
+.mod-toc-link:hover{background:var(--accent-soft);color:var(--accent);text-decoration:none;}
+.mod-toc-sub{padding-left:26px;font-size:13px;}
+.foot-nav{position:sticky;bottom:0;z-index:9;background:rgba(243,245,239,0.98);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;margin-top:14px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;}
+.materi-pos{font-family:var(--mono);font-size:12px;color:var(--ink-soft);white-space:nowrap;}
+.cta{text-align:center;margin:32px 0 4px;padding:22px 20px;background:var(--accent-soft);border:1px solid var(--line);border-radius:var(--radius);}
+.cta p{margin:0 0 14px;font-size:15.5px;}
+
+/* ============ 10. LATIHAN ============ */
+.exercise{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:20px 24px 18px;margin:26px 0 20px;}
+.exercise>h4{margin:0 0 12px;font-size:13px;color:var(--accent);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-family:var(--sans);}
+.exercise ol,.exercise ul{margin:0;}
+.check-list{display:grid;gap:10px;}
+.check{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;gap:10px;font-size:15px;line-height:1.8;}
+.check>div:last-child{flex:1;min-width:0;}
+.check::before{content:'\2713';position:absolute;color:var(--good);font-weight:600;}
+.check:has(.check__box)::before{display:none;}
+.check__box{flex:0 0 auto;width:16px;height:16px;margin-top:5px;border:1.5px solid var(--accent);border-radius:4px;}
+.reveal{margin:14px 0 0;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden;}
+.reveal summary{cursor:pointer;list-style:none;padding:11px 14px;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);user-select:none;display:flex;align-items:center;gap:8px;transition:background .15s;}
+.reveal summary::-webkit-details-marker{display:none;}
+.reveal summary::before{content:'\25B8';font-size:10px;transition:transform .2s;}
+.reveal summary:hover{background:var(--accent-soft);}
+.reveal[open] summary{border-bottom:1px solid var(--line);}
+.reveal[open] summary::before{transform:rotate(90deg);}
+.reveal__inner{padding:16px 18px 18px;font-size:15px;}
+.reveal__inner>*:last-child{margin-bottom:0;}
+.answer{background:var(--good-soft);border:1px solid #C9E0D0;border-radius:8px;padding:10px 14px;font-size:15px;margin:12px 0;}
+.answer b,.answer strong{color:var(--good);}
+.takeaway{border-left:3px solid var(--skip);background:var(--skip-soft);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;margin:12px 0;}
+
+/* ============ 11. BANK SOAL ============ */
+.options{display:flex;flex-direction:column;gap:9px;margin:14px 0;}
+.opt{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-size:15px;line-height:1.7;}
+.opt__letter{flex:0 0 auto;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink-soft);display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-soft);}
+.opt__body{flex:1;min-width:0;}
+.opt__text{display:block;}
+.opt__ex{display:block;font-size:12.5px;line-height:1.6;color:var(--ink-soft);margin-top:2px;}
+.opt.is-selected{border-color:var(--accent);background:var(--accent-soft);}
+.opt.is-selected .opt__letter{background:var(--accent);color:#fff;border-color:var(--accent);}
+.opt.is-correct{border-color:var(--good);background:var(--good-soft);}
+.opt.is-correct .opt__letter{background:var(--good);color:#fff;border-color:var(--good);}
+.opt.is-wrong{border-color:var(--bad);background:var(--bad-soft);}
+.opt.is-wrong .opt__letter{background:var(--bad);color:#fff;border-color:var(--bad);}
+/* score ladder — generalisasi TKP .s5..s0. TWK/TIU: pakai score-high/mid/low */
+.score-5{background:var(--good-soft);color:var(--good);}
+.score-4{background:var(--accent-soft);color:var(--accent);}
+.score-3{background:var(--skip-soft);color:var(--skip);}
+.score-2,.score-1,.score-0{background:var(--bad-soft);color:var(--bad);}
+.score{display:inline-flex;align-items:center;font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;}
+.score-high{background:var(--good-soft);color:var(--good);}
+.score-mid{background:var(--skip-soft);color:var(--skip);}
+.score-low{background:var(--bad-soft);color:var(--bad);}
+.stat{text-align:center;}
+.stat__num{font-family:var(--display);font-size:28px;font-weight:700;color:var(--accent);line-height:1;}
+.stat__num--good{color:var(--good);}
+.stat__num--bad{color:var(--bad);}
+.stat__num--warn{color:var(--skip);}
+.stat__label{font-family:var(--mono);font-size:11px;color:var(--ink-soft);letter-spacing:.05em;text-transform:uppercase;margin-top:4px;display:block;}
+
+/* ============ 12. RESPONSIF ============ */
+@media (max-width:620px){
+  .wrap{padding:20px 16px 100px;}
+  .scorebar{margin:0 -16px 22px;padding:10px 16px;}
+  .card{padding:20px 18px 8px;}
+  .card p,.card li{font-size:15px;}
+  .card h2{font-size:17px;}
+  .split{grid-template-columns:1fr;}
+  .matrix--2,.matrix--3{grid-template-columns:1fr;}
+  /* tabel -> kartu */
+  .table-wrap{overflow:visible;}
+  .table,.table tbody,.table tr,.table td{display:block;width:auto;min-width:0;}
+  .table thead{display:none;}
+  .table tr{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:10px;}
+  .table td{border:none;border-bottom:1px solid var(--line);padding:9px 12px;}
+  .table td:last-child{border-bottom:none;}
+  .table td:first-child{font-weight:600;color:var(--accent);background:var(--accent-soft);}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+}
+@media print{
+  .mod-nav,.mod-toc,.foot-nav,.breadcrumb,.scorebar,.pagemap{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;padding:0;margin:0 0 18px;}
+  .card,.opt,.note,.box,.rule{break-inside:avoid;}
+}
+
+/* =============================================================================
+   BLOCK KHUSUS FILE INI (bukan bagian tema) — gaya dokumentasi style kit.
+   Hapus seluruh blok ini kalau hanya ingin memakai temanya.
+   ============================================================================= */
+body.kit{background:#fff;}
+.kit-head{background:var(--paper);border-bottom:1px solid var(--line);}
+.kit-head .wrap{padding-top:40px;padding-bottom:32px;}
+.kit-head h1{font-size:clamp(26px,5vw,38px);margin:0 0 12px;}
+.kit-head p{color:var(--ink-soft);max-width:70ch;font-size:15.5px;line-height:1.8;}
+.kit-sec{margin:0 0 40px;}
+.kit-sec>h2{font-size:24px;margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--accent-soft);}
+.kit-sec>.kit-note{color:var(--ink-soft);font-size:14.5px;max-width:72ch;margin:0 0 20px;}
+.kit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;align-items:start;}
+.kit-demo{border:1px dashed var(--line);border-radius:12px;overflow:hidden;background:var(--paper);}
+.kit-demo__head{padding:8px 14px;background:var(--accent-soft);border-bottom:1px solid var(--line);}
+.kit-demo__head code{background:none;padding:0;color:var(--accent);font-size:12px;font-weight:600;}
+.kit-demo__role{padding:6px 14px;background:var(--surface);border-bottom:1px solid var(--line);font-size:12.5px;color:var(--ink-soft);line-height:1.6;}
+.kit-demo__body{background:var(--surface);padding:16px;}
+.kit-demo__body>*:first-child{margin-top:0;}
+.kit-demo__body>*:last-child{margin-bottom:0;}
+.kit-table{width:100%;border-collapse:collapse;font-size:13px;}
+.kit-table th{background:var(--paper);font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-soft);padding:8px 10px;text-align:left;border:1px solid var(--line);}
+.kit-table td{padding:8px 10px;border:1px solid var(--line);vertical-align:top;line-height:1.7;}
+.kit-table code{background:var(--paper);font-size:12px;}
+.kit-foot{background:var(--paper);border-top:1px solid var(--line);padding:28px 0;font-size:13.5px;color:var(--ink-soft);}
+</style>
+</head>
+
+<body class="kit">
+
+<header class="kit-head">
+  <div class="wrap">
+    <p class="kicker">CPNS LEARNING &middot; DESIGN SYSTEM</p>
+    <h1>Materi Style Kit</h1>
+    <p>Seluruh bahasa visual &amp; aturan penulisan materi CPNS, di-ekstrak dari <strong>Materi TKP</strong> dan dibebaskan dari konteks subjek. Berguna untuk <strong>TKP, TWK, Bahasa Indonesia, TIU, Numerik</strong>, dan subjek baru apa pun.</p>
+    <p class="small" style="margin-top:14px">File ini berisi <strong>3 bagian berurutan</strong>: (1) kontrak JSON <code>&lt;script id="style-spec"&gt;</code> &mdash; baca ini untuk memahami aturan; (2) CSS kanonik <code>&lt;style id="materi-theme"&gt;</code> &mdash; siap pakai; (3) galeri hidup di bawah &mdash; contoh visual setiap primitif + template. Kirim seluruh file ini ke AI apa pun untuk mereplikasi style TKP pada materi baru.</p>
+    <div class="tags" style="margin-top:18px">
+      <span class="tag">subject-agnostic</span>
+      <span class="tag">token-identik dgn TKP</span>
+      <span class="tag">~40 primitif</span>
+      <span class="tag">prose terukur</span>
+      <span class="tag tag--muted">v1.0</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ CARA PAKAI ============ -->
+  <section class="card" id="cara-pakai">
+    <h1>Cara memakai file ini</h1>
+    <p class="lead">Tiga langkah. Tidak ada dependensi eksternal selain Google Fonts.</p>
+
+    <h2>1. Untuk AI yang menulis materi baru</h2>
+    <p>Kirim seluruh file ini, lalu instruksikan:</p>
+    <div class="box">
+      <p>&ldquo;Baca <code>&lt;script id=&quot;style-spec&quot;&gt;</code> di file yang saya lampirkan. Lalu tulis materi Modul 1 untuk subjek <strong>Bahasa Indonesia</strong> (kalimat efektif) mengikuti kontrak itu. Gunakan hanya class dari <code>primitives</code>, ikuti <code>module_anatomy</code>, dan patuhi <code>prose_rules</code>.&rdquo;</p>
+    </div>
+    <p>Kontrak sudah berisi anatomi modul, peran tiap callout, dan angka-angka prose hasil pengukuran &mdash; sehingga AI tidak perlu menebak.</p>
+
+    <h2>2. Untuk developer yang membuat halaman subjek baru</h2>
+    <p>Tempel blok <code>&lt;style id="materi-theme"&gt;</code> ke dalam <code>&lt;head&gt;</code> halaman barumu (file ini adalah satu-satunya sumber tema - tidak ada <code>materi-theme.css</code> yang dikirim terpisah), lalu pakai <code>skeletons.new_subject_page</code> sebagai <code>index.html</code> dan <code>skeletons.module_fragment</code> sebagai pola tiap fragmen modul.</p>
+    <blockquote><p><strong>Jangan buat nama class baru di luar <code>primitives</code>.</strong> Itu satu-satunya cara materi baru tetap konsisten dengan yang lama.</p></blockquote>
+
+    <h2>3. Untuk mencegah drift antar subjek</h2>
+    <p>14 token di <code>:root</code> adalah sumber kebenaran bersama. 12 di antaranya sudah identik di keempat lokasi; <strong><code>--skip</code> dan <code>--skip-soft</code> belum ada di <code>assets/css/style.css</code></strong> &mdash; jadi kalau kamu memakai warna &ldquo;perhatian&rdquo; di halaman shell global, token itu tidak terdefinisi. Hanya <code>--wrap</code> yang boleh berbeda per subjek, dan itu pun pilih <strong>satu</strong> nilai, konsisten.</p>
+  </section>
+
+  <!-- ============ TOKEN ============ -->
+  <section class="card" id="token">
+    <h1>Token &amp; tipografi</h1>
+    <p class="lead">15 token, tiga keluarga huruf, satu aturan: heading serif, body sans, label mono.</p>
+
+    <h2>Token warna</h2>
+    <div class="grid grid--4">
+      <div><span class="tag" style="background:var(--ink);border-color:var(--ink);color:#fff">--ink</span><p class="small" style="margin-top:8px">Teks utama<br>#1F2430</p></div>
+      <div><span class="tag" style="background:var(--ink-soft);border-color:var(--ink-soft);color:#fff">--ink-soft</span><p class="small" style="margin-top:8px">Teks sekunder<br>#3C4253</p></div>
+      <div><span class="tag" style="background:var(--paper);border-color:var(--line);color:var(--ink)">--paper</span><p class="small" style="margin-top:8px">Latar halaman<br>#F3F5EF</p></div>
+      <div><span class="tag" style="background:var(--surface);border-color:var(--line);color:var(--ink)">--surface</span><p class="small" style="margin-top:8px">Latar kartu<br>#FFFFFF</p></div>
+      <div><span class="tag" style="background:var(--line);border-color:var(--line);color:var(--ink)">--line</span><p class="small" style="margin-top:8px">Garis / border<br>#DBDCD2</p></div>
+      <div><span class="tag">--accent</span><p class="small" style="margin-top:8px">Aksen navy<br>#2B3A67</p></div>
+      <div><span class="tag" style="background:var(--accent-soft);border-color:var(--accent-soft)">--accent-soft</span><p class="small" style="margin-top:8px">Latar aksen<br>#E6E9F2</p></div>
+      <div><span class="tag" style="background:var(--good);border-color:var(--good);color:#fff">--good</span><p class="small" style="margin-top:8px">Benar / berhasil<br>#1B4F33</p></div>
+      <div><span class="tag" style="background:var(--good-soft);border-color:var(--good-soft)">--good-soft</span><p class="small" style="margin-top:8px">Latar benar<br>#E4EFE8</p></div>
+      <div><span class="tag" style="background:var(--bad);border-color:var(--bad);color:#fff">--bad</span><p class="small" style="margin-top:8px">Salah / gagal<br>#80211A</p></div>
+      <div><span class="tag" style="background:var(--bad-soft);border-color:var(--bad-soft)">--bad-soft</span><p class="small" style="margin-top:8px">Latar salah<br>#F5E7E4</p></div>
+      <div><span class="tag" style="background:var(--skip);border-color:var(--skip);color:#fff">--skip</span><p class="small" style="margin-top:8px">Perhatian<br>#5C420C</p></div>
+      <div><span class="tag" style="background:var(--skip-soft);border-color:var(--skip-soft)">--skip-soft</span><p class="small" style="margin-top:8px">Latar perhatian<br>#F5EFD8</p></div>
+      <div><span class="tag tag--muted">--radius</span><p class="small" style="margin-top:8px">Radius kartu<br>14px</p></div>
+      <div><span class="tag tag--muted">--wrap</span><p class="small" style="margin-top:8px">Lebar kolom<br>800px</p></div>
+    </div>
+
+    <h2>Tiga keluarga huruf</h2>
+    <div class="split">
+      <div>
+        <span class="split__label">Display &mdash; Fraunces</span>
+        <p style="font-family:var(--display);font-size:26px;margin:0 0 6px">Judul dan angka besar</p>
+        <p class="small" style="margin:0">Semua h1&ndash;h4, judul kartu, angka statistik._weight 600, letter-spacing -0.01em.</p>
+      </div>
+      <div>
+        <span class="split__label">Body &mdash; IBM Plex Sans</span>
+        <p style="font-size:18px;margin:0 0 6px">Teks baca 15.5px / 1.9</p>
+        <p class="small" style="margin:0">Seluruh paragraf, list, callout. h3 sengaja memakai body font, bukan display.</p>
+      </div>
+    </div>
+    <div class="box">
+      <p><strong>Aturan mono:</strong> <code>.kicker</code>, <code>.eyebrow</code>, <code>.tag</code>, <code>.num</code>, <code>.score</code>, <code>.stat__label</code>, breadcrumb, dan <code>summary</code> &mdash; semuanya IBM Plex Mono, uppercase, letter-spacing .03&ndash;.1em, 11&ndash;11.5px. Mono = penanda &ldquo;ini metadata, bukan bacaan&rdquo;.</p>
+    </div>
+  </section>
+
+  <!-- ============ CALLOUT: 4 PERAN ============ -->
+  <section class="card" id="callout">
+    <h1>Callout &mdash; 4 peran, tidak tumpang tindih</h1>
+    <p class="lead">Ini kontrak terpenting. Setiap callout wajib punya tepat satu peran; jangan pakai yang sama untuk dua tujuan.</p>
+
+    <div class="kit-grid">
+      <div class="kit-demo">
+        <div class="kit-demo__head"><code>&lt;blockquote&gt;</code></div>
+        <div class="kit-demo__role"><strong>INSIGHT / KUTIPAN PRINSIP</strong><br>Italic, navy-left. Kutipan nazdar, prinsip kunci, pertanyaan kunci, sintesis penutup. Dari 844 blok di materi TKP asli: 96.8% pernyataan, 44.4% bold.</div>
+        <div class="kit-demo__body">
+          <blockquote><p><strong>Apa sebenarnya yang sedang dinilai ketika sebuah soal memberi lima pilihan yang semuanya tampak cukup baik?</strong></p></blockquote>
+        </div>
+      </div>
+
+      <div class="kit-demo">
+        <div class="kit-demo__head"><code>.box</code></div>
+        <div class="kit-demo__role"><strong>KONTEKS / DEFINISI</strong><br>Latar paper, borderAbu, <em>tidak</em> italic. &ldquo;Tujuan modul&rdquo;, definisi istilah, instruksi.</div>
+        <div class="kit-demo__body">
+          <div class="box"><p><strong>Tujuan modul:</strong> mengikat modul sebelumnya menjadi satu sistem berpikir yang dapat dipakai pada soal baru.</p></div>
+        </div>
+      </div>
+
+      <div class="kit-demo">
+        <div class="kit-demo__head"><code>.rule</code></div>
+        <div class="kit-demo__role"><strong>PERINGATAN / ANTI-POLA</strong><br>Latar accent-soft, navy-left, <em>tidak</em> italic. &ldquo;Jangan&hellip;&rdquo;, jebakan keyword, pesan yang harus dibaca.</div>
+        <div class="kit-demo__body">
+          <div class="rule"><p><strong>Jangan bertanya hanya:</strong> &ldquo;Apakah pilihan ini baik?&rdquo; &mdash; gunakan &ldquo;apakah pilihan ini <em>paling tepat</em> untuk masalah, peran, batas, dan risikonya?&rdquo;</p></div>
+        </div>
+      </div>
+
+      <div class="kit-demo">
+        <div class="kit-demo__head"><code>.note--good / --warn / --bad</code></div>
+        <div class="kit-demo__role"><strong>VERDICT / STATUS</strong><br>Latar soft + border kiri. Benar/salah/skip, kunci jawaban, status. <em>Jangan</em> untuk prinsip umum.</div>
+        <div class="kit-demo__body">
+          <div class="note note--good"><p><strong>Benar.</strong> Opsi ini menutup inti masalah sekaligus menjaga kejelasan layanan.</p></div>
+          <div class="note note--warn"><p><strong>Perlu diperhatikan.</strong> Tindakan benar tetapi terlalu lambat.</p></div>
+          <div class="note note--bad"><p><strong>Kurang tepat.</strong> Melewati kewenangan yang tersedia.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rule">
+      <p><strong>Cara memilih cepat:</strong> itu kutipan dari sumber eksternal atau prinsip yang <em>harus diingat</em> &rarr; <code>blockquote</code>. Itu penjelasan atau konteks tambahan &rarr; <code>.box</code>. Itu <em>larangan</em> atau jebakan &rarr; <code>.rule</code>. Itu penilaian benar/salah &rarr; <code>.note</code>.</p>
+    </div>
+  </section>
+
+  <!-- ============ KARTU & ANATOMI ============ -->
+  <section class="card" id="anatomi">
+    <h1>Permukaan baca &amp; anatomi modul</h1>
+    <p class="lead">Pola berikut diikuti 7 dari 8 modul TKP asli. Salin untuk subjek mana pun.</p>
+
+    <h2>Permukaan baca &mdash; <code>.card</code></h2>
+    <p>Tiga level heading punya tugas berbeda dan <strong>wajib</strong> dipakai sesuai perannya:</p>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Level</th><th>Peran</th><th>Pola pemakaian</th></tr></thead>
+        <tbody>
+          <tr><td><code>h1</code></td><td>Judul modul <b>dan</b> judul bab</td><td><code>Modul 5 &mdash; Profesionalisme</code> &middot; <code>BAB 2 &mdash; Tanggung Jawab</code>. 13&ndash;16 per modul.</td></tr>
+          <tr><td><code>h2</code></td><td>Sub-bab bernomor</td><td><strong>Wajib</strong> bernomor: <code>1.1</code>, <code>1.2</code>&hellip; 31&ndash;60 per modul.</td></tr>
+          <tr><td><code>h3</code></td><td>Slot semantik</td><td>Hanya 3 slot: &ldquo;Apa yang sebenarnya diuji?&rdquo; &middot; &ldquo;Contoh nyata:&hellip;&rdquo; &middot; &ldquo;Prinsip yang dapat dibawa ke kasus lain&rdquo;. <b>Jangan</b> untuk topik bebas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Resep modul lengkap</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>#</th><th>Level</th><th>Isi</th><th>Catatan</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><code>h1</code></td><td>Modul N &mdash; Judul</td><td>Sekali per modul.</td></tr>
+          <tr><td>2</td><td><code>h2</code></td><td>Subjudul deskriptif</td><td>Satu baris, sudut pandang modul.</td></tr>
+          <tr><td>3</td><td><code>h2</code></td><td>Pendahuluan</td><td>atau &ldquo;Pengantar: apa yang sebenarnya diukur&rdquo;.</td></tr>
+          <tr><td>4</td><td><code>h1</code></td><td>BAB n &mdash; Judul Bab</td><td>4&ndash;6 bab per modul.</td></tr>
+          <tr><td>5</td><td><code>h2</code></td><td>n.1 Sub-bab</td><td>Wajib bernomor.</td></tr>
+          <tr><td>6</td><td><code>h3</code></td><td>Apa yang sebenarnya diuji?</td><td>Slot 1 &mdash; konstruk yang diuji.</td></tr>
+          <tr><td>7</td><td><code>h3</code></td><td>Contoh nyata: &hellip;</td><td>Slot 2 &mdash; skenario konkret, bukan definisi.</td></tr>
+          <tr><td>8</td><td><code>h3</code></td><td>Prinsip yang dapat dibawa ke kasus lain</td><td>Slot 3 &mdash; generalisasi / transfer.</td></tr>
+          <tr><td>9</td><td><code>h1</code></td><td>Formula Cepat Modul N</td><td>Cheatsheet; pakai tabel atau check-list.</td></tr>
+          <tr><td>10</td><td><code>h1</code></td><td>Integrasi / Ringkasan</td><td>Hubungan ke modul lain.</td></tr>
+          <tr><td>11</td><td><code>h1</code></td><td>Penutup Modul N</td><td>Tutup dengan 1 blockquote sintesis. Tepat 1&times;.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box">
+      <p><strong>Target ukuran:</strong> 32.000&ndash;40.000 karakter per modul (rata-rata terukur TKP: <strong>37.400</strong>). 4&ndash;6 bab, 13&ndash;16 h1, 31&ndash;60 h2, 14&ndash;41 h3.</p>
+    </div>
+
+    <h3>Contoh nyata:ibro Mail Tracking yang macet</h3>
+    <p>Kiriman yang belum dipetakan ulang adalah konflik antara kecepatan respons dan ketepatan proses &mdash; bukan sekadar memilih yang terdengar paling baik secara moral.</p>
+    <blockquote><p><strong>Jangan mencari pilihan yang terdengar paling baik; cari yang paling lengkap secara perilaku.</strong></p></blockquote>
+  </section>
+
+  <!-- ============ LAYOUT ============ -->
+  <section class="card" id="layout">
+    <h1>Tujuh layout primitive, plus tabel dan label</h1>
+    <p class="lead">Pengganti 40+ nama class yang pernah dikarang per subjek. Cukup untuk semua kebutuhan tata letak.</p>
+
+    <div class="rule">
+      <p><strong>Jangan karang nama baru untuk tata letak.</strong> Seluruh fragmen modul TKP hanya memakai <strong>11 nama class</strong> &mdash; sedangkan 18 modul TWK sampai <strong>249 nama class</strong> (card 547&times;, step 451&times;, elim 210&times;, snap 180&times;). Tujuh layout primitive di bawah menutup semuanya.</p>
+    </div>
+
+    <h3>1. <code>.stack</code> &mdash; ritme vertikal</h3>
+    <p>Default saat ragu. Memberi jarak antar blok otomatis.</p>
+
+    <h3>2. <code>.grid--2 / --3 / --4</code> &mdash; grid responsif</h3>
+    <div class="grid grid--3">
+      <div class="box"><p>Kartu 1</p></div>
+      <div class="box"><p>Kartu 2</p></div>
+      <div class="box"><p>Kartu 3</p></div>
+    </div>
+
+    <h3>3. <code>.split</code> &mdash; dua kolom pembanding</h3>
+    <div class="split split--vs">
+      <div><span class="split__label">Pendekatan A</span><p>Menyelesaikan secara langsung, tanpakowab_yang cukup.</p></div>
+      <div><span class="split__label">Pendekatan B</span><p>MenUTUSkan masalah sambil mempertahankan otonomi pengguna.</p></div>
+    </div>
+
+    <h3>4. <code>.steps</code> &mdash; langkah bernomor</h3>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><div class="step__body"><strong>Identifikasi</strong> — apa masalah sebenarnya, dan fakta apa yang membuat kasus ini berbeda?</div></div>
+      <div class="step"><span class="num">2</span><div class="step__body"><strong>Prioritaskan</strong> — apa yang paling perlu diselesaikan sekarang?</div></div>
+      <div class="step"><span class="num">3</span><div class="step__body"><strong>Batasi</strong> — apa yang dapat dilakukan tokoh sesuai peran dan kewenangannya?</div></div>
+    </div>
+
+    <h3>5. <code>.flow</code> &mdash; rantai horizontal</h3>
+    <div class="flow">
+      <div class="flow__item"><b>Problem</b>Apa masalah inti, bukan gejalanya?</div>
+      <span class="flow__sep">&rarr;</span>
+      <div class="flow__item"><b>Rule</b>Aturan apa yang benar-benar tersedia?</div>
+      <span class="flow__sep">&rarr;</span>
+      <div class="flow__item"><b>Action</b>Tindakan konkret yang paling tepat?</div>
+    </div>
+
+    <h3>6. <code>.timeline</code> &mdash; urutan waktu</h3>
+    <div class="timeline">
+      <div class="timeline__item"><b>1945</b><p style="margin:0">Proklamasi kemerdekaan; dasar konstitusional negara.</p></div>
+      <div class="timeline__item"><b>1946</b><p style="margin:0">Piagam Jakarta &mdash; cikal bakal naskah dasar.</p></div>
+      <div class="timeline__item"><b>1949</b><p style="margin:0">UUD NRI 1945 ditetapkan sebagai konstitusi.</p></div>
+    </div>
+
+    <h3>7. <code>.matrix</code> &mdash; sel matriks</h3>
+    <div class="matrix matrix--3">
+      <div class="matrix__cell matrix__cell--head">Lingkup</div><div class="matrix__cell matrix__cell--head">Pertanyaan</div><div class="matrix__cell matrix__cell--head">Risiko</div>
+      <div class="matrix__cell">Lokal</div><div class="matrix__cell">Siapa yang terdampak?</div><div class="matrix__cell">Diabaikan</div>
+      <div class="matrix__cell">Nasional</div><div class="matrix__cell">Apa akibat jangka panjang?</div><div class="matrix__cell">Over-reaksi</div>
+    </div>
+
+    <h3>8. <code>.table-wrap</code> &mdash; tabel (wajib dibungkus)</h3>
+    <p>Di mobile, tabel otomatis berubah jadi kartu: kolom pertama jadi label accent-soft.</p>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Skor</th><th>Arti</th><th>Contoh</th></tr></thead>
+        <tbody>
+          <tr><td><span class="score score-5">5</span></td><td>Lengkap</td><td>Menutup masalah <b>dan</b> menjaga ketepatan.</td></tr>
+          <tr><td><span class="score score-4">4</span></td><td>Baik</td><td>Tepat sasaran, sedikit kurang tuntas.</td></tr>
+          <tr><td><span class="score score-3">3</span></td><td>Sebagian</td><td>Relevan, tapi kehilangan konsekuensi lanjut.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>9. <code>.tags</code> / <code>.tag</code> &mdash; label</h3>
+    <div class="tags"><span class="tag">Factuality</span><span class="tag">Target</span><span class="tag tag--muted">Sumber: modul-3</span></div>
+  </section>
+
+  <!-- ============ BANK SOAL ============ -->
+  <section class="card" id="bank-soal">
+    <h1>Bank soal</h1>
+    <p class="lead">Opsional &mdash; hanya untuk subjek yang punya paket soal. Pola opsi jawaban dan pembahasannya sudah disiapkan di TKP.</p>
+
+    <h2>Skor ladder berjenjang</h2>
+    <p>Umumnya TKP memakai <strong>5&ndash;4&ndash;3&ndash;2&ndash;1</strong>. TWK/TIU tidak memaksakan ladder itu &mdash; pakai tiga tingkat: <code>.score-high</code>, <code>.score-mid</code>, <code>.score-low</code>.</p>
+    <div class="tags">
+      <span class="score score-5">5 terbaik</span>
+      <span class="score score-4">4 baik</span>
+      <span class="score score-3">3 sebagian</span>
+      <span class="score score-2">2 keliru arah</span>
+      <span class="score score-1">1 lemah</span>
+    </div>
+    <div class="tags" style="margin-top:14px">
+      <span class="score score-high">tinggi</span>
+      <span class="score score-mid">sedang</span>
+      <span class="score score-low">rendah</span>
+    </div>
+
+    <h2>Opsi jawaban</h2>
+    <div class="options">
+      <div class="opt is-correct">
+        <span class="opt__letter">E</span>
+        <div class="opt__body"><span class="opt__text">Saya menjelaskan kepada pelanggan dengan pelan-pelan ketika pelanggan sudah dalam kondisi tenang.</span><span class="opt__ex">Menutup kebutuhan utama sekaligus menjaga kejelasan layanan.</span></div>
+        <span class="score score-5">5</span>
+      </div>
+      <div class="opt">
+        <span class="opt__letter">D</span>
+        <div class="opt__body"><span class="opt__text">SayaVersionssaltRivière Empathy Agresif MengLENAI mengajarkan karyawan tetap menjaga sikap ramah ketika menjelaskan.</span></div>
+        <span class="score score-4">4</span>
+      </div>
+      <div class="opt is-selected">
+        <span class="opt__letter">C</span>
+        <div class="opt__body"><span class="opt__text">Saya menegaskan tentang prosedur yang berlaku tentang kelengkapan dokumen.</span></div>
+        <span class="score score-3">3</span>
+      </div>
+      <div class="opt is-wrong">
+        <span class="opt__letter">B</span>
+        <div class="opt__body"><span class="opt__text">Sikap ramah itu penting, tetapi prosedur harus ditegakkan.</span></div>
+        <span class="score score-2">2</span>
+      </div>
+      <div class="opt">
+        <span class="opt__letter">A</span>
+        <div class="opt__body"><span class="opt__text">Saya tetap menjaga sikap ramah menghadapi setiap pengunjung dengan kondisi apapun.</span></div>
+        <span class="score score-1">1</span>
+      </div>
+    </div>
+    <div class="note note--good">
+      <p><strong>Perhatikan pembeda 5 versus 4.</strong> Opsi E tidak hanya &ldquo;lebih baik&rdquo;, tetapi <em>lebih lengkap</em>: menutup kebutuhan utama sekaligus menjaga kejelasan layanan. Opsi D sudah dapat dipertanggungjawabkan, tetapi berhenti sebelum itu terpenuhi.</p>
+    </div>
+
+    <h2>Statistik ringkasan</h2>
+    <div class="grid grid--4">
+      <div class="stat"><div class="stat__num">45</div><span class="stat__label">Benar</span></div>
+      <div class="stat"><div class="stat__num stat__num--warn">12</div><span class="stat__label">Dilewati</span></div>
+      <div class="stat"><div class="stat__num stat__num--bad">28</div><span class="stat__label">Salah</span></div>
+      <div class="stat"><div class="stat__num">166</div><span class="stat__label">Batas lulus</span></div>
+    </div>
+  </section>
+
+  <!-- ============ LATIHAN ============ -->
+  <section class="card" id="latihan">
+    <h1>Latihan &amp; pembahasan</h1>
+    <p class="lead">Blok-bermasukan: latihan, checklist, pembahasan lipat, kunci, dan pelajaran penting.</p>
+
+    <div class="exercise">
+      <h4>Latihan 1 &mdash; tentukan skor</h4>
+      <p>Dari lima pilihan berikut, tentukan mana yang bernilai 5 dan jelaskan mengapa.</p>
+      <ol>
+        <li>Membantu warga sambil menunggu dengan sabar.</li>
+        <li>Mengrish explains using bahasa sederhana.</li>
+        <li>Meminta warga mencari informasi lebih dahulu.</li>
+      </ol>
+    </div>
+
+    <div class="check-list" style="margin-top:20px">
+      <div class="check"><div><strong>Roles</strong> — Peran mengikuti aktor stimulus, tidak ada kewenangan baru diasumsikan.</div></div>
+      <div class="check"><div><strong>Batas</strong> — Tindakan berada dalam kewenangan tokoh.</div></div>
+      <div class="check"><div><strong>Ketuntasan</strong> — Persoalan tertangani sampai titik yang wajar.</div></div>
+    </div>
+
+    <div class="reveal" style="margin-top:20px">
+      <summary>Pembahasan</summary>
+      <div class="reveal__inner">
+        <div class="answer"><strong>Jawaban: pilihan kedua.</strong></div>
+        <p>Pemilihan bahasa sederhana menutup kebutuhan utama. Meminta warga mencari informasi sendiri membebankan beban pada pihak yang belum memahami prosedur &mdash; itu Proporsionalitas yang keliru.</p>
+        <div class="takeaway"><strong>Pelajaran penting:</strong> aksesibilitas diukur dari kemampuan pengguna, bukan kesediaan petugas.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROSE ============ -->
+  <section class="card" id="prose">
+    <h1>Aturan penulisan</h1>
+    <p class="lead">Bagian yang paling menentukan. Semua angka di bawah hasil pengukuran atas <strong>299.198 karakter</strong> materi TKP asli &mdash; bukan preferensi, tapi data.</p>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Metrik</th><th>Nilai terukur</th><th>Arti</th></tr></thead>
+        <tbody>
+          <tr><td>Panjang kalimat</td><td>median <b>13 kata</b>, mean 17,3</td><td>Kalimat pendek-menengah. Jarang kalimat sangat panjang.</td></tr>
+          <tr><td>Panjang paragraf</td><td>median <b>7 kata</b>, mean 9,3</td><td>Paragraf sangat pendek, 1&ndash;3 kalimat. Ini gaya retoris.</td></tr>
+          <tr><td>Bold</td><td><b>3,2</b> per 1.000 karakter</td><td>Penekanan sangat padat. Maks 1&ndash;2 per paragraf.</td></tr>
+          <tr><td>Italic</td><td>1,06 per 1.000 karakter</td><td>Kutipan orang lain, istilah asing.</td></tr>
+          <tr><td>Blockquote</td><td>2,79 per 1.000 karakter</td><td>Untuk prinsip, bukan untuk bertanya.</td></tr>
+          <tr><td>Bold dalam blockquote</td><td><b>44,4%</b> dari semua blockquote</td><td>Signature: <code>&gt; **pernyataan satu baris**</code></td></tr>
+          <tr><td>Divider</td><td>1,32 per 1.000 karakter</td><td>1 pemisah per &plusmn;750 karakter.</td></tr>
+          <tr><td>Kutip tipografis</td><td>490&times; &ldquo; &rdquo;</td><td>Wajib. <b>Jangan</b> ASCII &quot;.</td></tr>
+          <tr><td>Em-dash</td><td>183&times; &mdash;</td><td>Untuk memecah klausa.</td></tr>
+          <tr><td>Code block / backtick</td><td><b>0</b></td><td>Tidak ada sama sekali. <b>Emoji: 0.</b></td></tr>
+          <tr><td>Anda : kita</td><td>105 : 62</td><td>Formal 63% / inklusif 37%. Jangan campur dalam 1 paragraf.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Pola retoris per sub-bab</h2>
+    <p>Ini yang membuat modul TKP terasa berlogika, bukan sekadar daftar fakta. Terapkan enam langkah ini di setiap sub-bab:</p>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><div class="step__body"><strong>Klaim</strong> &mdash; pernyataan singkat yang menegasikan ide utama. 1 kalimat pendek.</div></div>
+      <div class="step"><span class="num">2</span><div class="step__body"><strong>Penyakit kebiasaan</strong> &mdash; &ldquo;Kesalahan yang paling sering&hellip;&rdquo; / &ldquo;Mitos yang perlu dibongkar&rdquo;.</div></div>
+      <div class="step"><span class="num">3</span><div class="step__body"><strong>Kontras</strong> &mdash; &ldquo;tapi bukan berarti&hellip;&rdquo; &mdash; bangunkan opsi yang terlihat benar.</div></div>
+      <div class="step"><span class="num">4</span><div class="step__body"><strong>Contoh nyata</strong> &mdash; skenario konkret dengan peran nyata, bukan definisi.</div></div>
+      <div class="step"><span class="num">5</span><div class="step__body"><strong>Urutan berpikir</strong> &mdash; &ldquo;Perhatikan logikanya: A + B + C lebih kuat daripada D&rdquo;.</div></div>
+      <div class="step"><span class="num">6</span><div class="step__body"><strong>Prinsip</strong> &mdash; blockquote 1 kalimat padat, diarahkan ke kasus lain.</div></div>
+    </div>
+    <div class="box">
+      <p><strong>Teknik signature:</strong> pola &ldquo;X + Y + Z lebih kuat daripada sekadar W&rdquo; &mdash; menjumlahkan kualitas. Contoh dari modul-0 asli:</p>
+      <p style="margin-top:8px"><strong>membantu</strong> + <strong>menyesuaikan pelayanan</strong> + <strong>membangun kemandirian</strong> &nbsp;lebih kuat daripada sekadar&ensp;<strong>membantu sampai selesai.</strong></p>
+    </div>
+
+    <h2>Yang dilarang</h2>
+    <div class="note note--bad">
+      <p><strong>Dilarang:</strong> emoji &middot; code block / backtick &middot; kutip ASCII &quot; &middot; bullet bertingkat lebih dari 2 &middot; paragraf lebih dari 4 kalimat &middot; tabel markdown di dalam callout &middot; nama class di luar <code>primitives</code> &middot; kata Alter ego (gue, kamu, bang, sih, lah) &middot; singkatan tidak baku (dsb, dll).</p>
+    </div>
+  </section>
+
+  <!-- ============ PENDAFTARAN SUBJEK ============ -->
+  <section class="card" id="daftar">
+    <h1>Mendaftarkan subjek baru</h1>
+    <p class="lead">Repo punya dua generasi halaman. Pilih sesuai panjang materi.</p>
+
+    <h3>Shell singkat &mdash; pakai <code>data.json</code></h3>
+    <p>Untuk topik pendek. TWK dan Bahasa Indonesia pakai ini: shell <code>index.html</code> + <code>data.json</code> (<code>sections[]</code>, <code>soal[]</code>), dirender <code>assets/js/materi.js</code>.</p>
+    <h3>Masterclass panjang &mdash; HTML mandiri</h3>
+    <p>Untuk materi panjang seperti TKP: satu <code>index.html</code>, banyak fragmen modul, CSS sendiri. Tempel <code>skeletons.new_subject_page</code> lalu fetch fragmen modul.</p>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>#</th><th>Langkah</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Daftarkan</td><td>Tambah entry di <code>data/categories.json</code>: <code>folder, name, fullName, short, icon, color</code></td></tr>
+          <tr><td>2</td><td>Buat folder</td><td><code>materi/&lt;folder&gt;/</code></td></tr>
+          <tr><td>3</td><td>Buat shell</td><td>Salin <code>skeletons.new_subject_page</code> dari kontrak ini</td></tr>
+          <tr><td>4</td><td>Pakai tema</td><td>Tempel blok <code>&lt;style id="materi-theme"&gt;</code> ke <code>&lt;head&gt;</code></td></tr>
+          <tr><td>5</td><td>Tulis modul</td><td>Satu file per modul, pola <code>skeletons.module_fragment</code></td></tr>
+          <tr><td>6</td><td>Load</td><td>Fetch + concatenate fragmen (pola <code>loadMateriModules</code>, <code>materi/tkp/index.html:549</code>)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ ANTI-PATTERN ============ -->
+  <section class="card" id="antipattern">
+    <h1> Jebakan yang harus dihindari</h1>
+    <p class="lead">Semuanya punya bukti konkret di repo ini &mdash; bukan nasihat umum.</p>
+
+    <div class="note note--bad">
+      <p><strong>Mengekstrak 40+ nama class per subjek.</strong> 18 modul TWK memakai <strong>249 nama class</strong> (<code>card</code> 547&times;, <code>step</code> 451&times;, <code>elim</code> 210&times;, <code>snap</code> 180&times;) &mdash; sedangkan seluruh fragmen modul TKP hanya <strong>11 nama class</strong>.</p>
+      <p><strong>Perbaikan:</strong> pakai 7 layout primitive + 4 peran callout. Jangan karang nama per subjek.</p>
+    </div>
+
+    <div class="note note--bad">
+      <p><strong>Memakai <code>!important</code> untuk &ldquo;netralisasi sisa tema lama&rdquo;.</strong> Terlihat di <code>modul-twk.css:515-518</code> &mdash; selector atribut <code>[style*=...]</code> dengan <code>!important</code>.</p>
+      <p><strong>Perbaikan:</strong> pakai <code>var(--token)</code> sejak awal. Kalau perlu override, perbaiki sumbernya &mdash; bukan menambal hilirnya.</p>
+    </div>
+
+    <div class="note note--bad">
+      <p><strong>Alias token berlimpah.</strong> <code>modul-twk.css:21-32</code> mendeklarasikan <strong>43 alias token</strong> (<code>--bg</code>, <code>--panel</code>, <code>--soft</code>, <code>--n2</code>&hellip;) berbanding 14 token kanonik &mdash; sebagian besar tidak pernah dipakai markup.</p>
+      <p><strong>Perbaikan:</strong> 14 token kanonik saja. Warna baru -&gt; tambahkan ke <code>:root</code> dengan nama semantik, jangan menambah alias.</p>
+    </div>
+
+    <div class="note note--bad">
+      <p><strong>Blockquote dipakai untuk bertanya.</strong> 96,8% blockquote TKP adalah <em>pernyataan</em>, bukan pertanyaan.</p>
+      <p><strong>Perbaikan:</strong> blockquote = prinsip/insight. Format pertanyaannya tetap &ldquo;pernyataan&rdquo;: <code>&gt; **Pertanyaan kunci ini**</code></p>
+    </div>
+
+    <div class="note note--bad">
+      <p><strong>Tabel tanpa <code>.table-wrap</code>.</strong> Semua tabel TKP dibungkus wrapper &mdash; tanpa itu, transformasi tabel-ke-kartu di mobile tidak jalan.</p>
+      <p><strong>Perbaikan:</strong> selalu bungkus setiap tabel.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROVENANCE ============ -->
+  <section class="card" id="provenance">
+    <h1>Asal-usul</h1>
+    <p class="lead">Semua isi file ini diturunkan dari materi yang sudah ada di repo, bukan dikarang.</p>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Sumber</th><th>Yang diambil</th></tr></thead>
+        <tbody>
+          <tr><td><code>materi/tkp/index.html:11-397</code></td><td>15 token, skala tipografi, ~25 komponen CSS kanonik</td></tr>
+          <tr><td><code>materi/tkp/modul-0 &hellip; modul-7</code></td><td>299.198 karakter diukur &rarr; aturan prose + anatomi modul</td></tr>
+          <tr><td><code>materi/tkp/paket-soal-tkp-1.json:2-120</code></td><td>Skema bank soal, skor ladder, struktur pembahasan</td></tr>
+          <tr><td><code>modul-twk.css</code></td><td><b>Anti-pola:</b> 249 nama class, 43 alias token, <code>!important</code> &mdash; yang harus dihindari</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--good">
+      <p><strong>Konsistensi token terverifikasi.</strong> 12 dari 14 token kanonik ada identik di 4 lokasi: <code>materi/tkp/index.html:12-17</code>, <code>modul-twk.css:13-16</code>, <code>materi/twk/materi-twk/index.html:13-16</code>, <code>assets/css/style.css:17-31</code> &mdash; yang terakhir hanya menulis hex huruf kecil, nilainya sama. Dua temuan yang perlu diketahui: <code>--skip</code> dan <code>--skip-soft</code> <strong>tidak ada</strong> di <code>assets/css/style.css</code>; dan <code>--wrap</code> belum menjadi token di TKP (masih <code>max-width</code> langsung di kelas <code>.wrap</code>).</p>
+    </div>
+  </section>
+
+</div>
+
+<footer class="kit-foot">
+  <div class="wrap">
+    <p style="margin:0"><strong>CPNS Learning &mdash; Materi Style Kit v1.0.</strong> Di-ekstrak dari Materi TKP. Berlaku lintas subjek. Tanpa dependensi selain Google Fonts.</p>
+    <p class="small" style="margin:8px 0 0">Untuk memakai: tempel blok <code>&lt;style id="materi-theme"&gt;</code> ke <code>&lt;head&gt;</code> halaman barumu, lalu baca <code>&lt;script id="style-spec"&gt;</code> sebagai kontrak penulisan.</p>
+  </div>
+</footer>
+
+</body>
+</html>

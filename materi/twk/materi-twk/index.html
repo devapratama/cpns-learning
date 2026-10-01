@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Materi TWK — 18 Modul &amp; Bank Soal | CPNS Learning</title>
+<title>Materi TWK — 10 Modul &amp; Bank Soal | CPNS Learning</title>
  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3a67'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-size='20' font-weight='bold' fill='%23f3f5ef'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,7 +226,7 @@
 
  <header class="top">
  <h1>Materi TWK</h1>
- <p>18 modul end-to-end — dari peta besar wawasan kebangsaan sampai cara membedakan jawaban dalam soal — plus 5 paket soal tryout (150 soal) dengan pembahasan tiap opsi.</p>
+  <p>10 modul end-to-end — dari Pancasila, UUD NRI 1945, dan lembaga negara sampai integritas dan bela negara — plus 5 paket soal tryout (150 soal) dengan pembahasan tiap opsi.</p>
  </header>
 
  <div class="tab-nav">
@@ -237,7 +237,7 @@
  <!-- TAB 1: MATERI -->
  <div id="tab-materi" class="tab-content active">
  <div class="progress-map" id="modul-map"></div>
- <p class="modul-intro">Baca berurutan mulai Modul 01, atau lompat ke topik yang sedang Anda butuhkan. Tombol <b>Tandai selesai</b> di tiap modul akan mencentang peta di sini secara otomatis.</p>
+  <p class="modul-intro">Baca berurutan mulai Modul 01, atau lompat ke topik yang sedang Anda butuhkan.</p>
  <div class="modul-grid" id="modul-grid"></div>
  </div>
 
@@ -271,30 +271,22 @@
  <div class="quiz-footer" id="quiz-footer"></div>
  </div>
 
- <footer>CPNS Learning · Materi TWK — 18 modul &amp; bank soal</footer>
+  <footer>CPNS Learning · Materi TWK — 10 modul &amp; bank soal</footer>
 </div>
 
 <script>
 /* ========== DATA MODUL ========== */
 const MODULS = [
- {nn:'01', title:'Peta Besar TWK', desc:'Cara memandang seluruh materi TWK: konsep, bukti, dan opsi.', file:'materi/01-peta-besar-twk.html'},
- {nn:'02', title:'Fondasi Bangsa dan Negara', desc:'Unsur berdirinya bangsa: wilayah, rakyat, pemerintah, kedaulatan.', file:'materi/02-fondasi-bangsa-dan-negara.html'},
- {nn:'03', title:'Sejarah Kebangsaan dan Pembentukan Indonesia', desc:'Kebangkitan nasional hingga proklamasi sebagai fakta historis.', file:'materi/03-sejarah-kebangsaan-dan-pembentukan-indonesia.html'},
- {nn:'04', title:'Pancasila sebagai Sistem Nilai', desc:'Sila sebagai nilai, prinsip, norma, dan tindakan.', file:'materi/04-pancasila-sebagai-sistem-nilai.html'},
- {nn:'05', title:'UUD NRI 1945 dan Konstitusionalisme', desc:'Konstitusi, perubahannya, dan habitat pasal yang sering diuji.', file:'materi/05-uud-nri-1945-dan-konstitusionalisme.html'},
- {nn:'06', title:'Lembaga Negara dan Sistem Ketatanegaraan', desc:'Peta lembaga, distribusi kekuasaan, dan kewenangan unik.', file:'materi/06-lembaga-negara-dan-sistem-ketatanegaraan.html'},
- {nn:'07', title:'Demokrasi, Hak, Kewajiban, dan Kehidupan Konstitusional', desc:'Demokrasi, HAM dalam UUD, dan perilaku warga negara.', file:'materi/07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html'},
- {nn:'08', title:'NKRI, Bhinneka, Integrasi, dan Wawasan Nusantara', desc:'Keberagaman, integrasi nasional, dan geopolitik Nusantara.', file:'materi/08-nkri-bhinneka-integrasi-dan-wawasan-nusantara.html'},
- {nn:'09', title:'Nasionalisme dan Kepentingan Nasional', desc:'Nasionalisme, patriotisme, dan kepentingan nasional.', file:'materi/09-nasionalisme-dan-kepentingan-nasional.html'},
- {nn:'10', title:'Bela Negara dan Ketahanan Nasional', desc:'Ancaman, yang dilindungi, dan siapa yang relevan bertindak.', file:'materi/10-bela-negara-dan-ketahanan-nasional.html'},
- {nn:'11', title:'Integritas dan Karakter Kebangsaan', desc:'Integritas saat tak ada yang melihat: korupsi, nepotisme, diskresi.', file:'materi/11-integritas-dan-karakter-kebangsaan.html'},
- {nn:'12', title:'Hubungan Indonesia dengan Dunia', desc:'Politik luar negeri bebas-aktif, kerja sama internasional.', file:'materi/12-hubungan-indonesia-dengan-dunia.html'},
- {nn:'13', title:'Tantangan Kebangsaan Kontemporer', desc:'Radikalisme, hoaks, polarisasi, dan ancaman nonkonvensional.', file:'materi/13-tantangan-kebangsaan-kontemporer.html'},
- {nn:'14', title:'Semantik, Bahasa, dan Cara Membaca Soal TWK', desc:'Kata kunci, nuansa makna, dan jebakan kalimat.', file:'materi/14-semantik-bahasa-dan-cara-membaca-soal-twk.html'},
- {nn:'15', title:'Aktor, Scope, dan Hubungan Logis dalam Soal TWK', desc:'Siapa berwenang, sejauh apa, dan bagaimana relasi logis.', file:'materi/15-aktor-scope-dan-hubungan-logis-dalam-soal-twk.html'},
- {nn:'16', title:'Berbagai Bentuk Pembentukan Soal TWK', desc:'Laboratorium: dari stimulus, opsi, sampai penjelasan benar/salah.', file:'materi/16-berbagai-bentuk-pembentukan-soal-twk.html'},
- {nn:'17', title:'Strategi Diskriminasi Jawaban TWK', desc:'Ranking opsi: actor, scope, relation, level, directness.', file:'materi/17-strategi-diskriminasi-jawaban-twk.html'},
- {nn:'18', title:'Integrasi Semua Konsep dan Reasoning TWK', desc:'Master workflow membedah soal dari modul 01 sampai 17.', file:'materi/18-integrasi-semua-konsep-dan-reasoning-twk.html'}
+ {nn:'01', title:'Pancasila', desc:'Teks asli sila, lahirnya Pancasila, serta pengamalan tiap sila dalam kehidupan.', file:'materi/TWK_M01_Pancasila.html'},
+ {nn:'02', title:'UUD NRI Tahun 1945', desc:'Konstitusi, struktur dan klausul dasar yang paling sering diuji.', file:'materi/TWK_M02_UUD_NRI_1945.html'},
+ {nn:'03', title:'Lembaga Negara, Demokrasi, Pemilu, dan Pembagian Kewenangan', desc:'Peta lembaga negara, pemilihan umum, dan kewenangan setiap lembaga.', file:'materi/TWK_M03_Lembaga_Negara_Demokrasi_Pemilu_Pembagian_Kewenangan.html'},
+ {nn:'04', title:'NKRI, Wawasan Nusantara, Bhinneka Tunggal Ika, dan Integrasi', desc:'Keberagaman, integrasi nasional, dan geopolitik Nusantara.', file:'materi/TWK_M04_NKRI_Wawasan_Nusantara_Bhinneka_Integrasi.html'},
+ {nn:'05', title:'Nasionalisme: Sejarah Pergerakan, Tokoh, Persatuan, dan Patriotisme', desc:'Tokoh nasional, cinta tanah air, dan semangat perjuangan nasional.', file:'materi/TWK_M05_Nasionalisme_Sejarah_Pergerakan_Tokoh_Persatuan_Patriotisme.html'},
+ {nn:'06', title:'Nasionalisme Modern: Identitas Nasional, Budaya, dan Globalisasi', desc:'Identitas nasional, budaya, globalisasi, dan kepentingan nasional.', file:'materi/TWK_M06_Nasionalisme_Modern_Identitas_Budaya_Globalisasi_Kepentingan_Nasional.html'},
+ {nn:'07', title:'Generasi Muda, Dunia Digital, Politik Luar Negeri, dan Kerja Sama Internasional', desc:'Partisipasi generasi muda, ruang digital, dan hubungan luar negeri.', file:'materi/TWK_M07_Generasi_Muda_Digital_Partisipasi_Politik_Luar_Negeri.html'},
+ {nn:'08', title:'Bela Negara', desc:'Ancaman, yang dilindungi, bentuk bela negara, dan siapa yang bertindak.', file:'materi/TWK_M08_Bela_Negara.html'},
+ {nn:'09', title:'Integritas, Etika, Akuntabilitas, dan Antikorupsi', desc:'Nilai integritas, konflik kepentingan, dan keteladanan tokoh bangsa.', file:'materi/TWK_M09_Integritas.html'},
+ {nn:'10', title:'Modul 10 (Menunggu)', desc:'Materi sedang disusun.', file:'materi/TWK_M10_Pending.html'}
 ];
 const DONE_PREFIX = 'cpns_twk_m';
 

@@ -1,32 +1,24 @@
 /* ==========================================================================
    CPNS Learning — Modul TWK: shell seragam ala "Materi TKP"
-   File ini (a) menyuntikkan chip-bar M01–M18 + "Semua Modul" di bawah header,
+   File ini (a) menyuntikkan chip-bar M01–M10 + "Semua Modul" di bawah header,
    (b) menyuntikkan daftar isi modul (TOC) dari judul section, dan
-   (c) menambahkan label posisi "Modul NN · NN/18" ke nav bawah (.cpns-modnav).
+   (c) menambahkan label posisi "Modul NN · NN/10" ke nav bawah (.cpns-modnav).
    Dimuat via <script src="../assets/modul-twk.js" defer></script> di <head>.
    ========================================================================== */
 (function () {
   'use strict';
 
   var MODULS = [
-    { nn: '01', file: '01-peta-besar-twk.html', title: 'Peta Besar TWK' },
-    { nn: '02', file: '02-fondasi-bangsa-dan-negara.html', title: 'Fondasi Bangsa dan Negara' },
-    { nn: '03', file: '03-sejarah-kebangsaan-dan-pembentukan-indonesia.html', title: 'Sejarah Kebangsaan dan Pembentukan Indonesia' },
-    { nn: '04', file: '04-pancasila-sebagai-sistem-nilai.html', title: 'Pancasila sebagai Sistem Nilai' },
-    { nn: '05', file: '05-uud-nri-1945-dan-konstitusionalisme.html', title: 'UUD NRI 1945 dan Konstitusionalisme' },
-    { nn: '06', file: '06-lembaga-negara-dan-sistem-ketatanegaraan.html', title: 'Lembaga Negara dan Sistem Ketatanegaraan' },
-    { nn: '07', file: '07-demokrasi-hak-kewajiban-dan-kehidupan-konstitusional.html', title: 'Demokrasi, Hak dan Kewajiban Warga Negara' },
-    { nn: '08', file: '08-nkri-bhinneka-integrasi-dan-wawasan-nusantara.html', title: 'NKRI, Bhinneka, Integrasi dan Wawasan Nusantara' },
-    { nn: '09', file: '09-nasionalisme-dan-kepentingan-nasional.html', title: 'Nasionalisme dan Kepentingan Nasional' },
-    { nn: '10', file: '10-bela-negara-dan-ketahanan-nasional.html', title: 'Bela Negara dan Ketahanan Nasional' },
-    { nn: '11', file: '11-integritas-dan-karakter-kebangsaan.html', title: 'Integritas dan Karakter Kebangsaan' },
-    { nn: '12', file: '12-hubungan-indonesia-dengan-dunia.html', title: 'Hubungan Indonesia dengan Dunia' },
-    { nn: '13', file: '13-tantangan-kebangsaan-kontemporer.html', title: 'Tantangan Kebangsaan Kontemporer' },
-    { nn: '14', file: '14-semantik-bahasa-dan-cara-membaca-soal-twk.html', title: 'Semantik, Bahasa dan Cara Membaca Soal' },
-    { nn: '15', file: '15-aktor-scope-dan-hubungan-logis-dalam-soal-twk.html', title: 'Aktor, Scope dan Hubungan Logis' },
-    { nn: '16', file: '16-berbagai-bentuk-pembentukan-soal-twk.html', title: 'Berbagai Bentuk Pembentukan Soal' },
-    { nn: '17', file: '17-strategi-diskriminasi-jawaban-twk.html', title: 'Strategi Diskriminasi Jawaban' },
-    { nn: '18', file: '18-integrasi-semua-konsep-dan-reasoning-twk.html', title: 'Integrasi Semua Konsep dan Reasoning' }
+    { nn: '01', file: 'TWK_M01_Pancasila.html', title: 'Pancasila' },
+    { nn: '02', file: 'TWK_M02_UUD_NRI_1945.html', title: 'UUD NRI Tahun 1945' },
+    { nn: '03', file: 'TWK_M03_Lembaga_Negara_Demokrasi_Pemilu_Pembagian_Kewenangan.html', title: 'Lembaga Negara, Demokrasi, Pemilu, dan Pembagian Kewenangan' },
+    { nn: '04', file: 'TWK_M04_NKRI_Wawasan_Nusantara_Bhinneka_Integrasi.html', title: 'NKRI, Wawasan Nusantara, Bhinneka Tunggal Ika, dan Integrasi' },
+    { nn: '05', file: 'TWK_M05_Nasionalisme_Sejarah_Pergerakan_Tokoh_Persatuan_Patriotisme.html', title: 'Nasionalisme: Sejarah Pergerakan, Tokoh, Persatuan, dan Patriotisme' },
+    { nn: '06', file: 'TWK_M06_Nasionalisme_Modern_Identitas_Budaya_Globalisasi_Kepentingan_Nasional.html', title: 'Nasionalisme Modern: Identitas Nasional, Budaya, dan Globalisasi' },
+    { nn: '07', file: 'TWK_M07_Generasi_Muda_Digital_Partisipasi_Politik_Luar_Negeri.html', title: 'Generasi Muda, Dunia Digital, Politik Luar Negeri, dan Kerja Sama Internasional' },
+    { nn: '08', file: 'TWK_M08_Bela_Negara.html', title: 'Bela Negara' },
+    { nn: '09', file: 'TWK_M09_Integritas.html', title: 'Integritas, Etika, Akuntabilitas, dan Antikorupsi' },
+    { nn: '10', file: 'TWK_M10_Pending.html', title: 'Modul 10 (Menunggu)' }
   ];
 
   function currentModNum() {
@@ -124,7 +116,8 @@
     var span = document.createElement('span');
     span.className = 'materi-pos';
     var n = String(idx + 1).padStart(2, '0');
-    span.textContent = 'Modul ' + cur + ' · Posisi ' + n + '/18 dari jalur belajar TWK';
+    var total = String(MODULS.length).padStart(2, '0');
+    span.textContent = 'Modul ' + cur + ' · Posisi ' + n + '/' + total + ' dari jalur belajar TWK';
     modnav.insertBefore(span, modnav.firstChild);
   }
 

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<title>TWK Modul 10 - Menunggu</title>
+<style>/* =============================================================================
+   CPNS LEARNING — MATERI THEME  v1.0
+   Kanonik, subject-agnostic. Di-ekstrak dari materi/tkp/index.html:11-397.
+   Baca <script id="style-spec"> sebelum pakai.
+   14 token di bawah adalah sumber kebenaran bersama (lihat style-spec.tokens).
+   ============================================================================= */
+:root{
+  --ink:#1F2430; --ink-soft:#3C4253; --paper:#F3F5EF; --surface:#FFFFFF; --line:#DBDCD2;
+  --accent:#2B3A67; --accent-soft:#E6E9F2; --good:#1B4F33; --good-soft:#E4EFE8; --bad:#80211A; --bad-soft:#F5E7E4;
+  --skip:#5C420C; --skip-soft:#F5EFD8;
+  --radius:14px;
+  --wrap:800px;
+  --display:'Fraunces',Georgia,serif;
+  --sans:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+
+/* ============ 1. FOUNDATION ============ */
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:84px;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:28px 20px 80px;}
+img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+::selection{background:var(--accent-soft);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px;}
+
+/* ============ 2. TIPOGRAFI ============ */
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.35;text-wrap:balance;}
+strong,b{color:var(--ink);font-weight:600;}
+em{color:var(--ink-soft);}
+small,.small,.tiny,.fine{font-size:13px;line-height:1.7;color:var(--ink-soft);}
+.muted{color:var(--ink-soft);}
+code,kbd,samp{font-family:var(--mono);font-size:.9em;background:var(--accent-soft);border-radius:4px;padding:2px 5px;}
+pre{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow:auto;font-family:var(--mono);}
+hr,.divider{border:none;border-top:1px solid var(--line);margin:26px 0;}
+
+/* ============ 3. HEADER HALAMAN ============ */
+header.top{padding:8px 0 20px;}
+header.top h1{font-size:clamp(24px,5vw,36px);letter-spacing:-.01em;margin:0 0 10px;}
+header.top p{color:var(--ink-soft);margin:0;font-size:15.5px;max-width:60ch;}
+.kicker,.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block;margin:0 0 8px;}
+
+/* ============ 4. CALLOUT — 4 PERAN (lihat style-spec.callout_contract) ============ */
+/* (a) blockquote = INSIGHT / KUTIPAN PRINSIP — italic */
+blockquote{margin:16px 0;padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;color:var(--ink);font-style:italic;}
+blockquote p:last-child{margin-bottom:0;}
+/* (b) .box = KONTEKS / DEFINISI — paper, tidak italic */
+.box{padding:16px 18px;border:1px solid var(--line);border-radius:10px;margin:18px 0;background:var(--paper);font-size:15px;line-height:1.85;}
+.box p:last-child,.box>*:last-child{margin-bottom:0;}
+.box b,.box strong{color:var(--accent);}
+/* (c) .rule = PERINGATAN / ANTI-POLA — accent-soft, tidak italic */
+.rule{padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;margin:16px 0;font-size:15px;line-height:1.85;color:var(--ink);}
+.rule p:last-child{margin-bottom:0;}
+.rule b,.rule strong{color:var(--accent);}
+/* (d) .note = VERDICT / STATUS */
+.note{padding:13px 16px;border-left:4px solid var(--line);border-radius:0 10px 10px 0;margin:14px 0;font-size:15px;line-height:1.8;background:var(--paper);}
+.note p:last-child{margin-bottom:0;}
+.note b,.note strong{color:inherit;}
+.note--good{background:var(--good-soft);border-left-color:var(--good);color:var(--good);}
+.note--warn{background:var(--skip-soft);border-left-color:var(--skip);color:var(--skip);}
+.note--bad{background:var(--bad-soft);border-left-color:var(--bad);color:var(--bad);}
+
+/* ============ 5. KARTU BACA ============ */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:22px;padding:26px 28px 16px;scroll-margin-top:70px;}
+.card h1{font-size:clamp(21px,4vw,27px);margin:0 0 14px;letter-spacing:-.01em;line-height:1.35;padding-bottom:12px;border-bottom:2px solid var(--accent-soft);}
+.card h2{font-size:18px;margin:32px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:.01em;line-height:1.4;}
+.card h3{font-size:15px;font-family:var(--sans);font-weight:600;letter-spacing:0;text-transform:none;margin:24px 0 8px;}
+.card h1,.card h2,.card h3{text-wrap:balance;}
+.card p,.card li{overflow-wrap:break-word;}
+.card p{font-size:15.5px;line-height:1.9;margin:0 0 16px;}
+.card ul,.card ol{margin:0 0 16px;padding-left:26px;}
+.card li{margin:8px 0;font-size:15.5px;line-height:1.85;}
+.card li ul,.card li ol{margin:8px 0 4px;}
+.card ul li::marker{color:var(--accent);}
+.card ol li::marker{color:var(--accent);font-weight:600;}
+.card .lead{font-size:17px;line-height:1.8;color:var(--ink-soft);}
+.card .divider{margin:26px 0;}
+
+/* ============ 6. TABEL ============ */
+.table-wrap{overflow-x:auto;margin:0 0 18px;-webkit-overflow-scrolling:touch;}
+.table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);min-width:480px;}
+.table th,.table td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top;line-height:1.7;font-size:13px;}
+.table th{background:var(--paper);font-family:var(--mono);font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;}
+.table td b,.table td strong{color:var(--accent);}
+
+/* ============ 7. LABEL & META ============ */
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;background:var(--accent-soft);border:1px solid var(--accent-soft);color:var(--accent);border-radius:999px;padding:3px 10px;}
+.tag--muted{background:var(--paper);border-color:var(--line);color:var(--ink-soft);}
+.tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;}
+.num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-size:11.5px;font-weight:500;flex:0 0 auto;}
+
+/* ============ 8. LAYOUT — 9 PRIMITIF (pengganti 40+ nama karangan) ============ */
+.stack>*+*{margin-top:16px;}
+.grid{display:grid;gap:12px;margin:16px 0;}
+.grid--2{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.grid--3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+.grid--4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+.split>*{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;}
+.split--vs>*:first-child{border-top:3px solid var(--accent);}
+.split--vs>*:last-child{border-top:3px solid var(--good);}
+.split__label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.steps{display:grid;gap:10px;margin:16px 0;}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px;line-height:1.75;}
+.step__body{flex:1;min-width:0;}
+.step strong,.step b{color:var(--accent);}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:16px 0;}
+.flow__item{flex:1 1 160px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.75;}
+.flow__item b,.flow__item strong{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.flow__sep{display:flex;align-items:center;justify-content:center;color:var(--accent);font-family:var(--mono);}
+.timeline{display:flex;flex-direction:column;gap:10px;margin:16px 0;padding-left:14px;border-left:2px solid var(--accent-soft);}
+.timeline__item{padding-left:0;}
+.timeline__item b,.timeline__item strong{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+.matrix{display:grid;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);margin:16px 0;}
+.matrix--2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.matrix--3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.matrix__cell{padding:9px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);font-size:13px;line-height:1.7;min-width:0;}
+.matrix__cell--head{background:var(--paper);font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft);}
+
+/* ============ 9. NAVIGASI HALAMAN ============ */
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:14px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);}
+.breadcrumb a{color:var(--accent);display:inline-flex;align-items:center;gap:4px;}
+.crumb-sep{color:var(--line);}
+.crumb-current{color:var(--ink-soft);}
+.scorebar{position:sticky;top:0;z-index:5;background:rgba(243,245,239,0.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin:0 -20px 26px;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:13px;}
+.scorebar .label{color:var(--ink-soft);}
+.scorebar .num{background:none;border:none;color:var(--accent);font-weight:500;padding:0;min-width:0;height:auto;}
+.pagemap{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px;}
+.pagemap button{font-family:var(--mono);font-size:11px;color:var(--accent);background:var(--accent-soft);border:1px dashed var(--accent);border-radius:6px;padding:4px 8px;cursor:pointer;transition:all .15s;}
+.pagemap button:hover{background:var(--accent);color:#fff;}
+.pagemap button.is-active{background:var(--accent);color:#fff;border-style:solid;}
+.mod-nav{position:sticky;top:0;z-index:8;display:flex;gap:6px;overflow-x:auto;padding:10px 20px 12px;margin:0 -20px 18px;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);scrollbar-width:thin;}
+.mod-nav::-webkit-scrollbar{height:4px;}
+.chip{flex:0 0 auto;font-family:var(--mono);font-size:11px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink-soft);cursor:pointer;white-space:nowrap;transition:all .15s;text-decoration:none;}
+.chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.chip.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.mod-toc{background:var(--paper);border:1px solid var(--line);border-radius:10px;margin:0 0 20px;overflow:hidden;}
+.mod-toc summary{cursor:pointer;list-style:none;padding:10px 14px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);letter-spacing:.05em;text-transform:uppercase;user-select:none;display:flex;align-items:center;gap:8px;}
+.mod-toc summary::-webkit-details-marker{display:none;}
+.mod-toc summary::before{content:'\25B8';font-size:10px;color:var(--accent);transition:transform .2s;}
+.mod-toc[open] summary{border-bottom:1px solid var(--line);}
+.mod-toc[open] summary::before{transform:rotate(90deg);}
+.mod-toc summary:hover{color:var(--accent);}
+.mod-toc-list{display:flex;flex-direction:column;max-height:48vh;overflow:auto;padding:8px 6px;}
+.mod-toc-link{padding:6px 12px;border-radius:6px;font-size:13.5px;line-height:1.5;color:var(--ink-soft);text-decoration:none;}
+.mod-toc-link:hover{background:var(--accent-soft);color:var(--accent);text-decoration:none;}
+.mod-toc-sub{padding-left:26px;font-size:13px;}
+.foot-nav{position:sticky;bottom:0;z-index:9;background:rgba(243,245,239,0.98);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;margin-top:14px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;}
+.materi-pos{font-family:var(--mono);font-size:12px;color:var(--ink-soft);white-space:nowrap;}
+.cta{text-align:center;margin:32px 0 4px;padding:22px 20px;background:var(--accent-soft);border:1px solid var(--line);border-radius:var(--radius);}
+.cta p{margin:0 0 14px;font-size:15.5px;}
+
+/* ============ 10. LATIHAN ============ */
+.exercise{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:20px 24px 18px;margin:26px 0 20px;}
+.exercise>h4{margin:0 0 12px;font-size:13px;color:var(--accent);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-family:var(--sans);}
+.exercise ol,.exercise ul{margin:0;}
+.check-list{display:grid;gap:10px;}
+.check{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;gap:10px;font-size:15px;line-height:1.8;}
+.check>div:last-child{flex:1;min-width:0;}
+.check::before{content:'\2713';position:absolute;color:var(--good);font-weight:600;}
+.check:has(.check__box)::before{display:none;}
+.check__box{flex:0 0 auto;width:16px;height:16px;margin-top:5px;border:1.5px solid var(--accent);border-radius:4px;}
+.reveal{margin:14px 0 0;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden;}
+.reveal summary{cursor:pointer;list-style:none;padding:11px 14px;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);user-select:none;display:flex;align-items:center;gap:8px;transition:background .15s;}
+.reveal summary::-webkit-details-marker{display:none;}
+.reveal summary::before{content:'\25B8';font-size:10px;transition:transform .2s;}
+.reveal summary:hover{background:var(--accent-soft);}
+.reveal[open] summary{border-bottom:1px solid var(--line);}
+.reveal[open] summary::before{transform:rotate(90deg);}
+.reveal__inner{padding:16px 18px 18px;font-size:15px;}
+.reveal__inner>*:last-child{margin-bottom:0;}
+.answer{background:var(--good-soft);border:1px solid #C9E0D0;border-radius:8px;padding:10px 14px;font-size:15px;margin:12px 0;}
+.answer b,.answer strong{color:var(--good);}
+.takeaway{border-left:3px solid var(--skip);background:var(--skip-soft);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;margin:12px 0;}
+
+/* ============ 11. BANK SOAL ============ */
+.options{display:flex;flex-direction:column;gap:9px;margin:14px 0;}
+.opt{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-size:15px;line-height:1.7;}
+.opt__letter{flex:0 0 auto;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink-soft);display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-soft);}
+.opt__body{flex:1;min-width:0;}
+.opt__text{display:block;}
+.opt__ex{display:block;font-size:12.5px;line-height:1.6;color:var(--ink-soft);margin-top:2px;}
+.opt.is-selected{border-color:var(--accent);background:var(--accent-soft);}
+.opt.is-selected .opt__letter{background:var(--accent);color:#fff;border-color:var(--accent);}
+.opt.is-correct{border-color:var(--good);background:var(--good-soft);}
+.opt.is-correct .opt__letter{background:var(--good);color:#fff;border-color:var(--good);}
+.opt.is-wrong{border-color:var(--bad);background:var(--bad-soft);}
+.opt.is-wrong .opt__letter{background:var(--bad);color:#fff;border-color:var(--bad);}
+/* score ladder — generalisasi TKP .s5..s0. TWK/TIU: pakai score-high/mid/low */
+.score-5{background:var(--good-soft);color:var(--good);}
+.score-4{background:var(--accent-soft);color:var(--accent);}
+.score-3{background:var(--skip-soft);color:var(--skip);}
+.score-2,.score-1,.score-0{background:var(--bad-soft);color:var(--bad);}
+.score{display:inline-flex;align-items:center;font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;}
+.score-high{background:var(--good-soft);color:var(--good);}
+.score-mid{background:var(--skip-soft);color:var(--skip);}
+.score-low{background:var(--bad-soft);color:var(--bad);}
+.stat{text-align:center;}
+.stat__num{font-family:var(--display);font-size:28px;font-weight:700;color:var(--accent);line-height:1;}
+.stat__num--good{color:var(--good);}
+.stat__num--bad{color:var(--bad);}
+.stat__num--warn{color:var(--skip);}
+.stat__label{font-family:var(--mono);font-size:11px;color:var(--ink-soft);letter-spacing:.05em;text-transform:uppercase;margin-top:4px;display:block;}
+
+/* ============ 12. RESPONSIF ============ */
+@media (max-width:620px){
+  .wrap{padding:20px 16px 100px;}
+  .scorebar{margin:0 -16px 22px;padding:10px 16px;}
+  .card{padding:20px 18px 8px;}
+  .card p,.card li{font-size:15px;}
+  .card h2{font-size:17px;}
+  .split{grid-template-columns:1fr;}
+  .matrix--2,.matrix--3{grid-template-columns:1fr;}
+  /* tabel -> kartu */
+  .table-wrap{overflow:visible;}
+  .table,.table tbody,.table tr,.table td{display:block;width:auto;min-width:0;}
+  .table thead{display:none;}
+  .table tr{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:10px;}
+  .table td{border:none;border-bottom:1px solid var(--line);padding:9px 12px;}
+  .table td:last-child{border-bottom:none;}
+  .table td:first-child{font-weight:600;color:var(--accent);background:var(--accent-soft);}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+}
+@media print{
+  .mod-nav,.mod-toc,.foot-nav,.breadcrumb,.scorebar,.pagemap{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;padding:0;margin:0 0 18px;}
+  .card,.opt,.note,.box,.rule{break-inside:avoid;}
+}
+</style>
+<link rel="stylesheet" href="../assets/modul-twk-shell.css"/>
+<script src="../assets/modul-twk-shell.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<p class="kicker">TWK — MODUL 10</p>
+<h1>Judul Modul 10 (Menunggu)</h1>
+<p>Modul ini sedang disusun. Kerangka halaman sudah siap mengikuti tema materi TWK; materi, contoh soal, dan pembahasan akan ditambahkan menyusul.</p>
+</header>
+
+<nav aria-label="Navigasi modul" class="mod-nav">
+<a class="chip" href="TWK_M09_Integritas.html">— Modul 09</a>
+<a class="chip" href="#menunggu">BAB I</a>
+<a class="chip" href="../index.html">Daftar Modul</a>
+</nav>
+
+<section class="card" id="menunggu">
+<h1>BAB I — Materi Menunggu</h1>
+<p>Bagian ini merupakan placeholder sementara. Saat modul ini disusun, struktur di bawah akan diganti dengan isi modul yang sebenarnya.</p>
+
+<div class="note note--warn"><p><strong>Status modul.</strong> Belum ada materi maupun soal pada modul ini. Modul tetap muncul di daftar modul agar penomoran dan urutan belajar tidak berubah.</p></div>
+
+<h2>1.1 Ruang lingkup yang akan dibahas</h2>
+<p>Outline berikut disiapkan sebagai kerangka kerja. Rincian konsep, contoh penerapan, dan soal latihan akan menyusul pada modul ini.</p>
+<ul>
+<li>Konsep kunci dan definisi normatif yang perlu dihafal.</li>
+<li>Hubungan antarkonsep dengan modul-modul sebelumnya.</li>
+<li>Contoh penerapan dalam situasi kebangsaan sehari-hari.</li>
+<li>Contoh soal beserta pembahasan tiap opsi.</li>
+</ul>
+
+<h2>1.2 Keterangan penggunaan</h2>
+<p>Gunakan halaman <a href="../index.html">Daftar Modul TWK</a> untuk berpindah antar-modul, atau kembali ke <a href="TWK_M09_Integritas.html">Modul 09 — Integritas</a>.</p>
+</section>
+
+<footer class="foot-nav">
+<span>TWK — Modul 10</span>
+<span>Placeholder — materi menyusul</span>
+</footer>
+</div>
+</body>
+</html>

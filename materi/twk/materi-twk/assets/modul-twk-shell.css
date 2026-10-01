@@ -1,0 +1,249 @@
+/* ==========================================================================
+   CPNS Learning — Modul TWK: shell bersama
+   Dimuat SETELAH <style id="materi-theme"> inline di setiap TWK_M*.html.
+
+   Tiga tanggung jawab:
+   (1) Kontrak opsi soal — menyamakan M01–M05 dengan M06–M09 yang memakai
+       grid 28px + 1fr. Tanpa ini opsi soal terlihat berbeda antar modul.
+   (2) Navigasi modul — breadcrumb, lompat M01–M10, prev/next, kembali
+       ke daftar isi.
+   (3) Responsif — semua komponen nav dibuat stack-able di layar kecil.
+
+   CSS theme tetap inline di tiap modul (sengaja, supaya modul bisa dibuka
+   mandiri). File ini hanya menambah lapisan yang seragam.
+   ========================================================================== */
+
+/* ============ 1. KONTRAK OPSI SOAL ============ */
+/* Sinkron dengan blok "M06 v6.0 option text alignment contract" di M06–M09. */
+button.opt {
+  display: grid !important;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left !important;
+  justify-content: initial !important;
+}
+button.opt .opt__letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+button.opt .opt__body,
+button.opt > div {
+  min-width: 0;
+  text-align: left !important;
+}
+button.opt .opt__text,
+button.opt p {
+  margin: 0;
+  text-align: left !important;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 9px;
+  margin: 14px 0;
+}
+button.opt > div:last-child,
+button.opt .opt__body {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ============ 2. BREADCRUMB ============ */
+.cpns-crumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.cpns-crumb a {
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+.cpns-crumb a:hover { text-decoration: underline; }
+.cpns-crumb .sep { color: var(--line); }
+.cpns-crumb .here { color: var(--ink-soft); }
+
+/* ============ 3. BAR LOMPAT MODUL ============ */
+/* Menempel di bawah, tempel penuh, bisa di-scroll horizontal. */
+.cpns-jump {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 20px;
+  margin: 0 -20px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.cpns-jump::-webkit-scrollbar { height: 4px; }
+.cpns-jump-label {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-right: 4px;
+  white-space: nowrap;
+}
+.cpns-jump a.jchip {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink-soft);
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.cpns-jump a.jchip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+.cpns-jump a.jchip[aria-current="page"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.cpns-jump a.jchip.pending { opacity: 0.55; }
+.cpns-jump a.jchip.pending::after { content: "*"; }
+
+/* ============ 4. NAV BAWAH: PREV / NEXT / DAFTAR ISI ============ */
+.cpns-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  margin: 30px 0 10px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.cpns-pager a,
+.cpns-pager button {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding: 13px 16px;
+  min-height: 62px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--sans);
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.cpns-pager a:hover,
+.cpns-pager button:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+.cpns-pager .dir {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.cpns-pager .nm {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--accent);
+}
+/* Tombol "berikutnya" dibaca dari kanan ke kiri. */
+.cpns-pager a.next { text-align: right; align-items: flex-end; }
+.cpns-pager .mid {
+  flex: 0 0 100%;
+  order: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 4px;
+}
+.cpns-pager .mid a,
+.cpns-pager .mid button {
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  min-height: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+}
+.cpns-pager .mid .pos { color: var(--ink-soft); }
+
+/* Tombol "kembali ke daftar isi" ikut responsibility scroll. */
+#cpns-toc { scroll-margin-top: 76px; }
+
+/* ============ 5. RESPONSIF ============ */
+@media (max-width: 620px) {
+  .cpns-jump {
+    margin: 0 -16px 14px;
+    padding: 8px 16px;
+  }
+  .cpns-jump-label { display: none; }
+  .cpns-jump a.jchip { padding: 6px 10px; font-size: 10.5px; }
+
+  .cpns-pager { gap: 8px; margin: 24px 0 8px; }
+  .cpns-pager a,
+  .cpns-pager button { flex: 1 1 100%; min-height: 0; padding: 11px 14px; }
+  .cpns-pager a.next { text-align: left; align-items: flex-start; }
+  .cpns-pager .mid { gap: 6px; }
+
+  /* Nav BAB (chip in-section) juga dipadatkan supaya tidak memakan layar. */
+  .mod-nav { margin: 0 -16px 16px; padding: 9px 16px 11px; }
+  .mod-toc-list { max-height: 56vh; }
+
+  .pancasila-official-box { padding: 15px 15px; }
+  .pancasila-official-box .normative__list > li { padding-left: 30px; }
+  .pancasila-official-box .normative__list > li::before { width: 22px; height: 22px; font-size: 11px; }
+
+  button.opt { grid-template-columns: 24px minmax(0, 1fr); }
+  button.opt .opt__letter { font-size: 12px; }
+}
+
+@media (max-width: 380px) {
+  .cpns-crumb { font-size: 11px; }
+  .cpns-pager .mid a,
+  .cpns-pager .mid button { font-size: 10.5px; padding: 7px 11px; }
+}
+
+@media print {
+  .cpns-crumb,
+  .cpns-jump,
+  .cpns-pager { display: none !important; }
+}
